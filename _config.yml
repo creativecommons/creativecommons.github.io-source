@@ -25,7 +25,7 @@ github_username:  creativecommons
 
 # Build settings
 markdown: kramdown
-theme: minimal-mistakes-jekyll
+remote_theme: "mmistakes/minimal-mistakes@4.14.2"
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
