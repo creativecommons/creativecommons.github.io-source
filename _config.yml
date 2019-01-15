@@ -17,7 +17,7 @@ title: Creative Commons at Github
 name: Creative Commons Engineering Team
 email: info@creativecommons.org
 description: >- # this means to ignore newlines until "baseurl:"
-  Creative Commons hosts all our open-source code on Github.
+  Technology at Creative Commons external-facing site.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://creativecommons.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: creativecommons
