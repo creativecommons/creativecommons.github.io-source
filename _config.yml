@@ -41,3 +41,7 @@ remote_theme: mmistakes/minimal-mistakes
 
 # Minimal Mistakes (theme) settings
 minimal_mistakes_skin: "contrast" # "default", ""air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum" "sunrise
+
+# Plugin settings
+plugins:
+  - jekyll-include-cache # needs to be added explicitly for GitHub Pages
