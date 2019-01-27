@@ -1,0 +1,14 @@
+.page-content {
+  position: relative;
+  min-height: 100vh;
+}
+
+.content-wrap {
+  padding-bottom: 7rem;    /* Footer height */
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  height: 7rem;            /* Footer height */
+}
