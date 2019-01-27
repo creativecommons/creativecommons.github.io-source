@@ -1,6 +1,6 @@
 # Source for creativecommons.github.io
 
-This site is built using [Lektor](https://www.getlektor.com/). All changes to [https://creativecommons.github.io]([https://creativecommons.github.io]) must be made here and deployed automatically. **DO NOT MAKE CHANGES TO THE [creativecommons.github.io](https://github.com/creativecommons/creativecommons.github.io) REPO DIRECTLY**.
+This site is built using [Lektor](https://www.getlektor.com/). All changes to [https://creativecommons.github.io](https://creativecommons.github.io) must be made here and deployed automatically. **DO NOT MAKE CHANGES TO THE [creativecommons.github.io](https://github.com/creativecommons/creativecommons.github.io) REPO DIRECTLY**.
 
 ## Making changes
 
