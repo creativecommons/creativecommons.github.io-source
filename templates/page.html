@@ -2,4 +2,8 @@
 {% block title %}{{ this.title }}{% endblock %}
 {% block body %}
   {{ this.body }}
+  {% set pages = site.query('/').include_undiscoverable(true).all() %}
+  {% for page in pages %}
+    {{ page.title }}
+  {% endfor %}
 {% endblock %}

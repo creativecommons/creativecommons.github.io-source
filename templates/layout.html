@@ -23,7 +23,7 @@
                 <li class="nav-item{% if this._path == '/' %} active{% endif
                   %}"><a class="nav-link" href="{{ '/'|url }}">Home</a></li>
                 {% for href, title in [
-                  ['/project-ideas', 'Project Ideas'],
+                  ['/project-ideas-page', 'GSoC Project Ideas'],
                 ] %}
                   <li class="nav-item{% if this.is_child_of(href) %} active{% endif
                     %}"><a class="nav-link" href="{{ href|url }}">{{ title }}</a></li>
@@ -46,7 +46,7 @@
       <div class="col-9 footer bg-dark text-light py-4 px-3">
         <small>
           <p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a></p>
-          <p>All the content on this website is licensed under a <strong><a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a></strong> unless otherwise specified.</p>
+          <p class="text-muted">All the content on this website is licensed under a <strong><a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a></strong> unless otherwise specified.</p>
         </small>
       </div>
     </div>

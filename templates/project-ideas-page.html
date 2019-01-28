@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block title %}{{ this.title }}{% endblock %}
+
+{% block body %}
+  <h1>Google Summer of Code 2019 Project Ideas</h1>
+  {% set ideas = site.query('/project-ideas-page/project-ideas').include_undiscoverable(true).all() %}
+  <div class="card-columns">
+    {% for idea in ideas %}
+      <div class="card border-dark project-idea-card m-3">
+        <h5 class="card-header border-dark text-white bg-info">{{ idea.title }}</h5>
+        <div class="card-body">
+          <p class="card-text">{{ idea.description }}</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><strong>Rationale:</strong> {{ idea.rationale }}</li>
+          <li class="list-group-item"><strong>Resources:</strong> {{ idea.resources }}</li>
+          <li class="list-group-item"><strong>Expected Result:</strong> {{ idea.expected_result }}</li>
+          <li class="list-group-item"><strong>Skills recommended:</strong> {{ idea.skills_recommended }}</li>
+          <li class="list-group-item"><strong>Mentors:</strong> {{ idea.mentors }}</li>
+          <li class="list-group-item"><strong>Difficulty:</strong> {{ idea.difficulty }}</li>
+        </ul>
+      </div>
+    {% endfor %}
+  </div>
+{% endblock %}

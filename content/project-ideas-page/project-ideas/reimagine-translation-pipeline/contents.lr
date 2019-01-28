@@ -1,0 +1,27 @@
+_hidden: yes
+---
+title: Reimagine Translation Pipeline
+---
+description:
+
+We'd like to improve the process of translating CC licenses to new languages by reimagining the workflow and building infrastructure to support it.
+---
+rationale: 
+
+The current workflow involves many manual steps and is inefficient.
+---
+resources:
+
+- [Legal Tools Translation on CC's wiki](https://wiki.creativecommons.org/wiki/Legal_Tools_Translation)
+---
+expected_result:
+
+Code and documentation for a new translation workflow.
+---
+skills_recommended: Python, JavaScript
+---
+mentors: Timid Robot Zehta (technical), Sarah Pearson (legal)
+---
+difficulty: Medium
+---
+_model: project-idea

@@ -12,3 +12,7 @@
   bottom: 0;
   height: 7rem;            /* Footer height */
 }
+
+.project-idea-card {
+  min-width: 24rem;
+}
