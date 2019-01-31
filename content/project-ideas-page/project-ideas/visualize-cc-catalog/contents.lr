@@ -1,3 +1,5 @@
+_model: project-idea
+---
 _hidden: yes
 ---
 title: Visualize CC Catalog data
@@ -25,5 +27,3 @@ skills_recommended: JavaScript, Python
 mentors: Sophine Clachar
 ---
 difficulty: Easy
----
-_model: project-idea
