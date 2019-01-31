@@ -1,0 +1,33 @@
+_model: project-idea
+---
+_hidden: yes
+---
+title: New introductory educational tool for licenses
+---
+description:
+
+Prototype a new pathway and educational tool that clearly communicates the licenses and leads the creator to the appropriate license for her needs.
+---
+rationale: 
+
+Addresses the following insights from our user research (see the Resources section for link to all insights):  
+- People understand that CC stands for free content sharing, but the nuances of the specific licenses are lost on them — including experts and longtime CC users.
+- People are motivated to license their work under CC, but have a hard time figuring out how to do it.
+
+---
+resources:
+
+- [Findings from the Discovery phase of CC usability](https://medium.com/@janepk/findings-from-the-discovery-phase-of-cc-usability-3bde89d55a74)
+- [Potential design by a UCB student #1](https://github.com/creativecommons/cc-usability-prototypes/issues/1)
+- [Potential design by a UCB student #2](https://github.com/creativecommons/cc-usability-prototypes/issues/2)
+- TODO: Add link to existing license educational tools.
+---
+expected_result:
+
+TODO
+---
+skills_recommended: JavaScript
+---
+mentors: Jane Park, Hugo Solar, Timid Robot Zehta
+---
+difficulty: Medium

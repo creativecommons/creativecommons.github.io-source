@@ -1,0 +1,29 @@
+_model: project-idea
+---
+_hidden: yes
+---
+title: Allow creators of CC-licensed work to archive their content
+---
+description:
+
+Prototype a few concepts that provide creators with the choice of archiving a version of their works when CC licensing. This could be an archive we provide as a service, tied to a new chooser tool, a separate web page for preserving your work, and also in partnership with an organization like the Internet Archive.
+---
+rationale: 
+
+Addresses the following insights from our user research (see the Resources section for link to all insights):  
+- People like the efficiency of sharing via centralized platforms, but are frustrated by the lack of control and ownership over their work, and increasing devaluation of individual creativity.  
+- People have a desire to create work that is lasting and meaningful, that eventually has a life of its own, but don’t know what to do with a work beyond publishing it.
+---
+resources:
+
+- [Findings from the Discovery phase of CC usability](https://medium.com/@janepk/findings-from-the-discovery-phase-of-cc-usability-3bde89d55a74)
+---
+expected_result:
+
+TODO
+---
+skills_recommended: JavaScript, Python
+---
+mentors: Jane Park, Alden Page, Sophine Clachar, Breno Ferreira
+---
+difficulty: Medium

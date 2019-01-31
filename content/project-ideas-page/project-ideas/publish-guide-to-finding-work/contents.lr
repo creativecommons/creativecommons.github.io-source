@@ -1,0 +1,32 @@
+_model: project-idea
+---
+_hidden: yes
+---
+title: Publish a "how to" guide for where to find your work
+---
+description:
+
+Develop and publish a guide to finding where your CC-licensed work was used online, e.g. via reverse image search.
+---
+rationale: 
+
+Addresses the following insights from our user research (see the Resources section for link to all insights):  
+- People like seeing how their work is used, where it goes, and who it touches, but have no easy way to find this out. This insight incorporated the following two insights: 
+    - People care that the work they share resonates with people, especially personally, but can only know this if they are told directly by the person it resonated with.
+    - People want their work to have real world or social impact, but their sense about what these impacts are are vague. However, people can identify some real or potential outcomes from sharing their work that they enjoy.  
+
+---
+resources:
+
+- [Findings from the Discovery phase of CC usability](https://medium.com/@janepk/findings-from-the-discovery-phase-of-cc-usability-3bde89d55a74)
+
+---
+expected_result:
+
+TODO
+---
+skills_recommended: JavaScript
+---
+mentors: Jane Park, Hugo Solar, Timid Robot Zehta
+---
+difficulty: Medium
