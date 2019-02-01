@@ -16,3 +16,17 @@
 .card-columns {
     column-count: 2;
 }
+
+.navbar {
+  background-image:linear-gradient(90deg,#EE5B32,#FB7928,#EE5B32);
+  background-size: 100% 130px;
+  background-position-y: bottom
+}
+
+.card-header {
+    background-color: #fff;
+    border-color: #00b5da;
+    border-width: 10px;
+    padding-left: 0px;
+    font-size: 1.5em;
+}

@@ -4,10 +4,10 @@
 {% block body %}
   <h1>Google Summer of Code 2019 Project Ideas</h1>
   {% set ideas = site.query('/project-ideas-page/project-ideas').include_undiscoverable(true).all() %}
-  <div class="card-columns">
+  <div class="mt-4">
     {% for idea in ideas %}
-      <div class="card border-dark project-idea-card m-3">
-        <h5 class="card-header border-dark text-white bg-info">{{ idea.title }}</h5>
+      <div class="project-idea-card m-1 mb-4">
+        <h2 class="card-header">{{ idea.title }}</h5>
         <ul class="list-group list-group-flush">
           <li class="list-group-item"><strong>Description:</strong> {{ idea.description }}</li>
           <li class="list-group-item"><strong>Rationale:</strong> {{ idea.rationale }}</li>
