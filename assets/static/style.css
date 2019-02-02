@@ -1,3 +1,7 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
 .page-content {
   position: relative;
   min-height: 100vh;
