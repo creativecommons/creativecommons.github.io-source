@@ -44,3 +44,10 @@ body {
     background-color: #00b5da;
     border: none;
 }
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+.dropdown-menu {
+    margin-top: 0px;
+}

@@ -19,16 +19,28 @@
       </button>
   
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
+        <ul class="navbar-nav">
           <li class="nav-item{% if this._path == '/' %} active{% endif
                     %}"><a class="nav-link" href="{{ '/'|url }}">Home</a></li>
+          <!-- UNCOMMENT THIS FOR NON-DROPDOWN NAV ITEMS
           {% for href, title in [
-          ['/project-ideas', 'GSoC Project Ideas'],
+            ['/url', 'Link Text'],
           ] %}
-          <li class="nav-item{% if this.is_child_of(href) %} active{% endif
-                      %}"><a class="nav-link"
-              href="{{ href|url }}">{{ title }}</a></li>
-          {% endfor %}
+            <li class="nav-item{% if this.is_child_of(href) %} active{% endif%}">
+              <a class="nav-link" href="{{ href|url }}">{{ title }}</a>
+            </li>
+          {% endfor %} -->
+          <li class="nav-item dropdown {% if this.is_child_of('/gsoc-2019') %} active{% endif%}">
+            <a class="nav-link" href="/gsoc-2019/" id="navbarDropdown" role="button">Google Summer of Code 2019</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              {% for href, title in [
+                ['/gsoc-2019/project-ideas', 'Project Ideas'],
+              ] %}
+                <a class="dropdown-item" href="{{ href|url }}">{{ title }}</a>
+              {% endfor %}
+              <!-- <a class="dropdown-item" href="#">Action</a> -->
+            </div>
+          </li>
         </ul>
       </div>
     </nav>
@@ -42,6 +54,7 @@
               <p class="card-text">This site is under construction and information here may not be accurate. This notice will be removed when the site is ready.</p>
             </div>
           </div>
+          <h1>{{ this.title }}</h1>
           {% block body %}{% endblock %}
         </div>
       </div>
