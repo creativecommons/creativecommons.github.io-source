@@ -6,7 +6,7 @@ Source for creativecommons.github.io
 ## Overview
 
 This site is built using [Lektor][lektor]. All changes to
-[https://creativecommons.github.io][[ccgithubio] must be made **here** and
+[https://creativecommons.github.io][ccgithubio] must be made **here** and
 deployed via lektor (see [Deploying](#deploying), below).
 
 **DO NOT MAKE CHANGES TO THE [creativecommons.github.io][ccghiorepo] REPO
@@ -17,23 +17,35 @@ DIRECTLY**.
 [ccghiorepo]:https://github.com/creativecommons/creativecommons.github.io
 
 
-## Making changes
+## Installation
 
 1. Make sure you have [pipenv][pipenvdocs] installed.
 1. Clone this repository.
 1. Open your command line interface and `cd` to the repository root directory.
 1. Run `pipenv install` to create a Python virtual environment and install the
    requirements for this project.
+
+[pipenvdocs]:https://pipenv.readthedocs.io/en/latest/
+
+
+## Development
+
 1. Run `pipenv shell` to spawn a shell with the virtualenv activated
 1. Run `lektor server` to start the Lektor development server. You will be able
    to see the website at [`http://localhost:5000/`][lektorlocal]. The Lektor
    server will rebuild the site every time you change any content.
 
-[pipenvdocs]:https://pipenv.readthedocs.io/en/latest/
 [lektorlocal]:http://localhost:5000/
 
 
-## Project structure
+## Deploying
+
+When you are ready to deploy a new version of the site, run `lektor deploy`
+(assuming you have your GitHub SSH key set up already). That's it, it's live on
+production!
+
+
+## Project Structure
 
 Here's how the code is structured in the top level of the repository:
 - `assets`: This directory contains the JavaScript and CSS files for the
@@ -53,10 +65,3 @@ Here's how the code is structured in the top level of the repository:
 [lektormodels]:(https://www.getlektor.com/docs/models/
 [jinja2]:http://jinja.pocoo.org/
 [lektortemplate]:https://www.getlektor.com/docs/templates/
-
-
-## Deploying
-
-When you are ready to deploy a new version of the site, run `lektor deploy`
-(assuming you have your GitHub SSH key set up already). That's it, it's live on
-production!
