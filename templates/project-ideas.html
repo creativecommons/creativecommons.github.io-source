@@ -3,7 +3,7 @@
 
 {% block body %}
   <a name="ideas-top"><h1>Google Summer of Code 2019 Project Ideas</h1></a>
-  {% set ideas = site.query('/project-ideas-page/project-ideas').include_undiscoverable(true).all() %}
+  {% set ideas = site.query('/project-ideas/project-ideas-list').include_undiscoverable(true).all() %}
   <div class="mt-4">
     <div>
       <ul class="list-unstyled m3">
