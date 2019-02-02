@@ -2,12 +2,10 @@
 {% block title %}{{ this.title }}{% endblock %}
 
 {% block body %}
-  <h1>Google Summer of Code 2019 Project Ideas</h1>
+  <a name="ideas-top"><h1>Google Summer of Code 2019 Project Ideas</h1></a>
   {% set ideas = site.query('/project-ideas-page/project-ideas').include_undiscoverable(true).all() %}
   <div class="mt-4">
     <div>
-      <p>The following list contains Creative Commons proposed ideas for the Google Summer of Code 2019</p>
-
       <ul class="list-unstyled m3">
       {% for idea in ideas %}
         <li class="my-2"><a href="#{{ idea._slug }}">{{ idea.title }}</a></li>
@@ -28,5 +26,6 @@
         </ul>
       </div>
     {% endfor %}
+    <a id="back-to-top" href="#ideas-top" class="btn btn-dark btn-sm" role="button">Back to list</a>
   </div>
 {% endblock %}
