@@ -1,6 +1,6 @@
 # creativecommons.github.io-source
 
-Source for creativecommons.github.io
+Source for `creativecommons.github.io`
 
 
 ## Overview
@@ -9,7 +9,7 @@ This site is built using [Lektor][lektor]. All changes to
 [https://creativecommons.github.io][ccgithubio] must be made **here** and
 deployed via lektor (see [Deploying](#deploying), below).
 
-**DO NOT MAKE CHANGES TO THE [creativecommons.github.io][ccghiorepo] REPO
+**DO __NOT__ MAKE CHANGES TO THE [creativecommons.github.io][ccghiorepo] REPO
 DIRECTLY**.
 
 [lektor]:https://www.getlektor.com/
@@ -41,25 +41,26 @@ DIRECTLY**.
 ## Deploying
 
 When you are ready to deploy a new version of the site, run `lektor deploy`
-(assuming you have your GitHub SSH key set up already). That's it, it's live on
-production!
+(assuming you have your GitHub SSH key already set up and you have access to
+the [creativecommons.github.io][ccghiorepo] repository). That's it, it's live
+on production!
 
 
 ## Project Structure
 
 Here's how the code is structured in the top level of the repository:
-- `assets`: This directory contains the JavaScript and CSS files for the
+- **`assets`**: This directory contains the JavaScript and CSS files for the
   project. Most of the JavaScript and CSS is third-party code and loaded via
   CDN so this is pretty empty.
-- `content`: The content of the site lives here. [Here's an explanation of how
-  content works in Lektor][lektorcontent]. This is probably what you'll be
+- **`content`**: The content of the site lives here. [Here's an explanation of
+  how content works in Lektor][lektorcontent]. This is probably what you'll be
   modifying most often.
-- `models`: [All content in Lektor is associated with data
+- **`models`**: [All content in Lektor is associated with data
   models][lektormodels] to define their schema. Currently, we only use the
   default `page` model that ships with Lektor.
-- `templates`: This is where the [Jinja2][jinja2] templates that render content
-  are stored. See the [Lektor template documentation][lektortemplate] for more
-  information.
+- **`templates`**: This is where the [Jinja2][jinja2] templates that render
+  content are stored. See the [Lektor template documentation][lektortemplate]
+  for more information.
 
 [lektorcontent]:https://www.getlektor.com/docs/content/
 [lektormodels]:(https://www.getlektor.com/docs/models/
