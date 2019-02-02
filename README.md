@@ -9,8 +9,8 @@ This site is built using [Lektor][lektor]. All changes to
 [https://creativecommons.github.io][ccgithubio] must be made **here** and
 deployed via lektor (see [Deploying](#deploying), below).
 
-**DO *NOT* MAKE CHANGES TO THE [creativecommons.github.io][ccghiorepo] REPO
-DIRECTLY**.
+**:warning:DO *NOT* MAKE CHANGES TO THE [creativecommons.github.io][ccghiorepo]
+REPO DIRECTLY**.
 
 [lektor]:https://www.getlektor.com/
 [ccgithubio]:https://creativecommons.github.io
