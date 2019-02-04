@@ -1,0 +1,22 @@
+_model: page
+---
+title: Join the CC Developer Community
+---
+body:
+
+#### Slack
+CC has an active Slack community open to the public. [Sign up here](http://slack-signup.creativecommons.org/). Channels relevant to CC's software are:  
+* `#cc-developers` – for general technical discussion
+* `#cc-gsoc` – for Google Summer of Code related discussion
+* `#cc-usability` – for soliciting feedback on new releases from the community
+
+#### Mailing List
+
+Join the [current CC Developers mailing list here](https://groups.google.com/a/creativecommons.org/forum/#!forum/cc-developers).
+
+The archives of our [previous mailing list are here](https://lists.ibiblio.org/pipermail/cc-devel/).
+
+#### IRC
+IRC isn't very active anymore, but we have two channels on [Freenode](https://freenode.net/).
+- `#creativecommons` – for general discussion
+- `#creativecommons-dev` – for technical discussion
