@@ -2,7 +2,7 @@ _model: project-idea
 ---
 _hidden: yes
 ---
-title: Revive and improve our WordPress plugin
+title: Creative Commons WordPress plugin
 ---
 description: Our WordPress plugin has not been updated for two years. We'd like to update the plugin so that it is compatible with the latest version of WordPress and the code is in line with WordPress best practices. Add features to it that would help users find CC-licensed content, attribute them correctly, and license their own work under CC licenses.
 ---

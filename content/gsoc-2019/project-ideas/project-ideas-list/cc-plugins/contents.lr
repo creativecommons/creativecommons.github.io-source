@@ -2,7 +2,7 @@ _model: project-idea
 ---
 _hidden: yes
 ---
-title: Plugins to integrate licensing, discovery, and attribution of CC-licensed works into other platforms
+title: Creative Commons plugins for creation platforms and tools
 ---
 description: We'd like to create plugins for other platforms to help users find CC-licensed content (using the CC Catalog API), attribute them correctly, and license their own work under CC licenses. Any creation platform or software is fair game. Some ideas: Google Docs/Slides, Microsoft Office, browser extensions,
 ---
@@ -19,7 +19,7 @@ expected_result:
 
 Public release of a functional and well-documented plugin.
 ---
-skills_recommended: PHP, WordPress
+skills_recommended: Varies
 ---
 primary_mentor: Timid Robot Zehta
 ---
