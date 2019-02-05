@@ -2,8 +2,8 @@
 {% block title %}{{ this.title }}{% endblock %}
 
 {% block body %}
+  {{ this.body }}
   <a name="ideas-top"></a>
-  <p class="text-muted">This is the project idea list for the <a href="/gsoc-2019">Google Summer of Code 2019</a> program.
   <hr/>
   {% set ideas = site.query('/gsoc-2019/project-ideas/project-ideas-list').include_undiscoverable(true).all() %}
   <div class="mt-4">
