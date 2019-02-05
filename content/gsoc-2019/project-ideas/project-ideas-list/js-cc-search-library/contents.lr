@@ -1,0 +1,30 @@
+_model: project-idea
+---
+_hidden: yes
+---
+title: CC Search JavaScript library
+---
+description: A JavaScript library allows users to search for CC-licensed content using the CC Catalog API.
+---
+rationale: 
+
+Providing a JavaScript library that allows integration of searching for CC-licensed content into other websites will expand the reach of CC-licensed content.
+---
+resources:
+- [CC Catalog API code](https://github.com/creativecommons/cccatalog-api/)
+- [CC Search](https://ccsearch.creativecommons.org/)
+- [CC Search frontend code](https://github.com/creativecommons/cccatalog-frontend)
+---
+expected_result:
+
+Public release of an functional, up-to-date, and well-documented JavaScript library using the CC Catalog API.
+---
+skills_recommended: JavaScript
+---
+primary_mentor: Breno Ferreira
+---
+backup_mentor: Alden Page
+---
+difficulty: Medium
+---
+proposal_tag: Plugin

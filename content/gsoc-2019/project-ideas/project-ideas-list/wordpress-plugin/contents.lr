@@ -15,6 +15,7 @@ resources:
 - [Blog post announcing last WordPress plugin update](https://creativecommons.org/2017/01/18/one-click-wordpress/)
 - [CC Search (for potential integration with the plugin)](https://ccsearch.creativecommons.org/)
 - [CC Search API code](https://github.com/creativecommons/cccatalog-api)
+- [Older CC WordPress plugin](https://github.com/cc-archive/wordpress-cc-plugin)
 
 ---
 expected_result:
