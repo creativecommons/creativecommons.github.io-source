@@ -20,8 +20,12 @@ expected_result:
 
 Code and documentation for a new translation workflow.
 ---
-skills_recommended: Python, JavaScript
+skills_recommended: Python
 ---
-mentors: Timid Robot Zehta (technical), Sarah Pearson (legal)
+primary_mentor: Timid Robot Zehta
 ---
-difficulty: Medium
+backup_mentor: Kriti Godey
+---
+difficulty: Hard
+---
+proposal_tag: Licenses

@@ -45,6 +45,11 @@ body {
     border: none;
 }
 
+.nav-item, .dropdown-item {
+    font-size: 1.2em;
+    font-weight: 900;
+}
+
 .dropdown:hover .dropdown-menu {
     display: block;
 }

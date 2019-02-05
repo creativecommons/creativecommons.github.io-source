@@ -24,6 +24,10 @@ The type of visualizations are not set in stone. We've prototyped a [force-direc
 ---
 skills_recommended: JavaScript, Python
 ---
-mentors: Sophine Clachar
+primary_mentor: Sophine Clachar
+---
+backup_mentor: Hugo Solar
 ---
 difficulty: Easy
+---
+proposal_tag: Data Visualization

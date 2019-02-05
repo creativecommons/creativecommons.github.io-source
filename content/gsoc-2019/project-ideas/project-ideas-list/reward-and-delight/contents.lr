@@ -15,13 +15,18 @@ Addresses all the [insights from our user research]((https://medium.com/@janepk/
 resources:
 
 - [Findings from the Discovery phase of CC usability](https://medium.com/@janepk/findings-from-the-discovery-phase-of-cc-usability-3bde89d55a74)
+- [Potential design by a UCB student](https://github.com/creativecommons/cc-usability-prototypes/issues/5)
 ---
 expected_result:
 
-TODO
+There are a wide range of acceptable results for this idea. We're looking for an improvement to one of our existing tools or an entirely new tool that makes working with CC licenses make the user smile.
 ---
 skills_recommended: JavaScript, Python
 ---
-mentors: Jane Park
+primary_mentor: Kriti Godey
 ---
-difficulty: Medium
+backup_mentor: Breno Ferreira
+---
+difficulty: Hard
+---
+proposal_tag: Usability
