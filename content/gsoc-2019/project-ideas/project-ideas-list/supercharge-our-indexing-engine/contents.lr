@@ -14,7 +14,7 @@ Faster indexing allows us to deliver higher quality search results to our users 
 ---
 resources:
 
-- [CC Catalog API README](https://github.com/creativecommons/cccatalog-api/README.md)
+- [CC Catalog API README](https://github.com/creativecommons/cccatalog-api/blob/master/README.md)
 ---
 expected_result:
 
