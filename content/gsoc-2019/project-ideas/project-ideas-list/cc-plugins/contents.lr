@@ -1,0 +1,30 @@
+_model: project-idea
+---
+_hidden: yes
+---
+title: Plugins to integrate licensing, discovery, and attribution of CC-licensed works into other platforms
+---
+description: We'd like to create plugins for other platforms to help users find CC-licensed content (using the CC Catalog API), attribute them correctly, and license their own work under CC licenses. Any creation platform or software is fair game. Some ideas: Google Docs/Slides, Microsoft Office, browser extensions,
+---
+rationale: 
+
+We would like to integrate with as many content creation platforms and tools as seamlessly as possible to promote use of CC licenses and discovery of CC-licensed content.
+---
+resources:
+- [Documentation for developing add-ons for G-Suite](https://developers.google.com/gsuite/add-ons/overview)
+- [Old Microsoft Office plugin information](https://wiki.creativecommons.org/wiki/Microsoft_Office_Addin)
+- [Old OpenOffice plugin information](https://wiki.creativecommons.org/wiki/OpenOfficeOrg_Addin)
+---
+expected_result:
+
+Public release of a functional and well-documented plugin.
+---
+skills_recommended: PHP, WordPress
+---
+primary_mentor: Timid Robot Zehta
+---
+backup_mentor: Kriti Godey
+---
+difficulty: Medium
+---
+proposal_tag: Plugin
