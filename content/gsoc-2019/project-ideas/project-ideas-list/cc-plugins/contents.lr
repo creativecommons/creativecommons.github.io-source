@@ -14,6 +14,7 @@ resources:
 - [Documentation for developing add-ons for G-Suite](https://developers.google.com/gsuite/add-ons/overview)
 - [Old Microsoft Office plugin information](https://wiki.creativecommons.org/wiki/Microsoft_Office_Addin)
 - [Old OpenOffice plugin information](https://wiki.creativecommons.org/wiki/OpenOfficeOrg_Addin)
+- [CC license finder browser extension](https://github.com/raulsi/CClicense)
 ---
 expected_result:
 
