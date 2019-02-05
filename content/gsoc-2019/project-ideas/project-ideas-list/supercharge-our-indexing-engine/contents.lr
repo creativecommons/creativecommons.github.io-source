@@ -22,6 +22,10 @@ Ideally, distributing the indexing process across 5 nodes should cut the indexin
 ---
 skills_recommended: Python, basic understanding of threads, basic understanding of databases, benchmark-driven mindset.
 ---
-mentors: Alden Page
+primary_mentor: Alden Page
+---
+backup_mentor: Timid Robot Zehta
 ---
 difficulty: Hard
+---
+proposal_tag: Search
