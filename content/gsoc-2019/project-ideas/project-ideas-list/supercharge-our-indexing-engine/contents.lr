@@ -1,0 +1,27 @@
+_model: project-idea
+---
+_hidden: yes
+---
+title: Supercharge our search indexer
+---
+description:
+
+CC Search is a system for searching hundreds of millions (eventually billions) of Creative Commons works. We store all of these documents inside of a PostgreSQL database. To enable rapid search performance on a dataset of this size, we mirror the documents to Elasticsearch weekly. It takes about 20 hours to index 276MM documents, but the speed could be greatly improved through parallelization across multiple nodes and multithreading. This project represents a great opportunity to learn about the challenges of distributed computing.
+---
+rationale: 
+
+Faster indexing allows us to deliver higher quality search results to our users in less time.
+---
+resources:
+
+- [CC Catalog API README](https://github.com/creativecommons/cccatalog-api/README.md)
+---
+expected_result:
+
+Ideally, distributing the indexing process across 5 nodes should cut the indexing time by 80% (or 4 hours compared to the current single-node, single-threaded implementation).
+---
+skills_recommended: Python, basic understanding of threads, basic understanding of databases, benchmark-driven mindset.
+---
+mentors: Alden Page
+---
+difficulty: Hard
