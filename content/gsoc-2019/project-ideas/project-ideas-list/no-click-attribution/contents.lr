@@ -2,13 +2,13 @@ _model: project-idea
 ---
 _hidden: yes
 ---
-title: Tool to make attribution as easy as possible
+title: Tool to make attribution as easy as possible (no-click)
 ---
 description:
 
 Prototype a tool that removes all friction to correct attribution. This could play out in a number of ways, including having attribution and related information attach upon download of an image (0 click attribution) in CC search, an attribution filter/plugin service that bulk links attribution, or a credit that is automatically added by a platform or related service.
 
-Another way of no-click attribution could be an opt-out watermarking, and most importantly, metadata embedding. How can we add CC metadata to mp3 files, or exif-like content to photos? Is it possible to encourage advertisers to display a non-intrusive barcode or qr with the bare work id? Can the Id become a visual mark for the commons interesting enough to be displayable (imagine a T-shirt with this unique ID showing for example CC-ID#1 and then looking it up online to find that the visual representation of the very same ID to be the licensed work).
+Another way of no-click attribution could be an opt-out watermarking, and most importantly, metadata embedding. How can we add CC metadata to mp3 files, or exif-like content to photos? Is it possible to encourage advertisers to display a non-intrusive barcode or qr with the bare work ID? Can the ID become a visual mark for the commons interesting enough to be displayable (imagine a T-shirt with this unique ID showing for example CC-ID#1 and then looking it up online to find that the visual representation of the very same ID to be the licensed work).
 ---
 rationale: 
 
@@ -18,14 +18,19 @@ Addresses the following insights from our user research (see the Resources secti
 resources:
 
 - [Findings from the Discovery phase of CC usability](https://medium.com/@janepk/findings-from-the-discovery-phase-of-cc-usability-3bde89d55a74)
-
+- [CC Search](https://ccsearch.creativecommons.org/)
+- [CC Search code](https://github.com/creativecommons/cccatalog-frontend)
 ---
 expected_result:
 
-TODO
+- A new feature or set of features added to CC Search to make no-click attribution possible. Some high-level ideas are in the project description but the implementation is completely up to you.
 ---
 skills_recommended: JavaScript, Python
 ---
-mentors: Jane Park, Alden Page, Sophine Clachar, Breno Ferreira
+primary_mentor: Alden Page
 ---
-difficulty: Medium
+backup_mentor: Breno Ferreira
+---
+difficulty: Hard
+---
+proposal_tag: Search

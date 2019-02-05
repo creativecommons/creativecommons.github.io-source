@@ -22,10 +22,11 @@
           <li class="list-group-item"><strong>Description:</strong> {{ idea.description }}</li>
           <li class="list-group-item"><strong>Rationale:</strong> {{ idea.rationale }}</li>
           <li class="list-group-item"><strong>Resources:</strong> {{ idea.resources }}</li>
-          <li class="list-group-item"><strong>Expected Result:</strong> {{ idea.expected_result }}</li>
+          <li class="list-group-item"><strong>Expected result:</strong> {{ idea.expected_result }}</li>
           <li class="list-group-item"><strong>Skills recommended:</strong> {{ idea.skills_recommended }}</li>
-          <li class="list-group-item"><strong>Mentors:</strong> {{ idea.mentors }}</li>
+          <li class="list-group-item"><strong>Mentors:</strong> {{ idea.primary_mentor }} (primary), {{ idea.backup_mentor}} (backup)</li>
           <li class="list-group-item"><strong>Difficulty:</strong> {{ idea.difficulty }}</li>
+          <li class="list-group-item"><strong>Proposal tag to use:</strong> {{ idea.proposal_tag }}</li>
         </ul>
       </div>
     {% endfor %}

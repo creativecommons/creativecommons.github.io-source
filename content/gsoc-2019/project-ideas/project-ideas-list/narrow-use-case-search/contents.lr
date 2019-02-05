@@ -6,7 +6,7 @@ title: The ability to search by use case in CC Search
 ---
 description:
 
-Prototype in CC Search a way to search for specific materials to use for specific types of projects, starting with most popular use cases, e.g. CC music for videos or podcasts.
+Prototype in CC Search a way to search for specific materials to use for specific types of projects e.g. CC music for videos or podcasts.
 ---
 rationale: 
 
@@ -16,13 +16,19 @@ Addresses the following insights from our user research (see the Resources secti
 resources:
 
 - [Findings from the Discovery phase of CC usability](https://medium.com/@janepk/findings-from-the-discovery-phase-of-cc-usability-3bde89d55a74)
+- [CC Search](https://ccsearch.creativecommons.org/)
+- [CC Search code](https://github.com/creativecommons/cccatalog-frontend)
 ---
 expected_result:
 
-TODO
+A new feature or set of new features added to CC Search to support searching CC-licensed content for a specific purpose. You can decide what use cases you'd like to focus on.
 ---
-skills_recommended: JavaScript, Python
+skills_recommended: JavaScript
 ---
-mentors: Jane Park, Alden Page, Sophine Clachar, Breno Ferreira
+primary_mentor: Breno Ferreira
+---
+backup_mentor: Alden Page
 ---
 difficulty: Medium
+---
+proposal_tag: Search

@@ -20,14 +20,18 @@ Addresses the following insights from our user research (see the Resources secti
 resources:
 
 - [Findings from the Discovery phase of CC usability](https://medium.com/@janepk/findings-from-the-discovery-phase-of-cc-usability-3bde89d55a74)
-- [Potential design by a UCB student](https://github.com/creativecommons/cc-usability-prototypes/issues/5) d
+- [CC Search](https://ccsearch.creativecommons.org/)
 ---
 expected_result:
 
-TODO
+A working prototype of the unique ID registry for CC-licensed content. It should be connected to our existing data indexed for CC Search and there should be a frontend to show data for a given work.
 ---
-skills_recommended: JavaScript, Python
+skills_recommended: Python
 ---
-mentors: Jane Park, Alden Page, Sophine Clachar
+primary_mentor: Sophine Clachar
 ---
-difficulty: Medium
+backup_mentor: Alden Page
+---
+difficulty: Hard
+---
+proposal_tag: Search
