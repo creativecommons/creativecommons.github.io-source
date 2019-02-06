@@ -1,13 +1,32 @@
 {% extends "layout.html" %}
-{% block title %}{{ this.title }}{% endblock %}
+{% block title %}Project Ideas for GSoC 2019{% endblock %}
 
 {% block body %}
-  {{ this.body }}
+  <p class="text-muted">This is the project idea list for the <a href="/gsoc-2019">Google Summer of Code 2019</a> program. We have a mix of projects that are meant to be installed widely (such as plugins for other software) and projects that are more focused on improving user experience for users of Creative Commons licenses. Regardless of scope, these projects all have a broad and positive community impact.</p>
   <a name="ideas-top"></a>
   <hr/>
-  {% set ideas = site.query('/gsoc-2019/project-ideas/project-ideas-list').include_undiscoverable(true).all() %}
+  {% set ideas = site.query('/gsoc-2019/project-ideas/project-ideas-list').include_undiscoverable(true) %}
+  {% set ns_field = namespace(field=None) %}
+  {% set ns_value = namespace(value=None) %}
+  {% for slug, data in bag('project-filters').iteritems() %}
+    {% if this._slug == slug %}
+      {% set ns_field.field = data['field'] %}
+      {% set ns_value.value = data['value'] %}
+    {% endif %}
+  {% endfor %}
+  {% if ns_field.field == 'difficulty' %}
+    {% set ideas = ideas.filter(F.difficulty == ns_value.value) %}
+  {% endif %}
   <div class="mt-4">
     <div>
+      <ul class="nav nav-pills">
+        {% for slug, data in bag('project-filters').iteritems() %}
+          <li class="nav-item">
+            <a class="nav-link{% if this._path == data['path'] %} active{% endif
+                    %}" href="{{ data['path'] }}">{{ data['nav_label'] }}</a>
+          </li>
+        {% endfor %}
+      </ul>
       <ul class="list-unstyled m3">
       {% for idea in ideas %}
         <li class="my-2"><a href="#{{ idea._slug }}">{{ idea.title }}</a></li>

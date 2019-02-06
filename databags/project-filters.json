@@ -1,0 +1,26 @@
+{
+    "project-ideas": {
+        "path": "/gsoc-2019/project-ideas",
+        "nav_label": "All Projects",
+        "field": null,
+        "value": null
+    },
+    "difficulty-easy": {
+        "path": "/gsoc-2019/project-ideas/difficulty-easy",
+        "nav_label": "Difficulty: Easy",
+        "field": "difficulty",
+        "value": "Easy"
+    },
+    "difficulty-medium": {
+        "path": "/gsoc-2019/project-ideas/difficulty-medium",
+        "nav_label": "Difficulty: Medium",
+        "field": "difficulty",
+        "value": "Medium"
+    },
+    "difficulty-hard": {
+        "path": "/gsoc-2019/project-ideas/difficulty-hard",
+        "nav_label": "Difficulty: Hard",
+        "field": "difficulty",
+        "value": "Hard"
+    }
+}
