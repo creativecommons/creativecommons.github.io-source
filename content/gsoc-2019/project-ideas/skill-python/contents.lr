@@ -1,3 +1,9 @@
 _model: project-ideas
 ---
-title: GSoC 2019: Project Ideas
+nav_label: Skill: Python
+---
+field: recommended_skill
+---
+value: Python
+---
+order: 6
