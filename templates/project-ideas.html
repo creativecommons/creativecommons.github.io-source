@@ -6,16 +6,15 @@
   <a name="ideas-top"></a>
   <hr/>
   {% set ideas = site.query('/gsoc-2019/project-ideas/project-ideas-list').include_undiscoverable(true) %}
-  {% set ns_field = namespace(field=None) %}
-  {% set ns_value = namespace(value=None) %}
+  {% set ns = namespace(field=None, value=None) %}
   {% for slug, data in bag('project-filters').iteritems() %}
     {% if this._slug == slug %}
-      {% set ns_field.field = data['field'] %}
-      {% set ns_value.value = data['value'] %}
+      {% set ns.field = data['field'] %}
+      {% set ns.value = data['value'] %}
     {% endif %}
   {% endfor %}
-  {% if ns_field.field == 'difficulty' %}
-    {% set ideas = ideas.filter(F.difficulty == ns_value.value) %}
+  {% if ns.field == 'difficulty' %}
+    {% set ideas = ideas.filter(F.difficulty == ns.value) %}
   {% endif %}
   <div class="mt-4">
     <div>
