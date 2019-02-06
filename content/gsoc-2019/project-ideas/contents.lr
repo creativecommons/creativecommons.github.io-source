@@ -1,6 +1,6 @@
 _model: project-ideas
 ---
-title: Project Ideas for GSoC 2019
+title: GSoC 2019: Project Ideas
 ---
 body:
 <p class="text-muted">This is the project idea list for the <a href="/gsoc-2019">Google Summer of Code 2019</a> program. We have a mix of projects that are meant to be installed widely (such as plugins for other software) and projects that are more focused on improving user experience for users of Creative Commons licenses. Regardless of scope, these projects all have a broad and positive community impact.</p>
