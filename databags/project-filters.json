@@ -1,0 +1,44 @@
+{
+    "project-ideas": {
+        "path": "/gsoc-2019/project-ideas",
+        "nav_label": "All Projects",
+        "field": null,
+        "value": null
+    },
+    "difficulty-easy": {
+        "path": "/gsoc-2019/project-ideas/difficulty-easy",
+        "nav_label": "Difficulty: Easy",
+        "field": "difficulty",
+        "value": "Easy"
+    },
+    "difficulty-medium": {
+        "path": "/gsoc-2019/project-ideas/difficulty-medium",
+        "nav_label": "Difficulty: Medium",
+        "field": "difficulty",
+        "value": "Medium"
+    },
+    "difficulty-hard": {
+        "path": "/gsoc-2019/project-ideas/difficulty-hard",
+        "nav_label": "Difficulty: Hard",
+        "field": "difficulty",
+        "value": "Hard"
+    },
+    "skill-python": {
+        "path": "/gsoc-2019/project-ideas/skill-python",
+        "nav_label": "Skill: Python",
+        "field": "skill",
+        "value": "Python"
+    },
+    "skill-javascript": {
+        "path": "/gsoc-2019/project-ideas/skill-javascript",
+        "nav_label": "Skill: JavaScript",
+        "field": "skill",
+        "value": "JavaScript"
+    },
+    "skill-wordpress": {
+        "path": "/gsoc-2019/project-ideas/skill-wordpress",
+        "nav_label": "Skill: WordPress",
+        "field": "skill",
+        "value": "WordPress"
+    }
+}

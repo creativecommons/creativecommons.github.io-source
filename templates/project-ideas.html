@@ -1,14 +1,38 @@
 {% extends "layout.html" %}
-{% block title %}{{ this.title }}{% endblock %}
+{% block title %}Project Ideas for GSoC 2019{% endblock %}
 
 {% block body %}
-  {{ this.body }}
+  <p class="text-muted">This is the project idea list for the <a href="/gsoc-2019">Google Summer of Code 2019</a> program. We have a mix of projects that are meant to be installed widely (such as plugins for other software) and projects that are more focused on improving user experience for users of Creative Commons licenses. Regardless of scope, these projects all have a broad and positive community impact.</p>
   <a name="ideas-top"></a>
   <hr/>
-  {% set ideas = site.query('/gsoc-2019/project-ideas/project-ideas-list').include_undiscoverable(true).all() %}
+  <!-- We display all ideas by default. -->
+  {% set ideas = site.query('/gsoc-2019/project-ideas/project-ideas-list').include_undiscoverable(true) %}
+  <!-- The following code filters the ideas to display based on the current URL. These mappings are defined in the "databags" folder. 
+  Jinja does not support changing values of variables inside loops, so we have to use namespace objects.
+  See "Scoping Behavior" here: http://jinja.pocoo.org/docs/2.10/templates/#assignments -->
+  {% set ns = namespace(field=None, value=None) %}
+  {% for slug, data in bag('project-filters').iteritems() %}
+    {% if this._slug == slug %}
+      {% set ns.field = data['field'] %}
+      {% set ns.value = data['value'] %}
+    {% endif %}
+  {% endfor %}
+  {% if ns.field == 'difficulty' %}
+    {% set ideas = ideas.filter(F.difficulty == ns.value) %}
+  {% endif %}
+  {% if ns.field == 'skill' %}
+    {% set ideas = ideas.filter(F.skills_recommended.contains(ns.value)) %}
+  {% endif %}
   <div class="mt-4">
     <div>
-      <ul class="list-unstyled m3">
+      {% for slug, data in bag('project-filters').iteritems() %}
+        <a href="{{ data['path'] }}">
+          <button type="button" class="btn btn-sm {% if this._path == data['path'] %}btn-dark{% else %}btn-primary{% endif %}" {% if this._path == data['path'] %}disabled{% endif %}>
+            {{ data['nav_label'] }}
+          </button>
+        </a>
+      {% endfor %}
+      <ul class="list-unstyled m-3">
       {% for idea in ideas %}
         <li class="my-2"><a href="#{{ idea._slug }}">{{ idea.title }}</a></li>
       {% endfor %}
