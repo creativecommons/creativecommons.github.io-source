@@ -22,5 +22,23 @@
         "nav_label": "Difficulty: Hard",
         "field": "difficulty",
         "value": "Hard"
+    },
+    "skill-python": {
+        "path": "/gsoc-2019/project-ideas/skill-python",
+        "nav_label": "Skill: Python",
+        "field": "skill",
+        "value": "Python"
+    },
+    "skill-javascript": {
+        "path": "/gsoc-2019/project-ideas/skill-javascript",
+        "nav_label": "Skill: JavaScript",
+        "field": "skill",
+        "value": "JavaScript"
+    },
+    "skill-wordpress": {
+        "path": "/gsoc-2019/project-ideas/skill-wordpress",
+        "nav_label": "Skill: WordPress",
+        "field": "skill",
+        "value": "WordPress"
     }
 }

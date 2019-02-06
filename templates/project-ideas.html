@@ -20,17 +20,19 @@
   {% if ns.field == 'difficulty' %}
     {% set ideas = ideas.filter(F.difficulty == ns.value) %}
   {% endif %}
+  {% if ns.field == 'skill' %}
+    {% set ideas = ideas.filter(F.skills_recommended.contains(ns.value)) %}
+  {% endif %}
   <div class="mt-4">
     <div>
-      <ul class="nav nav-pills">
-        {% for slug, data in bag('project-filters').iteritems() %}
-          <li class="nav-item">
-            <a class="nav-link{% if this._path == data['path'] %} active{% endif
-                    %}" href="{{ data['path'] }}">{{ data['nav_label'] }}</a>
-          </li>
-        {% endfor %}
-      </ul>
-      <ul class="list-unstyled m3">
+      {% for slug, data in bag('project-filters').iteritems() %}
+        <a href="{{ data['path'] }}">
+          <button type="button" class="btn btn-sm {% if this._path == data['path'] %}btn-dark{% else %}btn-primary{% endif %}" {% if this._path == data['path'] %}disabled{% endif %}>
+            {{ data['nav_label'] }}
+          </button>
+        </a>
+      {% endfor %}
+      <ul class="list-unstyled m-3">
       {% for idea in ideas %}
         <li class="my-2"><a href="#{{ idea._slug }}">{{ idea.title }}</a></li>
       {% endfor %}
