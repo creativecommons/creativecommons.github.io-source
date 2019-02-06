@@ -33,7 +33,7 @@
             <a class="nav-link" href="/gsoc-2019/" id="navbarDropdown" role="button">Google Summer of Code 2019</a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               {% for href, title in [
-                ['/gsoc-2019/project-ideas', 'Project Ideas'],
+                ['/gsoc-2019/project-ideas/all', 'Project Ideas'],
                 ['/gsoc-2019/application-instructions', 'Application Instructions'],
               ] %}
                 <a class="dropdown-item" href="{{ href|url }}">{{ title }}</a>
@@ -49,7 +49,7 @@
     <div class="row justify-content-md-center">
       <div class="col-9 content-wrap">
         <div class="page py-3">
-          <h2 class="pb-2"><strong>{{ this.title }}</strong></h2>
+          <h2 class="pb-2"><strong>{% block header %}{{ this.title }}{% endblock %}</strong></h2>
           {% block body %}{% endblock %}
         </div>
       </div>

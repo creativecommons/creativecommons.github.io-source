@@ -1,3 +1,9 @@
 _model: project-ideas
 ---
-title: GSoC 2019: Project Ideas
+nav_label: Difficulty: Hard
+---
+field: difficulty
+---
+value: Hard
+---
+order: 4

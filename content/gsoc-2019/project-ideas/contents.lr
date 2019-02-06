@@ -1,3 +1,5 @@
-_model: project-ideas
+_model: redirect
 ---
-title: GSoC 2019: Project Ideas
+target: /gsoc-2019/project-ideas/all/
+---
+_discoverable: no
