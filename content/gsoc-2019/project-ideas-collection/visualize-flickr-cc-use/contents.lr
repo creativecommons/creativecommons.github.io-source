@@ -1,0 +1,34 @@
+_model: project-idea
+---
+_hidden: yes
+---
+title: Visualize Flickr's CC license use
+---
+description:
+
+Flickr is one of the top platforms where creative individuals share their works under a Creative Commons license. There is an estimated 400 million CC-licensed works on Flickr and the volume of data increases daily. We are looking to develop a CC license tracker which will entail:  
+
+1. Data driven visualizations on the historical use of CC licenses (from 2004 to present)
+2. A realtime photo tracker that will keep us informed about the usage and/or popularity of CC licenses on this platform.
+---
+rationale: 
+
+There is a lot of CC-licensed content out there and we'd like to showcase that in a way that's easy for the community to understand.
+---
+resources:
+
+- [CC Catalog data ingestion code](https://github.com/creativecommons/cccatalog)
+---
+expected_result:
+
+Ideally we'd like these visualizations deployed on the web and updated in near real-time as we index new content.
+---
+skills_recommended: JavaScript, data visualization tools, basic knowledge of APIs, potentially Python
+---
+primary_mentor: Sophine Clachar
+---
+backup_mentor: Breno Ferreira
+---
+difficulty: Easy
+---
+proposal_tag: Data Visualization

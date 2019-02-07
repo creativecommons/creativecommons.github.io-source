@@ -14,7 +14,7 @@
   {% if current_filter.field == 'difficulty' %}
     {% set ideas = ideas.filter(F.difficulty == current_filter.value) %}
   {% elif current_filter.field == 'recommended_skill' %}
-    {% set ideas = ideas.filter(F.skills_recommended.contains(current_filter.value)) %}
+    {% set ideas = ideas.filter(F.skills_recommended.contains(current_filter.value).or(F.skills_recommended.contains('depends'))) %}
   {% endif %}
   <div class="mt-4">
     <div>

@@ -26,7 +26,7 @@ expected_result:
 
 A working prototype of the unique ID registry for CC-licensed content. It should be connected to our existing data indexed for CC Search and there should be a frontend to show data for a given work.
 ---
-skills_recommended: Python
+skills_recommended: Python, basic understanding of databases
 ---
 primary_mentor: Sophine Clachar
 ---

@@ -25,7 +25,7 @@ expected_result:
 
 A working interface for users to be able to archive their CC-licensed content. The potential designs linked above are just ideas, you do not have to follow them although you can certainly build on them. Both the backend and the frontend should be functional.
 ---
-skills_recommended: Python, JavaScript
+skills_recommended: Python, JavaScript, basic understanding of databases, basic understanding of APIs
 ---
 primary_mentor: Alden Page
 ---

@@ -22,7 +22,7 @@ Ideally we'd like these visualizations deployed on the web and updated in near r
 
 The type of visualizations are not set in stone. We've prototyped a [force-directed graph](https://en.wikipedia.org/wiki/Force-directed_graph_drawing#/media/File:SocialNetworkAnalysis.png) in the past and would like to have a maintainable version of that but other visualizations are up to you!
 ---
-skills_recommended: JavaScript, Python
+skills_recommended: JavaScript, data visualization tools, potentially Python
 ---
 primary_mentor: Sophine Clachar
 ---
