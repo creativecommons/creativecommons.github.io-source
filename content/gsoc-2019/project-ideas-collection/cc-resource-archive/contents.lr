@@ -19,7 +19,7 @@ expected_result:
 
 Release of an up-to-date site that provdes an interface for non-technical users to add content. It should be styled more modernly and to match CC's current website. It should be easily deployable and the code should be documented.
 ---
-skills_recommended: Python or WordPress/PHP
+skills_recommended: Python or WordPress/PHP, basic understanding of databases, potentially JavaScript
 ---
 primary_mentor: Hugo Solar
 ---
