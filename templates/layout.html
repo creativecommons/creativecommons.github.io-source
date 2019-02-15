@@ -23,6 +23,7 @@
           <li class="nav-item{% if this._path == '/' %} active{% endif
                     %}"><a class="nav-link" href="{{ '/'|url }}">Home</a></li>
           {% for href, title in [
+            ['/projects', 'Projects'],
             ['/community', 'Community'],
           ] %}
             <li class="nav-item{% if this.is_child_of(href) %} active{% endif%}">

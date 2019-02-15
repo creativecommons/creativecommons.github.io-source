@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block body %}
+  {{ this.body }}
+  <div class="alert alert-warning" role="alert">
+    <strong>Warning:</strong> This page is under construction. Some of these projects have incomplete (or non-existent) documentation, broken links, and/or are no longer maintained or supported. We're working on fixing that and this notice will be removed once the clean-up process is complete.
+  </div>
+  <p>This is the list of all repositories on the <a href="https://github.com/creativecommons">Creative Commons GitHub organization</a>, which hosts all our currently active software projects.</p>
+  <table class="table table-striped">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Description</th>
+        <th scope="col">Language</th>
+        <th scope="col">License</th>
+        <th scope="col">Links</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for repo in bag('repos.repos') %}
+        <tr>
+          <th scope="row">{{ loop.index }}</th>
+          <th scope="row">{{ repo.name }}</th>
+          {% if repo.description %}
+            <td>{{ repo.description }}</td>
+          {% else %}
+            <td></td>
+          {% endif %}
+          <td>{{ repo.language }}</td>
+          {% if repo.license %}
+            <td><a href="{{ repo.license.url }}">{{ repo.license.name }}</a></td>
+          {% else %}
+            <td>Not specified</td>
+          {% endif %}
+          <td style="min-width: 12rem;">
+            <a class="btn btn-dark btn-sm" href="{{ repo.url }}">GitHub</a>{% if repo.website %} <a class="btn btn-info btn-sm" href="{{ repo.website }}">Website</a>{% endif %}
+          </td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  <p class="text-muted">Archived projects are not documented here and can be found on the <a href="https://github.com/cc-archive">CC Archive GitHub organization</a>.</p>
+{% endblock %}
