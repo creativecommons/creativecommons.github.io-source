@@ -1,0 +1,10 @@
+language: python
+python:
+  - "3.7-dev"  # 3.7 development branch
+install:
+  - pip install pipenv
+  - pipenv install
+script:
+  - lektor build
+deploy:
+  - lektor deploy
