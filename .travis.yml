@@ -6,4 +6,6 @@ install:
   - pipenv install
 script:
   - lektor build
-  - lektor deploy
+deploy:
+  provider: script
+  script: lektor deploy
