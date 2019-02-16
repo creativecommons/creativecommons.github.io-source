@@ -2,4 +2,4 @@
 name = creativecommons.github.io
 
 [servers.ghpages]
-target = ghpages://creativecommons/creativecommons.github.io
+target = ghpages+https://creativecommons/creativecommons.github.io
