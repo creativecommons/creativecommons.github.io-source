@@ -40,6 +40,10 @@ REPO DIRECTLY**.
 
 ## Deploying
 
+We have continuous deployment set up. Travis CI builds and deploys the site whenever it detects new commits on the `master` branch.
+
+### Manual Deployment
+
 When you are ready to deploy a new version of the site, run `lektor deploy`
 (assuming you have your GitHub SSH key already set up and you have access to
 the [creativecommons.github.io][ccghiorepo] repository). That's it, it's live
