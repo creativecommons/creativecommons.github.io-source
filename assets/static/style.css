@@ -20,7 +20,9 @@ body {
 .card-columns {
     column-count: 2;
 }
-
+.main-header {
+  background-color: #EE5B32;
+}
 .navbar {
   background-image:linear-gradient(90deg,#EE5B32,#FB7928,#EE5B32);
   background-size: 100% 130px;
@@ -55,4 +57,11 @@ body {
 }
 .dropdown-menu {
     margin-top: 0px;
+}
+.navbar-dark .navbar-nav .nav-item .nav-link {
+  padding-bottom: .3rem;
+  color: white;
+}
+.navbar-dark .navbar-nav .nav-item.active .nav-link {
+  border-bottom: 2px solid white;
 }
