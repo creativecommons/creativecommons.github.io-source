@@ -5,14 +5,14 @@ body {
 .page-content {
   position: relative;
   min-height: 100vh;
+  padding-bottom: 3rem;
 }
 
-.content-wrap {
-  padding-bottom: 7rem;    /* Footer height */
+.main-header .navbar-brand {
+  margin-right: 2rem;
 }
 
 .footer {
-  position: absolute;
   bottom: 0;
   height: 7rem;            /* Footer height */
 }
