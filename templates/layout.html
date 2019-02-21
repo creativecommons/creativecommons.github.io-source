@@ -10,9 +10,9 @@
 <title>{% block title %}Welcome{% endblock %} — Creative Commons on GitHub</title>
 <body>
   <header class="main-header">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm">
+    <div class="container-fluid">
+      <div class="row justify-content-md-center">
+        <div class="col-9">
           <nav class="navbar navbar-expand-md navbar-dark">
             {% set cc_logo = site.get('/').attachments.get('cclogo.svg') %}
             <a class="navbar-brand" href="#"><img src="{{ cc_logo|url }}"></a>
