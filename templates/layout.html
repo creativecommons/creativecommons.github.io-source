@@ -15,8 +15,9 @@
         <div class="col-9">
           <nav class="navbar navbar-expand-md navbar-dark">
             {% set cc_logo = site.get('/').attachments.get('cclogo.svg') %}
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="{{ '/'|url }}">
               <img src="{{ cc_logo|url }}">
+              <span class="legend">Creative Commons Open Source</span>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
               aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

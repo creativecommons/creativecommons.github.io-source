@@ -11,6 +11,14 @@ body {
 .main-header .navbar-brand {
   margin-right: 2rem;
 }
+.main-header .navbar-brand img {
+  width: 250px;
+}
+.main-header .navbar-brand .legend {
+  display: block;
+  font-size: .9rem;
+  letter-spacing: .15rem;
+}
 
 .footer {
   bottom: 0;
