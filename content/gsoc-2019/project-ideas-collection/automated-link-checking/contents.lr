@@ -1,0 +1,31 @@
+_model: project-idea
+---
+_hidden: yes
+---
+title: Automated License Link Checking
+---
+description:
+Automate testing of the links in the licenses (legal code) and the deeds
+(simple language descriptions of the legal code).
+---
+rationale:
+Our licenses are used all over the world in many languages. When bugs or human
+error result broken links, the community suffers and development is slowed.
+---
+resources:
+- [docroot/legalcode - creativecommons/creativecommons.org](https://github.com/creativecommons/creativecommons.org/tree/master/docroot/legalcode) (license
+  source files)
+---
+expected_result:
+Public release of Python software that ingests the license source files and
+creates a configuration for existing Open Source link checking software.
+---
+skills_recommended: Python
+---
+primary_mentor: Hugo Solar
+---
+backup_mentor: Timid Robot Zehta
+---
+difficulty: Medium
+---
+proposal_tag: Quality Assurance
