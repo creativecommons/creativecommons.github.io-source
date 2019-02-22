@@ -1,99 +1,50 @@
 {
     "repos": [
         {
-            "created": "2019-01-29T21:17:39",
-            "description": null,
-            "id": 168230429,
-            "language": null,
+            "created": "2017-02-28T23:28:25",
+            "description": "Ready to use CAS server based on CASino Rails Engine",
+            "id": 83489731,
+            "language": "Ruby",
             "license": null,
-            "name": "cc-mexico-micro",
-            "url": "https://github.com/creativecommons/cc-mexico-micro",
+            "name": "CASinoAppCCID",
+            "url": "https://github.com/creativecommons/CASinoAppCCID",
             "website": null
         },
         {
-            "created": "2019-01-27T02:29:18",
-            "description": "Source files for creativecommons.github.io",
-            "id": 167761414,
-            "language": "HTML",
-            "license": null,
-            "name": "creativecommons.github.io-source",
-            "url": "https://github.com/creativecommons/creativecommons.github.io-source",
-            "website": null
-        },
-        {
-            "created": "2019-01-24T13:59:08",
-            "description": "Install the MySQL client and/or server",
-            "id": 167376396,
-            "language": "SaltStack",
-            "license": {
-                "name": "Other",
-                "url": "https://github.com/creativecommons/mysql-formula/blob/master/LICENSE"
-            },
-            "name": "mysql-formula",
-            "url": "https://github.com/creativecommons/mysql-formula",
-            "website": "http://docs.saltstack.com/en/latest/topics/development/conventions/formulas.html"
-        },
-        {
-            "created": "2019-01-23T18:16:13",
-            "description": null,
-            "id": 167231189,
+            "created": "2014-10-06T22:07:52",
+            "description": "RubyCAS customizations for CCID",
+            "id": 24866852,
             "language": "HTML",
             "license": {
-                "name": "Other",
-                "url": "https://github.com/creativecommons/php-formula/blob/master/LICENSE"
+                "name": "GNU Affero General Public License v3.0",
+                "url": "https://github.com/creativecommons/CCID-cas/blob/master/LICENSE.md"
             },
-            "name": "php-formula",
-            "url": "https://github.com/creativecommons/php-formula",
-            "website": "http://docs.saltstack.com/en/latest/topics/development/conventions/formulas.html"
+            "name": "CCID-cas",
+            "url": "https://github.com/creativecommons/CCID-cas",
+            "website": null
         },
         {
-            "created": "2019-01-04T13:32:52",
-            "description": "Saltstack formula for letsencrypt service",
-            "id": 164111289,
-            "language": "SaltStack",
+            "created": "2015-11-16T19:24:04",
+            "description": null,
+            "id": 46296768,
+            "language": "XSLT",
             "license": {
                 "name": "Other",
-                "url": "https://github.com/creativecommons/letsencrypt-formula/blob/master/LICENSE"
+                "url": "https://github.com/creativecommons/LicenseChooser.js/blob/master/LICENSE.md"
             },
-            "name": "letsencrypt-formula",
-            "url": "https://github.com/creativecommons/letsencrypt-formula",
-            "website": "http://docs.saltstack.com/en/latest/topics/development/conventions/formulas.html"
+            "name": "LicenseChooser.js",
+            "url": "https://github.com/creativecommons/LicenseChooser.js",
+            "website": null
         },
         {
-            "created": "2018-12-18T17:40:38",
-            "description": "Prototypes for CC's usability initiative.",
-            "id": 162324755,
+            "created": "2013-10-24T00:20:26",
+            "description": null,
+            "id": 13818574,
             "language": null,
             "license": null,
-            "name": "cc-usability-prototypes",
-            "url": "https://github.com/creativecommons/cc-usability-prototypes",
+            "name": "Teamspace",
+            "url": "https://github.com/creativecommons/Teamspace",
             "website": null
-        },
-        {
-            "created": "2018-11-20T21:50:33",
-            "description": "Site Reliability Engineering / DevOps SaltStack configuration files - NEW!",
-            "id": 158455678,
-            "language": "SaltStack",
-            "license": {
-                "name": "MIT License",
-                "url": "https://github.com/creativecommons/sre-salt-prime/blob/master/LICENSE"
-            },
-            "name": "sre-salt-prime",
-            "url": "https://github.com/creativecommons/sre-salt-prime",
-            "website": null
-        },
-        {
-            "created": "2018-07-06T00:51:38",
-            "description": "Search frontend for CC-licensed works across the internet.",
-            "id": 139915408,
-            "language": "Vue",
-            "license": {
-                "name": "MIT License",
-                "url": "https://github.com/creativecommons/cccatalog-frontend/blob/master/LICENSE"
-            },
-            "name": "cccatalog-frontend",
-            "url": "https://github.com/creativecommons/cccatalog-frontend",
-            "website": "https://ccsearch.creativecommons.org/"
         },
         {
             "created": "2018-06-06T23:53:47",
@@ -104,6 +55,49 @@
             "name": "australian-chapter",
             "url": "https://github.com/creativecommons/australian-chapter",
             "website": "http://creativecommons.org.au/"
+        },
+        {
+            "created": "2014-06-02T21:09:58",
+            "description": "WWW",
+            "id": 20419729,
+            "language": null,
+            "license": null,
+            "name": "beta.creativecommons.org",
+            "url": "https://github.com/creativecommons/beta.creativecommons.org",
+            "website": ""
+        },
+        {
+            "created": "2015-08-05T16:54:33",
+            "description": null,
+            "id": 40257488,
+            "language": "PHP",
+            "license": null,
+            "name": "blog",
+            "url": "https://github.com/creativecommons/blog",
+            "website": null
+        },
+        {
+            "created": "2015-06-24T18:37:20",
+            "description": "A MediaWiki skin using Bootstrap 3 & FontAwesome 4",
+            "id": 38003830,
+            "language": "JavaScript",
+            "license": {
+                "name": "Apache License 2.0",
+                "url": "https://github.com/creativecommons/bootstrap-mediawiki/blob/master/LICENSE"
+            },
+            "name": "bootstrap-mediawiki",
+            "url": "https://github.com/creativecommons/bootstrap-mediawiki",
+            "website": "http://borkweb.github.io/bootstrap-mediawiki"
+        },
+        {
+            "created": "2017-07-27T22:03:36",
+            "description": "Control which BuddyPress field groups are displayed to which user roles.",
+            "id": 98583299,
+            "language": "PHP",
+            "license": null,
+            "name": "buddypress-role-field-groups",
+            "url": "https://github.com/creativecommons/buddypress-role-field-groups",
+            "website": null
         },
         {
             "created": "2018-06-01T01:11:48",
@@ -132,82 +126,159 @@
             "website": "https://labs.creativecommons.org/caselaw/"
         },
         {
-            "created": "2018-04-27T20:50:37",
-            "description": "API for searching CC-licensed works; powers CC Search.",
-            "id": 131343685,
+            "created": "2017-02-28T23:27:06",
+            "description": "CCID authenticator for CASino",
+            "id": 83489655,
+            "language": "Ruby",
+            "license": null,
+            "name": "casino-ccid_active_record_authenticator",
+            "url": "https://github.com/creativecommons/casino-ccid_active_record_authenticator",
+            "website": null
+        },
+        {
+            "created": "2016-04-20T21:29:08",
+            "description": "Content outline for new Creative Commons Certification programs",
+            "id": 56722268,
+            "language": "HTML",
+            "license": null,
+            "name": "cc-cert-core",
+            "url": "https://github.com/creativecommons/cc-cert-core",
+            "website": "http://certificates.creativecommons.org/"
+        },
+        {
+            "created": "2017-01-13T02:17:14",
+            "description": "CC Certificate For Educational Institutions",
+            "id": 78806542,
+            "language": null,
+            "license": null,
+            "name": "cc-cert-edu",
+            "url": "https://github.com/creativecommons/cc-cert-edu",
+            "website": null
+        },
+        {
+            "created": "2017-01-13T02:13:24",
+            "description": "CC Certificate For Government",
+            "id": 78806276,
+            "language": null,
+            "license": null,
+            "name": "cc-cert-gov",
+            "url": "https://github.com/creativecommons/cc-cert-gov",
+            "website": null
+        },
+        {
+            "created": "2017-01-13T02:16:07",
+            "description": "CC Certificate For Libraries",
+            "id": 78806450,
+            "language": null,
+            "license": null,
+            "name": "cc-cert-lib",
+            "url": "https://github.com/creativecommons/cc-cert-lib",
+            "website": null
+        },
+        {
+            "created": "2019-01-29T21:17:39",
+            "description": null,
+            "id": 168230429,
+            "language": null,
+            "license": null,
+            "name": "cc-mexico-micro",
+            "url": "https://github.com/creativecommons/cc-mexico-micro",
+            "website": null
+        },
+        {
+            "created": "2014-01-08T18:49:45",
+            "description": "Collection of resources on CC tools and other open topics",
+            "id": 15744672,
+            "language": null,
+            "license": null,
+            "name": "cc-resource-archive",
+            "url": "https://github.com/creativecommons/cc-resource-archive",
+            "website": null
+        },
+        {
+            "created": "2018-12-18T17:40:38",
+            "description": "Prototypes for CC's usability initiative.",
+            "id": 162324755,
+            "language": null,
+            "license": null,
+            "name": "cc-usability-prototypes",
+            "url": "https://github.com/creativecommons/cc-usability-prototypes",
+            "website": null
+        },
+        {
+            "created": "2015-07-15T18:24:37",
+            "description": "The WordPress theme for creativecommons.org",
+            "id": 39153629,
+            "language": "PHP",
+            "license": null,
+            "name": "cc-wp-theme",
+            "url": "https://github.com/creativecommons/cc-wp-theme",
+            "website": null
+        },
+        {
+            "created": "2013-12-02T21:01:41",
+            "description": null,
+            "id": 14874742,
             "language": "Python",
             "license": {
                 "name": "MIT License",
-                "url": "https://github.com/creativecommons/cccatalog-api/blob/master/LICENSE"
+                "url": "https://github.com/creativecommons/cc.api/blob/master/LICENSE"
             },
-            "name": "cccatalog-api",
-            "url": "https://github.com/creativecommons/cccatalog-api",
-            "website": ""
-        },
-        {
-            "created": "2018-04-10T22:44:46",
-            "description": null,
-            "id": 129003332,
-            "language": "CSS",
-            "license": null,
-            "name": "certificates-landing-page-theme",
-            "url": "https://github.com/creativecommons/certificates-landing-page-theme",
+            "name": "cc.api",
+            "url": "https://github.com/creativecommons/cc.api",
             "website": null
         },
         {
-            "created": "2018-03-22T19:04:09",
-            "description": "International reversionary rights resources site.",
-            "id": 126382845,
+            "created": "2013-09-13T22:18:08",
+            "description": "Python app that runs part of CC's website",
+            "id": 12820583,
             "language": "HTML",
             "license": null,
-            "name": "reversionary-rights",
-            "url": "https://github.com/creativecommons/reversionary-rights",
+            "name": "cc.engine",
+            "url": "https://github.com/creativecommons/cc.engine",
             "website": null
         },
         {
-            "created": "2017-11-16T00:46:01",
-            "description": null,
-            "id": 110903847,
-            "language": "Go",
+            "created": "2013-10-24T00:14:55",
+            "description": "Creative Commons i18n Tools",
+            "id": 13818463,
+            "language": "Python",
             "license": null,
-            "name": "terraform-provider-bigv",
-            "url": "https://github.com/creativecommons/terraform-provider-bigv",
-            "website": null
-        },
-        {
-            "created": "2017-08-14T15:55:55",
-            "description": "Wordpress Theme to create a site like the DS106 Assignment Bank",
-            "id": 100284959,
-            "language": "PHP",
-            "license": {
-                "name": "GNU General Public License v2.0",
-                "url": "https://github.com/creativecommons/ds106bank/blob/master/LICENSE"
-            },
-            "name": "ds106bank",
-            "url": "https://github.com/creativecommons/ds106bank",
-            "website": null
-        },
-        {
-            "created": "2017-08-09T18:08:23",
-            "description": "Platforms are organized spaces for people to collaborate across the CC Global Network",
-            "id": 99838765,
-            "language": null,
-            "license": {
-                "name": "Other",
-                "url": "https://github.com/creativecommons/network-platforms/blob/master/LICENSE"
-            },
-            "name": "network-platforms",
-            "url": "https://github.com/creativecommons/network-platforms",
+            "name": "cc.i18n",
+            "url": "https://github.com/creativecommons/cc.i18n",
             "website": ""
         },
         {
-            "created": "2017-07-27T22:03:36",
-            "description": "Control which BuddyPress field groups are displayed to which user roles.",
-            "id": 98583299,
-            "language": "PHP",
+            "created": "2013-10-24T00:12:07",
+            "description": null,
+            "id": 13818396,
+            "language": "Python",
+            "license": {
+                "name": "MIT License",
+                "url": "https://github.com/creativecommons/cc.license/blob/master/LICENSE"
+            },
+            "name": "cc.license",
+            "url": "https://github.com/creativecommons/cc.license",
+            "website": null
+        },
+        {
+            "created": "2013-09-15T21:56:33",
+            "description": "RDF describing Creative Commons licenses",
+            "id": 12853322,
+            "language": "Python",
             "license": null,
-            "name": "buddypress-role-field-groups",
-            "url": "https://github.com/creativecommons/buddypress-role-field-groups",
+            "name": "cc.licenserdf",
+            "url": "https://github.com/creativecommons/cc.licenserdf",
+            "website": null
+        },
+        {
+            "created": "2015-03-10T16:50:12",
+            "description": null,
+            "id": 31969516,
+            "language": null,
+            "license": null,
+            "name": "cc990",
+            "url": "https://github.com/creativecommons/cc990",
             "website": null
         },
         {
@@ -224,102 +295,82 @@
             "website": null
         },
         {
-            "created": "2017-07-05T23:39:19",
-            "description": "Global network social network",
-            "id": 96369702,
-            "language": "PHP",
+            "created": "2018-04-27T20:50:37",
+            "description": "API for searching CC-licensed works; powers CC Search.",
+            "id": 131343685,
+            "language": "Python",
             "license": {
-                "name": "GNU General Public License v2.0",
-                "url": "https://github.com/creativecommons/commoners/blob/master/LICENSE"
+                "name": "MIT License",
+                "url": "https://github.com/creativecommons/cccatalog-api/blob/master/LICENSE"
             },
-            "name": "commoners",
-            "url": "https://github.com/creativecommons/commoners",
-            "website": null
-        },
-        {
-            "created": "2017-02-28T23:28:25",
-            "description": "Ready to use CAS server based on CASino Rails Engine",
-            "id": 83489731,
-            "language": "Ruby",
-            "license": null,
-            "name": "CASinoAppCCID",
-            "url": "https://github.com/creativecommons/CASinoAppCCID",
-            "website": null
-        },
-        {
-            "created": "2017-02-28T23:27:06",
-            "description": "CCID authenticator for CASino",
-            "id": 83489655,
-            "language": "Ruby",
-            "license": null,
-            "name": "casino-ccid_active_record_authenticator",
-            "url": "https://github.com/creativecommons/casino-ccid_active_record_authenticator",
-            "website": null
-        },
-        {
-            "created": "2017-01-13T02:17:14",
-            "description": "CC Certificate For Educational Institutions",
-            "id": 78806542,
-            "language": null,
-            "license": null,
-            "name": "cc-cert-edu",
-            "url": "https://github.com/creativecommons/cc-cert-edu",
-            "website": null
-        },
-        {
-            "created": "2017-01-13T02:16:07",
-            "description": "CC Certificate For Libraries",
-            "id": 78806450,
-            "language": null,
-            "license": null,
-            "name": "cc-cert-lib",
-            "url": "https://github.com/creativecommons/cc-cert-lib",
-            "website": null
-        },
-        {
-            "created": "2017-01-13T02:13:24",
-            "description": "CC Certificate For Government",
-            "id": 78806276,
-            "language": null,
-            "license": null,
-            "name": "cc-cert-gov",
-            "url": "https://github.com/creativecommons/cc-cert-gov",
-            "website": null
-        },
-        {
-            "created": "2016-11-16T14:23:50",
-            "description": "Action plan to design a model of collaboration for the future of the CC Network",
-            "id": 73927685,
-            "language": null,
-            "license": {
-                "name": "Creative Commons Zero v1.0 Universal",
-                "url": "https://github.com/creativecommons/global-network-strategy/blob/master/LICENSE"
-            },
-            "name": "global-network-strategy",
-            "url": "https://github.com/creativecommons/global-network-strategy",
+            "name": "cccatalog-api",
+            "url": "https://github.com/creativecommons/cccatalog-api",
             "website": ""
         },
         {
-            "created": "2016-10-13T22:26:03",
-            "description": "Connects Slack and IRC channels by sending messages back and forth.",
-            "id": 70853063,
+            "created": "2018-07-06T00:51:38",
+            "description": "Search frontend for CC-licensed works across the internet.",
+            "id": 139915408,
+            "language": "Vue",
+            "license": {
+                "name": "MIT License",
+                "url": "https://github.com/creativecommons/cccatalog-frontend/blob/master/LICENSE"
+            },
+            "name": "cccatalog-frontend",
+            "url": "https://github.com/creativecommons/cccatalog-frontend",
+            "website": "https://ccsearch.creativecommons.org/"
+        },
+        {
+            "created": "2013-09-18T03:40:47",
+            "description": "Creative Commons Javascript Library",
+            "id": 12913399,
+            "language": "JavaScript",
+            "license": null,
+            "name": "ccmf",
+            "url": "https://github.com/creativecommons/ccmf",
+            "website": ""
+        },
+        {
+            "created": "2013-09-18T03:45:12",
+            "description": "A demonstration website built on Node.js",
+            "id": 12913460,
             "language": "JavaScript",
             "license": {
                 "name": "MIT License",
-                "url": "https://github.com/creativecommons/slack-irc/blob/master/LICENSE"
+                "url": "https://github.com/creativecommons/ccmf-node/blob/master/LICENSE"
             },
-            "name": "slack-irc",
-            "url": "https://github.com/creativecommons/slack-irc",
+            "name": "ccmf-node",
+            "url": "https://github.com/creativecommons/ccmf-node",
             "website": null
         },
         {
-            "created": "2016-07-29T23:14:42",
-            "description": "The scholars addenda system.",
-            "id": 64515519,
-            "language": "Python",
+            "created": "2013-10-24T00:12:26",
+            "description": null,
+            "id": 13818403,
+            "language": "CSS",
             "license": null,
-            "name": "scholars-addenda",
-            "url": "https://github.com/creativecommons/scholars-addenda",
+            "name": "ccrel",
+            "url": "https://github.com/creativecommons/ccrel",
+            "website": null
+        },
+        {
+            "created": "2013-10-24T00:12:36",
+            "description": null,
+            "id": 13818410,
+            "language": "CSS",
+            "license": null,
+            "name": "ccrel-guide",
+            "url": "https://github.com/creativecommons/ccrel-guide",
+            "website": null
+        },
+        {
+            "created": "2018-04-10T22:44:46",
+            "description": null,
+            "id": 129003332,
+            "language": "CSS",
+            "license": null,
+            "name": "certificates-landing-page-theme",
+            "url": "https://github.com/creativecommons/certificates-landing-page-theme",
             "website": null
         },
         {
@@ -344,6 +395,320 @@
             "name": "certificates.creativecommons.org",
             "url": "https://github.com/creativecommons/certificates.creativecommons.org",
             "website": null
+        },
+        {
+            "created": "2017-07-05T23:39:19",
+            "description": "Global network social network",
+            "id": 96369702,
+            "language": "PHP",
+            "license": {
+                "name": "GNU General Public License v2.0",
+                "url": "https://github.com/creativecommons/commoners/blob/master/LICENSE"
+            },
+            "name": "commoners",
+            "url": "https://github.com/creativecommons/commoners",
+            "website": null
+        },
+        {
+            "created": "2016-05-17T20:49:26",
+            "description": null,
+            "id": 59057814,
+            "language": "HTML",
+            "license": null,
+            "name": "communications",
+            "url": "https://github.com/creativecommons/communications",
+            "website": null
+        },
+        {
+            "created": "2014-07-28T15:18:18",
+            "description": "If you want the latest beta release, see the releases page or check out develop!",
+            "id": 22347352,
+            "language": "PHP",
+            "license": {
+                "name": "GNU General Public License v2.0",
+                "url": "https://github.com/creativecommons/creativecommons-wordpress-plugin/blob/master/license.txt"
+            },
+            "name": "creativecommons-wordpress-plugin",
+            "url": "https://github.com/creativecommons/creativecommons-wordpress-plugin",
+            "website": ""
+        },
+        {
+            "created": "2015-04-15T16:10:58",
+            "description": ":warning: CC developer website. DO NOT MODIFY THIS REPOSITORY! To edit, use the creativecommons.github.io-source repository.",
+            "id": 34004720,
+            "language": "HTML",
+            "license": null,
+            "name": "creativecommons.github.io",
+            "url": "https://github.com/creativecommons/creativecommons.github.io",
+            "website": "https://creativecommons.github.io"
+        },
+        {
+            "created": "2019-01-27T02:29:18",
+            "description": "Source files for creativecommons.github.io",
+            "id": 167761414,
+            "language": "HTML",
+            "license": null,
+            "name": "creativecommons.github.io-source",
+            "url": "https://github.com/creativecommons/creativecommons.github.io-source",
+            "website": null
+        },
+        {
+            "created": "2013-10-31T00:19:22",
+            "description": "Creative Commons website",
+            "id": 14003491,
+            "language": "HTML",
+            "license": {
+                "name": "Other",
+                "url": "https://github.com/creativecommons/creativecommons.org/blob/master/COPYING"
+            },
+            "name": "creativecommons.org",
+            "url": "https://github.com/creativecommons/creativecommons.org",
+            "website": "http://creativecommons.org/"
+        },
+        {
+            "created": "2013-12-02T21:01:29",
+            "description": null,
+            "id": 14874720,
+            "language": "JavaScript",
+            "license": null,
+            "name": "deedscraper",
+            "url": "https://github.com/creativecommons/deedscraper",
+            "website": null
+        },
+        {
+            "created": "2015-05-12T11:38:00",
+            "description": null,
+            "id": 35484494,
+            "language": "HTML",
+            "license": null,
+            "name": "donate-2015",
+            "url": "https://github.com/creativecommons/donate-2015",
+            "website": null
+        },
+        {
+            "created": "2013-12-02T19:21:54",
+            "description": "CiviCRM (Drupal) site that powers donate.creativecommons.org and our CRM database.",
+            "id": 14872213,
+            "language": "PHP",
+            "license": {
+                "name": "Other",
+                "url": "https://github.com/creativecommons/donate.creativecommons.org/blob/master/LICENSE.txt"
+            },
+            "name": "donate.creativecommons.org",
+            "url": "https://github.com/creativecommons/donate.creativecommons.org",
+            "website": null
+        },
+        {
+            "created": "2017-08-14T15:55:55",
+            "description": "Wordpress Theme to create a site like the DS106 Assignment Bank",
+            "id": 100284959,
+            "language": "PHP",
+            "license": {
+                "name": "GNU General Public License v2.0",
+                "url": "https://github.com/creativecommons/ds106bank/blob/master/LICENSE"
+            },
+            "name": "ds106bank",
+            "url": "https://github.com/creativecommons/ds106bank",
+            "website": null
+        },
+        {
+            "created": "2014-11-20T22:56:56",
+            "description": null,
+            "id": 26935899,
+            "language": null,
+            "license": null,
+            "name": "example-project",
+            "url": "https://github.com/creativecommons/example-project",
+            "website": null
+        },
+        {
+            "created": "2016-01-26T22:56:41",
+            "description": "Proposal for a formal way of expressing public license information in Exif",
+            "id": 50465380,
+            "language": "Perl",
+            "license": {
+                "name": "Creative Commons Zero v1.0 Universal",
+                "url": "https://github.com/creativecommons/exif/blob/master/LICENSE"
+            },
+            "name": "exif",
+            "url": "https://github.com/creativecommons/exif",
+            "website": ""
+        },
+        {
+            "created": "2015-12-14T23:19:08",
+            "description": null,
+            "id": 48007106,
+            "language": "HTML",
+            "license": {
+                "name": "Other",
+                "url": "https://github.com/creativecommons/faq/blob/master/LICENSE"
+            },
+            "name": "faq",
+            "url": "https://github.com/creativecommons/faq",
+            "website": null
+        },
+        {
+            "created": "2015-03-18T17:37:20",
+            "description": null,
+            "id": 32474283,
+            "language": null,
+            "license": {
+                "name": "Creative Commons Zero v1.0 Universal",
+                "url": "https://github.com/creativecommons/flaming-octo-robot/blob/master/LICENSE"
+            },
+            "name": "flaming-octo-robot",
+            "url": "https://github.com/creativecommons/flaming-octo-robot",
+            "website": null
+        },
+        {
+            "created": "2015-03-13T18:42:13",
+            "description": "Check your GitHub READMEs for broken links.",
+            "id": 32174264,
+            "language": "Scala",
+            "license": {
+                "name": "MIT License",
+                "url": "https://github.com/creativecommons/girl/blob/master/LICENSE.mit"
+            },
+            "name": "girl",
+            "url": "https://github.com/creativecommons/girl",
+            "website": "http://derecho.elijah.cs.cmu.edu:8585/@top"
+        },
+        {
+            "created": "2016-11-16T14:23:50",
+            "description": "Action plan to design a model of collaboration for the future of the CC Network",
+            "id": 73927685,
+            "language": null,
+            "license": {
+                "name": "Creative Commons Zero v1.0 Universal",
+                "url": "https://github.com/creativecommons/global-network-strategy/blob/master/LICENSE"
+            },
+            "name": "global-network-strategy",
+            "url": "https://github.com/creativecommons/global-network-strategy",
+            "website": ""
+        },
+        {
+            "created": "2013-12-02T21:00:10",
+            "description": null,
+            "id": 14874596,
+            "language": "JavaScript",
+            "license": null,
+            "name": "jswidget",
+            "url": "https://github.com/creativecommons/jswidget",
+            "website": null
+        },
+        {
+            "created": "2014-12-08T20:16:04",
+            "description": "CC Labs (Tech Team) blog",
+            "id": 27733017,
+            "language": null,
+            "license": null,
+            "name": "labs",
+            "url": "https://github.com/creativecommons/labs",
+            "website": "http://labs.creativecommons.org/"
+        },
+        {
+            "created": "2014-07-09T20:23:35",
+            "description": "\"Let's CC\" is a search engine service that helps finding contents such as images, music, videos, and documents distributed under CCL (Creative Commons License) quickly, and easily.",
+            "id": 21667754,
+            "language": "PHP",
+            "license": {
+                "name": "Other",
+                "url": "https://github.com/creativecommons/letscc/blob/master/LICENSE"
+            },
+            "name": "letscc",
+            "url": "https://github.com/creativecommons/letscc",
+            "website": "http://eng.letscc.net"
+        },
+        {
+            "created": "2019-01-04T13:32:52",
+            "description": "Saltstack formula for letsencrypt service",
+            "id": 164111289,
+            "language": "SaltStack",
+            "license": {
+                "name": "Other",
+                "url": "https://github.com/creativecommons/letsencrypt-formula/blob/master/LICENSE"
+            },
+            "name": "letsencrypt-formula",
+            "url": "https://github.com/creativecommons/letsencrypt-formula",
+            "website": "http://docs.saltstack.com/en/latest/topics/development/conventions/formulas.html"
+        },
+        {
+            "created": "2014-09-03T22:03:03",
+            "description": "The List powered by Creative Commons allows people to contribute to the public commons by taking photographs of the world around them and sharing these images with the world.",
+            "id": 23639316,
+            "language": "Java",
+            "license": {
+                "name": "GNU General Public License v3.0",
+                "url": "https://github.com/creativecommons/list/blob/master/LICENSE.md"
+            },
+            "name": "list",
+            "url": "https://github.com/creativecommons/list",
+            "website": "https://thelist.creativecommons.org"
+        },
+        {
+            "created": "2014-11-17T21:58:08",
+            "description": null,
+            "id": 26779255,
+            "language": "HTML",
+            "license": {
+                "name": "Other",
+                "url": "https://github.com/creativecommons/magical-pony/blob/master/COPYING"
+            },
+            "name": "magical-pony",
+            "url": "https://github.com/creativecommons/magical-pony",
+            "website": null
+        },
+        {
+            "created": "2013-12-02T21:01:10",
+            "description": null,
+            "id": 14874691,
+            "language": "PHP",
+            "license": {
+                "name": "Other",
+                "url": "https://github.com/creativecommons/mediawiki/blob/master/COPYING"
+            },
+            "name": "mediawiki",
+            "url": "https://github.com/creativecommons/mediawiki",
+            "website": null
+        },
+        {
+            "created": "2015-12-02T22:10:12",
+            "description": null,
+            "id": 47291677,
+            "language": "PHP",
+            "license": {
+                "name": "Creative Commons Zero v1.0 Universal",
+                "url": "https://github.com/creativecommons/mp/blob/master/LICENSE"
+            },
+            "name": "mp",
+            "url": "https://github.com/creativecommons/mp",
+            "website": null
+        },
+        {
+            "created": "2019-01-24T13:59:08",
+            "description": "Install the MySQL client and/or server",
+            "id": 167376396,
+            "language": "SaltStack",
+            "license": {
+                "name": "Other",
+                "url": "https://github.com/creativecommons/mysql-formula/blob/master/LICENSE"
+            },
+            "name": "mysql-formula",
+            "url": "https://github.com/creativecommons/mysql-formula",
+            "website": "http://docs.saltstack.com/en/latest/topics/development/conventions/formulas.html"
+        },
+        {
+            "created": "2017-08-09T18:08:23",
+            "description": "Platforms are organized spaces for people to collaborate across the CC Global Network",
+            "id": 99838765,
+            "language": null,
+            "license": {
+                "name": "Other",
+                "url": "https://github.com/creativecommons/network-platforms/blob/master/LICENSE"
+            },
+            "name": "network-platforms",
+            "url": "https://github.com/creativecommons/network-platforms",
+            "website": ""
         },
         {
             "created": "2016-05-19T18:07:31",
@@ -376,275 +741,6 @@
             "website": null
         },
         {
-            "created": "2016-05-17T20:49:26",
-            "description": null,
-            "id": 59057814,
-            "language": "HTML",
-            "license": null,
-            "name": "communications",
-            "url": "https://github.com/creativecommons/communications",
-            "website": null
-        },
-        {
-            "created": "2016-04-20T21:29:08",
-            "description": "Content outline for new Creative Commons Certification programs",
-            "id": 56722268,
-            "language": "HTML",
-            "license": null,
-            "name": "cc-cert-core",
-            "url": "https://github.com/creativecommons/cc-cert-core",
-            "website": "http://certificates.creativecommons.org/"
-        },
-        {
-            "created": "2016-01-26T22:56:41",
-            "description": "Proposal for a formal way of expressing public license information in Exif",
-            "id": 50465380,
-            "language": "Perl",
-            "license": {
-                "name": "Creative Commons Zero v1.0 Universal",
-                "url": "https://github.com/creativecommons/exif/blob/master/LICENSE"
-            },
-            "name": "exif",
-            "url": "https://github.com/creativecommons/exif",
-            "website": ""
-        },
-        {
-            "created": "2015-12-14T23:19:08",
-            "description": null,
-            "id": 48007106,
-            "language": "HTML",
-            "license": {
-                "name": "Other",
-                "url": "https://github.com/creativecommons/faq/blob/master/LICENSE"
-            },
-            "name": "faq",
-            "url": "https://github.com/creativecommons/faq",
-            "website": null
-        },
-        {
-            "created": "2015-12-02T22:10:12",
-            "description": null,
-            "id": 47291677,
-            "language": "PHP",
-            "license": {
-                "name": "Creative Commons Zero v1.0 Universal",
-                "url": "https://github.com/creativecommons/mp/blob/master/LICENSE"
-            },
-            "name": "mp",
-            "url": "https://github.com/creativecommons/mp",
-            "website": null
-        },
-        {
-            "created": "2015-11-24T16:21:12",
-            "description": "Termination of Transfer tool",
-            "id": 46803674,
-            "language": "JavaScript",
-            "license": {
-                "name": "GNU Affero General Public License v3.0",
-                "url": "https://github.com/creativecommons/termination-of-transfer/blob/master/LICENSE"
-            },
-            "name": "termination-of-transfer",
-            "url": "https://github.com/creativecommons/termination-of-transfer",
-            "website": null
-        },
-        {
-            "created": "2015-11-16T19:24:04",
-            "description": null,
-            "id": 46296768,
-            "language": "XSLT",
-            "license": {
-                "name": "Other",
-                "url": "https://github.com/creativecommons/LicenseChooser.js/blob/master/LICENSE.md"
-            },
-            "name": "LicenseChooser.js",
-            "url": "https://github.com/creativecommons/LicenseChooser.js",
-            "website": null
-        },
-        {
-            "created": "2015-10-25T00:30:43",
-            "description": "Simple PHP script which decodes an SSL connection and displays the information.",
-            "id": 44890530,
-            "language": "PHP",
-            "license": {
-                "name": "GNU Affero General Public License v3.0",
-                "url": "https://github.com/creativecommons/ssl-decoder/blob/master/LICENSE.md"
-            },
-            "name": "ssl-decoder",
-            "url": "https://github.com/creativecommons/ssl-decoder",
-            "website": null
-        },
-        {
-            "created": "2015-08-05T16:54:33",
-            "description": null,
-            "id": 40257488,
-            "language": "PHP",
-            "license": null,
-            "name": "blog",
-            "url": "https://github.com/creativecommons/blog",
-            "website": null
-        },
-        {
-            "created": "2015-07-23T21:30:47",
-            "description": "Rails plugin for the RubyCAS-Client",
-            "id": 39594110,
-            "language": "Ruby",
-            "license": {
-                "name": "MIT License",
-                "url": "https://github.com/creativecommons/rubycas-client-rails/blob/master/MIT-LICENSE"
-            },
-            "name": "rubycas-client-rails",
-            "url": "https://github.com/creativecommons/rubycas-client-rails",
-            "website": ""
-        },
-        {
-            "created": "2015-07-15T18:24:37",
-            "description": "The WordPress theme for creativecommons.org",
-            "id": 39153629,
-            "language": "PHP",
-            "license": null,
-            "name": "cc-wp-theme",
-            "url": "https://github.com/creativecommons/cc-wp-theme",
-            "website": null
-        },
-        {
-            "created": "2015-06-24T18:37:20",
-            "description": "A MediaWiki skin using Bootstrap 3 & FontAwesome 4",
-            "id": 38003830,
-            "language": "JavaScript",
-            "license": {
-                "name": "Apache License 2.0",
-                "url": "https://github.com/creativecommons/bootstrap-mediawiki/blob/master/LICENSE"
-            },
-            "name": "bootstrap-mediawiki",
-            "url": "https://github.com/creativecommons/bootstrap-mediawiki",
-            "website": "http://borkweb.github.io/bootstrap-mediawiki"
-        },
-        {
-            "created": "2015-06-22T19:11:04",
-            "description": "Wordpress installation.",
-            "id": 37875296,
-            "language": null,
-            "license": null,
-            "name": "wordpress-config",
-            "url": "https://github.com/creativecommons/wordpress-config",
-            "website": null
-        },
-        {
-            "created": "2015-05-12T11:38:00",
-            "description": null,
-            "id": 35484494,
-            "language": "HTML",
-            "license": null,
-            "name": "donate-2015",
-            "url": "https://github.com/creativecommons/donate-2015",
-            "website": null
-        },
-        {
-            "created": "2015-04-15T16:10:58",
-            "description": ":warning: CC developer website. DO NOT MODIFY THIS REPOSITORY! To edit, use the creativecommons.github.io-source repository.",
-            "id": 34004720,
-            "language": "HTML",
-            "license": null,
-            "name": "creativecommons.github.io",
-            "url": "https://github.com/creativecommons/creativecommons.github.io",
-            "website": "https://github.com/creativecommons/creativecommons.github.io-source"
-        },
-        {
-            "created": "2015-04-13T23:32:43",
-            "description": "Notes and tasks for Creative Commons' technical infrastructure.",
-            "id": 33899712,
-            "language": null,
-            "license": null,
-            "name": "techstuff",
-            "url": "https://github.com/creativecommons/techstuff",
-            "website": null
-        },
-        {
-            "created": "2015-03-18T17:37:20",
-            "description": null,
-            "id": 32474283,
-            "language": null,
-            "license": {
-                "name": "Creative Commons Zero v1.0 Universal",
-                "url": "https://github.com/creativecommons/flaming-octo-robot/blob/master/LICENSE"
-            },
-            "name": "flaming-octo-robot",
-            "url": "https://github.com/creativecommons/flaming-octo-robot",
-            "website": null
-        },
-        {
-            "created": "2015-03-13T18:42:13",
-            "description": "Check your GitHub READMEs for broken links.",
-            "id": 32174264,
-            "language": "Scala",
-            "license": {
-                "name": "MIT License",
-                "url": "https://github.com/creativecommons/girl/blob/master/LICENSE.mit"
-            },
-            "name": "girl",
-            "url": "https://github.com/creativecommons/girl",
-            "website": "http://derecho.elijah.cs.cmu.edu:8585/@top"
-        },
-        {
-            "created": "2015-03-10T16:50:12",
-            "description": null,
-            "id": 31969516,
-            "language": null,
-            "license": null,
-            "name": "cc990",
-            "url": "https://github.com/creativecommons/cc990",
-            "website": null
-        },
-        {
-            "created": "2015-03-03T19:48:55",
-            "description": "Profiles of exemplary workforce training programs supported by the U.S. Department of Labor TAACCCT program.",
-            "id": 31617803,
-            "language": "JavaScript",
-            "license": {
-                "name": "Creative Commons Attribution 4.0 International",
-                "url": "https://github.com/creativecommons/taaccct/blob/gh-pages/LICENSE"
-            },
-            "name": "taaccct",
-            "url": "https://github.com/creativecommons/taaccct",
-            "website": "http://profiles.open4us.org/taaccct/"
-        },
-        {
-            "created": "2015-01-09T21:06:31",
-            "description": "A generic CC website that can be used by affliates and is the basis for CC's own website",
-            "id": 29035361,
-            "language": "CSS",
-            "license": {
-                "name": "MIT License",
-                "url": "https://github.com/creativecommons/website/blob/master/LICENSE"
-            },
-            "name": "website",
-            "url": "https://github.com/creativecommons/website",
-            "website": null
-        },
-        {
-            "created": "2014-12-08T20:16:04",
-            "description": "CC Labs (Tech Team) blog",
-            "id": 27733017,
-            "language": null,
-            "license": null,
-            "name": "labs",
-            "url": "https://github.com/creativecommons/labs",
-            "website": "http://labs.creativecommons.org/"
-        },
-        {
-            "created": "2014-12-04T16:48:58",
-            "description": null,
-            "id": 27550069,
-            "language": "HTML",
-            "license": {
-                "name": "Creative Commons Zero v1.0 Universal",
-                "url": "https://github.com/creativecommons/policies/blob/master/LICENSE"
-            },
-            "name": "policies",
-            "url": "https://github.com/creativecommons/policies",
-            "website": null
-        },
-        {
             "created": "2014-11-25T19:04:47",
             "description": null,
             "id": 27141324,
@@ -652,154 +748,6 @@
             "license": null,
             "name": "open-profiles",
             "url": "https://github.com/creativecommons/open-profiles",
-            "website": null
-        },
-        {
-            "created": "2014-11-20T22:56:56",
-            "description": null,
-            "id": 26935899,
-            "language": null,
-            "license": null,
-            "name": "example-project",
-            "url": "https://github.com/creativecommons/example-project",
-            "website": null
-        },
-        {
-            "created": "2014-11-17T21:58:08",
-            "description": null,
-            "id": 26779255,
-            "language": "HTML",
-            "license": {
-                "name": "Other",
-                "url": "https://github.com/creativecommons/magical-pony/blob/master/COPYING"
-            },
-            "name": "magical-pony",
-            "url": "https://github.com/creativecommons/magical-pony",
-            "website": null
-        },
-        {
-            "created": "2014-11-11T17:34:30",
-            "description": null,
-            "id": 26496204,
-            "language": "JavaScript",
-            "license": {
-                "name": "GNU Affero General Public License v3.0",
-                "url": "https://github.com/creativecommons/www2015/blob/master/LICENSE"
-            },
-            "name": "www2015",
-            "url": "https://github.com/creativecommons/www2015",
-            "website": null
-        },
-        {
-            "created": "2014-10-06T22:07:52",
-            "description": "RubyCAS customizations for CCID",
-            "id": 24866852,
-            "language": "HTML",
-            "license": {
-                "name": "GNU Affero General Public License v3.0",
-                "url": "https://github.com/creativecommons/CCID-cas/blob/master/LICENSE.md"
-            },
-            "name": "CCID-cas",
-            "url": "https://github.com/creativecommons/CCID-cas",
-            "website": null
-        },
-        {
-            "created": "2014-10-01T17:25:11",
-            "description": null,
-            "id": 24687826,
-            "language": "CSS",
-            "license": null,
-            "name": "theta",
-            "url": "https://github.com/creativecommons/theta",
-            "website": null
-        },
-        {
-            "created": "2014-09-03T22:03:03",
-            "description": "The List powered by Creative Commons allows people to contribute to the public commons by taking photographs of the world around them and sharing these images with the world.",
-            "id": 23639316,
-            "language": "Java",
-            "license": {
-                "name": "GNU General Public License v3.0",
-                "url": "https://github.com/creativecommons/list/blob/master/LICENSE.md"
-            },
-            "name": "list",
-            "url": "https://github.com/creativecommons/list",
-            "website": "https://thelist.creativecommons.org"
-        },
-        {
-            "created": "2014-08-23T20:37:33",
-            "description": "A Simple JSON-based Dashboard Replacement",
-            "id": 23265772,
-            "language": null,
-            "license": null,
-            "name": "zoneboard",
-            "url": "https://github.com/creativecommons/zoneboard",
-            "website": ""
-        },
-        {
-            "created": "2014-07-28T15:18:18",
-            "description": "If you want the latest beta release, see the releases page or check out develop!",
-            "id": 22347352,
-            "language": "PHP",
-            "license": {
-                "name": "GNU General Public License v2.0",
-                "url": "https://github.com/creativecommons/creativecommons-wordpress-plugin/blob/master/license.txt"
-            },
-            "name": "creativecommons-wordpress-plugin",
-            "url": "https://github.com/creativecommons/creativecommons-wordpress-plugin",
-            "website": ""
-        },
-        {
-            "created": "2014-07-09T20:23:35",
-            "description": "\"Let's CC\" is a search engine service that helps finding contents such as images, music, videos, and documents distributed under CCL (Creative Commons License) quickly, and easily.",
-            "id": 21667754,
-            "language": "PHP",
-            "license": {
-                "name": "Other",
-                "url": "https://github.com/creativecommons/letscc/blob/master/LICENSE"
-            },
-            "name": "letscc",
-            "url": "https://github.com/creativecommons/letscc",
-            "website": "http://eng.letscc.net"
-        },
-        {
-            "created": "2014-06-02T21:09:58",
-            "description": "WWW",
-            "id": 20419729,
-            "language": null,
-            "license": null,
-            "name": "beta.creativecommons.org",
-            "url": "https://github.com/creativecommons/beta.creativecommons.org",
-            "website": ""
-        },
-        {
-            "created": "2014-02-24T19:46:28",
-            "description": "OPN Website",
-            "id": 17148371,
-            "language": "PHP",
-            "license": null,
-            "name": "openpolicynetwork.org",
-            "url": "https://github.com/creativecommons/openpolicynetwork.org",
-            "website": null
-        },
-        {
-            "created": "2014-02-06T21:06:19",
-            "description": null,
-            "id": 16593765,
-            "language": "Shell",
-            "license": null,
-            "name": "server-config",
-            "url": "https://github.com/creativecommons/server-config",
-            "website": null
-        },
-        {
-            "created": "2014-01-08T18:49:45",
-            "description": "Collection of resources on CC tools and other open topics",
-            "id": 15744672,
-            "language": null,
-            "license": null,
-            "name": "cc-resource-archive",
-            "url": "https://github.com/creativecommons/cc-resource-archive",
             "website": null
         },
         {
@@ -813,198 +761,13 @@
             "website": null
         },
         {
-            "created": "2013-12-05T06:55:55",
-            "description": "Seed repository to quickly get started with a WordPress install",
-            "id": 14946344,
-            "language": "Shell",
-            "license": null,
-            "name": "wordpress-seed",
-            "url": "https://github.com/creativecommons/wordpress-seed",
-            "website": null
-        },
-        {
-            "created": "2013-12-02T21:01:41",
-            "description": null,
-            "id": 14874742,
-            "language": "Python",
-            "license": {
-                "name": "MIT License",
-                "url": "https://github.com/creativecommons/cc.api/blob/master/LICENSE"
-            },
-            "name": "cc.api",
-            "url": "https://github.com/creativecommons/cc.api",
-            "website": null
-        },
-        {
-            "created": "2013-12-02T21:01:29",
-            "description": null,
-            "id": 14874720,
-            "language": "JavaScript",
-            "license": null,
-            "name": "deedscraper",
-            "url": "https://github.com/creativecommons/deedscraper",
-            "website": null
-        },
-        {
-            "created": "2013-12-02T21:01:10",
-            "description": null,
-            "id": 14874691,
-            "language": "PHP",
-            "license": {
-                "name": "Other",
-                "url": "https://github.com/creativecommons/mediawiki/blob/master/COPYING"
-            },
-            "name": "mediawiki",
-            "url": "https://github.com/creativecommons/mediawiki",
-            "website": null
-        },
-        {
-            "created": "2013-12-02T21:00:44",
-            "description": null,
-            "id": 14874646,
+            "created": "2014-02-24T19:46:28",
+            "description": "OPN Website",
+            "id": 17148371,
             "language": "PHP",
             "license": null,
-            "name": "themes-cc_wiki",
-            "url": "https://github.com/creativecommons/themes-cc_wiki",
-            "website": null
-        },
-        {
-            "created": "2013-12-02T21:00:10",
-            "description": null,
-            "id": 14874596,
-            "language": "JavaScript",
-            "license": null,
-            "name": "jswidget",
-            "url": "https://github.com/creativecommons/jswidget",
-            "website": null
-        },
-        {
-            "created": "2013-12-02T20:59:52",
-            "description": null,
-            "id": 14874571,
-            "language": "Python",
-            "license": null,
-            "name": "rdfadict",
-            "url": "https://github.com/creativecommons/rdfadict",
-            "website": null
-        },
-        {
-            "created": "2013-12-02T20:59:37",
-            "description": null,
-            "id": 14874547,
-            "language": "TypeScript",
-            "license": null,
-            "name": "svn-i18n",
-            "url": "https://github.com/creativecommons/svn-i18n",
-            "website": null
-        },
-        {
-            "created": "2013-12-02T19:21:54",
-            "description": "CiviCRM (Drupal) site that powers donate.creativecommons.org and our CRM database.",
-            "id": 14872213,
-            "language": "PHP",
-            "license": {
-                "name": "Other",
-                "url": "https://github.com/creativecommons/donate.creativecommons.org/blob/master/LICENSE.txt"
-            },
-            "name": "donate.creativecommons.org",
-            "url": "https://github.com/creativecommons/donate.creativecommons.org",
-            "website": null
-        },
-        {
-            "created": "2013-10-31T00:19:22",
-            "description": "Creative Commons website",
-            "id": 14003491,
-            "language": "HTML",
-            "license": {
-                "name": "Other",
-                "url": "https://github.com/creativecommons/creativecommons.org/blob/master/COPYING"
-            },
-            "name": "creativecommons.org",
-            "url": "https://github.com/creativecommons/creativecommons.org",
-            "website": "http://creativecommons.org/"
-        },
-        {
-            "created": "2013-10-28T02:42:48",
-            "description": null,
-            "id": 13915207,
-            "language": "Python",
-            "license": null,
-            "name": "www-i",
-            "url": "https://github.com/creativecommons/www-i",
-            "website": null
-        },
-        {
-            "created": "2013-10-28T02:42:46",
-            "description": null,
-            "id": 13915202,
-            "language": "CSS",
-            "license": null,
-            "name": "theme-planet",
-            "url": "https://github.com/creativecommons/theme-planet",
-            "website": null
-        },
-        {
-            "created": "2013-10-24T00:20:26",
-            "description": null,
-            "id": 13818574,
-            "language": null,
-            "license": null,
-            "name": "Teamspace",
-            "url": "https://github.com/creativecommons/Teamspace",
-            "website": null
-        },
-        {
-            "created": "2013-10-24T00:19:27",
-            "description": null,
-            "id": 13818557,
-            "language": "CSS",
-            "license": null,
-            "name": "search",
-            "url": "https://github.com/creativecommons/search",
-            "website": null
-        },
-        {
-            "created": "2013-10-24T00:14:55",
-            "description": "Creative Commons i18n Tools",
-            "id": 13818463,
-            "language": "Python",
-            "license": null,
-            "name": "cc.i18n",
-            "url": "https://github.com/creativecommons/cc.i18n",
-            "website": ""
-        },
-        {
-            "created": "2013-10-24T00:12:36",
-            "description": null,
-            "id": 13818410,
-            "language": "CSS",
-            "license": null,
-            "name": "ccrel-guide",
-            "url": "https://github.com/creativecommons/ccrel-guide",
-            "website": null
-        },
-        {
-            "created": "2013-10-24T00:12:26",
-            "description": null,
-            "id": 13818403,
-            "language": "CSS",
-            "license": null,
-            "name": "ccrel",
-            "url": "https://github.com/creativecommons/ccrel",
-            "website": null
-        },
-        {
-            "created": "2013-10-24T00:12:07",
-            "description": null,
-            "id": 13818396,
-            "language": "Python",
-            "license": {
-                "name": "MIT License",
-                "url": "https://github.com/creativecommons/cc.license/blob/master/LICENSE"
-            },
-            "name": "cc.license",
-            "url": "https://github.com/creativecommons/cc.license",
+            "name": "openpolicynetwork.org",
+            "url": "https://github.com/creativecommons/openpolicynetwork.org",
             "website": null
         },
         {
@@ -1021,47 +784,284 @@
             "website": "http://mnmtanish.github.io/pasteboard/"
         },
         {
-            "created": "2013-09-18T03:45:12",
-            "description": "A demonstration website built on Node.js",
-            "id": 12913460,
-            "language": "JavaScript",
+            "created": "2019-01-23T18:16:13",
+            "description": null,
+            "id": 167231189,
+            "language": "HTML",
             "license": {
-                "name": "MIT License",
-                "url": "https://github.com/creativecommons/ccmf-node/blob/master/LICENSE"
+                "name": "Other",
+                "url": "https://github.com/creativecommons/php-formula/blob/master/LICENSE"
             },
-            "name": "ccmf-node",
-            "url": "https://github.com/creativecommons/ccmf-node",
+            "name": "php-formula",
+            "url": "https://github.com/creativecommons/php-formula",
+            "website": "http://docs.saltstack.com/en/latest/topics/development/conventions/formulas.html"
+        },
+        {
+            "created": "2014-12-04T16:48:58",
+            "description": null,
+            "id": 27550069,
+            "language": "HTML",
+            "license": {
+                "name": "Creative Commons Zero v1.0 Universal",
+                "url": "https://github.com/creativecommons/policies/blob/master/LICENSE"
+            },
+            "name": "policies",
+            "url": "https://github.com/creativecommons/policies",
             "website": null
         },
         {
-            "created": "2013-09-18T03:40:47",
-            "description": "Creative Commons Javascript Library",
-            "id": 12913399,
-            "language": "JavaScript",
+            "created": "2013-12-02T20:59:52",
+            "description": null,
+            "id": 14874571,
+            "language": "Python",
             "license": null,
-            "name": "ccmf",
-            "url": "https://github.com/creativecommons/ccmf",
+            "name": "rdfadict",
+            "url": "https://github.com/creativecommons/rdfadict",
+            "website": null
+        },
+        {
+            "created": "2018-03-22T19:04:09",
+            "description": "International reversionary rights resources site.",
+            "id": 126382845,
+            "language": "HTML",
+            "license": null,
+            "name": "reversionary-rights",
+            "url": "https://github.com/creativecommons/reversionary-rights",
+            "website": null
+        },
+        {
+            "created": "2015-07-23T21:30:47",
+            "description": "Rails plugin for the RubyCAS-Client",
+            "id": 39594110,
+            "language": "Ruby",
+            "license": {
+                "name": "MIT License",
+                "url": "https://github.com/creativecommons/rubycas-client-rails/blob/master/MIT-LICENSE"
+            },
+            "name": "rubycas-client-rails",
+            "url": "https://github.com/creativecommons/rubycas-client-rails",
             "website": ""
         },
         {
-            "created": "2013-09-15T21:56:33",
-            "description": "RDF describing Creative Commons licenses",
-            "id": 12853322,
+            "created": "2016-07-29T23:14:42",
+            "description": "The scholars addenda system.",
+            "id": 64515519,
             "language": "Python",
             "license": null,
-            "name": "cc.licenserdf",
-            "url": "https://github.com/creativecommons/cc.licenserdf",
+            "name": "scholars-addenda",
+            "url": "https://github.com/creativecommons/scholars-addenda",
             "website": null
         },
         {
-            "created": "2013-09-13T22:18:08",
-            "description": "Python app that runs part of CC's website",
-            "id": 12820583,
-            "language": "HTML",
+            "created": "2013-10-24T00:19:27",
+            "description": null,
+            "id": 13818557,
+            "language": "CSS",
             "license": null,
-            "name": "cc.engine",
-            "url": "https://github.com/creativecommons/cc.engine",
+            "name": "search",
+            "url": "https://github.com/creativecommons/search",
             "website": null
+        },
+        {
+            "created": "2014-02-06T21:06:19",
+            "description": null,
+            "id": 16593765,
+            "language": "Shell",
+            "license": null,
+            "name": "server-config",
+            "url": "https://github.com/creativecommons/server-config",
+            "website": null
+        },
+        {
+            "created": "2016-10-13T22:26:03",
+            "description": "Connects Slack and IRC channels by sending messages back and forth.",
+            "id": 70853063,
+            "language": "JavaScript",
+            "license": {
+                "name": "MIT License",
+                "url": "https://github.com/creativecommons/slack-irc/blob/master/LICENSE"
+            },
+            "name": "slack-irc",
+            "url": "https://github.com/creativecommons/slack-irc",
+            "website": null
+        },
+        {
+            "created": "2018-11-20T21:50:33",
+            "description": "Site Reliability Engineering / DevOps SaltStack configuration files - NEW!",
+            "id": 158455678,
+            "language": "SaltStack",
+            "license": {
+                "name": "MIT License",
+                "url": "https://github.com/creativecommons/sre-salt-prime/blob/master/LICENSE"
+            },
+            "name": "sre-salt-prime",
+            "url": "https://github.com/creativecommons/sre-salt-prime",
+            "website": null
+        },
+        {
+            "created": "2015-10-25T00:30:43",
+            "description": "Simple PHP script which decodes an SSL connection and displays the information.",
+            "id": 44890530,
+            "language": "PHP",
+            "license": {
+                "name": "GNU Affero General Public License v3.0",
+                "url": "https://github.com/creativecommons/ssl-decoder/blob/master/LICENSE.md"
+            },
+            "name": "ssl-decoder",
+            "url": "https://github.com/creativecommons/ssl-decoder",
+            "website": null
+        },
+        {
+            "created": "2013-12-02T20:59:37",
+            "description": null,
+            "id": 14874547,
+            "language": "TypeScript",
+            "license": null,
+            "name": "svn-i18n",
+            "url": "https://github.com/creativecommons/svn-i18n",
+            "website": null
+        },
+        {
+            "created": "2015-03-03T19:48:55",
+            "description": "Profiles of exemplary workforce training programs supported by the U.S. Department of Labor TAACCCT program.",
+            "id": 31617803,
+            "language": "JavaScript",
+            "license": {
+                "name": "Creative Commons Attribution 4.0 International",
+                "url": "https://github.com/creativecommons/taaccct/blob/gh-pages/LICENSE"
+            },
+            "name": "taaccct",
+            "url": "https://github.com/creativecommons/taaccct",
+            "website": "http://profiles.open4us.org/taaccct/"
+        },
+        {
+            "created": "2015-04-13T23:32:43",
+            "description": "Notes and tasks for Creative Commons' technical infrastructure.",
+            "id": 33899712,
+            "language": null,
+            "license": null,
+            "name": "techstuff",
+            "url": "https://github.com/creativecommons/techstuff",
+            "website": null
+        },
+        {
+            "created": "2015-11-24T16:21:12",
+            "description": "Termination of Transfer tool",
+            "id": 46803674,
+            "language": "JavaScript",
+            "license": {
+                "name": "GNU Affero General Public License v3.0",
+                "url": "https://github.com/creativecommons/termination-of-transfer/blob/master/LICENSE"
+            },
+            "name": "termination-of-transfer",
+            "url": "https://github.com/creativecommons/termination-of-transfer",
+            "website": null
+        },
+        {
+            "created": "2017-11-16T00:46:01",
+            "description": null,
+            "id": 110903847,
+            "language": "Go",
+            "license": null,
+            "name": "terraform-provider-bigv",
+            "url": "https://github.com/creativecommons/terraform-provider-bigv",
+            "website": null
+        },
+        {
+            "created": "2013-10-28T02:42:46",
+            "description": null,
+            "id": 13915202,
+            "language": "CSS",
+            "license": null,
+            "name": "theme-planet",
+            "url": "https://github.com/creativecommons/theme-planet",
+            "website": null
+        },
+        {
+            "created": "2013-12-02T21:00:44",
+            "description": null,
+            "id": 14874646,
+            "language": "PHP",
+            "license": null,
+            "name": "themes-cc_wiki",
+            "url": "https://github.com/creativecommons/themes-cc_wiki",
+            "website": null
+        },
+        {
+            "created": "2014-10-01T17:25:11",
+            "description": null,
+            "id": 24687826,
+            "language": "CSS",
+            "license": null,
+            "name": "theta",
+            "url": "https://github.com/creativecommons/theta",
+            "website": null
+        },
+        {
+            "created": "2015-01-09T21:06:31",
+            "description": "A generic CC website that can be used by affliates and is the basis for CC's own website",
+            "id": 29035361,
+            "language": "CSS",
+            "license": {
+                "name": "MIT License",
+                "url": "https://github.com/creativecommons/website/blob/master/LICENSE"
+            },
+            "name": "website",
+            "url": "https://github.com/creativecommons/website",
+            "website": null
+        },
+        {
+            "created": "2015-06-22T19:11:04",
+            "description": "Wordpress installation.",
+            "id": 37875296,
+            "language": null,
+            "license": null,
+            "name": "wordpress-config",
+            "url": "https://github.com/creativecommons/wordpress-config",
+            "website": null
+        },
+        {
+            "created": "2013-12-05T06:55:55",
+            "description": "Seed repository to quickly get started with a WordPress install",
+            "id": 14946344,
+            "language": "Shell",
+            "license": null,
+            "name": "wordpress-seed",
+            "url": "https://github.com/creativecommons/wordpress-seed",
+            "website": null
+        },
+        {
+            "created": "2013-10-28T02:42:48",
+            "description": null,
+            "id": 13915207,
+            "language": "Python",
+            "license": null,
+            "name": "www-i",
+            "url": "https://github.com/creativecommons/www-i",
+            "website": null
+        },
+        {
+            "created": "2014-11-11T17:34:30",
+            "description": null,
+            "id": 26496204,
+            "language": "JavaScript",
+            "license": {
+                "name": "GNU Affero General Public License v3.0",
+                "url": "https://github.com/creativecommons/www2015/blob/master/LICENSE"
+            },
+            "name": "www2015",
+            "url": "https://github.com/creativecommons/www2015",
+            "website": null
+        },
+        {
+            "created": "2014-08-23T20:37:33",
+            "description": "A Simple JSON-based Dashboard Replacement",
+            "id": 23265772,
+            "language": null,
+            "license": null,
+            "name": "zoneboard",
+            "url": "https://github.com/creativecommons/zoneboard",
+            "website": ""
         }
     ]
 }
