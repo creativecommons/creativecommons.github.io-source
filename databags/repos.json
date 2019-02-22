@@ -1,52 +1,6 @@
 {
     "repos": [
         {
-            "created": "2017-02-28T23:28:25",
-            "description": "Ready to use CAS server based on CASino Rails Engine",
-            "id": 83489731,
-            "language": "Ruby",
-            "license": null,
-            "name": "CASinoAppCCID",
-            "url": "https://github.com/creativecommons/CASinoAppCCID",
-            "website": null
-        },
-        {
-            "created": "2014-10-06T22:07:52",
-            "description": "RubyCAS customizations for CCID",
-            "id": 24866852,
-            "language": "HTML",
-            "license": {
-                "name": "GNU Affero General Public License v3.0",
-                "url": "https://github.com/creativecommons/CCID-cas/blob/master/LICENSE.md"
-            },
-            "name": "CCID-cas",
-            "url": "https://github.com/creativecommons/CCID-cas",
-            "website": null
-        },
-        {
-            "created": "2015-11-16T19:24:04",
-            "description": null,
-            "id": 46296768,
-            "language": "XSLT",
-            "license": {
-                "name": "Other",
-                "url": "https://github.com/creativecommons/LicenseChooser.js/blob/master/LICENSE.md"
-            },
-            "name": "LicenseChooser.js",
-            "url": "https://github.com/creativecommons/LicenseChooser.js",
-            "website": null
-        },
-        {
-            "created": "2013-10-24T00:20:26",
-            "description": null,
-            "id": 13818574,
-            "language": null,
-            "license": null,
-            "name": "Teamspace",
-            "url": "https://github.com/creativecommons/Teamspace",
-            "website": null
-        },
-        {
             "created": "2018-06-06T23:53:47",
             "description": "Creative Commons Australian Chapter documentation",
             "id": 136398139,
@@ -133,6 +87,16 @@
             "license": null,
             "name": "casino-ccid_active_record_authenticator",
             "url": "https://github.com/creativecommons/casino-ccid_active_record_authenticator",
+            "website": null
+        },
+        {
+            "created": "2017-02-28T23:28:25",
+            "description": "Ready to use CAS server based on CASino Rails Engine",
+            "id": 83489731,
+            "language": "Ruby",
+            "license": null,
+            "name": "CASinoAppCCID",
+            "url": "https://github.com/creativecommons/CASinoAppCCID",
             "website": null
         },
         {
@@ -319,6 +283,19 @@
             "name": "cccatalog-frontend",
             "url": "https://github.com/creativecommons/cccatalog-frontend",
             "website": "https://ccsearch.creativecommons.org/"
+        },
+        {
+            "created": "2014-10-06T22:07:52",
+            "description": "RubyCAS customizations for CCID",
+            "id": 24866852,
+            "language": "HTML",
+            "license": {
+                "name": "GNU Affero General Public License v3.0",
+                "url": "https://github.com/creativecommons/CCID-cas/blob/master/LICENSE.md"
+            },
+            "name": "CCID-cas",
+            "url": "https://github.com/creativecommons/CCID-cas",
+            "website": null
         },
         {
             "created": "2013-09-18T03:40:47",
@@ -633,6 +610,19 @@
             "website": "http://docs.saltstack.com/en/latest/topics/development/conventions/formulas.html"
         },
         {
+            "created": "2015-11-16T19:24:04",
+            "description": null,
+            "id": 46296768,
+            "language": "XSLT",
+            "license": {
+                "name": "Other",
+                "url": "https://github.com/creativecommons/LicenseChooser.js/blob/master/LICENSE.md"
+            },
+            "name": "LicenseChooser.js",
+            "url": "https://github.com/creativecommons/LicenseChooser.js",
+            "website": null
+        },
+        {
             "created": "2014-09-03T22:03:03",
             "description": "The List powered by Creative Commons allows people to contribute to the public commons by taking photographs of the world around them and sharing these images with the world.",
             "id": 23639316,
@@ -933,6 +923,16 @@
             "name": "taaccct",
             "url": "https://github.com/creativecommons/taaccct",
             "website": "http://profiles.open4us.org/taaccct/"
+        },
+        {
+            "created": "2013-10-24T00:20:26",
+            "description": null,
+            "id": 13818574,
+            "language": null,
+            "license": null,
+            "name": "Teamspace",
+            "url": "https://github.com/creativecommons/Teamspace",
+            "website": null
         },
         {
             "created": "2015-04-13T23:32:43",
