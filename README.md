@@ -2,19 +2,20 @@
 
 Source for `creativecommons.github.io`
 
+**:warning: DO *NOT* MAKE CHANGES TO THE [creativecommons.github.io][ccghiorepo]
+REPO DIRECTLY**.
+
+[ccghiorepo]:https://github.com/creativecommons/creativecommons.github.io
+
 
 ## Overview
 
 This site is built using [Lektor][lektor]. All changes to
 [https://creativecommons.github.io][ccgithubio] must be made **here** and
-deployed via lektor (see [Deploying](#deploying), below).
-
-**:warning:DO *NOT* MAKE CHANGES TO THE [creativecommons.github.io][ccghiorepo]
-REPO DIRECTLY**.
+deployed via lektor (see [Deployment](#deployment), below).
 
 [lektor]:https://www.getlektor.com/
 [ccgithubio]:https://creativecommons.github.io
-[ccghiorepo]:https://github.com/creativecommons/creativecommons.github.io
 
 
 ## Installation
@@ -28,6 +29,17 @@ REPO DIRECTLY**.
 [pipenvdocs]:https://pipenv.readthedocs.io/en/latest/
 
 
+### pipenv Troubleshooting
+
+`pipenv` doesn't always provide the best error messages ([Provide better error
+message if the project’s virtual environment is broken][pipenverror]). If all
+else fails, try removing the virtual environment and reinstalling:
+1. `pipenv --rm`
+2. `pipenv install`
+
+[pipenverror]:https://github.com/pypa/pipenv/issues/1918
+
+
 ## Development
 
 1. Run `pipenv shell` to spawn a shell with the virtualenv activated
@@ -38,9 +50,11 @@ REPO DIRECTLY**.
 [lektorlocal]:http://localhost:5000/
 
 
-## Deploying
+## Deployment
 
-We have continuous deployment set up. Travis CI builds and deploys the site whenever it detects new commits on the `master` branch.
+We have continuous deployment set up. Travis CI builds and deploys the site
+ whenever it detects new commits on the `master` branch.
+
 
 ### Manual Deployment
 
