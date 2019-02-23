@@ -1,0 +1,59 @@
+_model: page
+---
+_template: page-with-toc.html
+---
+title: Contributing Code
+---
+body:
+
+### Existing projects
+
+Here's a list of [all our current projects](/projects). We do all of our development on GitHub and are generally open to pull requests. We would especially like help with reviving projects that CC's engineering team does not have the time to actively work on (such as [our WordPress plugin](https://github.com/creativecommons/creativecommons-wordpress-plugin) and [license chooser widget](https://github.com/creativecommons/LicenseChooser.js)). We're also looking to improve our documentation and increase our automated test coverage across pretty much all our projects.
+
+We are working on making sure all of our projects are documented, licensed, and have self-contained contribution guidelines. Until we finish that work, follow the checklist below before writing any code.
+
+----
+
+**Make sure that the project is ready for contribution**
+
+If the repository has no license file, code of conduct, or is missing basic documentation, please create a GitHub issue attached to that repository to set those up. We will prioritize adding these files to repositories towards which people show active interest in contributing.
+
+
+**Make sure your change will be accepted**
+
+* If you want to work on an open GitHub issue tagged "help wanted" or "good first issue", comment on it to indicate that you're working on it (so that no one else does) and submit a pull request when you're ready. No other steps are needed.
+* If you want to work on an open GitHub issue without those tags, comment on it to ask if help is desired.
+    * Indications that it may not be available to work on are that it was created very recently, it already has someone assigned to it, or it is in a project whose name starts with "Active".
+* If you want to work on something that there is no GitHub issue for, either create an issue and ask there whether a pull request will be accepted for that change or propose the change in [one of our community forums](/community) before creating the ticket.
+    * If the project has a roadmap documented in the README, checking the roadmap to see if the feature is already in our pipeline would be a good first step.
+
+When in doubt, ask a question on [one of our community forums](/community).
+
+----
+
+### New projects
+
+We are also open to working on or hosting projects that are related to the Creative Commons licenses or general mission. Our [Google Summer of Code project ideas](/gsoc-2019/project-ideas) list is a good place to find ideas we'd like implemented. If you're interested in working on one of them, please propose it in one of our [community forums](/community) (you don't need to be a student, anyone is welcome to work on those ideas) and work out implementation details with CC staff members before you write any code. If you want to suggest a new project idea, follow the same process.
+
+In general, we'd like any new projects to use Python, WordPress/PHP, and/or JavaScript (our framework of choice is Vue.js) so that our team can help review and maintain the project.
+
+----
+
+### General best practices
+
+No matter what kind of project you're working on, these are good guidelines to follow
+
+**Code**
+
+* Write comprehensive and robust tests that cover the changes you've made in your work.
+* Follow the appropriate code style standards for the language and framework you're using (e.g. PEP 8 for Python).
+* Write readable code – keep functions small and modular and name variables descriptively.
+* Document your code thoroughly.
+* Make sure all the existing tests pass.
+
+**Pull requests**
+
+* Use the format specified in pull request template for the repository if there is one.
+* Describe your change in detail. Too much detail is better than too little.
+* Describle how you tested your change.
+* Request a review from either the repository maintainer (if you have that information) or `@creativecommons/engineering`.
