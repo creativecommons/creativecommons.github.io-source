@@ -4,20 +4,28 @@ title: Technology at Creative Commons
 ---
 body:
 
-Our core mission at Creative Commons includes [supporting technical infrastructure to maximize creativity, sharing, and innovation](https://creativecommons.org/about/mission-and-vision/) and we've been building free software to that end for more than a decade. That's a lot of projects and the tech team isn't very big so we really appreciate volunteers who are willing to help us build or test our tools and products.
+Creative Commons has been building free software for over a decade to support our [mission](https://creativecommons.org/about/mission-and-vision/) of maximizing digital creativity, sharing, and innovation. Our projects come in all sizes and shapes, from simple static websites to providing a fast and relevant search interface to the billion-plus Creative Commons works currently available on the internet. Our engineering team is fairly small and spread thin, so we're really appreciative of volunteers who help us build or test our software.
 
-We just started an effort to make individual projects easier to find and contribute to, but for now, you can browse through [the repositories on our main GitHub organization](https://github.com/creativecommons/) to see what we're working on.
+### Getting Involved
 
-<hr/>
+You can contribute to CC's software in a few different ways.
 
-### Get Involved
+----
 
-Using our tools (such as [the new CC Search beta](http://ccsearch.creativecommons.org/)) and letting us know how it's working for you is fantastic! We're looking for bug reports, feature requests, general comments – any form of feedback is excellent, no matter how small.
+##### Finding bugs and suggesting features
 
-You can send us feedback by [creating a GitHub issue](https://help.github.com/articles/creating-an-issue/) on the repository corresponding to the project. If you're not sure what that means or you don't know the correct repository, please create an issue [on the main creativecommons.org repository](https://github.com/creativecommons/creativecommons.org/issues). If you don't have a GitHub account, you'll need to make one to do this.
+Using our software (such as [the new version of CC Search](http://ccsearch.creativecommons.org/)) and letting us know how it's working for you is very helpful. General suggestions, bug reports, a reqiest to build a new feature –  any form of feedback is excellent, no matter how small.
 
-You can also give us feedback in the `#cc-usability` channel [on the CC Slack](https://creativecommons.org/2016/10/18/slack-announcement/).
+You can send us feedback in a few different ways. If you have a GitHub account, [creating a GitHub issue](https://help.github.com/articles/creating-an-issue/) is easiest for us because that's where we track our work. If you know which GitHub repository (see [a full list here](/projects)) corresponds to the software about which you'd like to give us feedback, then please create an issue attached to that repository. If you're not sure what that means or you don't know the correct repository, please create an issue [on the creativecommons.org repository](https://github.com/creativecommons/creativecommons.org/issues). You can also send us feedback in the `#cc-usability` channel [on the CC Slack community](https://creativecommons.org/2016/10/18/slack-announcement/) or via email at `software@creativecommons.org`.
 
-### Contribute code
+----
 
-We are working on contribution guidelines and documentation for our projects. Watch this space!
+##### Contributing code
+
+Please see [Contributing Code](/contributing-code).
+
+----
+
+##### Contributing design
+
+If you'd like to improve the design of one of our tools or products, please propose your change in [one of our community forums](/community) and collaborate with a CC staff member if requested to before making any changes.

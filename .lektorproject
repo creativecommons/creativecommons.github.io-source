@@ -3,3 +3,6 @@ name = creativecommons.github.io
 
 [servers.ghpages]
 target = ghpages+https://creativecommons/creativecommons.github.io
+
+[packages]
+lektor-markdown-header-anchors = 0.3.1
