@@ -1,0 +1,32 @@
+_model: page
+---
+title: GSoC 2019: Student Expectations
+---
+body:
+
+#### During the application process
+
+* Read the [official GSoC student guide](https://google.github.io/gsocguides/student/).
+* Review our [Project Ideas](/gsoc-2019/project-idea/all) and ask questions about projects you're potentially interested in on our `#cc-gsoc` Slack channel or developer mailing list.
+* Once you've decided on a project, follow our [Application Instructions](/gsoc-2019/application-instructions) to write a draft proposal.
+* Get feedback from the primary mentor associated with the project you're proposing before you submit a final application.
+* If you're proposing a project that's not on our official ideas list, please talk to our mentors to see if there is anyone interested in mentoring that project before you put any work into the proposal.
+
+#### During the community bonding period
+
+* Continue to plan your project with your mentor and the community.
+* Define communication channels and set up a weekly check-in with your mentor.
+* Set up your computer and development environment.
+* Familiarize yourself with the development process at Creative Commons (pull requests, code review).
+* Introduce yourself to the members of CC's engineering team.
+
+#### During the work period
+
+* Work 30-40 hours per week (or agree on a different plan with your mentor ahead of time).
+* Push code to GitHub frequently. Commit early and often.
+* Be available on Slack whenever you are working and post at least once a (work)day to talk about what you're working on that day.
+* Write a short update on your work every week and post it either to a personal blog or the CC developers mailing list.
+* Attend your weekly check-in with your mentor.
+* Be proactive about asking for help, especially when you're stuck.
+* Ensure that you're on track to delivering your project at the end of the work period. If you're not on track, talk with your mentor to come up with a new plan for the project well before the deadline.
+* Let your mentor and the organization admins know when you are going to be unavailable. If something sudden comes up, let us know.
