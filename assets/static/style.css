@@ -63,13 +63,25 @@ body {
 .dropdown:hover .dropdown-menu {
     display: block;
 }
+
 .dropdown-menu {
     margin-top: 0px;
 }
+
 .navbar-dark .navbar-nav .nav-item .nav-link {
   padding-bottom: .3rem;
   color: white;
 }
+
 .navbar-dark .navbar-nav .nav-item.active .nav-link {
   border-bottom: 2px solid white;
+}
+
+.toc-card {
+  width: 18rem;
+  margin-bottom: 1rem;
+}
+
+.toc {
+  margin-bottom: 0;
 }

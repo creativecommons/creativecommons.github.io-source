@@ -1,12 +1,14 @@
 {% extends "layout.html" %}
 {% block title %}{{ this.title }}{% endblock %}
 {% block body %}
-  <ul class="toc list-unstyled">
-    {% for item in this.body.toc %}
-      <li><a href="#{{ item.anchor }}">{{ item.title }}</a></li>
-    {% endfor %}
-  </ul>
-  <hr/>
+  <div class="card toc-card bg-light">
+    <div class="card-body">
+      <ul class="toc list-unstyled">
+        {% for item in this.body.toc %}
+          <li><a href="#{{ item.anchor }}">{{ item.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
   {{ this.body }}
-  
 {% endblock %}

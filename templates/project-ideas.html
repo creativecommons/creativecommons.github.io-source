@@ -4,7 +4,6 @@
 {% block header %}GSoC 2019: Project Ideas{% endblock %}
 {% block body %}
   <p class="text-muted">This is the project idea list for the <a href="/gsoc-2019">Google Summer of Code 2019</a> program. We have a mix of projects that are meant to be installed widely (such as plugins for other software) and projects that are more focused on improving user experience for users of Creative Commons licenses. Regardless of scope, these projects all have a broad and positive community impact.</p>
-  <a name="ideas-top"></a>
   <hr/>
   <!-- We display all ideas by default. -->
   {% set ideas = site.query('/gsoc-2019/project-ideas-collection').include_undiscoverable(true) %}
@@ -54,6 +53,5 @@
         <li class="list-group-item">We are open to original ideas for projects that will help increase the utility of CC-licensed content, ease the process for creators applying CC licenses to their content, or improve CC's internal tools or processes. Please talk to us on Slack or via the mailing list to find a mentor for the project before submitting your proposal.</li>
       </ul>
     </div>
-    <a id="back-to-top" href="#ideas-top" class="btn btn-dark btn-sm" role="button">Back to list</a>
   </div>
 {% endblock %}
