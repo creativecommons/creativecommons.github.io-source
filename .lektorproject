@@ -6,3 +6,4 @@ target = ghpages+https://creativecommons/creativecommons.github.io
 
 [packages]
 lektor-markdown-header-anchors = 0.3.1
+lektor-google-analytics = 0.1.3
