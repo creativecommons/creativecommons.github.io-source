@@ -2,7 +2,7 @@ _model: project-idea
 ---
 _hidden: yes
 ---
-title: Automated License Link Checking
+title: Automated license link checking
 ---
 description:
 Automate testing of the links in the licenses (legal code) and the deeds
@@ -28,4 +28,4 @@ backup_mentor: Timid Robot Zehta
 ---
 difficulty: Medium
 ---
-proposal_tag: Usability
+proposal_tag: Licenses
