@@ -4,7 +4,7 @@ body {
 
 .page-content {
   position: relative;
-  min-height: 100vh;
+  min-height: calc(100vh - 21vh);
   padding-bottom: 3rem;
 }
 
