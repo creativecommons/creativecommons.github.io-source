@@ -20,6 +20,7 @@ We'd like public domain resources to be reused and remixed and a good first step
 ---
 resources:
 - [The Creative Commons Catalog API](https://api.creativecommons.engineering/)
+- [General documentation on how copyright is modeled in Wikidata](https://www.wikidata.org/wiki/Help:Copyrights)
 - ["public domain date" property on Wikidata](https://www.wikidata.org/wiki/Property:P3893)
 - ["copyright status" property on Wikidata](https://www.wikidata.org/wiki/Property:P6216)
 - [The Metropolitan Museum of Art Collection API](https://metmuseum.github.io/)
