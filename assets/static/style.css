@@ -85,3 +85,10 @@ body {
 .toc {
   margin-bottom: 0;
 }
+.main-footer .footer small {
+  display: flex;
+  align-items: center;
+}
+.main-footer .footer small .text-muted {
+  margin-left: 2rem;
+}
