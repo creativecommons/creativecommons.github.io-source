@@ -55,5 +55,5 @@ No matter what kind of project you're working on, these are good guidelines to f
 
 * Use the format specified in pull request template for the repository if there is one.
 * Describe your change in detail. Too much detail is better than too little.
-* Describle how you tested your change.
+* Describe how you tested your change.
 * Request a review from either the repository maintainer (if you have that information) or `@creativecommons/engineering`.
