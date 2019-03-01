@@ -2,6 +2,7 @@
 
 - [ ] My pull request has a descriptive title (not a vague title like `Update index.md`)
 - [ ] My pull request targets the `master` branch of creativecommons.github.io-source.
+- [ ] I tried building the site using Lektor locally and verified that there are no build errors.
 
 <!-- If your pull request closes a GitHub issue, replace the XXXXX below with the issue number. -->
 
