@@ -424,7 +424,10 @@
             "description": "Source files for creativecommons.github.io",
             "id": 167761414,
             "language": "HTML",
-            "license": null,
+            "license": {
+                "name": "MIT License",
+                "url": "https://github.com/creativecommons/creativecommons.github.io-source/blob/master/LICENSE"
+            },
             "name": "creativecommons.github.io-source",
             "url": "https://github.com/creativecommons/creativecommons.github.io-source",
             "website": null
