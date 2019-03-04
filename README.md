@@ -84,3 +84,10 @@ Here's how the code is structured in the top level of the repository:
 [lektormodels]:(https://www.getlektor.com/docs/models/
 [jinja2]:http://jinja.pocoo.org/
 [lektortemplate]:https://www.getlektor.com/docs/templates/
+
+
+## License
+
+- [`LICENSE`](LICENSE) (Expat/[MIT][mit] License)
+
+[mit]: http://www.opensource.org/licenses/MIT "The MIT License | Open Source Initiative"
