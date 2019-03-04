@@ -13,8 +13,8 @@ Our licenses are used all over the world in many languages. When bugs or human
 error result broken links, the community suffers and development is slowed.
 ---
 resources:
-- [docroot/legalcode - creativecommons/creativecommons.org](https://github.com/creativecommons/creativecommons.org/tree/master/docroot/legalcode) (license
-  source files)
+- License source files: [docroot/legalcode - creativecommons/creativecommons.org](https://github.com/creativecommons/creativecommons.org/tree/master/docroot/legalcode)
+- Example Open Source link checking software: [wummel/linkchecker: check links in web documents or full websites](https://github.com/wummel/linkchecker) (just an example--not a requirement)
 ---
 expected_result:
 Public release of Python software that ingests the license source files and
