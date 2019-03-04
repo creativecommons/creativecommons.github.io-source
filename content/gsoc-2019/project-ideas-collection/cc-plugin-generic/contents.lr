@@ -4,7 +4,7 @@ _hidden: yes
 ---
 title: Creative Commons plugin for any creation platform or tool
 ---
-description: We'd like to create plugins for other platforms to help users find CC-licensed content (using the CC Catalog API), attribute them correctly, and license their own work under CC licenses. Any creation platform or software is fair game. Some ideas: Google Docs/Slides, Microsoft Office, browser extensions,
+description: We'd like to create plugins for other platforms to help users find CC-licensed content (using the CC Catalog API), attribute them correctly, and license their own work under CC licenses. Any creation platform or software is fair game. Some ideas: Google Docs/Slides, Microsoft Office, browser extensions, etc.
 ---
 rationale: 
 
