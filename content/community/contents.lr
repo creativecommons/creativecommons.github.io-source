@@ -5,16 +5,17 @@ title: Join the CC Developer Community
 body:
 
 #### Slack
-CC has an active Slack community open to the public. [Sign up here](http://slack-signup.creativecommons.org/). Channels relevant to CC's software are:  
+CC has an active Slack community open to the public. [Sign up here](http://slack-signup.creativecommons.org/). We have a lot of channels to explore, but the ones most relevant to CC's developer community are:  
+* `#intro` – introduce yourself here
 * `#cc-developers` – for general technical discussion
 * `#cc-gsoc` – for Google Summer of Code related discussion
-* `#cc-usability` – for soliciting feedback on new releases from the community
-
-If you're looking to talk to someone on CC's tech team, we are all in the Americas and someone is usually around on Slack between 11:00 and 23:00 UTC.
+* `#cc-usability` – for feedback on new releases from the community
 
 For information regarding joining a channel on Slack, [look here](https://get.slack.help/hc/en-us/articles/205239967-Join-a-channel).
 
 Note that channels like `#general` on Slack consist of a fair amount of users. While it is a channel for general-purpose discussions, please take into consideration that a post on such a channel will notify thousands of users. 😄
+
+If you're looking to talk to someone on CC's tech team, we are all in the Americas and someone is usually around on Slack between 11:00 and 23:00 UTC on weekdays.
 
 #### Mailing List
 
