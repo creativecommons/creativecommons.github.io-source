@@ -77,7 +77,7 @@ h2 {
 }
 .navbar-dark .navbar-nav .nav-item.active .nav-link {
   border-bottom: 2px solid white;
-  width:max-content;
+  width: max-content;
 }
 .toc-card {
   width: 18rem;
