@@ -4,7 +4,7 @@ title: Join the CC Developer Community
 ---
 body:
 
-#### Slack
+## Slack
 CC has an active Slack community open to the public. [Sign up here](http://slack-signup.creativecommons.org/). We have a lot of channels to explore, but the ones most relevant to CC's developer community are:  
 * `#intro` – introduce yourself here
 * `#cc-developers` – for general technical discussion
@@ -17,13 +17,13 @@ Note that channels like `#general` on Slack consist of a fair amount of users. W
 
 If you're looking to talk to someone on CC's tech team, we are all in the Americas and someone is usually around on Slack between 11:00 and 23:00 UTC on weekdays.
 
-#### Mailing List
+## Mailing List
 
 Join the [current CC Developers mailing list here](https://groups.google.com/a/creativecommons.org/forum/#!forum/cc-developers).
 
 The archives of our [previous mailing list are here](https://lists.ibiblio.org/pipermail/cc-devel/).
 
-#### IRC
+## IRC
 IRC isn't very active anymore, but we have two channels on [Freenode](https://freenode.net/).
 - `#creativecommons-dev` – for technical discussion
 - `#creativecommons` – for general discussion (this is mirrored to the `#general` channel on Slack, use only if you want to reach 4000+ people)
