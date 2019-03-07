@@ -77,10 +77,6 @@ h2 {
 }
 .navbar-dark .navbar-nav .nav-item.active .nav-link {
   border-bottom: 2px solid white;
-}
-@media only screen and (max-device-width: 1198px) {
-  .navbar-dark .navbar-nav .nav-item.active .nav-link {
-  border-bottom: 2px solid #fbfbfb;
   width:max-content;
 }
 .toc-card {
