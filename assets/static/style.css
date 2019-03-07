@@ -64,6 +64,7 @@ h2 {
 }
 .nav-item, .dropdown-item {
   font-size: 1.2em;
+  text-align: center;
 }
 .dropdown:hover .dropdown-menu {
   display: block;
@@ -71,12 +72,24 @@ h2 {
 .dropdown-menu {
   margin-top: 0px;
 }
+.nav-item:hover{
+  background: #e15803!important;
+}
 .navbar-dark .navbar-nav .nav-item .nav-link {
-  padding-bottom: .3rem;
   color: white;
+  line-height: 1rem;
+  border-left: 1px solid rgba(255, 255, 255, 0.6)
+}
+.navbar-dark .navbar-toggler {
+    border-color: rgba(255,255,255);
 }
 .navbar-dark .navbar-nav .nav-item.active .nav-link {
-  border-bottom: 2px solid white;
+  background: #e15803!important;
+}
+@media only screen and (max-width : 1200px) {
+.navbar-dark .navbar-nav .nav-item .nav-link {
+  border: None;
+  text-align: center;
 }
 .toc-card {
   width: 18rem;
