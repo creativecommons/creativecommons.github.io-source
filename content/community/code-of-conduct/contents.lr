@@ -1,5 +1,7 @@
 _model: page
 ---
+_template: page-with-toc.html
+---
 title: CC Open Source Code of Conduct
 ---
 body:

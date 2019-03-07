@@ -1,8 +1,10 @@
 body {
-    font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #333333;
 }
-strong {
-  font-weight: 900;
+h2 {
+  font-weight: 600;
+  padding-bottom: 0.5rem;
 }
 .page-content {
   position: relative;
@@ -41,6 +43,8 @@ strong {
   border-color: #EE5B32;
   border-width: 10px;
   padding-left: 0px;
+  font-weight: 600;
+  color: #333333;
 }
 .project-idea-header {
   background-color: #fff;
@@ -60,7 +64,6 @@ strong {
 }
 .nav-item, .dropdown-item {
     font-size: 1.2em;
-    font-weight: 900;
 }
 .dropdown:hover .dropdown-menu {
     display: block;
