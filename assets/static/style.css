@@ -63,13 +63,13 @@ h2 {
   border: none;
 }
 .nav-item, .dropdown-item {
-    font-size: 1.2em;
+  font-size: 1.2em;
 }
 .dropdown:hover .dropdown-menu {
-    display: block;
+  display: block;
 }
 .dropdown-menu {
-    margin-top: 0px;
+  margin-top: 0px;
 }
 .navbar-dark .navbar-nav .nav-item .nav-link {
   padding-bottom: .3rem;
