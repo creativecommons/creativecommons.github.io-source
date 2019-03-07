@@ -6,13 +6,13 @@ body:
 
 **[Creative Commons](https://creativecommons.org/)** has been building free software for over a decade to support our mission of maximizing digital creativity, sharing, and innovation. Our projects come in all sizes and shapes, from simple static websites to providing a fast and relevant search interface to the billion-plus Creative Commons works currently available on the internet. Our engineering team is fairly small and spread thin, so we're really appreciative of volunteers who help us build or test our software.
 
-### Getting Involved
+## Getting Involved
 
 You can contribute to CC's software in a few different ways.
 
 ----
 
-##### Finding bugs and suggesting features
+#### Finding bugs and suggesting features
 
 Using our software (such as [the new version of CC Search](http://ccsearch.creativecommons.org/)) and letting us know how it's working for you is very helpful. General suggestions, bug reports, a request to build a new feature –  any form of feedback is excellent, no matter how small.
 
@@ -20,24 +20,24 @@ You can send us feedback in a few different ways. If you have a GitHub account, 
 
 ----
 
-##### Contributing code
+#### Contributing code
 
 Please see [Contributing Code](/contributing-code).
 
 ----
 
-##### Integrating CC license metadata into your app
+#### Integrating CC license metadata into your app
 
 Please see [the "Integrate" page on the CC wiki](https://wiki.creativecommons.org/wiki/Integrate).
 
 ----
 
-##### Helping translate our content
+#### Helping translate our content
 
 Please see [the "Translate" page on the CC wiki](https://wiki.creativecommons.org/wiki/Translate).
 
 ----
 
-##### Contributing design
+#### Contributing design
 
 If you'd like to improve the design of one of our tools or products, please propose your change in [one of our community forums](/community) and collaborate with a CC staff member if requested to before making any changes.

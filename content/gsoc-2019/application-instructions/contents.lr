@@ -4,7 +4,7 @@ title: GSoC 2019: Application Instructions
 ---
 body:
 
-### Before You Apply
+## Before You Apply
 
 [Join the `#cc-gsoc` channel on the CC Slack or the CC Developers mailing list](https://creativecommons.github.io/community/) as early as possible to introduce yourself and get feedback on your ideas. All our mentors will be on Slack and respond to emails on the mailing list and it is better to post there rather than contact them individually. Feel free to ask questions!
 
@@ -12,7 +12,7 @@ Take a look at the Creative Commons website to learn more about what we do. Also
 
 Read our [Student Expectations](/gsoc-2019/student-expectations) guide and follow our guidelines when [contributing code](/contributing-code).
 
-### Applying
+## Applying
 
 Your proposal must be submitted through the [Google Summer of Code website](https://summerofcode.withgoogle.com/dashboard/). It is a good idea to submit drafts and get feedback from CC mentors before you submit your final proposal.
 

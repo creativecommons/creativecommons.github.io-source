@@ -6,7 +6,7 @@ title: Contributing Code
 ---
 body:
 
-### Existing projects
+## Existing projects
 
 Here's a list of [all our current projects](/projects). We do all of our development on GitHub and are generally open to pull requests. We would especially like help with reviving projects that CC's engineering team does not have the time to actively work on (such as [our WordPress plugin](https://github.com/creativecommons/creativecommons-wordpress-plugin) and [license chooser widget](https://github.com/creativecommons/LicenseChooser.js)). We're also looking to improve our documentation and increase our automated test coverage across pretty much all our projects.
 
@@ -31,7 +31,7 @@ When in doubt, ask a question on [one of our community forums](/community).
 
 ----
 
-### New projects
+## New projects
 
 We are also open to working on or hosting projects that are related to the Creative Commons licenses or general mission. Our [Google Summer of Code project ideas](/gsoc-2019/project-ideas) list is a good place to find ideas we'd like implemented. If you're interested in working on one of them, please propose it in one of our [community forums](/community) (you don't need to be a student, anyone is welcome to work on those ideas) and work out implementation details with CC staff members before you write any code. If you want to suggest a new project idea, follow the same process.
 
@@ -39,7 +39,7 @@ In general, we'd like any new projects to use Python, WordPress/PHP, and/or Java
 
 ----
 
-### General best practices
+## General best practices
 
 No matter what kind of project you're working on, these are good guidelines to follow
 

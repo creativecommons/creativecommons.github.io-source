@@ -1,13 +1,14 @@
 body {
     font-family: 'Source Sans Pro', sans-serif;
 }
-
+strong {
+  font-weight: 900;
+}
 .page-content {
   position: relative;
   min-height: calc(100vh - 21vh);
   padding-bottom: 3rem;
 }
-
 .main-header .navbar-brand {
   margin-right: 2rem;
 }
@@ -19,14 +20,12 @@ body {
   font-size: .9rem;
   letter-spacing: .15rem;
 }
-
 .footer {
   bottom: 0;
   height: 7rem;            /* Footer height */
 }
-
 .card-columns {
-    column-count: 2;
+  column-count: 2;
 }
 .main-header {
   background-color: #EE5B32;
@@ -36,52 +35,52 @@ body {
   background-size: 100% 130px;
   background-position-y: bottom
 }
-
+.page-title {
+  background-color: #fff;
+  border-bottom-style: solid;
+  border-color: #EE5B32;
+  border-width: 10px;
+  padding-left: 0px;
+}
 .project-idea-header {
-    background-color: #fff;
-    border-color: #00b5da;
-    border-width: 10px;
-    padding-left: 0px;
-    font-size: 1.5em;
+  background-color: #fff;
+  border-color: #00b5da;
+  border-width: 10px;
+  padding-left: 0px;
+  font-size: 1.5em;
 }
-
 #back-to-top {
-    cursor: pointer;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    display: none;
-    background-color: #00b5da;
-    border: none;
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  background-color: #00b5da;
+  border: none;
 }
-
 .nav-item, .dropdown-item {
     font-size: 1.2em;
     font-weight: 900;
 }
-
 .dropdown:hover .dropdown-menu {
     display: block;
 }
-
 .dropdown-menu {
     margin-top: 0px;
 }
-
 .navbar-dark .navbar-nav .nav-item .nav-link {
   padding-bottom: .3rem;
   color: white;
 }
-
 .navbar-dark .navbar-nav .nav-item.active .nav-link {
   border-bottom: 2px solid white;
 }
-
 .toc-card {
   width: 18rem;
   margin-bottom: 1rem;
+  float: right;
+  margin: 1rem;
 }
-
 .toc {
   margin-bottom: 0;
 }
