@@ -751,7 +751,7 @@
             "license": null,
             "name": "open4us.org",
             "url": "https://github.com/creativecommons/open4us.org",
-            "website": null
+            "website": "https://open4us.org/"
         },
         {
             "created": "2014-02-24T19:46:28",
@@ -761,7 +761,7 @@
             "license": null,
             "name": "openpolicynetwork.org",
             "url": "https://github.com/creativecommons/openpolicynetwork.org",
-            "website": null
+            "website": "https://openpolicynetwork.org/"
         },
         {
             "created": "2013-09-24T21:54:08",
@@ -1032,6 +1032,19 @@
             "name": "wordpress-seed",
             "url": "https://github.com/creativecommons/wordpress-seed",
             "website": null
+        },
+        {
+            "created": "2019-02-11T15:51:29",
+            "description": "Creative Commons Chapter site theme (including chapter sites setup, taxonomies, and widget code)",
+            "id": 170156150,
+            "language": "CSS",
+            "license": {
+                "name": "GNU General Public License v2.0",
+                "url": "https://github.com/creativecommons/wp-theme-cc-chapter/blob/master/LICENSE"
+            },
+            "name": "wp-theme-cc-chapter",
+            "url": "https://github.com/creativecommons/wp-theme-cc-chapter",
+            "website": ""
         },
         {
             "created": "2013-10-28T02:42:48",
