@@ -87,9 +87,10 @@ h2 {
   background: #e15803!important;
 }
 @media only screen and (max-width : 1200px) {
-.navbar-dark .navbar-nav .nav-item .nav-link {
-  border: None;
-  text-align: center;
+  .navbar-dark .navbar-nav .nav-item .nav-link {
+    border: None;
+    text-align: center;
+  }
 }
 .toc-card {
   width: 18rem;
