@@ -282,7 +282,7 @@
         },
         {
             "created": "2018-07-06T00:51:38",
-            "description": "Search frontend for CC-licensed works across the internet.",
+            "description": "CC Search Beta is a new search frontend for CC-licensed works across the internet.",
             "engineering_project": true,
             "english_name": "CC Search",
             "featured": true,
@@ -568,19 +568,6 @@
             "name": "girl",
             "url": "https://github.com/creativecommons/girl",
             "website": "http://derecho.elijah.cs.cmu.edu:8585/@top"
-        },
-        {
-            "created": "2016-11-16T14:23:50",
-            "description": "Action plan to design a model of collaboration for the future of the CC Network",
-            "id": 73927685,
-            "language": null,
-            "license": {
-                "name": "Creative Commons Zero v1.0 Universal",
-                "url": "https://github.com/creativecommons/global-network-strategy/blob/master/LICENSE"
-            },
-            "name": "global-network-strategy",
-            "url": "https://github.com/creativecommons/global-network-strategy",
-            "website": ""
         },
         {
             "created": "2013-12-02T21:00:10",
