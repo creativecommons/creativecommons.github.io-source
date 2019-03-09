@@ -931,16 +931,6 @@
             "website": "http://profiles.open4us.org/taaccct/"
         },
         {
-            "created": "2013-10-24T00:20:26",
-            "description": null,
-            "id": 13818574,
-            "language": null,
-            "license": null,
-            "name": "Teamspace",
-            "url": "https://github.com/creativecommons/Teamspace",
-            "website": null
-        },
-        {
             "created": "2015-04-13T23:32:43",
             "description": "Notes and tasks for Creative Commons' technical infrastructure.",
             "id": 33899712,
