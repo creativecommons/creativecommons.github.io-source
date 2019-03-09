@@ -100,6 +100,25 @@
             "website": null
         },
         {
+            "created": "2018-07-06T00:51:38",
+            "description": "Search frontend for CC-licensed works across the internet.",
+            "engineering_project": true,
+            "featured": true,
+            "id": 139915408,
+            "language": "Vue",
+            "license": {
+                "name": "MIT License",
+                "url": "https://github.com/creativecommons/cccatalog-frontend/blob/master/LICENSE"
+            },
+            "name": "CC Search",
+            "technologies": [
+                "JavaScript",
+                "Vue.js"
+            ],
+            "url": "https://github.com/creativecommons/cccatalog-frontend",
+            "website": "https://ccsearch.creativecommons.org/"
+        },
+        {
             "created": "2016-04-20T21:29:08",
             "description": "Content outline for new Creative Commons Certification programs",
             "id": 56722268,
@@ -279,19 +298,6 @@
             ],
             "url": "https://github.com/creativecommons/cccatalog-api",
             "website": ""
-        },
-        {
-            "created": "2018-07-06T00:51:38",
-            "description": "Search frontend for CC-licensed works across the internet.",
-            "id": 139915408,
-            "language": "Vue",
-            "license": {
-                "name": "MIT License",
-                "url": "https://github.com/creativecommons/cccatalog-frontend/blob/master/LICENSE"
-            },
-            "name": "cccatalog-frontend",
-            "url": "https://github.com/creativecommons/cccatalog-frontend",
-            "website": "https://ccsearch.creativecommons.org/"
         },
         {
             "created": "2014-10-06T22:07:52",
