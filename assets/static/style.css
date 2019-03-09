@@ -46,6 +46,19 @@ h2 {
   font-weight: 600;
   color: #333333;
 }
+.featured-project-card {
+  background-color: #fff;
+  border-left-color: #00b5da !important;
+  border-left-width: 10px;
+  padding-left: 0px;
+  min-width: 20rem;
+  max-width: 20rem;
+}
+.badge-featured-project {
+  background-color: #00b5da;
+  color: white;
+  font-size: 0.8rem;
+}
 .project-idea-header {
   background-color: #fff;
   border-color: #00b5da;
