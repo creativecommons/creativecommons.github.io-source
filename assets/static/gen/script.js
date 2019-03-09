@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("$(document).ready(function() {\n    $(window).scroll(function() {\n        if ($(this).scrollTop() > 500) {\n            $('#back-to-top').fadeIn();\n        } else {\n            $('#back-to-top').fadeOut();\n        }\n    });\n});\n\n\n//# sourceURL=webpack:///./js/main.js?");
+eval("$(document).ready(function() {\n    $(window).scroll(function() {\n        if ($(this).scrollTop() > 500) {\n            $('#back-to-top').fadeIn();\n        } else {\n            $('#back-to-top').fadeOut();\n        }\n    });\n});\n//\n\n//# sourceURL=webpack:///./js/main.js?");
 
 /***/ }),
 
