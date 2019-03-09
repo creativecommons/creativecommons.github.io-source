@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
   mode: process.env.NODE_ENV === 'production' ? 'production' : 'development',
-  entry: ['./js/main.js', './scss/main.scss'],
+  entry: ['../assets/static/js/main.js', '../assets/static/sass/main.scss'],
   output: {
     path: path.resolve(__dirname, '../assets/static/gen'),
     filename: 'script.js',
