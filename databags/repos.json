@@ -260,7 +260,10 @@
         },
         {
             "created": "2018-04-27T20:50:37",
-            "description": "API for searching CC-licensed works; powers CC Search.",
+            "description": "The Creative Commons Catalog API allows programmatic access to search for CC-licensed and public domain digital media.",
+            "engineering_project": true,
+            "english_name": "CC Catalog API",
+            "featured": true,
             "id": 131343685,
             "language": "Python",
             "license": {
@@ -268,6 +271,12 @@
                 "url": "https://github.com/creativecommons/cccatalog-api/blob/master/LICENSE"
             },
             "name": "cccatalog-api",
+            "technologies": [
+                "Python",
+                "Django",
+                "Django REST Framework",
+                "Elasticsearch"
+            ],
             "url": "https://github.com/creativecommons/cccatalog-api",
             "website": ""
         },
