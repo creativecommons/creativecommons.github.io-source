@@ -78,8 +78,8 @@ Here's how the code is structured in the top level of the repository:
 - **`templates`**: This is where the [Jinja2][jinja2] templates that render
   content are stored. See the [Lektor template documentation][lektortemplate]
   for more information.
-- **`webpack`**: This is where all the webpack config files as well as the SCSS and 
-  JavaScript files for the project resides. The JavaScript files and SCSS files are compiled and saved in assets folder during lektor build process.
+- **`webpack`**: This is where all the webpack config files as well as Sass and 
+  JavaScript files for the project resides. The JavaScript and Sass files are compiled and saved in assets folder       during lektor build process.
 
 [lektorcontent]:https://www.getlektor.com/docs/content/
 [lektormodels]:(https://www.getlektor.com/docs/models/
