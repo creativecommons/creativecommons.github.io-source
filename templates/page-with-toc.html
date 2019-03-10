@@ -9,7 +9,7 @@
           {% if item.children %}
             <ul class="toc list-unstyled pl-4">
               {% for subitem in item.children %}
-                <li><a href="#{{ item.anchor }}">{{ subitem.title }}</a></li>
+                <li><a href="#{{ subitem.anchor }}">{{ subitem.title }}</a></li>
               {% endfor %}
             </ul>
           {% endif %}
