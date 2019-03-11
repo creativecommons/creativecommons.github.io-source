@@ -1,6 +1,18 @@
+
+
+$orange1 : #EE5B32;
+$orange2 : #e25803;
+$orange3: #FB7928;
+$blue: #00b5da;
+$light_grey: rgba(255, 255, 255, 0.6);
+$white: #fff;
+$grey: #333333;
+
+
+
 body {
   font-family: 'Source Sans Pro', sans-serif;
-  color: #333333;
+  color: $grey;
 }
 
 h2 {
@@ -28,8 +40,7 @@ h2 {
 
 .footer {
   bottom: 0;
-  height: 7rem;
-  /* Footer height */
+  height: 7rem;  /* Footer height */
 }
 
 .card-columns {
@@ -37,46 +48,53 @@ h2 {
 }
 
 .main-header {
-  background-color: #EE5B32;
+  background-color: $orange1;
 }
 
 .navbar {
-  background-image: linear-gradient(90deg, #EE5B32, #FB7928, #EE5B32);
-  background-size: 100% 130px;
-  background-position-y: bottom;
+  background: {
+    image: linear-gradient(90deg, $orange1, $orange3 , $orange1);
+    size: 100% 130px;
+    position-y: bottom;
+  }
 }
 
 .page-title {
-  background-color: #fff;
-  border-bottom-style: solid;
-  border-color: #EE5B32;
-  border-width: 10px;
+  background-color: $white;
+  border: {
+    bottom-style: solid;
+    color: $orange1;
+    width: 10px;
+  }
   padding-left: 0px;
   font-weight: 600;
-  color: #333333;
+  color: $grey;
 }
 
-.featured-project-card {
-  background-color: #fff;
-  border-left-color: #00b5da !important;
-  border-left-width: 10px;
+@mixin style {
+  background-orange3: $white;
+  border: {
+    left-orange3: $blue !important;
+    left-width: 10px;
+  }
   padding-left: 0px;
+}
+
+.featuorange1-project-card {
+  @include style();
   min-width: 20rem;
   max-width: 20rem;
 }
 
-.badge-featured-project {
-  background-color: #00b5da;
-  color: white;
-  font-size: 0.8rem;
+.project-idea-header {
+  @include style();
+  font-size: 1.5em;
 }
 
-.project-idea-header {
-  background-color: #fff;
-  border-color: #00b5da;
-  border-width: 10px;
-  padding-left: 0px;
-  font-size: 1.5em;
+.badge-featured-project {
+  background-color: $blue;
+  color: $white;
+  font-size: 0.8rem;
 }
 
 #back-to-top {
@@ -85,7 +103,7 @@ h2 {
   bottom: 20px;
   right: 20px;
   display: none;
-  background-color: #00b5da;
+  background-color: $blue;
   border: none;
 }
 
@@ -103,20 +121,20 @@ h2 {
 }
 
 .nav-item:hover {
-  background: #e15803 !important;
+  background: $orange2 !important;
 }
 
 .navbar-dark {
   .navbar-nav .nav-item .nav-link {
     color: white;
     line-height: 1rem;
-    border-left: 1px solid rgba(255, 255, 255, 0.6);
+    border-left: 1px solid $light_grey;
   }
   .navbar-toggler {
-    border-color: rgba(255, 255, 255, 0.6);
+    border-color: $white;
   }
   .navbar-nav .nav-item.active .nav-link {
-    background: #e15803 !important;
+    background: $orange2 !important;
   }
 }
 
