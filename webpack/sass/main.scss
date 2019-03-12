@@ -1,18 +1,23 @@
-
-
-$orange1 : #EE5B32;
-$orange2 : #e25803;
-$orange3: #FB7928;
+//Color Variables
+$pumpkin: #e15803;
+$orange: #FB7928;
+$candy: #EE5B32;
+$jet-black: #333333;
+$grey: rgba(255, 255, 255, 0.6);
 $blue: #00b5da;
-$light_grey: rgba(255, 255, 255, 0.6);
 $white: #fff;
-$grey: #333333;
 
+//Color Configs
+$brand-theme: $candy;
+$brand-theme-dark: $pumpkin;
+$brand-theme-light: $orange;
 
+$text-color: $jet-black;
+$project-card-theme: $blue;
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
-  color: $grey;
+  color: $text-color;
 }
 
 h2 {
@@ -48,12 +53,12 @@ h2 {
 }
 
 .main-header {
-  background-color: $orange1;
+  background-color: $brand-theme;
 }
 
 .navbar {
   background: {
-    image: linear-gradient(90deg, $orange1, $orange3 , $orange1);
+    image: linear-gradient(90deg, $brand-theme, $brand-theme-light , $brand-theme);
     size: 100% 130px;
     position-y: bottom;
   }
@@ -63,24 +68,24 @@ h2 {
   background-color: $white;
   border: {
     bottom-style: solid;
-    color: $orange1;
+    color: $brand-theme;
     width: 10px;
   }
   padding-left: 0px;
   font-weight: 600;
-  color: $grey;
+  color: $text-color;
 }
 
 @mixin style {
-  background-orange3: $white;
+  background-color: $white;
   border: {
-    left-orange3: $blue !important;
+    left-color: $project-card-theme !important;
     left-width: 10px;
   }
   padding-left: 0px;
 }
 
-.featuorange1-project-card {
+.featured-project-card {
   @include style();
   min-width: 20rem;
   max-width: 20rem;
@@ -92,7 +97,7 @@ h2 {
 }
 
 .badge-featured-project {
-  background-color: $blue;
+  background-color: $project-card-theme;
   color: $white;
   font-size: 0.8rem;
 }
@@ -121,20 +126,20 @@ h2 {
 }
 
 .nav-item:hover {
-  background: $orange2 !important;
+  background: $brand-theme-dark !important;
 }
 
 .navbar-dark {
   .navbar-nav .nav-item .nav-link {
-    color: white;
+    color: $white;
     line-height: 1rem;
-    border-left: 1px solid $light_grey;
+    border-left: 1px solid $grey;
   }
   .navbar-toggler {
     border-color: $white;
   }
   .navbar-nav .nav-item.active .nav-link {
-    background: $orange2 !important;
+    background: $brand-theme-dark !important;
   }
 }
 

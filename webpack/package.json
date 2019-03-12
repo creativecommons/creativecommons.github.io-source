@@ -1,12 +1,12 @@
 {
-  "name": "lektor-example",
+  "name": "creative-commons",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^9.4.10",
     "babel-core": "^6.26.3",
@@ -24,5 +24,9 @@
     "webpack-cli": "^3.2.3"
   },
   "dependencies": {},
-  "description": ""
+  "description": "www.creativecommons.github.io",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/creativecommons/creativecommons.github.io-source"
+  }
 }
