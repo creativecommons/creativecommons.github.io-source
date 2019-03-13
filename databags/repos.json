@@ -1,6 +1,19 @@
 {
     "repos": [
         {
+            "created": "2019-03-13T02:54:23",
+            "description": "Default templates and guidelines for GitHub repositories.",
+            "id": 175334998,
+            "language": null,
+            "license": {
+                "name": "MIT License",
+                "url": "https://github.com/creativecommons/.github/blob/master/LICENSE"
+            },
+            "name": ".github",
+            "url": "https://github.com/creativecommons/.github",
+            "website": null
+        },
+        {
             "created": "2018-06-06T23:53:47",
             "description": "Creative Commons Australian Chapter documentation",
             "id": 136398139,
@@ -532,7 +545,7 @@
         },
         {
             "created": "2015-12-14T23:19:08",
-            "description": null,
+            "description": "Creative Commons FAQ page",
             "id": 48007106,
             "language": "HTML",
             "license": {
@@ -541,7 +554,7 @@
             },
             "name": "faq",
             "url": "https://github.com/creativecommons/faq",
-            "website": null
+            "website": "https://creativecommons.org/faq/"
         },
         {
             "created": "2015-03-18T17:37:20",
@@ -850,13 +863,13 @@
         },
         {
             "created": "2013-10-24T00:19:27",
-            "description": null,
+            "description": "Creative Commons Search",
             "id": 13818557,
             "language": "CSS",
             "license": null,
             "name": "search",
             "url": "https://github.com/creativecommons/search",
-            "website": null
+            "website": "https://search.creativecommons.org/"
         },
         {
             "created": "2014-02-06T21:06:19",
