@@ -12,7 +12,9 @@ The `README` contains details about how to install and build this project and a 
 
 ## How to Contribute
 
-Please follow the processes in our general [Contributing Code](https://creativecommons.github.io/contributing-code/) guidelines on the Creative Common Open Source website. Yu do not have to follow the steps under "Check for contribution readiness", this project is accepting contributions.
+Please follow the processes in our general [Contributing Code](https://creativecommons.github.io/contributing-code/) guidelines on the Creative Common Open Source website.
+
+You do not have to follow the steps under "Check for contribution readiness", this project is accepting contributions.
 
 ## Style Guide
 
