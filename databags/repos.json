@@ -2,7 +2,7 @@
     "repos": [
         {
             "created": "2019-03-13T02:54:23",
-            "description": "Default templates and guidelines for GitHub repositories.",
+            "description": "Default templates and guidelines for Creative Commons GitHub repositories.",
             "id": 175334998,
             "language": null,
             "license": {
@@ -11,7 +11,7 @@
             },
             "name": ".github",
             "url": "https://github.com/creativecommons/.github",
-            "website": null
+            "website": ""
         },
         {
             "created": "2018-06-06T23:53:47",
