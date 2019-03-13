@@ -20,3 +20,7 @@ You do not have to follow the steps under "Check for contribution readiness", th
 
 - Make sure that there are newlines at the end of every file.
 - We use 2 spaces as the standard indentation in our HTML files.
+
+## Questions or Thoughts?
+
+Talk to us on [our developer mailing list or Slack community](https://creativecommons.github.io/community/).
