@@ -964,16 +964,6 @@
             "website": null
         },
         {
-            "created": "2015-06-22T19:11:04",
-            "description": "Wordpress installation.",
-            "id": 37875296,
-            "language": null,
-            "license": null,
-            "name": "wordpress-config",
-            "url": "https://github.com/creativecommons/wordpress-config",
-            "website": null
-        },
-        {
             "created": "2013-12-05T06:55:55",
             "description": "Seed repository to quickly get started with a WordPress install",
             "id": 14946344,
