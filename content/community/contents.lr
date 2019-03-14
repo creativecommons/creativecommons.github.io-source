@@ -1,5 +1,7 @@
 _model: page
 ---
+_template: page-with-toc.html
+---
 title: Join the CC Developer Community
 ---
 body:
@@ -15,7 +17,7 @@ For information regarding joining a channel on Slack, [look here](https://get.sl
 
 Note that channels like `#general` on Slack consist of a fair amount of users. While it is a channel for general-purpose discussions, please take into consideration that a post on such a channel will notify thousands of users. 😄
 
-If you're looking to talk to someone on CC's tech team, we are all in the Americas and someone is usually around on Slack between 11:00 and 23:00 UTC on weekdays.
+If you're looking to talk to someone on CC's tech team, we are all in the Americas and someone is usually around on Slack between 11:00 and 23:00 UTC on weekdays. See the [Resources](#resources) section below for best practices for asking technical questions.
 
 ## Mailing List
 
@@ -27,3 +29,7 @@ The archives of our [previous mailing list are here](https://lists.ibiblio.org/p
 We have two channels on [Freenode](https://freenode.net/).
 - `#creativecommons-dev` – for technical discussion
 - `#creativecommons` – for general discussion (this is mirrored to the `#general` channel on Slack, use only if you want to reach 4000+ people)
+
+## Resources
+
+* [Getting Answers](https://www.mikeash.com/getting_answers.html): A guide to asking good technical questions.
