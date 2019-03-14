@@ -203,7 +203,7 @@
             },
             "name": "cc.api",
             "url": "https://github.com/creativecommons/cc.api",
-            "website": null
+            "website": "https://api.creativecommons.org/docs/"
         },
         {
             "created": "2013-09-13T22:18:08",
@@ -1043,7 +1043,7 @@
             "created": "2014-11-11T17:34:30",
             "description": null,
             "id": 26496204,
-            "language": "JavaScript",
+            "language": "HTML",
             "license": {
                 "name": "GNU Affero General Public License v3.0",
                 "url": "https://github.com/creativecommons/www2015/blob/master/LICENSE"
