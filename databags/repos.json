@@ -511,16 +511,6 @@
             "website": null
         },
         {
-            "created": "2014-11-20T22:56:56",
-            "description": null,
-            "id": 26935899,
-            "language": null,
-            "license": null,
-            "name": "example-project",
-            "url": "https://github.com/creativecommons/example-project",
-            "website": null
-        },
-        {
             "created": "2016-01-26T22:56:41",
             "description": "Proposal for a formal way of expressing public license information in Exif",
             "id": 50465380,
