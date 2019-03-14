@@ -557,19 +557,6 @@
             "website": "https://creativecommons.org/faq/"
         },
         {
-            "created": "2015-03-18T17:37:20",
-            "description": null,
-            "id": 32474283,
-            "language": null,
-            "license": {
-                "name": "Creative Commons Zero v1.0 Universal",
-                "url": "https://github.com/creativecommons/flaming-octo-robot/blob/master/LICENSE"
-            },
-            "name": "flaming-octo-robot",
-            "url": "https://github.com/creativecommons/flaming-octo-robot",
-            "website": null
-        },
-        {
             "created": "2015-03-13T18:42:13",
             "description": "Check your GitHub READMEs for broken links.",
             "id": 32174264,
