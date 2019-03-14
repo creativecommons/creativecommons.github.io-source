@@ -31,7 +31,7 @@
             "license": null,
             "name": "beta.creativecommons.org",
             "url": "https://github.com/creativecommons/beta.creativecommons.org",
-            "website": ""
+            "website": "https://beta.creativecommons.org/"
         },
         {
             "created": "2015-08-05T16:54:33",
@@ -357,7 +357,7 @@
             "license": null,
             "name": "ccrel-guide",
             "url": "https://github.com/creativecommons/ccrel-guide",
-            "website": null
+            "website": "http://labs.creativecommons.org/2011/ccrel-guide/"
         },
         {
             "created": "2018-04-10T22:44:46",
