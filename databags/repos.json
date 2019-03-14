@@ -498,19 +498,6 @@
             "website": null
         },
         {
-            "created": "2017-08-14T15:55:55",
-            "description": "Wordpress Theme to create a site like the DS106 Assignment Bank",
-            "id": 100284959,
-            "language": "PHP",
-            "license": {
-                "name": "GNU General Public License v2.0",
-                "url": "https://github.com/creativecommons/ds106bank/blob/master/LICENSE"
-            },
-            "name": "ds106bank",
-            "url": "https://github.com/creativecommons/ds106bank",
-            "website": null
-        },
-        {
             "created": "2016-01-26T22:56:41",
             "description": "Proposal for a formal way of expressing public license information in Exif",
             "id": 50465380,
@@ -908,7 +895,7 @@
             "license": null,
             "name": "team-open",
             "url": "https://github.com/creativecommons/team-open",
-            "website": null
+            "website": "http://teamopen.cc/"
         },
         {
             "created": "2015-04-13T23:32:43",
