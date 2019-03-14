@@ -694,16 +694,6 @@
             "website": "https://github.com/creativecommons/new-creativecommons.org"
         },
         {
-            "created": "2014-11-25T19:04:47",
-            "description": null,
-            "id": 27141324,
-            "language": "JavaScript",
-            "license": null,
-            "name": "open-profiles",
-            "url": "https://github.com/creativecommons/open-profiles",
-            "website": null
-        },
-        {
             "created": "2013-12-05T07:09:43",
             "description": "open4us.org website",
             "id": 14946646,
@@ -948,19 +938,6 @@
             "license": null,
             "name": "theta",
             "url": "https://github.com/creativecommons/theta",
-            "website": null
-        },
-        {
-            "created": "2015-01-09T21:06:31",
-            "description": "A generic CC website that can be used by affliates and is the basis for CC's own website",
-            "id": 29035361,
-            "language": "CSS",
-            "license": {
-                "name": "MIT License",
-                "url": "https://github.com/creativecommons/website/blob/master/LICENSE"
-            },
-            "name": "website",
-            "url": "https://github.com/creativecommons/website",
             "website": null
         },
         {
