@@ -34,16 +34,6 @@
             "website": "https://beta.creativecommons.org/"
         },
         {
-            "created": "2015-08-05T16:54:33",
-            "description": null,
-            "id": 40257488,
-            "language": "PHP",
-            "license": null,
-            "name": "blog",
-            "url": "https://github.com/creativecommons/blog",
-            "website": null
-        },
-        {
             "created": "2015-06-24T18:37:20",
             "description": "A MediaWiki skin using Bootstrap 3 & FontAwesome 4",
             "id": 38003830,
