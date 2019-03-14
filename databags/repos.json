@@ -154,13 +154,13 @@
         },
         {
             "created": "2019-01-29T21:17:39",
-            "description": null,
+            "description": "Temporary microsite for mx.creativecommons.org",
             "id": 168230429,
             "language": null,
             "license": null,
             "name": "cc-mexico-micro",
             "url": "https://github.com/creativecommons/cc-mexico-micro",
-            "website": null
+            "website": "https://mx.creativecommons.org/"
         },
         {
             "created": "2014-01-08T18:49:45",
@@ -463,7 +463,7 @@
         },
         {
             "created": "2013-10-31T00:19:22",
-            "description": "Creative Commons website",
+            "description": "creativecommons.org license chooser and license display code",
             "id": 14003491,
             "language": "HTML",
             "license": {
@@ -472,7 +472,7 @@
             },
             "name": "creativecommons.org",
             "url": "https://github.com/creativecommons/creativecommons.org",
-            "website": "http://creativecommons.org/"
+            "website": "https://github.com/creativecommons/new-creativecommons.org"
         },
         {
             "created": "2013-12-02T21:01:29",
@@ -721,33 +721,33 @@
         },
         {
             "created": "2016-05-19T18:07:31",
-            "description": null,
+            "description": "Primary Creative Commons website",
             "id": 59230362,
             "language": "JavaScript",
             "license": null,
             "name": "new-creativecommons.org",
             "url": "https://github.com/creativecommons/new-creativecommons.org",
-            "website": null
+            "website": "https://creativecommons.org/"
         },
         {
             "created": "2016-05-19T18:06:55",
-            "description": null,
+            "description": "creativecommons.org various custom plugins for content types, mostly",
             "id": 59230319,
             "language": "PHP",
             "license": null,
             "name": "new-www-plugin",
             "url": "https://github.com/creativecommons/new-www-plugin",
-            "website": null
+            "website": "https://github.com/creativecommons/new-creativecommons.org"
         },
         {
             "created": "2016-05-19T18:06:05",
-            "description": null,
+            "description": "creativecommons.org theme, to make it look lovely",
             "id": 59230280,
             "language": "CSS",
             "license": null,
             "name": "new-www-theme",
             "url": "https://github.com/creativecommons/new-www-theme",
-            "website": null
+            "website": "https://github.com/creativecommons/new-creativecommons.org"
         },
         {
             "created": "2014-11-25T19:04:47",
@@ -807,7 +807,7 @@
         },
         {
             "created": "2014-12-04T16:48:58",
-            "description": null,
+            "description": "website terms of service, trademark policy and privacy policy",
             "id": 27550069,
             "language": "HTML",
             "license": {
@@ -816,7 +816,7 @@
             },
             "name": "policies",
             "url": "https://github.com/creativecommons/policies",
-            "website": null
+            "website": ""
         },
         {
             "created": "2013-12-02T20:59:52",
@@ -942,6 +942,16 @@
             "name": "taaccct",
             "url": "https://github.com/creativecommons/taaccct",
             "website": "http://profiles.open4us.org/taaccct/"
+        },
+        {
+            "created": "2013-09-06T23:57:48",
+            "description": "Collection of stories documenting the power of open licensing",
+            "id": 12657067,
+            "language": null,
+            "license": null,
+            "name": "team-open",
+            "url": "https://github.com/creativecommons/team-open",
+            "website": null
         },
         {
             "created": "2015-04-13T23:32:43",
