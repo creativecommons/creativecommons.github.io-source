@@ -491,19 +491,6 @@
             "website": "https://creativecommons.org/faq/"
         },
         {
-            "created": "2015-03-13T18:42:13",
-            "description": "Check your GitHub READMEs for broken links.",
-            "id": 32174264,
-            "language": "Scala",
-            "license": {
-                "name": "MIT License",
-                "url": "https://github.com/creativecommons/girl/blob/master/LICENSE.mit"
-            },
-            "name": "girl",
-            "url": "https://github.com/creativecommons/girl",
-            "website": "http://derecho.elijah.cs.cmu.edu:8585/@top"
-        },
-        {
             "created": "2013-12-02T21:00:10",
             "description": null,
             "id": 14874596,
