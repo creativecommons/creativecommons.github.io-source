@@ -931,16 +931,6 @@
             "website": null
         },
         {
-            "created": "2014-10-01T17:25:11",
-            "description": null,
-            "id": 24687826,
-            "language": "CSS",
-            "license": null,
-            "name": "theta",
-            "url": "https://github.com/creativecommons/theta",
-            "website": null
-        },
-        {
             "created": "2013-12-05T06:55:55",
             "description": "Seed repository to quickly get started with a WordPress install",
             "id": 14946344,
