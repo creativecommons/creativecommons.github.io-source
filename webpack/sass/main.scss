@@ -111,7 +111,7 @@ h2 {
   border: none;
 }
 
-.nav-item, .dropdown-item {
+.dropdown-item {
   font-size: 1.2em;
   text-align: center;
 }
@@ -136,6 +136,8 @@ h2 {
       }
     }
     .nav-item {
+      font-size: 1.2em;
+      text-align: center;
       &:hover{
         background: $brand-theme-dark !important;
       }
