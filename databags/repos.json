@@ -317,19 +317,6 @@
             "website": ""
         },
         {
-            "created": "2013-09-18T03:45:12",
-            "description": "A demonstration website built on Node.js",
-            "id": 12913460,
-            "language": "JavaScript",
-            "license": {
-                "name": "MIT License",
-                "url": "https://github.com/creativecommons/ccmf-node/blob/master/LICENSE"
-            },
-            "name": "ccmf-node",
-            "url": "https://github.com/creativecommons/ccmf-node",
-            "website": null
-        },
-        {
             "created": "2013-10-24T00:12:26",
             "description": null,
             "id": 13818403,
