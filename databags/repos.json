@@ -576,19 +576,6 @@
             "website": null
         },
         {
-            "created": "2013-12-02T21:01:10",
-            "description": null,
-            "id": 14874691,
-            "language": "PHP",
-            "license": {
-                "name": "Other",
-                "url": "https://github.com/creativecommons/mediawiki/blob/master/COPYING"
-            },
-            "name": "mediawiki",
-            "url": "https://github.com/creativecommons/mediawiki",
-            "website": null
-        },
-        {
             "created": "2015-12-02T22:10:12",
             "description": null,
             "id": 47291677,
@@ -768,16 +755,6 @@
             "name": "search",
             "url": "https://github.com/creativecommons/search",
             "website": "https://search.creativecommons.org/"
-        },
-        {
-            "created": "2014-02-06T21:06:19",
-            "description": null,
-            "id": 16593765,
-            "language": "Shell",
-            "license": null,
-            "name": "server-config",
-            "url": "https://github.com/creativecommons/server-config",
-            "website": null
         },
         {
             "created": "2016-10-13T22:26:03",
