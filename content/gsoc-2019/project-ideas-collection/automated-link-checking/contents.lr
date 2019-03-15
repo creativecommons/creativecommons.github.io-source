@@ -15,7 +15,7 @@ error result broken links, the community suffers and development is slowed.
 resources:
 - License source files: [docroot/legalcode - creativecommons/creativecommons.org](https://github.com/creativecommons/creativecommons.org/tree/master/docroot/legalcode)
 - Example Open Source link checking software: [wummel/linkchecker: check links in web documents or full websites](https://github.com/wummel/linkchecker) (just an example--not a requirement)
-– [Current list of open issues related to license URL issues](https://github.com/creativecommons/creativecommons.org/issues?q=is%3Aissue+is%3Aopen+label%3A%22License+Link+Translation+or+URL+Problem%22) (these are the kinds of issues we're trying to preempt).
+- [Current list of open issues related to license URL issues](https://github.com/creativecommons/creativecommons.org/issues?q=is%3Aissue+is%3Aopen+label%3A%22License+Link+Translation+or+URL+Problem%22) (these are the kinds of issues we're trying to preempt).
 ---
 expected_result:
 Public release of Python software that ingests the license source files and
