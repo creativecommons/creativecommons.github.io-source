@@ -24,16 +24,6 @@
             "website": "http://creativecommons.org.au/"
         },
         {
-            "created": "2014-06-02T21:09:58",
-            "description": "WWW",
-            "id": 20419729,
-            "language": null,
-            "license": null,
-            "name": "beta.creativecommons.org",
-            "url": "https://github.com/creativecommons/beta.creativecommons.org",
-            "website": "https://beta.creativecommons.org/"
-        },
-        {
             "created": "2015-06-24T18:37:20",
             "description": "A MediaWiki skin using Bootstrap 3 & FontAwesome 4",
             "id": 38003830,
@@ -829,19 +819,6 @@
             "website": null
         },
         {
-            "created": "2015-10-25T00:30:43",
-            "description": "Simple PHP script which decodes an SSL connection and displays the information.",
-            "id": 44890530,
-            "language": "PHP",
-            "license": {
-                "name": "GNU Affero General Public License v3.0",
-                "url": "https://github.com/creativecommons/ssl-decoder/blob/master/LICENSE.md"
-            },
-            "name": "ssl-decoder",
-            "url": "https://github.com/creativecommons/ssl-decoder",
-            "website": null
-        },
-        {
             "created": "2015-03-03T19:48:55",
             "description": "Profiles of exemplary workforce training programs supported by the U.S. Department of Labor TAACCCT program.",
             "id": 31617803,
@@ -898,16 +875,6 @@
             "website": null
         },
         {
-            "created": "2013-10-28T02:42:46",
-            "description": null,
-            "id": 13915202,
-            "language": "CSS",
-            "license": null,
-            "name": "theme-planet",
-            "url": "https://github.com/creativecommons/theme-planet",
-            "website": null
-        },
-        {
             "created": "2013-12-02T21:00:44",
             "description": null,
             "id": 14874646,
@@ -915,16 +882,6 @@
             "license": null,
             "name": "themes-cc_wiki",
             "url": "https://github.com/creativecommons/themes-cc_wiki",
-            "website": null
-        },
-        {
-            "created": "2013-12-05T06:55:55",
-            "description": "Seed repository to quickly get started with a WordPress install",
-            "id": 14946344,
-            "language": "Shell",
-            "license": null,
-            "name": "wordpress-seed",
-            "url": "https://github.com/creativecommons/wordpress-seed",
             "website": null
         },
         {
