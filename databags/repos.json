@@ -1,6 +1,19 @@
 {
     "repos": [
         {
+            "created": "2019-03-13T02:54:23",
+            "description": "Default templates and guidelines for Creative Commons GitHub repositories.",
+            "id": 175334998,
+            "language": null,
+            "license": {
+                "name": "MIT License",
+                "url": "https://github.com/creativecommons/.github/blob/master/LICENSE"
+            },
+            "name": ".github",
+            "url": "https://github.com/creativecommons/.github",
+            "website": ""
+        },
+        {
             "created": "2018-06-06T23:53:47",
             "description": "Creative Commons Australian Chapter documentation",
             "id": 136398139,
@@ -9,26 +22,6 @@
             "name": "australian-chapter",
             "url": "https://github.com/creativecommons/australian-chapter",
             "website": "http://creativecommons.org.au/"
-        },
-        {
-            "created": "2014-06-02T21:09:58",
-            "description": "WWW",
-            "id": 20419729,
-            "language": null,
-            "license": null,
-            "name": "beta.creativecommons.org",
-            "url": "https://github.com/creativecommons/beta.creativecommons.org",
-            "website": ""
-        },
-        {
-            "created": "2015-08-05T16:54:33",
-            "description": null,
-            "id": 40257488,
-            "language": "PHP",
-            "license": null,
-            "name": "blog",
-            "url": "https://github.com/creativecommons/blog",
-            "website": null
         },
         {
             "created": "2015-06-24T18:37:20",
@@ -141,13 +134,13 @@
         },
         {
             "created": "2019-01-29T21:17:39",
-            "description": null,
+            "description": "Temporary microsite for mx.creativecommons.org",
             "id": 168230429,
             "language": null,
             "license": null,
             "name": "cc-mexico-micro",
             "url": "https://github.com/creativecommons/cc-mexico-micro",
-            "website": null
+            "website": "https://mx.creativecommons.org/"
         },
         {
             "created": "2014-01-08T18:49:45",
@@ -157,7 +150,7 @@
             "license": null,
             "name": "cc-resource-archive",
             "url": "https://github.com/creativecommons/cc-resource-archive",
-            "website": null
+            "website": "http://resources.creativecommons.org/"
         },
         {
             "created": "2018-12-18T17:40:38",
@@ -190,7 +183,7 @@
             },
             "name": "cc.api",
             "url": "https://github.com/creativecommons/cc.api",
-            "website": null
+            "website": "https://api.creativecommons.org/docs/"
         },
         {
             "created": "2013-09-13T22:18:08",
@@ -233,16 +226,6 @@
             "license": null,
             "name": "cc.licenserdf",
             "url": "https://github.com/creativecommons/cc.licenserdf",
-            "website": null
-        },
-        {
-            "created": "2015-03-10T16:50:12",
-            "description": null,
-            "id": 31969516,
-            "language": null,
-            "license": null,
-            "name": "cc990",
-            "url": "https://github.com/creativecommons/cc990",
             "website": null
         },
         {
@@ -324,19 +307,6 @@
             "website": ""
         },
         {
-            "created": "2013-09-18T03:45:12",
-            "description": "A demonstration website built on Node.js",
-            "id": 12913460,
-            "language": "JavaScript",
-            "license": {
-                "name": "MIT License",
-                "url": "https://github.com/creativecommons/ccmf-node/blob/master/LICENSE"
-            },
-            "name": "ccmf-node",
-            "url": "https://github.com/creativecommons/ccmf-node",
-            "website": null
-        },
-        {
             "created": "2013-10-24T00:12:26",
             "description": null,
             "id": 13818403,
@@ -354,7 +324,7 @@
             "license": null,
             "name": "ccrel-guide",
             "url": "https://github.com/creativecommons/ccrel-guide",
-            "website": null
+            "website": "http://labs.creativecommons.org/2011/ccrel-guide/"
         },
         {
             "created": "2018-04-10T22:44:46",
@@ -450,7 +420,7 @@
         },
         {
             "created": "2013-10-31T00:19:22",
-            "description": "Creative Commons website",
+            "description": "creativecommons.org license chooser and license display code",
             "id": 14003491,
             "language": "HTML",
             "license": {
@@ -459,7 +429,7 @@
             },
             "name": "creativecommons.org",
             "url": "https://github.com/creativecommons/creativecommons.org",
-            "website": "http://creativecommons.org/"
+            "website": "https://github.com/creativecommons/new-creativecommons.org"
         },
         {
             "created": "2013-12-02T21:01:29",
@@ -495,29 +465,6 @@
             "website": null
         },
         {
-            "created": "2017-08-14T15:55:55",
-            "description": "Wordpress Theme to create a site like the DS106 Assignment Bank",
-            "id": 100284959,
-            "language": "PHP",
-            "license": {
-                "name": "GNU General Public License v2.0",
-                "url": "https://github.com/creativecommons/ds106bank/blob/master/LICENSE"
-            },
-            "name": "ds106bank",
-            "url": "https://github.com/creativecommons/ds106bank",
-            "website": null
-        },
-        {
-            "created": "2014-11-20T22:56:56",
-            "description": null,
-            "id": 26935899,
-            "language": null,
-            "license": null,
-            "name": "example-project",
-            "url": "https://github.com/creativecommons/example-project",
-            "website": null
-        },
-        {
             "created": "2016-01-26T22:56:41",
             "description": "Proposal for a formal way of expressing public license information in Exif",
             "id": 50465380,
@@ -532,7 +479,7 @@
         },
         {
             "created": "2015-12-14T23:19:08",
-            "description": null,
+            "description": "Creative Commons FAQ page",
             "id": 48007106,
             "language": "HTML",
             "license": {
@@ -541,33 +488,7 @@
             },
             "name": "faq",
             "url": "https://github.com/creativecommons/faq",
-            "website": null
-        },
-        {
-            "created": "2015-03-18T17:37:20",
-            "description": null,
-            "id": 32474283,
-            "language": null,
-            "license": {
-                "name": "Creative Commons Zero v1.0 Universal",
-                "url": "https://github.com/creativecommons/flaming-octo-robot/blob/master/LICENSE"
-            },
-            "name": "flaming-octo-robot",
-            "url": "https://github.com/creativecommons/flaming-octo-robot",
-            "website": null
-        },
-        {
-            "created": "2015-03-13T18:42:13",
-            "description": "Check your GitHub READMEs for broken links.",
-            "id": 32174264,
-            "language": "Scala",
-            "license": {
-                "name": "MIT License",
-                "url": "https://github.com/creativecommons/girl/blob/master/LICENSE.mit"
-            },
-            "name": "girl",
-            "url": "https://github.com/creativecommons/girl",
-            "website": "http://derecho.elijah.cs.cmu.edu:8585/@top"
+            "website": "https://creativecommons.org/faq/"
         },
         {
             "created": "2013-12-02T21:00:10",
@@ -655,19 +576,6 @@
             "website": null
         },
         {
-            "created": "2013-12-02T21:01:10",
-            "description": null,
-            "id": 14874691,
-            "language": "PHP",
-            "license": {
-                "name": "Other",
-                "url": "https://github.com/creativecommons/mediawiki/blob/master/COPYING"
-            },
-            "name": "mediawiki",
-            "url": "https://github.com/creativecommons/mediawiki",
-            "website": null
-        },
-        {
             "created": "2015-12-02T22:10:12",
             "description": null,
             "id": 47291677,
@@ -708,43 +616,33 @@
         },
         {
             "created": "2016-05-19T18:07:31",
-            "description": null,
+            "description": "Primary Creative Commons website",
             "id": 59230362,
             "language": "JavaScript",
             "license": null,
             "name": "new-creativecommons.org",
             "url": "https://github.com/creativecommons/new-creativecommons.org",
-            "website": null
+            "website": "https://creativecommons.org/"
         },
         {
             "created": "2016-05-19T18:06:55",
-            "description": null,
+            "description": "creativecommons.org various custom plugins for content types, mostly",
             "id": 59230319,
             "language": "PHP",
             "license": null,
             "name": "new-www-plugin",
             "url": "https://github.com/creativecommons/new-www-plugin",
-            "website": null
+            "website": "https://github.com/creativecommons/new-creativecommons.org"
         },
         {
             "created": "2016-05-19T18:06:05",
-            "description": null,
+            "description": "creativecommons.org theme, to make it look lovely",
             "id": 59230280,
             "language": "CSS",
             "license": null,
             "name": "new-www-theme",
             "url": "https://github.com/creativecommons/new-www-theme",
-            "website": null
-        },
-        {
-            "created": "2014-11-25T19:04:47",
-            "description": null,
-            "id": 27141324,
-            "language": "JavaScript",
-            "license": null,
-            "name": "open-profiles",
-            "url": "https://github.com/creativecommons/open-profiles",
-            "website": null
+            "website": "https://github.com/creativecommons/new-creativecommons.org"
         },
         {
             "created": "2013-12-05T07:09:43",
@@ -794,7 +692,7 @@
         },
         {
             "created": "2014-12-04T16:48:58",
-            "description": null,
+            "description": "website terms of service, trademark policy and privacy policy",
             "id": 27550069,
             "language": "HTML",
             "license": {
@@ -803,7 +701,7 @@
             },
             "name": "policies",
             "url": "https://github.com/creativecommons/policies",
-            "website": null
+            "website": ""
         },
         {
             "created": "2013-12-02T20:59:52",
@@ -850,23 +748,13 @@
         },
         {
             "created": "2013-10-24T00:19:27",
-            "description": null,
+            "description": "Creative Commons Search",
             "id": 13818557,
             "language": "CSS",
             "license": null,
             "name": "search",
             "url": "https://github.com/creativecommons/search",
-            "website": null
-        },
-        {
-            "created": "2014-02-06T21:06:19",
-            "description": null,
-            "id": 16593765,
-            "language": "Shell",
-            "license": null,
-            "name": "server-config",
-            "url": "https://github.com/creativecommons/server-config",
-            "website": null
+            "website": "https://search.creativecommons.org/"
         },
         {
             "created": "2016-10-13T22:26:03",
@@ -895,29 +783,6 @@
             "website": null
         },
         {
-            "created": "2015-10-25T00:30:43",
-            "description": "Simple PHP script which decodes an SSL connection and displays the information.",
-            "id": 44890530,
-            "language": "PHP",
-            "license": {
-                "name": "GNU Affero General Public License v3.0",
-                "url": "https://github.com/creativecommons/ssl-decoder/blob/master/LICENSE.md"
-            },
-            "name": "ssl-decoder",
-            "url": "https://github.com/creativecommons/ssl-decoder",
-            "website": null
-        },
-        {
-            "created": "2013-12-02T20:59:37",
-            "description": null,
-            "id": 14874547,
-            "language": "TypeScript",
-            "license": null,
-            "name": "svn-i18n",
-            "url": "https://github.com/creativecommons/svn-i18n",
-            "website": null
-        },
-        {
             "created": "2015-03-03T19:48:55",
             "description": "Profiles of exemplary workforce training programs supported by the U.S. Department of Labor TAACCCT program.",
             "id": 31617803,
@@ -929,6 +794,16 @@
             "name": "taaccct",
             "url": "https://github.com/creativecommons/taaccct",
             "website": "http://profiles.open4us.org/taaccct/"
+        },
+        {
+            "created": "2013-09-06T23:57:48",
+            "description": "Collection of stories documenting the power of open licensing",
+            "id": 12657067,
+            "language": null,
+            "license": null,
+            "name": "team-open",
+            "url": "https://github.com/creativecommons/team-open",
+            "website": "http://teamopen.cc/"
         },
         {
             "created": "2015-04-13T23:32:43",
@@ -964,16 +839,6 @@
             "website": null
         },
         {
-            "created": "2013-10-28T02:42:46",
-            "description": null,
-            "id": 13915202,
-            "language": "CSS",
-            "license": null,
-            "name": "theme-planet",
-            "url": "https://github.com/creativecommons/theme-planet",
-            "website": null
-        },
-        {
             "created": "2013-12-02T21:00:44",
             "description": null,
             "id": 14874646,
@@ -981,49 +846,6 @@
             "license": null,
             "name": "themes-cc_wiki",
             "url": "https://github.com/creativecommons/themes-cc_wiki",
-            "website": null
-        },
-        {
-            "created": "2014-10-01T17:25:11",
-            "description": null,
-            "id": 24687826,
-            "language": "CSS",
-            "license": null,
-            "name": "theta",
-            "url": "https://github.com/creativecommons/theta",
-            "website": null
-        },
-        {
-            "created": "2015-01-09T21:06:31",
-            "description": "A generic CC website that can be used by affliates and is the basis for CC's own website",
-            "id": 29035361,
-            "language": "CSS",
-            "license": {
-                "name": "MIT License",
-                "url": "https://github.com/creativecommons/website/blob/master/LICENSE"
-            },
-            "name": "website",
-            "url": "https://github.com/creativecommons/website",
-            "website": null
-        },
-        {
-            "created": "2015-06-22T19:11:04",
-            "description": "Wordpress installation.",
-            "id": 37875296,
-            "language": null,
-            "license": null,
-            "name": "wordpress-config",
-            "url": "https://github.com/creativecommons/wordpress-config",
-            "website": null
-        },
-        {
-            "created": "2013-12-05T06:55:55",
-            "description": "Seed repository to quickly get started with a WordPress install",
-            "id": 14946344,
-            "language": "Shell",
-            "license": null,
-            "name": "wordpress-seed",
-            "url": "https://github.com/creativecommons/wordpress-seed",
             "website": null
         },
         {
@@ -1053,7 +875,7 @@
             "created": "2014-11-11T17:34:30",
             "description": null,
             "id": 26496204,
-            "language": "JavaScript",
+            "language": "HTML",
             "license": {
                 "name": "GNU Affero General Public License v3.0",
                 "url": "https://github.com/creativecommons/www2015/blob/master/LICENSE"

@@ -6,7 +6,7 @@ title: CC Search: search by use case
 ---
 description:
 
-Prototype in CC Search a way to search for specific materials to use for specific types of projects e.g. CC music for videos or podcasts.
+Prototype in CC Search a way to search for specific materials to use for specific types of projects. For example: search images for slide presentations (stock photos), for printed and/or digital magazines (which might require high resolution), for educational material (use content from GLAM providers), etc..
 ---
 rationale: 
 
@@ -23,12 +23,12 @@ expected_result:
 
 A new feature or set of new features added to CC Search to support searching CC-licensed content for a specific purpose. You can decide what use cases you'd like to focus on.
 ---
-skills_recommended: JavaScript, potentially Python
+skills_recommended: Python and Javascript
 ---
-primary_mentor: Breno Ferreira
+primary_mentor: Alden Page
 ---
-backup_mentor: Alden Page
+backup_mentor: Breno Ferreira
 ---
-difficulty: Easy
+difficulty: Medium
 ---
 proposal_tag: Search
