@@ -24,7 +24,6 @@ h2 {
 }
 .footer {
   bottom: 0;
-  height: 7rem;            /* Footer height */
 }
 .card-columns {
   column-count: 2;
