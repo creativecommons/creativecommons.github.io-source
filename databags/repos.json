@@ -297,16 +297,6 @@
             "website": null
         },
         {
-            "created": "2013-09-18T03:40:47",
-            "description": "Creative Commons Javascript Library",
-            "id": 12913399,
-            "language": "JavaScript",
-            "license": null,
-            "name": "ccmf",
-            "url": "https://github.com/creativecommons/ccmf",
-            "website": ""
-        },
-        {
             "created": "2013-10-24T00:12:26",
             "description": null,
             "id": 13818403,
@@ -491,16 +481,6 @@
             "website": "https://creativecommons.org/faq/"
         },
         {
-            "created": "2013-12-02T21:00:10",
-            "description": null,
-            "id": 14874596,
-            "language": "JavaScript",
-            "license": null,
-            "name": "jswidget",
-            "url": "https://github.com/creativecommons/jswidget",
-            "website": null
-        },
-        {
             "created": "2014-12-08T20:16:04",
             "description": "CC Labs (Tech Team) blog",
             "id": 27733017,
@@ -577,7 +557,7 @@
         },
         {
             "created": "2015-12-02T22:10:12",
-            "description": null,
+            "description": "Documentation for CC integration into user-generated content platforms",
             "id": 47291677,
             "language": "PHP",
             "license": {
@@ -586,7 +566,7 @@
             },
             "name": "mp",
             "url": "https://github.com/creativecommons/mp",
-            "website": null
+            "website": "https://creativecommons.org/platform/toolkit/"
         },
         {
             "created": "2019-01-24T13:59:08",
@@ -663,19 +643,6 @@
             "name": "openpolicynetwork.org",
             "url": "https://github.com/creativecommons/openpolicynetwork.org",
             "website": "https://openpolicynetwork.org/"
-        },
-        {
-            "created": "2013-09-24T21:54:08",
-            "description": "The Creative Commons Pasteboard is a browser extension used to help users easily clip content from different sources aroud the web. It also helps users by automatically adding attribution information when users paste their clips into documents.",
-            "id": 13077585,
-            "language": "JavaScript",
-            "license": {
-                "name": "MIT License",
-                "url": "https://github.com/creativecommons/pasteboard/blob/master/LICENSE"
-            },
-            "name": "pasteboard",
-            "url": "https://github.com/creativecommons/pasteboard",
-            "website": "http://mnmtanish.github.io/pasteboard/"
         },
         {
             "created": "2019-01-23T18:16:13",
