@@ -42,8 +42,10 @@ else fails, try removing the virtual environment and reinstalling:
 
 ## Development
 
-1. Run `pipenv shell` to spawn a shell with the virtualenv activated
-1. Run `lektor server -f webpack` to start the Lektor development server. You will be able
+1. Run `pipenv shell` to spawn a shell with the virtualenv activated.
+2. Run `lektor plugins add webpack-support` to enable the webpack plugin. This is required
+   only for the very first time.
+3. Run `lektor server -f webpack` to start the Lektor development server. You will be able
    to see the website at [`http://localhost:5000/`][lektorlocal]. The Lektor
    server will rebuild the site every time you change any content.
 
