@@ -3,7 +3,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="shortcut icon" type="image/x-icon" href="{{ '/static/favicon.ico'|url }}">
 <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet"> 
 <link rel="stylesheet" href="{{ '/static/style.css'|url }}">
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
@@ -34,16 +34,28 @@
                 {% for href, title in [
                   ['/contributing-code', 'Contributing Code'],
                   ['/projects', 'Projects'],
-                  ['/community', 'Community'],
                 ] %}
                   <li class="nav-item{% if this.is_child_of(href) %} active{% endif%}">
                     <a class="nav-link" href="{{ href|url }}">{{ title }}</a>
                   </li>
                 {% endfor %}
-                <li class="nav-item dropdown {% if this.is_child_of('/gsoc-2019') %} active{% endif%}">
-                  <a class="nav-link" href="/gsoc-2019/" id="navbarDropdown" role="button">GSoC 2019</a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li class="nav-item dropdown {% if this.is_child_of('/community') %} active{% endif%}">
+                  <a class="nav-link" href="#" id="navbarCommunityDropdown" role="button">Community</a>
+                  <div class="dropdown-menu" aria-labelledby="navbarCommunityDropdown">
                     {% for href, title in [
+                      ['/community', 'Join the Community'],
+                      ['/community/code-of-conduct', 'Code of Conduct'],
+                      ['/community/code-of-conduct/enforcement', 'Code of Conduct Enforcement'],
+                    ] %}
+                      <a class="dropdown-item" href="{{ href|url }}">{{ title }}</a>
+                    {% endfor %}
+                  </div>
+                </li>
+                <li class="nav-item dropdown {% if this.is_child_of('/gsoc-2019') %} active{% endif%}">
+                  <a class="nav-link" href="#" id="navbarGSoCDropdown" role="button">GSoC 2019</a>
+                  <div class="dropdown-menu" aria-labelledby="navbarGSoCDropdown">
+                    {% for href, title in [
+                      ['/gsoc-2019', 'General Information'],
                       ['/gsoc-2019/project-ideas/all', 'Project Ideas'],
                       ['/gsoc-2019/student-expectations', 'Student Expectations'],
                       ['/gsoc-2019/application-instructions', 'Application Instructions'],
@@ -62,7 +74,7 @@
     <div class="row justify-content-md-center">
       <div class="col-9 content-wrap">
         <div class="page py-3">
-          <a ></a>
+          <a></a>
           <h2 class="pb-2"><strong>{% block header %}{{ this.title }}{% endblock %}</strong></h2>
           {% block body %}{% endblock %}
           <a id="back-to-top" href="#top" class="btn btn-dark btn-sm" role="button">Back to top</a>

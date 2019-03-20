@@ -6,6 +6,13 @@
       <ul class="toc list-unstyled">
         {% for item in this.body.toc %}
           <li><a href="#{{ item.anchor }}">{{ item.title }}</a></li>
+          {% if item.children %}
+            <ul class="toc list-unstyled pl-4">
+              {% for subitem in item.children %}
+                <li><a href="#{{ subitem.anchor }}">{{ subitem.title }}</a></li>
+              {% endfor %}
+            </ul>
+          {% endif %}
         {% endfor %}
       </ul>
     </div>

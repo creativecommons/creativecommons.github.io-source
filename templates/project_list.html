@@ -1,11 +1,35 @@
 {% extends "layout.html" %}
 {% block title %}{{ this.title }}{% endblock %}
 {% block body %}
-  {{ this.body }}
-  <div class="alert alert-warning" role="alert">
-    <strong>Warning:</strong> This page is under construction. Some of these projects have incomplete (or non-existent) documentation, broken links, and/or are no longer maintained or supported. We're working on fixing that and this notice will be removed once the clean-up process is complete.
+  <p>This is a list of all our open source software projects at Creative Commons.</p>
+  <p>Please read the <a href="/contributing-code">Contributing Code</a> page for general information on how to contribute code to these projects. For contribution guidelines specific to a project, please read the README and the CONTRIBUTING file in the project repository. Not all repositories have these files yet (we're working on it!); if you'd like to contribute to a repository with no guidelines available, please talk to us through <a href="/community">one of our community forums</a> or open a GitHub issue.</p>
+  <h2>Featured Projects</h2>
+    <div class="card-deck">
+    {% for repo in bag('repos.repos') %}
+      {% if repo.featured %}
+        <div class="card featured-project-card border-dark mb-4">
+          <div class="card-body">
+            <h5 class="card-title"><strong>{{ repo.english_name }}</strong>
+            <div class="float-right">
+              <a class="btn btn-outline-secondary" href="{{ repo.url }}"><img src="{{ this.attachments.get('mark-github.svg')|url }}" alt="GitHub"/></a>
+              {% if repo.website %}
+                <a class="btn btn-outline-secondary" href="{{ repo.website }}"><img src="{{ this.attachments.get('link-external.svg')|url }}" alt="website"/></a>
+              {% endif %}
+            </div>
+            </h5>
+            <p class="card-text">{{ repo.description }}</p>
+            {% for technology in repo.technologies %}
+              <span class="badge badge-featured-project mr-1 mb-1">{{ technology }}</span>
+            {% endfor %}
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
   </div>
-  <p>This is the list of all repositories on the <a href="https://github.com/creativecommons">Creative Commons GitHub organization</a>, which hosts all our currently active software projects.</p>
+  <h2>All Projects</h2>
+  <div class="alert alert-warning" role="alert">
+    <strong>Warning:</strong> This list is under construction. Some of these projects have incomplete (or non-existent) documentation, broken links, and/or are no longer maintained or supported. We're working on fixing that and this notice will be removed once the clean-up process is complete.
+  </div>
   <table class="table table-striped">
     <thead class="thead-dark">
       <tr>
@@ -34,7 +58,7 @@
             <td>Not specified</td>
           {% endif %}
           <td style="min-width: 12rem;">
-            <a class="btn btn-dark btn-sm" href="{{ repo.url }}">GitHub</a>{% if repo.website %} <a class="btn btn-info btn-sm" href="{{ repo.website }}">Website</a>{% endif %}
+            <a class="btn btn-outline-secondary btn-sm" href="{{ repo.url }}"><img src="{{ this.attachments.get('mark-github.svg')|url }}" alt="GitHub"/> GitHub</a>{% if repo.website %} <a class="btn btn-outline-secondary btn-sm" href="{{ repo.website }}"><img src="{{ this.attachments.get('link-external.svg')|url }}" alt="website"/> Website</a>{% endif %}
           </td>
         </tr>
       {% endfor %}
