@@ -1,0 +1,9 @@
+body, .page-title{
+  color: white;
+}
+.page-content, .page-title{
+  background-color: #2b2b2b;
+}
+.card-body, .card-header, .list-group, .list-group-flush, .list-group-item{
+  background-color: #343a40;
+}
