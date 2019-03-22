@@ -11,7 +11,7 @@ rationale:
 Providing a functional JavaScript widget that allows anyone to embed choosing a CC license on their site will widen the reach of CC licenses.
 ---
 resources:
-- [LicenseChooser.js](https://github.com/creativecommons/LicenseChooser.js):
+- [cc-license-chooser](https://github.com/creativecommons/LicenseChooser.js):
   new/current JS widget code
 - [jswidget](https://github.com/cc-archive/jswidget): old/deprectated JS
   widget
