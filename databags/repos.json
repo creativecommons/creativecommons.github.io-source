@@ -842,7 +842,10 @@
         },
         {
             "created": "2019-03-22T15:46:16",
-            "description": null,
+            "description": "Creative Commons - Business Toolkit WordPress theme",
+            "engineering_project": true,
+            "english_name": "Business Toolkit WordPress Theme",
+            "featured": false,
             "id": 177168132,
             "language": "PHP",
             "license": {
@@ -850,8 +853,13 @@
                 "url": "https://github.com/creativecommons/wp-theme-cctoolkit/blob/master/LICENSE"
             },
             "name": "wp-theme-cctoolkit",
+            "technologies": [
+                "CSS",
+                "PHP",
+                "WordPress"
+            ],
             "url": "https://github.com/creativecommons/wp-theme-cctoolkit",
-            "website": null
+            "website": ""
         },
         {
             "created": "2013-10-28T02:42:48",
