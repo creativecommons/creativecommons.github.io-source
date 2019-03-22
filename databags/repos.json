@@ -841,19 +841,6 @@
             "website": ""
         },
         {
-            "created": "2019-03-22T15:46:16",
-            "description": null,
-            "id": 177168132,
-            "language": null,
-            "license": {
-                "name": "GNU General Public License v2.0",
-                "url": "https://github.com/creativecommons/wp-theme-cctoolkit/blob/master/LICENSE"
-            },
-            "name": "wp-theme-cctoolkit",
-            "url": "https://github.com/creativecommons/wp-theme-cctoolkit",
-            "website": null
-        },
-        {
             "created": "2013-10-28T02:42:48",
             "description": null,
             "id": 13915207,
