@@ -16,7 +16,7 @@
     <div class="container-fluid">
       <div class="row justify-content-md-center">
         <div class="col-9">
-          <nav class="navbar navbar-expand-xl navbar-dark">
+          <nav class="navbar navbar-expand-xl navbar-dark" name="top">
             {% set cc_logo = site.get('/').attachments.get('cclogo.svg') %}
             <a class="navbar-brand" href="{{ '/'|url }}">
               <img src="{{ cc_logo|url }}">
@@ -74,7 +74,6 @@
     <div class="row justify-content-md-center">
       <div class="col-9 content-wrap">
         <div class="page py-3">
-          <a name="top"></a>
           <h1 class="page-title pb-3 mb-4">{% block header %}{{ this.title }}{% endblock %}</h1>
           {% block body %}{% endblock %}
           <a id="back-to-top" href="#top" class="btn btn-dark btn-sm" role="button">Back to top</a>
