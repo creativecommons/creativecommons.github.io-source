@@ -135,13 +135,20 @@
         {
             "created": "2015-11-16T19:24:04",
             "description": "Creative Commons JavaScript license selector in the form of a JavaScript widget",
+            "engineering_project": true,
+            "english_name": "cc-license-chooser",
+            "featured": false,
             "id": 46296768,
             "language": "XSLT",
             "license": {
                 "name": "Other",
-                "url": "https://github.com/creativecommons/cc-license-chooser/blob/master/LICENSE.md"
+                "url": "https://github.com/creativecommons/cc-license-chooser/blob/master/LICENSE"
             },
             "name": "cc-license-chooser",
+            "technologies": [
+                "JavaScript",
+                "Python"
+            ],
             "url": "https://github.com/creativecommons/cc-license-chooser",
             "website": ""
         },
@@ -750,7 +757,10 @@
         },
         {
             "created": "2018-11-20T21:50:33",
-            "description": "Site Reliability Engineering / DevOps SaltStack configuration files - NEW!",
+            "description": "Site Reliability Engineering / DevOps SaltStack configuration files",
+            "engineering_project": true,
+            "english_name": "Creative Commons SaltStack",
+            "featured": false,
             "id": 158455678,
             "language": "SaltStack",
             "license": {
@@ -758,8 +768,12 @@
                 "url": "https://github.com/creativecommons/sre-salt-prime/blob/master/LICENSE"
             },
             "name": "sre-salt-prime",
+            "technologies": [
+                "Python",
+                "SaltStack"
+            ],
             "url": "https://github.com/creativecommons/sre-salt-prime",
-            "website": null
+            "website": ""
         },
         {
             "created": "2015-03-03T19:48:55",
