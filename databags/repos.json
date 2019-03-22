@@ -133,6 +133,19 @@
             "website": null
         },
         {
+            "created": "2015-11-16T19:24:04",
+            "description": "Creative Commons JavaScript license selector in the form of a JavaScript widget",
+            "id": 46296768,
+            "language": "XSLT",
+            "license": {
+                "name": "Other",
+                "url": "https://github.com/creativecommons/cc-license-chooser/blob/master/LICENSE.md"
+            },
+            "name": "cc-license-chooser",
+            "url": "https://github.com/creativecommons/cc-license-chooser",
+            "website": ""
+        },
+        {
             "created": "2019-01-29T21:17:39",
             "description": "Temporary microsite for mx.creativecommons.org",
             "id": 168230429,
@@ -527,19 +540,6 @@
             "name": "letsencrypt-formula",
             "url": "https://github.com/creativecommons/letsencrypt-formula",
             "website": "http://docs.saltstack.com/en/latest/topics/development/conventions/formulas.html"
-        },
-        {
-            "created": "2015-11-16T19:24:04",
-            "description": null,
-            "id": 46296768,
-            "language": "XSLT",
-            "license": {
-                "name": "Other",
-                "url": "https://github.com/creativecommons/LicenseChooser.js/blob/master/LICENSE.md"
-            },
-            "name": "LicenseChooser.js",
-            "url": "https://github.com/creativecommons/LicenseChooser.js",
-            "website": null
         },
         {
             "created": "2014-09-03T22:03:03",
