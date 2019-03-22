@@ -147,7 +147,10 @@
             "description": "Collection of resources on CC tools and other open topics",
             "id": 15744672,
             "language": null,
-            "license": null,
+            "license": {
+                "name": "MIT License",
+                "url": "https://github.com/creativecommons/cc-resource-archive/blob/master/LICENSE"
+            },
             "name": "cc-resource-archive",
             "url": "https://github.com/creativecommons/cc-resource-archive",
             "website": "http://resources.creativecommons.org/"
@@ -188,10 +191,19 @@
         {
             "created": "2013-09-13T22:18:08",
             "description": "Python app that runs part of CC's website",
+            "engineering_project": true,
+            "english_name": "cc.engine",
+            "featured": false,
             "id": 12820583,
             "language": "HTML",
-            "license": null,
+            "license": {
+                "name": "MIT License",
+                "url": "https://github.com/creativecommons/cc.engine/blob/master/LICENSE"
+            },
             "name": "cc.engine",
+            "technologies": [
+                "Python"
+            ],
             "url": "https://github.com/creativecommons/cc.engine",
             "website": null
         },
@@ -711,7 +723,7 @@
             "license": null,
             "name": "scholars-addenda",
             "url": "https://github.com/creativecommons/scholars-addenda",
-            "website": null
+            "website": "https://labs.creativecommons.org/scholars/"
         },
         {
             "created": "2013-10-24T00:19:27",
@@ -827,6 +839,19 @@
             "name": "wp-theme-cc-chapter",
             "url": "https://github.com/creativecommons/wp-theme-cc-chapter",
             "website": ""
+        },
+        {
+            "created": "2019-03-22T15:46:16",
+            "description": null,
+            "id": 177168132,
+            "language": null,
+            "license": {
+                "name": "GNU General Public License v2.0",
+                "url": "https://github.com/creativecommons/wp-theme-cctoolkit/blob/master/LICENSE"
+            },
+            "name": "wp-theme-cctoolkit",
+            "url": "https://github.com/creativecommons/wp-theme-cctoolkit",
+            "website": null
         },
         {
             "created": "2013-10-28T02:42:48",
