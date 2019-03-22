@@ -42,8 +42,8 @@ else fails, try removing the virtual environment and reinstalling:
 
 ## Development
 
-1. Run `pipenv shell` to spawn a shell with the virtualenv activated
-1. Run `lektor server` to start the Lektor development server. You will be able
+1. Run `pipenv shell` to spawn a shell with the virtualenv activated.
+2. Run `lektor server -f webpack` to start the Lektor development server. You will be able
    to see the website at [`http://localhost:5000/`][lektorlocal]. The Lektor
    server will rebuild the site every time you change any content.
 
@@ -68,8 +68,7 @@ on production!
 
 Here's how the code is structured in the top level of the repository:
 - **`assets`**: This directory contains the JavaScript and CSS files for the
-  project. Most of the JavaScript and CSS is third-party code and loaded via
-  CDN so this is pretty empty.
+  project built via webpack. Most of the JavaScript and CSS is third-party code and loaded via CDN so this is pretty empty.
 - **`content`**: The content of the site lives here. [Here's an explanation of
   how content works in Lektor][lektorcontent]. This is probably what you'll be
   modifying most often.
@@ -79,6 +78,8 @@ Here's how the code is structured in the top level of the repository:
 - **`templates`**: This is where the [Jinja2][jinja2] templates that render
   content are stored. See the [Lektor template documentation][lektortemplate]
   for more information.
+- **`webpack`**: This is where all the webpack config files as well as Sass and 
+  JavaScript files for the project resides. The JavaScript and Sass files are compiled and saved in assets folder       during lektor build process.
 
 [lektorcontent]:https://www.getlektor.com/docs/content/
 [lektormodels]:(https://www.getlektor.com/docs/models/

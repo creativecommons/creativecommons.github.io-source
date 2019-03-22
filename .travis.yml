@@ -7,7 +7,7 @@ cache:
 install:
   - pip install pipenv
   - pipenv install
-script: lektor build
+script: lektor build -f webpack
 deploy:
   provider: script
   script: lektor deploy ghpages
