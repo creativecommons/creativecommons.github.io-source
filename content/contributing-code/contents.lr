@@ -6,7 +6,7 @@ title: Contributing Code
 ---
 body:
 
-We do all of our development on GitHub and are generally open to pull requests and proposals for new community-maintained projects. We would especially like help with reviving projects that CC's engineering team does not have the time to actively work on (such as [our WordPress plugin](https://github.com/creativecommons/creativecommons-wordpress-plugin) and [license chooser widget](https://github.com/creativecommons/LicenseChooser.js)).
+We do all of our development on GitHub and are generally open to pull requests and proposals for new community-maintained projects. We would especially like help with reviving projects that CC's engineering team does not have the time to actively work on (such as [our WordPress plugin](https://github.com/creativecommons/creativecommons-wordpress-plugin) and [license chooser widget](https://github.com/creativecommons/cc-license-chooser)).
 
 We're also looking to improve our documentation and increase our automated test coverage across pretty much all our projects, so help with that would be greatly appreciated.
 

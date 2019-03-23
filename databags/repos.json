@@ -133,6 +133,26 @@
             "website": null
         },
         {
+            "created": "2015-11-16T19:24:04",
+            "description": "Creative Commons JavaScript license selector in the form of a JavaScript widget",
+            "engineering_project": true,
+            "english_name": "cc-license-chooser",
+            "featured": false,
+            "id": 46296768,
+            "language": "XSLT",
+            "license": {
+                "name": "Other",
+                "url": "https://github.com/creativecommons/cc-license-chooser/blob/master/LICENSE"
+            },
+            "name": "cc-license-chooser",
+            "technologies": [
+                "JavaScript",
+                "Python"
+            ],
+            "url": "https://github.com/creativecommons/cc-license-chooser",
+            "website": ""
+        },
+        {
             "created": "2019-01-29T21:17:39",
             "description": "Temporary microsite for mx.creativecommons.org",
             "id": 168230429,
@@ -147,7 +167,10 @@
             "description": "Collection of resources on CC tools and other open topics",
             "id": 15744672,
             "language": null,
-            "license": null,
+            "license": {
+                "name": "MIT License",
+                "url": "https://github.com/creativecommons/cc-resource-archive/blob/master/LICENSE"
+            },
             "name": "cc-resource-archive",
             "url": "https://github.com/creativecommons/cc-resource-archive",
             "website": "http://resources.creativecommons.org/"
@@ -188,10 +211,19 @@
         {
             "created": "2013-09-13T22:18:08",
             "description": "Python app that runs part of CC's website",
+            "engineering_project": true,
+            "english_name": "cc.engine",
+            "featured": false,
             "id": 12820583,
             "language": "HTML",
-            "license": null,
+            "license": {
+                "name": "MIT License",
+                "url": "https://github.com/creativecommons/cc.engine/blob/master/LICENSE"
+            },
             "name": "cc.engine",
+            "technologies": [
+                "Python"
+            ],
             "url": "https://github.com/creativecommons/cc.engine",
             "website": null
         },
@@ -517,19 +549,6 @@
             "website": "http://docs.saltstack.com/en/latest/topics/development/conventions/formulas.html"
         },
         {
-            "created": "2015-11-16T19:24:04",
-            "description": null,
-            "id": 46296768,
-            "language": "XSLT",
-            "license": {
-                "name": "Other",
-                "url": "https://github.com/creativecommons/LicenseChooser.js/blob/master/LICENSE.md"
-            },
-            "name": "LicenseChooser.js",
-            "url": "https://github.com/creativecommons/LicenseChooser.js",
-            "website": null
-        },
-        {
             "created": "2014-09-03T22:03:03",
             "description": "The List powered by Creative Commons allows people to contribute to the public commons by taking photographs of the world around them and sharing these images with the world.",
             "id": 23639316,
@@ -711,7 +730,7 @@
             "license": null,
             "name": "scholars-addenda",
             "url": "https://github.com/creativecommons/scholars-addenda",
-            "website": null
+            "website": "https://labs.creativecommons.org/scholars/"
         },
         {
             "created": "2013-10-24T00:19:27",
@@ -738,7 +757,10 @@
         },
         {
             "created": "2018-11-20T21:50:33",
-            "description": "Site Reliability Engineering / DevOps SaltStack configuration files - NEW!",
+            "description": "Site Reliability Engineering / DevOps SaltStack configuration files",
+            "engineering_project": true,
+            "english_name": "Creative Commons SaltStack",
+            "featured": false,
             "id": 158455678,
             "language": "SaltStack",
             "license": {
@@ -746,8 +768,12 @@
                 "url": "https://github.com/creativecommons/sre-salt-prime/blob/master/LICENSE"
             },
             "name": "sre-salt-prime",
+            "technologies": [
+                "Python",
+                "SaltStack"
+            ],
             "url": "https://github.com/creativecommons/sre-salt-prime",
-            "website": null
+            "website": ""
         },
         {
             "created": "2015-03-03T19:48:55",
@@ -826,6 +852,27 @@
             },
             "name": "wp-theme-cc-chapter",
             "url": "https://github.com/creativecommons/wp-theme-cc-chapter",
+            "website": ""
+        },
+        {
+            "created": "2019-03-22T15:46:16",
+            "description": "Creative Commons - Business Toolkit WordPress theme",
+            "engineering_project": true,
+            "english_name": "Business Toolkit WordPress Theme",
+            "featured": false,
+            "id": 177168132,
+            "language": "PHP",
+            "license": {
+                "name": "GNU General Public License v2.0",
+                "url": "https://github.com/creativecommons/wp-theme-cctoolkit/blob/master/LICENSE"
+            },
+            "name": "wp-theme-cctoolkit",
+            "technologies": [
+                "CSS",
+                "PHP",
+                "WordPress"
+            ],
+            "url": "https://github.com/creativecommons/wp-theme-cctoolkit",
             "website": ""
         },
         {
