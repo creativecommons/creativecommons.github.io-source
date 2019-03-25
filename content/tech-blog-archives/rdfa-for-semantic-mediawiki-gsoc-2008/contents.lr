@@ -1,0 +1,18 @@
+title: RDFa for Semantic MediaWiki [GSoC 2008]
+---
+categories: mediawiki, metadata, microformats, rdf, rdfa, semantic, standards, summer, syndication
+---
+author: davemccabe
+---
+body:
+
+Hello, world!
+
+My name is [David McCabe](mailto:davemccabe@gmail.com), and this summer I am adding RDFa support to Semantic MediaWiki, as part of the Google Summer of Code 2008. I am an undergraduate in Mathematics at [Portland State University](http://pdx.edu). For the Google Summer of Code 2006, I wrote [Liquid Threads](http://www.mediawiki.org/wiki/Extension:LiquidThreads), a MediaWiki extension that replaces talk pages with a threaded discussion system. 
+
+[Semantic MediaWiki](http://semantic-mediawiki.org/) (SMW) is the software used for [the CC wiki](http://wiki.creativecommons.org/) and many other wikis. SMW allows authors to mark up wiki pages so that their contents and relationships are machine-readable. SMW already publishes this machine-readable data in RDF/XML format. 
+
+You can read about [RDFA on the CC Wiki](http://wiki.creativecommons.org/RDFa). There is also a [Google Tech Talk on RDFa](http://www.youtube.com/watch?v=mxE3FeOyS-E).
+
+---
+pub_date: 2008-07-01

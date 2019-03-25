@@ -1,0 +1,18 @@
+title: License Discovery in Feeds
+---
+categories: case
+---
+author: nathan
+---
+body:
+
+Right before the winter break I came across [Scott Wilson's blog post](http://zope.cetis.ac.uk/members/scott/blogview?entry=20101214120842) on a [CETIS](http://jisc.cetis.ac.uk/) blog about [license discovery in RSS and Atom feeds](http://wiki.creativecommons.org/Syndication). Scott provides an pseudo-algorithm for how they've approached license discovery. It's a good approach, and I'm very happy to see people publishing about how they've approached this sort of issue. Reading it reminded me of a few points that are often glossed over or forgotten.
+
+Scott points out that there are two CC namespaces -- `http://creativecommons.org/ns` and `http://web.resource.org/cc/`. Due to hysteric^W historical reasons, web.resource.org was the first host of the [CC REL](http://wiki.creativecommons.org/CC_REL) schema, which we later moved to creativecommons.org (as the appropriate home). This came up on another thread late last year, and we've taken the first step to making this a little easier to deal with, redirecting the old home, web.resource.org, to creativecommons.org/ns. We'll be [publishing equivalency assertions](http://code.creativecommons.org/issues/issue757) soon to further clarify the situation for processors.
+
+Scott also points out that the RDF included with licensed works is sometimes redundant. Yes, absolutely. Our previous recommendation suggested the inclusion of RDF describing the license in an HTML comment. As mentioned [previously](http://labs.creativecommons.org/2010/09/02/semantic-copyright-and-cc-rel/), we also realized this is redundant and of minimal value. It's not clear under what circumstances a processor would be inclined to trust RDF about a license, at creativecommons.org, published with the work, elsewhere. Hindsight, 20/20, etc.
+
+Finally, when discussing how to handle the license URIs extracted, Scott's approach states that if the license URI is not known, they mark it as "unknown". This is a situation where self-describing documents can be useful to processors. An alternative approach would be to dereference the URI and attempt to extract details about the license. We use this approach ourselves in several situations, most recently with [OpenAttribute](http://yergler.net/blog/2010/12/31/minor-update-for-openattribute/), a prototype Firefox add-on for displaying license and attribution information.
+
+---
+pub_date: 2011-01-04

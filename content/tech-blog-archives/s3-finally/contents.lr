@@ -1,0 +1,26 @@
+title: S3 Finally!
+---
+categories: Metrics, summer
+---
+author: ankitg
+---
+body:
+
+/me hugs paulproteuss ... yes an extra s in there today, but thanks to him [and the guy who posted this :: <http://www.macosxhints.com/article.php?story=2008020123070799> with a link to an archive with the S3Browser.app] I now finally have access to S3! (-:
+
+OK, so now that I have access to 25887 objects which take up 319.191 GB (and growing) I need to sort out which ones I need to make a local copy. I sure don't want to go around messing about with the stuff online, especially since that's the only copy! I would take the whole dump but there are costs involved:
+
+  * **Storage** \- not a big deal, I have 250+ GB available now
+  * **Time** \- shouldn't take *too* long, I can let my mac be sleepless a couple of nights
+  * **Money** \- apparently it would cost about 50 bucks for the transfer
+
+
+
+And well, I guess that would be just taking the easy way out. So, I'll shovel through and familiarize myself with the data so I know which parts I really really should have and what data is not going to very helpful in the analysis and I'll make a copy of whatever makes for good analysis.
+
+Eye-balling shows me a lot of error logs which I might not include for analysis at the moment [at least not as a part of the GSoC project ... may be later]. I'll probably make a big list of what are all the different types of logs in there and what attributes each of them has. Then I can probably start looking at how I can use the combination of different attributes stored in each of them to come up with useful metrics.
+
+That's all for now, need to wrap up other projects before I can get started on GSoC full throttle. So, it's 3:15 am and I am signing off to get back to work.
+
+---
+pub_date: 2008-06-03

@@ -1,0 +1,16 @@
+title: Schema Migration with Django
+---
+categories: 
+---
+author: nathan
+---
+body:
+
+[Django](http://djangoproject.com) is an amazing web framework; we built a lot of features in a very short period of time and Django [mostly] stayed out of our way. Last night as I was working on today's feature upgrade for [creativecommons.net](http://creativecommons.net) I decided to tackle what lots of people see as its major weakness: schema migration. Rather, the lack of an integrated migration story.
+
+I had seen some of the tools floating around and decided to watch [the panel from Djangocon](http://www.youtube.com/watch?v=VSq8m00p1FM) to get a better overview. For the record the represented tools are [dmigrations](http://code.google.com/p/dmigrations/), [south](http://south.aeracode.org/) and [django-evolution](http://code.google.com/p/django-evolution/). At some point while watching the video I think I was convinced each was the right solution; they all have features/use cases to recommend them.
+
+Selecting the correct tool is an exercise in change management: it seems almost certain that Django will eventually adopt or create a "blessed" migration tool. And at that point, we need a way to move forward. Because of this I wound up choosing dmigrations. Sure, it doesn't do some of the fancy stuff that south and django-evolution do (dependency tracking, model "fingerprinting") but it does let us dump out the entire migration path as raw SQL and that's something I can easily work with when it comes time to recreate our database on the "real' platform.
+
+---
+pub_date: 2008-10-21

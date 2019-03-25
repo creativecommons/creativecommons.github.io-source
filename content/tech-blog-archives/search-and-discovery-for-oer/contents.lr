@@ -1,0 +1,16 @@
+title: Search and Discovery for OER
+---
+categories: metadata, standards
+---
+author: nathan
+---
+body:
+
+Last summer the [Open Society Institute](http://www.soros.org "Open Society Institute") generously provided funding for CC to host a [meeting about search and discovery for OER](http://opened.creativecommons.org/OER_Discovery_2009). The goal was to bring together people with experience and expertise in different areas of OER discovery and see if there was common ground: pragmatic recommendations publishers could follow to achieve increased visibility right now.
+
+After many months of inactivity, I'm happy to announce that we've published a draft of an initial document, a basic publishing guide for OER. ["Towards a Global Infrastructure For Sharing Learning Resources"](http://wiki.creativecommons.org/Towards_a_Global_Infrastructure_For_Sharing_Learning_Resources) describes steps creators and publishers of OER can take today to make sure their work spreads as widely as possible. This draft was developed by attendees of the meeting, and is currently being reviewed; as such it may (and probably will) change.
+
+As you can see from the [meeting notes](http://opened.creativecommons.org/OER_Discovery_2009_Notes#Can_we_set_some_initial_priorities_and_plans_of_action.3F), this isn't the last thing we hope to get from this meeting. The next steps involve getting our hands a little dirtier -- figuring out how we link registries of OER repositories and implementing code to do so. It should be interesting to see how this work develops, and how it influences our prototype, [DiscoverEd](http://wiki.creativecommons.org/Category:DiscoverEd).
+
+---
+pub_date: 2010-01-14

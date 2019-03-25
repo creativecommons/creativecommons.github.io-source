@@ -1,0 +1,33 @@
+title: Understanding the State of Sanity (via whiteboards and ascii art)
+---
+categories: development, license, software
+---
+author: cwebber
+---
+body:
+
+Since I started working at Creative Commons a number of months ago, I've been primarily focused on something we refer to as the "sanity overhaul". In this case, sanity refers to try and simplify what is kind of a long and complicated code history surrounding Creative Commons' licenses, both as in terms of the internal tooling to modifying, deploying, and querying licenses and the public facing web interfaces for viewing and downloading them. Efforts toward the sanity overhaul started before I began working here, executed by both Nathan Yergler and Frank Tobia, but for a long time they were in a kind of state of limbo as other technical efforts had to be dedicated to other important tasks. The good news is that my efforts have been permitted to be (almost) entirely dedicated toward the sanity overhaul since I have started, and we are reaching a point where all of those pieces are falling into place and we are very close to launch.
+
+To give an idea of the complexity of things as they were and how much that complexity has been reduced, it is useful to look at some diagrams. When Nathan Kinkade first started working at Creative Commons (well before I did), Nathan Yergler took some time to draw on the whiteboard what the present infrastructure looked like:
+
+[![](2347987536_5515b1f963.jpg)](http://www.flickr.com/photos/nathan_y/2347987536/sizes/m/in/photostream/)
+
+as well as what he envisioned the "glorious future" (sanity) would look like:
+
+[![](2347986388_dd1c466a5e.jpg)](http://www.flickr.com/photos/nathan_y/2347986388/sizes/m/in/photostream/)
+
+When I started, the present infrastructure had shifted a little bit further still, but the vision of the "glorious future" (sanity) had mostly stayed the same.
+
+This week (our "tech all-hands week") I gave a presentation on the "State of Sanity". Preparing for that presentation I decided to make a new diagram. Since I was already typing up notes for the presentation in Emacs, I thought I might try and make the most minimalist and clear ASCII art UML-like diagram that I could (my love of ASCII art is well known to anyone who hangs out regularly in #cc on Freenode). I figured that I would later convert said diagram to a traditional image using [Inkscape](http://inkscape.org) or [Dia](http://projects.gnome.org/dia/), but I was so pleased with the end result that I just ended up using the ASCII version:
+    
+    
+    *******************
+    * CORE COMPONENTS *
+    *******************
+    
+          .--.
+         ( o_o)
+         /'
+
+---
+pub_date: 2009-12-18

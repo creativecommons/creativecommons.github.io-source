@@ -1,0 +1,45 @@
+title: Palimpsest
+---
+categories: python, xmp
+---
+author: ml
+---
+body:
+
+Terry Hancock, a frequent poster on the law-oriented cc-licenses list, is working on an interesting metadata library called [Palimpsest](http://light-princess.org/palimpsest/):
+
+> [W]hich has a mnemonic association with what the program does, and does have a clever backronym for those who want one:  
+>  **P** ython  
+>  **A** ttribution &  
+>  **L** icensing  
+>  **I** nformation  
+>  **M** etadata  
+>  **P** rocessor, with  
+>  **S** ystematic  
+>  **E** xtensibility for  
+>  **S** undry  
+>  **T** ypes
+
+Terry's goals for the project:
+
+  * Read/write support of Adobe XMP embedded metadata
+  * Read/write support of native â€œnamed fieldâ€ data
+  * Read/write support of comments
+  * Read/write support of visible text labelling for formats that need it
+  * General adaptation to the 15 Dublin Core named fields for all data
+  * Discovery of attribution and licensing data in comments and annotations, if not available elsewhere
+  * License-aware processing (expansion of common abbreviations of terms, etc)
+  * Open-ended pluggable support for virtually any multimedia datatype
+  * Highly portable, so that it can be used on clients or servers on any operating system
+  * Dead-simple, so people will actually want to _use_ it
+
+
+
+I'm glad to see Terry tackling this project. It'll be hard to get the abstractions right, but valuable if it works.
+
+I love the project logo:  
+[![Palimpsest logo](pal_logo.jpg)](http://light-princess.org/palimpsest/ "Palimpsest logo")  
+Not because it is a particularly great logo, but because it's the first logo I've seen that could be mistaken for a captcha. Intentional or not, bound to be independently invented many times, and perhaps copied by me at least once.
+
+---
+pub_date: 2007-05-04

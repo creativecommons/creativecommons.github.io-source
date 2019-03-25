@@ -1,0 +1,26 @@
+title: Removing duplicate rows in MySQL
+---
+categories: 
+---
+author: nkinkade
+---
+body:
+
+There are thousands of articles out there on removing duplicate rows from a SQL database. However, almost all of the first-page results of a search at Google for something like " _mysql remove duplicates_ " involved creating temporary tables and other convoluted ways of solving the problem. I'm posting this simple method here in the hope that it could simplify this process for someone else. This is likely old news for people highly experienced with MySQL and SQL databases in general, but it's not that frequent that I have to tackle the duplicate row issue, so I post here for my own reference and that of others. The idea is that you create a unique index on the table based on the columns that should not be duplicated. MySQL will delete the duplicates in order to comply with the uniqueness of the index created. You then simply remove the temporary index.
+
+There was [a bug](http://issues.civicrm.org/jira/browse/CRM-3901) in [CiviCRM](http://civicrm.org) which was causing duplicate records in a particular table. Find the duplicates:
+
+`mysql> SELECT contact_id, contribution_id, receive_date, product_id, count(*) FROM civicrm_contribution_product JOIN civicrm_contribution ON civicrm_contribution_product.contribution_id = civicrm_contribution.id GROUP BY contribution_id, product_id having count(*) > 1 ORDER BY receive_date;`
+
+Removing most of the duplicates:
+
+`mysql> ALTER IGNORE TABLE civicrm_contribution_product ADD UNIQUE INDEX `tmp_index` (contribution_id, product_id);`
+
+Removing the temporary index:
+
+`mysql> ALTER TABLE civicrm_contribution_product DROP INDEX tmp_index;`
+
+Thanks to Paul Swarthout's comments on [a thread](http://www.databasejournal.com/features/mysql/article.php/10897_2201621_2/Deleting-Duplicate-Rows-in-a-MySQL-Database.htm) at [databasejournal.com](http://www.databasejournal.com) for this simple solution.
+
+---
+pub_date: 2010-01-12

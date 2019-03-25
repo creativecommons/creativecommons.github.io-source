@@ -1,0 +1,28 @@
+title: WebM encoding CC's videos
+---
+categories: video
+---
+author: akozak
+---
+body:
+
+I was recently tasked with encoding all of [CC's videos](http://creativecommons.org/videos) into [WebM](http://en.wikipedia.org/wiki/WebM), a new open video container format.
+
+I started out by [creating a table](http://wiki.creativecommons.org/WebM) of all of the videos and target quality. Then, I started to track down the highest quality version of each video I could find.
+
+At first I had high hopes of using ffmpeg (with libvpx support) wrapped in a bash script to batch process all of the videos into .webm. Although there are some [decent directions](http://ubuntuforums.org/showthread.php?t=786095) to re-compiling ffmpeg to enable webm, I ran into trouble (some sort of version conflict) and wasn't able to complete the process.
+
+So after searching around, I found a few promising leads on the [WebM tools page](http://www.webmproject.org/tools/).
+
+Our friends at [Miro](http://www.getmiro.com/) have come out with [Miro Video Converter](http://www.mirovideoconverter.com/), which is a useful-looking tool that promises a simple way to encode video for mobile devices and the web. It purports to support webm, but sadly I wasn't able to test it as they don't currently develop a version for Linux (only Windows and OSX).
+
+Next I tried installed the [Fireogg](http://firefogg.org/make/) extension into Firefox and tested the process by converting one small .mov file into .webm. I was surprised how well it worked, although as far as I could tell it lacked a method to batch-process or queue files (or at least that functionality isn't within scope for its purpose). It also took an unreasonably long time to transcode the video, so my search continued.
+
+With [Arista Transcoder](http://www.transcoder.org/), I found a Linux application that seemed to work. In Ubuntu, setup was as simple as extracting the archive and running `python setup.py install --install-layout=deb` (provided you have python installed). The [Web Browser (Advanced)](http://www.transcoder.org/presets/) preset gave me the ability to queue up and transcode the videos into 360p, 480p, and 720p .webm with reasonable transcoding times.
+
+One minor hurdle was to encode the videos into 240p WebM, a resolution not included in the Web Browser (Advanced) preset package. To accomplish that, I modified the json preset file to include 240p into webm. You can download my modified version of the json file in the preset [here](http://mirrors.creativecommons.org/~akozak/web-advanced.json). My only modification comes at the end. You should be able to just copy my version into `~/.arista/presets` and replace the original if it exists.
+
+When we start to embed the files on [creativecommons.org/videos](http://creativecommons.org/videos), I plan on following the instructions in the [Dive Into HTML5 Video chapter](http://diveintohtml5.org/video.html).
+
+---
+pub_date: 2010-12-03

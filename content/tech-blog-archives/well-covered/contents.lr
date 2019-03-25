@@ -1,0 +1,18 @@
+title: Well Covered
+---
+categories: infrastructure, tools
+---
+author: nathan
+---
+body:
+
+When we [rolled out](http://labs.creativecommons.org/2010/08/12/welcome-hudson-to-creative-commons/) [Hudson for CC code](http://code.creativecommons.org/hudson) last month, I already knew that I wanted to have test coverage reporting. There's simply no reason not to: it provides a way to understand how complete your tests are, and when combined with branch testing, gives you an easy way to figure out what tests need to be written (or where to target your test writing efforts).
+
+Last week I updated [DiscoverEd](http://wiki.creativecommons.org/DiscoverEd) to use [Cobertura](http://cobertura.sourceforge.net/) for [coverage](http://code.creativecommons.org/hudson/job/discovered/cobertura/). It was pretty easy to crib the example ant build file to [add support](http://gitorious.org/discovered/repo/commit/ea1a28b823fdee9657b7f63f347c72cf5e9b82bd) for instrumenting and testing our code.
+
+When I first tried to add [coverage](http://pypi.python.org/pypi/coverage/) support to our Python code, I [encountered](http://yergler.net/blog/2010/08/20/ci-at-cc/) [an issue](http://bitbucket.org/ned/coveragepy/issue/82/tokenerror-when-generating-html-report) between coverage and Jinja2. Ned quickly committed a fix, and today I finished instrumenting our core Python projects for coverage reporting. This includes the license engine ([cc.engine](http://code.creativecommons.org/hudson/job/cc.engine/cobertura/)), the API ([cc.api](http://code.creativecommons.org/hudson/job/cc.api/cobertura/)), the underlying license library ([cc.license](http://code.creativecommons.org/hudson/job/cc.license/cobertura/)), and the structured data scraper used by the deeds ([deedscraper](http://code.creativecommons.org/hudson/job/deedscraper/cobertura/)). 
+
+A pleasant surprise after instrumenting is the current state of coverage. With the exception of cc.engine, we're at greater than 90% coverage for our core code (it appears that there are lots of branches/conditionals we don't test adequately in cc.engine right now). Looking forward to seeing 100's across the board.
+
+---
+pub_date: 2010-10-05

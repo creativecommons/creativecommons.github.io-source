@@ -1,0 +1,31 @@
+title: CCSearch Testing Progress
+---
+categories: search
+---
+author: alex
+---
+body:
+
+Two months ago we set out to develop a brand new interface for [search.creativecommons.org](http://search.creativecommons.org). During that time, two UIs have been in testing alongside the current search. All visitors have had the option to switch their experience over to one of the beta versions.
+
+  1. [A drop-down list](/demos/search/search1) of supported search engines
+  2. [A radio button group](/demos/search/search2) of search engines
+
+
+
+During the test we collected various analytical data based on visitor rate, beta deactivations, and interface clicks. We wanted to see which of the UIs had more return visitors, and more interactions per visit.
+
+| Drop-down UI | Radio button UI  
+---|---|---  
+Page Loads | 2,221 | 6,840  
+% changed search engine | 22% | 41%  
+% changed the query | 16% | 22%  
+% clicked submit | 30% | 37%  
+Beta deactivations | 142 | 132  
+  
+As the numbers indicate, overall user interaction with the radio button interface was more successful, as well as having higher visitor retention and return rates. Over the next month we plan to tweak, test, and perfect our [new search interface](/demos/search/search2/), before rolling out to the millions of people who visit every month.
+
+We invite you to leave your feedback, critiques, and comments about our planned new search interface. Over the coming weeks, bugs will be fixed, and some new functionality added -- The highest priority of which will be full internationalization.
+
+---
+pub_date: 2010-09-02

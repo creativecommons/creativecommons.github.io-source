@@ -1,0 +1,49 @@
+title: CC OpenOffice.Org AddIn updates
+---
+categories: Add-In, license, metadata, OpenOffice, summer
+---
+author: ksiomelo
+---
+body:
+
+Hello all,
+
+updates of the version 0.0.2:
+
+* Creative Commons menu became visible in Calc and Impress
+
+Although it's is not working properly yet, the addin is now supporting the other ooo applications.
+
+* License Image bug fixed
+
+Now the addin is retrieving the licenses images perfectly!
+
+* Display dialog when opening licensed documents
+
+A simple dialog box is shown when a CC licensed document is opened.
+
+* Checks if the document is already licensed and warns the user
+
+Something like "You have chosen a different license, do you want to proceed anyway?"
+
+... serveral other minor-updates were made in the addin.
+
+Take a look at the screen shots!
+
+[License inserted in the document](http://techblog.creativecommons.org/files/2007/07/screen1.JPG "License inserted in the document")  
+[Document already licensed](http://techblog.creativecommons.org/files/2007/07/screen2.JPG "Document already licensed")  
+[Opening a licensed document](http://techblog.creativecommons.org/files/2007/07/screen3.JPG "Opening a licensed document")  
+[Using the CC autotext to replicate the license](http://techblog.creativecommons.org/files/2007/07/screen4.JPG "Using the CC autotext to replicate the license")
+
+Want to try? Just download the [ccooo.oxt](http://cctools.svn.sourceforge.net/viewvc/cctools/ccooo/trunk/ccooo/dist/) file and install it from Extension Manager in OpenOffice.Org!
+
+Next steps:
+
+* Internationalization support; 
+* Exception handling (including timeout);
+* Some changes on GUI, such as adding progress bars;
+* Settings menu?
+* Work on the same functionalities in Calc and Impress.
+
+---
+pub_date: 2007-07-07

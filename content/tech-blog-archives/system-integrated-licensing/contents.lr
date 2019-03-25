@@ -1,0 +1,46 @@
+title: System Integrated Licensing
+---
+categories: development, Interns, license, one, software, system
+---
+author: tannewt
+---
+body:
+
+I've been asked, as a tech intern here at Creative Commons, to create a way of locally tracking file licenses on a system. A while back Jon [wrote down his ideas](http://wiki.creativecommons.org/Licenses_in_Operating_Systems_Specification) about system-wide license tracking on the Creative Commons wiki. The purpose of this system would be to provide an interface for developers to access the available licenses on a system. Additionally, like the existing online license chooser, this library, called libLicense, will feature a way to choose a license through toggling certain flags available for a family of licenses. Naturally, the first family available will be the Creative Commons licenses. The larger goal for the summer is to utilize this library in a few initial systems. Currently, I'm looking at integration into [Gnome](http://www.gnome.org) and Sugar (from the [One Laptop Per Child](http://www.laptop.org) project). This further work will occur after libLicense is working.
+
+**Data**
+
+To run libLicense the data of all the licenses will need to be stored in some sort of fashion. My initial thought is this:
+
+  * All data will be stored in a directory. On Linux this directory would be /usr/share/licenses . (This is borrowed from Jon's thoughts.)
+  * Families of licenses will be stored in a subdirectory of the licenses directory. For example, the Creative Commons licenses would be stored within creative_commons.
+  * Within these family directories each specific license will be stored in a file with the naming scheme <bitcode>-<short name>-<jurisdiction>-<locale>.license . These files will store the license uri, name, status (active or retired), description and legal text. How this will be stored is up in the air. My intial thoughts include separating each attribute on a line or having a format similar to .desktop files.
+  * In addition to storing license data, some family information must be stored, namely the family bit flags. In the case of the Creative Commons licenses, the bit flags would be Attribution, Share-Alike, Non-Commercial and No Derivatives. They would combine to create the bitcode present in the license filename. These bit flags would be the heart of the license chooser logic. If the combination does not exist, the flags are incompatible.
+
+
+
+**API**  
+The library would potentially have these functions:
+
+**get_jurisdiction(uri)** \- returns the jurisdiction for the given license.  
+**get_jurisdictions(short or bitcode)** \- returns the available jurisdiction for the given short name or bitcode.  
+**get_locale(uri)** \- returns the locale for the given license.  
+**get_locales(jurisdiction, short or bitcode)** \- returns the available locales for the given jurisdiction and short name or bitcode.  
+**get_name(uri)** \- returns the name of the license.  
+**get_version(uri)** \- returns the version of the license.  
+**get_versions(short, jurisdiction)** \- returns the available versions for the given short name or bitcode and jurisdiction.  
+**get_short(uri)** \- returns the short name for the given uri.  
+**has_flag(attribute,uri)** \- returns if the flag is set for the given uri.  
+**family_flags(family)** \- returns the flags available for a given family.  
+**family(uri)** \- returns the family the given uri belongs to.  
+**get_notification(uri[,url])** \- returns the notification string for the given url with an option to provide a verification url.  
+**verify_uri(uri)** \- returns whether or not the given uri is recognized by the system.  
+**get_license(family,flags, jurisdiction,locale)** \- returns the uri which satisfies the given attributes.  
+**get_all_licenses()** \- returns all general licenses available.  
+**get_general_licenses(family)** \- returns all general licenses in a family.  
+**get_families()** \- returns a list of available families.
+
+Did I miss something? Does something not make sense? Please post a comment.
+
+---
+pub_date: 2007-06-19

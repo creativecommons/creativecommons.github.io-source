@@ -1,0 +1,23 @@
+title: GSoC CC Wordpress Plugin: Weekly Report #1
+---
+categories: CC, summer, wordpress
+---
+author: erlehmann
+---
+body:
+
+This week I was busy and lazy in turns, so I worked on [the plugin](http://labs.creativecommons.org/2010/05/24/gsoc-project-introduction-cc-wordpress-plugin/) only on two days. These are the tasks that I finished:
+
+  * Setting up a test Wordpress installation, to start with a clean slate.
+  * Installing the [_Hook Sniffer_](http://wordpress.org/extend/plugins/wordpress-hook-sniffer/) plugin; which prints out every [Wordpress hook](http://codex.wordpress.org/Plugin_API#Hooks.2C_Actions_and_Filters) triggered on a page load.
+  * Creating a simple form interface ([screenshot](http://daten.dieweltistgarnichtso.net/pics/screenshots/web/wordpress-cc-plugin/dummy-upload.png)).
+  * Putting all this together into a dummy plugin that adds the non-functional interface to the Wordpress upload manager.
+
+
+
+I am aware that this is not much and will try to improve on my progress for the coming week. Currently I am trying to find out how to correctly handle the form input and write the incoming data into appropriate database fields, license representation in the media manager will probably come after that.
+
+As always, the code is in the [official Git repository](http://code.creativecommons.org/viewgit/wordpress-cc-plugin.git/).
+
+---
+pub_date: 2010-06-01

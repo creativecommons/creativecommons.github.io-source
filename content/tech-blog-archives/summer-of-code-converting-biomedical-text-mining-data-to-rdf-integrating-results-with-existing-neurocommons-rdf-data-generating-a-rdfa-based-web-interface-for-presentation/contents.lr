@@ -1,0 +1,32 @@
+title: 'Summer of Code: "Converting biomedical text mining data to RDF, integrating
+---
+categories: bioinformatics, neurocommons, rdf, rdfa, summer, text
+---
+author: matthiassamwald
+---
+body:
+
+**About the project**
+
+The [Neurocommons project](http://sciencecommons.org:81/projects/data/) wants to lay the foundation for a Semantic Web for neuroscience by creating resources that others will want to link to, extend, and build upon, and in so doing, to set an example that can be replicated in other scientific disciplines. One aspect of that goal is to make relationships in biomedical texts openly accessible on the Semantic Web.
+
+The proposed project will add to the value of the Neurocommons project in two ways:
+
+1) It will use the [Whatizit text mining resource](http://www.ebi.ac.uk/webservices/whatizit/info.jsf) of the [European Bioinformatics Institute](http://www.ebi.ac.uk/) as a source to generate RDF.  
+The text mining data of Whatizit are of a high quality and provide rich information that complements existing text mining data from the Neurocommons project. The RDF derived from Whatizit will be integrated with the existing Neurocommons annotations, resulting in a significantly increased coverage. The software written will demonstrate a typical pipeline for conversion of text mining results to good quality RDF.  
+The Whatizit service can mine either Pubmed abstracts or free text supplied by a user. We will provide a simple interface so that open access scientific articles can be easily acquired and mined by the tool, so that users with rights to non-open access scientific articles can mine that text and submit the resultant RDF, which, as knowledge, is not protected by copyright.
+
+2) Software will be written to set up a website to present the information derived from the Neurocommons textmining and the Whatizit derived facts. Pages on this website will use [RDFa](http://www.w3.org/TR/xhtml-rdfa-primer/) for markup, integrating the human readable text with the machine readable markup in a single document.
+
+The resulting resource will not only be valuable for neuroscientific researchers â€“ it will also serve as a model implementation that unifies text mining, Semantic Web standards and the philosophy of Science Commons / Creative Commons for the advancement of scientific research and global information exchange in general.
+
+**About myself**
+
+My name is Matthias Samwald and I come from Austria. I have studied neurobiology at the University of Vienna from 2000 to 2005. The work of my doctoral thesis, starting in 2005, is focussed on the use of Semantic Web technologies in neuroscience and biomedicine. Since 2006 I am a member of the World Wide Web Consortium (W3C) as an â€˜invited expertâ€™. I am an active participant of the [â€œSemantic Web in Health Care and Life Science Interest Groupâ€](http://www.w3.org/2001/sw/hcls/) of the W3C.
+
+[My curriculum](http://neuroscientific.net/curriculum)  
+[My doctoral thesis and corresponding publications  
+](http://neuroscientific.net/semantic)
+
+---
+pub_date: 2007-04-18

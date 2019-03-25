@@ -1,0 +1,12 @@
+title: HTTPS now available on creativecommons.org
+---
+categories: 
+---
+author: nkinkade
+---
+body:
+
+A week or two ago we received a request from someone to add HTTPS support to creativecommons.org. A reasonable request at all events, but the specific impetus for the email was someone who develops an application that uses CC's [Partner Interface](http://wiki.creativecommons.org/Partner_Interface) to integrate CC licensing. Their interface is SSL-enabled, and so accessing the Partner Interface over a normal, non-encrypted channel was giving his users browser warnings about accessing non-encrypted data. I'm happy to announce that creativecommons.org is now available [over an encrypted connection](https://creativecommons.org). Thanks to Peter Dietz for prodding us to implement this. 
+
+---
+pub_date: 2011-02-04

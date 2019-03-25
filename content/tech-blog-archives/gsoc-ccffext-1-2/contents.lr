@@ -1,0 +1,40 @@
+title: GSoC Firefox Extension: Project Introduction and Weekly Reports #1-2
+---
+categories: rdfa, summer
+---
+author: igorlukanin
+---
+body:
+
+Hello, my name's Igor Lukanin. I'm a 21 year old student of the [Ural Federal University](http://ustu.ru/) located in [Yekaterinburg](http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=Russian+Federation,+Sverdlovskaya+oblast,+Yekaterinburg&sll=37.0625,-95.677068&sspn=33.710275,53.789062&ie=UTF8&hq=&hnear=Yekaterinburg,+gorodskoy+okrug+gorod+Ekaterinburg,+Province+of+Sverdlovsk,+Russian+Federation&ll=43.834527,139.21875&spn=129.775476,346.289063&z=2), Russia. Despite the fact that I study IT security, I've always been interested in the FOSS initiative and licensing issues, that's why I'm proud to present the other GSoC project here at CC. But first, I should thank [Nathan Yergler](http://creativecommons.org/about/people#nathanyergler) who was giving valuable comments on the project proposal, and my mentor [John Doig](http://creativecommons.org/about/people#johndoig) who is always willing to help, letting me work around any obstacles I face.
+
+### Project Introduction
+
+The project is intended to develop an extension for Mozilla Firefox web browser that would make it easy to find CC-licensed content on browsed pages, know the license and its terms, clarify their meaning and generate correct attribution information for content re-usage. The major advantage of this project is its (future) nice and polished UI (a [mockup](http://simplest-image-hosting.net/i0-info-png-0.png) of the browser's Page Info dialog is available).  
+  
+Paying attention to the seamy side of life, I should mention that the extension would do its magic by parsing RDFa metadata. It seems that it would perfectly consume the outcome of the [GSoC Wordpress plugin](http://labs.creativecommons.org/2010/05/24/gsoc-project-introduction-cc-wordpress-plugin/), as well as work with a huge number of existing web-sites providing RDFa metadata.
+
+A bit more information may be found in the [project proposal](http://code.creativecommons.org/viewgit/cc.ff_ext.git/plain/doc/proposal.pdf) (choose Save Link As from the context menu).
+
+### Weekly Reports #1-2
+
+The strong side of my project is that the result of the development may be easily observed. The [current version](http://code.creativecommons.org/viewgit/cc.ff_ext.git/plain/cc.ff_ext.xpi) of the extension (as well, choose Save Link As from the context menu, then install) is capable of parsing RDFa metadata and showing gathered triples in a separate tab of the browser's Page Info dialog (an icon in the location bar may be clicked to get there).
+
+I spent the 1st week creating the skeleton code of my extension and observing available solutions that may be used to parse RDFa data in JavaScript.
+
+The 2nd week was spent integrating the [RDFa in Javascript](http://www.w3.org/2006/07/SWD/RDFa/impl/js/) library by Ben Adida, Nathan Yergler, and Jeni Tennison, using it to parse and cache RDFa matadata while browsing web pages, creating a new tab in the Page Info dialog for this info to be shown. The changes in the code caused the need for a refactoring which I'm currently thinking of.
+
+The current state of the project shows that its not too much effort left to start implementing the UI that was shown in the proposal.
+
+### Contact details
+
+The project is hosted in the [CC Code repository](http://code.creativecommons.org/viewgit/cc.ff_ext.git/), so you may always fetch and try the latest version of the extension (for example, using `wget http://code.creativecommons.org/viewgit/cc.ff_ext.git/plain/cc.ff_ext.xpi`).
+
+I'll be pleased if anyone tries the extension, probably [reporting any issues](http://code.creativecommons.org/issues/). It's generally useless now, however you may find it interesting to dig into the raw RDFa of web-sites. Anyway, I'd like to hear any opinions here in comments, on the `irc.freenode.net#cc` channel, by [email](mailto:mail@igor.lukanin.name) or via Jabber.
+  *[FOSS]: Free and Open Source Software
+  *[GSoC]: Google Summer of Code
+  *[CC]: Creative Commons
+  *[UI]: user interface
+
+---
+pub_date: 2010-06-08

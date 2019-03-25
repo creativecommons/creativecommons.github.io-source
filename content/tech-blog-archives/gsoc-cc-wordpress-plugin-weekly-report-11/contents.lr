@@ -1,0 +1,22 @@
+title: GSoC CC WordPress Plugin: Weekly Report #11
+---
+categories: CC, summer, wordpress
+---
+author: erlehmann
+---
+body:
+
+This week most of the work on the [plugin](http://labs.creativecommons.org/2010/05/24/gsoc-project-introduction-cc-wordpress-plugin/) consisted of styling changes and fixing bugs, mainly regressions that sneaked in due to the rewrite of functions that are now using the API. Still, there are some new features:
+
+  * **The _embed_ button** : Suggested by [Markus Beckedahl](http://de.wikipedia.org/wiki/Markus_Beckedahl), a re-embedding possibility actively promotes sharing content. Clicking on the button reveals a text input filled with the markup necessary to put a copy of the media item into another website. Bonus: The re-embedded content keeps the style of the original content and _also_ sports an embed-button.
+  * **An API cache** : Results of queries to the [CC REST API](http://api.creativecommons.org/docs/) are now saved for two weeks, using the [Wordpress Transients API](http://codex.wordpress.org/Transients_API). This speeds up figure generation and the administration page tremendously.
+  * **Automagic locale selection** : The plugin now simply uses the Wordpress locale.
+
+
+
+I also made a [screencast](http://mirrors.creativecommons.org/movingimages/wordpress-cc-plugin.ogv), approximately 6 minutes long, that demonstrates how the plugin is used.
+
+For the remaining few days, I have three things to resolve: First, there is a bug preventing the embed markup to show up properly in Internet Explorer 6 and 7. Second, provided that I find the corresponding hook, I will add license icons to the media manager overview. Third, a proper README file needs to be written.
+
+---
+pub_date: 2010-08-10

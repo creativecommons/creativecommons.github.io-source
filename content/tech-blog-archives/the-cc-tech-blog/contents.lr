@@ -1,0 +1,16 @@
+title: The CC Tech Blog
+---
+categories: techblog
+---
+author: nathan
+---
+body:
+
+Welcome to the Creative Commons Tech Blog. The CC Tech Blog is a new blog from [Creative Commons](http://creativecommons.org), in particular the geeks at CC. It's a place where we'll blog the purely technical details of our projects, the things that probably aren't of interest to the wider community. If you're interested in Python coding, WordPress hacking, HTTP acceleration, XML parsing or GUI toolkits, this might be the place for you. 
+
+This is a work in progress, so if you have suggestions, ideas or questions, you can find us on [IRC](http://wiki.creativecommons.org/IRC) or the [cc-devel](http://wiki.creativecommons.org/Mailing_Lists) mailing list.
+
+Enjoy!
+
+---
+pub_date: 2007-04-11

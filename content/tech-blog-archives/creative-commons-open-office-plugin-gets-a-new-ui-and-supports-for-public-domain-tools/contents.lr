@@ -1,0 +1,66 @@
+title: Creative Commons Open Office Plugin gets a new UI and supports for Public Domain
+---
+categories: Add-In, OpenOffice, opensource, summer
+---
+author: akila87
+---
+body:
+
+**User Interface**
+
+For the past few weeks I have been working on changing the User Interface and adding public domain tools for the Open Office plugin. In my previous post I introduced a new UI for adding creative Commons License, which is more simple and less confusing. In the same way I tried to make the UI for public domain tools as simple as possible. 
+
+  
+
+
+The first idea was to make a wizard for the Public Domain tools. The disadvantage of this was you want to click “Next” several times to add the license. This may be a good option for a new user, but for an experienced user this may become an annoying.
+
+  
+
+
+The second idea was to display the license deed and necessary instructions in the same dialog, but this made the dialog too confusing and large (may be larger than the screen height).
+
+  
+
+
+The next idea was to add separate menu items for CC0 and Public Domain, but this was rejected because this would have less attention to the CC0 and the Public Domain.
+
+  
+
+
+Finally Nathan came up with a better idea: to use tabs in the same dialog. This is a good idea in several ways. You have all Creative commons licensing and Public Domain tools in the same place, so it is easy to switch between them. Less area and less confusing. 
+
+  
+
+
+So this is the new user interface for the plugin. And I would like to thank [Alex Roberts](http://creativecommons.org/about/people#alexroberts), [Greg Grossmeier](http://blog.grossmeier.net/) and my mentors [Christopher](http://creativecommons.org/about/people#christopherwebber) and [Nathan](http://creativecommons.org/about/people#nathanyergler) for their valuable ideas.
+
+  
+
+
+[caption id="" align="alignleft" width="280" caption="Creative Commons Tab"][![](Screenshot.png)](http://lh4.ggpht.com/_LE-WXW82VPE/TCy5nLN7azI/AAAAAAAAAH8/FjqnXMDTUrA/s512/Screenshot.png)[/caption]
+
+[caption id="" align="alignright" width="278" caption="CC0 Tab"][![](Screenshot-1.png)](http://lh4.ggpht.com/_LE-WXW82VPE/TCy5nJMXN_I/AAAAAAAAAIA/_IxDfWeb4tE/s512/Screenshot-1.png)[/caption]
+
+[caption id="" align="aligncenter" width="277" caption="Public Domain Tab"][![](Screenshot-2.png)](http://lh3.ggpht.com/_LE-WXW82VPE/TCy5nWIxE1I/AAAAAAAAAIE/yURkDLdjC-c/s512/Screenshot-2.png)[/caption]
+
+  
+
+
+**CC0 & Public Domain**
+
+Adding CC0 was one of the most important task of this project. Now users can use CC0 and Public Domain tools from the license selection dialog. Both meta data (OpenOffice.org fields and RDF) and the human viewable text will be added to the document. 
+
+  
+
+
+The dialog will warn the user about the usage of CC0 and the Public Domain. This will help a new user to select the tool appropriately.
+
+[caption id="" align="aligncenter" width="439" caption="CC0"][![](Screenshot-3.png)](http://lh4.ggpht.com/_LE-WXW82VPE/TCy9kks5QWI/AAAAAAAAAIk/cHADsQ4dBfE/Screenshot-3.png)[/caption]
+
+[caption id="" align="aligncenter" width="439" caption="Public Domain"][![](Screenshot-4.png)](http://lh6.ggpht.com/_LE-WXW82VPE/TCy9kh770oI/AAAAAAAAAIo/SguqNV9nfnY/Screenshot-4.png)[/caption]
+
+Current version of the plugin can be downloaded from [here](http://extensions.services.openoffice.org/en/project/ccoootest) and the source can be found in [here](http://code.creativecommons.org/viewsvn/ccooo/branches/akila-gsoc-2010/).
+
+---
+pub_date: 2010-07-03

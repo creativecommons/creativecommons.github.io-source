@@ -1,0 +1,16 @@
+title: Copyright Registries 2.0
+---
+categories: registry, standards, techsummit
+---
+author: frank
+---
+body:
+
+Mario Pena of [Safe Creative](https://www.safecreative.org/), Joe Benso of [Registered Commons](http://www.registeredcommons.org/), and Mike Linksvayer of CC gave a talk on "Copyright Registries 2.0" as a continuation of the registration conversation we had at our first tech summit in June.
+
+Mario began with a summary of registries and how they should work: they must provide pointers to works, and they must facilitate the sharing of relevant information. He pointed to RDFa and ccREL as examples of technologies in this sphere promoting interoperability. He also mentioned the [Open Standards for Copyright Registry Interop](http://oscri.org/) as an example of the work being done to help foster online registries interoperability and standardization.
+
+Next, Joe discussed what he sees as necessary for registries moving forward. The big point he made was that Registered Commons feels a registry authority is a necessary condition for registries to be successfully implemented. He started with a brief history of Registered Commons and named the features they provide, including use of the CC API, timestamping of works, and physical identity verification. He finished with the need for an authority: to allocate namespaces, appoint registries based on criteria, identify entities to be certified, etc.
+
+---
+pub_date: 2008-12-12

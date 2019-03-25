@@ -1,0 +1,26 @@
+title: 64 bit woes (almost) cleared up
+---
+categories: Debian
+---
+author: nkinkade
+---
+body:
+
+As I mentioned in a [recent post](http://labs.creativecommons.org/2008/07/15/32-to-64bit-remotely/), we have upgraded our servers to 64 bit. All of them are now running [amd64](http://www.debian.org/ports/amd64/) for [Debian](http://debian.org). The first three server were upgraded remotely, but we noticed that a few applications were constantly dying due to segmentation faults. There was some speculation that this was a strange consequence of the remote upgrade process, so we upgraded the 4th server by reprovisioning it with [Server Beach](http://serverbeach.com) as a 64 bit system, cleanly installed from scratch.
+
+Well, it turned out that even the cleanly installed 64 bit system was having problems. So I installed the [GNU Debugger](http://www.gnu.org/software/gdb/), which I had never actually used before. I attached it to one of the processes that was having a problem, and what should immediately reveal itself but:
+
+> (gdb) c  
+>  Continuing.  
+>  [New Thread 1090525536 (LWP 16948)]
+> 
+> Program received signal SIGSEGV, Segmentation fault.  
+>  [Switching to Thread 1082132832 (LWP 16865)]  
+>  0x00002aaaaacfcd91 in tidySetErrorSink () from /usr/lib/libtidy-0.99.so.0 
+
+[Nathan Yergler](http://creativecommons.org/about/people#31) made a few changes to [cc.engine](http://code.creativecommons.org/viewsvn/cc.engine/branches/production/), the application that was having a problem, and which is based on [Zope](http://www.zope.org/), to remove any dependencies to libtidy, and the segfaults ceased. We haven't had the time to debug libtidy itself, but it would seem that there was some incompatibility between the version we had installed and a 64 bit system.
+
+We are still having a problem with [cgit](http://hjemli.net/git/cgit/about/) segfaulting, and that is the next thing to look into ... 1 down, 1 to go.
+
+---
+pub_date: 2008-08-02

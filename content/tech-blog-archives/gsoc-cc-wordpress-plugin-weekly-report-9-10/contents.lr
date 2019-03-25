@@ -1,0 +1,30 @@
+title: GSoC CC Wordpress Plugin: Weekly Report #9 / #10
+---
+categories: CC, summer, wordpress
+---
+author: erlehmann
+---
+body:
+
+Time is running out for work on the [plugin](http://labs.creativecommons.org/2010/05/24/gsoc-project-introduction-cc-wordpress-plugin/). With the 9th of this month being the suggested date to start working on documentation and cleanup and the 16th being a definitive "pencils down" date, I'm definitely in a hurry. Here's my story for the last two weeks, decorated with nicely drawn bullet points:
+
+  * **`<figure>` elements are _inline blocks_ now** : Like the elements they are supposed to replace — `<img>`, `<video>`, `<audio>` and the occasional `<object>` — `<figure>` elements should not disturb the flow of a blog post. They also now display effortless besides each other. 
+  * **The _wetter_ style became less  US-centric**: I created a version of the stylesheet with a crossed-out Euro symbol (€).  
+![screenshot of wetter stylesheet with crossed out dollar symbol](wetter.png)  
+![screenshot of wetter stylesheet with crossed out euro symbol](wetter-eu.png)
+  * **No more shortcodes** : The plugin now inserts simple image, video or audio elements and uses the PHP DOM facilities to detect and replace them. For error-tolerant parsing, I use the MIT-licensed [_html5lib_](http://code.google.com/p/html5lib/).
+  * **Some IE 6/7 support** : After discovering older versions of Internet Explorer are unable to style new HTML5 elements, I came upon Remy Sharp's [javascript-based workaround](http://html5doctor.com/how-to-get-html5-working-in-ie-and-firefox-2/). Granted, some parts still looks like crap in IE, but that is what you get for using a browser that is older than dirt.
+  * **New _hybrid_ style** : ![screenshot of hybrid style, showing a dark bar with light text](hybrid.png)
+  * **Locale and jurisdiction support** : Both can now be set in the admin interface, each media item can have a separate jurisdiction. All information comes from the excellent [CC REST API](http://api.creativecommons.org/docs/readme_dev.html). See for yourself:  
+![screenshot of Wordpress plugin showing Polish licenses, displayed in German](locale-jurisdiction-defaults.png)
+
+
+
+Two very important things are still missing: A cache for API responses and an easy method for re-embedding. I am going to work on those (and everything else Nathan Kinkade digs up in this version) in the next few days.
+
+The overly frequent API calls result in notable slowness interface-wise and unneccessary load on the server side — so kids, don't try this at home! You have been warned.
+  *[ US]: United States
+  *[DOM]: Document Object Model
+
+---
+pub_date: 2010-08-04

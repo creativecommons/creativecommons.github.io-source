@@ -1,0 +1,16 @@
+title: License identifier on the Deeds
+---
+categories: licenses
+---
+author: nathan
+---
+body:
+
+Yesterday we [launched a refresh of the site design](http://creativecommons.org/weblog/entry/25965) for [creativecommons.org](http://creativecommons.org/). Included in the changes pushed was one small one originally suggested by our international [Affiliate Network](http://creativecommons.org/affiliates): the inclusion of the license identifier on the deeds. 
+
+[![](CC-BY-with-dc-identifier.png)](http://labs.creativecommons.org/files/2011/01/CC-BY-with-dc-identifier.png)
+
+Anyone who's been in the CC community for any length of time has seen people refer to the licenses by their short-hand names: CC BY for [Attribution](http://creativecommons.org/licenses/by/3.0/), BY-SA for [Attribution-ShareAlike](http://creativecommons.org/licenses/by-sa/3.0/), etc. But that short hand, while useful, has been a bit of [inside baseball](http://en.wikipedia.org/wiki/Inside_baseball_\(metaphor\)): it's part of the URL, but never appeared on the deeds, which we want to be the human readable summary of the license. As of yesterday the short-hand name is now on the deed. We've also annotated it with RDFa, so the licenses self-describe their short name (software can dereference the license URI and look for information describing it there). Thanks again to Alek and the affiliate network for suggesting this change.
+
+---
+pub_date: 2011-01-07

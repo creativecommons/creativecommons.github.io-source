@@ -1,0 +1,35 @@
+title: GSoC Firefox Extension: Status Report
+---
+categories: rdfa, summer
+---
+author: igorlukanin
+---
+body:
+
+The extension for Firefox web browser I'm developing has a number of improvements in the code base, as well as in the UI. So, ladies and gentlemen, let`s get familiar with them.
+
+The [current version](http://code.creativecommons.org/viewgit/cc.ff_ext.git/plain/cc.ff_ext.xpi) of the extension may be downloaded and tried yourself (choose Save Link As from the context menu, then install).  
+
+
+### Technical docs update, current focus and progress
+
+There`re two docs I`ve put in the repo: [the 1st](http://code.creativecommons.org/viewgit/cc.ff_ext.git/plain/doc/FUNCSPEC "the 1st"), describing the UI the extension has/would have and the RDFa predicates it perceives/would perceive, and [the 2nd](http://code.creativecommons.org/viewgit/cc.ff_ext.git/plain/doc/WEBSITES "the 2nd"), describing what web sites the extension is tested against now. This docs may be primarily used to see what low-level features are going to be implemented in the nearest future, as well as to value the progress.![](trans.gif)
+
+Now that development is focused on enlarging the list of supported RDFa predicates, that would lead to drastic UI improvements.
+
+I'm proud to say that for now two languages (English & Russian) are maintained for the UI, so I'm hoping to catch the most part of possible localization problems before I actually move to multi-language support. Also, a [smart way](https://developer.mozilla.org/en/Localization_and_Plurals "smart way") of handling plurals is introduced (for example, used in the location bar icon tooltip text), being one of the ways to create a human being-friendly UI.
+
+### Development process-related aspects
+
+There`s a number of aspects I had "fun" to discover about the Firefox and its internal mechanisms.
+
+The 1st thing is a bit obvious: it has a strong legacy impact, at least in the UI. I had pleasure to dig into the UI code of Fx (written in XUL/CSS/JavaScript), using a text editor and the DOM Inspector[](https://developer.mozilla.org/en/dom_inspector "DOM Inspector"). Some UI elements that are viewed as a box or a label, are represented as a number (up to 5-6 and more) of nested blocks. Well, quite a common case for an average web page, but too bad if you want to create a component looking the same, so that you have to collect all those random n-pixel paddings specified for every nested element.
+
+The 2nd thing relates to the recommended way to point the browser to the extension being developed. The way (mentioned [here](http://blog.mozilla.com/addons/2009/01/28/how-to-develop-a-firefox-extension/)) is to create a text file in the extensions` directory in your profile containing the path to the extension directory (so, it may be put anywhere). I though this mechanism is primarily supported for Windows, because creating symlinks is not a very common operation there (what I did myself). Then, while testing extension uninstall process, it appeared that Fx just removes all files (and keeps directories) in the place of an extension when it gets uninstalled. Working perfectly when deleting a usual extension (a single zip-compressed *.xpi file), this behavior used to silently drop my local git repo, making to think of not using symlinks/doing frequent backups/pushing on every commit. :)
+
+### Feedback
+
+Al usual, I'll be pleased if anyone tries the extension, probably [reporting any issues](http://code.creativecommons.org/issues/). Any opinions are welcome here in comments, on the `irc.freenode.net#cc` channel, by [email](mailto:mail@igor.lukanin.name) or via Jabber.
+
+---
+pub_date: 2010-07-11

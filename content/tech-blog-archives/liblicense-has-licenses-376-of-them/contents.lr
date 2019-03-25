@@ -1,0 +1,19 @@
+title: Liblicense has licenses! 376 of them...
+---
+categories: license, rdf, summer, system
+---
+author: jakin
+---
+body:
+
+Prepping for the 0.1 release, I've generated RDF descriptions of all CC licenses in all available jurisdictions, as well as the GPL, LGPL, and Public Domain.
+
+Available here:  
+<https://cctools.svn.sourceforge.net/svnroot/cctools/liblicense/trunk/licenses/>
+
+Each license, if applicable, has all the attributes laid out [on the wiki](http://wiki.creativecommons.org/Liblicense#Attributes), including localization. One problem, however, is getting localized descriptions of the licenses. That isn't available at <https://cctools.svn.sourceforge.net/svnroot/cctools/i18n/trunk/i18n/>
+
+Licenses were generated with [this python script](https://cctools.svn.sourceforge.net/svnroot/cctools/liblicense/trunk/gen_licenses.py), which reads the relevant information from creativecommons.org and cctools svn.
+
+---
+pub_date: 2007-07-06

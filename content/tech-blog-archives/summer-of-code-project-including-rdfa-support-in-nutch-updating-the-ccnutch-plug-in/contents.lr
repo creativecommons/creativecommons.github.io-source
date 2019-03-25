@@ -1,0 +1,29 @@
+title: 'Summer of Code Project: "Including RDFa support in Nutch: Updating the ccNutch
+---
+categories: nutch, rdfa, summer
+---
+author: alankelon
+---
+body:
+
+Hello!
+
+I'm one of the [selected students](http://techblog.creativecommons.org/2007/04/12/summer-of-code-projects/) for Google Summer of Code 2007 and I'm pleased to be joining Creative Commons community this summer. My project title is [Including RDFa support in Nutch: Updating the ccNutch plug-in](http://code.google.com/soc/cc/appinfo.html?csaid=33FD37DB5A5F2E4C) under mentoring of[ Nathan R. Yergler](http://yergler.net/). The abstract (with hyperlinks missing in soc page) is:
+
+> [RDFa](http://www.w3.org/TR/2007/WD-xhtml-rdfa-primer-20070312) is emerging standard from W3 Consortium to provide a [syntax](http://www.w3.org/2001/sw/BestPractices/HTML/2005-rdfa-syntax) that expresses semantics in structured data using a set of elements and attributes that embeds RDF in HTML, such as a license on a document or  
+>  a photoâ€™s creator name and its camera setting information.
+> 
+> [Nutch](http://lucene.apache.org/nutch) is an open source search engine that uses [Lucene](http://lucene.apache.org/) for searching the Web (or a subset of it) or in a customized form for an intranet. [ccNutch](http://wiki.creativecommons.org/CcNutch) is a plug-in for Nutch to search Creative Commons content. Currently, ccNutch indexes only text documents and does not support RDFa very well.
+> 
+> The inclusion of RDFa in ccNutch will be a great improvement for the advances of semantic web because we could easily index image, audio and video contained in web pages through their RDFa meta-data and then search them. In this way, we will be increasing our range of searchable artifacts available under creative licenses that is a worth to try.
+
+My first step is to update ccNutch with the source code from Lucene repository. Then I'll start to write the Requirements Document and Architecture to define precisely what I'll do. To do so, I'm going to study the ccNutch and Nutch code base more deeply as well to study the RDFa standard. After that, I'll write the Project Plan document to define our schedule, milestones and make risk assessment.
+
+Right now, let me introduce myself: My name is Alan Kelon, I'm 23 years old and I live in [Recife](http://en.wikipedia.org/wiki/Recife), Brazil. I am a 1st year Ph.D. student in Computer Science (in Portuguese) at [Informatics Center](http://www.cin.ufpe.br) (in Portuguese), [Federal University of Pernambuco](http://www.ufpe.br) (in Portuguese), a.k.a. CIn/UFPE. The university and my house are very close to [Ricardo Brennand Institute](http://en.wikipedia.org/wiki/Ricardo_Brennand_Institute "Ricardo Brennand Institute") :-) I also hold a M.Sc. degree in Computer Science from Federal University of Pernambuco (2005-2007) â€“ entitled as "A Software Process Proposal to Open Source Software Factories" â€“ and a B.Sc. in Computer Science from [Federal University of ParaÃ­ba](http://www.ufpb.br) (2005). In 2006, I was a teaching assistant in a Software Engineer graduate level class. The course was entitled "Software Engineering: Building Open Source Software Factories". This year edition of the course will be starting at the end of this month and I'll be lecturer again. This year, I lectured in a undergraduate leval class entitled "Advanced Topics in Software Engineering: Open Source Software".
+
+Since my undergrad studies I'm involved with free software. The first contact was to to build and maintain a Beowulf Linux cluster and to developed a high availability system from 10/2002 to 01/2005. In the past, I was also with [Debian](http://www.debian.org) in my local community, played with [AndroMDA](http://www.andromda.org) in the very early stages of [OpenERP](http://openerp.persapiens.org), developed [VENSSO CRM](http://vensso.sourceforge.net) (in Portuguese), mentored/founded [GVS](http://sourceforge.net/projects/gvsproject) and [Telescope](http://sourceforge.net/project/telescope). This last one is my active research project as part of my Ph.D. Finally, I lead the research group on Open Source and Distributed Software Development at Informatics Center, Federal University of Pernambuco, and [C.E.S.A.R](http://salu.cesar.org.br/ncm_cesar/servlet/newstorm.ns.presentation.NavigationServlet?publicationCode=15&pageCode=1229) â€“ Recife Center for Advanced Studies and Systems â€“, with strong collaboration of the local software industry, where I have the opportunity to advocate the open source development model and philosophy.
+
+All in all: "Talk is cheap, show me the code". Let's do it now ;-)
+
+---
+pub_date: 2007-04-13

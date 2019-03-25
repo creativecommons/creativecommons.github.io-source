@@ -1,0 +1,18 @@
+title: Digital Asset Management, Now!
+---
+categories: techsummit
+---
+author: frank
+---
+body:
+
+The next panel, and a damn fine one, is on "digital asset management on the web and the desktop" with Gunar Penikis from Adobe, Stephen Lau of Songbird, and Lucas Gonze.
+
+Gunar described Adobe's <a href="http://en.wikipedia.org/wiki/Extensible_Metadata_Platform">XMP</a>, which is a standardized platform for processing and storing standardized metadata. The SDK is freely available under a BSD license, and CC metadata is integrated. Check it out at <a href="http://www.adobe.com/xmp">www.adobe.com/xmp</a>.
+
+Steven discussed <a href="http://en.wikipedia.org/wiki/Songbird_(software)">Songbird</a>, a cross-platform media player built upon Mozilla. He touched upon the issues arising with managing music metadata, which is traditionally of poor quality, and discussing the issues Songbird has run into when trying to display music data and make it useful. They want to integrate CC licenses in every respect, pulling metadata from webpages and even adding it to the file if it's not there.
+
+Lucas (presentation available <a href="http://gonze.com/webofsongs/">here</a>) spoke on the topic of making music a first-class region of the web. He posits that music today is "fundamentally unwebby," and to solve this he proposes a single good URL for every song, "good" being defined here as "comprehensive, unique, stable". This adapts the principles of good web architecture to the music domain.
+
+---
+pub_date: 2008-06-18

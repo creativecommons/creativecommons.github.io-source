@@ -1,0 +1,71 @@
+title: cc.engine and web non-frameworks
+---
+categories: development, python, sanity
+---
+author: cwebber
+---
+body:
+
+The [sanity overhaul](http://labs.creativecommons.org/2009/12/18/understanding-the-state-of-sanity-via-whiteboards-and-ascii-art/) has included a number of reworkings, one of them being a rewrite of cc.engine, which in its previous form was a Zope 3 application. Zope is a full featured framework and we already knew we weren't using many of its features (most notably the ZODB); we suspected that something simpler would serve us better, but weren't certain what. Nathan suggested one of two directions: either we go with Django (although it wasn't clear this was "simpler", it did seem to be where a large portion of the python knowledge and effort in the web world is pooling), or we go with [repoze.bfg](http://docs.repoze.org/bfg/), a minimalist WSGI framework that pulls in some Zope components. After some discussion we both agreed: repoze.bfg seemed like the better choice for a couple of reasons: for one, Django seemed like it would be providing quite a bit more than necessary... in cc.engine we don't have a traditional database (we do have an RDF store that we query, but no SQL), we don't have a need for a user model, etc... the application is simple: show some pages and apply some specialized logic. Second, repoze.bfg built upon and reworked Zope infrastructure and paradigms, and so in that sense it looked like an easier transition. So we went forward with that.
+
+As I went on developing it, I started to feel more and more like, while repoze.bfg certainly had some good ideas, I was having to create a lot of workarounds to support what I needed. For one thing, the URL routing is unordered and based off a ZCML config file. It was at the point where, for resolving the license views, I had to route to a view method that then called other view methods. We also needed a type of functionality as Django provides with its "APPEND_SLASH=True" feature. I discussed with the repoze.bfg people, and they were accommodating to this idea and actually applied it to their codebase for the next release. There were some other components they provided that were well developed but were not what we really needed (and were besides technically decoupled from repoze.bfg the core framework). As an example, the [chameleon zpt](http://chameleon.repoze.org/) engine is very good, but it was easier to just pull Zope's template functionality into our system than make the minor conversions necessary to go with chameleon's zpt.
+
+Repoze was also affecting the Zope queryutility functionality in a way that made internationalization difficult. Once again, this was done for reasons that make sense and are good within a certain context, but make did not seem to mesh well with our existing needs. I was looking for a solution and reading over the repoze.bfg documentation when I came across these lines:
+
+> repoze.bfg provides only the very basics: URL to code mapping, templating, security, and resources. There is not much more to the framework than these pieces: you are expected to provide the rest.
+
+But if we weren't using the templating, we weren't using the security model, and we weren't using the resources, the URL mapping was making things difficult, and those were the things that repoze.bfg was providing on top of what was otherwise just WSGI + WebOb, how hard would it be to just strip things down to just the WSGI + WebOb layer? It turns out, not too difficult, and with an end result of significantly cleaner code.
+
+I went through Ian Bicking's excellent tutorial [Another Do-It-Yourself Framework](http://pythonpaste.org/webob/do-it-yourself.html) and applied those ideas to what we already had in cc.engine. Within a night I had the entire framework replaced with a single module, cc/engine/app.py, which contained these few lines:
+    
+    
+    import sys
+    import urllib
+    
+    from webob import Request, exc
+    
+    from cc.engine import routing
+    
+    def load_controller(string):
+        module_name, func_name = string.split(':', 1)
+        __import__(module_name)
+        module = sys.modules[module_name]
+        func = getattr(module, func_name)
+        return func
+    
+    def ccengine_app(environ, start_response):
+        """
+        Really basic wsgi app using routes and WebOb.
+        """
+        request = Request(environ)
+        path_info = request.path_info
+        route_match = routing.mapping.match(path_info)
+        if route_match is None:
+            if not path_info.endswith('/') 
+                    and request.method == 'GET' 
+                    and routing.mapping.match(path_info + '/'):
+                new_path_info = path_info + '/'
+                if request.GET:
+                    new_path_info = '%s?%s' % (
+                        new_path_info, urllib.urlencode(request.GET))
+                redirect = exc.HTTPTemporaryRedirect(location=new_path_info)
+                return request.get_response(redirect)(environ, start_response)
+            return exc.HTTPNotFound()(environ, start_response)
+        controller = load_controller(route_match['controller'])
+        request.start_response = start_response
+        request.matchdict = route_match
+        return controller(request)(environ, start_response)
+    
+    def ccengine_app_factory(global_config, **kw):
+        return ccengine_app
+
+The main method of importance in this module is ccengine_app. This is a really simple WSGI application: it takes routes as defined in cc.engine.routes (which uses the very enjoyable [Routes](http://routes.groovie.org/) package) and sees if the current URL (or, the path_info portion of it) matches that URL. If it finds a result, it loads that controller and passes a WebOb-wrapped request into it, with any special URL matching data tacked into the matchdict attribute. And actually, the only reason that this method is even so long at all is because of the "if route_match is None" block in the middle: that whole part is providing APPEND_SLASH=True type functionality, as one would find in Django. (Ie, if you're visiting the url "/licenses", and that doesn't resolve to anything, but the URL "/licenses/" does, redirect to /licenses/.) The portions before and after are just getting the controller for a url and passing the request into it. That's all! (The current app.py is a few lines longer than this, utilizing a callable class rather than a method in place of ccengine_app for the sake of configurability and attaching a few more things onto the request object, but not longer or complicated by much. The functionality otherwise is pretty much the same.)
+
+Most interesting is that I swapped in this code, changed over the routing, fired up the server and.. it pretty much just worked. I swapped out a framework for about a 50 line module and everything was just as nice and functioning as it was. In fact, with the improved routing provided by Routes, I was able to cut out the fake routing view, and thus the amount of code was actually *less* than what it was before I stripped out the framework. Structurally there was no real loss either; the application still looks familiar to that you'd see in a pylons/django/whatever application.
+
+I'm still a fan of frameworks, and I think we are very fortunate to *have* Zope, Pylons, Django, Repoze.bfg, and et cetera. But in the case of cc.engine I do believe that the position we are at is the right one for us; our needs are both minimal and special case, and the number of components out there for python are quite rich and easily tied together. So it seems the best framework for cc.engine turned out to be no framework at all, and in the end I am quite happy with it.
+
+**ADDENDUM:** Chris McDonough's comments below are worth reading. It's quite possible that the issues I experienced were my own error, and not repoze.bfg's. I also hope that in no way did I give the impression that we moved away from repoze.bfg because it was a bad framework, because repoze.bfg is a great framework, especially if you are using a lot of zope components and concepts. It's also worth mentioning that the type of setup that we ended up at, as I described, probably wouldn't have happened unless I had adapted my concepts directly from repoze.bfg, which does a great job of showing just how usable Zope components are without using the entirety of Zope itself. Few ideas are born without prior influence; repoze.bfg was built on ideas of Zope (as many Python web frameworks are in some capacity), and so too was the non-framework setup I described here based on the ideas of repoze.bfg. It is best for us to be courteous to giants as we step on their shoulders, but it is also easier to forget or unintentionally fail to extend that courtesy as I may have done here. Thankfully I've talked to Chris offline and he didn't seem to have taken this as an offense, so for that I am glad.
+
+---
+pub_date: 2010-01-13

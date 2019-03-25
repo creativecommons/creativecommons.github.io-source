@@ -1,0 +1,24 @@
+title: More Summer of Code projects
+---
+categories: summer
+---
+author: ml
+---
+body:
+
+Nathan [blogged the five accepted Creative Commons/Science Commons projects](http://techblog.creativecommons.org/2007/04/12/summer-of-code-projects/).
+
+There's also at least one CC-related SoC project being mentored by another oganization: [ccHost/Inkscape integration](http://code.google.com/soc/inkscape/appinfo.html?csaid=C7DF84C10F57F82D) by Bruno LuÃ­s GonÃ§alves Dilly, mentored by Bryce Harrington for the Inkscape project. Bruno was a CC SoC student last year and Bryce just completed a contract project for CC...
+
+It's also worth noting three of the proposals we would have loved to accept, if only Google had given us eight slots instead of five (no complaints!):
+
+  * An OpenOffice plugin for finding and importing CC licensed content (see [ThinkFree's implementation](http://creativecommons.org/weblog/entry/7204), contrast with the accepted OO.o project to CC license OO.o documents, similar to the [MS Office Addin](http://wiki.creativecommons.org/Microsoft_Office_Addin)).
+  * A CC licensing module for Gallery2.
+  * CC census, extending our adoption statistics project.
+
+
+
+Many other projects are outlined on the [CC developer challenge pages](http://wiki.creativecommons.org/Developer_Challenges). Sorry only five could be accepted with Google financial support!
+
+---
+pub_date: 2007-04-12

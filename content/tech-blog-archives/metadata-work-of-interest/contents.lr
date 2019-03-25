@@ -1,0 +1,27 @@
+title: Metadata work of interest
+---
+categories: haudio, metadata, microformats, powder, ramm.x, rdf, rdfa
+---
+author: ml
+---
+body:
+
+Some of these could turn out to be interesting for describing licensed content on the web, all rather interesting.
+
+[hAudio](http://microformats.org/wiki/audio-info-proposal) proposed microformat.
+
+Proposed [hAudio to RDFa mapping](http://wiki.digitalbazaar.com/en/HAudio_RDFa).
+
+[RDFa-deployed Multimedia Medata](http://sw.joanneum.at/rammx/) (ramm.x) may be an effort to map and standardize use of existing and upcoming media description standards in RDFa ... I had to skim "ramm.x in 10 sec" and "what ramm.x is NOT" a few times to gather that, but the key description on that page seems to be:
+
+> Does ramm.x replace RDF-based multimedia vocabularies, as, e.g., the [Music Ontology Specification](http://musicontology.com/)?
+>      No! ramm.x aims at bringing existing formats, as MPEG-7 and the like, into the Semantic Web. It acts as a bridge using a [certain formalisation](http://www.w3.org/2005/Incubator/mmsem/XGR-vocabularies/#formal) of an existing vocabulary.
+
+Getting a bit more esoteric, [Protocol for Web Description Resources (POWDER)](http://www.w3.org/TR/powder-grouping/):
+
+> facilitates the publication of descriptions of multiple resources such as all those available from a Web site.
+
+Which is a bit of an understatement.
+
+---
+pub_date: 2007-08-03

@@ -1,0 +1,22 @@
+title: StuffIt 10 Considered Harmful
+---
+categories: ccPublisher, Mac, software
+---
+author: nathan
+---
+body:
+
+Mac OS X users of "ccPublisher":http://wiki.creativecommons.org/CcPublisher have long been plagued by the following error:
+
+`No module named os. Check console.log for complete error report.`
+
+The source of this has been a mystery. For a while the pattern suggested it was only older, non-supported versions of Mac OS X. Then my suspicion was Intel-based Macs. But neither of those really held up under scrutiny. Last month a "thread":http://mail.python.org/pipermail/pythonmac-sig/2007-April/018882.html on the Python Mac SIG(Special Interest Group) mailing list revealed the culprit: Stuffit 10.
+
+![StuffIt 11 Preferences](stuffit_prefs.png)
+
+StuffIt has an option to "continue expanding" archives, so if you have a gzipped tar file, it will do both passes: un-gzip, un-tar at once. However, Python applications packaged for Mac OS X using the "py2app":http://cheeseshop.python.org/pypi/py2app/ utility contain an additional zip file, hidden in the application. This zip file contains the Python runtime library. Apparently StuffIt 10 traverses into application bundles and continues the unzip process if you've chosen to "continue expanding".
+
+From my brief testing this morning, it appears that StuffIt 11 is smarter in this respect -- even with "continue expanding" checked it doesn't traverse into application bundles. So if you've run into this problem, either unzip from the command line or upgrade StuffIt. Future releases of CC software for OS X will use DMG(disk image) files to avoid this problem in the future.
+
+---
+pub_date: 2007-05-01

@@ -1,0 +1,25 @@
+title: More helpful 404 pages
+---
+categories: development, license
+---
+author: cwebber
+---
+body:
+
+This is one of those little features that tends to go into the license engine that runs on the creativecommons.org website which are helpful and small, but not too noticeable if not pointed out. I usually do a pretty bad job of making note of these when they go out, but this time, I'm doing better!
+
+Even most people who don't know anything about HTTP know that a 404 status code on the web somehow means that the thing you were looking for isn't actually there. How frustrating! But if it's not there, maybe we have enough information to help you find what you actually wanted.
+
+That's the idea between the work that went into [Issue 255: "Smart" 404 pages](http://code.creativecommons.org/issues/issue255). Maybe we didn't find a license (or public domain tool) under the URL you put in, but we might be able to help you find a license that _does_ exist. For example, licenses listed under /licenses/ on creativecommons.org are parsed out like **/licenses/{code}/{version}/** or **/licenses/{code}/{version}/{jurisdiction}/**. Knowing that, we can give a list of licenses for what licenses someone might have meant when they:
+
+  * [left out the version](http://creativecommons.org/licenses/by/)
+  * [put in a bogus version](http://creativecommons.org/licenses/by/8888.88/)
+  * [put in a bogus version, but with a real jurisdiction](http://creativecommons.org/licenses/by/8888.88/es/)
+  * [put in a real version, but a bogus jurisdiction](http://creativecommons.org/licenses/by/3.0/lolcats/)
+
+
+
+The pages mostly look like a [normal creativecommons.org 404 page](http://creativecommons.org/not-a-real-url/), but with just a bit more contextually helpful information (the "were you looking for" section). And, of course, they still return a 404 status code!
+
+---
+pub_date: 2011-01-28

@@ -1,0 +1,26 @@
+title: Draft metadata for Public Domain Mark
+---
+categories: metadata
+---
+author: nathan
+---
+body:
+
+As [announced on the CC blog](http://creativecommons.org/weblog/entry/22940) earlier this month, we're working on a new tool to complement [CC0](http://creativecommons.org/choose/zero/), the Public Domain Mark (PDM). We have a set of open issues for PDM (and related improvements) that we're working through, including developing the marking metadata that will be generated ([Issue 640](http://code.creativecommons.org/issues/issue640.)). I've put together [a set of examples](http://wiki.creativecommons.org/Public_Domain_Mark#Metadata_.28XHTML_.2B_RDFa.29) in the wiki that we're looking for feedback on.
+
+There are a couple of minor variations from past practice to note:
+
+  * We support labeling both the creator of the work (`dct:creator`), as well as the person who identified it as being in the public domain and made it available. We chose `dct:publisher` for the latter, as it's [defined](http://dublincore.org/documents/dcmi-terms/#terms-publisher) as "An entity responsible for making the resource available."
+  * We will support the scenario where there are two license statements: PD Mark and CC0. This is generated in the case that the labeler chooses to waive rights they may have incurred in the work, as part of restoration, digitization, etc. After some discussion, we're simply using two license assertions for this. There are arguably two subjects at work here -- the actual work and the digital representation of it -- but in the interest of simplicity and consistency with our past recommendations, we're treating them as one.
+  * We're planning to support non-binding usage guidelines on the deed at launch time, but not through the chooser. The [example metadata](http://wiki.creativecommons.org/Public_Domain_Mark#Guidelines_specified) is what the deeds would consume to display that link. I didn't find a good existing predicate for this, so I propose we use `cc:usageGuidelines` and define it as a refinement of `[dct:relation](http://dublincore.org/documents/dcmi-terms/#terms-relation)`.†
+
+
+
+If you have comments or suggestions, you can leave them as comments on this post, or [leave a comment](http://wiki.creativecommons.org/index.php?title=Talk:Public_Domain_Mark&action=edit§ion=new) on the [Public Domain Mark discussion page](http://wiki.creativecommons.org/Talk:Public_Domain_Mark).
+
+* * *
+
+† In the interest of completeness, I'm also planning to define `cc:morePermissions`, used for [CC+](http://wiki.creativecommons.org/CCPlus), as a refinement of `dc:relation`. 
+
+---
+pub_date: 2010-08-19

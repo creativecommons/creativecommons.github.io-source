@@ -1,0 +1,78 @@
+title: Your own python egg baskets / package repositories
+---
+categories: python
+---
+author: cwebber
+---
+body:
+
+At Creative Commons sometimes we have python packages that we use a lot but which aren't generally useful enough to put on [PyPi](http://pypi.python.org/pypi) (such as [cc.license](http://code.creativecommons.org/viewgit/cc.license.git/) and [cc.licenserdf](http://code.creativecommons.org/viewgit/license.rdf.git/)). Luckily, as long as you and your organization don't have a problem with having your packages available publicly, it's fairly easy to put up a public egg basket (that is, a simple repository to put your python eggs/packages). And doing so has several advantages:
+
+  * You can avoid cluttering up PyPi with packages that have a very marginal or internal audience. cc.licenserdf matters a lot for our site, but probably is worthless to anyone searching for "RDF" tools on pypi.
+  * Putting a package up on PyPi suggests a certain amount of responsibility to keep that updated and keep its API stable. If it's for internal use, maybe that responsibility is unwanted or unneeded.
+  * Using proper python packaging means you can take full advantage of python's ecosystem of installation tools, including useful dependency resolution.
+  * Making packaged releases encourages a certain amount of responsibility toward your internal dependencies, reducing the "cowboy coding" factor (fun, but often not good in an environment that requires stability).
+
+
+
+So, how to do it? The first step is to make a directory that's statically served by Apache. Ours is at <http://code.creativecommons.org/basket/>. The directory has the [sticky bit](https://secure.wikimedia.org/wikipedia/en/wiki/Sticky_bit) set so that everyone on the server can write to it without clobbering each other, kind of like in `/tmp/` on most GNU/Linux installs. Everyone puts their tarballs up here. As for you or your organization's "your own" packages, I think it's fine to put all your eggs in just one basket like this. :)
+
+But what should those packages look like?
+
+Generally at the toplevel of your package you have something that looks like:
+    
+    
+    from setuptools import setup, find_packages
+    import sys, os
+    
+    setup(
+        name='licenseclarity',
+        version='0.1',
+        packages=['licenseclarity'],
+        description="Tools to clarify any licensing issue you have ever had",
+    
+        author='John Doe(ig)',
+        author_email='johndoe-ig@example.org',
+        license='MIT',
+    
+        # ... etc ...
+    
+        **# Put your dependencies here...    install_requires=[
+             'setuptools',
+            'dependency1',
+            'dependency2',
+            ],
+    
+        # And a link to your basket here
+        dependency_links=[
+            'http://code.creativecommons.org/basket/',
+            ],**
+        )
+    
+
+Obviously, replace values with ones that make sense for your package. The main things we're talking about here are [install_requires](http://peak.telecommunity.com/DevCenter/setuptools#declaring-dependencies) and [dependency_links](http://peak.telecommunity.com/DevCenter/setuptools#dependencies-that-aren-t-in-pypi). Replace install_requires with whatever list of dependencies your package requires, and put your your own egg basket in the dependency_links list. After that, I guess set up whatever other large number of attributes you can apply to the setup function that make sense to your package (entry_points maybe? zip_safe=False is a nice one).
+
+Lastly, maybe now that you have an egg basket, you'd like to know how to make some eggs to put in that basket. Pretty easy once you have setup.py! All you really need to do is this:
+    
+    
+    python setup.py sdist
+
+Assuming things run well, do an `ls` into your dist/ directory. Hey, what do you know! There's a tarball there. cp or scp or (heaven forbid) ftp it to your egg basket, and there you go. You just made a release! Maybe the next time you do it you'll want to increment the version number.
+
+**Appendix: Why you should always list your dependencies in your package**
+
+Lastly I'd like to make a comment on only using [buildout's](http://www.buildout.org/) [config file](http://www.buildout.org/docs/tutorial.html#installing-eggs) or [pip's](http://pip.openplans.org/) [requirements file](http://pip.openplans.org/requirement-format.html) to declare requirements: it's completely crazy, don't do it! Well okay, it's not _completely_ crazy, but you really should fill out the install_requires section in setup.py regardless of whether you are also using those tools. There are a couple of reasons for this:
+
+  * Recursive dependencies: maybe someone will use your module as a library, and then they'll have to declare your dependencies all over again if you don't put them in install_requires. Let python's package management tools handle the dependency graph logic, that's where it belongs.
+  * What happens if you build your tool in buildout and someone wants to use virtualenv/pip or vice versa? Both of these tools will check the install_requires section anyway, so be nice and fill it out!
+
+
+
+Of course there are some awesome things that buildout and the pip requirements file can do to; for example they can install dependencies from VCS and etc which is useful in particular cases, particularly for certain in-development packages. By all means, use these tools to do that (and lots of other cool things, because both buildout and virtualenv/pip are pretty awesome). Just be a good packager and also fill out install_requires.
+
+Now you have your own egg basket (which is completely vegan), you know how to make packages to put in it, and everyone is happy. Horray! Today we learned things (maybe).
+
+_Thanks to[Asheesh Laroia](http://asheesh.org/) for his detailed feedback on this post._
+
+---
+pub_date: 2011-02-14

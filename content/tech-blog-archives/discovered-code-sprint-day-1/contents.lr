@@ -1,0 +1,34 @@
+title: DiscoverEd Code Sprint: Day 1
+---
+categories: AgShare, code, DiscoverEd
+---
+author: akozak
+---
+body:
+
+This week some of us from Creative Commons are in lovely East Lansing, Michigan [Michigan State University](http://www.msu.edu/) for the [DiscoverEd code sprint](http://wiki.creativecommons.org/DiscoverEd_Sprint_\(June,_2010\)) hosted by the folks at [MSU vuDAT](http://vudat.msu.edu/).
+
+For those of you not familiar with [DiscoverEd](http://discovered.creativecommons.org/search/), it first began as a Creative Commons project to show how structured data can enable and improve search and discovery of educational resources on the web.
+
+Search and discovery of education resources has been a hot topic within the OER (Open Educational Resources) community for some time. Given the decentralization of high-quality educational resources free to use, remix, and redistribute existing on the web, the question has been "How can learners and instructors find and discover these resources in useful ways?" CC has previously done significant work in the metadata domain, having developed a [W3C-published vocabulary](http://wiki.creativecommons.org/CC_REL) for publishing licensing metadata and being involved in early [efforts](http://sciencecommons.org/projects/data/) to being semantic web concepts to scientific data. DiscoverEd not only represents a continuation of CC's efforts to make data interoperability work, but insofar as it deals in metadata about open content, it's an interesting synthesis of open, standardized data formats and open content.
+
+Development for DiscoverEd has recently been supported by [AgShare](www.oerafrica.org/agshare), an MSU-led project funded by the Gates Foundation:
+
+> The aim of the AgShare planning and pilot project is to create a scalable and sustainable collaboration of existing organizations for African publishing, localizing, and sharing of teaching and learning materials that fill critical resource gaps in African MSc agriculture curriculum and that can be modified for other downstream uses.
+
+AgShare involves institutional collaboration for the modification and dissemination of very useful open educational content internationally. Creative Commons is supporting the project by developing, documenting, and supporting an instance of DiscoverEd educational search that will provide learners in Africa with a method to find or discover educational resources curated by participating organizations.
+
+Which takes me to where we are today: CC and our AgShare partners at MSU put together a DiscoverEd code sprint to connect our AgShare developers with the community of programmers and downstream users who are interested in educational resource search and discovery using structured data to find common ground and areas for collaboration. Most participants have listed themselves on the [sprint wiki-page](http://wiki.creativecommons.org/DiscoverEd_Sprint_\(June,_2010\)).
+
+After brief introductions, everyone spent some time [instantiating the codebase](http://wiki.creativecommons.org/Hacking_DiscoverEd), getting access to [version control](http://gitorious.org/discovered), sharing [commonly used terms](http://wiki.creativecommons.org/DiscoverEd_Glossary), and settling other coordination issues. That took up the first half of the day, and after lunch at a great [Ethiopian restaurant](http://www.yelp.com/biz/altus-ethiopian-cuisine-east-lansing), we returned to begin work on new code. Given the unfamiliarity many of the developers had with the codebase, the original plan for pair programming was abandoned to allow larger groups:
+
+One group focused on developing code to allow users to add missing or additional metadata about resources. This would enable arbitrary tags to be injected into both the Jena triple-store and Lucene documents from the Nuch front-end. This functionality would extend the reach of Nutch's search beyond what's found through aggregation, to include metadata provided by users, or a community.
+
+Another group focused on developing a plugin interface for storing and retrieving metadata from external and services and databases. This functionality could potentially supply metadata for resources without any metadata, or could supplement existing metadata with additional data from other services and databases. A splinter group of that original team took time to analyze the OpenCalais API to see if it could be integrated with the above DiscoverEd functionality to provide back useful metadata.
+
+The last team worked on getting up to speed on the DiscoverEd architecture and creating instructions for getting it running in an Ubuntu virtual box environment on Windows, as well as test-driving new documentation for hacking DiscoverEd. This team also spent time mapping out the work needed to implement more flexible query filtering. This turned out to be an invaluable exercise as they discovered inefficiencies and unnecessary code in the DiscoverEd codebase (namely, in how DiscoverEd maps query strings for metadata to Lucene index data), and are in the process of planning for a new metadata query syntax.
+
+Day 2 will likely be an extension of today's work. Look for another post soon.
+
+---
+pub_date: 2010-06-16

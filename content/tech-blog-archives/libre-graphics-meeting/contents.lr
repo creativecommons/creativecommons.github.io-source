@@ -1,0 +1,22 @@
+title: Libre Graphics Meeting
+---
+categories: fontview, graphics, illustrator, indesign, inkscape, krita, opencontentlibrary, scribus, serif, slides
+---
+author: ml
+---
+body:
+
+CC staff Jon Phillips and Alex Roberts attended the [Libre Graphics Meeting](http://libregraphicsmeeting.org/) in Montreal last weekend. Jon posted his [slides (PDF)](http://rejon.org//media/2007/05/open-content-library-lgm-2007.pdf). Alex posted a [heartening update titled Libre](http://redprocess.com/is/libre/) on his personal blog, which I'll repost here:
+
+> The title is a bit of a misnomer, since my laptop runs OSX and I use Adobe software at work. At least right now, various parts of my _workflow_ (and I sure do dislike that term) will be changing soon. Hereâ€™s why.
+> 
+> Last weekend I attended the second, annual, [Libre Graphics Meeting](http://www.libregraphicsmeeting.org/), in Montreal. A time of firsts for me: my first time visiting Canada; my first LGM; and the first time Iâ€™d met, in person, many of the hackers and artists in the F/OSS community. Some of whom inspired me to become a designer, and give me the lofty goal of working in free culture. So that was incredible.
+> 
+> LGM featured a lot of talks going over new developments in the community, it was great to see the directions all the art tools are going â€” [Scribus](http://www.scribus.net/), Krita, [Inkscape](http://inkscape.org/), etc. But what really got me hyped, and excited about the future, were the demos. Iâ€™ll admit Iâ€™ve been out of the OSS art loop for a while, having little time to check out the latest trunk builds of everything, but seeing them all in use really inspired me that yes, these tools work, and yes, they can in fact be used in place of the commercial giants. Scribus has, by far, come the farthest since I first saw it. I believe itâ€™s fairly safe to assume that I could use it, instead of InDesign, for much of the print work I do. Iâ€™ll be sure to report on my progress in that regard.
+> 
+> That being said, while you can use the open source tools for production, you do need an open mind and ability to learn what they can do â€” both similarly and differently. For instance, Inkscape has some incredible features that you wonâ€™t find in Illustrator â€” gradients on strokes; advanced object linking, allowing you to create complex effects that remain completely editable; full access to the underlying XML, so you can directly edit any content. But unlike Illustrator, Inkscape doesnâ€™t yet handle CMYK or spot colours, and has no support for any kind of blending modes (coming soon). So I doubt Iâ€™d be able to move 100% away from non-free tools, for the foreseeable future, but it really isnâ€™t too often I find myself tasked with print work. So a minor inconvenience at worst.
+> 
+> The whole experience makes me extremely excited over these improved possibilities, of using the tools in the real world, and the joy of contributing back where I can. This includes _Serif_ and _FontView_ â€” my font manager, and viewer apps respectively. A good amount of hacking on FontView went on over the weekend, solving a number of large bugs, which also made me happy.
+
+---
+pub_date: 2007-05-13

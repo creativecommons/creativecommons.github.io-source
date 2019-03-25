@@ -1,0 +1,48 @@
+title: Upgrade to Debian Squeeze and Mediawiki woes
+---
+categories: Debian, mediawiki, php
+---
+author: nkinkade
+---
+body:
+
+Just a number of days ago [Debian](http://www.debian.org) [released Squeeze](http://www.debian.org/News/2011/20110205a) as the new stable version. I decided to test the upgrade one or two of CC's servers to see how it would go. The upgrade process was standard and went without problems, as one comes to expect with Debian. Any problems with the upgrade didn't manifest until I noticed that one of our sites running on Mediawiki had apparently broken.
+
+I narrowed the problem down to several extensions. Upgrading to Squeeze brought in a new version of PHP, taking it from 5.2.6 (in Lenny) to 5.3.3. PHP was emitting warnings in the Apache logs like:
+
+_Warning: Parameter 1 to somefunction() expected to be a reference, value given in /path/to/some/file.php on line ##_
+
+Looking at the PHP code in question didn't immediately reveal the problem to me. I finally stumbled across PHP bug [50394](http://bugs.php.net/50394). A [specific comment](http://bugs.php.net/50394#1284510214) on that bug revealed that the issues I was seeing were not a bug, necessarily, but the result of the way PHP 5.3.x handles a specific form of incorrect coding.
+
+In summary, it turns out the problem is related to Mediawiki hooks and its use of the call_user_func_array() PHP built-in function. The function takes two arguments: a user function name, and an array of arguments. If the called function expects some of the arguments to be passed in [by reference](http://php.net/manual/en/language.references.php), then each element of the passed array must be explicitly marked as a reference. For example, this is correct:  
+`  
+function lol ( &$var1, $var2 ) { //do something };  
+$a = 'foo';  
+$b = 'bar';  
+$args = array( &$a, $b )  
+call_user_func_array('lol', $args);  
+`
+
+However, you will get a PHP warning, and a subsequent failure of call_user_func_array(), if `$args` is defined like (missing the & before `$a`):  
+`  
+$args = array( $a, $b );  
+`
+
+Interestingly, the "correct" way of handling this case, where the callback function expects referenced variables, also happens to be deprecated, as a form of call-time referencing, and the [call_user_func_array() documentation](http://php.net/manual/en/function.call-user-func-array.php) states this:
+
+> Referenced variables in param_arr are passed to the function by reference, regardless of whether the function expects the respective parameter to be passed by reference. This form of call-time pass by reference does not emit a deprecation notice, but it is nonetheless deprecated, and will most likely be removed in the next version of PHP. 
+
+As far as I can tell, this deprecated method is the only way to handle this, yet PHP may drop this functionality. Presumably another method will replace it before that happens, but the ambiguity at the moment leaves one wondering how to properly code for this without risking that the code will break in a future release of PHP. I suppose the only sure way is to make sure that your call-back doesn't require or need any referenced variables. I'd be happy for someone to point me to the right way to handle this, if for some reason my research just failed to produce the correct method.
+
+I found this breakage in the following modules, but presumably it exists in many more:
+
+[ReCAPTCHA](http://www.mediawiki.org/wiki/Extension:ReCAPTCHA)  
+[RecentActivityNotify](http://www.mediawiki.org/wiki/Extension:Recent_Activity_Notify)  
+[SpamBlacklist](http://www.mediawiki.org/wiki/Extension:SpamBlacklist)
+
+[The fix](http://www.mediawiki.org/wiki/Extension:ReCAPTCHA#Parameter_1_to_ReCaptcha::confirmEdit.28.29_expected_to_be_a_reference) for the ReCAPTCHA extension was easy, since it's published on the extension's page. For the other extensions, I investigated the places where this problem was occurring and removed the references from the function definitions, but not before poking around a bit to make reasonably sure that the references weren't fully necessary.
+
+Lesson: use caution when doing any upgrade that moves you from PHP <5.2.x to >5.3.x. Google searches reveal that this issue is rife in not only Mediawiki, but also Joomla!, and presumably any other CMS or framework that makes use of call_user_func_array(). 
+
+---
+pub_date: 2011-02-10

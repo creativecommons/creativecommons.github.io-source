@@ -1,0 +1,27 @@
+title: Banshee - Now with Creative Commons support! (devel)
+---
+categories: 
+---
+author: greg
+---
+body:
+
+Great news from [Gabriel Burt](http://gburt.blogspot.com/), lead developer for the Open Source media player [Banshee](http://banshee-project.org/):
+
+[![](banshee-cc.png)](http://labs.creativecommons.org/files/2009/01/banshee-cc.png)  
+(click for larger version) 
+
+**Search based on the license of a song/album with direct support of displaying CC license logos!**
+
+More details available on [Gabriel's blog post](http://gburt.blogspot.com/2009/01/catching-up.html).
+
+This feature is slated to be in Banshee 1.6 but you can play with Gabriel's development branch which has this feature thanks to the beauty of git.
+
+`git clone <http://banshee-project.org/~gburt/banshee.git>`
+
+Technical notes of the feature: Gabriel wrote his own parser for extracting the license information from the files. That was needed because there is currently not a Mono port of [liblicense](http://wiki.creativecommons.org/liblicense), a library which reads and writes license metadata to a wide variety of files. But now if anyone wants to help out and do the port to Mono you have an example of how to access this information via Mono.
+
+Lets keep this ball rolling and get license read/write support in more applications!
+
+---
+pub_date: 2009-01-14

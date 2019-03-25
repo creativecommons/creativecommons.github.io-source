@@ -1,0 +1,14 @@
+title: How big are the logs again?
+---
+categories: Metrics, summer
+---
+author: ankitg
+---
+body:
+
+OK, so now I should maybe go back and thank nathany for the advise on not to download the whole dump of logs which looked like an innocent 319.xx GB back then ... it's only once I got some samples and started playing around I realised, that was 319.xx GB of archives, which when unzipped by rough calculation come to over 2 Tera-bytes of text logs. That much amount of space, I unfortunately don't have.
+
+Apart from that, the data looks interesting. More information than I had anticipated. I recall Asheesh mentioning some standard tools for working with the logs, I'll have to follow up on that. Other-wise, now would as good a time as any to practice some regular expressions. (-:
+
+---
+pub_date: 2008-06-13

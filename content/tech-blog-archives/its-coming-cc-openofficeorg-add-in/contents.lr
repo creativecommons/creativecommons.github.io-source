@@ -1,0 +1,30 @@
+title: It's coming! CC OpenOffice.Org Add-in
+---
+categories: Add-In, metadata, OpenOffice, software, summer
+---
+author: ksiomelo
+---
+body:
+
+As you may know, I am working on this project as part of the Google Summer of Code program. Before starting, François Dechelle was already engaged and now we are joining efforts to develop this potentially-popular application!
+
+The current state of the prototype is already adding the licenses in the body of the document. 
+
+![The license wizard](screen1m.jpg)
+
+After the license have been chosen, it becomes available as an Auto-Text, being able to be easily replicable in the document without having to create a new wizard. The name of the license and the URL are also being stored in the document' metadata.
+
+![License text inserted](screen2m.jpg)
+
+Currently I am working on a weird bug which is not allowing the ooo API to retrieve some images of the available licenses at http://i.creativecommons.org/l/ (it was working perfectly few days ago...)
+
+We're going to commit a stable version ready for download in the next weeks, but if you are eager to use it you can check out this folder at cctools repository:
+
+[./ccooo/](http://cctools.svn.sourceforge.net/viewvc/cctools/ccooo/)
+
+Feedbacks and suggestions are welcome!
+
+Cheers
+
+---
+pub_date: 2007-06-27

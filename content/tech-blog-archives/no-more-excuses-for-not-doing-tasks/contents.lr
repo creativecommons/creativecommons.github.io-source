@@ -1,0 +1,16 @@
+title: No more excuses for not doing tasks!
+---
+categories: 
+---
+author: steren
+---
+body:
+
+> _Stay up to date and don't miss your deadline any more with the brand new email task notifications and reminders._
+
+I created this as an extension of _[Semantic MediaWiki](http://semantic-mediawiki.org/ "http://semantic-mediawiki.org"). _ It is mainly supposed to be used as an internal tool at CC. Basicaly, it sends email to concerned users each time a tasks is created or updated. It also sends reminders at different date before your deadline.
+
+I'm currently working on an online release of the entire _project and task tracking system_ used here, so stay tuned.
+
+---
+pub_date: 2008-06-24

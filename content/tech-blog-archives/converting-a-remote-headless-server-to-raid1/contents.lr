@@ -1,0 +1,136 @@
+title: Converting a remote, headless server to RAID1
+---
+categories: 
+---
+author: nkinkade
+---
+body:
+
+We have a particular server which has been running very well for the past few years, but I have had a certain amount of low-level anxiety that the hard disk in the machine might fail, causing the sites it hosts to go down. We have backups, of course, but restoring a machine from backups would take hours, if for no other reason than transferring gigabytes of data to the restored disk. So I had our hosting company add a second hard disk to the machine so that I could attempt to covert it to boot to a RAID1 array. Playing around with how a system boots on a remote, headless machine to which you have no console access is a little nerve-racking, because it's very easy to make a small mistake and have the machine fail to boot. You are then at the mercy of a data center technician, and the machine may be down for some time.
+
+There are several documents on the Web to be found about how to go about doing this, but I found [one in particular](http://www.howtoforge.com/software-raid1-grub-boot-debian-etch) to be the most useful. I pretty much followed the instructions in that document line for line, until it broke down because that person was on a Debian Etch system running GRUB version 1, but our system is running Debian Squeeze with GRUB 2 (1.98). The steps I followed differ from those in that document starting on [page two](http://www.howtoforge.com/software-raid1-grub-boot-debian-etch-p2) around half way down where the person says " _Now up to the GRUB boot loader._ ". Here are the steps I used to configure GRUB 2:
+
+The instructions below assume the following. Things may be different on your system, so you will have to change device names to match those on your system:
+    
+    
+    Current system:
+    
+    /dev/sda1 = /boot
+    /dev/sd5 = swap
+    /dev/sd6 = /
+    
+    New RAID1 arrays:
+    
+    /dev/md0 = /boot
+    /dev/md1 = swap
+    /dev/md2 = /
+    
+
+Create a file called _/etc/grub.d/06_raid_ with the following contents. Be sure to make the file executable:
+    
+    
+    #!/bin/sh
+    exec tail -n +3 $0
+    # A custom file for CC to get system to boot to RAID1 array
+    
+    menuentry "Debian GNU/Linux, with Linux 2.6.32-5-amd64, RAID1"
+    {
+            insmod raid
+            insmod mdraid
+            insmod ext2
+    	set root='(md0)'
+    	search --no-floppy --fs-uuid --set 075a7fbf-eed4-4903-8988-983079658873
+    	echo 'Loading Linux 2.6.32-5-amd64 with RAID1 ...'
+    	linux /vmlinuz-2.6.32-5-amd64 root=/dev/md2 ro quiet panic=5
+    	echo 'Loading initial ramdisk ...'
+    	initrd  /initrd.img-2.6.32-5-amd64
+    }
+    
+
+Of course, you are going to need to change the UUID in the _search_ line, and also the kernel and initrd image names to match those on your system, and probably some other details.
+
+We should tell GRUB to fall back on a known good boot scenario, just in case something doesn't work. I will say up front that this **completely saved my ass** , since it took me numerous reboots before I found a working configuration, and if it weren't for this fall-back mechanism the machine would have stuck on a failed boot screen in GRUB. I found [some instructions](http://translate.google.com/translate?sl=auto&tl=en&js=n&prev=_t&hl=en&ie=UTF-8&layout=2&eotf=1&u=http%3A%2F%2Fwiki.ubuntuusers.de%2FGRUB_2%2FSkripte%23Fallback-Skript) about how to go about doing this in GRUB 2. Create a file name _/etc/grub.d/01_fallback_ and add the following contents. Be sure to make the file executable:
+    
+    
+    #! /bin/sh -e
+    
+    if [ ! "x${GRUB_DEFAULT}" = "xsaved"  ] ; then
+      if [ "x${GRUB_FALLBACK}" = "x" ] ; then 
+          export  GRUB_FALLBACK = ""
+         GRUB_FALLBACK = $( ls /boot | grep -c 'initrd.img' )
+         [ ${ GRUB_DISABLE_LINUX_RECOVERY } ] || GRUB_FALLBACK = $(( ${ GRUB_FALLBACK } * 2 ))
+      fi
+       echo "fallback set to menuentry=${GRUB_FALLBACK}"  >&2
+    
+      cat << EOF
+      set fallback="${GRUB_FALLBACK}"
+    EOF
+    
+    fi
+    
+
+Then add the following line to _/etc/default/grub_ :
+    
+    
+    export GRUB_FALLBACK="1"
+
+And while you are in there, also uncomment or add the following line, unless you plan to be using UUIDs everywhere. I'm not sure if this is necessary, but since I was mostly using device names (e.g. _/dev/md0_ ) everywhere, I figured it couldn't hurt.
+    
+    
+    GRUB_DISABLE_LINUX_UUID=true
+
+Update the GRUB configuration by executing the following command:
+    
+    
+    # update-grub
+
+Make sure GRUB is installed and configured in the MBR of each of our disks:
+    
+    
+    # grub-install /dev/sda
+    # grub-install /dev/sdb
+    
+
+Now we need to update the initramfs image so that it knows about our RAID set up. You could do this by simply running _update-initramfs -u_ , but I found that running the following command did this for me, and perhaps some other relevant things(?), and also it verified that my mdadm settings were where they needed to be:
+    
+    
+    # dpkg-reconfigure mdadm
+
+I used _rsync_ , instead of _cp_ , to move the data from the running system to the degraded arrays like so:
+    
+    
+    # rsync -ax /boot/ /mnt/md0
+    # rsync -ax / /mnt/md2
+    
+
+When rsync finishes moving _/_ to _/mnt/md2_ , then edit the following files, chaning any references to the current disk to our new mdX devices:
+    
+    
+    # vi /mnt/md2/etc/fstab
+    # vi /mnt/md2/etc/mtab
+    
+
+**Warning** : do not edit _/etc/fstab_ and _/etc/mtab_ on the currently running system, as the howtoforge.com instructions would seem to indicate, else if the new RAID configuration fails and the machine has to fall back to the current system, then it won't be able to boot that either.
+
+I believe that was it, though it's possible I may have forgot to add a step here. Don't run the following command unless you can afford to possibly have the machine down for a while. This is a good time to also make sure you have good backups. But if you're ready, then run:
+    
+    
+    # shutdown -rf now
+
+Now cross your fingers and hope the system comes back up on the RAID1 arrays, or at all.
+
+If the machine comes back up on the RAID1 arrays, then you can now add the original disk to the new arrays with commands like the following:
+    
+    
+    # mdadm --manage /dev/md0 --add /dev/sda1
+    # mdadm --manage /dev/md1 --add /dev/sda5
+    # mdadm --manage /dev/md2 --add /dev/sda6
+    
+
+The arrays will automatically rebuild themselves, and you can check the status by running:
+    
+    
+    #cat /proc/mdstat
+
+---
+pub_date: 2012-04-06

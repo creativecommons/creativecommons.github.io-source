@@ -1,0 +1,16 @@
+title: Merging old and new CC REL schemas
+---
+categories: CC
+---
+author: nathan
+---
+body:
+
+When the RDF schema that would become CC REL was first developed, it was published at `http://web.resource.org/cc`. A few years ago, as we were codifying some new features of CC REL (specifically how to specify attribution information), we had one of our first [of several](http://labs.creativecommons.org/2010/09/02/semantic-copyright-and-cc-rel/) realizations about authority: Creative Commons -- creativecommons.org -- is the canonical source of information about CC licenses, and as such is the place we should be publishing information about how to use them. We started publishing the schema at <http://creativecommons.org/ns>, and using that as the namespace for RDFa we generated.
+
+Late last year the question of "which namespace is authoritative" arose, and I realized we'd missed an important step: no one using the web.resource.org address would be aware of the new namespace if they weren't looking for it. As of late last week, that's been corrected. Aaron graciously started redirecting `http://web.resource.org/cc` to `http://creativecommons.org/ns`, which was the first step. We've also added equivalence assertions between the two, so that an agent looking at the schema will see that the old and new properties have the same semantic meaning (for example, a License in the old schema, `http://web.resource.org/cc/License`, is declared to be the equivalent class of License in the new schema, `http://creativecommons.org/ns#License`).
+
+These updates are now live in the [CC REL schema](http://creativecommons.org/ns) (which is incidentally primarily described as RDFa, with an RDF-XML version extracted using an automated tool).
+
+---
+pub_date: 2011-02-04

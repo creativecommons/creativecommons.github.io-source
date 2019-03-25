@@ -1,0 +1,30 @@
+title: ionicer: Making Subversion and git extra friendly
+---
+categories: 
+---
+author: asheesh
+---
+body:
+
+We've discovered that some of our websites, in particular those that rely on MySQL, are very sensitive to spikes in disk I/O load. Right now, we do run some non-interactive services on the same machines as some of our websites.
+
+Subversion and git in particular seem to cause long-duration high disk load, which causes Nathan Kinkade to get paged when e.g. wiki.creativecommons.org takes too long to load. We have found that using [ionice to set](http://friedcpu.wordpress.com/2007/07/17/why-arent-you-using-ionice-yet/) background activities to "idle" priority is very useful in avoiding sending text messages to NK.
+
+However, ionice can only be run by root, meaning regular users can't even request the system be more gentle. So I wrote a simple tool, "ionicer," that is a setuid-root C tool that sets its parent process's IO priority to idle.
+
+You [can check it out in my gitweb](http://git.asheesh.org/?p=ionicer.git;a=summary).
+
+I then used [dpkg-divert](http://www.debian-administration.org/articles/118) to replace /usr/bin/svnserve and /usr/bin/git with simple shell wrappers that call ionicer before calling the real binaries. So the call path goes:
+
+  * user connects with svn+ssh to code.creativecommons.org
+  * user logs in with an SSH key and executes "svnserve."
+  * svnserve is really a shell script. /bin/bash runs a script which does two things: 
+    1. Runs ionicer, which changes the shell to I/O priority class idle, and
+    2. Executes svnserve.real with the same arguments as were passed into the wrapper.
+
+
+
+Ta-da!
+
+---
+pub_date: 2008-12-02

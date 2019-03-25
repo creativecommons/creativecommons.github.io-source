@@ -1,0 +1,44 @@
+title: Using wget to login to Mediawiki
+---
+categories: 
+---
+author: nkinkade
+---
+body:
+
+For a couple years CC has been using the [Pywikipediabot](http://meta.wikimedia.org/wiki/Pywikipediabot) to do a few small operations on a password-protected, private installation of [Mediawiki](http://www.mediawiki.org/wiki/MediaWiki). It used to create a basic page, then ask people to add information to that page, and then a few days later it would email the contents of that page to a group of people.
+
+As of a today we are no longer using Pywikipediabot to create a page, but only to mail the contents of a page. It occurred to me that Pywikipediabot was really overkill for such a small task. I decided to write a simple shell script using wget to accomplish this task. My initial thought was to use the [Mediawiki API](http://www.mediawiki.org/wiki/API:Main_page), but all the documents I found indicated that if one merely wanted the content of a page, to use the _action_ query parameter to index.php, such as _/SomeArticle?action=raw_. It wasn't even clear to me that there would be a way to accomplish what I wanted via the API without having to parse an XML response (there may be, I just didn't readily find it).
+
+So I decided to use wget to work with the normal user interface of Mediawiki, but I didn't quickly find any good information on how to go about this, or what I found was outdated and no longer worked. I'm posting this here in case it could be useful to anyone else. Here is the basic idea:
+    
+    
+    #!/bin/bash
+    
+    PAGE_TITLE="Some_page_title"
+    
+    RCPT_TO=group@somesite.com
+    MAIL_FROM="'John Q. Public' <management@somesite.com>"
+    MAIL_SUBJECT="Contents of ${PAGE_TITLE}"
+    
+    MW_LOGIN="Some Login"
+    MW_PASSWD="somepassword"
+    
+    # Mediawiki uses a login token, and we must have it for this to work.
+    WP_LOGIN_TOKEN=$(wget -q -O - --save-cookies cookies.txt --keep-session-cookies 
+                                         http://www.somesite.com/Special:UserLogin 
+                                         | grep wpLoginToken | grep -o '[a-z0-9]{32}')
+    
+    wget -q --load-cookies cookies.txt --save-cookies cookies.txt --keep-session-cookies 
+            --post-data "wpName=${MW_LOGIN}&wpPassword;=${MW_PASSWD}
+    &wpRemember;=1&wpLoginattempt;=Log%20in&wpLoginToken;=${WP_LOGIN_TOKEN}" 
+            "http://www.somesite.com/index.php?title=Special:UserLogin&action;=submitlogin&type;=login"
+    
+    wget -q -O email_body.txt --load-cookies cookies.txt 
+            "http://www.somesite.com/${PAGE_TITLE}?action=raw"
+    
+    cat email_body.txt | mail -s "${MAIL_SUBJECT}" -a "From: ${MAIL_FROM}" ${RCPT_TO}
+    
+
+---
+pub_date: 2011-04-30

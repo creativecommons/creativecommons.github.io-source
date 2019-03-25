@@ -1,0 +1,34 @@
+title: Flickr Image Re-Use for OpenOffice.org update
+---
+categories: Add-In, development, OpenOffice, opensource, summer
+---
+author: mihai
+---
+body:
+
+I`m happy to announce that i succeeded in doing, in a basic manner, all the 3 requirements for this project : search photos by tags, by license and to insert one photo into a document.
+
+Here you have a screenshot made after a search was done on tag **mountains** and license **Attribution License** :
+
+[![Results after a search on a tag and a license](ccflickr1.JPG)](http://techblog.creativecommons.org/files/2008/06/ccflickr1.JPG "Results after a search on a tag and a license")
+
+Also here you have the screenshot with the photo inserted into a [document ](http://techblog.creativecommons.org/files/2008/06/ccflickr2.JPG "Photo"). As you can see the image was inserted with a default size, but this will be changed later.
+
+What i`ll try to do next :
+
+  * add menus to each image with the available sizes
+  * improve the searching
+  * inserting the image into the document with the selected size
+  * adding the license into the document
+  * more testing
+
+
+
+I hope, that in less than 2 weeks i will make available a good version.
+
+Any comments or suggestions are well appreciated.
+
+ps : I came across this [article](http://www.freesoftwaremagazine.com/columns/2008_google_summer_code_21_projects_im_excited_about "2008_google_summer_code_21_projects_im_excited_about"). "I for one can’t wait." says [Andrew Min](http://www.freesoftwaremagazine.com/user/37372 "Andrew Min") about this project. I`ll try to not disappoint him :)
+
+---
+pub_date: 2008-06-13

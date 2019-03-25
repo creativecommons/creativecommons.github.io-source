@@ -1,0 +1,19 @@
+title: LicenseChooser 0.96 released: Fixes Share-Alike help text
+---
+categories: 
+---
+author: asheesh
+---
+body:
+
+We just noticed that [LicenseChooser.js](http://wiki.creativecommons.org/LicenseChooser.js) 0.95 and earlier had the wrong help  
+text for "Share Alike". Due to a copy and pasting error, if you hold your  
+mouse over "Require Share Alike" icon in the old demos (e.g.  
+<http://labs.creativecommons.org/demos/jswidget/tags/0.95/example_web_app/>), you will see a copy of the help text that corresponds to "Prohibit Commercial Use".
+
+Eek.
+
+LicenseChooser.js 0.96, as you can see at <http://labs.creativecommons.org/demos/jswidget/tags/0.96/example_web_app/>, fixes this problem.
+
+---
+pub_date: 2009-03-16

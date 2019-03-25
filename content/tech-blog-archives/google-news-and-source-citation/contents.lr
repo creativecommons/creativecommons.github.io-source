@@ -1,0 +1,24 @@
+title: Google News and Source Citation
+---
+categories: metadata
+---
+author: nathan
+---
+body:
+
+Last month the Google News team [announced](http://googlenewsblog.blogspot.com/2010/11/credit-where-credit-is-due.html) two new meta tags publishers can use to mark up their content with source information. The first, `syndication-source`, is similar to `rel="canonical"`: it lets Google know which version is authoritative (at least as far as Google News is concerned). The other, `original-source`, mirrors questions we've been thinking about here at CC. Google's description in the announcement reads:
+
+> Indicates the URL of the first article to report on a story. We encourage publishers to use this metatag to give credit to the source that broke the story...the intent of this tag is to reward hard work and journalistic enterprise. 
+
+Most Creative Commons licenses allow derivative works, and the question of how you cite (attribute) your derivative is worth exporing. While it's enough to include the attribution information, explicitly labeling the link to the source as the basis of your work not only allows others to discover that content, but also allows tools to begin drawing the graph of content reuse and repurposing.
+
+Google's suggestion for news articles is a good start: it lets publishers indicate the original source in a machine readable way. However it'd be even better if that information were also visible to readers of the article by default. Creative Commons licenses require that adaptations credit the use of the original in the adaptation (see §4b, [CC BY 3.0](http://creativecommons.org/licenses/by/3.0/legalcode), for example). You can imagine using the [Dublin Core Terms](http://dublincore.org/documents/dcmi-terms/) to annotate this credit information using RDFa. For example:
+
+`This article originally appeared in <a xmlns:dc="http://purl.org/dc/terms" rel="dc:source" href="http://example.org/original-article">example.org</a>.`
+
+This also opens up the possibility of annotating the type of adaptation that occurred, such as translation, format change, etc. 
+
+Publishing machine readable information about sources and re-use is exactly where we want to go. Until the tools are ubiquitous, however, making that information visible to readers will be very important.
+
+---
+pub_date: 2010-12-10

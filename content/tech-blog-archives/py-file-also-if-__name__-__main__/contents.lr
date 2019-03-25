@@ -1,0 +1,22 @@
+title: >>> py >> file ... Also if __name__ == ''__main__'':
+---
+categories: Metrics, python, summer
+---
+author: ankitg
+---
+body:
+
+Some major updates and we have the scripts running, thanks Asheesh for the redirection idea, it works but I couldn't get it to give me a progress bar since everything was being redirected to the file. I tried using two different functions but they needed a shared variable, so that failed, but it was nice since now I ended up with "real" python files with a main().
+
+The journey was interesting, we went from trying >> inside python to including # -*- coding: UTF-8 -*- and # coding: UTF-8 to get it to work and after a few more bumps finally figured out the __main__
+
+I still need to update all the scripts, but licChange which is at the forefront of all the latest developments just got bumped upto version 8.2 (which reminds me of a dire need to update GIT:Loggy!).
+
+This also gave me an idea of how to go about getting data out of S3 for "free" ... S3 to EC2 is free ... SCP from EC2 is free and voila! Why would I every want to do that? Well, for starters, the EC2 AMI runs out of space around 5 GB (note: logs for i.creativecommons.org are 4.7 GB) and secondly, the scripts seem to run faster locally. The icing on the cake, I wouldn't have to scp the result files being generated. I could possibly automate the process of running the scripts.
+
+Thats all for now ... class at 0830 Hrs in the moring (it's criminal, I know).
+
+I guess, I'll just have to keep at it.
+
+---
+pub_date: 2008-09-01

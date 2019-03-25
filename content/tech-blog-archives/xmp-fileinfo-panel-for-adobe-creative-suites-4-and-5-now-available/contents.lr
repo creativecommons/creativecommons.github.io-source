@@ -1,0 +1,26 @@
+title: XMP FileInfo panel for Adobe Creative Suites 4 and 5 now available!
+---
+categories: adobe, metadata, software, tools, xmp
+---
+author: akozak
+---
+body:
+
+_This is a special guest post by **John Bishop** of [John Bishop Images](http://johnbishopimages.com/)._
+
+Prior to Adobe's Creative Suite 4, adding [Creative Commons license metadata](http://wiki.creativecommons.org/XMP) via the _FileInfo_ … dialog (found in Photoshop, Illustrator, InDesign and more) meant coding a relatively simple text based XML panel definition and has been available from the [Creative Commons Wiki](http://wiki.creativecommons.org/Adobe_Metadata_Panel) since 2007.
+
+Starting with Creative Suite 4 Adobe migrated the XMP FileInfo panel to a Flash based application, meaning that adding Creative Commons metadata became much more complex, requiring [Adobe's XMP SDK](http://www.adobe.com/products/xmp/custompanel.html) and the ability to develop applications in Flash, C++ or Java.
+
+After significant development and testing [john bishop images](http://johnbishopimages.com/) is pleased to announce the availability of a custom [Creative Commons XMP FileInfo Panel](http://johnbishopimages.com/creativecommons/?xmp) for Creative Suite 4 and Creative Suite 5 – free of charge.
+
+This comprehensive package offers the ability to specify Creative Commons license metadata directly in first class, industry standard tools and places Creative Commons licensing metadata on the same footing as the standardized, commercial metadata sets like Dublin Core (DC), IPTC and usePLUS and tightly integrates all the metadata fields required for a Creative Commons license in one panel.
+
+Also included is a metadata panel definition that exposes the Creative Commons license metadata in the mini metadata panels found in Bridge, Premiere Pro, etc. And finally a set of templates that can be customized for the various license types and more is also included; these templates can be accessed from Acrobat.
+
+For more information and to download the Creative Commons XMP FileInfo panel visit john bishop images' [Creative Commons](http://johnbishopimages.com/creativecommons/?xmp) page.
+
+**Note:** The panels are localized and a English-US language file is supplied. To contribute localization files in other languages please contact [john bishop images](http://johnbishopimages.com/contact?xmpx).
+
+---
+pub_date: 2010-12-06

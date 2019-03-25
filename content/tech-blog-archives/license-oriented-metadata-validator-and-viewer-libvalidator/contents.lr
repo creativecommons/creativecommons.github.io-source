@@ -1,0 +1,25 @@
+title: License-oriented metadata validator and viewer: libvalidator
+---
+categories: development, license, licenses, metadata, opensource, python, summer
+---
+author: hugo
+---
+body:
+
+As the [Google Summer of Code 2008](http://code.google.com/soc/2008/) midterm evaluation [deadline is approaching](http://code.google.com/soc/2008/faqs.html#0.1_timeline), it is a good time to report the progress when it comes to the license-oriented metadata validator and viewer.
+
+The source code is located in two dedicated [git](http://git.or.cz/) repositories. The first being [validator](http://code.creativecommons.org/viewgit?r=validator.git), which contains the source code of the Web application based on [Pylons](http://pylonshq.com/) and [Genshi](http://genshi.edgewall.org/). The second repository is [libvalidator](http://code.creativecommons.org/viewgit?r=libvalidator.git), which hosts the files that constitute the core library that the project will utilise. This is the component that the development focuses on right now.
+
+The purpose of the aforementioned library is to parse input files, scan them for relevant license information, and output the results in a machine-readable fashion. More precisely, its workflow is the following: parse the file and associated [RDF](http://www.w3.org/RDF/) information so that a complete set of RDF data is available, filter the results with regard to license information (not only related to the document itself, but also to other objects described within it), and return the results in a manner preferable for the usage by the Web application.
+
+[pyRdfa](http://www.w3.org/2007/08/pyRdfa/) seems to be the best tool for the parsing stage so far. It handles the current recommendation for embedding license metadata (namely [RDFa](http://www.w3.org/TR/rdfa-syntax/)) as well as other non-deprecated methods: linking to an external or embedded (using [the "data" URL scheme](http://www.ietf.org/rfc/rfc2397.txt)) RDF files and utilising the [Dublin Core](http://dublincore.org/). The significant lacking is handling of the invalid direct embedding of [RDF/XML](http://www.w3.org/TR/rdf-syntax-grammar/) within the [HTML/XHTML](http://www.w3.org/MarkUp/) source code (as an element or in a comment) and this is resolved by first capturing all such instances using a regular expression and then parsing the data just as external RDF/XML files.
+
+Once the RDF triples are extracted, one can use [SPARQL](http://www.w3.org/TR/rdf-sparql-query/) to narrow the results just to the triples related to the licensed objects. Both [librdf](http://librdf.org/) and [rdflib](http://rdflib.net/) support this language. Moreover, the RDF/XML related to the license must be parsed, so that its conditions (permissions, requirements, and restrictions) are then presented to the user.
+
+The library takes advantage of standard Python tools such as [Buildout](http://pypi.python.org/pypi/zc.buildout/) and [nose](http://www.somethingaboutorange.com/mrl/projects/nose/). When it is completed, the project will be all about writing a Web application that will serve as an interface to libvalidator.
+  *[RDF]: Resource Description Framework
+  *[HTML]: HyperText Markup Language
+  *[XHTML]: Extensible Hypertext Markup Language
+
+---
+pub_date: 2008-07-08

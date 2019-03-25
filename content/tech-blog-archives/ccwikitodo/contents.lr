@@ -1,0 +1,27 @@
+title: CcWiki:Todo
+---
+categories: mediawiki, openid, semantic
+---
+author: ml
+---
+body:
+
+Today's [release of MediaWiki 1.10](http://freshmeat.net/projects/mediawiki/?branch_id=45379&release_id=253266) reminds me that the CC Wiki is badly in need of an upgrade (from 1.6). Here's the [todo list](http://wiki.creativecommons.org/CcWiki:Todo):
+
+  * Upgrade to MediaWiki 1.10
+  * Add more spam prevention, remove barriers 
+    * possibly no image upload on new accounts?
+    * add capcha?
+    * remove need for email confirmation?
+  * Install OpenId extension
+  * Install Semantic MediaWiki extension 
+    * Migrate lists of stuff to articles with queryable assertions, e.g., [content curators](http://wiki.creativecommons.org/Content_curators "Content curators"), [books](http://wiki.creativecommons.org/Books "Books")
+
+
+
+That's in addition to migrating and adding lots more content there and doing a theme refresh.
+
+The release also reminds me to look at an old patch to [AJAX-ify Creative Commons license selection option in installer](http://bugzilla.wikimedia.org/show_bug.cgi?id=2837), makie it work in 1.10, and try to get it into the mainline.
+
+---
+pub_date: 2007-05-10

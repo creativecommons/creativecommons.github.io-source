@@ -1,0 +1,16 @@
+title: Exempi 1.99.3 Released
+---
+categories: adobe, liblicense, metadata, releases, software, xmp
+---
+author: jakin
+---
+body:
+
+Hubert Figuiere has [released Exempi 1.99.3](http://www.figuiere.net/hub/blog/?2007/07/10/540-exempi-1993)
+
+An important addition in this release is the ability to serialize XMP to a string, making sidecar XMP possible. The soon-to-be-released [Liblicense](http://wiki.creativecommons.org/Liblicense) 0.1 already takes advantage of this feature; it uses Exempi to read and write licenses within XMP sidecar.
+
+Hopefully, the API will soon stabilize in preparation for the 2.0 release.
+
+---
+pub_date: 2007-07-11

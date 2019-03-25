@@ -1,0 +1,14 @@
+title: MediaWiki, the application platform
+---
+categories: development
+---
+author: nathan
+---
+body:
+
+As noted on the [CC weblog](http://creativecommons.org/weblog/entry/18234) and [elsewhere](http://gondwanaland.com/mlog/2009/10/06/acawiki/), AcaWiki [launched](http://acawiki.org/AcaWiki:PressRelease-2009-10-07) back in October. I'm [much later noting the launch](http://yergler.net/blog/2010/01/04/acawiki-on-building-emerging-applications/), which is really inexcusable since CC did much of the tech buildout. AcaWiki is only the most recent example of our work with [Mediawiki](http://mediawiki.org) and [Semantic Mediawiki](http://semantic-mediawiki.org). Both are critical pieces of our infrastructure here, and tools we'd like to see developed further. One area that we've brainstormed but not attempted to implement is the idea of "actions"; you can read an overview of the idea [here](http://yergler.net/blog/2010/01/07/actions-for-smw-applications-hypothetically/).
+
+The combination of Mediawiki and Semantic MediaWiki has allowed us to build applications faster and increase the effective number of "developers" on our team by lowering the barriers to entry. I expect 2010 to be a really interesting year for wiki applications.
+
+---
+pub_date: 2010-01-08

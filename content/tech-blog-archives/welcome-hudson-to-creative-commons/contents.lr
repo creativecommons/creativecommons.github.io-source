@@ -1,0 +1,18 @@
+title: Welcome Hudson to Creative Commons
+---
+categories: tools
+---
+author: nathan
+---
+body:
+
+We've been working over the past year on improving our tooling and processes for the CC website software, and we're starting to see the results. We've moved our translations to [Transifex](http://www.transifex.net/projects/p/CC/), where updates are committed directly to [our git repository](http://code.creativecommons.org/viewgit/i18n.git/). We've rolled out a new version of the [license engine](http://code.creativecommons.org/viewgit/cc.engine.git) with different (better!) [caching](http://pypi.python.org/pypi/wsigcache). And our [API](http://api.creativecommons.org/) now uses the same [license definition](http://code.creativecommons.org/viewgit/license.rdf.git/) as the [license chooser](http://creativecommons.org/choose) and the [partner interface](http://wiki.creativecommons.org/Partner_Interface). While this has been great in terms of agility and deployment speed, it also means that if a single piece breaks, other things are more likely to depend on that piece. 
+
+Earlier this week I spent a little time installing [Hudson](http://hudson-ci.org/) on our [development server](http://code.creativecommons.org). By looking at the [dashboard](http://code.creativecommons.org/hudson), you can easily see the build status of CC projects, including the aforementioned license components, and [DiscoverEd](http://wiki.creativecommons.org/DiscoverEd), our linked data search prototype. 
+
+[![](trend.png)](http://labs.creativecommons.org/files/2010/08/trend.png)
+
+Hudson is already proving itself worth the time to deploy and configure. After installation, I saw that a test for the API was failing. I pinged John, and was happy to see the build go green a few minutes later when he checked in a fix and Hudson rebuilt the package. Graphs like the testing trend for [discovered](http://code.creativecommons.org/hudson/job/discovered/) also help quantify the progress being made. Overall, it already feels like we have better visibility into the state of our infrastructure. 
+
+---
+pub_date: 2010-08-12

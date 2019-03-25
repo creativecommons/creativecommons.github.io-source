@@ -1,0 +1,74 @@
+title: 32 to 64 bit remotely
+---
+categories: Debian, software
+---
+author: nkinkade
+---
+body:
+
+A couple months ago I [posted here](http://labs.creativecommons.org/2008/04/03/varnish-cache-at-cc/) about some of our experiences with [Varnish Cache](http://varnish.projects.linpro.no/) as an HTTP accelerator. By and large I have been very impressed with Varnish. We even found that it had the unexpected benefit of acting as a buffer in front of Apache, preventing Apache from getting overwhelmed with too many slow requests. Apache would get wedged once it had reached it's MaxClients limit, whereas Varnish seems to happily queue up thousands of requests even if the backend (Apache) is going slowly.
+
+However, after a while we started running into other problems with Varnish, and I found the probable answer in [a bug report](http://varnish.projects.linpro.no/ticket/85) at the Varnish site. It turns out that Varnish was written with a 64 bit system in mind. That isn't to say that it won't work nicely on a 32 bit system, just that you better not expect high server load, or else you'll start running into resource limitations in a hurry. This left us with about 2 options: Move to 64 bit or ditch Varnish for something like Squid. Seeing as how I was loathe to do the latter, we decided to go 64 bit, which in any case is another logical step into the 21st century.
+
+The problem was that our servers are co-located in data centers around the country. We didn't want to hassle with reprovisioning all of the them. [Asheesh](http://creativecommons.org/about/people/#83) did the the first remote conversion based on [some outdated document](http://www.underhanded.org/papers/debian-conversion/remotedeb.html) he found on remotely converting from Red Hat Linux to Debian. It went well and we haven't had a single problem on that converted machine since. Varnish loves 64bit.
+
+I have now converted two more machines, and this last time I documented the steps I took. I post them here for future reference and with the hope that it may help someone else. Note that these steps are somewhat specific to Debian Linux, but the concepts should be generally applicable to any UNIX-like system. There are no real instructions below, so you just have to infer the method from the steps. See the [aforementioned article](http://www.underhanded.org/papers/debian-conversion/remotedeb.html) for more verbose, though dated, explanations. **BE WARNED** that if you make a mistake and don't have some [lovely rescue method](http://www.serverbeach.com/products/rapid_rescue.php) then you may be forced to call your hosting company to salvage the wreckage:
+
+  * [ssh server]
+  * aptitude install linux-image-amd64
+  * reboot
+  * [ssh server]
+  * sudo su -
+  * aptitude install debootstrap # if not already installed
+  * swapoff -a
+  * sfdisk -l /dev/sda # to determine swap partition, /dev/sda5 in this case
+  * mke2fs -j /dev/sda5
+  * mount /dev/sda5 /mnt
+  * cfdisk /dev/sda # set /dev/sda5 to type 83 (Linux)
+  * debootstrap --arch amd64 etch /mnt http://http.us.debian.org/debian
+  * mv /mnt/etc /mnt/etc.LOL
+  * cp -a /etc /mnt/
+  * mv /mnt/boot /mnt/boot.LOL
+  * cp -a /boot /mnt/ # this is really just so that the dpkg post-install hooks don't issue lots of warnings about things not being in /boot that it expects.
+  * chroot /mnt
+  * aptitude update
+  * aptitude dist-upgrade
+  * aptitude install locales
+  * dpkg-reconfigure locales # optional (I selected All locales, default UTF-8)
+  * aptitude install ssh sudo grub vim # and any other things you want
+  * aptitude install linux-image-amd64
+  * vi /etc/fstab # change /dev/sda5 to mount on / and comment out old swap entry
+  * mkdir /home/nkinkade # just so I have a home, not necessary really
+  * exit # get out of chroot
+  * vi /boot/grub/menu.lst # change root= of default option from sda6 to sda5
+  * reboot
+  * [ssh server]
+  * sudo su -
+  * mount /dev/sda6 /mnt
+  * chroot mnt
+  * dpkg --get-selections > ia32_dpkg_selections
+  * exit
+  * mv /home /home.LOL
+  * cp -a /mnt/home /
+  * mv /root /root.LOL
+  * cp -a /mnt/root /
+  * mkdir /mnt/ia32
+  * mv /mnt/* /mnt/ia32
+  * mv /mnt/.* /mnt/ia32
+  * cp -a bin boot dev etc etc.LOL home initrd initrd.img lib lib64 media opt root sbin srv tmp usr var vmlinuz /mnt
+  * mkdir /mnt/proc /mnt/sys
+  * vi /mnt/etc/fstab # make /dev/sda6 be mounted on / again, leave swap commented out
+  * vi /boot/grub/menu.lst # change the default boot option back to root=/dev/sda6
+  * reboot
+  * [ssh server]
+  * sudo su -
+  * mkswap /dev/sda5
+  * vi /etc/fstab (uncomment swap line)
+  * swapon -a
+  * dpkg --set-selections < /ia32/ia32_dpkg_selections
+  * apt-get dselect-upgrade # step through all the questions about changed /etc/files, etc.
+
+
+
+---
+pub_date: 2008-07-15

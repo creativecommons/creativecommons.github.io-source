@@ -1,0 +1,22 @@
+title: A patchy web server
+---
+categories: development, opensource
+---
+author: asheesh
+---
+body:
+
+The tech team here is examining how we can better-organize our web servers and web sites. If you are a DNS sleuth, you may have noticed that most of our web sites are served from a server called "apps.creativecommons.org." But there are some problems with this setup: for example, some of our sites are lots of little static files (like the images site, i.creativecommons.org), and some serve CPU-intensive web pages (like wiki.creativecommons.org). We can handle many, many more requests to i.creativecommons.org per second than to wiki.creativecommons.org.
+
+In order to prevent Apache from overloading the computer it's running on, we have to limit the maximum number of web pages it can serve at once. If a thousand people at once were requesting our images, that would be no problem, but we couldn't really handle a thousand requests to our wiki at once. So we have to set the web server to the limit that can be handled by the most difficult site - otherwise, when more people start editing our wiki at once than we can handle, service will degrade really terribly for everyone, even the clients just getting images from i.creativecommons.org!
+
+We knew the above from experience, but we didn't really have data on which web sites ("vhosts") were using up the most server resources. At first I thought I'd turn to Apache's powerful logging system. I wanted to know how much server time was elapsing between the start of a request and when the server was ready to respond to it. Alas, [mod_log_config](http://httpd.apache.org/docs/2.0/mod/mod_log_config.html) only lets you log the total time elapsed from start of request to end of request, which means that large files or users on slow links can distort the picture. A large image file going slowly to a modem user doesn't actually preclude us from sending another few hundred such files at the same time. On the other hand, if a wiki page is taking 5 seconds before it is ready to be sent to the user, those 5 seconds will be even longer if someone else requests another wiki page. Measuring the time from start of request to the beginning of the response seemed a good (albeit rough) way to measure actual server-side resources needed to respond.
+
+I did notice that [mod_headers](http://httpd.apache.org/docs/2.0/mod/mod_headers.html) could send a message to the client telling him exactly what I wanted to record! So I patched Apache to have mod_headers pass its information down to mod_log_config, and then I could log how much time elapsed from request start to
+
+Every once in a while, but as recently as this past weekend (at [Super Happy Dev House](http://superhappydevhouse.org/SuperHappyDevHouse19), even!), I hear people say, "Open source is great, but it's not as if anyone actually uses the source to fix problems they encounter." In this case, software freedom was more than theoretical; it meant the ability to make the software tell us things about itself that helps us better serve the community we exist to serve.
+
+You all can see (and distribute under the same terms as Apache) the [patch and some quick reporting scripts](http://cctools.svn.sourceforge.net/svnroot/cctools/log_analysis/vhost_effort/) I slapped together. Feel free to email me with any questions!
+
+---
+pub_date: 2007-08-13

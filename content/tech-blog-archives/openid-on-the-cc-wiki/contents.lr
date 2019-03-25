@@ -1,0 +1,23 @@
+title: OpenID on the CC Wiki
+---
+categories: Interns, mediawiki, openid
+---
+author: tpkennes
+---
+body:
+
+[Creative Commons' wiki](http://wiki.creativecommons.org) is now an [OpenID](http://openid.net/) enabled-site. Don't hesitate - if you don't have one yet - to create an OpenID account. There are severals [OpenID providers](http://openid.net/wiki/index.php/OpenIDServers) so merely choose one from the list below :
+
+• [MyOpenID](http://www.myopenid.com/)  
+• [VIdentity](https://getopenid.com/)  
+• [GetOpenID](https://getopenid.com/)  
+• [TypeKey](http://www.typekey.com/t/typekey)  
+• [MyLID](http://pip.verisignlabs.com/)  
+• [VeriSign Personnal Identity Provider](http://pip.verisignlabs.com/)
+
+A really nice screencast by [Don McAllister](http://blog.screencastsonline.com/scoblog) explaining how to use OpenID can be viewed [here](http://screencastsonline.com/sco/Shows/files/SCO0107-openid.html).
+
+Edit: Another [screencast](http://simonwillison.net/2006/openid-screencast/) from Simon Willison
+
+---
+pub_date: 2007-07-26

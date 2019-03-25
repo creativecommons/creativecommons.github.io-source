@@ -1,0 +1,22 @@
+title: Supporting tools for decentralized metadata
+---
+categories: DiscoverEd
+---
+author: nathan
+---
+body:
+
+Over the past couple years Creative Commons has built [DiscoverEd](http://wiki.creativecommons.org/DiscoverEd), a prototype search and discovery tool. We built DiscoverEd to explore how search for open educational resources (OER) could be improved through the use of decentralized metadata. But DiscoverEd was never an end point. DiscoverEd is one of what we hope will be many applications developed to leverage decentralized, structured data about resources on the web. (Our license deeds are another application that [use metadata published with works](http://wiki.creativecommons.org/License_Deeds_\(Metadata\)), in that case to provide attribution for re-users.) Recently we've been thinking about tools that could be developed to complement DiscoverEd to create a rich and compelling ecosystem for decentralized metadata for educational resources. 
+
+The use of decentralized metadata to drive discovery allows creators and curators to publish information about works without relying on a central authority, and allows developers to utilize that data with seeking permission from a gate keeper. However, self publishing requires a certain degree of technical expertise from creators and curators. Two tools can help ease this burden and aid deployment of the necessary metadata. A **Validator** would help publishers and curators understand how their resources are ingested and processed by DiscoverEd (and other tools). A **Curation Tool** would allow users to identify resources -- individually, as an ad hoc group, or as part of an institutional team -- and label them with quality, review, or other metadata.
+
+The **Validator** tool would allow users to enter a URL to be checked, and return details of what information DiscoverEd or other software could extract. The results would also provide links to examples and common problems when publishing metadata. For example, how to publish information about the education level and subject matter of a resource, or about what resources were remixed in order to create the new one. A self service tool would allow users to repeatedly check the state of their resources, so they can understand how changes made to their site impact the way others interact with it. A self service tool is essential to scale adoption beyond the level possible when each publisher requires hands on assistance.
+
+The Validation tool would also be integrated with DiscoverEd. DiscoverEd utilizes decentralized metadata to improve its search index, and allow users to search by particular facets, such as subject, education level, or language. When it does not have metadata for one of the “core” fields (education level, subject, license, language in the default configuration), it displays a help icon to indicate that some piece of information is missing. After initial development is complete, the help icons will be linked to the validation tool so that users and publishers alike can get immediate feedback about what’s missing and what’s there.
+
+The **Curation Tool** would be a general purpose piece of software which would allow users to identify works, and annotate additional information about them. We imagine that common annotations might be that they meet some quality review, align to a particular standard, or simply “like”. Just as social bookmarking tools like Delicious allow users to make a list of resources, the Curation Tool would allow users to create lists, identifying why a particular resource is in the list, and possibly adding additional metadata not provided by the publisher. For example, a user might make a list of resources which they have reviewed for quality, and identify which Common Core standard each conforms to. The tool would allow users to collaborate on lists, as well. All lists would be public, and published in a way that allows DiscoverEd to ingest the information collected. The Curation tool would be open source software, so users can download a copy and run it for their own school or professional society, if they so desire.
+
+We think that the development of supporting tools can help advance the adoption of decentralized, structured data for educational resources. Are there simple ideas we've missed? Twists on these we should take into account? Leave your comments below.
+
+---
+pub_date: 2011-03-16

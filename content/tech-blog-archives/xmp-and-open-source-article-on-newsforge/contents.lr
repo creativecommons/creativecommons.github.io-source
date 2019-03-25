@@ -1,0 +1,16 @@
+title: XMP and open source article on Linux.com
+---
+categories: press, software, xmp
+---
+author: ml
+---
+body:
+
+Nathan Willis writes about [XMP making inroads in open source imaging software](http://www.linux.com/article.pl?sid=07/03/23/1926259) at Linux.com. Nice closing:
+
+> Take Creative Commons, for example, which has already embraced XMP, even providing custom XMP templates with which Photoshop users can add Creative Commons licensing information. The size of the collective CC-licensed works on the Internet far outscales any personal or corporate collection; who better to leverage that collection than the free software community?
+
+See [XMP on the CC developer wiki](http://wiki.creativecommons.org/XMP).
+
+---
+pub_date: 2007-04-11

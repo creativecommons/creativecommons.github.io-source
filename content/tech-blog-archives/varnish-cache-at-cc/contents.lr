@@ -1,0 +1,26 @@
+title: Varnish Cache at CC
+---
+categories: software
+---
+author: nkinkade
+---
+body:
+
+Over the past few months we have been migrating most of our web services to new servers. [Squid Cache](http://www.squid-cache.org/) was in use on a number of the old servers as an HTTP accelerator, and we decided that while upgrading hardware and OS we might as well bring our HTTP accelerator fully into the 21st century. Enter [Varnish Cache](http://varnish.projects.linpro.no/), which has some [interesting architectural/design features](http://varnish.projects.linpro.no/wiki/ArchitectNotes).
+
+Varnish was easy to install thanks to the Debian package management system, and the configuration file is vastly simpler than that of Squid despite a horrendous dearth of documentation. Varnish runs well and we are generally happy with it. However, after a few months we have encountered a number of gotchas, most of which probably have workarounds:
+
+  * Varnish seems to choke on files that are larger than around 600MB. No errors, just sends the client a 200 response with no other data.
+  * For some reason [Bazaar](http://bazaar-vcs.org/bazaar) (bzr) apparently does not function through Varnish, even when Varnish was instructed to "pass" requests to bzr repositories.
+  * [bbPress](http://bbpress.org/) for some unknown reason won't function through Varnish.
+  * KeepAlives must to be turned off in Apache, otherwise pages randomly take 1 to 2 minutes to load sometimes. There is an [open bug report](http://varnish.projects.linpro.no/ticket/55) for this at Varnish's Trac page.
+  * Varnish logs are big. They get out of hand in a hurry. For creativecommons.org the log file can grow to 2GB+ in less than 30 minutes. No problem, but varnishlog doesn't seem to want to write to a file larger than 2GB. It could have something to do with [an email thread](http://varnish.projects.linpro.no/ticket/85) I read at Varnish's site, which makes it seems like it might be related to the fact that we are running everything in 32 bit mode, though I believe our hardware support both 32 and 64 bit operation. This means that I have to run a special logrotate script about every 10 or 15 minutes to keep varnishlog from crashing.
+
+
+
+I was recently experimenting and discovered that for some things that were apparently broken, configuring Varnish to "pipe" requests works, while using "pass" does not. This won't make any sense unless you are familiar with VCL (Varnish Configuration Language). I know that "piping" fixed the bbPress issue, and I suspect that it will fix the Bazaar issue as well, though I haven't tested it.
+
+A week or so ago I experimented with turning off Varnish for creativecommons.org to see how Apache would handle the load unaided. Things seemed to be going well for a while, but within a weeks time the site went down twice. The second time I couldn't revive Apache. There were kernel messages like `ip_conntrack: table full: packet dropped`. Apparently the machine was just flooded and Apache was pegged at it's MaxClients limit. I re-enabled Varnish and the problem went away immediately. So it appears that not only is Varnish doing a nice job of caching, but it also is able to handle many more simultaneous TCP connections than Apache without blowing up. [Asheesh](http://creativecommons.org/about/people/#83) and I ran some experiments that seemed to demonstrate that Varnish actually helps to mitigate floods of traffic, whether they be natural or malicious.
+
+---
+pub_date: 2008-04-03

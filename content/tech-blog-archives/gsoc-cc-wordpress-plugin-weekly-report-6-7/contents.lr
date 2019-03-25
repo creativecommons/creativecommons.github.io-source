@@ -1,0 +1,30 @@
+title: GSoC CC Wordpress Plugin: Weekly Report #6 / #7
+---
+categories: CC, summer, wordpress
+---
+author: erlehmann
+---
+body:
+
+One week ago, my laptop's harddisk broke down during the afternoon. I had been accustomed to occasional data loss before — sometimes, pictures would be garbled and on one incident, a 100 MB sound file was corrupted and could not be copied. However, as the kernel printed unpleasant warnings during _every_ startup, aborting the normal boot process, insisting that the file system was damaged, I decided it was the proper time to panic and check the backups.
+
+Getting a replacement drive took me several days. As I did not have money to spare, my first hurdle was activating the  GsoC prepaid card. To make it short, I was not able to activate the card using the error-prone web site, but succeeded in doing it by phone. When I finally held the new hard drive in my hands, I felt like an RPG character, who had in a side quest acquired the item necessary to continue his main endeavour; on sunday, almost all backups were applied.
+
+Regarding the [plugin](http://labs.creativecommons.org/2010/05/24/gsoc-project-introduction-cc-wordpress-plugin/), I have fixed a number of small bugs and also added several new features, listed below:
+
+  * **Default licensing** : Users can now choose a license that gets applied to every attachment if they do not choose a specific license.
+  * **Post thumbnail figures** : [Wordpress post thumbnails](http://markjaquith.wordpress.com/2009/12/23/new-in-wordpress-2-9-post-thumbnail-images/) can now be embedded as figures with annotated markup, just like inline content. Since many theme authors do not properly filter the markup returned by the Wordpress function [`the_post_thumbnail()`](http://codex.wordpress.org/Function_Reference/the_post_thumbnail) (and similar ones), expecting only an _< img>_ element, this option is disabled by default.
+  * **Fallback links for multimedia content** : _< audio>_, _< video>_ and _< object>_ elements now sport a fallback link for browsers that do not support HTML5.
+  * **Support for alternate content and plugin directories** : Since Wordpress 2.6, you can change the [names of the _wp-content_ and _plugins_ directories](http://codex.wordpress.org/Determining_Plugin_and_Content_Directories); earlier versions of the plugin did not cope with that. I had struggled with this issue before, but after _Moritz Metz_ provided a working default configuration for _wp-config.php_ , everything fell into place fast.
+  * **New stylesheet** : I modified the existing _grau_ style, using [80×15 icons](http://commons.wikimedia.org/wiki/Creative_Commons_icons#Small_Buttons). I am pondering setting it as the standard stylesheet for the plugin. This is how it looks: ![](grau-icon-css.png)
+
+
+
+For this week, I will focus on making default licensing more expansive, adding differing license options for different types of media content and maybe even for single users. I will also try to modify the existing stylesheets so they work well with post thumbnail figures. As _Nathan Kinkade_ suggested, I may expand the scope of the plugin to also manage licensing metadata of pages and posts.
+  *[MB]: Megabyte
+  *[ GsoC]: Google Summer of Code
+  *[RPG]: Role-Playing Game
+  *[HTML]: Hypertext Markup Language
+
+---
+pub_date: 2010-07-13

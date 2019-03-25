@@ -1,0 +1,79 @@
+title: GSoC Project Introduction: CC Wordpress Plugin
+---
+categories: CC, development, people, rdfa, software, tools, wordpress
+---
+author: erlehmann
+---
+body:
+
+### Who I am
+
+I'm Nils Dagsson Moskopp, a 22 year old student of philosophy and computer science, living in Berlin (German speakers may check out my [blog](http://blog.dieweltistgarnichtso.net/)). I dislike the act of programming, but love the results, so I seem to have no other choice than to do it from time to time.
+
+Recently, after submitting a [proposal](http://socghop.appspot.com/gsoc/student_proposal/show/google/gsoc2010/erlehmann/t126992832487), I got accepted into the [_Google Summer of Code_](http://code.google.com/soc/) program, being mentored by [_Nathan Kinkade_](http://creativecommons.org/about/people#nathankinkade). In the rest of this entry, I will do my best to explain how it came to that and what kind of software I intend to create.
+
+### The Idea
+
+As far as I know, there currently is no automated, easy way to have human- and machine-readable markup for specific subsections of a blog post in the blogging software [_Wordpress_](http://wordpress.org); it is only possible to have an entire page licensed under one specific license. Further complicating the issue is the fact that the Wordpress media manager actually does not know about licenses accociated with specific content. This poses a problem for the not-so-uncommon use case of embedding  CC-licensed media, mainly photos.
+
+I was first confronted with the idea of having an automated way to markup media with Creative Commons licensing information when reading _Matthias Mehldau_ 's post [_More precise Creative Commons HTML-Codes_](http://einmachglas.wordpress.com/2009/03/10/creative-commons-html-code/). He envisioned an annotation containing not only the well-known  CC license symbols, but also the jurisdiction and a button to show the markup used, for easy re-embedding. Well versed in graphics design, he also created a mockup:
+
+![](cc-html-code1.jpg)  
+Matthias Mehldau's Mockup
+
+Shortly after that, [_Julia Seeliger_](http://de.wikipedia.org/wiki/Julia_Seeliger) posted a suggestion how a Creative Commons plugin backend for Wordpress [could look like](http://julia-seeliger.de/wunschzettel-creative-commons-plugin-fur-wordpress/). She suggested integrating the [official license chooser](http://creativecommons.org/choose/) or a [drop down list](http://en.wikipedia.org/wiki/Drop-down_list) within the Wordpress upload form.
+
+We three chatted about these ideas, me even actually implementing some parts (see next section), but nothing qualifying as currently usable came from that. When approximately one year later, I did come upon the  CC wiki site describing the developer challenge titled [_Support for CC licenses in WordPress Media Manager_](http://wiki.creativecommons.org/Support_for_CC_licenses_in_WordPress_Media_Manager), I chose to apply for that with _Google Summer of Code_.
+
+### Existing Solutions
+
+As mentioned in the introduction to the last section, a tool that provides easy licensing management for Wordpress media content, automating subsequent insertion, currently does not exist. Several existing projects, however, have features related to this goal; code re-use may be possible.
+
+In 2006, _George Notaras_ created the [_Creative-Commons-Configurator WordPress Plugin_](http://www.g-loaded.eu/2006/01/14/creative-commons-configurator-wordpress-plugin/). It allows the user to choose a global license for his or her blog, using " the [web-based license selection engine](http://creativecommons.org/choose/) from _CreativeCommons.org_" and adds localized machine- and human-readable license information to pages and feeds. Similar plugins, putting global licensing information into footer and sidebars, exist.
+
+For  GSoC 2009, _Dinishika Nuwangi_ made a Wordpress plugin called [_wprdfa_](http://code.creativecommons.org/viewgit/wprdfa.git/) (not to confuse with [_wp-rdfa_](http://dev.squarecows.com/projects/wp-rdfa/)). Unfortunately, the project has an empty [README](http://code.creativecommons.org/viewgit/wprdfa.git/tree/README) file. Judging from a quick glance at the source code, part of its intended purpose is to add buttons to the [TinyMCE](http://tinymce.moxiecode.com/) editor integrated into Wordpress, although on installation I was unable to see this functionality. The [related developer challenge](http://wiki.creativecommons.org/RDFa_Plugin_for_WordPress) still seems to be open, on the page the plugin is described as " foundational work".
+
+Also in 2009, I created two pieces of software, inspired by [a post on the WHATWG mailing list](http://lists.whatwg.org/htdig.cgi/whatwg-whatwg.org/2009-May/019668.html). First, a [web application generating HTML5 license markup](http://daten.dieweltistgarnichtso.net/src/cc-license-markup/generator2.xhtml) (enriched with _Microdata_ , see next section), second a [Wordpress plugin](http://blog.dieweltistgarnichtso.net/html5-cc-plugin-fur-wordpress-version-0-6) capable of generating similar markup using both _Microdata_ and _RDFa_. And there was [much rejoicing](http://lists.whatwg.org/htdig.cgi/whatwg-whatwg.org/2009-July/021154.html).  
+_It is important to note that since then the HTML5 standard[has changed](http://lists.whatwg.org/htdig.cgi/whatwg-whatwg.org/2010-January/024887.html) and the generated markup is no longer valid._
+
+On a less technical note, the German blog [_Spreeblick_](http://spreeblick.com) has a unique way of presenting the license information, only showing a small "cc" in the bottom left corner; on hovering, author name and a link to the source are presented ([live example](http://www.spreeblick.com/2010/05/20/von-gahnern-und-gammlern/)). However, while _Spreeblick_ _is_ using Wordpress, the folks behind it have no intention of releasing their plugin: As _Max Winde_ told me in April 2009, it is tightly entangled with their image layout functionality and would require complex cleanup.
+
+### Planned Interface
+
+I plan to implement the presentation part using the new HTML5 elements [_figure_](http://www.whatwg.org/specs/web-apps/current-work/multipage/grouping-content.html#the-figure-element) and [_figcaption_](http://www.whatwg.org/specs/web-apps/current-work/multipage/grouping-content.html#the-figcaption-element). Together, they can be used to denote content " with a caption […] that is self-contained and is typically referenced as a single unit from the main flow of the document". A code example shows how markup using the figure element may looks like:
+
+`<figure>  
+<!-- content goes here -->  
+<figcaption>caption</figcaption>  
+</figure>`
+
+Naturally, as a rather general markup language HTML5 does not contain any elements to give this construct more specific meaning, such as marking up which license applies to said content. However, two markup extensions provide this capability at the _attribute_ level, the complex and established [_RDFa_](http://www.w3.org/TR/xhtml-rdfa-primer/) and the simpler, newer [_Microdata_](http://www.whatwg.org/specs/web-apps/current-work/multipage/links.html#microdata) proposal, part of HTML5. While both standards are sufficiently open, _RDFa_ is [endorsed by Creative Commons](http://wiki.creativecommons.org/RDFa); for this reason I will not stray into _Microdata_ territory unless I have time to spare at the end of  GSoC.
+
+To this point, I have been only accounting for machine readability. Nevertheless, with [_CSS_](http://www.w3.org/Style/CSS/) it is easily possible to beautify the visual presentation in nearly any way imaginable. The following two screenshots, taken with the now-defunct Wordpress plugin I created in 2009, exemplify this — both are based on the same markup.
+
+![](stil-wetter.png)  
+simple style
+
+![](stil-spreeblick.png)  
+_Spreeblick_ style
+
+On the author side, I plan to have the plugin look like the _Spreeblick_ one ([screenshot](http://daten.dieweltistgarnichtso.net/pics/screenshots/web/spreeblick-plugin.png)), which will mean adding options to the Wordpress media uploader:
+
+  * an additional drop down list, for choosing one of the six [main  CC licenses](http://en.wikipedia.org/wiki/Creative_Commons_licenses)
+  * an additional text input for the author or rights holder
+  * an additional text input for specifying the source URI
+
+
+
+Media could then be inserted the usual way, with the _RDFa_ annotation automatically generated.
+
+Now, that the  GSoC [coding phase has started](http://google-opensource.blogspot.com/2010/05/google-summer-of-code-2010-coding.html), I plan to do a weekly progress report; the impatient may want to track the contents of the [official Git repository](http://code.creativecommons.org/viewgit/wordpress-cc-plugin.git/). Stay tuned.
+  *[ CC]: Creative Commons
+  *[ GSoC]: Google Summer of Code
+  *[WHATWG]: Web Hypertext Application Technology Working Group
+  *[RDFa]: Recourse Description Framework in Attributes
+  *[CSS]: Cascading Style Sheets
+  *[URI]: Uniform Resource Identifier
+
+---
+pub_date: 2010-05-24

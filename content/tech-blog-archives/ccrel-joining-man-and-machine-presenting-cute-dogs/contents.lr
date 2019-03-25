@@ -1,0 +1,22 @@
+title: ccREL Joining Man and Machine, Presenting Cute Dogs
+---
+categories: techsummit
+---
+author: thwang
+---
+body:
+
+![](2590709576_77cc7cf61e.jpg?v=0)
+
+Ben Adida, Creative Commons W3C Representative, gave a presentation on the first session of the Technology Summit on [ccREL, a syntax-free machine-readable code for licenses](http://wiki.creativecommons.org/CcREL).
+
+The problem, as Adida explained between images of code and pets, was that the traditional breakdown divides CC licensing deeds into machine and human readable versions.
+
+Moreover, information about licenses is stored in HTML which is opaque to humans and parsers alike and easy to make errors in. ccREL provides a simple framework built across RDFa for license information to be easily shared, built on, and extended to a variety of different uses in a form understandable by the browser.
+
+Ultimately, the ambition of ccREL is to provide ways to link the vast stores of varied data on the web. One outcome, visual correspondence, would empower the user to gain contextual information with the ease of point-and-click, would be possible with ccREL and RDFa more generally.
+
+(photo courtesy [Joi Ito CC BY](http://www.flickr.com/photos/joi/2590709576/))
+
+---
+pub_date: 2008-06-18

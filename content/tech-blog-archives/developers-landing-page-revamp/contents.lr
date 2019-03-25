@@ -1,0 +1,20 @@
+title: Developers landing page revamp
+---
+categories: development
+---
+author: greg
+---
+body:
+
+If you haven't looked at the [Developers](http://wiki.creativecommons.org/Developers) landing page on the Creative Commons wiki lately, you're missing out! We've recently put a lot of effort into reorganizing the information, making the important things easier to find, and overall just making the whole place a bit more welcoming.
+
+![developer_redesign_screenshot](developer_redesign_screenshot1.png)
+
+First of all, we've made the semantic split between information for [desktop-based development](http://wiki.creativecommons.org/Desktop_Integration) and [web-based development](http://wiki.creativecommons.org/Web_Integration). At each page there is a list (and short description) of the various tools to help you integrate CC-license metadata functionality and a short list of [open Developer Challenges](http://wiki.creativecommons.org/Developer_challenges). These challenges are things the developer community think would be cool to have; a wishlist everyone can help with!
+
+Also, we're starting to produce some more "HowTo" guides for developers who are interested in the best practices of integrating CC-license metadata. Thus far we have one for [Web Integration](http://wiki.creativecommons.org/Web_Integration/HowTo) which lists the various ways a service could support CC licenses with best practices examples (pictoral and code) of how they did it. See, for example, the page on [adding license choice when uploading content](http://wiki.creativecommons.org/Web_Integration/FileUploadExample).
+
+We hope this redesign will make it easier for developers to find the information they need to improve their services. If you have any other suggestions, don't hesitate to send an email to [greg@creativecommons.org](mailto:greg@creativecommons.org)
+
+---
+pub_date: 2009-08-11

@@ -1,0 +1,55 @@
+title: Summary of current licensing tools
+---
+categories: 
+---
+author: cwebber
+---
+body:
+
+I've been considering license integration into a [personal project](http://mediagoblin.org) of mine and thoughts of that have spilled over into work. And so we've been talking at Creative Commons recently about the current methods for licensing content managed by applications and what the future might be. The purpose of this post is to document the present state of licensing options. (A post on the future of licensing tools may come shortly afterward.)
+
+## Present, CC supported tools
+
+To begin with, there are these three CC-hosted options:
+
+  * **[CC licensing web API](http://api.creativecommons.org/docs/)** \-- A mostly-RESTful interface for accessing CC licensing information. Some language-specific abstraction layers are provided. Supported and kept up to date. Lacking a JSON layer, which people seem to want. Making a request for every licensing action in your application may be a bit heavy.
+  * **[Partner interface](http://wiki.creativecommons.org/Partner_Interface)** \-- Oldest thing we support, part of the license engine. Typical case is that you get a popup and when the popup closes the posting webpage can access the info that's chosen. Still gets you your chooser based interface but on your own site. Internet Archive uses it, among others.
+  * **[LicenseChooser.js](http://wiki.creativecommons.org/JsWidget)** \-- Allows you to get a local chooser user interface by dumping some javascript into your application, and has the advantage of not requiring making any web requests to Creative Commons' servers. Works, though not recently updated.
+
+
+
+All of these have the problem that the chooser of CC licenses is only useful if you want exactly the choices we offer (and specifically the most current version of the licenses we provide). You need to track those changes in the database anyway, which means you either are not keeping track of version used or you are and when we change you might be in for a surprise.
+
+## Going it alone
+
+So instead there are these other routes that sites take:
+
+  * **Don't use any tools and store license choices locally** \-- What Flickr and every other major option does: reproduce everything yourself. In the case of Flickr, the six core licenses at version 2.0. In YouTube, just one license (CC BY 3.0). That works when you have one service, when you know what you want, and what you want your users to use. It doesn't work well when you want people to install a local copy and you don't know what they want to use.
+  * **Let any license you want as long as it fits site policy** \-- and you don't facilitate it, and it gets kind of outside the workflow of the main CMS you're using … wiki sites are an example of this, but usually have a mechanism for adding a license to footer of media uploaded. The licenses are handled by wiki templates, anyone can make a template for any license they choose.
+
+
+
+None of those are really useful for software you expect other people to install where you want to provide some assistance to either administrators of the software who are installing it to be used or where you want the administrator to give the user some choice or choices relevant to that particular site.
+
+## The liblicense experiment
+
+This brings us to another solution that CC has persued:
+
+  * **[liblicense](http://wiki.creativecommons.org/Liblicense)** \-- Packages all licenses we provide, give an api for users to get info and metadata about them. Allows for web-request-free access to the cc licenses. It doesn't address non-CC licenses, however, and is mostly unmaintained.
+
+
+
+So, these are the present options that application developers have at their disposal for doing licensing of application-managed content. There's a tradeoff with each one of them though: either you have to rely on web requests to CC for each licensing decision you make, you go it alone, or you use something unmaintained which is CC-licensing-specific anyway. Nonetheless, cc.api and the partner interface are supported if you want something from CC, and people do tend to make by with doing things offline. But none of the tools we have are so flexible, so what can software like MediaGoblin or an extension for WordPress or etc do?
+
+There's one more option, one that too my knowledge hasn't really been explored, and would be extremely flexible but also well structured.
+
+## The semantic web / linked data option?
+
+It goes like this: let either users or admins specify licenses by their URL. Assuming that page self-describes itself via some metadata (be it RDFa, providing a rel="alternate" RDF page in your headers, or microdata), information about that license could be extracted directly from the URL and stored in the database. (This information could of course then be cached / recorded in the database.) This provides a flexible way of adding new licenses, is language-agnostic, and allows for a canonical set of information about said licenses. Libraries could be written to make the exctraction of said information easier, could even cache metadata for common licenses (and for common licenses which don't provide any metadata at their canonical URLs...).
+
+I'm hoping that in the near future I'll have a post up here demonstrating how this could work with a prototypical tool and use case.
+
+Thanks to Mike Linksvayer, for most of this post was just transforming a braindump of his into a readable blogpost.
+
+---
+pub_date: 2011-08-31

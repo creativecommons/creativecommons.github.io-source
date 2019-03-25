@@ -1,0 +1,12 @@
+title: License badges and icons now available via HTTPS
+---
+categories: 
+---
+author: nkinkade
+---
+body:
+
+Prompted by a [nudge](http://identi.ca/notice/21809109) from [Evan Prodromou](http://evan.prodromou.name/), license badges and icons are now available via HTTPS on i.creativecommons.org. If you run a site available via HTTPS and use CC license badges or icons served from i.creativecommons.org, then you can now pull those images via HTTPS to avoid your users receiving a message from their browser that some of the page content is not encrypted. 
+
+---
+pub_date: 2010-02-23

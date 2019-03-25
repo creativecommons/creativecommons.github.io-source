@@ -1,0 +1,25 @@
+title: GSoC CC Wordpress Plugin: Weekly Report #2
+---
+categories: CC, rdfa, summer, wordpress
+---
+author: erlehmann
+---
+body:
+
+For last week's work on [the plugin](http://labs.creativecommons.org/2010/05/24/gsoc-project-introduction-cc-wordpress-plugin/), I had two targets, both related to the goal of making the interface functional: First, saving _license_ , _rights holder_ and _attribution URL_ in the database and enabling the Wordpress media manager to display that information; second, generating the _RDFa_ -enriched markup using those aforementioned three bits. While I succeeded in generating the markup, when trying to actually save the input, I hit a wall, neither being able to figure out how this _should_ be done, nor how it _could_ be done. By the way, a [blog post about a thumbnail plugin](http://xplus3.net/2008/11/17/custom-thumbnails-wordpress-plugin/) helped me understand which hooks are actually important.
+
+The added functionality is easily explained: If a Creative Commons license is selected, the standard Wordpress markup generating behaviour is replaced by the plugin's. Two screenshots exemplify this development:
+
+  * [the interface](http://daten.dieweltistgarnichtso.net/pics/screenshots/web/wordpress-cc-plugin/partially-functional-interface.png)
+  * [generated markup](http://daten.dieweltistgarnichtso.net/pics/screenshots/web/wordpress-cc-plugin/generated-markup-rdfa.png)
+
+
+
+As always, this version can be viewed and checked out at the [official Git repository](http://code.creativecommons.org/viewgit/wordpress-cc-plugin.git/). For this week, I will be focusing on stylesheets and trying to further tackle the saving issue.
+
+On a related note, the inconsistent order of parameters regarding Wordpress functions, the lack of easy debugging facilities and the subtle differences between double quoted and single quoted strings added to my frustration.
+  *[ URL]: Uniform Resource Locator
+  *[RDFa]: Recourse Description Framework in Attributes
+
+---
+pub_date: 2010-06-08

@@ -1,0 +1,52 @@
+title: Asterisk on a $20/mo. Linode, part 2.
+---
+categories: 
+---
+author: nkinkade
+---
+body:
+
+I mentioned in my recent post about running Asterisk on a $20/month Linode that I would try to follow up with a review of the steps necessary to actually get it working. This isn't going to be a detailed review, but just a more or less bulleted list of steps to take.
+
+In the previous post I said that I had run into a kernel-package bug ([#508487](http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=508487)) that was preventing me from successfully building a Xen kernel with make-kpkg. So I installed the version from unstable, in which the bug had been fixed. This step may not be necessary at some point:
+
+# vi /etc/apt/sources.lst  
+[change deb-src to point to an unstable repository]  
+# apt-get update  
+# mkdir kernel-package && cd kernel-package  
+# apt-get source kernel-package  
+# apt-get build-dep kernel-package  
+# dpkg-buildpackage -rfakeroot -uc -b  
+# dpkg -i kernel-package_12.025_all.deb
+
+Now to build the kernel.
+
+# cd /usr/src  
+# apt-get source linux-image-`uname -r`  
+# cd linux-2.6-2.6.26  
+# aptitude install linux-patch-debian-2.6.26  
+# /usr/src/kernel-patches/all/2.6.26/apply/debian -a amd64 -f xen  
+# make menuconfig  
+[ _Processor type & features_ -> _Timer frequency_ - > _1000 HZ_ ]  
+# make-kpkg clean  
+# make-kpkg --initrd kernel_image  
+[wait a good while for the kernel to compile]  
+# mv /lib/modules/2.6.26/kernel/ /root/kernel.old.old  
+# dpkg -i ../linux-xen0-2.6.26_2.6.26-10.00.Custom_amd64.deb  
+# update-initramfs -c -k 2.6.26
+
+Now to build the [Zaptel](http://www.voip-info.org/wiki/view/DAHDI) (DAHDI) kernel modules. It would normally be just a few steps, but there were some other problems regarding references to the RTC in zaptel-sources. You can find more information about this at the [voip-info.org wiki](http://www.voip-info.org/wiki/view/Asterisk+timer+ztdummy), most relevantly under the heading " _zaptel and xen-kernel 2.6.26-1-xen-686 in Debian Lenny_ ": 
+
+# apt-get install zaptel-source  
+# cd /usr/src  
+# vi modules/zaptel/kernel/ztdummy.c  
+[comment out _#define USE_RTC_ lines]  
+# m-a prepare  
+# m-a build zaptel  
+# m-a install zaptel  
+# modprobe ztdummy
+
+I think those are the basic steps I took. The actual path was much less clean, as I hit bugs and went back and forth. It's possible I have missed a step or two in there, or that the way I went about things wasn't right, ideal or even correct. Of course, all of this also presupposes that you have already configured your Linode to boot from a custom local kernel instead of the default Linode kernel. [Instructions](http://library.linode.com/advanced/pv-grub-howto) on how to do this can be found at at linode.com.
+
+---
+pub_date: 2010-01-20

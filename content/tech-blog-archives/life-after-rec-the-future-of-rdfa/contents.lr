@@ -1,0 +1,31 @@
+title: Life After REC: The Future of RDFa
+---
+categories: rdfa, techsummit
+---
+author: frank
+---
+body:
+
+Ben Adida is back again from the first tech conference with a new talk about RDFa.
+
+First he gave a brief review of RDFa: there exists a huge chasm between the human web and the data web. RDFa addresses our need to bridge this gap. We want machine-readable metadata so we can use computer programs to answer simple questions about a work to save on time and effort. He then moved on to explaining ccREL, the Creative Commons Rights Expression Language. There are four principles for publishing in HTML: 1) visual correspondence, 2) don't repeat yourself, 3) remix friendliness, 4) extensibility and modularity.
+
+For the main portion of his talk, Ben went over the events of the past six months regarding RDFa adoption.
+
+  * April-May: Digg deployed RDFa.
+  * June: RDFa goes W3C "Candidate Recommendation" with around 12 implementations (parsers).
+  * June: Open Archives Initiatives supports RDFa; UK National Archive uses RDFa.
+  * September: Yahoo SearchMonkey deploys RDFa support.
+  * October: RDFa goes W3C Recommendation.
+  * November: CC launches the CC network in November; Drupal announces roadmap for RDFa integration.
+
+
+
+He concluded with a demonstration of sample [SearchMonkey](http://developer.yahoo.com/searchmonkey/ "Search Monkey") functionality that grabs CC license metadata from search results and displays that information on the search page.
+
+What's next?, asks Ben, with a strong disclaimer that this is just a small glimpse of what is possible. He points to HTML 4 and 5 integration, the simplification of common cases (not having to keep redefining common namespaces), finding common ground with the microformat community, and better search and in-browser tools.
+
+The question Ben asks you to take away is this: What are you waiting for to consume and/or publish RDFa?
+
+---
+pub_date: 2008-12-12

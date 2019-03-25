@@ -1,0 +1,20 @@
+title: wpLicense 0.7.6
+---
+categories: releases, software, wordpress, wplicense
+---
+author: nathan
+---
+body:
+
+Today I released [wpLicense](http://wiki.creativecommons.org/WpLicense) 0.7.6 ( ~~download~~ see update below). It's a minor bug fix, but one worth noting. Thanks to Tiago and CristÃ³bal for both reporting the bug.
+
+The bug was simple: the [documentation](http://wiki.creativecommons.org/WpLicense_Function_Reference) says that the `licenseUri` function returns the URI of the selected license. And that's what the internal wpLicense code relied on. However, the implementation actually `echo`'d the URI, introducing a race condition: if things were timed _just right_ , the problem wasn't apparent. But too often they weren't, and then it was.
+
+There are some outstanding issues with wpLicense, particularly with rendering the selection interface under Internet Explorer. That's just one of the tasks new [web engineer](http://creativecommons.org/about/opportunities#web) will be tackling when he or she comes on board. Which reminds me, we're still accepting resumes.
+
+* * *
+
+**UPDATE:** Yeah, so 0.7.6 only had half the fix; well, the entire fix, but I was braindead with the default parameter value. So I give you [0.7.6.1](http://mirrors.creativecommons.org/software/wplicense/download/wplicense-0.7.6.1.zip).
+
+---
+pub_date: 2007-04-11

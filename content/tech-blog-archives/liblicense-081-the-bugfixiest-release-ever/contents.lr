@@ -1,0 +1,35 @@
+title: liblicense 0.8.1: The bugfixiest release ever
+---
+categories: Debian, development, embedding, license, metadata, opensource, python, releases, sanity, software
+---
+author: asheesh
+---
+body:
+
+I'm greatly pleased to announce liblicense 0.8.1. Steren and Greg found a number of major issues (Greg found a consistent crasher on amd64, and Steren found a consistent crasher in the Python bindings). These issues, among  
+some others, are fixed by the wondrous liblicense 0.8.1. I mentioned to Nathan Y. that liblicense is officially "no longer ghetto."
+
+The best way enjoy liblicense is from our Ubuntu and Debian package repository, at <http://mirrors.creativecommons.org/packages/>. More information on what liblicense does is [available on our wiki page about liblicense](http://wiki.creativecommons.org/liblicense). You can also get them in fresh Fedora 11 packages. And the source tarball is available for [download from sourceforge.net](https://sourceforge.net/project/showfiles.php?group_id=80503&package_id=238700&release_id=649438).
+
+P.S. MERRY CHRISTMAS!
+
+The full ChangeLog snippet goes like this:
+
+liblicense 0.8.1 (2008-12-24):  
+* Cleanups in the test suite: test_predicate_rw's path joiner finally works  
+* Tarball now includes data_empty.png  
+* Dynamic tests and static tests treat $HOME the same way  
+* Fix a major issue with requesting localized informational strings, namely that the first match would be returned rather than all matches (e.g., only the first license of a number of matching licenses). This fixes the Python bindings, which use localized strings.  
+* Add a cooked PDF example that actually works with exempi; explain why that is not a general solution (not all PDFs have XMP packets, and the XMP packet cannot be resized by libexempi)  
+* Add a test for writing license information to the XMP in a PNG  
+* Fix a typo in exempi.c  
+* Add basic support for storing LL_CREATOR in exempi.c  
+* In the case that the system locale is unset (therefore, is of value "C"), assume English  
+* Fix a bug with the TagLib module: some lists were not NULL-terminated  
+* Use calloc() instead of malloc()+memset() in read_license.c; this improves efficiency and closes a crasher on amd64  
+* Improve chooser_test.c so that it is not strict as to the *order* the results come back so long as they are the right licenses.  
+* To help diagnose possible xdg_mime errors, if we detect the hopeless application/octet-stream MIME type, fprintf a warning to stderr.  
+* Test that searching for unknown file types returns a NULL result rather than a segfault.
+
+---
+pub_date: 2008-12-25

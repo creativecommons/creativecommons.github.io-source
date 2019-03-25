@@ -1,0 +1,16 @@
+title: CC Tools @ Berlios Unavailable
+---
+categories: berlios, ccPublisher, software
+---
+author: nathan
+---
+body:
+
+Back in November, 2005, SourceForge wasn't looking so hot: no Subversion support, despite repeated promises for it, seemingly increasing down time, that sort of thing. "Berlios":http://en.wikipedia.org/wiki/Berlios seemed to be the obvious alternative, and so we moved the "ccPublisher":http://wiki.creativecommons.org/CcPublisher project to it. It was undergoing a period of really active refactoring, and Subversion actually made some of that easier. SourceForge actually launched their Subversion service not long after we left, but there was never a compelling reason to merge things back together -- the two codebases didn't have tons of intersection points and there was never a pressing need that would raise the idea to the top of the task list.
+
+Unfortunately Berlios has apparently taken a big dirt nap. I was traveling over the weekend and when I came back online yesterday there were several messages asking about ccPublisher downloads (which were hosted at Berlios). At this point it appears Berlios has been down for at least 72 hours. I haven't been able to find anything online about what happened or when (if) service is expected to return. The bad news (yes, that wasn't really the bad news) is that we don't have backups (outside of Berlios, of course) for the ccPublisher installers.
+
+So until we get things figured out, downloads of "ccPublisher":http://wiki.creativecommons.org/CcPublisher, the "command line tools":http://wiki.creativecommons.org/Command_Line_Tools, and anything else hosted at Berlios (just some libraries, I think) are all unavailable. We're working on getting things restored and will keep everyone updated.
+
+---
+pub_date: 2007-04-23

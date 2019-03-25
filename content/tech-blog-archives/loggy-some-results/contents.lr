@@ -1,0 +1,36 @@
+title: Loggy: some results
+---
+categories: Metrics, summer
+---
+author: ankitg
+---
+body:
+
+So after setting up EC2, S3, grabbing the files from S3, SCP-ing the python scripts and running them, one would expect to see some results. Upon the polite request of Asheesh here is a sampler.
+
+The first script (dealing with urls that change their license, named licChange.py) results in an output which lists the URLs (that change their license [type, version or jurisdiction]), the license info and the date(s) of change:
+
+> http://blog.aikawa.com.ar/ [['by-nc-sa', '2.5', 'ar'], ['by-nc-nd', '2.5', 'ar']] ['21/Sep/2007:11:38:56 +0000', '22/Sep/2007:05:40:22 +0000']
+
+The line above shows that the license for the URL 'http://blog.aikawa.com.ar/' was changed from 'by-nc-sa 2.5 Argentina' to 'by-nc-nd 2.5 Argentina' some time between 11:38:56 GMT on the 21st of September 2007 to 05:40:22 GMT on 22nd of September 2007. The format may seem a bit awkward but you can expect a facelift for the results file. I was previously planning to re-read the file to generate statistics but we can have a seperate file for storing data and another one for the stats.
+
+Similarly, the following lines out of the results file for licChange.py from 2007-09 show license changes for 'http://0.0.0.0:3000/' and 'http://127.0.0.1/actibands/castellano/licencias.htm' and *many other internal URLs:
+
+> http://0.0.0.0:3000/ [['by-nc-sa', '3.0', ''], ['by-nc-sa', '3.0', ''], ['by-nc-sa', '3.0', ''], ['by-nc-sa', '3.0', ''], ['by-nc-sa', '3.0', ''], ['by-nc-nd', '3.0', 'nl'], ['by-nc-nd', '3.0', 'nl']] ['17/Sep/2007:08:10:28 +0000', '17/Sep/2007:17:50:28 +0000', '18/Sep/2007:16:25:47 +0000', '19/Sep/2007:13:03:23 +0000', '19/Sep/2007:13:11:16 +0000', '20/Sep/2007:22:16:09 +0000', '20/Sep/2007:22:16:39 +0000']
+
+> http://127.0.0.1/actibands/castellano/licencias.htm [['by-sa', '2.5', 'es'], ['by-nc-sa', '2.5', 'es'], ['by-sa', '2.5', 'es'], ['by-nc-sa', '2.5', 'es'], ['by-sa', '2.5', 'es'], ['by-nc-sa', '2.5', 'es']] ['27/Sep/2007:20:50:44 +0000', '27/Sep/2007:20:50:44 +0000', '27/Sep/2007:20:51:00 +0000', '27/Sep/2007:20:51:00 +0000', '27/Sep/2007:20:51:23 +0000', '27/Sep/2007:20:51:23 +0000']
+
+The licenses for http://0.0.0.0:3000/ are ported for Netherlands (nl) and the one for http://127.0.0.1/actibands/castellano/licencias.htm are ported for Spain (es). Note that presently all the occurences of any URL that changes its license is outputted, this will be changed in the next nightly build. This included a better formatted result file with stats on total number of URLs changing licenses and even stats distinguishing changes between license change and version change.
+
+Akin to this (licChange.py) there are 3 more scripts, licChooser.py, licSearch.py and deedLogs.py.
+
+licChooser.py grabs metadata usage information and generates stats in absolute numbers and percentage of all entries, eg.: "16 out of 100 items are tagged as Audio [16%] of total entries and 29% of items with Metadata"
+
+licSearch.py grabs information from the logs for search.creativecommons.org like the query, the engine and the search options (commercial use and derivatives).
+
+deedLogs.py looks at the logs for the deed pages, employs MaxMind GeoIP to do a location lookup and grabs the deed page being loked at.
+
+So this is what we have so far.
+
+---
+pub_date: 2008-09-02

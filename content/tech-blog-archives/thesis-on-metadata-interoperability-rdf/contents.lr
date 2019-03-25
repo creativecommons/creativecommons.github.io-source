@@ -1,0 +1,28 @@
+title: Thesis on metadata interoperability: RDF
+---
+categories: metadata, rdf
+---
+author: ml
+---
+body:
+
+[From Interoperability to Harmonization in Metadata Standardization - Designing an Evolvable Framework for Metadata Harmonization](http://kmr.nada.kth.se/papers/SemanticWeb/FromInteropToHarm-MikaelsThesis.pdf) (pdf) by Mikael Nilsson:
+
+> The analytical framework is used to analyze and compare seven metadata specifications, and a  
+>  concrete set of harmonization issues is presented. These issues are used as a basis for a metadata  
+>  harmonization framework where a multitude of metadata specifications with different character-  
+>  istics can coexist. **The thesis concludes that the Resource Description Framework (RDF) is the  
+>  only existing specification that has the right characteristics to serve as a practical basis for such a  
+>  harmonization framework, and therefore must be taken into account when designing metadata  
+>  specifications.** Based on the harmonization framework, a best practice for metadata standardiza-  
+>  tion development is developed, and a roadmap for harmonization improvements of the analyzed  
+>  standards is presented.
+
+(emphasis added)
+
+Nilsson will defend his thesis on 2010-12-15, and you can watch ([details](https://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=DC-GENERAL;ed4e0c0.1012)).
+
+Thinking in RDF is the natural thing to do at Creative Commons, whether modeling [license attributes](http://wiki.creativecommons.org/CC_REL), work [registration](http://labs.creativecommons.org/~nathan/oscri/describing-registrations.html), or domain-specific [descriptions](http://labs.creativecommons.org/2010/12/03/type-of-educational-an-idea/) that add value to licensed works. Nice to see in depth academic backing for this intuition.
+
+---
+pub_date: 2010-12-15

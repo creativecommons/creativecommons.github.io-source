@@ -1,0 +1,18 @@
+title: New Guide on Publishing CC License Metadata
+---
+categories: metadata, rdfa
+---
+author: akozak
+---
+body:
+
+You may have noticed that the copy-and-paste HTML you get from the [CC license chooser](http://creativecommons.org/choose/) includes some strange attributes you're probably not familiar with. That is [RDFa](http://en.wikipedia.org/wiki/RDFa) metadata, and it allows for the CC license deeds, search engines, [Open Attribute](https://wiki.mozilla.org/Drumbeat/Attribution_generator), and other tools to discover metadata about your work and generate attribution HTML. Many platforms have implemented CC REL metadata in their CC license marks, such as [Connexions](http://cnx.org/) and [Flickr](http://www.flickr.com/), and it's our recommended way to mark works with a CC license.
+
+In an effort to make CC license metadata (or [CC REL metadata](http://wiki.creativecommons.org/CC_REL)) much easier to implement, we've created [CC REL by Example](http://labs.creativecommons.org/2011/ccrel-guide). It includes many example HTML pages, as well as explanations and links to more information.
+
+We're hoping this guide will serve as a useful set of examples for developers and publishers who want to publish metadata for CC licensed works. Even if you just use CC licenses for your own content, now is a great time to take a first step into structured data and include information about how you'd [like to be attributed](http://labs.creativecommons.org/2011/ccrel-guide/#Attribution).
+
+You can find the [source to the guide](http://code.creativecommons.org/viewgit/ccrel-guide.git/) in git. Feedback and suggestions can be sent to [webmaster@creativecommons.org](mailto:webmaster@creativecommons.org).
+
+---
+pub_date: 2011-01-07

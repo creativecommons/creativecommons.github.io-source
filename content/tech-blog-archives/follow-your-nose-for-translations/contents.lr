@@ -1,0 +1,22 @@
+title: Follow your nose for translations
+---
+categories: licenses
+---
+author: nathan
+---
+body:
+
+One of our goals is to continue to make the licenses more useful as self-describing resources. They've described the licenses themselves (using [CC REL](http://www.w3.org/Submission/ccREL/)) for quite a while. Last year we started marking up the license name, so software could dereference the license and show the human readable name to users. Last month we [added support for the identifiers](http://labs.creativecommons.org/2011/01/07/license-identifier-on-the-deeds/) (short names), as well. While working with [OpenAttribute](http://yergler.net/blog/2010/12/31/minor-update-for-openattribute/), I realized that one thing we weren't doing well was scoping our assertions. In RDFa, the default scope of an assertion is the URI of the current page. That means if you follow a link to a specific translation of a license (such as the [French translation of CC BY 3.0 Unported](http://creativecommons.org/licenses/by/3.0/deed.fr)), the RDFa was actually describing that license. 
+
+It's a subtle but important point: the canonical license URI is the "bare" URI, without any translation component; for example, `http://creativecommons.org/licenses/by/3.0/`, and not `http://creativecommons.org/licenses/by/3.0/deed.fr`. At the same time I realized that there while the license translations link to one another, that relationship is not described. To improve this situation, we've made three changes to the license deeds (all in the RDFa, not visible to humans browsing the pages):
+
+  * We've started asserting that the information published with the license summary is [about the canonical URL](http://code.creativecommons.org/issues/issue763).
+  * We're declaring that the license [is actually a License](http://code.creativecommons.org/issues/issue765) (the fact that it was used as part of a `rel="license"` assertion implied as much, but explicit is better than implicit in my book).
+  * We're [describing the relationship between translations](http://code.creativecommons.org/issues/issue764), using the [FRBR Core](http://purl.org/vocab/frbr/core) vocabulary.
+
+
+
+The choice of vocabulary to describe the translation wasn't obvious; an [inquiry on the semantic-web mailing list](http://lists.w3.org/Archives/Public/semantic-web/2011Jan/0087.html) revealed no clear winners, so we wound up choosing one that seemed to best fit the semantics of the license summaries (to be clear, these assertions only apply to the summary of the license -- the "deed" -- and not the actual text of the license). It's possible we'll revise this in the future, but one of the great things about RDFa is that we don't have to choose one; if we find one that works better, we can easily publish assertions using both vocabularies, easing the transition for any tools using the RDFa.
+
+---
+pub_date: 2011-02-07

@@ -1,0 +1,36 @@
+title: Flickr Image Re-Use for OpenOffice.org new updates
+---
+categories: Add-In, OpenOffice, opensource, summer
+---
+author: mihai
+---
+body:
+
+Since my last article new functionalities were implemented :
+
+\- more results per page (16 to be more exactly)
+
+\- an image is inserted if you double click on it(previous was on a single click)
+
+\- i add it the functionality for Impress and Calc
+
+\- fixed some bugs related to search
+
+Unfortunately i have a problem with the popup menu on right click menu. It seems if that if set the location of the popup on the place where the right click happens, the popup indeed will appear but only for a moment. This happens not for all those 16 results, but for lets say more than half.
+
+Now i found some settings and at this moment the popup will appear for each result, unfortunately the location where the popup appears is not exactly on the result (slightly above). I have to work more on this.
+
+Some screenshots :
+
+[Results](http://labs.creativecommons.org/files/2008/08/results.jpg "Results")
+
+[Writer](http://labs.creativecommons.org/files/2008/08/writer.jpg "Writer")
+
+[Impress](http://labs.creativecommons.org/files/2008/08/impress.jpg "Impress")
+
+[Calc](http://labs.creativecommons.org/files/2008/08/calc.jpg "Calc")
+
+[Download extension](http://code.creativecommons.org/viewsvn/ccooo/branches/mihai-flickr-soc/demo13072008/ccooo.oxt?revision=10689) (right click and save as)
+
+---
+pub_date: 2008-08-12

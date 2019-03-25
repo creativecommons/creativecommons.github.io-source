@@ -1,0 +1,17 @@
+title: 'Available, yet to be analyzed: some data from which something about CC adoption
+---
+categories: Metrics
+---
+author: ml
+---
+body:
+
+Recently asked about CC use for works in Arabic. There are no Arabic-language jurisdiction ports available at this time; measuring adoption of jurisdiction ports is the easiest way to characterize patterns of adoption, as has been done by Giorgos Cheliotis, with [interesting results](http://creativecommons.org/weblog/entry/7701) \-- also see <http://monitor.creativecommons.org>.
+
+Fortunately there is some other data available that could be used to characterize CC use, irrespective of porting, across some languages and countries. This data is described at <http://wiki.creativecommons.org/Metrics/Data_Catalog#License_property_search_engine_API_queries> and available from [http://labs.creativecommons.org/metrics/sql-dumps/all.sql.gz](../metrics/sql-dumps/all.sql.gz)  
+(warning, approximately 200 megabytes).
+
+Nobody has analyzed this part of the available data on CC adoption yet to my knowledge. Anyone is of course welcome and encouraged to!
+
+---
+pub_date: 2010-12-09

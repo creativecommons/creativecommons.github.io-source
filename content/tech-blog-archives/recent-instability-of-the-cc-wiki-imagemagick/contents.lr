@@ -1,0 +1,21 @@
+title: Recent instability of the CC Wiki: ImageMagick?
+---
+categories: 
+---
+author: nkinkade
+---
+body:
+
+For the past few weeks we have been having some intermittent but fairly serious problems with the machine that runs the CC Wiki. Every few days it would just crash and burn, and not being able to login, the only remedy was a reboot. The system and application logs were very silent on the cause.
+
+A day or two ago [Jesse Weinstein](http://purl.org/NET/JesseW/SundryStuff/) (who helps CC greatly by monitoring the CC Wiki and keeping down spam) wrote to say that he was getting 503 errors from the wiki. I explained that we were having problems, but that it should be working at that moment. He wrote back to mention that /Special:NewFiles was still returning a 503. Sure  
+enough, not only did it return a 503, but it hung for 30s to a minute, and eventually [Varnish](http://varnish-cache.org/) would return the 503 error.
+
+Mediawiki debugging was not terribly explicit, but I did notice that the logging for such a request always ended with information about Mediawiki invoking ImageMagick to resize an image. I went through our LocalSettings.php file and found that we had $wgUseImageMagick set to true. I commented it out, and voilà, the page starting working. I uncommented $wgUseImageMagick and then bumped $wgMaxShellMemory to an arbitrarily high number. This fixed it too. Apparently ImageMagick was running out of allowed memory causing not only the page to hang while it ate up memory, but apparently it was also taking down the Apache process with it, because Apache never even got to logging the request. I couldn't think of why we'd be using ImageMagick instead of just using PHP's GD libraries, which seemed to work without any special settings or bumping $wgMaxShellMemory, so I just removed the use of ImageMagick.
+
+I'm guessing our problem was something like this: bots and crawlers were hitting the /Special:NewFiles page repeatedly with an incremental &from;= query parameter, and each Apache process would hang until eventually we reached Apache's MaxClients setting, then requests would start to back up in Varnish's queue, and the machine would slow to a crawl and eventually become unresponsive.
+
+Hopefully this supposition is true, and we not only have a fully functional wiki again, but the systemic problems with the server are now resolved.
+
+---
+pub_date: 2010-06-04

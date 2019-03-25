@@ -1,0 +1,34 @@
+title: Creative Commons Drupal Module -- GSoC 2009
+---
+categories: development, software, summer, tools
+---
+author: blaise
+---
+body:
+
+This past year was my last at the [University of Toronto](http://individual.utoronto.ca/balleyne), making this summer my last chance to participate in the Google Summer of Code. I searched hard for a project and mentor organization that would suit my interests, and when I noticed that the [Creative Commons Drupal module](http://drupal.org/project/creativecommons) was in need of some developer love, I knew exactly what I wanted to spend my summer doing. With [John Doig](http://creativecommons.org/about/people#112) as my CC mentor, and [Kevin Reynen](http://drupal.org/user/48877) (the module's maintainer and initial author) as an unofficial Drupal mentor, I've been privileged to have spent the past few months updating and extending the module.
+
+A couple years ago, development for Drupal 4.7 was begun, but it was never quite completed. [CC Lite](http://drupal.org/project/creativecommons_lite) came to be the reliable choice for Drupal 6. However, CC Lite's scope is limited -- it allows you to attach a license to content in Drupal, but that's about it. The main CC module's vision is broader -- to fully integrate CC technology with the Drupal platform -- and I hope I've helped to realize that just a little.
+
+Some of the module's features:
+
+  * it uses the CC API for license selection and information (so, for example, when [new license versions are released](http://creativecommons.org/weblog/entry/15990), they become available on your Drupal site automatically)
+  * you can set a site-wide default license/jurisdictoin, and user's can set their own default license/jurisdiction
+  * ccREL metadata is supported, output in RDFa (and, optionally, RDF/XML for legacy systems)
+  * supports CC0, along with the 6 standard licenses and the Public Domain Certification tool
+  * you can control which licenses and metadata fields are available to users
+  * basic support for the Views API has been added (including a default /creativecommons view)
+  * there's a CC site search option
+
+
+
+The module is still listed as a beta release, as some folks have been submitting bug fixes and patches over the past few weeks, though it's quite usable. Special thanks to [Turadg Aleahmad](http://drupal.org/user/463154), who's helped with a lot of the recent bug fixes towards the end of the GSoC term, and committed to being active in future development. If you're into Drupal development, we could use help with testing, and any translations would be greatly appreciated too.
+
+Right now, the focus is on getting to a stable release, but we've got lots of ideas for the future too. Thanks to John and Kevin for their support through the summer, and to Turadg for his recent help. I look forward to seeing the module put to good use!
+
+[**Check it out!**](http://drupal.org/project/creativecommons/)
+
+_I'm a musician, writer, software developer, free culture / free software advocate and recent graduate of the University of Toronto -- get in touch at<http://blaise.ca/>_
+
+---
+pub_date: 2009-09-03

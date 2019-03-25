@@ -1,0 +1,25 @@
+title: License-oriented metadata validator and viewer: summertime is winding up
+---
+categories: development, license, licenses, python, rdf, rdfa, summer
+---
+author: hugo
+---
+body:
+
+[Google Summer of Code 2008](http://code.google.com/soc/2008/) approaches [its end](http://code.google.com/soc/2008/faqs.html#0.1_timeline "Google Summer of Code 2008 Timeline"), as less than forty-eight hours are left to submit the code that will then be evaluated by mentors, therefore it is fitting to pause for a moment and sum up the work that has been done with regard to the license-oriented metadata validator and viewer and to confront it with [the original proposal for the project](http://wiki.creativecommons.org/Rewrite_Metadata_Validator/SoC_2008#Proposed_timeline).
+
+A Web application capable of parsing and displaying license information embedded in both [well-formed](http://www.w3.org/TR/2006/REC-xml-20060816/#sec-well-formed) and ill-formed Web pages has been developed. It supports the following means of embedding license information: [Dublin Core metadata](http://dublincore.org/documents/dcq-html/), [RDFa](http://www.w3.org/TR/rdfa-syntax/), [RDF/XML](http://www.w3.org/TR/rdf-syntax-grammar/) linked externally or embedded (utilising [the data URL scheme](http://www.ietf.org/rfc/rfc2397.txt)) using the link and a elements, and RDF/XML embedded in a comment or as an element (the last two being deprecated). This functionality has been proven by unit testing. The source code of a Web page can be uploaded or pasted by a user, there is also a possibility to provide a [URI](http://www.ietf.org/rfc/rfc3986.txt) for the Web application to analyse it. The software has been written in [Python](http://www.python.org/) and uses [the Pylons Web Framework](http://pylonshq.com/) and [the Genshi toolkit](http://genshi.edgewall.org/). Should you be willing to test this [Lynx](http://lynx.isc.org/)-friendly application, please visit [its Web site](http://validator-beta.creativecommons.org/ "The temporary address of the license validator").
+
+The Web application itself uses a library called “libvalidator”, which in turn is powered by cc.license (a library developed by Creative Commons that returns information about a given license), [pyRdfa](http://www.w3.org/2007/08/pyRdfa/) (a distiller that generates the [RDF](http://www.w3.org/RDF/) triples from an (X)HTML+RDFa file), [html5lib](http://code.google.com/p/html5lib/) (an HTML parser/tokenizer), and [RDFLib](http://rdflib.net/) (a library for working with RDF). The choice of this set of tools has not been obvious and the library had undergone several redesigns, which included removing the code that employed [encutils](http://cthedot.de/encutils/), [XML canonicalization](http://www.w3.org/TR/xml-c14n), [µTidylib](http://utidylib.berlios.de/), and [the BeautifulSoup](http://www.crummy.com/software/BeautifulSoup/). The idea of using [librdf](http://librdf.org/), [librdfa](http://rdfa.digitalbazaar.com/librdfa/), rdfadict has been abandoned. The source code of both the Web application (licensed under [the GNU Affero General Public License version 3](http://www.gnu.org/licenses/agpl-3.0.txt) or newer) and its core library (licensed under [the GNU Lesser General Public License version 3](http://www.gnu.org/licenses/lgpl-3.0.txt) or newer) is available through [the Git repositories of Creative Commons](http://code.creativecommons.org/viewgit).
+
+In contrast to the contents of the original proposal, the following goals have not been met: traversal of special links, syndication feeds parsing, statistics, and cloning the layout of the Creative Commons Web site. However, these were never [mandatory requirements for the Web application](http://wiki.creativecommons.org/Rewrite_Metadata_Validator). It is also worth noting that the software has been written from scratch, although a now-defunct metadata validator existed. Nevertheless, the development does not end with Google Summer of Code — these and several new features (such as validation of multimedia files via liblicense and support for different language versions) are planned to be added, albeit at a slower pace.
+
+After the test period, the validator will be available under <http://validator.creativecommons.org/>.
+  *[URL]: Uniform Resource Locator
+  *[URI]: Uniform Resource Identifier
+  *[RDF]: Resource Description Framework
+  *[HTML]: HyperText Markup Language
+  *[XML]: Extensible Markup Language
+
+---
+pub_date: 2008-08-16
