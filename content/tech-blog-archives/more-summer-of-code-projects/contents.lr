@@ -6,7 +6,7 @@ author: ml
 ---
 body:
 
-Nathan [blogged the five accepted Creative Commons/Science Commons projects](http://creativecommons.github.io/tech-blog-archives/summer-of-code-projects/).
+Nathan [blogged the five accepted Creative Commons/Science Commons projects](/tech-blog-archives/summer-of-code-projects/).
 
 There's also at least one CC-related SoC project being mentored by another oganization: [ccHost/Inkscape integration](http://code.google.com/soc/inkscape/appinfo.html?csaid=C7DF84C10F57F82D) by Bruno LuÃ­s GonÃ§alves Dilly, mentored by Bryce Harrington for the Inkscape project. Bruno was a CC SoC student last year and Bryce just completed a contract project for CC...
 
