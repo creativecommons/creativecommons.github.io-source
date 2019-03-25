@@ -8,7 +8,7 @@ body:
 
 Hello!
 
-I'm one of the [selected students](http://techblog.creativecommons.org/2007/04/12/summer-of-code-projects/) for Google Summer of Code 2007 and I'm pleased to be joining Creative Commons community this summer. My project title is [Including RDFa support in Nutch: Updating the ccNutch plug-in](http://code.google.com/soc/cc/appinfo.html?csaid=33FD37DB5A5F2E4C) under mentoring of[ Nathan R. Yergler](http://yergler.net/). The abstract (with hyperlinks missing in soc page) is:
+I'm one of the [selected students](http://creativecommons.github.io/tech-blog-archives/summer-of-code-projects/) for Google Summer of Code 2007 and I'm pleased to be joining Creative Commons community this summer. My project title is [Including RDFa support in Nutch: Updating the ccNutch plug-in](http://code.google.com/soc/cc/appinfo.html?csaid=33FD37DB5A5F2E4C) under mentoring of[ Nathan R. Yergler](http://yergler.net/). The abstract (with hyperlinks missing in soc page) is:
 
 > [RDFa](http://www.w3.org/TR/2007/WD-xhtml-rdfa-primer-20070312) is emerging standard from W3 Consortium to provide a [syntax](http://www.w3.org/2001/sw/BestPractices/HTML/2005-rdfa-syntax) that expresses semantics in structured data using a set of elements and attributes that embeds RDF in HTML, such as a license on a document or  
 >  a photoâ€™s creator name and its camera setting information.
