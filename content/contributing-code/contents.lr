@@ -52,13 +52,20 @@ When in doubt, ask a question on [one of our community forums](/community).
 * Describe how you tested your change.
 * If a reviewer is not assigned automatically, manually [request a review](https://help.github.com/en/articles/requesting-a-pull-request-review) from either the repository maintainer (if you have that information) or `@creativecommons/engineering`.
 
-### Code
+### Code guidelines
 
 * Write comprehensive and robust tests that cover the changes you've made in your work.
 * Follow the appropriate code style standards for the language and framework you're using (e.g. PEP 8 for Python).
 * Write readable code – keep functions small and modular and name variables descriptively.
 * Document your code thoroughly.
 * Make sure all the existing tests pass.
+* User-facing code should support the following browsers:
+  * Chrome (Webkit-Blink / 22+)
+  * Firefox (Gecko / 28+)
+  * Edge (Chromium based / 12+)
+  * Opera (Chromium-Blink / 12.1+)
+  * Safari (Apple’s Webkit / 7+)
+  * IE 11 (Trident)
 
 ## New projects
 
