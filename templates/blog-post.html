@@ -1,0 +1,8 @@
+{% extends "layout.html" %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block header %}{{ this.parent.title }}{% endblock %}
+{% block body %}
+  <h2 class="mb-0">{{ this.title }}</h2>
+  <p class="meta text-muted mt-0">by {{ this.author }} on {{ this.pub_date|dateformat('full') }}
+  <div class="body">{{ this.body }}</div>
+{% endblock %}
