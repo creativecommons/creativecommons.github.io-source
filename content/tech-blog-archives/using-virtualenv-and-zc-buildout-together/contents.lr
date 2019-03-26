@@ -1,6 +1,9 @@
 title: Using virtualenv and zc.buildout together
 ---
-categories: development, python, techblog
+categories:
+development
+python
+techblog
 ---
 author: cwebber
 ---

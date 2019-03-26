@@ -1,6 +1,11 @@
 title: RFC 4946
 ---
-categories: atom, metadata, rss, standards, syndication
+categories:
+atom
+metadata
+rss
+standards
+syndication
 ---
 author: ml
 ---

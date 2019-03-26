@@ -1,6 +1,9 @@
 title: RDFaCE: an RDFa-enhanced TinyMCE rich editor
 ---
-categories: rdf, rdfa, wordpress
+categories:
+rdf
+rdfa
+wordpress
 ---
 author: ml
 ---
