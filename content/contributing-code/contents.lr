@@ -22,7 +22,7 @@ You may also create GitHub issues for any other missing infrastructure such as a
 
 We track all our work via the GitHub issues associated with a repository and that's where you can find things to work on. First, check the labels on the issue you're interested in:  
 * Issues labeled **"in progress"** are generally not available, but may be available if there has been no activity on the issue or related PR for over a week.
-* Issues labeled **"help wanted"** or **"good first issue"** have been identified as available for community contribution. 
+* Issues labeled **"help wanted"** or **"good first issue"** have been identified as available for community contribution. Feel free to work on issues labeled "good first issue" even if it is not your first issue.
     * Here's a list of [all issues labeled "good first issue"](https://github.com/search?q=org%3Acreativecommons+is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)
     * Here's a list of [all issues labeled "help wanted"](https://github.com/search?q=org%3Acreativecommons+is%3Aissue+is%3Aopen+label%3A%22help+wanted%22)
 * If the issue does not have either of those labels, it may still be open for contribution.
