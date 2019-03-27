@@ -1,0 +1,19 @@
+title: License Engine path changes
+---
+categories:
+development
+---
+author: nathan
+---
+body:
+
+We just pushed out a resolution to [Issue 381](http://code.creativecommons.org/issues/issue381), updating the path to the license engine. The license engine (the [cc.engine](http://code.creativecommons.org/viewsvn/cc.engine/) application) is responsible for handling the license selection portions of the website as well as the deeds. Some background may be helpful.
+
+When we launched CC0 earlier this year we made a conscious decision to locate the deed on a different path than the rest of the license deeds. CC0 is a _waiver_ , not a _license_ , so the deed appropriately is located at <http://creativecommons.org/publicdomain/zero/1.0/> (as opposed to the license deeds which URLs that look like <http://creativecommons.org/licenses/by/3.0/>). At the time we decided to leave the CC0 chooser in the same group as the other choosers. This unfortunately gave us a URL that contained `license` in it -- `http://creativecommons.org/license/zero/` \-- which caused confusion for some users. Is it a license or isn't it?
+
+It's not. 
+
+So starting this afternoon we've relocated the license engine to <http://creativecommons.org/choose> and CC0 to <http://creativecommons.org/choose/zero>. Redirects are in place so you shouldn't notice any changes.
+
+---
+pub_date: 2009-07-21

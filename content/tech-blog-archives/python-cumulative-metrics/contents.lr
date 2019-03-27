@@ -1,0 +1,18 @@
+title: Python && cumulative metrics?
+---
+categories:
+Metrics
+summer
+---
+author: ankitg
+---
+body:
+
+So I get to see the state-of-the-art and reconciling Apache and Squid logs. Based on this I need to come up with a way to reformulate the referrer ID and other such data for the logs at i.creativecommons and the ones from Varnish. As speculated in my messy proposal, a .sh using egrep is employed. Still bulk of the work is done in Python. So this doesn't give me an excuse to read up on the Advanced Bash Shell Scripting Guide, but instead something on Python. Fun as well.
+
+As far as I can tell, these scripts will be run before the logs are archived and uploaded in S3 storage. This will work great for the new logs which are generated from that day onwards from when the scripts are implemented. What about the analysis requiring cumulative data or trend analysis? I'll need to sort this one out, a lot of the analysis depends on access to all the data.
+
+Will be working from a fellow GSoCers place today, hoping to cover up on some lost ground because of travels and intermittent internet access. Will be back in Singapore and firing on all cylinders on the 8th.
+
+---
+pub_date: 2008-06-23

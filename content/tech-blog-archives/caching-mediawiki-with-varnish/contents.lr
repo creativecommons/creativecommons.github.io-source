@@ -1,0 +1,44 @@
+title: Caching Mediawiki with Varnish
+---
+categories:
+---
+author: nkinkade
+---
+body:
+
+We run a few instances of Mediawiki, most notably the [CC wiki](http://wiki.creativecommons.org/). The machine that runs the CC wiki is not a powerhouse, but should certainly have enough to handle the amount of traffic the CC wiki receives. However, for quite some time I've noted that the CPU usage on the machine is fairly high, and from time to time the system will bog down and become nearly (sometimes totally) unresponsive. It has been somewhat hard to pinpoint the exact cause of the intermittent issues, first, because they are so intermittent, and secondly because there has never been a trace of evidence in the logs as to what might have happened.
+
+Since the CC wiki is the main service that runs on that machine, I decided to start there. We run [Varnish](http://www.varnish-cache.org/) on all our servers, so I took a look at some Varnish stats using-- _ta-da_ \--[varnishstat](http://www.varnish-cache.org/docs/2.1/reference/varnishstat.html). It turned out that Varnish was mostly useless on that machine, with a hit-rate ratio of maybe 1 or 2 percent, sometimes approaching 0. This makes sense, since by default Varnish doesn't cache requests that arrive with cookies, and at the very least Google Analytics cookies will arrive with virtually every request to a CC site. Varnish shouldn't have to care about Analytics cookies, but it definitely needs to care about any login or session-related cookies from Mediawiki.
+
+Doing a bit of searching I found that even Mediawiki.org has [a page](http://www.mediawiki.org/wiki/Manual:Varnish_caching) about using Varnish to cache. However, their configuration doesn't take into account extraneous cookies like those from Google Analytics. I also eventually stumbled across a [VCL file](https://svn.wikia-code.com/utils/varnishhtcpd/mediawiki.vcl) that apparently [Wikia.com](http://www.wikia.com/About_Wikia) used to use, which takes into account the possibility of other cookies being present other than Mediawiki cookies. Between the examples I found online, and some thorough testing of cookies in Mediawiki, I found a configuration that I feel will allow many CC wiki requests to be cached, that otherwise wouldn't have been without risking caching any per-user, session or logged in pages. Relevant snippets:
+    
+    
+    sub vcl_recv {
+    [...]
+            if ( req.http.host ~ "wiki(-staging)?.creativecommons.org" ) {
+                    # If this is just an anonymous request with no session-related
+                    # cookies, then cache the page. Unsetting the cookie will allow
+                    # us to do this.
+                    if ( ! req.http.Cookie ~ "(session|UserID|UserName|LoggedOut)" ) {
+                            remove req.http.Cookie;
+                            return(lookup);
+                    }
+            }
+    }
+    
+    sub vcl_fetch {
+    
+            if ( req.http.host ~ "wiki(-staging)?.creativecommons.org" ) {
+                    if ( ! beresp.http.Set-Cookie ) {
+                            set beresp.ttl = 120s;
+                            return (deliver);
+                    }
+            }
+    
+    }
+    
+
+Our hitrage ratio is still not exceedingly high, hovering between perhaps 30% and 50%. However, what has really gone down significantly is the CPU usage and load average of this machine. For the two weeks prior to making these changes the overall average CPU usage was 68.09%. For the two weeks after the change it went down to 41.92%, nearly a 40% drop. Load average went down as well, but not as dramatically, because it was never consistently high to begin with. However, you can see a marked decline if you look at the [Cacti stats](http://nagios.creativecommons.org/cacti/graph_view.php?action=tree&tree_id=1&leaf_id=10) for that machine, setting the dates appropriately, the change having happened on March 3, 2011.
+
+---
+pub_date: 2011-03-18

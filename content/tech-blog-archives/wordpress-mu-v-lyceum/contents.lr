@@ -1,0 +1,28 @@
+title: WordPress MU v. Lyceum
+---
+categories:
+evaluation
+software
+wordpress
+---
+author: nathan
+---
+body:
+
+We're preparing to launch "hosted blogging":http://wiki.creativecommons.org/CCi_Blogs service for our "international affiliates":http://creativecommons.org/worldwide, and the TechBlog is actually the first blog to run on the new "WordPress MU":http://mu.wordpress.org installation. Sort of "eating our own dog food":http://en.wikipedia.org/wiki/Eating_one%27s_own_dog_food, I suppose. Much of the pre-launch work (beyond the obvious theme tweaking, etc) was in evaluating which WordPress-based multi-user blog product was more appropriate: "Lyceum":http://en.wikipedia.org/wiki/Lyceum_%28software%29 or "WordPress MU":http://en.wikipedia.org/wiki/WordPress_MU.
+
+I admit that going into the evaluation, I was predisposed to like Lyceum. This predisposition, like so many, was based on completely irrelevant facts: I like the way their website looks, I dislike the wordpress.org forums[1], that sort of thing. And initially it looked like Lyceum was going to be the winner. Both their website and the Wikipedia article on Lyceum[2] stated that a difference between MU and Lyceum was MU's requirement that every user have their own blog. That was clearly a deal breaker for us: we needed multiple multi-user blogs, not multiple single user blogs (and we didn't want a pile of single-user blogs lying around as a side effect of implementing the multi-user blogs). However, after installing MU and poking at it a bit, this doesn't seem to be the case any longer.
+
+The primary difference really comes down to how they handle the database tables. WordPress MU creates a separate set of tables for every blog. Lyceum modifies the basic WordPress table structure to add blog information to the tables. And there seems to be some debate over which is more efficient and scalable: tons of rows, or tons of tables. In the end, I'm not smart enough (or maybe I just don't care enough) to evaluate which statement is truer. We chose WordPress MU for a couple reasons:
+
+* Wordpress.com uses it, so it's *at least* scalable enough for an installation of that size (which we won't even approach).  
+* It appears that some of the core WordPress developers work on it, and it shares much of the same table schema information with WordPress. This leads me believe that it will track the core WordPress development closer.
+
+So in the end, it came down to a gut feeling more than anything else. I suppose this is the best sort of evaluation you could ask for: one where you have two great pieces of software, and it really comes down to these intangibles. It certainly speaks well of the open source community, and the WordPress core in particular.
+
+fn1. More than I dislike most forums, which is saying something.
+
+fn2. Since edited.
+
+---
+pub_date: 2007-04-12

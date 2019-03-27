@@ -1,0 +1,19 @@
+title: CC + GSoC: Integration is the Word
+---
+categories:
+GSoC
+---
+author: nathan
+---
+body:
+
+Creative Commons is once again participating in the [Google Summer of Code](http://www.google-melange.com/), an opportunity for students to spend the summer writing open source software. Students have the benefit of being mentored by established open source developers (we think [ours](http://creativecommons.org/about/people) are pretty good), and organizations develop their network of contributors. We've participated since 2006, with mixed success. Some projects go nowhere, while others, like last summer's [work on the OpenOffice.org plugin](http://labs.creativecommons.org/category/openoffice/), have far exceeded our expectations.
+
+We have a [lot of ideas](http://wiki.creativecommons.org/Developer_Challenges), and this year we're looking for students interested in working on [integrating](http://wiki.creativecommons.org/Integrate) Creative Commons into the larger ecosystem. Creative Commons licenses have revolutionized sharing on the web by reducing the friction between creators and users of work. We want to further reduce that friction by [integrating](http://wiki.creativecommons.org/Integrate) CC license selection, display, and content discovery into other applications and tools. In the past we've had students develop extensions and add-ons for [OpenOffice.org/LibreOffice](http://wiki.creativecommons.org/OpenOffice.org), [Drupal](http://wiki.creativecommons.org/Drupal), [WordPress](http://wiki.creativecommons.org/WpLicense), and Banshee. There's some [good code there](http://code.creativecommons.org), and we love the work that's been done. We want this year's prospective students to think about what applications they use that could [integrate](http://wiki.creativecommons.org/Integrate) CC license selection or -- at least as importantly -- content discovery. Use our existing code as a starting point for ideas, and craft your proposal to tell us how your project will integrate CC licensed content into users' daily life.
+
+Not a student? We've started a [hit list](http://wiki.creativecommons.org/Build_Creative_Commons_licensing_into_more_content_creation_applications) of applications on the wiki, and if we're missing your favorite, add it along with some thoughts about how you'd like to use CC.
+
+I'm looking forward to a great GSoC this year, and can't wait to see the great ideas that come from students and the community!
+
+---
+pub_date: 2011-03-21

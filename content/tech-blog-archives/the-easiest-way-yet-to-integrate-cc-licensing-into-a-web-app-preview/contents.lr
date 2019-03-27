@@ -1,0 +1,26 @@
+title: The easiest way yet to integrate CC licensing into a web app (preview)
+---
+categories:
+license
+---
+author: asheesh
+---
+body:
+
+I've been working for the past week or so on a JavaScript licensing widget that has been [suggested on our wiki](http://wiki.creativecommons.org/JsWidget). It's a new way to integrate CC licensing into your web application. It's really as easy as pie: Just add the following tag somewhere in the body:
+
+> <script src="http://api.creativecommons.org/jswidget/tags/0.1/complete.js" />
+
+and a CC licensing widget will appear. Your web application can then use  
+regular DOM queries to determine the user's choice.
+
+NOTE that this is not ready for prime-time use! I want feedback on what people would like us to add or change. Right now it serves only English-language text; in the future you will be able to add ?locale=, stick your language code at the end, and get text back in your language. Beyond translation, tell me how else I can be of service!
+
+You can download a trivial sample application and a long-ish README at [our SourceForge project](http://sourceforge.net/project/showfiles.php?group_id=80503&package_id=239510). For y'all's convenience here's a [link to the README](https://cctools.svn.sourceforge.net/svnroot/cctools/jswidget/tags/0.1/example_web_app/README).
+
+It'll take you all of five minutes to deeply understand what's going on, so I suggest you do if you're thinking about (or if you already are) offering CC licensing to users of web applications you work on.
+
+(P.S. This is [cross-posted to the cc-devel list](http://lists.ibiblio.org/pipermail/cc-devel/2007-July/000526.html).)
+
+---
+pub_date: 2007-07-19

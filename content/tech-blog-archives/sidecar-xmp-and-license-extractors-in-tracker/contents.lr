@@ -1,0 +1,21 @@
+title: Sidecar XMP and License Extractors in Tracker
+---
+categories:
+embedding
+metadata
+rdf
+summer
+xmp
+---
+author: jakin
+---
+body:
+
+Tracker has accepted my patches to read XMP sidecar, as well as patches to extract licenses from MS Office (old format), TIFF, HTML, PNG, and PDF. This support will be available in the 0.6 release, which potentially will be released later this week.
+
+My final set of patches will additionally add support for extracting licenses from JPEG, SVG, and OpenOffice's OASIS. Also, through GStreamer, Tracker already recognizes licenses of Vorbis and FLAC.
+
+This marks the half-way point of Summer of Code 2007.
+
+---
+pub_date: 2007-07-10

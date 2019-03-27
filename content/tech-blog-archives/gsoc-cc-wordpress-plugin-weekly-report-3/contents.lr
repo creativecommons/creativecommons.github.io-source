@@ -1,0 +1,35 @@
+title: GSoC CC Wordpress Plugin: Weekly Report #3
+---
+categories:
+CC
+rdfa
+summer
+wordpress
+---
+author: erlehmann
+---
+body:
+
+This week, development on the [plugin](http://labs.creativecommons.org/2010/05/24/gsoc-project-introduction-cc-wordpress-plugin/) proceeded at a faster pace. Shortly after I posted the [last report](http://labs.creativecommons.org/2010/06/08/gsoc-cc-wordpress-plugin-weekly-report-2/), Nathan Kinkade pointed out the fix to the bug that prevented saving, a simple type error. On the next day, I implemented stylesheet support, hereby adapting three styles I originally made for my defunct [microdata plugin](http://github.com/erlehmann/cc-figure), and an admin interface to switch between them ([screenshot](http://daten.dieweltistgarnichtso.net/pics/screenshots/web/wordpress-cc-plugin/admin-interface-stylesheets.png)). Additional more or less notable changes are:
+
+  * metadata is not only saved now, but will also be retrieved to populate form fields
+  * multiple RDFa fixes, machine-readable data should be correct now
+  * the plugin has a directory structure, earlier versions were just a single file
+  * there is now a sample file for stylesheet development
+  * metadata is also saved when the media item is inserted into the post
+  * the plugin now uses the [Creative Commons API](http://api.creativecommons.org/docs/index.html) to get the current license version
+
+
+
+The current output of the plugin can be seen at my [GSoC test blog](http://gsoc2010.dieweltistgarnichtso.net/?p=1) and checked using the W3Cs [RDFa distiller and parser](http://www.w3.org/2007/08/pyRdfa/).
+
+On a less technical note, I have met three people relevant to plugin development: When I explained to _Julia Seeliger_ that I was implementing her [plugin idea](http://julia-seeliger.de/wunschzettel-creative-commons-plugin-fur-wordpress/), she was [delighted](http://twitter.com/zeitrafferin/status/16031917904). _Max Winde_ , creator of the inspiring [_Spreeblick_](http://spreeblick.com) plugin, suggested including an easy option for re-embedding the relevant content, possibly using Javascript. Last but not least, _Moritz Metz_ , a radio journalist and blogger at [_Breitband_](http://breitband.dradio.de/), intending to use the plugin when it is finished, told me about his use of [alternate content and plugin directories](http://codex.wordpress.org/Determining_Plugin_and_Content_Directories) and urged me to consider supporting not only inline content, but also [post thumbnail images](http://markjaquith.wordpress.com/2009/12/23/new-in-wordpress-2-9-post-thumbnail-images/).
+
+I consider this version of the plugin not finished, but functional enough for testers, who are encouraged to check out the [Git repository](http://code.creativecommons.org/viewgit/wordpress-cc-plugin.git/). For the coming week, I will look into the issue surrounding alternate content and plugin directories and proceed to polish the existing features.
+  *[RDFa]: Resource Document Framework in Attributes
+  *[API]: Application Programming Interface
+  *[GSoC]: Google Summer of Code
+  *[W3C]: World Wide Web Consortium
+
+---
+pub_date: 2010-06-16

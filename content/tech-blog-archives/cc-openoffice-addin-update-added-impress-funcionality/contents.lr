@@ -1,0 +1,20 @@
+title: CC OpenOffice Addin Update: Added Impress funcionality!
+---
+categories:
+Add-In
+metadata
+OpenOffice
+summer
+---
+author: ksiomelo
+---
+body:
+
+Hello everyone!
+
+I've made some changes in the addin and enabled to put licenses in Impress documents. The entire architecture has changed and I'm working on this right now. The newer version is in the CC sourceforge repository!
+
+[![CC OpenOffice Addin working on Impress](screen_impress.PNG)](/tech-blog-archives/cc-openoffice-addin-update-added-impress-funcionality/cc-openoffice-addin-working-on-impress/ "CC OpenOffice Addin working on Impress")
+
+---
+pub_date: 2007-07-24

@@ -1,0 +1,31 @@
+title: Updates to CC Network OpenID Provider
+---
+categories:
+---
+author: nathan
+---
+body:
+
+We received a couple bug reports over the weekend about the CC Network OpenID provider. Users were seeing a situation where they were asked to log into the CC Network with a username that was _similar_ to their's, but not quite right -- specifically, the final character was omitted. When they put in their correct username and password they were just redirected to the login screen again and again.
+
+After some digging we arrived at [Issue 308](http://code.creativecommons.org/issues/issue308). The problem occurs when a non-compliant OpenID-enabled site asks for the OpenID URL and the user supplies something that _should_ work, but isn't canonical. For example, my CC Network profile is at `https://creativecommons.net/nathan/`. I should be able to use any of the following as my OpenID and have the site get to the canonical version:
+
+  * creativecommons.net/nathan
+  * http://creativecommons.net/nathan
+  * http://creativecommons.net/nathan/
+  * https://creativecommons.net/nathan
+
+
+
+The process of getting from one of these to the canonical version is called [normalization](http://openid.net/specs/openid-authentication-2_0.html#normalization).
+
+So if an OpenID enabled site (such as, say, sourceforge.net or intensedebate.com) doesn't do normalization, the user ends up asking to be validated for some URL other than their own canonical identity. And our server kicks that back as an invalid OpenID URL. Intense Debate seems to be aware of the issue; someone already reported it on their [Get Satisfaction forum](http://getsatisfaction.com/intensedebate/topics/openid_url_must_match_exactly_when_logging_in).
+
+We briefly considered working around this bug (and it is a bug) but ultimately decided against it. It didn't "smell" right and after some thought we realized that it could cause users more problems down the road. For example, if we implemented the proposed fix (making the trailing slash optional, which would have fixed it in most cases, it appears), a user could end up logging in at a broken site with the URL `https://creativecommons.net/foo`. If that site later fixed their code to correctly perform normalization, the user would suddenly be asking to validate a _different_ URL -- `https://creativecommons.net/foo **/**`. I suppose a site that has this bug and needs to fix it could normalize all the OpenID URLs stored in their database before pushing out the patch. 
+
+Instead we went ahead and added an error screen so that instead of the completely frustrating never-ending login loop, you at least get a hint that something's wrong (and how to fix it).
+
+The moral of the story? If you run into a problem logging into an OpenID-enabled site, first make sure you're using your "real" URL (and if you still have a problem, at least with your CC Network ID, please [report it](http://code.creativecommons.org/issues/issue?@template=item)).
+
+---
+pub_date: 2009-04-13

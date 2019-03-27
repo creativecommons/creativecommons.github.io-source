@@ -1,0 +1,20 @@
+title: Curation and Structured Data for educational resources
+---
+categories:
+Describing
+DiscoverEd
+---
+author: nathan
+---
+body:
+
+I spent most of last week in Alexandria, Virginia, talking about DiscoverEd (and hearing others talk about their work, including Duraspace and Handles) with the [Learning Registry](http://www.learningregistry.org/) project. Learning Registry is a project of the US government that's focusing on how to make federal learning resources more accessible to educators. We were invited to discuss DiscoverEd face to face after it became clear that some of the issues we've been addressing -- searching metadata about OER, multiple parties making different assertions about the same resource -- were going to be key for Learning Registry.
+
+Learning Registry has been collecting ideas about the project using [Idea Scale](http://learningregistry.ideascale.com/), and on Tuesday [Aaron](http://twitter.com/mrch0mp3rs) [published a list](http://groups.google.com/group/learningregistry/browse_thread/thread/bb63b91cfc5c7bd8?hl=en) of the most popular ideas to date. Reading the list, it's clear that there are a few themes. First, people are interested in using structured data to help them search. Whether it's a microformat to [identify a resource as educational](http://learningregistry.ideascale.com/a/dtd/Microformats/73660-9751), [extraction of metadata](http://learningregistry.ideascale.com/a/dtd/intelligent-metadata-extraction-and-tagging/74031-9751), adding [information about specific properties](http://learningregistry.ideascale.com/a/dtd/CORDRA-style-tagging/75717-9751) (seat time, cost, etc), several ideas centered around making use of structured data to improve the search experience.
+
+While that's not too surprising, it was also interesting to note that the idea of distributed curation came up, whether people called it that or not. The [microformat suggestion](http://learningregistry.ideascale.com/a/dtd/Microformats/73660-9751) involves, at its most basic level, the ability to say "I think this is educational". It's not a far step from that to "I think this other resource (created by someone else) is educational." People also suggested using [sitemaps as the basis](http://learningregistry.ideascale.com/a/dtd/XML-Site-Maps/73659-9751) for listing educational resources. All of this makes me think that the idea of curating and collating resources is going to be an important part of how people find information in the future (whether they're explicitly curating, or implicitly by posting a link to Twitter, it's all about filtering information to the set you're interested in).
+
+It's always nice to hear that you're on the right track with a project; seeing the ideas suggested for Learning Registry reinforces my belief that we're looking at the right areas for improving the OER search experience. (It's also awesome that people [want license information incorporated into search results](http://learningregistry.ideascale.com/a/dtd/Make-finding-open-content-easier/73859-9751) \-- what a great idea!)
+
+---
+pub_date: 2010-09-02

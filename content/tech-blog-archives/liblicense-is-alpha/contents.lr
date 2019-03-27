@@ -1,0 +1,25 @@
+title: Liblicense is alpha!
+---
+categories:
+development
+embedding
+Interns
+metadata
+opensource
+python
+rdf
+system
+xmp
+---
+author: tannewt
+---
+body:
+
+Over the last week a lot of progress has been made on [liblicense](http://wiki.creativecommons.org/Liblicense). Yesterday Jason and I got the [module_read](http://cctools.svn.sourceforge.net/viewvc/cctools/liblicense/trunk/read_license.c?view=markup) and [module_write](http://cctools.svn.sourceforge.net/viewvc/cctools/liblicense/trunk/write_license.c?view=markup) functions working with a [stub io module](http://cctools.svn.sourceforge.net/viewvc/cctools/liblicense/trunk/modules/io/stub.c?view=markup) and an [XMP sidecar module](http://cctools.svn.sourceforge.net/viewvc/cctools/liblicense/trunk/modules/io/sidecar_xmp.c?view=markup). Tuesday and Wednesday I got the library's[ system license](http://cctools.svn.sourceforge.net/viewvc/cctools/liblicense/trunk/system_licenses.h?view=markup) functions working. Today I did some memory leak plugging and wrote out the [system default](http://cctools.svn.sourceforge.net/viewvc/cctools/liblicense/trunk/system_default.c?view=markup) functions. Nearly every part of the library works as planned. While its still rough, the bulk of the library work is done.
+
+The most common data structure I've been using is a null-terminated list (really an array) of strings (char*). Yesterday I wrote out some common methods to be shared throughout the library. These are in [list.c](http://cctools.svn.sourceforge.net/viewvc/cctools/liblicense/trunk/list.c?view=markup). My hope is that these common functions will allow the other code to be cleaner. Next week I plan on fixing up system_licenses.c to use the list functions. At the moment it is the[ largest, ugliest and leakiest](http://cctools.svn.sourceforge.net/viewvc/cctools/liblicense/trunk/system_licenses.c?view=markup) of all the files. That will all be fixed Monday.
+
+After the code cleanup on Monday the much more exciting task of creating modules and clients of the library begins. We'd like to support embedding in as many file formats as possible. Without this ability, the license tracking only works locally. One of the most useful libraries so far is [Exempi](http://libopenraw.freedesktop.org/wiki/Exempi) which can embed in a number of formats. Jason wrote an [Exempi liblicense module](http://cctools.svn.sourceforge.net/viewvc/cctools/liblicense/trunk/modules/io/exempi.c?view=markup) yesterday. On my list of clients to do is a Gnome Control Panel system default, Nautilus license select, Sugar license select and Creative Commons default license chooser. Am I missing anything important? Where could licenses be integrate besides this? Perhaps Amarok or an equivalent? ccHost? Let me know what you think.
+
+---
+pub_date: 2007-06-29

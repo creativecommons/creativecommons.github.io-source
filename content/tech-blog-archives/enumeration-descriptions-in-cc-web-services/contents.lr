@@ -1,0 +1,21 @@
+title: Enumeration descriptions in CC Web Services
+---
+categories:
+---
+author: nathan
+---
+body:
+
+We had a request come in from a developer using the [CC web services](http://api.creativecommons.org/) for better contextual information about the choices users make when selecting a license. In particular, they wanted to present users with information about what _"ShareAlike"_ means. As I dug into it I realized that the existing `<description>` we provided for the questions themselves are... well, bad. I can only imagine how hard it'd be to craft a user interface using **those** as help text.
+
+I just pushed an update to the [development version](https://api.creativecommons.org/docs/readme_dev.html) of the API that adds `<description>` elements to the individual `<enum>` elements. These map to the help pop-ups we use on the main license chooser. If all seems well we'll push this down to [1.5](https://api.creativecommons.org/docs/readme_15.html) as well.
+
+I should also note that this update includes two new, very nice (for me) improvements:
+
+  * I finally landed Frank's test suite work from last summer. We had intended to replace the whole API with a leaner version, but that's still in the works. So in the interim, we have a test suite and I'm not afraid of change anymore (on this project at least).
+  * I've updated the documentation to use [Sphinx](http://sphinx.pocoo.org/). [ReStructured Text](http://en.wikipedia.org/wiki/ReStructuredText) is the secret weapon of many a Python project; Sphinx makes it even more powerful, providing a set of directives and tools to generate something that looks, well, at least decent.
+
+
+
+---
+pub_date: 2009-04-02

@@ -1,0 +1,22 @@
+title: January 2011 Tech Update
+---
+categories:
+status
+---
+author: nathan
+---
+body:
+
+Highlights from December, 2010:
+
+  * We [concluded our annual campaign](http://creativecommons.org/weblog/entry/25829). Thanks to everyone who helped us raise over $500,000; your support is greatly appreciated. (And it's not too late to [contribute](http://creativecommons.net/donate)!)
+  * We verified that our OpenOffice.org plugin is [compatible with LibreOffice](http://labs.creativecommons.org/2010/12/08/libreoffice-and-cc-openoffice-plugin/), so obviously it needs a better name than CCOOo. Suggestions? Leave a comment.
+  * John Bishop shipped [updated CC + XMP support](http://labs.creativecommons.org/2010/12/06/xmp-fileinfo-panel-for-adobe-creative-suites-4-and-5-now-available/) for Adobe CS 4 and CS 5
+  * We began transcoding our [videos into WebM](http://labs.creativecommons.org/2010/12/03/webm-encoding-ccs-videos/), a free codec for HTML5 video
+  * Metadata [interoperability](http://labs.creativecommons.org/2010/12/10/towards-expressive-and-interoperable-common-core-metadata/) and [harmonization](http://labs.creativecommons.org/2010/12/15/thesis-on-metadata-interoperability-rdf/) continues to be an area we're paying attention to, particularly with respect to OER, where there's no clear winner [yet].
+  * And while technically from November, it bears highlighting that [Technical Case Studies](http://labs.creativecommons.org/2010/11/18/technical-case-studies-now-on-the-wiki/) are now in the CC wiki.
+
+
+
+---
+pub_date: 2011-01-03

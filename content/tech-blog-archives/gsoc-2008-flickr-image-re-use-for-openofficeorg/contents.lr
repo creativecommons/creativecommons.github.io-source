@@ -1,0 +1,33 @@
+title: GSoC 2008 : Flickr Image Re-Use for OpenOffice.org
+---
+categories:
+Add-In
+development
+OpenOffice
+opensource
+summer
+---
+author: mihai
+---
+body:
+
+As title might suggest, i have been selected for [GSoC 2008](http://code.google.com/soc/2008/). As mentor for this [project](http://wiki.creativecommons.org/Flickr_Image_Re-Use_for_OpenOffice.org) has been assigned [Nathan Yergler](http://creativecommons.org/about/people/#31).
+
+The developing will focus on 3 key functionalities:
+
+  * ability to search photos by tags
+  * filter search results by license attributes
+  * insert the image into the document along with attribution information
+
+
+
+The first 2 steps were done(of course, this will not be the final version) in small [demo ](http://students.info.uaic.ro/~mhusleag/FlickrOOPlugin.oxt)that i attached to my application for [GSoC 2008](http://code.google.com/soc/2008/). The [OpenOffice ](http://www.openoffice.org/)components for which the extension will be implemented are Writer, Impress and Calc.
+
+The application will be written in [Java](http://en.wikipedia.org/wiki/Java_language), using [NetBeans](http://www.netbeans.org/) with its plugin [OpenOffice NetBeans Integration](http://www.netbeans.org/community/magazine/html/03/openoffice/).
+
+A short introduction : I`m Mihai Husleag, 24 years old, student in [Computer Science](http://www.infoiasi.ro/bin/Main/?language=en), at [Alexandru Ioan Cuza University](http://www.uaic.ro/uaic/bin/view/Main/?language=en) of [Iasi](http://en.wikipedia.org/wiki/Iasi), [Romania](http://en.wikipedia.org/wiki/Romania). My previous experience as programmer is more related to the .NET framework. Another thing about me, if in the weekends i`m not reachable then its a high probability that you will find me [here](http://picasaweb.google.com/muntomanul1/PiatraCraiului/photo#5144739821863831250).
+
+If you have any suggestions about this project(new functionalities, things you don't like, etc) feel free to leave a comment.
+
+---
+pub_date: 2008-05-29

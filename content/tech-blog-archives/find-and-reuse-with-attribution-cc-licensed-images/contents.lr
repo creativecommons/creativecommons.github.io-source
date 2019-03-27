@@ -1,0 +1,23 @@
+title: Find and Reuse Images: Painless Attribution
+---
+categories:
+tools
+---
+author: nathan
+---
+body:
+
+Finding CC licensed images and using them properly is something many people seem to struggle with: finding them can be straight-forward, but many sites don't provide copy and paste reuse code that complies with the license. [Xpert](http://www.nottingham.ac.uk/xpert/), a project of University of Nottingham, has launched an [image search tool](http://www.nottingham.ac.uk/xpert/attribution/) that helps with this. Xpert Attribution tool searches Wikimedia Commons and Flickr and provides an easy way to get the image with the attribution information overlaid, or (even better, in my opinion) with RDFa suitable for embedding. I've combined the two below (downloading the image with attribution, and adding the structured-data enriched embed code below it).
+
+![](flower.jpg)
+
+Taken from http://upload.wikimedia.org/wikipedia/commons/e/eb/-_Schlumbergera_trunctata_-.jpg on 2010-10-05  
+Original URL - <http://commons.wikimedia.org/wiki/File:-_Schlumbergera_trunctata_-.jpg> created on February 2007  
+Nino Barbieri [CC BY-SA 2.5](http://creativecommons.org/licenses/by-sa/2.5/)
+
+The inclusion of structured data with the HTML means you can click the license link above and the license deed will display the attribution information, as well as our generated attribution HTML.
+
+[![](Screenshot-Creative-Commons-—-Attribution-ShareAlike-2.5-Generic-Google-Chrome.png)](http://labs.creativecommons.org/files/2010/10/Screenshot-Creative-Commons-—-Attribution-ShareAlike-2.5-Generic-Google-Chrome.png)
+
+---
+pub_date: 2010-10-04

@@ -1,0 +1,18 @@
+title: GSoC CC Firefox Extension + WordPress plugin = ?
+---
+categories:
+rdfa
+summer
+---
+author: igorlukanin
+---
+body:
+
+Undoubtedly, it's very important for all GSoC student projects (and all projects under CC in general) to collaborate smoothly. A few days ago Nils Dagsson Moskopp, the developer of GSoC CC WordPress plugin, asked me to test the plugin to work with the extension for Firefox web browser I'm developing.
+
+Today, releasing [version 0.7.0](http://code.creativecommons.org/viewgit/cc.ff_ext.git/plain/cc.ff_ext.xpi) of the extension, I recorded a [short screencast](http://www.youtube.com/watch?v=u_px-jKy_YE&hd=1) (watch on YouTube), showing how the extension interprets RDFa information of the WordPress plugin [test page](http://gsoc2010.dieweltistgarnichtso.net/?p=45).
+
+I hope this video would make us believe we're on the right way. ;)
+
+---
+pub_date: 2010-07-15

@@ -1,0 +1,15 @@
+title: Wait, they test web apps now?
+---
+categories:
+development
+---
+author: frank
+---
+body:
+
+Greetings all. I'm Frank and I'm the other tech intern at CC for 2008. I mainly focus on writing Python, though I'm comfortable with Java and I'll deal with C when sufficiently coerced.
+
+For my first task, I'll be improving the test suite for the <a href="http://api.creativecommons.org/docs/">web service API</a>. Currently it runs on <a href="http://cherrypy.org/">CherryPy</a> and the test suite is brittle and somewhat broken. I'll be porting the tests over to <a href="http://pythonpaste.org/">Python Paste</a>, getting them all to pass, and checking code coverage to see where more tests would be beneficial (testing is fun after all). The overarching goal is to get the API running on <a href="http://pylonshq.com/">Pylons</a> so CC has fewer server stacks to maintain.
+
+---
+pub_date: 2008-06-10

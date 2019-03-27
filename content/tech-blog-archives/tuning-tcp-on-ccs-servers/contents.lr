@@ -1,0 +1,43 @@
+title: Tuning TCP on CC's servers
+---
+categories:
+---
+author: nkinkade
+---
+body:
+
+A couple weeks ago we launched a new rack-mount server, which is kindly hosted by the [ISC](http://www.isc.org/) in their Redwood City, California data center. The sole purpose of this new server is to host static content, mostly i.creativecommons.org, which is probably the busiest domain CC has due to the license icons and badges being served from there.
+
+Upon moving i.creativecommons.org to this new machine I noticed that there were terrible problems with connection timeouts when requesting images. After thrashing around for why this was happening, I used `tcpdump` to grab some network traffic on the server and discovered that SYN requests were arriving at the machine and dying right there, with no subsequent SYN-ACK. At that point it was clear that this was not a [Varnish](http://www.varnish-cache.org/) or Apache problem, but something at a much lower level. After testing various TCP tweaks in the running kernel I discovered that setting `net.ipv4.tcp_max_syn_backlog=2048`, up from the default of 256, _and_ turning on `net.ipv4.tcp_syncookies` seemed to resolve the connection timeout issues.
+
+However, the kernel message log was _filled_ with message like the following. In fact, there was one such message written to the log every minute:
+
+_possible SYN flooding on port 80. Sending cookies._
+
+I was confused by this because ostensibly the site was functioning just fine. My understanding was that SYN cookies were only activated when the SYN queue filled up, but as far as I could tell I had increased the depth of the queue sufficiently to avoid that problem. I even tried setting `net.ipv4.tcp_max_syn_backlog` arbitrarily high to see what would happen. Same result: site operated fine, but with SYN cookie kernel messages. In my testing I also discovered that disabling `net.ipv4.tcp_syncookies` would immediately bring back the connection timeout problems. Additionally, `netstat` revealed that though the site appeared to be functioning correctly, there were still an abnormally large amount of 'failed connection attempts' listed in the TCP stats.
+
+I went over and over all the TCP settings and just couldn't figure out what was happening, nor did Google shed any light on this. I then decided to do this:
+
+`$ netstat -n | grep SYN_RECV | wc -l`
+
+I ran this command many times in a row over a period of time and was surprised to see that the result was nearly always 256, give or take a few. It then occurred to me that that number looked a lot like the default value of `net.ipv4.tcp_max_syn_backlog`. However, as far as I knew (and know), all of those kernel parameters are supposed to be dynamic, capable of being changed on-the-fly, with `sysctl` or writing directly to the /proc file system. So I set all my TCP changes in `/etc/sysctl.conf` and rebooted the machine. Sure enough, since coming back up about a day ago I haven't seen a single kernel message about SYN cookies. I even decided to just disable SYN cookies altogether based on a [recommendation](http://lkml.org/lkml/2008/2/5/167) to do so in the default `/etc/sysctl.conf` file found on [Debian](http://www.debian.org/) systems.
+
+The machine is now humming along nicely. For reference here are the TCP parameters I changed. The values were gleaned from various sites while doing extensive research on TCP tuning. Some of the values seem improbable to me, but don't seem to be having any perceptible negative impact, and were also recommended in TCP tuning articles on more than one site. I went ahead and implemented these settings on the rest of CC's servers as well:
+    
+    
+    net.ipv4.tcp_fin_timeout = 3
+    net.core.netdev_max_backlog = 30000
+    net.ipv4.tcp_no_metrics_save = 1 
+    net.ipv4.tcp_synack_retries = 2
+    net.ipv4.tcp_syn_retries = 2
+    net.ipv4.tcp_max_syn_backlog = 8192
+    net.core.rmem_max = 16777216
+    net.core.wmem_max = 16777216
+    net.ipv4.tcp_rmem = 4096 87380 16777216 
+    net.ipv4.tcp_wmem = 4096 65536 16777216
+    net.core.somaxconn = 1024
+    vm.min_free_kbytes = 65536
+    
+
+---
+pub_date: 2010-12-08

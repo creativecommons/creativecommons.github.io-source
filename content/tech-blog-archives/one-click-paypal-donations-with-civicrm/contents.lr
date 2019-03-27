@@ -1,0 +1,12 @@
+title: One click PayPal donations with CiviCRM
+---
+categories:
+---
+author: nkinkade
+---
+body:
+
+About a month ago CC launched its [annual Fall fundraising campaign](https://support.creativecommons.org/donate). Along with it we also rolled out a streamlined donation process. I [wrote about this](http://civicrm.org/node/660) on the CiviCRM blog, and also wrote up [some documentation](http://wiki.creativecommons.org/OneClickDonate.php) on the CC Wiki. This new donation method required some custom code, and leveraging an existing CiviCRM [script](http://svn.civicrm.org/civicrm/trunk/bin/ContributionProcessor.php) written by [Donald Lobo](http://civicrm.org/blog/810).
+
+---
+pub_date: 2009-11-09

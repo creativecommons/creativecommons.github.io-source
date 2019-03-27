@@ -1,0 +1,24 @@
+title: CC-Logger The S3 Chronicles
+---
+categories:
+Metrics
+summer
+---
+author: ankitg
+---
+body:
+
+**Task One** :: Setup a client to access the S3 bucket and retrieve the logs.
+
+**Attempt One** :: Jungle Disk. A tool for the Mac with GUI implementation that mounts the S3 as a drive. Sounds cool, easy to install and setup, detects the buckets, but the mounted drive is empty. I would wait, expecting it to load the information, but my firewall told me it wasn't exchanging any information with the S3 server and that was that.
+
+**Attempt Two** :: Now I went for the S3Sync.rb and s3cmd.rb. Two ruby scripts that are acclaimed to be the solution. I setup the yml file with the keys to accessing the bucket and place it in the required location. I run the script and "Environment is not set up". I go over the read me again and sure enough I had missed something; there were two pre-requisites, Ruby and Open-SSL library for ruby. I had ruby of course, but not the Open-SSL library. So I go and look for it and guess what, it doesn't exist O_o. There are only eassl and jruby-openssl.
+
+I don't want to switch to another tool for a few reasons. One, this was recommended by the folks at CC, so I know this works with their setup. Two, each tool interacts with S3 in a different way and other tools may / may not work even if I set them up properly. Three come on, this is ruby, something I am familiar with, and it looks fairly easy to use, if only I can get hold of that dependency.
+
+I'll read up on some posts I came across earlier where people said they were using S3 ... maybe there are some description of the setup there. If I find nothing, back to the IRC.
+
+That's all for now.
+
+---
+pub_date: 2008-06-02

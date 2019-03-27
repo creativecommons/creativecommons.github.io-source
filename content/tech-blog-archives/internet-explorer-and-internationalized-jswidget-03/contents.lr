@@ -1,0 +1,29 @@
+title: Internet Explorer and Internationalized JsWidget (0.3)
+---
+categories:
+license
+---
+author: asheesh
+---
+body:
+
+The scrubbing bubbles have been at work again on JsWidget. JsWidget is an attempt to let web application developers insert the Creative Commons "Choose a license" questions into their application by just including one file from creativecommons.org.
+
+I just released a new pre-release version of JsWidget, [version 0.3](http://sourceforge.net/project/shownotes.php?release_id=529136&group_id=80503). You can read about the project on [its wiki page](http://wiki.creativecommons.org/JsWidget), including learning how to use it. There are some interesting new features:
+
+First of all, it's compatible with Internet Explorer. My generated JavaScript code was suffering from a correctness issue that using XHTML in Firefox showed me, and fixing that made it render in Internet Explorer. (Then I had to [switch](http://nathan.ashleafmedia.com/2007/onclick-not-onchange/) from using onChange to onClick, again a subtle correctness issue.)
+
+Secondly, it supports a cool form of internationalization called HTTP Content Negotiation. Web browsers optionally (but usually) send a header to the web server indicating the sort of content they can accept, including what languages the user wants to read. In addition to the old ?locale= form of specifying a language, the text should be translated to the user's native language. (Unfortunately not all of the strings are translated yet, but try hovering over an info box or looking through the list of jurisdictions. In all cases where we don't have a translation, we fall back to US English.)
+
+Finally, it supports a feature called "license seeding." By default, the UI offers the user the Attribution license in the generic jurisdiction. By passing in a URL, you can change that starting point. This is especially useful for letting a user revisit a license choice he made in the past and consider changing it.
+
+You can read more about these features on the wiki page for this project, and if you're sly you could even look at your plan for the future. But the most fun thing to do always is to play with our demos! Now there are three:
+
+  * [Standard use](http://labs.creativecommons.org/jswidget/tags/0.3/example_web_app/)
+  * [With "seeding" a license](http://labs.creativecommons.org/jswidget/tags/0.3/example_web_app/with-seed.html)
+  * [With "seeding" a license whose version is upgraded](http://labs.creativecommons.org/jswidget/tags/0.3/example_web_app/with-seed-old-version.html)
+
+
+
+---
+pub_date: 2007-08-01

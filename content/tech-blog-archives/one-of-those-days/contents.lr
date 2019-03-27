@@ -1,0 +1,16 @@
+title: One of those days...
+---
+categories:
+---
+author: frank
+---
+body:
+
+I wake up in the morning to find that eternal funny man [George Carlin has died](http://en.wikipedia.org/wiki/George_Carlin#Death). Add to that the fact that one of my recently-ported api tests has failed, and you just know it's going to be one of those days.
+
+Work on porting the test suite was slow at first. I had thought it would be easy enough just to jump in and start coding. Later this pipe dream evaporated and I forced myself to learn CherryPy, Python Paste, and a bit of WSGI. Then Asheesh and Nathan filled me in on the intricacies of the ["buildout" build system](http://pypi.python.org/pypi/zc.buildout) (which is really quite nice when you get to know it), and I was ready to go.
+
+So the porting has begun. Check out [the branch](http://code.creativecommons.org/viewsvn/api/branches/nose-test-suite-branch/) where all the fun is happening, if you happen to be so inclined. And as the fates would have it, the lucky number seventh test I ported just so happens to fail. This leads to the real challenge every software tester must eventually face: fixing a broken test. Getting to the bottom of this means a fun-filled day ahead.
+
+---
+pub_date: 2008-06-23

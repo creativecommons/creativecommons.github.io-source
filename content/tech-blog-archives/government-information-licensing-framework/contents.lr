@@ -1,0 +1,21 @@
+title: Government Information Licensing Framework
+---
+categories:
+embedding
+liblicense
+metadata
+rdfa
+techsummit
+---
+author: frank
+---
+body:
+
+David Torpie of the Office of Economic and Statistical Research at the [Queensland Treasury](http://www.treasury.qld.gov.au/ "Queensland Treasury") gave a talk on "Government Information Licensing Framework: a multidisciplinary project improving access to Public Sector Information." This is a project to give greater access to Australian government data, to make government more transparent, and in doing so to develop a standard set of terms and conditions that are broadly applicable to other government contexts.
+
+David first answered the question of why the Australian government even needs to worry about licensing its works. In Australia, unlike the United States, the government has copyright over works produced by government agencies. Australian copyright law also extends to less-than-creative works (such as telephone directories), which increases the importance that public licensing is clear and simple.
+
+The solution developed at the Queensland Treasury is "digital license management", or DLM. DLM is a technology to embed license metadata into documents and other works, developed in Java. Benefits include ease of linking from data to license, and finding information based on its license. DLM was developed before a suitable alternative was available; [liblicense](http://wiki.creativecommons.org/Liblicense "liblicense") now provides a similar functionality in C. The team developing DLM is working with CC's tech team for collaboration, and initial indications are that a dedicated Java tool may prove very useful.
+
+---
+pub_date: 2008-12-12

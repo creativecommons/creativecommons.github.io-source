@@ -1,0 +1,30 @@
+title: Licensing on the Gnome Desktop
+---
+categories:
+Interns
+liblicense
+---
+author: tannewt
+---
+body:
+
+A few days ago we released version 0.3 of liblicense. This version focused on bringing liblicense onto the desktop and improvements to make that a satisfying experience. The primary things we added to integrate into Gnome were a generic GTK license chooser widget, default license chooser, and nautilus extension. These things combine to demonstrate the power of licensing on the desktop. Additionally, we added optional sqlite3 cache support to speed up the **get_licenses** () function primarily. Here is a run through of the changes.
+
+The GTK license widget is used extensively throughout the integration. The widget provides an interface to the license choosing functions in liblicense. A user selects a license by toggling various attributes.
+
+![GTK Widget in Default Chooser](ll_default_1.png)
+
+This is the default license chooser. The GTK widget is in the frame above the buttons. The widget provides **get_license** and **set_license** which in this case is used to set the default license for the system. Ideally, the default system license would be used by applications when they embed license data upon save. However, that is ideal and not implemented yet.
+
+The default license is used in the nautilus extension. The default license is used in the file properties license tab whenever a file doesn't have a license set. The properties tab also utilizes the GTK widget. Once the user selects a license for the file(s) and closes the dialog the data is written to the files using the liblicense io modules. These are C modules which embed and extract license data in particular file formats. Having numerous modules provides decent coverage of file formats. Currently, if Exempi support is enabled, all files can be handled by creating an XMP sidecar file in the absence of any other means of license storage. We've also considered other means of license association but see embedding as the ideal option. Here is a screenshot from nautilus.
+
+![Nautilus File Properties](ll_nautilus_scaled.png)
+
+The second aspect of the nautilus integration is license loading upon folder open and resulting emblems. All the extension does is reads the license from every file nautilus loads and tags Creative Common's licensed files with the CC logo and non-CC licensed works with our license icon. Here is a screenshot of the emblems.
+
+![Nautilus CC emblems](ll_nautilus_emblem_scaled.png)
+
+Thats about it. We'd love feedback before our next release (0.4). On the CC wiki we have a [running list of things to do](http://wiki.creativecommons.org/Liblicense_04_release_todo "0.4 release to do"). You can get liblicense 0.3 from the [cctools download page](https://sourceforge.net/project/showfiles.php?group_id=80503&package_id=238700 "liblicense download") The liblicense home is also on the CC wiki available [here](http://www.creativecommons.org/project/Liblicense "liblicense project page"). Its currently available in source packages, rpms and ebuilds and will be available in debs by the end of today. Lastly, there is a [video of liblicense in action](http://www.youtube.com/watch?v=L91vjVurtkg "liblicense Video") on youtube.
+
+---
+pub_date: 2007-08-03

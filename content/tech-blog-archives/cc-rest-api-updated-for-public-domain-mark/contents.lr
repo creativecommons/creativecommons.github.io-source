@@ -1,0 +1,18 @@
+title: CC REST API Updated for Public Domain Mark
+---
+categories:
+api
+sanity
+---
+author: john
+---
+body:
+
+This morning, the [Creative Commons REST API](http://api.creativecommons.org/docs/) was updated to include support for the [Public Domain Mark](http://creativecommons.org/weblog/entry/23830) and to deprecate the issuing of the retired [Public Domain Certification and Dedication](http://creativecommons.org/licenses/publicdomain/1.0/). We have also added a new element in license responses, that denotes whether or not the issued license has been deprecated by Creative Commons. These changes affect all versions of the REST API, excluding 1.0.
+
+Over the past year, there has been a collaborative effort by the CC Tech team to perform a "[sanity overhaul](http://labs.creativecommons.org/2009/12/18/understanding-the-state-of-sanity-via-whiteboards-and-ascii-art/)" on the tools and libraries that much of the CC Tech infrastructure relies on. Among the projects to be overhauled, there was the CC REST API, and it was trailing all of our other services in terms of currentness and ease of release iteration. The CC REST API was in need of a complete re-engineering effort so that it could be maintained and supported at the same level as our other newly-overhauled projects. We're glad to announce that the reworking of the REST API has been a success and our focus on refactoring over new features can now come to a close.
+
+To get started using the CC REST API in your own projects, consult the [development version documentation](http://api.creativecommons.org/docs/readme_dev.html) or the [1.5 version documentation](http://api.creativecommons.org/docs/readme_15.html) if your software is ready for production. If you have any issues, feature requests, or questions about the REST API, then feel free to send a message to the [cc-devel mailing list](http://lists.ibiblio.org/mailman/listinfo/cc-devel) with your questions. To file a bug report with the REST API, please submit your issue to the API project in our [roundup bug tracker](http://code.creativecommons.org/issues/).
+
+---
+pub_date: 2011-01-13

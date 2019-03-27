@@ -1,0 +1,31 @@
+title: OpenOffice.org Add-in Updates - GSoC 2009
+---
+categories:
+Add-In
+OpenOffice
+summer
+---
+author: nimal
+---
+body:
+
+I've been working on the GSoC 2009 project, where I'm working on certain updates to the existing Creative Commons Add-in for OpenOffice.org. This project is mentored by [Nathan Yergler](http://creativecommons.org/about/people/#31).
+
+The main goals for this project is to provide the following updates to the existing plugin.
+
+  * Update the codebase to the OOo 3 SDK
+  * The license selection UI could be refined to provide help around what each option means (”what is Share Alike”).
+  * Display license information when opening CC licensed documents
+  * Internationalization – prepare the code for translation and write the scripts to integrate PO files prepared by translators
+  * Support for OOo Draw
+  * Add support for CC0
+  * Make a release incorporating Flickr Image Re-Use for OpenOffice.org.
+
+
+
+As there are many distinct tasks, I'm working on complete the most I can. I have been struggling a bit in the past couple of weeks with my progress, but I'm now bouncing back and coming back to track.
+
+I hope I'll be able to present the CC community with an updated version of the Add-in at the end of the project completion.
+
+---
+pub_date: 2009-07-06

@@ -1,0 +1,60 @@
+title: Indexing License Metadata in Tracker, Week 1
+---
+categories:
+embedding
+metadata
+rdfa
+summer
+xmp
+---
+author: jakin
+---
+body:
+
+Week 1 of Google Summer of Code is complete and already I'm seeing much progress. There's a mess of formats to embed licenses into and a mess of ways to embed them. My first task has been straightening out where licenses are embedded in each format and how exactly to go about extracting them. Here's where I'm at:
+
+**Format** | **Form of Metadata** | **Location of Metadata** | **Extraction with Tracker** | **Test content**  
+---|---|---|---|---  
+MP3 | 
+
+  * XMP
+  * Native id3 tags
+
+| 
+
+  * For id3v24, the PRIV,XMP field
+  * WCOP tag
+
+| Extracting MP3 tags has moved from an ID3 parser to handing off the work to GStreamer/MPlayer/Totem. As far as I can tell, this prevents me from extracting the XMP. | XMP embedded with Exempi  
+PDF | XMP | metadata field | Extend the current PDF extractor (which uses Poppler) to read the metadata field. However reading the metadata field isn't wrapped in Poppler's glib bindings, but I have written and submitted a patch. | XMP embedded with Exempi  
+OGG | 
+
+  * XMP
+  * Native comment field
+
+| 
+
+  * XMP comment field
+  * LICENSE comment field
+
+| Extend the GStreamer extractor to check for the presence of an XMP comment field. GStreamer places this within the EXTENDED_COMMENTS tag (requires GStreamer 0.10.10). | XMP embedded with vorbiscomment  
+JPEG | XMP | Exif XML Packet field | Extend the Imagemagick extractor, using 'convert file.jpg xmp:-' to read XMP | XMP embedded with Exempi  
+PNG | XMP | iTXt, XML:com:adobe:xmp field | Extend the PNG extractor, adding a check for XML:com:adobe:xmp. (For backwards compatibility, the ability to read iTXt in libpng is disabled by default until version 1.3.) | XMP embedded with Exempi  
+HTML | RDFa | &lt;a rel="license" href="..."&gt;&lt;/a&gt; | Write a new HTML extractor, using libxml2, and scan for RDFa | Various actual sites, including creativecommons.org  
+SVG | RDF | /svg/metadata/rdf | I could specifically parse the XML, checking for the RDF schema used by Inkscape. Should I check for XMP also??? | Inkscape  
+Any XML | XMP | Wherever valid | Write a generic XML extractor (and/or extractor for each particular format), scanning with libxml2 |   
+OpenOffice.org (OASIS) | OO.org CC License Add-In SoC Project is working on the spec | OO.org Add-In  
+MS Office | DocumentSummaryInformation Infile, CreativeCommons_LicenseURL property | Extend existing msoffice extractor | [MSOffice Add-in](http://www.microsoft.com/downloads/details.aspx?FamilyID=113b53dd-1cc0-4fbe-9e1d-b91d07c76504&displaylang=en)  
+  
+If this is all well and good, I'd like to help update the CC Wiki with updated embedding specifications.
+
+As far as coding goes, I wrote the code for Tracker to check for and extract metadata from XMP sidecar files. XMP is parsed by Hubert's XMP library. The timing of Adobe's release of their XMP Toolkit and Hubert subsequently release of Exempi 1.99.x, have been an early boon to the project. The 'license' tag in the CC namespace is the only metadata extracted at the moment.
+
+I've also been hacking the extractors of the above list of formats to determine the feasibility and processes of extracting license metadata from each.
+
+Where I stand now is that feedback on the above would be much appreciated and if all is well I can get the XMP sidecar code I have pushed into Tracker's Subversion repository soon.
+
+Happy hacking, indeed.
+
+---
+pub_date: 2007-06-12

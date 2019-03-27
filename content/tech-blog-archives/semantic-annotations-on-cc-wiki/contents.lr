@@ -1,0 +1,19 @@
+title: Semantic Annotations on CC Wiki
+---
+categories:
+Interns
+mediawiki
+semantic
+---
+author: tpkennes
+---
+body:
+
+We have just implemented [Semantic MediaWiki](http://wiki.ontoworld.org/index.php/Semantic_MediaWiki) on our wiki. SMW allows additionnal markup into the wiki-text and improve the overall quality and consistency of the wiki. It may appear to make things more complicated but it actually makes easier for users to find more information. Using SMW's own inline querying tools, a [page](http://wiki.creativecommons.org/Content_Directories#Video) could then be created that lists almost everything you want.
+
+When you add contents as for now, please use semantic annotations. We have created special pages for you that will help you to easily do that.  
+At the moment, you can find instructions for [Books](http://wiki.creativecommons.org/Template:Books), [Content Curators](http://wiki.creativecommons.org/Template:ContentDirectory) and [Content Registry](http://wiki.creativecommons.org/Template:ContentRegistry).  
+Do not hesitate also to use our forms, there are much more easier.
+
+---
+pub_date: 2007-08-09

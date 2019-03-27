@@ -1,0 +1,36 @@
+title: "Summer of Code Project: â€œOpenOffice.org Writer Add-in for Publishing CC
+---
+categories:
+Add-In
+OpenOffice
+software
+summer
+---
+author: ksiomelo
+---
+body:
+
+Hi there!
+
+I also was selected for the Google Summer of Code with this project mentored by Nathan R. Yergler. An introduction about the project:
+
+> The goal of this project is to provide a tool for supporting the process of licensing documents. [Microsoft Office has a Creative Commons plug-in](http://wiki.creativecommons.org/Microsoft_Office_Addin) to put licenses metadata in its documents. I propose a similar [Creative Commons add-in for OpenOffice.org](http://wiki.creativecommons.org/OpenOfficeOrg_Addin) that would allow license information to be embedded in OpenOffice.org documents. Despite being a requested feature for OpenOffice.org for more than two years, nothing has materialized. Having a simple way to add Creative Commons licenses will help to spread those licenses much more broadly. Making licenses available as Autotext for example, is one way this can be reached.
+
+At first moment, I will concentrate on OOo Writer plugin, but of course, I have plans to extend this functionality to Calc and Impress as well. Get the full proposal [here](http://www.cin.ufpe.br/~cam2/soc2007proposal.txt). If you have any suggestion, please let me know.
+
+Let me introduce myself. My name is Cassio Melo, I'm 22 old and I live in Recife, Brazil. I'm an undergraduate at the same university of Alan Kelon ([Informatics Center](http://www.cin.ufpe.br), [Federal University of Pernambuco](http://www.ufpe.br)). 
+
+Beyond my passion for Computer Science, I also have interests in Business and Economy. [Eric Drexler](http://www.e-drexler.com/p/idx04/00/0404drexlerBioCV.html) and [Clayton Christensen](http://www.claytonchristensen.com/) are my preferred authors.
+
+I did work for a summer in my undergraduate course at Federal University of Pernambuco with the [SimPLe](https://simple.dev.java.net/), which is an open source software factory using Product Line approach for action games domain.
+
+This year, I developed an OOo plugin to replace the existing OOo notes. Public distribution will begin in the near future.
+
+Additionally I have a year of industrial experience, having worked as a software engineer on [C.E.S.A.R](http://www.cesar.org.br), developing a [tool](http://wdbc2006.cesar.org.br/wp-content/uploads/23959.pdf) (codenamed BART project) for software components search and retrieval. We also have developed plugins for Eclipse, MS Word and OpenOffice.org for supporting artifacts searching. As a member of the [R.i.S.E](http://www.rise.com.br) group, I've worked on algorithms for ranking software components.
+
+You can view my full profile [here](http://www.cin.ufpe.br/~cam2/info/english).
+
+Finally, I would like to share the thanks with my friends. We hope to bring new energy and enthusiasm to CC projects. :)
+
+---
+pub_date: 2007-04-14

@@ -1,0 +1,30 @@
+title: XMP Toolkit 4.1.1 Officially Released under BSD License
+---
+categories:
+adobe
+bsd
+gunarpenikis
+license
+opensource
+software
+standard
+xmp
+---
+author: rejon
+---
+body:
+
+That's right, [Gunar from Adobe](http://blogs.adobe.com/gunar/), [blogged it today](http://blogs.adobe.com/gunar/2007/05/xmp_411_sdk_available_under_bsd_license.html) and sent me an email! This is super great news that I want to blockquote:
+
+> The [4.1.1 XMP Toolkit (SDK)](http://www.adobe.com/devnet/xmp/) has been finalized and moved to the Adobe's Developers Center. The 4.1 Toolkit is now available under the [BSD license](http://www.adobe.com/devnet/xmp/sdk/eula.html) for open source developers.
+> 
+> Although the previous Adobe open source license is quite open, we decided that is was best to use a standard open source license that is respected in the open source community. [Opensource.org](http://opensource.org/) was invaluable in reviewing the many different open source licenses that are available.
+> 
+> The 4.1.1 XMP release is significant because it include the source code for developers to read, write and update XMP in popular image, document and video file formats including JPEG, PSD, TIFF, AVI, WAV, MPEG, MP3, MOV, INDD, PS, EPS and PNG.
+> 
+> Technorati Tags: [Adobe](http://www.technorati.com/tag/Adobe), [XMP](http://www.technorati.com/tag/XMP)
+
+Also, [please help digg this](http://digg.com/software/Adobe_Releases_XMP_Toolkit_4_1_1_under_BSD_License/blog) so more can find out about it!
+
+---
+pub_date: 2007-05-14

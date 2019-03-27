@@ -1,0 +1,33 @@
+title: CC-Logger [GSoC 2008]
+---
+categories:
+Metrics
+summer
+---
+author: ankitg
+---
+body:
+
+Before I dive-in on what CC-Logger is all about, a small intro to who I am:
+
+My name is [Ankit Guglani](http://ankitguglani.wordpress.com "Ankt Guglani"), and I am an undergrad at Singapore Management University [[link](http://sis.smu.edu.sg "SMU")]. I has been working on a research project called 'CC-Monitor' Since 2006 under the supervision of prof. Giorgos Cheliotis. This was my introduction to Creative Commons, I have been working on Collecting and Compiling CC-Metrics since.
+
+This summer is again blessed with the [Google, Summer of Code [GSoC]](http://code.google.com/opensource/gsoc/2008/faqs.html "Google Summer of Code - FAQ"). Yes, just like last year, Creative Commons [CC] is one of the mentoring organizations yet again. This time around there are 4 active CC-GSoC Projects; Here's what my GSoC project with CC [named CC-Logger] is all about.
+
+The project aims to uncover the hidden metrics in the CC Logs. So I'll take look at the following logs (which are tucked away in an Amazon S3 account):
+
+1) logs for creativecommons.org/license  
+2) logs for i.creativecommons.org and creativecommons.org/images/licenses  
+3) logs of creativecommons.org/licenses  
+4) logs for search.creativecommons.org
+
+Looking at these I hope to find additional information about CC usage such as switching patterns and click-through rates to the deeds, and then analyze and interpret these results. I also hope to come up with some indices / metrics that can be used as indicative predictors for trends.
+
+I know, you're thinking it's summer of CODE, and this is all analysis, where is the code? Once I am done with coming up with metrics and indices, I get to code to automate the calculation (and possibly the web-publishing of the results) for all the future logs.
+
+The fun part about this project is, the logs I need to analyze right now, are over 100 GB in size. I am so looking forward to having a local copy of that!
+
+That's all for now, thanks to prof. Giorgos for getting me into CC, Mike for suggesting looking at the logs and of course Asheesh, for the mentoring. (-:
+
+---
+pub_date: 2008-06-01

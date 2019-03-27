@@ -1,0 +1,30 @@
+title: See also roundup
+---
+categories:
+drm
+LRMI
+metadata
+microformats
+people
+provenance
+rdfa
+schema.org
+---
+author: ml
+---
+body:
+
+The Learning Resource Metadata Initiative specification (which Creative Commons is coordinating) has entered its [final public commenting period](https://creativecommons.org/weblog/entry/31422). Please look if you're at all interested in education metadata and/or how efforts spurred by schema.org (which LRMI is) will shape up.
+
+The W3C published drafts recently that ought be of great interest to the Creative Commons technology community: a [family of documents regarding provenance](http://www.w3.org/blog/SW/2012/01/11/feedback-welcome-an-overview-of-the-provenance-prov-family-of-specs/) and a [guide to using microdata, microformats, and RDFa in HTML](http://www.w3.org/blog/SW/2012/01/12/drafts-published-by-the-w3c-html-data-task-force-html-data-guide-and-microdata-to-rdf-transform/). I mentioned these on my personal blog [here](http://gondwanaland.com/mlog/2012/01/12/penumbra-of-provenance/) and [here](http://gondwanaland.com/mlog/2012/01/12/html-data-guide/).
+
+Speaking of things mentioned on my personal blog, a couple days ago I posted [some analysis of how people are deploying CC related metadata](http://gondwanaland.com/mlog/2012/01/23/attribution-crawl/) based on a structured data extracted by the [Web Data Commons](http://page.mi.fu-berlin.de/muehleis/ccrdf/) project from a sample of the [Common Crawl](http://commoncrawl.org/) corpus. Earlier this month I posted a marginally technical [explanation of using CSS text overlays to provide attribution](http://gondwanaland.com/mlog/2012/01/08/css-text-overlay-attribution/) and a [brief historical overview of 'open hardware licensing'](http://gondwanaland.com/mlog/2012/01/10/open-hardware-licenses-history/), something which the CC technology team hasn't been involved in, but is vaguely labs-ish, and needs deep technical attention.
+
+Other things needing deep technical attention: [how CC addresses Digital Restrictions Management in version 4.0 of its licenses](http://wiki.creativecommons.org/4.0/Technical_protection_measures) is being discussed. We don't know enough about the technical details of [various restricted systems](http://lists.ibiblio.org/pipermail/cc-licenses/2012-January/006663.html) (see last sentence) that CC licensed works are being distributed on/to/with every day, and ought to. Another needs-technical-attention issue is ['functional content'](http://wiki.creativecommons.org/4.0/Games_3d_printing_and_functional_content) for example in games and [3D printing](http://creativecommons.org/weblog/entry/30605). And we're still [looking for a new CTO](https://creativecommons.org/weblog/entry/31227).
+
+Finally, Jonathan Rees just posted on [how to apply CC0 to an ontology](https://odontomachus.wordpress.com/2012/01/25/how-to-apply-a-cc0-waiver-to-an-ontology/). You should [subscribe to Jonathan's blog](https://odontomachus.wordpress.com/) as almost every post is of great interest if you've read this far.
+
+**Addendum:** It seems remiss to not mention SOPA, so I'm adding it. **Thanks to the technology community** for rising up against this bad policy. CC promoted the campaign on its main website through banners and a number [of](https://creativecommons.org/weblog/entry/30375) [blog](http://creativecommons.org/weblog/entry/30836) [posts](http://creativecommons.org/weblog/entry/31286). Don't forget that SOPA/PIPA may well rise again, the so-called [Research Works Act](https://creativecommons.org/weblog/entry/31184) is very different but is motivated by the same thinking, and ACTA threatens globally. Keep it up! In the long term, is not building a healthy commons (and thus technology needed to facilitate building a healthy commons) a big part of the solution? On that, see [yet another post on my personal blog...](http://gondwanaland.com/mlog/2011/12/12/anti-sopa-commons/)
+
+---
+pub_date: 2012-01-25

@@ -1,0 +1,19 @@
+title: cc.license in alpha
+---
+categories:
+techblog
+---
+author: frank
+---
+body:
+
+Work on cc.license and cc.api is going swimmingly well. I think it's about time I share what I've been doing for the past few weeks.
+
+Creative Commons provides a [web api](http://api.creativecommons.org/docs/) to make license information available to applications. Per [Nathan Yergler](http://creativecommons.org/about/people/#31)'s aptly-named Gradually Increasing Sanity Initiative, my task this summer has been to reimplement the web api using [Pylons](http://pylonshq.com/) (the cc.api project) so that CC has fewer server stacks to maintain. The huge dependency of this project is to implement a python layer over license.rdf (the one unified place where all license data exists, in a happy RDF format), which shall be called cc.license. Indeed, the development of cc.api and cc.license have been gloriously intertwined, with the cc.license API being shaped by the needs of cc.api.
+
+Today all the basic pieces of cc.api have been completed. All that's left is handling those annoying corner cases and making the test suite pass fully (12 more tests to go :). As such, it seems only right to declare that cc.license is officially in alpha, since its API has been relatively stable for some time now. Trying it out is just a '[git clone](http://code.creativecommons.org/)' away.
+
+Within the next two weeks I'll be refining and fixing cc.api and cc.license, and working on packaging cc.license into an egg so that all python developers can revel in the joy of CC licensing.
+
+---
+pub_date: 2008-07-24

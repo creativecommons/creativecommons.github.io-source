@@ -1,0 +1,30 @@
+title: More Summer of Code -- Liblicense, Tracker, Beagle,...
+---
+categories:
+beagle
+embedding
+license
+metadata
+summer
+xmp
+---
+author: jakin
+---
+body:
+
+Let's see, where am I at.
+
+Code in GStreamer to read the license URI is getting pushed through. Now there's [Bug #451939](http://bugzilla.gnome.org/show_bug.cgi?id=451939) that updates the GStreamer API with a license and copyright uri tag. When this all gets pushed through, access to the license URI will be available through GST_TAG_LICENSE_URI and/or GST_TAG_COPYRIGHT_URI.
+
+In Tracker, I've written code to handle generic indexing of embedded/sidecar XMP. Previously it just extracted the license, and now any elements can be pulled out and indexed. Currently, Dublin Core and CC elements are indexed. The code is still local, and yet to be committed.
+
+In another direction, I've been lending a hand to [liblicense](http://wiki.creativecommons.org/Liblicense). As mentioned in Scott's previous post, I've got two i/o modules ready. Both are based on [Exempi](http://www.figuiere.net/hub/blog/?Exempi). One reads/writes license metadata directly into Quicktime, AVI, PDF, PNG, TIFF, and JPEG formats. The other read/writes sidecar XMP for any format. There's more to come.
+
+I also want to look into a liblicense config module and frontend for KDE4. I figure I can put my KDE programming experience to good use.
+
+And in yet another direction, I'm looking into indexing licenses in Beagle. After browsing the code, I can adapt most of what I learned about license metadata while working with Tracker to extending Beagle. I even notice that their image formats filters already support extracting XMP, so adding the extra license checks is straightforward. A preliminary patch and request for feedback has been posted on their mailing list.
+
+All in all, I've done some work here and there, for this project and that...
+
+---
+pub_date: 2007-06-30

@@ -1,0 +1,32 @@
+title: More ccREL, licensing Science, and liblicense to the rescue
+---
+categories:
+techsummit
+---
+author: greg
+---
+body:
+
+_  
+![](2589954195_bb6f509717.jpg)_
+
+(Joi Ito, [CC:BY](http://flickr.com/photos/joi/2589954195/))
+
+[Nathan Yergler](http://creativecommons.org/about/people#31) and [Asheesh Laroia](http://creativecommons.org/about/people#83)
+
+The panelists discussed current technologies being worked upon by Creative Commons and Science Commons.
+
+Nathan started out with a presentation of [ccREL](http://creativecommons.org/projects/CcREL) examples including integration with Magnatune content and an easy to use ccREL generator for content producers. This generator will allow people to input data about what license they are using, how they want it attributed, using what name and what link, and any other CC+ information they want.
+
+[John Wilbanks](http://creativecommons.org/about/people/#34)
+
+John presented on the larger initiatives of [ScienceCommons](http://sciencecommons.org/) including trying to inform users on how to license certain work to enable the greatest use. For example, when providing access to scientific databases they recommond a [CC0](http://creativecommons.org/projects/CC0) license with Social Norms attached. This will enable use of this data for a variety of projects and possibly help to rectify the fact that we are able to share and use more information on what hotel we are staying at than scientific reasearch that could help change the world.
+
+Asheesh, with the help of past Creative Commons interns and others, developed a software license which allows software engineers to add "license support" to their applications, [liblicense](http://wiki.creativecommons.org/Liblicense). This will allow a music player to be able to know what license an mp3/ogg/aac file under. Along with just being able to see what license a file is using the library will allow content creators to embed their choice of license information into files at the time of creation.
+
+![](2590795748_48222821e5.jpg)
+
+(Joi Ito, [CC:BY](http://flickr.com/photos/joi/2590795748/))
+
+---
+pub_date: 2008-06-18

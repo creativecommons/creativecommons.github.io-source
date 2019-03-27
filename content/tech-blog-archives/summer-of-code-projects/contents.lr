@@ -1,0 +1,21 @@
+title: Summer of Code Projects
+---
+categories:
+summer
+---
+author: nathan
+---
+body:
+
+We're very happy to have five students working on Creative Commons and Science Commons projects in conjunction with this year's Google "Summer of Code":http://code.google.com/soc. Briefly, they are:
+
+* Cassio de Albuquerque Melo, working on a plug-in for OpenOffice.org to "support CC licensing":http://wiki.creativecommons.org/OpenOfficeOrg_Addin  
+* Jason Kivlighn, working on adding licensing support to "Tracker":http://www.gnome.org/projects/tracker/  
+* Alan Kelon Oliveira de Moraes, working on making "Nutch":http://lucene.apache.org/nutch/ "RDFa":http://rdfa.info aware  
+* Taylor R. Campbell, working on RDF Tools in Scheme (Science Commons, they'll have to explain)  
+* Matthias Samwald, working on, well, something Science-y and Semantic Web-y... again, they'll have to explain
+
+Congratulations to the students selected, and thanks to everyone who submitted applications. There were lots of really good applications, which is incredibly encouraging. I'm really excited to see where the projects go this summer, and we hope to have the students blogging about their progress here.
+
+---
+pub_date: 2007-04-12

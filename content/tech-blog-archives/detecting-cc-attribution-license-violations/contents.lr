@@ -1,0 +1,17 @@
+title: Detecting CC Attribution License Violations with Flickr Images on the Web
+---
+categories:
+techsummit
+---
+author: frank
+---
+body:
+
+Oshani Seneviratne, a student at MIT, presented her work on "Detecting Creative Commons Attribution License Violations with Flickr Images on the World Wide Web," which she completed as a summer project. She summarized her motivation, the use of CC licenses in Flickr, system design, and future directions for the project.
+
+CC provides free copyright licenses but does not provide a means of detecting violations of the terms of these licenses. For instance, someone could use a CC-BY photo on their home page without providing attribution. Oshani's project demonstrates a means of searching Flickr to detect violations like these. The implementation uses the Flickr API to find images and license data, and detect whether or not attribution is given on the web page where the image is re-used. One limitations is that the validator needs to know the image URI in order to search Flickr.
+
+Future directions include extending this project to other licenses, determining the feasibility of looking for non-commercial use violations, and checking for the Share-Alike condition.
+
+---
+pub_date: 2008-12-12

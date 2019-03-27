@@ -1,0 +1,27 @@
+title: Summer Internship : email notification for Semantic Media Wiki
+---
+categories:
+---
+author: steren
+---
+body:
+
+First I would like to introduce myself. I'm Steren Giannini, a French student from [Ecole Centrale de Lyon](http://www.ec-lyon.fr/), a college of general engeneering. I'm working as a tech intern at Creative Commons SF. It's for me the first time I cross the Atlantic, so this stay in San Francisco is a real adventure. I'm very proud to do my part in the CC revolution.
+
+During my school years, I created websites for companies (to make some spending money ;) ) and I recently worked on [Inkscape](http://www.inkscape.org/) : I've been enhancing the [Live Path Effect system](http://wiki.inkscape.org/wiki/index.php/ReleaseNotes047#Live_path_effects).
+
+The first goal of my project at CC is to improve the internal task and project tracking system. It uses [Semantic MediaWiki](http://semantic-mediawiki.org/). Today tasks can be created and assigned to users. What I have to do is to add email notification to the system.
+
+This means :
+
+  * send email to the assigned users when a task changes
+  * send "reminder" emails to assigned users when due dates are approaching.
+
+
+
+So yesterday I started by reading some documentation about Semantic Web in general, RDF specification, MediaWiki and Semantic MediaWiki. Then I installed MediaWiki on my localhost in order to have a closer look to the code.
+
+My first goal is to get used to the existing system before codding something.
+
+---
+pub_date: 2008-06-10

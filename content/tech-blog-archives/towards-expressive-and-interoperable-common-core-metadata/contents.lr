@@ -1,0 +1,30 @@
+title: Toward expressive and interoperable Common Core metadata
+---
+categories:
+metadata
+standards
+---
+author: akozak
+---
+body:
+
+It's been suggested with increasing frequency that an educational resource complying (or not) with the new [Common Core standards](http://www.corestandards.org/) would be the kind of thing that could be published as metadata on the web. This metadata could provide a platform upon which tools could be built. For example, an educational search tool could would allow anyone to search for learning objects that satisfy one or more Common Core standards.
+
+The [CCSSO](http://www.ccsso.org/), who published and stewards the Common Core standards through adoption, have not yet proposed a format for this metadata. In that vacuum, others are proposing their own solutions.
+
+Karen Fasimpaur (who is awesome and was [interviewed](http://creativecommons.org/weblog/entry/21786) for a CC Talks With feature) [ recently published](http://www.k12opened.com/blog/archives/380) a set of tags to identify the Common Core standards. These tags are strings of text that uniquely identify the standards. For example, the [College and Career Readiness Anchor Standards for Reading, Key Ideas and Details, Standard 1](http://www.k12opened.com/ccstd/ela-k-5-ccr-reading.html) is identified as "cc-k-5e-r-ccr-1".
+
+The goal, it seems, is to publish unique identifiers for the Common Core standards so that those unique identifiers could be attached to objects on the web as metadata, identifying which educational standards those objects meet.
+
+We applaud efforts to identify when educational resources meet educational standards, and projects to catalog or tag resources with that data. This is one step forward in providing human-readable tags that encode that data, much like the string "by-sa" identifies the [Creative Commons Attribution ShareAlike](http://creativecommons.org/licenses/by-sa/3.0/) license.
+
+The next step would be to provide stable URIs as identifiers for those tags such that machines, in addition to humans, can parse that metadata. These URIs could be maintained by authoritative organizations such as the CCSSO, but that isn't technically necessary.
+
+In addition, the URIs to the Common Core standards ought to be _self-descriptive_. That is, there should be metadata about that URI discoverable within that URI. For example, the CC licenses are self-descriptive. They contain metadata about the licenses so that when someone marks up a work as CC licensed, a machine could discover facts about that license by visiting the URL. This metadata is encoded in RDFa, and can be seen by looking at the source to the [deed](http://creativecommons.org/licenses/by-sa/3.0/) or [viewing it through an RDFa distiller](http://www.w3.org/2007/08/pyRdfa/extract?uri=http%3A%2F%2Fcreativecommons.org%2Flicenses%2Fby-sa%2F3.0%2F&format=pretty-xml&warnings=false&parser=lax&space-preserve=true).
+
+A URI identifying each standard brings other benefits. When used in subject-predicate-object expressions in metadata standards like [RDFa](http://www.w3.org/TR/xhtml-rdfa-primer/#id84801), the expressive power of the identifier increases greatly. One could, for example, identify an arbitrary URI as being standards aligned and make complex statements about the standard, wheras with a human-readable tag interpretation is left to the reader. For example, you could place metadata referencing an educational resource on a "landing page" rather than the resource itself, or mark up specific blocks of text as meeting certain standards. Stable URIs to the Common Core standards, coupled with a metadata standard like RDFa, would allow for subject precision that is lacking in the K12 OpenEd metadata proposal.
+
+Efforts like K12 OpenEd's to publish Common Core standards metadata for educational resources are good progress. It gives us all a starting point that can inform future work.
+
+---
+pub_date: 2010-12-10

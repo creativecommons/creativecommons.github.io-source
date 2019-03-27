@@ -1,0 +1,31 @@
+title: RDFaCE: an RDFa-enhanced TinyMCE rich editor
+---
+categories:
+rdf
+rdfa
+wordpress
+---
+author: ml
+---
+body:
+
+For a long time -- it feels like much longer than the [RDFa Plugin for WordPress tech challenge](http://wiki.creativecommons.org/RDFa_Plugin_for_WordPress) has been on the wiki (28 months) -- the idea that there should be such a thing has been around. I recall multiple Summer of Code applications proposing to tackle the problem. However, it is a really hard UI problem.
+
+I'm really happy to see the [announcement](http://blog.aksw.org/2011/rdface-put-an-smile-on-the-face-of-semantic-content-authoring/) of [RDFaCE](http://aksw.org/Projects/RDFaCE), which does most of the hard work.
+
+Without reading any documentation or watching their [screencast](http://www.youtube.com/watch?v=9uVGbZIWYto) (still haven't watched it, no idea if it is any good!) I was able to add a cc:attributionName annotation specific to the image in their [demo](http://rdface.aksw.org/test/tinymce/examples/rdfaDemo.html) on my first try:
+
+  * select the photographer name, insert cc:attributionName annotation with literal value already in the text. RDFaCE seems to already know the correct cc: namespace mapping.
+  * select content around photo, set subject to photo URL
+  * verify that triples produced are correct
+
+
+
+Granted I more or less know what I'm doing. But, so do lots of other people. Contrary to some impressions, annotating stuff on the web with name-value pairs ("stuff" is the subject in the "triple") is hardly brain-twisting.
+
+I look forward to seeing RDFaCE bundled in a WordPress plugin with some awareness of the WordPress media manager, and using on this very blog.
+
+[TinyMCE](http://en.wikipedia.org/wiki/TinyMCE) is the free software rich text editor used in lots of projects in addition to WordPress, so this is a great step forward!
+
+---
+pub_date: 2011-07-09

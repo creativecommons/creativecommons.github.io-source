@@ -1,0 +1,32 @@
+title: Destination: Sanity
+---
+categories:
+internal
+licenses
+sanity
+tools
+---
+author: nathan
+---
+body:
+
+Last week [Kinkade](http://creativecommons.org/about/people#75) asked me for a brief overview of how the [license engine](http://code.creativecommons.org/viewsvn/cc.engine), [web services](http://api.creativecommons.org) and other [bits](http://code.creativecommons.org/viewsvn/license_xsl) of [code](http://code.creativecommons.org/viewsvn/licenses.rdf) all fit together to create the joy that is [creativecommons.org](http://creativecommons.org). "Sure," I thought; "that's simple!"
+
+Er, maybe not. Fourty-five minutes, five marker colors and multiple digressions later, I had the following diagram of life as it is today.
+
+[![The Present](2347987536_5515b1f963.jpg)](http://www.flickr.com/photos/nathan_y/2347987536/ "The Present by Nathan Y, on Flickr")
+
+"The Present", by [Nathan Y.](http://flickr.com/photos/nathan_y); [CC BY-SA 2.0](http://creativecommons.org/licenses/by-sa/2.0/)
+
+Life sucks.
+
+[Asheesh](http://creativecommons.org/about/people#83) joined us and we started talking about how we can make this better. The above, while eminently sucky, has grown up during my time at Creative Commons. All those decisions made sense at the time, but in aggregate we've got lots of duplicated code, a branch of code named the `gradually-increasing-sanity-branch` which doesn't (I take the blame for that one), and plenty of unnecessary complexity. Half an hour later, we had mapped out **The Glorious Future®** :
+
+[![The Glorious Future](2347986388_dd1c466a5e.jpg)](http://www.flickr.com/photos/nathan_y/2347986388/ "The Glorious Future by Nathan Y, on Flickr")
+
+"The Glorious Future", by [Nathan Y.](http://flickr.com/photos/nathan_y); [CC BY-SA 2.0](http://creativecommons.org/licenses/by-sa/2.0/)
+
+A little simpler, huh? And the "future" diagram shows all the functionality of the present, _plus_ three packages not displayed on the original diagram. Our immediate goal in moving in this direction is the completion of `cc.license` (labeled as "cc.licenze" in the diagrams to distinguish it from the existing implementation) which will replace the existing XSLT processing using for issuing licenses and wraps the RDF (which is the canonical representation of the licenses anyway). We'll also manage to dramatically reduce the number of `svn:externals` we use, which is good since we're moving [away](http://git.or.cz/) from [Subversion](http://subversion.tigris.org) for some projects. My goal is to get this upgrade done as soon as possible so we can focus on things that are actually interesting instead of our own infrastructure.
+
+---
+pub_date: 2008-03-27

@@ -1,0 +1,26 @@
+title: SemanticEditTime
+---
+categories:
+---
+author: steren
+---
+body:
+
+My last task concerning [Semantic Media Wiki](http://semantic-mediawiki.org) was to create an extension which adds automatically the " _Revision Time_ " and the _"Revision User_ " of a wiki page in the semantic data.
+
+You can now use these data to sort querries, for example :
+    
+    
+    { {#ask: [[Category:Task]]
+    | sort=Revision time
+    | order=descending
+    | limit=3
+    } }
+    
+
+It's currently used in the [Casestudies page ](http://wiki.creativecommons.org/Casestudies)of the CC wiki.
+
+You'll find the code and the instructions in the [Creative Commons Git repository](http://code.creativecommons.org/viewgit?r=SemanticEditTime.git). This small piece of code is more a hack than a real extension. The semantic properties are supposed to be rewritten in the next version of Semantic MediaWiki, which will enable much easier user-defined special properties.
+
+---
+pub_date: 2008-07-14

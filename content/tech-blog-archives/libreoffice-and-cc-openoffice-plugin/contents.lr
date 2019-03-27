@@ -1,0 +1,26 @@
+title: LibreOffice and CC OpenOffice Plugin: Good to go
+---
+categories:
+Add-In
+OpenOffice
+---
+author: cwebber
+---
+body:
+
+Over the summer, our GSOC student Akila Wajirasena gave a [wonderful overhaul to our OpenOffice plugin](http://labs.creativecommons.org/2010/08/20/creative-commons-openoffice-plug-in-version-0-7-0-released/) with many improvements, including a [slick new user interface, support for public domain tools,](http://labs.creativecommons.org/2010/07/03/creative-commons-open-office-plugin-gets-a-new-ui-and-supports-for-public-domain-tools/) and [many other cool things](http://labs.creativecommons.org/2010/05/20/creative-commons-open-office-plugin-here-it-is-with-some-new-features/). Recently he contacted us having looked into whether or not that plugin works with [LibreOffice](http://www.documentfoundation.org/download/), a fork of OpenOffice run by the Document Foundation, which has gathered significant interest from certain areas of the free and open source software world recently.
+
+The good news? It seems that it works just fine out of the box:
+
+[![CC LibreOffice plugin test](cc_libreoffice_plugin_test.png)](http://labs.creativecommons.org/files/2010/12/cc_libreoffice_plugin_test.png)
+
+We've only tested it on some limited systems though, so if you do have some problems, [please report them here](http://code.creativecommons.org/issues/issue738).
+
+We also included some instructions previously on how to fix an issue on GNU/Linux systems where the menu would become inaccessible, and you had to install via the command line to fix it. That seems like it may be fixed in LibreOffice.
+
+One concern though is that LibreOffice is trying to [use less amounts of Java or completely abandon Java altogether](http://lists.freedesktop.org/archives/libreoffice/2010-November/001879.html). Probably Java extensions will be supported some way in the future regardless, but it may be something to keep our eye on.
+
+Thanks to Akila again for his work not only on the plugin enhancements but also into looking into this with LibreOffice.
+
+---
+pub_date: 2010-12-08

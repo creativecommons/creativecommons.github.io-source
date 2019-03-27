@@ -1,0 +1,17 @@
+title: git-svn with svn:externals
+---
+categories:
+development
+---
+author: nathan
+---
+body:
+
+We've been slowly but surely moving projects from Subversion to git, but there are still large pieces of code that are sort of deadlocked in Subversion. We make extensive use of `svn:externals` in our repository as a way to pull in dependencies and shared code (both within our repository and from other repositories, like [zc.buildout's](http://pypi.python.org/pypi/zc.buildout) bootstrap). This means that in order to convert something like the license engine (cc.engine) we need to also convert cc.license (which uses license_xsl), license.rdf and i18n. Of course, the [API](http://api.creativecommons.org) also uses license_xsl and the main site uses license.rdf. Taking the time to move all of that wholesale isn't something we have the time or desire to do right now. It's not just converting the repository -- that's the easy part; converting the deployments and surrounding tools is the real pain.
+
+Last week I decided I wanted to use git to work on code currently in Subversion (my supporting tool chain really is that much better for git) and decided to check it out using git-svn. And once again I was burned by our use of svn:externals. So I wrote **gsc** \-- git subversion clone. You can read more details [on my blog](http://yergler.net/blog/2009/07/21/git-svn-and-svnexternals/) or find the code [on gitorious](http://gitorious.org/gsc).
+
+Incidentally, cleaning up that dependency graph is very much on our radar. I'm hoping to land work that we started last summer this fall that will remove some duplicated code and clean up the dependencies of the remaining code.
+
+---
+pub_date: 2009-07-21

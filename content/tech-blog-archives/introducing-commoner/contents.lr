@@ -1,0 +1,16 @@
+title: Introducing Commoner
+---
+categories:
+---
+author: nathan
+---
+body:
+
+Last week we launched the [Creative Commons Network](http://creativecommons.net) as part of our annual campaign. The Network is a platform for exploring digital copyright registries and has features we think will appeal to our community. Creators can register their works and add a badge to their web pages to show more information about their identity on the license deeds (for more information see [this post](http://creativecommons.org/weblog/entry/10043) on the CC blog).
+
+Like everything we do at Creative Commons, the code behind the CC Network is free. `commoner` is a [Django](http://djangoproject.com)-based Python application that runs the code behind creativecommons.net. While we don't expect someone would want to run a site **exactly** like the CC Network, we think there are plenty of opportunities for different registries that serve different communities to flourish. The enhanced deeds aren't dependent on anything in the CC infrastructure stack -- we're just consuming metadata published on the pages.
+
+You can find information on Commoner [in the wiki](http://wiki.creativecommons.org/CC_Network_Development) or the auto-generated [docs](http://code.creativecommons.org/doc/commoner/); issues can be submitted on the [CC issue tracker](http://code.creativecommons.org/issues/).
+
+---
+pub_date: 2008-10-21

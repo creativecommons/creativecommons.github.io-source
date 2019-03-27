@@ -1,0 +1,33 @@
+title: Technical case studies now on the wiki
+---
+categories:
+case
+mediawiki
+platform
+semantic
+wiki
+---
+author: akozak
+---
+body:
+
+Have you ever tried to implement CC licensing into a publishing platform? Would it have been helpful to know how other platforms have done it?
+
+I've just added a [collection](http://wiki.creativecommons.org/Special:SearchByProperty?title=Special:SearchByProperty&property=Tag&value=technical+details) of technical case studies on the CC wiki looking at how some major adopters have implemented CC. The studies look at how some major platforms have implemented CC license choosers, the license chooser partner interface, CC license marks, search by license, and license metadata.
+
+Several of the case studies are missing some more general information about the platform, so feel free to add your own content to the pages. Also, everyone is welcome to [add their own case studies](http://wiki.creativecommons.org/Case_Studies) to the CC wiki.
+
+Here is a list of new technical case studies:
+
+  * [Al Jazeera](http://wiki.creativecommons.org/Case_Studies/Al_Jazeera#Technical_Details)
+  * [Archive.org](http://wiki.creativecommons.org/Case_Studies/Archive.org#Technical_Details)
+  * [Blip.tv](http://wiki.creativecommons.org/Case_Studies/Blip.tv#Technical_Details)
+  * [Flickr](http://wiki.creativecommons.org/Case_Studies/Flickr#Technical_Details)
+  * [IssueLab](http://wiki.creativecommons.org/Case_Studies/IssueLab#Technical_Details)
+  * [Jamendo](http://wiki.creativecommons.org/Case_Studies/Jamendo#Technical_Details)
+  * [Whitehouse.gov](http://wiki.creativecommons.org/Case_Studies/Whitehouse.gov#Technical_Details)
+
+
+
+---
+pub_date: 2010-11-18

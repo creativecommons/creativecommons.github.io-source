@@ -1,0 +1,31 @@
+title: Creative Commons: Using Provenance in the Context of Sharing Creative Works
+---
+categories:
+provenance
+registry
+w3c
+---
+author: ml
+---
+body:
+
+I provided a brief non-technical writeup on Creative Commons and provenance for the [W3C Provenance Working Group](http://www.w3.org/2011/prov/wiki/Main_Page)'s Connection Task Force documenting "Communities Addressing Important Issues in Provenance".
+
+See the [writeup on the Provenance WG wiki](http://www.w3.org/2011/prov/wiki/Connection_Task_Force_Informal_Report#Creative_Commons:_Using_Provenance_in_the_Context_of_Sharing_Creative_Works_.28.2A.2A.2A.2A.29) (please suggest edits in comments below), current version follows.
+
+* * *
+
+Creative Commons Creative Commons (CC) provides licenses and public domain tools that can be used for any kind of creative works like texts, images, websites, or other media, as well as databases. CC tools are well known and used, especially in online publications. Each CC license and public domain tool is identified by a unique URL, allowing proper identification and reference of these as part of a work's provenance information.
+
+Additionally, Creative Commons provides a vocabulary to describe its tools and works licensed or marked with those tools in a machine interpretable way: The Creative Commons Rights Expression Language (CC REL). CC REL can be expressed in RDF.
+
+The provenance of assertions about a work's license or public domain status is of great important for licensors, licensees, curators, and future potential users. All CC licenses legally require certain information (attribution and license notice) be retained; even in the case of its public domain tools, retaining such information is a service to readers and in accordance with research and other norms. To the extent license and related information is not retained or cannot be trusted, users ability to find and rely upon freedoms to use such works is degraded. In many cases, the original publication location of a work will disappear (linkrot) or rights information will be removed, either unintentionally (eg template changes) or intentionally (here especially, provenance is important; CC licenses are irrevocable). In the degenerate case, a once CC-licensed work becomes just another orphan work.
+
+The core statements needed are who licensed, dedicated to the public domain, or marked as being in the public domain, which work, and when? Each of these statements have sub-statements, eg the relationship of "who" to rights in the work or knowledge about the work, and exactly what work and at what granularity?
+
+Provenance information is also necessary for discovering the uses of shared works and building new metrics of cultural relevance, scientific contribution, etc, that do not strictly require on centralized intermediaries.
+
+Finally, in CC's broader context, an emphasis on machine-assisted provenance aligns with renewed interest in copyright formalities (eg work registries), puts a work's relationship to society's conception of knowledge in a different light (compare intellectual provenance and intellectual property), and is in contrast with technical restrictions which aim to make works less useful to users rather than more.
+
+---
+pub_date: 2011-10-03

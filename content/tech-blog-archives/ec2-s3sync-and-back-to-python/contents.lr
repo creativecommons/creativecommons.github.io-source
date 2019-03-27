@@ -1,0 +1,30 @@
+title: EC2, S3Sync and back to Python.
+---
+categories:
+Metrics
+python
+summer
+---
+author: ankitg
+---
+body:
+
+So this is where we are.
+
+Now we have EC2, we have S3Sync ruby scripts on the EC2 AMI to pull the data from S3 and we have updated python scripts that read one line at a time and use Geo-IP (which was suprisingly easy to install once GCC was functional and the right versions of the C and Python modules were attained). So deployment is on full throttle and one final bug fix for generating the final results and we are done.
+
+So, now back to the python code. Now we have 4 scripts:
+
+  * License Change (Logs for i.creativecommons.org) [Version 7]
+  * License Chooser (Logs for creativecommons.org) [Version 5]
+  * CC Search (Logs for search.creativecommons.org) [Version 4]
+  * Deeds (Logs for creativecommons.org/licenses/*) [Version 2]
+
+
+
+Each of which polls a directory for new logs, reads each new log in the stated directory, line by line and uses regular expressions to parse the information into usable statistics. Hitherto throughout the development phase, the results were passed on to stdout / console. With deployment, they now need to be written to a file, while interestingly is still to be resolved. (TypeError: 'str' object is not callable sound familiar to anyone?)
+
+I am greatful to Asheesh (whom I should have totally bugged more). I should've put in more work into the project when vactioning back home, also having less to do at school would've helped (studies + 3 research projects is not a recommended wotk load), but if it would be easy, it wouldn't be fun! Oh well, I learnt a fair bit through the project and with a bit more troubleshooting we'd be good to go ... for now!
+
+---
+pub_date: 2008-08-31

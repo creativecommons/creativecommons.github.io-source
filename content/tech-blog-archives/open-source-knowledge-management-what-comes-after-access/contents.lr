@@ -1,0 +1,21 @@
+title: Open Source Knowledge Management: What Comes After Access?
+---
+categories:
+neurocommons
+standards
+techsummit
+---
+author: frank
+---
+body:
+
+Jonathan Rees of Science Commons discussed the [open source knowledge management system](http://sciencecommons.org/projects/data) that Science Commons is developing. He discussed the importance of interfacing different stores of data and knowledge, and elucidated how Science Commons is making progress on these issues. In the process Jonathan gave six layers of what comprises an interface: permission, access, container, syntax, vocabulary, and semantics.
+
+The focus of this project is on data integration, and the importance of data integration is reducing the huge transactions costs of using different data stores which have been assembled for different purposes. Data integration does happen, but at huge expense of effort; it is hard, complex, and fragile;"glue" is necessary at all levels, and the process is manual and error-prone.
+
+By developing and testing the whole interface stack for scientific data, the data integration problem becomes vastly easier to understand, browse, search, consult, transform, analyze, visualize, model, annotate, and organize data.
+
+Jonathan closed with a call to action is to "choose, promote, and nourish sharing solutions at every level in the stack".
+
+---
+pub_date: 2008-12-12

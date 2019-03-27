@@ -1,0 +1,23 @@
+title: CC Network Feature Update
+---
+categories:
+---
+author: nathan
+---
+body:
+
+We just pushed a new feature set to CC Network; most of these are OpenID related, and I'll try to write more in depth about the interesting ones in the near future:
+
+  * You can now elect to "always trust" an OpenID site
+  * Commoner (the code behind the CC Network) now supports the Simple Registration extension to OpenID
+  * We have preliminary (experimental) support for Verisign's [OpenID Seatbelt](https://pip.verisignlabs.com/seatbelt.do) extension
+  * We've added a link that to "add another" after you register a work
+  * You can now select a full size or "thin" network badge (similar to the license badges)
+  * We've added a link in the `head` of profile and work list pages that points to the RDF/XML file; we still consider RDFa the primary vehicle but this may help others ingest the data
+
+
+
+Other things you think we should add? Let us know -- [create an issue](http://code.creativecommons.org/issues) or email [issues@creativecommons.org](mailto:issues@creativecommons.org).
+
+---
+pub_date: 2008-10-21

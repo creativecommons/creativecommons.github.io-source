@@ -1,0 +1,21 @@
+title: Per-blog registrations for Wordpress-mu
+---
+categories:
+wordpress
+---
+author: nkinkade
+---
+body:
+
+About a year ago when I started at Creative Commons, I was asked to write a [Wordpress-mu](http://mu.wordpress.org) plugin that would allow users to register with specific sub-blogs and not just the root/default blog. So I wrote a [ plugin](http://code.creativecommons.org/viewsvn/wordpressmu/trunk/mu-plugins/per_blog_registrations/perBlogRegistrations.php?view=log) that allowed that to happen and also fixed a few inconsistencies that I noticed in the code at that time.
+
+Recently I reviewed my [old [posts](http://mu.wordpress.org/forums/topic.php?id=5636) at the Wordpress-mu forums and realized that there was some activity on those posts that I hadn't noticed. It became clear that the plugin needed some modification and also that it only supported per-blog registrations for Wordpress-mu installs based on subdomains, but didn't work for installs based on subdirectories.
+
+This past weekend I took another look at the plugin and found that most of the inconsistencies I had been seeing, and for which I had tried to code around in the plugin, were gone in v1.5.1, and so I was able to remove the vast majority of the plugin's code.
+
+The current plugin seems to work for both subdomain-based and subdirectory-based installs, at least on a fresh install of Wordpress-mu that I was working with.
+
+**Update [Mon Aug 17 14:02:16 EDT 2009]** : <http://code.creativecommons.org/issues/issue436>.](http://mu.wordpress.org/forums/topic.php?id=3090)
+
+---
+pub_date: 2008-07-01

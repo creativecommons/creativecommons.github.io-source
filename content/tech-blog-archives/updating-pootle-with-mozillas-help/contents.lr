@@ -1,0 +1,62 @@
+title: Updating Pootle, with Mozilla's help
+---
+categories:
+---
+author: asheesh
+---
+body:
+
+We use Pootle for handling <http://translate.creativecommons.org/>, the site where our international affiliates and other CC community members can help us out by translating CC content into other languages. Currently we only request translations this way for core CC infrastructure like the license choose.
+
+For a few months, I had been working on a replacement for Pootle that better-fit our needs. Mozilla, as it happens, has similar issues, and when I recently investigated, I found that they were working on improvements to Pootle. So enough working alone; we'll work with them! Their project to improve Pootle is called "[Verbatim](https://wiki.mozilla.org/Verbatim)," and I encourage all interested in web-based translation software to read more at that link.
+
+Nathan Yergler and I sent an email to our international affiliates email list, and since I have a lot to do before tomorrow, I'll let it speak for itself:
+
+> A bit more than a month ago we hinted we were working a new web-based translation tool. We're committed to making translation easier and more productive for all of our affiliates. To that end, improving the tools is one of Asheesh Laroia's current focuses. This message should be considered as coming from both of us.
+> 
+> **BRIEF SUMMARY**
+> 
+> Things are going to look prettier on <http://translate.creativecommons.org> once we flip the switch into a  
+>  newer version of the software on Wednesday morning, Nov. 26 Pacific time. We're making things easier to use by joining forces with Mozilla and the Pootle developers on improving Pootle.
+> 
+> **DETAILS**
+> 
+> So we've joined forces with the Mozilla project on an overhaul to Pootle. They've decided to make improvements to Pootle to make it suitable for their translation efforts and in true open source fashion  
+>  we're benefiting from their changes and contributing our own. Mozilla has already improved the user interface quite a bit, so we'd like to share that with all of you. There's a long series of Pootle  
+>  improvements coming down this pipe, we expect; this is just the opening.
+> 
+> From our end, we're also going to make the process more streamlined for translators. Here is some feedback we've gotten, and how we plan to address it:
+> 
+> **Issue** : "It takes too long to see the translations on the web, either on the staging site or the main site"
+> 
+> **Response** : (Done) For all admins of a language, there is now a link labeled "Commit" you can do in Pootle. When you do this, the latest translations go live on staging.creativecommons.org. (I think this is  
+>  pretty cool. Try it!)
+> 
+> **Issue** : "It's hard to understand how to use Pootle"
+> 
+> **Response** : (In progress) In the next few days, I'll be publishing a video of basic Pootle usage that slowly shows how to be sure you are using it effectively. I'm happy to answer other questions about how  
+>  to use it.
+> 
+> **Issue** : "It's hard to keep up"
+> 
+> **Response** : (In progress) We'll start emailing statistics to the CCi list showing which languages are in need of work. The new Pootle calculates how many words need translation rather than how many messages, which is much more accurate.
+> 
+> Other changes we have or will be making:
+> 
+>   * We've gone through and made all existing translators for the website into admins which means you can now deputize others without our intervention. Documentation managing your translators will be part of the documentation/screencasts that Asheesh works on.
+>   * Pootle will be likely migrating from its old "jToolkit" backend to the more modern Django. This will make it faster and more reliable in the long run
+>   * We'll run a nighly script that makes sure that if we add a new string to translate, it shows up in Pootle within a day.
+>   * I've [Asheesh] enriched the PO files with some extra "context"information saying what the string is used for; for example, you will see not only the language name "Korean" but our internal code for it, "lang.kr". This probably won't be interesting to most contributors but if you're trying to re-use our templates, etc for your own site it'll help you connect the dots.
+> 
+
+> 
+> Again, this is just the first stage of the Pootle upgrade coming down the pipe thanks to our working with Mozilla. We were working on an independent replacement for Pootle called "Herder," but when we  
+>  discovered all this activity by Mozilla we realized it would be most beneficial if we joined forces with them.
+> 
+> We're planning to flip the switch Wednesday morning Pacific time. There may be up to one hour of downtime, but we think the downtime should be limited to about a period of five minutes.
+> 
+> Thanks for your contributions to date and all your feedback. If you have additional feedback, gripes, suggestions, we'd love to hear them. Also, please feel free to email us offlist with questions regarding  
+>  your account.
+
+---
+pub_date: 2008-11-25

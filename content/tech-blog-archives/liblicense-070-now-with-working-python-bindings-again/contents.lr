@@ -1,0 +1,23 @@
+title: liblicense 0.7.0: Now with working Python bindings again
+---
+categories:
+---
+author: asheesh
+---
+body:
+
+I just released liblicense 0.7.0 on SourceForge. It fixes the Python bindings. They've been broken since the 0.6 release, it seems. Some functionality in them probably worked between 0.6 and 0.7, but (read on for more)...
+
+  
+LL_LICENSE and other constants were "extern const char" arrays before. Now they're just lousy old #defines. This way, even though the strings might appear more than once in memory, it's very simple for the IO modules like exempi.so to refer to those constants.
+
+Before, due to dynamic linker loading order issues, if liblicense.so were added to a process's memory memory map at runtime, if liblicense then tried to dlopen() its modules, the modules wouldn't be able to find those constants. What a drag! That broke the Python bindings' ability to use the modules.
+
+Now, I guess that's still true, but the modules don't need actual symbols from liblicense anymore.
+
+I noticed this issue in the process of creating and testing RPMs for Fedora. I had to bump the SONAME because this removes symbols from the library.
+
+You can grab it [on SourceForge](https://sourceforge.net/project/showfiles.php?group_id=80503&package_id=238700), and perhaps soon in Fedora Rawhide.
+
+---
+pub_date: 2008-05-16

@@ -1,0 +1,18 @@
+title: VMware Workstation 6 released
+---
+categories:
+development
+software
+---
+author: nathan
+---
+body:
+
+I've been a fan of "VMware":http://vmware.com for years. Both at my previous job and this one, their Workstation product has made cross-platform development sane. So I just noticed they released a new version of "VMware Workstation":http://www.vmware.com/products/ws/, 6.0. The new version includes lots of new features, but two things caught my eye.
+
+First, they have "Eclipse":http://eclipse.org integration for debugging and testing. I don't think I can do the feature justice -- "this blog post":http://quikchange.livejournal.com/170570.html goes into some detail. Basically it allows you to take a Java application you're developing in Eclipse, select a particular VM, and then build, deploy, launch and connect remote debugging. And when you're done (optionally) revert the VM to the original state. I don't do much Java work, but this is seems like a great idea.
+
+Second, the look and feel of VMware under Linux has been improved and (more importantly) the icons (most of them, anyway), have been licensed under "CC Attribute-ShareAlike":http://creativecommons.org/licenses/by-sa/2.5/. More details available "here":http://www.chipx86.com/blog/?p=206.
+
+---
+pub_date: 2007-05-10

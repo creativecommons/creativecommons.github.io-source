@@ -1,0 +1,21 @@
+title: GSoC OpenOffice Plugin Updates: Weekly Report 1 & 2
+---
+categories:
+Add-In
+OpenOffice
+summer
+---
+author: akila87
+---
+body:
+
+For the last two weeks I was focusing on the User Interface and the Picasa support. At first lets look at the new changes to the license insertion dialog. I have changed the UI to something similar to the [license choosing page](http://creativecommons.org/choose/) in Creative Commons website. The new UI is quite simple to understand and it will not confuse the user. I have also included the tips about each choice. Currently you can see them when you move your mouse over the "i" image in the right side of each choice. The tip is displayed in a single line and that cannot be changed. I am going to add a small dialog for each of the tip which will activate when you click the "i" for the choice.
+
+[caption id="" align="aligncenter" width="460" caption="New UI"][![New UI](new%20layout.png)](http://lh3.ggpht.com/_LE-WXW82VPE/TA-xeFhPV1I/AAAAAAAAAGA/4L8gngUBYW0/s800/new%20layout.png)[/caption]
+
+The next thing I did in the past two week was Picasa support for the insert image menu. Now you can add creative commons licensed images. Currently you cannot select the images by license and the image sizes when inserting the image to the document. I am hopeing to add this feature very soon.
+
+Current version of the plugin can be downloaded from [here](http://extensions.services.openoffice.org/en/project/ccoootest) and the source can be found in [here](http://code.creativecommons.org/viewsvn/ccooo/branches/akila-gsoc-2010/).
+
+---
+pub_date: 2010-06-14

@@ -1,0 +1,26 @@
+title: Indexing License Metadata in Tracker, Week 2
+---
+categories:
+development
+embedding
+metadata
+summer
+---
+author: jakin
+---
+body:
+
+I've made progress extracting licenses from the following formats: Vorbis, MP3, FLAC, PDF, JPEG, TIFF, PNG, PDF, HTML, and MSOffice. They are by no means all done, but for several formats I have patches and am awaiting approval from [Tracker](http://www.gnome.org/projects/tracker/).
+
+I've written a [GStreamer bug report](http://bugzilla.gnome.org/show_bug.cgi?id=447000) and submitted a patch to allow reading the WCOP (License URI) id3v2 tag. Discussion continues there.
+
+No luck with video metadata (AVI, Matroska, OGM, Quicktime). Things are just too ad-hoc in that arena to get anything worthwhile done. For Tracker, GStreamer is doing all the work on extracting video metadata, but as far as I can tell, nothing relating to licenses ever gets extracted and passed on to Tracker. GStreamer would need to be updated to read the tags, but that can't be done unless there are consistent specs on how to do so. Exempi can embed XMP into MOV and AVI, but I don't know how to get it back out. It may or may not be feasible to write an extractor that only extracts XMP using Exempi.
+
+Information on various file formats' metadata is available here: <http://wiki.creativecommons.org/Tracker_CC_Indexing> While Tracker won't specifically be indexing every format mentioned, I'm trying to document the formats relevant to Creative Commons. If I'm missing any important formats, please let me know.
+
+Overall, things are progressing well. At the rate things are going, by the end of the summer I'll have become a manual for file format specifications :-/
+
+Cheers
+
+---
+pub_date: 2007-06-19

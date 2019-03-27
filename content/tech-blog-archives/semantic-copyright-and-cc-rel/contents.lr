@@ -1,0 +1,23 @@
+title: «Semantic Copyright» and CC REL
+---
+categories:
+standards
+---
+author: nathan
+---
+body:
+
+On Monday [Safe Creative](http://www.safecreative.org/) announced a new project, [Semantic Copyright](http://www.semanticcopyright.org/). The project includes an [ontology](http://semanticcopyright.org/index.php/ontology) for describing the [rights associated with a work](http://semanticcopyright.org/index.php/ontology/basic), as well as for [modeling copyright registration](http://semanticcopyright.org/index.php/ontology/copyright-registry). Safe Creative and Creative Commons are both part of [OSCRI](http://oscri.org/), an ad hoc group of [organizations](http://oscri.org/members-page) developing copyright registry technology. Enabling tools which reduce the cost of using copyrighted material is an important part of Creative Commons' mission, and making the rights information machine readable is critical to fulfilling that. Unfortunately there are a couple of issues with the project in its current form.
+
+Safe Creative's proposed ontology includes a model for Creative Commons licenses (for example, [CC BY](http://www.semanticcopyright.org/files/basic-owl/html-doc/instances/basic-CC-BY_1.html)), including the rights and permissions associated with each license. While we're very happy to have support for CC licenses in the platform, our goal over the past three years has been to move the authoritative information about the licenses to the appropriate location: with the license. 
+
+This is an easy principle to overlook, one we ourselves didn't consider initially. When Creative Commons first begin generating HTML for marking works, we included a copy of the license metadata with every work. We later realized that this had several issues, not the least of which is that users have no reason to trust the description of the license published with the work -- the work's publisher is not the authoritative source of information regarding the license. The idea that authority matters is reflected in the fact that we now encourage people to link to the license; tools can follow the link to discover information about the license. This is the sort of basic principle that becomes obvious with lots of experience stewarding the technical infrastructure for licensing online.
+
+This principle is also reflected in our more recent work with the [Free Software Foundation](http://fsf.org). When we worked with the FSF to build a [CC REL](http://wiki.creativecommons.org/CC_REL) model of their licenses that they would host (ie, [GPL 3.0](http://www.gnu.org/licenses/gpl-3.0.rdf)), we were also pushing the authoritative version to the license publisher (the [CC GPL](http://creativecommons.org/licenses/GPL/2.0/) is a silly wrapper, and people have no reason to trust our assessment of the GPL).
+
+In addition to issues of authority, Safe Creative's project does not (as far as I have seen) provide instructions for processing CC REL and their ontology side by side. One of the use cases for machine readable rights information is the ability to ask, "can I make derivatives of this work?" and "are these works under the same license?" Because Safe Creative provides its own model for CC licenses and the rights and restrictions associated with them, software that wants to work with both will need two different paths -- one for works described with Semantic Copyright, and one for the 350 million (and growing) works described with CC REL. One way to deal with this would be through the development of axioms that convert one to another, but this is unfortunately absent from [the documentation](http://semanticcopyright.org/index.php/ontology/download-files).
+
+Safe Creative's project (and OSCRI) has the potential to improve our ability to model licenses and rights in a compatible and interoperable way. At this point, without deployed code or examples, it's impossible to predict how this project will be adopted. Hopefully the 0.10 version number indicates that further improvements are coming.
+
+---
+pub_date: 2010-09-02

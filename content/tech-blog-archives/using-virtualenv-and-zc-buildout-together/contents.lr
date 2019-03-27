@@ -1,0 +1,84 @@
+title: Using virtualenv and zc.buildout together
+---
+categories:
+development
+python
+techblog
+---
+author: cwebber
+---
+body:
+
+[Virtualenv](http://pypi.python.org/pypi/virtualenv) and [zc.buildout](http://www.buildout.org/) are both great ways to develop python packages and deploy collections of packages without needing to touch the system library. They are both fairly similar, but also fairly different.
+
+The primary difference between them is that zc.buildout focuses on having a single package, and all relevant dependencies are installed automatically within that package's directory via the buildout script (Nathan Yergler points out that you don't have to use things this way, but that seems to me to be the way things happen in practice... anyway, I'm not a buildout expert). The buildout script is very automagical and does all the configuration and installation of dependencies for you. Since this is a build system, you can also configure it to do a number of other neat things, such as compile all your gettext catalogs, or scp the latest cheesefile.txt from themoon.example.org... whatever you need to do to build a package.
+
+Virtualenv is mostly the same creature, but it's like you reached your hand inside and pulled it inside out. Instead of a bunch of packages installed within a subdirectory of one package, there is a more generic directory layout that allows you to set up a number of packages within it. Installing a package and keeping it up to date is much more manual in general, but also a bit more flexible in the sense that you can switch paths around within the environment fairly easily and simultaneously developing multiple interwoven packages is not difficult.
+
+I came to CC with a lot of experience with virtualenv and no experience with zc.buildout. Initially I could discern no differences of use case between them, but now I have a pretty good sense of when you'd want to use one over the other. An example use case, which has come up pretty often with me actually: say you have two packages, one of which is a dependency on the other. In this case, we'll use both cc.license and cc.engine, where cc.engine has cc.license as a  
+dependency.
+
+Now say I'm adding a feature to cc.engine, but this feature also requires that I add something in cc.license. At this point it is  
+easier for me to switch to using virtualenv; I can set up both development packages in the same virtualenv and use them together. This is great because it means that I should have little to no difficulty switching back and forth between both of them. If I make a change in cc.license it is immediately available to me in cc.engine. This also prevents either having to set up a tedious to switch around configuration checking out cc.license into cc.engine and etc, or making a bunch of unnecessary releases just to make sure things work, etc. It's easier to work on multiple packages at once in  
+virtualenv in my experience.
+
+Now let's assume that we got things in working order, cc.license has the new feature and cc.engine is able to use it properly, tests are passing, and et cetera. At this point is where I think returning to zc.buildout is a good idea. One of the things I like about zc.buildout is that it provides a certain type of integrity checking with the buildout command. If you forget to mark a dependency or even remove it from setup.py on accident or whatever, buildout will simply unlink it from your path the next time you run it. In this case, I think zc.buildout is especially useful because I might forget to make a cc.license release here or some such thing. There are some other reasons for using zc.buildout (as the name implies, buildout is a full build system, so there are a lot of neat things you can do with it), but for a forgetful person such as myself this is by far the most important to me (and the most relevant to this example).
+
+So I've described use cases for both cc.engine and cc.license. How do we get them to work nicely together? Let's assume we just want to check out these packages once. Let's also assume that our virtualenv directory is ~/env/ccommons (because I'm clearly basing this off my own current setup currently, heh).
+
+First, we'll create our virtualenv environment, if we haven't already:
+
+> 
+>     $ virtualenv ~/env/ccommons
+>     
+
+Next, we'll check out cc.engine and cc.license into ~/devel/ and run  
+buildout on each:
+
+> 
+>     $ cd ~/devel/
+>     $ git clone git://code.creativecommons.org/cc.license.git
+>     $ git clone git://code.creativecommons.org/cc.engine.git
+>     
+
+Next, we'll buildout the packages:
+
+> 
+>     $ cd ~/devel/cc.license
+>     $ wget http://svn.zope.org/*checkout*/zc.buildout/trunk/bootstrap/bootstrap.py
+>     $ python bootstrap.py
+>     $ ./bin/buildout
+>     $ cd ~/devel/cc.engine
+>     $ python bootstrap.py # the cc engine already has bootstrap.py checked in
+>     $ ./bin/buildout
+>     
+
+Buildout can take a while, so be prepared to go grab some cookies and coffee and/or tea. But once it's done, getting these packages set up in virtualenv is super simple.
+
+First activate the virtualenv environment:
+
+> 
+>     $ source ~/env/ccommons/bin/activate
+>     $ cd ~/devel/cc.license
+>     $ python setup.py develop
+>     $ cd ~/devel/cc.engine
+>     $ python setup.py develop
+>     
+
+That's it! Now we can verify that these packages are set up in virtualenv. Open python and verify that you get the following output (adjusted to your own home directory and etc):
+
+> 
+>     >>> import cc.engine
+>     >>> cc.engine.__file__
+>     '/home/cwebber/devel/cc.engine/cc/engine/__init__.pyc'
+>     >>> import cc.license
+>     >>> cc.license.__file__
+>     '/home/cwebber/devel/cc.license-git/cc/license/__init__.pyc'
+>     
+
+To leave virtualenv, you can simply type "deactivate".
+
+That's it! Now you have a fully functional zc.buildout AND virtualenv setup, where switching back and forth is super simple.
+
+---
+pub_date: 2010-03-16

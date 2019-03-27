@@ -1,0 +1,23 @@
+title: Building the CC Network
+---
+categories:
+openid
+rdfa
+techsummit
+---
+author: frank
+---
+body:
+
+Creative Commons CTO Nathan Yergler discussed the Creative Commoner network, which was developed beginning in October and is still under active development. The network allows creators to collect references to their work in one place -- to act as a registry. It also serves to bring people in to the CC community, and aid interoperability and connection of existing data and works.
+
+The CC network sports personalized profile pages, OpenID, and a simple registry, which Nathan discussed in turn. Creative Commons can build layers of trust by validating a user's "confirmed" name from PayPal transactions, meaning that license claims are more legitimate than otherwise. But there are issues, such as name changes and incorrect or outdated information from PayPal.
+
+[OpenID](http://en.wikipedia.org/wiki/OpenID "OpenID") is an open single sign-on standard which CC provides with a Commoner account. There are issues around this as well, such as a need to trust your provider. Nathan laid out the various ways CC is working to mitigate these issues.
+
+But "the meat of the CC network" is in the work registry. As yet it is a simple implementation. Reciprocal claims and validation are key, where the registration learns about the validity about a work registration claim based on the presence of similar license data on that page. This shows that the user making the claim does indeed have the ability to edit the work in question.
+
+Future developments include better identification of works and metadata, registration of feeds, the ability to follow creators in their subsequent works, and general future efforts exploring registry technology.
+
+---
+pub_date: 2008-12-12

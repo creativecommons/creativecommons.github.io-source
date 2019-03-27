@@ -1,0 +1,23 @@
+title: Asheesh's liblicense interview
+---
+categories:
+---
+author: steren
+---
+body:
+
+Relatively to the [liblicense 0.8 announcement](http://creativecommons.org/weblog/entry/8748), I recently made a video interview of Asheesh concerning his work on [liblicense](http://wiki.creativecommons.org/Liblicense).
+
+Watch it [here](http://blip.tv/file/1142312/).
+
+In his demo, Asheesh uses liblicense twice:
+
+  * in the online photo gallery to read and write metadata
+  * in the Eye Of Gnome plug-in to read license metadata
+
+
+
+This shows that liblicense is now mature enough to be used by your applications.
+
+---
+pub_date: 2008-08-12

@@ -1,0 +1,14 @@
+title: Labs blog now at WordPress 3.0; no more WordPress-mu
+---
+categories:
+---
+author: nkinkade
+---
+body:
+
+For quite a few years CC has maintained an installation of [WordPress-mu](http://mu.wordpress.org/), which has hosted this blog, as well as blogs for a couple of CC jurisdictions. Since CC's [main site](http://creativecommons.org) is built on [WordPress](http://wordpress.org), this meant that with every new release of WordPress we would have to upgrade the main site, and also our WordPress-mu install. Upgrading the main CC site was/is very easy, because it is managed with [version control](http://code.creativecommons.org/viewsvn/ccwordpress/).
+
+Well, with the release of WordPress 3.0, the functionality of WordPress-mu was integrated into the core WordPress code, so it's no longer necessary to maintain two separate code bases. Upgrading Labs to WordPress 3.0 was (mostly) as easy as checking out [the code](http://code.creativecommons.org/viewsvn/ccwordpress/branches/production/) that runs creativecommons.org and dropping our WordPress-mu wp-config.php file into it, then running the update.php script. We now maintain a single WordPress code base that runs both creativecommons.org, as well as our multi-site installation, which hosts this blog.
+
+---
+pub_date: 2010-07-02
