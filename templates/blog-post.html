@@ -2,16 +2,16 @@
 {% block title %}{{ this.title }}{% endblock %}
 {% block header %}{{ this.parent.title }}{% endblock %}
 {% block body %}
-<h2 class="mb-0">{{ this.title }}</h2>
-<p class="meta text-muted mt-0">by {{ this.author }} on {{ this.pub_date|dateformat('full') }}</p>
-<div class="body">{{ this.body }}</div>
-<hr>
-<p class="meta mt-0 mb-0"><span class="text-muted">Categories: </span>
-  {% if this.categories|length %}
-    {% for category in this.categories %}
-    <a href="#">{{ category }}</a>{{ "," if not loop.last }}
-    {% endfor %}</p>
-  {% else %}
-    none
-  {% endif %}
+  <h2 class="mb-0">{{ this.title }}</h2>
+  <p class="meta text-muted mt-0">by {{ this.author }} on {{ this.pub_date|dateformat('full') }}</p>
+  <div class="body">{{ this.body }}</div>
+  <hr>
+  <p class="meta mt-0 mb-0"><span class="text-muted">Categories: </span>
+    {% if this.categories|length %}
+      {% for category in this.categories %}
+      <a href="#">{{ category }}</a>{{ "," if not loop.last }}
+      {% endfor %}
+    {% else %}
+      none
+    {% endif %}</p>
 {% endblock %}
