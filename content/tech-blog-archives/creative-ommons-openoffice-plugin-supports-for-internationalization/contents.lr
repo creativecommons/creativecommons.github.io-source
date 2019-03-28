@@ -17,7 +17,7 @@ Here I have used .class format for resource bundle because the plural forms can 
 
 I have added two shell scripts to convert PO files to resource bundle and extract new strings. You can run them separately or use them when compiling the project. To use them when compiling uncomment line 75-82 of the build.xml, but conversion will take about 3 minutes to complete, therefore it is better to use the scripts separately only when you need add a new translation or extract new strings.
 
-Here is a screen shot of the GUI with some Spanish translated strings (I choose Spanish because of [this](http://labs.creativecommons.org/2010/05/20/creative-commons-open-office-plugin-here-it-is-with-some-new-features/#comment-15878) comment).
+Here is a screen shot of the GUI with some Spanish translated strings (I choose Spanish because of [this](/tech-blog-archives/creative-commons-open-office-plugin-here-it-is-with-some-new-features/#comment-15878) comment).
 
 [caption id="" align="aligncenter" width="370" caption="GUI in Spanish"][![GUI in Spanish](Screenshot.png)](http://lh5.ggpht.com/_LE-WXW82VPE/TEMqN2H2JyI/AAAAAAAAAK4/hK2v1z-TP6c/Screenshot.png)[/caption]
 
