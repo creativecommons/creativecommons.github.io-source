@@ -10,7 +10,7 @@ author: erlehmann
 ---
 body:
 
-This week, development on the [plugin](http://labs.creativecommons.org/2010/05/24/gsoc-project-introduction-cc-wordpress-plugin/) proceeded at a faster pace. Shortly after I posted the [last report](http://labs.creativecommons.org/2010/06/08/gsoc-cc-wordpress-plugin-weekly-report-2/), Nathan Kinkade pointed out the fix to the bug that prevented saving, a simple type error. On the next day, I implemented stylesheet support, hereby adapting three styles I originally made for my defunct [microdata plugin](http://github.com/erlehmann/cc-figure), and an admin interface to switch between them ([screenshot](http://daten.dieweltistgarnichtso.net/pics/screenshots/web/wordpress-cc-plugin/admin-interface-stylesheets.png)). Additional more or less notable changes are:
+This week, development on the [plugin](/tech-blog-archives/gsoc-project-introduction-cc-wordpress-plugin/) proceeded at a faster pace. Shortly after I posted the [last report](/tech-blog-archives/gsoc-cc-wordpress-plugin-weekly-report-2/), Nathan Kinkade pointed out the fix to the bug that prevented saving, a simple type error. On the next day, I implemented stylesheet support, hereby adapting three styles I originally made for my defunct [microdata plugin](http://github.com/erlehmann/cc-figure), and an admin interface to switch between them ([screenshot](http://daten.dieweltistgarnichtso.net/pics/screenshots/web/wordpress-cc-plugin/admin-interface-stylesheets.png)). Additional more or less notable changes are:
 
   * metadata is not only saved now, but will also be retrieved to populate form fields
   * multiple RDFa fixes, machine-readable data should be correct now
