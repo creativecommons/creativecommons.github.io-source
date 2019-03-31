@@ -1,0 +1,15 @@
+{% macro render_authors() %}
+  <ul>
+    {% for author in site.query('/authors') %}
+    <li><a href="{{ author|url }}">{{ author.name }}</a></li>
+    {% endfor %}
+  </ul>
+{% endmacro %}
+
+{% macro render_blog_list(blogs) %}
+  <ul>
+    {% for blog in blogs %}
+    <li><a href="{{ blog|url }}">{{ blog.title }}</a></li>
+    {% endfor %}
+  </ul>
+{% endmacro %}
