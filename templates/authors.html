@@ -1,0 +1,8 @@
+{% extends "layout.html" %}
+{% from "macros/authors.html" import render_authors %}
+{% block title %}Authors{% endblock %}
+{% block header %}CC Technical Blog Archives{% endblock %}
+{% block body %}
+  <h1>Authors</h1>
+  {{ render_authors() }}
+{% endblock %}

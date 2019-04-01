@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% from "macros/authors.html" import render_blog_list %}
+{% block title %}{{ this.name }}{% endblock %}
+{% block header %}CC Technical Blog Archives{% endblock %}
+{% block body %}
+  <h2>Blog Posts by {{ this.name }}</h2>
+  {{ render_blog_list(this.children) }}
+  <hr>
+  <strong><a href="/blog/authors">All Authors</a></strong>
+{% endblock %}
