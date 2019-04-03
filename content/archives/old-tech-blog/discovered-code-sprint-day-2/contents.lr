@@ -1,0 +1,23 @@
+title: DiscoverEd Code Sprint: Day 2
+---
+categories:
+AgShare
+code
+DiscoverEd
+---
+author: akozak
+---
+body:
+
+Day 2 of the [DiscoverEd](http://discovered.creativecommons.org/search/) [code sprint](http://wiki.creativecommons.org/DiscoverEd_Sprint_\(June,_2010\)) was largely a continuation of work that started on [Day 1](/archives/old-tech-blog/discovered-code-sprint-day-1/).
+
+The team working on a plugin architecture for DiscoverEd finished their project, which was to build an extension point that enables plugins to pull arbitrary metadata from external sources. At the beginning of the day they had to finish some tests for the new support for arbitrary metadata added in Day 1, but by the end of the day were able to merge their new functionality back into the DiscoverEd repository. They were even able to build a small proof-of-concept plugin that pulled data from the [delicious.com API](http://delicious.com/help/tools) into the Jena store, which later makes its way into the Lucene index. Tomorrow they'll start looking at developing support for custom vocabularies and ontologies (such as [AGROVOC](http://en.wikipedia.org/wiki/AGROVOC)).
+
+The flexible query syntax team were able to commit their changes to the DiscoverEd code that makes it so you can configure arbitrary metadata queries. For example, if you had been running a DiscoverEd instance to search a feed of OpenCourseWare resources that uses [Dublin Core](http://en.wikipedia.org/wiki/Dublin_Core) metadata in RDFa format to express information about those resources, and wanted to enable searches on metadata which weren't supported in DiscoverEd, you would have had to write Java code to enable that. With this change you can now just create a configuration file mapping an arbitrary tag to that metadata, which will store that metadata along side the tag in the Lucene index. This allows Nutch (which searches the Lucene index) to search for those custom tags in the config file. This code was pushed to a branch while the team spent the rest of the day chasing down a bug where only a subset of metadata gets successfully added to the Lucene index in their working environment.
+
+The "user-generated metadata" team was able to create a test which adds a new resource into the Jena store, adds a tag to that resource, and verifies the tag was added... and it passes! Their next step is to create a test for a similar process in the Lucene index, such that a tag added to a new resource in the Jena store gets successfully added to the index and one can search for that tag through Nutch. The first test passing was a prerequisite for starting work on the second test.
+
+Work continues into the third and final day, so look for a wrap-up report from Day 3 soon. The various repository commits can be [browsed on Gitorious](http://gitorious.org/discovered).
+
+---
+pub_date: 2010-06-17

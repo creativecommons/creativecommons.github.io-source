@@ -64,6 +64,16 @@
                     {% endfor %}
                   </div>
                 </li>
+                <li class="nav-item dropdown {% if this.is_child_of('/archives') %} active{% endif%}">
+                  <a class="nav-link" href="#" id="navbarArchivesDropdown" role="button">Archives</a>
+                  <div class="dropdown-menu" aria-labelledby="navbarArchivesDropdown">
+                    {% for href, title in [
+                      ['/archives/old-tech-blog', 'CC Tech Blog (2007-2014)'],
+                    ] %}
+                      <a class="dropdown-item" href="{{ href|url }}">{{ title }}</a>
+                    {% endfor %}
+                  </div>
+                </li>
               </ul>
           </nav>
         </div>

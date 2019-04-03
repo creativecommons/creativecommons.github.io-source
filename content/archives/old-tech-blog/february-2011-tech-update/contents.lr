@@ -1,0 +1,21 @@
+title: February 2011 Tech Update
+---
+categories:
+status
+---
+author: nathan
+---
+body:
+
+Highlights from January, 2011:
+
+  * We published [CC REL by Example](/archives/old-tech-blog/ccrel-by-example/), a guide to using CC REL and marking your work online.
+  * Support for [Public Domain Mark](http://creativecommons.org/publicdomain/mark/) was [added](/archives/old-tech-blog/cc-rest-api-updated-for-public-domain-mark/) to the [CC API](http://api.creativecommons.org). 
+  * We rolled out improvements to the ["machine readable" layer](/archives/old-tech-blog/three-layers-of-a-cc-license/) of CC licenses: [identifiers on the deeds](/archives/old-tech-blog/license-identifier-on-the-deeds/) and [equivalence between our old and new namespace](/archives/old-tech-blog/merging-old-and-new-cc-rel-schemas/).
+  * 404 pages for the [license engine](http://code.creativecommons.org/viewgit/cc.engine) are [now more helpful](/archives/old-tech-blog/more-helpful-404-pages/)
+  * We [closed 22 bugs](http://code.creativecommons.org/issues/issue?%40search_text=&title=&%40columns=title&keyword=&id=&%40columns=id&creation=&creator=&activity=2010-12-31%3B2011-02-01&%40columns=activity&%40sort=activity&actor=&priority=&%40group=priority&status=8&%40columns=status&project=&milestone=&assignedto=&%40columns=assignedto&%40pagesize=50&%40startwith=0&%40queryname=&%40old-queryname=&%40action=search), including respecting the "retired" flag in [more](http://code.creativecommons.org/issues/issue762) [places](http://code.creativecommons.org/issues/issue761), a bug with [license selection in 1.0 jurisdictions](http://code.creativecommons.org/issues/issue725), [refusing to issue 1.0 SA](http://code.creativecommons.org/issues/issue726) licenses (they do not contain the upward compatibility clause, making them an incompatible silo with the rest of the world), using our license RDF to drive [one more part of the publication process](http://code.creativecommons.org/issues/issue115) (sanity, sanity!), and [improvements to CC Network](http://code.creativecommons.org/issues/issue739). 
+
+
+
+---
+pub_date: 2011-02-04
