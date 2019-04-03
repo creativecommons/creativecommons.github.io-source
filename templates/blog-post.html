@@ -10,7 +10,7 @@
   <p class="meta mt-0 mb-0"><span class="text-muted">Categories: </span>
     {% if this.categories|length %}
       {% for category in this.categories %}
-      <a href="#">{{ category }}</a>{{ "," if not loop.last }}
+      <strong>{{ category }}</strong>{{ "," if not loop.last }}
       {% endfor %}
     {% else %}
       none
