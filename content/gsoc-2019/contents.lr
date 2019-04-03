@@ -8,7 +8,7 @@ Creative Commons has been selected as a mentoring organization for [Google Summe
 
 For more information about what Creative Commons as a whole does, please check out the ["What we do" page on our organization website](https://creativecommons.org/about/). 
 
-## First Steps
+## First steps
 
 If you are a student interested in submitting a proposal to CC, start by checking out our [Project Ideas](/gsoc-2019/project-ideas/all) page to find an idea that you would like to write a proposal to work on during GSoC. CC mentors are available on [Slack and the developer mailing list](/community) to answer questions and provide feedback.
 
@@ -16,7 +16,7 @@ Before you start writing a proposal, read our [Application Instructions](/gsoc-2
 
 ## Mentors
 
-Here are short bios of each of our 2019 mentors.
+Here are short bios of each of our 2019 mentors. Please use first names or Slack/IRC nicknames to address mentors; we prefer informality.
 
 * [Alden Page](https://creativecommons.org/author/aldencreativecommons-org/) (`aldenpage` on Slack)
 * [Breno Ferreira](https://creativecommons.org/author/brenoferreira/) (`Breno` on Slack)
@@ -24,6 +24,14 @@ Here are short bios of each of our 2019 mentors.
 * [Kriti Godey](https://creativecommons.org/author/kriticreativecommons-org/) (`kriti` on Slack)
 * [Sophine Clachar](https://creativecommons.org/author/sclachar/) (`Sophine` on Slack)
 * [Timid Robot Zehta](https://creativecommons.org/author/timidcreativecommons-org/) (`Timid Robot` on Slack)
+
+## Proposal review criteria
+
+We do not have formal guidelines for reviewing proposals, but here are a few things we consider:
+* **Quality of the proposal**: This is the most important thing. A good proposal includes attention to detail, externally measurable milestones, consideration for future maintainability and community involvement, and a demonstration of your skills.
+* **Community involvement**: One of our major goals for GSoC is to build an active development community and attract long-term contributors. Engaging in the community, whether it's asking questions, helping other students, contributing code, filing bugs, or whatever else, is a good sign that you're actually interested in our work and our projects.
+* **Communication skills and initiative**: These are essential to completing a successful project. Things we look for (among others): asking specific and detailed questions, following up on conversations, making sure to read available resources before asking questions, being patient and responding to critical feedback well.
+* **Code contributions**: We appreciate seeing your code, it gives us confidence that you have the skills necessary to implement your proposal. Code samples that are not related to CC projects are fine too.
 
 ## History
 
