@@ -46,6 +46,8 @@ When in doubt, ask a question on [one of our community forums](/community).
 
 ## Pull request guidelines
 
+We aim to review pull requests within three business days.<a href="#footnote-1"><strong>*</strong></a>. If it has been over three business days and you have not received any feedback, feel free to follow up.
+
 * Read and follow the contributing guidelines and code of conduct for the project. Here are screenshots of where to find them for [first time contributors](first-time-contributor-resources.png) and [previous contributors](previous-contributor-resources.png).
 * Use the format specified in pull request template for the repository if one exists.
 * Describe your change in detail. Too much detail is better than too little.
@@ -66,6 +68,8 @@ When in doubt, ask a question on [one of our community forums](/community).
   * Opera (Chromium-Blink / 12.1+)
   * Safari (Apple’s Webkit / 7+)
   * IE 11 (Trident)
+
+<a name="footnote-1"><p class="muted small"><strong>*</strong> CC staff work Monday through Friday and are not available on weekends and national holidays (the specific holidays observed vary based on the person's location). CC is closed between Christmas Eve and New Years' Day every year and for a few days following the CC Global Summit. Also, our availability during events such as the CC Global Summit and our biannual staff meetups is limited.</p></a>
 
 ## New projects
 
