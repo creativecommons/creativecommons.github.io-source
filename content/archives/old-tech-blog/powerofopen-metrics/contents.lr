@@ -1,0 +1,80 @@
+title: Notes on CC adoption metrics from The Power of Open
+---
+categories:
+Metrics
+---
+author: ml
+---
+body:
+
+Last week Creative Commons [released](http://creativecommons.org/weblog/entry/27742) a book titled [_The Power of Open_](http://thepowerofopen.org/) featuring dozens of case studies of successful uses of CC tools, beautifully laid out magazine-style. The book also has a couple pages (45&46) on metrics and a pretty graph of CC adoption over the years.
+
+See the main CC blog for [non-technical detail on the data behind this graph](http://creativecommons.org/weblog/entry/28041). This post serves as a technical companion -- read below for how to reproduce.
+
+Every day (modulo bugs and outages) we request license link and licensed work counts from Yahoo! Site Explorer and Flickr respectively (and sometimes elsewhere, but those two are currently pertinent to our conservative estimation). You can find the data and software (if you want to start independently gathering data) [here](http://wiki.creativecommons.org/Metrics/License_statistics).
+
+After loading the data into MySQL, we delete some rows representing links that aren't of interest or from non-Yahoo link: queries to avoid having to filter. In the future at least the former ought be moved to a separate table.
+
+>   
+>  delete from simple where license_uri = 'http://creativecommons.org/licenses/GPL/2.0/';  
+>  delete from simple where license_uri = 'http://creativecommons.org/licenses/LGPL/2.1/';  
+>  delete from simple where license_uri = 'http://creativecommons.org';  
+>  delete from simple where license_uri = 'http://www.creativecommons.org';  
+>  delete from simple where license_uri = 'http://creativecommons.org/licenses/publicdomain/1.0/';  
+>  delete from simple where license_uri = 'http://creativecommons.org/licenses/by-nc-nd/2.0/deed-music';  
+>  delete from simple where license_uri = 'http://creativecommons.org/licenses/by-nc-nd/2.0/br/creativecommons.org/licenses/sampling/1.0/br/';  
+>  delete from simple where license_uri = 'http://creativecommons.org/licenses/zero/1.0/';  
+>  delete from simple where license_uri = 'http://creativecommons.org/licenses/publicdomain';  
+>  delete from simple where search_engine != 'Yahoo';  
+> 
+
+The following relatively simple query obtains average counts for each distinct license across December (approximating year-end). For the six main version 2.0 licenses, Flickr knows about more licensed works than Yahoo! Site Explorer does, so Flickr numbers are used: we know at least that many works for each of those licenses exist. `greatest(yahoo.ct, coalesce(flickr.ct,0))` accomplishes this. `coalesce` is necessary for Flickr as we don't have data most of the time, and don't want to compare with NULL.
+
+>   
+>  select * from ( select ym, sum(atleast) totalcount from (select yahoo.ym, yahoo.license_uri, greatest(yahoo.ct, coalesce(flickr.ct,0)) atleast from (select extract(year_month from timestamp) ym, license_uri,round(avg(count)) ct from simple group by license_uri,extract(year_month from timestamp)) yahoo left join (select extract(year_month from utc_time_stamp) ym, license_uri,round(avg(count)) ct from site_specific group by license_uri,extract(year_month from utc_time_stamp)) flickr on flickr.ym = yahoo.ym and flickr.license_uri = yahoo.license_uri) x group by ym ) x where ym regexp '12$';  
+> 
+
+Results of above query:
+
+Year End | Total License Count  
+---|---  
+2003 | 943,292  
+2004 | 4,541,586  
+2005 | 15,822,408  
+2006 | 50,794,048  
+2007 | 137,564,807  
+2008 | 214,970,426  
+2009 | 336,771,549  
+2010 | 407,679,266  
+  
+The more complicated query below also obtains the number of [fully free/libre/](http://freedomdefined.org/Definition)[open](http://www.opendefinition.org/okd/) works and the proportion of works that are such:
+
+> `  
+>  select free.ym, freecount, totalcount, freecount/totalcount freeproportion from (select ym, sum(atleast) freecount from (select yahoo.ym, yahoo.license_uri, greatest(yahoo.ct, coalesce(flickr.ct,0)) atleast from (select extract(year_month from timestamp) ym, license_uri,round(avg(count)) ct from simple group by license_uri,extract(year_month from timestamp)) yahoo left join (select extract(year_month from utc_time_stamp) ym, license_uri,round(avg(count)) ct from site_specific group by license_uri,extract(year_month from utc_time_stamp)) flickr on flickr.ym = yahoo.ym and flickr.license_uri = yahoo.license_uri) x where license_uri regexp 'publicdomain' or license_uri regexp 'by/' or license_uri regexp 'by-sa/' group by ym) free, (select ym, sum(atleast) totalcount from (select yahoo.ym, yahoo.license_uri, greatest(yahoo.ct, coalesce(flickr.ct,0)) atleast from (select extract(year_month from timestamp) ym, license_uri,round(avg(count)) ct from simple group by license_uri,extract(year_month from timestamp)) yahoo left join (select extract(year_month from utc_time_stamp) ym, license_uri,round(avg(count)) ct from site_specific group by license_uri,extract(year_month from utc_time_stamp)) flickr on flickr.ym = yahoo.ym and flickr.license_uri = yahoo.license_uri) x group by ym) total where free.ym = total.ym and free.ym regexp '12$';  
+>  `
+
+The above query obtains the following:
+
+Year End | Free License Count | Total License Count | Free License %  
+---|---|---|---  
+2003 | 208,939 | 943,292 | 22.15%  
+2004 | 1,011,650 | 4,541,586 | 22.28%  
+2005 | 4,369,938 | 15,822,408 | 27.62%  
+2006 | 12,284,600 | 50,794,048 | 24.19%  
+2007 | 40,020,147 | 137,564,807 | 29.09%  
+2008 | 68,459,952 | 214,970,426 | 31.85%  
+2009 | 136,938,501 | 336,771,549 | 40.66%  
+2010 | 160,064,676 | 407,679,266 | 39.26%  
+  
+The pretty graph in the book reflects the total number of CC licensed works and the number of fully free/libre/open CC licensed works at the end of each year; the legend and text note that the proportion of the latter has roughly doubled over the history of CC.
+
+[![](Metrics_Updated_Monthly.png)](http://wiki.creativecommons.org/File:Metrics_Updated_Monthly.png)
+
+If we look at the average for each month, not only December (remove the regular expression matching '12' at the end of the year month datestring), the data is noisier (and it appears data collection failed for two months in mid-2007, which perhaps should be interpolated):
+
+The results of the above queries and some additional charts may be [downloaded as a spreadsheet](http://wiki.creativecommons.org/images/0/02/CC-growth-mix.ods).
+
+As noted previously, additional data is [available for analysis](/archives/old-tech-blog/available-for-analysis/). There's also more that could be done with the license-link and site-specific data used above, e.g., analysis of particular license classes, version update, and jurisdiction ports. Also see the [non-technical post.](http://creativecommons.org/weblog/entry/28041)
+
+---
+pub_date: 2011-06-27

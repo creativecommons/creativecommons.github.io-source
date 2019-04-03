@@ -1,0 +1,26 @@
+title: October 2010 Tech Update
+---
+categories:
+status
+---
+author: nathan
+---
+body:
+
+Inspired by the [Wikimedia Foundation](http://techblog.wikimedia.org/2010/09/wmf-engineering/), I wanted to give a brief update on the past month's technology work at Creative Commons. 
+
+Notable highlights from September:
+
+  * [Continuous Integration](http://code.creativecommons.org/hudson/): We technically [rolled this out](/archives/old-tech-blog/welcome-hudson-to-creative-commons/) at the end of August, but CC is now using [Hudson](http://hudson-ci.org) as a continuous integration tool for all our software projects (and as I write this, things are green!). You can also get an at-a-glance view of our "core" tools on the [build monitor](http://code.creativecommons.org/hudson/monitor/).
+  * [Named graphs (provenance) landed](/archives/old-tech-blog/named-graph-support-lands-in-discovered/) in [DiscoverEd](http://wiki.creativecommons.org/DiscoverEd)  
+As we've continued to work on this, we've also had the opportunity to push [some patches](http://sourceforge.net/tracker/index.php?func=detail&aid=3065437&group_id=118754&atid=682762) upstream to NG4J which addressed SQL quoting issues.
+  * [OER search and discovery paper](http://wiki.creativecommons.org/Search_and_Discovery:_OER's_Open_Loop) (describing our DiscoverEd work) submitted for OpenEd  
+I'll be presenting at [OpenEd](http://openedconference.org/2010/) in November, and will update the wiki page with slides when they're available.
+  * i.creativecommons.org is now racked at ISC: we're continuing to make improvements to our infrastructure for both performance and redundancy. i.creativecommons.org (which serves the license badges) has the highest sustained traffic of CC properties, so this is a nice improvement for us.
+  * Annual Campaign: Our annual fund-raising campaign begins Monday. As usual, we're rolling out some backend improvements for that. On Monday [we'll move](/archives/old-tech-blog/upcoming-changes-to-cc-network/) to a new version of [CC Network](http://creativecommons.net/) that's integrated with [CiviCRM](http://civicrm.org/).
+  * Public Domain Mark: Our new public domain tool, Public Domain Mark, launches in October. We've been working this month on adding support to our technical backend for that. At launch we'll have a chooser (similar to CC0's), the deeds and RDF (of course). We'll also have API support, thanks to the work completed earlier this year to normalize the way our tools work (aka, "sanity").
+
+
+
+---
+pub_date: 2010-10-01

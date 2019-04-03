@@ -1,0 +1,17 @@
+title: Caching deeds for peak performance
+---
+categories:
+development
+---
+author: nathan
+---
+body:
+
+As Chris [mentioned](/archives/old-tech-blog/understanding-the-state-of-sanity-via-whiteboards-and-ascii-art/), he's been working on improving the [license chooser](http://creativecommons.org/choose/), among other things simplifying it and making it a better behaved [WSGI](http://en.wikipedia.org/wiki/Web_Server_Gateway_Interface) citizen. That code also handles generating the license deeds. For performance reasons we like to serve those from static files; I [put together some details](http://yergler.net/blog/2010/01/05/caching-wsgi-applications-to-disk/) about [wsgi_cache](http://pypi.python.org/pypi/wsgi_cache), a piece of WSGI middleware I wrote this week to help with this, on my [personal blog](http://yergler.net/blog/):
+
+> The idea behind wsgi_cache is that you create a disk cache for results, caching only the body of the response. We only cache the body for a simple reason—we want something else, something faster, like Apache or other web server, to serve the request when it’s a cache hit. We’ll use mod_rewrite to send the request to our WSGI application when the requested file doesn’t exist; otherwise it hits the on disk version. And cache “invalidation” becomes as simple as rm (and as fine grained as single resources).
+
+You can read the full entry [here](http://yergler.net/blog/2010/01/05/caching-wsgi-applications-to-disk/), find wsgi_cache [documentation on PyPI](http://pypi.python.org/pypi/wsgi_cache), and get the [source code](http://code.creativecommons.org/viewgit/wsgi_cache.git/) from our git repository.
+
+---
+pub_date: 2010-01-06

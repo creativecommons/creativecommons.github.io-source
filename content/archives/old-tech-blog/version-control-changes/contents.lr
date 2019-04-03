@@ -1,0 +1,18 @@
+title: Version Control Changes
+---
+categories:
+---
+author: nathan
+---
+body:
+
+I alluded to it in my [last post](/archives/old-tech-blog/destination-sanity/) and wanted to provide some more details and context on the changes we're making (have made) to our source control systems. Since I started working on CC code in late 2003 we've hosted our source repository in the [CC Tools project](http://sourceforge.net/projects/cctools) at [Sourceforge.net](http://sourceforge.net), first in [CVS](http://en.wikipedia.org/wiki/Concurrent_Versions_System), later in [Subversion](http://en.wikipedia.org/wiki/Subversion_\(software\)). Sourceforge.net has been great in one major respect -- to the best of my knowledge we've never had a data loss issue. Of course, many times using Sourceforge has also felt like something to endure rather than appreciate. It was while enduring the delayed availability of Subversion that we decided to move the [ccPublisher](http://wiki.creativecommons.org/CcPublisher) code base to [Berlios.de](http://developer.berlios.de/projects/cctools), which was marginally better. 
+
+Since the beginning of 2008 a few things have conspired to finally push us over the edge and decide to leave Sourceforge.net behind. On one hand we've been itching to work with a [distributed version control](http://en.wikipedia.org/wiki/Distributed_Version_Control_System) system (we wound up choosing [Git](http://en.wikipedia.org/wiki/Git_%28software%29)). While using Sourceforge didn't rule that out, I wanted to make sure that we had a place to publish our repositories publicly, both for redundancy and transparency. Accepting this as a task just made me more amenable to also creating a place to publish a Subversion repository. The other event was a morning of outages (again) on Sourceforge's Subversion server. I was trying to commit updates to the license deeds (just over 20,000 files updated), and the operation kept failing mid-way through. Note that this is a commit that can take up to 12 hours when successful. 
+
+Two days later we were cutting over to a new system, hosted at [code.creativecommons.org](http://code.creativecommons.org). We turned off write access to the Sourceforge repository, synced it, and asked contributors for public keys, which we're using for authentication. The new system supports both Git and [Subversion](http://code.creativecommons.org/viewsvn), public key authentication for committers (using the pretty slick [gitosis](http://scie.nti.st/2007/11/14/hosting-git-repositories-the-easy-and-secure-way) on the git side) and is fast. Really, really, really fast when compared to our Sourceforge repository.
+
+Total estimated time for testing and deployment: 2 person-days.
+
+---
+pub_date: 2008-04-01
