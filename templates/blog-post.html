@@ -4,7 +4,7 @@
 {% block body %}
   <h2 class="mb-0">{{ this.title }}</h2>
   <p class="meta text-muted mt-0">by <a href="/blog/authors/{{ this.author }}">{{ this.author }}</a>
-  on {{ this.pub_date|dateformat('full') }}</p>
+  on {{ this.pub_date|dateformat('EEEE, yyyy ''MMMM d') }}</p>
   <div class="body">{{ this.body }}</div>
   <hr>
   <p class="meta mt-0 mb-0"><span class="text-muted">Categories: </span>
