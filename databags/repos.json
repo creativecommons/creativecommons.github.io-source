@@ -141,7 +141,7 @@
             "id": 46296768,
             "language": "XSLT",
             "license": {
-                "name": "Other",
+                "name": "GNU General Public License v2.0",
                 "url": "https://github.com/creativecommons/cc-license-chooser/blob/master/LICENSE"
             },
             "name": "cc-license-chooser",
@@ -910,16 +910,6 @@
             "name": "www2015",
             "url": "https://github.com/creativecommons/www2015",
             "website": null
-        },
-        {
-            "created": "2014-08-23T20:37:33",
-            "description": "A Simple JSON-based Dashboard Replacement",
-            "id": 23265772,
-            "language": null,
-            "license": null,
-            "name": "zoneboard",
-            "url": "https://github.com/creativecommons/zoneboard",
-            "website": ""
         }
     ]
 }
