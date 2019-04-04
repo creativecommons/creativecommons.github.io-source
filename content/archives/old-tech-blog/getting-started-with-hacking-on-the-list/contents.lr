@@ -14,8 +14,9 @@ in, and pushed. My style of programming is to check in often
 (sometimes too often) and with short, punchy comments about the
 changes. Sometimes, as we all do, I fail at good commit messages.
 
-With that in mind, I thought I'd write up
-[some documentation on how to get started hacking](https://github.com/creativecommons/list/blob/master/www/_source/getting-started.md)
-on my most recent project, The List web app.
+With that in mind, I thought I'd write up [some documentation on how to get
+started hacking][listhacking] on my most recent project, The List web app.
+
+[listhacking]:https://github.com/creativecommons/list/blob/master/docs/getting-started.md
 ---
 pub_date: 2014-12-15
