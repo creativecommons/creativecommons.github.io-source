@@ -33,13 +33,13 @@ You can find more information about the slot allocation process in [the GSoC men
 
 ## Proposal review criteria
 
+Proposal quality is very important, code and community contributions help for different reasons. We are hoping that GSoC will lead to long term contributions to CC, and we see being involved in the community as a sign of general interest in our work. Any code contributions are good for first purposes, contributions to CC repos also show a general interest in our work so they count for both.
+
 We do not have formal guidelines for reviewing proposals, but here are a few things we consider:
 * **Quality of the proposal**: This is the most important thing. A good proposal includes attention to detail, externally measurable milestones, consideration for future maintainability and community involvement, and a demonstration of your skills.
 * **Community involvement**: One of our major goals for GSoC is to build an active development community and attract long-term contributors. Engaging in the community, whether it's asking questions, helping other students, contributing code, filing bugs, or whatever else, is a good sign that you're actually interested in our work and our projects.
 * **Communication skills and initiative**: These are essential to completing a successful project. Things we look for (among others): asking specific and detailed questions, following up on conversations, making sure to read available resources before asking questions, being patient and responding to critical feedback well.
 * **Code contributions**: We appreciate seeing your code, helps us guage your ability to orient yourself to a new codebase, as well as giving us confidence that you have the skills necessary to implement your proposal. Code samples that are not related to CC projects are fine too.
-
-Proposal quality is very important, code and community contributions help for different reasons. We are hoping that GSoC will lead to long term contributions to CC, and we see being involved in the community as a sign of general interest in our work. Any code contributions are good for first purposes, contributions to CC repos also show a general interest in our work so they count for both.
 
 However, this is all relative. As is said above, we do not have any formal guidelines. If you have a great proposal, but haven't contributed to any CC repos, you still have a good shot.
 
