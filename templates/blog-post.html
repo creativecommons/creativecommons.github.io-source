@@ -7,10 +7,11 @@
   on {{ this.pub_date|dateformat('EEEE, yyyy ''MMMM d') }}</p>
   <div class="body">{{ this.body }}</div>
   <hr>
+  {% set blog_name = this.parent.path.split('/')[-1] %}
   <p class="meta mt-0 mb-0"><span class="text-muted">Categories: </span>
     {% if this.categories|length %}
       {% for category in this.categories %}
-      <strong>{{ category }}</strong>{{ "," if not loop.last }}
+      <a href="/archives/blog-categories/{{blog_name + '/' + category }}">{{ category }}</a>{{ "," if not loop.last }}
       {% endfor %}
     {% else %}
       none
