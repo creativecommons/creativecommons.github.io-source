@@ -1,0 +1,15 @@
+{% macro render_categories(categories) %}
+<ul>
+    {% for category in site.query(categories.path) %}
+      <li><a href="{{ category|url }}">{{ category.name }}</a></li>
+    {% endfor %}
+</ul>
+{% endmacro %}
+
+{% macro render_category_list(categories) %}
+<ul>
+    {% for category in categories %}
+    <li><a href="{{ category|url }}">{{ category.title }}</a></li>
+    {% endfor %}
+</ul>
+{% endmacro %}
