@@ -44,7 +44,7 @@ If you have a great proposal, but haven't contributed to any CC repos, you still
 ## Project slots
 
 Google assigns Creative Commons (and all GSoC organizations) a fixed number of project slots. This means that there may be `n` 
-proposals on the project ideas page, but CC may be only be allocated enough project slots to support `< n` projects. 
+proposals on the project ideas page, but CC may only be be allocated enough project slots to support `< n` projects. 
 The number of project slots allocated to each GSoC organization varies by year. 
 
 You can find more information about the slot allocation process in [the GSoC mentor guide][GSoC-Slot-Allocation].
