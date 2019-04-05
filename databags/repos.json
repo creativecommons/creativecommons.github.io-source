@@ -384,6 +384,9 @@
         {
             "created": "2017-07-05T23:39:19",
             "description": "Global network social network",
+            "engineering_project": true,
+            "english_name": "Creative Commons Global Network website",
+            "featured": false,
             "id": 96369702,
             "language": "PHP",
             "license": {
@@ -391,6 +394,10 @@
                 "url": "https://github.com/creativecommons/commoners/blob/master/LICENSE"
             },
             "name": "commoners",
+            "technologies": [
+                "PHP",
+                "WordPress"
+            ],
             "url": "https://github.com/creativecommons/commoners",
             "website": null
         },
@@ -443,13 +450,20 @@
         {
             "created": "2013-10-31T00:19:22",
             "description": "creativecommons.org license chooser and license display code",
+            "engineering_project": true,
+            "english_name": "License chooser and license display code",
+            "featured": false,
             "id": 14003491,
             "language": "HTML",
             "license": {
                 "name": "Other",
-                "url": "https://github.com/creativecommons/creativecommons.org/blob/master/COPYING"
+                "url": "https://github.com/creativecommons/creativecommons.org/blob/master/LICENSE"
             },
             "name": "creativecommons.org",
+            "technologies": [
+                "Python",
+                "bash"
+            ],
             "url": "https://github.com/creativecommons/creativecommons.org",
             "website": "https://github.com/creativecommons/new-creativecommons.org"
         },
@@ -703,6 +717,16 @@
             "website": ""
         },
         {
+            "created": "2019-04-05T14:15:22",
+            "description": "Development toolkit for WordPress",
+            "id": 179695011,
+            "language": "PHP",
+            "license": null,
+            "name": "queulat",
+            "url": "https://github.com/creativecommons/queulat",
+            "website": null
+        },
+        {
             "created": "2013-12-02T20:59:52",
             "description": null,
             "id": 14874571,
@@ -896,19 +920,6 @@
             "license": null,
             "name": "www-i",
             "url": "https://github.com/creativecommons/www-i",
-            "website": null
-        },
-        {
-            "created": "2014-11-11T17:34:30",
-            "description": null,
-            "id": 26496204,
-            "language": "HTML",
-            "license": {
-                "name": "GNU Affero General Public License v3.0",
-                "url": "https://github.com/creativecommons/www2015/blob/master/LICENSE"
-            },
-            "name": "www2015",
-            "url": "https://github.com/creativecommons/www2015",
             "website": null
         }
     ]
