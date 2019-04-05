@@ -25,6 +25,11 @@ Here are short bios of each of our 2019 mentors. Please use first names or Slack
 * [Sophine Clachar](https://creativecommons.org/author/sclachar/) (`Sophine` on Slack)
 * [Timid Robot Zehta](https://creativecommons.org/author/timidcreativecommons-org/) (`Timid Robot` on Slack)
 
+### Mentor Availability/ Project Slots
+Google assigns Creative Commons (and all GSoC organizations) a fixed number of project slots. This means that there may be `n` proposals on the project ideas page, but CC may be only be allocated enough project slots to support `< n` projects. The number of project slots allocated to each GSoC organization varies by year. 
+
+You can find more information about the slot allocation process in [the GSoC mentor guide](https://google.github.io/gsocguides/mentor/selecting-students-and-mentors#the-formal-process).
+
 ## Proposal review criteria
 
 We do not have formal guidelines for reviewing proposals, but here are a few things we consider:
