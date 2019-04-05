@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% from "macros/categories.html" import render_category_list %}
+{% block title %}{{ this.parent.title }} - {{ this.name }}{% endblock %}
+{% block header %}{{ this.parent.title }}{% endblock %}
+{% block body %}
+  <h1>Category: {{ this.name }}</h1>
+  {{ render_category_list(this.children) }}
+  <hr>
+  <strong><a href="{{ '/archives/blog-categories/' + this.parent.path.split('/')[-1] }}">All Categories</a></strong>
+{% endblock %}
