@@ -317,7 +317,7 @@
         },
         {
             "created": "2014-10-06T22:07:52",
-            "description": "RubyCAS customizations for CCID",
+            "description": "RubyCAS customizations for CCID (Creative Commons ID)",
             "id": 24866852,
             "language": "HTML",
             "license": {
@@ -326,7 +326,7 @@
             },
             "name": "CCID-cas",
             "url": "https://github.com/creativecommons/CCID-cas",
-            "website": null
+            "website": "https://login.creativecommons.org/"
         },
         {
             "created": "2013-10-24T00:12:26",
