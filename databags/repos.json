@@ -83,16 +83,6 @@
             "website": null
         },
         {
-            "created": "2017-02-28T23:28:25",
-            "description": "Ready to use CAS server based on CASino Rails Engine",
-            "id": 83489731,
-            "language": "Ruby",
-            "license": null,
-            "name": "CASinoAppCCID",
-            "url": "https://github.com/creativecommons/CASinoAppCCID",
-            "website": null
-        },
-        {
             "created": "2016-04-20T21:29:08",
             "description": "Content outline for new Creative Commons Certification programs",
             "id": 56722268,
@@ -321,7 +311,7 @@
             "id": 24866852,
             "language": "HTML",
             "license": {
-                "name": "GNU Affero General Public License v3.0",
+                "name": "Other",
                 "url": "https://github.com/creativecommons/CCID-cas/blob/master/LICENSE.md"
             },
             "name": "CCID-cas",
