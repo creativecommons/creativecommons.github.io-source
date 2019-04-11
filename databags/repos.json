@@ -684,19 +684,6 @@
             "website": ""
         },
         {
-            "created": "2019-03-25T16:35:56",
-            "description": "qTranslate-XT (eXTended) - will become a new plugin soon. Help us with the transition!",
-            "id": 177625314,
-            "language": "PHP",
-            "license": {
-                "name": "GNU General Public License v3.0",
-                "url": "https://github.com/creativecommons/qtranslate-xt/blob/master/license.txt"
-            },
-            "name": "qtranslate-xt",
-            "url": "https://github.com/creativecommons/qtranslate-xt",
-            "website": ""
-        },
-        {
             "created": "2019-04-05T14:15:22",
             "description": "Development toolkit for WordPress",
             "id": 179695011,
