@@ -1,9 +1,5 @@
-_model: blog
+_model: redirect
 ---
-title: Archive: CC Technical Blog (2007-2014)
+target: /archives/old-tech-blog/entries/
 ---
-description:
-
-<div class="alert alert-info" role="alert">
-  This is an archive of CC's technical blog that was run from 2007 to 2014. It is here for historical preservation only; CC's tools and infrastructure have changed significantly since then so information in the posts may no longer be accurate. Some of the links are probably dead as well. 
-</div>
+_discoverable: no
