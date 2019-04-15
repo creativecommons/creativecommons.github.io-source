@@ -6,14 +6,18 @@
   <p class="meta text-muted mt-0">by <a href="/blog/authors/{{ this.author }}">{{ this.author }}</a>
   on {{ this.pub_date|dateformat('EEEE, yyyy ''MMMM d') }}</p>
   <div class="body">{{ this.body }}</div>
-  <hr>
-  <p class="meta mt-0 mb-0"><span class="text-muted">Categories: </span>
-    {% if this.categories|length %}
-      {% for category in this.categories %}
-      {{ check_file('content' + this.parent.parent.path + '/categories/' + category + '/contents.lr') }}
-      <a href=" {{ this.parent.parent.path + '/categories/' + category }} ">{{ category }}</a>{{ "," if not loop.last }}
-      {% endfor %}
-    {% else %}
-      none
-    {% endif %}</p>
+  <div class="card bg-light">
+    <div class="card-body p-2">
+      <p class="meta my-0"><span class="mr-2"><strong>Categories:</strong></span>
+        {% if this.categories|length %}
+          {% for category in this.categories %}
+          {{ check_file('content' + this.parent.parent.path + '/categories/' + category + '/contents.lr') }}
+          <a href=" {{ this.parent.parent.path + '/categories/' + category }} ">{{ category }}</a>{{ "," if not loop.last }}
+          {% endfor %}
+        {% else %}
+          none
+        {% endif %}
+      </p>
+    </div>
+  </div>
 {% endblock %}
