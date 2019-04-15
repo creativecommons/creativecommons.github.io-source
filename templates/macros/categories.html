@@ -1,9 +1,9 @@
 {% from "macros/posts.html" import render_posts %}
 
 {% macro render_categories(categories) %}
-<ul>
+<ul class="list-inline">
     {% for category in site.query(categories.path) %}
-      <li><a href="{{ category|url }}">{{ category.name }}</a></li>
+      <li class="list-inline-item"><a href="{{ category|url }}">{{ category.name }}</a></li>
     {% endfor %}
 </ul>
 {% endmacro %}

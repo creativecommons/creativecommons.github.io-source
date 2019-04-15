@@ -3,7 +3,7 @@
 {% block title %}{{ this.parent.title }} - {{ this.name }}{% endblock %}
 {% block header %}{{ this.parent.title }}{% endblock %}
 {% block body %}
-  <h2>All posts tagged "{{ this.name }}"</h2>
+  <h2>All posts categorized "{{ this.name }}"</h2>
   {{ render_posts(this.children) }}
   <hr>
   <strong><a href="{{ this.parent.path }}">All Categories</a></strong>
