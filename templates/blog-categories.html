@@ -1,6 +1,6 @@
 {% extends "layout.html" %}
 {% from "macros/categories.html" import render_categories %}
-{% block title %}{{ this.title }}{% endblock %}
+{% block title %}{{ this.parent.children.get('entries').title }}{% endblock %}
 {% block header %}{{ this.parent.children.get('entries').title }}{% endblock %}
 {% block body %}
   <h2>Categories</h2>
