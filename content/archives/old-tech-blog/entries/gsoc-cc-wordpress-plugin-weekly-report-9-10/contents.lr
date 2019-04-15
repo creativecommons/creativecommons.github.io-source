@@ -9,7 +9,7 @@ author: erlehmann
 ---
 body:
 
-Time is running out for work on the [plugin](/archives/old-tech-blog/gsoc-project-introduction-cc-wordpress-plugin/). With the 9th of this month being the suggested date to start working on documentation and cleanup and the 16th being a definitive "pencils down" date, I'm definitely in a hurry. Here's my story for the last two weeks, decorated with nicely drawn bullet points:
+Time is running out for work on the [plugin](/archives/old-tech-blog/entries/gsoc-project-introduction-cc-wordpress-plugin/). With the 9th of this month being the suggested date to start working on documentation and cleanup and the 16th being a definitive "pencils down" date, I'm definitely in a hurry. Here's my story for the last two weeks, decorated with nicely drawn bullet points:
 
   * **`<figure>` elements are _inline blocks_ now** : Like the elements they are supposed to replace — `<img>`, `<video>`, `<audio>` and the occasional `<object>` — `<figure>` elements should not disturb the flow of a blog post. They also now display effortless besides each other. 
   * **The _wetter_ style became less  US-centric**: I created a version of the stylesheet with a crossed-out Euro symbol (€).  

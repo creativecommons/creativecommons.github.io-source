@@ -12,7 +12,7 @@ author: alex
 ---
 body:
 
-Following on from Jon's [follow-up](/archives/old-tech-blog/more-xmp-toolkit-plugs/), Hubert Figuiere has [released Exempi 1.99.0](http://www.figuiere.net/hub/blog/?2007/05/29/523-exempi-1990), now based on Adobe's XMP SDK.
+Following on from Jon's [follow-up](/archives/old-tech-blog/entries/more-xmp-toolkit-plugs/), Hubert Figuiere has [released Exempi 1.99.0](http://www.figuiere.net/hub/blog/?2007/05/29/523-exempi-1990), now based on Adobe's XMP SDK.
 
 His blog post includes a nice snippet of code showing how to apply a CC license to a PDF:
 

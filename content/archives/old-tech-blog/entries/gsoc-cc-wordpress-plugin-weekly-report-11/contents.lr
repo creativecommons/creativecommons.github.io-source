@@ -9,7 +9,7 @@ author: erlehmann
 ---
 body:
 
-This week most of the work on the [plugin](/archives/old-tech-blog/gsoc-project-introduction-cc-wordpress-plugin/) consisted of styling changes and fixing bugs, mainly regressions that sneaked in due to the rewrite of functions that are now using the API. Still, there are some new features:
+This week most of the work on the [plugin](/archives/old-tech-blog/entries/gsoc-project-introduction-cc-wordpress-plugin/) consisted of styling changes and fixing bugs, mainly regressions that sneaked in due to the rewrite of functions that are now using the API. Still, there are some new features:
 
   * **The _embed_ button** : Suggested by [Markus Beckedahl](http://de.wikipedia.org/wiki/Markus_Beckedahl), a re-embedding possibility actively promotes sharing content. Clicking on the button reveals a text input filled with the markup necessary to put a copy of the media item into another website. Bonus: The re-embedded content keeps the style of the original content and _also_ sports an embed-button.
   * **An API cache** : Results of queries to the [CC REST API](http://api.creativecommons.org/docs/) are now saved for two weeks, using the [Wordpress Transients API](http://codex.wordpress.org/Transients_API). This speeds up figure generation and the administration page tremendously.

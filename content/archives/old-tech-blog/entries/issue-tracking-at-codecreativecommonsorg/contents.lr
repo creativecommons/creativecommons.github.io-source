@@ -6,7 +6,7 @@ author: nathan
 ---
 body:
 
-Continuing the trend started when we [moved our source repository](/archives/old-tech-blog/version-control-changes/), today we're rolling out [issue tracking on code.creativecommons.org](http://code.creativecommons.org/issues). Our goals are two fold:
+Continuing the trend started when we [moved our source repository](/archives/old-tech-blog/entries/version-control-changes/), today we're rolling out [issue tracking on code.creativecommons.org](http://code.creativecommons.org/issues). Our goals are two fold:
 
   1. Increase transparency regarding what we are doing and plan to do. If you find a bug or suggest an idea, we'd like to make sure it's tracked in a publicly accessible location where everyone can follow along.
   2. Tangentially, we'd like to make it easier for people to contribute to the work we're doing. We [semi-]frequently hear people say they'd like to help, but don't know where to start. We've had [Developer Challenges](http://wiki.creativecommons.org/Developer_Challenges) forever but they're not easy to find and poorly maintained. I'm personally hoping that keeping the ideas in the same system we [developers] use every day will keep them in the forefront of our minds.

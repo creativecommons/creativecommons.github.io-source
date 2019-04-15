@@ -9,7 +9,7 @@ author: akozak
 ---
 body:
 
-Day 2 of the [DiscoverEd](http://discovered.creativecommons.org/search/) [code sprint](http://wiki.creativecommons.org/DiscoverEd_Sprint_\(June,_2010\)) was largely a continuation of work that started on [Day 1](/archives/old-tech-blog/discovered-code-sprint-day-1/).
+Day 2 of the [DiscoverEd](http://discovered.creativecommons.org/search/) [code sprint](http://wiki.creativecommons.org/DiscoverEd_Sprint_\(June,_2010\)) was largely a continuation of work that started on [Day 1](/archives/old-tech-blog/entries/discovered-code-sprint-day-1/).
 
 The team working on a plugin architecture for DiscoverEd finished their project, which was to build an extension point that enables plugins to pull arbitrary metadata from external sources. At the beginning of the day they had to finish some tests for the new support for arbitrary metadata added in Day 1, but by the end of the day were able to merge their new functionality back into the DiscoverEd repository. They were even able to build a small proof-of-concept plugin that pulled data from the [delicious.com API](http://delicious.com/help/tools) into the Jena store, which later makes its way into the Lucene index. Tomorrow they'll start looking at developing support for custom vocabularies and ontologies (such as [AGROVOC](http://en.wikipedia.org/wiki/AGROVOC)).
 

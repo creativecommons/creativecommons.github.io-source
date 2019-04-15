@@ -14,7 +14,7 @@ Hello, my name's Igor Lukanin. I'm a 21 year old student of the [Ural Federal Un
 
 The project is intended to develop an extension for Mozilla Firefox web browser that would make it easy to find CC-licensed content on browsed pages, know the license and its terms, clarify their meaning and generate correct attribution information for content re-usage. The major advantage of this project is its (future) nice and polished UI (a [mockup](http://simplest-image-hosting.net/i0-info-png-0.png) of the browser's Page Info dialog is available).  
   
-Paying attention to the seamy side of life, I should mention that the extension would do its magic by parsing RDFa metadata. It seems that it would perfectly consume the outcome of the [GSoC Wordpress plugin](/archives/old-tech-blog/gsoc-project-introduction-cc-wordpress-plugin/), as well as work with a huge number of existing web-sites providing RDFa metadata.
+Paying attention to the seamy side of life, I should mention that the extension would do its magic by parsing RDFa metadata. It seems that it would perfectly consume the outcome of the [GSoC Wordpress plugin](/archives/old-tech-blog/entries/gsoc-project-introduction-cc-wordpress-plugin/), as well as work with a huge number of existing web-sites providing RDFa metadata.
 
 A bit more information may be found in the [project proposal](http://code.creativecommons.org/viewgit/cc.ff_ext.git/plain/doc/proposal.pdf) (choose Save Link As from the context menu).
 

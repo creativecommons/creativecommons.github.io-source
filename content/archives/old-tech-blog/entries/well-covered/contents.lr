@@ -8,7 +8,7 @@ author: nathan
 ---
 body:
 
-When we [rolled out](/archives/old-tech-blog/welcome-hudson-to-creative-commons/) [Hudson for CC code](http://code.creativecommons.org/hudson) last month, I already knew that I wanted to have test coverage reporting. There's simply no reason not to: it provides a way to understand how complete your tests are, and when combined with branch testing, gives you an easy way to figure out what tests need to be written (or where to target your test writing efforts).
+When we [rolled out](/archives/old-tech-blog/entries/welcome-hudson-to-creative-commons/) [Hudson for CC code](http://code.creativecommons.org/hudson) last month, I already knew that I wanted to have test coverage reporting. There's simply no reason not to: it provides a way to understand how complete your tests are, and when combined with branch testing, gives you an easy way to figure out what tests need to be written (or where to target your test writing efforts).
 
 Last week I updated [DiscoverEd](http://wiki.creativecommons.org/DiscoverEd) to use [Cobertura](http://cobertura.sourceforge.net/) for [coverage](http://code.creativecommons.org/hudson/job/discovered/cobertura/). It was pretty easy to crib the example ant build file to [add support](http://gitorious.org/discovered/repo/commit/ea1a28b823fdee9657b7f63f347c72cf5e9b82bd) for instrumenting and testing our code.
 
