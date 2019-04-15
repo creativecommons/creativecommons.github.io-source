@@ -1,5 +1,5 @@
 {% macro render_pagination(pagination) %}
-  <ul class="pagination">
+  <ul class="pagination table-responsive mb-2">
     {% if pagination.has_prev %}
       <li class="page-item"><a class="page-link" href="{{ pagination.prev|url }}">Previous</a></li>
     {% else %}
