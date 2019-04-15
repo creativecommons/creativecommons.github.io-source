@@ -1,18 +1,10 @@
 {% extends "layout.html" %}
 {% from "macros/pagination.html" import render_pagination %}
+{% from "macros/posts.html" import render_posts %}
 {% block title %}{{ this.title }}{% endblock %}
 {% block body %}
   {{ this.description }}
-  <ul class="blog-index list-unstyled">
-  {% for post in this.pagination.items %}
-    <li>
-      <a href="{{ post|url }}">{{ post.title }}</a>
-      <p class="text-muted small">by <a href="/blog/authors/{{ post.author }}">{{ post.author }}</a>
-      on {{ post.pub_date|dateformat("YYYY-MM-dd") }}</p>
-    </li>
-  {% endfor %}
-  </ul>
-
+  {{ render_posts(this.pagination.items) }}
   {% if this.pagination.pages > 1 %}
     {{ render_pagination(this.pagination) }}
   {% endif %}
