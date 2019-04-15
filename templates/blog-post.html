@@ -10,7 +10,8 @@
   <p class="meta mt-0 mb-0"><span class="text-muted">Categories: </span>
     {% if this.categories|length %}
       {% for category in this.categories %}
-      <strong>{{ category }}</strong>{{ "," if not loop.last }}
+      {{ check_file('content' + this.parent.parent.path + '/categories/' + category + '/contents.lr') }}
+      <a href=" {{ this.parent.parent.path + '/categories/' + category }} ">{{ category }}</a>{{ "," if not loop.last }}
       {% endfor %}
     {% else %}
       none

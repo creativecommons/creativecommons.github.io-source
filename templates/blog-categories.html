@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+{% from "macros/categories.html" import render_categories %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block header %}{{ this.title }}{% endblock %}
+{% block body %}
+  <h1>Categories</h1>
+  {{ render_categories(this) }}
+  <hr>
+{% endblock %}
