@@ -704,19 +704,6 @@
             "website": ""
         },
         {
-            "created": "2015-07-23T21:30:47",
-            "description": "Rails plugin for the RubyCAS-Client",
-            "id": 39594110,
-            "language": "Ruby",
-            "license": {
-                "name": "MIT License",
-                "url": "https://github.com/creativecommons/rubycas-client-rails/blob/master/MIT-LICENSE"
-            },
-            "name": "rubycas-client-rails",
-            "url": "https://github.com/creativecommons/rubycas-client-rails",
-            "website": ""
-        },
-        {
             "created": "2016-07-29T23:14:42",
             "description": "The scholars addenda system.",
             "id": 64515519,
@@ -735,6 +722,26 @@
             "name": "search",
             "url": "https://github.com/creativecommons/search",
             "website": "https://search.creativecommons.org/"
+        },
+        {
+            "created": "2018-11-20T21:50:33",
+            "description": "Site Reliability Engineering / DevOps SaltStack configuration files",
+            "engineering_project": true,
+            "english_name": "Creative Commons SaltStack",
+            "featured": false,
+            "id": 158455678,
+            "language": "SaltStack",
+            "license": {
+                "name": "MIT License",
+                "url": "https://github.com/creativecommons/sre-salt-prime/blob/master/LICENSE"
+            },
+            "name": "sre-salt-prime",
+            "technologies": [
+                "Python",
+                "SaltStack"
+            ],
+            "url": "https://github.com/creativecommons/sre-salt-prime",
+            "website": ""
         },
         {
             "created": "2015-03-03T19:48:55",
