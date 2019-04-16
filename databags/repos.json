@@ -289,6 +289,19 @@
             "website": "https://login.creativecommons.org/"
         },
         {
+            "created": "2019-04-16T18:57:41",
+            "description": "Script to add CCID users to MediaWiki",
+            "id": 181749129,
+            "language": "PHP",
+            "license": {
+                "name": "GNU General Public License v2.0",
+                "url": "https://github.com/creativecommons/CCID-MediaWiki/blob/master/LICENSE"
+            },
+            "name": "CCID-MediaWiki",
+            "url": "https://github.com/creativecommons/CCID-MediaWiki",
+            "website": null
+        },
+        {
             "created": "2013-10-24T00:12:26",
             "description": null,
             "id": 13818403,
