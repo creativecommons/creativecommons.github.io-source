@@ -14,16 +14,6 @@
             "website": ""
         },
         {
-            "created": "2018-06-06T23:53:47",
-            "description": "Creative Commons Australian Chapter documentation",
-            "id": 136398139,
-            "language": "PostScript",
-            "license": null,
-            "name": "australian-chapter",
-            "url": "https://github.com/creativecommons/australian-chapter",
-            "website": "http://creativecommons.org.au/"
-        },
-        {
             "created": "2015-06-24T18:37:20",
             "description": "A MediaWiki skin using Bootstrap 3 & FontAwesome 4",
             "id": 38003830,
@@ -154,16 +144,6 @@
             "name": "cc-resource-archive",
             "url": "https://github.com/creativecommons/cc-resource-archive",
             "website": "http://resources.creativecommons.org/"
-        },
-        {
-            "created": "2018-12-18T17:40:38",
-            "description": "Prototypes for CC's usability initiative.",
-            "id": 162324755,
-            "language": null,
-            "license": null,
-            "name": "cc-usability-prototypes",
-            "url": "https://github.com/creativecommons/cc-usability-prototypes",
-            "website": null
         },
         {
             "created": "2015-07-15T18:24:37",
@@ -379,16 +359,6 @@
                 "WordPress"
             ],
             "url": "https://github.com/creativecommons/commoners",
-            "website": null
-        },
-        {
-            "created": "2016-05-17T20:49:26",
-            "description": null,
-            "id": 59057814,
-            "language": "HTML",
-            "license": null,
-            "name": "communications",
-            "url": "https://github.com/creativecommons/communications",
             "website": null
         },
         {
@@ -787,16 +757,6 @@
             },
             "name": "termination-of-transfer",
             "url": "https://github.com/creativecommons/termination-of-transfer",
-            "website": null
-        },
-        {
-            "created": "2017-11-16T00:46:01",
-            "description": null,
-            "id": 110903847,
-            "language": "Go",
-            "license": null,
-            "name": "terraform-provider-bigv",
-            "url": "https://github.com/creativecommons/terraform-provider-bigv",
             "website": null
         },
         {
