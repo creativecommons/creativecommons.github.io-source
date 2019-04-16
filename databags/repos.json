@@ -458,29 +458,6 @@
             "website": null
         },
         {
-            "created": "2015-05-12T11:38:00",
-            "description": null,
-            "id": 35484494,
-            "language": "HTML",
-            "license": null,
-            "name": "donate-2015",
-            "url": "https://github.com/creativecommons/donate-2015",
-            "website": null
-        },
-        {
-            "created": "2013-12-02T19:21:54",
-            "description": "CiviCRM (Drupal) site that powers donate.creativecommons.org and our CRM database.",
-            "id": 14872213,
-            "language": "PHP",
-            "license": {
-                "name": "Other",
-                "url": "https://github.com/creativecommons/donate.creativecommons.org/blob/master/LICENSE.txt"
-            },
-            "name": "donate.creativecommons.org",
-            "url": "https://github.com/creativecommons/donate.creativecommons.org",
-            "website": null
-        },
-        {
             "created": "2016-01-26T22:56:41",
             "description": "Proposal for a formal way of expressing public license information in Exif",
             "id": 50465380,
@@ -747,19 +724,6 @@
             "website": "https://search.creativecommons.org/"
         },
         {
-            "created": "2016-10-13T22:26:03",
-            "description": "Connects Slack and IRC channels by sending messages back and forth.",
-            "id": 70853063,
-            "language": "JavaScript",
-            "license": {
-                "name": "MIT License",
-                "url": "https://github.com/creativecommons/slack-irc/blob/master/LICENSE"
-            },
-            "name": "slack-irc",
-            "url": "https://github.com/creativecommons/slack-irc",
-            "website": null
-        },
-        {
             "created": "2018-11-20T21:50:33",
             "description": "Site Reliability Engineering / DevOps SaltStack configuration files",
             "engineering_project": true,
@@ -862,7 +826,7 @@
             "created": "2019-04-15T13:36:51",
             "description": "WordPress theme for the State of the Commons",
             "id": 181494221,
-            "language": null,
+            "language": "CSS",
             "license": {
                 "name": "GNU General Public License v2.0",
                 "url": "https://github.com/creativecommons/wp-theme-cc-sotc/blob/master/LICENSE"
