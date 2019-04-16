@@ -618,19 +618,6 @@
             "website": "http://docs.saltstack.com/en/latest/topics/development/conventions/formulas.html"
         },
         {
-            "created": "2014-12-04T16:48:58",
-            "description": "website terms of service, trademark policy and privacy policy",
-            "id": 27550069,
-            "language": "HTML",
-            "license": {
-                "name": "Creative Commons Zero v1.0 Universal",
-                "url": "https://github.com/creativecommons/policies/blob/master/LICENSE"
-            },
-            "name": "policies",
-            "url": "https://github.com/creativecommons/policies",
-            "website": ""
-        },
-        {
             "created": "2019-04-05T14:15:22",
             "description": "Development toolkit for WordPress",
             "id": 179695011,
