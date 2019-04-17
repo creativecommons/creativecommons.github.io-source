@@ -3,7 +3,7 @@
 {% block header %}{{ this.parent.title }}{% endblock %}
 {% block body %}
   <h2 class="mb-0">{{ this.title }}</h2>
-  <p class="meta text-muted mt-0">by <a href="/blog/authors/{{ this.author }}">{{ this.author }}</a>
+  <p class="meta text-muted mt-0">by <a href="{{ this.parent.parent.children.get('authors').path + '/' + this.author }}">{{ this.author }}</a>
   on {{ this.pub_date|dateformat('EEEE, yyyy ''MMMM d') }}</p>
   <div class="body">{{ this.body }}</div>
   <div class="card bg-light">
