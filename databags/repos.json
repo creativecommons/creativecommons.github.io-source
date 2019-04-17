@@ -313,13 +313,13 @@
         },
         {
             "created": "2018-04-10T22:44:46",
-            "description": null,
+            "description": "Theme for CC Certificates website landing page",
             "id": 129003332,
             "language": "CSS",
             "license": null,
             "name": "certificates-landing-page-theme",
             "url": "https://github.com/creativecommons/certificates-landing-page-theme",
-            "website": null
+            "website": "http://certificates.creativecommons.org/"
         },
         {
             "created": "2016-06-14T16:37:49",
