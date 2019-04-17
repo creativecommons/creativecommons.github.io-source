@@ -27,16 +27,6 @@
             "website": "http://borkweb.github.io/bootstrap-mediawiki"
         },
         {
-            "created": "2017-07-27T22:03:36",
-            "description": "Control which BuddyPress field groups are displayed to which user roles.",
-            "id": 98583299,
-            "language": "PHP",
-            "license": null,
-            "name": "buddypress-role-field-groups",
-            "url": "https://github.com/creativecommons/buddypress-role-field-groups",
-            "website": null
-        },
-        {
             "created": "2018-06-01T01:11:48",
             "description": "Candela helper plugin to manage additional config and bootstrapping",
             "id": 135651265,
