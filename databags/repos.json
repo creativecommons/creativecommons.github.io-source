@@ -458,13 +458,13 @@
         },
         {
             "created": "2014-12-08T20:16:04",
-            "description": "[DEPRECATED] CC Labs (Tech Team) blog",
+            "description": "(Deprecated) Tech Team blog",
             "id": 27733017,
             "language": null,
             "license": null,
             "name": "labs",
             "url": "https://github.com/creativecommons/labs",
-            "website": "http://labs.creativecommons.org/"
+            "website": ""
         },
         {
             "created": "2014-07-09T20:23:35",
