@@ -1,6 +1,6 @@
 {% extends "layout.html" %}
 {% from "macros/posts.html" import render_posts %}
-{% block title %}{{ this.parent.parent.children.get('entries').title + ' - ' + this.name }}{% endblock %}
+{% block title %}{{ this.name + ' - ' + this.parent.parent.children.get('entries').title  }}{% endblock %}
 {% block header %}{{ this.parent.parent.children.get('entries').title }}{% endblock %}
 {% block body %}
   <h2>Posts by {{ this.name }}</h2>

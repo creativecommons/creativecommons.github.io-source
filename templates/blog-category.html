@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 {% from "macros/posts.html" import render_posts %}
-{% block title %}{{ this.parent.title }} - {{ this.name }}{% endblock %}
-{% block header %}{{ this.parent.title }}{% endblock %}
+{% block title %}{{ this.name + ' - ' + this.parent.parent.children.get('entries').title }}{% endblock %}
+{% block header %}{{ this.parent.parent.children.get('entries').title }}{% endblock %}
 {% block body %}
   <h2>All posts categorized "{{ this.name }}"</h2>
   {{ render_posts(this.children) }}
