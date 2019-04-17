@@ -11,9 +11,9 @@ pub_date: 2019-04-17
 ---
 body:
 
-I am excited to publicize the open source repository for our SaltStack configuration: [creativecommons/sre-salt-prime](https://github.com/creativecommons/sre-salt-prime). This is a rare offering. Not many configuration management system repositories are open sourced. Read on for why this is important to me :)
+I am excited to publicize the open source repository for our SaltStack configuration: [creativecommons/sre-salt-prime][sre-salt-prime-repo]. This is a rare offering. Not many configuration management system repositories are open sourced. Read on for why this is important to me :)
 
-I really like open source software ([The Open Source Definition (Annotated) | Open Source Initiative](https://opensource.org/osd-annotated)). Over the years it has provided me with access and capabilities I would not normally be able to afford.
+I really like open source software ([The Open Source Definition (Annotated) | Open Source Initiative][osd]). Over the years it has provided me with access and capabilities I would not normally be able to afford.
 
 I had very little money in college. My first computer was salvaged from a dumpster and ran entirely on open source software. I was once reduced to begging a few dollars to satisfy a museum's arbitrarily enforced "suggested donation". Thankfully, open source image manipulation software powered many of my art projects.
 
@@ -21,8 +21,12 @@ With the exception of typing class in high school and a few training sessions at
 
 I've been gainfully employed in the technology sector for over a decade so the free cost of open source software is not as necessary to me. However, open source software remains very important. As a SysAdmin, I have repeatedly found open source communities to be a better resource for support than even the most expensive maintenance contract. The ability to make at-will modifications to a codebase can save project timelines, and seeing those modifications accepted upstream is deeply satisfying.
 
-When I started at Creative Commons in the fall of 2018, I began using [SaltStack](https://en.wikipedia.org/wiki/Salt_(software)) full time. As part of my work on developing infrastructure as code at Creative Commons, I created a new open source repository for our SaltStack configuration: [creativecommons/sre-salt-prime](https://github.com/creativecommons/sre-salt-prime). While working on provisioning of AWS resources, I have had trouble finding examples. I learn best by example and I know I’m not alone. I hope opening this repository helps other Site Reliability Engineers (SREs) and Systems Administrators (SysAdmins).
+When I started at Creative Commons in the fall of 2018, I began using [SaltStack][saltstack-wikipedia] full time. As part of my work on developing infrastructure as code at Creative Commons, I created a new open source repository for our SaltStack configuration: [creativecommons/sre-salt-prime][sre-salt-prime-repo]. While working on provisioning of AWS resources, I have had trouble finding examples. I learn best by example and I know I’m not alone. I hope opening this repository helps other Site Reliability Engineers (SREs) and Systems Administrators (SysAdmins).
 
 I expect that working in the open will improve the quality of my work. Research has not only shown that people produce higher quality work when they expect it to be reviewed or shared, but also that open source allows others to provide criticism, feedback, and contributions.
 
 Perhaps most of all, I hope to give back to the community. I hope it helps others learn when they do not have access to proprietary software at home, school, or work. I hope that my work in the open might lower the resources required to implement open source for others.
+
+[sre-salt-prime-repo]:https://github.com/creativecommons/sre-salt-prime
+[osd]:https://opensource.org/osd-annotated
+[saltstack-wikipedia]:https://en.wikipedia.org/wiki/Salt_(software)
