@@ -1,8 +1,8 @@
 {% extends "layout.html" %}
 {% from "macros/authors.html" import render_authors %}
-{% block title %}Authors{% endblock %}
-{% block header %}Archive: CC Technical Blog (2007-2014){% endblock %}
+{% block title %}{{ this.parent.children.get('entries').title + ' - Authors' }}{% endblock %}
+{% block header %}{{ this.parent.children.get('entries').title }}{% endblock %}
 {% block body %}
   <h2>Authors</h2>
-  {{ render_authors() }}
+  {{ render_authors(this) }}
 {% endblock %}

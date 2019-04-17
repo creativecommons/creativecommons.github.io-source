@@ -1,10 +1,10 @@
 {% extends "layout.html" %}
 {% from "macros/posts.html" import render_posts %}
-{% block title %}{{ this.name }}{% endblock %}
-{% block header %}Archive: CC Technical Blog (2007-2014){% endblock %}
+{% block title %}{{ this.parent.parent.children.get('entries').title + ' - ' + this.name }}{% endblock %}
+{% block header %}{{ this.parent.parent.children.get('entries').title }}{% endblock %}
 {% block body %}
   <h2>Posts by {{ this.name }}</h2>
     {{ render_posts(this.children) }}
   <hr>
-  <strong><a href="/blog/authors">All Authors</a></strong>
+  <strong><a href="{{ this.parent.path }}">All Authors</a></strong>
 {% endblock %}
