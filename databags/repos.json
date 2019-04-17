@@ -28,7 +28,7 @@
         },
         {
             "created": "2018-06-01T01:11:48",
-            "description": "Candela helper plugin to manage additional config and bootstrapping",
+            "description": "Candela helper plugin to manage additional config and bootstrapping, used on CC Certificates website",
             "id": 135651265,
             "language": "PHP",
             "license": {
@@ -37,7 +37,7 @@
             },
             "name": "candela-utility",
             "url": "https://github.com/creativecommons/candela-utility",
-            "website": null
+            "website": "http://certificates.creativecommons.org/"
         },
         {
             "created": "2018-05-16T19:44:57",
