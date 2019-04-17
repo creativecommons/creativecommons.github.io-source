@@ -1,0 +1,43 @@
+title: CC + Google Summer of Code 2019
+---
+categories:
+announcements
+community
+gsoc
+gsoc-2019
+open-source
+---
+author: kgodey
+---
+pub_date: 2019-03-04
+---
+body:
+
+We are proud to announce that Creative Commons [has been accepted as a mentor organization][cc-gsoc-page] for the 2019 Google Summer of Code program.
+
+[Google Summer of Code][gsoc-homepage] (GSoC) is a annual global program through which Google awards stipends to university students who write code for free and open-source software projects during their school break. CC has been a mentor organization for GSoC on seven previous occasions, but our last participation was in 2013, so we are glad to be reviving the tradition and hosting students again.
+
+We’ve compiled [a list of project ideas][project-ideas] for students to choose from when submitting their work proposal. There’s a lot of variety to choose from – adding features to CC Search, reviving older CC products, creating entirely new tools that increase the reach of CC licenses, figuring out ways to better present our legal and technical work, and more. There is definitely room for creativity – the project ideas are defined in broad terms, and students may also choose to submit a proposal for an original idea.
+
+One of the goals of the CC engineering team this year is to build an active developer community around our projects. We’ve been writing free and open-source software for over a decade. Lately, we haven’t done the best job of enabling external developers to contribute to those projects. Hosting Google Summer of Code is our first step to change that for the better, and we’re also actively working on several other improvements to our code and processes, such as:
+
+- [Creative Commons Open Source][cc-open-source], a hub for the CC developer community.
+- Making CC Search’s development more transparent. Our [current sprint workload][cc-search-active-sprint] is already public and we’ll be releasing a roadmap soon.
+- General cleanup, documentation, and contribution guidelines for our projects.
+- A technical blog.
+
+If you want to stay updated on our work, join our [brand new developer mailing list][mailing-list], the #creativecommons-dev IRC channel on [freenode][freenode-homepage], or the #cc-developers and #cc-gsoc channels on our [Slack community][slack]. And if you’re a student (or know a student), please consider submitting a Google Summer of Code proposal! It’s a great way to get an introduction to open-source, build real-world skills, work on interesting technical challenges, and help advance CC’s mission.
+
+----
+
+*This post was originally posted [on the primary Creative Commons blog][original-blog-post].*
+
+[gsoc-homepage]: https://summerofcode.withgoogle.com/
+[cc-gsoc-page]: https://summerofcode.withgoogle.com/organizations/6514859793973248/
+[project-ideas]: https://creativecommons.github.io/gsoc-2019/project-ideas/all/
+[cc-open-source]: https://creativecommons.github.io/
+[cc-search-active-sprint]: https://github.com/orgs/creativecommons/projects/7
+[mailing-list]: https://groups.google.com/a/creativecommons.org/forum/#!forum/cc-developers
+[freenode-homepage]: https://freenode.net/
+[slack]: https://slack-signup.creativecommons.org/
+[original-blog-post]: https://creativecommons.org/2019/03/04/cc-google-summer-of-code-2019/
