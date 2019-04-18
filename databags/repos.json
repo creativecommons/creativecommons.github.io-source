@@ -252,7 +252,7 @@
             "english_name": "CC Search",
             "featured": true,
             "id": 139915408,
-            "language": "Vue",
+            "language": "JavaScript",
             "license": {
                 "name": "MIT License",
                 "url": "https://github.com/creativecommons/cccatalog-frontend/blob/master/LICENSE"
@@ -398,7 +398,7 @@
             },
             "name": "creativecommons.github.io-source",
             "url": "https://github.com/creativecommons/creativecommons.github.io-source",
-            "website": null
+            "website": "https://creativecommons.github.io/"
         },
         {
             "created": "2013-10-31T00:19:22",
