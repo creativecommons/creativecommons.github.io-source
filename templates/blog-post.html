@@ -3,6 +3,7 @@
 {% block header %}{{ this.parent.title }}{% endblock %}
 {% block body %}
   <h2 class="mb-0">{{ this.title }}</h2>
+  {{ check_file('content' + this.parent.parent.path + '/authors/' + this.author + '/contents.lr') }}
   <p class="meta text-muted mt-0">by <a href="{{ this.parent.parent.children.get('authors').path + '/' + this.author }}">{{ this.author }}</a>
   on {{ this.pub_date|dateformat('EEEE, yyyy ''MMMM d') }}</p>
   <div class="body">{{ this.body }}</div>
