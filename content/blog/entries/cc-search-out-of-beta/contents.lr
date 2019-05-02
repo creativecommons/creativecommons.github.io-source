@@ -1,0 +1,64 @@
+title: CC Search is out of beta with 300M images and easier attribution
+---
+categories:
+announcements
+cc-search
+product
+---
+author: janeatcc
+---
+pub_date: 2019-04-30
+---
+body:
+
+Today [CC Search][cc-search] comes out of beta, with over 300 million images indexed from multiple collections, a major redesign, and faster, more relevant search. It’s the result of a huge amount of work from the engineering team at Creative Commons and our community of volunteer developers.
+
+![cc-search-gif](compressed-kittens-again.gif)
+
+CC Search searches images across [19 collections][cc-search-about] pulled from open APIs and the [Common Crawl][common-crawl] dataset, including cultural works from museums (the Metropolitan Museum of Art, Cleveland Museum of Art), graphic designs and art works (Behance, DeviantArt), photos from Flickr, and an initial set of CC0 3D designs from Thingiverse.
+
+Aesthetically, you’ll see some key changes — a cleaner home page, better navigation and filters, design alignment with creativecommons.org, streamlined attribution options, and clear channels for providing feedback on both the overall function of the site and on specific image reuses. It’s also now linked directly from the Creative Commons homepage as the default method to search for CC-licensed works, and replaces the old search portal (though that tool is still online [here][old-search]).
+
+Under the hood, we improved search loading times and search phrase relevance, implemented analytics to better understand when and how the tools are used, and fixed many critical bugs our community helped us to identify.
+
+### What’s next
+
+We will continue to grow the number of images in our catalog, prioritizing key image collections such as Europeana and Wikimedia Commons. We also plan to index additional types of CC-licensed works, such as open textbooks and audio, later this year. While our ultimate goal remains the same (to provide access to all 1.4 billion works in the commons), we are initially focused on [images that creators desire to reuse in meaningful ways][cc-search-roadmap-blog], learning about how these images are reused in the wild, and incorporating that learning back into CC Search.
+
+Feature-wise, we have specific deliverables for this quarter listed in our [roadmap][cc-search-roadmap], which includes advanced filters on the home page, the ability to browse collections without entering search terms, and improved accessibility and UX on mobile. In addition, we expect some work related to CC Search will be done by our Google Summer of Code students starting in May.
+
+We’re also presenting the “[State of CC Search][state-of-cc-search]” at the [CC Global Summit][summit] next month in Lisbon, Portugal, where we’ll host a global community discussion around desired features and collections for CC Search.
+
+### Get involved
+
+Your feedback is valuable, and we invite you to [let us know][cc-search-feedback] what you would like to see improved. You can also join the [#cc-usability][cc-usability] channel on [CC Slack][cc-slack] to keep up with new releases.
+
+All of our code, including the code behind CC Search, is open source ([CC Search][cccatalog-frontend], [CC Catalog API][cccatalog-api], [CC Catalog][cccatalog]) and we [welcome community contribution][contributing-code]. If you know how to code, we invite you to [join the growing CC developer community][cc-github-io].
+
+### Thank you
+
+CC Search is also made possible by a number of institutional and individual supporters and donors. Specifically, we would like to thank [Arcadia][arcadia] – a charitable fund of Lisbet Rausing and Peter Baldwin, [Mozilla][mozilla], and the Brin Wojcicki Foundation for their support.
+
+----
+
+*This post was originally posted [on the primary Creative Commons blog][original-blog-post].*
+
+[cc-search]:https://search.creativecommons.org/
+[cc-search-about]:https://search.creativecommons.org/about
+[common-crawl]:https://commoncrawl.org/
+[old-search]:https://oldsearch.creativecommons.org/
+[cc-search-roadmap-blog]:https://creativecommons.org/2019/03/19/cc-search/
+[cc-search-roadmap]:https://docs.google.com/document/d/19yH2V5K4nzWgEXaZhkzD1egzrRayyDdxlzxZOTCm_pc/
+[state-of-cc-search]:https://sched.co/MhKv
+[summit]:https://summit.creativecommons.org/
+[cc-search-feedback]:https://search.creativecommons.org/feedback
+[cc-usability]:https://creativecommons.slack.com/messages/CCS9CF2JE/details/
+[cc-slack]:https://wiki.creativecommons.org/wiki/Slack#How_to_join_Slack
+[cccatalog]:https://github.com/creativecommons/cccatalog
+[cccatalog-api]:https://github.com/creativecommons/cccatalog-api
+[cccatalog-frontend]:https://github.com/creativecommons/cccatalog-frontend/
+[contributing-code]:https://creativecommons.github.io/contributing-code/
+[cc-github-io]:https://creativecommons.github.io/
+[arcadia]:https://www.arcadiafund.org.uk/about-peter-baldwin-lisbet-rausing/
+[mozilla]:https://www.mozilla.org/en-US/foundation/
+[original-blog-post]: https://creativecommons.org/2019/04/30/cc-search-images/
