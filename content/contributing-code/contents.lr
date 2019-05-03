@@ -24,7 +24,7 @@ We track all our work via the GitHub issues associated with a repository and tha
 * Issues labeled **"in progress"** are generally not available, but may be available if there has been no activity on the issue or related PR for over a week.
 * Issues labeled **"help wanted"** or **"good first issue"** have been identified as available for community contribution. Feel free to work on issues labeled "good first issue" even if it is not your first issue.
     * Here's a list of [all issues labeled "good first issue"](https://github.com/search?q=org%3Acreativecommons+is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)
-    * Here's a list of [all issues labeled "help wanted"](https://github.com/search?q=org%3Acreativecommons+is%3Aissue+is%3Aopen+label%3A%22help+wanted%22)
+    * Here are lists of [all issues labeled "help wanted"](https://github.com/search?q=org%3Acreativecommons+is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) and [incomplete pull requests labeled "help wanted"](https://github.com/search?q=org%3Acreativecommons+is%3Apr+is%3Aopen+label%3A%22help+wanted%22)
 * If the issue does not have either of those labels, it may still be open for contribution.
 
 Once you have identified an issue you'd like to work on, follow these steps:
