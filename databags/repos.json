@@ -480,19 +480,6 @@
             "website": "http://eng.letscc.net"
         },
         {
-            "created": "2019-01-04T13:32:52",
-            "description": "Saltstack formula for letsencrypt service",
-            "id": 164111289,
-            "language": "SaltStack",
-            "license": {
-                "name": "Other",
-                "url": "https://github.com/creativecommons/letsencrypt-formula/blob/master/LICENSE"
-            },
-            "name": "letsencrypt-formula",
-            "url": "https://github.com/creativecommons/letsencrypt-formula",
-            "website": "http://docs.saltstack.com/en/latest/topics/development/conventions/formulas.html"
-        },
-        {
             "created": "2014-09-03T22:03:03",
             "description": "The List powered by Creative Commons allows people to contribute to the public commons by taking photographs of the world around them and sharing these images with the world.",
             "id": 23639316,
