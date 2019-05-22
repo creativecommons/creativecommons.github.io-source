@@ -213,6 +213,9 @@
         {
             "created": "2017-07-12T18:01:30",
             "description": "Mapping the commons towards an open ledger and cc search.",
+            "engineering_project": true,
+            "english_name": "CC Catalog",
+            "featured": true,
             "id": 97037973,
             "language": "Python",
             "license": {
@@ -220,6 +223,10 @@
                 "url": "https://github.com/creativecommons/cccatalog/blob/master/LICENSE"
             },
             "name": "cccatalog",
+            "technologies": [
+                "Python",
+                "Apache Spark"
+            ],
             "url": "https://github.com/creativecommons/cccatalog",
             "website": null
         },
@@ -244,6 +251,16 @@
             ],
             "url": "https://github.com/creativecommons/cccatalog-api",
             "website": ""
+        },
+        {
+            "created": "2018-04-27T21:32:44",
+            "description": "Data Visualizations",
+            "id": 131346835,
+            "language": null,
+            "license": null,
+            "name": "cccatalog-dataviz",
+            "url": "https://github.com/creativecommons/cccatalog-dataviz",
+            "website": null
         },
         {
             "created": "2018-07-06T00:51:38",
@@ -478,19 +495,6 @@
             "name": "letscc",
             "url": "https://github.com/creativecommons/letscc",
             "website": "http://eng.letscc.net"
-        },
-        {
-            "created": "2014-09-03T22:03:03",
-            "description": "The List powered by Creative Commons allows people to contribute to the public commons by taking photographs of the world around them and sharing these images with the world.",
-            "id": 23639316,
-            "language": "Java",
-            "license": {
-                "name": "GNU General Public License v3.0",
-                "url": "https://github.com/creativecommons/list/blob/master/LICENSE.md"
-            },
-            "name": "list",
-            "url": "https://github.com/creativecommons/list",
-            "website": ""
         },
         {
             "created": "2014-11-17T21:58:08",
