@@ -93,6 +93,16 @@
             "website": null
         },
         {
+            "created": "2019-05-22T22:36:52",
+            "description": "The new and improved CC license selection tool (in progress)",
+            "id": 188122843,
+            "language": null,
+            "license": null,
+            "name": "cc-chooser",
+            "url": "https://github.com/creativecommons/cc-chooser",
+            "website": null
+        },
+        {
             "created": "2015-11-16T19:24:04",
             "description": "Creative Commons JavaScript license selector in the form of a JavaScript widget",
             "engineering_project": true,
@@ -264,7 +274,7 @@
         },
         {
             "created": "2018-07-06T00:51:38",
-            "description": "CC Search Beta is a new search frontend for CC-licensed works across the internet.",
+            "description": "CC Search is a new search frontend for CC-licensed works across the internet.",
             "engineering_project": true,
             "english_name": "CC Search",
             "featured": true,
@@ -280,7 +290,7 @@
                 "Vue.js"
             ],
             "url": "https://github.com/creativecommons/cccatalog-frontend",
-            "website": "https://ccsearch.creativecommons.org/"
+            "website": "https://search.creativecommons.org/"
         },
         {
             "created": "2014-10-06T22:07:52",
