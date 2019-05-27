@@ -146,6 +146,19 @@
             "website": "http://resources.creativecommons.org/"
         },
         {
+            "created": "2019-05-24T16:49:48",
+            "description": null,
+            "id": 188457696,
+            "language": null,
+            "license": {
+                "name": "MIT License",
+                "url": "https://github.com/creativecommons/cc-vocabulary/blob/master/LICENSE"
+            },
+            "name": "cc-vocabulary",
+            "url": "https://github.com/creativecommons/cc-vocabulary",
+            "website": null
+        },
+        {
             "created": "2015-07-15T18:24:37",
             "description": "The WordPress theme for creativecommons.org",
             "id": 39153629,
@@ -337,6 +350,16 @@
             "name": "ccrel-guide",
             "url": "https://github.com/creativecommons/ccrel-guide",
             "website": "http://labs.creativecommons.org/2011/ccrel-guide/"
+        },
+        {
+            "created": "2019-05-24T17:14:10",
+            "description": "CC Search Browser Extension [ WIP ] ",
+            "id": 188460712,
+            "language": null,
+            "license": null,
+            "name": "ccsearch-browser-extension",
+            "url": "https://github.com/creativecommons/ccsearch-browser-extension",
+            "website": "https://summerofcode.withgoogle.com/projects/#6510509090668544"
         },
         {
             "created": "2018-04-10T22:44:46",
