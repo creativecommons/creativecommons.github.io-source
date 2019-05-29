@@ -1,0 +1,29 @@
+_model: page
+---
+_template: page-with-toc.html
+---
+title: Write a Blog Post
+---
+body:
+
+We invite members of the Creative Commons community to write posts on [our technical blog](/blog) about any work they are doing related to CC and technology. It does not have to be related to any of our official projects; any topic that intersects with CC and technology will be considered. Please talk to us on [one of our community forms](/community) to propose your ideas.
+
+Once your post idea has been approved, please send a pull request with your post as detailed below.
+
+## Publishing a new post 
+
+New blog posts must be published by submitting a [pull request](/contributing-code/pr-guidelines) to the [creativecommons.github.io-source](https://github.com/creativecommons/creativecommons.github.io-source) repository ([like this commit](https://github.com/creativecommons/creativecommons.github.io-source/commit/eac3fbc23b7cadb58fe49d3af3286e4c8bf20d2f)). Follow these steps: 
+ 
+1. Create a new folder in the [content/blog/entries](https://github.com/creativecommons/creativecommons.github.io-source/tree/master/content/blog/entries) folder with a [slugified](https://blog.tersmitten.nl/slugify/) version of your blog post title.
+2. Create a file named `contents.lr` in the folder you just created and put your blog post and associated metadata in it. Blog posts must have a `title`, `author`, `categories`, `pub_date`, and `body`. See [this post](https://raw.githubusercontent.com/creativecommons/creativecommons.github.io-source/master/content/blog/entries/open-development-with-saltstack/contents.lr) for an example.  
+    * Use the author's GitHub username as the value of the `author` field. There should be no spaces in the name.
+    * For the `categories` field, each category must be on a separate line. Categories should not have spaces.
+    * `pub_date` should be in ISO format (`YYYY-MM-DD`)
+    * `body` should be formatted using Markdown.
+    * All fields should be separated by three hyphens: `---`
+3. Ensure that all the categories you use have corresponding folders in the [content/blog/categories](https://github.com/creativecommons/creativecommons.github.io-source/tree/master/content/blog/categories) folder. Each category should have a folder named the same thing and have a `contents.lr` file within that says `name: <category-name>` (see [example](https://raw.githubusercontent.com/creativecommons/creativecommons.github.io-source/master/content/blog/categories/gsoc-2019/contents.lr)).
+4. Similarly, ensure that the author has a corresponding folder in the  [content/blog/authors](https://github.com/creativecommons/creativecommons.github.io-source/tree/master/content/blog/authors) folder. Each author should have a folder named the same thing and have a `contents.lr` file within that says `name: <author-name>` (see [example](https://raw.githubusercontent.com/creativecommons/creativecommons.github.io-source/master/content/blog/authors/TimidRobot/contents.lr)).
+5. Build the CC Open Source (instructions are in the `README` in the repository) and ensure your blog post shows up correctly locally. If you have not created the appropriate category or author files, you will see a build error in this step.
+6. Make a pull request.
+
+Once it is merged, it will auto-deploy to the production site and post a notification in the `#cc-developers` channel on Slack.
