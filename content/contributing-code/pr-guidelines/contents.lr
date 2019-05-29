@@ -1,0 +1,34 @@
+_model: page
+---
+_template: page.html
+---
+title: Pull Request Guidelines
+---
+body:
+
+We ask that contributors to CC projects submit a pull request with your changes. If you're not familiar with pull requests, please read [this GitHub documentation](https://help.github.com/en/articles/about-pull-requests). Here are our expectations for pull requests; following them will expedite the process of merging your code in.
+
+* Read and follow the contributing guidelines and code of conduct for the project. Here are screenshots of where to find them for [first time contributors](first-time-contributor-resources.png) and [previous contributors](previous-contributor-resources.png).
+* Use the format specified in pull request template for the repository.
+* Describe your change in detail. Too much detail is better than too little.
+* Describe how you tested your change.
+* If a reviewer is not assigned automatically, manually [request a review](https://help.github.com/en/articles/requesting-a-pull-request-review) from either the repository maintainer (if you have that information) or `@creativecommons/engineering`.
+
+## Code guidelines
+
+* Write comprehensive and robust tests that cover the changes you've made in your work.
+* Follow the appropriate code style standards for the language and framework you're using (e.g. PEP 8 for Python).
+* Write readable code – keep functions small and modular and name variables descriptively.
+* Document your code thoroughly.
+* Make sure all the existing tests pass.
+* User-facing code should support the following browsers:
+  * Chrome (Webkit-Blink / 22+)
+  * Firefox (Gecko / 28+)
+  * Edge (Chromium based / 12+)
+  * Opera (Chromium-Blink / 12.1+)
+  * Safari (Apple’s Webkit / 7+)
+  * IE 11 (Trident)
+
+We aim to review pull requests within three business days.<a href="#footnote-1"><strong>*</strong></a>. If it has been over three business days and you have not received any feedback, feel free to follow up with us.
+
+<a name="footnote-1"><p class="muted small"><strong>*</strong> CC staff work Monday through Friday and are not available on weekends and national holidays (the specific holidays observed vary based on the person's location). CC is closed between Christmas Eve and New Years' Day every year and for a few days following the CC Global Summit. Also, our availability during events such as the CC Global Summit and our biannual staff meetups is limited.</p></a>

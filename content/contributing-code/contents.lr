@@ -6,9 +6,11 @@ title: Contributing Code
 ---
 body:
 
-We do all of our development on GitHub and are generally open to pull requests and proposals for new community-maintained projects. We would especially like help with reviving projects that CC's engineering team does not have the time to actively work on (such as [our WordPress plugin](https://github.com/creativecommons/creativecommons-wordpress-plugin) and [license chooser widget](https://github.com/creativecommons/cc-license-chooser)). We're also looking to improve our documentation and increase our automated test coverage across pretty much all our projects, so help with that would be greatly appreciated.
+We do all of our development on GitHub and are generally open to pull requests and proposals for new community-maintained projects.
 
-If you are not familiar with GitHub, [here is an excellent guide to get started](https://guides.github.com/activities/hello-world/).
+We would especially like help with reviving projects that CC's engineering team does not have the time to actively work on (such as [our WordPress plugin](https://github.com/creativecommons/creativecommons-wordpress-plugin) and [license chooser widget](https://github.com/creativecommons/cc-license-chooser)). We're also looking to improve our documentation and increase our automated test coverage across pretty much all our projects, so help with that would be greatly appreciated.
+
+Please follow our [pull request guidelines](/contributing-code/pr-guidelines) when submitting code. If you are not familiar with GitHub or pull requests, [here is an excellent guide to get started](https://guides.github.com/activities/hello-world/). 
 
 ## Working on an existing project
 
@@ -31,10 +33,10 @@ Once you have identified an issue you'd like to work on, follow these steps:
 
 1. Comment on it and say you'd like to work on that issue.
 2. Wait for someone to confirm that you may work on the issue before writing any code. The person who confirms will add an "in progress" label to the issue to indicate that the issue has been assigned.
-3. Once the issue has been updated to "in progress", write your code and submit your pull request (be sure to read and follow the **[Pull request guidelines](#pull-request-guidelines)** guide below!)
+3. Once the issue has been updated to "in progress", write your code and submit your pull request (be sure to read and follow our **[pull request guidelines](/contributing-code/pr-guidelines)**!)
 4. Wait for code review and address any issues raised as soon as you can.
 
-Even if you're not done with the issue, create a [draft pull request](https://help.github.com/en/articles/about-pull-requests#draft-pull-requests) and push your code [early and often](https://www.worklytics.co/blog/commit-early-push-often/). If we haven't heard from you in over a week and someone else expresses interest in that issue, we may assign it to the new person.
+Even if you're not done with the issue, create a [draft pull request](https://help.github.com/en/articles/about-pull-requests#draft-pull-requests) and push your code [early and often](https://www.worklytics.co/blog/commit-early-push-often/). If we haven't heard from you in over a week and someone else expresses interest in that issue, we may approve work by the new person.
 
 ### Proposing a new issue
 
@@ -43,33 +45,6 @@ If you want to work on something that there is no GitHub issue for, then propose
 If the project has a roadmap documented in the README, checking the roadmap to see if the feature is already in our pipeline would be a good first step.
 
 When in doubt, ask a question on [one of our community forums](/community).
-
-## Pull request guidelines
-
-We aim to review pull requests within three business days.<a href="#footnote-1"><strong>*</strong></a>. If it has been over three business days and you have not received any feedback, feel free to follow up.
-
-* Read and follow the contributing guidelines and code of conduct for the project. Here are screenshots of where to find them for [first time contributors](first-time-contributor-resources.png) and [previous contributors](previous-contributor-resources.png).
-* Use the format specified in pull request template for the repository if one exists.
-* Describe your change in detail. Too much detail is better than too little.
-* Describe how you tested your change.
-* If a reviewer is not assigned automatically, manually [request a review](https://help.github.com/en/articles/requesting-a-pull-request-review) from either the repository maintainer (if you have that information) or `@creativecommons/engineering`.
-
-### Code guidelines
-
-* Write comprehensive and robust tests that cover the changes you've made in your work.
-* Follow the appropriate code style standards for the language and framework you're using (e.g. PEP 8 for Python).
-* Write readable code – keep functions small and modular and name variables descriptively.
-* Document your code thoroughly.
-* Make sure all the existing tests pass.
-* User-facing code should support the following browsers:
-  * Chrome (Webkit-Blink / 22+)
-  * Firefox (Gecko / 28+)
-  * Edge (Chromium based / 12+)
-  * Opera (Chromium-Blink / 12.1+)
-  * Safari (Apple’s Webkit / 7+)
-  * IE 11 (Trident)
-
-<a name="footnote-1"><p class="muted small"><strong>*</strong> CC staff work Monday through Friday and are not available on weekends and national holidays (the specific holidays observed vary based on the person's location). CC is closed between Christmas Eve and New Years' Day every year and for a few days following the CC Global Summit. Also, our availability during events such as the CC Global Summit and our biannual staff meetups is limited.</p></a>
 
 ## New projects
 

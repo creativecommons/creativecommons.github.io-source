@@ -1,0 +1,126 @@
+_model: page
+---
+_template: page-with-toc.html
+---
+title: GitHub Repo Guidelines
+---
+body:
+
+This is a checklist for all public repositories hosted on the [Creative Commons GitHub organization](https://github.com/creativecommons). Not all repositories meet these criteria yet. Please notify us if a project you'd like to work on does not meet this checklist by opening a GitHub issue associated with the repository.
+
+## Required Items
+All GitHub repositories should have the following items to be considered fully ready for external contributors.
+
+### Files
+- `/.github/CODEOWNERS`: Defined code owners
+  - [About code owners - GitHub Help](https://help.github.com/en/articles/about-code-owners)
+- `/.cc-metadata.yml`: The standard [CC metadata YAML file](#cc-metadata-file).
+- `/CODE_OF_CONDUCT.md`: Code of Conduct
+	- Feel free to use our standard [`CODE_OF_CONDUCT.md`](https://github.com/creativecommons/.github/blob/master/CODE_OF_CONDUCT.md) file from [creativecommons/.github](https://github.com/creativecommons/.github)
+	- [Adding a code of conduct to your project - GitHub Help](https://help.github.com/en/articles/adding-a-code-of-conduct-to-your-project)
+- `/LICENSE`: license file.
+- `/CONTRIBUTING.md`: contributor guidelines
+	- Can be project-specific or our standard [`CONTRIBUTING.md`](https://github.com/creativecommons/.github/blob/master/CONTRIBUTING.md) file from [creativecommons/.github](https://github.com/creativecommons/.github)
+	- [Setting guidelines for repository contributors - GitHub Help](https://help.github.com/en/articles/setting-guidelines-for-repository-contributors)
+- `/README.md`: read me information file
+	- Must documents how to install and build the project locally and documents a high level overview of the project and code structure. It should also link to any other available documentation.
+- **All pull request templates must include the full text of the [DCO](https://developercertificate.org/)**.
+
+### Additional Items
+- CI and code style linters that run automatically whenever new code is pushed (if applicable to the project).
+- At least a couple of automated tests (if applicable to the project).
+
+## Optional items
+
+- [Issue templates](https://help.github.com/en/articles/creating-issue-templates-for-your-repository). GitHub pulls the default templates from our [`.github` repository](https://github.com/creativecommons/.github) automatically, but if you want/need to customize them, create them in your repository.
+- A [pull request template](https://help.github.com/en/articles/creating-a-pull-request-template-for-your-repository). GitHub pulls the default template from our [`.github` repository](https://github.com/creativecommons/.github) automatically, but if you want/need to customize it, create it in your repository.
+- [Support resources](https://help.github.com/en/articles/adding-support-resources-to-your-project). GitHub pulls the default `SUPPORT.md` file from our [`.github` repository](https://github.com/creativecommons/.github) automatically, but if you want/need to customize it, create it in your repository.
+- Setting up [branch protections](https://help.github.com/en/articles/about-protected-branches) that don't allow code to be merged in without tests passing or requires reviews for pull requests to be merged.
+
+## Standard Labels
+All repositories must contain the following labels. CC staff have access to a script that you can run to make sure all repositories have this label.
+
+Repositories may contain additional custom labels as well. It is recommended that custom labels be explained in the contribution guidelines for that project.
+
+<table class="table table-striped table-sm">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Color</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>bug</td>
+      <td><code>#d73a4a</code></td>
+      <td>Something isn't working</td>
+    </tr>
+    <tr>
+      <td>duplicate</td>
+      <td><code>#cfd3d7</code></td>
+      <td>This issue or pull request already exists</td>
+    </tr>
+    <tr>
+      <td>enhancement</td>
+      <td><code>#a2eeef</code></td>
+      <td>New feature or request</td>
+    </tr>
+    <tr>
+      <td>good first issue</td>
+      <td><code>#7057ff</code></td>
+      <td>Good for newcomers</td>
+    </tr>
+    <tr>
+      <td>help wanted</td>
+      <td><code>#008672</code></td>
+      <td>Seeking help from community</td>
+    </tr>
+    <tr>
+      <td>in progress</td>
+      <td><code>#ffcc00</code></td>
+      <td>Currently being worked on</td>
+    </tr>
+    <tr>
+      <td>invalid</td>
+      <td><code>#e4e669</code></td>
+      <td>This doesn't seem right</td>
+    </tr>
+    <tr>
+      <td>question</td>
+      <td><code>#d876e3</code></td>
+      <td>Further information is requested</td>
+    </tr>
+    <tr>
+      <td>urgent</td>
+      <td><code>#d93f0b</code></td>
+      <td>Needs to be fixed ASAP</td>
+    </tr>
+    <tr>
+      <td>wontfix</td>
+      <td><code>#ffffff</code></td>
+      <td>This will not be worked on</td>
+    </tr>
+  </tbody>
+</table>
+
+## CC Metadata file
+
+Each repo should have a `.cc-metadata.yml` file in the root directory with the following structure:
+
+<pre>
+  <code>
+    # Whether this GitHub repo is engineering related
+    engineering_project: true
+    # Name of the repository/project in English
+    english_name: CC Catalog API
+    # All technologies used
+    technologies: Python, Django, Django REST Framework, Elasticsearch
+    # Whether this repository should be featured on the CC Open Source site
+    featured: true
+  </code>
+</pre>
+
+This metadata file is used in the [Projects](/projects) page. Repos that are marked as non-engineering projects are not displayed in the page and repos marked as featured as displayed at the top of the page. Repos should be marked as featured if we are actively looking for community contributions and have the bandwidth to review them quickly.
+
+Repos without this metadata file are treated as `engineering_projects: true` and `featured: false`. A default is necessary since it will take time for us to clean up and add metadata to all our repos.
