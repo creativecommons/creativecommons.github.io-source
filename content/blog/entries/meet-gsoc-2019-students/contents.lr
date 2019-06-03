@@ -1,0 +1,162 @@
+title: Meet CC’s 2019 Google Summer of Code students
+---
+categories:
+community
+gsoc
+gsoc-2019
+open-source
+---
+author: kgodey
+---
+pub_date: 2019-05-30
+---
+body:
+
+This year, [CC is participating in Google Summer of Code (GSoC)](https://creativecommons.org/2019/03/04/cc-google-summer-of-code-2019/)
+ as a mentoring organization after a six year break from the program. We
+ are excited to be hosting five phenomenal students (representing three 
+continents) who will be working on CC tech projects full-time over the 
+summer. Here they are!
+
+<div class="students">
+  <div class="row">
+    <div class="col">
+      <p><strong>Ahmad Bilal</strong></p>
+
+      <p><em>I am Ahmad Bilal, a Computer Science undergrad from UET Lahore, 
+      who likes computers, problems and using the former to solve the later. I
+      am always excited about Open Source, and currently focused on Node.js, 
+      Serverless, GraphQL, Cloud, Gatsby.js with React.js and WordPress. I 
+      like organizing meetups, conferences and meeting new people. I view 
+      working in GSoC with Creative Commons, one of the biggest opportunities 
+      of my life. Cats are my weakness, and I am a sucker for well-engineered 
+      cars.</em></p>
+
+      <p><a href="https://github.com/creativecommons/creativecommons-wordpress-plugin">Ahmad will be taking ownership of [the CC WordPress plugin</a>,
+      which simplifies the process of applying CC licenses to content created
+      using the popular WordPress blogging platform. He will be updating it 
+      to use the latest WordPress best practices, resolving open issues, and 
+      adding new features like integrating with CC Search. Ahmad’s mentor is 
+      our Core Systems Manager <a href="https://creativecommons.org/author/timidcreativecommons-org/">Timid Robot Zehta</a>, backed up by Hugo Solar.</p>
+
+      <p>You can follow the progress of this project through the <a href="https://github.com/creativecommons/creativecommons-wordpress-plugin">GitHub repo</a> or on the <code>#cc-dev-wordpress</code> channel on our <a href="https://creativecommons.github.io/community">Slack community</a>.</p>
+    </div>
+    <div class="col pt-3">
+      <img src="ahmad.jpg" alt="ahmad bilal" /><br />
+      <small class="muted">Ahmad Bilal, credit: Usman C., CC BY-NC-ND 2.0</small>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <p><strong>Dhruv Bhanushali</strong></p>
+
+      <p><em>I am Dhruv Bhanushali, a Mumbai-based software developer recently
+       graduated from IIT Roorkee. I started programming as a hobby some five 
+      years ago and, having found my calling, am now am pursuing a career in 
+      the field. I have worked on a lot of institute-level projects and am 
+      excited to expand the reach of my code to a global scale with CC through
+       GSoC. Apart from development, I am a huge music fan and keep my curated
+       collection of music with me at all times. I also love to binge watch TV
+       shows and movies, especially indie art _</em>films._</p>
+
+      <p>Dhruv will be working on an original project, CC Vocabulary, which is
+       a collection of UI components that make it easy to develop Creative 
+      Commons apps and services while ensuring a cohesive experience and 
+      appearance across CC projects. These components will be able to be used 
+      in sites built using modern JavaScript frameworks (specifically Vue.js) 
+      as well as simpler websites built using WordPress. CC’s Web Developer <a href="https://creativecommons.org/author/hugocreativecommons-org/">Hugo Solar</a> serves as primary mentor, with backup from Sophine Clachar.</p>
+
+      <p>You can follow the progress of this project through the <a href="https://github.com/creativecommons/cc-vocabulary">GitHub repo</a> or on the <code>#gsoc-cc-vocabulary</code> channel on our <a href="https://creativecommons.github.io/community/">Slack community</a>.</p>
+    </div>
+    <div class="col pt-3">
+      <img src="dhruv.jpg" alt="dhruv bhanushali" /><br />
+      <small class="muted">Dhruv Bhanushali, credit: Arpit Gupta, CC BY</small>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <p><strong>María Belén Guaranda Cabezas</strong></p>
+
+      <p><em>Hello! My name is María, and I am an undergraduate Computer 
+      Science student from ESPOL, in Ecuador. I have worked for the past 2 
+      years as a research assistant. I have worked in projects including 
+      computer vision, the estimation of socio-economic indexes through CDRs 
+      analysis, and a machine learning model with sensors data. During my 
+      spare time, I like to watch animes and reading. I love sports! Specially
+       soccer. I am also committed to environmental causes, and I am a huge 
+      fan of cats and dogs (I have 4 and 1 respectively).</em></p>
+
+      <p>María will be working on producing visualizations of the data 
+      associated with more than 300 million works we have indexed in the CC 
+      Catalog (which powers CC Search) and how that data is interconnected. 
+      These visualizations will enable users to understand how much 
+      CC-licensed content is available on the internet, which websites host 
+      the most content, which CC licenses are used the most, and much more. 
+      She will be mentored by our Data Engineer <a href="https://creativecommons.org/author/sclachar/">Sophine Clachar</a> with backup from Breno Ferreira.</p>
+
+      <p>You can follow the progress of this project through the <a href="https://github.com/creativecommons/cccatalog-dataviz">GitHub repo</a> or on the <code>#gsoc-cc-catalog-viz</code> channel on our <a href="https://creativecommons.github.io/community/">Slack community</a>.</p>
+    </div>
+    <div class="col pt-3">
+      <img src="maria.jpg" alt="María Belén Guaranda Cabezas" /><br />
+      <small class="muted">María Belén Guaranda Cabezas, CC BY-NC-SA</small>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <p><strong>Ari Madian</strong></p>
+
+      <p><em>I am an 18 year old, Seattle based, mostly self taught, Computer 
+      Science student. I originally started programming by tinkering with 
+      Python, and eventually moved into C# and the .NET framework, as well as 
+      JS and some web development. I like Chai and Rooibos teas, volunteering 
+      at my local food bank, and some occasional PC gaming, among other 
+      things. I’m now working with Creative Commons on Google Summer of Code!</em></p>
+
+      <p>Ari will be working on creating a modern human-centered version of <a href="https://creativecommons.org/choose/">our CC license chooser tool</a>, which is long overdue for an update. His work will focus on design and usability as well as code. CC’s Front End Engineer <a href="https://creativecommons.org/author/brenoferreira/">Breno Ferreira</a> is the primary mentor for this project with support from Alden Page.</p>
+
+      <p>You can follow the progress of this project through the <a href="https://github.com/creativecommons/cc-chooser">GitHub repo</a> or on the <code>#gsoc-license-chooser</code> channel on our <a href="https://creativecommons.github.io/community/">Slack community</a>.</p>
+    </div>
+    <div class="col pt-3">
+      <p><img src="ari.jpg" alt="Ari Madian" /><br />
+      <small class="muted">Ari Madian, credit: Ellen Madian, CC0</small>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <p><strong>Mayank Nader</strong></p>
+
+      <p><em>I am Mayank Nader, a sophomore Computer Science student from 
+      India. Currently, my main area of interest is Python scripting, 
+      JavaScript development, backend, and API development. I also like to 
+      experiment with bash scripting and ricing and configuring my Linux 
+      setup. Apart from that, I like listening to music and watching movies, 
+      documentaries, and tv shows. I am very much inspired by Open Source and 
+      try to contribute whenever I can.</em></p>
+
+      <p>Mayank will be working on building a cross-platform browser plugin 
+      that allows users to search CC-licensed works directly from the browser 
+      and enable reuse of those works by providing easy image attribution 
+      tools. Users will be able to find content to use without having to 
+      switch to a new website. Mayank will be mentored by CC’s Software 
+      Engineer <a href="https://creativecommons.org/author/aldencreativecommons-org/">Alden Page</a> with support from Timid Robot Zehta.</p>
+
+      <p>You can follow the progress of this project through the GitHub repo or on the #gsoc-browser-ext channel on our <a href="https://creativecommons.github.io/community/">Slack community</a>.</p>
+
+      <p>You can visit <a href="https://summerofcode.withgoogle.com/organizations/6514859793973248/">the Creative Commons organization page</a>
+       on Google Summer of Code site to see longer descriptions of the 
+      projects. We welcome community input and feedback – you are the users of
+       all these products and we’d love for you to be involved. So don’t 
+      hesitate to join the project Slack channel or talk to us on GitHub or <a href="https://creativecommons.github.io/community/">our other community forums</a>.</p>
+    </div>
+    <div class="col pt-3">
+      <p><img src="mayank.png" alt="Mayank Nader" /><br />
+      <small class="muted">Mayank Nader, credit: Rohit Motwani, CC BY</small>
+    </div>
+  </div>
+</div>
+
+----
+
+*This post was originally posted [on the primary Creative Commons blog][original-blog-post].*
+
+[original-blog-post]: https://creativecommons.org/2019/05/30/meet-ccs-2019-google-summer-of-code-students/
