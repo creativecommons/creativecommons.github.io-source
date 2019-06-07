@@ -1,0 +1,50 @@
+title: CC Catalog: Leveraging Open Data and Open APIs
+---
+categories:
+
+community
+open-source
+cc-search
+cc-catalog
+---
+author: sclachar
+---
+pub_date: 2019-06-07
+---
+body:
+
+This post is the first of a three part series about the underlying infrastructure for Creative Commons (CC) Catalog and the efforts to increase the volume and variety of creative works.
+
+The purpose of [CC Catalog][cccatalog] is to facilitate the discovery of openly licensed content, that proliferates the web. However, this is a challenging task and it requires a combination of techniques. The initial efforts to catalog the Commons began in 2016. The goal was to identify approximately [1% of the estimated 1.4 billion works][cc-search-developer-notes], by harnessing open repositories and open APIs to build a [front door to the Commons][cc-search-beta]. Since then, there has been an emphasis on including more content and discovering new platforms. While CC Catalog still leverages open data to achieve the above, we needed to develop the appropriate infrastructure to also routinely update the existing data.
+
+The development of this infrastructure began in 2018, with the first [Common Crawl][common-crawl] [data pipeline][data-pipeline]. [Apache Spark][apache-spark] was used to streamline the processing of petabytes of web crawl data to identify all domains that link to a Creative Commons license. The first test of this strategy was successful and it was instrumental in increasing the number of images and added 13 new platforms for the [updates to CC Search beta][cc-search-beta-updates]. It also provided incremental updates to the catalog on a monthly basis. Even though Common Crawl corpus is an invaluable source, it requires us to develop a custom parser for each platform that we integrate. This has its merits, but presents a few challenges.
+
+After this, [Open APIs][open-api] were explored and its purpose was not to replace the Common Crawl methodology but to augment it and hopefully increase the volume of data. This approach began with two platforms: 1) Flickr, since it its known to have [millions of CC license content][cc-flickr] and 2) Thingiverse. At the end of 2018, the exploratory efforts paid off and the catalog grew from 10 million images to over 260 million and the Flickr API was instrumental in achieving this. In early 2019, three new API providers were included: 1) Met Museum, 2) Cleveland Museum, and 3) Brooklyn Museum. This led to the development of our API [ETL data pipeline][etl-pipeline] which is managed by [Apache Airflow][apache-airflow].
+
+Currently, we have over 305 million images from 25 providers, and we are still working to improve the data infrastructure and solidify our efforts for [building a vibrant, usable Commons][cc-search-beta].
+
+![cc-catalog-img](cc-catalog-growth.png)
+
+The above data is made available to [CC Search][cc-search] via [CC Catalog API][cc-catalog-api]. However, all providers in the catalog are not immediately available in CC Search. Various preprocessing efforts are performed in the back-end by the CC Catalog API to determine which content is deemed ready for publishing. Also, platforms are subject to additional reviews and may be suppressed until that process has completed. Currently CC Search has 19 of the above providers, comprising over [300 million images] [cc-search-stable].
+
+The goal for 2019 is to increase the catalog to:
+- 325 million images,
+- 30 providers, and
+- add new content types
+
+The next post will discuss the details of the Common Crawl ETL Pipeline and how instrumental this corpus is for identifying potential providers and understanding how people are using the various CC license.
+
+[cccatalog]:https://github.com/creativecommons/cccatalog
+[cc-search-developer-notes]:https://hackernoon.com/cc-search-developer-notes-and-reflection-418271194682
+[cc-search-beta]:https://creativecommons.org/2017/02/07/new-cc-search/
+[cc-search-beta-updates]:https://creativecommons.org/2018/09/24/big-changes-for-cc-search-beta-updates-released-today/
+[common-crawl]:http://commoncrawl.org/
+[data-pipeline]:https://en.wikipedia.org/wiki/Pipeline_(computing)
+[apache-spark]:https://spark.apache.org/
+[apache-airflow]:https://airflow.apache.org/
+[cc-search-stable]:https://creativecommons.github.io/blog/entries/cc-search-out-of-beta/
+[cc-search]:https://search.creativecommons.org/
+[cc-catalog-api]:https://github.com/creativecommons/cccatalog-api
+[etl-pipeline]:https://en.wikipedia.org/wiki/Extract,_transform,_load
+[cc-flickr]:https://blog.flickr.net/en/2019/03/08/update-on-creative-commons-licenses-and-in-memoriam-accounts/
+[open-api]:https://en.wikipedia.org/wiki/Open_API
