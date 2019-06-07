@@ -52,11 +52,12 @@ else fails, try removing the virtual environment and reinstalling:
 
 ## Deployment
 
-We have continuous deployment set up. Travis CI builds and deploys the site
- whenever it detects new commits on the `master` branch.
+We have continuous deployment set up. To deploy, push your code to the `master` branch (or make a pull request against the `master` branch. Travis CI builds and deploys the site whenever it detects new commits on the `master` branch.
 
 
 ### Manual Deployment
+
+**For reference only, you should not need to not do this.**
 
 When you are ready to deploy a new version of the site, run `lektor deploy`
 (assuming you have your GitHub SSH key already set up and you have access to
