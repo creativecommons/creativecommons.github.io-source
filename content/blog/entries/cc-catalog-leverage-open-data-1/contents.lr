@@ -23,7 +23,7 @@ After this, [Open APIs][open-api] were explored and its purpose was not to repla
 
 Currently, we have over 305 million images from 25 providers, and we are still working to improve the data infrastructure and solidify our efforts for [building a vibrant, usable Commons][cc-search-beta].
 
-![cc-catalog-img](cc-catalog-growth.png)
+![cc-catalog-img](cc-catalog-growth.jpg)
 
 The above data is made available to [CC Search][cc-search] via [CC Catalog API][cc-catalog-api]. However, all providers in the catalog are not immediately available in CC Search. Various preprocessing efforts are performed in the back-end by the CC Catalog API to determine which content is deemed ready for publishing. Also, platforms are subject to additional reviews and may be suppressed until that process has completed. Currently CC Search has 19 of the above providers, comprising over [300 million images] [cc-search-stable].
 
