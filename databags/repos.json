@@ -95,10 +95,24 @@
         {
             "created": "2019-05-22T22:36:52",
             "description": "The new and improved CC license selection tool (in progress)",
+            "engineering_project": true,
+            "english_name": "CC Chooser",
+            "featured": false,
             "id": 188122843,
-            "language": null,
-            "license": null,
+            "language": "HTML",
+            "license": {
+                "name": "MIT License",
+                "url": "https://github.com/creativecommons/cc-chooser/blob/master/LICENSE"
+            },
             "name": "cc-chooser",
+            "technologies": [
+                "HTML",
+                "CSS",
+                "JS",
+                "Bulma",
+                "Vue",
+                "Jest"
+            ],
             "url": "https://github.com/creativecommons/cc-chooser",
             "website": null
         },
@@ -148,13 +162,25 @@
         {
             "created": "2019-05-24T16:49:48",
             "description": null,
+            "engineering_project": true,
+            "english_name": "CC Vocabulary",
+            "featured": true,
             "id": 188457696,
-            "language": null,
+            "language": "Vue",
             "license": {
                 "name": "MIT License",
                 "url": "https://github.com/creativecommons/cc-vocabulary/blob/master/LICENSE"
             },
             "name": "cc-vocabulary",
+            "technologies": [
+                "JavaScript",
+                "Vue",
+                "Webpack",
+                "Babel",
+                "Stylus",
+                "Styleguidist",
+                "Theo"
+            ],
             "url": "https://github.com/creativecommons/cc-vocabulary",
             "website": null
         },
@@ -279,7 +305,7 @@
             "created": "2018-04-27T21:32:44",
             "description": "Data Visualizations",
             "id": 131346835,
-            "language": null,
+            "language": "HTML",
             "license": null,
             "name": "cccatalog-dataviz",
             "url": "https://github.com/creativecommons/cccatalog-dataviz",
@@ -355,8 +381,11 @@
             "created": "2019-05-24T17:14:10",
             "description": "CC Search Browser Extension [ WIP ] ",
             "id": 188460712,
-            "language": null,
-            "license": null,
+            "language": "CSS",
+            "license": {
+                "name": "MIT License",
+                "url": "https://github.com/creativecommons/ccsearch-browser-extension/blob/master/LICENSE"
+            },
             "name": "ccsearch-browser-extension",
             "url": "https://github.com/creativecommons/ccsearch-browser-extension",
             "website": "https://summerofcode.withgoogle.com/projects/#6510509090668544"
