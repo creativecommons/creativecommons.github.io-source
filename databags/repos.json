@@ -164,7 +164,7 @@
             "description": null,
             "engineering_project": true,
             "english_name": "CC Vocabulary",
-            "featured": true,
+            "featured": false,
             "id": 188457696,
             "language": "Vue",
             "license": {
