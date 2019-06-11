@@ -116,8 +116,8 @@ Each repo should have a `.cc-metadata.yml` file in the root directory with the f
     english_name: CC Catalog API
     # All technologies used
     technologies: Python, Django, Django REST Framework, Elasticsearch
-    # Whether this repository should be featured on the CC Open Source site
-    featured: true
+    # Whether this repository should be featured on the CC Open Source site's "Projects" page
+    featured: false
   </code>
 </pre>
 
