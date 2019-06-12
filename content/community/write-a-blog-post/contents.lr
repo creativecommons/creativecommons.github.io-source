@@ -35,6 +35,8 @@ New blog posts must be submitted **by submitting a [pull request](/contributing-
       You don't need to specify the path to the image since you have uploaded it to the same folder in Step 3.
     </code>
   </pre>
+
+  *Read more about [Markdown formatting here](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).*
 1. Each category you have applied to the post must have its own subdirectory in the [content/blog/categories](https://github.com/creativecommons/creativecommons.github.io-source/tree/master/content/blog/categories) directory.
   * If there is no subdirectory for that category, create one using **the exact category name** as the blog post with its own `contents.lr` file within.
   * The new `contents.lr` file within should follow the same format as the other categories. Here's an [example category content file](https://raw.githubusercontent.com/creativecommons/creativecommons.github.io-source/master/content/blog/categories/gsoc-2019/contents.lr).
