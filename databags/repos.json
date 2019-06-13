@@ -137,6 +137,16 @@
             "website": ""
         },
         {
+            "created": "2019-06-12T18:15:54",
+            "description": "Automated link checker for legalcode and license URLs",
+            "id": 191622826,
+            "language": null,
+            "license": null,
+            "name": "cc-link-checker",
+            "url": "https://github.com/creativecommons/cc-link-checker",
+            "website": null
+        },
+        {
             "created": "2019-01-29T21:17:39",
             "description": "Temporary microsite for mx.creativecommons.org",
             "id": 168230429,
@@ -321,7 +331,7 @@
             "language": "JavaScript",
             "license": {
                 "name": "MIT License",
-                "url": "https://github.com/creativecommons/cccatalog-frontend/blob/master/LICENSE"
+                "url": "https://github.com/creativecommons/cccatalog-frontend/blob/develop/LICENSE"
             },
             "name": "cccatalog-frontend",
             "technologies": [
@@ -381,7 +391,7 @@
             "created": "2019-05-24T17:14:10",
             "description": "CC Search Browser Extension [ WIP ] ",
             "id": 188460712,
-            "language": "CSS",
+            "language": "JavaScript",
             "license": {
                 "name": "MIT License",
                 "url": "https://github.com/creativecommons/ccsearch-browser-extension/blob/master/LICENSE"
