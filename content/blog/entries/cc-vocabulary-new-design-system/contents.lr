@@ -115,16 +115,11 @@ with the existing config.
 
 Then there are plugins. Plugins for Vue CLI are few and far in between but those
 that are work extremely well and integrate with the Vue UI, a web based
-management tool for Vue projects. If you haven't seen Vue UI, you should.
-
-```bash
-[user cc-vocabulary]$ vue ui
-```
-
-Both Vue Styleguidist, the plugin used to generate the styleguide and Vue i18n,
-the plugin used to provide translations work seamlessly with Vue and, with the
-exception of having to manually enable i18n in Styleguidist by extending the
-renderer in `styleguide.config.js` (more on that later), with each other.
+management tool for Vue projects. Both Vue Styleguidist, the plugin used to
+generate the styleguide and Vue i18n, the plugin used to provide translations
+work seamlessly with Vue and, with the exception of having to manually enable
+i18n in Styleguidist by extending the renderer in `styleguide.config.js` (more
+on that later), with each other.
 
 Coming from a React background, the helpfulness of the Vue framework contrasts
 starkly with the cold stony world I was accustomed to. _"I'm beginning to enjoy
@@ -135,6 +130,13 @@ Docker setup to boot. I also had a ridiculously large smile from all the
 learning that I did. By the end of three weeks, I was the proud developer of a
 world-class web component framework that was beginning to have some real
 footing, something I had not even dreamed possible!
+
+**Pro-tip:** If you haven't seen or experienced Vue UI, you should. It will 
+change your opinion of Vue for the better, as it did mine.
+
+```bash
+[user cc-vocabulary]$ vue ui
+```
 
 ### The bad
 
@@ -159,11 +161,17 @@ Component scheme making use of `.vue` files that Webpack processes using the
 `vue-loader` package. Now Styleguidist and Vue i18n both add their own tags to
 the mix such as `<docs>` and `<i18n>` making one component file go to hundreds
 or even thousands of lines! In a world that taught us to decouple style from
-functionality, this mushing of languages did not sit well with me.
+functionality, this mushing of languages did not sit too well with me and I kept
+contemplating what reasons would have prompted the developers to take this step.
 
-This catastrophe could have become ugly were it not for the benevolent `src`
-attribute supported by some Vue tags. I had known this for merely seconds when 
-I found myself breaking my components down using
+Also Styleguidist comes with a very bland default style so to make it barely
+presentable, one needs to override a lot of CSS styles that have absurdly high
+specificities. Thankfully the default design is bland, not ugly otherwise the
+whole thing would have been an ugly, miserable affair.
+
+**Pro-tip:** This catastrophe could have become ugly were it not for the
+benevolent `src` attribute supported by some Vue tags. I had known this for
+merely seconds when I found myself breaking my components down using
 
 ```html
 <style scoped lang="stylus" src="./Component.styl"></style>
@@ -178,11 +186,6 @@ to store CSS separately and
 to keep translations outside of my code, thus making the file much more
 manageable. There is still no way to split the JS `<script>` from the HTML
 `<template>` without losing all autocompletion features provided by the IDE.
-
-Also Styleguidist comes with a very bland default style so to make it barely
-presentable, one needs to override a lot of CSS styles that have absurdly high
-specificities. Thankfully the default design is bland, not ugly otherwise the
-whole thing would have been an ugly, miserable affair.
 
 ### The ugly
 
@@ -263,3 +266,41 @@ Here's a sneak peek!
 <img alt="CC Vocabulary in production" src="hello.png"/><br/>
 <small class="muted">Say hello to CC Vocabulary!</small>
 </div>
+
+----
+
+CC Vocabulary is my GSoC 2019 project under the guidance of [Hugo
+Solar](https://creativecommons.org/author/hugocreativecommons-org/) and [Sophine
+Clachar](https://creativecommons.org/author/sclachar/). Although not officially
+a mentor [Kriti
+Godey](https://creativecommons.org/author/kriticreativecommons-org/) has also
+been really supportive and helpful.
+
+### Work log
+
+See GitHub [commits](https://github.com/creativecommons/cc-vocabulary/commits)
+for in-depth logs.
+
+- Set up the Vue CLI 3 project
+- Installed and customised Styleguidist
+- Dockerised the setup for ease of setup and development
+- Developed a home page for the project
+- Developed simple components, called elements, like Heading and Paragraph
+- Added design tokens and Theo workflow
+- Converted all constants to design tokens: color, fonts and dimensions
+- Wrote some, not all and definitely not enough, tests
+- Added elements like Container and Badge
+- Added complex components, called patterns, like Hello, Header and Footer
+- Deployed styleguide to GitHub Pages
+- Added color to patterns in a reusable way
+- Added i18n capabilities and initiated translation to Hindi in the Footer
+- Developed the Locale switcher and integrated with Styleguidist
+
+### Coming up
+
+See proposal for in-depth goals.
+
+- Integrate the library, gradually, with CC Search
+- Add more generic components
+- Go to point 1
+- Develop a non-Vue vanilla CSS + JS based version of the library
