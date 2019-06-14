@@ -8,19 +8,19 @@
 ---
  pub_date: 2019-06-14
 ---
-In case you don't know, my GSoC project involves revamping [the CC license chooser](https://creativecommons.org/choose/).
-I am working with my mentor, [Breno Ferreira](https://creativecommons.org/author/brenoferreira/), to visually overhaul the tool, as well as
-making it more educational, and more usable.
+ body:
+ In case you don't know, my GSoC project involves revamping [the CC license chooser](https://creativecommons.org/choose/).
+ I am working with my mentor, [Breno Ferreira](https://creativecommons.org/author/brenoferreira/), to visually overhaul the tool, as well as making it more educational, and more usable.
 
-This week, I worked on the site layout and usability testing of the existing chooser.
+ This week, I worked on the site layout and usability testing of the existing chooser.
 
-I enjoyed usability testing more than I expected. During my mid-week standup meeting with Breno, he had some suggestions about the layout that came up in usability testing I was conducting literally the same day.
-I thought this was kinda funny, it was like my tester and Breno had talked about the layout between the meeting and testing. 
-I really enjoyed working on the layout. Experimenting with different layouts and visual styles, seeing the changes and the progression
-from iteration to iteration was a really fun process, and I really enjoyed seeing the new site take shape right before my eyes.
+ I enjoyed usability testing more than I expected. During my mid-week standup meeting with Breno, he had some suggestions about the layout that came up in usability testing I was conducting literally the same day.
+ I thought this was kinda funny, it was like my tester and Breno had talked about the layout between the meeting and testing. 
+ I really enjoyed working on the layout. Experimenting with different layouts and visual styles, seeing the changes and the progression
+ from iteration to iteration was a really fun process, and I really enjoyed seeing the new site take shape right before my eyes.
 
-This week's time managment was somewhat difficult for me. It's the second to last week of my current college quarter, so I'm working hard to prep for finals,
-and that takes lots of time (something I've never considered to be too scarce before I started college, but it's now a precious commodity!).
-With lots of tea and careful time management, I made it through on schedule.
+ This week's time managment was somewhat difficult for me. It's the second to last week of my current college quarter, so I'm working hard to prep for finals,
+ and that takes lots of time (something I've never considered to be too scarce before I started college, but it's now a precious commodity!).
+ With lots of tea and careful time management, I made it through on schedule.
 
-Next week is all about planning code structure and taking steps with dialing the look and feel of the site, and I'm excited to get started.
+ Next week is all about planning code structure and taking steps with dialing the look and feel of the site, and I'm excited to get started.
