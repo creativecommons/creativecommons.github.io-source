@@ -19,7 +19,7 @@ _“By visualizing information, we turn it into a landscape that you can explore
 The landscape of licensed content is wide and varied. We have domains linking to other domains, different license types, and some metadata. This information is extracted from the Internet monthly by [Open Crawl](http://commoncrawl.org/). It is fair to mention that we have 250 million works and growing! If you didn't know we had so much licensed content, well then, this is one of the goals of this project: show the users how licensers are connected, their licensed content, and show how the licensing wave is expanding.
 
 
-### HANDS TO WORK!
+### Hands to work!
 
 Currently, there are tons of graphs and visualization concepts that have proven to work better with certain data. I'm addition, because of the huge amount of data we possess, a critical point to keep in mind is that the graph must keep being meaningful (for example, with the classic node-link approach, you can end up having a confusing hairball). Hence, the visualization must be scalable. Finding which visualization would  work the best with the CC catalog dataset was my first task. I reviewed the state-of-art in graphs visualization, but in this post I'm not going to go deep with it. The highlights and conclusions of this review are the following: 
 
@@ -28,12 +28,13 @@ Currently, there are tons of graphs and visualization concepts that have proven 
 - Benefits are focused on the analysis tasks that are specific to those use cases (and yes, they are not the same for our case).
 - Visualizations are not meaningful when you have thousands of nodes.
 - Both cases needed to build a library from scratch.
+
 **Conclusion:** neither of the solutions reviewed seemed viable for the CC-Catalog visualization project, as they do not show huge improvements in scalability. In addition, they do not fit for our case study.
 
 ### The graph
-Now that I knew what to draw, the next step was to find HOW to draw the graph. There is a wide range of visualization libraries where to choose from, you might feel overwhelmed at first. Tip: define priorities/ key aspects according to what you want to visualize. Performance with big data, community support and a smooth learning curve were the aspects I checked for making a decision. We finally chose to work with [force-d3](https://github.com/vasturiano/force-graph), an open-source library that usese the d3-force module as the underlying physics engine.  It has a friendly and simple API, as well as documentation and examples. 
+Now that I knew what to draw, the next step was to find HOW to draw the graph. There is a wide range of visualization libraries where to choose from, you might feel overwhelmed at first. **Tip:** define priorities/ key aspects according to what you want to visualize. Performance with big data, community support and a smooth learning curve were the aspects I checked for making a decision. We finally chose to work with [force-d3](https://github.com/vasturiano/force-graph), an open-source library that uses the d3-force module as the underlying physics engine.  It has a friendly and simple API, as well as documentation and examples. 
 
-One challenging task was to draw the nodes. The idea here is to show the domains names inside the nodes, and let the nodes size to be data driven. Funny fact: I spent hours before finding out that I received nodes as canvas objects with the API. Once you know how to draw nodes, the styling of the edges is a ride, because in force-d3 they are handled in the same way as the nodes objects. The edges are highlighted and their width increases when the user hovers over them. Another not-so-easy feature I implemented was to highlight a node and its neighbors. Here I have to thank to Mr. Vasturiano, the author of the library, who directed me to an example he developed with a very similar functionality. He is continuously checking and fixing open issues in his repo. Great library! I recommend you to check it out. 
+One challenging task was to draw the nodes. The idea here is to show the domains names inside the nodes, and let the nodes size to be data driven. Funny fact: I spent hours before finding out that I received nodes as canvas objects with the API. Once you know how to draw nodes, the styling of the edges is a ride, because in force-d3 they are handled in the same way as the nodes objects. The edges are highlighted and their width increases when the user hovers over them. Another not-so-easy feature I implemented was to highlight a node and its neighbors. Here I have to thank to [Mr. Vasturiano](https://github.com/vasturiano), the author of the library, who directed me to an example he developed with a very similar functionality. He is continuously checking and fixing open issues in his repo. Great library! I recommend you to check it out. 
 
 
 ### Licensed content by types of CC licenses
@@ -47,22 +48,25 @@ The final look of the front-end is:
 <img src="cc_graph.png" alt="CC Data Catalog Visualization"/><br/>
 <small class="muted">Current sample graph, developed with force-d3. </small>
 </div>
+<br>
 
 <div>
 <img src="cc_graph_zoom.png" alt="CC Data Catalog Visualization" /><br/>
 <small class="muted">Nodes with sample domain names. When the user hovers over a node, its neighbors are highlighted. The nodes sizes are data-driven.</small>
 </div>
+<br>
 
 <div>
 <img src="cc_piechart.png" alt="Pie chart license types" /><br/>
-<small class="muted">Pie chart that shows the proportions of licensed content of a domain, classified by CC license types.</small>
+<small class="muted" style="text-align:center;">Pie chart that shows the proportions of licensed content of a domain, classified by CC license types.</small>
 </div>
+<br>
 
+**PD:** if the nodes labels are familiar to you, yes, they are the names of the characters of Les Misérables. I'm working with sample data!
 
+### Coming soon
 
-### COMING SOON
-
-Once the front-end is completed, I am going to get my hands dirty with the data. Future milestones for the next two weeks include:
+As the front-end is complete, I am going to get my hands dirty with the data. Future milestones for the next two weeks include:
 - Files conversion in Spark
 - Reviewing of part of the dataset
 - Implementation of a module for cleaning and parsing the data
@@ -74,6 +78,7 @@ Clachar](https://creativecommons.org/author/sclachar/), who has been greatly hel
 Godey](https://creativecommons.org/author/kriticreativecommons-org/), have been very supportive.
 
 Have a nice week!
+
 Maria
 
 
