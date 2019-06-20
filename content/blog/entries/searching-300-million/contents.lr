@@ -25,10 +25,11 @@ At this point, it’s easy to fall into the trap of overengineering. Rather than
 
 First, we divided the work into 3 separate silos - data engineering, backend, and frontend. That means that each respective developer could focus entirely on accumulating CC licensed content, building scalable infrastructure to serve this content to the public, and improving the user experience/presentation layer. The data and frontend layers would be tied together through an [open API](https://api.creativecommons.engineering), which also opens up the possibility of developers building their own custom applications with CC Search, such as a Photoshop plugin or a [Firefox addon](https://github.com/creativecommons/ccsearch-browser-extension/). Each developer could use whatever tools they were most familiar with to implement their slice of the project.
 
-## Updating the Search Index
+## Updating the search index
 One of the first problems that needed to be solved was reducing the time that it took to add works to our search engine. It took about 3 days to index 10 million images in the original prototype. Since the prototype search data was static, that was completely acceptable; however, for 300 million works, it would take 90 days to index the data.
 Investigation revealed that the problem was the use of Django signals to populate the search index. Every time a work was added to the database, it would be indexed inside of Elasticsearch. This works well for a steady trickle of updates, but does not work so well for 300 million updates.
- Instead of using Django signals to incrementally add individual items to the database and search index, we took a “freight train” approach where we would rebuild the entire database and search index in bulk. The tradeoff is that there would be some lag time between finding CC licensed content and when it actually shows up in production where the end user can see it. Since users can’t really tell if your image index is a few hours out of date, this seemed like a worthwhile price to pay; we can always introduce “fast path” updates later when the situation calls for it.
+
+Instead of using Django signals to incrementally add individual items to the database and search index, we took a “freight train” approach where we would rebuild the entire database and search index in bulk. The tradeoff is that there would be some lag time between finding CC licensed content and when it actually shows up in production where the end user can see it. Since users can’t really tell if your image index is a few hours out of date, this seemed like a worthwhile price to pay; we can always introduce “fast path” updates later when the situation calls for it.
 
 ![Ingestion Server](ingestion_diagram.jpg)
 
@@ -43,7 +44,7 @@ We predicted that we would have a lot more users after removing the “beta” d
 
 Unfortunately, drawing architecture diagrams and allocating autoscaling groups does not prove that your design will work under load. To that end, we wrote up some Locust load tests. With about 50 lines of code, we were able to hammer the API with tens of thousands of requests per second and see what happened. This step was vital, as it allowed us to fix performance bottlenecks before experiencing live traffic. It uncovered a number of difficult to discover performance related configuration problems and deadlock conditions before we ever even hit production.
 
-## A Hack for Handling Link Rot at Scale
+## A hack for handling link rot at scale
 One significant challenge we faced was link rot: over time, images are moved to new locations or entirely deleted. Once we began indexing more data from social platforms like Flickr and Behance, the problem became too big to ignore; CC Search was returning page after page of dead links. To make matters worse, we don’t host our own thumbnails; we scrape them from the original data source and embed them in our results. As a consequence of this, broken thumbnails would show up in the search results, creating a really bad user experience.
 
 The logical answer to this would be to scrape the images and produce our own thumbnails, which we intend to do in the near future. That would solve the immediate usability problem of broken thumbnails, but not solve the underlying issue of deleted images being linked in our search results. Additionally, scraping and storing 300 million+ images would incur significant storage costs. We would also need to crawl 300 million images without placing undue burden on our content partners. When 290 million images in the catalog are stored on Flickr alone, this is impossible; we would have to make thousands of calls per second to crawl that amount of content in a reasonable period of time. Your crawler will not survive for very long if all of your target sites block you for sucking up all of their capacity. Finally, how often can we perform such a crawl? Once a month? Once per year? In the meantime, between crawls, more link rot is taking place.
@@ -52,11 +53,11 @@ Instead of building a crawler, we decided to perform some server-side validation
 
 In general, this “just-in-time validation” has worked surprisingly well. Broken thumbnails are a rare occurrence now. It solved a lot of the issues related to embedding 3rd party content in our search results, buying us more time to build a more sustainable database-layer solution to link rot and thumbnailing.
 
-## Managing Infrastructure with Terraform
+## Managing infrastructure with Terraform
 With greater scale comes greater complexity. Since there would be more moving parts in our implementation of CC Search, we would need some kind of infrastructure as code tool to manage zero-downtime deployments, provisioning new virtual machines, configuration management, tracking expenses, and documenting what is actually in production. We considered Kubernetes, but that seemed like massive overkill for a team of our size and a source of too much operational complexity. Instead, we use [Terraform](https://www.terraform.io/) to declaratively provision our software to EC2 instances hosted on AWS. Everything is containerized, so we can easily transition to Kubernetes or Nomad if we desire in the future, but Terraform has proven to be more than sufficient so far.
 
 With Terraform, we are able to produce deployment plans, see what changes are going to appear in production, and only then pull the trigger. It also provides [immutable infrastructure](https://www.digitalocean.com/community/tutorials/what-is-immutable-infrastructure):  instead of sshing into servers and fiddling with settings or running bespoke deployment scripts, whenever we want to make a change, we completely re-provision the virtual machine with new settings. The current state of the system is always documented in our Terraform code.
 
-## The Future
+## The future
 
 The next step for CC Search is improving the relevance of our search results, which is going to entail performing large scale scraping of some of the catalog, performing AI analysis of the scraped content, and implementing some popularity-based algorithm to boost the most interesting results to the top. We’re also going to start producing thumbnails for at least some subset of our catalog, perhaps on a just-in-time basis or through multiple caching image proxies.
