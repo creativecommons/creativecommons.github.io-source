@@ -516,19 +516,6 @@
             "website": null
         },
         {
-            "created": "2016-01-26T22:56:41",
-            "description": "Proposal for a formal way of expressing public license information in Exif",
-            "id": 50465380,
-            "language": "Perl",
-            "license": {
-                "name": "Creative Commons Zero v1.0 Universal",
-                "url": "https://github.com/creativecommons/exif/blob/master/LICENSE"
-            },
-            "name": "exif",
-            "url": "https://github.com/creativecommons/exif",
-            "website": ""
-        },
-        {
             "created": "2015-12-14T23:19:08",
             "description": "Creative Commons FAQ page",
             "id": 48007106,
@@ -665,16 +652,6 @@
             "name": "php-formula",
             "url": "https://github.com/creativecommons/php-formula",
             "website": "http://docs.saltstack.com/en/latest/topics/development/conventions/formulas.html"
-        },
-        {
-            "created": "2019-04-05T14:15:22",
-            "description": "Development toolkit for WordPress",
-            "id": 179695011,
-            "language": "PHP",
-            "license": null,
-            "name": "queulat",
-            "url": "https://github.com/creativecommons/queulat",
-            "website": null
         },
         {
             "created": "2013-12-02T20:59:52",
@@ -820,6 +797,27 @@
             "name": "wp-theme-cc-sotc",
             "url": "https://github.com/creativecommons/wp-theme-cc-sotc",
             "website": null
+        },
+        {
+            "created": "2019-03-22T15:46:16",
+            "description": "Creative Commons - Business Toolkit WordPress theme",
+            "engineering_project": true,
+            "english_name": "Business Toolkit WordPress Theme",
+            "featured": false,
+            "id": 177168132,
+            "language": "PHP",
+            "license": {
+                "name": "GNU General Public License v2.0",
+                "url": "https://github.com/creativecommons/wp-theme-cctoolkit/blob/master/LICENSE"
+            },
+            "name": "wp-theme-cctoolkit",
+            "technologies": [
+                "CSS",
+                "PHP",
+                "WordPress"
+            ],
+            "url": "https://github.com/creativecommons/wp-theme-cctoolkit",
+            "website": ""
         },
         {
             "created": "2013-10-28T02:42:48",
