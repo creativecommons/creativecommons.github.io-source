@@ -506,16 +506,6 @@
             "website": "https://github.com/creativecommons/new-creativecommons.org"
         },
         {
-            "created": "2013-12-02T21:01:29",
-            "description": null,
-            "id": 14874720,
-            "language": "JavaScript",
-            "license": null,
-            "name": "deedscraper",
-            "url": "https://github.com/creativecommons/deedscraper",
-            "website": null
-        },
-        {
             "created": "2015-12-14T23:19:08",
             "description": "Creative Commons FAQ page",
             "id": 48007106,
@@ -601,16 +591,6 @@
             "website": "https://creativecommons.org/"
         },
         {
-            "created": "2016-05-19T18:06:55",
-            "description": "creativecommons.org various custom plugins for content types, mostly",
-            "id": 59230319,
-            "language": "PHP",
-            "license": null,
-            "name": "new-www-plugin",
-            "url": "https://github.com/creativecommons/new-www-plugin",
-            "website": "https://github.com/creativecommons/new-creativecommons.org"
-        },
-        {
             "created": "2016-05-19T18:06:05",
             "description": "creativecommons.org theme, to make it look lovely",
             "id": 59230280,
@@ -652,6 +632,16 @@
             "name": "php-formula",
             "url": "https://github.com/creativecommons/php-formula",
             "website": "http://docs.saltstack.com/en/latest/topics/development/conventions/formulas.html"
+        },
+        {
+            "created": "2019-04-05T14:15:22",
+            "description": "Development toolkit for WordPress",
+            "id": 179695011,
+            "language": "PHP",
+            "license": null,
+            "name": "queulat",
+            "url": "https://github.com/creativecommons/queulat",
+            "website": null
         },
         {
             "created": "2013-12-02T20:59:52",
