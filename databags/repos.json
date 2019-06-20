@@ -487,7 +487,7 @@
         },
         {
             "created": "2019-01-27T02:29:18",
-            "description": "Source files for creativecommons.github.io",
+            "description": "Source files for CC Open Source website",
             "id": 167761414,
             "language": "HTML",
             "license": {
@@ -563,19 +563,6 @@
             "name": "labs",
             "url": "https://github.com/creativecommons/labs",
             "website": ""
-        },
-        {
-            "created": "2014-07-09T20:23:35",
-            "description": "\"Let's CC\" is a search engine service that helps finding contents such as images, music, videos, and documents distributed under CCL (Creative Commons License) quickly, and easily.",
-            "id": 21667754,
-            "language": "PHP",
-            "license": {
-                "name": "Other",
-                "url": "https://github.com/creativecommons/letscc/blob/master/LICENSE"
-            },
-            "name": "letscc",
-            "url": "https://github.com/creativecommons/letscc",
-            "website": "http://eng.letscc.net"
         },
         {
             "created": "2014-11-17T21:58:08",
@@ -829,16 +816,6 @@
             },
             "name": "termination-of-transfer",
             "url": "https://github.com/creativecommons/termination-of-transfer",
-            "website": null
-        },
-        {
-            "created": "2013-12-02T21:00:44",
-            "description": null,
-            "id": 14874646,
-            "language": "PHP",
-            "license": null,
-            "name": "themes-cc_wiki",
-            "url": "https://github.com/creativecommons/themes-cc_wiki",
             "website": null
         },
         {
