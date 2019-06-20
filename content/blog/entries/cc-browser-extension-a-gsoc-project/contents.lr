@@ -1,0 +1,64 @@
+title: CC Browser Extension - A GSoC Project
+---
+categories:
+gsoc
+gsoc-2019
+cc-browser-extension
+cc-search
+cc-catalog
+open-source
+---
+author: makkoncept
+---
+pub_date: 2019-06-20
+---
+body:
+
+With the Creative Commons engineering team working very hard to catalog and index a plethora of CC-licensed works floating all over the internet, the next step is to make a suite of user-centric applications and interfaces to interact, consume and even reuse the content. The CC-Search is one such app with over [300 million CC-Licensed images indexed](https://creativecommons.github.io/blog/entries/cc-search-out-of-beta/) and since there is a full separation of concern between the backend ([CC-Catalog-API](https://github.com/creativecommons/cccatalog-api)) and frontend ([CC-Catalog-frontend](https://github.com/creativecommons/cccatalog-frontend)), we can leverage the backend architecture to design plugins for other platforms.
+
+This GSoC project aims to do this by making a Cross-Browser extension to interact with CC-Catalog-API.
+
+### Why browser Extension?
+-  Having at least two browser-centric front-ends ([CC Search web app](https://search.creativecommons.org/) and browser extension) to the CC-Catalog-API would be beneficial because based on the community feedback we can ship only those features to the extension that would make the most sense to its users while having CC Search up to date. Therefore making _two flavors of interfaces_ in the process.
+- We don’t have to tackle compatibility issues of different Operating Systems. If it runs in Firefox, it will run on any OS that has Firefox.
+- Majority of users surf the internet through modern browsers which provide easy ways to add extensions with most of them having dedicated online stores.
+- Most people tend to look for an extension for something they do more often on the internet so that they can save time, so it makes sense to develop one for CC Search also.
+- Personalized experience: I talk more about this later in the post.
+
+### The Plan:
+The first task would be to make an MVP that would be inspired by the CC Search design. For this, I will make sure to have the least dependence on browser extension APIs (probably use only [browserAction](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/browserAction)) so that the extension can be easily ported to different browsers without any major change in the code. Sure, we still have to work out porting and polyfilling CS3 and javaScript code to work on different browsers, but having one less thing to worry about while porting the initial version of extension will only help.
+
+Then I want to move to the next step and work on things that would make the user experience more personal and intuitive and here various browser extensions APIs would come handy, like [storage](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/storage), [tabs](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/tabs), etc. Then the priority would shift to making the extension compatible with Firefox and chrome.
+
+### What do I mean by Personalized experience?
+Most people who will download the extension would want it to act as their own. They would want to customize it so that their flow is more intuitive and they don't have to repeat steps like if one user searches extensively for CC Content on Behance and DeviantArt only, they would want to not set the search filter before every new session. _This is where the browser extension shines_.
+
+One good example of solving this problem would be to make an options page, that would open in a new tab, where they can set the filters they use more often as default.
+
+Similarly, if we add a feature, say dark-mode, then the users who prefer it over the default can set their preferences. 
+
+### Work Done till Now:
+
+<div>
+<img src="extension-screenshot.png" alt"CC Browser Extension Screenshot" align="middle"/><br>
+<small class="muted" style="display:block; text-align:center;">CC Browser Extension Screenshot</small>
+</div>
+<br>
+
+- Set up the project directory structure, Eslint, Circle-ci.
+- Set up the popup markup and styles.
+- Started making API calls. You can search and get thumbnails of images.
+- Showing image metadata like its title, license, provider when thumbnails are hovered on.
+- Add a loading animation.
+- Add functionality to apply license and provider filters to search.
+
+### Coming up
+- Set up lazy loading or pagination.
+- Start working on the functionality of showing the image preview with data, attribution, etc when we click on the image. This may take more than one week.
+
+### How you can help
+The development is still in the initial phase but you can check out **a working extension** at the [Github Repository](https://github.com/creativecommons/ccsearch-browser-extension). There are instructions to help you get started and load it to Firefox.
+
+Tell us what you expect the extension to do, or a feature that you wish would be implemented. At this early stage of development, it might help us improve our goals. You can join the discussion on `#gsoc-browser-ext` channel on [slack](http://localhost:5000/community/#slack).
+
+I would like to thank [Alden](https://creativecommons.org/author/aldencreativecommons-org/), [Timid](https://creativecommons.org/author/timidcreativecommons-org/) and [Kriti](https://creativecommons.org/author/kriticreativecommons-org/) to for their mentorship and providing an experienced perspective and solutions to the problems faced by this naive developer. 
