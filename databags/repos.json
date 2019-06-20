@@ -767,16 +767,23 @@
         },
         {
             "created": "2019-06-19T20:08:40",
-            "description": null,
+            "description": "Creative Commons Site Reliability Engineering WordPress Data Pull",
+            "engineering_project": true,
+            "english_name": "Creative Commons Site Reliability Engineering WordPress Data Pull",
+            "featured": false,
             "id": 192797615,
-            "language": null,
+            "language": "Shell",
             "license": {
                 "name": "MIT License",
                 "url": "https://github.com/creativecommons/sre-wp-pull/blob/master/LICENSE"
             },
             "name": "sre-wp-pull",
+            "technologies": [
+                "Bash",
+                "WordPress"
+            ],
             "url": "https://github.com/creativecommons/sre-wp-pull",
-            "website": null
+            "website": ""
         },
         {
             "created": "2015-03-03T19:48:55",
