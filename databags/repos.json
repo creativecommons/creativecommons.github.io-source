@@ -200,7 +200,7 @@
         },
         {
             "created": "2013-10-24T00:14:55",
-            "description": "Creative Commons i18n Tools",
+            "description": "Localization data for CC's deeds and chooser",
             "id": 13818463,
             "language": "Python",
             "license": {
