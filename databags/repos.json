@@ -181,7 +181,7 @@
         },
         {
             "created": "2013-09-13T22:18:08",
-            "description": "Python app that runs part of CC's website",
+            "description": "Python app that runs the license engine on CC's website",
             "engineering_project": true,
             "english_name": "cc.engine",
             "featured": false,
@@ -196,7 +196,7 @@
                 "Python"
             ],
             "url": "https://github.com/creativecommons/cc.engine",
-            "website": null
+            "website": ""
         },
         {
             "created": "2013-10-24T00:14:55",
