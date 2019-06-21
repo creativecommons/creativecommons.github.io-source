@@ -213,7 +213,7 @@
         },
         {
             "created": "2013-10-24T00:12:07",
-            "description": null,
+            "description": "Python app that runs part of the license engine on CC's website",
             "id": 13818396,
             "language": "Python",
             "license": {
@@ -222,7 +222,7 @@
             },
             "name": "cc.license",
             "url": "https://github.com/creativecommons/cc.license",
-            "website": null
+            "website": "https://creativecommons.org/licenses/"
         },
         {
             "created": "2013-09-15T21:56:33",
@@ -336,7 +336,7 @@
             "created": "2013-10-24T00:12:26",
             "description": null,
             "id": 13818403,
-            "language": "CSS",
+            "language": "HTML",
             "license": null,
             "name": "ccrel",
             "url": "https://github.com/creativecommons/ccrel",
@@ -346,7 +346,7 @@
             "created": "2013-10-24T00:12:36",
             "description": null,
             "id": 13818410,
-            "language": "CSS",
+            "language": "HTML",
             "license": null,
             "name": "ccrel-guide",
             "url": "https://github.com/creativecommons/ccrel-guide",
@@ -426,7 +426,10 @@
             "description": ":warning: Built static files for CC Open Source website. DO NOT MODIFY THIS REPOSITORY! To edit, use the creativecommons.github.io-source repository.",
             "id": 34004720,
             "language": "HTML",
-            "license": null,
+            "license": {
+                "name": "MIT License",
+                "url": "https://github.com/creativecommons/creativecommons.github.io/blob/master/LICENSE"
+            },
             "name": "creativecommons.github.io",
             "url": "https://github.com/creativecommons/creativecommons.github.io",
             "website": "https://creativecommons.github.io"
