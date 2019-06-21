@@ -249,7 +249,10 @@
             "featured": false,
             "id": 12853322,
             "language": "Python",
-            "license": null,
+            "license": {
+                "name": "MIT License",
+                "url": "https://github.com/creativecommons/cc.licenserdf/blob/master/LICENSE"
+            },
             "name": "cc.licenserdf",
             "url": "https://github.com/creativecommons/cc.licenserdf",
             "website": null
@@ -303,7 +306,10 @@
             "featured": false,
             "id": 131346835,
             "language": "HTML",
-            "license": null,
+            "license": {
+                "name": "MIT License",
+                "url": "https://github.com/creativecommons/cccatalog-dataviz/blob/master/LICENSE"
+            },
             "name": "cccatalog-dataviz",
             "url": "https://github.com/creativecommons/cccatalog-dataviz",
             "website": null
@@ -365,7 +371,10 @@
             "featured": false,
             "id": 13818410,
             "language": "HTML",
-            "license": null,
+            "license": {
+                "name": "MIT License",
+                "url": "https://github.com/creativecommons/ccrel-guide/blob/master/LICENSE"
+            },
             "name": "ccrel-guide",
             "url": "https://github.com/creativecommons/ccrel-guide",
             "website": "http://labs.creativecommons.org/2011/ccrel-guide/"
