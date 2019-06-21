@@ -420,16 +420,6 @@
             "website": "http://certificates.creativecommons.org/"
         },
         {
-            "created": "2016-05-27T18:09:13",
-            "description": null,
-            "id": 59854105,
-            "language": null,
-            "license": null,
-            "name": "certificates.creativecommons.org",
-            "url": "https://github.com/creativecommons/certificates.creativecommons.org",
-            "website": null
-        },
-        {
             "created": "2017-07-05T23:39:19",
             "description": "Global network social network",
             "engineering_project": true,
