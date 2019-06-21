@@ -181,7 +181,7 @@
         },
         {
             "created": "2013-09-13T22:18:08",
-            "description": "Python app that runs the license engine on CC's website",
+            "description": "Python app that runs part of the license engine on CC's website",
             "engineering_project": true,
             "english_name": "cc.engine",
             "featured": false,
