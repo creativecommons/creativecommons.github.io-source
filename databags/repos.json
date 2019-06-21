@@ -200,7 +200,7 @@
         },
         {
             "created": "2013-10-24T00:14:55",
-            "description": "Localization data for CC's deeds and chooser",
+            "description": "Localization data for CC's deeds and license chooser",
             "id": 13818463,
             "language": "Python",
             "license": {
