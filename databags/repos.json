@@ -168,7 +168,7 @@
         },
         {
             "created": "2013-12-02T21:01:41",
-            "description": null,
+            "description": "Legacy API to integrate the Creative Commons licensing engine into third party applications",
             "id": 14874742,
             "language": "Python",
             "license": {
