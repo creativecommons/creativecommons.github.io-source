@@ -203,7 +203,10 @@
             "description": "Creative Commons i18n Tools",
             "id": 13818463,
             "language": "Python",
-            "license": null,
+            "license": {
+                "name": "MIT License",
+                "url": "https://github.com/creativecommons/cc.i18n/blob/master/LICENSE"
+            },
             "name": "cc.i18n",
             "url": "https://github.com/creativecommons/cc.i18n",
             "website": ""
