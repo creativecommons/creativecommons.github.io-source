@@ -591,6 +591,16 @@
             "website": "https://creativecommons.org/"
         },
         {
+            "created": "2016-05-19T18:06:55",
+            "description": "creativecommons.org various custom plugins for content types, mostly",
+            "id": 59230319,
+            "language": "PHP",
+            "license": null,
+            "name": "new-www-plugin",
+            "url": "https://github.com/creativecommons/new-www-plugin",
+            "website": "https://github.com/creativecommons/new-creativecommons.org"
+        },
+        {
             "created": "2016-05-19T18:06:05",
             "description": "creativecommons.org theme, to make it look lovely",
             "id": 59230280,
@@ -641,16 +651,6 @@
             "license": null,
             "name": "queulat",
             "url": "https://github.com/creativecommons/queulat",
-            "website": null
-        },
-        {
-            "created": "2013-12-02T20:59:52",
-            "description": null,
-            "id": 14874571,
-            "language": "Python",
-            "license": null,
-            "name": "rdfadict",
-            "url": "https://github.com/creativecommons/rdfadict",
             "website": null
         },
         {
