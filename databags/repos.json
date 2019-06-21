@@ -107,7 +107,10 @@
             "description": "Temporary microsite for mx.creativecommons.org",
             "id": 168230429,
             "language": null,
-            "license": null,
+            "license": {
+                "name": "MIT License",
+                "url": "https://github.com/creativecommons/cc-mexico-micro/blob/master/LICENSE"
+            },
             "name": "cc-mexico-micro",
             "url": "https://github.com/creativecommons/cc-mexico-micro",
             "website": "https://mx.creativecommons.org/"
