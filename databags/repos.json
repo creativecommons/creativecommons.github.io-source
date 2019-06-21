@@ -539,7 +539,7 @@
         },
         {
             "created": "2014-11-17T21:58:08",
-            "description": null,
+            "description": "Helper for staging license translations before they are published",
             "engineering_project": true,
             "featured": false,
             "id": 26779255,
@@ -550,7 +550,7 @@
             },
             "name": "magical-pony",
             "url": "https://github.com/creativecommons/magical-pony",
-            "website": null
+            "website": ""
         },
         {
             "created": "2015-12-02T22:10:12",
