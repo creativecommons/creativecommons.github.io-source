@@ -51,7 +51,7 @@
           {% else %}
             <td></td>
           {% endif %}
-          <td>{% if repo.description %}{{ repo.language }}{% endif %}</td>
+          <td>{% if repo.language %}{{ repo.language }}{% endif %}</td>
           {% if repo.license %}
             <td><a href="{{ repo.license.url }}">{{ repo.license.name }}</a></td>
           {% else %}
