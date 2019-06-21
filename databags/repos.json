@@ -3,6 +3,8 @@
         {
             "created": "2019-03-13T02:54:23",
             "description": "Default templates and guidelines for Creative Commons GitHub repositories.",
+            "engineering_project": true,
+            "featured": false,
             "id": 175334998,
             "language": null,
             "license": {
@@ -16,6 +18,8 @@
         {
             "created": "2018-06-01T01:11:48",
             "description": "Candela helper plugin to manage additional config and bootstrapping, used on CC Certificates website",
+            "engineering_project": true,
+            "featured": false,
             "id": 135651265,
             "language": "PHP",
             "license": {
@@ -29,6 +33,8 @@
         {
             "created": "2018-05-16T19:44:57",
             "description": "Creates a static website of Case Law and Scholarship data frm around the world based on Google Form responses and manually curated.",
+            "engineering_project": true,
+            "featured": false,
             "id": 133715391,
             "language": "HTML",
             "license": {
@@ -105,6 +111,8 @@
         {
             "created": "2019-01-29T21:17:39",
             "description": "Temporary microsite for mx.creativecommons.org",
+            "engineering_project": true,
+            "featured": false,
             "id": 168230429,
             "language": null,
             "license": {
@@ -118,6 +126,8 @@
         {
             "created": "2014-01-08T18:49:45",
             "description": "Collection of resources on CC tools and other open topics",
+            "engineering_project": true,
+            "featured": false,
             "id": 15744672,
             "language": null,
             "license": {
@@ -156,6 +166,8 @@
         {
             "created": "2015-07-15T18:24:37",
             "description": "WordPress theme used on creativecommons.org",
+            "engineering_project": true,
+            "featured": false,
             "id": 39153629,
             "language": "Hack",
             "license": {
@@ -169,6 +181,8 @@
         {
             "created": "2013-12-02T21:01:41",
             "description": "Legacy API to integrate the Creative Commons licensing engine into third party applications",
+            "engineering_project": true,
+            "featured": false,
             "id": 14874742,
             "language": "Python",
             "license": {
@@ -201,6 +215,8 @@
         {
             "created": "2013-10-24T00:14:55",
             "description": "Localization data for CC's deeds and license chooser",
+            "engineering_project": true,
+            "featured": false,
             "id": 13818463,
             "language": "Python",
             "license": {
@@ -214,6 +230,8 @@
         {
             "created": "2013-10-24T00:12:07",
             "description": "Python app that runs part of the license engine on CC's website",
+            "engineering_project": true,
+            "featured": false,
             "id": 13818396,
             "language": "Python",
             "license": {
@@ -227,6 +245,8 @@
         {
             "created": "2013-09-15T21:56:33",
             "description": "RDF describing Creative Commons licenses",
+            "engineering_project": true,
+            "featured": false,
             "id": 12853322,
             "language": "Python",
             "license": null,
@@ -239,7 +259,7 @@
             "description": "Mapping the commons towards an open ledger and cc search.",
             "engineering_project": true,
             "english_name": "CC Catalog",
-            "featured": true,
+            "featured": false,
             "id": 97037973,
             "language": "Python",
             "license": {
@@ -279,6 +299,8 @@
         {
             "created": "2018-04-27T21:32:44",
             "description": "Data Visualizations",
+            "engineering_project": true,
+            "featured": false,
             "id": 131346835,
             "language": "HTML",
             "license": null,
@@ -309,6 +331,8 @@
         {
             "created": "2014-10-06T22:07:52",
             "description": "RubyCAS customizations for CCID (Creative Commons ID)",
+            "engineering_project": true,
+            "featured": false,
             "id": 24866852,
             "language": "HTML",
             "license": {
@@ -322,6 +346,8 @@
         {
             "created": "2019-04-16T18:57:41",
             "description": "Script to add CCID users to MediaWiki",
+            "engineering_project": true,
+            "featured": false,
             "id": 181749129,
             "language": "PHP",
             "license": {
@@ -333,18 +359,10 @@
             "website": null
         },
         {
-            "created": "2013-10-24T00:12:26",
-            "description": null,
-            "id": 13818403,
-            "language": "HTML",
-            "license": null,
-            "name": "ccrel",
-            "url": "https://github.com/creativecommons/ccrel",
-            "website": null
-        },
-        {
             "created": "2013-10-24T00:12:36",
             "description": null,
+            "engineering_project": true,
+            "featured": false,
             "id": 13818410,
             "language": "HTML",
             "license": null,
@@ -355,6 +373,8 @@
         {
             "created": "2019-05-24T17:14:10",
             "description": "CC Search Browser Extension [ WIP ] ",
+            "engineering_project": true,
+            "featured": false,
             "id": 188460712,
             "language": "JavaScript",
             "license": {
@@ -368,6 +388,8 @@
         {
             "created": "2018-04-10T22:44:46",
             "description": "Theme for CC Certificates website landing page",
+            "engineering_project": true,
+            "featured": false,
             "id": 129003332,
             "language": "CSS",
             "license": null,
@@ -378,6 +400,8 @@
         {
             "created": "2016-06-14T16:37:49",
             "description": "Themes and plugins for the Certificates WP site.",
+            "engineering_project": true,
+            "featured": false,
             "id": 61139108,
             "language": "CSS",
             "license": {
@@ -411,6 +435,8 @@
         {
             "created": "2014-07-28T15:18:18",
             "description": "If you want the latest beta release, see the releases page or check out develop!",
+            "engineering_project": true,
+            "featured": false,
             "id": 22347352,
             "language": "PHP",
             "license": {
@@ -437,6 +463,8 @@
         {
             "created": "2019-01-27T02:29:18",
             "description": "Source files for CC Open Source website",
+            "engineering_project": true,
+            "featured": false,
             "id": 167761414,
             "language": "HTML",
             "license": {
@@ -470,6 +498,8 @@
         {
             "created": "2015-12-14T23:19:08",
             "description": "Creative Commons FAQ page",
+            "engineering_project": true,
+            "featured": false,
             "id": 48007106,
             "language": "HTML",
             "license": {
@@ -483,6 +513,8 @@
         {
             "created": "2014-12-08T20:16:04",
             "description": "(Deprecated) Tech Team blog",
+            "engineering_project": true,
+            "featured": false,
             "id": 27733017,
             "language": null,
             "license": null,
@@ -493,6 +525,8 @@
         {
             "created": "2014-11-17T21:58:08",
             "description": null,
+            "engineering_project": true,
+            "featured": false,
             "id": 26779255,
             "language": "HTML",
             "license": {
@@ -506,6 +540,8 @@
         {
             "created": "2015-12-02T22:10:12",
             "description": "Documentation for CC integration into user-generated content platforms",
+            "engineering_project": true,
+            "featured": false,
             "id": 47291677,
             "language": "PHP",
             "license": {
@@ -517,34 +553,10 @@
             "website": "https://creativecommons.org/platform/toolkit/"
         },
         {
-            "created": "2019-01-24T13:59:08",
-            "description": "Install the MySQL client and/or server",
-            "id": 167376396,
-            "language": "SaltStack",
-            "license": {
-                "name": "Other",
-                "url": "https://github.com/creativecommons/mysql-formula/blob/master/LICENSE"
-            },
-            "name": "mysql-formula",
-            "url": "https://github.com/creativecommons/mysql-formula",
-            "website": "http://docs.saltstack.com/en/latest/topics/development/conventions/formulas.html"
-        },
-        {
-            "created": "2017-08-09T18:08:23",
-            "description": "Platforms are organized spaces for people to collaborate across the CC Global Network",
-            "id": 99838765,
-            "language": null,
-            "license": {
-                "name": "Other",
-                "url": "https://github.com/creativecommons/network-platforms/blob/master/LICENSE"
-            },
-            "name": "network-platforms",
-            "url": "https://github.com/creativecommons/network-platforms",
-            "website": ""
-        },
-        {
             "created": "2016-05-19T18:07:31",
             "description": "Primary Creative Commons website",
+            "engineering_project": true,
+            "featured": false,
             "id": 59230362,
             "language": "JavaScript",
             "license": null,
@@ -555,6 +567,8 @@
         {
             "created": "2016-05-19T18:06:55",
             "description": "creativecommons.org various custom plugins for content types, mostly",
+            "engineering_project": true,
+            "featured": false,
             "id": 59230319,
             "language": "PHP",
             "license": null,
@@ -565,6 +579,8 @@
         {
             "created": "2016-05-19T18:06:05",
             "description": "creativecommons.org theme, to make it look lovely",
+            "engineering_project": true,
+            "featured": false,
             "id": 59230280,
             "language": "CSS",
             "license": null,
@@ -575,6 +591,8 @@
         {
             "created": "2013-12-05T07:09:43",
             "description": "open4us.org website",
+            "engineering_project": true,
+            "featured": false,
             "id": 14946646,
             "language": "PHP",
             "license": null,
@@ -585,25 +603,14 @@
         {
             "created": "2014-02-24T19:46:28",
             "description": "OPN Website",
+            "engineering_project": true,
+            "featured": false,
             "id": 17148371,
             "language": "PHP",
             "license": null,
             "name": "openpolicynetwork.org",
             "url": "https://github.com/creativecommons/openpolicynetwork.org",
             "website": "https://openpolicynetwork.org/"
-        },
-        {
-            "created": "2019-01-23T18:16:13",
-            "description": null,
-            "id": 167231189,
-            "language": "HTML",
-            "license": {
-                "name": "Other",
-                "url": "https://github.com/creativecommons/php-formula/blob/master/LICENSE"
-            },
-            "name": "php-formula",
-            "url": "https://github.com/creativecommons/php-formula",
-            "website": "http://docs.saltstack.com/en/latest/topics/development/conventions/formulas.html"
         },
         {
             "created": "2019-04-05T14:15:22",
