@@ -130,7 +130,7 @@
         },
         {
             "created": "2019-05-24T16:49:48",
-            "description": null,
+            "description": "CC Vocabulary is a cohesive design system to unite the web facing Creative Commons",
             "engineering_project": true,
             "english_name": "CC Vocabulary",
             "featured": false,
@@ -151,7 +151,7 @@
                 "Theo"
             ],
             "url": "https://github.com/creativecommons/cc-vocabulary",
-            "website": null
+            "website": ""
         },
         {
             "created": "2015-07-15T18:24:37",
