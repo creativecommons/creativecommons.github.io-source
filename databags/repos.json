@@ -574,7 +574,10 @@
             "featured": false,
             "id": 59230362,
             "language": "JavaScript",
-            "license": null,
+            "license": {
+                "name": "GNU General Public License v2.0",
+                "url": "https://github.com/creativecommons/new-creativecommons.org/blob/master/LICENSE"
+            },
             "name": "new-creativecommons.org",
             "url": "https://github.com/creativecommons/new-creativecommons.org",
             "website": "https://creativecommons.org/"
@@ -586,7 +589,10 @@
             "featured": false,
             "id": 59230319,
             "language": "PHP",
-            "license": null,
+            "license": {
+                "name": "GNU General Public License v2.0",
+                "url": "https://github.com/creativecommons/new-www-plugin/blob/master/LICENSE"
+            },
             "name": "new-www-plugin",
             "url": "https://github.com/creativecommons/new-www-plugin",
             "website": "https://github.com/creativecommons/new-creativecommons.org"
@@ -598,7 +604,10 @@
             "featured": false,
             "id": 59230280,
             "language": "CSS",
-            "license": null,
+            "license": {
+                "name": "GNU General Public License v2.0",
+                "url": "https://github.com/creativecommons/new-www-theme/blob/master/LICENSE"
+            },
             "name": "new-www-theme",
             "url": "https://github.com/creativecommons/new-www-theme",
             "website": "https://github.com/creativecommons/new-creativecommons.org"
@@ -610,7 +619,10 @@
             "featured": false,
             "id": 14946646,
             "language": "PHP",
-            "license": null,
+            "license": {
+                "name": "MIT License",
+                "url": "https://github.com/creativecommons/open4us.org/blob/master/LICENSE"
+            },
             "name": "open4us.org",
             "url": "https://github.com/creativecommons/open4us.org",
             "website": "https://open4us.org/"
@@ -622,7 +634,10 @@
             "featured": false,
             "id": 17148371,
             "language": "PHP",
-            "license": null,
+            "license": {
+                "name": "MIT License",
+                "url": "https://github.com/creativecommons/openpolicynetwork.org/blob/master/LICENSE"
+            },
             "name": "openpolicynetwork.org",
             "url": "https://github.com/creativecommons/openpolicynetwork.org",
             "website": "https://openpolicynetwork.org/"
@@ -634,7 +649,10 @@
             "featured": false,
             "id": 126382845,
             "language": "HTML",
-            "license": null,
+            "license": {
+                "name": "MIT License",
+                "url": "https://github.com/creativecommons/reversionary-rights/blob/master/LICENSE"
+            },
             "name": "reversionary-rights",
             "url": "https://github.com/creativecommons/reversionary-rights",
             "website": null
@@ -661,7 +679,10 @@
             "featured": false,
             "id": 64515519,
             "language": "Python",
-            "license": null,
+            "license": {
+                "name": "MIT License",
+                "url": "https://github.com/creativecommons/scholars-addenda/blob/master/LICENSE"
+            },
             "name": "scholars-addenda",
             "url": "https://github.com/creativecommons/scholars-addenda",
             "website": "https://labs.creativecommons.org/scholars/"
@@ -728,7 +749,10 @@
             "featured": false,
             "id": 12657067,
             "language": null,
-            "license": null,
+            "license": {
+                "name": "Creative Commons Attribution 4.0 International",
+                "url": "https://github.com/creativecommons/team-open/blob/master/LICENSE"
+            },
             "name": "team-open",
             "url": "https://github.com/creativecommons/team-open",
             "website": "http://teamopen.cc/"
@@ -806,7 +830,10 @@
             "featured": false,
             "id": 13915207,
             "language": "Python",
-            "license": null,
+            "license": {
+                "name": "MIT License",
+                "url": "https://github.com/creativecommons/www-i/blob/master/LICENSE"
+            },
             "name": "www-i",
             "url": "https://github.com/creativecommons/www-i",
             "website": null
