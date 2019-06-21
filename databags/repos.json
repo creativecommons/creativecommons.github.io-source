@@ -157,8 +157,11 @@
             "created": "2015-07-15T18:24:37",
             "description": "The WordPress theme for creativecommons.org",
             "id": 39153629,
-            "language": "PHP",
-            "license": null,
+            "language": "Hack",
+            "license": {
+                "name": "GNU General Public License v2.0",
+                "url": "https://github.com/creativecommons/cc-wp-theme/blob/master/LICENSE"
+            },
             "name": "cc-wp-theme",
             "url": "https://github.com/creativecommons/cc-wp-theme",
             "website": null
