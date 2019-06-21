@@ -4,7 +4,7 @@
             "created": "2019-03-13T02:54:23",
             "description": "Default templates and guidelines for Creative Commons GitHub repositories.",
             "id": 175334998,
-            "language": null,
+            "language": "",
             "license": {
                 "name": "MIT License",
                 "url": "https://github.com/creativecommons/.github/blob/master/LICENSE"
@@ -106,7 +106,7 @@
             "created": "2019-01-29T21:17:39",
             "description": "Temporary microsite for mx.creativecommons.org",
             "id": 168230429,
-            "language": null,
+            "language": "",
             "license": {
                 "name": "MIT License",
                 "url": "https://github.com/creativecommons/cc-mexico-micro/blob/master/LICENSE"
@@ -119,7 +119,7 @@
             "created": "2014-01-08T18:49:45",
             "description": "Collection of resources on CC tools and other open topics",
             "id": 15744672,
-            "language": null,
+            "language": "",
             "license": {
                 "name": "MIT License",
                 "url": "https://github.com/creativecommons/cc-resource-archive/blob/master/LICENSE"
@@ -475,7 +475,7 @@
             "created": "2014-12-08T20:16:04",
             "description": "(Deprecated) Tech Team blog",
             "id": 27733017,
-            "language": null,
+            "language": "",
             "license": null,
             "name": "labs",
             "url": "https://github.com/creativecommons/labs",
@@ -524,7 +524,7 @@
             "created": "2017-08-09T18:08:23",
             "description": "Platforms are organized spaces for people to collaborate across the CC Global Network",
             "id": 99838765,
-            "language": null,
+            "language": "",
             "license": {
                 "name": "Other",
                 "url": "https://github.com/creativecommons/network-platforms/blob/master/LICENSE"
@@ -696,7 +696,7 @@
             "created": "2013-09-06T23:57:48",
             "description": "Collection of stories documenting the power of open licensing",
             "id": 12657067,
-            "language": null,
+            "language": "",
             "license": null,
             "name": "team-open",
             "url": "https://github.com/creativecommons/team-open",
