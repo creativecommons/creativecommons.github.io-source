@@ -613,18 +613,10 @@
             "website": "https://openpolicynetwork.org/"
         },
         {
-            "created": "2019-04-05T14:15:22",
-            "description": "Development toolkit for WordPress",
-            "id": 179695011,
-            "language": "PHP",
-            "license": null,
-            "name": "queulat",
-            "url": "https://github.com/creativecommons/queulat",
-            "website": null
-        },
-        {
             "created": "2018-03-22T19:04:09",
             "description": "International reversionary rights resources site.",
+            "engineering_project": true,
+            "featured": false,
             "id": 126382845,
             "language": "HTML",
             "license": null,
@@ -635,6 +627,8 @@
         {
             "created": "2015-07-23T21:30:47",
             "description": "Rails plugin for the RubyCAS-Client",
+            "engineering_project": true,
+            "featured": false,
             "id": 39594110,
             "language": "Ruby",
             "license": {
@@ -648,6 +642,8 @@
         {
             "created": "2016-07-29T23:14:42",
             "description": "The scholars addenda system.",
+            "engineering_project": true,
+            "featured": false,
             "id": 64515519,
             "language": "Python",
             "license": null,
@@ -698,6 +694,8 @@
         {
             "created": "2015-03-03T19:48:55",
             "description": "Profiles of exemplary workforce training programs supported by the U.S. Department of Labor TAACCCT program.",
+            "engineering_project": true,
+            "featured": false,
             "id": 31617803,
             "language": "JavaScript",
             "license": {
@@ -711,6 +709,8 @@
         {
             "created": "2013-09-06T23:57:48",
             "description": "Collection of stories documenting the power of open licensing",
+            "engineering_project": true,
+            "featured": false,
             "id": 12657067,
             "language": null,
             "license": null,
@@ -721,6 +721,8 @@
         {
             "created": "2015-11-24T16:21:12",
             "description": "Termination of Transfer tool",
+            "engineering_project": true,
+            "featured": false,
             "id": 46803674,
             "language": "JavaScript",
             "license": {
@@ -734,6 +736,8 @@
         {
             "created": "2019-02-11T15:51:29",
             "description": "Creative Commons Chapter site theme (including chapter sites setup, taxonomies, and widget code)",
+            "engineering_project": true,
+            "featured": false,
             "id": 170156150,
             "language": "CSS",
             "license": {
@@ -747,6 +751,8 @@
         {
             "created": "2019-04-15T13:36:51",
             "description": "WordPress theme for the State of the Commons",
+            "engineering_project": true,
+            "featured": false,
             "id": 181494221,
             "language": "CSS",
             "license": {
@@ -781,6 +787,8 @@
         {
             "created": "2013-10-28T02:42:48",
             "description": null,
+            "engineering_project": true,
+            "featured": false,
             "id": 13915207,
             "language": "Python",
             "license": null,
