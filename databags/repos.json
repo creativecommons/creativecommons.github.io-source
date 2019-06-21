@@ -401,7 +401,10 @@
             "featured": false,
             "id": 129003332,
             "language": "CSS",
-            "license": null,
+            "license": {
+                "name": "GNU General Public License v2.0",
+                "url": "https://github.com/creativecommons/certificates-landing-page-theme/blob/master/LICENSE"
+            },
             "name": "certificates-landing-page-theme",
             "url": "https://github.com/creativecommons/certificates-landing-page-theme",
             "website": "http://certificates.creativecommons.org/"
@@ -526,7 +529,10 @@
             "featured": false,
             "id": 27733017,
             "language": null,
-            "license": null,
+            "license": {
+                "name": "MIT License",
+                "url": "https://github.com/creativecommons/labs/blob/master/LICENSE"
+            },
             "name": "labs",
             "url": "https://github.com/creativecommons/labs",
             "website": ""
