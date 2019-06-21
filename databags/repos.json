@@ -40,46 +40,6 @@
             "website": "https://labs.creativecommons.org/caselaw/"
         },
         {
-            "created": "2016-04-20T21:29:08",
-            "description": "Content outline for new Creative Commons Certification programs",
-            "id": 56722268,
-            "language": "HTML",
-            "license": null,
-            "name": "cc-cert-core",
-            "url": "https://github.com/creativecommons/cc-cert-core",
-            "website": "http://certificates.creativecommons.org/"
-        },
-        {
-            "created": "2017-01-13T02:17:14",
-            "description": "CC Certificate For Educational Institutions",
-            "id": 78806542,
-            "language": null,
-            "license": null,
-            "name": "cc-cert-edu",
-            "url": "https://github.com/creativecommons/cc-cert-edu",
-            "website": null
-        },
-        {
-            "created": "2017-01-13T02:13:24",
-            "description": "CC Certificate For Government",
-            "id": 78806276,
-            "language": null,
-            "license": null,
-            "name": "cc-cert-gov",
-            "url": "https://github.com/creativecommons/cc-cert-gov",
-            "website": null
-        },
-        {
-            "created": "2017-01-13T02:16:07",
-            "description": "CC Certificate For Libraries",
-            "id": 78806450,
-            "language": null,
-            "license": null,
-            "name": "cc-cert-lib",
-            "url": "https://github.com/creativecommons/cc-cert-lib",
-            "website": null
-        },
-        {
             "created": "2019-05-22T22:36:52",
             "description": "The new and improved CC license selection tool (in progress)",
             "engineering_project": true,
