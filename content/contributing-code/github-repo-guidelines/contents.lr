@@ -110,7 +110,7 @@ Each repo should have a `.cc-metadata.yml` file in the root directory with the f
 
 <pre>
   <code>
-    # Whether this GitHub repo is engineering related
+    # Whether this GitHub repo is for a CC-led engineering project
     engineering_project: true
     # Name of the repository/project in English
     english_name: CC Catalog API
