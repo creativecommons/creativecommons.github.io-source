@@ -825,7 +825,7 @@
         },
         {
             "created": "2013-10-28T02:42:48",
-            "description": null,
+            "description": "Runs the site that hosts CC license badges",
             "engineering_project": true,
             "featured": false,
             "id": 13915207,
@@ -836,7 +836,7 @@
             },
             "name": "www-i",
             "url": "https://github.com/creativecommons/www-i",
-            "website": null
+            "website": "https://licensebuttons.net/"
         }
     ]
 }
