@@ -4,7 +4,7 @@
   <p>This is a list of all active open source software projects that Creative Commons maintains.</p>
   <p>Please read the <a href="/contributing-code">Contributing Code</a> page for general information on how to get involved. Contribution guidelines specific to an individual project can be found in the <code>README</code> and the <code>CONTRIBUTING</code> files in the root folder of every repository. If you have any questions, don't hesistate to reach out to us through <a href="/community">one of our community forums</a> or open a GitHub issue.</p>
   <h2>Featured Projects</h2>
-    <p><strong>We are actively looking for help with these projects and we have several GitHub issues ready for external contribution.</strong></p>
+    <p>We are actively looking for help with these projects and each project has open GitHub issues that are ready for external contribution.</p>
     <div class="card-deck">
     {% for repo in bag('repos.repos') %}
       {% if repo.featured %}
@@ -28,7 +28,7 @@
     {% endfor %}
   </div>
   <h2>All Projects</h2>
-  <p><strong>This is a complete list of Creative Commons software projects.</strong></p>
+  <p>This is a complete list of active Creative Commons software projects. Archived projects are not documented here and can be found on the <strong><a href="https://github.com/cc-archive">CC Archive GitHub organization</a>.</strong></p>
   <table class="table table-striped">
     <thead class="thead-dark">
       <tr>
@@ -63,5 +63,4 @@
       {% endfor %}
     </tbody>
   </table>
-  <p class="text-muted">Archived projects are not documented here and can be found on the <a href="https://github.com/cc-archive">CC Archive GitHub organization</a>.</p>
 {% endblock %}
