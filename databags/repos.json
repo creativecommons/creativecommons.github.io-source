@@ -688,6 +688,26 @@
             "website": "https://labs.creativecommons.org/scholars/"
         },
         {
+            "created": "2013-10-24T00:19:27",
+            "description": "Legacy Creative Commons Search, no longer under development",
+            "engineering_project": true,
+            "english_name": "CC Search (Legacy)",
+            "featured": false,
+            "id": 13818557,
+            "language": "CSS",
+            "license": {
+                "name": "MIT License",
+                "url": "https://github.com/creativecommons/search/blob/master/LICENSE"
+            },
+            "name": "search",
+            "technologies": [
+                "PHP",
+                "WordPress"
+            ],
+            "url": "https://github.com/creativecommons/search",
+            "website": "https://oldsearch.creativecommons.org/"
+        },
+        {
             "created": "2018-11-20T21:50:33",
             "description": "Site Reliability Engineering / DevOps SaltStack configuration files",
             "engineering_project": true,
