@@ -297,7 +297,7 @@
                 "Elasticsearch"
             ],
             "url": "https://github.com/creativecommons/cccatalog-api",
-            "website": ""
+            "website": "https://api.creativecommons.engineering/"
         },
         {
             "created": "2018-04-27T21:32:44",
@@ -461,7 +461,7 @@
         },
         {
             "created": "2015-04-15T16:10:58",
-            "description": ":warning: Static files for CC Open Source website. DO NOT MODIFY THIS REPOSITORY! To edit, use the creativecommons.github.io-source repository.",
+            "description": "Static files for CC Open Source website. :warning: DO NOT MODIFY THIS REPOSITORY! To edit, use the creativecommons.github.io-source repository.",
             "id": 34004720,
             "language": "HTML",
             "license": {
