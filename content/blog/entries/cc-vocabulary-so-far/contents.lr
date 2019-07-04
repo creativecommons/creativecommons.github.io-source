@@ -1,0 +1,109 @@
+title: CC Vocabulary, the lexicon so far
+---
+categories:
+announcements
+cc-vocabulary
+product
+---
+author: dhruvkb
+---
+pub_date: 2019-07-05
+---
+body:
+
+CC Vocabulary has really come into its own over the last couple of weeks. Here
+are some of the newest additions to the CC Vocabulary thesaurus of components.
+
+Tokens now have i18n enabled.
+
+<div>
+<img alt="Token i18n" src="token-i18n.png"/><br/><br/>
+</div>
+
+The code editor has a new dark Material-design inspired theme.
+
+<div>
+<img alt="Dark editor theme" src="editor.png"/><br/><br/>
+</div>
+
+Meet Inputs, the Vue approach to forms.
+
+<div>
+<img alt="Input" src="input.png"/><br/><br/>
+</div>
+
+Say hi to new documentation for Container (and a lot of other components).
+
+<div>
+<img alt="Container" src="container.png"/><br/><br/>
+</div>
+
+Grids are a powerful way to lay your content out.
+
+<div>
+<img alt="Grid" src="grid.png"/><br/><br/>
+</div>
+
+There's also a new table component. It's still under active development as of
+now.
+
+<div>
+<img alt="Table" src="table.png"/><br/><br/>
+</div>
+
+----
+
+### Future
+
+CC Vocabulary is much more mature now than it was at the time of writing my last 
+blog. It has a much more stable codebase and a larger collection of polished
+components. So if you are a developer of CC apps, I would recommend you use some
+of its offerings in your latest project.
+
+CC Vocabulary is out now, with its code, design and translations on GitHub and a
+live styleguide hosted on GitHub pages. Please [check it
+out](https://creativecommons.github.io/cc-vocabulary/) and join the discussions.
+Since it is too early to even call it a beta, your feedback is crucial in shaping
+its future and with it, the future of all Creative Commons apps.
+
+Here's a sneak peek!
+
+<div>
+<img alt="CC Vocabulary in production" src="hello.png"/><br/>
+<small class="muted">Say hello to CC Vocabulary!</small>
+</div>
+
+----
+
+CC Vocabulary is my GSoC 2019 project under the guidance of [Hugo
+Solar](https://creativecommons.org/author/hugocreativecommons-org/) and [Sophine
+Clachar](https://creativecommons.org/author/sclachar/). Although not officially
+a mentor [Kriti
+Godey](https://creativecommons.org/author/kriticreativecommons-org/) has also
+been really supportive and helpful.
+
+### Work log
+
+See GitHub [commits](https://github.com/creativecommons/cc-vocabulary/commits)
+for in-depth logs.
+
+- Refactored and massively improved code quality
+- Developed some layout components such as Container and Grid
+- Reworked styling so as to publish a vanilla CSS library
+- Developed a consistent system of colors
+- Rewrote significant portions of documentation for almost all components
+- Split large components like Header and Footer into smaller elementary components
+- Developed an Input component for forms
+- Switched to a developer-beloved darker theme for the code editor
+- I18n-ed the tokens section of the documentation
+
+### Coming up
+
+See proposal for in-depth goals.
+
+- Develop buttons, tables, dropdown boxes (important, urgent)
+- Increase the interdependent use of components
+- Add more generic components
+- Integrate these into CC Search
+- Go to point 3
+- Add a dark theme for the entire styleguide (unimportant, non-urgent)
