@@ -1,0 +1,37 @@
+title: CC Browser Extension Week 5, 6
+---
+categories:
+gsoc
+gsoc-2019
+cc-browser-extension
+open-source
+---
+author: makkoncept
+---
+pub_date: 2019-07-04
+---
+body:
+
+For the context, I am working on my GSoC project that is to make a browser-extension to search CC Licensed content in the public domain by interacting with CC Catalog API.
+
+**Previous Blogs**:
+-  [CC Browser Extension - A GSoC Project](http://creativecommons.github.io/blog/entries/cc-browser-extension-a-gsoc-project/) 
+
+### Work Done
+These couple weeks were spent on finishing the filter section, setting up infinite-scroll and fixing issues and bugs after some days of testing.
+
+Most of the filter section was complete but I missed a tiny detail that the Catalog API [does not accept](https://api.creativecommons.engineering/image/search?q=hello&li=cc0&lt=commercial) both the license and use-case filter queries in the same request. I did some changes in the code for generating the valid URL for every filter action and added the relevant UI changes of deselecting and disabling the license drop-down when a use-case is selected.
+
+The infinite scroll was set-up by following the classic solution of firing another request to the API when the user scrolls to the bottom and appending the thumbnails of the result in the grid.
+
+I tested the extension for a couple of days and made some [bug reports](https://github.com/creativecommons/ccsearch-browser-extension/issues?q=is%3Aissue+is%3Aclosed) on Github. Most of them were pretty easy to fix but the one I struggled with was [this](https://github.com/creativecommons/ccsearch-browser-extension/issues/3) one. After some discussion on slack,  [Breno](https://creativecommons.org/author/brenoferreira/) and [Dhruv](https://github.com/dhruvkb) suggested using the [Masonry grid](https://masonry.desandro.com/) for the thumbnails (I was previously using the standard float grid of 3 columns). I made the transition but observed some flickering in the images on firefox when a new batch loaded on scrolling. It was working fine on chrome though. I spent a whole day looking for alternatives or doing some silly fix by using a bunch of timeouts. Again, Breno and Druv came to the rescue and suggested that some animations may be causing this. But even after a few hours of hit and trial and removing and fixing animations, I couldn't fix it only because I was looking in the wrong place. By changing the `transitionDuration` option of masonry to `0` did the trick. In fact, it was the first thing I should have tried. I should maybe take breaks more often to clear my mind :p
+
+### Coming Up
+- Work on showing relevant image info when we click on the image.
+- Let users copy the rich-text or HTML version of the attribution with one click.
+- Add the download buttons to download the image and the attribution.
+
+You can check out the project on [Github](https://github.com/creativecommons/ccsearch-browser-extension) and join the discussion on `#gsoc-browser-ext` channel on [slack](http://creativecommons.github.io/community/#slack).
+
+*Special Thanks*:  [Alden](https://creativecommons.org/author/aldencreativecommons-org/), [Timid](https://creativecommons.org/author/timidcreativecommons-org/) and [Kriti](https://creativecommons.org/author/kriticreativecommons-org/)
+
