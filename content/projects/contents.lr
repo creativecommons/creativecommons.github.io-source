@@ -2,4 +2,4 @@ _model: page
 ---
 _template: project_list.html
 ---
-title: Projects
+title: Open Source Projects

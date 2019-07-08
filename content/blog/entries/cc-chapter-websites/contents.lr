@@ -1,0 +1,51 @@
+title: Creative Commons Chapter Websites network
+---
+categories:
+wordpress
+website
+chapters
+---
+author: hugosolar
+---
+pub_date: 2019-07-03
+---
+body:
+
+
+This year, Creative Commons launched a new communication tool to improve the chapters work around the world. The rationale behind this tool is to "*Ensure the network is creating value for members*" providing a site network that try to be a useful and easy to use tool for the Creative Commons chapters.
+
+## Technology
+This network was built in WordPress in its "Multisite" mode. This means we can create multiple websites with a single Wordpress install, this has a lot of benefits in terms of administration and visual consistency.
+
+![CC Netherlands beta site](nl-screenshot.png)
+
+*CC Netherlands homepage from beta testing stage*
+
+### Theme
+The work behind this network is based in a single [WordPress theme](https://github.com/creativecommons/wp-theme-cc-chapter) which is assigned by default in every new site created. This theme uses all the capabilities availables on WordPress such as `Custom post types`, `Custom Taxonomies`, `Widgets`, `Metaboxes` and so on. To ease the backend development work I choose a Development Toolkit for WordPress named [Queulat](https://github.com/felipelavinz/queulat), which provide a lot of powerful tools to create and maintain Custom Post types and its own queries, metabox creation and a powerful form factory with many useful elements.
+The theme file structure is aim to be as logical as posible and following the [recommended structure](https://developer.wordpress.org/themes/basics/organizing-theme-files/) from WordPress in order to keep the files in a semantic order ready for community colaboration.
+The theme front page was built using sidebars and widgets in order to increase its flexibility, there are a lot of widgets for each website content which can be configured and placed into homepage sidebars and splitted in columns as needed.
+
+![Event metabox](event-metabox.png)
+
+*Event Post type with custom data metabox*
+
+### Gutenberg
+The new WordPress editor is a whole new experience for me, as they say "*We call the new editor Gutenberg. The entire editing experience has been rebuilt for media rich pages and posts. Experience the flexibility that blocks will bring, whether you are building your first site, or write code for a living.*"
+I decide to take advantage of this new feature by creating customizations for the websites like custom styles, a custom color palette for button block, and responsive support for most common Gutenberg blocks to keep the content as flexible as posible
+
+![Gutenberg button block](gutenberg-button-block.png)
+
+*Gutenberg custom button block*
+
+### Frontend
+Thinking on scalability and maintenance I like to build website styles using [SASS](https://sass-lang.com/) preprocessor. For layout, I like to modularize elements and use a standardizing format like the Microformats specification (in this case [hAtom](http://microformats.org/wiki/hatom)), this helps new developers to understand the layout and the code in a better way and also helps to optimize crawling from search engines.
+
+## The future
+We're working on improve this website network and pushing forward a lot of new features requested by the community. They can be [tracked here](https://github.com/creativecommons/wp-theme-cc-chapter/milestone/2). Some of the most important features in the future will be:
+- CCsearch Integration
+- Easy Attribution
+- Post formats compatibility (Image, video, gallery)
+- More post types and widgets
+
+Also, we're planning on providing the chapters data via the WP-API so it can be used in other CC websites (The CC Global Network for instance), so we can show information from what's going on in the whole network
