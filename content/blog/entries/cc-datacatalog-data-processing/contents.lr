@@ -1,0 +1,68 @@
+title: Visualize CC Catalog data
+---
+categories:
+announcements
+cc-catalog
+product
+gsoc
+gsoc-2019
+open-source
+---
+author: soccerdroid
+---
+pub_date: 2019-07-10
+---
+body:
+
+Welcome to the data processing part of the GSoC project! In this blog post, I am going to tell you about my firsts thoughts with the real data, and give you some details of the implementation developed so far. 
+
+### Data extraction
+
+Each month, Creative Commons, using [Common Crawl](http://commoncrawl.org/), parses data from all the Web, looking for domains that contain licensed content. As you might be guessing, the amount of data is very big, so the CC Catalog data is stored in S3 buckets.
+
+Spark is used to extract the data from the buckets, in the form of PARQUET files. In order to facilitate the analysis and processing of the data, the files are converted to TSV (tab-separated values). Each file can easily contain dozens of millions of rows. Our first aproach is to load the information in a Pandas Dataframe, but this can become very slow. Therefore, we will test the scripts for the data processing with a portion of the real data. Afterwards, we will use [Dask](https://dask.org/), which provides advanced parallelism for analytics, and has a behaviour similar to Pandas, with the entire dataset. 
+
+### Cleansing and filtering
+
+This step is about depuring and reducing as much as possible the data, in order to get a meaningful visualization. The data that comes from the S3 buckets is actually pretty neat (no strange characters for example, or incomplete rows). Nevertheless as a first step, duplicate rows are deleted (given by duplicate URLs). Here, we are developing pruning rules. We try to:
+- exclude cycles (cyclic edges),
+- exclude lonely nodes,
+- avoid duplicates (for example, subdomains which are part of a single domain),
+
+and so on.
+
+### Formats
+
+Now in the dataset, we have domain names in the form of URLs. But we want to make the graph looks pretty well. This is why we are going to extract the domain name from the URLs we have in the dataset. For this purpose, we use [tldextract](https://github.com/john-kurkowski/tldextract), which is a simple and complete open source library for extracting the parts of the domains (say: suffix, subdomain, domain name). This package is available in conda-forge too. Here is how tldextract works:
+
+```python
+>>> ext = tldextract.extract('http://forums.bbc.co.uk')
+>>> (ext.subdomain, ext.domain, ext.suffix)
+('forums', 'bbc', 'co.uk') #we extract the domain name "bbc"
+```
+
+Another important aspect is the licenses types. In the dataset, we do not have the exact license name; rather, we have a URL that directs to the license definition on [creativecommons.org](creativecommons.org). We have developed a function with some regular expressions to validate the correct format of these URls, and extracts from them the license name and version. This information will be shown in the pie chart that appears after the user clicks on a node. 
+
+```
+'https://creativecommons.org/licenses/by/4.0/' #valid license
+'https://creativecommons.org/licenses/zero/' #non-valid license
+
+```
+
+### Coming soon
+
+- Data aggregation
+- Visualization with the data + perfectioning pruning/filtering rules
+
+You can follow the project development in the [Github repo](https://github.com/creativecommons/cccatalog-dataviz).
+
+CC Data Catalog Visualization is my GSoC 2019 project under the guidance of [Sophine
+Clachar](https://creativecommons.org/author/sclachar/), who has been greatly helpful and considerate since the GSoC application period. Also, my backup mentor, [Breno Ferreira](https://creativecommons.org/author/brenoferreira/), and engineering director [Kriti
+Godey](https://creativecommons.org/author/kriticreativecommons-org/), have been very supportive.
+
+Have a nice week!
+
+Maria
+
+
+
