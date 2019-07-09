@@ -18,20 +18,20 @@ Welcome to the data processing part of the GSoC project! In this blog post, I am
 
 ### Data extraction
 
-Each month, Creative Commons, using [Common Crawl](http://commoncrawl.org/), parses data from all the Web, looking for domains that contain licensed content. As you might be guessing, the amount of data is very big, so the CC Catalog data is stored in S3 buckets.
+Each month, Creative Commons uses [Common Crawl](http://commoncrawl.org/) data to find all domains that contain *CC* licensed content. As you might be guessing, the amount of data is very big, so the CC Catalog data is stored in S3 buckets and [Apache Spark](https://spark.apache.org/) is used to extract the data from Common Crawl.
 
-Spark is used to extract the data from the buckets, in the form of PARQUET files. In order to facilitate the analysis and processing of the data, the files are converted to TSV (tab-separated values). Each file can easily contain dozens of millions of rows. Our first aproach is to load the information in a Pandas Dataframe, but this can become very slow. Therefore, we will test the scripts for the data processing with a portion of the real data. Afterwards, we will use [Dask](https://dask.org/), which provides advanced parallelism for analytics, and has a behaviour similar to Pandas, with the entire dataset. 
+Spark is used  is used again in this project to extract the data, in the form of parquet files, from the buckets. In order to facilitate the analysis and processing of the data, the files are converted to TSV (tab-separated values). Each file can easily contain dozens of millions of rows. Our first aproach is to load the information in a Pandas Dataframe, but this can become very slow. Therefore, we will test the scripts for the data processing with a portion of the real data. Afterwards, I will use [Dask](https://dask.org/) with the entire dataset. Dask provides advanced parallelism for analytics, and has a behaviour similar to Pandas. 
 
 ### Cleansing and filtering
 
-This step is about depuring and reducing as much as possible the data, in order to get a meaningful visualization. The data that comes from the S3 buckets is actually pretty neat (no strange characters for example, or incomplete rows). Nevertheless as a first step, duplicate rows are deleted (given by duplicate URLs). Here, we are developing pruning rules. We try to:
+This step is about preparing the data for analysis and reducing the amount of data, in order to get a meaningful visualization. The data that comes from the S3 buckets is actually pretty neat (no strange characters for example, or incomplete rows). Nevertheless as a first step, duplicate rows are deleted (given by duplicate URLs). Next I, develop pruning rules. We try to:
 - exclude cycles (cyclic edges),
 - exclude lonely nodes,
 - avoid duplicates (for example, subdomains which are part of a single domain),
 
-and so on.
+ These rules are being developed on an on-going basis and new rules will be added based on the insights derived from the data.
 
-### Formats
+### Formatting Domain Names
 
 Now in the dataset, we have domain names in the form of URLs. But we want to make the graph looks pretty well. This is why we are going to extract the domain name from the URLs we have in the dataset. For this purpose, we use [tldextract](https://github.com/john-kurkowski/tldextract), which is a simple and complete open source library for extracting the parts of the domains (say: suffix, subdomain, domain name). This package is available in conda-forge too. Here is how tldextract works:
 
@@ -40,7 +40,9 @@ Now in the dataset, we have domain names in the form of URLs. But we want to mak
 >>> (ext.subdomain, ext.domain, ext.suffix)
 ('forums', 'bbc', 'co.uk') #we extract the domain name "bbc"
 ```
+The main part is the extraction of the domain name. This will be applied to all de domains and html metadata (the links between domains).
 
+### License validation
 Another important aspect is the licenses types. In the dataset, we do not have the exact license name; rather, we have a URL that directs to the license definition on [creativecommons.org](creativecommons.org). We have developed a function with some regular expressions to validate the correct format of these URls, and extracts from them the license name and version. This information will be shown in the pie chart that appears after the user clicks on a node. 
 
 ```
