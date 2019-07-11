@@ -445,21 +445,6 @@
             "website": null
         },
         {
-            "created": "2014-07-28T15:18:18",
-            "description": "If you want the latest beta release, see the releases page or check out develop!",
-            "engineering_project": true,
-            "featured": false,
-            "id": 22347352,
-            "language": "PHP",
-            "license": {
-                "name": "GNU General Public License v2.0",
-                "url": "https://github.com/creativecommons/creativecommons-wordpress-plugin/blob/master/license.txt"
-            },
-            "name": "creativecommons-wordpress-plugin",
-            "url": "https://github.com/creativecommons/creativecommons-wordpress-plugin",
-            "website": ""
-        },
-        {
             "created": "2015-04-15T16:10:58",
             "description": "Static files for CC Open Source website. :warning: DO NOT MODIFY THIS REPOSITORY! To edit, use the creativecommons.github.io-source repository.",
             "id": 34004720,
@@ -791,6 +776,21 @@
             "name": "termination-of-transfer",
             "url": "https://github.com/creativecommons/termination-of-transfer",
             "website": null
+        },
+        {
+            "created": "2014-07-28T15:18:18",
+            "description": "If you want the latest beta release, see the releases page or check out develop!",
+            "engineering_project": true,
+            "featured": false,
+            "id": 22347352,
+            "language": "PHP",
+            "license": {
+                "name": "GNU General Public License v2.0",
+                "url": "https://github.com/creativecommons/wp-plugin-creativecommons/blob/master/license.txt"
+            },
+            "name": "wp-plugin-creativecommons",
+            "url": "https://github.com/creativecommons/wp-plugin-creativecommons",
+            "website": ""
         },
         {
             "created": "2019-02-11T15:51:29",
