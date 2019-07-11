@@ -14,24 +14,24 @@ pub_date: 2019-07-10
 ---
 body:
 
-Welcome to the data processing part of the GSoC project! In this blog post, I am going to tell you about my firsts thoughts with the real data, and give you some details of the implementation developed so far. 
+Welcome to the data processing part of the GSoC project! In this blog post, I am going to tell you about my first thoughts with the real data, and give you some details of the implementation developed so far. 
 
-### Data extraction
+### Data Extraction
 
 Each month, Creative Commons uses [Common Crawl](http://commoncrawl.org/) data to find all domains that contain CC licensed content. As you might be guessing, the amount of data is very big, so the CC Catalog data is stored in [S3](http://commoncrawl.org/the-data/get-started/) buckets and [Apache Spark](https://spark.apache.org/) is used to extract the data from Common Crawl.
 
 Spark is used again in this project to extract the data, in the form of parquet files, from the buckets. In order to facilitate the analysis and processing of the data, the files are converted to TSV (tab-separated values). The dataset I work on contains the following fields:
 
 - provider_domain: name of the domain with licensed content.
-- cc_license: path to the Creative Commons license deed used by the _provider\\_domain_.
-- images: number of images showed in the _provider\\_domain_ web page.
-- links: JSON field that contains a dictionary with domains as keys, and number of links as values. A link appears when _provider\\_domain_ has an href tag in its web page that points to the domain key.
+- cc_license: path to the Creative Commons license deed used by the _provider\_domain_.
+- images: number of images showed in the _provider\_domain_ web page.
+- links: JSON field that contains a dictionary with domains as keys, and number of links as values. A link appears when _provider\_domain_ has an href tag in its web page that points to the domain key.
 
 
 
 Each file can easily contain dozens of millions of rows. My first aproach is to load the information in a Pandas Dataframe, but this can become very slow. Therefore, I will test the scripts for the data processing with a portion of the real data. Afterwards, I will use [Dask](https://dask.org/) with the entire dataset. Dask provides advanced parallelism for analytics, and has a behaviour similar to Pandas. 
 
-### Cleansing and filtering
+### Cleansing and Filtering
 
 This step is about preparing the data for analysis and reducing the amount of data, in order to get a meaningful visualization. The data that comes from the S3 buckets is actually pretty neat (no strange characters for example, or incomplete rows). Nevertheless as a first step, duplicate rows are deleted (given by duplicate URLs). Next I, develop pruning rules. I try to:
 - exclude cycles (cyclic edges),
@@ -42,17 +42,17 @@ This step is about preparing the data for analysis and reducing the amount of da
 
 ### Formatting Domain Names
 
-Now in the dataset, we have domain names in the form of URLs. But we want to make the graph looks pretty well. This is why I am going to extract the domain name from the URLs we have in the dataset. For this purpose, I use [tldextract](https://github.com/john-kurkowski/tldextract), which is a simple and complete open source library for extracting the parts of the domains (say: suffix, subdomain, domain name). This package is available in conda-forge too. Here is how tldextract works:
+In the dataset, we have domain names in the form of URLs. But we want to make the graph looks pretty well. This is why I am going to extract the domain name from the URLs we have in the dataset. For this purpose, I use [tldextract](https://github.com/john-kurkowski/tldextract), which is a simple and complete open source library for extracting the parts of the domains (e.g. suffix, subdomain, domain name). This package is available in conda-forge too. Here is how tldextract works:
 
 ```python
 >>> ext = tldextract.extract('http://forums.bbc.co.uk')
 >>> (ext.subdomain, ext.domain, ext.suffix)
 ('forums', 'bbc', 'co.uk') #extract the domain name "bbc"
 ```
-The main part is the extraction of the domain name. This will be applied to the _provider\\_domain_ and _links_ fields in order to build the graph. The domain names will be the ones displayed over the nodes, as depicted in [my first blog post](https://creativecommons.github.io/blog/entries/cc-datacatalog-visualization/).
+The main part is the extraction of the domain name. This will be applied to the _provider\_domain_ and _links_ fields in order to build the graph. The domain names will be the ones displayed over the nodes, as depicted in [my first blog post](https://creativecommons.github.io/blog/entries/cc-datacatalog-visualization/).
 
-### License validation
-Another important aspect is the licenses types. In the dataset, we do not have the exact license name; rather, we have a URL that directs to the license definition on [creativecommons.org](creativecommons.org). We have developed a [function](https://github.com/creativecommons/cccatalog/blob/master/src/providers/api/modules/etlMods.py#L75) with some regular expressions to validate the correct format of these URls, and extracts from them the license name and version. This information will be shown in the pie chart that appears after the user clicks on a node. 
+### License Validation
+Another important aspect is the licenses types. In the dataset, we do not have the exact license name; rather, we have a URL that directs to the license definition on [creativecommons.org](https://creativecommons.org). We have developed a [function](https://github.com/creativecommons/cccatalog/blob/master/src/providers/api/modules/etlMods.py#L75) with some regular expressions to validate the correct format of these URls, and extracts from them the license name and version. This information will be shown in the pie chart that appears after the user clicks on a node. 
 
 ```
 'https://creativecommons.org/licenses/by/4.0/' #valid license
@@ -60,7 +60,7 @@ Another important aspect is the licenses types. In the dataset, we do not have t
 
 ```
 
-### Coming soon
+### Coming Soon
 
 - Data aggregation
 - Visualization with the data + perfectioning pruning/filtering rules
