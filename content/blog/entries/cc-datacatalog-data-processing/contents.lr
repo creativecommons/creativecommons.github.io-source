@@ -22,10 +22,10 @@ Each month, Creative Commons uses [Common Crawl](http://commoncrawl.org/) data t
 
 Spark is used again in this project to extract the data, in the form of parquet files, from the buckets. In order to facilitate the analysis and processing of the data, the files are converted to TSV (tab-separated values). The dataset I work on contains the following fields:
 
-- provider_domain: name of the domain with licensed content.
-- cc_license: path to the Creative Commons license deed used by the _provider\_domain_.
-- images: number of images showed in the _provider\_domain_ web page.
-- links: JSON field that contains a dictionary with domains as keys, and number of links as values. A link appears when _provider\_domain_ has an href tag in its web page that points to the domain key.
+- `provider_domain`: name of the domain with licensed content.
+- `cc_license`: path to the Creative Commons license deed used by the `provider_domain`.
+- `images`: number of images showed in the `provider_domain` web page.
+- `links`: JSON field that contains a dictionary with domains as keys, and number of links as values. A link appears when `provider_domain` has an href tag in its web page that points to the domain key.
 
 
 
