@@ -785,7 +785,7 @@
             "id": 22347352,
             "language": "PHP",
             "license": {
-                "name": "GNU General Public License v2.0",
+                "name": "Other",
                 "url": "https://github.com/creativecommons/wp-plugin-creativecommons/blob/master/license.txt"
             },
             "name": "wp-plugin-creativecommons",
