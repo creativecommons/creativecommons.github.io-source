@@ -1,0 +1,71 @@
+title: Combating dead links with CC Link Checker
+---
+categories:
+open-source
+product
+cc-link-checker
+---
+author: bhumijgupta
+---
+pub_date: 2019-07-15
+---
+body:
+
+Creative Commons provides vast number of public copyright licenses for people who want to enable free distribution of their work. Creative Commons licenses currently covers over **1.6 billion resources**. These license files are then translated to multiple different languages and ported for [different jurisdictions](https://wiki.creativecommons.org/wiki/CC_Ports_by_Jurisdiction) for international usage. People link to the respective licenses along with their licensed works. These license files are in the form of `html` files, stored in [creativecommons/creativecommons.org](https://github.com/creativecommons/creativecommons.org/tree/master/docroot/legalcode) repo.
+
+### Problem Statement
+These license files contain links to their deeds, license translated to other languages, internal links, and many more. Sometimes due to errors, these files may contain dead / broken links. These broken links leads to incorrect/ incomplete understanding of the license clauses and permissions by the viewer. This may sometime lead to incorrect usage of the licensed resource.
+
+At the time of writing, the repo contains over **930 files** with an average of **50 links per file**. New translation of license deeds are regularly added to the repo and the existing license deeds are also updated frequently. Manually testing these files would take a lot of time. Considering the future additions of licenses, translations and jurisdiction ports, the time required for manual testing would increase drastically.
+
+### Solution - CC Link Checker
+[CC Link Checker](https://github.com/creativecommons/cc-link-checker) aims to solve the problem by automating the task of checking links in the license and reporting errorneous and broken links. The python script scrapes all the licenses from the repo and checks the status of the links in the files. The script checks the link for `40X` errors, `timeout errors` and `invalid schema` error.
+
+Firstly, let's get the features out of the way. The script uses multiprocessing, taking full use of multiple core processors, has 2 modes of output to CLI - default and verbose, and can also print the error links, summary of the result, and mapping of error links to their URLs of occurence in a file.
+
+Now let's hop in the nerd train and take a deeper look at development journey.
+
+### Development Journey
+I started working on the project a month back i.e. 13 Jun. During this journey there were many ups and downs, with some productive and some totally unproductive days. For better understanding, lets look the journey for each week.
+
+* Week 1
+    The approach for the first week was to get the basic functionality done. The script was able to scrape and parse all license and links from the github repo using `requests` and `BeautifulSoup`. I implemented basic memoization to prevent repeated fetching of already fetched links. This step decreased the execution time of the script by several folds. Parallel to the development of the script, I also had to implement Circle-CI. Since it was my first time using a CI service, it took me quite some time to wrap my head around Circle-CI.
+
+    **Things I learned:** Circle-CI, pipenv, different docstring formats, different code styles and pep8 recommendations - black and flake8
+
+* Week 2
+    With the basic functionality completed, now it was time to implement some advance features. This week I worked on implementing `--verbose` flag a.k.a. the verbose mode of output to CLI. The verbose mode would help in debugging and give a deeper look into how the python script was working. Also I worked on `--output-errors` flag, which would print error links and summary to a file.
+
+    Everything was working fine and ahead of schedule, until a major bug was detected i.e. incorrect conversion of relative to absolute links which resulted in several false positive and false negatives. Fixing this required deducing pattern between the URL on which the license file would be displayed from the license name. This step took a lot of time and pushed project below its schedule.
+
+    **Things I learned:** Argument parser and help text
+
+* Week 3
+    The output file consisted only file name and the errorneous links encountered in the file. As per suggestion of [Kriti Godey](https://creativecommons.org/author/kgodey), I worked on adding the summary section to the file which would include information like total error links, number of unique links along with errorneous link and the page URLs on which it is present (since many page consist the same dead link). The next step was optimizing time taken to run the script.
+
+    Before any optimisation the script took 4+ minutes to run on cloud servers. To reduce the time, I started working on implementing **multithreading** to reduce the execution time of the script. Implementing multithreading was a big task as it required major refactoring of the code to make it thread safe and compatible with concurrency. After sucessfully refactoring and implementing multithreading, I was able to bring down the execution time to around 3:20.
+
+    As pointed out by my mentor, this came with its own set of problems. Due to python's `Global Interpretor Lock(GIL)` no two threads can run parallely inside the python interpretor and the use of global and lock made the code more complex. Also, the performance increase was not significant. This was a setback as my week long efforts had gone in vain.
+
+    **Things I learned:** Multithreading, locks
+
+* Week 4
+    To aid the situation my mentors suggested using **multiprocessing** instead. I had no former experience with multiprocessing, but thanks to python's beautiful documentations and examples, I was quickly able to get a hold of it. I finished implementing multiprocessing and to my surprise, there was **49.5% performance increase**. The script now only took 2:27 to complete.
+
+    The major functionality of the script were completed, and the optimisations were done. To improve the code quality and improve documentation, it was time to write **unit tests** for the script. To write the tests I used `pytests` framework which provides several benefits and higher level abstraction over the inbuilt `unittest` module.
+
+    **Things I learned:** Multiprocessing, pytests
+
+### Future work
+* Optimising the script for more performace increase
+* Making the script more CI-friendly
+
+
+CC Link Checker is only possible due to the support and guidance of my mentors [Alden Page](https://creativecommons.org/author/aldenpage) and [Timid Robot Zehta](https://creativecommons.org/author/TimidRobot), who have been very supportive on every step of the project. Also I would like to thank engineering director [Kriti Godey](https://creativecommons.org/author/kgodey) for her continuous support.
+
+You can follow the project on Github: [creativecommons/cc-link-checker](https://github.com/creativecommons/cc-link-checker). You can also join the discussion on `#cc-link-checker` on [Slack](https://opensource.creativecommons.org/community/#slack)
+
+The project is approaching its completion. Can't wait to see it in production.
+
+*Signing off  
+Bhumij Gupta*
