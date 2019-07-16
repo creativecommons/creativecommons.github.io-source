@@ -6,6 +6,8 @@ $jet-black: #333333;
 $grey: rgba(255, 255, 255, 0.6);
 $blue: #00b5da;
 $white: #fff;
+$shadow1: rgba(0, 0, 0, 0.2);
+$shadow2: rgba(0, 0, 0, 0.19);
 
 //Color Configs
 $brand-theme: $candy;
@@ -74,23 +76,35 @@ h2 {
   color: $text-color;
 }
 
-@mixin style {
+@mixin large-border-style {
   background-color: $white;
-  border: {
-    left-color: $project-card-theme !important;
-    left-width: 10px;
-  }
   padding-left: 0px;
 }
 
 .featured-project-card {
-  @include style();
+  @include large-border-style();
+  border: {
+    left-color: $project-card-theme !important;
+    left-width: 10px;
+  }
   min-width: 20rem;
   max-width: 20rem;
 }
 
+.get-involved-card {
+  min-width: 16rem;
+  max-width: 20rem;
+  border: 0;
+  padding: 0.5rem 0rem;
+  box-shadow: 0 2px 4px 0 $shadow1, 0 3px 20px 0 $shadow2;
+}
+
 .project-idea-header {
-  @include style();
+  @include large-border-style();
+  border: {
+    bottom-color: $project-card-theme !important;
+    bottom-width: 10px;
+  }
   font-size: 1.5em;
 }
 
