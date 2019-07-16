@@ -74,23 +74,34 @@ h2 {
   color: $text-color;
 }
 
-@mixin style {
+@mixin large-border-style {
   background-color: $white;
-  border: {
-    left-color: $project-card-theme !important;
-    left-width: 10px;
-  }
   padding-left: 0px;
 }
 
 .featured-project-card {
-  @include style();
+  @include large-border-style();
+  border: {
+    left-color: $project-card-theme !important;
+    left-width: 10px;
+  }
   min-width: 20rem;
   max-width: 20rem;
 }
 
+.get-involved-card {
+  min-width: 16rem;
+  max-width: 20rem;
+  border: 0;
+  padding: 0.5rem 0rem;
+}
+
 .project-idea-header {
-  @include style();
+  @include large-border-style();
+  border: {
+    bottom-color: $project-card-theme !important;
+    bottom-width: 10px;
+  }
   font-size: 1.5em;
 }
 
