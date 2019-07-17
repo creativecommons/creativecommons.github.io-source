@@ -29,7 +29,7 @@ We started the redesign of the homepage by removing all that content that was di
 
 ![new homepage design](new homepage.png)
 
-There's a lot less "noise" on the new homepage. It also follows more of the design you can see on the Creative Commons homepage, (https://creativecommons.org/)[https://creativecommons.org/]. Initially, we planned to follow the same color scheme, but in internal conversations, we decided to have each of CC's main pages have some colors of its own, so they are more easily recognizable by users. So we dropped the orange from CC's homepage in favour of this light blue you see now.
+There's a lot less "noise" on the new homepage. It also follows more of the design you can see on the Creative Commons homepage, [https://creativecommons.org/](https://creativecommons.org/). Initially, we planned to follow the same color scheme, but in internal conversations, we decided to have each of CC's main pages have some colors of its own, so they are more easily recognizable by users. So we dropped the orange from CC's homepage in favour of this light blue you see now.
 
 
 We also replaced the "Search the Commons..." placeholder on the search text box for "Search for images...". As we currently provide only image search, users can more easily and intuitively know what they will be searching for using our tool, instead of hoping to find textbooks or video works in the results because "Search the commons..." could have meant search the full Commons corpus.
