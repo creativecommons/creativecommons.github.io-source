@@ -1,7 +1,7 @@
 [project]
 name = creativecommons.github.io
 url_style = absolute
-url = http://creativecommons.github.io/
+url = http://opensource.creativecommons.org/
 
 [servers.ghpages]
 target = ghpages+https://creativecommons/creativecommons.github.io
