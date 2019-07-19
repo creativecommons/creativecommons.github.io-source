@@ -1,0 +1,62 @@
+title: CC Browser Extension Week 7, 8
+---
+categories:
+gsoc
+gsoc-2019
+cc-browser-extension
+open-source
+---
+author: makkoncept
+---
+pub_date: 2019-07-19
+---
+body:
+
+For the context, I am working on my GSoC project that is to make a browser-extension to search CC Licensed content in the public domain by interacting with CC Catalog API.
+
+**Previous Blogs**:
+-  [CC Browser Extension - A GSoC Project](https://opensource.creativecommons.org/blog/entries/cc-browser-extension-a-gsoc-project/)
+-  [CC Browser Extension Week 5, 6](https://opensource.creativecommons.org/blog/entries/cc-browser-extension-week5-6/)
+
+### Work Done
+A couple of major features were added to the browser extension these weeks like image Info and attribution preview and options UI. Also, the extension now has dark mode :)
+<div>
+<img src="home-light.png" alt"CC Browser Extension Screenshot" height=500 /><br>
+<small class="muted">CC Browser Extension Welcome Screen (light)</small>
+</div>
+<br>
+<div>
+<img src="home-dark.png" alt"CC Browser Extension Screenshot" height=500 /><br>
+<small class="muted">CC Browser Extension Welcome Screen (dark)</small>
+</div>
+<br>
+
+Now, when the user clicks on the image thumbnail, a popup with image information (like title, creator link, license, and provider links), attribution (both rich text and HTML version) and social media share links opens.
+
+We also tried to figure out a way to let users download the images and attribute the creator with the least possible clicks. Right now there are two user-flows:
+1. If the users need only one image, they can press the `Download Image` button and copy the desired attribution to the clipboard.
+2. If they need to download multiple images in a single session, they can  press `Download Image and Attribution`. This will download both versions (rich text and HTML) of attribution in a text file of the same name as the image file.
+
+<div>
+<img src="info-light.png" alt"CC Browser Extension Screenshot" height=500 /><br>
+<small class="muted">CC Browser Extension Image Info/Attribution popup(light)</small>
+</div>
+<br>
+<div>
+<img src="info-dark.png" alt"CC Browser Extension Screenshot" height=500 /><br>
+<small class="muted">CC Browser Extension Image Info/Attribution popup(dark)</small>
+</div>
+<br>
+These workflows work perfectly on chrome. Whereas, Firefox prompts the user to confirm the download with a popup (if they have not already set a default option) and this results in termination of the browser-extension session. So, the purpose of the second workflow of letting the user continue the session while also downloading the images fails here. I also had a discussion about this with the mentors and we brainstormed some possible solutions. I have written about a possible solution in the 'Coming Up' section below.
+
+I also added an options page to the extension which will open in a new tab and the user can set default filters here. So, now they don't have to apply the filters that they often use again and again for every session.
+
+
+### Coming Up
+- Add a bookmark feature. A lot of the users may want to save multiple images for later to check out. I think this might also provide a better solution to the problem discussed above.
+- Test and fix bugs.
+- Improve documentation.
+
+You can check out the project on [Github](https://github.com/creativecommons/ccsearch-browser-extension) and join the discussion on `#gsoc-browser-ext` channel on [slack](https://opensource.creativecommons.org/community/#slack).
+
+*Special Thanks*:  [Alden](https://creativecommons.org/author/aldencreativecommons-org/), [Timid](https://creativecommons.org/author/timidcreativecommons-org/) and [Kriti](https://creativecommons.org/author/kriticreativecommons-org/)
