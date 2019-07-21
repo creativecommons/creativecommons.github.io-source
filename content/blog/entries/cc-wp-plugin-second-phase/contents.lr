@@ -1,0 +1,36 @@
+title: Creative Commons WordPress Plugin Second Phase
+---
+categories:
+wp-plugin
+gsoc-2019
+gsoc
+open-source
+---
+author: ahmadbilaldev
+---
+pub_date: 2019-07-20
+---
+body:
+
+For the context, I am working with my mentor [Timid Robot](https://creativecommons.org/author/timidcreativecommons-org/) on Creative Commons WordPress Plugin in GSoC 2019. It is basically an attribution tool, allowing users to attribute their content and include a CC license on their WordPress website. The second phase of the project is now ending, and the plugin has a stable version ready. Following is a summary of the work accomplished during this phase.
+
+- **Week 5:** Added customization settings for Gutenberg blocks for backend and front end.
+- **Week 6:** Fixed and closed 17 existing issues to pave way for a stable release.
+- **Week 7-8:** Prepped the plugin for the release to WordPress.org directory. Started working on the support to use the new license chooser. For now, removing the integrated chooser (old Partner Interface) and linking to the new chooser is our strategy.
+
+### Release of v2019.7.1
+
+We have released the latest stable version of the plugin. `v2019.7.1` is out and tagged in the [wp-plugin-creativecommons repository](https://github.com/creativecommons/wp-plugin-creativecommons/releases). Given that a stable release is available, we have submitted it to [WordPress.org plugin directory](https://en-nz.wordpress.org/plugins/). As soon as their team approves it, the plugin will be available to install for all WordPress users, which is substantial.
+
+### What's next
+
+Although the current implentation does the job, but we want it to use new [CC License Chooser](https://creativecommons.org/choose/) in the future. The existing approach uses an integrated modal of [Partner Interface](https://creativecommons.org/choose/?partner={partner}) from 2014. So, currently I am re-writing and re-designing the plugin settings to use the new and improved chooser without integrating it. Other upcoming additions are:
+
+- Add a button to copy license and author information for content sharing.
+- CC Search integration.
+- Changes in design and features.
+- Improve the documentation.
+
+For more, see the [GitHub repository](https://github.com/creativecommons/wp-plugin-creativecommons).
+
+If you have any feedback or suggestions, let us know in the discussion on `#cc-dev-wordpress` Slack channel. Looking forward!
