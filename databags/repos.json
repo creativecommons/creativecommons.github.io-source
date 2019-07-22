@@ -316,7 +316,7 @@
         },
         {
             "created": "2018-07-06T00:51:38",
-            "description": "CC Search is a new search frontend for CC-licensed works across the internet.",
+            "description": "CC Search is a search tool for CC-licensed and public domain content across the internet.",
             "engineering_project": true,
             "english_name": "CC Search",
             "featured": true,
