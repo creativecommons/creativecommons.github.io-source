@@ -1,5 +1,7 @@
 {% extends "layout.html" %}
+
 {% from "macros/authors.html" import render_authors %}
+
 {% block title %}{{ this.parent.children.get('entries').title + ' - Authors' }}{% endblock %}
 {% block header %}{{ this.parent.children.get('entries').title }}{% endblock %}
 {% block body %}
