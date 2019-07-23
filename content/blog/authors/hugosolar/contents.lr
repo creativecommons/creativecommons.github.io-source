@@ -1,3 +1,8 @@
 username: HugoSolar
 ---
 name: Hugo Solar
+---
+email: hugo@creativecommons.org
+---
+about:
+[Hugo](https://creativecommons.org/author/hugocreativecommons-org/) is the Web Developer at Creative Commons. He's `@hugo` on Slack.
