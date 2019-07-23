@@ -1,7 +1,9 @@
+{% from "macros/author_name.html" import render_author_name %}
+
 {% macro render_authors(authors) %}
   <ul class="list-inline">
     {% for author in site.query(authors.path) %}
-      <li class="list-inline-item"><a href="{{ author|url }}">{{ author.name }}</a></li>
+      <li class="list-inline-item"><a href="{{ author|url }}">{{ render_author_name(author) }}</a></li>
     {% endfor %}
   </ul>
 {% endmacro %}

@@ -1,5 +1,7 @@
 _model: blog
 ---
+_template: blog.html
+---
 title: Archive: CC Technical Blog (2007-2014)
 ---
 description:

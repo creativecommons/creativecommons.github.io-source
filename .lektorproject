@@ -12,3 +12,4 @@ lektor-google-analytics = 0.1.3
 lektor-webpack-support = 0.5
 lektor-atom = 0.3
 lektor-disqus-comments = 0.4.1
+lektor-gravatar = 0.1.2
