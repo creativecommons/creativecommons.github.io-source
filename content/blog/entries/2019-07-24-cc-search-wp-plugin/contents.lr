@@ -14,7 +14,7 @@ pub_date: 2019-07-24
 body:
 #### Inspiration and idea for the WordPress plugin
 
-Back in May, I read a blog post about the new Creative Commons search tool CC Search. I and my colleagues in CTI **<sup><a href="#footnote-1">[1]</a></sup>** were fascinated by its searching power.
+Back in May, I read a blog post about the new Creative Commons search tool CC Search. My colleagues in CTI **<sup><a href="#footnote-1">[1]</a></sup>** and I were fascinated by its searching power.
 Inspired by this new CC tool, we began thinking, how we could use it, into the Greek School Network’s**<sup><a href="#footnote-2">[2]</a></sup>** blogging platform <https://blogs.sch.gr>**<sup><a href="#footnote-3">[3]</a></sup>** - a WordPress multisite installation, free for all Greek teachers, students, and Greek school units.
 
 We decided to make a WordPress plugin, which would “harvest” the images from the Creative Commons Catalog API, in a similar way [CC Search](https://search.creativecommons.org/) does, but without the need for the user to leave the WordPress post editor. The plugin should allow the execution of “search, select and import image and CC license data” into the post, while the author was still in WordPress edit page.
