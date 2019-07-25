@@ -1,3 +1,10 @@
 username: makkoncept
 ---
 name: Mayank Nader
+---
+md5_hashed_email: 295aeb4b22aac290b7a5c29fdeb31107
+---
+about:
+Mayank Nader is a sophomore Computer Science student from India. Currently, his main area of interest is Python scripting, JavaScript development, backend, and API development. He also likes to experiment with bash scripting and ricing and configuring my Linux setup. Apart from that, he likes listening to music and watching movies, documentaries, and tv shows. He is very much inspired by Open Source and tries to contribute whenever he can.
+
+Mayank is working on [the CC Search browser extension](https://github.com/creativecommons/ccsearch-browser-extension) as part of [Google Summer of Code 2019](/gsoc-2019).

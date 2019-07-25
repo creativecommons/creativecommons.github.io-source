@@ -1,3 +1,10 @@
 username: akmadian
 ---
 name: Ari Madian
+---
+md5_hashed_email: af23a7b0ab15b5c5ae21649bf69f8b66
+---
+about:
+Ari is an 18 year old, Seattle based, mostly self taught, Computer Science student. He originally started programming by tinkering with Python, and eventually moved into C# and the .NET framework, as well as JS and some web development. He likes Chai and Rooibos teas, volunteering at his local food bank, and some occasional PC gaming, among other things.
+
+Ari is working on [a new version of the CC license chooser tool](https://github.com/creativecommons/cc-chooser) as part of [Google Summer of Code 2019](/gsoc-2019).

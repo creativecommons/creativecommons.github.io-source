@@ -8,8 +8,8 @@
 {% block body %}
   <h2>{{ render_author_name(this) }}</h2>
   {% if this.about %}
-    {% if this.email %}
-      <img src="{{ this.email|gravatar }}size=120" alt="gravatar" style="float:right;" class="p-2" />
+    {% if this.md5_hashed_email %}
+      <img src="https://secure.gravatar.com/avatar/{{ this.md5_hashed_email }}?size=200" alt="gravatar" style="float:right;" class="px-3 pb-3" />
     {% endif %}
     {{ this.about }}
   {% endif %}
