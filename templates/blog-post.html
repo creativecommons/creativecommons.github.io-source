@@ -1,19 +1,25 @@
 {% extends "layout.html" %}
+
+{% from "macros/author_name.html" import render_author_name %}
+
+{% set author = this.parent.parent.children.get('authors').children.get(this.author) %}
+
 {% block title %}{{ this.title }}{% endblock %}
 {% block header %}{{ this.parent.title }}{% endblock %}
 {% block body %}
   <h2 class="mb-0">{{ this.title }}</h2>
   {{ check_file('content' + this.parent.parent.path + '/authors/' + this.author + '/contents.lr') }}
-  <p class="meta text-muted mt-0">by <a href="{{ this.parent.parent.children.get('authors').path + '/' + this.author }}">{{ this.author }}</a>
-  on {{ this.pub_date|dateformat('EEEE, yyyy ''MMMM d') }}</p>
+  <p class="meta text-muted mt-0">by <a href="{{ author|url }}">{{ render_author_name(author) }}</a>
+  on {{ this.pub_date|dateformat('EEEE, yyyy-''MM-d') }}</p>
   <div class="body">{{ this.body }}</div>
   <div class="card bg-light">
     <div class="card-body p-2">
       <p class="meta my-0"><span class="mr-2"><strong>Categories:</strong></span>
         {% if this.categories|length %}
           {% for category in this.categories %}
-          {{ check_file('content' + this.parent.parent.path + '/categories/' + category + '/contents.lr') }}
-          <a href=" {{ this.parent.parent.path + '/categories/' + category }} ">{{ category }}</a>{{ "," if not loop.last }}
+            {% set current_category = this.parent.parent.children.get('categories').children.get(category) %}
+            {{ check_file('content' + this.parent.parent.path + '/categories/' + category + '/contents.lr') }}
+            <a href=" {{ current_category|url }} ">{{ category }}</a>{{ "," if not loop.last }}
           {% endfor %}
         {% else %}
           none

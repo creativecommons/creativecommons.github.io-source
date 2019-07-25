@@ -1,37 +1,93 @@
 _model: page
 ---
-title: Technology at Creative Commons
+title: Open Source at CC
 ---
 body:
 
-**[Creative Commons](https://creativecommons.org/)** has been building free software for over a decade to support our mission of maximizing digital creativity, sharing, and innovation. Our projects come in all sizes and shapes, from simple static websites to building fast and relevant search interfaces to the 1.6 billion+ Creative Commons works currently available on the internet. Our engineering team is fairly small and spread thin, so we're really appreciative of volunteers who help us build or test our software.
+**[Creative Commons](https://creativecommons.org/)** has been building free software for over a decade to support our mission of maximizing digital creativity, sharing, and innovation. We work on products that, among other things, make applying CC licenses to content easier, help users find CC licensed content easily, promote and educate users about CC licenses and copyright, and connect the global CC community. Our projects come in all sizes and shapes, from several simple static websites to making the 1.6 billion+ Creative Commons works currently available on the internet [searchable](https://search.creativecommons.org/). 
 
-## Getting Involved
+## Get Involved
 
-You can contribute to CC's software in a few different ways.
+So if you're looking to integrate CC licenses or CC licensed works into your application or you'd like to help us build our products, you're in the right place! We really appreciate community contributions and feedback (we're a small team and spread thin) and we especially love seeing what you build using CC's tools.
 
-### Finding bugs and suggesting features
+<div class="card-deck">
+  <div class="card get-involved-card border-dark mb-4">
+    <h5 class="card-title text-center"><strong>Join the Community</strong></h5>
+    <div class="card-img-top">
+      <img class="mx-auto d-block" src="/comments-solid.png" alt="Community icon"/>
+    </div>
+    <div class="card-body" align="center">
+      <p class="card-text text-center">Join the CC developer chat and mailing list communities to sconnect with other developers working with CC tools.</p>
+      <a href="/community" class="btn btn-sm btn-outline-primary">Chat and list information</a>
+    </div>
+  </div>
 
-Using our software (such as [the new version of CC Search](http://search.creativecommons.org/)) and letting us know how it's working for you is very helpful. General suggestions, bug reports, a request to build a new feature –  any form of feedback is excellent, no matter how small.
+  <div class="card get-involved-card border-dark mb-4">
+    <h5 class="card-title text-center"><strong>Contribute Code</strong></h5>
+    <div class="card-img-top">
+      <img class="mx-auto d-block" src="/laptop-code-solid.png" alt="Code icon"/>
+    </div>
+    <div class="card-body" align="center">
+      <p class="card-text text-center">Look through our open issues or suggest features that you'd like to use. All skill levels are welcome.</p>
+      <a href="/contributing-code" class="btn btn-sm btn-outline-primary">Guidelines</a>
+      <a href="https://github.com/search?q=org%3Acreativecommons+is%3Aopen+label%3A%22help+wanted%22" class="btn btn-sm btn-outline-primary">"Help Wanted" issues</a>
+    </div>
+  </div>
 
-You can send us feedback in a few different ways. If you have a GitHub account, [creating a GitHub issue](https://help.github.com/articles/creating-an-issue/) is easiest for us because that's where we track our work. If you know which GitHub repository (see [a full list here](/projects)) corresponds to the software about which you'd like to give us feedback, then please create an issue attached to that repository. If you're not sure what that means or you don't know the correct repository, please create an issue [on the creativecommons.org repository](https://github.com/creativecommons/creativecommons.org/issues). You can also send us feedback in the `#cc-usability` channel [on the CC Slack community](http://creativecommons.github.io/community/#slack) or via email at `software@creativecommons.org`.
+  <div class="card get-involved-card border-dark mb-4">
+    <h5 class="card-title text-center"><strong>Integrate with CC Tools</strong></h5>
+    <div class="card-img-top">
+      <img class="mx-auto d-block" src="/creative-commons-remix-brands.png" alt="CC remix icon"/>
+    </div>
+    <div class="card-body" align="center">
+      <p class="card-text text-center">Use CC-licensed works in your application or (coming soon!) use our WordPress plugin to license your content.</p>
+      <a href="https://api.creativecommons.engineering/" class="btn btn-sm btn-outline-primary">Catalog API</a>
+    </div>
+  </div>
 
-### Contributing code
+  <div class="card get-involved-card border-dark mb-4">
+    <h5 class="card-title text-center"><strong>Show Off Your Work</strong></h5>
+    <div class="card-img-top">
+      <img class="mx-auto d-block" src="/keyboard-solid.png" alt="Keyboard icon icon"/>
+    </div>
+    <div class="card-body" align="center">
+      <p class="card-text text-center">If you've worked on software that uses CC licenses or tools, tell the community about it on <a href="/blog">our tech blog</a>.</p>
+      <a href="/community/write-a-blog-post/" class="btn btn-sm btn-outline-primary">Write a blog post</a>
+    </div>
+  </div>
 
-Please see [Contributing Code](/contributing-code).
+  <div class="card get-involved-card border-dark mb-4">
+    <h5 class="card-title text-center"><strong>Test our Software</strong></h5>
+    <div class="card-img-top">
+      <img class="mx-auto d-block" src="/vials-solid.png" alt="Test tubes icon"/>
+    </div>
+    <div class="card-body" align="center">
+      <p class="card-text text-center">Let us know how our tools are working for you! All projects in the page below that have a website URL are fair game.</p>
+      <a href="/projects" class="btn btn-sm btn-outline-primary">All active projects</a>
+    </div>
+  </div>
 
-### Writing a technical blog post
+  <div class="card get-involved-card border-dark mb-4">
+    <h5 class="card-title text-center"><strong>Translate our Content</strong></h5>
+    <div class="card-img-top">
+      <img class="mx-auto d-block" src="/language-solid.png" alt="Translation icon"/>
+    </div>
+    <div class="card-body" align="center">
+      <p class="card-text text-center">Translate our content into your language. Contact us if you'd like to write code to make this process easier for new tools.</p>
+      <a href="https://wiki.creativecommons.org/wiki/Translate" class="btn btn-sm btn-outline-primary">Translation information</a>
+    </div>
+  </div>
 
-Please see [Write a Blog Post](/community/write-a-blog-post).
+  <div class="card get-involved-card border-dark mb-4">
+    <h5 class="card-title text-center"><strong>Contribute Design</strong></h5>
+    <div class="card-img-top">
+      <img class="mx-auto d-block" src="/pencil-ruler-solid.png" alt="Pencil and ruler icon"/>
+    </div>
+    <div class="card-body" align="center">
+      <p class="card-text text-center">Contribute to our brand new set of standard UI components and help us apply it to all existing projects.</p>
+      <a href="https://github.com/creativecommons/cc-vocabulary" class="btn btn-sm btn-outline-primary">CC Vocabulary</a>
+    </div>
+  </div>
+</div>
 
-### Integrating CC license metadata into your app
-
-Please see [the "Integrate" page on the CC wiki](https://wiki.creativecommons.org/wiki/Integrate).
-
-### Helping translate our content
-
-Please see [the "Translate" page on the CC wiki](https://wiki.creativecommons.org/wiki/Translate).
-
-### Contributing design
-
-If you'd like to improve the design of one of our tools or products, please propose your change in [one of our community forums](/community) and collaborate with a CC staff member if requested to before making any changes.
+<p class="small muted"><em>All icons are from <a href="https://fontawesome.com/">Font Awesome</a>, licensed under a <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</em></p>

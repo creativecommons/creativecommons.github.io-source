@@ -1,0 +1,25 @@
+title: Summer of Code: "Indexing Embedded License Claims in Tracker"
+---
+categories:
+summer
+xmp
+---
+author: jakin
+---
+body:
+
+Hello all,
+
+I'm Jason Kivlighn, a selected student for Google's Summer of Code. Here's the gist of my project:
+
+> Working under Creative Commons, I will extended the [Tracker](http://www.gnome.org/projects/tracker/) search and indexing engine to support the extraction of license claims. Because of the various forms that the license may take, I will build support based on the recommendations of Creative Commons, as outlined at http://creativecommons.org/technology/usingmarkup...  
+>  At the very least, the project will result in Tracker gaining support for indexing license claims embedding in MP3, OGG, PDF, HTML, and XML formats.
+
+<http://code.google.com/soc/cc/appinfo.html?csaid=1B2CE25E80A89A15>
+
+Now for a little about myself. I'm an undergraduate at the University of Washington in Seattle majoring in Computer Engineering. I've been an Open Source enthusiast since I found Linux as a development platform about 6 years ago. I developed [Krecipes](http://krecipes.sf.net) for a few years and now am working on [Sidestream](http://mdn.wikidot.com), a network for artists to distribute their works. I like hacking together projects here and there as I see fit. My [UW campus shortest route finder](http://students.washington.edu/jkivligh/uwroutes/) was a fun little project to settle the "What's the fastest way from X to Y" disputes once-and-for-all.
+
+My spring quarter is a hassle of Comp. Eng. studies and TA'ing for the 'Programming Languages' course; but as summer rolls around, I'll be ready for a summer of hacking with Tracker and CC :-)
+
+---
+pub_date: 2007-04-14

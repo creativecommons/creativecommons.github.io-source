@@ -1,0 +1,107 @@
+title: Easy search and use of CC-licensed images for WordPress
+---
+categories:
+community
+open-source
+wordpress
+cc-search
+plugin
+---
+author: lenasterg
+---
+pub_date: 2019-07-24
+---
+body:
+#### Inspiration and idea for the WordPress plugin
+
+Back in May, I read a blog post about the new Creative Commons search tool CC Search. I and my colleagues in CTI **<sup><a href="#footnote-1">[1]</a></sup>** were fascinated by its searching power.
+Inspired by this new CC tool, we began thinking, how we could use it, into the Greek School Network’s**<sup><a href="#footnote-2">[2]</a></sup>** blogging platform <https://blogs.sch.gr>**<sup><a href="#footnote-3">[3]</a></sup>** - a WordPress multisite installation, free for all Greek teachers, students, and Greek school units.
+
+We decided to make a WordPress plugin, which would “harvest” the images from the Creative Commons Catalog API, in a similar way [CC Search](https://search.creativecommons.org/) does, but without the need for the user to leave the WordPress post editor. The plugin should allow the execution of “search, select and import image and CC license data” into the post, while the author was still in WordPress edit page.
+
+#### Our WordPress plugin
+
+After a while, our plugin was ready. Its temporary name is “WP CC Search plugin”. It is a WordPress plugin for searching millions of CC-licensed images while the user is still in the post edit page. He/she can select a CC licensed image and insert it into the post content or set as post-featured image very quickly.
+
+![Plugin screenshot 1](01.png)
+
+The plugin’s features are:  
+- Works in WordPress editor and add a button above the content text area and into the “Add Media” pop-up window.
+- Via a pop-up window, allows searching through millions of images using Creative Commons Catalog API power.
+- Allows filtering by a provider
+- Paginated results
+- Quick insert original image or thumbnail with a link to the image URL
+- Use image as a featured image for the blog post
+- WPML compatible
+- Multisite compatible
+- Translation ready (it’s already translated in Greek)
+- Tested up to WordPress 5.2 with Classic Editor plugin
+
+As intended, we already use the plugin in <https://blogs.sch.gr>, which hosts more than 50.000 blogs. The plugin is available to all its blogs and users since middle May, who has been using it without any issues reported yet.
+
+#### How it works
+
+The plugin needs the WordPress [Classic Editor](https://wordpress.org/plugins/classic-editor/) plugin in order to work for WP 5+.
+
+After the plugin’s activation, when the user writes a post, an **“Image via CCSearch”** button is added above the post editor area and as an option into the “Add Media” pop-up window.
+
+![Plugin screenshot 2](02.png)
+
+By pressing the button, a pop-up window allows the user to search using Latin characters for an image. 
+
+![Plugin screenshot 3](03.png)
+
+The user can browse the returned images, preview an image and its license and adjust the image settings:  
+- use of thumbnail or original image
+- set the image link (if any)
+- insert the image into the post or as the featured image
+
+![Plugin screenshot 4](04.png)
+
+After the user selects an image and insert it, into the post, the image code along with its licensing data is pasted into the post body and the user can continue writing the blog post.
+
+![Plugin screenshot 5](05.png)
+
+#### Some technical details
+
+The plugin uses AJAX requests to communicate with https://api.creativecommons.engineering and get responses in JSON format.
+
+Only 2 AJAX requests are sent to <https://api.creativecommons.engineering>.  
+1. <https://api.creativecommons.engineering/statistics/image?format=json>, for getting the providers list. Then the JSON response is used as select options, for the provider’s dropdown menu.
+2. A call to <https://api.creativecommons.engineering/image/search> with the necessary parameters for searching for images based on the given words and the selected provided.
+
+The JSON results, are then transformed via jQuery to images and show up into the popup window. When the user selects an image, jQuery creates a complete HTML <div> tag with all the image info and auto add it into the post editor area or executed the WordPress code to use in as featured image.
+
+#### Still to do
+
+There are still some things that we want to add/change into the plugin and any help on building them is welcome.  
+- Find a different plugin name :-). We believe that the plugin’s name should change since it is not an “official” CC commons plugin.
+- Currently, the plugin needs the Classic Editor plugin in order to work for WP 5+. A main goal is to make it Gutenberg compatible. 
+- Add Multiple images select support
+- Add Multi-select options for filtering: providers
+- Add select options for filtering: licenses, creator
+- Find an icon for the 'Image via CC Search' editor button
+- Add plugin’s Info page
+
+#### Code and test site
+
+- You can find and fork the plugin’s code at: <https://github.com/lenasterg/wp_ccsearch>.
+- You can test the plugin functionality at <http://users.sch.gr/stergatu/wordpress/> by login via <http://users.sch.gr/stergatu/wordpress/wp-login.php> as username: `testuser` password: `testuser`.
+
+
+#### Credits
+
+- The plugin is inspired and based on the <https://search.creativecommons.org/> and it couldn’t be possible without the Creative Commons Catalog API <https://api.creativecommons.engineering/#tag/image> which is the engine.
+- Most of the plugin's code is based on the WP Pexels <https://wordpress.org/plugins/wp-pexels/> code by WPclever.net
+- Pointer's code is based on <https://code.tutsplus.com/articles/integrating-with-wordpress-ui-admin-pointers--wp-26853>
+
+#### More about us
+
+<span id="footnote-1"></span>**[1] CTI - Greek School Network and Networking Technologies Directorate**  
+Our main activities in Greek School Network and Networking Technologies Directorate (GSN-NTS) (<http://nts.cti.gr>) of Computer Technology Institute and Press “Diophantus” (CTI) are the design, implementation, and support of network infrastructures and Internet services. Through its involvement in pioneer National and European research and development projects, GSN-NTS has a major role in the development of network infrastructures and services, and Internet services as well in Greece, especially those concerning school networks and ICT infrastructures at schools.
+
+<span id="footnote-2"></span>**[2] Greek School Network (<https://www.sch.gr/>)**  
+It is the national network of the Ministry of Education and Religious Affairs which safely interconnects all schools of Primary and Secondary education, including educational units abroad, services and entities supervised by the Ministry of Education and Religious Affairs at central and regional level, service providers of lifelong learning, students, teaching staff, other educators and other entities of Ministry of Education and Religious Affairs (www.minedu.gov.gr).
+
+<span id="footnote-3"></span>**[3] <https://blogs.sch.gr>**  
+The plugin was originally developed for <https://blogs.sch.gr>, which is the free blogging platform for all Greek teachers, students, and school units. The blogs.sch.gr is a service of Greek School Network**<sup><a href="#footnote-2">[2]</a></sup>** (https://www.sch.gr/en). It hosts more than 50.000 blogs and users. It is built and maintained by the Greek School Network and Networking Technologies Directorate of CTI.

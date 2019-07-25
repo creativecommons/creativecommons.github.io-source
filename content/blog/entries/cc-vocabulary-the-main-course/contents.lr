@@ -1,0 +1,176 @@
+title: CC Vocabulary: the main course
+---
+categories:
+announcements
+cc-vocabulary
+product
+gsoc
+gsoc-2019
+---
+author: dhruvkb
+---
+pub_date: 2019-07-19
+---
+body:
+
+A little over seven weeks ago we initialised CC Vocabulary. It was a simple recipe, a set of components for other apps to
+use for consistency and ease of development.
+
+- **Week 1:**    we assembled the ingredients: _Vue CLI, Vue Styleguidist, Theo, Lodash, Font Awesome_.
+- **Week 2:**    we cleaned up the kitchen: _Dockerised our project and set up CI/CD_.
+- **Week 3:**    we ground spices: _developed and incorporated design tokens_.
+- **Weeks 4-5:** we cooked appetizers: _our collection of simple Elements_.
+- **Weeks 6-7:** we cooked the main dishes: _our collection of very functional Patterns and Layouts_.
+- **Last week:** we garnished these dishes: _a splash of styling for the [styleguide](https://opensource.creativecommons.org/cc-vocabulary) itself_.
+
+**Today, main course is served, _hot_.**
+
+Grab your forks, knives and spoons for today we announce that CC Vocabulary is now very stable, has a lot of valuable,
+nay indispensable features such as mobile responsiveness and i18n and, best of all, embodies the vibrancy of Creative
+Commons in its versatile customisability and its collection of 36 hues and 8 greyscale tones usable across dozens of
+elements and patterns.
+
+Based on the facts that fewer and fewer changes are being made to the core functionality with every commit, that there
+is a definite coding and nomenclature scheme, that desirable consistency has been achieved across its myriad of
+offerings and that a number of features have been frozen, I am very confident that CC Vocabulary is nearing its public
+release and into version `1.0.0`.
+
+As we head into the next phase of Vocabulary, i.e. using it in our very own apps, here is a comprehensive look on where
+we stand right now in terms of what the library provides. The goal of this exercise is to determine what elements and/or
+patterns have been overlooked and to determine additional functionality that may be required in some of them. Since
+every component can be customised tweaked and extended, an interactive exploration is preferable but to get you hyped up
+for the meal, here are some pictures of what to expect.
+
+If you are a developer of CC applications, please take the time to visit the styleguide and play around with these
+components so that you may identify shortcomings or ideas for improvement. If you are an explorer, do so for the thrill
+of seeing a design system take shape. Any and all contributions are welcome in this crucial moment as our beloved
+brainchild comes of age.
+
+**Presenting to you our special menu of Vue components.**
+
+<table>
+<tbody>
+    <tr>
+        <th colspan="2"><h3>Tokens</h3></th>
+    </tr>
+    <tr>
+        <td>Colors</td>
+        <td><img src="colors.png"></td>
+    </tr>
+    <tr>
+        <td>Fonts</td>
+        <td><img src="fonts.png"></td>
+    </tr>
+    <tr>
+        <td>Spaces</td>
+        <td><img src="spaces.png"></td>
+    </tr>
+    <tr>
+        <th colspan="2"><h3>Elements</h3></th>
+    </tr>
+    <tr>
+        <td>Button</td>
+        <td><img src="button.png"></td>
+    </tr>
+    <tr>
+        <td>InputField</td>
+        <td><img src="inputfield.png"></td>
+    </tr>
+    <tr>
+        <td>SelectField</td>
+        <td><img src="selectfield.png"></td>
+    </tr>
+    <tr>
+        <td>Heading</td>
+        <td><img src="heading.png"></td>
+    </tr>
+    <tr>
+        <td>Paragraph</td>
+        <td><img src="paragraph.png"></td>
+    </tr>
+    <tr>
+        <td>LicenseBadge</td>
+        <td><img src="licensebadge.png"></td>
+    </tr>
+    <tr>
+        <td>LicenseIconography</td>
+        <td><img src="licenseiconography.png"></td>
+    </tr>
+    <tr>
+        <td>ProgressBar</td>
+        <td><img src="progressbar.png"></td>
+    </tr>
+    <tr>
+        <td>Shield</td>
+        <td><img src="shield.png"></td>
+    </tr>
+    <tr>
+        <th colspan="2"><h3>Layouts</h3></th>
+    </tr>
+    <tr>
+        <td>Container</td>
+        <td><img src="container.png"></td>
+    </tr>
+    <tr>
+        <td>Grid</td>
+        <td><img src="grid.png"></td>
+    </tr>
+    <tr>
+        <td>Table</td>
+        <td><img src="table.png"></td>
+    </tr>
+    <tr>
+        <th colspan="2"><h3>Patterns</h3></th>
+    </tr>
+    <tr>
+        <td>Header</td>
+        <td><img src="header.png"></td>
+    </tr>
+    <tr>
+        <td>Footer</td>
+        <td><img src="footer.png"></td>
+    </tr>
+    <tr>
+        <td>Locale</td>
+        <td><img src="locale.png"></td>
+    </tr>
+    <tr>
+        <td>Hello</td>
+        <td><img src="hello.png"></td>
+    </tr>
+    <tr>
+        <th colspan="2"><h3>Templates</h3></th>
+    </tr>
+    <tr>
+        <td>Index</td>
+        <td><img src="orange.png" onclick="this.src = 'green.png'"></td>
+    </tr>
+</tbody>
+</table>
+
+&nbsp;
+
+### What's next
+
+There are a number of components under construction right now such as cards and social media buttons. They will be
+published on the styleguide very soon. After these, the final month, phase III of of the project's GSoC term will be
+spent continuously polishing the project to suit the needs of all CC apps as discovered during the integration with
+CC Search as mentioned by [Breno Ferreira](/blog/authors/brenoferreira) in the 'Next steps' in his post on
+[CC Search Redesign](/blog/entries/cc-search-redesign/).
+
+In keeping with the culinary theme of this post, think of it as sweet sweet dessert.
+
+### Closing note
+
+In closing, I would like to thank my GSoC mentor Hugo Solar as always for always being present to help and refer me to
+documentation that I would likely never have found myself. Also I extend thanks to Kriti Godey for regularly keeping
+in touch and directing me to the right people to contact whenever in difficulty.
+
+**CC Vocabulary is for, by, inspired from and due to the diverse and active Creative Commons community.**
+
+### Oh and one more thing...
+
+I buried an easter egg inside this article indicative of the fun nature of the library.
+See if you can find it. _Looking into the source code is cheating._
+
+See you in two weeks with more updates (... and the aforementioned dessert).

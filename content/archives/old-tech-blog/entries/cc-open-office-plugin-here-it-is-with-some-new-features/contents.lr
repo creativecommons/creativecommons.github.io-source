@@ -1,0 +1,60 @@
+title: Creative Commons Open Office Plugin. Here it is with some new features....
+---
+categories:
+Add-In
+OpenOffice
+rdf
+summer
+---
+author: akila87
+---
+body:
+
+Hi there!
+
+I was selected for the Google Summer of Code for the above project with the guidance from [Christopher Webber](http://creativecommons.org/about/people#christopherwebber) & [Nathan Yergler](http://creativecommons.org/about/people#nathanyergler). I am a 22 year old student from [University of Moratuwa](http://www.mrt.ac.lk/) Sri Lanka where I am doing my BSc Engineering degree on Electronic & Telecommunication. What I am doing in this project is updating the OpenOffice plugin developed by [Cassio Melo](../2007/04/14/summer-of-code-project-%E2%80%9Copenofficeorg-writer-add-in-for-publishing-cc-licensed-documents%E2%80%9D/) in GSoC 2007.
+
+I have been working on the project since last April. I was able to add many requested features and some new ideas by me.
+
+So lets look at the progress of the add-on and those “New Features”.
+
+**Support for OpenOffice 3.1, 3.2**
+
+The add on currently in the extension repository only has support for the OpenOffce 2 version. I recompiled the add on to make it work in OpenOffice 3.1, 3.2
+
+**Support for adding images from Flickr, Open Clip Art and Wikimedia Commons.**
+
+In 2008 Summer of Code [Mihai Husleag](../2008/05/29/gsoc-2008-flickr-image-re-use-for-openofficeorg/) made the Flickr Image Re-Use add on. I used this code to add this feature. Now you can search images in Flickr, Open Clip Art and Wikimedia Commons and add them to your document. The license and attribution data will also be added with the image. This works on Writer Calc Impress and Draw.
+
+[caption id="" align="aligncenter" width="640" caption="Insert Clip Art from Open Clip Art"][![](InsertPicture.png)](http://picasaweb.google.com/akila.wajirasena/CreativeCommonsBlog#5473192775342969666)[/caption]
+
+**Support for OpenOffice Draw.**
+
+This task was included in developer challenges. This is the first task that I completed in the project. Now you can add visible license statement and the metadata to a draw document.
+
+[caption id="" align="aligncenter" width="640" caption="Support for Draw"][![](Draw.png)](http://picasaweb.google.com/akila.wajirasena/CreativeCommonsBlog#5473192774355267538)[/caption]
+
+**Showing a notification when opening CC licensed documents.**
+
+[caption id="" align="aligncenter" width="715" caption="License Notification"][![](Notification.png)](http://picasaweb.google.com/akila.wajirasena/CreativeCommonsBlog#5473192777594297474)[/caption]
+
+**Speed Up first time license insertion.**
+
+Now the RDF database will load to memory when open office starts but this will not freeze OpenOffice because it is done in a separate thread. So the initial license insertion delay which is due to RDF loading will no longer be there.
+
+**Auto update visible license notice when license changes.**
+
+In the previous version this worked only for writer documents. Now Calc, Impress and Draw also have this feature.
+
+**Adding RDF meta data.**
+
+This only works for Writer. Other OpenOffice applications doesn't support this currently.
+
+[caption id="" align="aligncenter" width="584" caption="RDF Metadata"][![](RDF.png)](http://picasaweb.google.com/akila.wajirasena/CreativeCommonsBlog#5473192782644041586)[/caption]
+
+This is what I've done so far. You can get the add on at <http://extensions.services.openoffice.org/en/project/ccoootest> and the check the source code at: <http://code.creativecommons.org/viewsvn/ccooo/branches/akila-gsoc-2010/>
+
+If you have any suggestions about this project (new functionalities, things you don’t like, etc) feel free to leave a comment. And if you found any bugs please let me know.
+
+---
+pub_date: 2010-05-20

@@ -1,0 +1,78 @@
+title: Converting cc.engine from ZPT to Jinja2 and i18n logical keys to english keys
+---
+categories:
+---
+author: cwebber
+---
+body:
+
+## Some CC-specfic background
+
+Right now I'm in the middle of retooling of our translation infrastructure. [cc.engine](http://code.creativecommons.org/viewgit/cc.engine.git/) and [related tools](/archives/old-tech-blog/entries/understanding-the-state-of-sanity-via-whiteboards-and-ascii-art/) have a long, complex history (dating back, as I understand, to [TCL](http://en.wikipedia.org/wiki/Tcl) scripts running on [AOL server](http://www.aolserver.com/) software). The short of it is, CC's tools have evolved a lot over the years, and sometimes we're left with systems and tools that require a lot of organization-specific knowledge for historical reasons.
+
+This has been the case with CC's translation tools. Most of the world these days uses english-key translations. CC used logical key translations. This means that if you marked up a bit of text for translation, instead of the key being the actual text being translated (such as "About The Licenses"), the key would be an identifier code which mapped to said english string, like "util.View_Legal_Code". What's the problem with this? Actually, there are a number of benefits that I'll miss and that I won't get into here, but the real problem is that the rest of the translation world mostly doesn't work this way. We use [Transifex](http://transifex.net) (and previously used [Pootle](http://translate.sourceforge.net/wiki/pootle/index?redirect=1)) as a tool for our translators managing our translations. Since these tools don't expect logical keys we had to write tools to convert from logical keys to english keys on upload and english keys to logical keys back and a whole bunch of other crazy custom tooling.
+
+Another time suck has been that we'd love to be able to just dynamically extract all translations from our python code and templates, but this also turns out to be impossible with our current setup. A strange edge-case in ZPT means that certain situations with dynamic attributes in ZPT-translated-HTML means that we have to edit certain translations after they're extracted, meaning we can't rely on an auto-extracted set of translations.
+
+So we'd like to move to a future with no or very few custom translation tools (which means we need English keys) and auto-extraction of translations (which means because of that edge case, no ZPT). Since we need to move to a new templating engine, I decided that we should go with my personal favorite templating engine, [Jinja2](http://jinja.pocoo.org/).
+
+## ZPT vs Jinja2
+
+Aside from the issue I've described above, briefly I'd like to describe the differences between ZPT and Jinja2, as they're actually my two favorite templating languages.
+
+[ZPT](http://zpt.sourceforge.net/) (Zope Page Templates) is an XML-based templating system where your tags and elements actually become part of the templating logic and structure. For example, here's an example of us looping over a list of license versions on our "helpful" 404 pages for when you type in the wrong license URL (like at <http://creativecommons.org/by/2.33333/>):
+    
+    
+      <h4>Were you looking for:</h4>
+    
+      <ul class="archives" id="suggested_licenses">
+        <li tal:repeat="license license_versions">
+          <a tal:attributes="href license/uri">
+            <b tal:content="python: license.title(target_lang)"></b>
+          </a>
+        </li>
+      </ul>
+    
+
+As you can see, the for loop, the attributes, and the content are actually elements of the (X)HTML tree. The neat thing about this is that you can be mostly sure that you won't end up with [tag soup](http://en.wikipedia.org/wiki/Tag_soup). It's also pretty neat conceptually.
+
+Now, let's look at the same segment of code in Jinja2:
+    
+    
+      <h4>Were you looking for:</h4>
+    
+      <ul class="archives" id="suggested_licenses">
+        {% for license in license_versions %}
+          <li>
+            <a href="{{ license.uri }}">
+              <b>{{ license.title(target_lang) }}</b>
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    
+
+If you've used [Django's templating system](https://docs.djangoproject.com/en/dev/topics/templates/) before, this should look very familiar, because that's the primary source of inspiration for Jinja2. There are a few things I like about Jinja2 though that Django's templating system doesn't have, but the biggest and clearest of these things is the ability to pass arguments into functions, as you can see that we're doing here with license.title(target_lang). Anyway, it massively beats making a template tag every time you want to pass an argument into a function.
+
+## The conversion process
+
+Not too much to say about converting from ZPT to Jinja2. It's really just a lot of manual work, combing through everything and moving it around.
+
+More interestingly might be our translation conversion process. Simply throwing out old translations and re-extracting with new ones is not an option... it's a lot of effort for translators to go through and translate things and asking them to do it all over again is simply too much to ask and just not going to happen. Pass 1 was to simply get the templates moved over rather than try to both convert templates and the logical->english key system all at once (this move away from logical keys has been tried and fizzled before, probably because there are simply too many moving parts across our codebase... so we wanted to take this incrementally, and this seemed like the best place to go first). We're simply doing stuff like this:
+    
+    
+      <h3>{{ cctrans(locale, "deed.retired")|safe }}</h3>
+    
+
+Where cctrans is a simple logical key translation function. Next steps:
+
+  * Create a script that converts all our .po files to eliminate the logical keys and move them to English-only.
+  * Write a script to auto-interpolate {{ cctrans() }} calls in templates to { % trans % }{ % endtrans % } Jinja2 tags.
+  * Do all the many manual changes to all our python codebases.
+
+
+
+At that point, we should be able to wrap this all up.
+
+---
+pub_date: 2011-09-02
