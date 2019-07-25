@@ -1,0 +1,69 @@
+title: Visualize CC Catalog data - data processing part 2
+---
+categories:
+announcements
+cc-catalog
+product
+gsoc
+gsoc-2019
+open-source
+---
+author: soccerdroid
+---
+pub_date: 2019-07-26 
+---
+body:
+
+This is a continuation of my last blog post about the data processing part of the CC-data catalog visualization project. I recommend you to read that [last post](https://opensource.creativecommons.org/blog/entries/cc-datacatalog-data-processing/) for a better understanding of what I'll explain here.
+
+
+### The data
+
+Every dataset needs a cleasing and pre processing operations before their analysis. In order to implement validations, I have to know first with what kind of inconsistencies I would deal with. Here are some interesting insights about the dataset:
+
+- There are several cases where the provider_domain has not referenced a correct cc_license path. We might say then, that not everybody has a clear understading of how to give CC license attributions correctly.
+- I found a case where the links json was malformed. It had a huge paragraph as key (instead of a domain). I wasn't expecting something like that hehe.
+- There are both types of entries, a provider domain with a small image quantity and a lot of links, and with a huge amount of images but few links. Some of the domains with a lot of images belong to online shops or news websites.
+
+Aside from the above, I have had to face with almost empty lines(meaning just a single column had information), columns bad separated (not a single but more than one tab between the columns), and some other usual problems of a real and non perfect dataset. I have made validations to catch these inconsistencies.
+
+### Nodes and links generation
+
+Force-d3 needs to be passed a single json file with two lists: one containing nodes id and information, and the other containing the links. They are both arrays of dictionaries. We have huge input files (and over 100 million unique domains in total). So in Pandas I need to build a dataframe of a tsv inout file using chunks. After all the processing operations, the final dataframe has source and target columns. The dataframe must be then transformed to a dictionary style, for which it also has to be processed in chunks. The challege I am facing now is to generate a list of unique nodes. Here is why this is a challenge:
+
+- In order to build the nodes list, I need to take into account both the source and target columns.
+- Take into account a source node can also be a target node.
+- I can delete duplicate entries per column, but as I process the data in chunks, my scope is limited to the chunk size.
+- A domain can be repeated not only within a chunk, but in different chunks too.
+
+ So as you can see, dealing with duplications is not that trivial when you have a lot of data. What I am going to try now is to analyze smaller files, in order to be able to keep the data in memory in a single dataframe. This may extend the data analysis, but it can smooth the coding complexity.
+
+### Considerations and future challenges
+
+I mentioned before that there are provider domains with a lot of images and a few links, and vice versa. As I still have to prune and filter data, I can develop a rule to exclude the domains that are not relevant to the graph. This relevance can be determined by the quantity of images and/or links. My thought with the rules are the following:
+
+- Exclude domains that have a lot of images but few links (less than 20 links).
+- Exclude domains that have few images(less than 100) and few links (less than 20)
+- Exclude domains that have no links (is not a targeted node).
+- Exclude domains that are social networks (Facebook, Instagram, Twitter), as they might not give relevant insights. Most of the references to these SN's are found because the provider domain gives the user the option to share a content.
+
+The thresholds for the quantity of images and links are my intuitions form having seen the data and manually checking some provider domains. If it is possible I could validate it with some data analysis (checking average, maximum and minimum values of the columns).
+
+### Coming soon
+
+- Extraction of unique nodes, and links.
+- Visualization with the data. 
+- Development or modification of pruning/filtering rules.
+
+You can follow the project development in the [Github repo](https://github.com/creativecommons/cccatalog-dataviz).
+
+CC Data Catalog Visualization is my GSoC 2019 project under the guidance of [Sophine
+Clachar](https://creativecommons.org/author/sclachar/), who has been greatly helpful and considerate since the GSoC application period. Also, my backup mentor, [Breno Ferreira](https://creativecommons.org/author/brenoferreira/), and engineering director [Kriti
+Godey](https://creativecommons.org/author/kriticreativecommons-org/), have been very supportive.
+
+Have a nice week!
+
+Maria
+
+
+
