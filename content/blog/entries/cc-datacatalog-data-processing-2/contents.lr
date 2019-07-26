@@ -19,7 +19,7 @@ This is a continuation of my last blog post about the data processing part of th
 
 ### The data
 
-Every dataset needs a cleasing and pre processing operations before their analysis. In order to implement validations, I have to know first with what kind of inconsistencies I would deal with. Here are some interesting insights about the dataset:
+Every dataset needs cleasing and pre processing operations before their analysis. In order to implement validations, I have to know first with what kind of inconsistencies I would deal with. Here are some interesting insights about the dataset:
 
 - There are several cases where the provider_domain has not referenced a correct cc_license path. We might say then, that not everybody has a clear understading of how to give CC license attributions correctly.
 - I found a case where the links json was malformed. It had a huge paragraph as key (instead of a domain). I wasn't expecting something like that hehe.
@@ -27,16 +27,27 @@ Every dataset needs a cleasing and pre processing operations before their analys
 
 Aside from the above, I have had to face with almost empty lines(meaning just a single column had information), columns bad separated (not a single but more than one tab between the columns), and some other usual problems of a real and non perfect dataset. I have made validations to catch these inconsistencies.
 
-### Nodes and links generation
+### Data aggregation
+It is needed to aggregate the data by provider_domain, in order to get the complete information of every node. Aggregating the images column is simple, as I only have to sum the values in that column. Now the links column is a little bit tricky to be aggregated. We have to remember that this field contains dictionaries, with domains as keys and the times they have been referenced to as values. So for aggregating this column, I need to:
+- Create an empty dictionary
+- Loop through every key and save it
+- If I face with a key that is already in the dictionary, just sum the value that I currently hold to the existing value in the dictionary.
 
-Force-d3 needs to be passed a single json file with two lists: one containing nodes id and information, and the other containing the links. They are both arrays of dictionaries. We have huge input files (and over 100 million unique domains in total). So in Pandas I need to build a dataframe of a tsv inout file using chunks. After all the processing operations, the final dataframe has source and target columns. The dataframe must be then transformed to a dictionary style, for which it also has to be processed in chunks. The challege I am facing now is to generate a list of unique nodes. Here is why this is a challenge:
+Then, I have to extract creativecommons from the final links dictionary, and put the value into another column, called _Licences\_qty_. This is because the quantity of links to [creativecommons.org](creativecommons.org) can tell us how many licenses the provider_domains uses.
 
-- In order to build the nodes list, I need to take into account both the source and target columns.
-- Take into account a source node can also be a target node.
-- I can delete duplicate entries per column, but as I process the data in chunks, my scope is limited to the chunk size.
-- A domain can be repeated not only within a chunk, but in different chunks too.
+We also need to aggregate the licences column. The goal is to have a data structure that contains the licenses types the provider_domain uses, and to know how many licenses per each license type the provider_domain has.
+To achieve this, I:
+- Create an empty dictionary of licences
+- For each license, create a tuple (license_name,version), which will be a key in the dictionary
+- Check if the key exists in the dictionary. If it doesn't, the key is added, with an initial value of 1, to the dictionary.
+- If the key exists, increment the value in 1.
 
- So as you can see, dealing with duplications is not that trivial when you have a lot of data. What I am going to try now is to analyze smaller files, in order to be able to keep the data in memory in a single dataframe. This may extend the data analysis, but it can smooth the coding complexity.
+At the end, we will have rows like the following:
+<div>
+<img src="row.png" alt="Example row of the processed dataset"/><br/>
+<small class="muted">Example row, with data aggregated. </small>
+</div>
+<br>
 
 ### Considerations and future challenges
 
@@ -47,7 +58,7 @@ I mentioned before that there are provider domains with a lot of images and a fe
 - Exclude domains that have no links (is not a targeted node).
 - Exclude domains that are social networks (Facebook, Instagram, Twitter), as they might not give relevant insights. Most of the references to these SN's are found because the provider domain gives the user the option to share a content.
 
-The thresholds for the quantity of images and links are my intuitions form having seen the data and manually checking some provider domains. If it is possible I could validate it with some data analysis (checking average, maximum and minimum values of the columns).
+The thresholds for the quantity of images and links are my intuitions from having seen the data and manually checking some provider domains. If it is possible I could validate it with some data analysis (checking average, maximum and minimum values of the columns).
 
 ### Coming soon
 
