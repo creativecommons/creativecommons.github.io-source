@@ -6,7 +6,13 @@ title: Join the CC Developer Community
 ---
 body:
 
-<p class="lead">Join our Slack, IRC, or mailing list communities to meet with other developers interested in Creative Commons, get feedback on your projects, and talk with CC's full-time engineering staff.</p>
+<p class="lead">Join our Slack, IRC, or mailing list communities to meet other developers interested in Creative Commons, get feedback on your projects, and talk with CC's full-time engineering staff. You can also keep up with us on the <a href="/blog">CC Open Source Blog</a> or via <a href="https://twitter.com/cc_opensource">Twitter</a>.</p>
+
+## Mailing Lists
+
+**CC Developers**: For general technical discussion open to all members. Join [on Google Groups](https://groups.google.com/a/creativecommons.org/forum/#!forum/cc-developers) or by sending an email to `cc-developers+subscribe@creativecommons.org`.
+
+**CC Usability Announcements**: Announcement-only list for users to sign up for usability testing. Join [on Google Groups](https://groups.google.com/a/creativecommons.org/forum/#!forum/usability-announce) or by sending an email to `usability-announce+subscribe@creativecommons.org`.
 
 ## Slack
 Creative Commons has a large Slack community with sub-communities for tech/developers (of course), the [CC Global Network](https://network.creativecommons.org/), specific countries, open education, GLAM, and more. It is open to the public and you can [sign up here](http://slack-signup.creativecommons.org/). If you're not familiar with Slack, please read ["Getting Started" on Slack's usage guide](https://get.slack.help/hc/en-us/categories/360000049043). Information on joining a specific channel is on ["Join a channel"](https://get.slack.help/hc/en-us/articles/205239967-Join-a-channel).
@@ -60,18 +66,12 @@ The channels most relevant to CC's developer community are:
   </tbody>
 </table>
 
-### Notes
+### Slack Tips
 - You will automatically join the `#general` and `#cc-announcements` channels when you sign in to Slack for the first time.
     - `#general` is for general purpose discussions relevant to CC.
     - `#cc-announcements` is reserved for important announcements from CC staff.
 - For more information about how Creative Commons uses Slack, see [the Slack page on the CC public wiki](https://wiki.creativecommons.org/wiki/Slack).
 - If you're looking to talk to someone on CC's full-time engineering staff, we are all in the Americas and you're most likely to find us on Slack between 11:00 and 23:00 UTC on weekdays.
-
-## Mailing List
-
-You can join the **active CC Developers mailing list [on Google Groups](https://groups.google.com/a/creativecommons.org/forum/#!forum/cc-developers)**.
-
-The archives of our previous developer mailing list are [here](https://lists.ibiblio.org/pipermail/cc-devel/).
 
 ## IRC
 Please join the `#creativecommons-dev` channel on [Freenode](https://freenode.net/). This channel is mirrored to the `#cc-developers` channel on Slack so that messages posted on Slack show up on IRC and vice-versa.

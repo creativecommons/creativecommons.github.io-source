@@ -85,8 +85,9 @@
                   <div class="dropdown-menu" aria-labelledby="navbarArchivesDropdown">
                     {% for href, title in [
                       ['/archives/old-tech-blog', 'CC Tech Blog (2007-2014)'],
+                      ['https://lists.ibiblio.org/pipermail/cc-devel/', 'cc-devel mailing list (2005-2015)'],
                     ] %}
-                      <a class="dropdown-item" href="{{ href|url }}">{{ title }}</a>
+                      <a class="dropdown-item" href="{{ href }}">{{ title }}</a>
                     {% endfor %}
                   </div>
                 </li>
