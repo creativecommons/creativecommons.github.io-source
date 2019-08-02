@@ -17,7 +17,7 @@ So if you're looking to integrate CC licenses or CC licensed works into your app
       <img class="mx-auto d-block" src="/comments-solid.png" alt="Community icon"/>
     </div>
     <div class="card-body" align="center">
-      <p class="card-text text-center">Join the CC developer chat and mailing list communities to sconnect with other developers working with CC tools.</p>
+      <p class="card-text text-center">Join the CC developer chat and mailing list communities to connect with other developers working with CC tools.</p>
       <a href="/community" class="btn btn-sm btn-outline-primary">See how to join</a>
     </div>
   </div>
