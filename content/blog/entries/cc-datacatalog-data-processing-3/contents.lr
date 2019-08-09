@@ -1,0 +1,69 @@
+title: Visualize CC Catalog data - data processing part 3
+---
+categories:
+announcements
+cc-catalog
+product
+gsoc
+gsoc-2019
+open-source
+---
+author: soccerdroid
+---
+pub_date: 2019-08-12 
+---
+body:
+
+This is a continuation of my last blog post about the data processing part 2 of the CC-data catalog visualization project. I recommend you to read that [last post](https://opensource.creativecommons.org/blog/entries/cc-datacatalog-data-processing-2/) for a better understanding of what I'll explain here.
+
+Hello! In this post I a going to talk you about the extraction of unique nodes, and links, and the visualization of the force-directed graph with the processed data. 
+
+### Nodes and links generation
+
+Force-d3 needs to be passed a single json file with two lists: one containing nodes id and information, and the other containing the links. They are both arrays of dictionaries. We have huge input files (and over 100 million unique domains in total). So in Pandas I need to build a DataFrame of a tsv inout file using chunks. After all the processing operations, the final DataFrame has source and target columns. The DataFrame must be then transformed to a dictionary style, for which it also has to be processed in chunks. The challege I am facing now is to generate a list of unique nodes. Here is why this is a challenge:
+
+- In order to build the nodes list, I need to take into account both the source and target columns.
+- Take into account a source node can also be a target node.
+- I can delete duplicate entries per column, but as I process the data in chunks, my scope is limited to the chunk size.
+- A domain can be repeated not only within a chunk, but in different chunks too.
+- Source and target must have licensed content
+
+So as you can see, dealing with duplications is not that trivial when you have a lot of data. Next what I tried was to analyze smaller files, in order to be able to keep the data in memory in a single DataFrame. So for each TSV file I had before, now I have several small TSV files. This may extend the data analysis, but it can smooth the coding complexity. 
+
+I first started by getting the source and target columns. I iterate through each row of the current DataFrame I have (the one with provider_domain, cc_licences, links column, etc), and by reading the _links_ column, I load the json of each row. For each key in the json, I create a new row with provider_domain as source, they key as target, and the value of the key as a _value_  feature. I append that new row to a new DataFrame. I build a new DataFrame each time I read a line, so I have a DataFrame with all the links of a single provider_domain. I save that DataFrame in a global list. When I finish riterating over the rows. I concatenate all the DataFrames saved in that list. That is how I get a new DataFrame containing all the existing links of the graph, with source, target and value columns. Yeih! 
+
+But there is still anothe thing to resolve: not all the domains that are in the target columns have licensed content.
+We need to exclude targets that do not have licensed content, because otherwise I will end up building a graph where not all the nodes are clickable (they won't have any pie chart to be visualized because they do not have any licensed content). So what I did was: take from our links DataFrame only the rows where the _target_ column values where also contained in the _provider\_domain_ column of our firt DataFrame. Because I know that all domains in the provider_domain column have licenses (they have a cc_licenses feature). Once I filter these rows, there is a reduction of about 90% percent of the total links!
+
+The visualization I get is the following:
+<div>
+<img src="graph.png" alt="Force-directed graph with the real data"/><br/>
+<small class="muted">Force-directed graph with the real data. </small>
+</div>
+<br>
+<div>
+<img src="graph-2.png" alt="Force-directed graph with the real data"/><br/>
+<small class="muted">Force-directed graph with the real data. </small>
+</div>
+<br>
+
+### Coming soon
+
+As you could visualize before, there are a lot of lonely nodes (nodes with no neighbors). My thoughts are to filter out the provider_domains that do not have a minimun quantity of licensed content. I will try with different values, say 500, 800, 1000  and see how the graph changes. I believe a lot of those nodes do not have a relevant amount of licensed content, so with this filter rule they will be gone.
+The other tasks left to do are:
+
+- Visualization of the pie chart
+- Development or modification of pruning/filtering rules.
+
+You can follow the project development in the [Github repo](https://github.com/creativecommons/cccatalog-dataviz).
+
+CC Data Catalog Visualization is my GSoC 2019 project under the guidance of [Sophine
+Clachar](https://creativecommons.org/author/sclachar/), who has been greatly helpful and considerate since the GSoC application period. Also, my backup mentor, [Breno Ferreira](https://creativecommons.org/author/brenoferreira/), and engineering director [Kriti
+Godey](https://creativecommons.org/author/kriticreativecommons-org/), have been very supportive.
+
+Have a nice week!
+
+Maria
+
+
+
