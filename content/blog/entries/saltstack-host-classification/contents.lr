@@ -1,0 +1,92 @@
+title: Host Classification with SaltStack
+---
+categories:
+SaltStack
+---
+author: TimidRobot
+---
+pub_date: 2019-07-31
+---
+body:
+
+
+Within infrastructure as code, as with all programming, there is a goal to
+reduce redundancy as much as possible. With configuration management,
+duplicated configurations can quickly lead to confusion and unexpected states.
+One of the key ways to reduce configuration duplication is robust host
+classification.
+
+
+### Minion Classification
+
+As this post is about SaltStack, the terms "minion classification" for "host
+classification" and "minion" for "host" are used. With Puppet, "node
+classification" and "node" would be used.
+
+Minion classification consists of rules that determine what a minion is and
+which states (or configurations) should be applied to it. Good minion
+classification removes or minimizes the necessity of explicitly assigning
+configurations to a minion. Our goal is for the computer to do as much of the
+work as possible.
+
+
+### Implementation
+
+Minions are added and configured from the primary salt server (called the
+salt-master) with the following Minion ID schema: **`HST__POD__LOC`**:
+
+1. **`HST`** is the hostname or role. It indications what services are running
+   on the host or the role that it serves.
+2. **`POD`** is the pod or group. It indicates the logical grouping of the
+   host.
+3. **`LOC`** is the location. It indicates where the host is.
+
+Examples:
+
+- `wordpress__prod__us-east-2`
+- `wordpress__stage__us-east-2`
+
+The Minion ID parts are matched against the following list. SaltStack pillar
+data, like Apache2, uses a last declared wins model. The following list is
+organized from least-specific to most-specific:
+
+1. `1_LOC` (location)
+2. `2_POD` (pod/group)
+3. `3_HST` (host/role)
+4. `4_POD__LOC` (pod/group and location)
+5. `5_HST__POD` (host/role and pod/group)
+
+Using our Minion ID examples above, this allows configuration data to be
+specified for both shared data (ex. WordPress security settings that should be
+applied to all WordPress hosts/roles) and specific data (ex. Let's Encrypt
+TLS/SSL settings).
+
+
+## Security
+
+*The only grain which can be safely used is `grains['id']` which contains the
+Minion ID.* ([FAQ Q.21][FAQ21])
+
+It is important to rely *only* on the Minion ID as all other grains can be
+manipulated by the client. This means a compromised client could change its
+grains to collect secrets if a dedicated grain (ex. `role`) was used for minion
+classification.
+
+
+### Imperfect Work in Progress
+
+This implementation has proven to be robust and helpful. However, there is
+still room for improvement. For example, I will probably refactor `HST` to
+`ROLE` and `POD` to `GRP` for added clarity.
+
+**Feedback and development is welcomed.**
+
+The [creativecommons/sre-salt-prime][sre-salt-prime-repo] repository is open
+source.
+
+This host classification is also documented within it: [sre-salt-prime/Host_Classification.md at master][host-class].
+
+
+[FAQ21]: https://docs.saltstack.com/en/latest/faq.html#is-targeting-using-grain-data-secure
+[sre-salt-prime-repo]:https://github.com/creativecommons/sre-salt-prime
+[host-class]: https://github.com/creativecommons/sre-salt-prime/blob/master/docs/Host_Classification.md
