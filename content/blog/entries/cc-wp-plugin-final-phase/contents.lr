@@ -1,0 +1,81 @@
+title: Creative Commons WordPress Plugin Final Phase
+---
+categories:
+cc-wp-plugin
+gsoc-2019
+gsoc
+open-source
+wordpress
+---
+author: ahmadbilaldev
+---
+pub_date: 2019-08-23
+---
+body:
+
+For the context, I am working with my mentor [Timid Robot](https://creativecommons.org/author/timidcreativecommons-org/) on Creative Commons WordPress Plugin in GSoC 2019. It is basically an attribution tool, allowing users to attribute their content and include a CC license on their WordPress website.
+
+GSoC is about to end, and I am excited that we have the plugin ready with all the possible attribution features.
+ We had a stable version of the plugin up and running in the last phase. This allowed us to use it and
+look for possible improvements and increments. We managed to get a handful of suggestions and feedback
+from some users, which turned out quite applicable. First, let's take a quick look at the releases in
+this phase and their changelogs.
+
+### Releases
+
+#### v2019.7.2
+
+- Bug fixes.
+- New license selection settings.
+- Old license chooser removed and plugin linked to the [current chooser](https://creativecommons.org/choose/)
+- Plugin settings page redesigned for better user experience.
+- New feature to add additional text after the license.
+- Gutenberg blocks for CC licenses redesigned.
+- Added customization settings for Gutenberg blocks for backend and front end.
+
+#### v2019.8.1
+
+- Re-wrote license widget for the plugin. Added option to display the default license
+ as a widget or in the footer.
+- Refactored and improved code quality.
+- Submitted plugin to WordPress.org for review.
+
+#### v2019.8.2
+
+- All necessary Default/Site license settings added.
+- Plugin settings page design completed.
+- Rich-text components added to previously static Gutenberg blocks converted to allow attribution of any content.
+- Gutenberg blocks redesigned to include settings.
+- Security improvements.
+- i18n improvements.
+- Minor bug fixes and refinements.
+
+### Blocks
+
+The CC blocks are now editable with a bunch of options. We integrated rich-text in each block, which
+ renders a rich content-editable input, providing users with the option to format the content.
+ This makes sure that the requirements of describing the title, author and the source
+ while using a CC licensed content can be met..
+
+![CC License Block](cc-block.png)
+
+### Re-designed Settings
+
+The redesigned plugin settings are straightforward and have every required field. We have added widget as a display
+option, which is much better than previous footer implementation.
+
+![Plugin Settings](settings-1.png)
+
+*Selecting a license is simple and quick with a link to the chooser*
+
+![Plugin Settings](settings-2.png)
+
+### What's next
+
+- Implement GitHub Actions or similar for automated deployment on release from GitHub to WordPress SVN directory.
+- Integrate WPGulp workflow and improve i18n.
+- Improve documentation with a visual walk-around of every feature.
+
+Thank you for reading. For more, see the [GitHub repository](https://github.com/creativecommons/wp-plugin-creativecommons).
+
+If you have any feedback or suggestions, let us know in the discussion on `#cc-dev-wordpress` Slack channel. Looking forward!
