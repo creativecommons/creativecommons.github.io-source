@@ -52,7 +52,7 @@
             "english_name": "CC Chooser",
             "featured": false,
             "id": 188122843,
-            "language": "HTML",
+            "language": "Vue",
             "license": {
                 "name": "MIT License",
                 "url": "https://github.com/creativecommons/cc-chooser/blob/master/LICENSE"
@@ -381,7 +381,7 @@
         },
         {
             "created": "2019-05-24T17:14:10",
-            "description": "CC Search Browser Extension [ WIP ] ",
+            "description": "Cross-Browser extension to search, filter and use images in the public domain and under Creative Commons licenses.",
             "engineering_project": true,
             "featured": false,
             "id": 188460712,
@@ -558,7 +558,7 @@
             "engineering_project": true,
             "featured": false,
             "id": 59230362,
-            "language": "JavaScript",
+            "language": "PHP",
             "license": {
                 "name": "GNU General Public License v2.0",
                 "url": "https://github.com/creativecommons/new-creativecommons.org/blob/master/LICENSE"
@@ -785,7 +785,7 @@
             "id": 22347352,
             "language": "PHP",
             "license": {
-                "name": "Other",
+                "name": "GNU General Public License v2.0",
                 "url": "https://github.com/creativecommons/wp-plugin-creativecommons/blob/master/license.txt"
             },
             "name": "wp-plugin-creativecommons",
