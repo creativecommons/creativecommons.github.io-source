@@ -1,0 +1,165 @@
+title: Introducing CC Search Extension
+---
+categories:
+gsoc
+gsoc-2019
+cc-browser-extension
+open-source
+announcements
+product
+---
+author: makkoncept
+---
+pub_date: 2019-09-03
+---
+body:
+
+
+The past three months of Google summer of code has been an amazing learning experience to say the least. I am thrilled to announce that [my GSoC project](https://github.com/creativecommons/ccsearch-browser-extension) was successfully completed and we were able to achieve more than we aimed for!
+
+<div style="text-align: center;">
+  <figure>
+    <img src="light-dark-mode.png"/>
+    <figcaption>
+      <em>
+        CC Search Browser Extension
+      </em>
+    </figcaption>
+  </figure>
+</div>
+
+### Installation
+
+The three extension stores of the browsers we were building support for have approved the extension 🎉
+
+Install the extension on your favorite browser from the following links:
+- **[Firefox Addon Store](https://addons.mozilla.org/en-US/firefox/addon/cc-search-extension/)**
+- **[Google Chrome store](https://chrome.google.com/webstore/detail/cc-search/agohkbfananbebiaphblgcfhcclklfnh)**
+- **[Opera Addon Store](https://addons.opera.com/en/extensions/details/cc-search/)**
+
+**Checkout [Join the community](#join-the-community).**
+
+### Features
+At inception, we thought that the extension would become a complementary plugin to the amazing [CC Search](https://search.creativecommons.org/) but now I can say with confidence that the extension has the potential to sketch an identity of itself.
+In this section, I will go through all the major features(exclusive of any technical jargon) of the extension.
+
+
+- **Search and filter CC Licensed content**  
+This feature is at the core and the extension does a good job. The searching and filtering is powered by [CC Catalog API](https://github.com/creativecommons/cccatalog-api) which exposes various endpoints to get search results and apply filters for providers, licenses, and use-case. This makes sure that you will find exactly what are you looking for.
+
+
+<div style="text-align: center;">
+  <figure>
+    <img src="minimal-ui.png"/>
+    <figcaption>
+      <em>
+        Bunch of features. Minimal interface.
+      </em>
+    </figcaption>
+  </figure>
+</div>
+
+- **One-click easy attribution:**  
+Attributing the owner of the image is as easy as it can get with one-click attribution. You can copy either the Rich-text or HTML version of the attribution to your clipboard by one-click.
+
+
+<div style="text-align: center;">
+  <figure>
+    <img src="search-images-attribution.png"/>
+    <figcaption>
+      <em>
+        Search CC License Images. Easy one-click attribution, image info, and share options.
+      </em>
+    </figcaption>
+  </figure>
+</div>
+
+
+- **Download images (and attribution):**  
+Download the image to use it in your works from the extension itself. You also have the option to download the attribution as a text file along with the image. This can be helpful when you want to download multiple images in a single session.
+
+  
+- **Bookmark images:**  
+Hovering over the image thumbnails and clicking the bookmark icon will save the images. This is perfect for shortlisting the images that you might find usefull in the future. You can view and remove your bookmarks from the bookmarks section.
+  
+<div style="text-align: center;">
+  <figure>
+    <img src="bookmarks.png"/>
+    <figcaption>
+      <em>
+        View saved images in Bookmark Section. Export and import bookmarks from the "Bookmarks" tab in the options page.
+      </em>
+    </figcaption>
+  </figure>
+</div>
+
+- **Export and import bookmarks.**  
+ As a user, you might want to easily archive and/or transfer your bookmarks. The extension goes one step ahead and gives you the feature of exporting and importing bookmarks.  This makes sure that the solution to archiving and transfer of bookmarks is uncomplicated and straightforward.
+  
+- **Sync your custom setting and bookmarks across devices.**  
+ The extension uses the in-build feature of chrome and firefox to sync your custom settings and bookmarks.  So you can be sure to have a familiar user experience across your devices.
+  
+- **Options-UI for custom settings.**  
+ The extension also has an options page where you can set default filters and settings. The options page helps in decluttering and making sure that the main popup of the extension remains minimal and holds only the most necessary information. This page will host most of the future features too.
+   
+<div style="text-align: center;">
+  <figure>
+    <img src="custom-filters.png"/>
+    <figcaption>
+      <em>
+        Add custom defaults from the options page.
+      </em>
+    </figcaption>
+  </figure>
+</div>
+
+
+- **Dark Mode.**  
+Because everyone loves dark mode! Save battery and go easy on your eyes.
+  
+<div style="text-align: center;">
+  <figure>
+    <img src="opera-light.png"/>
+    <figcaption>
+      <em>
+        Light mode.
+      </em>
+    </figcaption>
+  </figure>
+</div>
+ 
+<div style="text-align: center;">
+  <figure>
+    <img src="opera-dark.png"/>
+    <figcaption>
+      <em>
+        Dark Mode. Looks more cool if the browser is also in dark mode!
+      </em>
+    </figcaption>
+  </figure>
+</div>
+
+
+
+<div style="text-align: center;">
+  <figure>
+    <img src="about-page.png"/>
+    <figcaption>
+      <em>
+        About page of the extension.
+      </em>
+    </figcaption>
+  </figure>
+</div>
+
+
+### Join The Community
+
+We hope that you will give this a shot and maybe use it as your daily driver to search for images. There is so much more that we can do to improve and expand this project. Your help in form of [bug reports](https://github.com/creativecommons/ccsearch-browser-extension/blob/master/INSTRUCTIONS.md#reporting-bugs), [feature requests](https://github.com/creativecommons/ccsearch-browser-extension/blob/master/INSTRUCTIONS.md#feature-requests), [code contribution](https://github.com/creativecommons/ccsearch-browser-extension/blob/master/INSTRUCTIONS.md#contributing-code) will be of great importance in shaping the future of the extension.
+
+You can check out the [project on Github](https://github.com/creativecommons/ccsearch-browser-extension).
+
+Come and say hi to us on [slack](https://opensource.creativecommons.org/community/#slack) and tell about your experience with CC Search extension. The slack channel is `#gsoc-browser-ext`.
+
+
+*Special Thanks*:  [Alden](https://creativecommons.org/author/aldencreativecommons-org/), [Timid](https://creativecommons.org/author/timidcreativecommons-org/) and [Kriti](https://creativecommons.org/author/kriticreativecommons-org/)
