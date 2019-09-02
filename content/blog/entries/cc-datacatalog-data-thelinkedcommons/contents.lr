@@ -16,11 +16,11 @@ body:
 
 This is a continuation of my last blog post about the data processing part 3 of the CC-data catalog visualization project. I recommend you to read that [last post](https://opensource.creativecommons.org/blog/entries/cc-datacatalog-data-processing-3/) for a better understanding of what I'll explain here.
 
-Hello! In this last post, I am going to talk you about the pie chart visualization, and the final visualization tweaks. But first, I would like to talk about the data and share my recommendations.
+Hello! In this last post, I am going to talk you about the final visualization. First, I would like to talk about the data and share my recommendations.
 
 ### Creating a data-driven graph
 
-+250 million licensed content is a very big number. That is the amount of data I had to visualize for this GSoC project. And a graph is very sensitive to the amount of data. Let's talk about sensitivity as the property that a visualization has to look well-structured or deformed. Starting from thousands, a graph starts to look a bit messy, and as the amound of data increases, it starts to look more and more to a hairball. Take a look at the following examples:
++250 million licensed content is a very big number. That is the amount of data I had to visualize for this GSoC project. The graph is very sensitive to the amount of data. Let's talk about sensitivity as the property that a visualization has to look well-structured or tightly clustered like a hairball. The graph is less sensitive to the data if there are a few hundred or thousand nodes but as the amount of data increases it starts to look more and more like a hairball. Take a look at the following examples:
 
 
 <div>
@@ -36,7 +36,7 @@ Hello! In this last post, I am going to talk you about the pie chart visualizati
 <br>
 
 
-Moreover, any visualization library starts to render the elements slower, and at one point, it freezes. For the 100k nodes graph, the visualization took ages to appear and have some kind of shape. This was my major concern. That's why I decided to choose the top 500 domains from the processed data, as well as all the other domains those 500 nodes are connected to. This is also more user-friendly, because having the entire dataset will make the navigation through the graph very dizzy. Even with this smaller dataset, we could get valuable insights from the graph. We were able to find communities like the following:
+Moreover, any visualization library starts to render the elements slower, and at one point, it freezes. For the 100k nodes graph, the visualization took ages to appear and had the same clustered appearance. This was my major concern. That's why I decided to choose the top 500 domains from the processed data, as well as all the other domains those 500 nodes are connected to. This is also more user-friendly, because having the entire dataset will make the navigation through the graph very dizzy. Even with this smaller dataset, we could get valuable insights from the graph. We were able to find communities like the following:
 
 <div>
 <img src="community_graph_cc.png" alt="Libraries community"/><br/>
@@ -50,18 +50,7 @@ The final graph is interactive. Users can pan, zoom in and out, hover over a nod
 
 ### Pie chart visualization
 
-The pie charts are built using the [Highcarts library](https://www.highcharts.com/). The purpose of this chart is to show  to the public how each domain uses CC licenses. I spoke about this in my blog post: [Visualize CC Catalog data](https://opensource.creativecommons.org/blog/entries/cc-datacatalog-visualization/). 
-
-Each node has an attribute called _cc\_licenses_. This field contains a dictionary with the types of CC licenses as keys, and the amount of licenses as values. 
-Here is an image to illustrate the above:
-
-<div>
-<img src="cc_data.png" alt="cc_licenses dictionary"/><br/>
-<small class="muted">cc_licenses dictionary. </small>
-</div>
-<br>
-
-I use this information in order to build the pie chart. The final look of the pie chart for a node is the following:
+The pie charts are built using the [Highcarts library](https://www.highcharts.com/). The purpose of this chart is to show  to the public how each domain uses CC licenses. I spoke about this in my blog post: [Visualize CC Catalog data](https://opensource.creativecommons.org/blog/entries/cc-datacatalog-visualization/). Here is an image to illustrate the above:
 
 <div>
 <img src="pie_chart.png" alt="cc_licenses dictionary"/><br/>
@@ -80,7 +69,7 @@ I implemented the following:
 - The node size is proportional to the number of CC licensed content in each domain. 
 - When the user hovers over a node, a label with the domain name is displayed. This might sound redundant when you can see the node perfectly. But the graph is very big, and you will like to see it in a low zoom level in order to have a picture of the shape of the entire graph. This is when this functionality is useful, because you don't have to zoom in in order to see the name of a node. 
 - The force of a link between two nodes (_node A_ and _node B_) is given by the number of links _node A_ has that references _node B_.
-- When you hover over a node, you can also see the links to its neighbors higlighted, as well as the links to the neighbors of the neighbors. This feature make it pretty easy for you to find communities, and see how strongly connected a node is in the graph. 
+- When you hover over a node, you can also see the links to its neighbors highlighted, as well as the links to the neighbors of the neighbors. This feature make it pretty easy for you to find communities, and see how strongly connected a node is in the graph. 
 
 
 Here is the final visualization, using a sample data from one month of the Common Crawl data:
@@ -106,7 +95,7 @@ There are features that could be implemented in the future in order to reduce th
 - Given the suffix of the URLs of the *provider_domains*, we could try to find the country of origin, and so filter domains by country.
 
 
-### Check out our live demo!
+### Check out the live demo!
 
 [2D version] (http://ec2-3-80-82-250.compute-1.amazonaws.com/)
 
