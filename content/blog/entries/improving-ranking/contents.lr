@@ -1,0 +1,30 @@
+title: Some thoughts on improving the relevance of images in CC Search
+---
+categories:
+
+community
+open-source
+cc-search
+---
+author: aldenpage
+---
+pub_date: 2019-09-06
+---
+body:
+
+Like other image search services, CC Search matches queries with keywords in descriptive metadata derived from the source page of the image, including user-generated tags, the title of the image, the name of the author, and, if provided, a description of the image. Our search engine is able to sift through our collection of 325 million images to find positive matches.
+
+Finding images that match the user’s keywords is easy. The much more difficult problem is ranking the results in a meaningful way. Most search queries will have thousands or millions of potential matches. The user is only going to look at maybe the first few hundred results at most. Because of that, it’s important to make sure the best images are presented first. How do we determine which images are “the best”?
+
+With nothing except descriptive metadata, we have few options for ranking images. The basic premise behind the current ranking algorithm is that the more that the user’s keywords appear in the metadata, the more likely that the image is relevant to the user’s work. There are plenty of ways to fine-tune this approach by adjusting the impact of each metadata field, how these fields are interpreted during indexing and querying, and which matching algorithms are chosen for each field, but ultimately, the ranking is still based off of a very limited amount of information. These fields tell us that an image is a plausible result for a search, but does nothing to tell us about the quality of the image. The end result is that our ranking algorithm will treat a blurry amateur photo on someone’s Flickr photo stream the same as a work by a master painter, as long as the keywords match. In an environment where we could hand-curate every work in our database, this would be acceptable; in the real world, where a lot of low-effort stuff gets uploaded to the internet, we need to find a way to separate the wheat from the chaff.
+
+How can we figure out which images are “significant”? That’s a fuzzy qualitative measure that we won’t be able to teach a computer to judge. Instead, we have to find some metrics that can act as a proxy for significance. Popularity and provenance seem like two promising indicators.
+
+What makes an image popular? Other search engines have solved this problem using PageRank, which uses the number of links to a page across the internet as an indicator that a result is high-quality. In our case, PageRank might not be as applicable, as our images tend to be sourced from a small number of trusted domains; instead of ranking entire websites, we need to rank individual images. Still, the basic idea of using popularity as a ranking factor sounds like a good idea. How can we use that for our case? What other factors can we use to determine whether an image should be given preferential treatment over others? Here’s a few possible ideas:
+
+How popular is this image on its original platform? For images from social sites, how many people are following the author? Has anybody added the image to their favorites, or does it have a particularly large number of views? Has it been “liked” a lot by its users? For images from Wikimedia Commons, how many articles reference the image?
+Is the image from a high-quality curated collection like the MET Museum, or from a social media website where the quality is more variable?
+Using computer vision technology, can we determine anything else about the image? Is it a painting or a drawing? Is the image an overly compressed 50x50 JPG? Can we detect that it’s blurry? 
+
+All of these metrics can be hooked up to our search engine and used as factors in ranking images. I expect that this will go a long way in boosting the most interesting CC images to the top and generally increase the quality of our search results.
+
