@@ -22,9 +22,9 @@ How can we figure out which images are “significant”? That’s a fuzzy quali
 
 What makes an image popular? Other search engines have solved this problem using PageRank, which uses the number of links to a page across the internet as an indicator that a result is high-quality. In our case, PageRank might not be as applicable, as our images tend to be sourced from a small number of trusted domains; instead of ranking entire websites, we need to rank individual images. Still, the basic idea of using popularity as a ranking factor sounds like a good idea. How can we use that for our case? What other factors can we use to determine whether an image should be given preferential treatment over others? Here’s a few possible ideas:
 
-How popular is this image on its original platform? For images from social sites, how many people are following the author? Has anybody added the image to their favorites, or does it have a particularly large number of views? Has it been “liked” a lot by its users? For images from Wikimedia Commons, how many articles reference the image?
-Is the image from a high-quality curated collection like the MET Museum, or from a social media website where the quality is more variable?
-Using computer vision technology, can we determine anything else about the image? Is it a painting or a drawing? Is the image an overly compressed 50x50 JPG? Can we detect that it’s blurry? 
+- How popular is this image on its original platform? For images from social sites, how many people are following the author? Has anybody added the image to their favorites, or does it have a particularly large number of views? Has it been “liked” a lot by its users? For images from Wikimedia Commons, how many articles reference the image?
+- Is the image from a high-quality curated collection like the MET Museum, or from a social media website where the quality is more variable?
+- Using computer vision technology, can we determine anything else about the image? Is it a painting or a drawing? Is the image an overly compressed 50x50 JPG? Can we detect that it’s blurry? 
 
 All of these metrics can be hooked up to our search engine and used as factors in ranking images. I expect that this will go a long way in boosting the most interesting CC images to the top and generally increase the quality of our search results.
 
