@@ -67,23 +67,11 @@
                     {% endfor %}
                   </div>
                 </li>
-                <li class="nav-item dropdown {% if this.is_child_of('/gsoc-2019') %} active{% endif%}">
-                  <a class="nav-link" href="#" id="navbarGSoCDropdown" role="button">GSoC 2019</a>
-                  <div class="dropdown-menu" aria-labelledby="navbarGSoCDropdown">
-                    {% for href, title in [
-                      ['/gsoc-2019', 'General Information'],
-                      ['/gsoc-2019/project-ideas/all', 'Project Ideas'],
-                      ['/gsoc-2019/student-expectations', 'Student Expectations'],
-                      ['/gsoc-2019/application-instructions', 'Application Instructions'],
-                    ] %}
-                      <a class="dropdown-item" href="{{ href|url }}">{{ title }}</a>
-                    {% endfor %}
-                  </div>
-                </li>
                 <li class="nav-item dropdown {% if this.is_child_of('/archives') %} active{% endif%}">
                   <a class="nav-link" href="#" id="navbarArchivesDropdown" role="button">Archives</a>
                   <div class="dropdown-menu" aria-labelledby="navbarArchivesDropdown">
                     {% for href, title in [
+                      ['/gsoc-2019', 'GSoC 2019'],
                       ['/archives/old-tech-blog', 'CC Tech Blog (2007-2014)'],
                       ['https://lists.ibiblio.org/pipermail/cc-devel/', 'cc-devel mailing list (2005-2015)'],
                     ] %}
