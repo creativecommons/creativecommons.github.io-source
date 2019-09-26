@@ -11,22 +11,23 @@ pub_date: 2019-09-25
 ---
 body:
 The [CC Global Network](https://network.creativecommons.org) website is the face of our global community; it is the home for a community of advocates, activists, scholars, artists, and users working to strengthen the Commons worldwide.
-One of our organizational goals regarding the global network is to “create value for members, toward impact at global scale” and that’s why we plan this redesign.
+One of our organizational goals regarding the global network is to “create value for members, toward impact at global scale” and that’s why we plan on redesigning the Global Network website.
 
 ## Increase value for members
-When we think of a website focused on members and their possible needs we have to think about how users different users interact with the website. We established 3 differents users/personas:
+When we think of a website focused on members and their possible needs, we have to think about how different users interact with the website. We established three differents users/personas:
 
-- *Not logged in users:* looking for global network general information or how to begin the sign up process
-- *Logged in but not approved yet*: these users will probably will be looking for information about the membership approval current status
-- *Logged in and approved members*: will look into the site mainly for search and to contact other members
+- *Not logged in users:* users looking for global network general information or how to begin the sign up process
+- *Logged in but not approved yet*: users looking for information about their membership approval status
+- *Logged in and approved members*: users utilizing the site’s search function and contacting other members
 
-Keeping this in mind, 3 differents homepages were designed according to each identified profile.
+
+Keeping this in mind, three differents homepages were designed according to each identified profile.
 
 ![CCGN differents homepages](blog-ccgn-home.png)
 
 ## Improved user search
 
-We listened to the community feedback and developed a major revamp of the member section. We improved the member list and the search section by adding useful filters to find specific people or group of people from a certain country or speaking a specific language.
+We listened to the community feedback and developed a major revamp of the member section. We improved the member list and the search section by adding useful filters to help identify specific people or groups of people based on a range of factors, such as nationality or language.
 
 ![User search filters](user-search.png)
 
@@ -38,11 +39,11 @@ Member profiles were redesigned to take advantage of the current metadata of use
 
 ## Chapters section
 
-Giving more visibility for the local chapters infrastructure, this entire section was redesigned considering the global network reach over the world and the ability to easily search for details and specific chapters. The new interface supports switching between the map and the sortable list.
+Giving more visibility for the local chapters’ infrastructure, this entire section was redesigned considering the network’s global reach and the necessity of easily searching for details and specific chapters. The new interface supports switching between the map and the sortable list.
 
 ![Map from chapters around the world](chapters-map.png)
 ![Chapters list with details](chapters-list.png)
 
 ## Keeping forward the global network website
 
-This is certainly not the end, we're always working on giving the members a better experience and also fixing bugs. If you have any feedback, feature request, or bug report please feel free to [open an issue](https://github.com/creativecommons/commoners/issues) in the [Commoners repository](https://github.com/creativecommons/commoners) on Github or reach out on Slack.
+This is certainly not the end of our revamp of the CC Global Network website, we're always working on giving the members a better experience by fixing bugs and updating the interface. If you have any feedback, feature request, or bug report please feel free to [open an issue](https://github.com/creativecommons/commoners/issues) in the [Commoners repository](https://github.com/creativecommons/commoners) on Github or reach out to us on Slack.
