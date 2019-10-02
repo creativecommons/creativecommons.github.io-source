@@ -40,8 +40,8 @@ The channels most relevant to CC's developer community are:
       <td>Discussion related to <a href="https://github.com/creativecommons/cc-link-checker">the CC automated link checker</a></td>
     </tr>
     <tr>
-      <td><code>#cc-gsoc</code</td>
-      <td>General Google Summer of Code related discussion</td>
+      <td><code>#cc-gsoc-outreachy</code</td>
+      <td>General Google Summer of Code and Outreachy related discussion</td>
     </tr>
     <tr>
       <td><code>#cc-usability</code</td>
@@ -62,10 +62,6 @@ The channels most relevant to CC's developer community are:
     <tr>
       <td><code>#gsoc-license-chooser</code</td>
       <td>Discussion related to the <a href="https://github.com/creativecommons/cc-chooser">new CC license chooser</a> (a <a href="/gsoc-2019/">GSoC 2019</a> project)</td>
-    </tr>
-    <tr>
-      <td><code>#cc-gsoc-outreachy</code</td>
-      <td>Slack channel dedicated to <a href="https://app.slack.com/client/T2BQ14ZC6">Outreachy applicant contributions</a> </td>
     </tr>
   </tbody>
 </table>
