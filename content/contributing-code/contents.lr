@@ -40,7 +40,7 @@ Even if you're not done with the issue, create a [draft pull request](https://he
 
 ### Proposing a new issue
 
-If you want to work on something that there is no GitHub issue for, then propose the change in [one of our community forums](/community) or create a a new GitHub issue associated with the relevant repository amd propose your change there. Be sure to include implementation details and the rationale for the proposed change.
+If you want to work on something that there is no GitHub issue for, then propose the change in [one of our community forums](/community) or create a a new GitHub issue associated with the relevant repository and propose your change there. Be sure to include implementation details and the rationale for the proposed change.
 
 If the project has a roadmap documented in the README, checking the roadmap to see if the feature is already in our pipeline would be a good first step.
 
