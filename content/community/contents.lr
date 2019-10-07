@@ -48,7 +48,7 @@ The channels most relevant to CC's developer community are:
       <td>General usability discussions, seeking feedback on new releases of CC products from the community</td>
     </tr>
     <tr>
-      <td><code>#cc-dev-browser-ext</code</td>
+      <td><code>#cc-dev-browser-extension</code</td>
       <td>Discussion related to the <a href="https://github.com/creativecommons/ccsearch-browser-extension">CC Search browser extension</a>.</td>
     </tr>
     <tr>
@@ -65,11 +65,11 @@ The channels most relevant to CC's developer community are:
     </tr>
     <tr>
       <td><code>#cc-outreachy-platform-toolkit</code</td>
-      <td>Discussion related to <a href="https://github.com/creativecommons/mp">CC Tookit</a>.</td>
+      <td>Discussion related to the <a href="https://github.com/creativecommons/mp">CC Platform Tookit</a> Outreachy project.</td>
     </tr>        
      <tr>
       <td><code>#cc-outreachy-faq</code</td>
-      <td>Discussion related to the <a href="https://github.com/creativecommons/faq/">CC FAQ</a>.</td>
+      <td>Discussion related to the <a href="https://github.com/creativecommons/faq/">CC FAQ</a> Outreachy project.</td>
     </tr>      
   </tbody>
 </table>
