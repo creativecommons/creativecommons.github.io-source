@@ -67,6 +67,9 @@
                     {% endfor %}
                   </div>
                 </li>
+                <li class="nav-item{% if this.is_child_of('/programs/outreachy/') %} active{% endif%}">
+                  <a class="nav-link" href="{{ '/programs/outreachy/2019-12-start'|url }}">Outreachy</a>
+                </li>
                 <li class="nav-item dropdown {% if this.is_child_of('/archives') %} active{% endif%}">
                   <a class="nav-link" href="#" id="navbarArchivesDropdown" role="button">Archives</a>
                   <div class="dropdown-menu" aria-labelledby="navbarArchivesDropdown">

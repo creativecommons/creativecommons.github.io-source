@@ -1,0 +1,86 @@
+_model: page
+---
+_template: page-with-toc.html
+---
+title: Information for Potential Outreachy Applicants
+---
+body:
+
+Creative Commons is participating in Outreachy's round of internships running from **Dec 2019 to Mar 2020**. Please see **[the official Outreachy Creative Commons internship page](https://www.outreachy.org/december-2019-to-march-2020-internship-round/communities/creative-commons/#better-visualization-tools-for-the-cc-network)** for project-specific information. Some general information and tips are below.
+
+### Contacting Mentors
+
+All the CC Outreachy mentors are on [Slack](/community). **Please use public channels on Slack as the primary method of communication.** Public channels are better than direct messages because it allows any available mentor (or even another applicant) to answer your questions and interact with you. It also allows other applicants who have the same questions to benefit from the answers the mentor is giving you.
+
+Remember that the mentors are busy – they're all either full time students or work at Creative Commons. It's good to follow up if you don't get a response, but wait a couple of days first.
+
+### Contributing
+
+Before you contribute, read a little bit about Creative Commons and what we do. We're not simply an open source software project like many other Outreachy mentorship organization – we're a nonprofit organization and we do a lot of different things. Some of the projects we are mentoring are not software related at all (although some are quite technical). Feel free to ask us questions about what we do, our various programs, our licenses, and so on. There is a lot about us out there. You'll need to know a lot about us in order to help us effectively, especially if you're looking to contribute to projects like the FAQ or the Platform Toolkit.
+
+If you're contributing to a more technical project, please read our [Contributing Code](/contributing-code) page. Keep in mind that you can record any contribution to any Creative Commons project as an Outreachy contribution as long as it is accepted – it does not have to be to the same repository as the project you're applying to.
+
+### Project List
+
+Here's a quick reference of the projects, their mentors (plus their roles on the project), and the specific Slack channel for the project (if any).
+
+<table class="table table-sm table-striped">
+  <thead class="thead-light">
+    <tr>
+      <th scope="col">Project</th>
+      <th scope="col">Mentors</th>
+      <th scope="col">Slack Channel</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Extend the scope and/or usage of CC Vocabulary</td>
+      <td><code>@dhruvkb</code> (technical), <code>@hugo</code> (technical)</td>
+      <td><code>#cc-dev-cc-vocabulary</code></td>
+    </tr>
+    <tr>
+      <td>Improving the Creative Commons License Chooser</td>
+      <td><code>@Ari</code> (technical), <code>@kriti</code> (technical)</td>
+      <td><code>#cc-dev-license-chooser</code></td>
+    </tr>
+    <tr>
+      <td>Revamp CC's Platform Toolkit guide for platforms interested in offering CC licenses to users</td>
+      <td><code>@eric</code> (content), <code>@kriti</code> (technical)</td>
+      <td><code>#cc-outreachy-platform-toolkit</code></td>
+    </tr>
+    <tr>
+      <td>Revamp the Creative Commons FAQ so that it's easier to use</td>
+      <td><code>@eric</code> (content), <code>@mari</code> (content), <code>@kriti</code> (technical), <code>@hugo</code> (technical)</td>
+      <td><code>#cc-outreachy-faq</code></td>
+    </tr>
+    <tr>
+      <td>Supercharge our Elasticsearch indexer</td>
+      <td><code>@aldenpage</code> (technical), <code>@Maria Belen Guaranda</code> (technical)</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Revamp the workflow and design of our legal tools</td>
+      <td><code>@kriti</code> (technical), <code>@shinchpearson</code> (legal)</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Better visualization tools for the CC Network</td>
+      <td><code>@hugo</code> (technical), <code>@claudio</code> (CC Network)</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Create a QR code generator to attribute projects with CC licenses</td>
+      <td><code>@hugo</code> (technical), <code>@aldenpage</code> (technical)</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
+
+### Intern Selection Criteria
+
+Interns will be selected based on our confidence that they will be able to get the project completed and will be a good long term member of the community. We will evaluate a combination of:
+* Project timeline and plan submitted as part of the application
+* General understanding of goals of the project and goals of Creative Commons
+* History of contributions and quality of past work
+* General frequency and quality of communication
+* Good community behavior and participation e.g. history of helping others
