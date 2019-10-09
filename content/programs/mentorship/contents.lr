@@ -1,0 +1,58 @@
+_model: page
+---
+_template: page-with-toc.html
+---
+title: Open Source Program Mentorship Guide
+---
+body:
+
+CC participates in open source mentorship programs such as Google Summer of Code and Outreachy. Both CC staff and community members are welcome to mentor projects. More details about specific programs and rounds will be announced separately; this page serves as a general mentorship guide.
+
+## Proposing a Project
+
+Mentorship is a serious commitment but a very rewarding experience. If you'd like to mentor, you need to decide what project you'd like to mentor or join a project that someone else is mentoring.
+
+*More about this stage coming soon.*
+
+## Application Period
+
+Once the initial application period opens, things get chaotic for a little bit as hundreds of applicants investigate various open source communities to try and contribute to them and find a good fit for an internship. There are a lot of emails, Slack messages, GitHub comments, and so on. This stage of the program is the most intense and lasts about a month (although the first few days are the most overwhelming).
+
+Some tips:
+- Be prepared for this ahead of time.
+- Have a good, well-documented set of tasks suitable for first-time contributors that you can point people to.
+- Point people to public channels and away from email and DMs so that others can answer questions too.
+- You will get a lot of low effort questions like "how do I get started" – ask for more details. You cannot spend 20 minutes helping every single person because there are far too many people, so help them help themselves.
+- Prepare general documentation/frequently asked questions ahead of time.
+
+### Application
+
+You should encourage applicants to share drafts of the application with you ahead of time. Using a Google Doc with comment permissions enabled is probably the easiest way to achieve collaboration. Focus on making sure that their understanding of the project, the project plan, timeline, and deliverables match what you had in mind and is feasible (keeping in mind that they may be new to all this and may not get things done as quickly).
+
+## Internship Period
+
+### Pre-Internship
+
+* Talk to your co-mentors ahead of your time to create a plan for how to collaborate – will one of you be the primary mentor or will all of you be equally involved? How will checkins and notes work?
+
+* If your project affects or involves anyone else at CC that's not a co-mentor, talk to them about how they would like to be involved and come up with a plan to collaborate.
+
+### Internship
+
+* Reach out to your mentee ASAP after the internships are announced.
+
+* Get the mentees’ T-shirt size and address ASAP and send it to the program coordinator (we will be sending each mentee some CC goodies).
+
+* Review the proposal again and ensure that the implementation details and weekly deliverables are feasible and well thought-out. There are probably some things that could be clarified or changed – work with the mentee to fix these items before any work is actually started.
+
+* Have an introductory call with the mentee and get to know each other. Ask them questions about themselves and talk about yourself too.
+
+* Set up regular meetings: a weekly video call for the mentors to check-in with the mentee, and a monthly call with the coordinator to check in with the mentee.
+
+* Create a document to keep any project information and notes. This document should be shared with the program coordinators.
+   * the “final” implementation plan and weekly milestones (“final” because it is subject to change during the coding period based on progress)
+   * the mentee’s contact information and emergency contact
+   * all meeting notes
+   * any other project-relevant information.
+
+*More coming soon*
