@@ -105,3 +105,8 @@ Our main activities in Greek School Network and Networking Technologies Director
 
 <span id="footnote-3"></span>**[3] <https://blogs.sch.gr>**  
 The plugin was originally developed for <https://blogs.sch.gr>, which is the free blogging platform for all Greek teachers, students, and school units. The blogs.sch.gr is a service of Greek School Network**<sup><a href="#footnote-2">[2]</a></sup>** (https://www.sch.gr/en). It hosts more than 50.000 blogs and users. It is built and maintained by the Greek School Network and Networking Technologies Directorate of CTI.
+
+---
+excerpt: After the plugin’s activation, when the user writes a post, an **“Image with CC licence”** button is added above the post editor area and as an option into the “Add Media” pop-up window.
+---
+featured_image: 02.png

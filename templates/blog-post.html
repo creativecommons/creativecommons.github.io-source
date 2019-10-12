@@ -3,13 +3,6 @@
 {% from "macros/author_name.html" import render_author_name %}
 
 {% set author = this.parent.parent.children.get('authors').children.get(this.author) %}
-
-{% block og_url%}{{ this|url(external=true) }}{% endblock %}
-{% block og_title%}{{ this.title }}{% endblock %}
-{% block og_description%}{{ this.excerpt }}{% endblock %}
-{% set image = this.attachments.get(this.featured_image) %}
-{% block og_image%}{{ image.thumbnail(800,600,crop=true)|url(external=true) }}{% endblock %}
-
 {% block title %}{{ this.title }}{% endblock %}
 {% block header %}{{ this.parent.title }}{% endblock %}
 {% block body %}

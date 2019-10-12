@@ -5,6 +5,22 @@
 <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet"> 
 <link rel="stylesheet" href="{{ '/static/gen/style.css'|url }}">
+<meta property="og:site_name" content="Creative Commons" />
+<meta property="og:title" content="{{ this.title }}" />
+<meta property="og:description" content="{{ this.excerpt }}" />
+<meta property="og:url" content="{{ this|url }}" />
+<meta property="og:type" content="article" />
+<meta property="og:image" content="{{ this.attachments.get(this.featured_image)|url }}" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="{{ this.title }}">
+<meta name="twitter:description" content="{{ this.excerpt }}">
+<meta name="twitter:image" content="{{ this.attachments.get(this.featured_image)|url(external=true) }}">
+<meta name="twitter:site" content="@creativecommons">
+<meta name="twitter:creator" content="@creativecommons">
+<meta itemprop="name" content="Creative Commons">
+<html itemscope itemtype="{{ this.title }}">
+<meta itemprop="description" content="{{ this.excerpt }}">
+<meta itemprop="image" content="{{ this.attachments.get(this.featured_image)|url(external=true) }}">
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
