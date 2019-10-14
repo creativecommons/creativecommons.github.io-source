@@ -31,8 +31,16 @@
         
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav">
-                <li class="nav-item{% if this._path == '/' %} active{% endif%}">
-                  <a class="nav-link" href="{{ '/'|url }}">Home</a>
+                <li class="nav-item dropdown{% if this._path == '/' %} active{% endif%}">
+                  <a class="nav-link" href="#" id="navbarHomeDropdown" role="button">Home</a>
+                  <div class="dropdown-menu" aria-labelledby="navbarHomeDropdown">
+                    {% for href, title in [
+                      ['https://creativecommons.org', 'Creative Commons'],
+                      ['/', 'Creative Commons Open Source'],
+                    ] %}
+                      <a href="{{ href }}" class="dropdown-item">{{ title }}</a>
+                    {% endfor %}
+                  </div>
                 </li>
                 <li class="nav-item dropdown {% if this.is_child_of('/contributing-code') %} active{% endif%}">
                   <a class="nav-link" href="#" id="navbarContributingCodeDropdown" role="button">Contributing Code</a>
