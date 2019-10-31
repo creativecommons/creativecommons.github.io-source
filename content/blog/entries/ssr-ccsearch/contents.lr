@@ -20,7 +20,7 @@ While easier to implement initially, when we needed to ship the initial versions
  
 2. Empty HTML page: When the initial HTML sent by the server is empty, meaning no visual elements, any internet bots that parse a page HTML wouldn't work properly, that is: SEO, social media websites (when users share a link to CC Search on Twitter or Facebook, those nice previews wouldn't work), the Web Archive, etc..
  
-So on -date- we deployed our first release of CC Search with Server Side Rendering. You can see the work that went into it on this [Pull Request on Github](https://github.com/creativecommons/cccatalog-frontend/pull/411).
+So on July 26th we deployed our first release of CC Search with Server Side Rendering. You can see the work that went into it on this [Pull Request on Github](https://github.com/creativecommons/cccatalog-frontend/pull/411).
  
 My goal with this blog post will be to explain some of the challenges that we faced while both coding the SSR support on the VueJS codebase and also the operations side with deployment and maintenance.
  
