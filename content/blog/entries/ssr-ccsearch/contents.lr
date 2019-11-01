@@ -1,0 +1,91 @@
+title: Server Side Rendering with Vue.JS on CC Search
+---
+categories:
+cc-search
+tech
+---
+author: brenoferreira
+---
+pub_date: 2019-10-31
+---
+body:
+ 
+The frontend of CC Search is built with Vue.JS, which is a Javascript library for managing and rendering DOM elements in the browser, similar to React and Angular. But, as it is usually the case with applications built with those libraries, the application was rendered completely on the users' browser. It means that when users loaded CC Search, the server would send a blank HTML page and some Javascript files that would be downloaded by the user. Only once those JS assets were loaded and parsed, would the rendering begin.
+ 
+While easier to implement initially, when we needed to ship the initial versions of CC Search faster to validate our ideas, this approach has some significant disadvantages:
+ 
+1. Performance: The page initially loaded doesn't contain any visual elements. The user still has to download a few KBs of JS, which have to be parsed and interpreted by the browser before anything is rendered. On faster connections and devices, this performance hit can be negligible, but on slower and older devices and slow mobile networks, this can degrade performance significantly.
+ 
+2. Empty HTML page: When the initial HTML sent by the server is empty, meaning no visual elements, any internet bots that parse a page HTML wouldn't work properly, that is: SEO, social media websites (when users share a link to CC Search on Twitter or Facebook, those nice previews wouldn't work), the Web Archive, etc..
+ 
+So on July 26th we deployed our first release of CC Search with Server Side Rendering. You can see the work that went into it on this [Pull Request on Github](https://github.com/creativecommons/cccatalog-frontend/pull/411).
+ 
+My goal with this blog post will be to explain some of the challenges that we faced while both coding the SSR support on the VueJS codebase and also the operations side with deployment and maintenance.
+ 
+If you are interested in learning how to do SSR with VueJS, I highly recommend reading its [documentation first](https://ssr.vuejs.org/), as it provides a really helpful and comprehensive getting started guide.
+ 
+## Initial coding challenges
+ 
+Browser specific APIs
+ 
+A few modules and components of CC Search have dependencies on browser specific APIs, such as the `window` and `document` objects. This causes a problem with SSR because on the server, the Vue application is running on a Node.JS environment where those APIs don't exist. Therefore we need to do a couple of things to remove all possible calls to these APIs on the server. We adopted a few different strategies depending on each case.
+ 
+On some cases, a simple check for undefined values is sufficient, for example:
+ 
+```
+const queryParams = !(typeof window === 'undefined') ? window.location.search : '';
+```
+_link to change diff [here](https://github.com/creativecommons/cccatalog-frontend/pull/411/files#diff-e3b1ca4ad5a207c170c97a435b3d1ff3L15)_
+ 
+There were also cases of components that accessed browser APIs directly on, for example, `computed` values. Since those values are eagerly evaluated during render of a component, it would break on server rendering.
+ 
+The solution adopted was to set those values on the `mounted` lifecycle method, which runs exclusively on the browser, not on the server. For example:
+ 
+```
+mounted() {
+  // for SSR, sets the value with window.location, which is only available on client
+  this.shareURL = window.location.href;
+}
+```
+_link to change diff [here](https://github.com/creativecommons/cccatalog-frontend/pull/411/files#diff-f987cb63f02cb3471ab3cfae238746f7R37)_
+ 
+But there was a more complicated case in which we had dependencies to visual components which in turn depended on these browser APIs to render. One in particular was the image search result grid, which is a responsive grid layout that fits all images nicely on whatever screen size the users have.
+ 
+One of the cases, we had a dependency tree that looked like this:
+ 
+```
+- BrowsePage
+  - SearchGrid
+    - GridLayoutComponent // specific component with browser API render dependency
+```
+ 
+A few other page components also depended on this `GridLayoutComponent` component. Our solution was to split the higher level components into server and client versions. The browser version would render the search grid, and the server version wouldn't.
+ 
+You can an example of this case with the client version of the component [here](https://github.com/creativecommons/cccatalog-frontend/pull/411/commits/d3e05c01262d4fbc5bed1eceb1c256fc8da9ea80#diff-15c47fe052b8e07589e6cd5c7ce126fe) and the server version [here](https://github.com/creativecommons/cccatalog-frontend/pull/411/commits/d3e05c01262d4fbc5bed1eceb1c256fc8da9ea80#diff-9bfa3295d81a84c0fee1b5af98992561). We used a mixin to provide the component interaction logic [here](https://github.com/creativecommons/cccatalog-frontend/pull/411/commits/d3e05c01262d4fbc5bed1eceb1c256fc8da9ea80#diff-b4102772ceac63ff8d35545a2d003200).
+ 
+Since we had different components, we also needed different routers that mapped to the [server](https://github.com/creativecommons/cccatalog-frontend/pull/411/files#diff-96a7306e1ed8bbbc4982aac42b5ef8df) and [client](https://github.com/creativecommons/cccatalog-frontend/pull/411/files#diff-9b23694ae94e6ff902037f3d79772bae) components.
+ 
+## Deployment
+ 
+One thing we did, and still do, is build the assets for both server and client rendering. One reason is that we need both anyways, because on the client we need to do something called [client side hydration](https://ssr.vuejs.org/guide/hydration.html), and also because if there's a problem on the server renderer that breaks our production environment, we can easily revert back to the old way of serving an empty HTML page and do client side rendering and keep CC Search up. We had to do that on the first few days after the initial deployment when we identified a few problems. I'll cover some of them below.
+ 
+## Optimizations
+ 
+### Micro cache
+ 
+Soon after we deployed the initial release of SSR, we noticed that our Node servers were sometimes crashing, for memory exhaustion reasons, or sometimes taking too long to respond due to GC running. It seems that rendering Vue apps has a [high memory footprint from components and their Virtual DOM Nodes](https://ssr.vuejs.org/guide/caching.html#page-level-caching). Because of that, we decided to adopt a micro-caching of every server response, as you can see [here](https://github.com/creativecommons/cccatalog-frontend/pull/475/commits/aa5ee97101d38443416ef19a954dff63031e293a). Important caveat: no CC Search page has user specific content. They all serve the same content, no matter which user requests it. So that makes it trivial to cache the responses, since the response never changes for individual users. If that were the case, we either wouldn't be able to cache the response or only cache some request responses but not others.
+ 
+After implementing this cache, we saw that the memory consumption dropped dramatically and response times were now constant of a few milliseconds. Node wasn't crashing because it ran out of memory and GC wasn't being triggered as much lowering response times.
+ 
+### Not loading data twice
+ 
+Another optimization was to not repeat requests, which were made on the server, again on the client.
+One example is the [image details page](https://ccsearch.creativecommons.org/photos/df2e7f75-7fe9-457b-a58f-edc1833a1ed8). The image can be loaded both on the server and the client, but we don't want the user to request the image data if it was already loaded on the server.
+ 
+We did this by using the `serverPrefetch` method to load the data on the server, but on the client, in the `mounted` method, we check if the data isn't already available before making the request. You can see how that works [here](https://github.com/creativecommons/cccatalog-frontend/pull/411/files#diff-e33cf6c2e6f63a3ac958ac500eeabcaaR87).
+ 
+## Future improvements
+ 
+As said before, we have a dependency on a component that uses browser APIs which doesn't work on the server side. That dependency is [Masonry Layout](https://github.com/shershen08/vue-masonry). And because of that, we had to split components and router into server and client versions.
+ 
+To remove that complexity, we will probably try to use a pure-CSS approach to generate the responsive grid, as described in [this issue on Github](https://github.com/creativecommons/cccatalog-frontend/issues/489). If that doesn't work, we'll use something like [vue-client-only](https://github.com/egoist/vue-client-only).
