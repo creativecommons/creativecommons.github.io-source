@@ -88,6 +88,13 @@ Here's how the code is structured in the top level of the repository:
 [lektortemplate]:https://www.getlektor.com/docs/templates/
 
 
+## Redirects
+
+- `/cc-vocabulary/` to https://cc-vocabulary.netlify.com/
+  - Added so that the `opensource.creativecommons.org/cc-vocabulary/` will
+    continue to work with that project moving to utilize Netlify.
+
+
 ## License
 
 - [`LICENSE`](LICENSE) (Expat/[MIT][mit] License)
