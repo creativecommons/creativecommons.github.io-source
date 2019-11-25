@@ -1,0 +1,56 @@
+title: Empowering Collaboration in the Common
+---
+categories:
+open-source
+community
+---
+author: TimidRobot
+---
+pub_date: 2019-11-25
+---
+body:
+
+In the past few months I have been privileged to attend [Wikimania
+2019][wikimania2019] and the Google Summer of Code [2019 Mentor
+Summit][gsoc2019summit]. At these events I was overwhelmed with the amount of
+care and effort people are putting into their projects and communities.
+
+At Wikimania 2019, I was impressed with how much overlap there is between the
+Creative Commons and Wikimedia communities. Both communities are actively
+engaged in expanding the content and participation in the commons--in the
+collection and communities empowered by open content. I have a lot of hope in
+what existing and future collaborations will allow. At the conference, I got to
+see just the tip of the iceberg representing volunteers’ work across the globe.
+I hope we at Creative Commons can continue to keep the demands of our daily
+workloads in perspective and increase collaboration with the global effort.
+
+At the GSoC 2019 Mentor Summit I was able to attend a good number of sessions
+on increasing and maintaining participation. Based on the session discussions
+and the work already being done by other organizations, I expect we’ll pursue
+the following strategies:
+
+- Improved support for first timers--people who are engaging with code
+  repositories for the first time
+
+  - Improve tagging of issues
+  - Dedicated documentation
+
+- Improve support for GSoC and Outreachy program applicants
+
+  - Provide application templates
+
+- Participate in social media networks to actively recruit groups who are
+  underrepresented in FOSS (free and open source software)
+- Collect anonymous demographic data 
+
+A couple of organization examples:
+
+- Public Lab: [Community toolbox][communitytoolbox]
+- Python Software Foundation: [Python GSoC – Home][pythongsoc]
+
+Thank you to the community and the work you’re doing <3
+
+[wikimania2019]: https://wikimania.wikimedia.org/wiki/2019:Program
+[gsoc2019summit]: https://sites.google.com/view/gsoc-mentorsummit2019/home
+[communitytoolbox]: https://code.publiclab.org/
+[pythongsoc]: https://python-gsoc.org/index.html
