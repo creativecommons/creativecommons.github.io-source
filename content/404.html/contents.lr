@@ -2,4 +2,3 @@ _model: page
 ---
 _template: 404.html
 ---
-title: 404 Error: Page Not Found
