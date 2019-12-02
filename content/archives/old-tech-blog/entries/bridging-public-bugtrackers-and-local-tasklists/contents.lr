@@ -32,15 +32,15 @@ Anyway, enough talk, let's give it a spin. You'll need a recent version org-mode
 
 Next open up the relevant org-mode file. Move to the "Roundup" line, hit Tab to cycle its visibility, and move to the line that starts with "#+call:"
 
-[![](cc_blog_ccommons_screenshot1.png)](http://labs.creativecommons.org/files/2010/11/cc_blog_ccommons_screenshot1.png)
+[![](cc_blog_ccommons_screenshot1.png)](cc_blog_ccommons_screenshot1.png)
 
 Now press "Ctrl+c Ctrl+c". You'll see it populate with issues from [my issues list](http://code.creativecommons.org/issues/issue?status=-1,1,2,3,4,5,6,7&@sort=-activity&@search_text=&@dispname=Your%20Issues&@filter=status,assignedto&@group=priority&@columns=id,activity,title,creator,status&assignedto=40&@pagesize=50&@startwith=0):
 
-[![](cc_blog_ccommons_screenshot2.png)](http://labs.creativecommons.org/files/2010/11/cc_blog_ccommons_screenshot2.png)
+[![](cc_blog_ccommons_screenshot2.png)](cc_blog_ccommons_screenshot2.png)
 
 What's happening here? So we're executing an org-babel block at point. [Org-babel](http://orgmode.org/worg/org-contrib/babel/intro.php) is an org-mode extension that allows you to make blocks of code executable, and even chain from one language to another (it also has some stuff relevant to Donald Knuth's "literate programming" which is cool but I'm not using here). If we look at the code blocks:
 
-[![](cc_blog_ccommons_screenshot3.png)](http://labs.creativecommons.org/files/2010/11/cc_blog_ccommons_screenshot3.png)
+[![](cc_blog_ccommons_screenshot3.png)](cc_blog_ccommons_screenshot3.png)
 
 Anyway, there are three code blocks here.
 

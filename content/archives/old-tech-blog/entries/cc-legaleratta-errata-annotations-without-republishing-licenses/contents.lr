@@ -6,7 +6,7 @@ author: lunpa
 ---
 body:
 
-[![Screenshot of the errata tool.](errata_highlighted1.png)](http://labs.creativecommons.org/files/2012/02/errata_highlighted1.png)
+[![Screenshot of the errata tool.](errata_highlighted1.png)](errata_highlighted1.png)
 
 The html for the legalcode pages cannot be changed once they are published. The reason for this is because we provide sha1 hashes of them so that they may be redistributed. It also is a reason of credibility; that the license you've applied to your work today will still be the same one tomorrow. However, sometimes there are errors. They need to be accessible, yet they usually are too small to merit releasing a new version of the license.
 
