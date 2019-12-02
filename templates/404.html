@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+{% block body %}
+<style>
+.page-title
+{
+border-bottom-style:none !important;
+}
+.section{
+  padding: 4rem 2rem;
+}
+.section .error{
+  font-weight:bold;
+  font-size: 10rem;
+  color: #ed592f;
+  text-shadow: 
+    1px 1px 1px #000,    
+    2px 2px 1px #000,
+    3px 3px 1px #000,
+    4px 4px 1px #000,
+    5px 5px 1px #000,
+    6px 6px 1px #000,
+    7px 7px 1px #000,
+    8px 8px 1px #000;
+}
+.page{
+  margin-bottom: 1rem;
+  font-size: 20px;
+  font-weight: 600;
+  color: #444;
+}
+.btn
+{
+margin:6px;
+font-weight:bold;
+}
+</style>
+<div class="section text-center">
+  <h1 class="error">404</h1>
+  <h2 style="margin:0px">Page Not Found!</h2>
+  <div class="page">Sorry. The page you are looking for doesn't exist.</div>
+  <a class="btn text-white" href="https://opensource.creativecommons.org/" style="background-color:#ed592f">Return Home</a>
+ <a class="btn text-white" href="https://creativecommons.org/about/contact/" style="background-color:#ed592f">Contact Us</a>
+</div>
+<!-- Creative commons -->
+{% endblock %}
