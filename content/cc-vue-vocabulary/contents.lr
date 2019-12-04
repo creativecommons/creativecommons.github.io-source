@@ -1,0 +1,5 @@
+_model: redirect
+---
+target: https://cc-vue-vocabulary.netlify.com/
+---
+_discoverable: no
