@@ -93,6 +93,12 @@ Here's how the code is structured in the top level of the repository:
 - `/cc-vocabulary/` to https://cc-vocabulary.netlify.com/
   - Added so that the `opensource.creativecommons.org/cc-vocabulary/` will
     continue to work with that project moving to utilize Netlify.
+- `/cc-vue-vocabulary` to https://cc-vue-vocabulary.netlify.com/
+  - Added so that the `opensource.creativecommons.org/cc-vue-vocabulary/` will
+    continue to work with that project moving to utilize Netlify.
+- `/cc-fonts` to https://cc-fonts.netlify.com/
+  - Added so that the `opensource.creativecommons.org/cc-fonts/` will
+    continue to work with that project moving to utilize Netlify.
 
 
 ## License
