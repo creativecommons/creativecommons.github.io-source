@@ -12,7 +12,7 @@ pub_date: 2019-12-11
 ---
 body:
 
-With CC Search, we want to make it possible to search all of the estimated 1.6 billion Creative Commons works on the internet. In order to make it possible for thousands of people to search billions of records in a reasonable period of time, we have to build a big inverted index (a data structure similar to the index in the back of a textbook), which allows very fast lookups of documents related to the user’s search query. To populate this index, we have to build a large database of Creative Commons works and then replicate it to our search index, which is powered by Elasticsearch.
+With [CC Search](https://search.creativecommons.org), we want to make it possible to search all of the estimated 1.6 billion Creative Commons works on the internet. In order to make it possible for thousands of people to search billions of records in a reasonable period of time, we have to build a big inverted index (a data structure similar to the index in the back of a textbook), which allows very fast lookups of documents related to the user’s search query. To populate this index, we have to build a large database of Creative Commons works and then replicate it to our search index, which is powered by Elasticsearch.
 
 It turns out that, once your search index contains more than just a few million documents, maintaining the index is a non-trivial problem. Some of the concerns we had for our implementation:
 
