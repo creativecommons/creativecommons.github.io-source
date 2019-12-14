@@ -17,7 +17,7 @@
   <header class="main-header">
     <div class="container-fluid">
       <div class="row justify-content-md-center">
-        <div class="col-9">
+        <div class="col-lg-9 col-md-9 col-sm-12">
           <nav class="navbar navbar-expand-xl navbar-dark" name="top">
             {% set cc_logo = site.get('/').attachments.get('cclogo.svg') %}
             <a class="navbar-brand" href="{{ '/'|url }}">
@@ -93,7 +93,7 @@
   </header>
   <div class="container-fluid page-content">
     <div class="row justify-content-md-center">
-      <div class="col-9 content-wrap">
+      <div class="col-lg-9 col-md-9 col-sm-12 content-wrap">
         <div class="page py-3">
           <h1 class="page-title pb-3 mb-4">{% block header %}{{ this.title }}{% endblock %}</h1>
           {% block body %}{% endblock %}
@@ -105,7 +105,7 @@
   <footer class="main-footer bg-dark">
     <div class="container-fluid">
       <div class="row justify-content-md-center">
-        <div class="col-9 footer text-light py-4 px-3">
+        <div class="col-lg-9 col-md-9 col-sm-12 footer text-light py-4 px-3">
           <small>
             <p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License"
                   style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a></p>
