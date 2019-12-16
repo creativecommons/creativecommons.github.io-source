@@ -2,11 +2,12 @@ title: CC Platform Toolkit Revamp
 ---
 categories:
 community
-open-source
+platform-toolkit
+outreachy
 ---
 author: apdsrocha
 ---
-pub_date: 2019-12-17
+pub_date: 2019-12-16
 ---
 body:
 I've just finished my second week as an intern for CC (part of the Outreachy program 2019-2020 round), helping revamp the [Platform Toolkit](https://creativecommons.org/platform/toolkit/) and it's been a great learning experience so far. 
