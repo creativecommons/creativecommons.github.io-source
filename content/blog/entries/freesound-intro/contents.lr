@@ -67,8 +67,6 @@ The Freesound API is a very powerful tool to facilitate the reuse of Freesound c
 
 The audio content hosted in Freesound has a second life outside the website. It is very hard to track all the projects in which Freesound content is used, but with 50k unique visits per day, the accumulated millions and millions of download records and the integration with 3rd party applications, it becomes clear that **Freesound is spreading Creative Commons audio virtually everywhere**. Some users choose to use the Freesound forums to [explain the work they do using Freesound sounds](https://freesound.org/forum/your-work-made-with-freesounds/), including music, videogames, animations, movies, theater plays, education, etc. Unfortunately this is just a small minority of users. To try to keep track of some of the applications, research proejcts and other initiatives that use Freesound content, the [Freesound Labs](https://labs.freesound.org) platform was introduced back in 2015. Currently it lists more than 40 projects and over 50 research papers using Freesound data. Some of these projects include **CTAG's Strämpler**, an eurorack sample streaming and sound synthesis module; **Spotify's Sountrap**, an online DAW with direct integration of Freesound search; **Le Sound's AudioTexture**, a granular synthetizer that transforms Freesound clips; and **Freesound Explorer**, a visual interface for exploring Freesound in a 2-dimensional space and create music at the same time. 
 
-
-
 <img src="strampler.png" width=500px/><br>
 [Strämpler](https://www.creative-technologies.de/ctag-strampler-a-eurorack-sample-streaming-and-sound-synthesis-module/
 ) (see [video here](https://www.youtube.com/watch?v=zmj8tKPHV8g))
@@ -82,8 +80,6 @@ The audio content hosted in Freesound has a second life outside the website. It 
 <img src="freesound_explorer2.png" width=500px/><br>
 [Freesound Explorer](http://labs.freesound.org/fse/)
 
-
-
 ### Under the hood
 
 Both the Freesound website and API run on a modern technology stack which was built with high load and scalability in mind. Below is a diagram with the main blocks of the architecture. The main website consists of a [Django](https://www.djangoproject.com) application and HTML/CSS/JS frontend connected to a [PostgreSQL](https://www.postgresql.org) database. This implements sound browsing and basic social interaction features (forum, sound comments, sound ratings, private messaging, etc.). Text indexing is supported by an Apache [Solr](https://lucene.apache.org/solr/) server including text descriptions and tags, which allows for sophisticated sound text queries using the Solr query syntax. A distributed architecture is used for processing incoming sounds, producing compressed previews and waveform/spectrogram images (using Python's [Pillow](https://pillow.readthedocs.io/en/stable/) package), as well as for audio feature extraction. Feature extraction and the similarity search service are supported with the abovementioned Essentia library. Finally, Freesound uses [NGINX](https://www.nginx.com) webserver to serve the Django app and static content in the appservers, and [HAProxy](http://www.haproxy.org) loadbalancers to balance the load of incoming requests across the appservers.
@@ -91,4 +87,3 @@ Both the Freesound website and API run on a modern technology stack which was bu
 ![Freesound technical diagram](diagram.png)
 
 The code of the Freesound website is **open source**, and all development happens in our [public source code repository](https://github.com/mtg/freesound/). External contributions are welcome so if you want to participate don't hesitate to get in touch with us. Of course if you're not interested in devleopment but still want to contribute to Freesound you can upload sounds or [consider making a donation](https://freesound.org/donations/donate/) :) 
-
