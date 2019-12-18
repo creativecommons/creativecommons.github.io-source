@@ -8,16 +8,6 @@
 {% block header %}{{ this.parent.title }}{% endblock %}
 {% block body %}
   <h2 class="mb-0">{{ this.title }}</h2>
-  {% if this.series|length %}
-  <div class="card bg-light">
-    <div class="card-body p-2">
-    <p class="meta my-0"><span class="mr-2"><strong>This blog is part of the series :</strong></span>
-       <a href="/blog/series/{{this.series}}/">{{ this.series }}</a>
-    </p>
-    </div>
-  </div>
- {% endif %}
-
   {{ check_file('content' + this.parent.parent.path + '/authors/' + this.author + '/contents.lr') }}
   <p class="meta text-muted mt-0">by <a href="{{ author|url }}">{{ render_author_name(author) }}</a>
   on {{ this.pub_date|dateformat('EEEE, yyyy-''MM-d') }}</p>
