@@ -2,25 +2,28 @@
 
 {% from "macros/author_name.html" import render_author_name %}
 
+{% from "macros/posts.html" import render_posts %}
+
 {% set author = this.parent.parent.children.get('authors').children.get(this.author) %}
+
+{% set series = this.parent.parent.children.get('series').children.get(this.series) %}
 
 {% block title %}{{ this.title }}{% endblock %}
 {% block header %}{{ this.parent.title }}{% endblock %}
 {% block body %}
   <h2 class="mb-0">{{ this.title }}</h2>
+  {{ check_file('content' + this.parent.parent.path + '/authors/' + this.author + '/contents.lr') }}
+  <p class="meta text-muted mt-0 mb-2">by <a href="{{ author|url }}">{{ render_author_name(author) }}</a>
+  on {{ this.pub_date|dateformat('EEEE, yyyy-''MM-d') }}</p>
   {% if this.series|length %}
-  <div class="card bg-light">
+  <div class="card bg-light mb-2">
     <div class="card-body p-2">
-    <p class="meta my-0"><span class="mr-2"><strong>This blog is part of the series :</strong></span>
-       <a href="/blog/series/{{this.series}}/">{{ this.series }}</a>
+    <p class="meta my-0"><span class="mr-2"><strong>This blog is part of the series:</strong></span>
+       <a href="#series">{{ this.series }}</a>
     </p>
     </div>
   </div>
  {% endif %}
-
-  {{ check_file('content' + this.parent.parent.path + '/authors/' + this.author + '/contents.lr') }}
-  <p class="meta text-muted mt-0">by <a href="{{ author|url }}">{{ render_author_name(author) }}</a>
-  on {{ this.pub_date|dateformat('EEEE, yyyy-''MM-d') }}</p>
   <div class="body">{{ this.body }}</div>
   <div class="card bg-light">
     <div class="card-body p-2">
@@ -37,5 +40,30 @@
       </p>
     </div>
   </div>
+{% if this.series|length %}
+<table class="table table-sm table-striped mt-3" id="series">
+<thead class="thead-dark">
+<tr>
+<th>
+All posts under the Series "<span style="font-size:1.15rem">{{ this.series }}<span>"
+</th>
+</tr>
+</thead>
+<tbody>
+{% for post in series.children %}
+      {% set author = post.parent.parent.children.get('authors').children.get(post.author) %}
+      <tr>
+        <td>
+        <a href="{{ post|url }}">{{ post.title }}</a>
+        <p class="text-muted small">by <a href="{{ author|url }}">{{ render_author_name(author) }}</a>
+          on {{ post.pub_date|dateformat("YYYY-MM-dd") }}</p>
+        </td>
+     </tr>
+    {% endfor %}
+</tbody>
+</table>
+  <hr>
+  Check out  <strong><a href="/blog/series/">All Series</a></strong>
+{% endif %}
   <div class="comments">{{ render_disqus_comments() }}</div>
 {% endblock %}
