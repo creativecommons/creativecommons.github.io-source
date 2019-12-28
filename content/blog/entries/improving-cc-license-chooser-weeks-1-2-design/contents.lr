@@ -1,0 +1,74 @@
+title: Improving CC License Chooser Weeks 1-2: Design
+---
+author: obulat
+---
+categories:
+
+outreachy
+cc-license-chooser
+---
+pub_date: 2019-12-28
+---
+body:
+Creative Commons License Chooser has been helping creators to choose the most appropriate license for their work for a long time. As anything on the web, it needs updating. One of my mentors, [Ari Madian](https://opensource.creativecommons.org/blog/authors/akmadian/), has created the new version of this chooser as part of his 2019 GSoC Project. As a 2019-2020 Outreachy intern, I will be working on making it production-ready. The goals of my internship include:
+
+- Improving usability of the Chooser and making it easier for licensors to understand the process of selecting the most appropriate license.
+- Setting up and automating internalization.
+- Extracting License Chooser as a standalone npm package to make integrating Creative Commons licensing in other websites easier.
+
+During the first two weeks of my internship I mainly worked on redesigning the license selection process based on the usability testing feedback. We decided to set up license selection as a step-by-step process of answering yes/no questions guiding a novice or somewhat experienced user to the CC license that best suits their needs.
+
+----
+
+### **Here is the first draft:**
+
+![draft-1.png](draft-1.png)
+
+*Features of this draft that stayed in current version:*
+- A card to show the information about currently selected license is prominent on the page.
+- Four yes/no questions that help narrow the license choice.
+
+*What was changed in final version:*
+- The openness scale (which is drawn incorrectly, by the way) took up too much space on the first screen, not adding as much to the process.
+- Toggles as an answer to yes/no questions are confusing for some users.
+- Separate Personalization step was moved together with other steps.
+- License attribution information was merged with the selected license card, because the card is supposed to contain all the information about selected license, including author/work url/ source url, if they are available.
+
+----
+
+### **Draft 2**
+
+As a result of continuous communication with my mentors, I this draft to be discussed at our weekly meeting.
+
+![draft-2.png](draft-2.png)
+
+*Features that stayed in the current version:*
+- Two cards: one for the step-by-step process and the other for presenting license information.
+- All the information about selected license in the second card.
+- Personalization step as the last and optional step of choosing the license.
+
+*Features that were suggested during the meeting:*
+- License selection dropdown with all available licenses on the selected license card. This is for experienced users who know what license they want to choose and only need to add details, or copy the attribution text or html.
+- A link to a page with more information on how to use the license when sharing on the selected license card: for users who need help with that.
+----
+
+### **Currently Final Draft :)**
+
+![draft-3.png](draft-3.png)
+
+#### **License Chooser Stepper Card**
+
+- Stepper Card shows five steps to selecting a license, one for each feature of CC licenses and an optional personalization step. The stepper icons show current selection status: selected/unselected features and current feature being displayed. Clicking on an icon opens the corresponding step.
+- Each license feature has a yes/no question. A user clicks on a yes or no button to answer, and can immediately see what changed in the license, and the text beneath the buttons shows what current selection of the feature actually means. Default answer for each step besides the first one (attribution - 'BY') is 'no', so if a user simply clicks 'next' on each step, or clicks on the last step icon at the top, they get CC BY 4.0 license.
+
+#### **Selected License Card**
+
+- Current selection dropdown is for experienced users who can quickly select a license that they know they want to use. It also updates when a feature in the license selection process is changed.
+- Selected license information displays information about the license and its clauses, as well as its icons. The wording of this part will probably change the most after discussion with the community and legal team.
+- Attribution information for the license, with a choice between rich text or html code. These are displayed in tabs to save on space. 
+
+I created the wireframes in Figma, and I tried to integrate CC Vocabulary elements as much as possible.
+
+Next steps for my project will include coding to update the license chooser Vue.js project, and iterating over the design based on community feedback.
+
+You can follow my work at [https://github.com/creativecommons/cc-chooser](https://github.com/creativecommons/cc-chooser).
