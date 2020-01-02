@@ -5,7 +5,7 @@
 {% block title %}{{ this.name + ' - ' + this.parent.parent.children.get('entries').title }}{% endblock %}
 {% block header %}{{ this.parent.parent.children.get('entries').title }}{% endblock %}
 {% block body %}
-  <h2>All posts in Series "{{ this.name }}"</h2>
+  <h2>All posts in series "{{ this.name }}"</h2>
   {{ render_posts(this.children) }}
   <hr>
   <strong><a href="{{ this.parent|url }}">All Series</a></strong>
