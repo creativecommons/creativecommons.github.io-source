@@ -5,9 +5,9 @@ author: obulat
 categories:
 
 outreachy
-cc-license-chooser
+cc-chooser
 ---
-pub_date: 2019-12-28
+pub_date: 2020-01-06
 ---
 body:
 Creative Commons License Chooser has been helping creators to choose the most appropriate license for their work for a long time. As anything on the web, it needs updating. One of my mentors, [Ari Madian](https://opensource.creativecommons.org/blog/authors/akmadian/), has created the new version of this chooser as part of his 2019 GSoC Project. As a 2019-2020 Outreachy intern, I will be working on making it production-ready. The goals of my internship include:
