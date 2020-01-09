@@ -139,31 +139,6 @@
             "website": "http://resources.creativecommons.org/"
         },
         {
-            "created": "2019-05-24T16:49:48",
-            "description": "CC Vocabulary is a cohesive design system to unite the web facing Creative Commons",
-            "engineering_project": true,
-            "english_name": "CC Vocabulary",
-            "featured": false,
-            "id": 188457696,
-            "language": "Vue",
-            "license": {
-                "name": "MIT License",
-                "url": "https://github.com/creativecommons/cc-vocabulary/blob/master/LICENSE"
-            },
-            "name": "cc-vocabulary",
-            "technologies": [
-                "JavaScript",
-                "Vue",
-                "Webpack",
-                "Babel",
-                "Stylus",
-                "Styleguidist",
-                "Theo"
-            ],
-            "url": "https://github.com/creativecommons/cc-vocabulary",
-            "website": "https://opensource.creativecommons.org/cc-vocabulary/"
-        },
-        {
             "created": "2015-07-15T18:24:37",
             "description": "WordPress theme used on creativecommons.org",
             "engineering_project": true,
@@ -255,7 +230,7 @@
             },
             "name": "cc.licenserdf",
             "url": "https://github.com/creativecommons/cc.licenserdf",
-            "website": null
+            "website": "https://creativecommons.org/ns"
         },
         {
             "created": "2017-07-12T18:01:30",
@@ -275,7 +250,7 @@
                 "Apache Spark"
             ],
             "url": "https://github.com/creativecommons/cccatalog",
-            "website": null
+            "website": ""
         },
         {
             "created": "2018-04-27T20:50:37",
@@ -474,7 +449,7 @@
         },
         {
             "created": "2013-10-31T00:19:22",
-            "description": "creativecommons.org license chooser and license display code",
+            "description": "Website parent project, legalcode and translations, and GitHub Issues for public help and support",
             "engineering_project": true,
             "english_name": "License chooser and license display code",
             "featured": false,
@@ -490,7 +465,7 @@
                 "bash"
             ],
             "url": "https://github.com/creativecommons/creativecommons.org",
-            "website": "https://github.com/creativecommons/new-creativecommons.org"
+            "website": "https://creativecommons.org/"
         },
         {
             "created": "2015-12-14T23:19:08",
@@ -506,6 +481,25 @@
             "name": "faq",
             "url": "https://github.com/creativecommons/faq",
             "website": "https://creativecommons.org/faq/"
+        },
+        {
+            "created": "2019-11-25T17:30:19",
+            "description": null,
+            "engineering_project": true,
+            "english_name": "CC Fonts",
+            "featured": false,
+            "id": 224004973,
+            "language": null,
+            "license": {
+                "name": "MIT License",
+                "url": "https://github.com/creativecommons/fonts/blob/master/LICENSE"
+            },
+            "name": "fonts",
+            "technologies": [
+                "Fonts"
+            ],
+            "url": "https://github.com/creativecommons/fonts",
+            "website": null
         },
         {
             "created": "2014-12-08T20:16:04",
@@ -626,6 +620,16 @@
             "name": "openpolicynetwork.org",
             "url": "https://github.com/creativecommons/openpolicynetwork.org",
             "website": "https://openpolicynetwork.org/"
+        },
+        {
+            "created": "2013-12-02T20:59:52",
+            "description": null,
+            "id": 14874571,
+            "language": "Python",
+            "license": null,
+            "name": "rdfadict",
+            "url": "https://github.com/creativecommons/rdfadict",
+            "website": null
         },
         {
             "created": "2018-03-22T19:04:09",
@@ -778,6 +782,56 @@
             "website": null
         },
         {
+            "created": "2019-11-25T17:29:13",
+            "description": "Vocabulary is a cohesive design system to unite the web facing Creative Commons",
+            "engineering_project": true,
+            "english_name": "CC Vocabulary",
+            "featured": false,
+            "id": 224004769,
+            "language": "CSS",
+            "license": {
+                "name": "MIT License",
+                "url": "https://github.com/creativecommons/vocabulary/blob/master/LICENSE"
+            },
+            "name": "vocabulary",
+            "technologies": [
+                "JavaScript",
+                "Vue",
+                "Webpack",
+                "Babel",
+                "Stylus",
+                "Styleguidist",
+                "Theo"
+            ],
+            "url": "https://github.com/creativecommons/vocabulary",
+            "website": "https://cc-vocabulary.netlify.com/"
+        },
+        {
+            "created": "2019-05-24T16:49:48",
+            "description": "Vocabulary is a cohesive design system to unite the web facing Creative Commons",
+            "engineering_project": true,
+            "english_name": "CC Vocabulary",
+            "featured": false,
+            "id": 188457696,
+            "language": "Vue",
+            "license": {
+                "name": "MIT License",
+                "url": "https://github.com/creativecommons/vue-vocabulary/blob/master/LICENSE"
+            },
+            "name": "vue-vocabulary",
+            "technologies": [
+                "JavaScript",
+                "Vue",
+                "Webpack",
+                "Babel",
+                "Stylus",
+                "Styleguidist",
+                "Theo"
+            ],
+            "url": "https://github.com/creativecommons/vue-vocabulary",
+            "website": "https://cc-vocabulary.netlify.com/"
+        },
+        {
             "created": "2014-07-28T15:18:18",
             "description": "Official Creative Commons plugin for licensing your content. With Creative Commons licenses, keep your copyright AND share your creativity.",
             "engineering_project": true,
@@ -791,6 +845,16 @@
             "name": "wp-plugin-creativecommons",
             "url": "https://github.com/creativecommons/wp-plugin-creativecommons",
             "website": "https://wordpress.org/plugins/creative-commons/"
+        },
+        {
+            "created": "2019-12-06T19:44:21",
+            "description": "New base WordPress theme for Creative Commons websites",
+            "id": 226397839,
+            "language": "CSS",
+            "license": null,
+            "name": "wp-theme-base",
+            "url": "https://github.com/creativecommons/wp-theme-base",
+            "website": null
         },
         {
             "created": "2019-02-11T15:51:29",
@@ -842,6 +906,21 @@
             ],
             "url": "https://github.com/creativecommons/wp-theme-cctoolkit",
             "website": ""
+        },
+        {
+            "created": "2019-10-16T17:42:01",
+            "description": null,
+            "engineering_project": true,
+            "featured": false,
+            "id": 215608377,
+            "language": "CSS",
+            "license": {
+                "name": "GNU General Public License v2.0",
+                "url": "https://github.com/creativecommons/wp-theme-summit/blob/master/LICENSE"
+            },
+            "name": "wp-theme-summit",
+            "url": "https://github.com/creativecommons/wp-theme-summit",
+            "website": null
         },
         {
             "created": "2013-10-28T02:42:48",
