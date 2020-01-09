@@ -42,25 +42,23 @@ Once you have written your post, you can either send it to us (Markdown is easie
 1. If your post uses images or other files, put them in the same subdirectory as the `contents.lr` file.
 1. Fill in `contents.lr` in the following format ([see example post](https://raw.githubusercontent.com/creativecommons/creativecommons.github.io-source/master/content/blog/entries/open-development-with-saltstack/contents.lr)):
   <pre>
-    <code>
-      title: Replace this text with the title of your blog post
-      ---
-      categories:
-      Replace this text with category names as shown below. Each category name should be on its own line and the name should not contain spaces.
-      example-category-name-1
-      example-category-name-2
-      ---
-      author: Replace this text with author's GitHub username. There should be no spaces in the name.
-      ---
-      series: optional-field-for-example-series-name
-      ---
-      pub_date: Replace this text with the publication date in YYYY-MM-DD format.
-      ---
-      body:
-      Replace this text with your post's content (minus the title). This field accepts Markdown for formatting.
-      If you're including images, you can use the Markdown image syntax i.e. ![image-title](image-file-name.jpg).
-      You don't need to specify the path to the image since you have uploaded it to the same folder in Step 3.
-    </code>
+  <code>
+  title: Replace this text with the title of your blog post
+  ---
+  categories:
+  Replace this text with category names as shown below. Each category name should be on its own line and the name should not contain spaces.
+  example-category-name-1
+  example-category-name-2
+  ---
+  author: Replace this text with author's GitHub username. There should be no spaces in the name.
+  ---
+  pub_date: Replace this text with the publication date in YYYY-MM-DD format.
+  ---
+  body:
+  Replace this text with your post's content (minus the title). This field accepts Markdown for formatting.
+  If you're including images, you can use the Markdown image syntax i.e. ![image-title](image-file-name.jpg).
+  You don't need to specify the path to the image since you have uploaded it to the same folder in Step 3.
+  </code>
   </pre>
 
   *Read more about [Markdown formatting here](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).*
