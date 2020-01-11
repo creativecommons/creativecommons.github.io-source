@@ -1,0 +1,46 @@
+title: CC Vocabulary - My First Four Weeks
+---
+categories:
+
+cc-vocabulary
+product
+outreachy
+---
+author: conye
+---
+series: outreachy-dec-2019-vocabulary
+---
+pub_date: 2020-01-11
+---
+body:
+
+[Vocabulary](https://cc-vocabulary.netlify.com/) is Creative Commons's web design system; an extension of 
+[CC Style Guide](https://creativecommons.org/wp-content/uploads/2019/10/Creative-Commons-Style-Guide-2019.pdf) 
+for the web. This project was originally started by my mentors [Dhruv Bhanushali](https://opensource.creativecommons.org/blog/authors/dhruvkb) 
+and [Hugo Solar](https://opensource.creativecommons.org/blog/authors/hugosolar) to unify all of CC websites and applications. 
+Vocabulary has been undergoing a lot of changes lately. As part of my Outreachy internship, 
+I will be contributing to extending its scope and usage.
+
+##My Progress so far...
+Before my first contribution, Vocabulary comprised of reusable UI components built with Vue.js and a live styleguide built with Styleguidist. 
+My first task was to create an interactive playground experience with Storybook which would eventually replace that built with Styleguidist. 
+Storybook was chosen for obvious reasons:
+- It provides a workbench environment for your components in isolation where you can play around with, customize and test as you develop.
+- It provides Storybook Docs to generate design system documentation, customize, and share best practices with your team. 
+Styleguidist majorly creates a UI documentation site that can be done better with Storybook Docs.
+
+My first three weeks were more of struggling and learning. Coming from a React background, I had to reconfigure my brain to understand Vue 
+and Vue storybook. I did a lot of reading of documentation and articles, testing locally and asking for help when stuck. I eventually completed 
+the task and created a pull request. A live version of the interactive playground can be seen 
+[here](https://cc-vue-vocabulary.netlify.com/storybook/?path=/story/vocabulary-welcome--welcome). 
+Please feel free to play around with it and give a feedback.
+
+The following week, I worked on updating some Vue Vocabulary components with the CC Vocabulary design library.
+
+##What's Next...
+This week, I will be working on extending the usage of vocabulary to other CC websites that are not built with Vue. 
+What I worked on previously was [Vue-Vocabulary](https://cc-vue-vocabulary.netlify.com/) for CC websites and 
+platforms that support Vue. The goal is to use the already developed stylesheets in Vocabulary to build the 
+same functional components with vanilla JavaScript. 
+
+Well, all said, the past weeks have been great. I will be sharing more in two weeks.
