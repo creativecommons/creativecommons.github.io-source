@@ -484,7 +484,7 @@
         },
         {
             "created": "2019-11-25T17:30:19",
-            "description": null,
+            "description": "Typefaces used by Creative Commons",
             "engineering_project": true,
             "english_name": "CC Fonts",
             "featured": false,
@@ -499,7 +499,7 @@
                 "Fonts"
             ],
             "url": "https://github.com/creativecommons/fonts",
-            "website": null
+            "website": "https://cc-fonts.netlify.com"
         },
         {
             "created": "2014-12-08T20:16:04",
