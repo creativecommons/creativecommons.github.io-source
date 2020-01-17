@@ -489,7 +489,7 @@
             "english_name": "CC Fonts",
             "featured": false,
             "id": 224004973,
-            "language": null,
+            "language": "Vue",
             "license": {
                 "name": "MIT License",
                 "url": "https://github.com/creativecommons/fonts/blob/master/LICENSE"
@@ -783,7 +783,7 @@
         },
         {
             "created": "2019-11-25T17:29:13",
-            "description": "Vocabulary is a cohesive design system to unite the web facing Creative Commons",
+            "description": "A cohesive design system to unify the web facing Creative Commons",
             "engineering_project": true,
             "english_name": "CC Vocabulary",
             "featured": false,
@@ -808,7 +808,7 @@
         },
         {
             "created": "2019-05-24T16:49:48",
-            "description": "Vocabulary is a cohesive design system to unite the web facing Creative Commons",
+            "description": "Vue components that implement a cohesive design system to unite the web facing Creative Commons",
             "engineering_project": true,
             "english_name": "CC Vocabulary",
             "featured": false,
