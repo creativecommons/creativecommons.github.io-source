@@ -2,17 +2,37 @@ _model: page
 ---
 _template: page-with-toc.html
 ---
-title: Open Source Program Mentorship Guide
+title: Open Source Internships: Mentor Guide
 ---
 body:
 
-CC participates in open source mentorship programs such as Google Summer of Code and Outreachy. Both CC staff and community members are welcome to mentor projects. More details about specific programs and rounds will be announced separately; this page serves as a general mentorship guide.
+CC participates in open source mentorship programs such as [Google Summer of Code](https://summerofcode.withgoogle.com/) and [Outreachy](https://www.outreachy.org/). Both CC staff and community members are welcome to mentor projects. Details about specific programs and rounds are listed in the [Overview page](/internships); this page serves as a general mentorship guide.
+
+## Considering Mentorship?
+
+Mentorship is a serious commitment but a very rewarding experience. If you're trying to decide whether to be a mentor, please read the following documents:
+* [Google Summer of Code mentor guide](https://google.github.io/gsocguides/mentor/)
+* Outreachy [mentor role description](https://www.outreachy.org/mentor/#mentor) and [mentor expectations](https://www.outreachy.org/docs/internship/#mentor-expectations)
+* [Outreachy Mentor FAQ](https://www.outreachy.org/mentor/mentor-faq/)
+
+If you'd like to be a mentor but don't have a specific project in mind, email the [CC Developers mailing list](/community) and let us know what your skillset and availability is. We'll see if we have a project you can help out with. If you'd like to propose a project, read on.
 
 ## Proposing a Project
 
-Mentorship is a serious commitment but a very rewarding experience. If you'd like to mentor, you need to decide what project you'd like to mentor or join a project that someone else is mentoring.
+If you'd like to propose a project for an intern to work on, please use the following template and send your idea to the [CC Developers mailing list](/community). Someone from CC staff will get back to you about whether it is a viable project and next steps for moving it forward.
 
-*More about this stage coming soon.*
+_**[Project Title]**_
+
+**The Problem**: _Describe the problem that needs to be solved and why it is an important one for CC._  
+**Expected Outcome**: _Describe the outcome that you’d like to see for this internship._  
+**Internship Tasks**: _What will the intern be expected to do during the internship?_  
+**Application Tips**: _What are you looking for in the intern’s project plan in their application?_  
+**Resources**: _List of resources associated with this project idea. GitHub issues, specs, documentation. blog posts, etc._  
+**Mentors**: _Who will mentor this project? We require having two mentors for each project, but if you only have one, we can help find another._  
+**Technical Skills**: _What technical skills will this project need?_  
+**Difficulty**: _How technically difficult is this project? Options: High, Medium, Low_  
+
+Please note that project ideas should be related to an existing CC open source project or website and should be clearly scoped out. They should be doable in three months by an intern with very little prior experience.
 
 ## Application Period
 
@@ -25,37 +45,31 @@ Some tips:
 - You will get a lot of low effort questions like "how do I get started" – ask for more details. You cannot spend 20 minutes helping every single person because there are far too many people, so help them help themselves.
 - Prepare general documentation/frequently asked questions ahead of time.
 
-### Application Period
+### Draft Application
 
 You should encourage applicants to share drafts of the application with you ahead of time. Using a Google Doc with comment permissions enabled is probably the easiest way to achieve collaboration. Focus on making sure that their understanding of the project, the project plan, timeline, and deliverables match what you had in mind and is feasible (keeping in mind that they may be new to all this and may not get things done as quickly).
 
 ## Internship Period
 
-### Preparing for the Internship
+### Preparing
 
+Before the internship period begins:  
 * Talk to your co-mentors ahead of your time to create a plan for how to collaborate – will one of you be the primary mentor or will all of you be equally involved? How will checkins and notes work?
-
 * If your project affects or involves anyone else at CC that's not a co-mentor, talk to them about how they would like to be involved and come up with a plan to collaborate.
 
-### After Intern Announcement
+### Post-Announcement
 
+Once the selected interns have been announced:  
 * Reach out to your mentee ASAP after the internships are announced.
-
 * Get the mentees’ T-shirt size and address ASAP and send it to the program coordinator (we will be sending each mentee some CC goodies).
-
 * Review the proposal again and ensure that the implementation details and weekly deliverables are feasible and well thought-out. There are probably some things that could be clarified or changed – work with the mentee to fix these items before any work is actually started.
-
 * Have an introductory call with the mentee and get to know each other. Ask them questions about themselves and talk about yourself too.
-
 * Set up regular meetings: a weekly video call for the mentors to check-in with the mentee, and a monthly call with the CC program coordinator to check in with the mentee.
-
 * Create a document to keep any project information and notes. This document should be shared with the program coordinators.
    * the “final” implementation plan and weekly milestones (“final” because it is subject to change during the coding period based on progress)
    * the mentee’s contact information and emergency contact
    * all meeting notes
    * any other project-relevant information.
-
-
 * Decide with the mentee on the workflow the project will follow. e.g.
    * Does the mentee understand regular git workflow (e.g. pull requests, branches, reviews)?
    * How often should code be reviewed? Does all code need to be reviewed?
@@ -63,45 +77,28 @@ You should encourage applicants to share drafts of the application with you ahea
    * Will the mentee commit directly to the repository hosted on the CC GitHub or will they use a fork?
    * What is the best way for the mentee to get your attention when they are stuck?
    * Where will their project be deployed (if applicable) during development?
-
-
 * Let the mentee know that they will be expected to post updates on their project on the CC technical blog regularly. Decide on a cadence for the blog posts (should be every two weeks at a minimum) and set due dates for them.
-
 * Help the mentee get their development environment set up.
-
 * Ensure that the mentee has permissions to push to the appropriate GitHub repository.
 
 ### During the Internship
 
+During the internship:  
 * Attend your weekly check-in.
    * Take good notes so that your backup mentor can pick up where you left off easily if you’re unavailable.
    * Make sure the mentee is on-track with their weekly milestones and if not, work with them to figure out why and come up with a plan.
    * Ask how the mentee is doing generally.
    * Praise things they are doing well and provide constructive criticism on the things they could improve on. Both of these are important.
-
-
 * Review all work/code promptly. You should aim to review within 1 business day.
    * If your mentee is blocked on their work for some other reason, help them become unblocked as soon as possible.
-
-
 * Check in on Slack with the mentee once every day or two. Remember that they are often not experienced with the work they are doing and may not know to ask for help or may be stuck on something that they cannot articulate very well.
-
 * Ask for feedback on your mentorship every few weeks.
-
 * Find an opportunity to invite your mentee to present their work at CC’s all staff meeting. It is up to you when you’d like to do this.
-
 * Make sure you're familiar with the program timeline and submit your required evaluations on time.
-
-
 * Engage the mentee in the larger CC development community – encourage them to share their work and talk to them about other projects and your own work.
    * Ensure that the development version of their project is deployed somewhere ASAP so they can seek feedback from the community.
-
-
 * Work with the CC staff engineering team and program coordinators on a plan to move the project to production when the project is complete.
-
 * Check in with any CC staff working with the mentee regularly to make sure their feedback is also being heard and implemented by the mentee.
-
-
 * Talk to the program coordinator proactively. Especially if:
    * your mentee is not active and engaged regularly.
    * your mentee is not communicating enough or misses a check-in.
