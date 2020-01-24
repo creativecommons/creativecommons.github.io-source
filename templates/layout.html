@@ -65,7 +65,9 @@
                   <div class="dropdown-menu" aria-labelledby="navbarInternshipsDropdown">
                     {% for href, title in [
                       ['/internships', 'Overview'],
-                      ['/internships/mentorship', 'Mentor Guide'],
+                      ['/internships/applicant-guide', 'Applicant Guide'],
+                      ['/internships/intern-guide', 'Intern Guide'],
+                      ['/internships/mentor-guide', 'Mentor Guide'],
                     ] %}
                       <a class="dropdown-item" href="{{ href|url }}">{{ title }}</a>
                     {% endfor %}
