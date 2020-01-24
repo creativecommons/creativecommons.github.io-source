@@ -1,0 +1,86 @@
+_model: page
+---
+_template: page-with-toc.html
+---
+title: Open Source Internships: Applicant Guide
+---
+body:
+
+Creative Commons participates in open source mentorship programs such as [Google Summer of Code](https://summerofcode.withgoogle.com/) and [Outreachy](https://www.outreachy.org/). Details about specific programs and rounds are listed in the [Overview page](/internships); this page serves as a general guide to applicants.
+
+## Getting Started
+
+If you are interested in applying to be an open source intern at CC, here's a few things that will help:
+
+### Understand the Program
+
+Here are some resources:
+* [Google Summer of Code student guide](https://google.github.io/gsocguides/student/)
+* [Outreachy applicant guide](https://www.outreachy.org/docs/applicant/)
+
+### Understand CC
+Your first step should be to understand Creative Commons and what we do. We're not simply an open source software project like many other mentorship organization. We're a nonprofit organization and we have a lot of different programs – technical, legal, educational, public policy, organizational, and more. You can start reading about us at our [official website](https://creativecommons.org) and you can find plenty of information through searching about us. You'll need to know a decent amount about us in order to help us effectively.
+
+If you have a question about how we work, our programs, our licenses, or anything like that, please don't hesitate to ask!
+
+### Join the Community
+[Join the `#cc-gsoc-outreachy` channel on the CC Slack or the CC Developers mailing list](/community/) as early as possible to introduce yourself and get feedback on your ideas. All our mentors will be on Slack and respond to emails on the mailing list and it is better to post there rather than contact them individually. Feel free to ask questions!
+
+### Pick a Project
+Your next step should be to pick a particular project that you're interested in working on. The [Overview page](/internships) will cover the current internship rounds and link to related project ideas.
+
+Once you pick the project you're interested in, make sure to learn about the project thoroughly. You're going to be spending three months working on the project and you'll need to understand what the work entails so that you can plan the work out ahead of time and submit a strong application. The project descriptions are quite short so we expect you to do a lot of work here duron your own taking those descriptions and fleshing them out into a more detailed project plan and implementation timeline.
+
+The mentors are here to help you. We expect you to have a lot of questions along the way and we're happy to answer them.
+
+### Contribute!
+You will need to make at least one contribution to a Creative Commons project so that we can see a sample of your work. This is important for our evaluation of your application. For more details, see the *Contributing* section below.
+
+### Draft Application
+The final step is to create a draft application and share it with your chosen project's mentors for feedback. **Do not wait until the last minute to do this.** You should ideally get at least two rounds of feedback from the mentors before you submit your final application. For more details, see the *Draft Application* section below.
+
+## Contributing
+
+### Why contribute?
+Contributions are for you to get a sense of what it's like to contribute to an open source project (getting used to the GitHub workflow, interacting with other contributors, etc.) and for us to see a sample of your work/skills. If we are impressed by your contributions, we are more likely to select you as an intern.
+
+### How to contribute
+Please read our [Contributing Code](/contributing-code) page for information on how to contribute. You can contribute to any Creative Commons repository, although it's better if you demonstrate skills related to the project you are applying for. Also check your project's description for more specific contribution guidelines (not all of them will have them).
+
+If you're applying via Outreachy, remember to record your contribution via the Outreachy website! You can record contributions even if you have not yet received feedback on them or if they have not been merged – our mentors are busy so we can be slow to provide feedback.
+
+## Application
+
+Your final application is very important to us. This is what we will use to determine how well you understand the project and how likely you are to successfully complete it. As part of the application, you should take the project description and flesh it out into a more detailed project plan and implementation timeline. The project descriptions are all fairly short and some of them include multiple paths for the project so we expect you to do a lot of work here to turn those into a feasible plan for a complete project that you can ship during your internship, with a detailed timeline of what you plan to do every week.
+
+**This is not something you should be working on in isolation.** We expect you to have a lot of questions for the mentors along the way as you try and understand the project, come up with ideas, evaluate feasibility, etc. We also expect you to come up with a first draft and get feedback from mentors before you submit the final application on the program's official site.
+
+We suggest reading some articles on writing good Google Summer of Code proposals (even if you're applying for Outreachy). Here are some examples:
+* [How to write a kick-ass proposal for Google Summer of Code](http://teom.org/blog/kde/how-to-write-a-kick-ass-proposal-for-google-summer-of-code/)
+* [5 Tips to get your Google Summer of Code proposal accepted](https://people.csail.mit.edu/baghdadi/TXT_blog/5_advices_to_get_your_proposal_accepted.lyx.html)
+* [Writing a solid Google Summer of Code Proposal](https://medium.com/@evenstensberg/writing-a-solid-google-summer-of-code-proposal-a200fc6e785b)
+
+### Template
+
+You must use this template _(coming soon)_ to create your application. Please make sure that your mentors have comment permissions before you share your document with them.
+
+## Contacting Mentors
+
+All the CC mentors are on [Slack](/community). **Please use public channels on Slack as the primary method of communication.** Public channels are better than direct messages because it allows any available mentor (or even another applicant) to answer your questions and interact with you. It also allows other applicants who have the same questions to benefit from the answers the mentor is giving you.
+
+**Please ask mentors specific questions.** We don't know how to help you get started unless we know what you have questions about. People come from a variety of experiences and backgrounds and the things you may be confused about may be totally different than the things that someone else has questions about. Please give us as much information as possible, the more you tell us, the better we can help you.
+
+Remember that the mentors are busy – we've got full-time jobs or other commitments. It's good to follow up if you don't get a response, but wait a couple of days first.
+
+## Intern Selection Criteria
+
+Interns will be selected based on our confidence that they will be able to get the project completed and will be a good long term member of the community. We will evaluate a combination of:
+* Project timeline and plan submitted as part of the application
+* General understanding of goals of the project and goals of Creative Commons
+* History of contributions and quality of past work
+* General frequency and quality of communication
+* Good community behavior and participation e.g. history of helping others
+
+## Number of Accepted Interns
+
+Please, note that any internship program has a limited amount of projects that are able be funded. Therefore, we will probably not be able to select an intern for every project idea that we have listed. CC will be allocated a limited number of project slots by the program and we can only accept the number of interns that we have slots for.

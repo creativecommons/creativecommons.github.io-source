@@ -1,0 +1,5 @@
+_model: page
+---
+_template: project_list.html
+---
+title: Open Source Projects
