@@ -1,0 +1,36 @@
+title: CC Vocabulary - Weeks 5-8
+---
+categories:
+
+cc-vocabulary
+product
+outreachy
+---
+author: conye
+---
+series: outreachy-dec-2019-vocabulary
+---
+pub_date: 2020-01-30
+---
+body:
+
+A lot of time and effort have been put in to re-work Vocabulary since my last post and the changes are still ongoing. To understand why these changes are important, we have to better understand Vocabulary. 
+
+##So Why All The Changes?
+Vocabulary is CC's new design system. This means its design is meant to affect all of CC's websites, applications, and platforms. It is designed to be independent of any language or framework. Its styling will be used by its subsets like Vue-Vocabulary to maintain consistency. The majority of CC's websites and platforms are built with Wordpress, Lektor, and Vue. This means Vue-Vocabulary will inherit its styling from Vocabulary and the same will follow for other subsets of Vocabulary for Wordpress and Lektor which would possibly be developed soon.
+
+##The Major Change
+Vocabulary currently uses stylus to easily write the CSS and Webpack as a build system. Stylus will be changed to SASS (actually SCSS). This is because SASS is easier to maintain and the majority of CC's websites are already built with SASS. 
+
+##My Contributions in the past four weeks
+In the past four weeks, I have been contributing majorly to the re-work of Vocabulary. Some of my contributions include:
+- Adding vendor prefixes to compiled CSS using autoprefixer
+- Updating build script for output CSS token to include CSS custom properties format
+- Restyling some components as specified in the new design
+- Minifying and cleaning SVGs with SVGOMG
+- Removing some components and features not required in the new design
+- Fixing broken links
+
+There has also been a lot of learning for me too. For example, I have been learning better how Webpack and Docker are used in this project.
+
+Yeah, I said I would share more in two weeks from my last post but it turned out in four weeks but I will try to make in two weeks for my next post.
