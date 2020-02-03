@@ -484,12 +484,12 @@
         },
         {
             "created": "2019-11-25T17:30:19",
-            "description": null,
+            "description": "Typefaces used by Creative Commons",
             "engineering_project": true,
             "english_name": "CC Fonts",
             "featured": false,
             "id": 224004973,
-            "language": null,
+            "language": "Vue",
             "license": {
                 "name": "MIT License",
                 "url": "https://github.com/creativecommons/fonts/blob/master/LICENSE"
@@ -499,7 +499,7 @@
                 "Fonts"
             ],
             "url": "https://github.com/creativecommons/fonts",
-            "website": null
+            "website": "https://cc-fonts.netlify.com"
         },
         {
             "created": "2014-12-08T20:16:04",
@@ -783,7 +783,7 @@
         },
         {
             "created": "2019-11-25T17:29:13",
-            "description": "Vocabulary is a cohesive design system to unite the web facing Creative Commons",
+            "description": "A cohesive design system to unify the web facing Creative Commons",
             "engineering_project": true,
             "english_name": "CC Vocabulary",
             "featured": false,
@@ -808,7 +808,7 @@
         },
         {
             "created": "2019-05-24T16:49:48",
-            "description": "Vocabulary is a cohesive design system to unite the web facing Creative Commons",
+            "description": "Vue components that implement a cohesive design system to unite the web facing Creative Commons",
             "engineering_project": true,
             "english_name": "CC Vocabulary",
             "featured": false,
@@ -829,7 +829,7 @@
                 "Theo"
             ],
             "url": "https://github.com/creativecommons/vue-vocabulary",
-            "website": "https://cc-vocabulary.netlify.com/"
+            "website": "https://cc-vue-vocabulary.netlify.com/"
         },
         {
             "created": "2014-07-28T15:18:18",
