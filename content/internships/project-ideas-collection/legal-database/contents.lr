@@ -2,7 +2,7 @@ _model: project-idea
 ---
 _hidden: yes
 ---
-title: Improvements to the CC WordPress Plugin
+title: Reimplement CC’s Legal Database using WordPress or Django
 ---
 problem:
 CC maintains [a collection of case law and legal scholarship](https://labs.creativecommons.org/caselaw/) relevant to legal issues around Creative Commons licenses. Users can submit information, which is reviewed by a member of CC’s legal team and edited if necessary before publishing it to the live site. This tool currently has a number of issues:  
