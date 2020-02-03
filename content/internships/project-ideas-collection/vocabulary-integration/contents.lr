@@ -1,0 +1,38 @@
+_model: project-idea
+---
+_hidden: yes
+---
+title: Integrate Vocabulary with CC Open Source & CCGN websites
+---
+problem:
+Creative Commons has many different websites ([CC.org](https://creativecommons.org/), [CC Global Summit](https://summit.creativecommons.org/), [CC Open Source](https://opensource.creativecommons.org/), [CC Certificates](https://certificates.creativecommons.org/), [CC Global Network](https://network.creativecommons.org/), [CC Chapter Sites](https://de.creativecommons.net/start/), etc.), all of which have different design elements and styles. One of our 2020 goals is to unify them all using our new web design system, [Vocabulary](https://cc-vocabulary.netlify.com/). We need help updating the CC Open Source and CCGN websites.
+---
+expected_outcome:
+*   Updates to the CC Open Source website replacing all styling with components from Vocabulary.
+*   Updates to the CC Global Network WordPress theme that build upon our base WordPress theme (this theme is currently in progress) and use components from Vocabulary.
+*   Updates to our Figma design library (in collaboration with our UX Designer) and Vocabulary itself for any new components that need to be added when redesigning the sites.
+---
+internship_tasks:  
+*   Create wireframes for the website redesigns using Vocabulary components in Figma
+*   Identify new components that need to be added to Vocabulary and work with the UX designer to design and implement them
+*   Update the WordPress theme for the CC Global Network website to use Vocabulary exclusively
+*   Update the CC Open Source website styling to use Vocabulary exclusively
+*   Implement the new components in Vue Vocabulary if time permits
+---
+application_tips:
+It is okay if you think you’ll only have time to do one of the two websites. We’d rather you do one of them well than rush.
+---
+resources:
+*   [vocabulary GitHub repo](https://github.com/creativecommons/vocabulary)
+*   [vue-vocabulary GitHub repo](https://github.com/creativecommons/vue-vocabulary)
+*   [Introducing Vocabulary blog post on CC blog](https://creativecommons.org/2019/12/13/cc-vocabulary-web-design-system/)
+*   [Posts about Vocabulary on the CC open source blog](https://opensource.creativecommons.org/blog/categories/cc-vocabulary/)
+*   [CC Open Source](https://opensource.creativecommons.org/)
+*   [CC Global Network](https://network.creativecommons.org/)
+*   [CC Base WordPress Theme](https://github.com/creativecommons/wp-theme-base)
+---
+skills_recommended: CSS, HTML, JavaScript, PHP, WordPress 
+---
+mentors: Dhruv Bhanushali, Hugo Solar
+---
+difficulty: Medium

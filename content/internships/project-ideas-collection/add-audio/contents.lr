@@ -1,0 +1,44 @@
+_model: project-idea
+---
+_hidden: yes
+---
+title: Add Audio to the CC Catalog & CC Search
+---
+problem:
+Currently, [CC Search](https://search.creativecommons.org/) and the [CC Catalog API](https://api.creativecommons.engineering/) only support image search. We’d like to add more content types, especially audio. This would involve indexing audio sources in the CC Catalog, adding new endpoints to the CC Catalog API, and adding a UI to browse and search for audio in CC Search.
+---
+expected_outcome:
+*   There would be scripts in the [CC Catalog](https://github.com/creativecommons/cccatalog) repository that index metadata related to openly licensed audio files and add it to our database.
+*   The [CC Catalog API](https://api.creativecommons.engineering/) would have a set of endpoints that allowed searching for and browsing audio files.
+*   If time permits, there would be a UI to browse and search for audio in [CC Search](https://search.creativecommons.org/).
+---
+internship_tasks:  
+*   Work with CC’s data engineer to define and implement a database schema for collecting audio file metadata.
+*   Write scripts to ingest audio file metadata from open repositories such as [Freesound](https://freesound.org/), [Free Music Archive](https://freemusicarchive.org/), etc.
+*   Implement additional API endpoints on the CC Catalog API to expose audio data.
+*   Work with CC’s Director of Product and CC’s UX designer on design mockups for adding audio to CC Search.
+*   Add components as needed to [Vocabulary](http://opensource.creativecommons.org/cc-vocabulary/) and [Vue Vocabulary](https://cc-vue-vocabulary.netlify.com/), in collaboration with CC’s UX designer
+*   Implement the designs in CC Search using Vocabulary and Vue Vocabulary.
+---
+application_tips:
+*   Include potential database schemas in your application.
+*   Include sources that you might want to ingest in your application.
+---
+resources:
+*   [CC Catalog code](https://github.com/creativecommons/cccatalog)
+*   [CC Catalog API documentation](https://api.creativecommons.engineering/)
+*   [CC Catalog API code](https://github.com/creativecommons/cccatalog-api)
+*   [CC Search](https://search.creativecommons.org/)
+*   [CC Search code](https://github.com/creativecommons/cccatalog-frontend)
+*   [Vocabulary landing page](http://opensource.creativecommons.org/cc-vocabulary/)
+*   [Vocabulary code](https://github.com/creativecommons/vocabulary)
+*   [Vue Vocabulary landing page](https://cc-vue-vocabulary.netlify.com/)
+*   [Vue Vocabulary code](https://github.com/creativecommons/vue-vocabulary)
+*   Music sources: [Freesound](https://freesound.org/), [Free Music Archive](https://freemusicarchive.org/)
+*   [Blog about Freesound on CC Open Source blog](https://opensource.creativecommons.org/blog/entries/freesound-intro/)
+---
+skills_recommended: CSS, Django, Django REST Framework, HTML, JavaScript, Python, Vue.js
+---
+mentors: Alden Page, Brent Moran, Anna Tumadóttir
+---
+difficulty: Medium
