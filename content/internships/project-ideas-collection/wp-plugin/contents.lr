@@ -1,0 +1,38 @@
+_model: project-idea
+---
+_hidden: yes
+---
+title: Improvements to the CC WordPress Plugin
+---
+problem:
+WordPress powers over 25% of websites on the Internet and we'd like to easily enable those websites to license their content under CC licenses. We [released a stable version of the CC WordPress plugin after Google Summer of Code 2019](https://creativecommons.org/2019/11/22/updated-cc-wordpress-plugin/) but we still have a lot of features we would like to add. Major features include internationalization of the plugin, integration with [Vocabulary](https://cc-vocabulary.netlify.com/), classic editor support for licensing content, and perhaps even integrating the [CC Catalog API documentation](https://api.creativecommons.engineering/v1/). We would also like to fix bugs and handle incoming feature requests.
+---
+expected_outcome:
+At least two new releases of the WordPress plugin during the internship period, with internationalization using Transifex, classic editor support, and Vocabulary integration completed. Ideally we'd also like a few other features built, we are open to suggestions.
+---
+internship_tasks:  
+*   Building new features according to the plan agreed upon between you and your mentors
+*   Fixing existing and new bugs and making other improvements to the code
+*   Releasing the plugin regularly.
+---
+application_tips:
+*   We'd like to know what features you think the WordPress plugin should have other than the ones we've already mentioned
+*   You'll get bonus points for showing familiarity with the plugin’s interface or code
+---
+resources:
+*   [WordPress plugin repository](https://github.com/creativecommons/wp-plugin-creativecommons)
+*   [List of open GitHub issues](https://github.com/creativecommons/wp-plugin-creativecommons/issues)
+*   [Release notes](https://github.com/creativecommons/wp-plugin-creativecommons/releases)
+*   Posts on the main Creative Commons blog:
+    *   [Launch post from 2019](https://creativecommons.org/2019/11/22/updated-cc-wordpress-plugin/)
+    *   [Original beta announcement](https://creativecommons.org/2017/01/18/one-click-wordpress/)
+*   [Posts about the work on the CC Open Source blog](https://opensource.creativecommons.org/blog/authors/ahmadbilaldev/)
+*   [Vocabulary homepage](https://cc-vocabulary.netlify.com/)
+*   [Vocabulary codebase](https://github.com/creativecommons/vocabulary)
+*.  [CC Catalog API documentation](https://api.creativecommons.engineering/)
+---
+skills_recommended: CSS, HTML, JavaScript, PHP, WordPress 
+---
+mentors: Hugo Solar, Timid Robot Zehta
+---
+difficulty: Medium

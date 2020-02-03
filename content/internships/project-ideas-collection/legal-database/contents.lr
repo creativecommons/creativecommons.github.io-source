@@ -1,0 +1,40 @@
+_model: project-idea
+---
+_hidden: yes
+---
+title: Improvements to the CC WordPress Plugin
+---
+problem:
+CC maintains [a collection of case law and legal scholarship](https://labs.creativecommons.org/caselaw/) relevant to legal issues around Creative Commons licenses. Users can submit information, which is reviewed by a member of CC’s legal team and edited if necessary before publishing it to the live site. This tool currently has a number of issues:  
+*   publishing new data is a cumbersome manual process for both the legal and tech teams.
+*   there is no way to browse all resources on the site.
+*   It does not use [Vocabulary](opensource.creativecommons.org/cc-vocabulary/), CC’s new web design system.
+---
+expected_outcome:
+A new website, built using either WordPress or Django, that supports the following features:  
+*   The general public can submit legal information without a user account (the information collected should be identical to the current implementation).
+*   The legal team at CC can review and edit incoming information and approve it, at which point it goes live.
+*   All the legal information on the site should be browseable and searchable by keyword and country.
+*   The user-facing portion of the website should use [Vocabulary](http://opensource.creativecommons.org/cc-vocabulary/) components.
+---
+internship_tasks:  
+*   Architect the backend of the legal database in either WordPress or Django, including researching appropriate plugins or libraries that will make the task easier.
+*   Code the backend of the legal database.
+*   Create design mockups for the frontend in collaboration with CC’s UX designer.
+*   Implement new components to Vocabulary, if necessary, in collaboration with CC’s UX designer.
+*   Code the frontend of the legal database using Vocabulary.
+*   Assist CC staff with deployment related tasks, if needed.
+---
+application_tips:
+Please specify the architecture and plugins/libraries that you’d like to use in your application. We don’t want you to reinvent the wheel; we’d like to use existing libraries as much as possible.
+---
+resources:
+*   [Creative Commons Legal Database (beta)](https://labs.creativecommons.org/caselaw/)
+*   [Legal database GitHub repository](https://github.com/creativecommons/caselaw/)
+*   [Vocabulary](opensource.creativecommons.org/cc-vocabulary/)
+---
+skills_recommended: CSS, Django, HTML, JavaScript, PHP, Python, WordPress (either Django/Python or WordPress/PHP, not both)
+---
+mentors: Kriti Godey, Sarah Pearson, Timid Robot Zehta
+---
+difficulty: Medium

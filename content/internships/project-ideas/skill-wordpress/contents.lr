@@ -1,0 +1,9 @@
+_model: project-ideas
+---
+nav_label: Skill: WordPress
+---
+field: recommended_skill
+---
+value: WordPress
+---
+order: 7

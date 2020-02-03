@@ -1,0 +1,42 @@
+_model: project-idea
+---
+_hidden: yes
+---
+title: Usage & Reuse Metrics Dashboard for CC Search
+---
+problem:
+[CC Search](https://search.creativecommons.org/), which is CC’s search engine making openly licensed content discoverable, has hundreds of thousands of visitors per month. The catalog powering CC Search contains collections ranging from user-generated content at Flickr to priceless art pieces at the Met, and everywhere in between. The catalog contains a couple of dozen sources at present and is set for significant expansion.
+
+While we do keep track of certain user actions in our database, and are able to glean other insights with the use of Google Analytics, we do not have a single dashboard to see relevant information.
+
+This is a problem for two reasons:  
+*   We have a lack of comprehensive understanding of user behavior, as we have to look in multiple places and pull disparate information to paint a picture of overall user behavior.
+*   Our catalog partners have no way to understand what impact their presence in CC Search is having in terms of discoverability and increased exposure to their collections.
+    *   In turn we are unable to tell a story about that impact to potential, future partners.
+---
+expected_outcome:
+We’d like the outcome to be an analytics interface, of some kind, where all of these metrics are pulled together into one place. The interface should be both aesthetically pleasing and clear to understand, allowing those accessing it to get the pertinent information they need, whether it is by day, week, month, collection, or any other logical grouping.
+---
+internship_tasks:  
+*   Understand the required data to be displayed as defined by CC HQ
+*   Research analytics dashboards to provide recommendations on additional data that is valuable
+*   Document a cohesive plan for structuring an analytics database storing all pertinent data
+*   Mockup (wireframes only) in what way data could usefully be presented and what (if any) navigational elements will be required
+*   Research existing analytics UIs
+*   Present findings and make a recommendation on which one to use
+*   Implement an analytics UI for CC Search Usage & Reuse data
+---
+application_tips:
+This is a complicated problem, but we believe there is an elegant solution. We’d like the intern to show that they understand the stakeholders, can argue for the value of being able to provide this data internally and externally, have a clear picture of how one would structure an analytics database (which could use example data like page views, unique visitors, time on page, bounce rate, by URL, by day, by month, etc.) with a view to flexibility for expansion and rapid querying, and an indication of their comfort level with both design and programming. The most important thing is solid development skills. Support for frontend design, based on proposed wireframes, can be provided by the organization.
+---
+resources:
+* [CC Search](https://search.creativecommons.org/)
+* [Custom analytics API code](https://github.com/creativecommons/cccatalog-api/tree/master/analytics)
+* [Initial analytics requirements and discussion](https://github.com/creativecommons/cccatalog-frontend/issues/426)
+* [Google Analytics](https://analytics.google.com/analytics/web/)
+---
+skills_recommended: CSS, design, HTML, Python, PostgreSQL
+---
+mentors: Alden Page, Anna Tumadóttir
+---
+difficulty: High

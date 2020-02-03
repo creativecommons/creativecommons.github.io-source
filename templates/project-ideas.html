@@ -1,13 +1,13 @@
 {% extends "layout.html" %}
-{% block title %}Project Ideas for GSoC 2019{% endblock %}
+{% block title %}Open Source Internships: Project Ideas{% endblock %}
 
-{% block header %}GSoC 2019: Project Ideas{% endblock %}
+{% block header %}Open Source Internships: Project Ideas{% endblock %}
 {% block body %}
-  <p class="text-muted">This is the project idea list for the <a href="/gsoc-2019">Google Summer of Code 2019</a> program. We have a mix of projects that are meant to be installed widely (such as plugins for other software) and projects that are more focused on improving user experience for users of Creative Commons licenses. Regardless of scope, these projects all have a broad and positive community impact.</p>
+  <p class="lead">This is the project idea list for the <strong><a href="/internships">current round of open source internships at Creative Commons</a></strong>.</p>
   <hr/>
   <!-- We display all ideas by default. -->
-  {% set ideas = site.query('/gsoc-2019/project-ideas-collection').include_undiscoverable(true) %}
-  {% set filters = site.query('/gsoc-2019/project-ideas').include_undiscoverable(true).order_by('order') %}
+  {% set ideas = site.query('/internships/project-ideas-collection').include_undiscoverable(true) %}
+  {% set filters = site.query('/internships/project-ideas').include_undiscoverable(true).order_by('order') %}
   {% set current_filter = filters.filter(F._slug == this._slug).first() %}
   <!-- The following code filters the ideas to display based on the current URL. -->
   {% if current_filter.field == 'difficulty' %}
@@ -28,7 +28,7 @@
       {% for idea in ideas %}
         <li class="my-2"><a href="#{{ idea._slug }}">{{ idea.title }}</a></li>
       {% endfor %}
-        <li class="my-2"><a href="#your-idea">Your idea here</a></li>
+        <li class="my-2"><a href="#original-ideas">Original Ideas</a></li>
       </ul>
     </div>
     <hr/>
@@ -36,21 +36,24 @@
       <div class="project-idea-card m-1 mb-4">
         <h2 class="card-header project-idea-header"><a name="{{ idea._slug }}">{{ idea.title }}</a></h5>
         <ul class="list-group list-group-flush">
-          <li class="list-group-item"><strong>Description:</strong> {{ idea.description }}</li>
-          <li class="list-group-item"><strong>Rationale:</strong> {{ idea.rationale }}</li>
+          <li class="list-group-item"><strong>The Problem:</strong> {{ idea.problem }}</li>
+          <li class="list-group-item"><strong>Expected Outcome:</strong> {{ idea.expected_outcome }}</li>
+          <li class="list-group-item"><strong>Internship Tasks:</strong> {{ idea.internship_tasks }}</li>
+          <li class="list-group-item"><strong>Application Tips:</strong> {{ idea.application_tips }}</li>
           <li class="list-group-item"><strong>Resources:</strong> {{ idea.resources }}</li>
-          <li class="list-group-item"><strong>Expected result:</strong> {{ idea.expected_result }}</li>
           <li class="list-group-item"><strong>Skills recommended:</strong> {{ idea.skills_recommended }}</li>
-          <li class="list-group-item"><strong>Mentors:</strong> {{ idea.primary_mentor }} (primary), {{ idea.backup_mentor}} (backup)</li>
+          <li class="list-group-item"><strong>Mentors:</strong> {{ idea.mentors }}</li>
           <li class="list-group-item"><strong>Difficulty:</strong> {{ idea.difficulty }}</li>
-          <li class="list-group-item"><strong>Proposal tag to use:</strong> {{ idea.proposal_tag }}</li>
         </ul>
       </div>
     {% endfor %}
     <div class="project-idea-card m-1 mb-4">
-      <h2 class="card-header project-idea-header"><a name="your-idea">Your idea here</a></h5>
+      <h2 class="card-header project-idea-header"><a name="original-ideas">Original Ideas</a></h5>
       <ul class="list-group list-group-flush">
-        <li class="list-group-item">We are open to original ideas for projects that will help increase the utility of CC-licensed content, ease the process for creators applying CC licenses to their content, or improve CC's internal tools or processes. Please talk to us on the <code>#cc-gsoc</code> channel on Slack or via the mailing list to find a mentor for the project before submitting your proposal.</li>
+        <li class="list-group-item">
+          <p>We are open to original ideas for either new features or improvements to our existing projects or new CC-related plugins for third-party software.</p>
+          <p>Please talk to us on the <code>#cc-gsoc-outreachy</code> channel on Slack or via the mailing list to find a mentor for the project before submitting your proposal.</p>
+        </li>
       </ul>
     </div>
   </div>

@@ -1,0 +1,9 @@
+_model: project-ideas
+---
+nav_label: Skill: Python
+---
+field: recommended_skill
+---
+value: Python
+---
+order: 6

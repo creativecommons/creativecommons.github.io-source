@@ -1,0 +1,34 @@
+_model: project-idea
+---
+_hidden: yes
+---
+title: Add filtering by node to the Linked Commons
+---
+problem:
+For last year’s GSOC, [María Belén Guaranda Cabezas](https://opensource.creativecommons.org/blog/authors/soccerdroid/) created a [visualization graph of domains](http://dataviz.creativecommons.engineering/) in the Commons, using one month of data from Common Crawl.  For details, please see her posts on the CC Open Source Blog, which you can find at [her author page](https://opensource.creativecommons.org/blog/authors/soccerdroid/).  We’d like to expand on the current state of that project by adding the possibility to filter by domain, and show only nodes within distance 2 (i.e., they can be reached by traveling along no more than two edges from the chosen node).  If that is accomplished in short order, we’d also like to give the user the ability to choose the distance of nodes to show from a given node.
+---
+expected_outcome:
+*   There should be a search box into which the user can type a domain (or part of a domain), and the graph should then show only nodes from that domain, and domains which can be reached with no more than two hops from the original.
+*   Stretch Goal: It’d be great if the user could choose a distance from the chosen node via some sort of drop-down menu.
+*   If both of those go well, we’d like to explore some graph-theoretic metrics on the graph.
+*   We may also add live updating to the data that backs the visualization.
+*   If these features are completed ahead of schedule, the intern may suggest further features to add to the visualization.
+---
+internship_tasks:  
+The intern should implement the first feature above, and if there’s time, implement the second.  It may be useful for the intern to assist with setting up live-updating of the data backing the visualization.
+---
+application_tips:
+Interest in and/or experience with graph theory would be useful!
+---
+resources:
+*   [The Linked Commons](http://dataviz.creativecommons.engineering/)
+*   [The Linked Commons code](https://github.com/creativecommons/cccatalog-dataviz)
+*   [Introducing The Linked Commons](https://creativecommons.org/2020/01/23/introducing-the-linked-commons/) blog post on CC main blog
+*   [Maria's technical blog posts](https://opensource.creativecommons.org/blog/authors/soccerdroid/)
+*   [force-graph library](https://github.com/vasturiano/force-graph)
+---
+skills_recommended: JavaScript, Graph Theory
+---
+mentors: Brent Moran, María Belén Guaranda Cabezas
+---
+difficulty: Low
