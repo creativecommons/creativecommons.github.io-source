@@ -35,74 +35,15 @@ All GitHub repositories should have the following items to be considered fully r
 - [Issue templates](https://help.github.com/en/articles/creating-issue-templates-for-your-repository). GitHub pulls the default templates from our [`.github` repository](https://github.com/creativecommons/.github) automatically, but if you want/need to customize them, create them in your repository.
 - A [pull request template](https://help.github.com/en/articles/creating-a-pull-request-template-for-your-repository). GitHub pulls the default template from our [`.github` repository](https://github.com/creativecommons/.github) automatically, but if you want/need to customize it, create it in your repository.
 - [Support resources](https://help.github.com/en/articles/adding-support-resources-to-your-project). GitHub pulls the default `SUPPORT.md` file from our [`.github` repository](https://github.com/creativecommons/.github) automatically, but if you want/need to customize it, create it in your repository.
-- Setting up [branch protections](https://help.github.com/en/articles/about-protected-branches) that don't allow code to be merged in without tests passing or requires reviews for pull requests to be merged.
 
 ## Standard Labels
-All repositories must contain the following labels. CC staff have access to a script that you can run to make sure all repositories have this label.
+All repositories must contain a set of standard labels, [documented here](https://github.com/creativecommons/ccos-scripts/blob/master/normalize_repos/labels.py). You don't have to set these up manually. CC staff can run [a script](https://github.com/creativecommons/ccos-scripts/tree/master/normalize_repos) that to make sure all repositories have this label.
 
 Repositories may contain additional custom labels as well. It is recommended that custom labels be explained in the contribution guidelines for that project.
 
-<table class="table table-striped table-sm">
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Color</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>bug</td>
-      <td><code>#d73a4a</code></td>
-      <td>Something isn't working</td>
-    </tr>
-    <tr>
-      <td>duplicate</td>
-      <td><code>#cfd3d7</code></td>
-      <td>This issue or pull request already exists</td>
-    </tr>
-    <tr>
-      <td>enhancement</td>
-      <td><code>#a2eeef</code></td>
-      <td>New feature or request</td>
-    </tr>
-    <tr>
-      <td>good first issue</td>
-      <td><code>#7057ff</code></td>
-      <td>Good for newcomers</td>
-    </tr>
-    <tr>
-      <td>help wanted</td>
-      <td><code>#008672</code></td>
-      <td>Seeking help from community</td>
-    </tr>
-    <tr>
-      <td>in progress</td>
-      <td><code>#ffcc00</code></td>
-      <td>Currently being worked on</td>
-    </tr>
-    <tr>
-      <td>invalid</td>
-      <td><code>#e4e669</code></td>
-      <td>This doesn't seem right</td>
-    </tr>
-    <tr>
-      <td>question</td>
-      <td><code>#d876e3</code></td>
-      <td>Further information is requested</td>
-    </tr>
-    <tr>
-      <td>urgent</td>
-      <td><code>#d93f0b</code></td>
-      <td>Needs to be fixed ASAP</td>
-    </tr>
-    <tr>
-      <td>wontfix</td>
-      <td><code>#ffffff</code></td>
-      <td>This will not be worked on</td>
-    </tr>
-  </tbody>
-</table>
+## Branch Protections
+
+Branch protections are automatically set up by CC staff via [this script](https://github.com/creativecommons/ccos-scripts/tree/master/normalize_repos). By default, pushing directly to the `master` branch is disabled and all pull requests require review by at least one person before merge.
 
 ## CC Metadata file
 
