@@ -32,7 +32,7 @@
         },
         {
             "created": "2018-05-16T19:44:57",
-            "description": "Creates a static website of Case Law and Scholarship data frm around the world based on Google Form responses and manually curated.",
+            "description": "Creates a static website of Case Law and Scholarship data from around the world based on Google Form responses and manually curated.",
             "engineering_project": true,
             "featured": false,
             "id": 133715391,
@@ -340,6 +340,25 @@
             "website": null
         },
         {
+            "created": "2020-02-06T17:06:09",
+            "description": "Scripts used to maintain various pieces of CC's open source presence.",
+            "engineering_project": true,
+            "english_name": "CC Open Source scripts",
+            "featured": false,
+            "id": 238740831,
+            "language": "Python",
+            "license": {
+                "name": "MIT License",
+                "url": "https://github.com/creativecommons/ccos-scripts/blob/master/LICENSE"
+            },
+            "name": "ccos-scripts",
+            "technologies": [
+                "Python"
+            ],
+            "url": "https://github.com/creativecommons/ccos-scripts",
+            "website": null
+        },
+        {
             "created": "2013-10-24T00:12:36",
             "description": "A guide to using the Creative Commons Rights Expression Language (CC REL)",
             "engineering_project": true,
@@ -367,7 +386,7 @@
             },
             "name": "ccsearch-browser-extension",
             "url": "https://github.com/creativecommons/ccsearch-browser-extension",
-            "website": "https://summerofcode.withgoogle.com/projects/#6510509090668544"
+            "website": ""
         },
         {
             "created": "2018-04-10T22:44:46",
