@@ -10,11 +10,11 @@ The [CC Catalog](https://github.com/creativecommons/cccatalog) gets a huge amoun
 expected_outcome:
 We would like to have a number of completed, well-tested Provider API Scripts written by the end of this internship, and they should be deployed in production.  Deployment in production implies we’d also have Apache Airflow DAGs (Directed Acyclic Graphs) that run the Provider API Scripts on an appropriate schedule.
 ---
-internship_tasks:  
+internship_tasks:
 The intern should write more Provider API Scripts, taking priorities from the backlog linked above.  Such a script must pull image information from a public API provided by the provider, and pass it along to a function that will validate the information, format it as necessary, and write it to disk.  This validation/storage function is already written, so the intern needs only to write a script that knows how to get the relevant data from the public API of the provider.  For examples of what we are expecting from a Provider API Script, see `wikimedia_commons.py` and `flickr.py `in [the repository](https://github.com/creativecommons/cccatalog/tree/master/src/cc_catalog_airflow/dags/provider_api_scripts), as well as their accompanying tests.
 ---
 application_tips:
-Knowledge or experience with pulling real data from public APIs in JSON format would be helpful.  It would also help if the intern is familiar with Python.  
+Knowledge or experience with pulling real data from public APIs in JSON format would be helpful.  It would also help if the intern is familiar with Python.
 ---
 resources:
 *   [CC Catalog code](https://github.com/creativecommons/cccatalog)
@@ -25,4 +25,4 @@ skills_recommended: Python, JSON, Apache Airflow (optional)
 ---
 mentors: Brent Moran, Kriti Godey
 ---
-difficulty: Low
+difficulty: Easy

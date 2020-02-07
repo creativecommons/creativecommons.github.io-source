@@ -9,7 +9,7 @@ problem:
 
 While we do keep track of certain user actions in our database, and are able to glean other insights with the use of Google Analytics, we do not have a single dashboard to see relevant information.
 
-This is a problem for two reasons:  
+This is a problem for two reasons:
 *   We have a lack of comprehensive understanding of user behavior, as we have to look in multiple places and pull disparate information to paint a picture of overall user behavior.
 *   Our catalog partners have no way to understand what impact their presence in CC Search is having in terms of discoverability and increased exposure to their collections.
     *   In turn we are unable to tell a story about that impact to potential, future partners.
@@ -17,7 +17,7 @@ This is a problem for two reasons:
 expected_outcome:
 We’d like the outcome to be an analytics interface, of some kind, where all of these metrics are pulled together into one place. The interface should be both aesthetically pleasing and clear to understand, allowing those accessing it to get the pertinent information they need, whether it is by day, week, month, collection, or any other logical grouping.
 ---
-internship_tasks:  
+internship_tasks:
 *   Understand the required data to be displayed as defined by CC HQ
 *   Research analytics dashboards to provide recommendations on additional data that is valuable
 *   Document a cohesive plan for structuring an analytics database storing all pertinent data
@@ -39,4 +39,4 @@ skills_recommended: CSS, design, HTML, Python, PostgreSQL
 ---
 mentors: Alden Page, Anna Tumadóttir
 ---
-difficulty: High
+difficulty: Hard
