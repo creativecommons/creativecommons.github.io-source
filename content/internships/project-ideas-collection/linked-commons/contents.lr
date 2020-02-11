@@ -14,7 +14,7 @@ expected_outcome:
 *   We may also add live updating to the data that backs the visualization.
 *   If these features are completed ahead of schedule, the intern may suggest further features to add to the visualization.
 ---
-internship_tasks:  
+internship_tasks:
 The intern should implement the first feature above, and if there’s time, implement the second.  It may be useful for the intern to assist with setting up live-updating of the data backing the visualization.
 ---
 application_tips:
@@ -31,4 +31,4 @@ skills_recommended: JavaScript, Graph Theory
 ---
 mentors: Brent Moran, María Belén Guaranda Cabezas
 ---
-difficulty: Low
+difficulty: Easy
