@@ -536,6 +536,21 @@
             "website": ""
         },
         {
+            "created": "2013-10-28T02:42:48",
+            "description": "Runs the site that hosts CC license badges",
+            "engineering_project": true,
+            "featured": false,
+            "id": 13915207,
+            "language": "Python",
+            "license": {
+                "name": "MIT License",
+                "url": "https://github.com/creativecommons/licensebuttons/blob/master/LICENSE"
+            },
+            "name": "licensebuttons",
+            "url": "https://github.com/creativecommons/licensebuttons",
+            "website": "https://licensebuttons.net/"
+        },
+        {
             "created": "2014-11-17T21:58:08",
             "description": "Helper tool for staging CC license legalcode translations before they are officially published",
             "engineering_project": true,
@@ -940,21 +955,6 @@
             "name": "wp-theme-summit",
             "url": "https://github.com/creativecommons/wp-theme-summit",
             "website": null
-        },
-        {
-            "created": "2013-10-28T02:42:48",
-            "description": "Runs the site that hosts CC license badges",
-            "engineering_project": true,
-            "featured": false,
-            "id": 13915207,
-            "language": "Python",
-            "license": {
-                "name": "MIT License",
-                "url": "https://github.com/creativecommons/www-i/blob/master/LICENSE"
-            },
-            "name": "www-i",
-            "url": "https://github.com/creativecommons/www-i",
-            "website": "https://licensebuttons.net/"
         }
     ]
 }
