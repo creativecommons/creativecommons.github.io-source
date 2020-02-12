@@ -537,7 +537,7 @@
         },
         {
             "created": "2013-10-28T02:42:48",
-            "description": "Runs the site that hosts CC license badges",
+            "description": "Creative Commons badges, license Buttons, etc.",
             "engineering_project": true,
             "featured": false,
             "id": 13915207,
