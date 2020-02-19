@@ -11,6 +11,7 @@
 {% block body %}
   <h2 class="mb-0">{{ this.title }}</h2>
   {{ check_file('content' + this.parent.parent.path + '/authors/' + this.author + '/contents.lr') }}
+<<<<<<< HEAD
   <p class="meta text-muted mt-0 mb-2">by <a href="{{ author|url }}">{{ render_author_name(author) }}</a>
   on {{ this.pub_date|dateformat('EEEE, yyyy-''MM-d') }}</p>
   {% if this.series|length %}  
@@ -23,6 +24,10 @@
     </div>
   </div>
  {% endif %}
+=======
+  <p class="meta text-muted mt-0">by <a href="{{ author|url }}">{{ render_author_name(author) }}</a>
+  on {{ this.pub_date|dateformat('EEEE, yyyy-''MM-d') }}</p>
+>>>>>>> e0cd24a51d73671e91264bd100b5c357357f4c5b
   <div class="body">{{ this.body }}</div>
   <div class="card bg-light">
     <div class="card-body p-2">
