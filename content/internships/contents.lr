@@ -6,11 +6,89 @@ title: Open Source Internships: Overview
 ---
 body:
 
-Creative Commons plans to participate in [Google Summer of Code](https://summerofcode.withgoogle.com/) 2020 and the [Outreachy](https://www.outreachy.org/) May-August 2020 round. Check back in early February for more information.
+## Current Participation
 
-## Resources
+### Programs
 
-* [Project Ideas](/internships/project-ideas)
+**Google Summer of Code**  
+CC has applied to be a mentoring organization for [Google Summer of Code](https://summerofcode.withgoogle.com/) 2020. We will hear back on 2020-02-20 whether we've been accepted.
+
+Feel free to take a look at our [Project Ideas](/internships/project-ideas) for the program. Please note that these project ideas are shared between all current internship programs.
+
+**Outreachy**  
+Creative Commons is participating in the [Outreachy](https://www.outreachy.org/) May-August 2020 round. [Here is our community page on the Outreachy website](https://www.outreachy.org/communities/cfp/creative-commons/).
+ 
+### Mentors
+
+Here are our mentors for this round of internships:
+
+<table class="table table-sm table-striped">
+  <thead class="thead-light">
+    <tr>
+      <th>Name</th>
+      <th>Slack username</th>
+      <th>About</th>
+    </tr>
+    <tr>
+      <td>Alden Page</td>
+      <td><code>@aldenpage</code></td>
+      <td><a href="/blog/authors/aldenpage">See CC Open Source Blog author page</a></td>
+    </tr>
+    <tr>
+      <td>Anna Tumadóttir</td>
+      <td><code>@Anna</code></td>
+      <td><a href="https://creativecommons.org/author/annacreativecommons-org/">See CC staff bio</a></td>
+    </tr>
+    <tr>
+      <td>Ari Madian</td>
+      <td><code>@Ari</code></td>
+      <td><a href="/blog/authors/akmadian">See CC Open Source Blog author page</a></td>
+    </tr>
+    <tr>
+      <td>Breno Ferreira</td>
+      <td><code>@brenoferreira</code></td>
+      <td><a href="/blog/authors/brenoferreira">See CC Open Source Blog author page</a></td>
+    </tr>
+    <tr>
+      <td>Brent Moran</td>
+      <td><code>@Brent</code></td>
+      <td><a href="/blog/authors/mathemancer">See CC Open Source Blog author page</a></td>
+    </tr>
+    <tr>
+      <td>Dhruv Bhanushali</td>
+      <td><code>@dhruvkb</code></td>
+      <td><a href="/blog/authors/dhruvkb">See CC Open Source Blog author page</a></td>
+    </tr>
+    <tr>
+      <td>Hugo Solar</td>
+      <td><code>@hugo</code></td>
+      <td><a href="/blog/authors/hugosolar">See CC Open Source Blog author page</a></td>
+    </tr>
+    <tr>
+      <td>Kriti Godey</td>
+      <td><code>@kriti</code></td>
+      <td><a href="/blog/authors/kgodey">See CC Open Source Blog author page</a></td>
+    </tr>
+    <tr>
+      <td>María Belén Guaranda Cabezas</td>
+      <td><code>@Maria Belen Guaranda</code></td>
+      <td><a href="/blog/authors/soccerdroid">See CC Open Source Blog author page</a></td>
+    </tr>
+    <tr>
+      <td>Sarah Hinchcliff Pearson</td>
+      <td><code>@shinchpearson</code></td>
+      <td><a href="https://creativecommons.org/author/sarahcreativecommons-org/">See CC staff bio</a></td>
+    </tr>
+    <tr>
+      <td>Timid Robot Zehta</td>
+      <td><code>@Timid Robot</code></td>
+      <td><a href="/blog/authors/TimidRobot">See CC Open Source Blog author page</a></td>
+    </tr>
+  </thead>
+</table>
+
+## Guides
+
 * [Applicant Guide](/internships/applicant-guide)
 * [Intern Guide](/internships/intern-guide)
 * [Mentor Guide](/internships/mentor-guide)
