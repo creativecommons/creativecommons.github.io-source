@@ -79,7 +79,7 @@ The channels most relevant to CC's developer community are:
     - `#general` is for general purpose discussions relevant to CC.
     - `#cc-announcements` is reserved for important announcements from CC staff.
 - For more information about how Creative Commons uses Slack, see [the Slack page on the CC public wiki](https://wiki.creativecommons.org/wiki/Slack).
-- If you're looking to talk to someone on CC's full-time engineering staff, we are all in the Americas and you're most likely to find us on Slack between 11:00 and 23:00 UTC on weekdays.
+- If you're looking to talk to someone on CC's full-time engineering staff, you're most likely to find us on Slack between 11:00 and 23:00 UTC on weekdays.
 
 ## IRC
 Please join the `#creativecommons-dev` channel on [Freenode](https://freenode.net/). This channel is mirrored to the `#cc-developers` channel on Slack so that messages posted on Slack show up on IRC and vice-versa.
