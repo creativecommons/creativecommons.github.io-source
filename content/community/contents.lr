@@ -28,26 +28,6 @@ The channels most relevant to CC's developer community are:
   </thead>
   <tbody>
     <tr>
-      <td><code>#cc-developers</code</td>
-      <td>General technical discussion, new tech blog posts</td>
-    </tr>
-    <tr>
-      <td><code>#cc-dev-wordpress</code</td>
-      <td>Discussion related to <a href="https://github.com/creativecommons/wp-plugin-creativecommons">the CC WordPress plugin</a>.</td>
-    </tr>
-    <tr>
-      <td><code>#cc-dev-linkchecker</code</td>
-      <td>Discussion related to <a href="https://github.com/creativecommons/cc-link-checker">the CC automated link checker</a></td>
-    </tr>
-    <tr>
-      <td><code>#cc-gsoc-outreachy</code</td>
-      <td>General Google Summer of Code and Outreachy related discussion</td>
-    </tr>
-    <tr>
-      <td><code>#cc-usability</code</td>
-      <td>General usability discussions, seeking feedback on new releases of CC products from the community</td>
-    </tr>
-    <tr>
       <td><code>#cc-dev-browser-extension</code</td>
       <td>Discussion related to the <a href="https://github.com/creativecommons/ccsearch-browser-extension">CC Search browser extension</a>.</td>
     </tr>
@@ -56,17 +36,41 @@ The channels most relevant to CC's developer community are:
       <td>Discussion related to the <a href="https://github.com/creativecommons/cccatalog-dataviz">CC Catalog visualizations</a>.</td>
     </tr>
     <tr>
-      <td><code>#cc-dev-cc-vocabulary</code</td>
+      <td><code>#cc-dev-license-chooser</code</td>
+      <td>Discussion related to the <a href="https://github.com/creativecommons/cc-chooser">new CC license chooser</a>.</td>
+    </tr>
+    <tr>
+      <td><code>#cc-dev-linkchecker</code</td>
+      <td>Discussion related to <a href="https://github.com/creativecommons/cc-link-checker">the CC automated link checker</a></td>
+    </tr>
+    <tr>
+      <td><code>#cc-dev-vocabulary</code</td>
       <td>Discussion related to <a href="https://github.com/creativecommons/cc-vocabulary">CC Vocabulary</a>.</td>
     </tr>
     <tr>
-      <td><code>#cc-dev-license-chooser</code</td>
-      <td>Discussion related to the <a href="https://github.com/creativecommons/cc-chooser">new CC license chooser</a>.</td>
+      <td><code>#cc-dev-wordpress</code</td>
+      <td>Discussion related to <a href="https://github.com/creativecommons/wp-plugin-creativecommons">the CC WordPress plugin</a>.</td>
+    </tr>
+    <tr>
+      <td><code>#cc-developers</code</td>
+      <td>General technical discussion, new tech blog posts</td>
+    </tr>
+    <tr>
+      <td><code>#cc-gsoc-outreachy</code</td>
+      <td>General Google Summer of Code and Outreachy related discussion</td>
     </tr>
     <tr>
       <td><code>#cc-outreachy-platform-toolkit</code</td>
       <td>Discussion related to the <a href="https://github.com/creativecommons/mp">CC Platform Tookit</a> Outreachy project.</td>
     </tr> 
+    <tr>
+      <td><code>#cc-search</code</td>
+      <td>Discussion related to <a href="https://search.creativecommons.org/">CC Search</a>, the <a href="https://api.creativecommons.engineering/">CC Catalog API</a>, and <a href="https://github.com/creativecommons/cccatalog">CC Catalog</a>.</td>
+    </tr>
+    <tr>
+      <td><code>#cc-usability</code</td>
+      <td>General usability discussions, seeking feedback on new releases of CC products from the community</td>
+    </tr>
   </tbody>
 </table>
 
