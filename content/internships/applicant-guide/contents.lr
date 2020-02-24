@@ -51,7 +51,7 @@ If you're applying via Outreachy, remember to record your contribution via the O
 
 ## Application
 
-Your final application is very important to us. This is what we will use to determine how well you understand the project and how likely you are to successfully complete it. As part of the application, you should take the project description and flesh it out into a more detailed project plan and implementation timeline. The project descriptions are all fairly short and some of them include multiple paths for the project so we expect you to do a lot of work here to turn those into a feasible plan for a complete project that you can ship during your internship, with a detailed timeline of what you plan to do every week.
+Your final application is very important to us. This is what we will use to determine how well you understand the project and how likely you are to successfully complete it. As part of the application, you should take the project description and flesh it out into a more detailed project plan and implementation timeline. The project descriptions are all fairly short and some of them include multiple paths for the project. So, we expect you to do a lot of work here to turn those into a feasible plan and timeline for a complete project that you can ship during your internship.
 
 **This is not something you should be working on in isolation.** We expect you to have a lot of questions for the mentors along the way as you try and understand the project, come up with ideas, evaluate feasibility, etc. We also expect you to come up with a first draft and get feedback from mentors before you submit the final application on the program's official site.
 
@@ -62,7 +62,9 @@ We suggest reading some articles on writing good Google Summer of Code proposals
 
 ### Template
 
-You must use this template _(coming soon)_ to create your application. Please make sure that your mentors have comment permissions before you share your document with them.
+You must use **[our internship project template](https://docs.google.com/document/d/18LWuA_iTSGSeRFtpVQdfOoz1G30ZgJg-_K0lNSQBYd0/)** to create your application. Please make sure that your mentors have comment permissions before you share your document with them.
+
+If you are applying for Outreachy, please link to the project proposal document created using this template from your final Outreachy application.
 
 ## Contacting Mentors
 
