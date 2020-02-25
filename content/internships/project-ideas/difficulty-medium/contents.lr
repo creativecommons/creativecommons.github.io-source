@@ -7,3 +7,5 @@ field: difficulty
 value: Medium
 ---
 order: 3
+---
+filter_label: difficulty-medium

@@ -7,3 +7,5 @@ field: difficulty
 value: Easy
 ---
 order: 2
+---
+filter_label: difficulty-easy

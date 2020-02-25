@@ -33,3 +33,5 @@ skills_recommended: CSS, Django, Django REST Framework, HTML, JavaScript, Python
 mentors: Alden Page, Brent Moran, Anna Tumadóttir
 ---
 difficulty: Medium
+---
+filter_value: difficulty-medium skill-javascript skill-python

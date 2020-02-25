@@ -40,3 +40,5 @@ skills_recommended: CSS, design, HTML, Python, PostgreSQL
 mentors: Alden Page, Anna Tumadóttir
 ---
 difficulty: Hard
+---
+filter_value: difficulty-hard skill-python

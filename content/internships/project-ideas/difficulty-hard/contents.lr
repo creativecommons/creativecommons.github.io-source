@@ -7,3 +7,5 @@ field: difficulty
 value: Hard
 ---
 order: 4
+---
+filter_label: difficulty-hard

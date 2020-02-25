@@ -7,3 +7,5 @@ field: recommended_skill
 value: Writing
 ---
 order: 7
+---
+filter_label: skill-writing

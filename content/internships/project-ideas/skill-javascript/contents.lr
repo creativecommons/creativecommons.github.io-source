@@ -7,3 +7,5 @@ field: recommended_skill
 value: JavaScript
 ---
 order: 5
+---
+filter_label: skill-javascript

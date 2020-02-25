@@ -7,3 +7,5 @@ field: recommended_skill
 value: WordPress
 ---
 order: 7
+---
+filter_label: skill-wordpress

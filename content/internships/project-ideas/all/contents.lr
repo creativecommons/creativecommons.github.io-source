@@ -7,3 +7,5 @@ field:
 value:
 ---
 order: 1
+---
+filter_label: all

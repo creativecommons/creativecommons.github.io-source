@@ -26,3 +26,5 @@ skills_recommended: Python, JSON, Apache Airflow (optional)
 mentors: Brent Moran, Kriti Godey
 ---
 difficulty: Easy
+---
+filter_value: difficulty-easy skill-python

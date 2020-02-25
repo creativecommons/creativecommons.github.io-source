@@ -37,3 +37,5 @@ skills_recommended: Research, Writing. In so far as the work is technical, it is
 mentors: Anna Tumadóttir, Sarah Pearson
 ---
 difficulty: Easy
+---
+filter_value: difficulty-easy skill-writing
