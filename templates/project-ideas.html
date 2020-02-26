@@ -8,15 +8,32 @@
   <hr/>
   <!-- We display all ideas by default. -->
   {% set ideas = site.query('/internships/project-ideas-collection').include_undiscoverable(true) %}
-  {% set filters = site.query('/internships/project-ideas').include_undiscoverable(true).order_by('order') %}
-  {% set current_filter = filters.filter(F._slug == this._slug).first() %}
   <div class="mt-4">
     <div>
-      {% for filter in filters %}
-          <button type="button" class="m-1 btn btn-sm btn-primary filter-btn" data-filter="{{ filter.filter_label }}">
-            {{ filter.nav_label }}
-          </button>
-      {% endfor %}
+      <button type="button" class="m-1 btn btn-sm btn-dark filter-btn" data-filter="all">
+        All Projects
+      </button>
+      <button type="button" class="m-1 btn btn-sm btn-primary filter-btn" data-filter="difficulty-easy">
+        Difficulty: Easy
+      </button>
+      <button type="button" class="m-1 btn btn-sm btn-primary filter-btn" data-filter="difficulty-medium">
+        Difficulty: Medium
+      </button>
+      <button type="button" class="m-1 btn btn-sm btn-primary filter-btn" data-filter="difficulty-hard">
+        Difficulty: Hard
+      </button>
+      <button type="button" class="m-1 btn btn-sm btn-primary filter-btn" data-filter="skill-javascript">
+        Skill: JavaScript
+      </button>
+      <button type="button" class="m-1 btn btn-sm btn-primary filter-btn" data-filter="skill-python">
+        Skill: Python
+      </button>
+      <button type="button" class="m-1 btn btn-sm btn-primary filter-btn" data-filter="skill-wordpress">
+        Skill: WordPress
+      </button>
+      <button type="button" class="m-1 btn btn-sm btn-primary filter-btn" data-filter="skill-writing">
+        Skill: Writing
+      </button>
       <ul class="list-unstyled m-3">
       {% for idea in ideas %}
         <li class="my-2 filter filter-label {{ idea.filter_value }}"><a href="#{{ idea._slug }}">{{ idea.title }}</a></li>
