@@ -17,10 +17,12 @@ Here's a list of [all our current projects](/projects). We use GitHub issues ass
 We make extensive use of issue labels to desginate the status of various issues. We have a standard set of labels across all projects, [documented here](https://github.com/creativecommons/ccos-scripts/blob/master/normalize_repos/labels.py). Here are some of the ones that are most relevant to finding a good issue to work on:
 
 * Issues tagged `help wanted` and/or `good first issue` are available for community contribution. You may work on an issue labeled `good first issue` even if it's not your first issue.
-* Issues tagged `in progress` are being worked on by someone else. If there hasn't been any issue or PR activity for at least 7 days, issues with this tag can be reassigned to someone else.
-* Issues tagged `blocked`, `not ready for work` or `ticket work required` are not yet ready for work. They need something else to be done first before they are ready.
-* Issues tagged `CC staff only` are not suitable for community contribution, usually because it requires infrastructure access or institutional knowledge that would be impractical to provide to the community.
-* Issues without any of the above labels may be open for contribution.
+    * Check the issue comments to see whether someone else has indicated that they are working on it. If there hasn't been any issue or PR activity for at least 7 days, then that issue can be considered up for grabs.
+* Issues tagged `in progress` are being worked on by someone else.
+    * If there hasn't been any issue or PR activity for at least 7 days, then that issue can be considered up for grabs.
+* Issues tagged `blocked`, `not ready for work` or `ticket work required` are not yet ready for work. They need something else to be done first before they are ready. Do not work on these issues.
+* Issues tagged `CC staff only` are not suitable for community contribution, usually because it requires infrastructure access or institutional knowledge that would be impractical to provide to the community. Do not work on these issues.
+* Issues without any of the above labels _may_ be open for contribution. Please add a comment to ask whether the issue is available.
 
 Some helpful saved searches on GitHub than can assist with finding an issue:
 - [issues labeled "good first issue"](https://github.com/search?q=org%3Acreativecommons+is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)
@@ -32,17 +34,21 @@ Some helpful saved searches on GitHub than can assist with finding an issue:
 
 Once you've found an issue you'd like to work on, please follow these steps to make your contribution:
 
-1. Comment on it and say you'd like to work on that issue.
-2. Wait for someone (usually a CC staff member or project maintainer) to confirm that you may work on the issue before writing any code. The person who confirms will assign the issue to you add an "in progress" label to the issue to indicate that the issue is being worked on.
-3. Once the issue has been updated to "in progress", write your code and submit your pull request. Be sure to read and follow our **[pull request guidelines](/contributing-code/pr-guidelines)**!
-4. Wait for code review and address any issues raised as soon as you can.
+1. Comment on it and say you're working on that issue. This is to avoid conflicts with others also working on the issue.
+    * A project maintainer may mark the issue with an `in progress` label at this point, but we don't always get around to that.
+2. Write your code and submit your pull request. Be sure to read and follow our **[pull request guidelines](/contributing-code/pr-guidelines)**!
+    * Please link to your branch or PR in the issue as soon as you push it, even if it's only an early draft.
+3. Wait for code review and address any issues raised as soon as you can.
 
-Even if you're not done with the issue, create a [draft pull request](https://help.github.com/en/articles/about-pull-requests#draft-pull-requests) and push your code [early and often](https://www.worklytics.co/blog/commit-early-push-often/). If we haven't heard from you in over a week and someone else expresses interest in that issue, we will reassign the issue to the new person.
+**A note on collaboration:** We encourage people to collaborate as much as possible. We especially appreciate contributors reviewing each others pull requests, as long as you are [kind and constructive](https://medium.com/@otarutunde/comments-during-code-reviews-2cb7791e1ac7) when you do so.
 
 ## Proposing a new issue
 
-If you want to work on something that there is no GitHub issue for, then create a a new GitHub issue associated with the relevant repository and propose your change there. Be sure to include implementation details and the rationale for the proposed change.
+If you want to work on something that there is no GitHub issue for, follow these steps:
 
-If the project has a roadmap documented in the README, checking the roadmap to see if the feature is already in our pipeline would be a good first step.
+1. Create a a new GitHub issue associated with the relevant repository and propose your change there. Be sure to include implementation details and the rationale for the proposed change.
+    * We are very reluctant to accept random pull requests without a related issue created first.
+2. The issue will automatically have the `not ready for work` label applied. Wait for a project maintainer to evaluate your issue and decide whether it's something that we will accept a pull request for.
+3. Once the project maintainer has approved the issue and removed the `not ready for work` label, you may start work on code as described in the "Contribution process" section above.
 
 When in doubt, ask a question on [one of our community forums](/community).

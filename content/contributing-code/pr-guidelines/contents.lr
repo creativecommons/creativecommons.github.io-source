@@ -8,6 +8,7 @@ body:
 
 We ask that contributors to CC projects submit a pull request with your changes. If you're not familiar with pull requests, please read [this GitHub documentation](https://help.github.com/en/articles/about-pull-requests). Here are our expectations for pull requests; following them will expedite the process of merging your code in.
 
+* **Please create a separate branch for each issue that you're working on. Do not make changes to the `master` branch of your fork.**
 * Even if you're not done with the issue you're working on, create a [draft pull request](https://help.github.com/en/articles/about-pull-requests#draft-pull-requests) and push your code [early and often](https://www.worklytics.co/blog/commit-early-push-often/).
 * Read and follow the contributing guidelines and code of conduct for the project. Here are screenshots of where to find them for [first time contributors](first-time-contributor-resources.png) and [previous contributors](previous-contributor-resources.png).
 * Use the format specified in pull request template for the repository.
