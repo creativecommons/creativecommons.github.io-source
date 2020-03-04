@@ -16,13 +16,16 @@ Here's a list of [all our current projects](/projects). We use GitHub issues ass
 
 We make extensive use of issue labels to desginate the status of various issues. We have a standard set of labels across all projects, [documented here](https://github.com/creativecommons/ccos-scripts/blob/master/normalize_repos/labels.py). Here are some of the ones that are most relevant to finding a good issue to work on:
 
-* Issues tagged `help wanted` and/or `good first issue` are available for community contribution. You may work on an issue labeled `good first issue` even if it's not your first issue.
-    * Check the issue comments to see whether someone else has indicated that they are working on it. If there hasn't been any issue or PR activity for at least 7 days, then that issue can be considered up for grabs.
-* Issues tagged `in progress` are being worked on by someone else.
-    * If there hasn't been any issue or PR activity for at least 7 days, then that issue can be considered up for grabs.
-* Issues tagged `blocked`, `not ready for work` or `ticket work required` are not yet ready for work. They need something else to be done first before they are ready. Do not work on these issues.
-* Issues tagged `CC staff only` are not suitable for community contribution, usually because it requires infrastructure access or institutional knowledge that would be impractical to provide to the community. Do not work on these issues.
-* Issues without any of the above labels _may_ be open for contribution. Please add a comment to ask whether the issue is available.
+* **Issues tagged `help wanted` or `good first issue`** are available for community contribution**
+    * These issues are available for community contribution and you do not need our permission to work on one of these.
+    * You may work on an issue labeled `good first issue` even if it's not your first issue.
+    * Check the issue comments/labels to see whether someone else has indicated that they are working on it. If someone is already working on it and there has been activity within the last 7 days, you may want to find a different issue to work on.
+* **Issues tagged with one of these labels: `blocked`, `not ready for work`, `ticket work required`, `CC staff only` are not available to the community. Do not work on these.**
+    * Issues tagged `blocked` are blocked by other work that needs to be done first.
+    * Issues tagged `not ready for work` or `ticket work required` need additional work done on the issue before they can be opened to community contributors.
+    * Issues tagged `CC staff only` are not suitable for community contribution, usually because it requires infrastructure access or institutional knowledge that would be impractical to provide to the community.
+* **Issues without any of the above labels _may_ be open for contribution.**
+    * Please add a comment to ask whether the issue is available before starting work.
 
 Some helpful saved searches on GitHub than can assist with finding an issue:
 - [issues labeled "good first issue"](https://github.com/search?q=org%3Acreativecommons+is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)
@@ -37,7 +40,6 @@ Once you've found an issue you'd like to work on, please follow these steps to m
 1. Comment on it and say you're working on that issue. This is to avoid conflicts with others also working on the issue.
     * A project maintainer may mark the issue with an `in progress` label at this point, but we don't always get around to that.
 2. Write your code and submit your pull request. Be sure to read and follow our **[pull request guidelines](/contributing-code/pr-guidelines)**!
-    * Please link to your branch or PR in the issue as soon as you push it, even if it's only an early draft.
 3. Wait for code review and address any issues raised as soon as you can.
 
 **A note on collaboration:** We encourage people to collaborate as much as possible. We especially appreciate contributors reviewing each others pull requests, as long as you are [kind and constructive](https://medium.com/@otarutunde/comments-during-code-reviews-2cb7791e1ac7) when you do so.
