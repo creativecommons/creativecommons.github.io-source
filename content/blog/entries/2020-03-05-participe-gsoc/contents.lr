@@ -1,0 +1,43 @@
+title: Participe do Google Summer of Code / Outreachy
+---
+categories:
+gsoc
+outreachy
+---
+author: brenoferreira
+---
+pub_date: 2020-03-05
+---
+body:
+
+O Google Summer of Code (GSoC) é uma iniciativa global do Google com o objetivo de incentivar a participação de estudantes com interesse em tecnologia a contribuírem com projetos de software de código aberto. Programa que existe desde 2005, que incentivou mais de 15.000 estudantes de mais de 118 países a se envolverem com várias organizações que defendem o código aberto.
+
+O Outreachy promove estágios para pessoas em organizações que trabalham com código aberto. O foco da participação no programa está nas comunidades com pouca representação, viés sistêmico ou discriminação na área de tecnologia.
+
+Os estudantes trabalham com uma organização responsável por algum projeto e durante um período de estágio de 3 meses, e estarão sob tutoria de um(a) mentor(a) que será responsável por ajudar o estudante e guiá-lo(a) a encontrar a melhor maneira de concluir o projeto.
+
+Em 2020 a Creative Commons está novamente participando do GSoC e Outreachy, e estagiários participando conosco terão a oportunidade de trabalhar em projetos relacionados à cultura de acesso livre de impacto global, dentre eles o nosso principal produto de tecnologia, o CC Search, que é um site de busca de conteúdo livre licenciados com as licenças da CC ou sob domínio público.
+
+A Creative Commons é uma organização não governamental sem fins lucrativos que criou licenças que permitem a cópia e compartilhamento com menos restrições que o tradicional todos direitos reservados (copyright), as chamadas [Licenças Creative Commons](https://creativecommons.org/licenses/?lang=pt_BR), como CC-BY, CC-BY-SA, etc..
+
+Muitas das organizações que participam do programa do Google e Outreachy trabalham em projetos de código livre utilizados globalmente em diversas aplicações. É uma oportunidade única de contribuir com um projeto que gera um impacto positivo na comunidade internacional de tecnologia. Além disso, os estudantes terão um mentor exclusivo para ajudar no desenvolvimento do projeto. Não é um daqueles estágios onde os estudantes ficam desamparados nos momentos de dificuldade.
+
+O estágio é remunerado naturalmente. Os valores pagos aos estagiários pelo Google variam com a localização onde o estudante mora e mais informações podem ser encontradas no [site do programa](https://developers.google.com/open-source/gsoc/help/student-stipends). No caso do Outreachy, os valores estão também na [página do programa](https://www.outreachy.org).
+
+Caso voce se interesse em participar do GSoC ou Outreachy esse ano, seguem algumas dicas que poderão te ajudar no seu processo de aplicação e submissão de projeto:
+
+Leia o conteúdo disponível online sobre como o programa funciona. [Google Summer of Code](https://summerofcode.withgoogle.com/how-it-works] e [Outreachy](https://www.outreachy.org/docs/applicant/). Assim voce irá poder entender a proposta do programa, sua estrutura e tirar suas dúvidas; [nossa lista de projetos](https://opensource.creativecommons.org/internships/project-ideas/all/) que estamos sugerindo esse ano para os estudantes trabalhar e ver qual projeto está melhor alinhado com seus interesses e habilidades; e [nosso guia para candidatos](https://opensource.creativecommons.org/internships/applicant-guide/) para entender o passo a passo de como nós iremos trabalhar com candidatos e estudantes selecionados para participar do programa. Esse conteúdo está todo em inglês.
+
+Sobre inglês, para ser selecionado para trabalhar conosco, é necessário que voce consiga se comunicar razoavelmente bem em inglês. A Creative Commons é uma organização internacional e voce precisará se comunicar com pessoas da organização e da comunidade que não falam português. Eu, Breno Ferreira, autor desse post, falo portugues então caso voce se interesse pelo [projeto que serei responsável](https://opensource.creativecommons.org/internships/project-ideas/all/#cc-search-accessibility), eu poderei me comunicar em privado em portugues, mas toda comunicação dos estudantes em canais públicos deverá ser em inglês. Voce não precisa ser 100% fluente, mas precisa conseguir entender e se fazer entender no idioma.
+
+O GSoC é um programa focado em contribuições de código, afinal, chama-se Google Summer of Code. Então, voce precisa ter alguns conhecimentos básicos de algumas ferramentas para uma boa participação no programa.
+
+Voce precisará saber usar Git e Github. Todos os projetos da Creative Commons estão no Github e o conhecimento básico dessas ferramentas é fundamental. A [documentação do Github](https://help.github.com/pt) pode ajudar, principalmente a parte sobre [como funcionam os Pull Requests](https://help.github.com/pt/github/collaborating-with-issues-and-pull-requests/about-pull-requests) pois é um recurso bem particular do Github e é normal algumas pessoas não saberem utilizar esse recurso muito importante.
+
+Na nossa página de [ideias de projetos](https://opensource.creativecommons.org/internships/project-ideas/all/) os projetos listam as habilidades recomendadas para quem se interessar (listado em *Skills recommended*). Verifique se essas habilidades se alinham com as suas.
+
+Nessa fase inicial, o ideal é voce começar a fazer algumas contribuições nos projetos que te interessam. Por exemplo, se voce se interessou pelo projeto de Acessibilidade e Internacionalização do CC Search, o repositório no Github relacionado é <https://github.com/creativecommons/cccatalog-frontend>. De uma olhada na [lista de issues](https://github.com/creativecommons/cccatalog-frontend/issues) que estão marcadas com os labels ["Good First Issue"](https://github.com/creativecommons/cccatalog-frontend/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22) e ["Help Wanted"](https://github.com/creativecommons/cccatalog-frontend/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22). Essas são as tarefas que nós consideramos as melhores para quem quer começar a contribuir para o projeto. Os nossos principais repositórios tem todos issues marcadas com esses labels. É muito importante também ler a documentação do projeto. Leia o arquivo README no repositório. Nossos projetos também possuem um arquivo CONTRIBUTING.md que contém o código de conduta para quem for contribuir com o projeto, e também um guia sobre como contribuir com aquele projeto em específico. Além disso, é interessante também voce [participar da comunidade](https://opensource.creativecommons.org/community/). Entre no nosso Slack e participe dos canais abertos. As pessoas estão lá interagindo, postando comentarios e tirando dúvidas conosco e outros membros em um ambiente respeitoso e cordial.
+
+Durante o periodo de submissão de projetos voce irá escrever sua proposta de projeto. É bastante importante que voce compartilhe o rascunho da sua proposta o mais cedo possível conosco para que possamos dar feedback e lhe dizer o que precisa ser melhorado. Se voce só compartilhar sua proposta no final do período de submissão, não teremos a oportunidade de dizer o que está bom e ruim e voce não poderá fazer nenhuma melhoria. Então recomendamos que voce compartilhe seus rascunhos com os mentores cedo e frequentemente.
+
+Espero que essas dicas lhe ajudem. Caso voce não seja selecionado(a), o GSoC é um programa anual, e ano que vem acontece novamente. E no segundo semestre participaremos também do programa Outreachy, que acontece duas vezes por ano. Caso voce acabe sendo selecionado(a), será um prazer trabalhar com voce durante esses meses.
