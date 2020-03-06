@@ -1,0 +1,23 @@
+name: Building and Deploying to CC opensource site
+on: [push]
+jobs:
+ build-and-deploy:
+  runs-on: ubuntu-latest
+  steps:
+   - uses: actions/checkout@v1
+   - name: Cache
+     uses: actions/cache@v1
+     with:
+       path:
+        -  ~/.cache/pip
+        -  ~/.cache/lektor/builds
+   - name: setup python version
+     uses: actions/setup-python@v1
+     with:
+      python-version: 3.7
+   - name: Install dependencies
+     run: |
+      pip install pipenv
+      pipenv install 
+   - name: start webpack build
+     run: lektor build -f webpack
