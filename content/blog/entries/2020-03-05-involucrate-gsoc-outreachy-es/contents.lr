@@ -1,0 +1,71 @@
+title: Involúcrate con nuestra comunidad de código abierto a través del  Google Summer of Code y Outreachy
+---
+categories:
+gsoc
+outreachy
+---
+author: hugosolar
+---
+pub_date: 2020-03-05
+---
+body:
+
+En Creative Commons creemos firmemente en que el código abierto es una gran herramienta para fomentar y desarrollar productos con un enfoque comunitario y, a su vez, la consolidación de una comunidad activa de contribuyentes al  patrimonio común (o, en inglés, *Commons*).
+
+Con el fin de fomentar la participación de estudiantes en nuestros proyectos de código abierto, CC es parte de los programas que ofrece Google  ([Google Summer of Code](https://summerofcode.withgoogle.com/)) y también [Outreachy](https://www.outreachy.org/). En ambos casos, el objetivo es involucrar a estudiantes en el código abierto. Para ello, hacemos un llamado abierto a todos y todas quienes tengan interés en colaborar con nuestro equipo, de postular a los llamados cuanto antes. 
+
+#### Google Summer of Code
+Programa impulsado por Google el cual existe desde el año 2005 el cual ha impulsado a mas de 15.000 estudiantes de mas de 118 paises a involucrarse con diversas organizaciones que abogan por el código abierto.
+
+#### Outreachy
+Este programa impulsa pasantías de personas en organizaciones que trabajan con código abierto. El foco de Outreachy está puesto en comunidades que poseen poca representatividad, que sufren prejuicios sistémicos o discriminación en el area de las tecnologias.
+
+Las pasantías consisten en el desarrollo de un proyecto el cual debe ser llevado a cabo en un periodo de 3 meses. Este proceso se complementa con una mentoría recibida por el estudiante la cual ayuda a guiar el desarrollo y buen término del mismo.
+
+En las versiones pasadas de estos programas tuvimos excelentes resultados llevados a cabo por excelentes personas que pusieron toda su dedicación para concretar estos proyectos:
+
+## GSoC 2019
+- [Wordpress Plugin](https://github.com/creativecommons/wp-plugin-creativecommons) por Ahmad Bilal
+- [CC Search Browser extension](https://github.com/creativecommons/ccsearch-browser-extension) por Mayank Nader
+- [CC Vocabulary](https://github.com/creativecommons/vue-vocabulary) por Dhruv Bhanushali
+- [Revamping the CC Chooser](https://github.com/creativecommons/cc-chooser) por Ari Madian
+- [CC Catalog Data Visualization](https://github.com/creativecommons/cccatalog-dataviz) por Maria Belen Guaranda
+
+## Outreachy 2019-2020
+- [Improve License Chooser](https://github.com/creativecommons/cc-chooser) por Olga Bulat
+- [Extend the scope and/or use of CC Vocabulary](https://github.com/creativecommons/vue-vocabulary) por Chidiebere Onyegbuchulem
+- Revamp CC's Platform Toolkit guide por Ana Paula Rocha
+
+De esta manera hemos decidido participar de las siguientes rondas de ambos programas, los cuales se encuentran en la fase de “contribución a la comunidad”, por lo tanto, aún estás a tiempo de leer documentación al respecto, tanto de los programas como de la participación en los proyectos de nuestra organización
+
+### GSoC
+- [Organizaciones participantes](https://summerofcode.withgoogle.com/organizations/)
+- [Como funciona](https://summerofcode.withgoogle.com/how-it-works/)
+- [Guía de estudiante](https://google.github.io/gsocguides/student/)
+
+### Outreachy
+- [Organizaciones / proyectos](https://www.outreachy.org/apply/project-selection/)
+- [Como funciona](https://www.outreachy.org/apply/)
+- [Guia de estudiante](https://www.outreachy.org/docs/internship/)
+
+### CC Open Source
+- [Guia del postulante](https://opensource.creativecommons.org/internships/intern-guide/)
+- [Listado de proyectos](https://opensource.creativecommons.org/contributing-code/projects/)
+- [Lineamientos para contribuir](https://opensource.creativecommons.org/contributing-code/)
+
+## Beneficios
+Estos programas proveen múltiples beneficios a quienes deseen participar de ellos, por un lado, las organizaciones participantes trabajan en proyectos de código abierto utilizados en todo el mundo y en diversas aplicaciones, convirtiéndose en una oportunidad única de contribuir a proyectos de gran escala que además cuentan con comunidades globales transformando además esta pasantía en una experiencia enriquecedora.
+
+Por otro lado, técnicamente hablando, también comprende un gran desafío, ya que existe la posibilidad de enfrentarse a la resolución de un problema del mundo real, sin embargo, el hecho de poder enfrentarlo con una mentoría exclusiva provee un gran número de herramientas para el desarrollo y concreción del proyecto, los cuales, sin duda, seran de gran ayuda para el futuro desarrollo de la vida profesional de quien participe.
+
+Además, estos programas consideran un estipendio por los 3 meses que dura la pasantía. Valores que son variables según la ubicación que quien desea postular.
+
+## Destrezas
+
+Con respecto al idioma, para participar en estos programas no se exige un manejo del inglés al 100%, solo basta que puedas comunicarte de manera razonable, ya que, si bien, existen algunos proyectos en los cuales yo soy el mentor ( [WP Plugin](https://opensource.creativecommons.org/internships/project-ideas/all/#wp-plugin) e [Implementar Vocabulary](https://opensource.creativecommons.org/internships/project-ideas/all/#vocabulary-integration) ) y podemos tener reuniones en español, la comunicación pública y la documentación debe ser en Inglés.
+
+Con respecto a nuestros proyectos, todos se encuentran en [Github](https://github.com/creativecommons) por lo tanto debes saber lo básico de [Git](https://rogerdudler.github.io/git-guide/index.es.html). Te recomiendo consultar la [ayuda de Github](https://help.github.com/es) para mayor detalle, sugiero poner atención a la guia sobre como realizar [Pull Request](https://help.github.com/es/github/collaborating-with-issues-and-pull-requests/about-pull-requests) ya que es muy necesario para el flujo de trabajo del equipo tecnico de CC y lo será también para tu pasantía.
+
+## Invitación
+
+Desde yá los dejamos invitados a participar en estos programas o a participar directamente en nuestra [comunidad de código abierto](https://opensource.creativecommons.org/) o visitar nuestro [Github](https://github.com/creativecommons), el cual contiene nuestros proyectos. También pueden unirse a nuestra comunidad global en [Slack](https://slack-signup.creativecommons.org/) donde me pueden encontrar como @hugo si tienen alguna duda o comentario.
