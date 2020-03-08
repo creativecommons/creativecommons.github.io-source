@@ -5,8 +5,13 @@ jobs:
   runs-on: ubuntu-latest
   steps:
    - uses: actions/checkout@v1
-   - name: Lektor Action
-     uses: VaultVulp/lektor-action@v1.0.2
-   - name: Start webpack build
+   - name: setup python version
+     uses: actions/setup-python@v1
+     with:
+      python-version: 3.7
+   - name: Install dependencies
      run: |
-      lektor server -f webpack
+      pip install pipenv
+      pipenv install 
+      pipenv run lektor server -f webpack
+
