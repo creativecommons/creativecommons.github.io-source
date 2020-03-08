@@ -14,3 +14,7 @@ jobs:
       pip install pipenv
       pipenv install 
       pipenv run lektor server -f webpack
+<<<<<<< HEAD
+=======
+
+>>>>>>> a50dfdbcce84c63e77c7f0ae81b0142033994d27
