@@ -15,3 +15,6 @@ jobs:
       pipenv install
    - name: Lektor Action
      uses: VaultVulp/lektor-action@v1.0.2
+   - name: Start webpack build
+     run: |
+      lektor server -f webpack
