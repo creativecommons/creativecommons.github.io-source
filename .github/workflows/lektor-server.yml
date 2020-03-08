@@ -12,5 +12,12 @@ jobs:
    - name: Install dependencies
      run: |
       pip install pipenv
-      pipenv install 
-      pipenv run lektor server -f webpack
+      pipenv install
+      pipenv run lektor build -f webpack --output-path ./build 
+      mkdir build
+   - name: Deploy
+     uses: peaceiris/actions-gh-pages@v3
+     with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
+          publish_branch: gh-pages
