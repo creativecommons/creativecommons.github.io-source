@@ -12,6 +12,6 @@ jobs:
    - name: Install dependencies
      run: |
       pip install pipenv
-      pipenv install 
       pipenv shell
+      pipenv install 
       lektor build -f webpack
