@@ -13,5 +13,7 @@ jobs:
      run: |
       pip install pipenv
       pipenv install 
+      pipenv shell
+      pip install Lektor
    - name: start webpack build
      run: lektor build -f webpack
