@@ -3,37 +3,47 @@
 
 {% block header %}Open Source Internships: Project Ideas{% endblock %}
 {% block body %}
+
   <p class="lead">This is the project idea list for the <strong><a href="/internships">current round of open source internships at Creative Commons</a></strong>.</p>
   <hr/>
   <!-- We display all ideas by default. -->
   {% set ideas = site.query('/internships/project-ideas-collection').include_undiscoverable(true) %}
-  {% set filters = site.query('/internships/project-ideas').include_undiscoverable(true).order_by('order') %}
-  {% set current_filter = filters.filter(F._slug == this._slug).first() %}
-  <!-- The following code filters the ideas to display based on the current URL. -->
-  {% if current_filter.field == 'difficulty' %}
-    {% set ideas = ideas.filter(F.difficulty == current_filter.value) %}
-  {% elif current_filter.field == 'recommended_skill' %}
-    {% set ideas = ideas.filter(F.skills_recommended.contains(current_filter.value).or(F.skills_recommended.contains('depends'))) %}
-  {% endif %}
   <div class="mt-4">
     <div>
-      {% for filter in filters %}
-        <a href="{{ filter.url_path }}">
-          <button type="button" class="m-1 btn btn-sm {% if this._slug == filter._slug %}btn-dark{% else %}btn-primary{% endif %}" {% if this._slug == filter._slug %}disabled{% endif %}>
-            {{ filter.nav_label }}
-          </button>
-        </a>
-      {% endfor %}
+      <button type="button" class="m-1 btn btn-sm btn-dark filter-btn" data-filter="all">
+        All Projects
+      </button>
+      <button type="button" class="m-1 btn btn-sm btn-primary filter-btn" data-filter="difficulty-easy">
+        Difficulty: Easy
+      </button>
+      <button type="button" class="m-1 btn btn-sm btn-primary filter-btn" data-filter="difficulty-medium">
+        Difficulty: Medium
+      </button>
+      <button type="button" class="m-1 btn btn-sm btn-primary filter-btn" data-filter="difficulty-hard">
+        Difficulty: Hard
+      </button>
+      <button type="button" class="m-1 btn btn-sm btn-primary filter-btn" data-filter="skill-javascript">
+        Skill: JavaScript
+      </button>
+      <button type="button" class="m-1 btn btn-sm btn-primary filter-btn" data-filter="skill-python">
+        Skill: Python
+      </button>
+      <button type="button" class="m-1 btn btn-sm btn-primary filter-btn" data-filter="skill-wordpress">
+        Skill: WordPress
+      </button>
+      <button type="button" class="m-1 btn btn-sm btn-primary filter-btn" data-filter="skill-writing">
+        Skill: Writing
+      </button>
       <ul class="list-unstyled m-3">
       {% for idea in ideas %}
-        <li class="my-2"><a href="#{{ idea._slug }}">{{ idea.title }}</a></li>
+        <li class="my-2 filter filter-label {{ idea.filter_value }}"><a href="#{{ idea._slug }}">{{ idea.title }}</a></li>
       {% endfor %}
         <li class="my-2"><a href="#original-ideas">Original Ideas</a></li>
       </ul>
     </div>
     <hr/>
     {% for idea in ideas %}
-      <div class="project-idea-card m-1 mb-4">
+      <div class="project-idea-card m-1 mb-4 filter filter-block {{ idea.filter_value }}">
         <h2 class="card-header project-idea-header"><a name="{{ idea._slug }}">{{ idea.title }}</a></h5>
         <ul class="list-group list-group-flush">
           <li class="list-group-item"><strong>The Problem:</strong> {{ idea.problem }}</li>

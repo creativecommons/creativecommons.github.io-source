@@ -38,3 +38,5 @@ skills_recommended: CSS, Django, HTML, JavaScript, PHP, Python, WordPress (eithe
 mentors: Kriti Godey, Sarah Pearson, Timid Robot Zehta
 ---
 difficulty: Medium
+---
+filter_value: difficulty-medium skill-javascript skill-python skill-wordpress

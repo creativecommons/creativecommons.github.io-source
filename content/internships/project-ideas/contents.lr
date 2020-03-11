@@ -1,5 +1,1 @@
-_model: redirect
----
-target: /internships/project-ideas/all/
----
-_discoverable: no
+_model: project-ideas

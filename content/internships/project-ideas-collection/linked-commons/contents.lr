@@ -32,3 +32,5 @@ skills_recommended: JavaScript, Graph Theory
 mentors: Brent Moran, María Belén Guaranda Cabezas
 ---
 difficulty: Easy
+---
+filter_value: difficulty-easy skill-javascript

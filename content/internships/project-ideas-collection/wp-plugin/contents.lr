@@ -36,3 +36,5 @@ skills_recommended: CSS, HTML, JavaScript, PHP, WordPress
 mentors: Hugo Solar, Timid Robot Zehta
 ---
 difficulty: Medium
+---
+filter_value: difficulty-medium skill-javascript skill-wordpress

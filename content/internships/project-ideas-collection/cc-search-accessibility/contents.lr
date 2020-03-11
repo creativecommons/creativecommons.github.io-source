@@ -44,3 +44,5 @@ skills_recommended: CSS, HTML, JavaScript, Vue.js
 mentors: Breno Ferreira, Ari Madian
 ---
 difficulty: Medium
+---
+filter_value: difficulty-medium skill-javascript

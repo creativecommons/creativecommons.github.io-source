@@ -36,3 +36,5 @@ skills_recommended: CSS, HTML, JavaScript, PHP, WordPress
 mentors: Dhruv Bhanushali, Hugo Solar
 ---
 difficulty: Medium
+---
+filter_value: difficulty-medium skill-javascript skill-wordpress
