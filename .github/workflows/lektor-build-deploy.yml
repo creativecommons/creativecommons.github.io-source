@@ -1,7 +1,7 @@
 name: Build and Deploy CC Open Source
 on: [push]
 jobs:
- build:
+ build-and-deploy:
   runs-on: ubuntu-latest
   steps:
    - uses: actions/checkout@v1
