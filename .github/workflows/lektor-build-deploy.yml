@@ -15,6 +15,6 @@ jobs:
       pipenv install
       pipenv run lektor build -f webpack
    - name: Deploy to production
-     if: github.ref == 'master'
+     if: github.ref == 'refs/heads/master'
      run: |
       pipenv run lektor deploy ghpages --username ${{ secrets.LEKTOR_DEPLOY_USERNAME }} --password ${{ secrets.LEKTOR_DEPLOY_PASSWORD }}
