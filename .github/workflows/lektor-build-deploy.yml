@@ -16,4 +16,4 @@ jobs:
       pipenv run lektor build -f webpack
    - name: Deploy to https://github.com/creativecommons/creativecommons.github.io
      run: |
-      pipenv run lektor deploy ghpages
+      pipenv run lektor deploy ghpages --username ${{ secrets.LEKTOR_DEPLOY_USERNAME }} --password ${{ secrets.LEKTOR_DEPLOY_PASSWORD }}
