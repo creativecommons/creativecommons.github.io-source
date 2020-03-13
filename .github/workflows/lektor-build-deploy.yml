@@ -1,7 +1,7 @@
 name: Build and Deploy CC Open Source
 on: [push]
 jobs:
- build-and-deploy:
+ build:
   runs-on: ubuntu-latest
   steps:
    - uses: actions/checkout@v1
@@ -14,6 +14,10 @@ jobs:
       pip install pipenv
       pipenv install
       pipenv run lektor build -f webpack
+ deploy:
+  runs-on: ubuntu-latest
+  needs: build
+  steps:
    - name: Deploy to https://github.com/creativecommons/creativecommons.github.io
      run: |
       pipenv run lektor deploy ghpages --username ${{ secrets.LEKTOR_DEPLOY_USERNAME }} --password ${{ secrets.LEKTOR_DEPLOY_PASSWORD }}
