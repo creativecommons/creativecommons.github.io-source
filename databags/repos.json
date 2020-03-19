@@ -401,7 +401,7 @@
             "english_name": "CC Chooser",
             "featured": false,
             "id": 188122843,
-            "language": "Vue",
+            "language": "JavaScript",
             "license": {
                 "name": "MIT License",
                 "url": "https://github.com/creativecommons/chooser/blob/master/LICENSE"
@@ -420,7 +420,7 @@
         },
         {
             "created": "2017-07-05T23:39:19",
-            "description": "Global network social network",
+            "description": "Creative Commons Global Network website",
             "engineering_project": true,
             "english_name": "Creative Commons Global Network website",
             "featured": false,
@@ -436,7 +436,7 @@
                 "WordPress"
             ],
             "url": "https://github.com/creativecommons/commoners",
-            "website": null
+            "website": "https://network.creativecommons.org/"
         },
         {
             "created": "2015-04-15T16:10:58",
@@ -660,7 +660,10 @@
             "description": "",
             "id": 14874571,
             "language": "Python",
-            "license": null,
+            "license": {
+                "name": "MIT License",
+                "url": "https://github.com/creativecommons/rdfadict/blob/master/LICENSE"
+            },
             "name": "rdfadict",
             "url": "https://github.com/creativecommons/rdfadict",
             "website": null
