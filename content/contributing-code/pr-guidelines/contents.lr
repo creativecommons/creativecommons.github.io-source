@@ -21,7 +21,7 @@ Read and follow the contributing guidelines and code of conduct for the project.
     * Use the format specified in pull request template for the repository. **Populate the stencil completely** for maximum verbosity.
         * Tag the actual issue number by replacing `#[issue_number]` e.g. `#42`.
           This closes the issue when your PR is merged.
-        * Tag the actual issue author by replace `@[author]` e.g. `@issue_author`.
+        * Tag the actual issue author by replacing `@[author]` e.g. `@issue_author`.
           This brings the reporter of the issue into the conversation.
         * Mark the tasks off your checklist by adding an `x` in the `[ ]` e.g. `[x]`.
           This checks off the boxes in your to-do list. The more boxes you check, the better.
