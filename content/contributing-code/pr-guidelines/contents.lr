@@ -8,20 +8,40 @@ body:
 
 We ask that contributors to CC projects submit a pull request with your changes. If you're not familiar with pull requests, please read [this GitHub documentation](https://help.github.com/en/articles/about-pull-requests). Here are our expectations for pull requests; following them will expedite the process of merging your code in.
 
-* Read and follow the contributing guidelines and code of conduct for the project. Here are screenshots of where to find them for [first time contributors](first-time-contributor-resources.png) and [previous contributors](previous-contributor-resources.png).
-* **Make a Branch**
+Read and follow the contributing guidelines and code of conduct for the project. Here are screenshots of where to find them for [first time contributors](first-time-contributor-resources.png) and [previous contributors](previous-contributor-resources.png).
+
+* **Make A Branch**
     * Please create a separate branch for each issue that you're working on. Do not make changes to the default branch (e.g. `master`, `develop`) of your fork.
-* **Push your code ASAP** 
+* **Push Your Code ASAP** 
     * Push your code as soon as you can. Follow the "[early and often](https://www.worklytics.co/blog/commit-early-push-often/)" rule. 
-    * Make a pull request as soon as you can and mark the title with a "[WIP]". You can create a [draft pull request](https://help.github.com/en/articles/about-pull-requests#draft-pull-requests).
+    * Make a pull request as soon as you can and **mark the title with a "[WIP]"**. You can create a [draft pull request](https://help.github.com/en/articles/about-pull-requests#draft-pull-requests).
+    <br/>
+    [Screenshot: How to create draft PR?](draft_pr.gif)
 * **Describe Your Pull Request**
-    * Use the format specified in pull request template for the repository.
+    * Use the format specified in pull request template for the repository. **Populate the stencil completely** for maximum verbosity.
+        * Tag the actual issue number by replacing `#[issue_number]` e.g. `#42`.
+          This closes the issue when your PR is merged.
+        * Tag the actual issue author by replacing `@[author]` e.g. `@issue_author`.
+          This brings the reporter of the issue into the conversation.
+        * Mark the tasks off your checklist by adding an `x` in the `[ ]` e.g. `[x]`.
+          This checks off the boxes in your to-do list. The more boxes you check, the better.
     * Describe your change in detail. Too much detail is better than too little.
     * Describe how you tested your change.
+    * Check the Preview tab to make sure the Markdown is correctly rendered and that all tags and references are linked. If not, go back and edit the Markdown.
+    <br/>
+    [Screenshot: Populated pull request](populated_pr.png)
 * **Request Review**
-    * Once your PR is ready, remove the "[WIP]" from the title and/or change it from a draft PR to a regular PR.
+    * Once your PR is ready, **remove the "[WIP]" from the title** and/or change it from a draft PR to a regular PR.
     * If a specific reviewer is not assigned automatically, please [request a review](https://help.github.com/en/articles/requesting-a-pull-request-review) from the project maintainer and any other interested parties manually.
+* **Incorporating feedback**
+    * If your PR gets a 'Changes requested' review, you will need to address the feedback and update your PR by pushing to the same branch. You don't need to close the PR and open a new one.
     * Be sure to **re-request review** once you have made changes after a code review.
+    <br/>
+    [Screenshot: How to request re-review?](rereview.png)
+    * Asking for a re-review makes it clear that you addressed the changes that were requested and that it's waiting on the maintainers instead of the other way round.
+    <br/>
+    [Screenshot: Difference between 'Changes requested' and 'Review required'](difference.png)
+
 
 ## Code guidelines
 
