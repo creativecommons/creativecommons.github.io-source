@@ -1,0 +1,21 @@
+title: CC Platform Toolkit Revamp - 2
+---
+categories:
+community
+platform-toolkit
+outreachy
+---
+author: apdsrocha
+---
+series: outreachy-dec-2019-platform-toolkit
+---
+pub_date: 2020-01-06
+---
+body:
+Time is really flying! I can hardly believe this is already week 5 as of my internship with CC (I'm part of the Outreachy program for the 2019-2020 round). I've been having a wonderful time working on this project (I'm helping revamp the [Platform Toolkit](https://creativecommons.org/platform/toolkit/)) and I'm excited to report on what's been going on for the past couple of weeks.
+
+Since the holidays got a bit in the way of user testing existing platform implementations, my mentors and I slightly altered the schedule. These past weeks have been dedicated to reworking the content that is currently online (revisiting writing and format) and suggesting an entirely new structure. I've been documenting that process [here](https://drive.google.com/open?id=1g7_76zFmgtqq7khb_aBS-l2Wx8tScMgR1NPBO0vOdkM) as I tackle each section.
+
+What I really loved about this process is the fact that I'm able to see the platform toolkit through a holistic lens: I'm thinking about how the user is currently interacting with this content, how the information could be made more palatable, how that can be achieved visually, and finally, how to do it in a way that won't be impossible to implement. 
+
+I'm excited about the questions and answers that have been coming up during this process. Even though I'm far from delivering a final version, I believe this first rough draft already brings important improvements. My focus has been on diminishing cognitive load. That means taking very dense content and delivering the same amount of information with an approach that steps away from full copy and comes closer to a UI format. I've been learning a lot with each step of this project and I'm eager to make a positive contribution by the end of the internship. Soon enough I'll be checking in again soon to give a new follow up!

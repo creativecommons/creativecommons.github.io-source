@@ -1,0 +1,48 @@
+_model: project-idea
+---
+_hidden: yes
+---
+title: Improve CC Search Accessibility
+---
+problem:
+Creative Commons is a global community, and yet, [CC Search](https://search.creativecommons.org/) lacks some accessibility features, including not being very user-friendly to users of screen readers. It's also available only in English, which results in the tool being less accessible to international audiences and reduces our reach. As an open web tool and platform, CC Search should be accessible to the widest audience possible, in as many languages as possible.
+---
+expected_outcome:
+A release of CC Search which contains:  
+1. Improvements to the HTML of CC Search with regards to accessibility features, including Aria attributes, forms, color contrast ratios, and UI changes that improve usage of CC Search for users with some kind of disability.
+2. The implementation of i18n using [vue-i18n](https://kazupon.github.io/vue-i18n/), with the currently hardcoded text refactored into the compatible translation resources, localized numbers and dates, and locale detection so that the appropriate language is loaded when the user visits the CC Search website, and build a tool to easily integrate new translations with Transifex.
+---
+internship_tasks:  
+*   Research and implement accessibility improvements
+*   Perform usability tests with people with disabilities to identify problems and test solutions to accessibility issues
+*   Setup `vue-i18n` in CC Search
+*   Refactor hardcoded English text into translation resource files
+*   Localize numbers and dates
+*   Detect user ideal language and load the appropriate locale data
+*   Allow users to change the current locale
+*   Integrate with Transifex
+---
+application_tips:
+*   Good understanding of how to change and refactor code that is under active development
+*   A plan that's broken into small enough tasks that can be done ideally in one week, and not contain big tasks that can take multiple weeks to complete
+*   Bonus points for good and innovative ideas on how to integrate the actual translations
+*   Bonus points for doing research into currently existing accessibility issues on CC Search
+---
+resources:
+*   [CC Search](https://search.creativecommons.org/)
+*   [CC Search code](https://github.com/creativecommons/cccatalog-frontend)
+*   [GitHub issue for i18n](https://github.com/creativecommons/cccatalog-frontend/issues/487) 
+*   [How to add Internationalization to a Vue Application](https://www.freecodecamp.org/news/how-to-add-internationalization-to-a-vue-application-d9cfdcabb03b/) 
+*   [Accessibility at Berkeley](https://webaccess.berkeley.edu/home)
+*   [W3C Introduction to Web Accessibility](https://www.w3.org/WAI/fundamentals/accessibility-intro/)
+*   [Web Fundamentals: Accessibility](https://developers.google.com/web/fundamentals/accessibility)
+*   [Accessibility | MDN Web Docs](https://developer.mozilla.org/en-US/docs/Learn/Accessibility)
+
+---
+skills_recommended: CSS, HTML, JavaScript, Vue.js
+---
+mentors: Breno Ferreira, Ari Madian
+---
+difficulty: Medium
+---
+filter_value: difficulty-medium skill-javascript

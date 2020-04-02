@@ -1,0 +1,25 @@
+title: Improving CC License Chooser: Coding
+---
+author: obulat
+---
+categories:
+
+outreachy
+cc-chooser
+---
+series: outreachy-dec-2019-chooser
+---
+pub_date: 2020-01-24
+---
+body:
+During the last several weeks I have been busy with coding the redesigned version of the License Chooser.
+
+When I just started working on coding the License Chooser, it wouldn't compile due to some dependency problems. This became a great opportunity to update the project from a Webpack based Vue.js template to a Vue-cli project, which makes managing dependencies much simpler. I also updated the project to a newer version of Creative Commons Vue Vocabulary for styling.
+
+For the visual styles, we use Buefy component library (based on Bulma and Vue.js), namely, stepper and tabs components. It has been an interesting journey customizing them to our specific use cases.
+
+While coding the site, I also tried to extract all the text to a separate file so that it would be easier to integrate it into translation workflow later during my internship.
+
+After several weeks of work, 2 large PRs merged, we are finally ready to conduct usability tests to better understand how users interact with the License Chooser, and what changes we still need to implement to make it easy both for beginners and for advanced users of Creative Commons Licenses to choose the best license for their needs, and help to use the chosen license.
+
+A new [beta version of the License Chooser](https://chooser-beta.creativecommons.org/) is deployed!

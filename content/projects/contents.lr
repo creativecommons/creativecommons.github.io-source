@@ -1,5 +1,5 @@
-_model: page
+_model: redirect
 ---
-_template: project_list.html
+target: /contributing-code/projects/
 ---
-title: Open Source Projects
+_discoverable: no

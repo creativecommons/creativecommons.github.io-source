@@ -1,0 +1,37 @@
+_model: project-idea
+---
+_hidden: yes
+---
+title: Add Audio to the CC Catalog & CC Search
+---
+problem:
+Currently, [CC Search](https://search.creativecommons.org/) and the [CC Catalog API](https://api.creativecommons.engineering/) only support image search. We’d like to add more content types, especially audio. This would involve indexing audio sources in the CC Catalog and adding new endpoints to the CC Catalog API (user interface changes are out of scope for this project.)
+---
+expected_outcome:
+*   There would be scripts in the [CC Catalog](https://github.com/creativecommons/cccatalog) repository that index metadata related to openly licensed audio files and add it to our database.
+*   The [CC Catalog API](https://api.creativecommons.engineering/) would have a set of endpoints that allowed searching for and browsing audio files.
+---
+internship_tasks:  
+*   Work with CC’s data engineer to define and implement a database schema for collecting audio file metadata.
+*   Write scripts to ingest audio file metadata from open repositories such as [Freesound](https://freesound.org/), [Free Music Archive](https://freemusicarchive.org/), etc.
+*   Implement additional API endpoints on the CC Catalog API to expose audio data.
+---
+application_tips:
+*   Include potential database schemas in your application.
+*   Include sources that you might want to ingest in your application.
+---
+resources:
+*   [CC Catalog code](https://github.com/creativecommons/cccatalog)
+*   [CC Catalog API documentation](https://api.creativecommons.engineering/)
+*   [CC Catalog API code](https://github.com/creativecommons/cccatalog-api)
+*   [CC Search](https://search.creativecommons.org/)
+*   Music sources: [Freesound](https://freesound.org/), [Free Music Archive](https://freemusicarchive.org/)
+*   [Blog about Freesound on CC Open Source blog](https://opensource.creativecommons.org/blog/entries/freesound-intro/)
+---
+skills_recommended: CSS, Django, Django REST Framework, HTML, JavaScript, Python, Vue.js
+---
+mentors: Alden Page, Brent Moran, Anna Tumadóttir
+---
+difficulty: Medium
+---
+filter_value: difficulty-medium skill-javascript skill-python

@@ -1,6 +1,7 @@
 title: Server Side Rendering with Vue.JS on CC Search
 ---
 categories:
+
 cc-search
 tech
 ---
@@ -9,7 +10,7 @@ author: brenoferreira
 pub_date: 2019-11-01
 ---
 body:
- 
+
 The frontend of CC Search is built with Vue.JS, which is a Javascript library for managing and rendering DOM elements in the browser, similar to React and Angular. But, as it is usually the case with applications built with those libraries, the application was rendered completely on the users' browser. It means that when users loaded CC Search, the server would send a blank HTML page and some Javascript files that would be downloaded by the user. Only once those JS assets were loaded and parsed, would the rendering begin.
  
 While easier to implement initially, when we needed to ship the initial versions of CC Search faster to validate our ideas, this approach has some significant disadvantages:
@@ -89,3 +90,5 @@ We did this by using the `serverPrefetch` method to load the data on the server,
 As said before, we have a dependency on a component that uses browser APIs which doesn't work on the server side. That dependency is [Masonry Layout](https://github.com/shershen08/vue-masonry). And because of that, we had to split components and router into server and client versions.
  
 To remove that complexity, we will probably try to use a pure-CSS approach to generate the responsive grid, as described in [this issue on Github](https://github.com/creativecommons/cccatalog-frontend/issues/489). If that doesn't work, we'll use something like [vue-client-only](https://github.com/egoist/vue-client-only).
+---
+series: 

@@ -1,0 +1,41 @@
+_model: project-idea
+---
+_hidden: yes
+---
+title: Web Monetization Research Project
+---
+problem:
+CC is a non-profit supported by donations from foundations, corporations, and individuals. Despite massive traffic to CC’s web products, we do not make use of any mainstream monetization methods on our sites, such as advertising. However, as a non-profit, CC is continuously thinking about ways to fund the important work we do. As one potential avenue, CC wants to carry out in-depth research of web monetization options in order to evaluate which, if any, are appropriate for CC to pursue and integrate for our own web products.
+
+<strong><p class="text-danger">This project is for Outreachy only, since it does not involve code output.</p></strong>
+---
+expected_outcome:
+We’d like the outcome of this internship to be a deliverable, in written form, detailing in-depth research regarding the current state of web monetization technology, with recommendations for options for CC. We expect this deliverable to take the form of a CC-licensed research paper, based on which we expect the intern to also write a blog article.
+---
+internship_tasks:
+The intern will be expected to create their own detailed work plan, containing activities including but not limited to:
+*   preliminary research
+*   user interviews
+*   preparation of an outline
+*   research to write the paper, including examples of existing implementations on other sites, of various web monetization technologies
+*   further user interviews to help inform recommendations
+*   writing a blog article about their findings
+
+They will work closely with their mentors, doing frequent check-ins, in order to ensure the direction of the research is on track, and that there aren’t oversights.
+---
+application_tips:
+A clear sense that the intern has excellent written skills, understands how to carry out research interviews, and knows how to structure findings, whether they are technical truths or takeaways from interviews. Passion for or existing knowledge of online privacy issues, cryptocurrencies, browser technologies, and other related subject matter.
+---
+resources:
+*   [Web Monetization homepage](https://webmonetization.org/)
+*   [Interledger](https://interledger.org/), the protocol that Web Monetization is built on
+*   [Grant for the Web](https://www.grantfortheweb.org/), a fund for innovation in web monetization
+*   [A blog post about using Web Monetization](https://tiffanyhayden.blog/web-monetization-interledger-coil-xrp/)
+---
+skills_recommended: Research, Writing. In so far as the work is technical, it is understanding how to navigate the world of add-ons and plugins, and being clear enough on the subject matter that they are able to correctly describe how different web monetization technology works to a non-technical person.
+---
+mentors: Anna Tumadóttir, Sarah Pearson
+---
+difficulty: Easy
+---
+filter_value: difficulty-easy skill-writing

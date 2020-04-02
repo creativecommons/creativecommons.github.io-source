@@ -1,0 +1,38 @@
+_model: page
+---
+_template: page-with-toc.html
+---
+title: Open Source Internships: Intern Guide
+---
+body:
+
+Creative Commons participates in open source mentorship programs such as [Google Summer of Code](https://summerofcode.withgoogle.com/) and [Outreachy](https://www.outreachy.org/). Details about specific programs and rounds are listed in the [Overview page](/internships); this page serves as a general guide for accepted interns.
+
+If you are an applicant, read our [Applicant Guide](/internships/applicant-guide).
+
+## Post-Announcement
+
+Internship announcements have been made and you've been selected! Congratulations! Here's what we expect you to do before the internship officially starts:
+
+* Continue to refine your project plan and timeline with your mentors.
+* Define communication channels and set up a weekly check-in with your mentor.
+* Set up your computer and development environment.
+* Familiarize yourself with the development process at Creative Commons (pull requests, code review).
+* Introduce yourself to the members of CC's engineering team.
+
+## Internship Period
+
+Once the internship starts, here's what we expect of you:
+
+* Work 30-40 hours per week (or agree on a different plan with your mentor ahead of time).
+* Push code to GitHub frequently. Commit early and often.
+* Be available on Slack whenever you are working and post at least once a (work)day to talk about what you're working on that day.
+* Write a short update on your work **every two weeks** and post it to the CC technical blog ([instructions are here](/community/write-a-blog-post)). To get a sense of how these posts are written and how the projects evolved, you can read entries done by previous [Outreachy](https://opensource.creativecommons.org/blog/categories/outreachy/) or [Google Summer of Code](https://opensource.creativecommons.org/blog/categories/gsoc/) interns.
+* Attend your weekly check-in with your mentor and any other meetings.
+* Be proactive about asking for help, especially when you're stuck.
+* Ensure that you're on track to delivering your project at the end of the work period. If you're not on track, talk with your mentor to come up with a new plan for the project well before the deadline.
+* Let your mentor and the organization admins know when you are going to be unavailable. If something sudden comes up, let us know.
+
+## At all times
+
+Follow our [Code of Conduct](/community/code-of-conduct).

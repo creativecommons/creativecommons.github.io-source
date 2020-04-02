@@ -1,0 +1,125 @@
+_model: page
+---
+_template: page-with-toc.html
+---
+title: Open Source Internships: Overview
+---
+body:
+
+## Current Participation
+
+### Programs
+
+**Google Summer of Code**  
+CC is participating in [Google Summer of Code](https://summerofcode.withgoogle.com/) 2020. [Here is our organization page on the GSoC website](https://summerofcode.withgoogle.com/organizations/5742311717208064/).
+
+**Outreachy**  
+Creative Commons is participating in the [Outreachy](https://www.outreachy.org/) May-August 2020 round. [Here is our community page on the Outreachy website](https://www.outreachy.org/communities/cfp/creative-commons/).
+
+### Project Ideas
+
+Feel free to take a look at our [Project Ideas](/internships/project-ideas). Please note that these project ideas are shared between all current internship programs. 
+
+### Mentors
+
+Here are our mentors for this round of internships:
+
+<table class="table table-sm table-striped">
+  <thead class="thead-light">
+    <tr>
+      <th>Name</th>
+      <th>Slack username</th>
+      <th>About</th>
+    </tr>
+    <tr>
+      <td>Alden Page</td>
+      <td><code>@aldenpage</code></td>
+      <td><a href="/blog/authors/aldenpage">See CC Open Source Blog author page</a></td>
+    </tr>
+    <tr>
+      <td>Anna Tumadóttir</td>
+      <td><code>@Anna</code></td>
+      <td><a href="https://creativecommons.org/author/annacreativecommons-org/">See CC staff bio</a></td>
+    </tr>
+    <tr>
+      <td>Ari Madian</td>
+      <td><code>@Ari</code></td>
+      <td><a href="/blog/authors/akmadian">See CC Open Source Blog author page</a></td>
+    </tr>
+    <tr>
+      <td>Breno Ferreira</td>
+      <td><code>@brenoferreira</code></td>
+      <td><a href="/blog/authors/brenoferreira">See CC Open Source Blog author page</a></td>
+    </tr>
+    <tr>
+      <td>Brent Moran</td>
+      <td><code>@Brent</code></td>
+      <td><a href="/blog/authors/mathemancer">See CC Open Source Blog author page</a></td>
+    </tr>
+    <tr>
+      <td>Dhruv Bhanushali</td>
+      <td><code>@dhruvkb</code></td>
+      <td><a href="/blog/authors/dhruvkb">See CC Open Source Blog author page</a></td>
+    </tr>
+    <tr>
+      <td>Hugo Solar</td>
+      <td><code>@hugo</code></td>
+      <td><a href="/blog/authors/hugosolar">See CC Open Source Blog author page</a></td>
+    </tr>
+    <tr>
+      <td>Kriti Godey</td>
+      <td><code>@kriti</code></td>
+      <td><a href="/blog/authors/kgodey">See CC Open Source Blog author page</a></td>
+    </tr>
+    <tr>
+      <td>María Belén Guaranda Cabezas</td>
+      <td><code>@Maria Belen Guaranda</code></td>
+      <td><a href="/blog/authors/soccerdroid">See CC Open Source Blog author page</a></td>
+    </tr>
+    <tr>
+      <td>Sarah Hinchcliff Pearson</td>
+      <td><code>@shinchpearson</code></td>
+      <td><a href="https://creativecommons.org/author/sarahcreativecommons-org/">See CC staff bio</a></td>
+    </tr>
+    <tr>
+      <td>Timid Robot Zehta</td>
+      <td><code>@Timid Robot</code></td>
+      <td><a href="/blog/authors/TimidRobot">See CC Open Source Blog author page</a></td>
+    </tr>
+  </thead>
+</table>
+
+## Guides
+
+* [Applicant Guide](/internships/applicant-guide)
+* [Intern Guide](/internships/intern-guide)
+* [Mentor Guide](/internships/mentor-guide)
+
+## History
+
+### Google Summer of Code
+
+CC has participated in Google Summer of Code eight times before 2020. See below for more information about our projects and participation for each year.
+
+* [Google Summer of Code 2019](https://summerofcode.withgoogle.com/archive/2019/organizations/5500455663173632/)
+    * [Open Source Blog posts](http://localhost:5000/blog/categories/gsoc-2019/)
+    * [CC + Google Summer of Code 2019](https://creativecommons.org/2019/03/04/cc-google-summer-of-code-2019/)
+    * [Meet CC’s 2019 Google Summer of Code students](https://creativecommons.org/2019/05/30/meet-ccs-2019-google-summer-of-code-students/)
+    * [Introducing the Updated Creative Commons WordPress Plugin](https://creativecommons.org/2019/11/22/updated-cc-wordpress-plugin/)
+    * [Introducing CC Vocabulary, Our New Web Design System](https://creativecommons.org/2019/12/13/cc-vocabulary-web-design-system/)
+    * [Introducing the CC Search Browser Extension](https://creativecommons.org/2020/01/06/cc-search-browser-extension/)
+    * [Introducing the Linked Commons](https://creativecommons.org/2020/01/23/introducing-the-linked-commons/)
+    * [Here’s a Sneak Peek at the Updated Creative Commons Chooser](https://creativecommons.org/2020/01/27/the-new-cc-license-chooser/)
+* [Google Summer of Code 2013](https://www.google-melange.com/archive/gsoc/2013/orgs/cc)
+* [Google Summer of Code 2012](https://www.google-melange.com/archive/gsoc/2012/orgs/cc)
+* [Google Summer of Code 2010](https://www.google-melange.com/archive/gsoc/2010/orgs/creativecommons)
+* [Google Summer of Code 2009](https://www.google-melange.com/archive/gsoc/2009/orgs/cc)
+* [Google Summer of Code 2008](https://developers.google.com/open-source/gsoc/2008/#cc)
+* [Google Summer of Code 2007](https://developers.google.com/open-source/gsoc/2007/#cc)
+* [Google Summer of Code 2006](https://developers.google.com/open-source/gsoc/2006/#cc)
+
+### Outreachy
+
+CC is participating in the Dec 2019 to Mar 2020 round of Outreachy.  
+* [Meet Our 2020 Interns From Outreachy](https://creativecommons.org/2019/12/10/2020-outreachy-interns/)
+* [Open Source Blog posts](https://opensource.creativecommons.org/blog/categories/outreachy/)

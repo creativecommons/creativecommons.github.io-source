@@ -1,0 +1,20 @@
+name: Build and Deploy CC Open Source
+on: [push, pull_request]
+jobs:
+ build-and-deploy:
+  runs-on: ubuntu-latest
+  steps:
+   - uses: actions/checkout@v1
+   - name: setup python version
+     uses: actions/setup-python@v1
+     with:
+      python-version: 3.7
+   - name: Install dependencies
+     run: |
+      pip install pipenv
+      pipenv install
+      pipenv run lektor build -f webpack
+   - name: Deploy to production
+     if: github.ref == 'refs/heads/master'
+     run: |
+      pipenv run lektor deploy ghpages --username ${{ secrets.LEKTOR_DEPLOY_USERNAME }} --password ${{ secrets.LEKTOR_DEPLOY_PASSWORD }}

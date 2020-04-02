@@ -1,0 +1,21 @@
+title: CC Platform Toolkit Revamp
+---
+categories:
+community
+platform-toolkit
+outreachy
+---
+author: apdsrocha
+---
+series: outreachy-dec-2019-platform-toolkit
+---
+pub_date: 2019-12-16
+---
+body:
+I've just finished my second week as an intern for CC (part of the Outreachy program 2019-2020 round), helping revamp the [Platform Toolkit](https://creativecommons.org/platform/toolkit/) and it's been a great learning experience so far. 
+
+Before we get into what I've been doing, I wanted to quickly explain why I think this is such a cool project - maybe you'll think it's cool too and want to collaborate as well at some point :) See, the better this toolkit is, the more we increase our chances of having really great, user-friendly implementations in partner platforms. Providing a helpful toolkit is one of the ways we can guide users towards finding better information, understanding licenses, and making better use of content -- not to mention that getting this right ensures we reach a ton of people.
+
+So in order to start, we began by taking a step back and  studying in detail how platforms are addressing licenses today. These first weeks I went through a lot of user flows, seeing what works, and what were possible points to address and improve. The greatest challenge so far was trying to break down what were good UX/UI practices that could benefit any platform -- regardless of the type of content or current layout. Once I analyzed the material through this point of view, it was easier to filter the kind of information that must be addressed in our new version of the toolkit. This first study also gave me a lot of material to begin thinking about our next step: user research. It's important to find out how much of this process is intuitive to users and what flies under the radar -- having more answers is crucial so that we can be assertive when making suggestions.
+
+I'll keep checking in every two weeks with updates on how this project is going. Trust me, there's still a lot of really exciting tasks to be done in the following months :)

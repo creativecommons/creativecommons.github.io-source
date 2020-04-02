@@ -2,52 +2,55 @@ _model: page
 ---
 _template: page-with-toc.html
 ---
-title: Contributing Code
+title: Contribution Guidelines
 ---
 body:
 
-We do all of our development on GitHub and are generally open to pull requests and proposals for new community-maintained projects.
+<p class="lead">Thank you for your interest in contributing to Creative Commons open source projects!</p>
 
-We would especially like help with reviving projects that CC's engineering team does not have the time to actively work on (such as [our WordPress plugin](https://github.com/creativecommons/creativecommons-wordpress-plugin) and [license chooser widget](https://github.com/creativecommons/cc-license-chooser)). We're also looking to improve our documentation and increase our automated test coverage across pretty much all our projects, so help with that would be greatly appreciated.
+We do all of our development [on GitHub](https://github.com/creativecommons/). If you are not familiar with GitHub or pull requests, [here is an excellent guide to get started](https://guides.github.com/activities/hello-world/).
 
-Please follow our [pull request guidelines](/contributing-code/pr-guidelines) when submitting code. If you are not familiar with GitHub or pull requests, [here is an excellent guide to get started](https://guides.github.com/activities/hello-world/). 
+## Finding an issue
 
-## Working on an existing project
+Here's a list of [all our current projects](/projects). We use GitHub issues associated with each project to track the work associated with that project. That's where you can find things to work on.
 
-Here's a list of [all our current projects](/projects).
+We make extensive use of issue labels to desginate the status of various issues. We have a standard set of labels across all projects, [documented here](https://github.com/creativecommons/ccos-scripts/blob/master/normalize_repos/labels.py). Here are some of the ones that are most relevant to finding a good issue to work on:
 
-We are actively working on documenting and licensing them and adding self-contained contribution guidelines but we still have a lot of work ahead of us. We're open to contributions on any of our public projects, as long as they have a license. The license for a project is located in a file named `LICENSE` in the root directory of the repository. If the repository you want to contribute to has no license file, please create a GitHub issue attached to that repository and we'll prioritize setting those up.
+* **Issues tagged `help wanted` or `good first issue`** are available for community contribution**
+    * These issues are available for community contribution and you do not need our permission to work on one of these.
+    * You may work on an issue labeled `good first issue` even if it's not your first issue.
+    * Check the issue comments/labels to see whether someone else has indicated that they are working on it. If someone is already working on it and there has been activity within the last 7 days, you may want to find a different issue to work on.
+* **Issues tagged with one of these labels: `blocked`, `not ready for work`, `ticket work required`, `CC staff only` are not available to the community. Do not work on these.**
+    * Issues tagged `blocked` are blocked by other work that needs to be done first.
+    * Issues tagged `not ready for work` or `ticket work required` need additional work done on the issue before they can be opened to community contributors.
+    * Issues tagged `CC staff only` are not suitable for community contribution, usually because it requires infrastructure access or institutional knowledge that would be impractical to provide to the community.
+* **Issues without any of the above labels _may_ be open for contribution.**
+    * Please add a comment to ask whether the issue is available before starting work.
 
-You may also create GitHub issues for any other missing infrastructure such as a `README` file.
+Some helpful saved searches on GitHub than can assist with finding an issue:
+- [issues labeled "good first issue"](https://github.com/search?q=org%3Acreativecommons+is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)
+- [issues labeled "help wanted"](https://github.com/search?q=org%3Acreativecommons+is%3Aissue+is%3Aopen+label%3A%22help+wanted%22)
+- [issues labeled "help wanted", and not labeled as "in progress"](https://github.com/search?q=org%3Acreativecommons+is%3Aissue+is%3Aopen+label%3A%22help+wanted%22+-label%3A%22in+progress%22)
+- [incomplete pull requests labeled "help wanted"](https://github.com/search?q=org%3Acreativecommons+is%3Apr+is%3Aopen+label%3A%22help+wanted%22)
 
-### Working on open issues
+## Contribution process
 
-We track all our work via the GitHub issues associated with a repository and that's where you can find things to work on. First, check the labels on the issue you're interested in:  
-* Issues labeled **"in progress"** are generally not available, but may be available if there has been no activity on the issue or related PR for over a week.
-* Issues labeled **"help wanted"** or **"good first issue"** have been identified as available for community contribution. Feel free to work on issues labeled "good first issue" even if it is not your first issue.
-    * Here's a list of [all issues labeled "good first issue"](https://github.com/search?q=org%3Acreativecommons+is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)
-    * Here are lists of [all issues labeled "help wanted"](https://github.com/search?q=org%3Acreativecommons+is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) and [incomplete pull requests labeled "help wanted"](https://github.com/search?q=org%3Acreativecommons+is%3Apr+is%3Aopen+label%3A%22help+wanted%22)
-* If the issue does not have either of those labels, it may still be open for contribution.
+Once you've found an issue you'd like to work on, please follow these steps to make your contribution:
 
-Once you have identified an issue you'd like to work on, follow these steps:
+1. Comment on it and say you're working on that issue. This is to avoid conflicts with others also working on the issue.
+    * A project maintainer may mark the issue with an `in progress` label at this point, but we don't always get around to that.
+2. Write your code and submit your pull request. Be sure to read and follow our **[pull request guidelines](/contributing-code/pr-guidelines)**!
+3. Wait for code review and address any issues raised as soon as you can.
 
-1. Comment on it and say you'd like to work on that issue.
-2. Wait for someone to confirm that you may work on the issue before writing any code. The person who confirms will add an "in progress" label to the issue to indicate that the issue has been assigned.
-3. Once the issue has been updated to "in progress", write your code and submit your pull request (be sure to read and follow our **[pull request guidelines](/contributing-code/pr-guidelines)**!)
-4. Wait for code review and address any issues raised as soon as you can.
+**A note on collaboration:** We encourage people to collaborate as much as possible. We especially appreciate contributors reviewing each others pull requests, as long as you are [kind and constructive](https://medium.com/@otarutunde/comments-during-code-reviews-2cb7791e1ac7) when you do so.
 
-Even if you're not done with the issue, create a [draft pull request](https://help.github.com/en/articles/about-pull-requests#draft-pull-requests) and push your code [early and often](https://www.worklytics.co/blog/commit-early-push-often/). If we haven't heard from you in over a week and someone else expresses interest in that issue, we may approve work by the new person.
+## Proposing a new issue
 
-### Proposing a new issue
+If you want to work on something that there is no GitHub issue for, follow these steps:
 
-If you want to work on something that there is no GitHub issue for, then propose the change in [one of our community forums](/community) or create a a new GitHub issue associated with the relevant repository and propose your change there. Be sure to include implementation details and the rationale for the proposed change.
-
-If the project has a roadmap documented in the README, checking the roadmap to see if the feature is already in our pipeline would be a good first step.
+1. Create a a new GitHub issue associated with the relevant repository and propose your change there. Be sure to include implementation details and the rationale for the proposed change.
+    * We are very reluctant to accept random pull requests without a related issue created first.
+2. The issue will automatically have the `not ready for work` label applied. Wait for a project maintainer to evaluate your issue and decide whether it's something that we will accept a pull request for.
+3. Once the project maintainer has approved the issue and removed the `not ready for work` label, you may start work on code as described in the "Contribution process" section above.
 
 When in doubt, ask a question on [one of our community forums](/community).
-
-## New projects
-
-We are also open to working on or hosting projects that are related to the Creative Commons licenses or general mission. Our [Google Summer of Code project ideas](/gsoc-2019/project-ideas) list is a good place to find ideas we'd like implemented. If you're interested in working on one of them, please propose it in one of our [community forums](/community) (you don't need to be a student, anyone is welcome to work on those ideas) and work out implementation details with CC staff members before you write any code. If you want to suggest a new project idea, follow the same process.
-
-In general, we'd like any new projects to use Python, WordPress/PHP, and/or JavaScript (our framework of choice is Vue.js) so that our team can help review and maintain the project.

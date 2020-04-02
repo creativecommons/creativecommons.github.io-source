@@ -1,36 +1,5 @@
-_model: page
+_model: redirect
 ---
-title: GSoC 2019: Application Instructions
+target: /internships/
 ---
-body:
-
-## Before You Apply
-
-If you are a student interested in submitting a proposal to CC, start by checking out our [Project Ideas](/gsoc-2019/project-ideas/all) page to find an idea that you would like to write a proposal to work on during GSoC.
-
-[Join the `#cc-gsoc` channel on the CC Slack or the CC Developers mailing list](https://creativecommons.github.io/community/) as early as possible to introduce yourself and get feedback on your ideas. All our mentors will be on Slack and respond to emails on the mailing list and it is better to post there rather than contact them individually. Feel free to ask questions!
-
-Take a look at the Creative Commons website to learn more about what we do. Also look at our GitHub organization and our developer community website to get a sense of the code and projects we work on. Making a successful contribution to one of our projects will help us get a sense of your work and is highly recommended.
-
-Read our [Student Expectations](/gsoc-2019/student-expectations) guide and follow our guidelines when [contributing code](/contributing-code).
-
-## Applying
-
-Your proposal must be submitted through the [Google Summer of Code website](https://summerofcode.withgoogle.com/dashboard/). It is a good idea to submit drafts and get feedback from CC mentors before you submit your final proposal.
-
-Please read and follow [the GSoC student guide on writing proposals](https://google.github.io/gsocguides/student/writing-a-proposal). Format your proposal so that it is readable; keep paragraphs small and divide it into sections. We don’t have a strict template to follow but your proposal must include the following:  
-
-* A short and clear title
-* Your name, location, and contact information (see [the GSoC student guide](https://google.github.io/gsocguides/student/writing-a-proposal) for what to include)
-* Your educational background (degrees earned, courses taken, program/major)
-* A single paragraph summary of your proposal
-* A more detailed description of what you intend to do, how you intend to implement it, and what will not be covered by your work.
-* A realistic set of weekly milestones and deliverables for your project (our mentors can help with defining this before you submit your final proposal). Please make sure this is synchronized with [the timeline for evaluations](https://summerofcode.withgoogle.com/how-it-works/#timeline) published by GSoC.
-* Links to code you’ve written and/or open-source contributions.
-* Answers to the following questions:
-    * Why are you the best person to do this work?
-    * Why are you interested in Creative Commons and this project in particular?
-    * What programming languages, version control systems, and other developer tools are you familiar with?
-    * Do you have any other commitments during the GSoC period? Provide dates, such as holidays, when you will not be available.
-    * If your native language is not English, are you comfortable working closely with a mentor in English?
-    * Have you worked remotely before?
+_discoverable: no

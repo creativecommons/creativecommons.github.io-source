@@ -9,7 +9,7 @@ body:
 
 Included in [last week's redesign](http://creativecommons.org/weblog/entry/25965) is an updated Licenses page, describing the CC licenses and what makes them unique. The combination of machine-readable metadata, human readable deeds, and the legal code are unique (to my knowledge) in the public licensing world, and this approach enables interesting applications of the licenses and broadens their accessibility. That said, the approach is not always easy to describe.
 
-[![](3layers-300x164.png)](http://labs.creativecommons.org/files/2011/01/3layers.png)
+[![](3layers-300x164.png)](3layers.png)
 
 After seeing Alex's updated graphics for the page, I roped him into helping me create an interactive version, based on CSS3 Transitions and Transformations. You can find the visualization [here on CC Labs](http://labs.creativecommons.org/2011/demos/license-layers/). More information about why and how I built it is on [my personal blog](http://yergler.net/blog/2011/01/07/css3-license-layers/). Note that this demonstration requires Chrome, Safari, or Firefox 4. Opera 11 sort of works. IE, well, doesn't. 
 

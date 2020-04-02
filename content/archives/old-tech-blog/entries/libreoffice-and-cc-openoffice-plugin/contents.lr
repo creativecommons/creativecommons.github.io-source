@@ -12,7 +12,7 @@ Over the summer, our GSOC student Akila Wajirasena gave a [wonderful overhaul to
 
 The good news? It seems that it works just fine out of the box:
 
-[![CC LibreOffice plugin test](cc_libreoffice_plugin_test.png)](http://labs.creativecommons.org/files/2010/12/cc_libreoffice_plugin_test.png)
+[![CC LibreOffice plugin test](cc_libreoffice_plugin_test.png)](cc_libreoffice_plugin_test.png)
 
 We've only tested it on some limited systems though, so if you do have some problems, [please report them here](http://code.creativecommons.org/issues/issue738).
 
