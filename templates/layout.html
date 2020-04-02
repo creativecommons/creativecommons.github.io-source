@@ -7,7 +7,13 @@
 <link rel="stylesheet" href="{{ '/static/gen/style.css'|url }}">
 <meta property="og:site_name" content="Creative Commons" />
 <meta property="og:title" content="{{ this.title }}" />
-<meta property="og:description" content="" />
+{% if this.body %}
+{% set desc = this.body|excerpt|striphtmltags %}
+<meta property="og:description" content="{{ desc }}" />
+{% else %}
+{% set desc = this.description|striphtmltags %}
+<meta property="og:description" content="{{ desc }}" />
+{% endif %}
 <meta property="og:url" content="{{ this|url }}" />
 <meta property="og:type" content="article" />
 {% set image = this.attachments.images.first() %}
@@ -16,7 +22,7 @@
       {% endif %}
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="{{ this.title }}">
-<meta name="twitter:description" content="">
+<meta name="twitter:description" content="{{ desc }}">
       {% if image %}
 <meta name="twitter:image" content="{{ image|url(external=true) }}">
       {% endif %}
