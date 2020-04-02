@@ -7,6 +7,7 @@ verify_ssl = true
 
 [packages]
 lektor = "*"
+Werkzeug = "==0.16.1"
 
 [requires]
 python_version = "3.7"
