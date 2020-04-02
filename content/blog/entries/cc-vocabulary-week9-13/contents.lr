@@ -1,0 +1,57 @@
+title: CC Vocabulary - My Internship Ended
+---
+categories:
+
+cc-vocabulary
+product
+outreachy
+---
+author: conye
+---
+series: outreachy-dec-2019-vocabulary
+---
+pub_date: 2020-04-02
+---
+body:
+
+This will be my last blog as an Outreachy intern. My watch as an intern has come to an end.  I am glad I chose the Creative Commons community or rather am glad Creative Commons chose me ( am not the chosen one). I have gained a lot of valuable knowledge, skills and I am more confident in my abilities. 
+
+##Summary of  My Internship with Vocabulary
+I have been more involved with the Vocabulary project during my internship and am happy with the work that has been done so far. I made 24 pull requests with 17 merged. My last contribution was adding a [header component](https://github.com/creativecommons/vocabulary/pull/145) to the revamped Vocabulary. Here is a summary of my time with Vocabulary.
+
+###When I started my Internship, Vocabulary comprised of : 
+- UI components built with Vue 
+- Styling was written with Stylus
+- live style guide built with Styleguidist
+
+###Currently:
+- UI components built with extending Bulma library components. 
+- Styling extended with SASS.
+- An interactive playground experience built with Storybook that provides a live style guide and documentation.
+- A subset Vue-Vocabulary with the same styling but to support platforms built with Vue
+
+To use the Vocabulary components, check out its [Github repository](https://github.com/creativecommons/vocabulary). You can also have a playground experience on [storybook](https://cc-vocabulary.netlify.com)
+
+##My Progress
+Before this internship, I had just switched careers from Network engineering to Software development and this experience came at the time needed.
+
+###Where I was before the Internship
+- No experience working on open source project ( or any free open source project)
+- My technical skills were basically on the front end (HTML, CSSS and JavaScript with little React) 
+- No experience working remotely as a Software developer
+- Had only written one blog post on medium
+
+###Where I am now
+- 4 months experience working on open source project 
+- Improved on my previous technical skills, adding new ones (added Vue, Storybook, Webpack, Docker)
+- 4 months of experience working with a team remotely as a Software developer
+- Written additional 6 more blog post; 3 here and 3 for Outreachy
+- Improved communication skills 
+- Improved time management
+- Still working to improve where I am now 
+
+##Whats next?
+
+I will continue to contribute to CC open source projects especially to the Vocabulary project that I have become a part of. I would love to see the application of Vocabulary to the development of other CC platforms and applications.  I also want to apply the skills that I have acquired to get a full-time software developer position.
+
+My special appreciation to Outreachy for this opportunity, the entire CC team especially those I worked with, My mentors [Hugo Solar](https://opensource.creativecommons.org/blog/authors/hugosolar) and [Dhruv Bhanushali](https://opensource.creativecommons.org/blog/authors/dhruvkb) for their guidance, direction, and help whenever I got stuck, also to the Director of Engineering [Kriti Godey](https://opensource.creativecommons.org/blog/authors/kgodey) for always checking up on me ensuring I had a wonderful internship experience.
