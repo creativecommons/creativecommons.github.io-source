@@ -7,12 +7,14 @@
 <link rel="stylesheet" href="{{ '/static/gen/style.css'|url }}">
 <meta property="og:site_name" content="Creative Commons" />
 <meta property="og:title" content="{{ this.title }}" />
+{% if this.description %}
+{% set desc = this.description|excerpt|striphtmltags %}
+<meta property="og:description" content="{{ desc }}" />
+{% else %}
 {% if this.body %}
 {% set desc = this.body|excerpt|striphtmltags %}
 <meta property="og:description" content="{{ desc }}" />
-{% else %}
-{% set desc = this.description|striphtmltags %}
-<meta property="og:description" content="{{ desc }}" />
+{% endif %}
 {% endif %}
 <meta property="og:url" content="{{ this|url }}" />
 <meta property="og:type" content="article" />
