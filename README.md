@@ -103,19 +103,19 @@ Here's how the code is structured in the top level of the repository:
 ### Lektor Plugins
 
 - [Lektor Plugins][plugins]:
-  - [nixjdm/lektor-atom][atom]: Lektor Atom plugin.
+  - [nixjdm/lektor-atom][atom]: Lektor Atom plugin
   - [lektor/lektor-disqus-comments][disqus]: Adds disqus comments to a Lektor
-    website.
+    website
   - [kmonsoor/lektor-google-analytics][lektorga]: Integration of Google
     analytics with Lektor CMS
   - [bancek/lektor-markdown-excerpt][mdexcerpt]: Adds filter for Markdown body
-    excerpt.
+    excerpt
   - [lektor/lektor-markdown-header-anchors][md-header]: Adds support for
-    anchors and table of contents to Markdown.
+    anchors and table of contents to Markdown
   - [terminal-labs/lektor-strip-html-tags][striphtml]: Strip HTML tags,
-    effectively turning HTML into plain text.
+    effectively turning HTML into plain text
   - [lektor/lektor-webpack-support][webpacksupport]: Adds webpack support to
-    lektor.
+    lektor
 
 [plugins]: https://www.getlektor.com/docs/plugins/
 [atom]: https://github.com/nixjdm/lektor-atom
