@@ -32,7 +32,7 @@ At Creative Commons, we use the device specified during provisioning (ex.
 `/dev/xvdf`) to identify the correct NVMEe device. We then format it with a
 label that can be used mounting during subsequent reboots.
 
-Thankfully, AWS docuemnts the the device specified during provisioning (ex. `/dev/xvdf`):
+Thankfully, AWS documents the the device specified during provisioning (ex. `/dev/xvdf`):
 > *For Nitro-based instances, the block device mappings that are specified in
 > the Amazon EC2 console when you are attaching an EBS volume or during
 > AttachVolume or RunInstances API calls are captured in the vendor-specific
