@@ -100,6 +100,33 @@ Here's how the code is structured in the top level of the repository:
 [lektortemplate]:https://www.getlektor.com/docs/templates/
 
 
+### Lektor Plugins
+
+- [Lektor Plugins][plugins]:
+  - [nixjdm/lektor-atom][atom]: Lektor Atom plugin
+  - [lektor/lektor-disqus-comments][disqus]: Adds disqus comments to a Lektor
+    website
+  - [kmonsoor/lektor-google-analytics][lektorga]: Integration of Google
+    analytics with Lektor CMS
+  - [bancek/lektor-markdown-excerpt][mdexcerpt]: Adds filter for Markdown body
+    excerpt
+  - [lektor/lektor-markdown-header-anchors][md-header]: Adds support for
+    anchors and table of contents to Markdown
+  - [terminal-labs/lektor-strip-html-tags][striphtml]: Strip HTML tags,
+    effectively turning HTML into plain text
+  - [lektor/lektor-webpack-support][webpacksupport]: Adds webpack support to
+    lektor
+
+[plugins]: https://www.getlektor.com/docs/plugins/
+[atom]: https://github.com/nixjdm/lektor-atom
+[disqus]: https://github.com/lektor/lektor-disqus-comments
+[lektorga]: https://github.com/kmonsoor/lektor-google-analytics
+[mdexcerpt]: https://github.com/bancek/lektor-markdown-excerpt
+[md-header]: https://github.com/lektor/lektor-markdown-header-anchors
+[striphtml]: https://github.com/terminal-labs/lektor-strip-html-tags
+[webpacksupport]: https://github.com/lektor/lektor-webpack-support
+
+
 ## Redirects
 
 - `/cc-vocabulary/` to https://cc-vocabulary.netlify.com/
