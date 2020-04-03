@@ -5,8 +5,8 @@ Source for `creativecommons.github.io`
 
 ## Overview
 
-**:warning: DO *NOT* MAKE CHANGES TO THE
-[creativecommons/creativecommons.github.io][ccghiorepo] REPO DIRECTLY**.
+> **:warning: DO *NOT* MAKE CHANGES TO THE
+> [creativecommons/creativecommons.github.io][ccghiorepo] REPO DIRECTLY**.
 
 [ccghiorepo]:https://github.com/creativecommons/creativecommons.github.io
 
@@ -67,7 +67,7 @@ The GitHub Actions configuration is located at
 
 ### Manual Deployment
 
-**For reference only, you should not need to not do this.**
+> :warning: **For reference only, you should not need to not do this.**
 
 When you are ready to deploy a new version of the site, run `lektor deploy`
 (assuming you have your GitHub SSH key already set up and you have access to
