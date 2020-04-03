@@ -1,0 +1,120 @@
+title: NVMEe on Debian on AWS
+---
+categories:
+open-source
+SaltStack
+---
+author: TimidRobot
+---
+pub_date: 2020-04-03
+---
+body:
+
+
+## Problem
+
+The current Creative Commons infrastructure buildouts use Debian GNU/Linux AWS
+EC2 instances with EBS volumes. Depending on chance (or race conditions), the
+mapping of block devices can be different from one host to another or between
+reboots.
+
+> *Occasionally, devices can respond to discovery in a different order in
+> subsequent instance starts, which causes the device name to change.*
+> ([Amazon EBS and NVMe on Linux Instances - Amazon Elastic Compute
+Cloud][nvme-ebs])
+
+
+## Our Solution
+
+Modern Amazon Linux AMIs resolve this by providing a `udev` rule, but Debian
+GNU/Linux does not yet do this. To ensure our systems are configured correctly,
+At Creative Commons, we use the device specified during provisioning (ex.
+`/dev/xvdf`) to identify the correct NVMEe device. We then format it with a
+label that can be used mounting during subsequent reboots.
+
+Thankfully, AWS docuemnts the the device specified during provisioning (ex. `/dev/xvdf`):
+> *For Nitro-based instances, the block device mappings that are specified in
+> the Amazon EC2 console when you are attaching an EBS volume or during
+> AttachVolume or RunInstances API calls are captured in the vendor-specific
+> data field of the NVMe controller identification.*
+([Amazon EBS and NVMe on Linux Instances - Amazon Elastic Compute
+Cloud][nvme-ebs])
+
+We use SaltStack ([`creativecommons/sre-salt-prime`][saltprime]) to:
+1. Install the `nvme-cli` package
+2. Use the `nvme` command to detect which `/dev/nvme?n?` contains *spec* (ex.
+   `xvdf`) in the NVMe vendor specific data
+3. Create a symlink (ex. `/dev/xvdf -> /dev/nvme1n1`) so that SaltStack can use
+   `/dev/xvdf` for the initial setup
+4. Perform the intial setup
+5. Delete the symlink since:
+   1. The initial setup formatted the volume with a label that is used to mount
+      the filesystem
+   2. There is no guarantee the symlink will be accurate on subsequent reboots
+      and it might cause confusion
+
+The [`states/mount/init.sls`][mountstate] state includes a complex shell
+command (with Jinja2 variables) that loops through the NVMe devices and finds
+the correct one:
+```shell
+for n in /dev/nvme?n?
+do
+    if nvme id-ctrl -v ${n} | grep -q '^0000:.*{{ spec_short }}'
+    then
+        ln -s ${n} {{ spec_long }}
+    fi
+done
+```
+Example variable values:
+
+| Jinja2 Variable     | Example Value |
+| ------------------- | ------------- |
+| `{{ spec_short }}`  | `xvdf`        |
+| `{{ spec_long }}`   | `/dev/xvdf`   |
+
+[nvme-ebs]: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/nvme-ebs-volumes.html "Amazon EBS and NVMe on Linux Instances - Amazon Elastic Compute Cloud"
+[saltprime]: https://github.com/creativecommons/sre-salt-prime "creativecommons/sre-salt-prime: Site Reliability Engineering / DevOps SaltStack configuration files"
+[mountstate]: https://github.com/creativecommons/sre-salt-prime/blob/master/states/mount/init.sls
+
+
+### Related Links
+
+- [Cloud/AmazonEC2Image/Buster - Debian Wiki][busterec2]
+- [`nvme-cli` package details in Debian buster][nvme-cli]
+- Debian buster — Debian Manpages
+  - [nvme(1) — nvme-cli][man-nvme]
+    - [nvme-id-ctrl(1) — nvme-cli][man-nvme-cli]
+
+[busterec2]: https://wiki.debian.org/Cloud/AmazonEC2Image/Buster "Cloud/AmazonEC2Image/Buster - Debian Wiki"
+[nvme-cli]: https://packages.debian.org/buster/nvme-cli "Debian -- Details of package nvme-cli in buster"
+[man-nvme]: https://manpages.debian.org/buster/nvme-cli/nvme.1.en.html
+[man-nvme-cli]: https://manpages.debian.org/buster/nvme-cli/nvme-id-ctrl.1.en.html
+
+
+## Other Solutions
+
+While doing additional research for this blog post, I found additional
+solutions to the same problem. They're all good, but I apprecite the simplicity
+of a temporary symlink for setup versus maintaining custom udev rules (maybe I
+can help contribute a udev based solution to Debian or Debian's EC2 image). I
+can also easily imagine a more complex solution being a better fit if/when our
+infrastructure provisioining become more complex.
+
+- [oogali/ebs-automatic-nvme-mapping][ebs-automatic]: Automatic mapping of EBS volumes via NVMe block devices to standard block device paths
+  - udev rule that invokes a Bash script to create symlinks
+- CoreOS
+  - udev rules that invokes a Bash script to create symlinks
+    - [`udev/rules.d/90-cloud-storage.rules`][coreos-udev]
+    - [`udev/bin/cloud_aws_ebs_nvme_id`][coreos-bin]
+- [AWS EBS NVMe udev rules][awsudevcopy]
+  - udev rule that invokes a Pyton script to create symlinks
+  - this is a copy as Amazon only provides access to the source of Amazon Linux
+    from within an Amazon Linux AMI: *The yumdownloader --source command line
+    tool provided in the Amazon Linux AMI enables viewing of source code inside
+    of an Amazon EC2.* ([Amazon Linux AMI FAQs][awslinuxfaq])
+
+[ebs-automatic]: https://github.com/oogali/ebs-automatic-nvme-mapping "oogali/ebs-automatic-nvme-mapping: Automatic mapping of EBS volumes via NVMe block devices to standard block device paths"
+[coreos-udev]: https://github.com/coreos/init/blob/master/udev/rules.d/90-cloud-storage.rules
+[coreos-bin]: https://github.com/coreos/init/blob/master/udev/bin/cloud_aws_ebs_nvme_id
+[awsudevcopy]: https://gist.github.com/jalaziz/c22c8464cb602bc2b8d0a339b013a9c4
+[awslinuxfaq]: https://aws.amazon.com/amazon-linux-ami/faqs/ "Amazon Linux AMI FAQs"
