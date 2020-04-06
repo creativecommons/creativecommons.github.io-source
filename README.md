@@ -22,13 +22,30 @@ via lektor (see [Deployment](#deployment), below).
 
 ## Installation
 
-1. Make sure you have [pipenv][pipenvdocs] installed.
-1. Clone this repository.
-1. Open your command line interface and `cd` to the repository root directory.
-1. Run `pipenv install` to create a Python virtual environment and install the
-   requirements for this project.
+### Pre-Requisites
+
+Make sure you have [pipenv][pipenvdocs], [Node.js][nodejswebsite] and [npm][npmdocs] installed. To install these, execute the following commands:
+
+> For  macOS:
+1. `brew install pipenv`
+2. `brew install node`
+
+> For GNU/Linux:
+1. `curl https://raw.githubusercontent.com/kennethreitz/pipenv/master/get-pipenv.py | python`
+2. `sudo apt update`
+3. `sudo apt install nodejs`
+4. `sudo apt install npm `
 
 [pipenvdocs]:https://pipenv.readthedocs.io/en/latest/
+[nodejswebsite]:https://nodejs.org/en/
+[npmdocs]:https://docs.npmjs.com/ 
+
+
+### Installing Project Requirements
+
+1. Clone this repository.
+2. Open your command line interface and `cd` to the repository root directory.
+3. Run `pipenv install` to create a Python virtual environment and install the requirements for this project.
 
 
 ### pipenv Troubleshooting
