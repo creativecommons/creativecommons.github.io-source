@@ -12,6 +12,6 @@ lektor-disqus-comments = 0.4.1
 lektor-google-analytics = 0.1.3
 lektor-markdown-excerpt = 0.1
 lektor-markdown-header-anchors = 0.3.1
+lektor-markdown-highlighter = 0.3.1
 lektor-strip-html-tags = 0.3.1
 lektor-webpack-support = 0.5
-lektor-markdown-highlighter = 0.3.1
