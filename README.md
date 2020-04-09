@@ -37,8 +37,8 @@ via lektor (see [Deployment](#deployment), below).
 
 - See [`CONTRIBUTING.md`](CONTRIBUTING.md) for information on how to contribute
 - See [Contributors to
-  creativecommons/creativecommons.github.io-source][contributors] for
-  information on contributions to this project :blush:
+  creativecommons/creativecommons.github.io-source][contributors] for a
+  list of authors and their contributions to this project :blush:
 
 [contributors]: https://github.com/creativecommons/creativecommons.github.io-source/graphs/contributors "Contributors to creativecommons/creativecommons.github.io-source"
 
