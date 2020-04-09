@@ -129,6 +129,8 @@ Here's how the code is structured in the top level of the repository:
     excerpt
   - [lektor/lektor-markdown-header-anchors][md-header]: Adds support for
     anchors and table of contents to Markdown
+  - [lektor/lektor-markdown-highlighter][md-highlighter]: Adds support for 
+    syntax highlighting in Markdown and templates
   - [terminal-labs/lektor-strip-html-tags][striphtml]: Strip HTML tags,
     effectively turning HTML into plain text
   - [lektor/lektor-webpack-support][webpacksupport]: Adds webpack support to
@@ -140,6 +142,7 @@ Here's how the code is structured in the top level of the repository:
 [lektorga]: https://github.com/kmonsoor/lektor-google-analytics
 [mdexcerpt]: https://github.com/bancek/lektor-markdown-excerpt
 [md-header]: https://github.com/lektor/lektor-markdown-header-anchors
+[md-highlighter]: https://github.com/lektor/lektor-markdown-highlighter
 [striphtml]: https://github.com/terminal-labs/lektor-strip-html-tags
 [webpacksupport]: https://github.com/lektor/lektor-webpack-support
 
