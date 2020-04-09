@@ -20,6 +20,29 @@ via lektor (see [Deployment](#deployment), below).
 [ccopensource]: https://opensource.creativecommons.org/
 
 
+## Code of Conduct
+
+[`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md):
+> The Creative Commons team is committed to fostering a welcoming community.
+> This project and all other Creative Commons open source projects are governed
+> by our [Code of Conduct][code_of_conduct]. Please report unacceptable
+> behavior to [conduct@creativecommons.org](mailto:conduct@creativecommons.org)
+> per our [reporting guidelines][reporting_guide].
+
+[code_of_conduct]: https://creativecommons.github.io/community/code-of-conduct/ "CC Open Source Code of Conduct — Creative Commons on GitHub"
+[reporting_guide]: https://creativecommons.github.io/community/code-of-conduct/enforcement/ "Codes of Conduct Enforcement — Creative Commons on GitHub"
+
+
+## Contributing
+
+- See [`CONTRIBUTING.md`](CONTRIBUTING.md) for information on how to contribute
+- See [Contributors to
+  creativecommons/creativecommons.github.io-source][contributors] for a
+  list of authors and their contributions to this project :blush:
+
+[contributors]: https://github.com/creativecommons/creativecommons.github.io-source/graphs/contributors "Contributors to creativecommons/creativecommons.github.io-source"
+
+
 ## Installation
 
 ### Pre-Requisites
