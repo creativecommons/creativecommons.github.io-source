@@ -4,7 +4,7 @@ from lektor.pluginsystem import Plugin
 
 class MarkdownTablePlugin(Plugin):
     name = 'markdown-table'
-    description = u'Add your description here.'
+    description = u'This plugin adds styling to markdown tables'
 
     def get_style(self):
         table_class = self.get_config().get('bootstrap_class.table', 'table table-striped')
