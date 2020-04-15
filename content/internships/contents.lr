@@ -6,21 +6,39 @@ title: Open Source Internships: Overview
 ---
 body:
 
-## Current Participation
+## Programs
 
-### Programs
+Creative Commons is currently participating in the current rounds of the following programs:
 
-**Google Summer of Code**  
-CC is participating in [Google Summer of Code](https://summerofcode.withgoogle.com/) 2020. [Here is our organization page on the GSoC website](https://summerofcode.withgoogle.com/organizations/5742311717208064/).
+### Google Season of Docs
 
-**Outreachy**  
-Creative Commons is participating in the [Outreachy](https://www.outreachy.org/) May-August 2020 round. [Here is our community page on the Outreachy website](https://www.outreachy.org/communities/cfp/creative-commons/).
+**CC has not yet been accepted into the Google Season of Docs program.**
 
-### Project Ideas
+- [Program website](https://developers.google.com/season-of-docs/)
 
-Feel free to take a look at our [Project Ideas](/internships/project-ideas). Please note that these project ideas are shared between all current internship programs. 
+### Google Summer of Code 
 
-### Mentors
+**Applications for 2020 round of Google Summer of Code are closed.**
+
+- [Program website](https://summerofcode.withgoogle.com/)
+- [CC's GSoC organization page](https://summerofcode.withgoogle.com/organizations/5742311717208064/)
+
+### Outreachy 
+
+**Applications for the May to August 2020 round of Outreachy are closed.**
+
+- [Program website](https://www.outreachy.org/)
+- [CC's Outreachy page](https://www.outreachy.org/communities/cfp/creative-commons/)
+
+## Resources
+
+* **[Project Ideas](/internships/project-ideas)**: This is a list of project ideas for our internships. Please note that these project ideas are shared between all current internship programs and all ideas may not be available for all programs. Please check the project description carefully.
+* **[Applicant Guide](/internships/applicant-guide)**: This is a guide for all internship applicants. You **must** read and follow instructions in this guide if you are applying for an internship at Creative Commons.
+* **[Intern Guide](/internships/intern-guide)**: This guide describes the expectations and responsibilities for accepted interns.
+* **[Mentor Guide](/internships/mentor-guide)**: This is a guide for mentors who are mentoring Creative Commons projects.
+* **[History](/internships/history)**: This page has historical information on CC's open source internships, including links to prior interns' blog posts.
+
+## Mentors
 
 Here are our mentors for this round of internships:
 
@@ -88,13 +106,3 @@ Here are our mentors for this round of internships:
     </tr>
   </thead>
 </table>
-
-## Guides
-
-* [Applicant Guide](/internships/applicant-guide)
-* [Intern Guide](/internships/intern-guide)
-* [Mentor Guide](/internships/mentor-guide)
-
-## History
-
-See the [History](/internships/history) page for historical information on CC's open source internships.
