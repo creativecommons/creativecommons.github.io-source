@@ -6,21 +6,39 @@ title: Open Source Internships: Overview
 ---
 body:
 
-## Current Participation
+## Programs
 
-### Programs
+Creative Commons is currently participating in the current rounds of the following programs:
 
-**Google Summer of Code**  
-CC is participating in [Google Summer of Code](https://summerofcode.withgoogle.com/) 2020. [Here is our organization page on the GSoC website](https://summerofcode.withgoogle.com/organizations/5742311717208064/).
+### Google Season of Docs
 
-**Outreachy**  
-Creative Commons is participating in the [Outreachy](https://www.outreachy.org/) May-August 2020 round. [Here is our community page on the Outreachy website](https://www.outreachy.org/communities/cfp/creative-commons/).
+**CC has not yet been accepted into the Google Season of Docs program.**
 
-### Project Ideas
+- [Program website](https://developers.google.com/season-of-docs/)
 
-Feel free to take a look at our [Project Ideas](/internships/project-ideas). Please note that these project ideas are shared between all current internship programs. 
+### Google Summer of Code 
 
-### Mentors
+**Applications for 2020 round of Google Summer of Code are closed.**
+
+- [Program website](https://summerofcode.withgoogle.com/)
+- [CC's GSoC organization page](https://summerofcode.withgoogle.com/organizations/5742311717208064/)
+
+### Outreachy 
+
+**Applications for the May to August 2020 round of Outreachy are closed.**
+
+- [Program website](https://www.outreachy.org/)
+- [CC's Outreachy page](https://www.outreachy.org/communities/cfp/creative-commons/)
+
+## Resources
+
+* **[Project Ideas](/internships/project-ideas)**: This is a list of project ideas for our internships. Please note that these project ideas are shared between all current internship programs and all ideas may not be available for all programs. Please check the project description carefully.
+* **[Applicant Guide](/internships/applicant-guide)**: This is a guide for all internship applicants. You **must** read and follow instructions in this guide if you are applying for an internship at Creative Commons.
+* **[Intern Guide](/internships/intern-guide)**: This guide describes the expectations and responsibilities for accepted interns.
+* **[Mentor Guide](/internships/mentor-guide)**: This is a guide for mentors who are mentoring Creative Commons projects.
+* **[History](/internships/history)**: This page has historical information on CC's open source internships, including links to prior interns' blog posts.
+
+## Mentors
 
 Here are our mentors for this round of internships:
 
@@ -88,38 +106,3 @@ Here are our mentors for this round of internships:
     </tr>
   </thead>
 </table>
-
-## Guides
-
-* [Applicant Guide](/internships/applicant-guide)
-* [Intern Guide](/internships/intern-guide)
-* [Mentor Guide](/internships/mentor-guide)
-
-## History
-
-### Google Summer of Code
-
-CC has participated in Google Summer of Code eight times before 2020. See below for more information about our projects and participation for each year.
-
-* [Google Summer of Code 2019](https://summerofcode.withgoogle.com/archive/2019/organizations/5500455663173632/)
-    * [Open Source Blog posts](http://localhost:5000/blog/categories/gsoc-2019/)
-    * [CC + Google Summer of Code 2019](https://creativecommons.org/2019/03/04/cc-google-summer-of-code-2019/)
-    * [Meet CC’s 2019 Google Summer of Code students](https://creativecommons.org/2019/05/30/meet-ccs-2019-google-summer-of-code-students/)
-    * [Introducing the Updated Creative Commons WordPress Plugin](https://creativecommons.org/2019/11/22/updated-cc-wordpress-plugin/)
-    * [Introducing CC Vocabulary, Our New Web Design System](https://creativecommons.org/2019/12/13/cc-vocabulary-web-design-system/)
-    * [Introducing the CC Search Browser Extension](https://creativecommons.org/2020/01/06/cc-search-browser-extension/)
-    * [Introducing the Linked Commons](https://creativecommons.org/2020/01/23/introducing-the-linked-commons/)
-    * [Here’s a Sneak Peek at the Updated Creative Commons Chooser](https://creativecommons.org/2020/01/27/the-new-cc-license-chooser/)
-* [Google Summer of Code 2013](https://www.google-melange.com/archive/gsoc/2013/orgs/cc)
-* [Google Summer of Code 2012](https://www.google-melange.com/archive/gsoc/2012/orgs/cc)
-* [Google Summer of Code 2010](https://www.google-melange.com/archive/gsoc/2010/orgs/creativecommons)
-* [Google Summer of Code 2009](https://www.google-melange.com/archive/gsoc/2009/orgs/cc)
-* [Google Summer of Code 2008](https://developers.google.com/open-source/gsoc/2008/#cc)
-* [Google Summer of Code 2007](https://developers.google.com/open-source/gsoc/2007/#cc)
-* [Google Summer of Code 2006](https://developers.google.com/open-source/gsoc/2006/#cc)
-
-### Outreachy
-
-CC is participating in the Dec 2019 to Mar 2020 round of Outreachy.  
-* [Meet Our 2020 Interns From Outreachy](https://creativecommons.org/2019/12/10/2020-outreachy-interns/)
-* [Open Source Blog posts](https://opensource.creativecommons.org/blog/categories/outreachy/)
