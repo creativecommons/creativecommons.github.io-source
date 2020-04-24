@@ -185,6 +185,34 @@ Here's how the code is structured in the top level of the repository:
 
 ## License
 
+
+### Code
+
 - [`LICENSE`](LICENSE) (Expat/[MIT][mit] License)
 
 [mit]: http://www.opensource.org/licenses/MIT "The MIT License | Open Source Initiative"
+
+
+### Content
+
+![CC BY 4.0 license button][cc-by-png]
+
+All the content within this repository is licensed under a [Creative Commons 
+Attribution 4.0 International License][cc-by] unless otherwise
+specified.
+
+[cc-by-png]: https://licensebuttons.net/l/by/4.0/88x31.png "CC BY 4.0 license button"
+[cc-by]: https://creativecommons.org/licenses/by/4.0/ "Creative Commons — Attribution-ShareAlike 4.0 International — CC BY 4.0"
+
+
+### Font Awesome
+
+This repository contains PNG icons that were converted from Font Awesome SVGs:
+
+> Font Awesome Free is free, open source, and GPL friendly. You can use it for
+> commercial projects, open source projects, or really almost whatever you
+> want. (Full Font Awesome Free license: https://fontawesome.com/license/free)
+
+> **Icons:** CC BY 4.0 License (https://creativecommons.org/licenses/by/4.0/)
+> In the Font Awesome Free download, the CC BY 4.0 license applies to all icons
+> packaged as SVG and JS file types.
