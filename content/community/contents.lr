@@ -8,6 +8,12 @@ body:
 
 <p class="lead">Join our Slack, IRC, or mailing list communities to meet other developers interested in Creative Commons, get feedback on your projects, and talk with CC's full-time engineering staff. You can also keep up with us on the <a href="/blog">CC Open Source Blog</a> or via <a href="https://twitter.com/cc_opensource">Twitter</a>.</p>
 
+To do this, you can:
+<ul>
+  <li>Join the Creative Commons Slack organization and introduce yourself in the #cc-developers channel.</li>
+  <li>Join the CC Developer's mailing list.</li>
+</ul>
+
 ## Mailing Lists
 
 **CC Developers**: For general technical discussion open to all members. Join [on Google Groups](https://groups.google.com/a/creativecommons.org/forum/#!forum/cc-developers) or by sending an email to `cc-developers+subscribe@creativecommons.org`.
