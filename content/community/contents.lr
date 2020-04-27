@@ -6,7 +6,7 @@ title: Join the CC Developer Community
 ---
 body:
 
-<p class="lead">Join our Slack, IRC, or mailing list communities to meet other developers interested in Creative Commons, get feedback on your projects, and talk with CC's full-time engineering staff. You can also keep up with us on the <a href="/blog">CC Open Source Blog</a> or via <a href="https://twitter.com/cc_opensource">Twitter</a>.</p>
+<p class="lead">Join our Slack or mailing list communities to meet other developers interested in Creative Commons, get feedback on your projects, and talk with CC's full-time engineering staff. You can also keep up with us on the <a href="/blog">CC Open Source Blog</a> or via <a href="https://twitter.com/cc_opensource">Twitter</a>.</p>
 
 ## Mailing Lists
 
@@ -16,6 +16,8 @@ body:
 
 ## Slack
 Creative Commons has a large Slack community with sub-communities for tech/developers (of course), the [CC Global Network](https://network.creativecommons.org/), specific countries, open education, GLAM, and more. It is open to the public and you can [sign up here](http://slack-signup.creativecommons.org/). If you're not familiar with Slack, please read ["Getting Started" on Slack's usage guide](https://get.slack.help/hc/en-us/categories/360000049043). Information on joining a specific channel is on ["Join a channel"](https://get.slack.help/hc/en-us/articles/205239967-Join-a-channel).
+
+Once you join, please introduce yourself in the `#cc-developers` channel.
 
 The channels most relevant to CC's developer community are:  
 
@@ -86,6 +88,6 @@ The channels most relevant to CC's developer community are:
 - If you're looking to talk to someone on CC's full-time engineering staff, you're most likely to find us on Slack between 11:00 and 23:00 UTC on weekdays.
 
 ## IRC
-Please join the `#creativecommons-dev` channel on [Freenode](https://freenode.net/). This channel is mirrored to the `#cc-developers` channel on Slack so that messages posted on Slack show up on IRC and vice-versa.
+We don't use IRC much, but if you'd like, you can join the `#creativecommons-dev` channel on [Freenode](https://freenode.net/). This channel is mirrored to the `#cc-developers` channel on Slack so that messages posted on Slack show up on IRC and vice-versa.
 
 If you're not familiar with IRC, [here's a good guide to getting started](https://www.wikihow.com/Get-Started-with-IRC-%28Internet-Relay-Chat%29). You can also join using the [Freenode webchat](https://webchat.freenode.net/).
