@@ -1,0 +1,33 @@
+_model: project-idea
+---
+_hidden: yes
+---
+title: Improve CC Search documentation for potential contributors
+---
+problem:
+We'd like to improve our documentation for potential contributors in the `cccatalog-frontend` repository.
+---
+expected_outcome:
+* Detailed code and architecture documentation available in the GitHub repository.
+---
+internship_tasks:  
+* Work with CC’s frontend engineer to come up with a plan for the documentation.
+* Write documentation and create pull requests to get it merged.
+* If the documentation requires deployment, work with the CC team to deploy the documentation publicly.
+---
+application_tips:
+* Demonstrate your familiarity with the codebase and existing documentation.
+* Explain how you'd like to refactor or expand the documentation in detail.
+---
+resources:
+* [CC Search code](https://github.com/creativecommons/cccatalog-frontend)
+* [CC Search](https://search.creativecommons.org/)
+* [Divio's documentation best practices](https://documentation.divio.com/)
+---
+skills_recommended: JavaScript, Writing
+---
+mentors: Breno Ferreira
+---
+difficulty: Medium
+---
+filter_value: difficulty-medium skill-javascript skill-writing

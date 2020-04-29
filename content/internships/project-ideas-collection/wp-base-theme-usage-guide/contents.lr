@@ -1,0 +1,41 @@
+_model: project-idea
+---
+_hidden: yes
+---
+title: WordPress base theme usage guide
+---
+problem:
+We have created a new [WordPress base theme](https://github.com/creativecommons/wp-theme-base/) for all CC WordPress websites. We plan to make child themes for each CC WordPress website that uses this theme. We'd like documentation for how to use and customize the WordPress base theme and how to create a new website using a child theme.
+---
+expected_outcome:
+* Published usage guidelines for the WordPress base theme.
+---
+internship_tasks:  
+* Work with CC's web developer to come up with a plan for the documentation.
+* Write documentation.
+* Work with the CC team to deploy the documentation publicly.
+---
+application_tips:
+* Demonstrate your familiarity with the codebase and existing documentation.
+* Explain how you'd like to refactor or expand the documentation in detail.
+---
+resources:
+* [WordPress base theme code](https://github.com/creativecommons/wp-theme-base/)
+* [creativecommons.org theme code](https://github.com/creativecommons/wp-theme-creativecommons.org) (child theme of base theme)
+* [Divio's documentation best practices](https://documentation.divio.com/)
+* [vocabulary GitHub repo](https://github.com/creativecommons/vocabulary)
+* [Vocabulary documentation](https://cc-vocabulary.netlify.app/)
+* [vue-vocabulary GitHub repo](https://github.com/creativecommons/vue-vocabulary)
+* [Vue Vocabulary documentation](https://cc-vue-vocabulary.netlify.app/)
+* [fonts GitHub repo](https://github.com/creativecommons/fonts)
+* [Fonts documentation](https://cc-fonts.netlify.app/)
+* [Introducing Vocabulary blog post on CC blog](https://creativecommons.org/2019/12/13/cc-vocabulary-web-design-system/)
+* [Posts about Vocabulary on the CC open source blog](https://opensource.creativecommons.org/blog/categories/cc-vocabulary/)
+---
+skills_recommended: WordPress, Writing
+---
+mentors: Hugo Solar
+---
+difficulty: Medium
+---
+filter_value: difficulty-medium skill-wordpress skill-writing
