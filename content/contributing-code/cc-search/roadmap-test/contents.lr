@@ -1,0 +1,195 @@
+_model: page
+---
+_template: page-with-toc.html
+---
+title: CC Search Roadmap
+---
+body:
+
+## Q12020
+
+<table class="table table-sm table-striped">
+    <thead class="thead-light">
+        <tr>
+            <th scope="col">Task Name</th>
+            <th scope="col">Task Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+    </tbody>
+</table>## Q22020
+
+<table class="table table-sm table-striped">
+    <thead class="thead-light">
+        <tr>
+            <th scope="col">Task Name</th>
+            <th scope="col">Task Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+    <td>OER Planning</td>
+    <td>Plan for potential integration of OER into CC Search through research and consideration of potential issues.</td>
+</tr><tr>
+    <td>Improve Search Algorithm with Popularity Data Integration</td>
+    <td>Make changes to the search algorithm that incorporate image popularity data gathered from sources that provide it. </td>
+</tr><tr>
+    <td>Plan search algorithm changes for new metadata [AWS Grant]</td>
+    <td>Plan out search algorithm changes to incorporate image metadata generated via AWS Rekognition.</td>
+</tr><tr>
+    <td>Catalog Infrastructure Improvements</td>
+    <td>Improve data processing infrastructure in the Catalog by parallelizing loading and moving storage of data files from providers to S3.</td>
+</tr><tr>
+    <td>Implement architecture for schema for new metadata [AWS Grant]</td>
+    <td>Update Catalog schema to include new metadata generated through AWS Rekognition.</td>
+</tr><tr>
+    <td>Image Selection for Rekognition [AWS Grant]</td>
+    <td>Develop metrics for and select a set of ~100 million high quality images for which we'll generate additional metadata through AWS Rekognition.</td>
+</tr><tr>
+    <td>Improve Catalog Deployment and Provisioning</td>
+    <td>Manage Catalog deployment and provisioning entirely through infrastructure as code.</td>
+</tr><tr>
+    <td>Use Data Dumps for Wikimedia Ingestion</td>
+    <td>Switch our Catalog data ingestion for Wikimedia Commons to use the data dumps provided by Wikimedia instead of the MediaWiki API.</td>
+</tr><tr>
+    <td>Improve Common Crawl Infrastructure</td>
+    <td>Update our Common Crawl provider infrastructure to:
+(1) use Apache Airflow instead of AWS tools like Data Pipeline & Glue for processing data
+(2) unify provider processing to use the same base classes as API providers</td>
+</tr><tr>
+    <td>Improve Documentation for Community Contributors</td>
+    <td>Create better documentation for community contributors by consolidating internal and public documentation and making it available for everyone.</td>
+</tr><tr>
+    <td>Machine Processing - Popularity Data to Catalog [AWS Grant]</td>
+    <td>Save popularity data (views, comments, uses, etc.) associated with images from our sources into the Catalog's database.</td>
+</tr><tr>
+    <td>Move data cleaning pipeline from API to Catalog</td>
+    <td>Move our data cleaning code from the ingestion step of the API to the initial data processing step of the Catalog to eliminate unnecessary repetitive data cleaning.</td>
+</tr><tr>
+    <td>User Reporting Strategy & Implementation</td>
+    <td>We need a frontend feature where users can report problematic content, backend support, and an internal process for taking action on content that is reported as problematic.</td>
+</tr><tr>
+    <td>Audio Support and Integration</td>
+    <td>Design and user test UIs for audio. Ingest a pilot collection of audio to the Catalog, build support in the API. Integrate design to frontend to allow users to search for CC licensed audio.</td>
+</tr><tr>
+    <td>Internationalization Infrastructure</td>
+    <td>Build infrastructure necessary for internationalization, to allow CC Search to be accessible in other languages.</td>
+</tr><tr>
+    <td>Accessibility Improvements</td>
+    <td>Make accessibility improvements to the UI.</td>
+</tr><tr>
+    <td>JSON Export to CC Open Source for Public Roadmap</td>
+    <td>Create a public version of the CC Search roadmap on CC Open Source.</td>
+</tr><tr>
+    <td>Integration of Design Sprint: License Language Changes</td>
+    <td>Integrate License Language Changes into CC Search frontend, which include tooltips on license filters, and adjustments to the language and CTAs on single result pages.</td>
+</tr><tr>
+    <td>CC Search HTML Embed</td>
+    <td>Design and build an embed of CC Search that can be placed on any website, as a starting point to discover objects in CC Search. Components from Design Library must be used, with the goal of simplicity.</td>
+</tr><tr>
+    <td>Offline old CC Search</td>
+    <td>Offline Old Search (oldsearch.creativecommons.org) and redirect traffic to CC Search. Prior to this, build in messaging on Old Search, and create pages with similar resources and functionality on CC Search.</td>
+</tr><tr>
+    <td>Improved Support Pages</td>
+    <td>Improve the support pages on CC Search, which includes the Collections page, for a better experience. Add explanation text for collections, improve flow.</td>
+</tr><tr>
+    <td>License Explanation/Compliance Improvements</td>
+    <td>Improve how and where we explain licenses, and consider ways to make it easier for reusers to understand and comply with license requirements.</td>
+</tr>
+    </tbody>
+</table>## Q32020
+
+<table class="table table-sm table-striped">
+    <thead class="thead-light">
+        <tr>
+            <th scope="col">Task Name</th>
+            <th scope="col">Task Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+    <td>Web Monetization: Research Phase</td>
+    <td>Research, mock up, and user test potential integrations for Web Monetization into CC Search and other CC web properties.</td>
+</tr><tr>
+    <td>API UI with Usage Dashboard</td>
+    <td>Build a UI for the Catalog API, where users can sign up, manage access, see usage metrics and statistics.</td>
+</tr><tr>
+    <td>API documentation improvements</td>
+    <td>Make CC Catalog API documentation more accessible to CC Search users, and improve user experience.</td>
+</tr><tr>
+    <td>Push Capabilities for CC Catalog API</td>
+    <td>Extend the CC Catalog API to accept data from external contributors, rather than being read-only.</td>
+</tr><tr>
+    <td>Scraping & Resizing Work [AWS Grant]</td>
+    <td>Store a private copy of all the images in the CC Catalog to analyze via machine learning.</td>
+</tr><tr>
+    <td>Wikidata integration with Catalog & Search Algorithm</td>
+    <td>Collect and use structured data from Wikidata to enhance our search algorithm with semantic search.</td>
+</tr><tr>
+    <td>Pilot OER Integration (Text)</td>
+    <td>Do a pilot integration of text-based content that is considered educational. Requires selection of source, Catalog and API structuring, frontend designs and integration.</td>
+</tr><tr>
+    <td>Usage/Reuse Metrics Dashboard</td>
+    <td>Build an analytics UI that is fed by Google Analytics and our internal analytics database.</td>
+</tr><tr>
+    <td>Switch from Common Crawl to API</td>
+    <td>For all possible providers, use their APIs to ingest data into the CC Catalog instead of scraping websites via Common Crawl data.</td>
+</tr><tr>
+    <td>Run Rekognition on 100m images [AWS Grant]</td>
+    <td>Generate metadata via machine learning (using AWS Rekognition) on a set of ~100 million high quality images from the CC Catalog.</td>
+</tr><tr>
+    <td>Upgrade Catalog:  Data Lake</td>
+    <td>Upgrade the CC Catalog database to use a schema-less database instead of the relational database (Postgres) that we currently use.</td>
+</tr><tr>
+    <td>Provider Review Automation</td>
+    <td>Automate the process of finding new providers of CC-licensed content to index into the CC Catalog.</td>
+</tr><tr>
+    <td>Implement Use of Thumbnails in Search & Catalog [AWS Grant]</td>
+    <td>Implement changes to CC Search (frontend) and Catalog to make use of thumbnails, as they become available.</td>
+</tr><tr>
+    <td>Partnership guidelines for all integration types</td>
+    <td>Prepare partnership guidelines for CC Search. Create a page on CC Search publishing these guidelines.</td>
+</tr><tr>
+    <td>Plan UI Updates in Response to Metadata [AWS Grant]</td>
+    <td>Design updates to the CC Search UI in response to new metadata available as a result of applying machine learning to selected images in the Catalog. At a minimum, we expect new filters will be an option. Integration of design will take place subsequently.</td>
+</tr>
+    </tbody>
+</table>## Q42020
+
+<table class="table table-sm table-striped">
+    <thead class="thead-light">
+        <tr>
+            <th scope="col">Task Name</th>
+            <th scope="col">Task Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+    <td>Partner with Several OER Providers</td>
+    <td>Research and explore partnerships with OER providers (content type/s TBD) for ingestion into the Catalog.</td>
+</tr><tr>
+    <td>Plan use of ccREL for easily adding content to cccatalog</td>
+    <td>Plan out the usage of scraping ccREL metadata from the internet to index new content into the CC Catalog.</td>
+</tr><tr>
+    <td>User Persona Redevelopment</td>
+    <td>Update CC Search user personas based on user research during 2020.</td>
+</tr><tr>
+    <td>Support multiple languages in CC Search
+</td>
+    <td>Design and implement seamless support for multiple languages in CC Search, as content in languages becomes available. This is preceded by Internationalization Infrastructure work.</td>
+</tr><tr>
+    <td>Implement UI Updates for new Metadata [AWS Grant]</td>
+    <td>Implement design updates to the CC Search UI. Designs will be created in response to new metadata available as a result of applying machine learning to selected images in the Catalog. At a minimum, we expect new filters to be rolled out.</td>
+</tr><tr>
+    <td>Implement Search Algorithm Changes [AWS Grant]</td>
+    <td>Update our search algorithm to use metadata gathered using machine learning analysis (using AWS Rekognition).</td>
+</tr><tr>
+    <td>Ensure Infrastructure Code is Open Source [AWS Grant]</td>
+    <td>Release the infrastructure code used to power the CC Catalog, API, and CC Search projects publicly.</td>
+</tr><tr>
+    <td>Enrich CC Catalog data with data from Common Crawl</td>
+    <td>Enrich CC Catalog and data found in the wild using Common Crawl, for example, to track where CC-licensed content is reused.</td>
+</tr>
+    </tbody>
+</table>
