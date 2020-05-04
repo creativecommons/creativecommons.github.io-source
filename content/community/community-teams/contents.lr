@@ -30,7 +30,7 @@ How to Contribute
 You can contribute to CC in a variety of ways!
 
 -   [Code Contribution](https://opensource.creativecommons.org/contributing-code/): Submit a pull request for a CC project.
-  -   We value the quality of your contributions highly, but if you are new to CC, open source, or even programming as a whole, this is OK! Possibly more important than quality is that you show you can incorporate feedback, and show potential for growth.
+  -   We value the quality of your contributions highly, but if you are new to CC, open source, or even programming as a whole, this is okay! Possibly more important than quality is that you show you can incorporate feedback, and show potential for growth.
 -   Documentation: Improve documentation for a CC project.
   -   We want our projects to cover [all four bases of good documentation](https://documentation.divio.com/introduction/): tutorials, how-to guides, reference documentation, and explanations.
 -   Issue Reporting: Report bugs or write up feature requests for a CC project.
@@ -47,7 +47,7 @@ Roles
 **CC's Community Team has a lot of different roles. You can apply for each role upon meeting the requirements!**
 
 All of these privileges are granted on a volunteer basis, and there is no obligation to leverage any of them if you don't want to.
-If school, family, work, or otherwise takes precedent, that's ok! For example, assigned pull request reviews: we would like to see your review on that PR, but if you are not able or don't want to complete the review, that's ok!
+If school, family, work, or otherwise takes precedent, that's okay! For example, assigned pull request reviews: we would like to see your review on that PR, but if you are not able or don't want to complete the review, that's okay!
 
 ### Project-Based Roles
 
@@ -69,7 +69,7 @@ These roles are not project based and are for folks interested in helping grow C
 | Name                   	| Privileges                                                                                                                                                                                                                        	| Requirements                                                                                                                                                                                    	|
 |------------------------	|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
 | **Community Contributor**<br>If you'd like to try out engaging with the CC community on a deeper level, but aren't familiar with the technical side of things, you might like this role!	| <li>Invitation to private community contributors Slack channel.</li><li>Addition to Community Team page on CC Open Source.</li>                                                                                                             	| 3 contributions.<br><br>1 published tweet to the CC Open Source Twitter account based on an idea submitted by you or “Great Contribution” on any project.<br><br>General community interaction. 	|
-| **Community Collaborator**<br>So you've tried out being a Community Contributor, want to engage more directly with the CC com, and more deeply with the community itself. This role is for you!	| <li>All <b>Community Contributor</b> privileges.</li><li>Comment-only access to the Open Source Community project on Asana, with the option to pick up tasks if desired.</li>                                                                       	| 15 contributions.<br><br>At least five people helped on Slack or the mailing list.                                                                                                              	|
+| **Community Collaborator**<br>So you've tried out being a Community Contributor, want to engage more directly with the CC team and more deeply with the community itself. This role is for you!	| <li>All <b>Community Contributor</b> privileges.</li><li>Comment-only access to the Open Source Community project on Asana, with the option to pick up tasks if desired.</li>                                                                       	| 15 contributions.<br><br>At least five people helped on Slack or the mailing list.                                                                                                              	|
 | **Community Maintainer**	| <li>All <b>Community Collaborator</b> privileges.</li><li>Manager permission on CC’s developer mailing list.</li><li>Access to tweet directly from CC Open Source account.</li><li>Letter of recommendation from Creative Commons available on request.</li> 	| N/A, Maintainers will watch and select standout contributors                                                                                                                                 	|
 
 How to Apply
@@ -82,7 +82,7 @@ We know that waiting can be difficult, but please refrain from sending messages 
 
 ### Frequently Asked Questions
 
-<b>What counts as a contribution?</b>
+**What counts as a contribution?**
 
 Contributions can be any of the things listed under ["How to Contribute"](https://opensource.creativecommons.org/community/community-teams/#how-to-contribute) above. If you think something should count as a contribution that's not listed above, please put that in your application.
 
@@ -90,7 +90,7 @@ Individual repositories may have additional work that counts as a contribution. 
 
 To count as a contribution, Issue submissions and pull request reviews don't have to be in the repository you are targeting, they could be for any CC project. However, the required pull requests must be submitted in the project you are targeting.
 
-<b>What is a "Great Contribution"? </b>
+**What is a "Great Contribution"?**
 
 Great contributions are those that are of a high level of quality such that a maintainer takes notice. When a maintainer takes notice, they will mark the contribution with the "Great Contribution" label on GitHub. Some examples of things that might make maintainers take notice include (but are not limited to), well-written code, good work on a difficult task, or the quality of the solution as a whole.
 
@@ -104,13 +104,13 @@ Your code does not necessarily need to be merged to count as a "Great Contributi
   <dd>&bull; Please only submit your own contributions, not someone else's, and please submit only the link to the contribution.</dd>
 </dl>
 
-<b>What counts as a required pull request?</b>
+**What counts as a required pull request?**
 
 If you are applying for a project based role, required pull requests must be made to the repository that you are applying for. Required pull requests do not need to be merged, they could be closed or awaiting review.
 
 Pull requests do not have to be code, they can be documentation as well.
 
-\*<b>If your question is not answered here, please ask us on Slack, or at <a href="mailto:opensource@creativecommons.org">opensource@creativecommons.org</a>!</b>\*
+**If your question is not answered here, please ask us on Slack, or at <a href="mailto:opensource@creativecommons.org">opensource@creativecommons.org</a>!**
 
 ### Evaluation Criteria
 
