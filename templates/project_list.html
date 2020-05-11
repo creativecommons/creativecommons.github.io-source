@@ -56,8 +56,8 @@
           {% else %}
             <td>Not specified</td>
           {% endif %}
-          <td style="min-width: 12rem;">
-            <a class="btn btn-outline-secondary btn-sm" href="{{ repo.url }}"><img src="{{ this.attachments.get('mark-github.svg')|url }}" alt="GitHub"/> GitHub</a>{% if repo.website %} <a class="btn btn-outline-secondary btn-sm" href="{{ repo.website }}"><img src="{{ this.attachments.get('link-external.svg')|url }}" alt="website"/> Website</a>{% endif %}
+          <td style="min-width: 16rem;">
+            <a class="btn btn-outline-secondary btn-sm" href="{{ repo.url }}"><img src="{{ this.attachments.get('mark-github.svg')|url }}" alt="GitHub"/> GitHub</a>{% if repo.website %} <a class="btn btn-outline-secondary btn-sm" href="{{ repo.website }}"><img src="{{ this.attachments.get('link-external.svg')|url }}" alt="website"/> Website</a>{% endif %} {% if repo.slack %} <a class="btn btn-outline-secondary btn-sm" href="https://creativecommons.slack.com/channels/{{ repo.slack }}"><img src="{{ this.attachments.get('mark-slack.svg')|url }}" alt="slack"/> Slack</a>{% endif %}
           </td>
         </tr>
       {% endfor %}
