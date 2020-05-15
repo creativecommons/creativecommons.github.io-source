@@ -132,7 +132,7 @@ Here's how the code is structured in the top level of the repository:
   for more information.
 - **`webpack`**: This is where all the webpack config files as well as Sass and
   JavaScript files for the project resides. The JavaScript and Sass files are
-  compiled and saved in assets folder during lektor build process.
+  compiled and saved in the assets folder during lektor build process.
 
 [lektorcontent]:https://www.getlektor.com/docs/content/
 [lektormodels]:(https://www.getlektor.com/docs/models/
