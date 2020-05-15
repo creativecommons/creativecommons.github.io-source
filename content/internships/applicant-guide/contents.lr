@@ -6,7 +6,7 @@ title: Open Source Internships: Applicant Guide
 ---
 body:
 
-Creative Commons participates in open source mentorship programs such as [Google Summer of Code](https://summerofcode.withgoogle.com/),  and [Outreachy](https://www.outreachy.org/). Details about specific programs and rounds are listed in the [Overview page](/internships); this page serves as a general guide to applicants.
+Creative Commons participates in open source mentorship programs such as [Google Summer of Code](https://summerofcode.withgoogle.com/), [Google Season of Docs](https://developers.google.com/season-of-docs/), and [Outreachy](https://www.outreachy.org/). Details about specific programs and rounds are listed in the [Overview page](/internships); this page serves as a general guide to applicants.
 
 ## Getting Started
 
@@ -50,8 +50,10 @@ Please read our [Contributing Code](/contributing-code) page for information on 
 
 If you're applying via Outreachy, remember to record your contribution via the Outreachy website! You can record contributions even if you have not yet received feedback on them or if they have not been merged – our mentors are busy so we can be slow to provide feedback.
 
-#### Contributing Documentation
+### Contributing Documentation
 If you are applying for Google Season of Docs, one of the best ways you can contribute to documentation is to find places where documentation can be improved, and open an issue for it on GitHub. Be sure to state what, specifically, could be improved, and how you plan to improve it.
+
+We prefer to see contributions that make substantive changes or improvements to documentation such as improving the clarity of existing documentation or creating new documentation. Typo and grammar fixes are, of course, still welcome, but we do like to see more substantive improvements.
 
 We would also like to see Season of Docs applicants make some code contributions to show a well rounded skillset and understanding of the project.
 
