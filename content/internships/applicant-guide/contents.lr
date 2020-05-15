@@ -6,7 +6,7 @@ title: Open Source Internships: Applicant Guide
 ---
 body:
 
-Creative Commons participates in open source mentorship programs such as [Google Summer of Code](https://summerofcode.withgoogle.com/) and [Outreachy](https://www.outreachy.org/). Details about specific programs and rounds are listed in the [Overview page](/internships); this page serves as a general guide to applicants.
+Creative Commons participates in open source mentorship programs such as [Google Summer of Code](https://summerofcode.withgoogle.com/),  and [Outreachy](https://www.outreachy.org/). Details about specific programs and rounds are listed in the [Overview page](/internships); this page serves as a general guide to applicants.
 
 ## Getting Started
 
@@ -16,6 +16,7 @@ If you are interested in applying to be an open source intern at CC, here's a fe
 
 Here are some resources:
 * [Google Summer of Code student guide](https://google.github.io/gsocguides/student/)
+* [Google Season of Docs technical writer guide](https://developers.google.com/season-of-docs/docs/tech-writer-guide)
 * [Outreachy applicant guide](https://www.outreachy.org/docs/applicant/)
 
 ### Understand CC
@@ -34,7 +35,7 @@ Once you pick the project you're interested in, make sure to learn about the pro
 The mentors are here to help you. We expect you to have a lot of questions along the way and we're happy to answer them.
 
 ### Contribute!
-You will need to make at least one contribution to a Creative Commons project so that we can see a sample of your work. This is important for our evaluation of your application. For more details, see the *Contributing* section below.
+You will need to make at least one contribution to a Creative Commons project so that we can see a sample of your work. This is important for our evaluation of your application. For more details, see the *Contributing* section below. Note that for Season of Docs applicants, metions of "code contributions" in this guide are somewhat synonymous with documentation contributions, and we would like to see both code and documentation related contributions from Season of Docs applicants to show a well rounded skill set.
 
 ### Draft Application
 The final step is to create a draft application and share it with your chosen project's mentors for feedback. **Do not wait until the last minute to do this.** You should ideally get at least two rounds of feedback from the mentors before you submit your final application. For more details, see the *Draft Application* section below.
@@ -48,6 +49,11 @@ Contributions are for you to get a sense of what it's like to contribute to an o
 Please read our [Contributing Code](/contributing-code) page for information on how to contribute. You can contribute to any Creative Commons repository, although it's better if you demonstrate skills related to the project you are applying for. Also, check your project's description for more specific contribution guidelines (not all of them will have them).
 
 If you're applying via Outreachy, remember to record your contribution via the Outreachy website! You can record contributions even if you have not yet received feedback on them or if they have not been merged – our mentors are busy so we can be slow to provide feedback.
+
+#### Contributing Documentation
+If you are applying for Google Season of Docs, one of the best ways you can contribute to documentation is to find places where documentation can be improved, and open an issue for it on GitHub. Be sure to state what, specifically, could be improved, and how you plan to improve it.
+
+We would also like to see Season of Docs applicants make some code contributions to show a well rounded skillset and understanding of the project.
 
 ## Application
 
