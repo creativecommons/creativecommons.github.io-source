@@ -1,0 +1,42 @@
+_model: project-idea
+---
+_hidden: yes
+---
+title: Vocabulary usage guide
+---
+problem:
+[Vocabulary](https://cc-vocabulary.netlify.app/) is CC's web design system. We'd like to build a really robust usage guide for Vocabulary so that anyone wanting to build a site using Vocabulary knows what components are available, how to use them, how to manage the build process, etc.
+---
+expected_outcome:
+* Published usage guidelines for all components of Vocabulary that complement the existing storybook.
+* A better landing page for Vocabulary, Vue Vocabulary, and Fonts.
+* Integrated documentation for all three components of Vocabulary.
+* Documentation and landing page should also use Vocabulary.
+---
+internship_tasks:  
+* Work with CC's web/frontend developers and Vocabulary core committers to come up with a plan for the documentation.
+* Write documentation.
+* Work with the CC team to deploy the documentation publicly.
+---
+application_tips:
+* Demonstrate your familiarity with the codebase and existing documentation.
+* Explain how you'd like to refactor or expand the documentation in detail.
+---
+resources:
+* [Divio's documentation best practices](https://documentation.divio.com/)
+* [vocabulary GitHub repo](https://github.com/creativecommons/vocabulary)
+* [Vocabulary documentation](https://cc-vocabulary.netlify.app/)
+* [vue-vocabulary GitHub repo](https://github.com/creativecommons/vue-vocabulary)
+* [Vue Vocabulary documentation](https://cc-vue-vocabulary.netlify.app/)
+* [fonts GitHub repo](https://github.com/creativecommons/fonts)
+* [Fonts documentation](https://cc-fonts.netlify.app/)
+* [Introducing Vocabulary blog post on CC blog](https://creativecommons.org/2019/12/13/cc-vocabulary-web-design-system/)
+* [Posts about Vocabulary on the CC open source blog](https://opensource.creativecommons.org/blog/categories/cc-vocabulary/)
+---
+skills_recommended: HTML, CSS, JavaScript, Writing
+---
+mentors: Dhruv Bhanushali, Hugo Solar
+---
+difficulty: Medium
+---
+filter_value: difficulty-medium skill-javascript skill-writing

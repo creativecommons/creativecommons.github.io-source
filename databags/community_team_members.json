@@ -1,0 +1,156 @@
+{
+    "projects": [
+        {
+            "members": [
+                {
+                    "name": "Charini Nanayakkara",
+                    "role": "Project Core Committer"
+                },
+                {
+                    "name": "K.S. Srinidhi Krishna",
+                    "role": "Project Core Committer"
+                }
+            ],
+            "name": "CC Catalog",
+            "repos": "cccatalog"
+        },
+        {
+            "members": [
+                {
+                    "name": "Ari Madian",
+                    "role": "Project Core Committer"
+                },
+                {
+                    "name": "Ayan Choudhary",
+                    "role": "Project Core Committer"
+                }
+            ],
+            "name": "CC Search",
+            "repos": "cccatalog-frontend"
+        },
+        {
+            "members": [
+                {
+                    "name": "Mayank Nader",
+                    "role": "Project Maintainer"
+                }
+            ],
+            "name": "CC Search Browser Extension",
+            "repos": "ccsearch-browser-extension"
+        },
+        {
+            "members": [
+                {
+                    "name": "Dhruvi Butti",
+                    "role": "Project Core Committer"
+                }
+            ],
+            "name": "CC Open Source",
+            "repos": "creativecommons.github.io-source"
+        },
+        {
+            "members": [
+                {
+                    "name": "Krystle Salazar",
+                    "role": "Project Core Committer"
+                }
+            ],
+            "name": "Legal Database",
+            "repos": "caselaw"
+        },
+        {
+            "members": [
+                {
+                    "name": "Shubham Pandey",
+                    "role": "Project Contributor"
+                }
+            ],
+            "name": "License Buttons",
+            "repos": "licensebuttons"
+        },
+        {
+            "members": [
+                {
+                    "name": "Ari Madian",
+                    "role": "Project Maintainer"
+                },
+                {
+                    "name": "Olga Bulat",
+                    "role": "Project Maintainer"
+                },
+                {
+                    "name": "Hemanth Kumar",
+                    "role": "Project Contributor"
+                },
+                {
+                    "name": "Jacqueline Binya",
+                    "role": "Project Contributor"
+                }
+            ],
+            "name": "License Chooser",
+            "repos": "chooser"
+        },
+        {
+            "members": [
+                {
+                    "name": "Bhumij Gupta",
+                    "role": "Project Maintainer"
+                }
+            ],
+            "name": "Link Checker",
+            "repos": "cc-link-checker"
+        },
+        {
+            "members": [
+                {
+                    "name": "Mar\u00eda Bel\u00e9n Guaranda Cabezas ",
+                    "role": "Project Maintainer"
+                },
+                {
+                    "name": "Subham Sahu",
+                    "role": "Project Core Committer"
+                }
+            ],
+            "name": "Linked Commons",
+            "repos": "cccatalog-dataviz"
+        },
+        {
+            "members": [
+                {
+                    "name": "Ana Paula Rocha",
+                    "role": "Project Collaborator"
+                }
+            ],
+            "name": "Platform Toolkit",
+            "repos": "mp"
+        },
+        {
+            "members": [
+                {
+                    "name": "Dhruv Bhanushali",
+                    "role": "Project Maintainer"
+                },
+                {
+                    "name": "Dhruvi Butti",
+                    "role": "Project Core Committer"
+                },
+                {
+                    "name": "Chidiebere Onyegbuchulem",
+                    "role": "Project Member"
+                }
+            ],
+            "name": "Vocabulary",
+            "repos": "fonts, vocabulary, vue-vocabulary"
+        },
+        {
+            "members": [
+                {
+                    "name": "Ahmad Bilal",
+                    "role": "Project Core Committer"
+                }
+            ],
+            "name": "WordPress Plugin",
+            "repos": "wp-plugin-creativecommons"
+        }
+    ]
+}
