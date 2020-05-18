@@ -12,21 +12,21 @@ Creative Commons is currently participating in the current rounds of the followi
 
 ### Google Season of Docs
 
-**CC has not yet been accepted into the Google Season of Docs program.**
-
 - [Program website](https://developers.google.com/season-of-docs/)
 - CC's [Project Ideas](/internships/project-ideas)
 
+If you're interested in this program, please review the resources below and come talk to us on Slack in `#cc-gsoc-outreachy`.
+
 ### Google Summer of Code 
 
-**Applications for 2020 round of Google Summer of Code are closed.**
+**Interns for the 2020 round of Google Summer of Code have been announced.**
 
 - [Program website](https://summerofcode.withgoogle.com/)
 - [CC's GSoC organization page](https://summerofcode.withgoogle.com/organizations/5742311717208064/)
 
 ### Outreachy 
 
-**Applications for the May to August 2020 round of Outreachy are closed.**
+**Interns for the May to August 2020 round of Outreachy have been announced.**
 
 - [Program website](https://www.outreachy.org/)
 - [CC's Outreachy page](https://www.outreachy.org/communities/cfp/creative-commons/)
@@ -43,67 +43,16 @@ Creative Commons is currently participating in the current rounds of the followi
 
 Here are our mentors for this round of internships:
 
-<table class="table table-sm table-striped">
-  <thead class="thead-light">
-    <tr>
-      <th>Name</th>
-      <th>Slack username</th>
-      <th>About</th>
-    </tr>
-    <tr>
-      <td>Alden Page</td>
-      <td><code>@aldenpage</code></td>
-      <td><a href="/blog/authors/aldenpage">See CC Open Source Blog author page</a></td>
-    </tr>
-    <tr>
-      <td>Anna Tumadóttir</td>
-      <td><code>@Anna</code></td>
-      <td><a href="https://creativecommons.org/author/annacreativecommons-org/">See CC staff bio</a></td>
-    </tr>
-    <tr>
-      <td>Ari Madian</td>
-      <td><code>@Ari</code></td>
-      <td><a href="/blog/authors/akmadian">See CC Open Source Blog author page</a></td>
-    </tr>
-    <tr>
-      <td>Breno Ferreira</td>
-      <td><code>@brenoferreira</code></td>
-      <td><a href="/blog/authors/brenoferreira">See CC Open Source Blog author page</a></td>
-    </tr>
-    <tr>
-      <td>Brent Moran</td>
-      <td><code>@Brent</code></td>
-      <td><a href="/blog/authors/mathemancer">See CC Open Source Blog author page</a></td>
-    </tr>
-    <tr>
-      <td>Dhruv Bhanushali</td>
-      <td><code>@dhruvkb</code></td>
-      <td><a href="/blog/authors/dhruvkb">See CC Open Source Blog author page</a></td>
-    </tr>
-    <tr>
-      <td>Hugo Solar</td>
-      <td><code>@hugo</code></td>
-      <td><a href="/blog/authors/hugosolar">See CC Open Source Blog author page</a></td>
-    </tr>
-    <tr>
-      <td>Kriti Godey</td>
-      <td><code>@kriti</code></td>
-      <td><a href="/blog/authors/kgodey">See CC Open Source Blog author page</a></td>
-    </tr>
-    <tr>
-      <td>María Belén Guaranda Cabezas</td>
-      <td><code>@Maria Belen Guaranda</code></td>
-      <td><a href="/blog/authors/soccerdroid">See CC Open Source Blog author page</a></td>
-    </tr>
-    <tr>
-      <td>Sarah Hinchcliff Pearson</td>
-      <td><code>@shinchpearson</code></td>
-      <td><a href="https://creativecommons.org/author/sarahcreativecommons-org/">See CC staff bio</a></td>
-    </tr>
-    <tr>
-      <td>Timid Robot Zehta</td>
-      <td><code>@Timid Robot</code></td>
-      <td><a href="/blog/authors/TimidRobot">See CC Open Source Blog author page</a></td>
-    </tr>
-  </thead>
-</table>
+| Name                          | Slack Username          | About                                                                            |
+| ----------------------------- | ----------------------- | -------------------------------------------------------------------------------- |
+| Alden Page                    | `@aldenpage`            | [See CC Open Source Blog author page](/blog/authors/aldenpage/)                  |                  
+| Anna Tumadóttir 	            | `@Anna`                 | [See CC staff bio](https://creativecommons.org/author/annacreativecommons-org/)  |
+| Ari Madian 	                  | `@Ari` 	                | [See CC Open Source Blog author page](/blog/authors/akmadian/)                   |
+| Breno Ferreira 	              | `@brenoferreira`        | [See CC Open Source Blog author page](/blog/authors/brenoferreira/)              |
+| Brent Moran 	                | `@Brent`                |	[See CC Open Source Blog author page](/blog/authors/mathemancer/)                |
+| Dhruv Bhanushali 	            | `@dhruvkb` 	            | [See CC Open Source Blog author page](/blog/authors/dhruvkb/)                    |
+| Hugo Solar 	                  | `@hugo`                 |	[See CC Open Source Blog author page](/blog/authors/hugosolar/)                  |
+| Kriti Godey 	                | `@kriti` 	              | [See CC Open Source Blog author page](/blog/authors/kgodey/)                     |
+| María Belén Guaranda Cabezas 	| `@Maria Belen Guaranda` |	[See CC Open Source Blog author page](/blog/authors/soccerdroid/)                |
+| Sarah Hinchcliff Pearson 	    | `@shinchpearson`        |	[See CC staff bio](https://creativecommons.org/author/sarahcreativecommons-org/) |
+| Timid Robot Zehta 	          | `@Timid Robot`          |	[See CC Open Source Blog author page](/blog/authors/TimidRobot/)                 |
