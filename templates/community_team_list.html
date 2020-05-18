@@ -3,8 +3,7 @@
 {% block body %}
   <p>This is a list of all CC Community Team members, and their roles and privileges.</p>
   <p>For more information about CC Community Team, please see <a href="/content/community/community-teams/">the Community Team Page</a>.</p>
-  <h2>Community Team Members</h2>
-  <p>We are actively looking for help with these projects and each project has open GitHub issues that are ready for external contribution.</p>
+  <h2>Project Teams</h2>
   {% for project in bag('community_team_members.projects') %}
     <h3>{{ project.name }}</h3>
     <p>These team members have permissions in the <code>{{ project.repos }}</code> repo(s).</p>
