@@ -42,6 +42,7 @@
                 "url": "https://github.com/creativecommons/caselaw/blob/master/LICENSE"
             },
             "name": "caselaw",
+            "slack": "cc-dev-legal-database",
             "url": "https://github.com/creativecommons/caselaw",
             "website": "https://labs.creativecommons.org/caselaw/"
         },
@@ -362,7 +363,7 @@
             },
             "name": "ccsearch-browser-extension",
             "url": "https://github.com/creativecommons/ccsearch-browser-extension",
-            "website": ""
+            "website": "https://opensource.creativecommons.org/ccsearch-browser-extension/"
         },
         {
             "created": "2018-04-10T22:44:46",
@@ -503,7 +504,7 @@
         },
         {
             "created": "2019-11-25T17:30:19",
-            "description": "Typefaces used by Creative Commons",
+            "description": "A collection of typefaces for the web facing Creative Commons",
             "engineering_project": true,
             "english_name": "CC Fonts",
             "featured": false,
@@ -519,6 +520,19 @@
             ],
             "url": "https://github.com/creativecommons/fonts",
             "website": "https://cc-fonts.netlify.com"
+        },
+        {
+            "created": "2020-04-24T14:53:52",
+            "description": "A polite image crawler that can thumbnail and extract metadata from images at scale",
+            "id": 258541870,
+            "language": "Python",
+            "license": {
+                "name": "MIT License",
+                "url": "https://github.com/creativecommons/image-crawler/blob/master/LICENSE"
+            },
+            "name": "image-crawler",
+            "url": "https://github.com/creativecommons/image-crawler",
+            "website": null
         },
         {
             "created": "2014-12-08T20:16:04",
@@ -571,7 +585,7 @@
             "engineering_project": true,
             "featured": false,
             "id": 47291677,
-            "language": "PHP",
+            "language": "HTML",
             "license": {
                 "name": "Creative Commons Zero v1.0 Universal",
                 "url": "https://github.com/creativecommons/mp/blob/master/LICENSE"
@@ -845,12 +859,12 @@
         },
         {
             "created": "2019-05-24T16:49:48",
-            "description": "Vue components that implement a cohesive design system to unite the web facing Creative Commons",
+            "description": "A Vue component library implementing a cohesive design system to unite the web facing Creative Commons",
             "engineering_project": true,
             "english_name": "CC Vocabulary",
             "featured": false,
             "id": 188457696,
-            "language": "Vue",
+            "language": "JavaScript",
             "license": {
                 "name": "MIT License",
                 "url": "https://github.com/creativecommons/vue-vocabulary/blob/master/LICENSE"
@@ -887,7 +901,7 @@
             "created": "2019-12-06T19:44:21",
             "description": "New base WordPress theme for Creative Commons websites",
             "id": 226397839,
-            "language": "CSS",
+            "language": "PHP",
             "license": null,
             "name": "wp-theme-base",
             "url": "https://github.com/creativecommons/wp-theme-base",
@@ -945,12 +959,22 @@
             "website": ""
         },
         {
+            "created": "2020-04-21T17:01:56",
+            "description": "New WordPress theme for Creative Commons website",
+            "id": 257659012,
+            "language": "CSS",
+            "license": null,
+            "name": "wp-theme-creativecommons.org",
+            "url": "https://github.com/creativecommons/wp-theme-creativecommons.org",
+            "website": null
+        },
+        {
             "created": "2019-10-16T17:42:01",
             "description": "",
             "engineering_project": true,
             "featured": false,
             "id": 215608377,
-            "language": "CSS",
+            "language": null,
             "license": {
                 "name": "GNU General Public License v2.0",
                 "url": "https://github.com/creativecommons/wp-theme-summit/blob/master/LICENSE"
