@@ -77,7 +77,8 @@
                   <div class="dropdown-menu" aria-labelledby="navbarCommunityDropdown">
                     {% for href, title in [
                       ['/community', 'Join the Community'],
-                      ['/community/community-teams', 'Community Teams'],
+                      ['/community/community-team', 'Community Team'],
+                      ['/community/community-team/members', 'Community Team Members'],
                       ['/community/write-a-blog-post', 'Write a Blog Post'],
                       ['/community/code-of-conduct', 'Code of Conduct'],
                       ['/community/code-of-conduct/enforcement', 'Code of Conduct Enforcement'],
@@ -100,6 +101,9 @@
                       <a class="dropdown-item" href="{{ href|url }}">{{ title }}</a>
                     {% endfor %}
                   </div>
+                </li>
+                <li class="nav-item{% if this.is_child_of('/cc-search') %} active{% endif%}">
+                  <a class="nav-link" href="{{ '/cc-search'|url }}">CC Search</a>
                 </li>
                 <li class="nav-item dropdown {% if this.is_child_of('/archives') %} active{% endif%}">
                   <a class="nav-link" href="#" id="navbarArchivesDropdown" role="button">Archives</a>
