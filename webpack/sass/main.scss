@@ -1,3 +1,5 @@
+@import "../node_modules/@creativecommons/vocabulary/css/vocabulary.css";
+
 //Color Variables
 $pumpkin: #e15803;
 $orange: #FB7928;
@@ -17,7 +19,6 @@ $project-card-theme: $blue;
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
-  color: $text-color;
 }
 
 h2 {
@@ -52,14 +53,6 @@ h2 {
 
 .card-columns {
   column-count: 2;
-}
-
-.navbar {
-  background: {
-    image: linear-gradient(90deg, $brand-theme, $brand-theme-light , $brand-theme);
-    size: 100% 130px;
-    position-y: bottom;
-  }
 }
 
 .page-title {
@@ -120,61 +113,6 @@ h2 {
   background-color: $blue;
   border: none;
   z-index: 1;
-}
-
-.dropdown-item {
-  font-size: 1.2em;
-  text-align: left;
-}
-
-.dropdown:hover {
-  &:hover {
-    .dropdown-menu {
-      display: block;
-    }
-  }
-}
-
-.dropdown-menu {
-  margin-top: 0px;
-}
-
-.navbar-dark {
-  .navbar-nav {
-    .nav-item.active{
-      .nav-link {
-        background: $brand-theme-dark !important;
-      }
-    }
-    .nav-item {
-      font-size: 1.2em;
-      text-align: center;
-      &:hover{
-        background: $brand-theme-dark !important;
-      }
-      .nav-link {
-        color: $white;
-        line-height: 1rem;
-        border-left: 1px solid $grey;
-      }
-    }
-  }
-  .navbar-toggler {
-    border-color: $white;
-  }
-}
-
-@media only screen and (max-width: 1200px) {
-  .navbar-dark{
-    .navbar-nav {
-      .nav-item {
-        .nav-link {
-          border: None;
-          text-align: center;
-        } 
-      }  
-    }
-  } 
 }
 
 .toc-card {
