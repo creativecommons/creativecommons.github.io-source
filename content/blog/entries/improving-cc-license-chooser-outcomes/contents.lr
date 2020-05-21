@@ -1,0 +1,47 @@
+title: Improving CC License Chooser: Outcomes
+---
+author: obulat
+---
+categories:
+
+outreachy
+cc-chooser
+---
+series: outreachy-dec-2019-chooser
+---
+pub_date: 2020-05-21
+---
+body:
+During the three months of my Outreachy internship, I worked on improving the new version of the chooser to make it ready for production. You can view the result at [chooser-beta.creativecommons.org](https://chooser-beta.creativecommons.org/). (Don't forget to leave your feedback!). We've gone through iterations of design, implementation and user experience testing.
+
+### Technical details
+
+I implemented a couple of versions of design in line with the insights we've got from UX testing. Francisco Vera created the final design, and I *converted  the Figma design into a VueJS app*.
+
+I created custom components for the stepper, and used [Buefy](https://buefy.org/) components for more common elements, and [Fortawesome](https://fortawesome.com/) library for icons. The downsize of this convenience was a huge bundle size. I performed analysis with `webpack-bundle-analyzer` and after several rounds of tree shaking, managed to **reduce the size of the bundle almost by half**.
+
+The license chooser has to keep data about the license properties that the user selects and display any changes on screen. Previously, all data for selected license was passed to components using props. So, when a user added, say,  a 'NonCommercial' clause to their license, or typed in the link to which the work should be attributed, the data was passed through props to the components that displayed the result. This created chains of props passing that were brittle. To make the process more robust, I **added Vuex store** to keep the data that is necessary for more than one component.
+
+To make chooser accessible for all of our wide multilingual community, I **integrated the vue-i18n plugin**, and made all of the text translatable.  Together with Kriti, we added **Transifex integration** so that the text translation can be crowdsourced.
+
+I've also updated the code from using Vue webpack templates to **Vue CLI**, and added **Github hooks** to test the code before merging any new pull requests. **Google analytics integration** will help us continue improving the chooser.
+
+After all of this work, I was really excited to be the person to deploy the new chooser to github pages. And redeploy it many more times after that :)
+
+### Working remotely
+
+It has been a great experience to work remotely, before the time of global coronavirus lockdowns when everyone has started to work from home.
+
+What helped me during this time is the weekly meetings we had with other members of CC team. This made me feel a part of the team, plan and implement the work I needed to do, and stay on track.
+
+Working remotely also let me have a flexible work schedule. While ensuring that I work at least 40 hours per week (the Outreachy internship requirement), I sometimes worked on weekends or early in the morning, when it was more convenient for me.
+
+### Working together
+
+It's been a pleasure to work with Creative Commons team. My mentors, [Kriti](https://creativecommons.org/author/kriticreativecommons-org/) and [Ari](https://opensource.creativecommons.org/blog/authors/akmadian/), together with [Anna](https://creativecommons.org/author/annacreativecommons-org/), Francisco Vera and [Breno](https://creativecommons.org/author/brenoferreira/), were there for me all through the internship, help me feel a part of CC team.
+
+But the CC community is much wider than that! I've been amazed at the enthusiasm of the users who helped us with the UX testing, and at the speed with which they jumped on the task of translating the website as soon as we published the text on Transifex.
+
+### What's next?
+
+My internship ended more than two months ago, but I continue to be a part of CC open source team. I also hope this experience will help me go on to a career as a developer.
