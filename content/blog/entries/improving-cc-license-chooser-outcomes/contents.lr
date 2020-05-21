@@ -9,7 +9,7 @@ cc-chooser
 ---
 series: outreachy-dec-2019-chooser
 ---
-pub_date: 2020-05-19
+pub_date: 2020-05-21
 ---
 body:
 During the three months of my Outreachy internship, I worked on improving the new version of the chooser to make it ready for production. You can view the result at [chooser-beta.creativecommons.org](https://chooser-beta.creativecommons.org/). (Don't forget to leave your feedback!). We've gone through iterations of design, implementation and user experience testing.
