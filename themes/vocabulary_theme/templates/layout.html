@@ -1,14 +1,12 @@
-
-
 <!doctype html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="shortcut icon" type="image/x-icon" href="{{ '/static/favicon.ico'|url }}">
 <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet"
   integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
 <link rel="stylesheet" href="{{ '/static/gen/style.css'|url }}">
 <link rel="stylesheet" href="{{ get_pygments_stylesheet()|url }}">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@creativecommons/vocabulary@1.0.0-beta.14/css/vocabulary.css">
 <meta property="og:site_name" content="Creative Commons" />
 <meta property="og:title" content="{{ this.title }}" />
 {% if this.description %}
@@ -161,8 +159,9 @@
       <div class="columns">
         <div class="column">
           <a href="https://creativecommons.org" class="main-logo margin-bottom-bigger">
-            <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 304 73">
-              <use href="/cc.svg#logomark"></use>
+            <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 304 73"
+              class=has-text-white>
+              <use href="#logomark"></use>
             </svg>
           </a>
           <p>
@@ -229,16 +228,14 @@
           <aside class="donate-section">
             <h5>Our work relies on you!</h5>
             <p>Help us keep the internet free and open.</p>
-            {% set cc = site.get('/').attachments.get('ccheart.svg') %}
             <a class="button small donate">
               <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 80 72">
-                <use href="/ccheart.svg#ccheart"></use>
-              </svg>Donate now
+                <use href="#letterheart"></use>
+              </svg>Donate Now
             </a>
           </aside>
         </div>
       </div>
     </div>
   </footer>
-
 </body>
