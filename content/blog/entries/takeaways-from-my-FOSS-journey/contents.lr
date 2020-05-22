@@ -1,0 +1,49 @@
+title: Takeaways from my FOSS journey!
+---
+categories:
+outreachy
+tech
+open-source
+---
+author: dhruvi16
+---
+pub_date: 2020-05-22
+---
+body:
+
+
+<div style="text-align: center;">
+  <figure>
+    <img src="cover.jpg"/>
+    <figcaption>
+      <em>
+        <a href="https://www.flickr.com/photos/60255995@N04/14774214687">"Sky at night"</a> by <a href="https://www.flickr.com/photos/60255995@N04">Rychu92</a> is licensed under <a href="https://creativecommons.org/licenses/by-sa/2.0/?ref=ccsearch&atype=rich">CC BY-SA 2.0</a>
+      </em>
+    </figcaption>
+  </figure>
+</div>
+
+First let me introduce myself because of course I am not a very famous blogger or writer.
+
+I am Dhruvi. I am a third-year undergrad student. I am a designer/developer and also a FOSS enthusiast. I started my opensource journey a year ago (that is around Feb ’19) and now here I am starting my Outreachy internship with this blog (not literally of course). I am consistent, curious, and creative, and below I will tell you how these three C’s have helped me through my journey.
+
+Below are the four things that I think might be the ‘takeaways’ from my experience -
+
+### NOW is the time -
+There is no better time than now! Let’s accept the fact that most of the students wait for “the time” to start with opensource as most of us want to get into programs like GSoC, Outreachy, and many more. But I figured it is very necessary to know that whether you are interested in opensource or is it only the big internships attracting you. So, to get these answers, you need to explore, and to explore I suggest you start today. I am very fond of asking myself the question ‘Why?’ and to answer those questions I explore, I invest time. So start finding answers to your whys? today.
+
+### Start SLOW -
+For me the start was a little overwhelming and that made me push it away. And to avoid that I tried starting small and slow. By small and slow, I mean try the easy things first, like getting aware of the logistics. Personally, general practices or set of rules calm me down when I try to get into some uncomfortable zones. And yes opensource was not a very comfortable zone for me in the beginning (I mean what is *wink). To keep myself motivated, I started with familiar things like contributing to familiar projects or familiar good first issues (the easy ones). Completing a task or two gave me a lot of confidence and made me stick around.
+
+### Choose WISELY -
+After playing around for some time and getting familiar with the logistics, I went for a project hunt. I listed my areas of interest and areas which seemed exciting to me. Using those filters I found some amazing projects which were actively being worked on. I got my answers to why would I want to work on these projects? by working on them. I believe if you are interested the motivation will be natural. With some projects, I felt connected and I did not feel the need of pushing myself for contributing to them. My only advice for making a wise choice is that “Don’t push yourself too hard”!
+
+### Speak through your WORK -
+When I was sure, I wanted to work on a particular project I started getting familiar with the community (the specifics). I got familiar with the ideas and agendas the community had behind the projects. And fortunately, I got to work with the most amazing and inspiring people who helped me when I was stuck and I plan to keep working with them. I kept doing a few things which I guess might be worth mentioning -
+
+1. Try to write the most appropriate and relevant code.
+2. Try to break the solution into small understandable parts.
+3. Try to take initiatives. Small initiatives like opening issues will also work (Yes! opening relevant and meaningful issues is an initiative.).
+4. Know when to ask for help from the community (I am still working on this).
+
+I know this was not an article full of resources and tips to get into Outreachy or GSoC but I just wanted to communicate that students should see that opensource is a broader concept. I wanted to share a personal take and help the beginners with my own experience. Thanks for reading!
