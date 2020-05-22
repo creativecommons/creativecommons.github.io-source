@@ -39,7 +39,7 @@
 <title>{% block title %}Welcome{% endblock %} — Creative Commons on GitHub</title>
 <body>
   <div class="ga-script">{{ generate_google_analytics() }}</div>
-  <header>
+  <header class="margin-horizontal-xxl">
     <nav class="navbar">
       <div class="navbar-brand">
         {% set cc_logo = site.get('/').attachments.get('open_source.svg') %}
@@ -51,6 +51,8 @@
             viewBox="0 0 304 73" src="{{ cc_logo|url }}">
         </a>
         <a role="button" class="navbar-burger is-active" aria-label="menu" aria-expanded="false">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
         </a>
       </div>
