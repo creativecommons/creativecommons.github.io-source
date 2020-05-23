@@ -6,6 +6,9 @@ $(document).ready(function () {
             $('#back-to-top').fadeOut();
         }
     });
+
+    patchAssetIntoDom('/assets/logos/cc/logomark.svg');
+    patchAssetIntoDom('/assets/logos/cc/letterheart.svg');
 });
 
 const getFullyQualifiedUrl = (path, version) => {
@@ -30,7 +33,3 @@ const patchAssetIntoDom = (asset, version = null) => {
     ajax.send();
 }
 
-$(document).ready(function () {
-    patchAssetIntoDom('/assets/logos/cc/logomark.svg');
-    patchAssetIntoDom('/assets/logos/cc/letterheart.svg');
-});
