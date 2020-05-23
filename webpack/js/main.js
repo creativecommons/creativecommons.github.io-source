@@ -30,5 +30,7 @@ const patchAssetIntoDom = (asset, version = null) => {
     ajax.send();
 }
 
-patchAssetIntoDom('/assets/logos/cc/logomark.svg');
-patchAssetIntoDom('/assets/logos/cc/letterheart.svg');
+$(document).ready(function () {
+    patchAssetIntoDom('/assets/logos/cc/logomark.svg');
+    patchAssetIntoDom('/assets/logos/cc/letterheart.svg');
+});
