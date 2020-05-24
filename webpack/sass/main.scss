@@ -1,5 +1,3 @@
-@import "../node_modules/@creativecommons/vocabulary/css/vocabulary.css";
-
 //Color Variables
 $pumpkin: #e15803;
 $orange: #FB7928;
@@ -30,25 +28,6 @@ h2 {
   position: relative;
   min-height: calc(100vh - 21vh);
   padding-bottom: 3rem;
-}
-
-.main-header {
-  background-color: $brand-theme;
-  .navbar-brand {
-    margin-right: 2rem;
-    img {
-      width: 250px;
-    }
-    .legend {
-      display: block;
-      font-size: .9rem;
-      letter-spacing: .15rem;
-    }
-  }
-}
-
-.footer {
-  bottom: 0;
 }
 
 .card-columns {
@@ -104,17 +83,6 @@ h2 {
   font-size: 0.8rem;
 }
 
-#back-to-top {
-  cursor: pointer;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  display: none;
-  background-color: $blue;
-  border: none;
-  z-index: 1;
-}
-
 .toc-card {
   width: 14rem;
   margin-bottom: 1rem;
@@ -124,16 +92,6 @@ h2 {
 
 .toc {
   margin-bottom: 0;
-}
-
-.main-footer {
-  .footer small {
-    .text-muted {
-      margin-left: 2rem;
-    }
-    display: flex;
-    align-items: center;
-  }
 }
 
 img {

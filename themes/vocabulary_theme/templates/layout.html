@@ -2,11 +2,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="shortcut icon" type="image/x-icon" href="{{ '/static/favicon.ico'|url }}">
-<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet"> 
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 <link rel="stylesheet" href="{{ '/static/gen/style.css'|url }}">
 <link rel="stylesheet" href="{{ get_pygments_stylesheet()|url }}">
-</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@creativecommons/vocabulary@1.0.0-beta.14/css/vocabulary.css">
 <meta property="og:site_name" content="Creative Commons" />
 <meta property="og:title" content="{{ this.title }}" />
 {% if this.description %}
@@ -21,22 +21,26 @@
 <meta property="og:url" content="{{ this|url }}" />
 <meta property="og:type" content="article" />
 {% set image = this.attachments.images.first() %}
-      {% if image %}
+{% if image %}
 <meta property="og:image" content="{{ image|url(external=true)}}" />
-      {% endif %}
+{% endif %}
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="{{ this.title }}">
 <meta name="twitter:description" content="{{ desc }}">
-      {% if image %}
+{% if image %}
 <meta name="twitter:image" content="{{ image|url(external=true) }}">
-      {% endif %}
+{% endif %}
 <meta name="twitter:site" content="@creativecommons">
 <meta name="twitter:creator" content="@creativecommons">
-<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+  integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+  integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 <script type="text/javascript" src="{{ '/static/gen/script.js'|url }}"></script>
 <title>{% block title %}Welcome{% endblock %} — Creative Commons on GitHub</title>
+
 <body>
   <div class="ga-script">{{ generate_google_analytics() }}</div>
   <header class="margin-horizontal-xxl">
@@ -134,17 +138,86 @@
       </div>
     </div>
   </div>
-  <footer class="main-footer bg-dark">
-    <div class="container-fluid">
-      <div class="row justify-content-md-center">
-        <div class="col-lg-9 col-md-9 col-sm-12 footer text-light py-4 px-3">
-          <small>
-            <p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License"
-                  style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a></p>
-            <p class="text-muted">All the content on this website is licensed under a <strong><a rel="license"
-                  href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International
-                  License</a></strong> unless otherwise specified.</p>
-          </small>
+  <footer class="main-footer">
+    <div class="container">
+      <div class="columns">
+        <div class="column">
+          <a href="https://creativecommons.org" class="main-logo margin-bottom-bigger">
+            <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 304 73"
+              class=has-text-white>
+              <use href="#logomark"></use>
+            </svg>
+          </a>
+          <p>
+            <address class="margin-bottom-normal">Creative Commons<br />PO Box 1866, Mountain View CA 94042</address>
+            <a href="mailto:info@creativecommons.org" class="mail">info@creativecommons.org</a><br />
+            <a href="tel://+1-415-429-6753" class="phone">+1-415-429-6753</a>
+          </p>
+          <div class="margin-vertical-large">
+            <a href="https://www.instagram.com/creativecommons" class="social has-text-white" target="_blank"
+              rel="noopener">
+              <i class="icon margin-right-small is-size-4">instagram</i>
+            </a>
+            <a href="https://www.twitter.com/creativecommons" class="social has-text-white" target="_blank"
+              rel="noopener">
+              <i class="icon margin-right-small is-size-4">twitter</i>
+            </a>
+            <a href="https://www.facebook.com/creativecommons" class="social has-text-white" target="_blank"
+              rel="noopener">
+              <i class="icon margin-right-small is-size-4">facebook</i>
+            </a>
+            <a href="https://www.linkedin.com/company/creative-commons/" class="social has-text-white" target="_blank"
+              rel="noopener">
+              <i class="icon margin-right-small is-size-4">linkedin</i>
+            </a>
+          </div>
+        </div>
+        <div class="column is-half">
+          <nav class="footer-navigation">
+            <ul class="menu">
+              <li>
+                <a href="{{ '/blog'|url }}" class="menu-item">Blog</a>
+              </li>
+              <li>
+                <a href="{{ '/contributing-code'|url }}" class="menu-item">Contributing Guidelines</a>
+              </li>
+              <li>
+                <a href="{{ '/community/community-team'|url }}" class="menu-item">Community Teams</a>
+              </li>
+              <li>
+                <a href="{{ '/contributing-code/projects'|url }}" class="menu-item">Project List</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="subscription">
+            <h5 class="b-header">Subscribe to our newsletter</h5>
+            <form class="newsletter">
+              <input type="text" class="input" placeholder="Your email">
+              <input type="submit" value="subscribe" class="button small">
+            </form>
+          </div>
+          <div class="attribution margin-top-bigger">
+            <p class="caption">Except where otherwise <a href="https://creativecommons.org/policies#license"
+                target="_blank">noted</a>, content on this site is licensed under a <a
+                href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0
+                International license</a>. Icons by <a href="https://fontawesome.com/" target="_blank" rel="noopener"
+                class="has-text-white">Font Awesome</a>.</p>
+            <div class="margin-top-smaller">
+              <i class="icon margin-right-small is-size-4">cclogo</i>
+              <i class="icon margin-right-small is-size-4">ccby</i>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <aside class="donate-section">
+            <h5>Our work relies on you!</h5>
+            <p>Help us keep the internet free and open.</p>
+            <a class="button small donate">
+              <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 80 72">
+                <use href="#letterheart"></use>
+              </svg>Donate Now
+            </a>
+          </aside>
         </div>
       </div>
     </div>
