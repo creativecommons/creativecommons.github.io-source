@@ -3,6 +3,56 @@
         {
             "members": [
                 {
+                    "name": "Arushi Verma",
+                    "role": "Community Contributor"
+                },
+                {
+                    "name": "Saurabh Argarwala",
+                    "role": "Community Collaborator"
+                }
+            ],
+            "name": "Community Roles",
+            "repos": null
+        },
+        {
+            "members": [
+                {
+                    "name": "Tanuj Agarwal",
+                    "role": "Project Contributor"
+                }
+            ],
+            "name": "CC Catalog API",
+            "repos": "cccatalog-api"
+        },
+        {
+            "members": [
+                {
+                    "name": "Tanuj Agarwal",
+                    "role": "Project Contributor"
+                },
+                {
+                    "name": "Tanuj Agarwal",
+                    "role": "Project Contributor"
+                },
+                {
+                    "name": "Dhruv Bhanushali",
+                    "role": "Project Maintainer"
+                },
+                {
+                    "name": "Dhruvi Butti",
+                    "role": "Project Core Committer"
+                },
+                {
+                    "name": "Chidiebere Onyegbuchulem",
+                    "role": "Project Member"
+                }
+            ],
+            "name": "Vocabulary",
+            "repos": "fonts, vocabulary, vue-vocabulary"
+        },
+        {
+            "members": [
+                {
                     "name": "Charini Nanayakkara",
                     "role": "Project Core Committer"
                 },
@@ -123,24 +173,6 @@
             ],
             "name": "Platform Toolkit",
             "repos": "mp"
-        },
-        {
-            "members": [
-                {
-                    "name": "Dhruv Bhanushali",
-                    "role": "Project Maintainer"
-                },
-                {
-                    "name": "Dhruvi Butti",
-                    "role": "Project Core Committer"
-                },
-                {
-                    "name": "Chidiebere Onyegbuchulem",
-                    "role": "Project Member"
-                }
-            ],
-            "name": "Vocabulary",
-            "repos": "fonts, vocabulary, vue-vocabulary"
         },
         {
             "members": [
