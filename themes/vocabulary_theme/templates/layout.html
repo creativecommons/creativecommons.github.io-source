@@ -2,11 +2,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="shortcut icon" type="image/x-icon" href="{{ '/static/favicon.ico'|url }}">
-<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet"
-  integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 <link rel="stylesheet" href="{{ '/static/gen/style.css'|url }}">
 <link rel="stylesheet" href="{{ get_pygments_stylesheet()|url }}">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@creativecommons/vocabulary@1.0.0-beta.14/css/vocabulary.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@creativecommons/vocabulary/css/vocabulary.css">
 <meta property="og:site_name" content="Creative Commons" />
 <meta property="og:title" content="{{ this.title }}" />
 {% if this.description %}
@@ -43,7 +41,7 @@
 
 <body>
   <div class="ga-script">{{ generate_google_analytics() }}</div>
-  <header class="margin-horizontal-xxl">
+  <header class="bulma">
     <nav class="navbar">
       <div class="navbar-brand">
         {% set cc_logo = site.get('/').attachments.get('open_source.svg') %}
@@ -54,13 +52,13 @@
             preserveAspectRatio="xMidYMid meet"
             viewBox="0 0 304 73" src="{{ cc_logo|url }}">
         </a>
-        <a role="button" class="navbar-burger is-active" aria-label="menu" aria-expanded="false">
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
         </a>
       </div>
-      <div class="navbar-menu is-active">
+      <div class="navbar-menu">
         <div class="navbar-end">
           <a class="navbar-item {% if this.is_child_of('/blog') %} is-active{% endif%}" href="{{ '/blog'|url }}">
             Blog
@@ -81,7 +79,7 @@
           </div>
           <div class="navbar-item has-dropdown is-hoverable">
             <a class="navbar-link is-arrowless {% if this.is_child_of('/community') %} is-active{% endif%}">Community<i class="icon caret-down"></i></a>
-            <div class="navbar-dropdown">
+            <div class="navbar-dropdown is-active">
               {% for href, title in [
                 ['/community', 'Join the Community'],
                 ['/community/community-team', 'Community Team'],

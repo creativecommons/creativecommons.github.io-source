@@ -15,10 +15,6 @@ $brand-theme-light: $orange;
 $text-color: $jet-black;
 $project-card-theme: $blue;
 
-body {
-  font-family: 'Source Sans Pro', sans-serif;
-}
-
 h2 {
   font-weight: 600;
   padding-bottom: 0.5rem;
@@ -122,3 +118,4 @@ img {
     animation:octocat-wave 560ms ease-in-out
   }
 }
+
