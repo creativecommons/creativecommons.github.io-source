@@ -4,7 +4,6 @@
 <link rel="shortcut icon" type="image/x-icon" href="{{ '/static/favicon.ico'|url }}">
 <link rel="stylesheet" href="{{ '/static/gen/style.css'|url }}">
 <link rel="stylesheet" href="{{ get_pygments_stylesheet()|url }}">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@creativecommons/vocabulary/css/vocabulary.css">
 <meta property="og:site_name" content="Creative Commons" />
 <meta property="og:title" content="{{ this.title }}" />
 {% if this.description %}
@@ -41,7 +40,7 @@
 
 <body>
   <div class="ga-script">{{ generate_google_analytics() }}</div>
-  <header class="bulma">
+  <header>
     <nav class="navbar">
       <div class="navbar-brand">
         {% set cc_logo = site.get('/').attachments.get('open_source.svg') %}

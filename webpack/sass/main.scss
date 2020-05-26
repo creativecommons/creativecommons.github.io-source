@@ -1,3 +1,5 @@
+@import "../node_modules/@creativecommons/vocabulary/css/vocabulary.css";
+
 //Color Variables
 $pumpkin: #e15803;
 $orange: #FB7928;
@@ -5,7 +7,7 @@ $candy: #EE5B32;
 $jet-black: #333333;
 $grey: rgba(255, 255, 255, 0.6);
 $blue: #00b5da;
-$white: #fff;
+$white: #ffffff;
 
 //Color Configs
 $brand-theme: $candy;
@@ -14,6 +16,20 @@ $brand-theme-light: $orange;
 
 $text-color: $jet-black;
 $project-card-theme: $blue;
+
+
+.navbar-item {
+  &.has-dropdown {
+    .navbar-dropdown {
+      display: none;
+    }
+    &.is-active {
+      .navbar-dropdown {
+        display: block;
+      }
+    }
+  }
+}
 
 h2 {
   font-weight: 600;
@@ -118,4 +134,3 @@ img {
     animation:octocat-wave 560ms ease-in-out
   }
 }
-
