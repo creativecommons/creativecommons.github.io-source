@@ -34,6 +34,11 @@ The channels most relevant to CC's developer community are:
       <td>Discussion related to the <a href="https://github.com/creativecommons/ccsearch-browser-extension">CC Search browser extension</a>.</td>
     </tr>
     <tr>
+      <td><code>#cc-dev-catalog </code></td>
+      <td>Discussion related to the <a href="https://api.creativecommons.engineering/">CC Catalog API</a> and <a href="https://github.com/creativecommons/cccatalog">CC Catalog</a>.</td>
+    </tr>
+    <tr>
+    <tr>
       <td><code>#cc-dev-cc-catalog-viz</code</td>
       <td>Discussion related to the <a href="https://github.com/creativecommons/cccatalog-dataviz">CC Catalog visualizations</a>.</td>
     </tr>
@@ -71,7 +76,7 @@ The channels most relevant to CC's developer community are:
     </tr> 
     <tr>
       <td><code>#cc-search</code</td>
-      <td>Discussion related to <a href="https://search.creativecommons.org/">CC Search</a>, the <a href="https://api.creativecommons.engineering/">CC Catalog API</a>, and <a href="https://github.com/creativecommons/cccatalog">CC Catalog</a>.</td>
+      <td>Discussion related to <a href="https://search.creativecommons.org/">CC Search</a>.</td>
     </tr>
     <tr>
       <td><code>#cc-usability</code</td>
