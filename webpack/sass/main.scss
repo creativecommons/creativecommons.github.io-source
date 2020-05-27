@@ -58,18 +58,6 @@ h2 {
   }
 }
 
-.page-title {
-  background-color: $white;
-  border: {
-    bottom-style: solid;
-    color: $brand-theme;
-    width: 10px;
-  }
-  padding-left: 0px;
-  font-weight: 600;
-  color: $text-color;
-}
-
 @mixin large-border-style {
   background-color: $white;
   padding-left: 0px;

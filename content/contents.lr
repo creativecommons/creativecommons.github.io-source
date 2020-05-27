@@ -3,8 +3,6 @@ _model: home
 _template: home.html
 ---
 block_content:
+
 #### hero ####
-title: Creative Commons Title
-----
-content:
-Creative Commons content
+_template: blocks/hero.html
