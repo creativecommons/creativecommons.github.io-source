@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block title %}{{ this.title }}{% endblock %}
+
+{% block body %}
+
+    {% for block in this.body.blocks %}
+        {{ block }}
+    {% endfor %}
+
+{% endblock %}
