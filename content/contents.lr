@@ -1,13 +1,10 @@
-_model: Home
+_model: home
 ---
 _template: home.html
 ---
-body:
-
+block_content:
 #### hero ####
-
-title: Creative Commons
----
+title: Creative Commons Title
+----
 content:
-
-Creative Commons
+Creative Commons content
