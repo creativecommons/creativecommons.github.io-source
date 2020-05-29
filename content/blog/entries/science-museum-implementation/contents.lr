@@ -93,10 +93,16 @@ we move on to the next record.
 
 Once the implementation script is ready (test suite is built along with), we create a workflow, that runs on a monthly basis.
 
+### Results:
+Running the scripts we get:
+- Number of records recieved : ```35584```
+- Number of images collected : ``` 62497```
 
-Science Museum provider is the first provider, I worked on as a part of the internship and thank my mentor Brent Moran for the help.
+The problem with current implementation is that records with no date would be missed.
 
-Additional Details : 
+Science Museum provider is the first provider I worked on as a part of the internship and thank my mentor Brent Moran for the help.
+
+### Additional Details : 
 - [research work](https://github.com/creativecommons/cccatalog/issues/302)
 - [implementation](https://github.com/creativecommons/cccatalog/pull/400)
 
