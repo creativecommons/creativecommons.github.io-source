@@ -1,0 +1,102 @@
+title: Science Museum provider implementation
+---
+categories: 
+
+cc-catalog 
+gsoc
+---
+author: srinidhi
+---
+pub_date: 2020-05-29
+---
+body:
+Science museum is a provider with around 80,000 CC license images, currently Science museum data is ingested from Common Crawl. 
+The problem with Common Crawl is that we don't have control over the content available and this results in poor data quality.
+Science museum is one such provider that has poor data quality and there is need to improve it. So this is done by moving Science museum to an API based crawl. 
+
+## API research
+Science museum provides an official API endpoint using which the implementation will be done, but before the implementation 
+we have to ensure that the API provides necessary content and there is a systematic way to get it. First step is to take an object 
+from their collection and check certain criterias.
+
+[sample object](https://collection.sciencemuseumgroup.org.uk/api/objects/co8005638)
+
+- parameters available for the API 
+- Object landing url
+- Image url
+- CC license associated with the image
+- creator, title and other metadata info 
+
+Once the above checks have been made, we need to find a way to get all the objects, this could be by paging through the records 
+or partition using the parameters, etc. Since their API parameter has ```page[number]``` paging would be an appropriate choice with  max size 
+as 100 it would require around 800 pages to get all the objects but then certain glitches with their API doesn't allow us to go after 
+page 50.This would mean we would get only 5000 objects and around 17000 images. 
+
+[API page-50](https://collection.sciencemuseumgroup.org.uk/search/image_license?page[size]=100&page[number]=50)
+
+[API page-51](https://collection.sciencemuseumgroup.org.uk/search/image_license?page[size]=100&page[number]=51)
+
+So we need to find the way to divide the collection into subsets such that each subset has less than or equal to 5000 objects.
+Luckily, the API had another set of parameters ```date[from]``` and ```date[to]``` which represents the time period of the object. 
+Querying the API through different time period at the same time ensuring that records in that time period don't exceed 5000 solves the problem, starting
+from year 0 to year 2020 by trial and error method suitable year range was chosen.
+
+```
+                                            YEAR_RANGE = [
+                                                (0, 1500),
+                                                (1500, 1750),
+                                                (1750, 1825),
+                                                (1825, 1850),
+                                                (1850, 1875),
+                                                (1875, 1900),
+                                                (1900, 1915),
+                                                (1915, 1940),
+                                                (1940, 1965),
+                                                (1965, 1990),
+                                                (1990, 2020)
+                                            ]
+```
+
+With this we confirm the implementation method, but before writing the script we need to know what are the different license provided 
+by them and check if it matches with our licenses and version, since they haven't mentioned about their licenses and version, running a
+test script to get all the licenses and grouping them would do the work.
+
+```
++-----------------+----------+
+| license_version | count(1) |
++-----------------+----------+
+| CC-BY-NC-ND 2.0 |      210 |
+| CC-BY-NC-ND 4.0 |     2376 |
+| CC-BY-NC-SA 2.0 |        1 |
+| CC-BY-NC-SA 4.0 |    61694 |
++-----------------+----------+
+```
+
+Since the licenses and their versions are confirmed, we can start the implementation.
+
+## Implementation
+The implementation is quite simple in nature, we loop the through the ```YEAR_RANGE``` and get all the records for that period and 
+pass it on to an object data handler method that extracts the necessary details from the record and store it in the ```ImageStore```
+instance. Since we are querying with the objects period, the same object would be present in multiple year range ,to avoid repition
+we keep track of the record/object's id in a global variable ```RECORD_IDS = []```.
+
+Within the object data handler method before collecting details we check if the ```id``` already exists in ```RECORD_IDS```, if it exists 
+we move on to the next record.
+
+```
+                                            for obj_ in batch_data:
+                                                id_ = obj_.get("id")
+                                                if id_ in RECORD_IDS:
+                                                    continue
+                                                RECORD_IDS.append(id_)
+```
+
+Once the implementation script is ready (test suite is built along with), we create a workflow, that runs on a monthly basis.
+
+
+Science Museum provider is the first provider, I worked on as a part of the internship and thank my mentor Brent Moran for the help.
+
+Additional Details : 
+- [research work](https://github.com/creativecommons/cccatalog/issues/302)
+- [implementation](https://github.com/creativecommons/cccatalog/pull/400)
+
