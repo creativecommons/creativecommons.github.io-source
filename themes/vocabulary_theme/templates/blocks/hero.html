@@ -1,20 +1,14 @@
+
 <section>
   <h1 class="column is-9 is-paddingless">
-    We have been building
-    <span class="has-text-forest-green">free software</span> at
-    <span class="has-text-gold">Creative Commons</span> for over a decade.
+    {{ this.title }}
   </h1>
   <div class="columns">
     <div class="column is-one-third">
       <p class="body-bigger margin-top-big">
-        We work on code and products that support digital creativity and
-        sharing, from usability of our legal tools to enabling discovery of
-        CC-licensed content.
+        {{ this.description }}
       </p>
-      <a class="button small is-info margin-top-bigger" href="/community">Join the Developer Community</a>
-      <br />
-      <a class="button small margin-top-normal" href="https://twitter.com/creativecommons"><i
-          class="icon twitter margin-right-small"></i>Follow us on twitter</a>
+      {{ this.links }}
     </div>
     <div class="column">
       <img src="./github.svg" />
