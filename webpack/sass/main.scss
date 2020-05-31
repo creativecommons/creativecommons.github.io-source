@@ -1,4 +1,5 @@
 @import "../node_modules/@creativecommons/vocabulary/css/vocabulary.css";
+@import "../node_modules/@creativecommons/vocabulary/scss/spacing.scss";
 
 //Color Variables
 $pumpkin: #e15803;
@@ -17,6 +18,9 @@ $brand-theme-light: $orange;
 $text-color: $jet-black;
 $project-card-theme: $blue;
 
+header {
+  @extend .padding-horizontal-xxl;
+}
 
 .navbar-item {
   &.has-dropdown {
