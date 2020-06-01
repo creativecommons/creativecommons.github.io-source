@@ -40,12 +40,12 @@
 
 <body>
   <div class="ga-script">{{ generate_google_analytics() }}</div>
-  <header>
+  <header class="container">
     <nav class="navbar">
       <div class="navbar-brand">
         <a class="has-text-black" href="{{ '/'|url }}">
           <svg
-          class="logo"
+          class="logo margin-top-big"
           xmlns="http://www.w3.org/2000/svg"
           preserveAspectRatio="xMidYMid meet"
           viewBox="0 0 304 73">
@@ -110,7 +110,7 @@
           <a class="navbar-item {% if this.is_child_of('/cc-search') %} is-active{% endif%}" href="{{ '/cc-search'|url }}">
             CC Search
           </a>
-          <div class="navbar-item has-dropdown is-hoverable column is-3">
+          <div class="navbar-item has-dropdown is-hoverable">
             <a class="navbar-link is-arrowless {% if this.is_child_of('/archives') %} is-active{% endif%}">Archives<i class="icon caret-down"></i></a>
             <div class="navbar-dropdown">
               {% for href, title in [
