@@ -40,6 +40,8 @@
 
 <body>
   <div class="ga-script">{{ generate_google_analytics() }}</div>
+
+  <!-- header -->
   <header class="container">
     <nav class="navbar">
       <div class="navbar-brand">
@@ -125,16 +127,12 @@
       </div>
     </nav>
   </header>
-  <div class="container-fluid page-content">
-    <div class="row justify-content-md-center">
-      <div class="col-lg-9 col-md-9 col-sm-12 content-wrap">
-        <div class="page py-3">
-          <h1 class="page-title pb-3 mb-4">{% block header %}{{ this.title }}{% endblock %}</h1>
-          {% block body %}{% endblock %}
-        </div>
-      </div>
-    </div>
-  </div>
+
+  <!-- body -->
+  <h1 class="pb-3 mb-4">{% block header %}{{ this.title }}{% endblock %}</h1>
+  {% block body %}{% endblock %}
+
+  <!-- footer -->
   <footer class="main-footer">
     <div class="container">
       <div class="columns">
