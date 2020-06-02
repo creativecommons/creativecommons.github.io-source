@@ -1,3 +1,5 @@
+@import "../node_modules/@creativecommons/vocabulary/css/vocabulary.css";
+
 //Color Variables
 $pumpkin: #e15803;
 $orange: #FB7928;
@@ -5,7 +7,7 @@ $candy: #EE5B32;
 $jet-black: #333333;
 $grey: rgba(255, 255, 255, 0.6);
 $blue: #00b5da;
-$white: #fff;
+$white: #ffffff;
 
 //Color Configs
 $brand-theme: $candy;
@@ -15,9 +17,17 @@ $brand-theme-light: $orange;
 $text-color: $jet-black;
 $project-card-theme: $blue;
 
-body {
-  font-family: 'Source Sans Pro', sans-serif;
-  color: $text-color;
+.navbar-item {
+  &.has-dropdown {
+    .navbar-dropdown {
+      display: none;
+    }
+    &.is-active {
+      .navbar-dropdown {
+        display: block;
+      }
+    }
+  }
 }
 
 h2 {
@@ -31,31 +41,8 @@ h2 {
   padding-bottom: 3rem;
 }
 
-.main-header {
-  background-color: $brand-theme;
-  .navbar-brand {
-    margin-right: 2rem;
-    img {
-      width: 250px;
-    }
-    .legend {
-      display: block;
-      font-size: .9rem;
-      letter-spacing: .15rem;
-    }
-  }
-}
-
 .card-columns {
   column-count: 2;
-}
-
-.navbar {
-  background: {
-    image: linear-gradient(90deg, $brand-theme, $brand-theme-light , $brand-theme);
-    size: 100% 130px;
-    position-y: bottom;
-  }
 }
 
 .page-title {
@@ -107,61 +94,6 @@ h2 {
   font-size: 0.8rem;
 }
 
-.dropdown-item {
-  font-size: 1.2em;
-  text-align: left;
-}
-
-.dropdown:hover {
-  &:hover {
-    .dropdown-menu {
-      display: block;
-    }
-  }
-}
-
-.dropdown-menu {
-  margin-top: 0px;
-}
-
-.navbar-dark {
-  .navbar-nav {
-    .nav-item.active{
-      .nav-link {
-        background: $brand-theme-dark !important;
-      }
-    }
-    .nav-item {
-      font-size: 1.2em;
-      text-align: center;
-      &:hover{
-        background: $brand-theme-dark !important;
-      }
-      .nav-link {
-        color: $white;
-        line-height: 1rem;
-        border-left: 1px solid $grey;
-      }
-    }
-  }
-  .navbar-toggler {
-    border-color: $white;
-  }
-}
-
-@media only screen and (max-width: 1200px) {
-  .navbar-dark{
-    .navbar-nav {
-      .nav-item {
-        .nav-link {
-          border: None;
-          text-align: center;
-        } 
-      }  
-    }
-  } 
-}
-
 .toc-card {
   width: 14rem;
   margin-bottom: 1rem;
@@ -171,16 +103,6 @@ h2 {
 
 .toc {
   margin-bottom: 0;
-}
-
-.main-footer {
-  .footer small {
-    .text-muted {
-      margin-left: 2rem;
-    }
-    display: flex;
-    align-items: center;
-  }
 }
 
 img {
