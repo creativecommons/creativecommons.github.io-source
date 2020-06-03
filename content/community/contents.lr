@@ -82,6 +82,10 @@ The channels most relevant to CC's developer community are:
       <td><code>#cc-usability</code</td>
       <td>General usability discussions, seeking feedback on new releases of CC products from the community.</td>
     </tr>
+    <tr>
+      <td><code>#cc-licenses-dev</code</td>
+      <td>Discussion of the <a href="https://github.com/creativecommons/cc-licenses">CC License infrastructure overhaul project</a>.</td>
+    </tr>
   </tbody>
 </table>
 
