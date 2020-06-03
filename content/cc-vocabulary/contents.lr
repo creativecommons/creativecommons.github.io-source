@@ -1,5 +1,5 @@
 _model: redirect
 ---
-target: https://cc-vocabulary.netlify.com/
+target: https://cc-vocabulary.netlify.app/
 ---
 _discoverable: no
