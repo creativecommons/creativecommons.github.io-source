@@ -15,7 +15,7 @@ body:
 Finishing the third week since the project started (for context see this [first post](/blog/entries/legal-database-a-new-beginning/)), so the design phase is almost over and a new site look is out of the oven. The focus on these weeks was to draw the mockups for the user-facing parts of the site, integrating styles of CC Vocabulary and to get the data model for the database.
 
 ### Visual Styles
-The intention was to keep the content that is already present but improve its distribution and access by users. For this, the main menu was changed to provide direct links to listing of Cases and Scholarships. The old Country page was removed and replaced by a more granular division by legal resource, so this data will be shown separately.
+The intention was to keep the content that is already present but improve its distribution and access by users. For this, the main menu was changed to provide direct links to listing of Cases and Scholarships. The old "Countries" page was removed and replaced by a more granular division by legal resource, so this data will be shown separately.
 
 The final look for the home site is as follows.
 
