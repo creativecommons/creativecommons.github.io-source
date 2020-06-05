@@ -31,7 +31,7 @@ The extension, currently supports only 3 filters: `license`, `sources`, and `use
 #### Related Images and Image tags
 Showing related Images will help users find a variety of images that fit their requirements and also explore the images that would not usally show up on the initial pages of the search result. Whereas, Image tags will let the users incrementally make their queries better and more specific.
 
-#### Adding "Browser by Sources" section
+#### Adding "Browse by Sources" section
 Even though the users can see the number of sources supported by the extension from the drop-down filter, they might not be familiar with many of them and what kind of content they provide. Adding a "Browse by Source" section would make users appreciate the sources available for them to choose from. 
 
 #### Improving the bookmarks section
