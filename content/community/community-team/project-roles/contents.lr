@@ -1,0 +1,71 @@
+_model: page
+---
+_template: page-with-toc.html
+---
+title: Community Team: Project Roles
+---
+body:
+This page serves as a guide for project-based roles on CC's [Community Team][communityteam].
+
+Roles other than "Project Maintainer" are coming soon!
+
+## Project Maintainers
+
+Before getting started with the rest of the guidelines, please review the [Community Team][communityteam] page and familiarize yourself with the roles and requirements for each role, evaluation criteria, and the privilege and role de-escalation process.
+
+### Responsibilities
+As a Project Maintainer, your responsibilities are as follows:
+
+* **Review pull requests (PRs):** You are expected to review incoming pull requests regularly (we aim to review all pull requests within [within three business days][pullrequestguidelines]).
+* **Recognize work as "Great Contribution":**You are expected to pay attention to contributions to your repositories, and apply “Great Contribution” labels as needed. For more information about this, see the “Great Contributions” section below.
+* **Decide on Community Team applications:** You are expected to make the final decision on Community Team applications for your project.
+* **Communicate with the applicant and the Open Source Community Coordinator (OSCC) promptly:** You are expected to reach out to applicants for Community Team directly and let them know the status of their application.
+   * We want to get back to applicants within seven business days of application, if possible. If this is not possible, you should reach out to the applicant just letting them know that it’s taking a little longer than usual (could be due to internal discussion taking a while, other things taking precedent, etc.), and that we’re working on it.
+   * You are expected to communicate with the OSCC promptly (within three business days) when they reach out to you about a new Community Team application or other related matter.
+   * You should also notify the OSCC of your decision about the Community Team application.
+* **Let contributors know about Community Team:** If you notice a strong contributor, you should notify them of the existence of Community Team, provide them with the link to the Community Team page on the CC Open Source site, and encourage them to apply.
+
+[pullrequestguidelines]: /contributing-code/pr-guidelines
+[communityteam]: /community/community-team
+
+
+### Great Contributions
+Great Contributions
+“Great Contributions” are evaluated subjectively. If you notice that a contribution was of particularly high quality, you should mark it as a “Great Contribution”.
+
+Guidelines for what to mark as a “Great Contribution”:
+* A substantial PR (e.g. not fixing two links in a README; work should reasonably take an hour or more, assuming they’re not familiar with the project)
+* Shows hard work
+* Responsive to feedback
+
+How to label “Great Contributions”:
+* Assign the issue or PR to whoever made the great contribution.
+* Apply the “Great Contribution” label to the issue or PR.
+* Notify whoever made the great contribution that it has been recognized as such.
+
+
+### Reviewing Applications
+Applications for Community Teams roles will be sent to you individually by the  Open Source Community Coordinator (OSCC). The OSCC has ensured that the bare requirements for the position are met. If bare requirements are not met, you will be notified how so when you receive the application from the OSCC.
+
+From here, you should review the application and the applicant’s contributions based on the evaluation criteria. As a maintainer, you have a significant amount of discretion here. If an applicant meets the requirements, but you do not think they are ready for the role they’ve applied for, you can choose to grant a role with fewer privileges, or not grant a role at all.
+
+No matter the decision, you should do the following things:
+* Notify the OSCC of your decision. Please include the applicant’s name, the role they applied for, and if they applied for a project based role, the project they applied to. From here, the OSCC will help coordinate permissions and role management.
+* Notify the applicant of your decision. If you choose to grant them the role they applied for, then send a congratulatory message. If you choose to not grant them the role at all, or to grant one with fewer privileges, you should construct some brief feedback as to why their application was denied, either in part or in full. There’s a template for this type of feedback available in the Community Team Google Shared Drive that you have access to.
+* Respond promptly to nominated “Great Contributions” and applications for roles once they make their way to you. We would like to target seven business days or less from time of application to time of decision, but this is somewhat flexible.
+
+
+### Additional Notes
+All Community Team work is done on a volunteer basis. Team members may pick up tasks and help out here and there if they would like, but they should not be expected to use all of their privileges all the time.
+
+You have a big license for discretion within the Community Team. All applicants for all roles will need to be approved by you personally, and you may choose to deny an application based on subjective criteria even if the applicant meets the hard requirements.
+
+Here are some other miscellaneous things:
+* Issue submission requirements are org-wide, but PR requirements are not. Applicants should be submitting PRs for the repo they are aiming to get privileges for.
+* If two repos are closely related to each other (ex. catalog and catalog api), or if work in repo X also regularly includes work in repo Y, project maintainers can collaborate to grant roles to a contributor in both repos at once.
+* Project Maintainers may opt out of granting roles depending on the nature of the repository.
+
+As a maintainer, you have the ability to make some repository-specific allowances. These include the following:
+* Issue and PR requirements can vary by repository depending on traffic. If a maintainer wants to mandate different numbers for their repository, they should state these requirements in the repo’s README.
+* Maintainers may expand on what is counted as a “Contribution” if there is some type of work specific to that repository.
+* Specific privileges may be granted per-repo by maintainers depending on the type of work taking place in that repo (ex. Issue research in cccatalog).
