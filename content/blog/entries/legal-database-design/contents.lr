@@ -9,7 +9,7 @@ author: krysal
 ---
 series: outreachy-may-2020-legal-database
 ---
-pub_date: 2020-06-05
+pub_date: 2020-06-09
 ---
 body:
 Finishing the third week since the project started (for context see this [first post](/blog/entries/legal-database-a-new-beginning/)), so the design phase is almost over and a new site look is out of the oven. The focus on these weeks was to draw the mockups for the user-facing parts of the site, integrating styles of CC Vocabulary and to get the data model for the database.
