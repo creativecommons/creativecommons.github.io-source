@@ -1,28 +1,26 @@
-## title: CC Vocabulary: the main course
-
+title: CC Vocabulary: the main course
+---
 categories:
 announcements
 cc-vocabulary
 product
 gsoc
 gsoc-2019
-
 ---
-
-## author: dhruvkb
-
-## series: gsoc-2019-vocabulary
-
-## pub_date: 2019-07-19
-
+author: dhruvkb
+---
+series: gsoc-2019-vocabulary
+---
+pub_date: 2019-07-19
+---
 body:
 
 A little over seven weeks ago we initialised CC Vocabulary. It was a simple recipe, a set of components for other apps to
 use for consistency and ease of development.
 
-- **Week 1:** we assembled the ingredients: _Vue CLI, Vue Styleguidist, Theo, Lodash, Font Awesome_.
-- **Week 2:** we cleaned up the kitchen: _Dockerised our project and set up CI/CD_.
-- **Week 3:** we ground spices: _developed and incorporated design tokens_.
+- **Week 1:**    we assembled the ingredients: _Vue CLI, Vue Styleguidist, Theo, Lodash, Font Awesome_.
+- **Week 2:**    we cleaned up the kitchen: _Dockerised our project and set up CI/CD_.
+- **Week 3:**    we ground spices: _developed and incorporated design tokens_.
 - **Weeks 4-5:** we cooked appetizers: _our collection of simple Elements_.
 - **Weeks 6-7:** we cooked the main dishes: _our collection of very functional Patterns and Layouts_.
 - **Last week:** we garnished these dishes: _a splash of styling for the [styleguide](https://opensource.creativecommons.org/cc-vocabulary) itself_.
