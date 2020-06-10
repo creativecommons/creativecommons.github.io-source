@@ -1,0 +1,35 @@
+title: CC Legal Database: Design
+---
+categories:
+cc-legal-database
+product
+outreachy
+---
+author: krysal
+---
+series: outreachy-may-2020-legal-database
+---
+pub_date: 2020-06-09
+---
+body:
+Finishing the third week since the project started (for context see this [first post](/blog/entries/legal-database-a-new-beginning/)), so the design phase is almost over and a new site look is out of the oven. The focus on these weeks was to draw the mockups for the user-facing parts of the site, integrating styles of CC Vocabulary and to get the data model for the database.
+
+### Visual Styles
+The intention was to keep the content that is already present but improve its distribution and access by users. For this, the main menu was changed to provide direct links to listing of Cases and Scholarships. The old "Countries" page was removed and replaced by a more granular division by legal resource, so this data will be shown separately.
+
+The final look for the home site is as follows.
+
+<div style="text-align: center;">
+    <figure>
+        <img src="cc-caselaw-home.png" alt="New CC Caselaw Home Mockup" style="border: 1px solid black">
+        <figcaption>New Home page design with Vocabulary.</figcaption>
+    </figure>
+</div>
+
+I made use of as many Vocabulary components as possible, like header, footer and table. This way is easier to keep consistency between CC products and to develop the frontend part of the site because those components are already built and tested, though some will require certain modifications (e.g. card link with a search input), and some others have to be created from scratch, like a pagination component that is actually now required for two sites.
+
+### Data Model
+
+The second main task I worked on was coding the models on Django, which is in charge of creating the database schema through migrations. For this, I had to review the sources of information (CSV files, sheets, forms) and how they are used. The key point here is to keep constant communication with staff who are more involved in the *business case*.
+
+Several iterations were required for each task as well as some researching, and while the engineering and design work never seems to end, this makes good foundations to continue and advance.
