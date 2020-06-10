@@ -52,33 +52,28 @@ brainchild comes of age.
 
 **Presenting to you our special menu of Vue components.**
 
-|                    |                                                      |
-| ------------------ | ---------------------------------------------------- |
-| **Tokens**         |                                                      |
-| Colors             | ![colors_image](colors.png)                          |
-| Fonts              | ![fonts_image](fonts.png)                            |
-| Spaces             | ![spaces_image](spaces.png)                          |
-| **Elements**       |                                                      |
-| Button             | ![buttons_image](button.png)                         |
-| InputField         | ![inputfield_image](inputfield.png)                  |
-| SelectField        | ![select_field_image](selectfield.png)               |
-| Heading            | ![heading_image](heading.png)                        |
-| Paragraph          | ![paragraph_image](paragraph.png)                    |
-| LicenseBadge       | ![licensebadge_image](licensebadge.png)              |
-| LicenseIconography | ![license_iconography_image](licenseiconography.png) |
-| ProgressBar        | ![progressbar_image](progressbar.png)                |
-| Shield             | ![shield_image](shield.png)                          |
-| **Layouts**        |                                                      |
-| Container          | ![container_image](container.png)                    |
-| Grid               | ![grid_image](grid.png)                              |
-| Table              | ![table_image](table.png)                            |
-| **Patterns**       |                                                      |
-| Header             | ![header_image](header.png)                          |
-| Footer             | ![footer_image](footer.png)                          |
-| Locale             | ![locale_image](locale.png)                          |
-| Hello              | ![hello_image](hello.png)                            |
-| **Templates**      |                                                      |
-| Index              | ![](orange.png)                                      |
+| **Component**      |**Image**                                            |
+| ------------------ | :-------------------------------------------------- |
+| Colors             | ![colors_image](colors.png)                         |
+| Fonts              | ![fonts_image](fonts.png)                           |
+| Spaces             | ![spaces_image](spaces.png)                         |
+| Button             | ![button_image](button.png)                         |
+| InputField         | ![inputfield_image](inputfield.png)                 |
+| SelectField        | ![selectfield_image](selectfield.png)               |
+| Heading            | ![heading_image](heading.png)                       |
+| Paragraph          | ![paragraph_image](paragraph.png)                   |
+| LicenseBadge       | ![licensebadge_image](licensebadge.png)             |
+| LicenseIconography | ![licenseiconography_image](licenseiconography.png) |
+| ProgressBar        | ![progressbar_image](progressbar.png)               |
+| Shield             | ![shield_image](shield.png)                         |
+| Container          | ![container_image](container.png)                   |
+| Grid               | ![grid_image](grid.png)                             |
+| Table              | ![table_image](table.png)                           |
+| Header             | ![header_image](header.png)                         |
+| Footer             | ![footer_image](footer.png)                         |
+| Locale             | ![locale_image](locale.png)                         |
+| Hello              | ![hello_image](hello.png)                           |
+| Index              | ![orange_image](orange.png)                         |
 
 &nbsp;
 
