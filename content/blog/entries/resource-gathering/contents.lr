@@ -1,0 +1,44 @@
+title: Resource Gathering
+---
+categories:
+outreachy
+design
+open-source
+---
+author: dhruvi16
+---
+series: ux-design-cycle
+---
+pub_date: 2020-06-09
+---
+body:
+
+
+<div style="text-align: center;">
+  <figure>
+    <img src="cover.jpeg"/>
+    <figcaption>
+      <em>
+        Photo by <a href="https://unsplash.com/@dandimmock?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Dan Dimmock</a>
+      </em>
+    </figcaption>
+  </figure>
+</div>
+
+I will be describing the UX design cycle with a series of articles and this article is about describing the first step of the design cycle which is Resource Gathering.
+
+As an outreachy intern, I am handling the integration of [Creative Commons](https://creativecommons.org/) design library — [Vocabulary](https://cc-vocabulary.netlify.app/) with one of our web products — [CC OS](https://opensource.creativecommons.org/). I have been working the design library for 3–4 months now and I have enjoyed the experience the library caters and I am trying to achieve the same experience in the Open source website. To understand UX in-depth, I have been reading different resources and document this knowledge through this series of blogs. This in-depth information will help me achieve the desired experience through the library.
+
+The core concept of user experience design is that users use interfaces to accomplish a task. User experience design starts with the user and by user, I mean the individual that is using some technology to accomplish some goal.
+
+The interface consists of an input and output through which the user interacts with the system. For instance, clicking a photo requires the user to press the button (input) and an image is the desired output. Creating an affordable and usable interface is the main goal of this process. Design is a data-driven process and resource gathering is all about gathering this data.
+
+The resource gathering process is about figuring out how the task is currently accomplished by the user. There are 4 ways to gather data and below I will describe them all in detail. There are two types of data — Quantitative (numeric) and Qualitative (thematic) and designers prefer to use both types of data as per requirement.
+
+1. **Naturalistic observation** - The goal of naturalistic observation is to watch the user in action in their environment. Rather than asking the user what, when, and where accomplishes a given task, the designer goes out to where the task takes place and observes the user. Most naturalistic observations take place in the field rather than the lab because we want to get a sense of the environment where the task takes place. During the naturalistic observation session, the data collected can be either qualitative or quantitative. Qualitative data may be a set of notes written by the designer when observes the user. Quantitative data may be collected during a naturalistic observation session as well.
+
+2. **Surveys** - A survey it's a quite simply a set of questions. The goal of surveys is to get the user’s opinions. Most often, we get them to provide a self-report about their behavior, perceptions, attitudes, and feelings. We can also get their opinion about someone else. It can take place in the field or the lab. Surveys require little direct interaction, it may be physical where someone hands you a sheet of paper, but now it’s more common to have them be completely digital. Either you step up to a kiosk, or one opens up automatically when you browse a website.
+
+3. **Focus Groups** - The goal of conducting a focus group is to engage users in direct conversations. Focus groups take place in a controlled environment, usually a room where users can feel free to share and discuss information in a private setting. It involves users in a high degree of interaction, more than a survey, but less than an interview. A focus group allows the design team to meet with a group of five to ten users. This group should be representative of the user group that the designers want to address. The design team includes a trained moderator who organizes the topics of conversation among the users. A note-taker who keeps track of the major conversation points between the users and the moderator. And if possible it should also include a media person, who either audiotapes or videotapes the session.
+
+4. **Interview** - The goal of an interview is to gather in-depth information from a user. An interview can take place either in the field or in the lab. The one requirement is that there is enough privacy that the user can freely answer the questions being asked. The interview offers the designer an opportunity to have a conversation with the user. This is valuable because the interviewer can then follow any interesting lead the user can have. During the interview session, the data collected will mostly be qualitative.
