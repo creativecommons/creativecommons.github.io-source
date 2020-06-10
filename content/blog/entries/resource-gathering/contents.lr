@@ -14,9 +14,9 @@ pub_date: 2020-06-09
 body:
 
 
-I will be describing the UX design cycle with a series of articles and this article is about describing the first step of the design cycle which is Resource Gathering.
-
 As an outreachy intern, I am handling the integration of [Creative Commons](https://creativecommons.org/) design library — [Vocabulary](https://cc-vocabulary.netlify.app/) with one of our web products — [CC OS](https://opensource.creativecommons.org/). I have been working the design library for 3–4 months now and I have enjoyed the experience the library caters and I am trying to achieve the same experience in the Open source website. To understand UX in-depth, I have been reading different resources and document this knowledge through this series of blogs. This in-depth information will help me achieve the desired experience through the library.
+
+Using a Coursera course, [Introduction to user experience](https://www.coursera.org/learn/user-experience-design/), I will be describing the UX design cycle with a series of articles and this article is about describing the first step of the design cycle which is Resource Gathering.
 
 **Basic definitions**
 
@@ -33,5 +33,3 @@ The resource gathering process is about figuring out how the task is currently a
 3. **Focus Groups** - Focus groups are about engaging with a group of 6–10 people and talk about how they perform a task currently. This involves a lot of interaction with the users. This can be performed in a safe environment (lab) where users can open up without hesitation. The design team includes a moderator who can ask relevant questions, a note-taker who can note down the on-going conversation and a media person (optional) who can record video or take photos of the session.
 
 4. **Interview** - The interview involves asking questions to the user one-to-one about how they perform the task currently. This involves the highest amount of interaction with the user. Interviews are held in labs. The designer talks to the user about the task and collects both quantitative and qualitative data. This is the most time-taking way of collecting data but it gives the most useful data among all the methods.
-
-Credits - [User Experience design course](https://www.coursera.org/learn/user-experience-design/)
