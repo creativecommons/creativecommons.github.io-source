@@ -3,20 +3,6 @@
         {
             "members": [
                 {
-                    "name": "Arushi Verma",
-                    "role": "Community Contributor"
-                },
-                {
-                    "name": "Saurabh Argarwala",
-                    "role": "Community Collaborator"
-                }
-            ],
-            "name": null,
-            "repos": null
-        },
-        {
-            "members": [
-                {
                     "name": "Charini Nanayakkara",
                     "role": "Project Core Committer"
                 },
@@ -207,6 +193,16 @@
             ],
             "name": "WordPress Plugin",
             "repos": "wp-plugin-creativecommons"
+        }
+    ],
+    "community_builders": [
+        {
+            "name": "Arushi Verma",
+            "role": "Community Contributor"
+        },
+        {
+            "name": "Saurabh Argarwala",
+            "role": "Community Collaborator"
         }
     ]
 }
