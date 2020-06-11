@@ -54,11 +54,6 @@
                     "name": "Improve Documentation for Community Contributors"
                 },
                 {
-                    "description": "Save popularity data (views, comments, uses, etc.) associated with images from our sources into the Catalog's database.",
-                    "gid": "1164690970919355",
-                    "name": "Machine Processing - Popularity Data to Catalog [AWS Grant]"
-                },
-                {
                     "description": "Move our data cleaning code from the ingestion step of the API to the initial data processing step of the Catalog to eliminate unnecessary repetitive data cleaning.",
                     "gid": "1167425798148805",
                     "name": "Move data cleaning pipeline from API to Catalog"
@@ -87,11 +82,6 @@
                     "description": "Make accessibility improvements to the UI.",
                     "gid": "1171784517466065",
                     "name": "Accessibility Improvements"
-                },
-                {
-                    "description": "Create a public version of the CC Search roadmap on CC Open Source.",
-                    "gid": "1168710625773511",
-                    "name": "JSON Export to CC Open Source for Public Roadmap"
                 },
                 {
                     "description": "Integrate License Language Changes into CC Search frontend, which include tooltips on license filters, and adjustments to the language and CTAs on single result pages.",
