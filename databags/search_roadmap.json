@@ -94,11 +94,6 @@
                     "name": "Design Sprint: Meta Search Integration"
                 },
                 {
-                    "description": "Design and build an embed of CC Search that can be placed on any website, as a starting point to discover objects in CC Search. Components from Design Library must be used, with the goal of simplicity.",
-                    "gid": "1168725971351188",
-                    "name": "CC Search HTML Embed"
-                },
-                {
                     "description": "Offline Old Search (oldsearch.creativecommons.org) and redirect traffic to CC Search. Prior to this, build in messaging on Old Search, and support similar functionality on CC Search. See \"Meta Search Integration\" for related work.",
                     "gid": "1149456632174214",
                     "name": "Offline old CC Search"
@@ -188,6 +183,11 @@
         {
             "name": "Q4 2020",
             "tasks": [
+                {
+                    "description": "Design and build an embed of CC Search that can be placed on any website, as a starting point to discover objects in CC Search. Components from Design Library must be used, with the goal of simplicity.",
+                    "gid": "1168725971351188",
+                    "name": "CC Search HTML Embed"
+                },
                 {
                     "description": "Do a pilot integration of text-based content that is considered educational. Requires selection of source, Catalog and API structuring, frontend designs and integration.",
                     "gid": "1144967092198600",
