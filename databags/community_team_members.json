@@ -1,4 +1,14 @@
 {
+    "community_builders": [
+        {
+            "name": "Arushi Verma",
+            "role": "Community Contributor"
+        },
+        {
+            "name": "Saurabh Argarwala",
+            "role": "Community Collaborator"
+        }
+    ],
     "projects": [
         {
             "members": [
