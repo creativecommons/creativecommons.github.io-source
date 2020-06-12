@@ -1030,6 +1030,17 @@
             "website": ""
         },
         {
+            "created": "2020-06-11T17:20:52",
+            "description": "WordPress theme for the CC Certificates website",
+            "id": 271605671,
+            "language": null,
+            "license": null,
+            "name": "wp-theme-certificates",
+            "slack": "",
+            "url": "https://github.com/creativecommons/wp-theme-certificates",
+            "website": null
+        },
+        {
             "created": "2020-04-21T17:01:56",
             "description": "New WordPress theme for Creative Commons website",
             "id": 257659012,
