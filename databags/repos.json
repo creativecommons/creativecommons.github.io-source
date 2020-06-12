@@ -1044,7 +1044,7 @@
             "created": "2020-04-21T17:01:56",
             "description": "New WordPress theme for Creative Commons website",
             "id": 257659012,
-            "language": "CSS",
+            "language": "PHP",
             "license": null,
             "name": "wp-theme-creativecommons.org",
             "slack": "",
