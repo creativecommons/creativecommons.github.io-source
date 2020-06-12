@@ -4,11 +4,6 @@
             "name": "Q2 2020",
             "tasks": [
                 {
-                    "description": "Plan for potential integration of OER into CC Search through research and consideration of potential issues.",
-                    "gid": "1147157859839985",
-                    "name": "OER Planning"
-                },
-                {
                     "description": "Make changes to the search algorithm that incorporate image popularity data gathered from sources that provide it. ",
                     "gid": "1149385618454696",
                     "name": "Improve Search Algorithm with Popularity Data Integration"
@@ -39,16 +34,6 @@
                     "name": "Improve Catalog Deployment and Provisioning"
                 },
                 {
-                    "description": "Switch our Catalog data ingestion for Wikimedia Commons to use the data dumps provided by Wikimedia instead of the MediaWiki API.",
-                    "gid": "1167425798148807",
-                    "name": "Use Data Dumps for Wikimedia Ingestion"
-                },
-                {
-                    "description": "Update our Common Crawl provider infrastructure to:\n(1) use Apache Airflow instead of AWS tools like Data Pipeline & Glue for processing data\n(2) unify provider processing to use the same base classes as API providers",
-                    "gid": "1167425798148813",
-                    "name": "Improve Common Crawl Infrastructure"
-                },
-                {
                     "description": "Create better documentation for community contributors by consolidating internal and public documentation and making it available for everyone.",
                     "gid": "1167425798148815",
                     "name": "Improve Documentation for Community Contributors"
@@ -59,44 +44,19 @@
                     "name": "Move data cleaning pipeline from API to Catalog"
                 },
                 {
-                    "description": "We need a frontend feature where users can report problematic content, backend support, and an internal process for taking action on content that is reported as problematic.",
-                    "gid": "1149385618454673",
-                    "name": "User Reporting Strategy & Implementation"
-                },
-                {
                     "description": "Designing and prototyping an upcoming user interface for searching for audio on CC Search.",
                     "gid": "1163392248010945",
                     "name": "Design Sprint: Audio UI for CC Search"
-                },
+                }
+            ]
+        },
+        {
+            "name": "Q3 2020",
+            "tasks": [
                 {
-                    "description": "Design and user test UIs for audio. Ingest a pilot collection of audio to the Catalog, build support in the API. Integrate design to frontend to allow users to search for CC licensed audio.",
-                    "gid": "1171015130050099",
-                    "name": "Audio Support and Integration"
-                },
-                {
-                    "description": "Build infrastructure necessary for internationalization, to allow CC Search to be accessible in other languages.",
-                    "gid": "1149456632174198",
-                    "name": "Internationalization Infrastructure"
-                },
-                {
-                    "description": "Make accessibility improvements to the UI.",
-                    "gid": "1171784517466065",
-                    "name": "Accessibility Improvements"
-                },
-                {
-                    "description": "Integrate License Language Changes into CC Search frontend, which include tooltips on license filters, and adjustments to the language and CTAs on single result pages.",
-                    "gid": "1168725971351190",
-                    "name": "Integration of Design Sprint: License Language Changes"
-                },
-                {
-                    "description": "Integrating meta search functionality into CC Search for sources that are not currently indexed, and content types we do not currently support.",
-                    "gid": "1174575887784290",
-                    "name": "Design Sprint: Meta Search Integration"
-                },
-                {
-                    "description": "Offline Old Search (oldsearch.creativecommons.org) and redirect traffic to CC Search. Prior to this, build in messaging on Old Search, and support similar functionality on CC Search. See \"Meta Search Integration\" for related work.",
-                    "gid": "1149456632174214",
-                    "name": "Offline old CC Search"
+                    "description": "Improve how and where we explain licenses, and consider ways to make it easier for reusers to understand and comply with license requirements.",
+                    "gid": "1147666754358269",
+                    "name": "License Explanation/Compliance Improvements"
                 },
                 {
                     "description": "Improve the support pages on CC Search, which includes the Collections page, for a better experience. Add explanation text for collections, improve flow.",
@@ -104,15 +64,45 @@
                     "name": "Improved Support Pages"
                 },
                 {
-                    "description": "Improve how and where we explain licenses, and consider ways to make it easier for reusers to understand and comply with license requirements.",
-                    "gid": "1147666754358269",
-                    "name": "License Explanation/Compliance Improvements"
-                }
-            ]
-        },
-        {
-            "name": "Q3 2020",
-            "tasks": [
+                    "description": "Offline Old Search (oldsearch.creativecommons.org) and redirect traffic to CC Search. Prior to this, build in messaging on Old Search, and support similar functionality on CC Search. See \"Meta Search Integration\" for related work.",
+                    "gid": "1149456632174214",
+                    "name": "Offline old CC Search"
+                },
+                {
+                    "description": "Integrating meta search functionality into CC Search for sources that are not currently indexed, and content types we do not currently support.",
+                    "gid": "1174575887784290",
+                    "name": "Design Sprint: Meta Search Integration"
+                },
+                {
+                    "description": "Make accessibility improvements to the UI.",
+                    "gid": "1171784517466065",
+                    "name": "Accessibility Improvements"
+                },
+                {
+                    "description": "Build infrastructure necessary for internationalization, to allow CC Search to be accessible in other languages.",
+                    "gid": "1149456632174198",
+                    "name": "Internationalization Infrastructure"
+                },
+                {
+                    "description": "Design and user test UIs for audio. Ingest a pilot collection of audio to the Catalog, build support in the API. Integrate design to frontend to allow users to search for CC licensed audio.",
+                    "gid": "1171015130050099",
+                    "name": "Audio Support and Integration"
+                },
+                {
+                    "description": "Update our Common Crawl provider infrastructure to:\n(1) use Apache Airflow instead of AWS tools like Data Pipeline & Glue for processing data\n(2) unify provider processing to use the same base classes as API providers",
+                    "gid": "1167425798148813",
+                    "name": "Improve Common Crawl Infrastructure"
+                },
+                {
+                    "description": "Switch our Catalog data ingestion for Wikimedia Commons to use the data dumps provided by Wikimedia instead of the MediaWiki API.",
+                    "gid": "1167425798148807",
+                    "name": "Use Data Dumps for Wikimedia Ingestion"
+                },
+                {
+                    "description": "Plan for potential integration of OER into CC Search through research and consideration of potential issues.",
+                    "gid": "1147157859839985",
+                    "name": "OER Planning"
+                },
                 {
                     "description": "Research, mock up, and user test potential integrations for Web Monetization into CC Search and other CC web properties.",
                     "gid": "1153114910798067",
