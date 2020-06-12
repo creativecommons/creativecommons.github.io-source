@@ -7,12 +7,26 @@
                     "role": "Project Core Committer"
                 },
                 {
-                    "name": "K.S. Srinidhi Krishna",
+                    "name": "Srinidhi Krishna",
                     "role": "Project Core Committer"
+                },
+                {
+                    "name": "Shubham Pandey",
+                    "role": "Project Contributor"
                 }
             ],
             "name": "CC Catalog",
             "repos": "cccatalog"
+        },
+        {
+            "members": [
+                {
+                    "name": "Tanuj Agarwal",
+                    "role": "Project Contributor"
+                }
+            ],
+            "name": "CC Catalog API",
+            "repos": "cccatalog-api"
         },
         {
             "members": [
@@ -23,6 +37,10 @@
                 {
                     "name": "Ayan Choudhary",
                     "role": "Project Core Committer"
+                },
+                {
+                    "name": "Abhishek Naidu",
+                    "role": "Project Member"
                 }
             ],
             "name": "CC Search",
@@ -43,6 +61,14 @@
                 {
                     "name": "Dhruvi Butti",
                     "role": "Project Core Committer"
+                },
+                {
+                    "name": "Dhruv Bhanushali",
+                    "role": "Project Core Committer"
+                },
+                {
+                    "name": "Shubham Pandey",
+                    "role": "Project Contributor"
                 }
             ],
             "name": "CC Open Source",
@@ -53,6 +79,10 @@
                 {
                     "name": "Krystle Salazar",
                     "role": "Project Core Committer"
+                },
+                {
+                    "name": "Saurabh Argarwala",
+                    "role": "Project Contributor"
                 }
             ],
             "name": "Legal Database",
@@ -109,6 +139,10 @@
                 {
                     "name": "Subham Sahu",
                     "role": "Project Core Committer"
+                },
+                {
+                    "name": "Bharat Nischal",
+                    "role": "Project Contributor"
                 }
             ],
             "name": "Linked Commons",
@@ -137,6 +171,14 @@
                 {
                     "name": "Chidiebere Onyegbuchulem",
                     "role": "Project Member"
+                },
+                {
+                    "name": "Tanuj Agarwal",
+                    "role": "Project Contributor"
+                },
+                {
+                    "name": "Jahnvi Gupta",
+                    "role": "Project Contributor"
                 }
             ],
             "name": "Vocabulary",
@@ -151,6 +193,16 @@
             ],
             "name": "WordPress Plugin",
             "repos": "wp-plugin-creativecommons"
+        }
+    ],
+    "community_builders": [
+        {
+            "name": "Arushi Verma",
+            "role": "Community Contributor"
+        },
+        {
+            "name": "Saurabh Argarwala",
+            "role": "Community Collaborator"
         }
     ]
 }
