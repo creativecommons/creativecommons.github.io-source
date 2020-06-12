@@ -173,6 +173,10 @@
                     "role": "Project Member"
                 },
                 {
+                    "name": "Ayan Choudhary",
+                    "role": "Project Member"
+                },
+                {
                     "name": "Tanuj Agarwal",
                     "role": "Project Contributor"
                 },
@@ -193,16 +197,6 @@
             ],
             "name": "WordPress Plugin",
             "repos": "wp-plugin-creativecommons"
-        }
-    ],
-    "community_builders": [
-        {
-            "name": "Arushi Verma",
-            "role": "Community Contributor"
-        },
-        {
-            "name": "Saurabh Argarwala",
-            "role": "Community Collaborator"
         }
     ]
 }
