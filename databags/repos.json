@@ -1057,7 +1057,7 @@
             "engineering_project": true,
             "featured": false,
             "id": 215608377,
-            "language": null,
+            "language": "PHP",
             "license": {
                 "name": "GNU General Public License v2.0",
                 "url": "https://github.com/creativecommons/wp-theme-summit/blob/master/LICENSE"
