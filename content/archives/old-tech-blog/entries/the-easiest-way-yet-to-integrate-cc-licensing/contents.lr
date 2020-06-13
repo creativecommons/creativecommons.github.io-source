@@ -9,7 +9,7 @@ body:
 
 I've been working for the past week or so on a JavaScript licensing widget that has been [suggested on our wiki](http://wiki.creativecommons.org/JsWidget). It's a new way to integrate CC licensing into your web application. It's really as easy as pie: Just add the following tag somewhere in the body:
 
-> <script src="http://api.creativecommons.org/jswidget/tags/0.1/complete.js" />
+> <script src="https://api.creativecommons.org/jswidget/tags/0.1/complete.js" />
 
 and a CC licensing widget will appear. Your web application can then use  
 regular DOM queries to determine the user's choice.
