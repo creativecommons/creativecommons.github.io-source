@@ -9,24 +9,19 @@
                     "name": "Improve Search Algorithm with Popularity Data Integration"
                 },
                 {
-                    "description": "Plan out search algorithm changes to incorporate image metadata generated via AWS Rekognition.",
-                    "gid": "1154270978154720",
-                    "name": "Plan search algorithm changes for new metadata [AWS Grant]"
-                },
+                    "description": "Move our data cleaning code from the ingestion step of the API to the initial data processing step of the Catalog to eliminate unnecessary repetitive data cleaning.",
+                    "gid": "1167425798148805",
+                    "name": "Move data cleaning pipeline from API to Catalog"
+                }
+            ]
+        },
+        {
+            "name": "Q3 2020",
+            "tasks": [
                 {
-                    "description": "Improve data processing infrastructure in the Catalog by parallelizing loading and moving storage of data files from providers to S3.",
-                    "gid": "1153114910798065",
-                    "name": "Catalog Infrastructure Improvements"
-                },
-                {
-                    "description": "Update Catalog schema to include new metadata generated through AWS Rekognition.",
-                    "gid": "1154270978154717",
-                    "name": "Implement architecture for schema for new metadata [AWS Grant]"
-                },
-                {
-                    "description": "Develop metrics for and select a set of ~100 million high quality images for which we'll generate additional metadata through AWS Rekognition.",
-                    "gid": "1154270978154715",
-                    "name": "Image Selection for Rekognition [AWS Grant]"
+                    "description": "Designing and prototyping an upcoming user interface for searching for audio on CC Search.",
+                    "gid": "1163392248010945",
+                    "name": "Design Sprint: Audio UI for CC Search"
                 },
                 {
                     "description": "Manage Catalog deployment and provisioning entirely through infrastructure as code.",
@@ -39,20 +34,15 @@
                     "name": "Improve Documentation for Community Contributors"
                 },
                 {
-                    "description": "Move our data cleaning code from the ingestion step of the API to the initial data processing step of the Catalog to eliminate unnecessary repetitive data cleaning.",
-                    "gid": "1167425798148805",
-                    "name": "Move data cleaning pipeline from API to Catalog"
+                    "description": "Plan out search algorithm changes to incorporate image metadata generated via AWS Rekognition.",
+                    "gid": "1154270978154720",
+                    "name": "Plan search algorithm changes for new metadata [AWS Grant]"
                 },
                 {
-                    "description": "Designing and prototyping an upcoming user interface for searching for audio on CC Search.",
-                    "gid": "1163392248010945",
-                    "name": "Design Sprint: Audio UI for CC Search"
-                }
-            ]
-        },
-        {
-            "name": "Q3 2020",
-            "tasks": [
+                    "description": "Update Catalog schema to include new metadata generated through AWS Rekognition.",
+                    "gid": "1154270978154717",
+                    "name": "Implement architecture for schema for new metadata [AWS Grant]"
+                },
                 {
                     "description": "Improve how and where we explain licenses, and consider ways to make it easier for reusers to understand and comply with license requirements.",
                     "gid": "1147666754358269",
@@ -87,6 +77,11 @@
                     "description": "Design and user test UIs for audio. Ingest a pilot collection of audio to the Catalog, build support in the API. Integrate design to frontend to allow users to search for CC licensed audio.",
                     "gid": "1171015130050099",
                     "name": "Audio Support and Integration"
+                },
+                {
+                    "description": "Develop metrics for and select a set of ~100 million high quality images for which we'll generate additional metadata through AWS Rekognition.",
+                    "gid": "1154270978154715",
+                    "name": "Image Selection for Rekognition [AWS Grant]"
                 },
                 {
                     "description": "Update our Common Crawl provider infrastructure to:\n(1) use Apache Airflow instead of AWS tools like Data Pipeline & Glue for processing data\n(2) unify provider processing to use the same base classes as API providers",
