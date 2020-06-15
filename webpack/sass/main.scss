@@ -1,4 +1,7 @@
 @import "../node_modules/@creativecommons/vocabulary/css/vocabulary.css";
+@import "../node_modules/@creativecommons/vocabulary/scss/spacing.scss";
+@import "../node_modules/@creativecommons/vocabulary/scss/color.scss";
+@import "../node_modules/@creativecommons/vocabulary/scss/typography.scss";
 
 //Color Variables
 $pumpkin: #e15803;
@@ -26,6 +29,18 @@ $project-card-theme: $blue;
       .navbar-dropdown {
         display: block;
       }
+    }
+  }
+}
+
+.breadcrumb-container {
+  border-top: 4px solid $color-forest-green;
+
+  .breadcrumb {
+    @extend .padding-bigger;
+  
+    .link {
+      @extend .has-color-forest-green;
     }
   }
 }
