@@ -156,7 +156,8 @@
       {% for j in range(i) %}
       {% set ns.link = crumbs[j] + '/' %}
       {% endfor %}
-      <li><a class="link" href="{{ ns.link }}">
+      {% set ns.link = '/' + ns.link%}
+      <li><a class="link" href="{{ ns.link|url }}">
           {% if crumb != '' %}
           {{ crumb | title | replace('-', ' ') }}
           {% else %}
