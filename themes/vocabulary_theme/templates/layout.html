@@ -154,9 +154,8 @@
       {% set i = loop.index %}
       {% set ns = namespace (link = '') %}
       {% for j in range(i) %}
-      {% set ns.link = crumbs[j] + '/' %}
+      {% set ns.link = ns.link + crumbs[j] + '/' %}
       {% endfor %}
-      {% set ns.link = '/' + ns.link%}
       <li><a class="link" href="{{ ns.link|url }}">
           {% if crumb != '' %}
           {{ crumb | title | replace('-', ' ') }}
