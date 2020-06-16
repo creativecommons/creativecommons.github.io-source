@@ -8,7 +8,6 @@ $(document).ready(function () {
     });
 
     patchAssetIntoDom('/assets/logos/cc/logomark.svg');
-    patchAssetIntoDom('/assets/logos/cc/letterheart.svg');
     patchAssetIntoDom('/assets/logos/products/open_source.svg');
 
     // Check for click events on the navbar burger icon
