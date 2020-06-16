@@ -44,7 +44,10 @@
     <nav class="navbar">
       <div class="navbar-brand">
         <a class="has-text-black" href="{{ '/'|url }}">
-          <svg class="logo margin-top-big" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet"
+          <svg
+            class="logo margin-top-big"
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="xMidYMid meet"
             viewBox="0 0 304 73">
             <use href="#opensource"></use>
           </svg>
@@ -61,8 +64,8 @@
             Blog
           </a>
           <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link is-arrowless {% if this.is_child_of('/contributing-code') %} is-active{% endif%}">Contribute<i
-                class="icon caret-down"></i></a>
+            <a class="navbar-link is-arrowless {% if this.is_child_of('/contributing-code') %} is-active{% endif%}">
+              Contribute<i class="icon caret-down"></i></a>
             <div class="navbar-dropdown">
               {% for href, title in [
                 ['/contributing-code', 'Contribution Guidelines'],
@@ -71,13 +74,13 @@
                 ['/contributing-code/github-repo-guidelines', 'GitHub Repo Guidelines'],
                 ['/contributing-code/cc-search', 'CC Search'],
               ] %}
-              <a class="navbar-item" href="{{ href|url }}">{{ title }}</a>
+                <a class="navbar-item" href="{{ href|url }}">{{ title }}</a>
               {% endfor %}
             </div>
           </div>
           <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link is-arrowless {% if this.is_child_of('/community') %} is-active{% endif%}">Community<i
-                class="icon caret-down"></i></a>
+            <a class="navbar-link is-arrowless {% if this.is_child_of('/community') %} is-active{% endif%}">
+              Community<i class="icon caret-down"></i></a>
             <div class="navbar-dropdown is-active">
               {% for href, title in [
                 ['/community', 'Join the Community'],
@@ -89,13 +92,13 @@
                 ['/community/code-of-conduct', 'Code of Conduct'],
                 ['/community/code-of-conduct/enforcement', 'Code of Conduct Enforcement'],
               ] %}
-              <a class="navbar-item" href="{{ href|url }}">{{ title }}</a>
+                <a class="navbar-item" href="{{ href|url }}">{{ title }}</a>
               {% endfor %}
             </div>
           </div>
           <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link is-arrowless {% if this.is_child_of('/internships') %} is-active{% endif%}">Internships<i
-                class="icon caret-down"></i></a>
+            <a class="navbar-link is-arrowless {% if this.is_child_of('/internships') %} is-active{% endif%}">
+              Internships<i class="icon caret-down"></i></a>
             <div class="navbar-dropdown">
               {% for href, title in [
                 ['/internships', 'Overview'],
@@ -105,7 +108,7 @@
                 ['/internships/mentor-guide', 'Mentor Guide'],
                 ['/internships/history', 'History'],
               ] %}
-              <a class="navbar-item" href="{{ href|url }}">{{ title }}</a>
+                <a class="navbar-item" href="{{ href|url }}">{{ title }}</a>
               {% endfor %}
             </div>
           </div>
@@ -146,10 +149,14 @@
       <div class="columns">
         <div class="column is-one-quarter">
           <a href="https://creativecommons.org" class="main-logo margin-bottom-bigger">
-            <span class="has-text-white"><svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet"
+            <span class="has-text-white">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                preserveAspectRatio="xMidYMid meet"
                 viewBox="0 0 304 73">
                 <use href="#logomark"></use>
-              </svg></span>
+              </svg>
+            </span>
           </a>
           <div>
             <address class="margin-bottom-normal">Creative Commons<br />PO Box 1866, Mountain View CA 94042</address>
