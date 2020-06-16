@@ -130,45 +130,43 @@
     </nav>
   </header>
 
-  <!-- breadcrumb -->
+  <!-- Breadcrumb -->
   {% if this._path !=  '/'%}
-  <div class="breadcrumb-container">
-  <nav class="container breadcrumb caption bold" aria-label="breadcrumbs">
-    <ul>
-      {% set crumbs = [] %}
-      {% set current = {'crumb': this} %}
-      <!-- Extracting the slugs of URL -->
-      {% for i in this._path.split("/") %}
-      {% if current.crumb is not none %}
-      {% if crumbs.insert(0, current.crumb._slug) %}{% endif %}
-      {% if current.update({"crumb": current.crumb.parent}) %}{% endif %}
-      {% endif %}
-      {% endfor %}
-      {% for crumb in crumbs %}
-      <!-- Active link -->
-      {% if this._slug == crumb %}
-      <li class="is-active"><a aria-current="page displayed">{{ crumb | title | replace('-', ' ') }}</a></li>
-      {% else %}
-      {% if crumb != 'blog' %}
-      <!-- Forming the URL using extracted slugs -->
-      {% set i = loop.index %}
-      {% set ns = namespace (link = '') %}
-      {% for j in range(i) %}
-      {% set ns.link = ns.link + crumbs[j] + '/' %}
-      {% endfor %}
-      <li><a class="link" href="{{ ns.link|url }}">
-          {% if crumb != '' %}
-          {{ crumb | title | replace('-', ' ') }}
-          {% else %}
-          Home
-          {% endif %}
-        </a></li>
-      {% endif %}
-      {% endif %}
-      {% endfor %}
-    </ul>
-  </nav>
-  </div>
+    <div class="breadcrumb-container">
+      <nav class="container breadcrumb caption bold" aria-label="breadcrumbs">
+        <ul>
+          {% set crumbs = [] %}
+          {% set current = {'crumb': this} %}
+          <!-- Extracting the slugs of URL -->
+          {% for i in this._path.split("/") %}
+            {% if current.crumb is not none %}
+              {% if crumbs.insert(0, current.crumb._slug) %}{% endif %}
+              {% if current.update({"crumb": current.crumb.parent}) %}{% endif %}
+            {% endif %}
+          {% endfor %}
+          {% for crumb in crumbs %}
+            <!-- Active link -->
+            {% if this._slug == crumb %}
+              <li class="is-active"><a aria-current="page displayed">{{ crumb | title | replace('-', ' ') }}</a></li>
+            {% else %}
+              <!-- Forming the URL using extracted slugs -->
+              {% set i = loop.index %}
+              {% set ns = namespace (link = '') %}
+              {% for j in range(i) %}
+                {% set ns.link = ns.link + crumbs[j] + '/' %}
+              {% endfor %}
+              <li><a class="link" href="{{ ns.link|url }}">
+              {% if crumb != '' %}
+                {{ crumb | title | replace('-', ' ') }}
+              {% else %}
+                Home
+              {% endif %}
+              </a></li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </nav>
+    </div>
   {% endif %}
 
   <!-- Body -->
