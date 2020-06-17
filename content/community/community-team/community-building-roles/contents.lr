@@ -1,0 +1,65 @@
+_model: page
+---
+_template: page-with-toc.html
+---
+title: Community Team: Community Building Roles
+---
+body:
+This page serves as a guide for community building roles on CC's [Community Team][communityteam].
+
+Community building roles are for folks interested in helping grow CC's open source community by ensuring all contributors have a good experience and spreading the word about CC's projects.
+
+If you'd like to apply for one of these roles, please see the main [Community Team][communityteam] page.
+
+## Community Contributor
+**Who should apply:** If you’ve helped anyone else in the CC open source community on GitHub, Slack, or email, you should apply for this role!
+
+**What does this role give you?**
+* You’ll receive invites to the private CC Community Team Slack channel and email list.
+* You’ll receive previews of upcoming changes to the Community Team program.
+* You’ll be listed as [a member of the Community Team on CC Open Source](/community/community-team/members/).
+
+**Guidelines for Community Contributors**  
+If you’ve been accepted as a Community Contributor, you are encouraged to:
+* keep helping people in the CC open source community!
+  * respond to people on Slack
+  * respond to questions or issues on GitHub
+  * respond to people on the CC developer mailing list
+* participate in discussions in Slack or via email.
+* contribute in other ways if you’d like, like writing code or reviewing pull requests.
+
+## Community Collaborator
+**Who should apply:** If you’ve helped a few people in the CC open source community and you’d like to do more to help grow the community, you should apply for this role!
+
+**What does this role give you?**
+* Everything a Community Contributor gets.
+* Comment-only access to the Open Source Community project on Asana.
+  * You’ll see our future plans for the open source community and have the opportunity to participate in them.
+
+**Guidelines for Community Collaborators**  
+If you’ve been accepted as a Community Collaborator, you are encouraged to:
+* do everything a Community Contributor does
+* participate in the Asana project and do some tasks on there
+* suggest Tweet ideas for the [CC Open Source Twitter account](https://twitter.com/cc_opensource)
+
+## Community Maintainer
+**Who should apply:**  If you’re a Community Collaborator who has done some meatier community building tasks and wants more responsibility, you should apply for this role. Please note that this role comes with a lot of responsibilities!
+
+**What does this role give you?**
+* Everything a Community Collaborator gets.
+* Full access to the Open Source Community project on Asana.
+  * You’ll be able to add new tasks.
+* Manager permission on CC’s developer mailing list.
+  * You’ll be able to approve new requests for people to join and moderate the list.
+* Access to tweet directly from CC Open Source account, if interested.
+* Creative Commons staff will write you a letter of recommendation on request.
+* CC swag sent to your house.
+
+**Guidelines for Community Maintainers**  
+If you’ve been accepted as a Community Maintainer, you are encouraged to:
+* do everything a Community Collaborator does
+* respond to requests to join the CC developer mailing list
+* be available on Slack/email or GitHub regularly
+* ensure that people are getting the help they need on Slack and GitHub.
+
+[communityteam]:/community/community-team/

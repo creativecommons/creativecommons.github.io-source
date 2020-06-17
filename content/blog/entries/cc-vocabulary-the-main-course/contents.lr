@@ -50,105 +50,33 @@ brainchild comes of age.
 
 **Presenting to you our special menu of Vue components.**
 
-<table>
-<tbody>
-    <tr>
-        <th colspan="2"><h3>Tokens</h3></th>
-    </tr>
-    <tr>
-        <td>Colors</td>
-        <td><img src="colors.png"></td>
-    </tr>
-    <tr>
-        <td>Fonts</td>
-        <td><img src="fonts.png"></td>
-    </tr>
-    <tr>
-        <td>Spaces</td>
-        <td><img src="spaces.png"></td>
-    </tr>
-    <tr>
-        <th colspan="2"><h3>Elements</h3></th>
-    </tr>
-    <tr>
-        <td>Button</td>
-        <td><img src="button.png"></td>
-    </tr>
-    <tr>
-        <td>InputField</td>
-        <td><img src="inputfield.png"></td>
-    </tr>
-    <tr>
-        <td>SelectField</td>
-        <td><img src="selectfield.png"></td>
-    </tr>
-    <tr>
-        <td>Heading</td>
-        <td><img src="heading.png"></td>
-    </tr>
-    <tr>
-        <td>Paragraph</td>
-        <td><img src="paragraph.png"></td>
-    </tr>
-    <tr>
-        <td>LicenseBadge</td>
-        <td><img src="licensebadge.png"></td>
-    </tr>
-    <tr>
-        <td>LicenseIconography</td>
-        <td><img src="licenseiconography.png"></td>
-    </tr>
-    <tr>
-        <td>ProgressBar</td>
-        <td><img src="progressbar.png"></td>
-    </tr>
-    <tr>
-        <td>Shield</td>
-        <td><img src="shield.png"></td>
-    </tr>
-    <tr>
-        <th colspan="2"><h3>Layouts</h3></th>
-    </tr>
-    <tr>
-        <td>Container</td>
-        <td><img src="container.png"></td>
-    </tr>
-    <tr>
-        <td>Grid</td>
-        <td><img src="grid.png"></td>
-    </tr>
-    <tr>
-        <td>Table</td>
-        <td><img src="table.png"></td>
-    </tr>
-    <tr>
-        <th colspan="2"><h3>Patterns</h3></th>
-    </tr>
-    <tr>
-        <td>Header</td>
-        <td><img src="header.png"></td>
-    </tr>
-    <tr>
-        <td>Footer</td>
-        <td><img src="footer.png"></td>
-    </tr>
-    <tr>
-        <td>Locale</td>
-        <td><img src="locale.png"></td>
-    </tr>
-    <tr>
-        <td>Hello</td>
-        <td><img src="hello.png"></td>
-    </tr>
-    <tr>
-        <th colspan="2"><h3>Templates</h3></th>
-    </tr>
-    <tr>
-        <td>Index</td>
-        <td><img src="orange.png" onclick="this.src = 'green.png'"></td>
-    </tr>
-</tbody>
-</table>
+| **Component**      | **Image**                                               |
+| ------------------ | :------------------------------------------------------ |
+| **Tokens**         |                                                         |
+| Colors             | ![colors_image](colors.png)                             |
+| Fonts              | ![fonts_image](fonts.png)                               |
+| Spaces             | ![spaces_image](spaces.png)                             |
+| **Elements**       |                                                         |
+| Button             | ![button_image](button.png)                             |
+| InputField         | ![inputfield_image](inputfield.png)                     |
+| SelectField        | ![selectfield_image](selectfield.png)                   |
+| Heading            | ![heading_image](heading.png)                           |
+| Paragraph          | ![paragraph_image](paragraph.png)                       |
+| LicenseBadge       | ![licensebadge_image](licensebadge.png)                 |
+| LicenseIconography | ![licenseiconography_image](licenseiconography.png)     |
+| ProgressBar        | ![progressbar_image](progressbar.png)                   |
+| Shield             | ![shield_image](shield.png)                             |
+| **Layouts**        |                                                         |
+| Container          | ![container_image](container.png)                       |
+| Grid               | ![grid_image](grid.png)                                 |
+| Table              | ![table_image](table.png)                               |
+| **Patterns**       |                                                         |
+| Header             | ![header_image](header.png)                             |
+| Footer             | ![footer_image](footer.png)                             |
+| Locale             | ![locale_image](locale.png)                             |
+| Hello              | ![hello_image](hello.png)                               |
+| **Templates**      |                                                         |
+| Index              | <img src="orange.png" onclick="this.src = 'green.png'"> |
 
 &nbsp;
 
