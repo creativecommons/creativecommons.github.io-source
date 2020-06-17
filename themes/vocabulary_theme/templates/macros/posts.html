@@ -1,14 +1,30 @@
 {% from "macros/author_name.html" import render_author_name %}
 
 {% macro render_posts(posts) %}
-  <ul class="blog-index list-unstyled">
+  <div class="columns is-multiline">
     {% for post in posts %}
       {% set author = post.parent.parent.children.get('authors').children.get(post.author) %}
-      <li>
-        <a href="{{ post|url }}">{{ post.title }}</a>
-        <p class="text-muted small">by <a href="{{ author|url }}">{{ render_author_name(author) }}</a>
-          on {{ post.pub_date|dateformat("YYYY-MM-dd") }}</p>
-      </li>
+      <article class="card entry-post horizontal no-border blog-entry column is-one-third">
+        <header>
+          <figure class="image blog-image">
+          {% if author.about %}
+            {% if author.md5_hashed_email %}
+              <img class="profile" src="https://secure.gravatar.com/avatar/{{ author.md5_hashed_email }}?size=200"
+              alt="gravatar" />
+            {% endif %}
+          {% endif %}
+          </figure>
+        </header>
+        <div class="blog-content">
+          <h4 class="b-header"><a class="blog-title" href="{{ post|url }}">{{ post.title }}</a></h4>
+          <span class="blog-author">by <a class="author-name" href="{{ author|url }}">{{ render_author_name(author) }}</a>
+          on {{ post.pub_date|dateformat("YYYY-MM-dd") }}</span>
+          <!-- TODO : Discuss how to extract an excerpt -->
+          <div class="excerpt">
+            {{ post.body | excerpt | string | striptags() | truncate(100) }}
+          </div>
+        </div>
+      </article>
     {% endfor %}
-  </ul>
+  </div>
 {% endmacro %}

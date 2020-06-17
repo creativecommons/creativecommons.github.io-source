@@ -33,6 +33,18 @@ $project-card-theme: $blue;
   }
 }
 
+.blog-entry {
+  @extend  .padding-big;
+
+  .blog-title {
+    @extend .has-color-dark-slate-gray;
+  }
+
+  .author-name {
+    @extend .has-color-forest-green;
+  }
+}
+
 h2 {
   font-weight: 600;
   padding-bottom: 0.5rem;
