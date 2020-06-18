@@ -3,6 +3,12 @@
 @import "../node_modules/@creativecommons/vocabulary/scss/color.scss";
 @import "../node_modules/@creativecommons/vocabulary/scss/typography.scss";
 
+a {
+  @extend .has-color-forest-green;
+
+  text-decoration: none;
+}
+
 .navbar-item {
   &.has-dropdown {
     .navbar-dropdown {
@@ -22,8 +28,22 @@
   .blog-title {
     @extend .has-color-dark-slate-gray;
   }
+}
 
-  .author-name {
-    @extend .has-color-forest-green;
+.blog-page {
+  .blog-page-header {
+    @extend .padding-top-bigger;
+    @extend .padding-bottom-xl;
+
+    background-color: $color-lighter-gray;
+
+    .blog-page-description {
+      @extend .padding-top-normal;
+      @extend .body-big;
+    }
+  }
+
+  .blog-page-posts {
+    @extend .padding-vertical-xl;
   }
 }
