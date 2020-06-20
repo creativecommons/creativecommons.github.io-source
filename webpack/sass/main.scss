@@ -3,6 +3,13 @@
 @import "../node_modules/@creativecommons/vocabulary/scss/color.scss";
 @import "../node_modules/@creativecommons/vocabulary/scss/typography.scss";
 
+// links
+a {
+  @extend .has-color-forest-green;
+
+  text-decoration: none;
+}
+
 .navbar-item {
   &.has-dropdown {
     .navbar-dropdown {
