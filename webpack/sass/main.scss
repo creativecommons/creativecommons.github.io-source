@@ -22,3 +22,75 @@ a {
     }
   }
 }
+
+.single-entry {
+  .container {
+    @extend .padding-horizontal-xxl;
+  }
+
+  .single-entry-header {
+    @extend .padding-top-bigger;
+    @extend .padding-bottom-xl;
+
+    background-color: $color-lighter-gray;
+
+    .title {
+      @extend .padding-top-big;
+    }
+
+    .author {
+      @extend .padding-top-big;
+
+      .image {
+        height: 3.75rem;
+        width: 3.75rem;
+      }
+    }
+  }
+
+  .single-entry-body {
+    .body {
+      @extend .body-big;
+      @extend .padding-top-bigger;
+
+      p {
+        @extend .padding-vertical-small;
+      }
+
+      h1,h2,h3,h4,h5,h6 {
+        @extend .padding-top-large;
+        @extend .padding-bottom-small;
+      }
+
+      ol,ul {
+        @extend .padding-horizontal-big;
+      }
+
+      &:last-of-type::after {
+        content: '';
+  
+        display: block;
+
+        @extend .padding-top-bigger;
+        border-bottom: 0.1875rem solid $color-light-gray;
+      }
+    }
+  }
+
+  .single-entry-footer {
+    .category {
+      .category-title {
+        @extend .b-header;
+        @extend .padding-top-big;
+      }
+
+      .categories {
+        @extend .padding-top-normal;
+
+        .tag {
+          @extend .margin-right-small;
+        }
+      }
+    }
+  }
+}
