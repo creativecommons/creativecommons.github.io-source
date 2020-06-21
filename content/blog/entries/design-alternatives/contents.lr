@@ -1,0 +1,27 @@
+title: Design ALT + ernatives
+---
+categories:
+outreachy
+design
+open-source
+---
+author: dhruvi16
+---
+series: ux-design-cycle
+---
+pub_date: 2020-06-22
+---
+body:
+
+
+In this article, I will be talking about the next step of the UX design cycle and that is **Design Alternative**.
+
+This article is inspired by a Coursera course, [Introduction to User Experience](https://www.coursera.org/learn/user-experience-design/).
+
+At this point in the design cycle, we have enough knowledge of the problem space as we have completed the first step — Resource Gathering. By problem space, I mean we have enough knowledge about the user, the task, the current way of accomplishment, and other relevant data. Now, the goal of the next step is to use the data and come up with a better design alternative which is both useful and usable. By useful, I mean an interface that accomplishes the task, and by usable, I mean an interface that is efficient, effective, and satisfying.
+
+The goal of processing the data to achieve a better interface or system does not have an isolated environment. The system affects an individual, a group of people, and even a society. A designer needs to keep in mind how his/her designs benefit them all.
+
+I am picking up a simple example from my Outreachy journey so far as to illustrate design alternatives. I am currently working on the implementation of the newly designed [CCOS](https://opensource.creativecommons.org/) (You can find mock-ups [here](https://www.figma.com/file/mttcugI1UxvCJRKE5sdpbO/Mockups?node-id=759%3A516)). Consider the blog page redesign, as explicit data, we have the reason why people use a blog page and that is “gaining knowledge” and as designers, we implicitly conclude that a user uses blogs to “gain concentrated knowledge in a small amount of time”. So as the first step designer extracts the implicit needs of the user which were not explicitly mentioned while resource gathering. These implicit needs help us to develop a better interface. From phase 1, we also have functional and non-functional requirements of the interface like the functional requirements for a blog page is to list out all the blog posts and the non-functional requirements are how well these posts are laid out so the user gets to the interesting posts as quickly as possible.
+
+With the help of this phase, we were able to determine the shortcomings of the current blog page. We thus made it more readable by using a boxy layout than a list, increased title fonts to make the blogs more catchy, added excerpts to inform the user before-hand about the content of the blog.
