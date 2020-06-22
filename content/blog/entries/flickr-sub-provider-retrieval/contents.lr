@@ -37,11 +37,11 @@ retain.
 ### Definition of a sub-provider
 It was decided that a sub-provider should be a collection of user accounts in Flickr, where this collection corresponded
 to a common entity, and the common entity would reflect the sub-provider. For example, since both Flickr user accounts
-*NASA HQ PHOTO* and *NASA Johnson* provided images related to NASA, we would represent the NASA sub-provider by those
+*NASA HQ PHOTO* and *NASA Johnson* provide images related to NASA, we would represent the NASA sub-provider by those
 two (and other related) user accounts.
 
 The next challenge was to determine how to identify which collections of user accounts were important to a wider
-audience. The number of views per user accounts was an intuitive measure to rely on for this requirement. My supervisor
+audience. The number of views per user account was an intuitive measure to rely on for this requirement. My supervisor
 Brent Moran executed a query on the existing CC database to obtain the 50 most popular user accounts in Flickr. A
 snippet of the query response is as follows:
 
@@ -55,20 +55,20 @@ Sangudo | 258177509
 NASA Goddard Photo and Video | 225143949
 
 Despite having a significant number of views, some of these user accounts did not appear to be worth being identified
-as belonging to a sub-provider due to lack of educational importance. Thus, we manually curated this list to retain what
-we believed to be important to a wider audience.
+as belonging to a sub-provider due to their lack of educational importance. Thus, we manually curated this list to
+retain what we believed to be important to a wider audience.
 
 ### Sub-provider identification
 In order to identify the sub-provider each image from Flickr belonged to, it was necessary to determine which field in
 the stored image data referred to the user account. Among the various information contained in an API response, only a
-selected set of fields is stored on the CC end, and it is important to use such stored data for the identification of
+selected set of fields is stored on the CC end, and it was important to use such stored data for the identification of
 sub-providers. We initially decided to rely on the user account name which was reflected by the *ownername* field in
 the JSON response and stored as the *creator* in the CC database. However, we later realised that the names of accounts
 could potentially change over time, and therefore was not a reliable field for extracting the sub-provider. Another
 field from the JSON response that helped to uniquely identify a user account was the *owner* field, which acted like a
 unique user ID. Even though the *owner* value was not directly stored in the CC database, it was stored as part of the
 *creator URL* field, and fortunately, all creator URLs from Flickr consisted of a common prefix plus the *owner* value
-(the user id). Thus, we decided to use the creator URL value retained in the CC database for identifying sub-providers
+(the user id). Thus, we decided to use the *creator URL* value retained in the CC database for identifying sub-providers
 in Flickr.
 
 
@@ -126,7 +126,7 @@ dictionary *FLICKR_SUB_PROVIDERS*. Otherwise the *source* was set to the default
 Retrieving the sub-provider from the Flickr API script was fairly straightforward. Since the complete JSON response was
 available at the API script level, we did not have to worry about retrieving the user ID (*owner* value) from the
 *creator URL* field in our data. Rather, we simply get the owner value from the API response, and try to search for it
-in the *FLICKR_SUB_PROVIDERS( dictionary as follows.
+in the *FLICKR_SUB_PROVIDERS* dictionary as follows.
 
 ```python
 owner = image_data.get('owner').strip()
@@ -154,10 +154,10 @@ As the first step, I create a temporary table and populate it with the sub-provi
 creator URLs. This is done by iterating through the sub-provider, user ID value pairs in the *FLICKR_SUB_PROVIDERS*
 dictionary, and concatenating the user ID with the prefix 'https://www.flickr.com/photos/' to obtain the creator URL.
 
-Subsequently, we perform a join on the CC image table (where all the image related information is stored) with the
-temporary table on the condition that the creator URL from the image table matches that of the temporary table. This
-filters all the rows in the image table where we need to update the sub-provider values. Likewise, we set the *source*
-value in the image table to the sub-provider value in the matched row from the temporary table as follows.
+The initial plan was to then perform a join on the CC image table (where all the image related information is stored)
+with the temporary table on the condition that the creator URL from the image table matches that of the temporary table.
+This query which filters all the rows in the image table where we need to update the sub-provider values, looks as
+follows.
 
 ```python
 UPDATE {image_table}
@@ -167,7 +167,38 @@ WHERE
 {image_table}.{col.CREATOR_URL} = public.{temp_table}.{col.CREATOR_URL};
 ```
 
-To make this functionality available from the Airflow UI, I have added the Airflow DAG *sub_provider_update_workflow*.
+However, a major concern with this query, as my supervisor Brent Moran pointed out, was that it locked all the rows
+which matched the 'WHERE' clause at once. With respect to the magnitude of the Flickr data available in the CC image
+table, this meant that the above query would lock millions of rows, thus hindering the execution of other queries on
+the image table. To mitigate this issue, we decided to update the SQL query as follows, such that we perform a 'SELECT'
+query on the rows to be updated by joining the previously created temporary table with the CC image table (a 'SELECT'
+query does not lock the table), and iterate row by row over the query result to set the *source* value in the image
+table to the sub-provider value.
+
+```python
+SELECT
+{col.FOREIGN_ID} AS foreign_id,
+public.{temp_table}.{col.PROVIDER} AS sub_provider
+FROM {image_table}
+INNER JOIN public.{temp_table}
+ON
+{image_table}.{col.CREATOR_URL} = public.{temp_table}.{col.CREATOR_URL}
+AND
+{image_table}.{col.PROVIDER} = 'Flickr';
+
+# Let us refer to the result produced from the SELECT query as 'selected_records'
+
+for (foreign_id, sub_provider) in selected_records:
+    UPDATE {image_table}
+    SET {col.SOURCE} = '{sub_provider}'
+    WHERE
+    {image_table}.{col.PROVIDER} = 'Flickr'
+    AND
+    MD5({image_table}.{col.FOREIGN_ID}) = MD5('{foreign_id}');
+```
+
+To make this functionality available from the Airflow UI, I have added the Airflow DAG
+*flickr_sub_provider_update_workflow*.
 The changes in the source field after updating the image table in the database looks like follows.
 
 
