@@ -49,32 +49,18 @@
           {% endif %}
         </div>
       </div>
-      <!-- {% if this.series|length %}
-      <div class="mt-3 bg-light" id="series">
-        <h5 class="font-weight-bold">Posts in the <em>{{ series.name }}</em> series</h5>
-        <ul class="toc list-unstyled">
-          {% for post in series.children.order_by('pub_date') %}
-            <li>
-            {% if post.path==this.path %}
-              <strong>{{ post.title }}</strong>
-            {% else %}
-              <a href="{{ post|url }}">{{ post.title }}</a>
-            {% endif %}
-            </li>
-          {% endfor %}
-        </ul>
-      </div>
-    {% endif %} -->
-      <div class="series-posts" id="series">
-        <h5 class="title">Posts in the {{ series.name }} series</h5>
-        <ul class="posts">
-          {% for post in series.children.order_by('pub_date') %}
-            <li>
-              <i class="icon circle-filled"></i><a href="{{ post|url }}">{{ post.title }}</a>
-            </li>
-          {% endfor %}
-        </ul>
-      </div>
+      {% if this.series|length %}
+        <div class="series-posts" id="series">
+          <h5 class="title">Posts in the {{ series.name }} series</h5>
+          <ul class="posts">
+            {% for post in series.children.order_by('pub_date') %}
+              <li>
+                <i class="icon circle-filled"></i><a href="{{ post|url }}">{{ post.title }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      {% endif %}
     </footer>
   </div>
 
