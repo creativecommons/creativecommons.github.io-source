@@ -46,6 +46,7 @@ a {
 
 .blog-page {
   .blog-page-header {
+    @extend .padding-horizontal-big;
     @extend .padding-top-bigger;
     @extend .padding-bottom-xl;
 
