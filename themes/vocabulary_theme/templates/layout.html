@@ -40,6 +40,8 @@
 
 <body>
   <div class="ga-script">{{ generate_google_analytics() }}</div>
+
+  <!-- Header -->
   <header class="container">
     <nav class="navbar">
       <div class="navbar-brand">
@@ -132,18 +134,55 @@
       </div>
     </nav>
   </header>
-  <div class="container-fluid page-content">
-    <div class="row justify-content-md-center">
-      <div class="col-lg-9 col-md-9 col-sm-12 content-wrap">
-        <div class="page py-3">
-          <h1 class="page-title pb-3 mb-4">{% block header %}{{ this.title }}{% endblock %}</h1>
-          {% block body %}{% endblock %}
-          <a id="back-to-top" href="#top" class="btn btn-dark btn-sm" role="button">Back to top</a>
-        </div>
-      </div>
+
+  <!-- Breadcrumb -->
+  {% if this._path !=  '/'%}
+    <div class="breadcrumb-container">
+      <nav class="container breadcrumb caption bold" aria-label="breadcrumbs">
+        <ul>
+          {% set crumbs = [] %}
+          {% set current = {'crumb': this} %}
+          <!-- Extracting the slugs of URL -->
+          {% for i in this._path.split("/") %}
+            {% if current.crumb is not none %}
+              {% if crumbs.insert(0, current.crumb._slug) %}{% endif %}
+              {% if current.update({"crumb": current.crumb.parent}) %}{% endif %}
+            {% endif %}
+          {% endfor %}
+          {% for crumb in crumbs %}
+            <!-- Active link -->
+            {% if this._slug == crumb %}
+              <li class="is-active"><a aria-current="page displayed">{{ crumb | title | replace('-', ' ') }}</a></li>
+            {% else %}
+              <!-- Forming the URL using extracted slugs -->
+              {% set i = loop.index %}
+              {% set ns = namespace (link = '') %}
+              {% for j in range(i) %}
+                {% set ns.link = ns.link + crumbs[j] + '/' %}
+              {% endfor %}
+              <li><a class="link" href="{{ ns.link|url }}">
+              {% if crumb != '' %}
+                {{ crumb | title | replace('-', ' ') }}
+              {% else %}
+                Home
+              {% endif %}
+              </a></li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </nav>
     </div>
+<<<<<<< HEAD
+  {% endif %}
+
+  <!-- Body -->
+  {% block body %}{% endblock %}
+
+  <!-- Footer -->
+=======
   </div>
 
+>>>>>>> bcd4f549329a5712d949d18fe9e317b18c2ac1a9
   <footer class="main-footer">
     <div class="container">
       <div class="columns">

@@ -22,3 +22,16 @@ a {
     }
   }
 }
+
+.breadcrumb-container {
+  border-top: 4px solid $color-forest-green;
+  background-color: $color-lighter-gray;
+
+  .breadcrumb {
+    @extend .padding-bigger;
+
+    .link {
+      @extend .has-color-forest-green;
+    }
+  }
+}
