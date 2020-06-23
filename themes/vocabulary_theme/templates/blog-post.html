@@ -7,8 +7,8 @@
 {% set author = this.parent.parent.children.get('authors').children.get(this.author) %}
 
 {% block body %}
-  <div class="single-entry">
-    <div class="single-entry-header">
+  <div class="single-post">
+    <header class="single-post-header">
       <div class="container">
         <h4>CC Open Source Blog</h4>
         <h2 class="title">{{ this.title }}</h2>
@@ -22,40 +22,19 @@
           <p class="column">by <a href="{{ author|url }}">{{ render_author_name(author) }}</a>
           on {{ this.pub_date|dateformat('yyyy-''MM-d') }}</p>
         </div>
-      </div>
-    </div>
-    <div class="single-entry-body container">
-      <!-- TODO: This section to be discussed -->
-      {% if this.series|length %}  
-        {% set series = this.parent.parent.children.get('series').children.get(this.series) %}
-        <div class="card bg-light mb-2">
-          <div class="card-body p-2">
-            <p class="meta my-0"><span class="mr-2"><strong>This blog is part of the series:</strong></span>
-              <a href="#series">{{ series.name }}</a>
-            </p>
+        {% if this.series|length %}
+          {% set series = this.parent.parent.children.get('series').children.get(this.series) %}
+          <div class="series-header">
+            <span>This blog is part of the series:</span>
+            <a href="#series">{{ series.name }}</a>
           </div>
+        {% endif %}
       </div>
-      {% endif %}
-      <div class="body">{{ this.body }}</div>
+    </header>
+    <div class="single-post-body container">
+      {{ this.body }}
     </div>
-    <div class="single-entry-footer container">
-      <!-- TODO: This section to be discussed -->
-      {% if this.series|length %}
-        <div class="mt-3 bg-light" id="series">
-          <h5 class="font-weight-bold">Posts in the <em>{{ series.name }}</em> series</h5>
-          <ul class="toc list-unstyled">
-            {% for post in series.children.order_by('pub_date') %}
-              <li>
-              {% if post.path==this.path %}
-                <strong>{{ post.title }}</strong>
-              {% else %}
-                <a href="{{ post|url }}">{{ post.title }}</a>
-              {% endif %}
-              </li>
-            {% endfor %}
-          </ul>
-        </div>
-      {% endif %}
+    <footer class="single-post-footer container">
       <div class="category">
         <h4 class="category-title">Categories</h4>
         <div class="categories">
@@ -70,7 +49,33 @@
           {% endif %}
         </div>
       </div>
-    </div>
+      <!-- {% if this.series|length %}
+      <div class="mt-3 bg-light" id="series">
+        <h5 class="font-weight-bold">Posts in the <em>{{ series.name }}</em> series</h5>
+        <ul class="toc list-unstyled">
+          {% for post in series.children.order_by('pub_date') %}
+            <li>
+            {% if post.path==this.path %}
+              <strong>{{ post.title }}</strong>
+            {% else %}
+              <a href="{{ post|url }}">{{ post.title }}</a>
+            {% endif %}
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endif %} -->
+      <div class="series-posts" id="series">
+        <h5 class="title">Posts in the {{ series.name }} series</h5>
+        <ul class="posts">
+          {% for post in series.children.order_by('pub_date') %}
+            <li>
+              <i class="icon circle-filled"></i><a href="{{ post|url }}">{{ post.title }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </footer>
   </div>
 
   <div class="comments">{{ render_disqus_comments() }}</div>

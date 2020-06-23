@@ -36,14 +36,13 @@ a {
   }
 }
 
-.single-entry {
+.single-post {
   .container {
     @extend .padding-horizontal-xxl;
   }
 
-  .single-entry-header {
+  .single-post-header {
     @extend .padding-top-bigger;
-    @extend .padding-bottom-xl;
 
     background-color: $color-lighter-gray;
 
@@ -53,44 +52,56 @@ a {
 
     .author {
       @extend .padding-top-big;
+      @extend .body-big;
+
+      line-height: 1.8125;
 
       .image {
         height: 3.75rem;
         width: 3.75rem;
       }
     }
-  }
 
-  .single-entry-body {
-    .body {
-      @extend .body-big;
-      @extend .padding-top-bigger;
+    .series-header {
+      @extend .margin-top-big;
+      @extend .padding-horizontal-big;
+      @extend .padding-vertical-normal;
+      @extend .body-normal;
 
-      p {
-        @extend .padding-vertical-small;
-      }
-
-      h1,h2,h3,h4,h5,h6 {
-        @extend .padding-top-large;
-        @extend .padding-bottom-small;
-      }
-
-      ol,ul {
-        @extend .padding-horizontal-big;
-      }
-
-      &:last-of-type::after {
-        content: '';
-
-        display: block;
-
-        @extend .padding-top-bigger;
-        border-bottom: 0.1875rem solid $color-light-gray;
-      }
+      background-color: $color-white;
+      line-height: 1.5625;
+      font-weight: bold;
     }
   }
 
-  .single-entry-footer {
+  .single-post-body {
+    @extend .body-big;
+    @extend .padding-top-bigger;
+
+    p {
+      @extend .padding-vertical-small;
+    }
+
+    h1,h2,h3,h4,h5,h6 {
+      @extend .padding-top-large;
+      @extend .padding-bottom-small;
+    }
+
+    ol,ul {
+      @extend .padding-horizontal-big;
+    }
+
+    &:last-of-type::after {
+      content: '';
+
+      display: block;
+
+      @extend .padding-top-bigger;
+      border-bottom: 0.1875rem solid $color-light-gray;
+    }
+}
+
+  .single-post-footer {
     .category {
       .category-title {
         @extend .b-header;
@@ -102,6 +113,34 @@ a {
 
         .tag {
           @extend .margin-right-small;
+        }
+      }
+    }
+
+    .series-posts {
+      @extend .margin-top-large;
+      @extend .padding-horizontal-larger;
+      @extend .padding-vertical-large;
+
+      background-color: $color-lighter-gray;
+      border-top: 0.375rem solid $color-forest-green;
+
+      .title {
+        @extend .b-header;
+        @extend .padding-bottom-normal;
+      }
+
+      .posts {
+        @extend .body-normal;
+
+        font-weight: bold;
+        line-height: 1.5;
+
+        .icon {
+          @extend .padding-right-small;
+
+          font-size: 0.375rem;
+          color: $color-gray;
         }
       }
     }
