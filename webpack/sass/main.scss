@@ -3,6 +3,7 @@
 @import "../node_modules/@creativecommons/vocabulary/scss/color.scss";
 @import "../node_modules/@creativecommons/vocabulary/scss/typography.scss";
 
+// links
 a {
   @extend .has-color-forest-green;
 
@@ -18,6 +19,19 @@ a {
       .navbar-dropdown {
         display: block;
       }
+    }
+  }
+}
+
+.breadcrumb-container {
+  border-top: 4px solid $color-forest-green;
+  background-color: $color-lighter-gray;
+
+  .breadcrumb {
+    @extend .padding-bigger;
+
+    .link {
+      @extend .has-color-forest-green;
     }
   }
 }
