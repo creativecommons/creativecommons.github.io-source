@@ -38,7 +38,7 @@ a {
 
 .single-post {
   .container {
-    @extend .padding-horizontal-xxl;
+    @extend .padding-horizontal-xl;
   }
 
   .single-post-header {
@@ -52,6 +52,7 @@ a {
 
     .author {
       @extend .padding-top-big;
+      @extend .padding-bottom-normal;
       @extend .body-big;
 
       line-height: 1.8125;
@@ -63,7 +64,7 @@ a {
     }
 
     .series-header {
-      @extend .margin-top-big;
+      @extend .margin-top-normal;
       @extend .padding-horizontal-big;
       @extend .padding-vertical-normal;
       @extend .body-normal;
@@ -144,5 +145,10 @@ a {
         }
       }
     }
+  }
+
+  .comments {
+    @extend .padding-top-large;
+    @extend .padding-bottom-xxl;
   }
 }
