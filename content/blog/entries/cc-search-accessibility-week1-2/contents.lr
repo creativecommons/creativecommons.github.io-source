@@ -55,6 +55,10 @@ Here we use the v-slot attribute of the i18n functional component to convert the
 </i18n>
 ```
 
+The final outcome looks pretty good:
+
+![final.png](final.png)
+
 And voila we are done with the first two weeks. I also internationalized the header and the footer along with the homepage.
 You can track the work done for these weeks through these PRs:
 
