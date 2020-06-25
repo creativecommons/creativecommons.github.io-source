@@ -1,0 +1,32 @@
+title: CC Search, Proposal Drafting and Community Bonding
+---
+categories:
+cc-search
+community
+gsoc
+open-source
+
+---
+author: AyanChoudhary
+---
+pub_date: 2020-06-22
+---
+body:
+### Proposal Drafting
+
+The majority of my time in March was spent on drafting the proposal for my project **Improve CC Search Accessibility**.
+While drafting my proposal I had two broad topic that I had to focus on: Accessibility and Internationalization.
+
+So the first thing which I did was go through the various resources available with me such as w3 guidelines for accessibility, dequeuniversity accesssibility insights and MDN notes on accessibility.
+After I made myself acquainted myself wih all of these, the next challenge was to sort out which of the metrics were relevant and important enough to be detailed in the proposal and also some of the others metrics which made notable appearances.
+Finally by including all of these I had the accessibility part of my proposal complete. Next, I had to work out the part for internationalization. Since it was already decided upon that we will be using vue-i18n, I did some research as to how to we can leverage it to gain the best possible result.
+
+One of the important parts of internationalization happens to be deciding upon the JSON structure which was a highlighted section in my proposal.
+The other notable sections included strategies for modification of templates while translating and also how the translations would be carried out without hindering any further development of the platform.
+
+### Community Bonding
+
+Community Bonding involved getting to the mentors and the people whom I will be working with during this internship. Also we decided upon running the audit tests for the cc-search website during this time as it would help identify the key issues we would be facing and also would provide a suitable foundation to start working upon.
+The audits were done using Lighthouse, Accessibility Insights and pa11y and they provided useful insights on which parts of the website we should be focusing on such as the contrast issues and the aria-label fixes.
+
+Coming up next will be the progress on the first 2 weeks of the project.
