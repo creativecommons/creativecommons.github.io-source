@@ -25,15 +25,20 @@ a {
 
 .hero {
   @extend .margin-top-large;
-  @extend .padding-horizontal-big;
+
+  .hero-title {
+    @extend .padding-horizontal-big;
+  }
 
   .hero-description {
     @extend .body-bigger;
     @extend .padding-top-big;
+    @extend .padding-horizontal-big;
   }
 
   .hero-links {
     @extend .margin-top-normal;
+    @extend .padding-horizontal-big;
 
     .button {
       @extend .margin-top-normal;
