@@ -1,0 +1,67 @@
+title: CC Search, Setting up vue-i18n and internationalizing homepage
+---
+categories:
+cc-search
+community
+gsoc
+open-source
+
+---
+author: AyanChoudhary
+---
+series: gsoc-2020-ccsearch-accessibility
+---
+pub_date: 2020-06-10
+---
+body:
+
+These are the first two weeks of my internship with CC. I am working on improving the accessibility of cc-search and internationalizing it as well.
+We started with first compiling the accessibility reports from accessibility insights, lighthouse and pa11y into a single document and then opening up appropriate issues ont he repo to address them.
+
+The accessibility issues are listed here:
+1. [Accessibility - Improve labels](https://github.com/creativecommons/cccatalog-frontend/issues/996)
+2. [Evaluate keyboard navigation effectiveness](https://github.com/creativecommons/cccatalog-frontend/issues/997)
+3. [Fix color contrast problems](https://github.com/creativecommons/cccatalog-frontend/issues/998)
+4. [Improve elements markup](https://github.com/creativecommons/cccatalog-frontend/issues/999)
+5. [Evaluate any accessibility linter tools](https://github.com/creativecommons/cccatalog-frontend/issues/1000)
+
+The decision was made to audit the tab indices along with internationalizing the page.
+The accessibility changes will be done after the completion of internationalization as the aria-labels will have to be internationalized as well.
+
+The first two weeks involved setting up vue-i18n, auditing the tab index for homepage and internationalizing it.
+The tab index adit for homepage is displayed:
+
+![audit.png](audit.png)
+
+The internationalization part was pretty straightforward, we just had to export all the strings to the JSON files and load transaltions through the i18n module.
+For complex elements of the type ```string <tag>string</tag> string``` I went for the templating method.
+Here we use the v-slot attribute of the i18n functional component to convert the element into a template where the tag occupies a slot in the syntax.
+
+```
+<i18n path="footer.caption.label" tag="p" class="caption">
+    <template v-slot:noted>
+        <a href="https://creativecommons.org/policies#license" target="_blank" rel="noopener">{{$t('footer.caption.noted')}}</a>
+    </template>
+    <template v-slot:attribution>
+        <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">
+        {{$t('footer.caption.attribution')}}
+        </a>
+    </template>
+    <template v-slot:icons>
+        <a href="https://fontawesome.com/" target="_blank" rel="noopener" class="has-text-white">
+        {{$t('footer.caption.icons')}}
+        </a>
+    </template>
+</i18n>
+```
+
+And voila we are done with the first two weeks. I also internationalized the header and the footer along with the homepage.
+You can track the work done for these weeks through these PRs:
+
+1. [setup internationalization plugin](https://github.com/creativecommons/cccatalog-frontend/pull/1007)
+2. [Internationalize homepage, header and footer](https://github.com/creativecommons/cccatalog-frontend/pull/1013)
+
+The progress of the project can be tracked on [cc-search](https://github.com/creativecommons/cccatalog-frontend)
+
+CC Search Accessiblity is my GSoC 2020 project under the guidance of [Ari Madian](https://opensource.creativecommons.org/blog/authors/akmadian/), who is the primary mentor for this project, [Anna Tumadóttir](https://creativecommons.org/author/annacreativecommons-org/) for helping all along and engineering director [Kriti
+Godey](https://creativecommons.org/author/kriticreativecommons-org/), have been very supportive.
