@@ -1,0 +1,35 @@
+title: Resource Gathering
+---
+categories:
+outreachy
+design
+open-source
+---
+author: dhruvi16
+---
+series: ux-design-cycle
+---
+pub_date: 2020-06-09
+---
+body:
+
+
+As an outreachy intern, I am handling the integration of [Creative Commons](https://creativecommons.org/) design library — [Vocabulary](https://cc-vocabulary.netlify.app/) with one of our web products — [CC OS](https://opensource.creativecommons.org/). I have been working the design library for 3–4 months now and I have enjoyed the experience the library caters and I am trying to achieve the same experience in the Open source website. To understand UX in-depth, I have been reading different resources and document this knowledge through this series of blogs. This in-depth information will help me achieve the desired experience through the library.
+
+Using a Coursera course, [Introduction to user experience](https://www.coursera.org/learn/user-experience-design/), I will be describing the UX design cycle with a series of articles and this article is about describing the first step of the design cycle which is Resource Gathering.
+
+**Basic definitions**
+
+User experience design includes designing interfaces through which a user accomplishes a task. Designing better interfaces which can help the user to perform tasks easily.
+
+The interface consists of an input and output through which the user interacts with the system. For instance, clicking a photo requires the user to press the button (input) and an image is the desired output. Creating an affordable and usable interface is the main goal of this process. Design is a data-driven process and resource gathering is all about gathering this data.
+
+The resource gathering process is about figuring out how the task is currently accomplished by the user. There are 4 ways to gather data and below I will describe them all in detail. There are two types of data — Quantitative (numeric) and Qualitative (thematic) and designers prefer to use both types of data as per requirement.
+
+1. **Naturalistic observation** - This includes observing the user accomplishing the task in the field. This involves the least interaction with the user and the designer watches the user performing the task from distance. The designer notes down qualitative and quantitative information about this activity. This removes the effect of social desirability of the user on the information collected but also the designer’s perception can be reflected in the collected data.
+
+2. **Surveys** - A survey can be interchangeably used with a questionnaire. In a survey, the user answers a set of questions about how he/she performs the tasks currently. The questions can be closed-ended which can provide quantitative data and also open-ended which gives us the qualitative data. This involves some amount of interaction with the user. Surveys can be held in the field or lab.
+
+3. **Focus Groups** - Focus groups are about engaging with a group of 6–10 people and talk about how they perform a task currently. This involves a lot of interaction with the users. This can be performed in a safe environment (lab) where users can open up without hesitation. The design team includes a moderator who can ask relevant questions, a note-taker who can note down the on-going conversation and a media person (optional) who can record video or take photos of the session.
+
+4. **Interview** - The interview involves asking questions to the user one-to-one about how they perform the task currently. This involves the highest amount of interaction with the user. Interviews are held in labs. The designer talks to the user about the task and collects both quantitative and qualitative data. This is the most time-taking way of collecting data but it gives the most useful data among all the methods.

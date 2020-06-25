@@ -1,5 +1,5 @@
 _model: redirect
 ---
-target: https://cc-fonts.netlify.com/
+target: https://cc-fonts.netlify.app/
 ---
 _discoverable: no

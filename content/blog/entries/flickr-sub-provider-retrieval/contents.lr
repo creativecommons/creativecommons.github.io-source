@@ -1,0 +1,225 @@
+title: Flickr Sub-provider Retrieval
+---
+categories:
+
+cc-catalog
+gsoc
+gsoc-2020
+---
+author: charini
+---
+series: gsoc-2020-cccatalog
+---
+pub_date: 2020-06-24
+---
+body:
+## Introduction
+The Creative Commons (CC) licensed images made available via CC Search and CC Catalog API tools are retrieved from
+numerous sources (which we refer to as providers) such as Flickr and different museum collections. While the existing
+implementation of the CC Catalog tools enables filtering images in various manners such as based on image tags, the
+provider, and the license type, it does not facilitate searching for images from particularly valuable internal sources
+(referred to as sub-providers). For example, images related to 'NASA' have significant value in the Flickr collection,
+since 'NASA' related pictures are extensively used by a large audience especially for educational purposes. The aim of
+my first task in the GSoC project is to implement required changes in the API script level and in the existing data in
+the database, such that filtering by certain important sub-providers is made possible.
+
+While there are several providers such as Flickr, Europeana, and Smithsonian from which we require to extract
+sub-providers, the consensus was to initially focus on Flickr due to that currently being in production, and since a
+substantial amount of images made available via CC Search come from Flickr. Thus, in this initial blog post, I will
+discuss how I addressed the requirement of sub-provider retrieval in Flickr by making the necessary changes in the
+[Creative Commons Catalog](https://github.com/creativecommons/cccatalog) repository.
+
+## Research
+The primary research involved in the Flickr sub-provider retrieval task was defining which entities to identify as
+sub-providers, and identifying how those sub-providers can be retrieved based on the image related information we
+retain.
+
+### Definition of a sub-provider
+It was decided that a sub-provider should be a collection of user accounts in Flickr, where this collection corresponded
+to a common entity, and the common entity would reflect the sub-provider. For example, since both Flickr user accounts
+*NASA HQ PHOTO* and *NASA Johnson* provide images related to NASA, we would represent the NASA sub-provider by those
+two (and other related) user accounts.
+
+The next challenge was to determine how to identify which collections of user accounts were important to a wider
+audience. The number of views per user account was an intuitive measure to rely on for this requirement. My supervisor
+Brent Moran executed a query on the existing CC database to obtain the 50 most popular user accounts in Flickr. A
+snippet of the query response is as follows:
+
+user_account_name | total_views
+--- | ---
+Apollo Image Gallery | 1216297208
+BioDivLibrary | 625528813
+manhhai | 445714729
+Thomas Hawk | 300554527
+Sangudo | 258177509
+NASA Goddard Photo and Video | 225143949
+
+Despite having a significant number of views, some of these user accounts did not appear to be worth being identified
+as belonging to a sub-provider due to their lack of educational importance. Thus, we manually curated this list to
+retain what we believed to be important to a wider audience.
+
+### Sub-provider identification
+In order to identify the sub-provider each image from Flickr belonged to, it was necessary to determine which field in
+the stored image data referred to the user account. Among the various information contained in an API response, only a
+selected set of fields is stored on the CC end, and it was important to use such stored data for the identification of
+sub-providers. We initially decided to rely on the user account name which was reflected by the *ownername* field in
+the JSON response and stored as the *creator* in the CC database. However, we later realised that the names of accounts
+could potentially change over time, and therefore was not a reliable field for extracting the sub-provider. Another
+field from the JSON response that helped to uniquely identify a user account was the *owner* field, which acted like a
+unique user ID. Even though the *owner* value was not directly stored in the CC database, it was stored as part of the
+*creator URL* field, and fortunately, all creator URLs from Flickr consisted of a common prefix plus the *owner* value
+(the user id). Thus, we decided to use the *creator URL* value retained in the CC database for identifying sub-providers
+in Flickr.
+
+
+## Implementation
+There are two levels at which sub-provider retrieval needs to be supported, where the first concerns the API scripts
+from which we initially pull the data from different providers to keep the CC collections uptodate. The second is the
+CC database level where the existing data needs to be updated to ensure that those reflect the sub-providers similar to
+the newly added image information.
+
+The following sections explain how we represented the sub-provider information in the implementation, the changes made
+at Flickr API script level and the database update logic to support sub-provider retrieval.
+
+### Representing the sub-provider information
+As previously explained, we define a sub-provider as a collection of user accounts, and it was identified that the
+unique user ID returned in the Flickr JSON response (referred to as the *owner*) was a reliable field for uniquely
+identifying each user account. For the time being, we focused on sub-providers NASA, SpaceX, and the Biodiversity
+Heritage Library (BioDivLibrary) based on their considerable importance to the community. Using the top six NASA related
+user accounts, the 'Official SpaceX Photos' user account, and the 'BioDivLibrary' user account as filtered by Brent's
+query, we identified the corresponding user IDs (content of the *owner* field) using the
+**flickr.people.findByUsername** method made available in the Flickr API. The mapping between the sub-provider and the
+corresponding user IDs was stored in a dictionary as follows.
+
+```python
+FLICKR_SUB_PROVIDERS = {
+    'nasa': {
+        '24662369@N07',  # NASA Goddard Photo and Video
+        '35067687@N04',  # NASA HQ PHOTO
+        '29988733@N04',  # NASA Johnson
+        '28634332@N05',  # NASA's Marshall Space Flight Center
+        '108488366@N07',  # NASAKennedy
+        '136485307@N06'  # Apollo Image Gallery
+    },
+    'bio_diversity': {
+        '61021753@N02'  # BioDivLibrary
+    },
+    'spacex': {
+        '130608600@N05'  # Official SpaceX Photos
+    }
+}
+```
+
+Since this information was required both at the API script level and the database level to retrieve sub-providers, we
+stored it in a common file accessible from both levels.
+
+The next challenge was to identify how to reflect the sub-provider of each image using the existing database schema.
+There are two different fields in the database as *provider* and the *source*. The *provider* reflects the main source
+from which the images are retrieved, which happens to be 'Flickr' in this scenario. The *source* field reflects an
+organisation or entity that has published the photos using 'Flickr' in this instance (or some other site that we
+recognise as a *provider*).The *source* field was previously not utilised and was simply set to the value of the
+*provider* in the Flickr API script. Based on internal discussions, it was decided that the *source* field was to be
+used for reflecting the sub-provider, if the corresponding image belonged to any of the user accounts contained in our
+dictionary *FLICKR_SUB_PROVIDERS*. Otherwise the *source* was set to the default *provider* value 'Flickr'.
+
+### Sub-provider retrieval at API script level
+Retrieving the sub-provider from the Flickr API script was fairly straightforward. Since the complete JSON response was
+available at the API script level, we did not have to worry about retrieving the user ID (*owner* value) from the
+*creator URL* field in our data. Rather, we simply get the owner value from the API response, and try to search for it
+in the *FLICKR_SUB_PROVIDERS* dictionary as follows.
+
+```python
+owner = image_data.get('owner').strip()
+source = next((s for s in FLICKR_SUB_PROVIDERS if owner in FLICKR_SUB_PROVIDERS[s]), 'Flickr')
+```
+
+Since the collection of user IDs corresponding to each sub-provider is represented as a set, the time complexity for
+each sub-provider is O(1) and therefore the total time complexity is linear in the number of sub-providers (that is O(n)
+for n sub-providers). Due to the number of sub-providers of interest being minimal (currently it is 3), this search
+logic is quite efficient.
+
+Once we determine whether the *source* field should be set to a sub-provider value or the default ‘Flickr’ value with
+the given logic, we set the *source* value in the image store likewise.
+
+### Sub-provider update at the database level
+When updating sub-providers at the database level, we need to rely on the creator URL field to obtain the user ID of
+each image. The creator URL is of the following form.
+
+'https://www.flickr.com/photos/' + *User ID*
+
+For the purpose of automating the process of updating the database to reflect sub-providers, I added the necessary SQL
+queries and made it accessible via the Apache Airflow UI. The database update logic is as follows.
+
+As the first step, I create a temporary table and populate it with the sub-provider values and the corresponding
+creator URLs. This is done by iterating through the sub-provider, user ID value pairs in the *FLICKR_SUB_PROVIDERS*
+dictionary, and concatenating the user ID with the prefix 'https://www.flickr.com/photos/' to obtain the creator URL.
+
+The initial plan was to then perform a join on the CC image table (where all the image related information is stored)
+with the temporary table on the condition that the creator URL from the image table matches that of the temporary table.
+This query which filters all the rows in the image table where we need to update the sub-provider values, looks as
+follows.
+
+```python
+UPDATE {image_table}
+SET {col.SOURCE} = public.{temp_table}.{col.SUB_PROVIDER}
+FROM public.{temp_table}
+WHERE
+{image_table}.{col.CREATOR_URL} = public.{temp_table}.{col.CREATOR_URL};
+```
+
+However, a major concern with this query, as my supervisor Brent Moran pointed out, was that it locked all the rows
+which matched the 'WHERE' clause at once. With respect to the magnitude of the Flickr data available in the CC image
+table, this meant that the above query would lock millions of rows, thus hindering the execution of other queries on
+the image table. To mitigate this issue, we decided to update the SQL query as follows, such that we perform a 'SELECT'
+query on the rows to be updated by joining the previously created temporary table with the CC image table (a 'SELECT'
+query does not lock the table), and iterate row by row over the query result to set the *source* value in the image
+table to the sub-provider value.
+
+```python
+SELECT
+{col.FOREIGN_ID} AS foreign_id,
+public.{temp_table}.{col.PROVIDER} AS sub_provider
+FROM {image_table}
+INNER JOIN public.{temp_table}
+ON
+{image_table}.{col.CREATOR_URL} = public.{temp_table}.{col.CREATOR_URL}
+AND
+{image_table}.{col.PROVIDER} = 'Flickr';
+
+# Let us refer to the result produced from the SELECT query as 'selected_records'
+
+for (foreign_id, sub_provider) in selected_records:
+    UPDATE {image_table}
+    SET {col.SOURCE} = '{sub_provider}'
+    WHERE
+    {image_table}.{col.PROVIDER} = 'Flickr'
+    AND
+    MD5({image_table}.{col.FOREIGN_ID}) = MD5('{foreign_id}');
+```
+
+To make this functionality available from the Airflow UI, I have added the Airflow DAG
+*flickr_sub_provider_update_workflow*.
+The changes in the source field after updating the image table in the database looks like follows.
+
+
+id | provider | source before the update | source after the update
+:---: | :---: | :---: | :---: | :---: | :---:
+14369 | flickr | flickr | bio_diversity
+14372 | flickr | flickr | bio_diversity
+14375 | flickr | flickr | bio_diversity
+14378 | flickr | flickr | bio_diversity
+14382 | flickr | flickr | bio_diversity
+40784 | flickr | flickr | nasa
+47237 | flickr | flickr | nasa
+47242 | flickr | flickr | nasa
+47244 | flickr | flickr | nasa
+47245 | flickr | flickr | nasa
+
+
+For more information regarding the implementation, please refer to the following PR:
+https://github.com/creativecommons/cccatalog/pull/420
+
+## Acknowledgement
+
+I express my gratitude to Brent Moran and Anna Tumadóttir for their assistance with my first task in GSoC 2020 by
+helping me to filter the sub-providers of interest and conducting the necessary research.

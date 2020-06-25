@@ -2,7 +2,7 @@
 {% block title %}{{ this.title }}{% endblock %}
 {% block body %}
   <p>This is a list of all CC Community Team members, and their roles and privileges.</p>
-  <p>For more information about CC Community Team, please see <a href="/content/community/community-teams/">the Community Team Page</a>.</p>
+  <p>For more information about CC Community Team, please see <a href="/community/community-team/">the Community Team Page</a>.</p>
   <h2>Project Teams</h2>
   {% for project in bag('community_team_members.projects') %}
     <h3>{{ project.name }}</h3>
@@ -24,4 +24,21 @@
       </tbody>
     </table>
   {% endfor %}
+  <h2>Community Building Teams</h2>
+  <table class="table table-striped" style="width: 75%;">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Role</th>
+        <th scope="col">Member Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for member in bag('community_team_members.community_builders') %}
+      <tr>
+        <td scope="row">{{ member.role }}</td>
+        <td scope="row">{{ member.name }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
 {% endblock %}

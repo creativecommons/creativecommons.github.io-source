@@ -64,7 +64,7 @@ So if you're looking to integrate CC licenses or CC licensed works into your app
     </div>
     <div class="card-body" align="center">
       <p class="card-text text-center">Participate in one of our regular usability tests for CC tools that we're actively working on (we'll give you a gift card!)</p>
-      <a href="/community/#mailing-lists" class="btn btn-sm btn-outline-primary">Sign up to test</a>
+      <a href="/contributing-code/usability" class="btn btn-sm btn-outline-primary">Learn more</a>
       <a href="https://github.com/creativecommons/creativecommons.org/issues/new/choose" class="btn btn-sm btn-outline-primary">File an issue</a>
     </div>
   </div>

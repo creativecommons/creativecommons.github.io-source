@@ -1,0 +1,61 @@
+title: CC Legal Database: a new beginning
+---
+categories:
+cc-legal-database
+product
+outreachy
+---
+author: krysal
+---
+series: outreachy-may-2020-legal-database
+---
+pub_date: 2020-05-22
+---
+body:
+CC maintains a collection of case law and legal scholarship relevant to legal issues around Creative Commons licenses. The CC Legal Database system gathers and exposes this information for everybody, as anyone can submit information, this aims to help understanding how CC legal tools have been interpreted by courts, and how they operate the larger legal ecosystem.
+
+The current [site](https://labs.creativecommons.org/caselaw/) is a beta version built on Jekyll, a static site generator, using Google forms and spreadsheets as database. This system has served its purpose, but it's time to modernize it since there are several issues we want to fix, mainly related to the automation of review and publication process, as for the visual styles, CC is doing a major redesign of websites with [Vocabulary](https://cc-vocabulary.netlify.com/), the new design system, to unify the user experience.
+
+The process for collecting the information is decoupled into loose spreadsheets, some Google forms, and its publication is a cumbersome manual process for two teams involved, the Legal Team that have to review the incoming data and edit it if necessary, and the Tech Team which is the one that actually publishes. This is prone to human errors (e.g. missing a column entry for one row) that can be easily avoided as well as save time to both CC teams.
+
+This project, Reimplement CC’s Legal Database using Django, aims to address all these main issues, automate the reviewing and publication process, empowering CC legal staff to manage all the workflow without the intervention of the tech team, and make use of Vocabulary components and guides to unify styles with the rest of Creative Commons products.
+
+### Design
+
+First task in the plan is to design the user-facing parts of the new website on Figma, this tool allows to easily draw on the browser (great for start quickly since no need to install a program in your PC) and even collaborate between peers to edit one document at the same time. CC keeps here the Vocabulary design library, so it facilitates a lot using the already existing components.
+
+You can find designs and follow the process in this Figma link: [New CC Caselaw Mockups](https://www.figma.com/file/L2sACqzX61N2OMd5lmisop/New-CC-Caselaw-Mockups). A new logo was made by the UX designer Francisco, with this the project start feeling like a consistent product of CC.
+
+<div style="text-align: center; margin: 15px 0px">
+<figure>
+	<img src="legal_database.svg" alt="New Creative Commons Legal Database logo" width="350px"/>
+</figure>
+</div>
+
+<!-- ![New Creative Commons Legal Database logo](legal_database.svg) -->
+
+### Why Django?
+
+Before I briefly mentioned the use of Django, a framework of Python, for the implementation, so I will state some reasons that led to this decision.
+
+Two options were given for the backend development: WordPress or Django. WordPress is a nice tool to build sites like blogs and e-commerce, it gives a lot of functionalities to end-users (usually not technical) out of the box and can be extended with a wide ecosystem of plugins, but I identified some cons for this particular case. It will bring many not necessary features to the system initially planned and will take considerable work to customize both, the frontend with Vocabulary and the database in the backend. Building a Wordpress theme with Vocabulary was already considered for another project apart, so that should be done first. As for the DB,  deal with Wordpress tables may not be the best developer experience and could be a real mess.
+
+Looking at Django with Python, we can start in a greenfield ready to customize, like Wordpress, is a mature technology with a large number of libraries to extend its functionalities. For maintenance, the engineering team will be responsible and since Django is already used to back the [CC Search](https://search.creativecommons.org/), currently the most ambitious products of the organization, then there should be no problem with this point. Given all this it seemed obvious to me to choose Django for this project.
+
+### Next steps
+
+It has only been a week so we're just starting, so next task to do sooner are:
+- Conduct interview with staff to iterate over designs
+- Setup the Django project
+- Model the legal database
+
+### How you can help
+
+We are still discussing the new image before start coding so these are some options if you want to get involved:
+- Suggest improvements to designs/UX or new features joining the discussion on the [`#cc-dev-legal-database`](https://creativecommons.slack.com/channels/cc-dev-legal-database) Slack channel or on the [github](https://github.com/creativecommons/caselaw) project.
+- Contribute directly to the CC's Vocabulary design system on [github](https://github.com/creativecommons/vocabulary).
+- Submit a case or a scholarship related to CC licenses on the [current site](https://labs.creativecommons.org/caselaw/contribute/).
+
+**CC Legal Database** is my Outreachy project for this summer, under the guidance of Director of Engineering [Kriti Godey](https://creativecommons.org/author/kriticreativecommons-org/) and Core Systems Manager [Timid Robot Zehta](https://creativecommons.org/author/timidcreativecommons-org/), they are very supportive and the CC community is notable welcoming.
+
+This is the first post of a series so stay tuned if you're interested to know more.

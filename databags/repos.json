@@ -12,6 +12,7 @@
                 "url": "https://github.com/creativecommons/.github/blob/master/LICENSE"
             },
             "name": ".github",
+            "slack": "",
             "url": "https://github.com/creativecommons/.github",
             "website": ""
         },
@@ -27,6 +28,7 @@
                 "url": "https://github.com/creativecommons/candela-utility/blob/master/LICENSE"
             },
             "name": "candela-utility",
+            "slack": "",
             "url": "https://github.com/creativecommons/candela-utility",
             "website": "http://certificates.creativecommons.org/"
         },
@@ -59,12 +61,27 @@
                 "url": "https://github.com/creativecommons/cc-license-chooser/blob/master/LICENSE"
             },
             "name": "cc-license-chooser",
+            "slack": "cc-dev-license-chooser",
             "technologies": [
                 "JavaScript",
                 "Python"
             ],
             "url": "https://github.com/creativecommons/cc-license-chooser",
             "website": ""
+        },
+        {
+            "created": "2020-06-03T18:51:38",
+            "description": "New license infrastructure for Creative Commons",
+            "id": 269169080,
+            "language": null,
+            "license": {
+                "name": "MIT License",
+                "url": "https://github.com/creativecommons/cc-licenses/blob/master/LICENSE"
+            },
+            "name": "cc-licenses",
+            "slack": "",
+            "url": "https://github.com/creativecommons/cc-licenses",
+            "website": null
         },
         {
             "created": "2019-06-12T18:15:54",
@@ -79,6 +96,7 @@
                 "url": "https://github.com/creativecommons/cc-link-checker/blob/master/LICENSE"
             },
             "name": "cc-link-checker",
+            "slack": "cc-dev-linkchecker",
             "technologies": [
                 "Python"
             ],
@@ -97,6 +115,7 @@
                 "url": "https://github.com/creativecommons/cc-mexico-micro/blob/master/LICENSE"
             },
             "name": "cc-mexico-micro",
+            "slack": "",
             "url": "https://github.com/creativecommons/cc-mexico-micro",
             "website": "https://mx.creativecommons.org/"
         },
@@ -112,6 +131,7 @@
                 "url": "https://github.com/creativecommons/cc-resource-archive/blob/master/LICENSE"
             },
             "name": "cc-resource-archive",
+            "slack": "",
             "url": "https://github.com/creativecommons/cc-resource-archive",
             "website": "http://resources.creativecommons.org/"
         },
@@ -127,6 +147,7 @@
                 "url": "https://github.com/creativecommons/cc-wp-theme/blob/master/LICENSE"
             },
             "name": "cc-wp-theme",
+            "slack": "",
             "url": "https://github.com/creativecommons/cc-wp-theme",
             "website": ""
         },
@@ -142,6 +163,7 @@
                 "url": "https://github.com/creativecommons/cc.api/blob/master/LICENSE"
             },
             "name": "cc.api",
+            "slack": "",
             "url": "https://github.com/creativecommons/cc.api",
             "website": "https://api.creativecommons.org/docs/"
         },
@@ -158,6 +180,7 @@
                 "url": "https://github.com/creativecommons/cc.engine/blob/master/LICENSE"
             },
             "name": "cc.engine",
+            "slack": "",
             "technologies": [
                 "Python"
             ],
@@ -176,6 +199,7 @@
                 "url": "https://github.com/creativecommons/cc.i18n/blob/master/LICENSE"
             },
             "name": "cc.i18n",
+            "slack": "",
             "url": "https://github.com/creativecommons/cc.i18n",
             "website": ""
         },
@@ -191,6 +215,7 @@
                 "url": "https://github.com/creativecommons/cc.license/blob/master/LICENSE"
             },
             "name": "cc.license",
+            "slack": "",
             "url": "https://github.com/creativecommons/cc.license",
             "website": "https://creativecommons.org/licenses/"
         },
@@ -206,6 +231,7 @@
                 "url": "https://github.com/creativecommons/cc.licenserdf/blob/master/LICENSE"
             },
             "name": "cc.licenserdf",
+            "slack": "",
             "url": "https://github.com/creativecommons/cc.licenserdf",
             "website": "https://creativecommons.org/ns"
         },
@@ -222,6 +248,7 @@
                 "url": "https://github.com/creativecommons/cccatalog/blob/master/LICENSE"
             },
             "name": "cccatalog",
+            "slack": "cc-dev-catalog",
             "technologies": [
                 "Python",
                 "Apache Spark"
@@ -242,6 +269,7 @@
                 "url": "https://github.com/creativecommons/cccatalog-api/blob/master/LICENSE"
             },
             "name": "cccatalog-api",
+            "slack": "",
             "technologies": [
                 "Python",
                 "Django",
@@ -263,6 +291,7 @@
                 "url": "https://github.com/creativecommons/cccatalog-dataviz/blob/master/LICENSE"
             },
             "name": "cccatalog-dataviz",
+            "slack": "cc-dev-cc-catalog-viz",
             "url": "https://github.com/creativecommons/cccatalog-dataviz",
             "website": "http://dataviz.creativecommons.engineering/"
         },
@@ -279,6 +308,7 @@
                 "url": "https://github.com/creativecommons/cccatalog-frontend/blob/develop/LICENSE"
             },
             "name": "cccatalog-frontend",
+            "slack": "cc-search",
             "technologies": [
                 "JavaScript",
                 "Vue.js"
@@ -298,6 +328,7 @@
                 "url": "https://github.com/creativecommons/CCID-cas/blob/master/LICENSE.md"
             },
             "name": "CCID-cas",
+            "slack": "",
             "url": "https://github.com/creativecommons/CCID-cas",
             "website": "https://login.creativecommons.org/"
         },
@@ -313,6 +344,7 @@
                 "url": "https://github.com/creativecommons/CCID-MediaWiki/blob/master/LICENSE"
             },
             "name": "CCID-MediaWiki",
+            "slack": "",
             "url": "https://github.com/creativecommons/CCID-MediaWiki",
             "website": null
         },
@@ -329,6 +361,7 @@
                 "url": "https://github.com/creativecommons/ccos-scripts/blob/master/LICENSE"
             },
             "name": "ccos-scripts",
+            "slack": "",
             "technologies": [
                 "Python"
             ],
@@ -347,6 +380,7 @@
                 "url": "https://github.com/creativecommons/ccrel-guide/blob/master/LICENSE"
             },
             "name": "ccrel-guide",
+            "slack": "",
             "url": "https://github.com/creativecommons/ccrel-guide",
             "website": "http://labs.creativecommons.org/2011/ccrel-guide/"
         },
@@ -362,6 +396,7 @@
                 "url": "https://github.com/creativecommons/ccsearch-browser-extension/blob/master/LICENSE"
             },
             "name": "ccsearch-browser-extension",
+            "slack": "cc-dev-browser-extension",
             "url": "https://github.com/creativecommons/ccsearch-browser-extension",
             "website": "https://opensource.creativecommons.org/ccsearch-browser-extension/"
         },
@@ -377,6 +412,7 @@
                 "url": "https://github.com/creativecommons/certificates-landing-page-theme/blob/master/LICENSE"
             },
             "name": "certificates-landing-page-theme",
+            "slack": "",
             "url": "https://github.com/creativecommons/certificates-landing-page-theme",
             "website": "http://certificates.creativecommons.org/"
         },
@@ -392,6 +428,7 @@
                 "url": "https://github.com/creativecommons/certificates-themes-plugins/blob/master/LICENSE.txt"
             },
             "name": "certificates-themes-plugins",
+            "slack": "",
             "url": "https://github.com/creativecommons/certificates-themes-plugins",
             "website": "http://certificates.creativecommons.org/"
         },
@@ -408,6 +445,7 @@
                 "url": "https://github.com/creativecommons/chooser/blob/master/LICENSE"
             },
             "name": "chooser",
+            "slack": "",
             "technologies": [
                 "HTML",
                 "CSS",
@@ -432,6 +470,7 @@
                 "url": "https://github.com/creativecommons/commoners/blob/master/LICENSE"
             },
             "name": "commoners",
+            "slack": "",
             "technologies": [
                 "PHP",
                 "WordPress"
@@ -449,6 +488,7 @@
                 "url": "https://github.com/creativecommons/creativecommons.github.io/blob/master/LICENSE"
             },
             "name": "creativecommons.github.io",
+            "slack": "",
             "url": "https://github.com/creativecommons/creativecommons.github.io",
             "website": "https://opensource.creativecommons.org"
         },
@@ -464,6 +504,7 @@
                 "url": "https://github.com/creativecommons/creativecommons.github.io-source/blob/master/LICENSE"
             },
             "name": "creativecommons.github.io-source",
+            "slack": "",
             "url": "https://github.com/creativecommons/creativecommons.github.io-source",
             "website": "https://opensource.creativecommons.org/"
         },
@@ -480,6 +521,7 @@
                 "url": "https://github.com/creativecommons/creativecommons.org/blob/master/LICENSE"
             },
             "name": "creativecommons.org",
+            "slack": "",
             "technologies": [
                 "Python",
                 "bash"
@@ -499,6 +541,7 @@
                 "url": "https://github.com/creativecommons/faq/blob/master/LICENSE"
             },
             "name": "faq",
+            "slack": "",
             "url": "https://github.com/creativecommons/faq",
             "website": "https://creativecommons.org/faq/"
         },
@@ -515,15 +558,19 @@
                 "url": "https://github.com/creativecommons/fonts/blob/master/LICENSE"
             },
             "name": "fonts",
+            "slack": "cc-dev-vocabulary",
             "technologies": [
                 "Fonts"
             ],
             "url": "https://github.com/creativecommons/fonts",
-            "website": "https://cc-fonts.netlify.com"
+            "website": "https://cc-fonts.netlify.app/"
         },
         {
             "created": "2020-04-24T14:53:52",
             "description": "A polite image crawler that can thumbnail and extract metadata from images at scale",
+            "engineering_project": true,
+            "english_name": "Image Crawler",
+            "featured": false,
             "id": 258541870,
             "language": "Python",
             "license": {
@@ -531,6 +578,11 @@
                 "url": "https://github.com/creativecommons/image-crawler/blob/master/LICENSE"
             },
             "name": "image-crawler",
+            "slack": "",
+            "technologies": [
+                "Python",
+                "asyncio"
+            ],
             "url": "https://github.com/creativecommons/image-crawler",
             "website": null
         },
@@ -546,6 +598,7 @@
                 "url": "https://github.com/creativecommons/labs/blob/master/LICENSE"
             },
             "name": "labs",
+            "slack": "",
             "url": "https://github.com/creativecommons/labs",
             "website": ""
         },
@@ -561,6 +614,7 @@
                 "url": "https://github.com/creativecommons/licensebuttons/blob/master/LICENSE"
             },
             "name": "licensebuttons",
+            "slack": "",
             "url": "https://github.com/creativecommons/licensebuttons",
             "website": "https://licensebuttons.net/"
         },
@@ -576,6 +630,7 @@
                 "url": "https://github.com/creativecommons/magical-pony/blob/master/COPYING"
             },
             "name": "magical-pony",
+            "slack": "",
             "url": "https://github.com/creativecommons/magical-pony",
             "website": ""
         },
@@ -591,6 +646,7 @@
                 "url": "https://github.com/creativecommons/mp/blob/master/LICENSE"
             },
             "name": "mp",
+            "slack": "",
             "url": "https://github.com/creativecommons/mp",
             "website": "https://creativecommons.org/platform/toolkit/"
         },
@@ -606,6 +662,7 @@
                 "url": "https://github.com/creativecommons/new-creativecommons.org/blob/master/LICENSE"
             },
             "name": "new-creativecommons.org",
+            "slack": "",
             "url": "https://github.com/creativecommons/new-creativecommons.org",
             "website": "https://creativecommons.org/"
         },
@@ -621,6 +678,7 @@
                 "url": "https://github.com/creativecommons/new-www-plugin/blob/master/LICENSE"
             },
             "name": "new-www-plugin",
+            "slack": "",
             "url": "https://github.com/creativecommons/new-www-plugin",
             "website": "https://github.com/creativecommons/new-creativecommons.org"
         },
@@ -636,6 +694,7 @@
                 "url": "https://github.com/creativecommons/new-www-theme/blob/master/LICENSE"
             },
             "name": "new-www-theme",
+            "slack": "",
             "url": "https://github.com/creativecommons/new-www-theme",
             "website": "https://github.com/creativecommons/new-creativecommons.org"
         },
@@ -651,6 +710,7 @@
                 "url": "https://github.com/creativecommons/open4us.org/blob/master/LICENSE"
             },
             "name": "open4us.org",
+            "slack": "",
             "url": "https://github.com/creativecommons/open4us.org",
             "website": "https://open4us.org/"
         },
@@ -666,6 +726,7 @@
                 "url": "https://github.com/creativecommons/openpolicynetwork.org/blob/master/LICENSE"
             },
             "name": "openpolicynetwork.org",
+            "slack": "",
             "url": "https://github.com/creativecommons/openpolicynetwork.org",
             "website": "https://openpolicynetwork.org/"
         },
@@ -679,6 +740,7 @@
                 "url": "https://github.com/creativecommons/rdfadict/blob/master/LICENSE"
             },
             "name": "rdfadict",
+            "slack": "",
             "url": "https://github.com/creativecommons/rdfadict",
             "website": null
         },
@@ -694,6 +756,7 @@
                 "url": "https://github.com/creativecommons/reversionary-rights/blob/master/LICENSE"
             },
             "name": "reversionary-rights",
+            "slack": "",
             "url": "https://github.com/creativecommons/reversionary-rights",
             "website": null
         },
@@ -709,6 +772,7 @@
                 "url": "https://github.com/creativecommons/rubycas-client-rails/blob/master/MIT-LICENSE"
             },
             "name": "rubycas-client-rails",
+            "slack": "",
             "url": "https://github.com/creativecommons/rubycas-client-rails",
             "website": ""
         },
@@ -724,6 +788,7 @@
                 "url": "https://github.com/creativecommons/scholars-addenda/blob/master/LICENSE"
             },
             "name": "scholars-addenda",
+            "slack": "",
             "url": "https://github.com/creativecommons/scholars-addenda",
             "website": "https://labs.creativecommons.org/scholars/"
         },
@@ -740,6 +805,7 @@
                 "url": "https://github.com/creativecommons/search/blob/master/LICENSE"
             },
             "name": "search",
+            "slack": "",
             "technologies": [
                 "PHP",
                 "WordPress"
@@ -760,6 +826,7 @@
                 "url": "https://github.com/creativecommons/sre-salt-prime/blob/master/LICENSE"
             },
             "name": "sre-salt-prime",
+            "slack": "",
             "technologies": [
                 "Python",
                 "SaltStack"
@@ -780,6 +847,7 @@
                 "url": "https://github.com/creativecommons/sre-wp-pull/blob/master/LICENSE"
             },
             "name": "sre-wp-pull",
+            "slack": "",
             "technologies": [
                 "Bash",
                 "WordPress"
@@ -799,6 +867,7 @@
                 "url": "https://github.com/creativecommons/taaccct/blob/gh-pages/LICENSE"
             },
             "name": "taaccct",
+            "slack": "",
             "url": "https://github.com/creativecommons/taaccct",
             "website": "http://profiles.open4us.org/taaccct/"
         },
@@ -814,6 +883,7 @@
                 "url": "https://github.com/creativecommons/team-open/blob/master/LICENSE"
             },
             "name": "team-open",
+            "slack": "",
             "url": "https://github.com/creativecommons/team-open",
             "website": "http://teamopen.cc/"
         },
@@ -829,6 +899,7 @@
                 "url": "https://github.com/creativecommons/termination-of-transfer/blob/master/LICENSE"
             },
             "name": "termination-of-transfer",
+            "slack": "",
             "url": "https://github.com/creativecommons/termination-of-transfer",
             "website": null
         },
@@ -845,6 +916,7 @@
                 "url": "https://github.com/creativecommons/vocabulary/blob/master/LICENSE"
             },
             "name": "vocabulary",
+            "slack": "cc-dev-vocabulary",
             "technologies": [
                 "JavaScript",
                 "Vue",
@@ -855,7 +927,7 @@
                 "Theo"
             ],
             "url": "https://github.com/creativecommons/vocabulary",
-            "website": "https://cc-vocabulary.netlify.com/"
+            "website": "https://cc-vocabulary.netlify.app/"
         },
         {
             "created": "2019-05-24T16:49:48",
@@ -870,6 +942,7 @@
                 "url": "https://github.com/creativecommons/vue-vocabulary/blob/master/LICENSE"
             },
             "name": "vue-vocabulary",
+            "slack": "cc-dev-vocabulary",
             "technologies": [
                 "JavaScript",
                 "Vue",
@@ -880,7 +953,7 @@
                 "Theo"
             ],
             "url": "https://github.com/creativecommons/vue-vocabulary",
-            "website": "https://cc-vue-vocabulary.netlify.com/"
+            "website": "https://cc-vue-vocabulary.netlify.app/"
         },
         {
             "created": "2014-07-28T15:18:18",
@@ -894,6 +967,7 @@
                 "url": "https://github.com/creativecommons/wp-plugin-creativecommons/blob/master/license.txt"
             },
             "name": "wp-plugin-creativecommons",
+            "slack": "",
             "url": "https://github.com/creativecommons/wp-plugin-creativecommons",
             "website": "https://wordpress.org/plugins/creative-commons/"
         },
@@ -904,6 +978,7 @@
             "language": "PHP",
             "license": null,
             "name": "wp-theme-base",
+            "slack": "",
             "url": "https://github.com/creativecommons/wp-theme-base",
             "website": null
         },
@@ -919,6 +994,7 @@
                 "url": "https://github.com/creativecommons/wp-theme-cc-chapter/blob/master/LICENSE"
             },
             "name": "wp-theme-cc-chapter",
+            "slack": "",
             "url": "https://github.com/creativecommons/wp-theme-cc-chapter",
             "website": ""
         },
@@ -934,6 +1010,7 @@
                 "url": "https://github.com/creativecommons/wp-theme-cc-sotc/blob/master/LICENSE"
             },
             "name": "wp-theme-cc-sotc",
+            "slack": "",
             "url": "https://github.com/creativecommons/wp-theme-cc-sotc",
             "website": null
         },
@@ -950,6 +1027,7 @@
                 "url": "https://github.com/creativecommons/wp-theme-cctoolkit/blob/master/LICENSE"
             },
             "name": "wp-theme-cctoolkit",
+            "slack": "",
             "technologies": [
                 "CSS",
                 "PHP",
@@ -959,12 +1037,24 @@
             "website": ""
         },
         {
+            "created": "2020-06-11T17:20:52",
+            "description": "WordPress theme for the CC Certificates website",
+            "id": 271605671,
+            "language": "PHP",
+            "license": null,
+            "name": "wp-theme-certificates",
+            "slack": "",
+            "url": "https://github.com/creativecommons/wp-theme-certificates",
+            "website": null
+        },
+        {
             "created": "2020-04-21T17:01:56",
             "description": "New WordPress theme for Creative Commons website",
             "id": 257659012,
-            "language": "CSS",
+            "language": "PHP",
             "license": null,
             "name": "wp-theme-creativecommons.org",
+            "slack": "",
             "url": "https://github.com/creativecommons/wp-theme-creativecommons.org",
             "website": null
         },
@@ -974,12 +1064,13 @@
             "engineering_project": true,
             "featured": false,
             "id": 215608377,
-            "language": null,
+            "language": "PHP",
             "license": {
                 "name": "GNU General Public License v2.0",
                 "url": "https://github.com/creativecommons/wp-theme-summit/blob/master/LICENSE"
             },
             "name": "wp-theme-summit",
+            "slack": "",
             "url": "https://github.com/creativecommons/wp-theme-summit",
             "website": null
         }
