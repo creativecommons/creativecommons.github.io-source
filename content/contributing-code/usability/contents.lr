@@ -1,0 +1,60 @@
+_model: page
+---
+_template: page-with-toc.html
+---
+title: Usability
+---
+body:
+
+At CC, our goal is to make our products as easy and delightful to use as possible. To that end, we are constantly talking to our users. Sometimes our sessions involve understanding current experiences and identifying pain points, other times we’re determining upcoming feature prioritization. If we plan to roll out a new product, or design a new interface or feature for an existing product, we do research! We appreciate our users volunteering their time to help us with this research by participating in test sessions.
+
+## Participate in a Session
+When we’re rolling out a specific feature, we do **usability tests** to test the proposed experience.
+
+Keep an eye on the `#cc-usability` channel in the [Creative Commons Slack](https://slack-signup.creativecommons.org/) or sign up for the [CC Usability Announcements list](https://groups.google.com/a/creativecommons.org/forum/#!forum/usability-announce). That way you’ll be the first to hear when there’s a round of usability tests being scheduled for something new.
+
+At any point in time, we’re engaging with our users through **user interviews**, where we learn more about attitudes towards our products, and dig into expansion areas we’re considering.
+
+If you’re interested in volunteering your time, we invite you to sign up to talk to us. Look at the [products and features](https://calendly.com/cc-product-design) we’re currently scheduling tests for. If you’d like time to share general thoughts, sign up for a User Interview session specifically.
+
+## What to Expect
+- After scheduling a time to talk to us, here’s what you can expect:
+- You’ll need to sign and return a [consent form](https://drive.google.com/file/d/1XWt5QDu-IR76BwsPP7OidqNncha3rHbm/view), allowing us to record the screen during the session. We typically do screen share, and the value of the session is greatly increased when we can refer back to a recording while reviewing notes and findings.
+- You’ll need a good internet connection, a functioning microphone, and the ability to use Google Meet.
+- When the session starts, we begin with introductions and some general questions about you!
+- We then move on to screen share, where we may do a number of things: complete tasks through prototypes, look at existing products, review proposed designs, compare interfaces of similar services, or talk about a topic related to the session. There are no wrong answers. As researchers, we’re interested in hearing your honest thoughts and ideas. We’ll ask you to talk out loud as much as possible, and filter nothing!
+- After the session wraps, we’ll send a small token of gratitude your way.
+
+## DIY
+In the spirit of open source, here is how you can prepare your own usability test, based on how CC approaches usability tests.
+
+**Decide why and what you want to test.** Whatever you are planning on putting in front of users, be clear on why you are doing the research. Be specific about which design options you are testing, and the metrics you want to obtain from your sessions. Writing down your assumptions related to product changes will help you to compare which ideas worked better or worse after running the sessions.
+
+Decide which tools suit best for the purposes of the test. Depending on the goal, some tests require high-fidelity interactive prototypes, while others need low-fi screens with complete functionality.
+
+**Prepare your wireframes, mockups, or interactive prototypes.** At CC we use Moqups for basic wireframes, and Figma to house our Design Library, create mockups, and in some cases interactive prototypes. Here’s a useful article on [creating prototypes in Figma](https://help.figma.com/hc/en-us/articles/360040314193-Guide-to-prototyping-in-Figma). Other software for similar purposes includes Balsamiq, Invision, and Sketch.
+
+**Prepare your script.** Within your script you should:
+- Reestablish with the user why they’re here.
+- Drive home the point that you are testing the product, not the user, and there are no wrong answers.
+- Make space to ask basic background questions of the user.
+- Indicate when (or if) you plan to commence screen recording.
+- Prepare tasks, one or more, for the user to carry out. It is helpful to write these tasks down on a shared document (we often use Google Slides), as they may include links, and can allow the user to reference the instructions during the task.
+
+**Prepare a consent form for screen recording.** Usability sessions are great, but they’re even better when they’re recorded. It allows you to focus more fully on the session during it, be less distracted by note taking, and not worry that you’re missing key insights. Ensure that your users sign this before commencing screen recording. (See the [form](https://drive.google.com/file/d/1XWt5QDu-IR76BwsPP7OidqNncha3rHbm/view) we use as an example.). If you opt to not do screen recording, we strongly recommend having a second person with you during the session whose sole role it is to take notes.
+
+**Schedule tests.** Promote with your social users, newsletter subscribers, announce it on your site, or get the word out some other way. We use Calendly for scheduling these, and we include a number of basic questions during the session sign-up process, to help us better prepare for tests. (See an example sign-up [here](https://calendly.com/cc-product-design/user-interview-30) ). Our typical requirements for participants are high speed internet access, a computer with a microphone, ability to screen share, and request for consent form to be signed. For anything new you want to get feedback on, it’s advisable to talk to at least three users.
+
+**Rehearse.** Before your first session, simulate a whole session, read the script, complete the task(s), and answer the final questions you plan to ask. Think about if there are additional things you want to ask. Be ready, knowing what you want to say and ask.
+
+**Carry out the test.** During the session, have your script open on one window, and a video call with screen share open on another window. We use Google Meet (Hangouts) for our video calls.
+
+Have a notes document prepared, or better yet, enlist someone else to join the call to take notes. If (and only if) your participant has consented to screen share being recorded, be ready with software that records the screen. We often use QuickTime (if on a Mac), it is simple and free. Another option is [OBS](https://obsproject.com/), which is free, open source, and cross platform.
+
+Remember that the point of the test is to ask questions and get feedback. It is not to educate, give guidance, or explain. Whenever you are running a usability test, remember that you want to see what the user will do to complete the task when no one is around to help them. Ask them to think out loud, so that you can better understand what is clear and what is confusing, and pay close attention to how the user interacts with the prototype. If something related to your research purpose catches your attention, dive into it by asking why.
+
+**Thank the user.** At the end of the test, remember to thank the user. If you have the budget for it, we recommend signaling gratitude with a gift card, or other reward. Members of your community may politely decline this offer, because their reward is the ability to contribute to improving your product.
+
+**Review your findings.** Spend time with your notes, rewatching the screen recording, and deeply thinking about what you have learned.
+
+We strongly recommend reading [Rocket Surgery Made Easy by Steve Krug](http://stevekrug.com/rsme.html ). The methods we employ at CC are to a large extent based on the guidance in that book. Have you read something fantastic about usability testing? Join us in the `#cc-usability` channel in the [Creative Commons Slack](https://slack-signup.creativecommons.org/) and share your resources!

@@ -21,6 +21,10 @@
                     "role": "Project Core Committer"
                 },
                 {
+                    "name": "Allen Abraham",
+                    "role": "Project Collaborator"
+                },
+                {
                     "name": "Shubham Pandey",
                     "role": "Project Contributor"
                 }
@@ -32,6 +36,10 @@
             "members": [
                 {
                     "name": "Tanuj Agarwal",
+                    "role": "Project Contributor"
+                },
+                {
+                    "name": "Onyenanu Princewill",
                     "role": "Project Contributor"
                 }
             ],
@@ -68,6 +76,10 @@
         },
         {
             "members": [
+                {
+                    "name": "Ari Madian",
+                    "role": "Project Core Committer"
+                },
                 {
                     "name": "Dhruvi Butti",
                     "role": "Project Core Committer"
@@ -192,6 +204,10 @@
                 },
                 {
                     "name": "Jahnvi Gupta",
+                    "role": "Project Contributor"
+                },
+                {
+                    "name": "Megha Varshney",
                     "role": "Project Contributor"
                 }
             ],

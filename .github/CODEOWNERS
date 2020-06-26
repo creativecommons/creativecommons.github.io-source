@@ -1,7 +1,7 @@
 # These owners will be the default owners for everything in
 # the repo. Unless a later match takes precedence, they will 
 # be requested for review when someone opens a pull request.
-* @creativecommons/internal-tech @creativecommons/ct-cc-open-source-core-committers 
+* @creativecommons/engineering @creativecommons/ct-cc-open-source-core-committers 
 
 # These users own any files in the specified directory and 
 # any of its subdirectories.
