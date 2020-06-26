@@ -35,3 +35,19 @@ a {
     }
   }
 }
+
+.code-guidelines {
+  .code-guidelines-title {
+    background-color: $color-lighter-gray;
+
+    .container {
+      @extend .padding-horizontal-bigger;
+
+      .description {
+        @extend .body-bigger;
+        @extend .padding-top-small;
+        @extend .padding-bottom-xl;
+      }
+    }
+  }
+}

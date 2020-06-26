@@ -1,6 +1,18 @@
 {% extends "layout.html" %}
-{% block title %}{{ this.title }}{% endblock %}
+
 {% block body %}
+  <div class="code-guidelines">
+    <header class="code-guidelines-title">
+      <div class="container is-paddingless">
+        <h1>{{ this.title }}</h1>
+        <div class="description">
+          {{this.description}}
+        </div>
+      </div>
+    </header>
+  </div>
+
+
   <div class="card toc-card bg-light">
     <div class="card-body">
       <ul class="toc list-unstyled">
