@@ -38,7 +38,7 @@ a {
 
 .single-post {
   .container {
-    @extend .padding-horizontal-big;
+    @extend .padding-horizontal-xxl;
   }
 
   .single-post-header {
@@ -48,6 +48,8 @@ a {
 
     .title {
       @extend .padding-top-big;
+
+      overflow-wrap: break-word;
     }
 
     .author {
