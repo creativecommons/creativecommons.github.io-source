@@ -112,9 +112,10 @@ a {
       }
 
       .categories {
-        @extend .padding-top-normal;
+        @extend .padding-top-small;
 
         .tag {
+          @extend .margin-top-small;
           @extend .margin-right-small;
         }
       }
@@ -138,6 +139,7 @@ a {
 
         font-weight: bold;
         line-height: 1.5;
+        overflow-wrap: break-word;
 
         .icon {
           @extend .padding-right-small;
