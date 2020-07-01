@@ -1,0 +1,46 @@
+<section class="featured-projects">
+  <div class="container">
+    <div class="level">
+      <h4 class="is-paddingless level-left">
+        {{ this.title }}
+      </h4>
+      <span class="level-right">
+        <a class="project-page-link" href="/contributing-code/projects/">See all available projects <i class="icon angle-right"></i></a>
+      </span>
+    </div>
+    <div class="project-list columns">
+      {% for repo in bag('repos.repos') %}
+      {% if repo.featured %}
+        <article class="card entry-post vertical project-index column is-one-third">
+          <div class="card-content">
+            <h4 class="card-title b-header"><a href="{{ repo.url }}">{{ repo.english_name }}</a></h4>
+            <a class="button is-text tiny site-link" href="{{ repo.website }}">
+              <span>Visit site</span>
+              <i class="icon external-link"></i>
+            </a>
+            <div class="content">
+              {{ repo.description }}
+            </div>
+            <div class="labels">
+              {% for technology in repo.technologies %}
+                <button class="button tag">{{ technology }}</button>
+              {% endfor %}
+            </div>
+            <div class="external-links">
+              <a class="button is-text tiny" href="{{ repo.url }}">
+                <i class="icon github"></i>
+                <span class="link-content">Github Repository</span>
+              </a>
+              <br>
+              <a class="button is-text tiny">
+                <i class="icon slack"></i>
+                <span class="link-content">Slack channel (#{{ repo.slack }})</span>
+              </a>
+            </div>
+          </div>
+        </article>
+      {% endif %}
+    {% endfor %}
+    </div>
+  </div>
+</section>

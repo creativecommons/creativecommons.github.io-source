@@ -90,6 +90,40 @@ a {
   }
 }
 
+.featured-projects {
+  @extend .padding-vertical-xxl;
+
+  .container {
+    @extend .padding-horizontal-big;
+  }
+
+  .project-page-link {
+    @extend .has-color-forest-green;
+    @extend .body-normal;
+
+    line-height: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+
+    .icon {
+      @extend .padding-left-small;
+      @extend .padding-top-smaller;
+    }
+  }
+
+  .project-list {
+    @extend .padding-top-bigger;
+    @extend .padding-bottom-larger;
+
+    .column {
+      @extend .margin-horizontal-big;
+      @extend .margin-bottom-larger;
+
+      height: 100%;
+    }
+  }
+}
+
 .breadcrumb-container {
   border-top: 4px solid $color-forest-green;
   background-color: $color-lighter-gray;
