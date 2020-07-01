@@ -23,6 +23,73 @@ a {
   }
 }
 
+.hero {
+  @extend .margin-top-large;
+
+  .hero-title {
+    @extend .padding-horizontal-big;
+  }
+
+  .hero-description {
+    @extend .body-bigger;
+    @extend .padding-top-big;
+    @extend .padding-horizontal-big;
+  }
+
+  .hero-links {
+    @extend .margin-top-normal;
+    @extend .padding-horizontal-big;
+
+    .button {
+      @extend .margin-top-normal;
+      text-decoration: none;
+
+      .icon {
+        @extend .margin-right-small;
+        @extend .padding-vertical-smaller;
+      }
+    }
+  }
+}
+
+.get-involved {
+  background-color: $color-lighter-gray;
+
+  .container {
+    @extend .padding-horizontal-big;
+    @extend .padding-vertical-xxl;
+  }
+
+  .get-involved-description {
+    @extend .body-bigger;
+    @extend .padding-top-normal;
+  }
+
+  .get-involved-links {
+    @extend .padding-top-xl;
+
+    .heading {
+      @extend .b-header;
+      @extend .padding-top-bigger;
+    }
+
+    .list {
+      @extend .padding-top-normal;
+
+      .link-heading {
+        @extend .b-header;
+        @extend .padding-top-big;
+      }
+
+      .link-caption {
+        @extend .body-normal;
+        @extend .padding-top-smaller;
+      }
+
+    }
+  }
+}
+
 .breadcrumb-container {
   border-top: 4px solid $color-forest-green;
   background-color: $color-lighter-gray;
