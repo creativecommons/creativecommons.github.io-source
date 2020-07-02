@@ -13,9 +13,11 @@
     </div>
     <div class="container blog-page-posts">
       {{ render_posts(this.pagination.items) }}
-      {% if this.pagination.pages > 1 %}
-        {{ render_pagination(this.pagination) }}
-      {% endif %}
+      <div class="pagination-wrapper">
+        {% if this.pagination.pages > 1 %}
+          {{ render_pagination(this.pagination) }}
+        {% endif %}
+      </div>
     </div>
   </div>
 {% endblock %}
