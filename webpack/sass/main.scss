@@ -223,3 +223,20 @@ a {
     @extend .padding-bottom-xxl;
   }
 }
+
+.all-categories {
+  .title {
+    background-color: $color-lighter-gray;
+
+    .container {
+      @extend .padding-horizontal-big;
+      @extend .padding-bottom-xl;
+    }
+  }
+
+  .categories-list {
+    @extend .padding-horizontal-big;
+    @extend .padding-top-xl;
+    @extend .padding-bottom-xxl;
+  }
+}
