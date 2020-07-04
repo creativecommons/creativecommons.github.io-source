@@ -223,3 +223,38 @@ a {
     @extend .padding-bottom-xxl;
   }
 }
+
+.all-authors {
+  .title {
+    background-color: $color-lighter-gray;
+
+    .container {
+      @extend .padding-horizontal-big;
+      @extend .padding-bottom-xl;
+    }
+  }
+
+  .authors-list {
+    @extend .padding-horizontal-big;
+    @extend .padding-top-xl;
+    @extend .padding-bottom-xxl;
+  }
+
+  .author {
+    @extend .padding-big;
+
+    .image {
+      height: 3.75rem;
+      width: 3.75rem;
+    }
+
+    .author-name {
+      @extend .b-header;
+      @extend .padding-top-small;
+
+      .link {
+        @extend .has-color-dark-slate-gray;
+      }
+    }
+  }
+}
