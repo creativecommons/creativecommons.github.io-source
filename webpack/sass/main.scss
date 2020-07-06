@@ -223,3 +223,35 @@ a {
     @extend .padding-bottom-xxl;
   }
 }
+
+.author-posts {
+  .title {
+    background-color: $color-lighter-gray;
+
+    .container {
+      @extend .padding-horizontal-big;
+      @extend .padding-bottom-xl;
+
+      .image {
+        width: 9.5rem;
+        height: 9.5rem;
+      }
+
+      .about {
+        @extend .body-big;
+        @extend .padding-top-big;
+
+        line-height: 1.8125;
+      }
+
+      .button {
+        @extend .margin-top-bigger;
+      }
+    }
+  }
+
+  .posts {
+    @extend .padding-top-xl;
+    @extend .padding-bottom-xxl;
+  }
+}
