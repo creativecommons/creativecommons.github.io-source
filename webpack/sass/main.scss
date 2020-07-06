@@ -70,6 +70,8 @@ a {
     .container {
       @extend .padding-horizontal-bigger;
 
+      word-wrap: break-word;
+
       .description {
         @extend .body-bigger;
         @extend .padding-top-small;
