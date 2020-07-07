@@ -103,6 +103,47 @@ a {
   }
 }
 
+.blog-entries {
+  .blog-entry {
+    @extend .padding-vertical-larger;
+    @extend .padding-horizontal-big;
+
+    border-bottom: 0.1875rem solid $color-light-gray !important;
+
+    .blog-title {
+      @extend .has-color-dark-slate-gray;
+    }
+  }
+}
+
+.blog-page {
+  .blog-page-header {
+    @extend .padding-top-bigger;
+    @extend .padding-bottom-xl;
+
+    background-color: $color-lighter-gray;
+
+    .container {
+      @extend .padding-horizontal-big;
+    }
+
+    .blog-page-description {
+      @extend .padding-top-normal;
+      @extend .body-big;
+    }
+  }
+
+  .blog-page-posts {
+    @extend .padding-top-normal;
+
+    .pagination-wrapper {
+      @extend .padding-top-xl;
+      @extend .padding-bottom-xxl;
+    }
+  }
+}
+
+
 .single-post {
   .container {
     @extend .padding-horizontal-xxl;
