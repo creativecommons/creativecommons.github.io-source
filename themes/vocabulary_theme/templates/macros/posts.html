@@ -7,12 +7,13 @@
       <article class="card entry-post horizontal no-border blog-entry column is-one-third">
         <header>
           <figure class="image blog-image">
-          {% if author.about %}
-            {% if author.md5_hashed_email %}
-              <img class="profile" src="https://secure.gravatar.com/avatar/{{ author.md5_hashed_email }}?size=200"
-              alt="gravatar" />
+            {% if author.about %}
+              {% if author.md5_hashed_email %}
+                <img class="profile" src="https://secure.gravatar.com/avatar/{{ author.md5_hashed_email }}?size=200" alt="gravatar" />
+              {% else %}
+                <img class="profile" src="./blank_profile.svg" alt="gravatar" />
+              {% endif %}
             {% endif %}
-          {% endif %}
           </figure>
         </header>
         <div class="blog-content">
