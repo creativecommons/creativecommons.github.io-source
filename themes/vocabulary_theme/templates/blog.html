@@ -3,11 +3,21 @@
 {% from "macros/pagination.html" import render_pagination %}
 {% from "macros/posts.html" import render_posts %}
 
-{% block title %}{{ this.title }}{% endblock %}
 {% block body %}
-  {{ this.description }}
-  {{ render_posts(this.pagination.items) }}
-  {% if this.pagination.pages > 1 %}
-    {{ render_pagination(this.pagination) }}
-  {% endif %}
+  <div class="blog-page">
+    <div class="blog-page-header">
+      <div class="container">
+        <h1>{{ this.title }}</h1>
+        <div class="blog-page-description column is-9 is-paddingless">{{ this.description }}</div>
+      </div>
+    </div>
+    <div class="container blog-page-posts">
+      {{ render_posts(this.pagination.items) }}
+      <div class="pagination-wrapper">
+        {% if this.pagination.pages > 1 %}
+          {{ render_pagination(this.pagination) }}
+        {% endif %}
+      </div>
+    </div>
+  </div>
 {% endblock %}
