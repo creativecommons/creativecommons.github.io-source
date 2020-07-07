@@ -12,7 +12,10 @@
         <img class="profile" src="./blank_profile.svg" alt="gravatar" />
       </figure>
       {% endif %}
-      <h4 class="author-name"><a class="link" href="{{ author|url }}">{{ render_author_name(author) }}</a></h4>
+      <div class="author-name">
+        <h4 class="desktop b-header"><a class="link" href="{{ author|url }}">{{ render_author_name(author) }}</a></h4>
+        <h6 class="mobile b-header"><a class="link" href="{{ author|url }}">{{ render_author_name(author) }}</a></h6>
+      </div>
     </div>
   {% endfor %}
 {% endmacro %}

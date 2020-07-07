@@ -103,6 +103,47 @@ a {
   }
 }
 
+.blog-entries {
+  .blog-entry {
+    @extend .padding-vertical-larger;
+    @extend .padding-horizontal-big;
+
+    border-bottom: 0.1875rem solid $color-light-gray !important;
+
+    .blog-title {
+      @extend .has-color-dark-slate-gray;
+    }
+  }
+}
+
+.blog-page {
+  .blog-page-header {
+    @extend .padding-top-bigger;
+    @extend .padding-bottom-xl;
+
+    background-color: $color-lighter-gray;
+
+    .container {
+      @extend .padding-horizontal-big;
+    }
+
+    .blog-page-description {
+      @extend .padding-top-normal;
+      @extend .body-big;
+    }
+  }
+
+  .blog-page-posts {
+    @extend .padding-top-normal;
+
+    .pagination-wrapper {
+      @extend .padding-top-xl;
+      @extend .padding-bottom-xxl;
+    }
+  }
+}
+
+
 .single-post {
   .container {
     @extend .padding-horizontal-xxl;
@@ -224,6 +265,59 @@ a {
   }
 }
 
+.all-series {
+  .title {
+    background-color: $color-lighter-gray;
+
+    .container {
+      @extend .padding-horizontal-big;
+      @extend .padding-bottom-xl;
+    }
+  }
+
+  .series-list {
+    @extend .padding-horizontal-big;
+    @extend .padding-top-xl;
+    @extend .padding-bottom-xxl;
+
+    .series-link {
+      .link {
+        @extend .has-color-dark-slate-gray;
+      }
+
+      @extend .padding-bottom-big;
+
+      &:not(:last-of-type)::after {
+        @extend .padding-top-big;
+
+        display: block;
+
+        content: '';
+
+        border-bottom:  0.1875rem solid $color-light-gray;
+      }
+    }
+  }
+}
+
+.all-categories {
+  .title {
+    background-color: $color-lighter-gray;
+    overflow-wrap: break-word;
+
+    .container {
+      @extend .padding-horizontal-big;
+      @extend .padding-bottom-xl;
+    }
+  }
+
+  .categories-list {
+    @extend .padding-horizontal-big;
+    @extend .padding-top-xl;
+    @extend .padding-bottom-xxl;
+  }
+}
+
 .all-authors {
   .title {
     background-color: $color-lighter-gray;
@@ -248,8 +342,24 @@ a {
       width: 3.75rem;
     }
 
+    .mobile {
+      display: none;
+    }
+
+    .desktop {
+      display: inline;
+    }
+
+    @media only screen and (max-width: 768px) {
+      .mobile {
+        display: inline;
+      }
+      .desktop {
+        display: none;
+      }
+    }
+
     .author-name {
-      @extend .b-header;
       @extend .padding-top-small;
 
       .link {

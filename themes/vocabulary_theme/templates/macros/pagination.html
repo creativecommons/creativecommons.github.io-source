@@ -1,21 +1,27 @@
 {% macro render_pagination(pagination) %}
-  <ul class="pagination table-responsive mb-2">
-    {% if pagination.has_prev %}
-      <li class="page-item"><a class="page-link" href="{{ pagination.prev|url }}">Previous</a></li>
-    {% else %}
-      <li class="page-item disabled"><a class="page-link">Previous</a></li>
-    {% endif %}
-    {% for p in range(pagination.pages) %}
-      {% if pagination.current|url == pagination.for_page(p+1)|url %}
-        <li class="page-item active"><a class="page-link" href="{{ pagination.for_page(p+1)|url}}">{{p+1}}</a></li>
+  <nav class="pagination" role="navigation" aria-label="pagination">
+    <ul class="pagination-list">
+      <!-- {% if pagination.has_prev %}
+        <li class="page-item"><a class="page-link" href="{{ pagination.prev|url }}">Previous</a></li>
       {% else %}
-        <li class="page-item"><a class="page-link" href="{{ pagination.for_page(p+1)|url}}">{{p+1}}</a></li>
-      {% endif %}
-    {% endfor %}
-    {% if pagination.has_next %}
-      <li class="page-item"><a class="page-link" href="{{ pagination.next|url }}">Next</a></li>
-    {% else %}
-      <li class="page-item disabled"><a class="page-link">Next</a></li>
-    {% endif %}
-  </ul>
+        <li class="page-item disabled"><a class="page-link">Previous</a></li>
+      {% endif %} -->
+      {% for p in range(pagination.pages) %}
+        {% if pagination.current|url == pagination.for_page(p+1)|url %}
+          <li class="common">
+            <a class="pagination-link is-current common-link" aria-label="Goto page {{p+1}}" aria-current="page" href="{{ pagination.for_page(p+1)|url}}">{{p+1}}</a>
+          </li>
+        {% else %}
+          <li class="inactive">
+            <a class="pagination-link inactive-link" aria-label="Goto page {{p+1}}" href="{{ pagination.for_page(p+1)|url}}">{{p+1}}</a>
+          </li>
+        {% endif %}
+      {% endfor %}
+      <!-- {% if pagination.has_next %}
+        <li class="page-item"><a class="page-link" href="{{ pagination.next|url }}">Next</a></li>
+      {% else %}
+        <li class="page-item disabled"><a class="page-link">Next</a></li>
+      {% endif %} -->
+    </ul>
+  </nav>
 {% endmacro %}
