@@ -117,6 +117,34 @@ a {
   }
 }
 
+.recent-posts {
+  background-color: rgba(4, 166, 53, 0.1);
+
+  .container {
+    @extend .padding-vertical-xl;
+    @extend .padding-horizontal-big;
+
+    .columns {
+      @extend .padding-top-bigger;
+      @extend .padding-bottom-xl;
+    }
+  }
+
+  .posts-link {
+    @extend .has-color-forest-green;
+    @extend .body-normal;
+
+    font-weight: bold;
+    line-height: 1.5;
+    text-decoration: none;
+
+    .icon {
+      @extend .has-color-forest-green;
+      @extend .padding-left-small;
+    }
+  }
+}
+
 .breadcrumb-container {
   border-top: 4px solid $color-forest-green;
   background-color: $color-lighter-gray;
