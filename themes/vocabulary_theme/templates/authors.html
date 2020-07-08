@@ -2,9 +2,15 @@
 
 {% from "macros/authors.html" import render_authors %}
 
-{% block title %}{{ this.parent.children.get('entries').title + ' - Authors' }}{% endblock %}
-{% block header %}{{ this.parent.children.get('entries').title }}{% endblock %}
 {% block body %}
-  <h2>Authors</h2>
-  {{ render_authors(this) }}
+  <div class="all-authors">
+    <div class="title">
+      <h1 class="container">Authors</h1>
+    </div>
+    <div class="authors-list container">
+      <div class="columns is-multiline is-mobile">
+        {{ render_authors(this) }}
+      </div>
+    </div>
+  </div>
 {% endblock %}

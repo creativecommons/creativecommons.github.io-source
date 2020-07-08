@@ -50,6 +50,19 @@ a {
   }
 }
 
+.breadcrumb-container {
+  border-top: 4px solid $color-forest-green;
+  background-color: $color-lighter-gray;
+
+  .breadcrumb {
+    @extend .padding-bigger;
+
+    .link {
+      @extend .has-color-forest-green;
+    }
+  }
+}
+
 .hero {
   @extend .margin-top-large;
 
@@ -179,19 +192,6 @@ a {
   }
 }
 
-.breadcrumb-container {
-  border-top: 4px solid $color-forest-green;
-  background-color: $color-lighter-gray;
-
-  .breadcrumb {
-    @extend .padding-bigger;
-
-    .link {
-      @extend .has-color-forest-green;
-    }
-  }
-}
-
 .blog-entries {
   .blog-entry {
     @extend .padding-vertical-larger;
@@ -231,7 +231,6 @@ a {
     }
   }
 }
-
 
 .single-post {
   .container {
@@ -404,6 +403,57 @@ a {
     @extend .padding-horizontal-big;
     @extend .padding-top-xl;
     @extend .padding-bottom-xxl;
+  }
+}
+
+.all-authors {
+  .title {
+    background-color: $color-lighter-gray;
+
+    .container {
+      @extend .padding-horizontal-big;
+      @extend .padding-bottom-xl;
+    }
+  }
+
+  .authors-list {
+    @extend .padding-horizontal-big;
+    @extend .padding-top-xl;
+    @extend .padding-bottom-xxl;
+  }
+
+  .author {
+    @extend .padding-big;
+
+    .image {
+      height: 3.75rem;
+      width: 3.75rem;
+    }
+
+    .mobile {
+      display: none;
+    }
+
+    .desktop {
+      display: inline;
+    }
+
+    @media only screen and (max-width: 768px) {
+      .mobile {
+        display: inline;
+      }
+      .desktop {
+        display: none;
+      }
+    }
+
+    .author-name {
+      @extend .padding-top-small;
+
+      .link {
+        @extend .has-color-dark-slate-gray;
+      }
+    }
   }
 }
 
