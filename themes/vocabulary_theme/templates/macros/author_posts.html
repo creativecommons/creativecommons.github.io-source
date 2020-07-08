@@ -1,12 +1,12 @@
 {% from "macros/author_name.html" import render_author_name %}
 
 {% macro render_author_posts(posts) %}
-  <div class="columns is-multiline blog-entries">
+  <div class="columns is-multiline">
     {% for post in posts %}
       {% set author = post.parent.parent.children.get('authors').children.get(post.author) %}
       <article class="card entry-post horizontal no-border blog-entry column is-one-third">
         <div class="blog-content">
-          <h4 class="b-header"><a class="blog-title" href="{{ post|url }}">{{ post.title }}</a></h4>
+          <h4 class="b-header"><a class="blog-title has-color-dark-slate-gray" href="{{ post|url }}">{{ post.title }}</a></h4>
           <span class="blog-author">by <a href="{{ author|url }}">{{ render_author_name(author) }}</a>
           on {{ post.pub_date|dateformat("YYYY-MM-dd") }}</span>
           <div class="excerpt">

@@ -568,6 +568,9 @@
         {
             "created": "2020-04-24T14:53:52",
             "description": "A polite image crawler that can thumbnail and extract metadata from images at scale",
+            "engineering_project": true,
+            "english_name": "Image Crawler",
+            "featured": false,
             "id": 258541870,
             "language": "Python",
             "license": {
@@ -576,6 +579,10 @@
             },
             "name": "image-crawler",
             "slack": "",
+            "technologies": [
+                "Python",
+                "asyncio"
+            ],
             "url": "https://github.com/creativecommons/image-crawler",
             "website": null
         },
@@ -1033,7 +1040,7 @@
             "created": "2020-06-11T17:20:52",
             "description": "WordPress theme for the CC Certificates website",
             "id": 271605671,
-            "language": null,
+            "language": "PHP",
             "license": null,
             "name": "wp-theme-certificates",
             "slack": "",
