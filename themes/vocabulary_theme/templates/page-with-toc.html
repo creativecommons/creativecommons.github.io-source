@@ -1,21 +1,65 @@
 {% extends "layout.html" %}
-{% block title %}{{ this.title }}{% endblock %}
+
 {% block body %}
-  <div class="card toc-card bg-light">
-    <div class="card-body">
-      <ul class="toc list-unstyled">
-        {% for item in this.body.toc %}
-          <li><a href="#{{ item.anchor }}">{{ item.title }}</a></li>
-          {% if item.children %}
-            <ul class="toc list-unstyled pl-4">
-              {% for subitem in item.children %}
-                <li><a href="#{{ subitem.anchor }}">{{ subitem.title }}</a></li>
-              {% endfor %}
-            </ul>
+  <div class="code-guidelines">
+    <header class="code-guidelines-title">
+      <div class="container is-paddingless">
+        <h1>{{ this.title }}</h1>
+        <div class="description column is-9 is-paddingless">
+          {{ this.description }}
+        </div>
+      </div>
+    </header>
+    <div class="container code-guidelines-body">
+      <div class="columns">
+        <div class="column is-one-quarter">
+          <div class="row">
+            {% if this.is_child_of('/contributing-code') %}
+            <aside class="menu sidebar-menu">
+              <ul class="menu-list">
+                <li>
+                  <a class="{% if this.is_child_of('/contributing-code/projects') %} is-active {% endif%} link" href="{{ '/contributing-code/projects'|url }}">Project List</a>
+                </li>
+                <hr class="divider">
+                <li>
+                  <a class="{% if this.is_child_of('/contributing-code') %} is-active {% endif%} link" href="{{ '/contributing-code'|url }}">Contribution Guidelines</a>
+                  <ul>
+                    <li><a class="{% if this.is_child_of('/contributing-code/pr-guidelines') %} is-active {% endif%} link" href="{{ '/contributing-code/pr-guidelines'|url }}"><i class="icon circle-filled"></i>PR Guidelines</a></li>
+                    <li><a class="{% if this.is_child_of('/contributing-code/github-repo-guidelines') %} is-active {% endif%} link" href="{{ '/contributing-code/github-repo-guidelines'|url }}"><i class="icon circle-filled"></i>Github Repo Guidelines</a></li>
+                  </ul>
+                </li>
+                <hr class="divider">
+                <li>
+                  <a class="link" href="{{ '/contributing-code/cc-search'|url }}">CC Search</a>
+                </li>
+              </ul>
+            </aside>
           {% endif %}
-        {% endfor %}
-      </ul>
+          </div>
+          <div class="row">
+            <h4 class="b-header">On this page</h4>
+            <aside class="menu table-of-contents">
+              <ul class="menu-list">
+                {% for item in this.body.toc %}
+                  <li>
+                    <a class="link" href="#{{ item.anchor }}">{{ item.title }}</a>
+                    {% if item.children %}
+                      <ul>
+                        {% for subitem in item.children %}
+                          <li><a class="link" href="#{{ subitem.anchor }}"><i class="icon circle-filled"></i>{{ subitem.title }}</a></li>
+                        {% endfor %}
+                      </ul>
+                    {% endif %}
+                  </li>
+                {% endfor %}
+              </ul>
+            </aside>
+          </div>
+        </div>
+        <div class="column markdown content">
+          {{ this.body }}
+        </div>
+      </div>
     </div>
   </div>
-  {{ this.body }}
 {% endblock %}
