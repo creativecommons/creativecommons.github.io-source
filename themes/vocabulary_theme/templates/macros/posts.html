@@ -4,27 +4,29 @@
   <div class="columns is-multiline blog-entries">
     {% for post in posts %}
       {% set author = post.parent.parent.children.get('authors').children.get(post.author) %}
-      <article class="card entry-post horizontal no-border blog-entry column is-one-third">
-        <header>
-          <figure class="image blog-image">
-            {% if author.about %}
-              {% if author.md5_hashed_email %}
-                <img class="profile" src="https://secure.gravatar.com/avatar/{{ author.md5_hashed_email }}?size=200" alt="gravatar" />
-              {% else %}
-                <img class="profile" src="./blank_profile.svg" alt="gravatar" />
+      <div class="column is-one-third">
+        <article class="card entry-post horizontal no-border blog-entry">
+          <header>
+            <figure class="image blog-image">
+              {% if author.about %}
+                {% if author.md5_hashed_email %}
+                  <img class="profile" src="https://secure.gravatar.com/avatar/{{ author.md5_hashed_email }}?size=200" alt="gravatar" />
+                {% else %}
+                  <img class="profile" src="./blank_profile.svg" alt="gravatar" />
+                {% endif %}
               {% endif %}
-            {% endif %}
-          </figure>
-        </header>
-        <div class="blog-content">
-          <h4 class="b-header"><a class="blog-title" href="{{ post|url }}">{{ post.title }}</a></h4>
-          <span class="blog-author">by <a href="{{ author|url }}">{{ render_author_name(author) }}</a>
-          on {{ post.pub_date|dateformat("YYYY-MM-dd") }}</span>
-          <div class="excerpt">
-            {{ post.body | excerpt | string | striptags() | truncate(100) }}
+            </figure>
+          </header>
+          <div class="blog-content">
+            <h4 class="b-header"><a class="blog-title" href="{{ post|url }}">{{ post.title }}</a></h4>
+            <span class="blog-author">by <a href="{{ author|url }}">{{ render_author_name(author) }}</a>
+            on {{ post.pub_date|dateformat("YYYY-MM-dd") }}</span>
+            <div class="excerpt">
+              {{ post.body | excerpt | string | striptags() | truncate(100) }}
+            </div>
           </div>
-        </div>
-      </article>
+        </article>
+      </div>
     {% endfor %}
   </div>
 {% endmacro %}

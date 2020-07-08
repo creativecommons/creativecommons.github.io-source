@@ -33,13 +33,13 @@ links_product:
 <h4 class="heading">Help us build our products</h4>
 
 <div class="list">
-  <h5 class="link-heading"><a href="https://opensource.creativecommons.org/contributing-code/" class="has-text-forest-green">Contribution Guidelines</a></h5>
+  <h5 class="link-heading"><a href="/contributing-code/" class="has-text-forest-green">Contribution Guidelines</a></h5>
   <p class="link-caption">Learn how to contribute and then get started.</p>
 
-  <h5 class="link-heading"><a href="https://opensource.creativecommons.org/community/community-team/" class="has-text-forest-green">Community Team</a></h5>
+  <h5 class="link-heading"><a href="/community/community-team/" class="has-text-forest-green">Community Team</a></h5>
   <p class="link-caption">Become a member of our community volunteer team.</p>
 
-  <h5 class="link-heading"><a href="https://opensource.creativecommons.org/contributing-code/projects/" class="has-text-forest-green">All Available Projects</a></h5>
+  <h5 class="link-heading"><a href="/contributing-code/projects/" class="has-text-forest-green">All Available Projects</a></h5>
   <p class="link-caption">See all of our open source projects in one place.</p>
 </div>
 ----

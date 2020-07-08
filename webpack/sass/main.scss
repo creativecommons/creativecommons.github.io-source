@@ -10,6 +10,7 @@ a {
   text-decoration: none;
 }
 
+// Will be replaced by content class from Bulma
 .markdown {
   @extend .body-big;
 
@@ -193,11 +194,15 @@ a {
 }
 
 .blog-entries {
+  .column {
+    &:not(:nth-last-child(-n+3)) {
+      border-bottom: 0.1875rem solid $color-light-gray !important;
+    }
+  }
+
   .blog-entry {
     @extend .padding-vertical-larger;
     @extend .padding-horizontal-big;
-
-    border-bottom: 0.1875rem solid $color-light-gray !important;
 
     .blog-title {
       @extend .has-color-dark-slate-gray;
@@ -226,7 +231,7 @@ a {
     @extend .padding-top-normal;
 
     .pagination-wrapper {
-      @extend .padding-top-xl;
+      @extend .padding-top-normal;
       @extend .padding-bottom-xxl;
     }
   }
@@ -274,21 +279,7 @@ a {
   }
 
   .single-post-body {
-    @extend .body-big;
     @extend .padding-top-bigger;
-
-    p {
-      @extend .padding-vertical-small;
-    }
-
-    h1,h2,h3,h4,h5,h6 {
-      @extend .padding-top-large;
-      @extend .padding-bottom-small;
-    }
-
-    ol,ul {
-      @extend .padding-horizontal-big;
-    }
 
     &:last-of-type::after {
       content: '';
