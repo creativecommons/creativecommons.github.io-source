@@ -125,12 +125,12 @@ a {
     @extend .padding-horizontal-big;
 
     .columns {
-      @extend .padding-top-larger;
+      @extend .padding-top-bigger;
       @extend .padding-bottom-xl;
     }
   }
 
-  .post-links {
+  .posts-link {
     @extend .has-color-forest-green;
     @extend .body-normal;
 

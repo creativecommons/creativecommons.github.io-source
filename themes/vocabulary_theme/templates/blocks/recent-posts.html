@@ -7,14 +7,14 @@
         {{ this.title }}
       </h4>
       <span class="level-right">
-        <a class="post-links" href="/blog">See all posts <i class="icon angle-right"></i></a>
+        <a class="posts-link" href="/blog">See all posts <i class="icon angle-right"></i></a>
       </span>
     </div>
     <div class="columns">
       {% for post in site.query('/blog/entries') %}
         {% if loop.index <= 3 %}
           {% set author = post.parent.parent.children.get('authors').children.get(post.author) %}
-          <div class="column is-one-third is-paddingless padding-horizontal-big">
+          <div class="column is-one-third is-paddingless padding-horizontal-big padding-top-bigger">
             <article class="card entry-post horizontal no-border blog-entry">
               <header>
                 <figure class="image blog-image">
