@@ -1,8 +1,14 @@
 {% extends "layout.html" %}
-{% from "macros/categories.html" import render_categories %}
-{% block title %}{{ this.parent.children.get('entries').title }}{% endblock %}
-{% block header %}{{ this.parent.children.get('entries').title }}{% endblock %}
+
+{% from "macros/series.html" import render_series %}
+
 {% block body %}
-  <h2>All Series</h2>
-  {{ render_categories(this) }}
+<div class="all-series">
+  <div class="title">
+    <h1 class="container">All Series</h1>
+  </div>
+  <div class="series-list container">
+    {{ render_series(this) }}
+  </div>
+</div>
 {% endblock %}
