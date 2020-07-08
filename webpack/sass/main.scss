@@ -21,8 +21,10 @@ a {
   }
 
   h1,h2,h3,h4,h5,h6 {
-    @extend .padding-top-large;
-    @extend .padding-bottom-small;
+    &:not(:first-of-type) {
+      @extend .padding-top-large;
+      @extend .padding-bottom-small;
+    }
   }
 
   ol,ul {
@@ -480,6 +482,7 @@ a {
 
     .content {
       @extend .padding-bottom-xxl;
+      @extend .padding-top-larger;
     }
   }
 }
