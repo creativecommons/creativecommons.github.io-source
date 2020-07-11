@@ -642,7 +642,7 @@
             "id": 47291677,
             "language": "HTML",
             "license": {
-                "name": "Creative Commons Zero v1.0 Universal",
+                "name": "MIT License",
                 "url": "https://github.com/creativecommons/mp/blob/master/LICENSE"
             },
             "name": "mp",
