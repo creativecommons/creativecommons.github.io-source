@@ -42,7 +42,7 @@ So if you're looking to integrate CC licenses or CC licensed works into your app
     <div class="card-body" align="center">
       <p class="card-text text-center">Use CC-licensed works in your application or (coming soon!) use our WordPress plugin to license your content.</p>
       <a href="https://api.creativecommons.engineering/" class="btn btn-sm btn-outline-primary">Catalog API</a>
-      <a href="/contributing-code/projects" class="btn btn-sm btn-outline-primary">All our projects</a>
+      <a href="/contributing-code/projects/" class="btn btn-sm btn-outline-primary">All our projects</a>
     </div>
   </div>
 
