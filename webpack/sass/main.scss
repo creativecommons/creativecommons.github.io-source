@@ -10,7 +10,14 @@ a {
   text-decoration: none;
 }
 
-// Will be replaced by content class from Bulma
+code {
+  @extend .has-color-dark-slate-gray;
+
+  background-color: $color-lighter-gray;
+  border: 1px solid $color-lighter-gray;
+  border-radius: 0.25rem;
+}
+
 .markdown {
   @extend .body-big;
 
@@ -29,14 +36,6 @@ a {
 
   ol,ul {
     @extend .padding-horizontal-big;
-  }
-
-  code {
-    @extend .has-color-dark-slate-gray;
-
-    background-color: $color-lighter-gray;
-    border: 1px solid $color-lighter-gray;
-    border-radius: 0.25rem;
   }
 }
 
@@ -342,6 +341,38 @@ a {
 
   .comments {
     @extend .padding-top-large;
+    @extend .padding-bottom-xxl;
+  }
+}
+
+.author-posts {
+  .title {
+    background-color: $color-lighter-gray;
+
+    .container {
+      @extend .padding-horizontal-big;
+      @extend .padding-bottom-xl;
+
+      .image {
+        width: 9.5rem;
+        height: 9.5rem;
+      }
+
+      .about {
+        @extend .body-big;
+        @extend .padding-top-big;
+
+        line-height: 1.8125;
+      }
+
+      .button {
+        @extend .margin-top-bigger;
+      }
+    }
+  }
+
+  .posts {
+    @extend .padding-top-xl;
     @extend .padding-bottom-xxl;
   }
 }
