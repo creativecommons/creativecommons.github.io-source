@@ -4,9 +4,9 @@ _template: page-with-toc.html
 ---
 title: GitHub Repo Guidelines
 ---
+description: This is a checklist for all public repositories hosted on the [Creative Commons GitHub organization](https://github.com/creativecommons). Not all repositories meet these criteria yet. Please notify us if a project you'd like to work on does not meet this checklist by opening a GitHub issue associated with the repository.
+---
 body:
-
-This is a checklist for all public repositories hosted on the [Creative Commons GitHub organization](https://github.com/creativecommons). Not all repositories meet these criteria yet. Please notify us if a project you'd like to work on does not meet this checklist by opening a GitHub issue associated with the repository.
 
 ## Required Items
 All GitHub repositories should have the following items to be considered fully ready for external contributors.
