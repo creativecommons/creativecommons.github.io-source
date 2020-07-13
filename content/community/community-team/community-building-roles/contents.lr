@@ -4,8 +4,9 @@ _template: page-with-toc.html
 ---
 title: Community Team: Community Building Roles
 ---
+description: This page serves as a guide for community building roles on CC's <a href="/community/community-team/">Community Team</a>.
+---
 body:
-This page serves as a guide for community building roles on CC's [Community Team][communityteam].
 
 Community building roles are for folks interested in helping grow CC's open source community by ensuring all contributors have a good experience and spreading the word about CC's projects.
 
