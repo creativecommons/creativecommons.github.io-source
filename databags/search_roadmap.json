@@ -54,14 +54,14 @@
                     "name": "Improved Support Pages"
                 },
                 {
-                    "description": "Offline Old Search (oldsearch.creativecommons.org) and redirect traffic to CC Search. Prior to this, build in messaging on Old Search, and support similar functionality on CC Search. See \"Meta Search Integration\" for related work.",
-                    "gid": "1149456632174214",
-                    "name": "Offline old CC Search"
-                },
-                {
                     "description": "Integrating meta search functionality into CC Search for sources that are not currently indexed, and content types we do not currently support.",
                     "gid": "1174575887784290",
                     "name": "Design Sprint: Meta Search Integration"
+                },
+                {
+                    "description": "Offline Old Search (oldsearch.creativecommons.org) and redirect traffic to CC Search. Prior to this, build in messaging on Old Search, and support similar functionality on CC Search. See \"Meta Search Integration\" for related work.",
+                    "gid": "1149456632174214",
+                    "name": "Offline old CC Search"
                 },
                 {
                     "description": "Make accessibility improvements to the UI.",
@@ -79,11 +79,6 @@
                     "name": "Audio Support and Integration"
                 },
                 {
-                    "description": "Develop metrics for and select a set of ~100 million high quality images for which we'll generate additional metadata through AWS Rekognition.",
-                    "gid": "1154270978154715",
-                    "name": "Image Selection for Rekognition [AWS Grant]"
-                },
-                {
                     "description": "Update our Common Crawl provider infrastructure to:\n(1) use Apache Airflow instead of AWS tools like Data Pipeline & Glue for processing data\n(2) unify provider processing to use the same base classes as API providers",
                     "gid": "1167425798148813",
                     "name": "Improve Common Crawl Infrastructure"
@@ -94,14 +89,9 @@
                     "name": "Use Data Dumps for Wikimedia Ingestion"
                 },
                 {
-                    "description": "Plan for potential integration of OER into CC Search through research and consideration of potential issues.",
-                    "gid": "1147157859839985",
-                    "name": "OER Planning"
-                },
-                {
-                    "description": "Research, mock up, and user test potential integrations for Web Monetization into CC Search and other CC web properties.",
+                    "description": "Research and test potential integrations for Web Monetization into CC Search and other CC web properties.",
                     "gid": "1153114910798067",
-                    "name": "Web Monetization: Research Phase"
+                    "name": "Web Monetization: Phase 1"
                 },
                 {
                     "description": "Build a UI for the Catalog API, where users can sign up, manage access, see usage metrics and statistics.",
@@ -172,11 +162,6 @@
                     "description": "Design and build an embed of CC Search that can be placed on any website, as a starting point to discover objects in CC Search. Components from Design Library must be used, with the goal of simplicity.",
                     "gid": "1168725971351188",
                     "name": "CC Search HTML Embed"
-                },
-                {
-                    "description": "Do a pilot integration of text-based content that is considered educational. Requires selection of source, Catalog and API structuring, frontend designs and integration.",
-                    "gid": "1144967092198600",
-                    "name": "Text Support and Integration"
                 },
                 {
                     "description": "Plan out the usage of scraping ccREL metadata from the internet to index new content into the CC Catalog.",
