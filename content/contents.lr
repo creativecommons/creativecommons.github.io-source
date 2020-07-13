@@ -18,7 +18,7 @@ So if you're looking to integrate CC licenses or CC licensed works into your app
     </div>
     <div class="card-body" align="center">
       <p class="card-text text-center">Join the CC developer chat and mailing list communities to connect with other developers working with CC tools.</p>
-      <a href="/community" class="btn btn-sm btn-outline-primary">See how to join</a>
+      <a href="/community/" class="btn btn-sm btn-outline-primary">See how to join</a>
     </div>
   </div>
 
@@ -29,7 +29,7 @@ So if you're looking to integrate CC licenses or CC licensed works into your app
     </div>
     <div class="card-body" align="center">
       <p class="card-text text-center">Fix one of our open issues or work on something new that you'd like to use. All skill levels are welcome.</p>
-      <a href="/contributing-code" class="btn btn-sm btn-outline-primary">Guidelines</a>
+      <a href="/contributing-code/" class="btn btn-sm btn-outline-primary">Guidelines</a>
       <a href="https://github.com/search?q=org%3Acreativecommons+is%3Aopen+label%3A%22help+wanted%22" class="btn btn-sm btn-outline-primary">"Help Wanted" issues</a>
     </div>
   </div>
@@ -42,7 +42,7 @@ So if you're looking to integrate CC licenses or CC licensed works into your app
     <div class="card-body" align="center">
       <p class="card-text text-center">Use CC-licensed works in your application or (coming soon!) use our WordPress plugin to license your content.</p>
       <a href="https://api.creativecommons.engineering/" class="btn btn-sm btn-outline-primary">Catalog API</a>
-      <a href="/contributing-code/projects" class="btn btn-sm btn-outline-primary">All our projects</a>
+      <a href="/projects/" class="btn btn-sm btn-outline-primary">All our projects</a>
     </div>
   </div>
 
@@ -52,7 +52,7 @@ So if you're looking to integrate CC licenses or CC licensed works into your app
       <img class="mx-auto d-block" src="/keyboard-solid.png" alt="Keyboard icon icon"/>
     </div>
     <div class="card-body" align="center">
-      <p class="card-text text-center">If you've worked on software that uses CC licenses or tools, tell the community about it on <a href="/blog">our tech blog</a>.</p>
+      <p class="card-text text-center">If you've worked on software that uses CC licenses or tools, tell the community about it on <a href="/blog/">our tech blog</a>.</p>
       <a href="/community/write-a-blog-post/" class="btn btn-sm btn-outline-primary">Write a blog post</a>
     </div>
   </div>
@@ -64,7 +64,7 @@ So if you're looking to integrate CC licenses or CC licensed works into your app
     </div>
     <div class="card-body" align="center">
       <p class="card-text text-center">Participate in one of our regular usability tests for CC tools that we're actively working on (we'll give you a gift card!)</p>
-      <a href="/contributing-code/usability" class="btn btn-sm btn-outline-primary">Learn more</a>
+      <a href="/contributing-code/usability/" class="btn btn-sm btn-outline-primary">Learn more</a>
       <a href="https://github.com/creativecommons/creativecommons.org/issues/new/choose" class="btn btn-sm btn-outline-primary">File an issue</a>
     </div>
   </div>
