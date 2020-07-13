@@ -1,12 +1,12 @@
 _model: page
 ---
-_template: page.html
+_template: page-with-toc.html
 ---
 title: Pull Request Guidelines
 ---
+description: We ask that contributors to CC projects submit a pull request with your changes. If you're not familiar with pull requests, please read [this GitHub documentation](https://help.github.com/en/articles/about-pull-requests). Here are our expectations for pull requests; following them will expedite the process of merging your code in.
+---
 body:
-
-We ask that contributors to CC projects submit a pull request with your changes. If you're not familiar with pull requests, please read [this GitHub documentation](https://help.github.com/en/articles/about-pull-requests). Here are our expectations for pull requests; following them will expedite the process of merging your code in.
 
 Read and follow the contributing guidelines and code of conduct for the project. Here are screenshots of where to find them for [first time contributors](first-time-contributor-resources.png) and [previous contributors](previous-contributor-resources.png).
 
