@@ -196,9 +196,7 @@ code {
 
 .blog-entries {
   .column {
-    &:not(:nth-last-child(-n+3)) {
-      border-bottom: 0.1875rem solid $color-light-gray !important;
-    }
+    border-bottom: 0.1875rem solid $color-light-gray;
   }
 
   .blog-entry {
