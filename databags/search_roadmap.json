@@ -1,7 +1,7 @@
 {
     "quarters": [
         {
-            "name": "Q2 2020",
+            "name": "Q3 2020",
             "tasks": [
                 {
                     "description": "Make changes to the search algorithm that incorporate image popularity data gathered from sources that provide it. ",
@@ -12,12 +12,7 @@
                     "description": "Move our data cleaning code from the ingestion step of the API to the initial data processing step of the Catalog to eliminate unnecessary repetitive data cleaning.",
                     "gid": "1167425798148805",
                     "name": "Move data cleaning pipeline from API to Catalog"
-                }
-            ]
-        },
-        {
-            "name": "Q3 2020",
-            "tasks": [
+                },
                 {
                     "description": "Manage Catalog deployment and provisioning entirely through infrastructure as code.",
                     "gid": "1167425798148811",
