@@ -1,6 +1,6 @@
 _model: page
 ---
-_template: page-with-toc.html
+_template: cc-search-guide.html
 ---
 title: Building a New Feature in CC Search
 ---
@@ -12,7 +12,8 @@ We also want to enable you - our community members - to build features that woul
 
 If you do want to build a new feature, and we would love it if you did, all we ask is that you follow the process outlined in this document to ensure a smooth experience for everyone involved.
 
-### Step 0: Evaluate Process
+<h4 class="b-header has-text-grey">Step 0</h4>
+### Evaluate Process
 
 **Figure out if you need to follow this process.**
 
@@ -33,7 +34,8 @@ Examples that should follow this process:
 - Adding a new filter to the search results page
     - **Reasoning**: It is user facing and requires some product input and may require infrastructural work to collect the data that the search results will filter on.
 
-### Step 1: GitHub Issue
+<h4 class="b-header has-text-grey">Step 1</h4>
+### GitHub Issue
 
 **Describe the feature on GitHub.**
 
@@ -41,7 +43,8 @@ Look through [our issues](https://github.com/creativecommons/cccatalog-frontend/
 
 On this GitHub issue, add a comment describing the feature you want to build and why you think it would be a good addition to CC Search. Add as much detail as you can.
 
-### Step 2: CC Response
+<h4 class="b-header has-text-grey">Step 2</h4>
+### CC Response
 
 **Wait for a CC staff member to respond.**
 
@@ -55,7 +58,8 @@ If at any time it has been more than five business days and you haven't received
 
 Once your feature has been preliminarily approved, proceed to Step 3.
 
-### Step 3: Planning
+<h4 class="b-header has-text-grey">Step 3</h4>
+### Planning
 
 **Plan your work.**
 
@@ -67,7 +71,8 @@ Once your implementation plan is ready, update the GitHub issue and wait for a s
 
 Once your plan has been approved, proceed to the next applicable step.
 
-### Step 4: Design
+<h4 class="b-header has-text-grey">Step 4</h4>
+### Design
 
 **Get Design and UX approved (if applicable).**
 
@@ -75,13 +80,15 @@ If your feature involves user-facing changes, please run these by us, either thr
 
 Once your design has been approved, proceed to Step 5.
 
-### Step 5: Dependencies
+<h4 class="b-header has-text-grey">Step 5</h4>
+### Dependencies
 
 **Wait for CC staff to resolve dependencies (if applicable).**
 
 If your feature depends on work that only CC staff can do, please wait for us to do that work. If you can start working on other parts of the feature in parallel, you may go ahead.
 
-### Step 6: Code
+<h4 class="b-header has-text-grey">Step 6</h4>
+### Code
 
 **Write your code.**
 
@@ -89,7 +96,8 @@ At this point, CC staff and you should be on the same page about how the feature
 
 Commit early and often, follow [our pull request and code guidelines](/contributing-code/pr-guidelines/), and write tests!
 
-### Step 7: Code Review
+<h4 class="b-header has-text-grey">Step 7</h4>
+### Code Review
 
 **Get feedback via code review.**
 
@@ -97,13 +105,15 @@ Once your pull request is ready, someone on CC staff will review your code and p
 
 You may have to do Steps 4-7 for multiple codebases in some cases, e.g. if your work includes both the CC Catalog API and CC Search, the API work will have to be done before the CC Search work that depends on it.
 
-### Step 8: Staging
+<h4 class="b-header has-text-grey">Step 8</h4>
+### Staging
 
 **Get feedback via live testing.**
 
 Once your code is merged, it will be deployed to the staging server and tested manually (in addition to the comprehensive automated tests that you've already written). We may need to run some changes by our product counsel. This may produce an additional round of feedback for you to address.
 
-### Step 9: Production
+<h4 class="b-header has-text-grey">Step 9</h4>
+### Production
 
 **The feature is live!**
 

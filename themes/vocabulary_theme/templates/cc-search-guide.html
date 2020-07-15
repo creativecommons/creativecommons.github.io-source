@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<div class="cc-search-guide">
+  <header class="title">
+    <div class="container is-paddingless">
+      <h1>{{ this.title }}</h1>
+    </div>
+  </header>
+  <div class="container body">
+    <div class="columns">
+      <div class="column is-one-quarter">
+        <div class="table-of-progress">
+          <h4 class="step-header">Steps</h4>
+          <ul>
+            {% for item in this.body.toc %}
+              <li class="step">
+                <a class="link" href="#{{ item.anchor }}">
+                  <span class="number">{{ loop.index - 1 }}</span>
+                  <span class="name">{{ item.title }}</span>
+                </a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+      <div class="column markdown content">
+        {{ this.body }}
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
