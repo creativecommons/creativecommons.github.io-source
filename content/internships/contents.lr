@@ -43,15 +43,64 @@ If you're interested in this program, please review the resources below and come
 
 Here are our mentors for this round of internships:
 
-| Name                          | Slack Username          | About                                                                            |
-| ----------------------------- | ----------------------- | -------------------------------------------------------------------------------- |
-| Alden Page                    | `@aldenpage`            | [See CC Open Source Blog author page](/blog/authors/aldenpage/)                  |                  
-| Anna Tumadóttir 	            | `@Anna`                 | [See CC staff bio](https://creativecommons.org/author/annacreativecommons-org/)  |
-| Ari Madian 	                  | `@Ari` 	                | [See CC Open Source Blog author page](/blog/authors/akmadian/)                   |
-| Brent Moran 	                | `@Brent`                |	[See CC Open Source Blog author page](/blog/authors/mathemancer/)                |
-| Dhruv Bhanushali 	            | `@dhruvkb` 	            | [See CC Open Source Blog author page](/blog/authors/dhruvkb/)                    |
-| Hugo Solar 	                  | `@hugo`                 |	[See CC Open Source Blog author page](/blog/authors/hugosolar/)                  |
-| Kriti Godey 	                | `@kriti` 	              | [See CC Open Source Blog author page](/blog/authors/kgodey/)                     |
-| María Belén Guaranda Cabezas 	| `@Maria Belen Guaranda` |	[See CC Open Source Blog author page](/blog/authors/soccerdroid/)                |
-| Sarah Hinchcliff Pearson 	    | `@shinchpearson`        |	[See CC staff bio](https://creativecommons.org/author/sarahcreativecommons-org/) |
-| Timid Robot Zehta 	          | `@Timid Robot`          |	[See CC Open Source Blog author page](/blog/authors/TimidRobot/)                 |
+<div class="table-container padding-vertical-normal">
+   <table class="table is-bordered is-striped">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Slack Username</th>
+        <th>About</th>
+      </tr>
+    </thead>
+    <tr>
+      <td>Alden Page</td>
+      <td><code>@aldenpage</code></td>
+      <td><a href="/blog/authors/aldenpage/">See CC Open Source Blog author page</a></td>
+    </tr>
+    <tr>
+      <td>Anna Tumadóttir</td>
+      <td><code>@Anna</code></td>
+      <td><a href="https://creativecommons.org/author/annacreativecommons-org/">See CC staff bio</a></td>
+    </tr>
+    <tr>
+      <td>Ari Madian</td>
+      <td><code>@Ari</code></td>
+      <td><a href="/blog/authors/akmadian/">See CC Open Source Blog author page</a></td>
+    </tr>
+    <tr>
+      <td>Brent Moran </td>
+      <td><code>@Brent</code></td>
+      <td><a href="/blog/authors/mathemancer/">See CC Open Source Blog author page</a></td>
+    </tr>
+    <tr>
+      <td>Dhruv Bhanushali</td>
+      <td><code>@dhruvkb</code></td>
+      <td><a href="/blog/authors/dhruvkb/">See CC Open Source Blog author page</a></td>
+    </tr>
+    <tr>
+      <td>Hugo Solar</td>
+      <td><code>@hugo</code></td>
+      <td><a href="/blog/authors/hugosolar/">See CC Open Source Blog author page</a></td>
+    </tr>
+    <tr>
+      <td>Kriti Godey</td>
+      <td><code>@kriti</code></td>
+      <td><a href="/blog/authors/kgodey/">See CC Open Source Blog author page</a></td>
+    </tr>
+    <tr>
+      <td>María Belén Guaranda Cabezas</td>
+      <td><code>@Maria Belen Guaranda</code></td>
+      <td><a href="/blog/authors/soccerdroid/">See CC Open Source Blog author page</a></td>
+    </tr>
+    <tr>
+      <td>Sarah Hinchcliff Pearson</td>
+      <td><code>@shinchpearsone</code></td>
+      <td><a href="https://creativecommons.org/author/sarahcreativecommons-org/">See CC staff bio</a></td>
+    </tr>
+    <tr>
+      <td>Timid Robot Zehta</td>
+      <td><code>@Timid Robot</code></td>
+      <td><a href="/blog/authors/TimidRobot/">See CC Open Source Blog author page</a></td>
+    </tr>
+  </table>
+</div>
