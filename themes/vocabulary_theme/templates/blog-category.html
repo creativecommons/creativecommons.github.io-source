@@ -2,11 +2,16 @@
 
 {% from "macros/posts.html" import render_posts %}
 
-{% block title %}{{ this.name + ' - ' + this.parent.parent.children.get('entries').title }}{% endblock %}
-{% block header %}{{ this.parent.parent.children.get('entries').title }}{% endblock %}
 {% block body %}
-  <h2>All posts categorized "{{ this.name }}"</h2>
-  {{ render_posts(this.children) }}
-  <hr>
-  <strong><a href="{{ this.parent|url }}">All Categories</a></strong>
+<div class="all-categories">
+  <div class="title">
+    <div class="container">
+      <h1>All posts categorized "{{ this.name }}"</h1>
+      <a class="button small margin-top-bigger" href="{{ this.parent|url }}">See all categories</a>
+    </div>
+  </div>
+  <div class="categories-list container">
+    {{ render_posts(this.children) }}
+  </div>
+</div>
 {% endblock %}
