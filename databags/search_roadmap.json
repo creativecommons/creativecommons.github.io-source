@@ -19,11 +19,6 @@
             "name": "Q3 2020",
             "tasks": [
                 {
-                    "description": "Designing and prototyping an upcoming user interface for searching for audio on CC Search.",
-                    "gid": "1163392248010945",
-                    "name": "Design Sprint: Audio UI for CC Search"
-                },
-                {
                     "description": "Manage Catalog deployment and provisioning entirely through infrastructure as code.",
                     "gid": "1167425798148811",
                     "name": "Improve Catalog Deployment and Provisioning"
@@ -72,6 +67,11 @@
                     "description": "Build infrastructure necessary for internationalization, to allow CC Search to be accessible in other languages.",
                     "gid": "1149456632174198",
                     "name": "Internationalization Infrastructure"
+                },
+                {
+                    "description": "Designing and prototyping an upcoming user interface for searching for audio on CC Search.",
+                    "gid": "1163392248010945",
+                    "name": "Design Sprint: Audio UI for CC Search"
                 },
                 {
                     "description": "Design and user test UIs for audio. Ingest a pilot collection of audio to the Catalog, build support in the API. Integrate design to frontend to allow users to search for CC licensed audio.",
