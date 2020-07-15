@@ -54,50 +54,52 @@
       <div class="active-project">
         <h2>All Active Projects</h2>
         <p class="padding-vertical-big">This is a complete list of active Creative Commons software projects. Archived projects are not documented here and can be found on the <strong><a href="https://github.com/cc-archive">CC Archive GitHub organization</a>.</strong></p>
-        <table class="table is-bordered  is-striped">
-          <thead>
-            <tr>
-              <th scope="col">#</th>
-              <th scope="col">Name</th>
-              <th scope="col">Description</th>
-              <th scope="col">Language</th>
-              <th scope="col">License</th>
-              <th scope="col">Links</th>
-            </tr>
-          </thead>
-          {% for repo in bag('repos.repos') %}
-            <tr>
-              <td class="padding-vertical-normal padding-right-xl padding-left-normal">{{ loop.index }}</td>
-              <td class="padding-vertical-normal padding-right-xl padding-left-normal">
-                <div class="text-bigger has-text-weight-bold padding-bottom-smaller">{{ repo.name }}</div>
-              </td>
-              {% if repo.description %}
-                <td class="padding-vertical-normal padding-right-xl padding-left-normal">{{ repo.description }}</td>
-              {% else %}
-                <td class="padding-vertical-normal padding-right-xl padding-left-normal"></td>
-              {% endif %}
-              <td class="padding-vertical-normal padding-right-xl padding-left-normal">
-                {% if repo.language %}{{ repo.language }}{% endif %}
-              </td>
-              {% if repo.license %}
+        <div class="table-container">
+          <table class="table is-bordered  is-striped">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th>
+                <th scope="col">Language</th>
+                <th scope="col">License</th>
+                <th scope="col">Links</th>
+              </tr>
+            </thead>
+            {% for repo in bag('repos.repos') %}
+              <tr>
+                <td class="padding-vertical-normal padding-right-xl padding-left-normal">{{ loop.index }}</td>
                 <td class="padding-vertical-normal padding-right-xl padding-left-normal">
-                  <a href="{{ repo.license.url }}" class="is-block">{{ repo.license.name }}</a>
+                  <div class="text-bigger has-text-weight-bold padding-bottom-smaller">{{ repo.name }}</div>
                 </td>
-              {% else %}
-                <td>Not specified</td>
-              {% endif %}
-              <td class="padding-vertical-normal padding-right-xl padding-left-normal">
-                {% if repo.website %}
-                  <a href="{{ repo.website }}" class="is-block has-color-dark-slate-gray">Website</a>
+                {% if repo.description %}
+                  <td class="padding-vertical-normal padding-right-xl padding-left-normal">{{ repo.description }}</td>
+                {% else %}
+                  <td class="padding-vertical-normal padding-right-xl padding-left-normal"></td>
                 {% endif %}
-                <a href="{{ repo.url }}" class="is-block has-color-dark-slate-gray"><i class="icon github padding-right-small"></i>Github</a>
-                {% if repo.slack %}
-                  <a href="{{ repo.url }}" class="is-block has-color-dark-slate-gray"><i class="icon slack padding-right-small"></i>Slack</a>
+                <td class="padding-vertical-normal padding-right-xl padding-left-normal">
+                  {% if repo.language %}{{ repo.language }}{% endif %}
+                </td>
+                {% if repo.license %}
+                  <td class="padding-vertical-normal padding-right-xl padding-left-normal">
+                    <a href="{{ repo.license.url }}" class="is-block">{{ repo.license.name }}</a>
+                  </td>
+                {% else %}
+                  <td>Not specified</td>
                 {% endif %}
-              </td>
-            </tr>
-          {% endfor %}
-        </table>
+                <td class="padding-vertical-normal padding-right-xl padding-left-normal">
+                  {% if repo.website %}
+                    <a href="{{ repo.website }}" class="is-block has-color-dark-slate-gray">Website</a>
+                  {% endif %}
+                  <a href="{{ repo.url }}" class="is-block has-color-dark-slate-gray"><i class="icon github padding-right-small"></i>Github</a>
+                  {% if repo.slack %}
+                    <a href="{{ repo.url }}" class="is-block has-color-dark-slate-gray"><i class="icon slack padding-right-small"></i>Slack</a>
+                  {% endif %}
+                </td>
+              </tr>
+            {% endfor %}
+          </table>
+        </div>
       </div>
     </div>
   </div>
