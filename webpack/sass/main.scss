@@ -516,6 +516,47 @@ code {
   }
 }
 
+.project-list {
+  .title {
+    background-color: $color-lighter-gray;
+
+
+    .container {
+      @extend .padding-horizontal-big;
+
+      .description {
+        @extend .padding-top-normal;
+        @extend .padding-bottom-xl;
+        @extend .body-bigger;
+
+        line-height: 1.4375;
+      }
+    }
+  }
+
+  .body {
+    @extend .padding-horizontal-big;
+    @extend .body-big;
+    @extend .padding-top-larger;
+    @extend .padding-bottom-xxl;
+
+    line-height: 1.8125;
+
+    .featured-projects {
+      @extend .padding-vertical-larger;
+
+      .columns {
+        @extend .padding-bottom-smaller;
+      }
+    }
+
+    .table {
+      @extend .margin-top-normal;
+      @extend .margin-bottom-xxl;
+    }
+  }
+}
+
 .cc-search-guide {
   .title {
     background-color: $color-lighter-gray;
