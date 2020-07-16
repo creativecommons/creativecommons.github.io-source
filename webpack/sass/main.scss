@@ -532,3 +532,82 @@ code {
     @extend .padding-bottom-xxl;
   }
 }
+
+.project-ideas {
+  .title {
+    background-color: $color-lighter-gray;
+
+    .container {
+      @extend .padding-horizontal-big;
+      @extend .padding-bottom-xl;
+
+      .description {
+        @extend .padding-top-normal;
+        @extend .body-bigger;
+
+        line-height: 2.0625;
+      }
+
+      .filter-labels {
+        @extend .padding-top-xl;
+
+        .button {
+          @extend .margin-right-normal;
+          @extend .margin-bottom-normal;
+        }
+      }
+
+      .project-ideas {
+        @extend .padding-top-normal;
+
+        .column {
+          @extend .padding-right-big;
+          @extend .padding-bottom-big;
+        }
+
+        .card {
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  .body {
+    @extend .padding-top-larger;
+    @extend .padding-bottom-xxl;
+
+    .project-idea {
+      @extend .padding-bottom-xl;
+      
+      .column {
+        @extend .padding-top-normal;
+  
+        .label {
+          @extend .b-header;
+          @extend .padding-top-big;
+        }
+  
+        .content {
+          @extend .body-normal;
+          @extend .padding-top-small;
+        }
+      }
+
+      &::after {
+        @extend .padding-top-big;
+
+        display: block;
+
+        content: '';
+
+        border-bottom:  0.1875rem solid $color-light-gray;
+      }
+    }
+
+    .original-idea {
+      .label {
+        @extend .has-color-dark-slate-gray;
+      }
+    }
+  }
+}
