@@ -1,7 +1,7 @@
 {
     "quarters": [
         {
-            "name": "Q2 2020",
+            "name": "Q3 2020",
             "tasks": [
                 {
                     "description": "Make changes to the search algorithm that incorporate image popularity data gathered from sources that provide it. ",
@@ -12,16 +12,6 @@
                     "description": "Move our data cleaning code from the ingestion step of the API to the initial data processing step of the Catalog to eliminate unnecessary repetitive data cleaning.",
                     "gid": "1167425798148805",
                     "name": "Move data cleaning pipeline from API to Catalog"
-                }
-            ]
-        },
-        {
-            "name": "Q3 2020",
-            "tasks": [
-                {
-                    "description": "Designing and prototyping an upcoming user interface for searching for audio on CC Search.",
-                    "gid": "1163392248010945",
-                    "name": "Design Sprint: Audio UI for CC Search"
                 },
                 {
                     "description": "Manage Catalog deployment and provisioning entirely through infrastructure as code.",
@@ -72,6 +62,11 @@
                     "description": "Build infrastructure necessary for internationalization, to allow CC Search to be accessible in other languages.",
                     "gid": "1149456632174198",
                     "name": "Internationalization Infrastructure"
+                },
+                {
+                    "description": "Designing and prototyping an upcoming user interface for searching for audio on CC Search.",
+                    "gid": "1163392248010945",
+                    "name": "Design Sprint: Audio UI for CC Search"
                 },
                 {
                     "description": "Design and user test UIs for audio. Ingest a pilot collection of audio to the Catalog, build support in the API. Integrate design to frontend to allow users to search for CC licensed audio.",
