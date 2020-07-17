@@ -516,6 +516,47 @@ code {
   }
 }
 
+.project-list {
+  .title {
+    background-color: $color-lighter-gray;
+
+
+    .container {
+      @extend .padding-horizontal-big;
+
+      .description {
+        @extend .padding-top-normal;
+        @extend .padding-bottom-xl;
+        @extend .body-bigger;
+
+        line-height: 1.4375;
+      }
+    }
+  }
+
+  .body {
+    @extend .padding-horizontal-big;
+    @extend .body-big;
+    @extend .padding-top-larger;
+    @extend .padding-bottom-xxl;
+
+    line-height: 1.8125;
+
+    .featured-projects {
+      @extend .padding-vertical-larger;
+
+      .columns {
+        @extend .padding-bottom-smaller;
+      }
+    }
+
+    .table {
+      @extend .margin-top-normal;
+      @extend .margin-bottom-xxl;
+    }
+  }
+}
+
 .cc-search-guide {
   .title {
     background-color: $color-lighter-gray;
@@ -591,6 +632,16 @@ code {
           @extend .body-normal;
           @extend .padding-top-small;
         }
+
+        li:before {
+          content: "\ea02";
+          font-family: "Vocabulary Icons";
+          display: inline-block;
+          font-size: 0.375rem;
+          color: $color-gray;
+
+          @extend .padding-right-small;
+        }
       }
 
       &::after {
@@ -607,6 +658,17 @@ code {
     .original-idea {
       .label {
         @extend .has-color-dark-slate-gray;
+      }
+    }
+
+    .back-to-list {
+      @extend .has-color-dark-turquoise;
+      @extend .caption;
+
+      text-decoration: none;
+    
+      .icon {
+        @extend .padding-right-small;
       }
     }
   }
