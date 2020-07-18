@@ -9,8 +9,8 @@ body:
 
 Two months ago we set out to develop a brand new interface for [search.creativecommons.org](http://search.creativecommons.org). During that time, two UIs have been in testing alongside the current search. All visitors have had the option to switch their experience over to one of the beta versions.
 
-  1. [A drop-down list](/demos/search/search1/) of supported search engines
-  2. [A radio button group](/demos/search/search2/) of search engines
+  1. [A drop-down list](/demos/search/search1) of supported search engines
+  2. [A radio button group](/demos/search/search2) of search engines
 
 
 
