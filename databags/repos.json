@@ -104,22 +104,6 @@
             "website": null
         },
         {
-            "created": "2019-01-29T21:17:39",
-            "description": "Temporary microsite for mx.creativecommons.org",
-            "engineering_project": true,
-            "featured": false,
-            "id": 168230429,
-            "language": null,
-            "license": {
-                "name": "MIT License",
-                "url": "https://github.com/creativecommons/cc-mexico-micro/blob/master/LICENSE"
-            },
-            "name": "cc-mexico-micro",
-            "slack": "",
-            "url": "https://github.com/creativecommons/cc-mexico-micro",
-            "website": "https://mx.creativecommons.org/"
-        },
-        {
             "created": "2014-01-08T18:49:45",
             "description": "Collection of resources on CC tools and other open topics",
             "engineering_project": true,
@@ -314,7 +298,7 @@
                 "Vue.js"
             ],
             "url": "https://github.com/creativecommons/cccatalog-frontend",
-            "website": "https://search.creativecommons.org/"
+            "website": "https://search.creativecommons.org"
         },
         {
             "created": "2014-10-06T22:07:52",
