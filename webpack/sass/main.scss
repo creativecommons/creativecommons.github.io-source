@@ -616,6 +616,7 @@ code {
   .body {
     @extend .padding-top-larger;
     @extend .padding-bottom-xxl;
+    @extend .padding-horizontal-big;
 
     .project-idea {
       @extend .padding-bottom-xl;
