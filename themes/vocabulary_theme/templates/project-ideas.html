@@ -1,70 +1,93 @@
 {% extends "layout.html" %}
-{% block title %}Open Source Internships: Project Ideas{% endblock %}
 
-{% block header %}Open Source Internships: Project Ideas{% endblock %}
 {% block body %}
-
-  <p class="lead">This is the project idea list for <strong>Google Season of Docs 2020</strong>.</p>
-  <hr/>
-  <!-- We display all ideas by default. -->
-  {% set ideas = site.query('/internships/project-ideas-collection').include_undiscoverable(true) %}
-  <div class="mt-4">
-    <div>
-      <button type="button" class="m-1 btn btn-sm btn-dark filter-btn" data-filter="all">
-        All Projects
-      </button>
-      <button type="button" class="m-1 btn btn-sm btn-primary filter-btn" data-filter="difficulty-easy">
-        Difficulty: Easy
-      </button>
-      <button type="button" class="m-1 btn btn-sm btn-primary filter-btn" data-filter="difficulty-medium">
-        Difficulty: Medium
-      </button>
-      <button type="button" class="m-1 btn btn-sm btn-primary filter-btn" data-filter="difficulty-hard">
-        Difficulty: Hard
-      </button>
-      <button type="button" class="m-1 btn btn-sm btn-primary filter-btn" data-filter="skill-javascript">
-        Skill: JavaScript
-      </button>
-      <button type="button" class="m-1 btn btn-sm btn-primary filter-btn" data-filter="skill-python">
-        Skill: Python
-      </button>
-      <button type="button" class="m-1 btn btn-sm btn-primary filter-btn" data-filter="skill-wordpress">
-        Skill: WordPress
-      </button>
-      <button type="button" class="m-1 btn btn-sm btn-primary filter-btn" data-filter="skill-writing">
-        Skill: Writing
-      </button>
-      <ul class="list-unstyled m-3">
-      {% for idea in ideas %}
-        <li class="my-2 filter filter-label {{ idea.filter_value }}"><a href="#{{ idea._slug }}">{{ idea.title }}</a></li>
-      {% endfor %}
-        <li class="my-2"><a href="#original-ideas">Original Ideas</a></li>
-      </ul>
-    </div>
-    <hr/>
-    {% for idea in ideas %}
-      <div class="project-idea-card m-1 mb-4 filter filter-block {{ idea.filter_value }}">
-        <h2 class="card-header project-idea-header"><a name="{{ idea._slug }}">{{ idea.title }}</a></h5>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item"><strong>The Problem:</strong> {{ idea.problem }}</li>
-          <li class="list-group-item"><strong>Expected Outcome:</strong> {{ idea.expected_outcome }}</li>
-          <li class="list-group-item"><strong>Internship Tasks:</strong> {{ idea.internship_tasks }}</li>
-          <li class="list-group-item"><strong>Application Tips:</strong> {{ idea.application_tips }}</li>
-          <li class="list-group-item"><strong>Resources:</strong> {{ idea.resources }}</li>
-          <li class="list-group-item"><strong>Skills recommended:</strong> {{ idea.skills_recommended }}</li>
-          <li class="list-group-item"><strong>Mentors:</strong> {{ idea.mentors }}</li>
-          <li class="list-group-item"><strong>Difficulty:</strong> {{ idea.difficulty }}</li>
-        </ul>
+  <div class="project-ideas">
+    <div class="title">
+      <div class="container">
+        <h1>Open Source Internships: Project Ideas</h1>
+        <p class="description">This is the project idea list for the <span class="has-color-forest-green">current round of open source internships at Creative Commons.</span></p>
+        {% set ideas = site.query('/internships/project-ideas-collection').include_undiscoverable(true) %}
+        <div class="filter-labels" id="project-list">
+          <button type="button" class="button tag filter-btn" data-filter="all">
+            All Projects
+          </button>
+          <button type="button" class="button tag filter-btn" data-filter="difficulty-easy">
+            Difficulty: Easy
+          </button>
+          <button type="button" class="button tag filter-btn" data-filter="difficulty-medium">
+            Difficulty: Medium
+          </button>
+          <button type="button" class="button tag filter-btn" data-filter="difficulty-hard">
+            Difficulty: Hard
+          </button>
+          <button type="button" class="button tag filter-btn" data-filter="skill-javascript">
+            Skill: JavaScript
+          </button>
+          <button type="button" class="button tag filter-btn" data-filter="skill-python">
+            Skill: Python
+          </button>
+          <button type="button" class="button tag filter-btn" data-filter="skill-wordpress">
+            Skill: WordPress
+          </button>
+          <button type="button" class="button tag filter-btn" data-filter="skill-writing">
+            Skill: Writing
+          </button>
+        </div>
+        <div class="project-ideas columns is-multiline">
+          {% for idea in ideas %}
+          <div class="column is-one-quarter filter filter-label {{ idea.filter_value }}">
+            <article class="card entry-post horizontal">
+              <div class="card-content with-button">
+                <h5 class="card-title"><a href="#{{ idea._slug }}">{{ idea.title }}</a></h5>
+              </div>
+            </article>
+          </div>
+          {% endfor %}
+          <div class="column is-one-quarter">
+            <article class="card entry-post horizontal">
+              <div class="card-content with-button">
+                <h5 class="card-title"><a href="#original-ideas">Original Ideas</a></h5>
+              </div>
+            </article>
+          </div>
+        </div>
       </div>
-    {% endfor %}
-    <div class="project-idea-card m-1 mb-4">
-      <h2 class="card-header project-idea-header"><a name="original-ideas">Original Ideas</a></h5>
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item">
-          <p>We are open to original ideas for documentation improvements.</p>
-          <p>Please talk to us on the <code>#cc-gsoc-outreachy</code> channel on Slack or via the mailing list to find a mentor for the project before submitting your proposal.</p>
-        </li>
-      </ul>
+    </div>
+    <div class="body container">
+      {% for idea in ideas %}
+        <div class="project-idea">
+          <h2><a class="has-color-dark-slate-gray" name="{{ idea._slug }}">{{ idea.title }}</a></h2>
+          <div class="columns">
+            <div class="column is-one-quarter">
+              <h5 class="label">Difficulty</h5>
+              <p class="content">{{ idea.difficulty }}</p>
+              <h5 class="label">Skills recommended</h5>
+              <p class="content">{{ idea.skills_recommended }}</p>
+              <h5 class="label">Mentors</h5>
+              <p class="content">{{ idea.mentors }}</p>
+            </div>
+            <div class="column is-three-quarters">
+              <h5 class="label">The Problem</h5>
+              <p class="content">{{ idea.problem }}</p>
+              <h5 class="label">Expected Outcome</h5>
+              <p class="content">{{ idea.expected_outcome }}</p>
+              <h5 class="label">Internship Tasks</h5>
+              <p class="content">{{ idea.internship_tasks }}</p>
+              <h5 class="label">Application Tips</h5>
+              <p class="content">{{ idea.application_tips }}</p>
+              <h5 class="label">Resources</h5>
+              <p class="content">{{ idea.resources }}</p>
+            </div>
+          </div>
+          <a href="#project-list" class="back-to-list"><i class="icon angle-up"></i> Back to the Project list</a>
+        </div>
+      {% endfor %}
+      <div>
+        <h2 class="b-header"><a name="original-ideas" class="has-color-dark-slate-gray">Original Ideas</a></h2>
+        <p class="content padding-vertical-smaller">We are open to original ideas for documentation improvements.</p>
+        <p class="content padding-vertical-smaller">Please talk to us on the <code>#cc-gsoc-outreachy</code> channel on Slack or via the mailing list to find a mentor for the project before submitting your proposal.</p>
+        <a href="#project-list" class="back-to-list"><i class="icon angle-up"></i> Back to the Project list</a>
+      </div>
     </div>
   </div>
 {% endblock %}
