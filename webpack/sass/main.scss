@@ -574,6 +574,23 @@ code {
   }
 }
 
+.community-team-members {
+  .container {
+    @extend .padding-horizontal-big;
+    @extend .padding-bottom-xl;
+  }
+  
+  .title {
+    background-color: $color-lighter-gray;
+    overflow-wrap: break-word;
+
+      .description {
+        @extend .body-bigger;
+        @extend .padding-top-small;
+      }
+  }
+}
+
 .cc-search-roadmap {
   .title {
     background-color: $color-lighter-gray;
