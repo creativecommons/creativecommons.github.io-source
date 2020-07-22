@@ -4,9 +4,9 @@ _template: page-with-toc.html
 ---
 title: Open Source Internships: Mentor Guide
 ---
+description: CC participates in open source mentorship programs such as [Google Summer of Code](https://summerofcode.withgoogle.com/) and [Outreachy](https://www.outreachy.org/). Both CC staff and community members are welcome to mentor projects. Details about specific programs and rounds are listed in the [Overview page](/internships); this page serves as a general mentorship guide.
+---
 body:
-
-CC participates in open source mentorship programs such as [Google Summer of Code](https://summerofcode.withgoogle.com/) and [Outreachy](https://www.outreachy.org/). Both CC staff and community members are welcome to mentor projects. Details about specific programs and rounds are listed in the [Overview page](/internships); this page serves as a general mentorship guide.
 
 ## Considering Mentorship?
 

@@ -62,6 +62,27 @@
                   </li>
                 </ul>
               </aside>
+            {% elif this.is_child_of('/internships') %}
+              <aside class="menu sidebar-menu">
+                <ul class="menu-list">
+                  <li>
+                    <a class="{% if this._path == '/internships' %} is-active {% endif%} link" href="{{ '/internships'|url }}">Overview</a>
+                    <ul>
+                      <li><a class="{% if this._path == '/internships/applicant-guide' %} is-active {% endif%} link" href="{{ '/internships/applicant-guide'|url }}"><i class="icon circle-filled"></i>Applicant Guide</a></li>
+                      <li><a class="{% if this._path == '/internships/intern-guide' %} is-active {% endif%} link" href="{{ '/internships/intern-guide'|url }}"><i class="icon circle-filled"></i>Intern Guide</a></li>
+                      <li><a class="{% if this._path == '/internships/mentor-guide' %} is-active {% endif%} link" href="{{ '/internships/mentor-guide'|url }}"><i class="icon circle-filled"></i>Mentor Guide</a></li>
+                    </ul>
+                  </li>
+                  <hr class="divider">
+                  <li>
+                    <a class="{% if this._path == '/internships/project-ideas' %} is-active {% endif%} link" href="{{ '/internships/project-ideas'|url }}">Project Ideas</a>
+                  </li>
+                  <hr class="divider">
+                  <li>
+                    <a class="{% if this._path == '/internships/history' %} is-active {% endif%} link" href="{{ '/internships/history'|url }}">History</a>
+                  </li>
+                </ul>
+              </aside>
             {% endif %}
           </div>
           <div class="row">
