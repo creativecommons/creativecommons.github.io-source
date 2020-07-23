@@ -64,6 +64,6 @@ Each repo should have a `.cc-metadata.yml` file in the root directory with the f
   </code>
 </pre>
 
-This metadata file is used in the [Projects](/projects) page. Repos that are marked as non-engineering projects are not displayed in the page and repos marked as featured as displayed at the top of the page. Repos should be marked as featured if we are actively looking for community contributions and have the bandwidth to review them quickly.
+This metadata file is used in the [Projects](/projects/) page. Repos that are marked as non-engineering projects are not displayed in the page and repos marked as featured as displayed at the top of the page. Repos should be marked as featured if we are actively looking for community contributions and have the bandwidth to review them quickly.
 
 Repos without this metadata file are treated as `engineering_projects: true`, `featured: false` and `slack: ""`. A default is necessary since it will take time for us to clean up and add metadata to all our repos.
