@@ -892,7 +892,7 @@
             "description": "A cohesive design system to unify the web facing Creative Commons",
             "engineering_project": true,
             "english_name": "CC Vocabulary",
-            "featured": false,
+            "featured": true,
             "id": 224004769,
             "language": "CSS",
             "license": {
@@ -902,13 +902,10 @@
             "name": "vocabulary",
             "slack": "cc-dev-vocabulary",
             "technologies": [
-                "JavaScript",
-                "Vue",
+                "Sass",
                 "Webpack",
-                "Babel",
-                "Stylus",
-                "Styleguidist",
-                "Theo"
+                "Storybook",
+                "Bulma"
             ],
             "url": "https://github.com/creativecommons/vocabulary",
             "website": "https://cc-vocabulary.netlify.app/"
