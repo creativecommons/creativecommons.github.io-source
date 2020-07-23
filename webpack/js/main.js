@@ -32,6 +32,13 @@ $(document).ready(function () {
             $(".navbar-item.has-dropdown.is-active").removeClass('is-active');
         }
     });
+
+    // Internal Navigation for table of contents component
+    $(window).on('hashchange', function() {
+        let hash = window.location.hash;
+        $('.menu-list a[href*="#"]').closest('a').removeClass('is-active');
+        $('.menu-list a[href=\"' + hash + '\"]').closest('a').addClass('is-active');
+    });
 });
 
 const getFullyQualifiedUrl = (path, version) => {
@@ -55,4 +62,3 @@ const patchAssetIntoDom = (asset, version = null) => {
 
     ajax.send();
 }
-
