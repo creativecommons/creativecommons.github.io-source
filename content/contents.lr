@@ -16,7 +16,7 @@ We work on code and products that support digital creativity and sharing, from u
 links:
 
 <div class="hero-links">
-  <a class="button small is-info row" href="/community">Join the Developer Community</a>
+  <a class="button small is-success row" href="/community">Join the Developer Community</a>
   <a class="button small row" href="https://twitter.com/creativecommons"><i class="icon twitter"></i>Follow us on twitter</a>
 </div>
 
