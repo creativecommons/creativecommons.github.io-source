@@ -1,12 +1,8 @@
-@import "../node_modules/@creativecommons/vocabulary/css/vocabulary.css";
-@import "../node_modules/@creativecommons/vocabulary/scss/spacing.scss";
-@import "../node_modules/@creativecommons/vocabulary/scss/color.scss";
-@import "../node_modules/@creativecommons/vocabulary/scss/typography.scss";
+@import "../node_modules/@creativecommons/vocabulary/scss/vocabulary.scss";
 
 // links
 a {
-  @extend .has-color-forest-green;
-
+  color: $color-forest-green;
   text-decoration: none;
 }
 
