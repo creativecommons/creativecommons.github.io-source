@@ -7,8 +7,7 @@ a {
 }
 
 code {
-  @extend .has-color-dark-slate-gray;
-
+  color: $color-dark-slate-gray;
   background-color: $color-lighter-gray;
   border: 1px solid $color-lighter-gray;
   border-radius: 0.25rem;

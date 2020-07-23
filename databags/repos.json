@@ -104,22 +104,6 @@
             "website": null
         },
         {
-            "created": "2019-01-29T21:17:39",
-            "description": "Temporary microsite for mx.creativecommons.org",
-            "engineering_project": true,
-            "featured": false,
-            "id": 168230429,
-            "language": null,
-            "license": {
-                "name": "MIT License",
-                "url": "https://github.com/creativecommons/cc-mexico-micro/blob/master/LICENSE"
-            },
-            "name": "cc-mexico-micro",
-            "slack": "",
-            "url": "https://github.com/creativecommons/cc-mexico-micro",
-            "website": "https://mx.creativecommons.org/"
-        },
-        {
             "created": "2014-01-08T18:49:45",
             "description": "Collection of resources on CC tools and other open topics",
             "engineering_project": true,
@@ -314,7 +298,7 @@
                 "Vue.js"
             ],
             "url": "https://github.com/creativecommons/cccatalog-frontend",
-            "website": "https://search.creativecommons.org/"
+            "website": "https://search.creativecommons.org"
         },
         {
             "created": "2014-10-06T22:07:52",
@@ -642,7 +626,7 @@
             "id": 47291677,
             "language": "HTML",
             "license": {
-                "name": "Creative Commons Zero v1.0 Universal",
+                "name": "MIT License",
                 "url": "https://github.com/creativecommons/mp/blob/master/LICENSE"
             },
             "name": "mp",
@@ -908,7 +892,7 @@
             "description": "A cohesive design system to unify the web facing Creative Commons",
             "engineering_project": true,
             "english_name": "CC Vocabulary",
-            "featured": false,
+            "featured": true,
             "id": 224004769,
             "language": "CSS",
             "license": {
@@ -918,13 +902,10 @@
             "name": "vocabulary",
             "slack": "cc-dev-vocabulary",
             "technologies": [
-                "JavaScript",
-                "Vue",
+                "Sass",
                 "Webpack",
-                "Babel",
-                "Stylus",
-                "Styleguidist",
-                "Theo"
+                "Storybook",
+                "Bulma"
             ],
             "url": "https://github.com/creativecommons/vocabulary",
             "website": "https://cc-vocabulary.netlify.app/"
