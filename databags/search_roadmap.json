@@ -89,16 +89,6 @@
                     "name": "Web Monetization: Phase 1"
                 },
                 {
-                    "description": "Build a UI for the Catalog API, where users can sign up, manage access, see usage metrics and statistics.",
-                    "gid": "1149478266493761",
-                    "name": "API UI with Usage Dashboard"
-                },
-                {
-                    "description": "Make CC Catalog API documentation more accessible to CC Search users, and improve user experience.",
-                    "gid": "1164969092703369",
-                    "name": "API documentation improvements"
-                },
-                {
                     "description": "Store a private copy of all the images in the CC Catalog to analyze via machine learning.",
                     "gid": "1154270978154722",
                     "name": "Scraping & Resizing Work [AWS Grant]"
@@ -153,6 +143,11 @@
         {
             "name": "Q4 2020",
             "tasks": [
+                {
+                    "description": "Make CC Catalog API documentation more accessible to CC Search users, and improve user experience.",
+                    "gid": "1164969092703369",
+                    "name": "API documentation improvements"
+                },
                 {
                     "description": "Design and build an embed of CC Search that can be placed on any website, as a starting point to discover objects in CC Search. Components from Design Library must be used, with the goal of simplicity.",
                     "gid": "1168725971351188",
