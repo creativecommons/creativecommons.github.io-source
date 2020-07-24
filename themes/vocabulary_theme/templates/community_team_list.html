@@ -1,14 +1,14 @@
 {% extends "layout.html" %}
 
 {% block body %}
-  <div class="community-team-members">
+  <div>
     <div class="title">
       <div class="container">
         <h1>{{ this.title }}</h1>
-        <p class="description column is-9">This is a list of all CC Community Team members, and their roles and privileges. For more information about CC Community Team, please see <a href="/community/community-team/">the Community Team Page</a>.</p>
+        <p class="description column is-9 is-paddingless">This is a list of all CC Community Team members, and their roles and privileges. For more information about CC Community Team, please see <a href="/community/community-team/">the Community Team Page</a>.</p>
       </div>
     </div>
-    <div class="body container">
+    <div class="container padding-horizontal-big padding-bottom-xl">
       <h2 class="padding-top-bigger">Project Teams</h2>
       {% for project in bag('community_team_members.projects') %}
         <h3 class="b-header padding-vertical-normal">{{ project.name }}</h3>
