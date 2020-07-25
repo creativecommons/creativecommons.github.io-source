@@ -32,6 +32,18 @@ $(document).ready(function () {
             $(".navbar-item.has-dropdown.is-active").removeClass('is-active');
         }
     });
+
+    // Internal Navigation for table of contents component
+    let hash = window.location.hash;
+    if (hash.length > 0) {
+        $('.menu-list').find('a[href=\"' + hash + '\"]').addClass('is-active');
+    }
+
+    $(window).on('hashchange', function() {
+        let hash = window.location.hash;
+        $('.menu-list a[href*="#"]').closest('a').removeClass('is-active');
+        $('.menu-list').find('a[href=\"' + hash + '\"]').addClass('is-active');
+    });
 });
 
 const getFullyQualifiedUrl = (path, version) => {
