@@ -67,4 +67,3 @@ const patchAssetIntoDom = (asset, version = null) => {
 
     ajax.send();
 }
-
