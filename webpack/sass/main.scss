@@ -14,27 +14,6 @@ code {
   border-radius: 0.25rem;
 }
 
-.markdown {
-  @extend .body-big;
-
-  line-height: 1.6875;
-
-  p {
-    @extend .padding-vertical-small;
-  }
-
-  h1,h2,h3,h4,h5,h6 {
-    &:not(:first-of-type) {
-      @extend .padding-top-large;
-      @extend .padding-bottom-small;
-    }
-  }
-
-  ol,ul {
-    @extend .padding-horizontal-big;
-  }
-}
-
 // Navbar
 .navbar-item {
   &.has-dropdown {
@@ -474,8 +453,11 @@ code {
     }
 
     .content {
+      @extend .body-big;
       @extend .padding-bottom-xxl;
-      @extend .padding-top-larger;
+      @extend .padding-top-xl;
+
+      line-height: 1.6875;
     }
   }
 }
