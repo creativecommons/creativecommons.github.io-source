@@ -160,8 +160,8 @@ code {
     @extend .padding-bottom-larger;
 
     .column {
-      @extend .margin-horizontal-big;
-      @extend .margin-bottom-larger;
+      @extend .padding-right-larger;
+      @extend .padding-bottom-larger;
 
       height: 100%;
     }
