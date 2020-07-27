@@ -13,6 +13,12 @@ code {
   border-radius: 0.25rem;
 }
 
+.content {
+  @extend .body-big;
+
+  line-height: 1.6875;
+}
+
 .navbar-item {
   &.has-dropdown {
     .navbar-dropdown {
@@ -211,8 +217,18 @@ code {
 }
 
 .single-post {
-  .container {
-    @extend .padding-horizontal-xxl;
+  @media only screen and (min-width: 768px) {
+    .container {
+      padding-left: 6rem;
+      padding-right: 6rem;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .container {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
   }
 
   .single-post-header {
@@ -484,11 +500,8 @@ code {
     }
 
     .content {
-      @extend .body-big;
       @extend .padding-bottom-xxl;
       @extend .padding-top-xl;
-
-      line-height: 1.6875;
     }
   }
 }
