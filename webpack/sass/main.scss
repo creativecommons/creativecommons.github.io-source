@@ -1,11 +1,12 @@
 @import "../node_modules/@creativecommons/vocabulary/scss/vocabulary.scss";
 
-// links
+// Links
 a {
   color: $color-forest-green;
   text-decoration: none;
 }
 
+// Code
 code {
   color: $color-dark-slate-gray;
   background-color: $color-lighter-gray;
@@ -19,6 +20,7 @@ code {
   line-height: 1.6875;
 }
 
+// Navbar
 .navbar-item {
   &.has-dropdown {
     .navbar-dropdown {
@@ -32,12 +34,13 @@ code {
   }
 }
 
+// Breadcrumb
 .breadcrumb-container {
   border-top: 4px solid $color-forest-green;
   background-color: $color-lighter-gray;
 
   .breadcrumb {
-    @extend .padding-bigger;
+    @extend .padding-big;
 
     .link {
       @extend .has-color-forest-green;
@@ -45,6 +48,7 @@ code {
   }
 }
 
+// Hero section - Home page
 .hero {
   @extend .margin-top-large;
 
@@ -74,6 +78,7 @@ code {
   }
 }
 
+// Get-involved section - Home page
 .get-involved {
   background-color: $color-lighter-gray;
 
@@ -112,6 +117,7 @@ code {
   }
 }
 
+// Recent-posts section - Home page
 .recent-posts {
   background-color: rgba(4, 166, 53, 0.1);
 
@@ -140,6 +146,7 @@ code {
   }
 }
 
+// Featured-projects section - Home page
 .featured-projects {
   @extend .padding-vertical-xxl;
 
@@ -189,23 +196,27 @@ code {
   }
 }
 
-.blog-page {
-  .blog-page-header {
-    @extend .padding-top-bigger;
+// Common Title section
+.title {
+  background-color: $color-lighter-gray;
+
+  .container {
+    @extend .padding-horizontal-big;
     @extend .padding-bottom-xl;
 
-    background-color: $color-lighter-gray;
+    word-wrap: break-word;
 
-    .container {
-      @extend .padding-horizontal-big;
-    }
-
-    .blog-page-description {
+    .description {
+      @extend .body-bigger;
       @extend .padding-top-normal;
-      @extend .body-big;
+
+      line-height: 1.8125;
     }
   }
+}
 
+// Blog page
+.blog-page {
   .blog-page-posts {
     @extend .padding-top-normal;
 
@@ -216,6 +227,7 @@ code {
   }
 }
 
+// Single Post page
 .single-post {
   @media only screen and (min-width: 768px) {
     .container {
@@ -333,14 +345,10 @@ code {
   }
 }
 
+// Author Post page
 .author-posts {
   .title {
-    background-color: $color-lighter-gray;
-
     .container {
-      @extend .padding-horizontal-big;
-      @extend .padding-bottom-xl;
-
       .image {
         width: 9.5rem;
         height: 9.5rem;
@@ -365,16 +373,8 @@ code {
   }
 }
 
+// Series page
 .all-series {
-  .title {
-    background-color: $color-lighter-gray;
-
-    .container {
-      @extend .padding-horizontal-big;
-      @extend .padding-bottom-xl;
-    }
-  }
-
   .series-list {
     @extend .padding-horizontal-big;
     @extend .padding-top-xl;
@@ -400,17 +400,8 @@ code {
   }
 }
 
+// Categories page
 .all-categories {
-  .title {
-    background-color: $color-lighter-gray;
-    overflow-wrap: break-word;
-
-    .container {
-      @extend .padding-horizontal-big;
-      @extend .padding-bottom-xl;
-    }
-  }
-
   .categories-list {
     @extend .padding-horizontal-big;
     @extend .padding-top-xl;
@@ -418,16 +409,8 @@ code {
   }
 }
 
+// All Authors page
 .all-authors {
-  .title {
-    background-color: $color-lighter-gray;
-
-    .container {
-      @extend .padding-horizontal-big;
-      @extend .padding-bottom-xl;
-    }
-  }
-
   .authors-list {
     @extend .padding-horizontal-big;
     @extend .padding-top-xl;
@@ -469,22 +452,8 @@ code {
   }
 }
 
+// Guidelines page
 .code-guidelines {
-  .code-guidelines-title {
-    background-color: $color-lighter-gray;
-
-    .container {
-      @extend .padding-horizontal-bigger;
-
-      word-wrap: break-word;
-
-      .description {
-        @extend .body-bigger;
-        @extend .padding-top-small;
-        @extend .padding-bottom-xl;
-      }
-    }
-  }
   .code-guidelines-body {
     @extend .padding-horizontal-big;
 
@@ -506,24 +475,8 @@ code {
   }
 }
 
+// Project List page
 .project-list {
-  .title {
-    background-color: $color-lighter-gray;
-
-
-    .container {
-      @extend .padding-horizontal-big;
-
-      .description {
-        @extend .padding-top-normal;
-        @extend .padding-bottom-xl;
-        @extend .body-bigger;
-
-        line-height: 1.4375;
-      }
-    }
-  }
-
   .body {
     @extend .padding-horizontal-big;
     @extend .body-big;
@@ -547,16 +500,8 @@ code {
   }
 }
 
+// CC Search Guidelines page
 .cc-search-guide {
-  .title {
-    background-color: $color-lighter-gray;
-
-    .container {
-      @extend .padding-horizontal-big;
-      @extend .padding-bottom-xl;
-    }
-  }
-
   .body {
     @extend .padding-horizontal-big;
     @extend .padding-top-xl;
@@ -564,21 +509,10 @@ code {
   }
 }
 
+// Project Ideas page
 .project-ideas {
   .title {
-    background-color: $color-lighter-gray;
-
     .container {
-      @extend .padding-horizontal-big;
-      @extend .padding-bottom-xl;
-
-      .description {
-        @extend .padding-top-normal;
-        @extend .body-bigger;
-
-        line-height: 2.0625;
-      }
-
       .filter-labels {
         @extend .padding-top-xl;
 
@@ -665,23 +599,8 @@ code {
   }
 }
 
+// CC Search Roadmap
 .cc-search-roadmap {
-  .title {
-    background-color: $color-lighter-gray;
-
-    .container {
-      @extend .padding-horizontal-big;
-      @extend .padding-bottom-xl;
-
-      .description {
-        @extend .padding-top-normal;
-        @extend .body-bigger;
-
-        line-height: 1.4375;
-      }
-    }
-  }
-
   .body {
     @extend .padding-horizontal-big;
     @extend .padding-top-xl;
@@ -699,22 +618,5 @@ code {
 
       @extend .padding-right-small;
     }
-  }
-}
-
-.community-team-members {
-  .container {
-    @extend .padding-horizontal-big;
-    @extend .padding-bottom-xl;
-  }
-  
-  .title {
-    background-color: $color-lighter-gray;
-    overflow-wrap: break-word;
-
-      .description {
-        @extend .body-bigger;
-        @extend .padding-top-small;
-      }
   }
 }
