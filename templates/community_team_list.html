@@ -18,7 +18,7 @@
         {% for member in project.members %}
         <tr>
           <td scope="row">{{ member.role }}</td>
-          <td scope="row" id="{{project.repos}}--{{member.name}}">{{ member.name }}</td>
+          <td scope="row" id="{{project.name|lower|replace(' ','-')}}--{{member.name|lower|replace(' ','-')}}">{{ member.name }}</td>
         </tr>
         {% endfor %}
       </tbody>
@@ -36,7 +36,7 @@
       {% for member in bag('community_team_members.community_builders') %}
       <tr>
         <td scope="row">{{ member.role }}</td>
-        <td scope="row" id="community-builder--{{member.name}}">{{ member.name }}</td>
+        <td scope="row" id="community-builder--{{member.name|replace(' ','-')}}">{{ member.name }}</td>
       </tr>
       {% endfor %}
     </tbody>
