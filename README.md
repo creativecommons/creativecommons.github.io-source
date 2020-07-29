@@ -84,12 +84,31 @@ else fails, try removing the virtual environment and reinstalling:
 
 ## Development
 
+- `cd` into `webpack`
+- Run `npm install` to install required node packages
 - Run `pipenv run lektor server -f webpack` to start the Lektor development
   server.
 - You will be able to see the website at [`http://localhost:5000/`][local5000].
   - The Lektor server will rebuild the site every time you change any content.
 
 [local5000]:http://localhost:5000/
+
+
+### Troubleshooting Possible Errors
+
+Should you get series of type errors that looks something like `npm ERR! typeerror Error: Missing required argument #1`, after running `npm install`, this is most likely due to running an older version of node. 
+
+From experience, running Node versions 12+ seems to be okay. Follow [this](https://github.com/nodesource/distributions/blob/master/README.md#installation-instructions) tutorial to upgrade your node version(for unix systems).
+
+Should you get an `OSError: [Errno 28] inotify watch limit reached` after running any command, this means that your system file watcher is running out of alloted handles, usually because the workspace is large and contains many files. 
+
+The solution is to run `sudo sysctl fs.inotify.max_user_watches=524288`
+
+This increases your inotify watch limit to 524288, which is the maximum value.
+
+You can learn more about file watchers [here](https://unixia.wordpress.com/2018/04/28/inotify-watch-limit-reached-wait-what/) and [here](https://code.visualstudio.com/docs/setup/linux#_visual-studio-code-is-unable-to-watch-for-file-changes-in-this-large-workspace-error-enospc).
+
+
 
 
 ## Deployment
