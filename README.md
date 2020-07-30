@@ -64,18 +64,19 @@ To install these, execute the following commands:
 
 1. `curl https://raw.githubusercontent.com/kennethreitz/pipenv/master/get-pipenv.py | python`
 2. `sudo apt update`
-3. `curl -sL https://deb.nodesource.com/setup_lts.x | sudo -E bash -`
-4. `sudo apt-get install -y nodejs`
+3. [Install Node.js](https://github.com/nodesource/distributions/blob/master/README.md#installation-instructions) 
 5. `sudo apt install npm `
 
 [pipenvdocs]:https://pipenv.readthedocs.io/en/latest/
 [nodejswebsite]:https://nodejs.org/en/
 [npmdocs]:https://docs.npmjs.com/ 
 
+
+
 ### Installing Project Requirements
 
 1. Clone this repository.
-2. Open your command line interface and `cd` to the repository's root directory.
+2. Open your command line interface and `cd` to the repository root directory.
 3. Run `pipenv install` to create a Python virtual environment and install the requirements for this project.
 
 ### pipenv Troubleshooting
@@ -99,21 +100,21 @@ else fails, try removing the virtual environment and reinstalling:
 
 ### Troubleshooting Possible Errors
 
-Should you get series of type errors that looks something like `npm ERR! typeerror Error: Missing required argument #1`, after running `pipenv run lektor server -f webpack`, this is most likely due to running an older version of node. 
+* Should you get series of type errors that looks something like `npm ERR! typeerror Error: Missing required argument #1`, after running `pipenv run lektor server -f webpack`, this is most likely due to running an older version of Node.js 
 
-As stated earlier in the prerequisites, you should be running Node versions 12+.
+As stated earlier in the prerequisites, you should be running Node.js versions 12+.
 
-* Follow [this](https://github.com/nodesource/distributions/blob/master/README.md#installation-instructions) tutorial to upgrade your node version (for GNU/Unix systems).
+Follow [this](https://github.com/nodesource/distributions/blob/master/README.md#installation-instructions) tutorial to upgrade your node version (for GNU/Unix systems).
 
-Should you get an `OSError: [Errno 28] inotify watch limit reached` after running any command, this means that your system file watcher is running out of alloted handles, usually because the workspace is large and contains many files. 
+* Should you get an `OSError: [Errno 28] inotify watch limit reached` after running any command, this means that your system file watcher is running out of alloted handles, usually because the workspace is large and contains many files. 
 
 The solution is to run:
 
-* `sudo sysctl fs.inotify.max_user_watches=524288`
+`sudo sysctl fs.inotify.max_user_watches=524288`
 
-This increases your inotify watch limit (for the session) to 524288, which is the maximum value and is also enough to allow the  setup go through.
+This increases your `inotify` watch limit (for the session) to 524288, which is the maximum value and is also enough to allow the  setup go through.
 
-You can learn more about file watchers [here](https://unixia.wordpress.com/2018/04/28/inotify-watch-limit-reached-wait-what/) and [here](https://code.visualstudio.com/docs/setup/linux#_visual-studio-code-is-unable-to-watch-for-file-changes-in-this-large-workspace-error-enospc).
+You can learn more about file watchers [from this blog post](https://unixia.wordpress.com/2018/04/28/inotify-watch-limit-reached-wait-what/) or [from the VS Code documentation](https://code.visualstudio.com/docs/setup/linux#_visual-studio-code-is-unable-to-watch-for-file-changes-in-this-large-workspace-error-enospc).
 
 ## Deployment
 
