@@ -25,28 +25,14 @@ If you’ve been accepted as a Project Contributor, you are encouraged to:
 * participate in discussions in Slack or via email.
 * review pull requests opened by other contributors.
 
-## Project Member
-**Who should apply:** If you’ve made multiple contributions that took you a couple of hours each  to complete, you should apply for this role.
+## Project Collaborator
+**Who should apply:** If you’ve made a few significant contributions to the project (added new features, for example) and know the project’s overall codebase pretty well, you should apply.
 
 **What does this role give you?**
 * Everything a Project Contributor gets.
 * You’ll be added to the `creativecommons` GitHub organization and given [Triage](https://help.github.com/en/github/setting-up-and-managing-organizations-and-teams/repository-permission-levels-for-an-organization#repository-access-for-each-permission-level) permissions to the project repository.
 * You’ll receive previews of upcoming changes to the Community Team program.
   * You’ll be able to assign people and change labels on GitHub issues associated with the project.
-
-**Guidelines for Project Members**  
-If you’ve been accepted as a Project Member, you are encouraged to:
-* do everything a Project Contributor does
-* review and triage new issues
-  * ask the issue author for more details if appropriate
-  * check with the project maintainers if the issue makes sense
-  * update the labels on the issue appropriately once you have all the information you need (e.g. remove “awaiting triage” label)
-
-## Project Collaborator
-**Who should apply:** If you’ve made a few significant contributions to the project (added new features, for example) and know the project’s overall codebase pretty well, you should apply.
-
-**What does this role give you?**
-* Everything a Project Member gets.
 * You’ll be added to the `CODEOWNERS` file for the project.
   * This will allow your PR reviews to block merge.
   * This will auto assign you PRs to review.
@@ -56,10 +42,17 @@ If you’ve been accepted as a Project Member, you are encouraged to:
 
 **Guidelines for Project Collaborators**  
 If you’ve been accepted as a Project Collaborator, you are encouraged to:
-* do everything a Project Member does
+* do everything a Project Contributor does
+* review and triage new issues
+  * ask the issue author for more details if appropriate
+  * check with the project maintainers if the issue makes sense
+  * update the labels on the issue appropriately once you have all the information you need (e.g. remove “awaiting triage” label)
 * review assigned pull requests to unblock merges.
 * participate in discussions in the new meetings and channels you’ve been added to.
 * identify promising contributors to the project and invite them to join the Community Team.
+
+**Note**  
+The role of Project Member was deprecated in July 2020 and all members were redesignated as collaborators.
 
 ## Project Core Committer
 **Who should apply:** If you’ve made many significant contributions to the project, know the codebase really well, and are interested in active maintenance of the project, you should apply. 
