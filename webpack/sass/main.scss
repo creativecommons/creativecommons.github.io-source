@@ -14,6 +14,12 @@ code {
   border-radius: 0.25rem;
 }
 
+.content {
+  @extend .body-big;
+
+  line-height: 1.6875;
+}
+
 // Navbar
 .navbar-item {
   &.has-dropdown {
@@ -223,8 +229,18 @@ code {
 
 // Single Post page
 .single-post {
-  .container {
-    @extend .padding-horizontal-xxl;
+  @include from($desktop) {
+    .container {
+      padding-left: 6rem;
+      padding-right: 6rem;
+    }
+  }
+
+  @include until($desktop) {
+    .container {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
   }
 
   .single-post-header {
@@ -453,11 +469,8 @@ code {
     }
 
     .content {
-      @extend .body-big;
       @extend .padding-bottom-xxl;
       @extend .padding-top-xl;
-
-      line-height: 1.6875;
     }
   }
 }
