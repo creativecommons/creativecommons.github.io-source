@@ -14,14 +14,9 @@
                     "name": "Move data cleaning pipeline from API to Catalog"
                 },
                 {
-                    "description": "Manage Catalog deployment and provisioning entirely through infrastructure as code.",
-                    "gid": "1167425798148811",
-                    "name": "Improve Catalog Deployment and Provisioning"
-                },
-                {
-                    "description": "Create better documentation for community contributors by consolidating internal and public documentation and making it available for everyone.",
-                    "gid": "1167425798148815",
-                    "name": "Improve Documentation for Community Contributors"
+                    "description": "Update Catalog schema to include new metadata generated through AWS Rekognition.",
+                    "gid": "1154270978154717",
+                    "name": "Implement architecture for schema for new metadata [AWS Grant]"
                 },
                 {
                     "description": "Plan out search algorithm changes to incorporate image metadata generated via AWS Rekognition.",
@@ -29,29 +24,24 @@
                     "name": "Plan search algorithm changes for new metadata [AWS Grant]"
                 },
                 {
-                    "description": "Update Catalog schema to include new metadata generated through AWS Rekognition.",
-                    "gid": "1154270978154717",
-                    "name": "Implement architecture for schema for new metadata [AWS Grant]"
-                },
-                {
                     "description": "Improve how and where we explain licenses, and consider ways to make it easier for reusers to understand and comply with license requirements.",
                     "gid": "1147666754358269",
                     "name": "License Explanation/Compliance Improvements"
                 },
                 {
-                    "description": "Improve the support pages on CC Search, which includes the Collections page, for a better experience. Add explanation text for collections, improve flow.",
-                    "gid": "1149385618454685",
-                    "name": "Improved Support Pages"
-                },
-                {
-                    "description": "Integrating meta search functionality into CC Search for sources that are not currently indexed, and content types we do not currently support.",
-                    "gid": "1174575887784290",
-                    "name": "Design Sprint: Meta Search Integration"
-                },
-                {
                     "description": "Offline Old Search (oldsearch.creativecommons.org) and redirect traffic to CC Search. Prior to this, build in messaging on Old Search, and support similar functionality on CC Search. See \"Meta Search Integration\" for related work.",
                     "gid": "1149456632174214",
                     "name": "Offline old CC Search"
+                },
+                {
+                    "description": "Research and test potential integrations for Web Monetization into CC Search and other CC web properties.",
+                    "gid": "1153114910798067",
+                    "name": "Web Monetization: Phase 1"
+                },
+                {
+                    "description": "Improve the support pages on CC Search, which includes the Collections page, for a better experience. Add explanation text for collections, improve flow.",
+                    "gid": "1149385618454685",
+                    "name": "Improved Support Pages"
                 },
                 {
                     "description": "Make accessibility improvements to the UI.",
@@ -64,6 +54,11 @@
                     "name": "Internationalization Infrastructure"
                 },
                 {
+                    "description": "Update our Common Crawl provider infrastructure to:\n(1) use Apache Airflow instead of AWS tools like Data Pipeline & Glue for processing data\n(2) unify provider processing to use the same base classes as API providers",
+                    "gid": "1167425798148813",
+                    "name": "Improve Common Crawl Infrastructure"
+                },
+                {
                     "description": "Designing and prototyping an upcoming user interface for searching for audio on CC Search.",
                     "gid": "1163392248010945",
                     "name": "Design Sprint: Audio UI for CC Search"
@@ -74,49 +69,9 @@
                     "name": "Audio Support and Integration"
                 },
                 {
-                    "description": "Update our Common Crawl provider infrastructure to:\n(1) use Apache Airflow instead of AWS tools like Data Pipeline & Glue for processing data\n(2) unify provider processing to use the same base classes as API providers",
-                    "gid": "1167425798148813",
-                    "name": "Improve Common Crawl Infrastructure"
-                },
-                {
-                    "description": "Switch our Catalog data ingestion for Wikimedia Commons to use the data dumps provided by Wikimedia instead of the MediaWiki API.",
-                    "gid": "1167425798148807",
-                    "name": "Use Data Dumps for Wikimedia Ingestion"
-                },
-                {
-                    "description": "Research and test potential integrations for Web Monetization into CC Search and other CC web properties.",
-                    "gid": "1153114910798067",
-                    "name": "Web Monetization: Phase 1"
-                },
-                {
-                    "description": "Build a UI for the Catalog API, where users can sign up, manage access, see usage metrics and statistics.",
-                    "gid": "1149478266493761",
-                    "name": "API UI with Usage Dashboard"
-                },
-                {
-                    "description": "Make CC Catalog API documentation more accessible to CC Search users, and improve user experience.",
-                    "gid": "1164969092703369",
-                    "name": "API documentation improvements"
-                },
-                {
                     "description": "Store a private copy of all the images in the CC Catalog to analyze via machine learning.",
                     "gid": "1154270978154722",
-                    "name": "Scraping & Resizing Work [AWS Grant]"
-                },
-                {
-                    "description": "Collect and use structured data from Wikidata to enhance our search algorithm with semantic search.",
-                    "gid": "1167425798148823",
-                    "name": "Wikidata integration with Catalog & Search Algorithm"
-                },
-                {
-                    "description": "Build an analytics UI that is fed by Google Analytics and our internal analytics database.",
-                    "gid": "1149385618454692",
-                    "name": "Usage/Reuse Metrics Dashboard"
-                },
-                {
-                    "description": "For all possible providers, use their APIs to ingest data into the CC Catalog instead of scraping websites via Common Crawl data.",
-                    "gid": "1149385618454708",
-                    "name": "Switch from Common Crawl to API"
+                    "name": "Scraping & Resizing Work for Rekognition [AWS Grant]"
                 },
                 {
                     "description": "Generate metadata via machine learning (using AWS Rekognition) on a set of ~100 million high quality images from the CC Catalog.",
@@ -124,9 +79,24 @@
                     "name": "Run Rekognition on 100m images [AWS Grant]"
                 },
                 {
-                    "description": "Upgrade the CC Catalog database to use a schema-less database instead of the relational database (Postgres) that we currently use.",
-                    "gid": "1167425798148817",
-                    "name": "Upgrade Catalog:  Data Lake"
+                    "description": "For all possible providers, use their APIs to ingest data into the CC Catalog instead of scraping websites via Common Crawl data.",
+                    "gid": "1149385618454708",
+                    "name": "Switch from Common Crawl to API"
+                }
+            ]
+        },
+        {
+            "name": "Q4 2020",
+            "tasks": [
+                {
+                    "description": null,
+                    "gid": "1186693612765822",
+                    "name": "Search Relevance Improvements: Language Analysis, Quality Metrics, Minimums"
+                },
+                {
+                    "description": "Design updates to the CC Search UI in response to new metadata available as a result of applying machine learning to selected images in the Catalog. At a minimum, we expect new filters will be an option. Integration of design will take place subsequently.",
+                    "gid": "1154270978154729",
+                    "name": "Plan UI Updates in Response to Metadata [AWS Grant]"
                 },
                 {
                     "description": "Automate the process of finding new providers of CC-licensed content to index into the CC Catalog.",
@@ -134,25 +104,30 @@
                     "name": "Provider Review Automation"
                 },
                 {
-                    "description": "Implement changes to CC Search (frontend) and Catalog to make use of thumbnails, as they become available.",
-                    "gid": "1154270978154725",
-                    "name": "Implement Use of Thumbnails in Search & Catalog [AWS Grant]"
+                    "description": "Build an analytics UI that is fed by Google Analytics and our internal analytics database.",
+                    "gid": "1149385618454692",
+                    "name": "Usage/Reuse Metrics Dashboard"
                 },
                 {
-                    "description": "Prepare partnership guidelines for CC Search. Create a page on CC Search publishing these guidelines.",
-                    "gid": "1146971105237802",
-                    "name": "Partnership guidelines for all integration types"
+                    "description": "Once the Rekognition crawl finishes, we want to crawl the rest of the catalog (but not feed them to rekognition). This will give us useful metadata like dimensions and quality.",
+                    "gid": "1186693612765814",
+                    "name": "Scrape all images and set up feed for new ones"
                 },
                 {
-                    "description": "Design updates to the CC Search UI in response to new metadata available as a result of applying machine learning to selected images in the Catalog. At a minimum, we expect new filters will be an option. Integration of design will take place subsequently.",
-                    "gid": "1154270978154729",
-                    "name": "Plan UI Updates in Response to Metadata [AWS Grant]"
-                }
-            ]
-        },
-        {
-            "name": "Q4 2020",
-            "tasks": [
+                    "description": "Create better documentation for community contributors by consolidating internal and public documentation and making it available for everyone.",
+                    "gid": "1167425798148815",
+                    "name": "Improve Documentation for Community Contributors"
+                },
+                {
+                    "description": "Manage Catalog deployment and provisioning entirely through infrastructure as code.",
+                    "gid": "1167425798148811",
+                    "name": "Improve Catalog Deployment and Provisioning"
+                },
+                {
+                    "description": "Make CC Catalog API documentation more accessible to CC Search users, and improve user experience.",
+                    "gid": "1164969092703369",
+                    "name": "API documentation improvements"
+                },
                 {
                     "description": "Design and build an embed of CC Search that can be placed on any website, as a starting point to discover objects in CC Search. Components from Design Library must be used, with the goal of simplicity.",
                     "gid": "1168725971351188",
