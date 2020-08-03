@@ -506,6 +506,12 @@ code {
     @extend .padding-horizontal-big;
     @extend .padding-top-xl;
     @extend .padding-bottom-xxl;
+
+    .content {
+      h3 {
+        margin-top: 0rem;
+      }
+    }
   }
 }
 
