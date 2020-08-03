@@ -53,30 +53,30 @@
         </div>
       </div>
     </div>
-    <div class="body container">
+    <div class="body container content">
       {% for idea in ideas %}
         <div class="project-idea">
           <h2><a class="has-color-dark-slate-gray" name="{{ idea._slug }}">{{ idea.title }}</a></h2>
           <div class="columns">
             <div class="column is-one-quarter">
-              <h5 class="label">Difficulty</h5>
-              <p class="content">{{ idea.difficulty }}</p>
-              <h5 class="label">Skills recommended</h5>
-              <p class="content">{{ idea.skills_recommended }}</p>
-              <h5 class="label">Mentors</h5>
-              <p class="content">{{ idea.mentors }}</p>
+              <h5>Difficulty</h5>
+              <p>{{ idea.difficulty }}</p>
+              <h5>Skills recommended</h5>
+              <p>{{ idea.skills_recommended }}</p>
+              <h5>Mentors</h5>
+              <p>{{ idea.mentors }}</p>
             </div>
             <div class="column is-three-quarters">
-              <h5 class="label">The Problem</h5>
-              <p class="content">{{ idea.problem }}</p>
-              <h5 class="label">Expected Outcome</h5>
-              <p class="content">{{ idea.expected_outcome }}</p>
-              <h5 class="label">Internship Tasks</h5>
-              <p class="content">{{ idea.internship_tasks }}</p>
-              <h5 class="label">Application Tips</h5>
-              <p class="content">{{ idea.application_tips }}</p>
-              <h5 class="label">Resources</h5>
-              <p class="content">{{ idea.resources }}</p>
+              <h5>The Problem</h5>
+              <p>{{ idea.problem }}</p>
+              <h5>Expected Outcome</h5>
+              <p>{{ idea.expected_outcome }}</p>
+              <h5>Internship Tasks</h5>
+              <p>{{ idea.internship_tasks }}</p>
+              <h5>Application Tips</h5>
+              <p>{{ idea.application_tips }}</p>
+              <h5>Resources</h5>
+              <p>{{ idea.resources }}</p>
             </div>
           </div>
           <a href="#project-list" class="back-to-list"><i class="icon angle-up"></i> Back to the Project list</a>
@@ -84,8 +84,8 @@
       {% endfor %}
       <div>
         <h2 class="b-header"><a name="original-ideas" class="has-color-dark-slate-gray">Original Ideas</a></h2>
-        <p class="content padding-vertical-smaller">We are open to original ideas for documentation improvements.</p>
-        <p class="content padding-vertical-smaller">Please talk to us on the <code>#cc-gsoc-outreachy</code> channel on Slack or via the mailing list to find a mentor for the project before submitting your proposal.</p>
+        <p>We are open to original ideas for documentation improvements.</p>
+        <p>Please talk to us on the <code>#cc-gsoc-outreachy</code> channel on Slack or via the mailing list to find a mentor for the project before submitting your proposal.</p>
         <a href="#project-list" class="back-to-list"><i class="icon angle-up"></i> Back to the Project list</a>
       </div>
     </div>
