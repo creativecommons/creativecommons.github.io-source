@@ -1,0 +1,66 @@
+title: Smithsonian Unit Code Update
+---
+categories:
+
+cc-catalog
+gsoc
+gsoc-2020
+---
+author: charini
+---
+series: gsoc-2020-cccatalog
+---
+pub_date: 2020-08-03
+---
+body:
+## Introduction
+The Creative Commons (CC) Catalog project collects and stores CC licensed images scattered across the internet, such
+that they can be made accessible to the general public via the [CC Search][cc_search] and [CC Catalog API][cc_api]
+tools. Numerous information associated with each image, which help in the image search and categorisation process are
+stored via CC Catalog in the CC database.
+
+In my [previous blog post][flickr_blog_post] of this series entitled 'Flickr Sub-provider Retrieval', I discussed how
+the images from a certain provider (such as Flickr) can be categorised based on the sub-provider values (which reflects
+the underlying organisation or entity that published the images through the provider). We have similarly implemented
+the sub-provider retrieval logic for Europeana and Smithsonian providers. Unlike in Flickr and Europeana, every single
+image from Smithsonian is categorised under some sub-provider value where the sub-providers are identified based on a
+unit code value as contained in the API response (for more information please refer to the pull request [#455][pr_455]).
+The unit code values and the corresponding sub provider values are maintained in the dictionary
+*SMITHSONIAN_SUB_PROVIDERS*. However, there is the possibility of the *unit code* values being updated at the
+Smithsonian API level, and it is important that we have a mechanism of reflecting those updates in the
+*SMITHSONIAN_SUB_PROVIDERS* dictionary as well. In this blog post, we discuss how we learn the potential
+changes to the *unit code* values and keep the *SMITHSONIAN_SUB_PROVIDERS* dictionary up-to-date.
+
+[cc_search]: https://ccsearch.creativecommons.org/
+[cc_api]: https://api.creativecommons.engineering/v1/
+[flickr_blog_post]: ../flickr-sub-provider-retrieval/
+[pr_455]: https://github.com/creativecommons/cccatalog/pull/455
+
+## Implementation
+### Retrieving the latest unit codes
+We are required to obtain the latest *unit codes* supported by the Smithsonian API to achieve this task. Furthermore,
+since we are only interested in image data, the *unit codes* which are associated with images alone need to be
+retrieved. The latest Smithsonian *unit codes* corresponding to images can be retrieved by calling the end point
+https://api.si.edu/openaccess/api/v1.0/terms/unit_code?q=online_media_type:Images&api_key=REDACTED
+
+### Check for unit code updates
+In order to identify whether changes have occurred to the collection of *unit codes* supported by the Smithsonian API
+(in the form of additions and/or deletions), we compare the values retrieved by calling the previously mentioned
+endpoint, with the values contained in the *SMITHSONIAN_SUB_PROVIDERS* dictionary. All changes are reflected in a table
+named *smithsonian_new_unit_codes* which contains the two fields, 'new_unit_code' and 'action'. If a new *unit code* is
+introduced at the API level, we store that *unit code* value with the corresponding action value 'add' in the table.
+This reflects that the given *unit code* value needs to be added to the *SMITHSONIAN_SUB_PROVIDERS dictionary*. If a
+*unit code* that appears in the *SMITHSONIAN_SUB_PROVIDERS* dictionary does not appear at the API level, we store
+the *unit code* value with the corresponding action value 'delete' in the table, reflecting that it needs to be deleted
+from the dictionary.
+
+### Triggering the unit code update workflow
+A separate workflow named *check_new_smithsonian_unit_codes_workflow* allows executing the logic we discussed via the
+Airflow UI. For each execution, the table *smithsonian_new_unit_codes* is completely cleared of previous data, and the
+latest updates to reflect in the *SMITHSONIAN_SUB_PROVIDERS* dictionary are stored. Note that the actual updates to
+the dictionary (as reflected in the table) needs to be carried out by a person, since editing the dictionary is not
+automated. Furthermore, this workflow is expected to be executed at-least once a week, preferably prior to running
+the Smithsonian image retrieval script such that the Smithsonian sub-provider retrieval task can be run with no issue.
+
+## Acknowledgement
+I express my gratitude to my GSoC supervisor Brent Moran for assisting me with this task.
