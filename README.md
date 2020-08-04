@@ -108,13 +108,13 @@ else fails, try removing the virtual environment and reinstalling:
 
 * Should you get an `OSError: [Errno 28] inotify watch limit reached` after running any command, this means that your system file watcher is running out of alloted handles, usually because the workspace is large and contains many files. 
 
- The solution is to run:
+  The solution is to run:
 
- `sudo sysctl fs.inotify.max_user_watches=524288`
+  `sudo sysctl fs.inotify.max_user_watches=524288`
 
- This increases your `inotify` watch limit (for the session) to 524288, which is the maximum value and is also enough to allow the  setup go through.
+  This increases your `inotify` watch limit (for the session) to 524288, which is the maximum value and is also enough to allow the  setup go through.
 
-You can learn more about file watchers [from this blog post](https://unixia.wordpress.com/2018/04/28/inotify-watch-limit-reached-wait-what/) or [from the VS Code documentation](https://code.visualstudio.com/docs/setup/linux#_visual-studio-code-is-unable-to-watch-for-file-changes-in-this-large-workspace-error-enospc).
+  You can learn more about file watchers [from this blog post](https://unixia.wordpress.com/2018/04/28/inotify-watch-limit-reached-wait-what/) or [from the VS Code documentation](https://code.visualstudio.com/docs/setup/linux#_visual-studio-code-is-unable-to-watch-for-file-changes-in-this-large-workspace-error-enospc).
 
 ## Deployment
 
