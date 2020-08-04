@@ -63,7 +63,7 @@ code {
   }
 
   .hero-links {
-    @extend .margin-top-normal;
+    @extend .margin-vertical-normal;
     @extend .padding-horizontal-big;
 
     .button {
@@ -73,6 +73,20 @@ code {
       .icon {
         @extend .margin-right-small;
         @extend .padding-vertical-smaller;
+      }
+    }
+  }
+
+  .hero-image {
+    @include from($fullhd) {
+      margin-top: -20rem;
+      .image {
+        width: 50%;
+      }
+    }
+    @include until($fullhd) {
+      .image {
+        width: 100%;
       }
     }
   }
