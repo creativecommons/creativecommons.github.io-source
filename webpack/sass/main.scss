@@ -82,6 +82,7 @@ code {
 .get-involved {
   background-color: $color-lighter-gray;
   color: $color-dark-slate-gray;
+  border-bottom: solid 0.1875rem $color-white;
 
   .container {
     @extend .padding-horizontal-big;
