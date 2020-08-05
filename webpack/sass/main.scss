@@ -10,7 +10,7 @@ a {
 code {
   color: $color-dark-slate-gray;
   background-color: $color-lighter-gray;
-  border: 1px solid $color-lighter-gray;
+  border: 0.0625rem solid $color-light-gray;
   border-radius: 0.25rem;
 }
 
@@ -40,7 +40,8 @@ code {
   background-color: $color-lighter-gray;
 
   .breadcrumb {
-    @extend .padding-big;
+    @extend .padding-horizontal-big;
+    @extend .padding-vertical-bigger;
 
     .link {
       @extend .has-color-forest-green;
@@ -244,8 +245,6 @@ code {
   }
 
   .single-post-header {
-    @extend .padding-top-bigger;
-
     background-color: $color-lighter-gray;
 
     .title {
@@ -281,6 +280,7 @@ code {
 
   .single-post-body {
     @extend .padding-top-bigger;
+    @extend .has-text-dark-slate-gray;
 
     &:last-of-type::after {
       content: '';
