@@ -25,7 +25,7 @@ The aforementioned pages had the following accessiblity issues:
 2. Improper landmarks
 3. Improper aria-control nestings
 4. Some elements not being read by the screen-reader
-5. Contrast Issues(to be covered later)
+5. Color contrast Issues(to be covered later)
 
 But before working I ran another set of audit tests to exactly pin-point these issues. I used [NVDA](https://www.nvaccess.org/) for running these audits.
 Lets go through the fixes one at a time.
@@ -45,7 +45,7 @@ These links did not contain any aria-label and were read as **cc link**. So the 
 The next issue was of improper landmarks. Most of the pages had no **main** landmark and some had no **complimentary** or **region** landmarks even though they were required in those pages.
 These landmarks had to be added after the carefully scrutinising the pages in the audits.
 
-The next issue was of improper aria-control nestings. This is actually interesting as it involves having some deeper understanding of the roles involved. So I will explain this in a little depth.
+The next issue was of improper aria-control nestings. This is interesting as it involves having some deeper understanding of the roles involved. So I will explain this in a little depth.
 The area where we had this issue was in feedback page. The code involved was:
 
 ```
@@ -117,7 +117,7 @@ After all these changes we had some increase in the accessibility scores(compute
 2. Search-Guide Page: 76 -> 97 | +23
 3. Feedback Page: 75 -> 97 | +22
 
-Whoosh!! That was quite a lot. We are done with these two weeks for now. Hope seeing you in the next post as well.
+Whoosh!! That was quite a lot. We are done with these two weeks for now. Hope to see you in the next post as well.
 
 You can track the work done for these weeks through these PRs:
 

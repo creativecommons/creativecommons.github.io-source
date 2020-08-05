@@ -16,7 +16,7 @@ pub_date: 2020-06-26
 body:
 
 These are the second two weeks of my internship with CC. I am working on improving the accessibility of cc-search and internationalizing it as well.
-The internationalization work from the previous post is continued here and we also solve an interesting issue of translating strings from the store.
+The internationalization work from the previous post is continued here and we also solve an interesting issue of translating strings from the Vuex store.
 
 During this period I removed all the hardcoded strings from the static pages which include:
 
@@ -35,7 +35,7 @@ licenseTypes: [
     { code: 'modification', name: 'Modify or adapt', checked: false },
 ]
 ```
-The code was used to store the licenses in the store in the oredered format. The challenge was to extract the name strings from each license while keeping the changes and dependencies to a minimum.
+The code was used to store the licenses in the store in the ordered format. The challenge was to extract the name strings from each license while keeping the changes and dependencies to a minimum.
 The code which we were using in the templates to load these strings was:
 
 ```
@@ -84,7 +84,7 @@ licenseTypes: [
 </label>
 ```
 
-The rest of the internationalization stuff was just basic string extractions and template modifications to accomodate the the translated strings.
+The rest of the internationalization stuff was string extractions and template modifications to accomodate the the translated strings.
 And we are done with these two weeks, we be back with another post after two weeks.
 
 You can track the work done for these weeks through these PRs:
