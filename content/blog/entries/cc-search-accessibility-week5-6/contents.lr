@@ -1,0 +1,80 @@
+title: Internationalization continued: Modifying tests
+---
+categories:
+cc-search
+community
+gsoc
+open-source
+
+---
+author: AyanChoudhary
+---
+series: gsoc-2020-ccsearch-accessibility
+---
+pub_date: 2020-07-10
+---
+body:
+
+These are the fifth and sixth weeks of my internship with CC. I am working on improving the accessibility of cc-search and internationalizing it as well.
+This post contains yet another important aspect to be taken care of while internationalizing components, i.e. modifying tests to include the changes.
+
+The components which were left are the two pages displaying the most content:
+1. Browse page
+2. ImageDetail page
+
+But the above two pages too were handled similar to the remaining pages, special care had to be taken in case of ImageDetail page since there are too many components in different files.
+By this point we also have our json structure figured out, mostly and are ready to push the json for fetching further translations.
+
+Now let's look at the modifications required in the tests. We generally use ```$t``` to access strings from the locales json, but this method/custom-component is not present in the testing vue instance, so we had to inject this method usin localVue and a custom i18n instance.
+
+```
+const localVue = createLocalVue();
+localVue.use(Vuex);
+localVue.use(VueI18n);
+const messages = require('@/locales/en.json');
+
+const i18n = new VueI18n({
+  locale: 'en',
+  fallbackLocale: 'en',
+  messages,
+});
+```
+
+Now we inject this 18n component into our vue instance and we have access to our ```$t```, but there is still one more step left.
+We still need to mock its functionality in the tests. So we create a mock ```$t``` instance to mock in our component. The final code is given below:
+
+```
+const $t = (key) => i18n.messages[key];
+
+options = {
+    mocks: {
+        $t,
+    },
+};
+```
+
+And now we are ready to render our component using these custom options with mocks for testing.
+
+And *drum rolls* we have successfully completed Internationalization of the complete cc search. Below are the images for some of the completed pages:
+
+![final.png](final.png)
+
+![finalAbout.png](finalAbout.png)
+
+![finalImageDetail.png](finalImageDetail.png)
+
+The issues closed with the completion of Internationalization are:
+
+1. [[META] Internationalisation (i18n) Setup](https://github.com/creativecommons/cccatalog-frontend/issues/487)
+2. [Set up vue-i18n infrastructure](https://github.com/creativecommons/cccatalog-frontend/issues/941)
+3. [Create locale messages format JSON structure](https://github.com/creativecommons/cccatalog-frontend/issues/942)
+4. [Allow users to change locale on the client](https://github.com/creativecommons/cccatalog-frontend/issues/943)
+
+You can track the work done for these weeks through this PR:
+
+1. [Localize browsepage and single-result page](https://github.com/creativecommons/cccatalog-frontend/pull/1040)
+
+The progress of the project can be tracked on [cc-search](https://github.com/creativecommons/cccatalog-frontend)
+
+CC Search Accessiblity is my GSoC 2020 project under the guidance of [Zack Krida](https://creativecommons.org/author/zackcreativecommons-org/) and [Ari Madian](https://opensource.creativecommons.org/blog/authors/akmadian/), who is the primary mentor for this project, [Anna Tumadóttir](https://creativecommons.org/author/annacreativecommons-org/) for helping all along and engineering director [Kriti
+Godey](https://creativecommons.org/author/kriticreativecommons-org/), have been very supportive.

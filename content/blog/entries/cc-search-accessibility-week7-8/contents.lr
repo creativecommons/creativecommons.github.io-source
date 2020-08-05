@@ -1,0 +1,130 @@
+title: CC Search, Initial Accessibility Improvements
+---
+categories:
+cc-search
+community
+gsoc
+open-source
+
+---
+author: AyanChoudhary
+---
+series: gsoc-2020-ccsearch-accessibility
+---
+pub_date: 2020-07-25
+---
+body:
+
+These are the seventh and eighth weeks of my internship with CC. I am working on improving the accessibility of cc-search and internationalizing it as well.
+This post contains details of my work done to make initial accessibility improvements to homepage and the other static pages.
+
+With the internationalization work complete, our next target were the accessiblity improvements. So I decided to tackle the homepage and the static pages first.
+The aforementioned pages had the following accessiblity issues:
+
+1. No aria-label on links
+2. Improper landmarks
+3. Improper aria-control nestings
+4. Some elements not being read by the screen-reader
+5. Contrast Issues(to be covered later)
+
+But before working I ran another set of audit tests to exactly pin-point these issues. I used [NVDA](https://www.nvaccess.org/) for running these audits.
+Lets go through the fixes one at a time.
+
+The first issue of no aria-label was pre-dominantly found in the footer. we had some links such as:
+```
+<a
+    href="https://www.instagram.com/creativecommons"
+    class="social has-text-white"
+    target="_blank"
+    rel="noopener"
+>
+```
+
+These links did not contain any aria-label and were read as **cc link**. So the aria-labels had to be added ```aria-label="instagram link"``` in this case which fixed this problem.
+
+The next issue was of improper landmarks. Most of the pages had no **main** landmark and some had no **complimentary** or **region** landmarks even though they were required in those pages.
+These landmarks had to be added after the carefully scrutinising the pages in the audits.
+
+The next issue was of improper aria-control nestings. This is actually interesting as it involves having some deeper understanding of the roles involved. So I will explain this in a little depth.
+The area where we had this issue was in feedback page. The code involved was:
+
+```
+<ul>
+    <li :class="tabClass(0, 'tab')">
+        <a
+            href="#panel0"
+            :aria-selected="activeTab == 0"
+            @click.prevent="setActiveTab(0)"
+        >
+        Help us Improve
+        </a>
+    </li>
+    <li :class="tabClass(1, 'tab')">
+        <a
+            href="#panel1"
+            :aria-selected="activeTab == 1"
+            @click.prevent="setActiveTab(1)"
+        >
+        Report a Bug
+        </a>
+    </li>
+</ul>
+```
+The reason why this is an error is because of the ```aria-selected``` attribute can only be applied to an element having the role **tab** nested inside a **tablist** element.
+For reference, in the above example the ```<ul>``` should have the role **tablist** and each ```<li>``` element should have the role **tab**. And so the ```aria-selected``` attribute should be in the ```<li>``` element instead of the ```<a>``` tag.
+
+The corrected code is:
+```
+<ul role="tablist">
+    <li role="tab" :class="tabClass(0, 'tab')" :aria-selected="activeTab == 0">
+        <a 
+            aria-label="help us improve form" 
+            href="#panel0"
+            @click.prevent="setActiveTab(0)"
+        >
+        {{ $t('feedback.improve') }}
+        </a>
+    </li>
+    <li role="tab" :class="tabClass(1, 'tab')" :aria-selected="activeTab == 1">
+        <a 
+            aria-label="report a bug form"
+            href="#panel1"
+            @click.prevent="setActiveTab(1)"
+        >
+        {{ $t('feedback.bug') }}
+        </a>
+    </li>
+</ul>
+```
+
+Another interesting finding involved the screen readers not reading particular special characters such as ```~``` and ```|```.
+This issue was quite pronounced in the search guide page where these symbols were used in plenty in both links as well as texts.
+So I had to phonetically write these out in the aria-labels of the links to make the screen reader read them out loud.
+The corresponding changes are:
+
+```
+<a
+    aria-label="dog vertical bar cat"
+    href="https://search.creativecommons.org/search?q=dog%7Ccat"
+>
+    <em>dog|cat</em>
+</a>
+```
+
+After all these changes we had some increase in the accessibility scores(computed from lighthouse):
+
+1. About Page: 78 -> 97 | +19
+2. Search-Guide Page: 76 -> 97 | +23
+3. Feedback Page: 75 -> 97 | +22
+
+Whoosh!! That was quite a lot. We are done with these two weeks for now. Hope seeing you in the next post as well.
+
+You can track the work done for these weeks through these PRs:
+
+1. [Accessibility](https://github.com/creativecommons/cccatalog-frontend/pull/1068)
+2. [Accessibility Improvements](https://github.com/creativecommons/cccatalog-frontend/pull/1072)
+
+The progress of the project can be tracked on [cc-search](https://github.com/creativecommons/cccatalog-frontend)
+
+CC Search Accessiblity is my GSoC 2020 project under the guidance of [Zack Krida](https://creativecommons.org/author/zackcreativecommons-org/) and [Ari Madian](https://opensource.creativecommons.org/blog/authors/akmadian/), who is the primary mentor for this project, [Anna Tumadóttir](https://creativecommons.org/author/annacreativecommons-org/) for helping all along and engineering director [Kriti
+Godey](https://creativecommons.org/author/kriticreativecommons-org/), have been very supportive.
