@@ -550,7 +550,7 @@ code {
 
     .project-idea {
       @extend .padding-bottom-xl;
-      
+
       .column {
         @extend .padding-top-normal;
       }
@@ -577,7 +577,7 @@ code {
       @extend .caption;
 
       text-decoration: none;
-    
+
       .icon {
         @extend .padding-right-small;
       }
@@ -592,4 +592,10 @@ code {
     @extend .padding-top-xl;
     @extend .padding-bottom-xxl;
   }
+}
+
+// Sticky utility function
+.sticky-top {
+  position: sticky;
+  top: 0;
 }
