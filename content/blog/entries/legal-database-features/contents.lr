@@ -18,7 +18,10 @@ In this post, I want to update the progress on Reimplementing the CC Legal Datab
 
 The first thing I wanted to implement was the respective forms so that anyone can submit a case or article to the database. These forms were slightly modified in the redesign (discussed in the previous articles), so now it has fewer mandatory fields to lower the bar and facilitate the contribution of users.
 
-[img: scholarship form]
+<figure style="text-align: center;">
+    <img src="scholarship-form.png" alt="Form to submit an article related to CC licenses" style="border: 1px solid black; width: 60%;">
+    <figcaption>Scholarship form to submit an article.</figcaption>
+</figure>
 
 For the Scholarship form, for example, it is only needed to share your name, email and a link to propose an article related to any of the CC licenses, although the more information you can provide us the better, in any case, each contribution is reviewed by the staff before publishing.
 
@@ -30,19 +33,28 @@ The second important task was to allow searching in each of the listings. A basi
 
 While developing the mentioned functionalities I was also in charge of adding automatic unit tests, to ensure that future changes to the code base do not damage already functional parts of the site. This, in addition to giving more confidence to future contributors, they provide value immediately, at the time of writing the tests you should think about possible edge cases, so they allowed me to notice a missing validation in a couple of routes and then correct it.
 
-[img: 404]
+<figure style="text-align: center;">
+    <img src="404-page.png" alt="404 page" style="border:1px solid black; width:70%;">
+    <figcaption>Example of page obtained when requesting a case detail that is not published or doesn't exist.</figcaption>
+</figure>
 
-In this process of adding automated tests I wanted them to run on every pull request created, so I learned how to write a GitHub Action with a PostgreSQL service, the DBMS used in this case. Previously, I had already created a job for linting, so I needed to add another one to run in parallel to save time. This service provided by GitHub is pretty cool and useful, it opens up a world of possibilities. If you want to see the configuration file that makes this possible, I leave the link here for you.
+In this process of adding automated tests I wanted them to run on every pull request created, so I learned how to write a GitHub Action with a PostgreSQL service, the DBMS used in this case. Previously, I had already created a job for linting, so I needed to add another one to run in parallel to save time. This service provided by GitHub is pretty cool and useful, it opens up a world of possibilities. If you want to see the configuration file that makes this possible, check it out [here](https://github.com/creativecommons/caselaw/blob/31c3002a7860d78f3fdb464150c5c1b2f8bb86fc/.github/workflows/main.yml).
 
-### Improved accessibility
+### Accessibility
 
-To check if the site had shortcomings I did the Lighthouse test on it, discovering that there were indeed some issues to solve. In principle the results were these:
+To check if the site had shortcomings I did the Lighthouse test on the homepage, discovering that there were indeed some issues to tackle. In principle the results were these:
 
-[img: test before]
+<figure style="text-align: center;">
+    <img src="lighthouse-before.png" alt="" style="border:1px solid black; width:70%;">
+    <figcaption>Initial Lighthouse test measurements.</figcaption>
+</figure>
 
 The good thing about this test is that it throws up suggestions on how to fix the bugs found, so after adding certain missing attributes and labels, the following results were achieved.
 
-[img: tests after]
+<figure style="text-align: center;">
+    <img src="lighthouse-after.png" alt="" style="border:1px solid black; width:70%;">
+    <figcaption>Lighthouse test measurements after corrections.</figcaption>
+</figure>
 
 There is still room for improvement but at least we are within a quite acceptable green range.
 
