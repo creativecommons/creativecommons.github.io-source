@@ -209,6 +209,7 @@ code {
     .description {
       @extend .body-bigger;
       @extend .padding-top-normal;
+      @extend .has-text-dark-slate-gray;
 
       line-height: 1.8125;
     }
