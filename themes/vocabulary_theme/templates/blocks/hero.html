@@ -1,18 +1,20 @@
-<section class="container hero">
-  <div class="hero-title column is-9 is-paddingless">
-    <h1>
-      {{ this.title }}
-    </h1>
+<section class="hero">
+  <div class="container">
+    <div class="hero-title column is-12 is-paddingless">
+      <h1>
+        {{ this.title }}
+      </h1>
+    </div>
+    <div class="columns">
+      <div class="column is-5">
+        <p class="hero-description">
+          {{ this.description }}
+        </p>
+        {{ this.links }}
+      </div>
+    </div>
   </div>
-  <div class="columns">
-    <div class="column is-one-third">
-      <p class="hero-description">
-        {{ this.description }}
-      </p>
-      {{ this.links }}
-    </div>
-    <div class="column">
-      <img src="./github.svg" />
-    </div>
+  <div class="level-right hero-image">
+    <img class="image" src="./github.svg" />
   </div>
 </section>
