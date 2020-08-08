@@ -81,7 +81,7 @@ code {
 // Get-involved section - Home page
 .get-involved {
   background-color: $color-lighter-gray;
-  color: $color-dark-slate-gray;
+  @extend .has-color-dark-slate-gray;
   border-bottom: solid 0.1875rem $color-white;
 
   .container {
@@ -109,8 +109,8 @@ code {
         @extend .b-header;
         @extend .padding-top-big;
 
-        a:hover {
-          color: $color-forest-green;
+        :hover {
+          @extend .has-color-forest-green;
         }
       }
 
