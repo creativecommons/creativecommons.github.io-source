@@ -33,16 +33,20 @@ $(document).ready(function () {
         }
     });
 
-    // Internal Navigation for table of contents component
+    // Internal Navigation for table of contents and table of progress component
     let hash = window.location.hash;
     if (hash.length > 0) {
         $('.menu-list').find('a[href=\"' + hash + '\"]').addClass('is-active');
+        $('.step').find('a[href=\"' + hash + '\"]').find('.number').addClass('is-active');
     }
 
     $(window).on('hashchange', function() {
         let hash = window.location.hash;
         $('.menu-list a[href*="#"]').closest('a').removeClass('is-active');
         $('.menu-list').find('a[href=\"' + hash + '\"]').addClass('is-active');
+
+        $('.step a[href*="#"]').closest('a').find('.number').removeClass('is-active');
+        $('.step').find('a[href=\"' + hash + '\"]').find('.number').addClass('is-active');
     });
 });
 
