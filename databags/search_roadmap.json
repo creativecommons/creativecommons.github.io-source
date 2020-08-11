@@ -39,6 +39,11 @@
                     "name": "Web Monetization: Phase 1"
                 },
                 {
+                    "description": "Support rendering of 3D objects on frontend of CC Search.",
+                    "gid": "1186693612765819",
+                    "name": "3D Support in UI"
+                },
+                {
                     "description": "Improve the support pages on CC Search, which includes the Collections page, for a better experience. Add explanation text for collections, improve flow.",
                     "gid": "1149385618454685",
                     "name": "Improved Support Pages"
