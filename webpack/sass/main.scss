@@ -207,6 +207,11 @@ code {
     border-bottom: 0.1875rem solid $color-light-gray;
   }
 
+  .column:nth-last-child(-n + 3):nth-child(3n + 1), .column:nth-last-child(-n + 3):nth-child(3n + 1) ~ .column
+  {
+    border-bottom: none;
+  }
+
   .blog-entry {
     @extend .padding-vertical-larger;
     @extend .padding-horizontal-big;
