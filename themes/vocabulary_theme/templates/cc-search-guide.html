@@ -13,13 +13,17 @@
         <div class="table-of-progress">
           <h4 class="step-header">Steps</h4>
           <ul>
+            {% set step = namespace (number = 0) %}
             {% for item in this.body.toc %}
-              <li class="step">
-                <a class="link" href="#{{ item.anchor }}">
-                  <span class="number">{{ loop.index - 1 }}</span>
-                  <span class="name">{{ item.title }}</span>
-                </a>
-              </li>
+              {% if (loop.index + 1)%3 == 0 %}
+                <li class="step">
+                  <a class="link" href="#{{ this.body.toc[loop.index - 2].anchor }}">
+                    <span class="number">{{ step.number }}</span>
+                    <span class="name">{{ item.title }}</span>
+                  </a>
+                </li>
+                {% set step.number = step.number + 1 %}
+              {% endif%}
             {% endfor %}
           </ul>
         </div>
