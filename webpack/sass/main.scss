@@ -532,8 +532,21 @@ code {
     @extend .padding-bottom-xxl;
 
     .content {
-      h3 {
-        margin-top: 0rem;
+      h2 {
+        @extend .is-marginless;
+        @extend .padding-bottom-small;
+      }
+      h4 {
+        @extend .b-header;
+        @extend .is-marginless;
+        @extend .padding-bottom-small;
+
+        color: $color-gray;
+      }
+      h5 {
+        @extend .is-marginless;
+        @extend .b-header;
+        @extend .padding-bottom-big;
       }
     }
   }
