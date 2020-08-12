@@ -39,7 +39,7 @@
                       <span class="link-content">Github Repository</span>
                     </a>
                     <br>
-                    <a class="button is-text tiny">
+                    <a class="button is-text tiny" href="https://creativecommons.slack.com/channels/{{ repo.slack }}">
                       <i class="icon slack"></i>
                       <span class="link-content">Slack channel (#{{ repo.slack }})</span>
                     </a>
@@ -93,7 +93,7 @@
                   {% endif %}
                   <a href="{{ repo.url }}" class="is-block has-color-dark-slate-gray"><i class="icon github padding-right-small"></i>Github</a>
                   {% if repo.slack %}
-                    <a href="{{ repo.url }}" class="is-block has-color-dark-slate-gray"><i class="icon slack padding-right-small"></i>Slack</a>
+                    <a href="https://creativecommons.slack.com/channels/{{ repo.slack }}" class="is-block has-color-dark-slate-gray"><i class="icon slack padding-right-small"></i>Slack</a>
                   {% endif %}
                 </td>
               </tr>
