@@ -97,8 +97,6 @@ If our heuristic fails to correctly approximate the bandwidth capabilities of a 
 
 To handle these situations, we have two tools in our toolbox: a sliding window recording the status code of every request made we've made to each domain in the last 60 seconds, and a list of the last 50 status for each website. If the number of errors in our one minute window exceed 10%, something is wrong; wait a minute before trying again. If we have encountered many errors in a row, however, that suggests that we're having trouble with a particular site, so we ought to give up crawling the source and raise an alert.
 
-![Circuit breaker diagram]()
-
 Workers can keep track of this information in sorted sets in Redis. For the sliding error window, we'll sort each request by its timestamp, which will make it easy and cheap for us to expire status codes beyond the sliding window interval. Maintaining a list of the last N response codes is even easier; we just stick the status code in a list associated with the source.
 
 ```
