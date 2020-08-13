@@ -12,7 +12,7 @@ pub_date: 2020-08-14
 ---
 body:
 
-## Background
+### Background
 
 The goal of [CC Search](https://search.creativecommons.org) is to index all of the Creative Commons works on the internet, starting with images. We have indexed over 500 million images, which we believe is roughly 36% of all CC licensed content on the internet by [our last count](https://creativecommons.org/2018/05/08/state-of-the-commons-2017/). To further enhance the usefulness of our search tool, we recently started crawling and analyzing images for improved search results. This article will discuss the process of taking a paper design for a large scale crawler, implementing it, and putting it in production, with a few idealized code snippets and diagrams along the way. The full source code can be viewed on [GitHub](https://github.com/creativecommons/image-crawler).
 
@@ -35,19 +35,19 @@ On the scale of several thousand images, it would be easy to cobble together a f
 
 In summary, the challenge here isn't so much making a really fast crawler as much as it is tailoring the crawl speed to each source. At a minimum, we'll need to deal with concurrency and parallelism, provisioning and managing the life cycle of crawler infrastructure, pipelines for capturing output data, a way to monitor the progress of the crawl, a suite of tests to make sure the system behaves as expected, and a reliable way to enforce a "politeness" policy. That's not a trivial project, particularly for our tiny three person tech team (of which only one person is available to do all of the crawling work). Can't we just use an off-the-shelf open source crawler?
 
-## What about existing open source crawlers?
+#### What about existing open source crawlers?
 Any decent software engineer will consider existing options before diving into a project and reinventing the wheel. My assessment was that although there are a lot of open source crawling frameworks available, few of them focus on images, many of them are in a poorer state of maintenance than one would think at first glance, and all would require extensive customization to meet the requirements of our crawl strategy. Further, many solutions are more complex than than our use case demands and would significantly expand our use of cloud infrastructure, resulting in higher expenses and more operational headaches. None of the existing options looked quite right for our use case.
 
 As a reminder, we want to eventually crawl every single Creative Commons work on the internet. Effective crawling is central to the capabilities that our search engine is able to provide. In addition to being central to achieving high quality image search, crawling could also be useful for discovering new Creative Commons content of any type on any website. In my view, that's a strong argument for spending some time designing a custom crawling solution where we have complete end-to-end control of the process, as long as the feature set is limited in scope. In the next section, we'll assess the effort required to build a crawler from the ground up.
 
-## Designing the crawler
+### Designing the crawler
 We know we're not going to be able to crawl 500 million images with one virtual machine and a single IP address, so it is obvious from the start that we are going to need a way to distribute the crawling and analysis tasks over multiple machines. A basic queue-worker architecture will do the job here; when we want to crawl an image, we can dispatch the URL to an inbound images queue, and a worker eventually pops that task out and processes it. Kafka will handle all of the hard work of partitioning and distributing the tasks between workers.
   
-The worker processes do the actual analysis of the images, which essentially entails downloading the image, extracting interesting properties, and sticking the resulting metadata back into a Kafka for later downstream processing. The worker will also have to include some instrumentation for conforming to rate limits and error reporting.
+The worker processes do the actual analysis of the images, which essentially entails downloading the image, extracting interesting properties, and sticking the resulting metadata back into a Kafka topic for later downstream processing. The worker will also have to include some instrumentation for conforming to rate limits and error reporting.
 
-We also know that we will to share some information about crawl progress between worker processes, such as whether we've exceeded our proscribed rate limit for a website, the number of times we've seen a status code in the last minute, how many images we've processed so far, and so on. Since we're only interested in sharing application state and aggregate statistics, a lightweight key/value store like Redis seems like a good fit.
+We also know that we will need to share some information about crawl progress between worker processes, such as whether we've exceeded our proscribed rate limit for a website, the number of times we've seen a status code in the last minute, how many images we've processed so far, and so on. Since we're only interested in sharing application state and aggregate statistics, a lightweight key/value store like Redis seems like a good fit.
 
-Finally, we need a maestro process that centrally controls the crawl. This key governing process will be responsible for making sure our crawler workers are behaving properly by moderating crawl rates for each source, taking action in the face of errors, and reporting statistics to the operators of the crawler. We'll call this process the crawl monitor.
+Finally, we need a supervising process that centrally controls the crawl. This key governing process will be responsible for making sure our crawler workers are behaving properly by moderating crawl rates for each source, taking action in the face of errors, and reporting statistics to the operators of the crawler. We'll call this process the crawl monitor.
 
 Here's a rough sketch of how things will work:
 
@@ -57,14 +57,14 @@ At a high level, the problem of building a fast crawler seems achievable for our
 
 In the next section, we'll examine some of the key components that make up the crawler.
 
-### Detailed breakdown
+#### Detailed breakdown
 
-#### Concurrency with `asyncio`
+##### Concurrency with `asyncio`
 Crawling is a massively IO bound task. The workers need to maintain lots of simultaneous open connections with internal systems like Kafka and Redis as well as 3rd party websites holding the target images. Once we have the image in memory, performing our actual analysis task is easy and cheap. For these reasons, an asynchronous approach seems more attractive than using multiple threads of execution. Even if our image processing task grows in complexity and becomes CPU bound, we can get the best of both worlds by offloading heavyweight tasks to a process pool.
 
 Another reason that an asynchronous approach may be desirable is that we have several interlocking components which need to react to events in real-time: our crawl monitoring process needs to simultaneously control the rate limiting process and also interrupt crawling if errors are detected; our worker processes need to consume crawl events, process images, upload thumbnails, and produce metadata events. Coordinating all of these components through inter-process communication could be difficult, but breaking up tasks into small pieces and yielding to the event loop is comparatively easy.
 
-#### The resize task
+##### The resize task
 This is the most vital part of our crawling system: the part that actually does the work of fetching and processing an image. As established previously, we need to execute this task concurrently, so everything needs to be defined with `async`/`await` syntax to allow the event loop to multitask. The actual task itself is otherwise straightforward.
 
 1. Download the remote image and load it into memory.
@@ -75,9 +75,9 @@ This is the most vital part of our crawling system: the part that actually does 
 
 See [image.py](https://github.com/creativecommons/image-crawler/blob/master/worker/image.py) for the nitty-gritty details.
 
-### Rate limiting with token buckets and error circuit breakers
+#### Rate limiting with token buckets and error circuit breakers
 
-#### How do we determine the rate limit?
+##### How do we determine the rate limit?
 Often times, when designing highly concurrent software, the goal is to maximize the throughput and push servers to their absolute limit. The opposite is true with a web crawler, particularly when you are operating a non-profit organization completely reliant on the goodwill of others to exist. We want to be as certain as reasonably possible that we aren't going to knock a resource off of the internet with an accidental [DDoS](https://en.wikipedia.org/wiki/Denial-of-service_attack). At the same time, we need to crawl as quickly as possible against sources with adequate resources to withstand a heavy crawl, or else we'll never finish. How can we match our crawl rate to a site's capabilities?
 
 Originally, my plan was to determine this through an adaptive rate limiting strategy, where we would start with a low rate limit and use a hill climbing algorithm to determine the optimal rate. We could track metrics like [time to first byte](https://en.wikipedia.org/wiki/Time_to_first_byte) (TTFB) and bandwidth speed to determine the exact moment that we have started to strain upstream servers. However, there are a lot of drawbacks here:
@@ -92,10 +92,10 @@ It turns out that the size of a website is typically correlated with infrastruct
 
 Of course, it's important to note that this is only a rough heuristic that we use to make a reasonable guess about what a website can handle. We have to allow the possibility that we set our rate limit too aggressively in spite of our precautions.
 
-#### Backing off with circuit breakers
+##### Backing off with circuit breakers
 If our heuristic fails to correctly approximate the bandwidth capabilities of a site, we are going to start encountering problems. For one, we might exceed the server-side rate limit, which means we will see `429 Rate Limit Exceeded` and `403 Forbidden` errors instead of the images we're trying to crawl. Worse yet, the upstream source might continue to happily serve requests while we suck up all of their traffic capacity, resulting in other users being unable to view the images. Clearly, in either scenario, we need to either reduce our crawl rate or even give up crawling the source entirely if it appears that we are impacting their uptime.
 
-To handle these situations, we have two tools in our toolbox: a sliding window recording the status code of every request made we've made to each domain in the last 60 seconds, and a list of the last 50 status for each website. If the number of errors in our one minute window exceed 10%, something is wrong; wait a minute before trying again. If we have encountered many errors in a row, however, that suggests that we're having trouble with a particular site, so we ought to give up crawling the source and raise an alert.
+To handle these situations, we have two tools in our toolbox: a sliding window recording the status code of every request made we've made to each domain in the last 60 seconds, and a list of the last 50 statuses for each website. If the number of errors in our one minute window exceed 10%, something is wrong; we should wait a minute before trying again. If we have encountered many errors in a row, however, that suggests that we're having trouble with a particular site, so we ought to give up crawling the source and raise an alert.
 
 Workers can keep track of this information in sorted sets in Redis. For the sliding error window, we'll sort each request by its timestamp, which will make it easy and cheap for us to expire status codes beyond the sliding window interval. Maintaining a list of the last N response codes is even easier; we just stick the status code in a list associated with the source.
 
@@ -159,11 +159,11 @@ if len(last_50_statuses) >= 50 and _every_request_failed(last_50_statuses):
 
 In practice, keeping a sliding window for tracking error thresholds and setting reasonable minimum and maximum crawl rates has worked well enough that the circuit breaker has never been tripped.
 
-#### Enforcing rate limits with token buckets
+##### Enforcing rate limits with token buckets
 
 It's one thing to set a policy for crawling; it's another thing entirely to actually enforce it. How can we coordinate our multiple crawling processes to prevent them from overstepping our rate limit?
 
-The answer is to implement a distributed token bucket system. The idea behind this is that each crawler has to obtain a token from Redis before making a request. Every second, the crawl monitor sets a variable containing the number of requests that can be made against a source. Each crawler process decrements the counter before making a request. If the decremented result is above zero, the worker is cleared to crawl. Otherwise, the rate limit has been and we should wait until a token has been obtained.
+The answer is to implement a distributed token bucket system. The idea behind this is that each crawler has to obtain a token from Redis before making a request. Every second, the crawl monitor sets a variable containing the number of requests that can be made against a source. Each crawler process decrements the counter before making a request. If the decremented result is above zero, the worker is cleared to crawl. Otherwise, the rate limit has been reached and we should wait until a token has been obtained.
 
 The beauty of token buckets is their simplicity, performance, and resilience against failure. If our crawler monitor process dies, crawling halts completely; making a request is not possible without first acquiring a token. This is a much better alternative to the guard rails completely disappearing with the crawl monitor and allowing unbounded crawling. Further, since decrementing a counter and retrieving the result is an atomic operation in Redis, there's no risk of race conditions and therefore no need for locking. This is a huge boon for performance, as the overhead of coordinating and blocking on every single request would rapidly bog down our crawling system.
 
@@ -196,8 +196,8 @@ class RateLimitedClientSession:
 
 Meanwhile, the crawl monitor process is filling up each bucket every second.
 
-### Scheduling tasks (somewhat) intelligently
-The final gotcha in the design of our crawler is that we want to crawl every single website at the same time at its proscribed rate limit. That sounds almost tautological, like something that we should be able to take for granted after implementing all of this logic for preventing our crawler from working too quickly, but it turns out our crawler's processing capacity itself is a limited and contentious resource. We can only schedule so many tasks simultaneously on each worker, and we need to ensure that tasks from a single website aren't starving other sources of crawl capacity.
+#### Scheduling tasks (somewhat) intelligently
+The final gotcha in the design of our crawler is that we want to crawl every single website at the same time at its prescribed rate limit. That sounds almost tautological, like something that we should be able to take for granted after implementing all of this logic for preventing our crawler from working too quickly, but it turns out our crawler's processing capacity itself is a limited and contentious resource. We can only schedule so many tasks simultaneously on each worker, and we need to ensure that tasks from a single website aren't starving other sources of crawl capacity.
 
 For instance, imagine that each worker is able to handle 5000 simultaneous crawling tasks, and every one of those tasks is tied to a tiny website with a very low rate limit. That means that our entire worker, which is capable of handling hundreds of crawl and analysis jobs per second, is stuck making one request per second until some faster tasks appear in the queue.
 
@@ -235,7 +235,7 @@ The one implementation detail to deal with here is that our workers can't draw f
 
 *<center>A more complete diagram showing the system with a queue for each source</center>*
 
-### Designing for testability
+#### Designing for testability
 
 It's quite difficult to test IO-heavy systems because of their need to interact with lots of external dependencies. Often times it is necessary to write complex integration tests or run manual tests to be certain that key functionality works as expected. This is no good because integration tests are much more expensive to maintain and take far longer to execute. We certainly wouldn't go to production without running a smoke test to verify correctness in real-world conditions, but it's still critical to have unit tests in place for catching bugs quickly during the development process.
 
@@ -288,7 +288,7 @@ async def test_error_circuit_breaker(source_fixture):
 The main drawback of dependency injection is that initializing your objects will take some more ceremony. See the [initialization of the crawl scheduler](https://github.com/creativecommons/image-crawler/blob/00b59aba9a15faccf203a53d73a98e8c06cb69e8/worker/scheduler.py#L162) for an example of wiring up an object with a lot of dependencies. You might also find that constructors and other functions with a lot of dependencies will have a lot of arguments if care isn't taken to bundle external dependencies together. In my opinion, the price of a few extra lines of initialization code is well worth the benefits gained from testability and modularity.
 
 
-## Smoke testing
+### Smoke testing
 Even with our unit test coverage, we still need to do some basic small-scale manual tests to make sure our assumptions hold up in the real world. We'll need to write [Terraform](https://www.terraform.io/) modules that provision a working version of the real system. Sadly, our Terraform infrastructure repository is private for now, but here's a taste of what the infra code looks like.
 
 
@@ -358,7 +358,7 @@ One `terraform plan` and `terraform apply` cycle later, we're ready to feed a fe
 
 After fixing all of those issues and performing a larger smoke test, we're ready to start crawling on a large scale.
 
-## Monitoring the crawl
+### Monitoring the crawl
 
 Unfortunately, we can't just kick back and relax while the crawler does its thing for a few weeks. We need some transparency about what the crawler is doing so we can be alerted when something breaks.
 
@@ -415,7 +415,7 @@ Here's an example log line from one of our smoke tests, indicating that we've cr
 
 Now that we can see what the crawler is up to, we can schedule the larger crawl and start collecting production quality data.
 
-## Takeaways
+### Takeaways
 
 The result here is that we have a lightweight, modular, highly concurrent, and polite distributed image crawler with only a handful of lines of code.
 
