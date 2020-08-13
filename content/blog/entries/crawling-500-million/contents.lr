@@ -12,7 +12,7 @@ pub_date: 2020-08-14
 ---
 body:
 
-### Background
+#### Background
 
 The goal of [CC Search](https://search.creativecommons.org) is to index all of the Creative Commons works on the internet, starting with images. We have indexed over 500 million images, which we believe is roughly 36% of all CC licensed content on the internet by [our last count](https://creativecommons.org/2018/05/08/state-of-the-commons-2017/). To further enhance the usefulness of our search tool, we recently started crawling and analyzing images for improved search results. This article will discuss the process of taking a paper design for a large scale crawler, implementing it, and putting it in production, with a few idealized code snippets and diagrams along the way. The full source code can be viewed on [GitHub](https://github.com/creativecommons/image-crawler).
 
@@ -40,7 +40,7 @@ Any decent software engineer will consider existing options before diving into a
 
 As a reminder, we want to eventually crawl every single Creative Commons work on the internet. Effective crawling is central to the capabilities that our search engine is able to provide. In addition to being central to achieving high quality image search, crawling could also be useful for discovering new Creative Commons content of any type on any website. In my view, that's a strong argument for spending some time designing a custom crawling solution where we have complete end-to-end control of the process, as long as the feature set is limited in scope. In the next section, we'll assess the effort required to build a crawler from the ground up.
 
-### Designing the crawler
+#### Designing the crawler
 We know we're not going to be able to crawl 500 million images with one virtual machine and a single IP address, so it is obvious from the start that we are going to need a way to distribute the crawling and analysis tasks over multiple machines. A basic queue-worker architecture will do the job here; when we want to crawl an image, we can dispatch the URL to an inbound images queue, and a worker eventually pops that task out and processes it. Kafka will handle all of the hard work of partitioning and distributing the tasks between workers.
   
 The worker processes do the actual analysis of the images, which essentially entails downloading the image, extracting interesting properties, and sticking the resulting metadata back into a Kafka topic for later downstream processing. The worker will also have to include some instrumentation for conforming to rate limits and error reporting.
@@ -196,7 +196,7 @@ class RateLimitedClientSession:
 
 Meanwhile, the crawl monitor process is filling up each bucket every second.
 
-#### Scheduling tasks (somewhat) intelligently
+##### Scheduling tasks (somewhat) intelligently
 The final gotcha in the design of our crawler is that we want to crawl every single website at the same time at its prescribed rate limit. That sounds almost tautological, like something that we should be able to take for granted after implementing all of this logic for preventing our crawler from working too quickly, but it turns out our crawler's processing capacity itself is a limited and contentious resource. We can only schedule so many tasks simultaneously on each worker, and we need to ensure that tasks from a single website aren't starving other sources of crawl capacity.
 
 For instance, imagine that each worker is able to handle 5000 simultaneous crawling tasks, and every one of those tasks is tied to a tiny website with a very low rate limit. That means that our entire worker, which is capable of handling hundreds of crawl and analysis jobs per second, is stuck making one request per second until some faster tasks appear in the queue.
@@ -235,7 +235,7 @@ The one implementation detail to deal with here is that our workers can't draw f
 
 *<center>A more complete diagram showing the system with a queue for each source</center>*
 
-#### Designing for testability
+##### Designing for testability
 
 It's quite difficult to test IO-heavy systems because of their need to interact with lots of external dependencies. Often times it is necessary to write complex integration tests or run manual tests to be certain that key functionality works as expected. This is no good because integration tests are much more expensive to maintain and take far longer to execute. We certainly wouldn't go to production without running a smoke test to verify correctness in real-world conditions, but it's still critical to have unit tests in place for catching bugs quickly during the development process.
 
@@ -288,7 +288,7 @@ async def test_error_circuit_breaker(source_fixture):
 The main drawback of dependency injection is that initializing your objects will take some more ceremony. See the [initialization of the crawl scheduler](https://github.com/creativecommons/image-crawler/blob/00b59aba9a15faccf203a53d73a98e8c06cb69e8/worker/scheduler.py#L162) for an example of wiring up an object with a lot of dependencies. You might also find that constructors and other functions with a lot of dependencies will have a lot of arguments if care isn't taken to bundle external dependencies together. In my opinion, the price of a few extra lines of initialization code is well worth the benefits gained from testability and modularity.
 
 
-### Smoke testing
+#### Smoke testing
 Even with our unit test coverage, we still need to do some basic small-scale manual tests to make sure our assumptions hold up in the real world. We'll need to write [Terraform](https://www.terraform.io/) modules that provision a working version of the real system. Sadly, our Terraform infrastructure repository is private for now, but here's a taste of what the infra code looks like.
 
 
@@ -358,7 +358,7 @@ One `terraform plan` and `terraform apply` cycle later, we're ready to feed a fe
 
 After fixing all of those issues and performing a larger smoke test, we're ready to start crawling on a large scale.
 
-### Monitoring the crawl
+##### Monitoring the crawl
 
 Unfortunately, we can't just kick back and relax while the crawler does its thing for a few weeks. We need some transparency about what the crawler is doing so we can be alerted when something breaks.
 
@@ -415,7 +415,7 @@ Here's an example log line from one of our smoke tests, indicating that we've cr
 
 Now that we can see what the crawler is up to, we can schedule the larger crawl and start collecting production quality data.
 
-### Takeaways
+##### Takeaways
 
 The result here is that we have a lightweight, modular, highly concurrent, and polite distributed image crawler with only a handful of lines of code.
 
