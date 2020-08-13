@@ -415,7 +415,7 @@ Here's an example log line from one of our smoke tests, indicating that we've cr
 
 Now that we can see what the crawler is up to, we can schedule the larger crawl and start collecting production quality data.
 
-##### Takeaways
+#### Takeaways
 
 The result here is that we have a lightweight, modular, highly concurrent, and polite distributed image crawler with only a handful of lines of code.
 
