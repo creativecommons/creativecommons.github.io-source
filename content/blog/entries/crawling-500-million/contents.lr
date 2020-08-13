@@ -53,7 +53,7 @@ Here's a rough sketch of how things will work:
 
 ![Diagram](image_crawler_simplified.png)
 
-At a high level, the problem of building a fast crawler seems achievable for our team, even on the scale of several hundred million images. If we can sustain a crawl and analysis rate of 200 images per second, we could crawl all 500 million images in about a month.
+At a high level, the problem of building a fast crawler seems solvable for our team, even on the scale of several hundred million images. If we can sustain a crawl and analysis rate of 200 images per second, we could crawl all 500 million images in about a month.
 
 In the next section, we'll examine some of the key components that make up the crawler.
 
