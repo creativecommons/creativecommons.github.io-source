@@ -83,7 +83,7 @@ Often times, when designing highly concurrent software, the goal is to maximize 
 Originally, my plan was to determine this through an adaptive rate limiting strategy, where we would start with a low rate limit and use a hill climbing algorithm to determine the optimal rate. We could track metrics like [time to first byte](https://en.wikipedia.org/wiki/Time_to_first_byte) (TTFB) and bandwidth speed to determine the exact moment that we have started to strain upstream servers. However, there are a lot of drawbacks here:
 
 1. It may not be correct to assume that performance will steadily degrade instead of failing all at once.
-2. We can't detect whether we are the cause of a performance issue or if they're simply experiencing server trouble due to configuration errors or high traffic. We could get stuck in local maxima due to normal fluctuations in traffic.
+2. We can't detect whether we are the cause of a performance issue or if the host is simply experiencing server trouble due to configuration errors or high traffic. We could get stuck in local maxima due to normal fluctuations in traffic.
 3. Recording TTFB in Python is difficult because it requires low level access to connection data. We might have to write an extension to `aiohttp` to get it.
 
 Eventually I decided that this is too much hassle. Can we get the job done with a simpler strategy?
