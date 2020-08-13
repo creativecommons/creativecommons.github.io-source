@@ -292,7 +292,7 @@ The main drawback of dependency injection is that initializing your objects will
 Even with our unit test coverage, we still need to do some basic small-scale manual tests to make sure our assumptions hold up in the real world. We'll need to write [Terraform](https://www.terraform.io/) modules that provision a working version of the real system. Sadly, our Terraform infrastructure repository is private for now, but here's a taste of what the infra code looks like.
 
 
-```json
+```terraform
 module "image-crawler" {
   source = "../../modules/services/image-crawler"
   environment = "prod"
@@ -309,7 +309,7 @@ module "image-crawler" {
 *<center>Initialization of crawler Terraform module in our production environment</center>*
 
 
-```json
+```terraform
 resource "aws_instance" "crawler-workers" {
   ami                     = "${var.ami}"
   instance_type           = "${var.worker_instance_type}"
