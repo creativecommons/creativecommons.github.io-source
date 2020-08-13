@@ -326,14 +326,6 @@ resource "aws_instance" "crawler-workers" {
     "cc:purpose"     = "Image crawler worker"
     "cc:team"        = "cc-search"
   }
-  volume_tags {
-    Name             = "image-crawler-worker-${var.environment}"
-    environment      = "${var.environment}"
-    "cc:environment" = "${var.environment == "dev" ? "staging" : "production"}"
-    "cc:product"     = "cccatalog-api"
-    "cc:purpose"     = "Image crawler worker"
-    "cc:team"        = "cc-search"
-  }
 }
 
 resource "aws_instance" "crawler-monitor" {
@@ -342,19 +334,8 @@ resource "aws_instance" "crawler-monitor" {
   user_data               = "${data.template_file.monitor_init.rendered}"
   subnet_id               = "${element(data.aws_subnet_ids.subnets.ids, 0)}"
   vpc_security_group_ids  = ["${aws_security_group.image-crawler-sg.id}"]
-  root_block_device {
-    volume_size = 150
-  }
 
   tags {
-    Name             = "image-crawler-monitor-${var.environment}"
-    environment      = "${var.environment}"
-    "cc:environment" = "${var.environment == "dev" ? "staging" : "production"}"
-    "cc:product"     = "cccatalog-api"
-    "cc:purpose"     = "Image crawler monitor"
-    "cc:team"        = "cc-search"
-  }
-  volume_tags {
     Name             = "image-crawler-monitor-${var.environment}"
     environment      = "${var.environment}"
     "cc:environment" = "${var.environment == "dev" ? "staging" : "production"}"
