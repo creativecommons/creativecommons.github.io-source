@@ -99,7 +99,7 @@ To handle these situations, we have two tools in our toolbox: a sliding window r
 
 Workers can keep track of this information in sorted sets in Redis. For the sliding error window, we'll sort each request by its timestamp, which will make it easy and cheap for us to expire status codes beyond the sliding window interval. Maintaining a list of the last N response codes is even easier; we just stick the status code in a list associated with the source.
 
-```
+```python
 class StatsManager:
     def __init__(self, redis):
         self.redis = redis
@@ -127,7 +127,7 @@ Meanwhile, the crawl monitor process can keep tabs on the contents of each error
 When more than 10% of the requests made to a source in the last minute are errors, we'll set a halt condition in Redis and stop replenishing rate limit tokens (more on that below).
 
 
-```
+```python
 now = time.monotonic()
 one_minute_window = await redis.zrangebyscore(
     one_minute_window_key, '-inf', now - 60
@@ -148,7 +148,7 @@ if not successful or errors / successful > tolerance:
 
 For detecting "serious" errors, where we've seen 50 failed requests in a row, we'll set a permanent halt condition. Someone will have to manually troubleshoot the situation and switch the crawler back on for that source.
 
-```
+```python
 last_50_statuses_key = f'statuslast50req:{source}'
 last_50_statuses = await redis.lrange(last_50_statuses_key, 0, -1)
 if len(last_50_statuses) >= 50 and _every_request_failed(last_50_statuses):
@@ -169,7 +169,7 @@ The beauty of token buckets is their simplicity, performance, and resilience aga
 
 To ensure that all crawling is performed at the correct speed, I wrapped `aiohttp.ClientSession` with a rate limited version of the class.
 
-```
+```python
 class RateLimitedClientSession:
     def __init__(self, aioclient, redis):
         self.client = aioclient
@@ -205,7 +205,7 @@ In other words, we need to make sure that each worker process isn't jamming itse
 
 There are innumerable ways to address scheduling problems. Since there are only a few dozen sources in our system, we can get away with using a stupid scheduling algorithm: give each source equal capacity in every worker. In other words, if there are 5000 tasks to distribute and 30 sources, we can allocate 166 simultaneous tasks to each source per worker. That's plenty for our purposes. There are obvious drawbacks of this approach in that eventually there will be so many sources that we start starving high rate limit sources of work. We'll cross that bridge when we come to it; it's better to use the simplest possible approach we can get away with instead of spending all of our time on solving hypothetical future problems.
 
-```
+```python
     async def _schedule(self, task_schedule):
         raw_sources = await self.redis.smembers('inbound_sources')
         sources = [str(x, 'utf-8') for x in raw_sources]
@@ -246,7 +246,7 @@ For example, the crawl monitor usually has to talk to our CC Search API (for ass
 *<center>Testing our crawl monitor's circuit breaking functionality with mock dependencies</center>*
 
 
-```
+```python
 @pytest.fixture
 def source_fixture():
     """ Mocks the /v1/sources endpoint response. """
@@ -292,7 +292,7 @@ The main drawback of dependency injection is that initializing your objects will
 Even with our unit test coverage, we still need to do some basic small-scale manual tests to make sure our assumptions hold up in the real world. We'll need to write [Terraform](https://www.terraform.io/) modules that provision a working version of the real system. Sadly, our Terraform infrastructure repository is private for now, but here's a taste of what the infra code looks like.
 
 
-```  
+```json
 module "image-crawler" {
   source = "../../modules/services/image-crawler"
   environment = "prod"
@@ -309,7 +309,7 @@ module "image-crawler" {
 *<center>Initialization of crawler Terraform module in our production environment</center>*
 
 
-```
+```json
 resource "aws_instance" "crawler-workers" {
   ami                     = "${var.ami}"
   instance_type           = "${var.worker_instance_type}"
@@ -389,7 +389,7 @@ It would be nice to build a reporting dashboard for this, but in the interest of
 
 Here's an example log line from one of our smoke tests, indicating that we've crawled 13,224 images successfully and nothing else is happening.
 
-```
+```json
 {
    "event" : "monitoring_update",
    "time" : "2020-04-17T20:22:56.837232",
@@ -438,7 +438,7 @@ Now that we can see what the crawler is up to, we can schedule the larger crawl 
 
 The result here is that we have a lightweight, modular, highly concurrent, and polite distributed image crawler with only a handful of lines of code. The length of this article is probably comparable with the length of our crawling program.
 
-```
+```bash
 alden:~/code/image_crawler$ cloc .
       48 text files.
       43 unique files.                              
