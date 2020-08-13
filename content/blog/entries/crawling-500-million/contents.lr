@@ -228,7 +228,7 @@ There are innumerable ways to address scheduling problems. Since there are only 
 
 *<center>Scheduling tasks for every source</center>*
 
-The one implementation detail to deal with here is that our workers can't draw from a single inbound images queue anymore; we need to partition each source into its own queue so we can pull tasks from each source when we need it. This partitioning process can be handled transparently by our crawl monitoring process.
+The one implementation detail to deal with here is that our workers can't draw from a single inbound images queue anymore; we need to partition each source into its own queue so we can pull tasks from each source when we need it. This partitioning process can be handled transparently by the crawl monitor.
 
 
 ![A more complete diagram](image_crawler.png)
