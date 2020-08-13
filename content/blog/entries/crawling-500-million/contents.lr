@@ -237,7 +237,7 @@ The one implementation detail to deal with here is that our workers can't draw f
 
 ### Designing for testability
 
-It's quite difficult to test IO-heavy systems because of their need to interact with lots of external dependencies. Often times it is necessary to write complex integration tests or run manual tests to be certain that key functionality works as expected. This is no good because integration tests (and especially manual tests) are much more expensive to maintain and take far longer to execute. We certainly wouldn't go to production without running a smoke test to verify correctness in real-world conditions, but it's still critical to have unit tests in place for catching bugs quickly during the development process.
+It's quite difficult to test IO-heavy systems because of their need to interact with lots of external dependencies. Often times it is necessary to write complex integration tests or run manual tests to be certain that key functionality works as expected. This is no good because integration tests are much more expensive to maintain and take far longer to execute. We certainly wouldn't go to production without running a smoke test to verify correctness in real-world conditions, but it's still critical to have unit tests in place for catching bugs quickly during the development process.
 
 The solution to this problem is to use dependency injection, which is a fancy way of saying that we never do IO directly from within our application. Instead, we delegate IO to external objects that can be passed in at run-time. This makes it easy to pass in fake objects that approximate real world behavior without real world consequences.
 
