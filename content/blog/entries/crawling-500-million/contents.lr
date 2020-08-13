@@ -417,7 +417,7 @@ Now that we can see what the crawler is up to, we can schedule the larger crawl 
 
 ## Takeaways
 
-The result here is that we have a lightweight, modular, highly concurrent, and polite distributed image crawler with only a handful of lines of code. The length of this article is probably comparable with the length of our crawling program.
+The result here is that we have a lightweight, modular, highly concurrent, and polite distributed image crawler with only a handful of lines of code.
 
 ```bash
 alden:~/code/image_crawler$ cloc .
