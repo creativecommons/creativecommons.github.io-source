@@ -32,6 +32,10 @@
                   <li>
                     <a class="link" href="{{ '/contributing-code/cc-search'|url }}">CC Search</a>
                   </li>
+                  <hr class="divider">
+                  <li>
+                    <a class="{% if this.path == '/contributing-code/usability' %} is-active {% endif%} link" href="{{ '/contributing-code/usability'|url }}">Usability</a>
+                  </li>
                 </ul>
               </aside>
             {% elif this.is_child_of('/community') %}
