@@ -79,6 +79,7 @@ To install these, execute the following commands:
 2. Open your command line interface and `cd` to the repository root directory.
 3. Run `pipenv install` to create a Python virtual environment and install the requirements for this project.
 
+
 ### pipenv Troubleshooting
 
 `pipenv` doesn't always provide the best error messages ([Provide better error
@@ -88,6 +89,7 @@ else fails, try removing the virtual environment and reinstalling:
 2. `pipenv install`
 
 [pipenverror]:https://github.com/pypa/pipenv/issues/1918
+
 
 ## Development
 
@@ -103,7 +105,7 @@ else fails, try removing the virtual environment and reinstalling:
 * Should you get series of type errors that looks something like `npm ERR! typeerror Error: Missing required argument #1`, after running `pipenv run lektor server -f webpack`, this is most likely due to running an older version of Node.js.
 
   As stated earlier in the prerequisites, you should be running Node.js version 12+.
-Follow [this](https://github.com/nodesource/distributions/blob/master/README.md#table-of-contents) tutorial to upgrade your node version (for GNU/Unix systems).
+  Follow [this](https://github.com/nodesource/distributions/blob/master/README.md#table-of-contents) tutorial to upgrade your node version (for GNU/Unix systems).
 
 * Should you get an `OSError: [Errno 28] inotify watch limit reached` after running any command, this means that your system file watcher is running out of alloted handles, usually because the workspace is large and contains many files. 
 
@@ -111,7 +113,7 @@ Follow [this](https://github.com/nodesource/distributions/blob/master/README.md#
 `sudo sysctl fs.inotify.max_user_watches=524288`
 
   This increases your `inotify` watch limit (for the session) to 524288, which is the maximum value and is also enough to allow the  setup go through.
-You can learn more about file watchers [from this blog post](https://unixia.wordpress.com/2018/04/28/inotify-watch-limit-reached-wait-what/) or [from the VS Code documentation](https://code.visualstudio.com/docs/setup/linux#_visual-studio-code-is-unable-to-watch-for-file-changes-in-this-large-workspace-error-enospc).
+  You can learn more about file watchers [from this blog post](https://unixia.wordpress.com/2018/04/28/inotify-watch-limit-reached-wait-what/) or [from the VS Code documentation](https://code.visualstudio.com/docs/setup/linux#_visual-studio-code-is-unable-to-watch-for-file-changes-in-this-large-workspace-error-enospc).
 
 ## Deployment
 
