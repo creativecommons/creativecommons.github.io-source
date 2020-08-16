@@ -888,28 +888,6 @@
             "website": null
         },
         {
-            "created": "2020-08-14T13:22:51",
-            "description": "Temporary repo, please ignore",
-            "id": 287538226,
-            "language": null,
-            "license": null,
-            "name": "tmp1",
-            "slack": "",
-            "url": "https://github.com/creativecommons/tmp1",
-            "website": null
-        },
-        {
-            "created": "2020-08-14T13:23:30",
-            "description": "Temporary repo, please ignore",
-            "id": 287538345,
-            "language": null,
-            "license": null,
-            "name": "tmp2",
-            "slack": "",
-            "url": "https://github.com/creativecommons/tmp2",
-            "website": null
-        },
-        {
             "created": "2019-11-25T17:29:13",
             "description": "A cohesive design system to unify the web facing Creative Commons",
             "engineering_project": true,
