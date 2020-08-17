@@ -206,8 +206,9 @@ code {
   .column {
     border-bottom: 0.1875rem solid $color-light-gray;
   }
-
-  .column:nth-last-child(-n + 3):nth-child(3n + 1), .column:nth-last-child(-n + 3):nth-child(3n + 1) ~ .column
+  /* last row, irrespective of the number of elements */
+  .column:nth-last-child(-n + 3):nth-child(3n + 1), /* first element of the last row */
+  .column:nth-last-child(-n + 3):nth-child(3n + 1) ~ .column /* all its following elements */
   {
     border-bottom: none;
   }
