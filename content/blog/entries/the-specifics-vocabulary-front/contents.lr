@@ -1,0 +1,176 @@
+title: The specifics - Vocabulary Front
+---
+categories:
+outreachy
+tech
+open-source
+---
+author: dhruvi16
+---
+series: outreachy-2020-CCOS
+---
+pub_date: 2020-08-17
+---
+body:
+
+In this blog, I will be talking about how I managed to use Vocabulary ( Creative Commons's Design Library ) efficiently in our Open Source website.
+
+### What is Vocabulary?
+
+[Vocabulary](https://cc-vocabulary.netlify.app/?path=/story/vocabulary-introduction--page) is a cohesive design system to unite the web-facing Creative Commons. In essence Vocabulary is a component library that uses and extends Bulma CSS library. Vocabulary makes it easier to develop Creative Commons apps while ensuring a consistently familiar experience. This project is still under development.
+
+### Why Vocabulary?
+
+Vocabulary is used to describe the overall visual design of our digital products. At first glance, it appears to be: an amalgamation of component designs with a consistent visual aesthetic and brand, typically accompanied by usage guidelines in the form of online documentation. But there is a lot more to it.
+When it comes to a large software community with a huge range of products, certain problems come along. One of those problems is maintaining the level of harmony across all the products of the network. So, there comes a need for a unified visual language that heightens the level of harmony in a digital ecosystem. And in our case, Vocabulary solves this problem.
+This design system is well built and helps us bring the following aspects to the table -
+  1. Recognizability
+  2. Consistency
+  3. Authenticity
+  4. Efficiency
+
+And many more.
+
+### How did I use it? — Examples
+
+As I stated before, I have added Vocabulary by updating all the Templates in the CCOS Lektor project.
+
+As far as components are concerned, I just had to paste the code snippets given on the Vocabulary’s website with the requires changes -
+
+#### Integration of Breadcrumb -
+
+<figure style="text-align: center;">
+    <img src="breadcrumb.png" alt="Breadcrumb">
+    <figcaption>Screenshot — <a href="https://cc-vocabulary.netlify.app/?path=/docs/navigation-breadcrumb--default-story">Breadcrumb</a> (Vocabulary)</figcaption>
+</figure>
+
+The code for integration —
+
+```
+<!-- Breadcrumb -->
+  {% if this._path !=  '/'%}
+    <div class="breadcrumb-container">
+      <nav class="container breadcrumb caption bold" aria-label="breadcrumbs">
+        <ul>
+          {% set crumbs = [] %}
+          {% set current = {'crumb': this} %}
+          <!-- Extracting the slugs of URL -->
+          {% for i in this._path.split("/") %}
+            {% if current.crumb is not none %}
+              {% if crumbs.insert(0, current.crumb._slug) %}{% endif %}
+              {% if current.update({"crumb": current.crumb.parent}) %}{% endif %}
+            {% endif %}
+          {% endfor %}
+          {% for crumb in crumbs %}
+            <!-- Active link -->
+            {% if this._slug == crumb %}
+              <li class="is-active"><a aria-current="page displayed">{{ crumb | title | replace('-', ' ') }}</a></li>
+            {% else %}
+              <!-- Forming the URL using extracted slugs -->
+              {% set i = loop.index %}
+              {% set ns = namespace (link = '') %}
+              {% for j in range(i) %}
+                {% set ns.link = ns.link + crumbs[j] + '/' %}
+              {% endfor %}
+              <li><a class="link" href="{{ ns.link|url }}">
+              {% if crumb != '' %}
+                {{ crumb | title | replace('-', ' ') }}
+              {% else %}
+                Home
+              {% endif %}
+              </a></li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </nav>
+    </div>
+  {% endif %}
+```
+
+Other than the components, there are other visual elements like typography, colors, spacing, and others that are extensively used in CCOS.
+
+This is code for the Hero section of the home page.
+
+##### The block template -
+
+```
+<section class="hero">
+  <div class="container">
+    <div class="hero-title column is-12 is-paddingless">
+      <h1>
+        {{ this.title }}
+      </h1>
+    </div>
+    <div class="columns">
+      <div class="column is-5">
+        <p class="hero-description">
+          {{ this.description }}
+        </p>
+        {{ this.links }}
+      </div>
+    </div>
+  </div>
+  <div class="level-right hero-image">
+    <img class="image" src="./github.svg" />
+  </div>
+</section>
+```
+
+##### The block styling -
+
+```
+// Hero section - Home page
+.hero {
+  @extend .margin-top-large;
+
+  .hero-title {
+    @extend .padding-horizontal-big;
+  }
+
+  .hero-description {
+    @extend .body-bigger;
+    @extend .padding-top-big;
+    @extend .padding-horizontal-big;
+  }
+
+  .hero-links {
+    @extend .margin-vertical-normal;
+    @extend .padding-horizontal-big;
+
+    .button {
+      @extend .margin-top-normal;
+      text-decoration: none;
+
+      .icon {
+        @extend .margin-right-small;
+        @extend .padding-vertical-smaller;
+      }
+    }
+  }
+
+  .hero-image {
+    @include from($fullhd) {
+      margin-top: -20rem;
+      .image {
+        width: 50%;
+      }
+    }
+    @include until($fullhd) {
+      .image {
+        width: 100%;
+      }
+    }
+  }
+}
+```
+
+<figure style="text-align: center;">
+    <img src="output.png" alt="Output">
+    <figcaption>Output</figcaption>
+</figure>
+
+### How you can use it and also contribute to it?
+
+Vocabulary is very easy to use. It is intuitive, consistent and highly reusable. Vocabulary uses Storybook to present each visual element that makes it very convenient for a user to integrate Vocabulary in their project. The code snippets attached with every element can be copied as it is and can be used. The code snippets above indicate how the library can be used and how easily you can achieve desired web pages. For more details, you can visit [usage guidelines](https://cc-vocabulary.netlify.app/?path=/docs/vocabulary-usage--page).
+
+Vocabulary is still under development, feedback and bug reports are welcome, fixes and patches even more so. Here is the link to [contribution guidelines](https://cc-vocabulary.netlify.app/?path=/docs/vocabulary-contribution--page).
