@@ -15,13 +15,13 @@ pub_date: 2020-07-22
 --- 
 body:
 
-## Introduction The CC
-Catalog project  handles the flow of image metadata from the source or provider
-and loads it to the database, which is then surfaced to the [CC
+## Introduction 
+The CC Catalog project  handles the flow of image metadata from the source or
+provider and loads it to the database, which is then surfaced to the [CC
 search][CC_search] tool. The workflows are set up for each provider to gather
 metadata about CC licensed images. These workflows are handled with the help of
 Apache Airflow. Airflow is an open source tool that helps us to schedule and
-monitor workflows.
+monitor workflows. 
 [CC_search]: https://ccsearch.creativecommons.org/about
 
 ## Airflow intro
