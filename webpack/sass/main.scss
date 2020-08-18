@@ -14,6 +14,18 @@ code {
   border-radius: 0.25rem;
 }
 
+// Multiple lines of code
+pre {
+  color: $color-dark-slate-gray;
+  background-color: $color-lighter-gray;
+  border: 0.0625rem solid $color-light-gray;
+  border-radius: 0.25rem;
+
+  code {
+    border: none;
+  }
+}
+
 .content {
   @extend .body-big;
 
