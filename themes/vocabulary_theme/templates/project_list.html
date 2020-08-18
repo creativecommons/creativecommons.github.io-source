@@ -89,11 +89,11 @@
                 {% endif %}
                 <td class="padding-vertical-normal padding-right-xl padding-left-normal">
                   {% if repo.website %}
-                    <a href="{{ repo.website }}" class="is-block has-color-dark-slate-gray">Website</a>
+                    <a href="{{ repo.website }}" class="is-block"><i class="icon external-link padding-right-small"></i>Website</a>
                   {% endif %}
-                  <a href="{{ repo.url }}" class="is-block has-color-dark-slate-gray"><i class="icon github padding-right-small"></i>Github</a>
+                  <a href="{{ repo.url }}" class="is-block"><i class="icon github padding-right-small"></i>Github</a>
                   {% if repo.slack %}
-                    <a href="https://creativecommons.slack.com/channels/{{ repo.slack }}" class="is-block has-color-dark-slate-gray"><i class="icon slack padding-right-small"></i>Slack</a>
+                    <a href="https://creativecommons.slack.com/channels/{{ repo.slack }}" class="is-block"><i class="icon slack padding-right-small"></i>Slack</a>
                   {% endif %}
                 </td>
               </tr>
