@@ -6,17 +6,21 @@
       {% set author = post.parent.parent.children.get('authors').children.get(post.author) %}
       <div class="column is-one-third">
         <article class="card entry-post horizontal no-border blog-entry">
-          <header>
-            <figure class="image blog-image">
-              {% if author.about %}
-                {% if author.md5_hashed_email %}
+          {% if author.about %}
+            {% if author.md5_hashed_email %}
+              <header>
+                <figure class="image blog-image">
                   <img class="profile" src="https://secure.gravatar.com/avatar/{{ author.md5_hashed_email }}?size=200" alt="gravatar" />
-                {% else %}
-                  <img class="profile" src="./blank_profile.svg" alt="gravatar" />
-                {% endif %}
-              {% endif %}
-            </figure>
-          </header>
+                </figure>
+              </header>
+              {% else %}
+              <header>
+                <figure class="image blog-image">
+                  <img class="profile" src="../../blank_profile.svg" alt="gravatar" />
+                </figure>
+              </header>
+            {% endif %}
+          {% endif %}
           <div class="blog-content">
             <h4 class="b-header"><a class="blog-title" href="{{ post|url }}">{{ post.title }}</a></h4>
             <span class="blog-author">by <a href="{{ author|url }}">{{ render_author_name(author) }}</a>
