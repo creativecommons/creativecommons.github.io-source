@@ -38,11 +38,13 @@
                       <i class="icon github"></i>
                       <span class="link-content">Github Repository</span>
                     </a>
-                    <br>
-                    <a class="button is-text tiny" href="https://creativecommons.slack.com/channels/{{ repo.slack }}">
-                      <i class="icon slack"></i>
-                      <span class="link-content">Slack channel (#{{ repo.slack }})</span>
-                    </a>
+                    {% if repo.slack %}
+                      <br>
+                      <a class="button is-text tiny" href="https://creativecommons.slack.com/channels/{{ repo.slack }}">
+                        <i class="icon slack"></i>
+                        <span class="link-content">Slack channel (#{{ repo.slack }})</span>
+                      </a>
+                    {% endif %}
                   </div>
                 </div>
               </article>
