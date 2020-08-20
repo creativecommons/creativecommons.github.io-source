@@ -33,12 +33,7 @@ pre {
 }
 
 // Navbar
-.navbar-end {
-  @extend .is-marginless;
-}
 .navbar-item {
-  @extend .margin-left-normal;
-
   &.has-dropdown {
     .navbar-dropdown {
       display: none;
