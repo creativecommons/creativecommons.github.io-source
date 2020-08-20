@@ -45,7 +45,7 @@ We know we're not going to be able to crawl 500 million images with one virtual 
   
 The worker processes do the actual analysis of the images, which essentially entails downloading the image, extracting interesting properties, and sticking the resulting metadata back into a Kafka topic for later downstream processing. The worker will also have to include some instrumentation for conforming to rate limits and error reporting.
 
-We also know that we will need to share some information about crawl progress between worker processes, such as whether we've exceeded our proscribed rate limit for a website, the number of times we've seen a status code in the last minute, how many images we've processed so far, and so on. Since we're only interested in sharing application state and aggregate statistics, a lightweight key/value store like Redis seems like a good fit.
+We also know that we will need to share some information about crawl progress between worker processes, such as whether we've exceeded our prescribed rate limit for a website, the number of times we've seen a status code in the last minute, how many images we've processed so far, and so on. Since we're only interested in sharing application state and aggregate statistics, a lightweight key/value store like Redis seems like a good fit.
 
 Finally, we need a supervising process that centrally controls the crawl. This key governing process will be responsible for making sure our crawler workers are behaving properly by moderating crawl rates for each source, taking action in the face of errors, and reporting statistics to the operators of the crawler. We'll call this process the crawl monitor.
 
