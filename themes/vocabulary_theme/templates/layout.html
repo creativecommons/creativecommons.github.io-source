@@ -54,7 +54,7 @@
             class="logo margin-top-small"
             xmlns="http://www.w3.org/2000/svg"
             preserveAspectRatio="xMidYMid meet"
-            viewBox="0 0 384 46">
+            viewBox="0 0 284 46">
             <use href="#opensource"></use>
           </svg>
         </a>
@@ -126,7 +126,7 @@
           <div class="navbar-item has-dropdown is-hoverable">
             <a class="navbar-link is-arrowless {% if this.is_child_of('/archives') %} is-active{% endif%}">Archives<i
                 class="icon caret-down"></i></a>
-            <div class="navbar-dropdown">
+            <div class="navbar-dropdown is-right">
               {% for href, title in [
                 ['/archives/old-tech-blog', 'CC Tech Blog (2007-2014)'],
                 ['https://lists.ibiblio.org/pipermail/cc-devel/', 'cc-devel mailing list (2005-2015)'],
@@ -135,7 +135,7 @@
               {% endfor %}
             </div>
           </div>
-        </div>
+        </div> 
       </div>
     </nav>
   </header>
