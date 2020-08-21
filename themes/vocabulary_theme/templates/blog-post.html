@@ -4,6 +4,8 @@
 
 {% from "macros/posts.html" import render_posts %}
 
+{% block title %}{{ this.title }}{% endblock %}
+
 {% set author = this.parent.parent.children.get('authors').children.get(this.author) %}
 
 {% block body %}
