@@ -1,0 +1,69 @@
+{% extends "layout.html" %}
+
+{% from "macros/author_name.html" import render_author_name %}
+
+{% from "macros/posts.html" import render_posts %}
+
+{% block title %}{{ this.title }}{% endblock %}
+
+{% set author = this.parent.parent.children.get('authors').children.get(this.author) %}
+
+{% block body %}
+  <div class="single-post">
+    <header class="single-post-header">
+      <div class="container">
+        <h4>CC Open Source Blog</h4>
+        <h2 class="title">{{ this.title }}</h2>
+        {{ check_file('content' + this.parent.parent.path + '/authors/' + this.author + '/contents.lr') }}
+        <div class="author columns is-marginless">
+          {% if author.md5_hashed_email %}
+            <figure class="image profile">
+              <img src="https://secure.gravatar.com/avatar/{{ author.md5_hashed_email }}?size=200" alt="gravatar" class="profile" />
+            </figure>
+          {% endif %}
+          <p class="column">by <a href="{{ author|url }}">{{ render_author_name(author) }}</a>
+          on {{ this.pub_date|dateformat("YYYY-MM-dd") }}</p>
+        </div>
+        {% if this.series|length %}
+          {% set series = this.parent.parent.children.get('series').children.get(this.series) %}
+          <div class="series-header">
+            <span>This blog is part of the series:</span>
+            <a href="#series">{{ series.name }}</a>
+          </div>
+        {% endif %}
+      </div>
+    </header>
+    <div class="single-post-body content container">
+      {{ this.body }}
+    </div>
+    <footer class="single-post-footer container">
+      <div class="category">
+        <h4 class="category-title">Categories</h4>
+        <div class="categories">
+          {% if this.categories|length %}
+            {% for category in this.categories %}
+              {% set current_category = this.parent.parent.children.get('categories').children.get(category) %}
+              {{ check_file('content' + this.parent.parent.path + '/categories/' + category + '/contents.lr') }}
+              <a class="button tag" href=" {{ current_category|url }} ">{{ category }}</a>
+            {% endfor %}
+          {% else %}
+            none
+          {% endif %}
+        </div>
+      </div>
+      {% if this.series|length %}
+        <div class="series-posts" id="series">
+          <h5 class="title">Posts in the {{ series.name }} series</h5>
+          <ul class="posts">
+            {% for post in series.children.order_by('pub_date') %}
+              <li>
+                <i class="icon circle-filled"></i><a href="{{ post|url }}">{{ post.title }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      {% endif %}
+      <div class="comments">{{ render_disqus_comments() }}</div>
+    </footer>
+  </div>
+{% endblock %}
