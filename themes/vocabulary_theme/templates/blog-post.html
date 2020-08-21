@@ -20,7 +20,7 @@
             </figure>
           {% endif %}
           <p class="column">by <a href="{{ author|url }}">{{ render_author_name(author) }}</a>
-          on {{ this.pub_date|dateformat('yyyy-''MM-d') }}</p>
+          on {{ this.pub_date|dateformat("YYYY-MM-dd") }}</p>
         </div>
         {% if this.series|length %}
           {% set series = this.parent.parent.children.get('series').children.get(this.series) %}
