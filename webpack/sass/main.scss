@@ -6,6 +6,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  color: $color-forest-green;
+}
+
 // Code
 code {
   color: $color-dark-slate-gray;
@@ -162,6 +166,10 @@ pre {
       @extend .padding-top-bigger;
       @extend .padding-bottom-xl;
     }
+  }
+
+  .blog-title {
+    @extend .has-color-dark-slate-gray;
   }
 
   .posts-link {
