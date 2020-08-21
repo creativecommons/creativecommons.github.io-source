@@ -27,7 +27,7 @@
                 </figure>
               </header>
               <div class="blog-content">
-                <h4 class="b-header"><a class="has-color-dark-slate-gray" href="{{ post|url }}">{{ post.title }}</a></h4>
+                <h4 class="b-header"><a class="blog-title" href="{{ post|url }}">{{ post.title }}</a></h4>
                 <span class="blog-author">by <a class="author-name" href="{{ author|url }}">{{ render_author_name(author) }}</a>
                 on {{ post.pub_date|dateformat("YYYY-MM-dd") }}</span>
                 <div class="excerpt">
