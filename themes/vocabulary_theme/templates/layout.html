@@ -123,8 +123,10 @@
             <a class="navbar-link is-arrowless {% if this.is_child_of('/cc-search') %} is-active{% endif%}">
               CC Search<i class="icon caret-down"></i></a>
             <div class="navbar-dropdown">
-              {% for href, title in [ ['/cc-search', 'Overview & Roadmap'],
-              ['/cc-search/contribution-guide', 'Contribution Guide'], ] %}
+              {% for href, title in [ 
+                ['/cc-search', 'Overview & Roadmap'],
+                ['/contributing-code/cc-search', 'Contribution Guide'],
+              ] %}
                 <a class="navbar-item" href="{{ href|url }}">{{ title }}</a>
               {% endfor %}
             </div>
