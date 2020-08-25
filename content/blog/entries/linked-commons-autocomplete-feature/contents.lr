@@ -32,7 +32,7 @@ The following blog intends to explain the very recent feature integrated to the 
 ## Motivation
 One of the newest features integrated last month into Linked Commons is Filtering by node name. Here a user can search for his/her favourite node and explore all its neighbours. Since the list is very big, it was self-evident for us to have a text box (and not a drop-down) where the user is supposed to type the node name.
 
-Some of the reasons why to have a text box or filtering by node option.
+Some of the reasons why to have "autocomplete feature" in the filtering by node name -
 - Some of the node names are very uncommon and lengthy. There is a high probability of misspelling it.
 - Submitting the form and getting a response of “Node doesn’t exist” isn’t a very good user flow, and we want to minimise such incidents.
 
@@ -72,8 +72,6 @@ Here are some aggregated result statistics.
 | Requests/s                |** 171.754   **|
 | Max Requests/s            |** 214       **|
 | Failures/s              	|** 0         **|
-
-Since SQLlite has a serverless design, disk io usually has a significant impact on the performance. The above results were executed on a server with HDD storage. Linked Commons server is equipped with faster disk io. It will certainly improve the performance but will be countered by the network latency and other factors like the number of nodes in the dB. So the above results to some degree resemble the actual performance.
 
 
 ## Next steps
