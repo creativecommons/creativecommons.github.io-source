@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% from "macros/author_posts.html" import render_author_posts %}
+{% from "macros/author_name.html" import render_author_name %}
+
+{% block title %}{{ render_author_name(this) }}{% endblock %}
+
+{% block body %}
+<div class="author-posts">
+  <div class="header">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-2">
+          {% if this.about %}
+            {% if this.md5_hashed_email %}
+              <figure class="image profile">
+                <img class="profile" src="https://secure.gravatar.com/avatar/{{ this.md5_hashed_email }}?size=200">
+              </figure>
+            {% endif %}
+          {% endif %}
+        </div>
+        <div class="column is-8">
+          <h2>{{ render_author_name(this) }}</h2>
+          {% if this.about %}
+            <div class="about">{{ this.about }}</div>
+          {% endif %}
+          <a class="button small" href="{{ this.parent|url }}">See all authors</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="posts container">
+    {{ render_author_posts(this.children) }}
+  </div>
+</div>
+{% endblock %}

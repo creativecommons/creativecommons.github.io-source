@@ -1,0 +1,154 @@
+title: Say Hello To Our Community Team
+---
+categories:
+announcements
+community
+open-source
+---
+author: dhruvkb
+---
+pub_date: 2020-08-14
+---
+body:
+
+Creative Commons is committed to open-source software. We have over two dozen
+projects, spanning three times as many repositories on GitHub, each with its
+small, but extremely enthusiastic, subcommunity. With only a few full-time
+employees working on these projects, it is vital that we enable members from the
+community to take increased responsibility in developing and maintaining them,
+and growing the community of which they are a part.
+
+With that goal in mind, we've launched our Community Team initiative.
+
+### What is the Community Team?
+
+Communities that grow organically around open source projects tend to be a bit
+disorganised and the frequency of contributions and degree of involvement tends
+to vary from member to member. Our goal is to identify contributors who are
+actively involved within their communities and give them increased permissions
+over the codebase and access to more information channels and tools in an effort
+to empower them to participate more fully in the project.
+
+This is not restricted to code though. We're also looking for people who work
+with the community on other aspects of the projects, such as design,
+documentation, evangelism, and onboarding to name a few.
+
+- The Community Team establishes a framework for formalising the level of
+  involvement, which is a spectrum, into discrete level or 'roles'.
+- Each role is mapped to a set of responsibilities that a member holding the
+  role is encouraged to take up.
+- Each role also entrusts the members holding it to certain privileges, accesses
+  and permissions, to help them execute these responsibilities.
+
+Roles also progressively include members in our roadmaps and planning meetings
+to ensure that the community is aligned with our long-term goals.
+
+### What's in it for me?
+
+The Community Team is not just a one-sided deal. Your membership in the
+Community Team is just as beneficial for the you as it is for us. While there is
+a [laundry list of benefits][benefits] that you're entitled to, I'll just
+mention some notable ones here.
+
+[benefits]:/community/community-team/#benefits-of-joining-the-community-team
+
+- You gain real-world practical experience of working on open-source projects.
+- You gain both soft-skills and technical-skills by interacting with other
+  developers from both the community as well as CC staff.
+- Since we've already seen the quality of your work and involvement with the
+  community, you get priority in internship applications*.
+
+Oh and, lest I forget, you'll receive CC swag!
+
+<blockquote class="twitter-tweet" data-align="center">
+  <p lang="en" dir="ltr">
+    Thanks for the goodies!!
+    <a href="https://twitter.com/creativecommons?ref_src=twsrc%5Etfw">@creativecommons</a>
+    😀
+    <a href="https://twitter.com/hashtag/OpenSource?src=hash&amp;ref_src=twsrc%5Etfw">#OpenSource</a>
+    <a href="https://twitter.com/hashtag/creativecommons?src=hash&amp;ref_src=twsrc%5Etfw">#creativecommons</a>
+    <a href="https://twitter.com/hashtag/GSoC?src=hash&amp;ref_src=twsrc%5Etfw">#GSoC</a>
+    <a href="https://t.co/DFvpXCs8uu">pic.twitter.com/DFvpXCs8uu</a>
+  </p>
+  &mdash;
+  Mayank Nader (@MayankNader)
+  <a href="https://twitter.com/MayankNader/status/1137995920866390016?ref_src=twsrc%5Etfw">June 10, 2019</a>
+</blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+### What are these 'roles'?
+
+If you've reached this point, I assume you see the potential of the Community
+Team. Let's see where you'd fit in them.
+
+We have two kinds of roles, code-oriented [Project roles][projectroles], that
+give you responsibilities and permissions related to one CC project, and
+non-code-oriented [Community Building roles][communitybuildingroles], that give
+you responsibilities and permissions related to improving the community of all
+CC projects as a whole.
+
+[projectroles]:/community/community-team/project-roles/
+[communitybuildingroles]:/community/community-team/community-building-roles/
+
+Each type has a few levels but that I'll just link them for you to read on your
+own. While your eligibility for any role depends on how involved you have been
+in the past, the role you choose reflects how involved you would like to be in
+the future.
+
+Start by asking yourself a simple question, "Do I code?"
+
+#### "Sure, I can code..."
+
+*That's awesome!* We have projects in a diverse array of languages, using myriad
+tools and frameworks. Depending on the skills you have, or are planning to
+acquire, you can pick a project and start contributing to it. Based on your
+contributions and your familiarity with the codebase, you can then apply for the
+role that matches your desired level of involvement.
+
+So if you want to be lightly involved with code-reviews and would like to know
+about our plans in advance, you can start off as a Project Contributor. This is
+a fantastic role to get started with and ensures that you get excellent
+mentorship as you start your FOSS journey.
+
+As your familiarity with the codebase increases, you might want to triage
+incoming issues or block certain PRs that you've reviewed. You could escalate
+your role to Project Collaborator. Want to me more involved? You can apply to be
+a Project Core Committer, or even a Project Maintainer.
+
+#### "No, I can't code..."
+
+*That's cool too!* We realise that open source communities are never just about
+the code. If you're passionate about growing the CC community by enabling new
+contributors to get started or by spreading the word, you can apply for one of
+the Community Building roles. Like the Project roles, there are a couple of
+levels to choose from.
+
+Community builders have a whole different set of responsibilities and privileges
+specifically catered to the unique task of cultivating a healthy community
+around our many open source projects.
+
+So if you want to be lightly involved with onboarding new contributors to the
+repositories and the workflows, you could start off as a Community Contributor.
+This is a fantastic role to help new contributors get a headstart in their
+journey with FOSS.
+
+As your familiarity with the community increases, you might want to suggest
+tweets for our Twitter account, or pariticipate in long-term community building
+tasks from Asana. You could escalate your role to Community Collaborator. Want
+to me more involved? You can even apply to be a Community Maintainer.
+
+### What's next?
+
+The Community Team is a fairly novel idea for us and we're still tweaking things
+along the way. For example, we recently merged of two Project roles, namely
+Project Member and Project Collaborator, when we realised they weren't so
+different. As we internalise these roles more and more, we'll find more scope
+for improvement and we'll continue to refine these roles over time.
+
+We're excited about the Community Team. If you're interested in joining us on
+this ride, it's really easy to [get started][communityteam].
+
+[communityteam]:/community/community-team/
+
+<small>*We do not guarantee that you will be accepted if you apply for an
+internship!</small>

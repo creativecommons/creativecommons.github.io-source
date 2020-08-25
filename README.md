@@ -47,21 +47,30 @@ via lektor (see [Deployment](#deployment), below).
 
 ### Pre-Requisites
 
-Make sure you have [pipenv][pipenvdocs], [Node.js][nodejswebsite] and [npm][npmdocs] installed. To install these, execute the following commands:
+Make sure you have:
+
+* [pipenv][pipenvdocs]
+
+* [Node.js][nodejswebsite] **v12+** and [npm][npmdocs] installed. 
+
+To install these, execute the following commands:
 
 > For  macOS:
+
 1. `brew install pipenv`
 2. `brew install node`
 
 > For GNU/Linux:
+
 1. `curl https://raw.githubusercontent.com/kennethreitz/pipenv/master/get-pipenv.py | python`
 2. `sudo apt update`
-3. `sudo apt install nodejs`
+3. [Install Node.js](https://github.com/nodesource/distributions/blob/master/README.md#table-of-contents) 
 4. `sudo apt install npm `
 
 [pipenvdocs]:https://pipenv.readthedocs.io/en/latest/
 [nodejswebsite]:https://nodejs.org/en/
 [npmdocs]:https://docs.npmjs.com/ 
+
 
 
 ### Installing Project Requirements
@@ -91,6 +100,20 @@ else fails, try removing the virtual environment and reinstalling:
 
 [local5000]:http://localhost:5000/
 
+### Troubleshooting Possible Errors
+
+* Should you get series of type errors that looks something like `npm ERR! typeerror Error: Missing required argument #1`, after running `pipenv run lektor server -f webpack`, this is most likely due to running an older version of Node.js.
+
+  As stated earlier in the prerequisites, you should be running Node.js version 12+.
+  Follow [this](https://github.com/nodesource/distributions/blob/master/README.md#table-of-contents) tutorial to upgrade your node version (for GNU/Unix systems).
+
+* Should you get an `OSError: [Errno 28] inotify watch limit reached` after running any command, this means that your system file watcher is running out of alloted handles, usually because the workspace is large and contains many files. 
+
+  The solution is to run:
+`sudo sysctl fs.inotify.max_user_watches=524288`
+
+  This increases your `inotify` watch limit (for the session) to 524288, which is the maximum value and is also enough to allow the  setup go through.
+  You can learn more about file watchers [from this blog post](https://unixia.wordpress.com/2018/04/28/inotify-watch-limit-reached-wait-what/) or [from the VS Code documentation](https://code.visualstudio.com/docs/setup/linux#_visual-studio-code-is-unable-to-watch-for-file-changes-in-this-large-workspace-error-enospc).
 
 ## Deployment
 

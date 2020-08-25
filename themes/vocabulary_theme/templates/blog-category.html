@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% from "macros/posts.html" import render_posts %}
+
+{% block title %}{{ this.name }}{% endblock %}
+
+{% block body %}
+<div class="all-categories">
+  <div class="header">
+    <div class="container">
+      <h1>All posts categorized "{{ this.name }}"</h1>
+      <a class="button small margin-top-bigger" href="{{ this.parent|url }}">See all categories</a>
+    </div>
+  </div>
+  <div class="categories-list container">
+    {{ render_posts(this.children) }}
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% from "macros/series.html" import render_series %}
+
+{% block title %}All Series{% endblock %}
+
+{% block body %}
+<div class="all-series">
+  <div class="header">
+    <h1 class="container">All Series</h1>
+  </div>
+  <div class="series-list container">
+    {{ render_series(this) }}
+  </div>
+</div>
+{% endblock %}

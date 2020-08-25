@@ -1,0 +1,70 @@
+title: CC Legal Database: Developing features
+---
+categories:
+cc-legal-database
+product
+outreachy
+outreachy-2020
+---
+author: krysal
+---
+series: outreachy-may-2020-legal-database
+---
+pub_date: 2020-08-07
+---
+body:
+In this post, I want to update the progress on Reimplementing the CC Legal Database site, my Outreachy project. There are several features added over the last month to date.
+
+### Submission forms
+
+The first thing I wanted to implement was the respective forms so that anyone can submit a case or article to the database. These forms were slightly modified in the redesign (discussed in the previous articles), so now it has fewer mandatory fields to lower the bar and facilitate the contribution of users.
+
+<figure style="text-align: center;">
+    <img src="scholarship-form.png" alt="Form to submit an article related to CC licenses" style="border: 1px solid black; width: 60%;">
+    <figcaption>Scholarship form to submit an article.</figcaption>
+</figure>
+
+For the Scholarship form, for example, it is only needed to share your name, email and a link to propose an article related to any of the CC licenses, although the more information you can provide us the better, in any case, each contribution is reviewed by the staff before publishing.
+
+### Search
+
+The second important task was to allow searching in each of the listings. A basic function to start making use of the exposed information. In the [current site](https://labs.creativecommons.org/caselaw/), this function is delegated to an external service, a certain famous search engine. Filtering is now performed in the backend based on the keywords entered by the user, thus returning the reduced list. Later this will be combined with filtering by tags or topics that are associated with each entry (case or scholarship).
+
+### Automated tests
+
+While developing the mentioned functionalities I was also in charge of adding automatic unit tests, to ensure that future changes to the code base do not damage already functional parts of the site. This, in addition to giving more confidence to future contributors, they provide value immediately, at the time of writing the tests you should think about possible edge cases, so they allowed me to notice a missing validation in a couple of routes and then correct it.
+
+<figure style="text-align: center;">
+    <img src="404-page.png" alt="404 page" style="border:1px solid black; width:70%;">
+    <figcaption>Example of page obtained when requesting a case detail that is not published or doesn't exist.</figcaption>
+</figure>
+
+In this process of adding automated tests I wanted them to run on every pull request created, so I learned how to write a GitHub Action with a PostgreSQL service, the DBMS used in this case. Previously, I had already created a job for linting, so I needed to add another one to run in parallel to save time. This service provided by GitHub is pretty cool and useful, it opens up a world of possibilities, from running third party services like [Lighthouse test](https://github.com/GoogleChrome/lighthouse-ci) to even [send tweets](https://github.com/gr2m/twitter-together)! If you want to see the GitHub Action file configurated for this project, check it out: [`.github/workflows/main.yml`](https://github.com/creativecommons/caselaw/blob/31c3002a7860d78f3fdb464150c5c1b2f8bb86fc/.github/workflows/main.yml).
+
+### Accessibility
+
+To check if the site had shortcomings I did the Lighthouse test on the homepage, discovering that there were indeed some issues to tackle. In principle the results were these:
+
+<figure style="text-align: center;">
+    <img src="lighthouse-before.png" alt="" style="border:1px solid black; width:70%;">
+    <figcaption>Initial Lighthouse test measurements.</figcaption>
+</figure>
+
+The good thing about this test is that it throws up suggestions on how to fix the bugs found, so after adding certain missing attributes and labels, the following results were achieved.
+
+<figure style="text-align: center;">
+    <img src="lighthouse-after.png" alt="" style="border:1px solid black; width:70%;">
+    <figcaption>Lighthouse test measurements after corrections.</figcaption>
+</figure>
+
+There is still room for improvement but at least we are within a quite acceptable green range.
+
+### Other features and tweaks
+
+Some other features were implemented but only relevant to our registered users, that is, the Legal Staff. They consist of Django admin customization, such as filtering records by status, and a particular thing requested, the answers of frequently asked questions need to be displayed formatted, so they are now saved as Markdown text and transformed to HTML with style on the public site, showing lists, bold text, links, etc. The admin can also see a preview while editing.
+
+### Conclusion
+
+After reviewing all done this last month I see significant progress has been made, I have learned many things along the way: more of what Django and its ecosystem offers, about accessibility, continuous integration in Heroku and GitHub, and more. One of the things that makes me most happy is being able to be contributing and being part of an Open Source organization, knowing how it moves and works inside, something I never imagine before.
+
+Time flies and there are less than two weeks left to finish, so if you want to follow the project here is the repository to suggest improvements or report bugs, or if you prefer something less technical you can join us on the [slack channel](https://creativecommons.slack.com/channels/cc-dev-legal-database).

@@ -1,0 +1,43 @@
+{% from "macros/author_name.html" import render_author_name %}
+
+<section class="recent-posts">
+  <div class="container">
+    <div class="level">
+      <h2 class="is-paddingless level-left">
+        {{ this.title }}
+      </h2>
+      <span class="level-right">
+        <a class="posts-link" href="/blog">See all posts <i class="icon angle-right"></i></a>
+      </span>
+    </div>
+    <div class="columns">
+      {% for post in site.query('/blog/entries') %}
+        {% if loop.index <= 3 %}
+          {% set author = post.parent.parent.children.get('authors').children.get(post.author) %}
+          <div class="column is-one-third is-paddingless padding-horizontal-big padding-top-bigger">
+            <article class="card entry-post horizontal no-border blog-entry">
+              <header>
+                <figure class="image blog-image">
+                {% if author.about %}
+                  {% if author.md5_hashed_email %}
+                    <img class="profile" src="https://secure.gravatar.com/avatar/{{ author.md5_hashed_email }}?size=200"
+                    alt="gravatar" />
+                  {% endif %}
+                {% endif %}
+                </figure>
+              </header>
+              <div class="blog-content">
+                <h4 class="b-header"><a class="blog-title" href="{{ post|url }}">{{ post.title }}</a></h4>
+                <span class="blog-author">by <a class="author-name" href="{{ author|url }}">{{ render_author_name(author) }}</a>
+                on {{ post.pub_date|dateformat("YYYY-MM-dd") }}</span>
+                <div class="excerpt">
+                  {{ post.body | excerpt | string | striptags() | truncate(100) }}
+                </div>
+              </div>
+            </article>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>

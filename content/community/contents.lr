@@ -4,9 +4,9 @@ _template: page-with-toc.html
 ---
 title: Join the CC Developer Community
 ---
+description: Join our Slack or mailing list communities to meet other developers interested in Creative Commons, get feedback on your projects, and talk with CC's full-time engineering staff. You can also keep up with us on the <a href="/blog">CC Open Source Blog</a> or via <a href="https://twitter.com/cc_opensource">Twitter</a>.
+---
 body:
-
-<p class="lead">Join our Slack or mailing list communities to meet other developers interested in Creative Commons, get feedback on your projects, and talk with CC's full-time engineering staff. You can also keep up with us on the <a href="/blog/">CC Open Source Blog</a> or via <a href="https://twitter.com/cc_opensource">Twitter</a>.</p>
 
 ## Mailing Lists
 
@@ -19,24 +19,74 @@ Creative Commons has a large Slack community with sub-communities for tech/devel
 
 Once you join, please introduce yourself in the `#cc-developers` channel.
 
-The channels most relevant to CC's developer community are: 
+The channels most relevant to CC's developer community are:
 
-| Channel                          | Purpose                                                                                                                                          |
-| -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `#cc-dev-browser-extension`      | Discussion related to the [Search browser extension](https://github.com/creativecommons/ccsearch-browser-extension)                              |
-| `#cc-dev-catalog`                | Discussion related to the [CC Catalog API](https://api.creativecommons.engineering/) and [Catalog](https://github.com/creativecommons/cccatalog) |
-| `#cc-dev-cc-catalog-viz`         | [CC Catalog visualizations](https://github.com/creativecommons/cccatalog-dataviz)                                                                |
-| `#cc-dev-legal-database`         | [CC Legal Database](https://labs.creativecommons.org/caselaw/)                                                                                   |
-| `#cc-dev-license-chooser`        | Discussion related to the [new CC license chooser](https://github.com/creativecommons/cc-chooser)                                                |
-| `#cc-dev-linkchecker`            | Discussion related to the [CC automated link checker](https://github.com/creativecommons/cc-link-checker)                                        |
-| `#cc-dev-vocabulary`             | Discussion related to [CC Vocabulary](https://github.com/creativecommons/cc-vocabulary)                                                          |
-| `#cc-dev-wordpress`              | Discussion related to the [CC WordPress plugin](https://github.com/creativecommons/wp-plugin-creativecommons)                                    |
-| `#cc-developers`                 | General technical discussion, new tech blog posts.                                                                                               |
-| `#cc-gsoc-outreachy`             | General Google Summer of Code and Outreachy related discussion.                                                                                  |
-| `#cc-outreachy-platform-toolkit` | Discussion related to the [CC Platform Toolkit](https://github.com/creativecommons/mp) Outreachy project.                                        |
-| `#cc-search`                     | Discussion related to [CC Search](https://search.creativecommons.org/)                                                                           |
-| `#cc-usability`                  | General usability discussions, seeking feedback on new releases of CC products from the community.                                               |
-| `#cc-dev-licenses`               | Discussion of the [CC license infrastructure overhaul project](https://github.com/creativecommons/cc-licenses)                                   |
+<div class="table-container">
+   <table class="table is-bordered is-striped">
+    <thead>
+      <tr>
+        <th>Channel</th>
+        <th>Purpose</th>
+      </tr>
+    </thead>
+    <tr>
+      <td><code>#cc-dev-browser-extension</code></td>
+      <td>Discussion related to the <a href="https://github.com/creativecommons/ccsearch-browser-extension">Search browser extension.</a></td>
+    </tr>
+    <tr>
+      <td><code>#cc-dev-catalog</code></td>
+      <td>Discussion related to the <a href="https://api.creativecommons.engineering/">CC Catalog API</a> and <a href="https://github.com/creativecommons/cccatalog">Catalog.</a></td>
+    </tr>
+    <tr>
+      <td><code>#cc-dev-cc-catalog-viz</code></td>
+      <td><a href="https://github.com/creativecommons/cccatalog-dataviz">CC Catalog visualizations.</a></td>
+    </tr>
+    <tr>
+      <td><code>#cc-dev-legal-database</code></td>
+      <td><a href="https://labs.creativecommons.org/caselaw/">CC Legal Database.</a></td>
+    </tr>
+    <tr>
+      <td><code>#cc-dev-license-chooser</code></td>
+      <td>Discussion related to the <a href="https://github.com/creativecommons/cc-chooser">new CC license chooser.</a></td>
+    </tr>
+    <tr>
+      <td><code>#cc-dev-linkchecker</code></td>
+      <td>Discussion related to the <a href="https://github.com/creativecommons/cc-link-checker">CC automated link checker.</a></td>
+    </tr>
+    <tr>
+      <td><code>#cc-dev-vocabulary</code></td>
+      <td>Discussion related to the <a href="https://github.com/creativecommons/cc-vocabulary">CC Vocabulary.</a></td>
+    </tr>
+    <tr>
+      <td><code>#cc-dev-wordpress</code></td>
+      <td>Discussion related to the <a href="https://github.com/creativecommons/wp-plugin-creativecommons">CC WordPress plugin.</a></td>
+    </tr>
+    <tr>
+      <td><code>#cc-developers</code></td>
+      <td>General technical discussion, new tech blog posts.</td>
+    </tr>
+    <tr>
+      <td><code>#cc-gsoc-outreachy</code></td>
+      <td>General Google Summer of Code and Outreachy related discussion.</td>
+    </tr>
+    <tr>
+      <td><code>#cc-outreachy-platform-toolkit</code></td>
+      <td>Discussion related to the <a href="https://github.com/creativecommons/mp">CC Platform Toolkit</a> Outreachy project.</td>
+    </tr>
+    <tr>
+      <td><code>#cc-search</code></td>
+      <td>Discussion related to the <a href="https://search.creativecommons.org/">CC Search.</a></td>
+    </tr>
+    <tr>
+      <td><code>#cc-usability</code></td>
+      <td>General usability discussions, seeking feedback on new releases of CC products from the community.</td>
+    </tr>
+    <tr>
+      <td><code>#cc-dev-licenses</code></td>
+      <td>Discussion related to the <a href="https://github.com/creativecommons/cc-licenses">CC license infrastructure overhaul project.</a></td>
+    </tr>
+  </table>
+</div>
 
 ### Slack Tips
 - You will automatically join the `#general` and `#cc-announcements` channels when you sign in to Slack for the first time.
