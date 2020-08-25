@@ -1,0 +1,88 @@
+title: Overview of the GSoC 2020 Project
+---
+categories:
+
+cc-catalog
+gsoc
+gsoc-2020
+---
+author: charini
+---
+series: gsoc-2020-cccatalog
+---
+pub_date: 2020-08-26
+---
+body:
+This is my final blog post under the [GSoC 2020: CC catalog][cc_catalog_series] series, where I will highlight and
+summarize my contributions to Creative Commons (CC) as part of my GSoC project. The CC Catalog project collects and
+stores CC licensed images scattered across the internet, such that they can be made accessible to the general public via
+the [CC Search][cc_search] and [CC Catalog API][cc_api] tools. I got the opportunity to work on different aspects of the
+CC Catalog repository which ultimately enhances the user experience of the CC Search and CC Catalog API tools. My
+primary contributions in the duration of GSoC, and the related pull requests (PR) are as follows.
+
+1. **Sub-provider retrieval**: The first task I completed as part of my GSoC project was the retrieval of sub-providers
+(also known as _source_) such that images could be categorised under these sources, ensuring an enhanced search
+experience for the users. I completed the implementation of sub-provider retrieval for three providers; Flickr,
+Europeana, and Smithsonian. If you are interested in learning how the retrieval logic works, please check my
+[initial blog post][flickr_blog_post] of this series. The PRs related to this task are as follows.
+  - PR #[420][pr_420]: Retrieve sub-providers within Flickr
+  - PR #[442][pr_442]: Retrieve sub-providers within Europeana
+  - PR #[455][pr_455]: Retrieve sub-providers within Smithsonian
+  - PR #[461][pr_461]: Add new source as a sub-provider of Flickr
+
+2. **Alert updates to Smithsonian unit codes**: For the Smithsonian provider, we rely on the field known as _unit code_
+ to determine the sub-provider (for Smithsonian it is often a museum) each image belongs to. However, it is possible for
+ the _unit code_ values to change over time at the upstream, and if CC is unaware of these changes, it could hinder the
+ successful categorisation of Smithsonian images under unique sub-provider values. I have therefore introduced a
+ mechanism of alerting the CC code maintainers of potential changes to _unit code_ values at the upstream. More
+ information is provided in my [second blog post][unit_code_blog_post] of this series. The PR related to this task
+ is #[465][pr_465].
+
+3. **Improvements to the Smithsonian provider API script**: Smithsonian is an important provider which aggregates images
+from 19 museums. However, due to the fact that the different museums have different data models and the resultant
+incompatibility of the JSON responses returned from requests to the Smithsonian API, it is difficult to know which
+fields to rely on to obtain the information necessary for CC. This results in CC missing out on certain important
+information. As part of my GSoC project, I improved the completeness of _creator_ and _description_ information, by
+identifying previously unknown fields from which these details could be retrieved. Even though my improvements did not
+result in the identification of a comprehensive list of fields, the completeness of data was considerably improved for
+some Smithsonian museums compared to how it was before. For more context about this issue please refer to the ticket
+#[397][issue_397]. Apart from improving information of Smithsonian data, I was also able to identify issues with certain
+Smithsonian API responses which did not contain mandatory information for some of the museums. We have informed the
+Smithsonian technical team of these issues and they are highlighted in ticket #[397][issue_397] as well. The PRs related
+to this task are as follows.
+  - PR #[474][pr_474]: Improve the creator and description information of the Smithsonian source _National Museum of
+  Natural History_ (NMNH). This is the largest museum (source) under the Smithsonian provider.
+  - PR #[476][pr_476]: Improve the _creator_ and _description_ information of other sources coming under the Smithsonian
+  provider.
+
+4. **Expiration of outdated images**: The final task I completed as part of my GSoC project was implementing a strategy
+for expiring outdated images in the CC database. CC has a mechanism for keeping the images they have retrieved from
+providers up-to-date, based on how old an image is. This is called the [re-ingestion strategy][reingest_blog_post],
+where newer images are updated more frequently compared to older images. However, this re-ingestion strategy does not
+detect images which have been deleted at the upstream. Thus, it is possible that some of the images stored in the CC
+database are obsolete, which could result in broken links being presented via the [CC Search][cc_search] tool. As a
+solution, I have implemented a mechanism of identifying whether images in the CC database are obsolete by looking at the
+*updated_on* column value of the CC image table. Depending on the re-ingestion strategy per provider, we can know what
+the oldest *updated_on* value, an image can assume. If the *updated_on* value is older than the oldest valid value, we
+flag the corresponding image record  as obsolete.  The PR related to this task is #[483][pr_483].
+
+I will continue to take the responsibility for maintaining my code in the CC Catalog repository, and I hope to continue
+contributing to the CC codebase. It has been a wonderful GSoC journey for me and special thanks goes to my supervisor
+Brent for his guidance.
+
+
+[cc_catalog_series]: ./#series
+[cc_search]: https://ccsearch.creativecommons.org/
+[cc_api]: https://api.creativecommons.engineering/v1/
+[flickr_blog_post]: ../flickr-sub-provider-retrieval/
+[unit_code_blog_post]: ../smithsonian-unit-code-update/
+[reingest_blog_post]: ../date-partitioned-data-reingestion/
+[pr_420]: https://github.com/creativecommons/cccatalog/pull/420
+[pr_442]: https://github.com/creativecommons/cccatalog/pull/442
+[pr_455]: https://github.com/creativecommons/cccatalog/pull/455
+[pr_461]: https://github.com/creativecommons/cccatalog/pull/461
+[pr_465]: https://github.com/creativecommons/cccatalog/pull/465
+[pr_474]: https://github.com/creativecommons/cccatalog/pull/474
+[pr_476]: https://github.com/creativecommons/cccatalog/pull/476
+[pr_483]: https://github.com/creativecommons/cccatalog/pull/483
+[issue_397]: https://github.com/creativecommons/cccatalog/issues/397
