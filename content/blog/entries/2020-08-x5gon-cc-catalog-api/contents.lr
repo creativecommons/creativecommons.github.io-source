@@ -1,0 +1,25 @@
+title: X5GON Using CC Catalog API for Image Results
+---
+categories:
+community
+cc-catalog
+cc-search
+announcements
+collaboration
+---
+author: annatuma
+---
+pub_date: 2020-08-24
+---
+body:
+A few months ago, the Open Education team at Creative Commons made an introduction between the folks working on X5GON and CC Search.
+
+Throughout a few conversations, we quickly discovered that there are many parallels to how we're approaching our work, and some important differences that would allow each of us to benefit from cooperation.
+
+[X5GON](https://www.x5gon.org/) is building an AI-driven platform, focused on delivery of open education resources (OER). At its core, it is building a catalog of OER, upon which other [services](https://www.x5gon.org/platforms/services/) are based, such as analytics for personalized recommendations, and a discovery engine. By aggregating relevant content, curating it with the use of artificial intelligence and machine learning, and personalizing the experience to each learner, they're making OER more accessible and relevant.
+
+CC Search is not yet ready to ingest content types beyond images, but when we are able to do so, we plan to integrate via API with X5GON in order to serve OER that is made available in formats we will support in the future, starting with audio.
+
+The [X5GON Discovery search engine](https://discovery.x5gon.org/) allows users to find OER in video, audio, and text formats - and now, with the integration of results powered by the CC Catalog API, which also powers CC Search, users can also find openly licensed images for relevant educational queries. This is a great resource for educators and learners from all over the world.
+
+Try it for yourself, or look at these results for making [geometry](https://discovery.x5gon.org/search?q=geometry&type=Image) visual and fun!
