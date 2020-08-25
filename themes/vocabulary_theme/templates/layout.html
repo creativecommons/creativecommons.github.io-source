@@ -119,10 +119,18 @@
               {% endfor %}
             </div>
           </div>
-          <a class="navbar-item {% if this.is_child_of('/cc-search') %} is-active{% endif%}"
-            href="{{ '/cc-search'|url }}">
-            CC Search
-          </a>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link is-arrowless {% if this.is_child_of('/cc-search') %} is-active{% endif%}">
+              CC Search<i class="icon caret-down"></i></a>
+            <div class="navbar-dropdown">
+              {% for href, title in [   
+                ['/cc-search', 'Overview & Roadmap'],
+                ['/cc-search/contribution-guide', 'Contribution Guide'],
+              ] %}
+                <a class="navbar-item" href="{{ href|url }}">{{ title }}</a>
+              {% endfor %}
+            </div>
+          </div>
           <div class="navbar-item has-dropdown is-hoverable">
             <a class="navbar-link is-arrowless {% if this.is_child_of('/archives') %} is-active{% endif%}">Archives<i
                 class="icon caret-down"></i></a>
