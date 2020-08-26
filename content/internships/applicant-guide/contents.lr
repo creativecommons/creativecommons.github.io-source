@@ -4,9 +4,9 @@ _template: page-with-toc.html
 ---
 title: Open Source Internships: Applicant Guide
 ---
+description: Creative Commons participates in open source mentorship programs such as [Google Summer of Code](https://summerofcode.withgoogle.com/), [Google Season of Docs](https://developers.google.com/season-of-docs/), and [Outreachy](https://www.outreachy.org/). Details about specific programs and rounds are listed in the [Overview page](/internships); this page serves as a general guide to applicants.
+---
 body:
-
-Creative Commons participates in open source mentorship programs such as [Google Summer of Code](https://summerofcode.withgoogle.com/), [Google Season of Docs](https://developers.google.com/season-of-docs/), and [Outreachy](https://www.outreachy.org/). Details about specific programs and rounds are listed in the [Overview page](/internships/); this page serves as a general guide to applicants.
 
 ## Getting Started
 

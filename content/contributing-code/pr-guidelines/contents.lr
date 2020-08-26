@@ -1,12 +1,12 @@
 _model: page
 ---
-_template: page.html
+_template: page-with-toc.html
 ---
 title: Pull Request Guidelines
 ---
+description: We ask that contributors to CC projects submit a pull request with your changes. If you're not familiar with pull requests, please read [this GitHub documentation](https://help.github.com/en/articles/about-pull-requests). Here are our expectations for pull requests; following them will expedite the process of merging your code in.
+---
 body:
-
-We ask that contributors to CC projects submit a pull request with your changes. If you're not familiar with pull requests, please read [this GitHub documentation](https://help.github.com/en/articles/about-pull-requests). Here are our expectations for pull requests; following them will expedite the process of merging your code in.
 
 Read and follow the contributing guidelines and code of conduct for the project. Here are screenshots of where to find them for [first time contributors](first-time-contributor-resources.png) and [previous contributors](previous-contributor-resources.png).
 
@@ -60,4 +60,4 @@ Read and follow the contributing guidelines and code of conduct for the project.
 
 We aim to review pull requests within three business days.<a href="#footnote-1"><strong>*</strong></a>. If it has been over three business days and you have not received any feedback, feel free to follow up with us.
 
-<a name="footnote-1"><p class="muted small"><strong>*</strong> CC staff work Monday through Friday and are not available on weekends and national holidays (the specific holidays observed vary based on the person's location). CC is closed between Christmas Eve and New Years' Day every year and for a few days following the CC Global Summit. Also, our availability during events such as the CC Global Summit and our biannual staff meetups is limited.</p></a>
+<p class="caption"><a name="footnote-1" class="has-color-dark-slate-gray"><strong>*</strong></a> CC staff work Monday through Friday and are not available on weekends and national holidays (the specific holidays observed vary based on the person's location). CC is closed between Christmas Eve and New Years' Day every year and for a few days following the CC Global Summit. Also, our availability during events such as the CC Global Summit and our biannual staff meetups is limited.</p>

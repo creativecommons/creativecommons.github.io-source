@@ -1,9 +1,0 @@
-{% from "macros/author_name.html" import render_author_name %}
-
-{% macro render_authors(authors) %}
-  <ul class="list-unstyled">
-    {% for author in site.query(authors.path) %}
-      <li><a href="{{ author|url }}">{{ render_author_name(author) }}</a></li>
-    {% endfor %}
-  </ul>
-{% endmacro %}

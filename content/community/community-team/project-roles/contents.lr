@@ -4,8 +4,9 @@ _template: page-with-toc.html
 ---
 title: Community Team: Project Roles
 ---
+description: This page serves as a guide for project-based roles on CC's <a href="/community/community-team/">Community Team</a>.
+---
 body:
-This page serves as a guide for project-based roles on CC's [Community Team][communityteam].
 
 Project roles are intended for folks interested in contributing to a specific project or codebase. You may have roles on multiple projects, but they will have to be granted separately.
 

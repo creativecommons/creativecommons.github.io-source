@@ -1,0 +1,91 @@
+{% extends "layout.html" %}
+
+{% block title %}{{ this.title }}{% endblock %}
+
+{% block body %}
+  <div class="cc-search-roadmap">
+    <div class="header">
+      <div class="container">
+        <h1>{{ this.title }}</h1>
+        <p class="description column is-9 is-paddingless">The largest open source product in CC’s portfolio is CC Search: a search engine for CC licensed and public domain creative works.</p>
+      </div>
+    </div>
+    <div class="body container content">
+      <p>The product involves the following components:</p>
+      <ul>
+        <li><b>CC Catalog</b>, where CC licensed and public domain works are ingested. [<a href="https://github.com/creativecommons/cccatalog">GitHub Repo</a>]</li>
+        <li><b>CC Catalog API</b>, our open API, used by CC Search to make the Catalog discoverable. [<a href="https://github.com/creativecommons/cccatalog-api">GitHub Repo</a>][<a href="https://api.creativecommons.engineering/v1/">Developer Documentation</a>]</li>
+        <li><b>CC Search</b>, our user facing search engine. [<a href="https://github.com/creativecommons/cccatalog-frontend">GitHub Repo</a>][<a href="https://search.creativecommons.org">Website</a>]</li>
+      </ul>
+      <p>CC Catalog ingests and processes CC licensed and public domain works, then makes that data available to CC Catalog API. CC Catalog API is publicly accessible, and is used to serve the data from the catalog to CC Search.</p>
+      
+      <h3>What Are We Up To?</h3>
+      <p>The highlights on our roadmap for the current and upcoming quarters are as follows:</p>
+      {% for quarter in bag('search_roadmap.quarters') %}
+        <h4>{{ quarter.name }}</h4>
+        <div class="table-container">
+          <table class="table is-bordered is-striped">
+            <thead>
+              <tr>
+                  <th scope="col">Task Name</th>
+                  <th scope="col">Task Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for task in quarter.tasks %}
+                <tr>
+                  <th scope="row">{{ task.name }}</th>
+                  <td scope="row">{{ task.description }}</td>
+                </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+      {% endfor %}
+      <p>Review our Pipeline of Future Ideas <a href="https://docs.google.com/document/d/1qAZu1_ZltfdVylH6WkWcp5_mBAPa5ilflHWUc7zbIgk/edit#">here</a> if you want to see what else has been suggested for CC Search.</p>
+      <h3>How Can I Help?</h3>
+      <h4>Contribute Code</h4>
+      <p>To contribute code, take the following steps:</p>
+      <ul>
+          <li>
+              Review the following:
+              <ul>
+                  <li>Our Contribution Guidelines: <a href="/contributing-code/">https://opensource.creativecommons.org/contributing-code/</a></li>
+                  <li>CC Search's Contribution Guidelines: <a href="/contributing-code/cc-search/">https://opensource.creativecommons.org/contributing-code/cc-search/</a></li>
+              </ul>
+          </li>
+          <li>Determine which project works best for you</li>
+          <li>Read through <a href="/contributing-code/#finding-an-issue">how to find open issues</a>.</li>
+          <li>Start contributing!</li>
+      </ul>
+
+
+      <b>We keep track of our work in three projects in GitHub:</b>
+      <dl>
+          <dt><a href="https://github.com/orgs/creativecommons/projects/7">CC Search Active Sprint</a></dt>
+          <dd>&bull; The best place to start! If an issue isn’t in progress yet, and is marked for community contribution, you’ll know it’s our highest priority.</dd>
+          <dt><a href="https://github.com/orgs/creativecommons/projects/10">CC Search Backlog</a></dt>
+          <dd>&bull; The column called “Next Sprint” contains what our second highest priority items are.</dd>
+          <dd>&bull; The current quarter (Q1, Q2, Q3, Q4) will tell you what we plan to work on, up to three months out.</dd>
+          <dd>&bull; Check out the “Any Time/Community” for some fun tickets that aren’t a high priority for CC staff, but would be great if they got built.</dd>
+          <dt><a href="https://github.com/orgs/creativecommons/projects/12">CC Catalog Pipeline</a></dt>
+          <dd>&bull; There are two columns with “Ready for Work” tickets. If they’re not blocked or marked as CC Staff only, we welcome your contribution.</dd>
+      </dl>
+
+      <h4>Contribute Design</h4>
+      <p>There are two ways you can show your interest in contributing to the design of CC Search:</p>
+      <ul>
+          <li>Follow <a href="https://opensource.creativecommons.org/contributing-code/cc-search/">the steps for suggesting a new feature for CC Search</a></li>
+          <li>Join the #cc-search channel in the <a href="https://slack-signup.creativecommons.org/">Creative Commons Slack</a> and start a conversation about your design ideas.</li>
+      </ul>
+
+      <p>Before you start work on any design project, get familiar with <a href="https://www.figma.com/file/l4Mt3dn3Ndtrvrb4aLcwXI/Design-Library?node-id=1433%3A0">our design library in Figma</a>. All CC Search designs use this design library.</p>
+
+      <h4>Participate in Usability Tests and User Interviews</h4>
+      <p>When we’re rolling out a specific feature, we do usability tests to test the proposed experience.</p>
+      <p>At any point in time, we’re engaging with our users through user interviews, where we learn more about attitudes towards the product as it stands, and dig into expansion areas we’re considering.</p>
+      <p>If you’re interested, we invite you to sign up for a time <a href="https://calendly.com/cc-product-design/usability-test-30">via this Calendly link</a>.</p>
+      <p>Visit our <a href="/contributing-code/usability/">Usability page</a> for more details on how to participate.</p>
+    </div>
+  </div>
+{% endblock %}

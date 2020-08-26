@@ -4,9 +4,9 @@ _template: page-with-toc.html
 ---
 title: Write a Blog Post
 ---
+description: We invite members of the Creative Commons community to write guest posts on <a href="/blog">our technical blog</a>.
+---
 body:
-
-<p class="lead">We invite members of the Creative Commons community to write guest posts on <a href="/blog/">our technical blog</a>.</p>
 
 ## What to write about
 

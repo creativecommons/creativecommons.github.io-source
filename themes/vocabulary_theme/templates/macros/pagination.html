@@ -1,0 +1,27 @@
+{% macro render_pagination(pagination) %}
+  <nav class="pagination" role="navigation" aria-label="pagination">
+    <ul class="pagination-list">
+      {% if pagination.has_prev %}
+        <li class="inactive">
+          <a class="pagination-link inactive-link" href="{{ pagination.prev|url }}" aria-label="Goto previous"><i class="icon chevron-left"></i></a>
+        </li>
+      {% endif %}
+      {% for p in range(pagination.pages) %}
+        {% if pagination.current|url == pagination.for_page(p+1)|url %}
+          <li class="common">
+            <a class="pagination-link is-current common-link" aria-label="Goto page {{p+1}}" aria-current="page" href="{{ pagination.for_page(p+1)|url}}">{{p+1}}</a>
+          </li>
+        {% else %}
+          <li class="inactive">
+            <a class="pagination-link inactive-link" aria-label="Goto page {{p+1}}" href="{{ pagination.for_page(p+1)|url}}">{{p+1}}</a>
+          </li>
+        {% endif %}
+      {% endfor %}
+      {% if pagination.has_next %}
+        <li class="inactive">
+          <a class="pagination-link inactive-link" href="{{ pagination.next|url }}" aria-label="Goto next"><i class="icon chevron-right"></i></a>
+        </li>
+      {% endif %}
+    </ul>
+  </nav>
+{% endmacro %}

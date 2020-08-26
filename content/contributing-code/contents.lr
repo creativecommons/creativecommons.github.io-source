@@ -4,11 +4,10 @@ _template: page-with-toc.html
 ---
 title: Contribution Guidelines
 ---
+description: We do all of our development [on GitHub](https://github.com/creativecommons/). If you are not familiar with GitHub or pull requests, [here is an excellent guide to get started](https://guides.github.com/activities/hello-world/).
+---
 body:
 
-<p class="lead">Thank you for your interest in contributing to Creative Commons open source projects!</p>
-
-We do all of our development [on GitHub](https://github.com/creativecommons/). If you are not familiar with GitHub or pull requests, [here is an excellent guide to get started](https://guides.github.com/activities/hello-world/).
 
 ## Finding an issue
 

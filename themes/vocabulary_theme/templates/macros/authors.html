@@ -1,0 +1,21 @@
+{% from "macros/author_name.html" import render_author_name %}
+
+{% macro render_authors(authors) %}
+  {% for author in site.query(authors.path) %}
+    <div class="author column is-6-mobile is-2-desktop">
+      {% if author.md5_hashed_email %}
+        <figure class="image profile">
+          <img class="profile" src="https://secure.gravatar.com/avatar/{{ author.md5_hashed_email }}?size=200" alt="gravatar" />
+        </figure>
+      {% else %}
+      <figure class="image profile">
+        <img class="profile" src="./blank_profile.svg" alt="gravatar" />
+      </figure>
+      {% endif %}
+      <div class="author-name">
+        <h5 class="desktop b-header"><a class="link" href="{{ author|url }}">{{ render_author_name(author) }}</a></h5>
+        <h6 class="mobile b-header"><a class="link" href="{{ author|url }}">{{ render_author_name(author) }}</a></h6>
+      </div>
+    </div>
+  {% endfor %}
+{% endmacro %}

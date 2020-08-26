@@ -1,0 +1,99 @@
+{% extends "layout.html" %}
+
+{% block title %}Open Source Internships: Project Ideas{% endblock %}
+
+{% block body %}
+  <div class="project-ideas">
+    <div class="header">
+      <div class="container">
+        <h1>Open Source Internships: Project Ideas</h1>
+        <p class="description">This is the project idea list for the <span class="has-color-forest-green">current round of open source internships at Creative Commons.</span></p>
+        {% set ideas = site.query('/internships/project-ideas-collection').include_undiscoverable(true) %}
+        <div class="filter-labels" id="project-list">
+          <button type="button" class="button tag btn-dark filter-btn" data-filter="all">
+            All Projects
+          </button>
+          <button type="button" class="button tag filter-btn" data-filter="difficulty-easy">
+            Difficulty: Easy
+          </button>
+          <button type="button" class="button tag filter-btn" data-filter="difficulty-medium">
+            Difficulty: Medium
+          </button>
+          <button type="button" class="button tag filter-btn" data-filter="difficulty-hard">
+            Difficulty: Hard
+          </button>
+          <button type="button" class="button tag filter-btn" data-filter="skill-javascript">
+            Skill: JavaScript
+          </button>
+          <button type="button" class="button tag filter-btn" data-filter="skill-python">
+            Skill: Python
+          </button>
+          <button type="button" class="button tag filter-btn" data-filter="skill-wordpress">
+            Skill: WordPress
+          </button>
+          <button type="button" class="button tag filter-btn" data-filter="skill-writing">
+            Skill: Writing
+          </button>
+        </div>
+        <div class="project-ideas columns is-multiline">
+          {% for idea in ideas %}
+          <div class="column is-one-quarter filter filter-label {{ idea.filter_value }}">
+            <a href="#{{ idea._slug }}">
+              <article class="card entry-post horizontal">
+                <div class="card-content">
+                  <h5 class="card-title">{{ idea.title }}</h5>
+                </div>
+              </article>
+            </a>
+          </div>
+          {% endfor %}
+          <div class="column is-one-quarter">
+            <a href="#original-ideas">
+              <article class="card entry-post horizontal">
+                <div class="card-content">
+                  <h5 class="card-title">Original Ideas</h5>
+                </div>
+              </article>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="body container">
+      {% for idea in ideas %}
+        <div class="project-idea">
+          <h2><a class="has-color-dark-slate-gray" name="{{ idea._slug }}">{{ idea.title }}</a></h2>
+          <div class="columns">
+            <div class="column is-one-quarter">
+              <h5 class="b-header padding-bottom-small">Difficulty</h5>
+              <p class="padding-bottom-big">{{ idea.difficulty }}</p>
+              <h5 class="b-header padding-bottom-small">Skills recommended</h5>
+              <p class="padding-bottom-big">{{ idea.skills_recommended }}</p>
+              <h5 class="b-header padding-bottom-small">Mentors</h5>
+              <p class="padding-bottom-big">{{ idea.mentors }}</p>
+            </div>
+            <div class="column is-three-quarters">
+              <h3 class="padding-bottom-big">The Problem</h3>
+              <p>{{ idea.problem }}</p>
+              <h3 class="padding-bottom-big padding-top-large">Expected Outcome</h3>
+              <p>{{ idea.expected_outcome }}</p>
+              <h3 class="padding-bottom-big padding-top-large">Internship Tasks</h3>
+              <p>{{ idea.internship_tasks }}</p>
+              <h3 class="padding-bottom-big padding-top-large">Application Tips</h3>
+              <p>{{ idea.application_tips }}</p>
+              <h3 class="padding-bottom-big padding-top-large">Resources</h3>
+              <p>{{ idea.resources }}</p>
+            </div>
+          </div>
+          <a href="#project-list" class="back-to-list"><i class="icon angle-up"></i> Back to the Project list</a>
+        </div>
+      {% endfor %}
+      <div>
+        <h2 class="b-header"><a name="original-ideas" class="has-color-dark-slate-gray">Original Ideas</a></h2>
+        <p>We are open to original ideas for documentation improvements.</p>
+        <p>Please talk to us on the <code>#cc-gsoc-outreachy</code> channel on Slack or via the mailing list to find a mentor for the project before submitting your proposal.</p>
+        <a href="#project-list" class="back-to-list"><i class="icon angle-up"></i> Back to the Project list</a>
+      </div>
+    </div>
+  </div>
+{% endblock %}
