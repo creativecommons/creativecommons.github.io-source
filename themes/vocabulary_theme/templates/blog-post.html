@@ -57,7 +57,7 @@
           <ul class="posts">
             {% for post in series.children.order_by('pub_date') %}
               {% if post.path==this.path %}
-                <li>
+                <li class="has-color-dark-slate-gray">
                   <i class="icon circle-filled"></i>{{ post.title }}
                 </li>
               {% else %}
