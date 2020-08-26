@@ -17,7 +17,7 @@ In late 2018, in the midst of being acquired by Microsoft, GitHub [launched Gith
 
 In a [2018 TechCrunch interview](https://techcrunch.com/2018/10/16/github-launches-actions-its-workflow-automation-tool/), GitHub's then head of platform acknowledged the usefulness of actions for more than CI/CD. "I see CI/CD as one narrow use case of actions. It’s so, so much more,” Lambert stressed. “And I think it’s going to revolutionize DevOps because people are now going to build best in breed deployment workflows for specific applications and frameworks, and those become the de facto standard shared on GitHub. […] It’s going to do everything we did for open source again for the DevOps space and for all those different parts of that workflow ecosystem."
 
-At Creative Commons, we use Github Actions and Bots on many of [our open-source projects](https://github.com/creativecommons?type=source) for more than CI/CD—to manage our [community team](http://localhost:5000/community/community-team/); to automate repository health; and to automate tedious but frequent tasks. The following examples are just a small snapshot of our existing and in-progress automations.
+At Creative Commons, we use Github Actions and Bots on many of [our open-source projects](https://github.com/creativecommons?type=source) for more than CI/CD—to manage our [community team](/community/community-team/); to automate repository health; and to automate tedious but frequent tasks. The following examples are just a small snapshot of our existing and in-progress automations.
 
 ## Example automations
 
