@@ -11,23 +11,22 @@ pub_date: 2020-08-26
 ---
 body:
 
-> *Get started using GitHub bots and actions for community management and repositiory health.*
+> *Get started using GitHub bots and actions for community management and repository health.*
 
+In late 2018, in the midst of being acquired by Microsoft, GitHub [launched Github Actions](https://github.blog/2018-10-16-future-of-software/) into public beta, allowing users to run code on the popular development platform for the first time. With a straightforward `YAML` configuration syntax and the power of Microsoft's Azure cloud, GitHub actions quickly rose to compete with existing Continuous Integration (CI) and Continuous Deployment (CD) platforms like **Circle CI** and **Travis CI**. GitHub actions made it easier than ever for developers to test and deploy software in the cloud, but from the beginning GitHub had bigger plans for the service.
 
-In late 2018, in the midst of being acquired by Microsoft, GitHub [launched Github Actions](https://github.blog/2018-10-16-future-of-software/) into public beta, allowing users to run code on the popular development platform for the first time. With a straightforward `.yml` configuration syntax and the power of Microsoft's Azure cloud, GitHub actions quickly rose to compete with existing Continuous Integration (CI) and Continuous Deployment (CD) platforms like **Circle CI** and **Travis CI**. GitHub actions made it easier than ever for developers to test and deploy software in the cloud, but from the beginning GitHub had bigger plans for the service.
-
-In a [2018 TechCrunch interview](https://techcrunch.com/2018/10/16/github-launches-actions-its-workflow-automation-tool/), GitHub's then head of platform adknowledged the usefullness of actions for more than CI/CD. "I see CI/CD as one narrow use case of actions. It’s so, so much more,” Lambert stressed. “And I think it’s going to revolutionize DevOps because people are now going to build best in breed deployment workflows for specific applications and frameworks, and those become the de facto standard shared on GitHub. […] It’s going to do everything we did for open source again for the DevOps space and for all those different parts of that workflow ecosystem."
+In a [2018 TechCrunch interview](https://techcrunch.com/2018/10/16/github-launches-actions-its-workflow-automation-tool/), GitHub's then head of platform acknowledged the usefulness of actions for more than CI/CD. "I see CI/CD as one narrow use case of actions. It’s so, so much more,” Lambert stressed. “And I think it’s going to revolutionize DevOps because people are now going to build best in breed deployment workflows for specific applications and frameworks, and those become the de facto standard shared on GitHub. […] It’s going to do everything we did for open source again for the DevOps space and for all those different parts of that workflow ecosystem."
 
 At Creative Commons, we use Github Actions and Bots on many of [our open-source projects](https://github.com/creativecommons?type=source) for more than CI/CD—to manage our [community team](http://localhost:5000/community/community-team/); to automate repository health; and to make tedious but frequent tasks automatic. The following examples are just a small snapshot of our existing and in-progress automations.
 
 ## Example automations
 
 <!-- no toc -->
-- [Automatic release note generation](#automatic-release-note-generation)
-- [Repository Normalization](#repository-normalization)
-- [Automatic Dependency Updates](#automatic-dependency-updates)
+- [Release note generation](#automatic-release-note-generation)
+- [Repository normalization](#repository-normalization)
+- [Dependency updates](#automatic-dependency-updates)
 
-### Automatic release note generation
+### Release note generation
 
 Our frontend Vue.js application for CC Search gets released weekly, and is subject to constant pull requests from myself, one-time volunteers making their first open source contribution, and long-term, dedicated community members who frequently contribute. It's important for us to highlight *all* of these contributions in our release notes, regardless of size or scope. Additionally, we find it useful to group changes into categories, so our users have a clear sense of what kinds of updates we've made.
 
@@ -48,7 +47,11 @@ The quality of these release notes made them quite tedious to generate manually.
 change-template: '- $TITLE: #$NUMBER by @$AUTHOR'
 ```
 
-<br />We can also map GitHub labels on our pull requests to the sections of our generated release notes, like so:
+<br />This means each pull request gets a line like this in our release notes:
+
+> Enable web monetization on single result pages: **#1191** by **@zackkrida**
+
+Perfect! We can also map GitHub labels on our pull requests to the sections of our generated release notes, like so:
 
 ```yaml
 categories:
@@ -64,7 +67,7 @@ The resulting release notes require no manual editing at release time, and has s
 
 ### Repository Normalization
 
-Within a private repository of internal helper scripts, the CC technical team has a number of Github Actions which trigger python scripts to keep configuration standardized across our repositories. One such script ensures that we use a standard set of GitHub labels across all of our projects. This consistency helps us do things like direct users to [open issues in need of assistance](https://github.com/search?q=org%3Acreativecommons+label%3A%22help+wanted%22+state%3Aopen&type=Issues) across the organization, or issues [good for first-time open source contributors](https://github.com/search?q=org%3Acreativecommons+label%3A%22good+first+issue%22+state%3Aopen&type=Issues). With GitHub actions, its easy to set up scheduled tasks with only a few lines of human-readable configuration. Here's the gist of running a python script daily, for example:
+Within a private repository of internal helper scripts, the CC technical team has a number of Github Actions which trigger python scripts to keep configuration standardized across our repositories. We casually call this process "repository normalization". One such script ensures that we use a standard set of GitHub labels across all of our projects. This consistency helps us do things like direct users to [open issues in need of assistance](https://github.com/search?q=org%3Acreativecommons+label%3A%22help+wanted%22+state%3Aopen&type=Issues) across the organization, or issues [good for first-time open source contributors](https://github.com/search?q=org%3Acreativecommons+label%3A%22good+first+issue%22+state%3Aopen&type=Issues). With GitHub actions, its easy to set up scheduled tasks with only a few lines of human-readable configuration. Here's the gist of running a python script daily, for example:
 
 ```yaml
 name: Example scheduled python action
@@ -95,7 +98,7 @@ jobs:
         ADMIN_GITHUB_TOKEN: ${{ secrets.ADMIN_GITHUB_TOKEN }}
 ```
 
-Internally and publically, we use [GitHub Projects](https://github.com/orgs/creativecommons/projects) to manage our bi-weekly sprints and backlogs. The [GitHub Project Bot](https://github.com/subhamX/github-project-bot) action allows to add pull requests to our progress columns. Here's an example step in such a job:
+Internally and publicly, we use [GitHub Projects](https://github.com/orgs/creativecommons/projects) to manage our bi-weekly sprints and backlogs. The [GitHub Project Bot](https://github.com/subhamX/github-project-bot) action allows to add pull requests to our progress columns. Here's an example step in such a job:
 
 ```yaml
 - name: Handle cccatalog-frontend Repo
@@ -109,12 +112,33 @@ Internally and publically, we use [GitHub Projects](https://github.com/orgs/crea
 
 We have additional scripts that sync our community team members across our open source website and GitHub, and several others that do even more of this cross-platform synchronization work. All of these scripts relive significant burden off of our engineering manager and open source community coordinator.
 
-### Automatic Depedency Updates
+### Dependency Updates
 
-[tbd]
+Modern JavaScript projects are built atop piles of 3rd party dependencies. This frees developers to focus on product code instead of writing the same utility code over and over again, but exposes projects to issues of security and dependency management. To help alleviate these issues, GitHub [acquired a startup called Dependabot](https://github.blog/2019-05-23-introducing-new-ways-to-keep-your-code-secure/#automated-security-fixes-with-dependabot) which initially focused on automatic security updates for repositories. Dependabot creates pull requests that update third-party code  with known security vulnerabilities to the latest safe and stable versions.
 
-## conslusion
+This summer (June 2020), GitHub [expanded dependabot's scope](https://github.blog/2020-06-01-keep-all-your-packages-up-to-date-with-dependabot/) to keep *all* third-party code up to date, regardless of security. By adding a `dependabot-config.yml` file to any repo, developers no longer need to keep track of dependency updates on their own.
 
-- github actions rule
-- finedmore here
-- share your ideas with us
+<div style="text-align: center;">
+  <figure class="margin-bottom-large">
+    <img src="dependabot-example.png" alt="GitHub screenshot of a Dependabot PR message" />
+    <figcaption>
+      <em>
+        Dependabot writes pull requests to bump JavaScript dependencies and will automatically resolve merge conflicts and keep the PR up to date.
+      </em>
+    </figcaption>
+  </figure>
+</div>
+
+If your project has strong test coverage and a solid quality control process for release management, Dependabot pull requests can be made even more powerful with the [Merge Me Action.](https://github.com/ridedott/merge-me-action) Merge Me can be added to the end of any series of Github Actions to automatically merge pull requests that pass all CI tests which were authored by a particular user (the action assumes `dependabot` by default). This means your repository can have highly-configurable, fully-automated dependency updates in just a few lines of `YAML`.
+
+## Here's a few more
+
+Here's some smaller and simpler automations that can make a huge difference in your workflows.
+
+- [Automatically close old PRs after a period of inactivity](https://github.com/probot/stale)
+- [Automate security releases on Sentry](https://github.blog/2020-08-24-automate-releases-and-more-with-the-new-sentry-release-github-action/)
+- [Add reminders to issues and pull requests](https://github.com/probot/reminders)
+
+These examples are a small sample of the non-CI/CD capabilities of GitHub Actions. You can peek in the `.github/` directory of any of our open source repositories to see the actions we're using, and feel free to make an issue on any project if you have an idea for an automation of your own. As we increase the number and quality of integrations in our open source repositories, we may update this article or create follow-up posts with more examples.
+
+If you're interested in learning more about GitHub Actions, GitHub has a wonderful [marketplace](https://github.com/marketplace?type=actions) of avaliable actionsn you can explore, and the [documentation for actions](https://docs.github.com/actions) is avaliable in several languages.
