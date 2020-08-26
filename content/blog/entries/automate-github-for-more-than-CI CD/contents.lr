@@ -13,11 +13,11 @@ body:
 
 > *Get started using GitHub bots and actions for community management and repository health.*
 
-In late 2018, in the midst of being acquired by Microsoft, GitHub [launched Github Actions](https://github.blog/2018-10-16-future-of-software/) into public beta, allowing users to run code on the popular development platform for the first time. With a straightforward `YAML` configuration syntax and the power of Microsoft's Azure cloud, GitHub actions quickly rose to compete with existing Continuous Integration (CI) and Continuous Deployment (CD) platforms like **Circle CI** and **Travis CI**. GitHub actions made it easier than ever for developers to test and deploy software in the cloud, but from the beginning GitHub had bigger plans for the service.
+In late 2018, in the midst of being acquired by Microsoft, GitHub [launched Github Actions](https://github.blog/2018-10-16-future-of-software/) into public beta, allowing users to run code on the popular development platform for the first time. With a straightforward `YAML` configuration syntax and the power of Microsoft's Azure cloud, GitHub Actions quickly rose to compete with existing Continuous Integration (CI) and Continuous Deployment (CD) platforms like **Circle CI** and **Travis CI**. GitHub Actions made it easier than ever for developers to test and deploy software in the cloud, but from the beginning GitHub had bigger plans for the service.
 
 In a [2018 TechCrunch interview](https://techcrunch.com/2018/10/16/github-launches-actions-its-workflow-automation-tool/), GitHub's then head of platform acknowledged the usefulness of actions for more than CI/CD. "I see CI/CD as one narrow use case of actions. It’s so, so much more,” Lambert stressed. “And I think it’s going to revolutionize DevOps because people are now going to build best in breed deployment workflows for specific applications and frameworks, and those become the de facto standard shared on GitHub. […] It’s going to do everything we did for open source again for the DevOps space and for all those different parts of that workflow ecosystem."
 
-At Creative Commons, we use Github Actions and Bots on many of [our open-source projects](https://github.com/creativecommons?type=source) for more than CI/CD—to manage our [community team](http://localhost:5000/community/community-team/); to automate repository health; and to make tedious but frequent tasks automatic. The following examples are just a small snapshot of our existing and in-progress automations.
+At Creative Commons, we use Github Actions and Bots on many of [our open-source projects](https://github.com/creativecommons?type=source) for more than CI/CD—to manage our [community team](http://localhost:5000/community/community-team/); to automate repository health; and to automate tedious but frequent tasks. The following examples are just a small snapshot of our existing and in-progress automations.
 
 ## Example automations
 
@@ -67,7 +67,7 @@ The resulting release notes require no manual editing at release time, and has s
 
 ### Repository Normalization
 
-Within a private repository of internal helper scripts, the CC technical team has a number of Github Actions which trigger Python scripts to keep configuration standardized across our repositories. We casually call this process "repository normalization". One such script ensures that we use a standard set of GitHub labels across all of our projects. This consistency helps us do things like direct users to [open issues in need of assistance](https://github.com/search?q=org%3Acreativecommons+label%3A%22help+wanted%22+state%3Aopen&type=Issues) across the organization, or issues [good for first-time open source contributors](https://github.com/search?q=org%3Acreativecommons+label%3A%22good+first+issue%22+state%3Aopen&type=Issues). With GitHub actions, its easy to set up scheduled tasks with only a few lines of human-readable configuration. Here's the gist of running a Python script daily, for example:
+Within a private repository of internal helper scripts, the CC technical team has a number of Github Actions which trigger Python scripts to keep configuration standardized across our repositories. We casually call this process "repository normalization". One such script ensures that we use a standard set of GitHub labels across all of our projects. This consistency helps us do things like direct users to [open issues in need of assistance](https://github.com/search?q=org%3Acreativecommons+label%3A%22help+wanted%22+state%3Aopen&type=Issues) across the organization, or issues [good for first-time open source contributors](https://github.com/search?q=org%3Acreativecommons+label%3A%22good+first+issue%22+state%3Aopen&type=Issues). With GitHub Actions, its easy to set up scheduled tasks with only a few lines of human-readable configuration. Here's the gist of running a Python script daily, for example:
 
 ```yaml
 name: Example scheduled python action
@@ -98,7 +98,7 @@ jobs:
         ADMIN_GITHUB_TOKEN: ${{ secrets.ADMIN_GITHUB_TOKEN }}
 ```
 
-Internally and publicly, we use [GitHub Projects](https://github.com/orgs/creativecommons/projects) to manage our bi-weekly sprints and backlogs. The [GitHub Project Bot](https://github.com/subhamX/github-project-bot) action allows to add pull requests to our progress columns. Here's an example step in such a job:
+Internally and publicly, we use [GitHub Projects](https://github.com/orgs/creativecommons/projects) to manage our bi-weekly sprints and backlogs. The [GitHub Project Bot](https://github.com/subhamX/github-project-bot) action was built by [one of our community contributors](https://github.com/subhamX) and allows us to add pull requests to our project columns. Here's an example step in such a job:
 
 ```yaml
 - name: Handle cccatalog-frontend Repo
