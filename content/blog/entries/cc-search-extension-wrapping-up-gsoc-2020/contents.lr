@@ -1,0 +1,171 @@
+title: CC Search Extension: Wrapping up GSoC 2020
+---
+categories:
+gsoc
+gsoc-2020
+cc-browser-extension
+cc-search
+open-source
+---
+author: makkoncept
+---
+series: gsoc-2020-browser-extension
+---
+pub_date: 2020-08-27
+---
+body:
+
+
+In this post, I'll give you an overview of the improvements and the features that were added to the CC Search browser extension. I am delighted to state that the goals that were set for Google Summer of Code 2020 has been successfuly completed.
+
+## Widen the integration with CC Catalog API
+Both [CC Search](search.creativecommons.org) and CC Search Extension are powered by [CC Catalog REST API](https://api.creativecommons.engineering/v1/). The API allows programmatic access to search for CC-licensed and public domain digital media. Better integration with the API was one of the major targets during this internship because it significantly improves and adds new searching workflows to the extension.
+
+This can be sub-divided into _New Filters_, _Browse By Sources_, _search by tags_, and _related images_. I have elaborated on these points below.
+
+### New Filters
+The `/image` endpoint of the API is used for searching. We can also provide several query parameters that can filter the result. Earlier the extension only supported filtering the content using `license`, `sources`, and `use case`. Now, besides these filters, the extension also supports filtering by `image type`, `file type`, `aspect ratio`, and `image size`. 
+
+<figure >
+    <img src="old-extension-filters.gif" style="width: 70%">
+    <figcaption>
+        <em>Filters in the old version</em>
+    </figcaption>
+</figure>
+
+<figure>
+    <img src="new-extension-filters.gif" style="width: 70%">
+    <figcaption>
+        <em>Filters in the new version</em>
+    </figcaption>
+</figure>
+
+_Rationale_: This will allow users to be more precise in their queries when searching.
+
+### Browsing by source
+The extension now has a "sources" section. The latest sources are fetched from the `/sources` endpoint. Clicking a source link triggers a request to the `/image` endpoint to get the images associated with it.
+
+<figure >
+    <img src="source-section-light.gif" style="width: 70%">
+    <figcaption>
+        <em>Source section</em>
+    </figcaption>
+</figure>
+
+<figure>
+    <img src="source-section-dark.gif" style="width: 70%">
+    <figcaption>
+        <em>Source section in dark mode</em>
+    </figcaption>
+</figure>
+
+_Rationale_: This opens an avenue for exploration of all the different sources which are available in the catalog. This is advantageous for the users who are not familiar with the type of content a particular source provides. They might run into a source that has a huge catalog of high-quality images that they are looking for.
+
+### Search by tags
+Most of the images have some tags associated with them, which are also sent along with the image data by the API. This, and the flexibility of the `/image` endpoint, paved the way for the addition of searching for images using image-tags.
+
+<figure >
+    <img src="search-by-image-tag.gif" style="width: 70%">
+    <figcaption>
+        <em>Search by image tag</em>
+    </figcaption>
+</figure>
+
+_Rational_ - Image tags will allow users to incrementally make their queries better and more specific.
+
+### Related images
+In the image detail section of any particular image, you can now see several recommendations. This has been made possible by adding support for the [`/recommendations/images/{identifier}`](https://api.creativecommons.engineering/v1/#tag/recommendations) endpoint of the API.
+
+<figure >
+    <img src="related-images.gif" style="width: 70%">
+    <figcaption>
+        <em>Image recommendations</em>
+    </figcaption>
+</figure>
+
+_Rationale_ -  This will help users find a variety of images that fit their requirements and also explore the images that would not usually show up on the initial pages of the search result. 
+
+## Improvements to bookmarks section 
+The bookmark section has great prominence in CC Search Extension because the export/import workflow is tied to it and unlike the search result data, the bookmarks data is preserved across user sessions (closing the extension does not wipe out the bookmarks).  It has undergone some crucial improvements like caching, voluntary loading and increase in  the number bookmarks that it can hold (the limit now is 300 which earlier was ~50)
+
+The bookmarks section is very fast now as caching has eliminated the need to make a bunch of simultaneous request to the API every time the bookmark were loaded and voluntary loading prevents the extension from visible lag that happened earlier due to loading a large number of bookmark at once.
+
+Though the improvement in performance is better recognized when you are using the extension, I tried to demonstrate that by comparing the rendering of the bookmarked images.
+
+<figure >
+    <img src="bookmarks-in-old-version.gif" style="width: 70%">
+    <figcaption>
+        <em>Bookmark section in the old version</em>
+    </figcaption>
+</figure>
+  
+<figure >
+    <img src="bookmarks-in-new-version.gif" style="width: 70%">
+    <figcaption>
+        <em>Bookmarks section in the new version</em>
+    </figcaption>
+</figure>
+
+
+## A better use of sync storage
+The bookmarks and the user settings are synced between user systems. There are very tight write limits and bytes quotas associated with this storage([documentation link](https://developer.chrome.com/apps/storage#properties)). Due to this, the way the extension used this storage, and the assumptions it made about its schema was improved multiple times. Since the extension was already in production, and had around 5,000 weekly users, the code for migrating the user's sync storage was pushed along with these updates. Also, the support was added for legacy bookmark files that some users might still be using.
+
+## Integration with Vocabulary
+The extension now supports the latest version of [CC vocabulary](https://github.com/creativecommons/vocabulary). The challenging part of this was to rethink, mold, and update each and every workflow of the extension according to the new design.
+
+<figure >
+    <img src="image-detail-old-version.gif" style="width: 70%">
+    <figcaption>
+        <em>Old version — Image detail</em>
+    </figcaption>
+</figure>
+  
+<figure >
+    <img src="image-detail-new-version.gif" style="width: 70%">
+    <figcaption>
+        <em>New version — Image detail</em>
+    </figcaption>
+</figure>
+
+<figure >
+    <img src="deletion-in-old-version.gif" style="width: 70%">
+    <figcaption>
+        <em>Old version — Deleting bookmarks</em>
+    </figcaption>
+</figure>
+  
+<figure >
+    <img src="deletion-in-new-version.gif" style="width: 70%">
+    <figcaption>
+        <em>New version — Deleting bookmarks</em>
+    </figcaption>
+</figure>
+
+<figure >
+    <img src="dark-mode-old-version.gif" style="width: 70%">
+    <figcaption>
+        <em>Old version — Dark mode</em>
+    </figcaption>
+</figure>
+  
+<figure >
+    <img src="dark-mode-new-version.gif" style="width: 70%">
+    <figcaption>
+        <em>New version — Dark mode</em>
+    </figcaption>
+</figure>
+
+## Release on Microsoft Edge
+I am also testing the extension on Microsoft Edge. We also have it [listed](https://microsoftedge.microsoft.com/addons/detail/cc-search/djolilnbndifmlfmcdnifdfjfbglipgc) on the Edge store. You can soon expect the latest version of CC Search Extension available for install there.
+
+## Code
+
+The project repository is hosted on [Github](https://github.com/creativecommons/ccsearch-browser-extension). During this period, I have made [more than 320](https://github.com/creativecommons/ccsearch-browser-extension/compare/v1.3.0...master) commits. 
+
+The Major pull requests: [#249](https://github.com/creativecommons/ccsearch-browser-extension/pull/249), [#255](https://github.com/creativecommons/ccsearch-browser-extension/pull/255), [#268](https://github.com/creativecommons/ccsearch-browser-extension/pull/268), [#270](https://github.com/creativecommons/ccsearch-browser-extension/pull/270), [#271](https://github.com/creativecommons/ccsearch-browser-extension/pull/271), [#272](https://github.com/creativecommons/ccsearch-browser-extension/pull/272), [#275](https://github.com/creativecommons/ccsearch-browser-extension/pull/275), [#276](https://github.com/creativecommons/ccsearch-browser-extension/pull/276)
+
+Also, during this period, 5 updates of the extension were pushed to the extension stores. You can check out the [releases page](https://github.com/creativecommons/ccsearch-browser-extension/releases).
+
+
+## Acknowledgements
+I would like to thank [Alden](https://creativecommons.org/author/aldencreativecommons-org/) and [Kriti](https://creativecommons.org/author/kriticreativecommons-org/) for their valuable guidance during this journey. Special thanks to [Fransisco](https://github.com/panchovm), for designing the mockups of the extension, and to the wonderful contributors of CC Vocabulary.
