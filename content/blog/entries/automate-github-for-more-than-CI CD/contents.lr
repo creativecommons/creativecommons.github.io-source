@@ -67,7 +67,7 @@ The resulting release notes require no manual editing at release time, and has s
 
 ### Repository Normalization
 
-Within a private repository of internal helper scripts, the CC technical team has a number of Github Actions which trigger python scripts to keep configuration standardized across our repositories. We casually call this process "repository normalization". One such script ensures that we use a standard set of GitHub labels across all of our projects. This consistency helps us do things like direct users to [open issues in need of assistance](https://github.com/search?q=org%3Acreativecommons+label%3A%22help+wanted%22+state%3Aopen&type=Issues) across the organization, or issues [good for first-time open source contributors](https://github.com/search?q=org%3Acreativecommons+label%3A%22good+first+issue%22+state%3Aopen&type=Issues). With GitHub actions, its easy to set up scheduled tasks with only a few lines of human-readable configuration. Here's the gist of running a python script daily, for example:
+Within a private repository of internal helper scripts, the CC technical team has a number of Github Actions which trigger Python scripts to keep configuration standardized across our repositories. We casually call this process "repository normalization". One such script ensures that we use a standard set of GitHub labels across all of our projects. This consistency helps us do things like direct users to [open issues in need of assistance](https://github.com/search?q=org%3Acreativecommons+label%3A%22help+wanted%22+state%3Aopen&type=Issues) across the organization, or issues [good for first-time open source contributors](https://github.com/search?q=org%3Acreativecommons+label%3A%22good+first+issue%22+state%3Aopen&type=Issues). With GitHub actions, its easy to set up scheduled tasks with only a few lines of human-readable configuration. Here's the gist of running a Python script daily, for example:
 
 ```yaml
 name: Example scheduled python action
@@ -138,6 +138,7 @@ Here's some smaller and simpler automations that can make a huge difference in y
 - [Automatically close old PRs after a period of inactivity](https://github.com/probot/stale)
 - [Automate security releases on Sentry](https://github.blog/2020-08-24-automate-releases-and-more-with-the-new-sentry-release-github-action/)
 - [Add reminders to issues and pull requests](https://github.com/probot/reminders)
+
 
 These examples are a small sample of the non-CI/CD capabilities of GitHub Actions. You can peek in the `.github/` directory of any of our open source repositories to see the actions we're using, and feel free to make an issue on any project if you have an idea for an automation of your own. As we increase the number and quality of integrations in our open source repositories, we may update this article or create follow-up posts with more examples.
 
