@@ -3,6 +3,8 @@
 {% from "macros/author_posts.html" import render_author_posts %}
 {% from "macros/author_name.html" import render_author_name %}
 
+{% block title %}{{ render_author_name(this) }}{% endblock %}
+
 {% block body %}
 <div class="author-posts">
   <div class="header">

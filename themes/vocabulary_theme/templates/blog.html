@@ -3,6 +3,8 @@
 {% from "macros/pagination.html" import render_pagination %}
 {% from "macros/posts.html" import render_posts %}
 
+{% block title %}{{ this.title }}{% endblock %}
+
 {% block body %}
   <div class="blog-page">
     <div class="header">
