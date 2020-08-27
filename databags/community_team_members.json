@@ -38,6 +38,11 @@
                     "github": "sp35",
                     "name": "Shubham Pandey",
                     "role": "Project Contributor"
+                },
+                {
+                    "github": "avats-dev",
+                    "name": "Aditya Vats",
+                    "role": "Project Contributor"
                 }
             ],
             "name": "CC Catalog",
@@ -59,6 +64,11 @@
                     "github": "dhruvkb",
                     "name": "Dhruv Bhanushali",
                     "role": "Project Collaborator"
+                },
+                {
+                    "github": "ariessa",
+                    "name": "Ariessa Norramli",
+                    "role": "Project Core Committer"
                 }
             ],
             "name": "CC Catalog API",
@@ -146,6 +156,17 @@
             ],
             "name": "CC Open Source",
             "repos": "creativecommons.github.io-source"
+        },
+        {
+            "members": [
+                {
+                    "github": "JackieBinya",
+                    "name": "Jacqueline Binya",
+                    "role": "Project Core Committer"
+                }
+            ],
+            "name": "CC WordPress Themes",
+            "repos": "wp-theme-base"
         },
         {
             "members": [
@@ -253,6 +274,11 @@
                 {
                     "github": "Dhruvi16",
                     "name": "Dhruvi Butti",
+                    "role": "Project Core Committer"
+                },
+                {
+                    "github": "nimishbongale",
+                    "name": "Nimish Bongale",
                     "role": "Project Core Committer"
                 },
                 {
