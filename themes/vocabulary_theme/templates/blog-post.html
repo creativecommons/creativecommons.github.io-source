@@ -16,11 +16,9 @@
         <h2 class="title">{{ this.title }}</h2>
         {{ check_file('content' + this.parent.parent.path + '/authors/' + this.author + '/contents.lr') }}
         <div class="author columns is-marginless">
-          {% if author.md5_hashed_email %}
-            <figure class="image profile">
-              <img src="https://secure.gravatar.com/avatar/{{ author.md5_hashed_email }}?size=200" alt="gravatar" class="profile" />
-            </figure>
-          {% endif %}
+          <figure class="image profile">
+            <img src="https://secure.gravatar.com/avatar/{{ author.md5_hashed_email }}?size=200&d=mp" alt="gravatar" class="profile" />
+          </figure>
           <p class="column">by <a href="{{ author|url }}">{{ render_author_name(author) }}</a>
           on {{ this.pub_date|dateformat("YYYY-MM-dd") }}</p>
         </div>
