@@ -1051,11 +1051,23 @@
         {
             "created": "2020-04-21T17:01:56",
             "description": "New WordPress theme for Creative Commons website",
+            "engineering_project": true,
+            "english_name": "Creative Commons primary website WordPress Theme",
+            "featured": false,
             "id": 257659012,
             "language": "PHP",
-            "license": null,
+            "license": {
+                "name": "MIT License",
+                "url": "https://github.com/creativecommons/wp-theme-creativecommons.org/blob/master/LICENSE"
+            },
             "name": "wp-theme-creativecommons.org",
             "slack": "",
+            "technologies": [
+                "CSS",
+                "HTML",
+                "PHP",
+                "WordPress"
+            ],
             "url": "https://github.com/creativecommons/wp-theme-creativecommons.org",
             "website": null
         },
