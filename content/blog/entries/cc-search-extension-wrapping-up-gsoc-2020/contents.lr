@@ -16,15 +16,15 @@ pub_date: 2020-08-27
 body:
 
 
-In this post, I'll give you an overview of the improvements and the features that were added to the CC Search browser extension. I am delighted to state that the goals that were set for Google Summer of Code 2020 has been successfuly completed.
+In this post, I'll give an overview of the improvements and features that were added to the CC Search browser extension. I am delighted to state that the goals that were set for Google Summer of Code 2020 have been successfully completed.
 
 ## Widen the integration with CC Catalog API
 Both [CC Search](search.creativecommons.org) and CC Search Extension are powered by [CC Catalog REST API](https://api.creativecommons.engineering/v1/). The API allows programmatic access to search for CC-licensed and public domain digital media. Better integration with the API was one of the major targets during this internship because it significantly improves and adds new searching workflows to the extension.
 
-This can be sub-divided into _New Filters_, _Browse By Sources_, _search by tags_, and _related images_. I have elaborated on these points below.
+This can be sub-divided into _New Filters_, _Browse By Sources_, _search by tags_, and _related images_.
 
 ### New Filters
-The `/image` endpoint of the API is used for searching. We can also provide several query parameters that can filter the result. Earlier the extension only supported filtering the content using `license`, `sources`, and `use case`. Now, besides these filters, the extension also supports filtering by `image type`, `file type`, `aspect ratio`, and `image size`. 
+The `/image` endpoint of the API is used for searching. We can also provide several query parameters that can filter the result. Previously, the extension only supported filtering the content using `license`, `sources`, and `use case`. Now, besides these filters, the extension also supports filtering by `image type`, `file type`, `aspect ratio`, and `image size`.
 
 <figure >
     <img src="old-extension-filters.gif" style="width: 70%">
@@ -43,7 +43,7 @@ The `/image` endpoint of the API is used for searching. We can also provide seve
 _Rationale_: This will allow users to be more precise in their queries when searching.
 
 ### Browsing by source
-The extension now has a "sources" section. The latest sources are fetched from the `/sources` endpoint. Clicking a source link triggers a request to the `/image` endpoint to get the images associated with it.
+The extension now has a dynamically updated "sources" section. Clicking a source link triggers a request to the `/image` endpoint to get the images associated with it.
 
 <figure >
     <img src="source-section-light.gif" style="width: 70%">
@@ -86,9 +86,9 @@ In the image detail section of any particular image, you can now see several rec
 _Rationale_ -  This will help users find a variety of images that fit their requirements and also explore the images that would not usually show up on the initial pages of the search result. 
 
 ## Improvements to bookmarks section 
-The bookmark section has great prominence in CC Search Extension because the export/import workflow is tied to it and unlike the search result data, the bookmarks data is preserved across user sessions (closing the extension does not wipe out the bookmarks).  It has undergone some crucial improvements like caching, voluntary loading and increase in  the number bookmarks that it can hold (the limit now is 300 which earlier was ~50)
+The bookmark section has great prominence in CC Search Extension because the export/import workflow is tied to it and unlike the search result data, the bookmarks data is preserved across user sessions (closing the extension does not wipe out the bookmarks). It has undergone some crucial improvements like caching, voluntary loading and increase in the number bookmarks that it can hold (the limit now is 300 which earlier was ~50).
 
-The bookmarks section is very fast now as caching has eliminated the need to make a bunch of simultaneous request to the API every time the bookmark were loaded and voluntary loading prevents the extension from visible lag that happened earlier due to loading a large number of bookmark at once.
+The bookmarks section is significantly faster now as caching has eliminated the need to make many simultaneous network requests to the API when bookmarks are loaded. Voluntary loading also helps reduce perceived lag by reducing the number of bookmarks that load at once.
 
 Though the improvement in performance is better recognized when you are using the extension, I tried to demonstrate that by comparing the rendering of the bookmarked images.
 
