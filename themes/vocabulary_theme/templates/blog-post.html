@@ -54,9 +54,15 @@
           <h5 class="title">Posts in the {{ series.name }} series</h5>
           <ul class="posts">
             {% for post in series.children.order_by('pub_date') %}
-              <li>
-                <i class="icon circle-filled"></i><a href="{{ post|url }}">{{ post.title }}</a>
-              </li>
+              {% if post.path==this.path %}
+                <li class="has-color-dark-slate-gray">
+                  <i class="icon circle-filled"></i>{{ post.title }}
+                </li>
+              {% else %}
+                <li>
+                  <i class="icon circle-filled"></i><a href="{{ post|url }}">{{ post.title }}</a>
+                </li>
+              {% endif %}
             {% endfor %}
           </ul>
         </div>
