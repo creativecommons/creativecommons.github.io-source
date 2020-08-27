@@ -7,19 +7,11 @@
       <div class="column is-one-third">
         <article class="card entry-post horizontal no-border blog-entry">
           {% if author.about %}
-            {% if author.md5_hashed_email %}
-              <header>
-                <figure class="image blog-image">
-                  <img class="profile" src="https://secure.gravatar.com/avatar/{{ author.md5_hashed_email }}?size=200" alt="gravatar" />
-                </figure>
-              </header>
-              {% else %}
-              <header>
-                <figure class="image blog-image">
-                  <img class="profile" src="../../blank_profile.svg" alt="gravatar" />
-                </figure>
-              </header>
-            {% endif %}
+            <header>
+              <figure class="image blog-image">
+                <img class="profile" src="https://secure.gravatar.com/avatar/{{ author.md5_hashed_email }}?size=200&d=mp" alt="gravatar" />
+              </figure>
+            </header>
           {% endif %}
           <div class="blog-content">
             <h4 class="b-header"><a class="blog-title" href="{{ post|url }}">{{ post.title }}</a></h4>

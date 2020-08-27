@@ -142,4 +142,4 @@ Here's some smaller and simpler automations that can make a huge difference in y
 
 These examples are a small sample of the non-CI/CD capabilities of GitHub Actions. You can peek in the `.github/` directory of any of our open source repositories to see the actions we're using, and feel free to make an issue on any project if you have an idea for an automation of your own. As we increase the number and quality of integrations in our open source repositories, we may update this article or create follow-up posts with more examples.
 
-If you're interested in learning more about GitHub Actions, GitHub has a wonderful [marketplace](https://github.com/marketplace?type=actions) of avaliable actionsn you can explore, and the [documentation for actions](https://docs.github.com/actions) is avaliable in several languages.
+If you're interested in learning more about GitHub Actions, GitHub has a wonderful [marketplace](https://github.com/marketplace?type=actions) of avaliable actions you can explore, and the [documentation for actions](https://docs.github.com/actions) is avaliable in several languages.

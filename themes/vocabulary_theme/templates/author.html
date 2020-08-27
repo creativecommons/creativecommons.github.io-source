@@ -11,13 +11,9 @@
     <div class="container">
       <div class="columns">
         <div class="column is-2">
-          {% if this.about %}
-            {% if this.md5_hashed_email %}
-              <figure class="image profile">
-                <img class="profile" src="https://secure.gravatar.com/avatar/{{ this.md5_hashed_email }}?size=200">
-              </figure>
-            {% endif %}
-          {% endif %}
+          <figure class="image profile">
+            <img class="profile" src="https://secure.gravatar.com/avatar/{{ this.md5_hashed_email }}?size=200&d=mp" alt="gravatar">
+          </figure>
         </div>
         <div class="column is-8">
           <h2>{{ render_author_name(this) }}</h2>
