@@ -51,6 +51,11 @@
         {
             "members": [
                 {
+                    "github": "ariessa",
+                    "name": "Ariessa Norramli",
+                    "role": "Project Core Committer"
+                },
+                {
                     "github": "Tanuj22",
                     "name": "Tanuj Agarwal",
                     "role": "Project Contributor"
@@ -64,12 +69,7 @@
                     "github": "dhruvkb",
                     "name": "Dhruv Bhanushali",
                     "role": "Project Collaborator"
-                },
-                {
-                    "github": "ariessa",
-                    "name": "Ariessa Norramli",
-                    "role": "Project Core Committer"
-                }
+                }          
             ],
             "name": "CC Catalog API",
             "repos": "cccatalog-api"
