@@ -17,7 +17,7 @@ pub_date: 2020-07-31
 ---
 
 body:
-## Introduction
+
 The following blog intends to explain the very recent feature integrated to the Linked Commons. Be it the giant Google Search or any small website having a form field, everyone wishes to predict what’s on the user’s mind. For every keystroke, a nice search bar always renders some possible options the user could be looking for. The core ideology behind having this feature is — *do as much work as possible for the user!*
 
 
