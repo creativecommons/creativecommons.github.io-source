@@ -17,7 +17,7 @@ pub_date: 2020-07-16
 ---
 
 body:
-## Introduction
+
 **Linked Commons** is a visualization project which aims to showcase and establish a relationship between millions of data points of licensed content metadata using graphs. Since it is the first blog of this new series, let’s discuss the core ideology of having this project and then about new features. Development of all components mentioned in this blog is complete and has been successfully integrated, so do check out the development version. Happy Reading!
 
 
