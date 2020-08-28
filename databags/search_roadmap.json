@@ -74,11 +74,6 @@
                     "name": "Audio Support and Integration"
                 },
                 {
-                    "description": "Store a private copy of all the images in the CC Catalog to analyze via machine learning.",
-                    "gid": "1154270978154722",
-                    "name": "Scraping & Resizing Work for Rekognition [AWS Grant]"
-                },
-                {
                     "description": "Generate metadata via machine learning (using AWS Rekognition) on a set of ~100 million high quality images from the CC Catalog.",
                     "gid": "1154270978154727",
                     "name": "Run Rekognition on 100m images [AWS Grant]"
