@@ -1,0 +1,131 @@
+title: Accessibility Improvements: Final Changes and Modal Accessilibity 
+---
+categories:
+cc-search
+community
+gsoc
+open-source
+
+---
+author: AyanChoudhary
+---
+series: gsoc-2020-ccsearch-accessibility
+---
+pub_date: 2020-08-12
+---
+body:
+
+These are the last two weeks of my internship with CC. I am working on improving the accessibility of cc-search and internationalizing it as well.
+This post contains details of my work done to make accessibility improvements to the search result page and the image detail page and also covers some advanced accessiblity improvement details.
+
+The topics included in this post cover:
+
+1. Tooltip accessibility and keyboard interactions
+2. Improve modal accessibility and implement trap focus
+3. Fix ```<label>``` for form elements
+
+The first stage involved fixing the license explanation tooltips. These tooltips worked fine on click but did not respond to keypress events.
+The solution to overcome this was to use an event listener on the element which would would execute the ```showLicenseExplanation``` function onClick.
+Luckily ```VueJS``` provides this function inbuilt via the ```v-on:keyup``` attribute. So after change the code looks as follows:
+
+```
+<img
+    :aria-label="$t('browse-page.aria.license-explanation')"
+    tabindex="0"
+    v-if="filterType == 'licenses'"
+    src="@/assets/help_icon.svg"
+    alt="help"
+    class="license-help is-pulled-right padding-top-smallest padding-right-smaller"
+    @click.stop="toggleLicenseExplanationVisibility(item.code)"
+    v-on:keyup.enter="toggleLicenseExplanationVisibility(item.code)"
+/>
+```
+
+Similar change was made to all the tooltips. The reason behind this error was that non-semantic element representation
+(i.e. using ```<div>```, ```<span>``` or ```<img>``` instead of a ```<button>```) does not register a keypress listener for these tags and hence they don't respond on keypress.
+
+The second change is related to modals. Modals have some stringent accessilibity parameters that have to be carefully handled.
+The criteria are:
+
+1. On opening the modal the remaining elements should get disabled.
+2. The modal should have trap-focus(the user should not exit the modal when using tab to navigate).
+3. The modal should close on pressing **esc** or on clicking the overlay.
+
+To meet the criteria we developed a new [modal component](https://github.com/creativecommons/cccatalog-frontend/blob/develop/src/components/AppModal.vue).
+This modal has an overlay and closes when we press the **esc** key or click on the overlay. The modal also disables other elements when it is opened.
+
+The final task achieved in the modal was the implementation of trap focus. For this we used the [vue-trap-focus library](https://github.com/posva/focus-trap-vue)
+The library exposes a ```<focus-trap>``` component which acts as wrapper to enable focus-trap. The implementation we used was:
+
+```
+<focus-trap :active="true">
+    <div class="modal relative" aria-modal="true" role="dialog">
+    <header
+        v-if="title"
+        class="modal-header padding-top-bigger padding-left-bigger padding-right-normal padding-bottom-small"
+    >
+        <slot name="header">
+            <h3>{{ title }}</h3>
+        </slot>
+        <button
+            type="button"
+            class="close-button has-color-gray is-size-6 is-size-4-touch"
+            @click="$emit('close')"
+            :aria-label="$t('browse-page.aria.close')"
+        >
+        <i class="icon cross" />
+        </button>
+    </header>
+    <slot default />
+    </div>
+</focus-trap>
+```
+
+Apart from these the modal also has the ```aria-modal``` attribute and the ```role="dialog"``` attribute.
+These attributes direct our screen readers to recognise this component as a modal and declare it whenever the modal opens.
+
+The last improvement involves using appropriate label tags for the form elements. A lot of elements did not have proper labels or were nested in wrong way.
+These elements were fixed and after the fixing the nestings the elements had proper labels which the screen readers were able to identify.
+An example a proper input elements with correct label nesting is:
+
+```
+<label class="checkbox" :for="item.code" :disabled="block(item)">
+    <input
+        type="checkbox"
+        class="filter-checkbox margin-right-small"
+        :id="item.code"
+        :key="index"
+        :checked="item.checked"
+        :disabled="block(item)"
+        @change="onValueChange"
+    />
+    <license-icons v-if="filterType == 'licenses'" :license="item.code" />
+    {{ $t(item.name) }}
+</label>
+```
+Notice how the input is a child of the ```<label>``` tag which has the ```for``` attribute to point which element it labels.
+
+Apart from these changes, the eslint configuration of the project were also changed to include a11y-linting for the elments.
+We used the [eslint-plugin-vue-a11y](https://github.com/maranran/eslint-plugin-vue-a11y) to enforce accessibility guidelines for our components via lint checks. 
+Furthermore all the aria-labels were internationalized to enforce the i18n standard in our repo that we had setup earlier this summer.
+
+After all these changes we had the following inprovements in the accessibility scores(computed from lighthouse):
+
+1. Browse Page: 76 -> 98 | +22
+2. Collections Browse Page: 86 -> 96 | +10
+3. Photo Detail Page: 75 -> 95 | +20
+
+And we are officially done with our work for the summer internship. The next blog will be the culmination of this series.
+
+You can track the work done for these weeks through these PRs:
+
+1. [Accessibility Improvements](https://github.com/creativecommons/cccatalog-frontend/pull/1072)
+2. [setup vue-a11y for eslint](https://github.com/creativecommons/cccatalog-frontend/pull/1121)
+3. [Aria labels and internationalization](https://github.com/creativecommons/cccatalog-frontend/pull/1123)
+4. [internationalize aria-labels for about page and feedback page](https://github.com/creativecommons/cccatalog-frontend/pull/1120)
+5. [add trap focus to modals](https://github.com/creativecommons/cccatalog-frontend/pull/1153)
+
+The progress of the project can be tracked on [cc-search](https://github.com/creativecommons/cccatalog-frontend)
+
+CC Search Accessiblity is my GSoC 2020 project under the guidance of [Zack Krida](https://creativecommons.org/author/zackcreativecommons-org/) and [Ari Madian](https://opensource.creativecommons.org/blog/authors/akmadian/), who is the primary mentor for this project, [Anna Tumadóttir](https://creativecommons.org/author/annacreativecommons-org/) for helping all along and engineering director [Kriti
+Godey](https://creativecommons.org/author/kriticreativecommons-org/), have been very supportive.
