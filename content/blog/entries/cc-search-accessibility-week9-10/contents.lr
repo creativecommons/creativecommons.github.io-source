@@ -22,13 +22,13 @@ The topics included in this post cover:
 
 1. Tooltip accessibility and keyboard interactions
 2. Improve modal accessibility and implement trap focus
-3. Fix ```<label>``` for form elements
+3. Fix `<label>` for form elements
 
 The first stage involved fixing the license explanation tooltips. These tooltips worked fine on click but did not respond to keypress events.
-The solution to overcome this was to use an event listener on the element which would would execute the ```showLicenseExplanation``` function onClick.
-Luckily ```VueJS``` provides this function inbuilt via the ```v-on:keyup``` attribute. So after change the code looks as follows:
+The solution to overcome this was to use an event listener on the element which would would execute the `showLicenseExplanation` function onClick.
+Luckily `VueJS` provides this function inbuilt via the `v-on:keyup` attribute. So after change the code looks as follows:
 
-```
+```html
 <img
     :aria-label="$t('browse-page.aria.license-explanation')"
     tabindex="0"
@@ -42,7 +42,7 @@ Luckily ```VueJS``` provides this function inbuilt via the ```v-on:keyup``` attr
 ```
 
 Similar change was made to all the tooltips. The reason behind this error was that non-semantic element representation
-(i.e. using ```<div>```, ```<span>``` or ```<img>``` instead of a ```<button>```) does not register a keypress listener for these tags and hence they don't respond on keypress.
+(i.e. using `<div>`, `<span>` or `<img>` instead of a `<button>`) does not register a keypress listener for these tags and hence they don't respond on keypress.
 
 The second change is related to modals. Modals have some stringent accessilibity parameters that have to be carefully handled.
 The criteria are:
@@ -55,9 +55,9 @@ To meet the criteria we developed a new [modal component](https://github.com/cre
 This modal has an overlay and closes when we press the **esc** key or click on the overlay. The modal also disables other elements when it is opened.
 
 The final task achieved in the modal was the implementation of trap focus. For this we used the [vue-trap-focus library](https://github.com/posva/focus-trap-vue)
-The library exposes a ```<focus-trap>``` component which acts as wrapper to enable focus-trap. The implementation we used was:
+The library exposes a `<focus-trap>` component which acts as wrapper to enable focus-trap. The implementation we used was:
 
-```
+```html
 <focus-trap :active="true">
     <div class="modal relative" aria-modal="true" role="dialog">
     <header
@@ -81,14 +81,14 @@ The library exposes a ```<focus-trap>``` component which acts as wrapper to enab
 </focus-trap>
 ```
 
-Apart from these the modal also has the ```aria-modal``` attribute and the ```role="dialog"``` attribute.
+Apart from these the modal also has the `aria-modal` attribute and the `role="dialog"` attribute.
 These attributes direct our screen readers to recognise this component as a modal and declare it whenever the modal opens.
 
 The last improvement involves using appropriate label tags for the form elements. A lot of elements did not have proper labels or were nested in wrong way.
 These elements were fixed and after the fixing the nestings the elements had proper labels which the screen readers were able to identify.
 An example a proper input elements with correct label nesting is:
 
-```
+```html
 <label class="checkbox" :for="item.code" :disabled="block(item)">
     <input
         type="checkbox"
@@ -103,7 +103,7 @@ An example a proper input elements with correct label nesting is:
     {{ $t(item.name) }}
 </label>
 ```
-Notice how the input is a child of the ```<label>``` tag which has the ```for``` attribute to point which element it labels.
+Notice how the input is a child of the `<label>` tag which has the `for` attribute to point which element it labels.
 
 Apart from these changes, the eslint configuration of the project were also changed to include a11y-linting for the elments.
 We used the [eslint-plugin-vue-a11y](https://github.com/maranran/eslint-plugin-vue-a11y) to enforce accessibility guidelines for our components via lint checks. 
