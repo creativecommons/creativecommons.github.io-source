@@ -1,0 +1,34 @@
+title: Accessibility and Internationalization: WrapUp GSoC 2020
+---
+categories:
+cc-search
+community
+gsoc
+open-source
+
+---
+author: AyanChoudhary
+---
+series: gsoc-2020-ccsearch-accessibility
+---
+pub_date: 2020-08-31
+---
+body:
+
+These is the final blog of my internship with CC. I am working on improving the accessibility of cc-search and internationalizing it as well.
+This blog is the conclusion of my work. These past 10 weeks with CC have taught me a lot and I am really grateful to have got this opportunity.
+The experience was just amazing and the poeple are so helpful I really enjoyed working with them and am looking forward to continue working with the CC team.
+
+You can glance through my work through these blog posts:
+
+1. [CC Search, Proposal Drafting and Community Bonding](http://opensource.creativecommons.org/blog/entries/cc-search-accessibility-and-internationalization/)
+2. [CC Search, Setting up vue-i18n and internationalizing homepage](http://opensource.creativecommons.org/blog/entries/cc-search-accessibility-week1-2/)
+3. [Internationalization Continued: Handling strings in the store](http://opensource.creativecommons.org/blog/entries/cc-search-accessibility-week3-4/)
+4. [Internationalization continued: Modifying tests](http://opensource.creativecommons.org/blog/entries/cc-search-accessibility-week5-6/)
+5. [CC Search, Initial Accessibility Improvements](http://opensource.creativecommons.org/blog/entries/cc-search-accessibility-week7-8/)
+6. [Accessibility Improvements: Final Changes and Modal Accessilibity](http://opensource.creativecommons.org/blog/entries/cc-search-accessibility-week9-10/)
+
+The progress of the project can be tracked on [cc-search](https://github.com/creativecommons/cccatalog-frontend)
+
+CC Search Accessiblity is my GSoC 2020 project under the guidance of [Zack Krida](https://creativecommons.org/author/zackcreativecommons-org/) and [Ari Madian](https://opensource.creativecommons.org/blog/authors/akmadian/), who is the primary mentor for this project, [Anna Tumadóttir](https://creativecommons.org/author/annacreativecommons-org/) for helping all along and engineering director [Kriti
+Godey](https://creativecommons.org/author/kriticreativecommons-org/), have been very supportive.
