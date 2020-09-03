@@ -925,7 +925,7 @@
             "english_name": "CC Vocabulary",
             "featured": true,
             "id": 224004769,
-            "language": "CSS",
+            "language": "JavaScript",
             "license": {
                 "name": "MIT License",
                 "url": "https://github.com/creativecommons/vocabulary/blob/master/LICENSE"
@@ -934,9 +934,11 @@
             "slack": "cc-dev-vocabulary",
             "technologies": [
                 "Sass",
+                "JavaScript",
                 "Webpack",
                 "Storybook",
-                "Bulma"
+                "Bulma",
+                "Fonts"
             ],
             "url": "https://github.com/creativecommons/vocabulary",
             "website": "https://cc-vocabulary.netlify.app/"
