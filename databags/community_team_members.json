@@ -308,7 +308,7 @@
                 }
             ],
             "name": "Vocabulary",
-            "repos": "fonts, vocabulary, vue-vocabulary"
+            "repos": "vocabulary"
         },
         {
             "members": [
