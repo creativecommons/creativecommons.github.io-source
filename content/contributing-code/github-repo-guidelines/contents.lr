@@ -37,9 +37,11 @@ All GitHub repositories should have the following items to be considered fully r
 - [Support resources](https://help.github.com/en/articles/adding-support-resources-to-your-project). GitHub pulls the default `SUPPORT.md` file from our [`.github` repository](https://github.com/creativecommons/.github) automatically, but if you want/need to customize it, create it in your repository.
 
 ## Standard Labels
-All repositories must contain a set of standard labels, [documented here](https://github.com/creativecommons/ccos-scripts/blob/master/normalize_repos/labels.py). You don't have to set these up manually. CC staff can run [a script](https://github.com/creativecommons/ccos-scripts/tree/master/normalize_repos) that to make sure all repositories have this label.
 
-Repositories may contain additional custom labels as well. It is recommended that custom labels be explained in the contribution guidelines for that project.
+All repositories must contain a set of standard labels, [listed here](https://github.com/creativecommons/ccos-scripts/blob/master/normalize_repos/labels.json), in addition to repository-specific skill labels, [listed here](https://github.com/creativecommons/ccos-scripts/blob/master/normalize_repos/skills.json).
+You don't have to set these up manually. The labels are [automatically managed](https://github.com/creativecommons/ccos-scripts/tree/master/normalize_repos) on all CC repositories, and so, must not be renamed.
+
+Repositories may contain additional custom labels as well which will remain unaffected by the sync. It is recommended that custom labels be explained in the contribution guidelines for that project.
 
 ## Branch Protections
 
