@@ -13,7 +13,7 @@ body:
 
 Here's a list of [all our current projects](/projects/). We use GitHub issues associated with each project to track the work associated with that project. That's where you can find things to work on.
 
-We make extensive use of issue labels to designate the priority, status and beginner-friendliness of various issues. We have a standard set of labels across all projects, [documented here](https://github.com/creativecommons/ccos-scripts/blob/master/normalize_repos/labels.json). Here are some of the ones that are most relevant to finding a good issue to work on:
+We make extensive use of issue labels to designate the priority, status and beginner-friendliness of various issues. We have a standard set of labels across all projects, [documented here](/contributing-code/repo-labels/). Here are some of the ones that are most relevant to finding a good issue to work on:
 
 - **Issues available for community contribution:**
   - The following tags mark issues that are open for community contribution:
