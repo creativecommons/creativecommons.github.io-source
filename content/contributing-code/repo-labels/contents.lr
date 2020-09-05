@@ -44,18 +44,18 @@ Let's look into each of these topics in detail.
   </thead>
   <tbody>
     <tr>
-      <td class="has-text-white" style="background-color: #b60205">Unfavourable</td>
-      <td class="has-text-black" style="background-color: #ff9f1c">Negative</td>
-      <td class="has-text-black" style="background-color: #ffcc00">Neutral</td>
-      <td class="has-text-black" style="background-color: #cfda2c">Positive</td>
-      <td class="has-text-white" style="background-color: #008672">Favourable</td>
+      <td class="has-text-white" style="background-color: #b60205;">Unfavourable</td>
+      <td class="has-text-black" style="background-color: #ff9f1c;">Negative</td>
+      <td class="has-text-black" style="background-color: #ffcc00;">Neutral</td>
+      <td class="has-text-black" style="background-color: #cfda2c;">Positive</td>
+      <td class="has-text-white" style="background-color: #008672;">Favourable</td>
     </tr>
     <tr>
-      <td class="has-text-white" style="background-color: #b60205">#b60205</td>
-      <td class="has-text-black" style="background-color: #ff9f1c">#ff9f1c</td>
-      <td class="has-text-black" style="background-color: #ffcc00">#ffcc00</td>
-      <td class="has-text-black" style="background-color: #cfda2c">#cfda2c</td>
-      <td class="has-text-white" style="background-color: #008672">#008672</td>
+      <td class="has-text-white" style="background-color: #b60205;">#b60205</td>
+      <td class="has-text-black" style="background-color: #ff9f1c;">#ff9f1c</td>
+      <td class="has-text-black" style="background-color: #ffcc00;">#ffcc00</td>
+      <td class="has-text-black" style="background-color: #cfda2c;">#cfda2c</td>
+      <td class="has-text-white" style="background-color: #008672;">#008672</td>
     </tr>
   </tbody>
   </table>
