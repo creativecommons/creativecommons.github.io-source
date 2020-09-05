@@ -38,7 +38,7 @@ All GitHub repositories should have the following items to be considered fully r
 
 ## Standard Labels
 
-All repositories must contain a set of standard labels, [listed here](https://github.com/creativecommons/ccos-scripts/blob/master/normalize_repos/labels.json), in addition to repository-specific skill labels, [listed here](https://github.com/creativecommons/ccos-scripts/blob/master/normalize_repos/skills.json).
+All repositories must contain a set of standard labels, [documented here](/contributing-code/repo-labels/), which comprise of common labels in addition to repository-specific skill labels.
 You don't have to set these up manually. The labels are [automatically managed](https://github.com/creativecommons/ccos-scripts/tree/master/normalize_repos) on all CC repositories, and so, must not be renamed.
 
 Repositories may contain additional custom labels as well which will remain unaffected by the sync. It is recommended that custom labels be explained in the contribution guidelines for that project.
