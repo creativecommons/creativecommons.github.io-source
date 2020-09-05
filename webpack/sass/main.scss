@@ -550,6 +550,18 @@ pre {
   }
 }
 
+// Issue Finder page
+.issue-finder {
+  .body {
+    @extend .padding-horizontal-big;
+    @extend .body-big;
+    @extend .padding-top-larger;
+    @extend .padding-bottom-xxl;
+
+    line-height: 1.8125;
+  }
+}
+
 // CC Search Guidelines page
 .cc-search-guide {
   .body {

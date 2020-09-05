@@ -24,6 +24,10 @@
                   </li>
                   <hr class="divider">
                   <li>
+                    <a class="{% if this.path == '/contributing-code/issue-finder' %} is-active {% endif%} link" href="{{ '/contributing-code/issue-finder'|url }}">Issue Finder</a>
+                  </li>
+                  <hr class="divider">
+                  <li>
                     <a class="{% if this.path == '/contributing-code' %} is-active {% endif%} link" href="{{ '/contributing-code'|url }}">Contribution Guidelines</a>
                     <ul>
                       <li><a class="{% if this.path == '/contributing-code/pr-guidelines' %} is-active {% endif%} link" href="{{ '/contributing-code/pr-guidelines'|url }}"><i class="icon circle-filled"></i>PR Guidelines</a></li>
