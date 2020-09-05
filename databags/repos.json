@@ -530,26 +530,6 @@
             "website": "https://creativecommons.org/faq/"
         },
         {
-            "created": "2019-11-25T17:30:19",
-            "description": "A collection of typefaces for the web facing Creative Commons",
-            "engineering_project": true,
-            "english_name": "CC Fonts",
-            "featured": false,
-            "id": 224004973,
-            "language": "JavaScript",
-            "license": {
-                "name": "MIT License",
-                "url": "https://github.com/creativecommons/fonts/blob/master/LICENSE"
-            },
-            "name": "fonts",
-            "slack": "cc-dev-vocabulary",
-            "technologies": [
-                "Fonts"
-            ],
-            "url": "https://github.com/creativecommons/fonts",
-            "website": "https://cc-fonts.netlify.app/"
-        },
-        {
             "created": "2020-04-24T14:53:52",
             "description": "A polite image crawler that can thumbnail and extract metadata from images at scale",
             "engineering_project": true,
@@ -942,32 +922,6 @@
             ],
             "url": "https://github.com/creativecommons/vocabulary",
             "website": "https://cc-vocabulary.netlify.app/"
-        },
-        {
-            "created": "2019-05-24T16:49:48",
-            "description": "A Vue component library implementing a cohesive design system to unite the web facing Creative Commons",
-            "engineering_project": true,
-            "english_name": "CC Vocabulary",
-            "featured": false,
-            "id": 188457696,
-            "language": "JavaScript",
-            "license": {
-                "name": "MIT License",
-                "url": "https://github.com/creativecommons/vue-vocabulary/blob/master/LICENSE"
-            },
-            "name": "vue-vocabulary",
-            "slack": "cc-dev-vocabulary",
-            "technologies": [
-                "JavaScript",
-                "Vue",
-                "Webpack",
-                "Babel",
-                "Stylus",
-                "Styleguidist",
-                "Theo"
-            ],
-            "url": "https://github.com/creativecommons/vue-vocabulary",
-            "website": "https://cc-vue-vocabulary.netlify.app/"
         },
         {
             "created": "2014-07-28T15:18:18",
