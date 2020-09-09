@@ -44,10 +44,9 @@ Check the issue comments/labels to see whether someone else has indicated that t
 
 ## Contribution process
 
-Once you've found an issue you'd like to work on, and is not already in progress, please follow these steps to make your contribution:
+Once you've found an issue you'd like to work on, please follow these steps to make your contribution:
 
 1. Comment on it and say you're working on that issue. This is to avoid conflicts with others also working on the issue.
-    * A project maintainer may mark the issue with an `in progress` label at this point, but we don't always get around to that.
 2. Write your code and submit your pull request. Be sure to read and follow our **[pull request guidelines](/contributing-code/pr-guidelines/)**!
 3. Wait for code review and address any issues raised as soon as you can.
 
