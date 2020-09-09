@@ -523,6 +523,28 @@ pre {
       @extend .padding-bottom-xxl;
       @extend .padding-top-xl;
     }
+
+    .gh-label {
+      display: inline-block;
+      font-size: $font-size-body-normal;
+      padding: 0 1em;
+      border: 1px solid #eeeeee;
+      border-radius: 999em;
+
+      $label-colors: (
+        ('goal'         #ffffff #000000),
+        ('aspect'       #04338c #ffffff),
+        ('skill'        #5ff1f5 #000000),
+        ('talk'         #f9bbe5 #000000),
+        ('friendliness' #7f0799 #ffffff)
+      );
+      @each $category, $background-color, $foreground-color in $label-colors {
+        &.#{$category} {
+          background-color: $background-color;
+          color: $foreground-color;
+        }
+      }
+    }
   }
 }
 

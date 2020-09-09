@@ -1,0 +1,233 @@
+_model: page
+---
+_template: page-with-toc.html
+---
+title: Repository Labels
+---
+description: To facilitate the community in finding ways to contribute that match their experiences and skillsets, we have developed a comprehensive system for labelling issues and PRs. This is an introduction to this standard labelling scheme. 
+---
+body:
+
+Labels consist of three fields, viz. name, description and color. Label names 
+should have a consistent format to aid both filtering within the github UI as 
+well as scanning visually through the list. The following format is the most 
+suited to this task (where `⎵` denotes a single space):
+
+```
+<emoji>⎵<category>:⎵<name>
+```
+
+Even label names with more than two words in the text should be separated by a
+single space `⎵`.
+
+## List of labels
+
+An issue has many different attributes:
+- Priority
+- Status
+- Goal
+- Aspect
+- Skill
+- Talk
+- Friendliness
+
+### *Priority
+
+<div class="table-container">
+  <table class="table is-bordered" style="table-layout: fixed;">
+  <thead>
+    <tr>
+      <td colspan="5"><strong>Priority color chart</strong></td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="has-text-white" style="background-color: #b60205;">Unfavourable</td>
+      <td class="has-text-black" style="background-color: #ff9f1c;">Negative</td>
+      <td class="has-text-black" style="background-color: #ffcc00;">Neutral</td>
+      <td class="has-text-black" style="background-color: #cfda2c;">Positive</td>
+      <td class="has-text-white" style="background-color: #008672;">Favourable</td>
+    </tr>
+    <tr>
+      <td class="has-text-white" style="background-color: #b60205;">#b60205</td>
+      <td class="has-text-black" style="background-color: #ff9f1c;">#ff9f1c</td>
+      <td class="has-text-black" style="background-color: #ffcc00;">#ffcc00</td>
+      <td class="has-text-black" style="background-color: #cfda2c;">#cfda2c</td>
+      <td class="has-text-white" style="background-color: #008672;">#008672</td>
+    </tr>
+  </tbody>
+  </table>
+</div>
+
+The priority of an issue is based on its impact, derived from a combination of 
+urgency and importance. This determines the importance of the issue when sprint 
+planning or deciding which issues to tackle next.
+
+- <span class="gh-label has-text-white" style="background-color: #b60205;">
+    🟥 priority: critical
+  </span>
+  - **Description:** Must be fixed ASAP
+- <span class="gh-label has-text-black" style="background-color: #ff9f1c;">
+    🟧 priority: high
+  </span>
+  - **Description:** Stalls work on the project or its dependents
+- <span class="gh-label has-text-black" style="background-color: #ffcc00;">
+    🟨 priority: medium
+  </span>
+  - **Description:** Not blocking but should be fixed soon
+- <span class="gh-label has-text-black" style="background-color: #cfda2c;">
+    🟩 priority: low
+  </span>
+  - **Description:** Low priority and doesn't need to be rushed
+
+### *Status
+
+<div class="table-container">
+  <table class="table is-bordered" style="table-layout: fixed;">
+  <thead>
+    <tr>
+      <td colspan="5"><strong>Status color chart</strong></td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="has-text-black" style="background-color: #eeeeee;">Lighter</td>
+      <td class="has-text-black" style="background-color: #cccccc;">Light</td>
+      <td class="has-text-black" style="background-color: #999999;">Medium</td>
+      <td class="has-text-white" style="background-color: #666666;">Dark</td>
+      <td class="has-text-white" style="background-color: #333333;">Darker</td>
+    </tr>
+    <tr>
+      <td class="has-text-black" style="background-color: #eeeeee;">#eeeeee</td>
+      <td class="has-text-black" style="background-color: #cccccc;">#cccccc</td>
+      <td class="has-text-black" style="background-color: #999999;">#999999</td>
+      <td class="has-text-white" style="background-color: #666666;">#666666</td>
+      <td class="has-text-white" style="background-color: #333333;">#333333</td>
+    </tr>
+  </tbody>
+  </table>
+</div>
+
+The status of the issue determines whether it is ready for work or not. Issues
+may not be ready to be worked on for a number of reasons and the maintainers
+must keep updating the labels as the situation evolves.
+
+An issue, at the time of closing can have either the 
+<span class="gh-label has-text-black" style="background-color: #cccccc;">
+  🏁 status: ready for dev
+</span>
+or the 
+<span class="gh-label has-text-black" style="background-color: #eeeeee;">
+  ⛔️ status: discarded
+</span>
+label based on whether it was closed with or without resolution, respectively.
+
+- <span class="gh-label has-text-black" style="background-color: #cccccc;">
+    🏁 status: ready for dev
+  </span>
+  - **Description:** Ready for work
+- <span class="gh-label has-text-black" style="background-color: #999999;">
+    🚧 status: blocked
+  </span>
+  - **Description:** Blocked & therefore, not ready for work
+- <span class="gh-label has-text-white" style="background-color: #666666;">
+    🧹 status: ticket work required
+  </span>
+  - **Description:** Needs more details before it can be worked on
+- <span class="gh-label has-text-black" style="background-color: #eeeeee;">
+    ⛔️ status: discarded
+  </span>
+  - **Description:** Will not be worked on
+- <span class="gh-label has-text-white" style="background-color: #333333;">
+    🚦 status: awaiting triage
+  </span>
+  - **Description:** Has not been triaged & therefore, not ready for work
+
+### *Goal
+
+The goal of an issue is the end-result achieved when the issue is resolved. This
+represents the impact of the issue on the scope of the software.
+
+- <span class="gh-label goal">⭐ goal: addition</span>
+  - **Description:** Addition of new feature
+- <span class="gh-label goal">✨ goal: improvement</span>
+  - **Description:** Improvement to an existing feature
+- <span class="gh-label goal">🛠 goal: fix</span>
+  - **Description:** Bug fix
+
+### *Aspect
+
+The aspect of an issue is the side of the project that the issue deals with. A
+single codebase can have multiple aspects to it and knowing which ones will be
+touched helps contributors find relevant issues.
+
+- <span class="gh-label aspect">📄 aspect: text</span>
+  - **Description:** Concerns the textual material in the repository
+- <span class="gh-label aspect">💻 aspect: code</span>
+  - **Description:** Concerns the software code in the repository
+- <span class="gh-label aspect">🕹 aspect: interface</span>
+  - **Description:** Concerns end-users' experience with the software
+- <span class="gh-label aspect">🤖 aspect: dx</span>
+  - **Description:** Concerns developers' experience with the codebase
+
+### Skill
+
+The technical skills a person is required to possess to work on the issue. 
+Skills are a special type of label that vary by repository. Issues may not have
+a skill tag if no special skills are required.
+
+- <span class="gh-label skill">💪 skill: &lt;skill name&gt;</span>
+  - **Description:** Requires proficiency in '&lt;skill name&gt;'
+
+### Talk
+
+Issues with interaction labels do not entail any work to be done on the
+repository. They are for Q&A, RFCs and any other form of discussions. While both
+of these may appear to be too similar, triage permissions are granted to
+collaborators who might not have the answers to questions but by labelling them
+as such, they might draw a faster response from an experienced contributor who
+does. _In the future this category might be rendered redundant by GitHub 
+Discussions and will be removed._
+
+- <span class="gh-label talk">❓ talk: question</span>
+  - **Description:** Can be resolved with an answer
+- <span class="gh-label talk">💬 talk: discussion</span>
+  - **Description:** Open for discussions and feedback
+
+### Friendliness
+
+The level of friendliness a particular issue is the valency of the issue 
+towards contributions from the community. Some issues provide a great 
+introduction while others require a little more familiarity with the codebase.
+_These issues do not have the category prefix as two of them are special labels
+recognized by GitHub. The special ones don't have emojis either._
+
+- <span class="gh-label friendliness">good first issue</span>
+  - **Description:** New-contributor friendly
+- <span class="gh-label friendliness">help wanted</span>
+  - **Description:** Open to participation from the community
+- <span class="gh-label friendliness">🔒 staff only</span>
+  - **Description:** Restricted to CC staff members
+
+### Miscellaneous
+
+- <span class="gh-label has-background-black has-text-white">
+    🤯 ノಠ益ಠノ彡┻━┻
+  </span>
+  - **Description:** Aaargh!
+  
+## Usage rules
+
+In the above categories, some are marked with an `*` sign. Those are mandatory
+categories and every issue is required to have at least one label from those
+categories.
+
+Only issues labelled with 
+<span class="gh-label has-text-white" style="background-color: #333333;">
+  🚦 status: awaiting triage
+</span>
+are allowed to not have all mandatory labels (seeing as they have not been
+triaged yet).
+
+Categories not marked with an `*` are optional and it is upto the discretion of
+the maintainers to have apply labels from those categories to issues. 
