@@ -84,6 +84,17 @@
             "website": null
         },
         {
+            "created": "2020-09-08T19:18:51",
+            "description": "",
+            "id": 293905720,
+            "language": null,
+            "license": null,
+            "name": "cc-licenses-data",
+            "slack": "",
+            "url": "https://github.com/creativecommons/cc-licenses-data",
+            "website": null
+        },
+        {
             "created": "2019-06-12T18:15:54",
             "description": "Automated link checker for legalcode and license URLs",
             "engineering_project": true,
@@ -1036,6 +1047,17 @@
                 "WordPress"
             ],
             "url": "https://github.com/creativecommons/wp-theme-creativecommons.org",
+            "website": null
+        },
+        {
+            "created": "2020-09-08T17:50:40",
+            "description": "[WIP] WordPress theme for openglam.org",
+            "id": 293885986,
+            "language": null,
+            "license": null,
+            "name": "wp-theme-openglam",
+            "slack": "",
+            "url": "https://github.com/creativecommons/wp-theme-openglam",
             "website": null
         },
         {
