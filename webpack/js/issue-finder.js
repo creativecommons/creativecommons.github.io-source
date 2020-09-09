@@ -258,6 +258,9 @@ const App = {
           })
           .catch(err => console.error(err))
     }
+  },
+  mounted() {
+    this.search()
   }
 }
 
