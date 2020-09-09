@@ -12,4 +12,4 @@ lektor = "*"
 Werkzeug = "==0.16.1"
 
 [requires]
-python_version = "3.7"
+python_version = "3.8"

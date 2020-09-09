@@ -1,0 +1,25 @@
+// Project List page
+.project-list {
+    .body {
+      @extend .padding-horizontal-big;
+      @extend .body-big;
+      @extend .padding-top-larger;
+      @extend .padding-bottom-xxl;
+  
+      line-height: 1.8125;
+  
+      .featured-projects {
+        @extend .padding-vertical-larger;
+  
+        .columns {
+          @extend .padding-bottom-smaller;
+        }
+      }
+  
+      .table {
+        @extend .margin-top-normal;
+        @extend .margin-bottom-xxl;
+      }
+    }
+  }
+  
