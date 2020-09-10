@@ -70,12 +70,12 @@ export const App = {
         <label for="skills">
           <strong>Skill set</strong><br>
           Choose up to three skills that you would like to see issues for.
-          Leave blank if you don't have a preference.
         </label>
         <VueSelect
           v-model="filters.skills"
           id="skills" 
           name="skills"
+          placeholder="No preference"
           :options="options.skills"
           :reduce="skill => skill.toLocaleLowerCase()"
           :selectable="() => filters.skills.length < 3"
