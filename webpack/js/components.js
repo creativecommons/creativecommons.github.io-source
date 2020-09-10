@@ -93,12 +93,6 @@ export const App = {
           label="name"
           :reduce="experience => experience.code"
           :clearable="false"/>
-
-        <button 
-          class="button small is-success margin-top-small" 
-          @click.prevent="search">
-          Search
-        </button>
       </form>
     </div>
     <div class="column">
@@ -138,69 +132,45 @@ export const App = {
   },
   computed: {
     /**
-     * Get a nested list of all the labels to search for. This is only based on
-     * the experience filter. The skills filter must be applied on the client
-     * side due to limitations of the GitHub API.
-     *
-     * This returns a list of lists. Each nested list corresponds to a single
-     * API query and multiple queries need to be run to get the combined set of
-     * valid issues.
-     *
-     * @returns {array} the array of array of labels
-     */
-    labelsList() {
-      const labelsList = []
-      if (this.filters.experience === 'experienced') {
-        labelsList.push('help wanted')
-      } else {
-        labelsList.push('good first issue')
-      }
-      return labelsList
-    },
-    /**
      * Get a filtered list of issues matching the chosen skill labels.
      *
      * @returns {array} the array of filtered issues
      */
     filteredIssues() {
-      let filtered = this.issues
-      if (this.filters.skills.length) {
-        filtered = filtered.filter(issue => {
-          const joinedLabels = issue.labelNames.join(',')
-          return this.filters.skills.some(skill => joinedLabels.includes(skill))
-        })
-      }
-      return filtered
+      return this.issues.filter(issue => {
+        const joinedLabels = issue.labelNames.join(',')
+        if (this.filters.skills.length && !this.filters.skills.some(skill => joinedLabels.includes(skill))) {
+          return false
+        }
+        if (this.filters.experience === 'beginner' && !joinedLabels.includes('good first issue')) {
+          return false
+        }
+        return true
+      })
     }
   },
   methods: {
     /**
-     * Get a Promise for the list of issues pertaining to a given labels.
-     *
-     * @param {Array} labels - list of labels to search for
-     * @returns {Promise} a promise that resolves into a list of issues
-     */
-    promise(labels = []) {
-      const params = {
-        org: 'creativecommons',
-        state: 'open',
-        filter: 'all',
-        per_page: 200
-      }
-      if (labels) {
-        params.labels = labels.join(',')
-      }
-      return octokit
-          .issues
-          .listForOrg(params)
-          .then(response => response.data)
-    },
-    /**
      * Run the search based on the data submitted via the form and load all
-     * results into the `issues` attribute.
+     * results into the `issues` attribute. Can be reused for a future
+     * 'Load More' button.
+     *
+     * @param {number} page - the page of results to fetch
      */
-    search() {
-      this.promise(this.labelsList)
+    search(page = 1) {
+      octokit
+          .issues
+          .listForOrg({
+            org: 'creativecommons',
+            state: 'open',
+            filter: 'all',
+            labels: 'help wanted',
+            sort: 'created',
+            direction: 'desc',
+            per_page: 100,
+            page
+          })
+          .then(response => response.data)
           .then(issueLists => {
             const issues = issueLists.flat()
             issues.forEach(issue => {
