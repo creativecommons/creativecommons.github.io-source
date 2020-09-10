@@ -31,6 +31,41 @@ pre {
   }
 }
 
+// GitHub labels
+.gh-label {
+  display: inline-block;
+  font-size: smaller;
+  padding: 0 1em;
+  border: 1px solid #eeeeee;
+  border-radius: 999em;
+  margin-right: 0.25em;
+
+  $label-colors: (
+    ('goal'                  #ffffff #000000),
+    ('aspect'                #04338c #ffffff),
+    ('skill'                 #5ff1f5 #000000),
+    ('talk'                  #f9bbe5 #000000),
+    ('friendliness'          #7f0799 #ffffff),
+    ('status-lighter'        #eeeeee #000000),
+    ('status-light'          #cccccc #000000),
+    ('status-neutral'        #999999 #000000),
+    ('status-dark'           #666666 #ffffff),
+    ('status-darker'         #333333 #ffffff),
+    ('priority-unfavourable' #b60205 #ffffff),
+    ('priority-negative'     #ff9f1c #000000),
+    ('priority-neutral'      #ffcc00 #000000),
+    ('priority-positive'     #cfda2c #000000),
+    ('priority-favourable'   #008672 #ffffff),
+    ('miscellaneous'         #000000 #ffffff),
+  );
+  @each $category, $background-color, $foreground-color in $label-colors {
+    &.#{$category} {
+      background-color: $background-color;
+      color: $foreground-color;
+    }
+  }
+}
+
 .content {
   @extend .body-big;
 
@@ -522,28 +557,6 @@ pre {
     .content {
       @extend .padding-bottom-xxl;
       @extend .padding-top-xl;
-    }
-
-    .gh-label {
-      display: inline-block;
-      font-size: $font-size-body-normal;
-      padding: 0 1em;
-      border: 1px solid #eeeeee;
-      border-radius: 999em;
-
-      $label-colors: (
-        ('goal'         #ffffff #000000),
-        ('aspect'       #04338c #ffffff),
-        ('skill'        #5ff1f5 #000000),
-        ('talk'         #f9bbe5 #000000),
-        ('friendliness' #7f0799 #ffffff)
-      );
-      @each $category, $background-color, $foreground-color in $label-colors {
-        &.#{$category} {
-          background-color: $background-color;
-          color: $foreground-color;
-        }
-      }
     }
   }
 }
