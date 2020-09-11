@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}{{ this.title }}{% endblock %}
+
+{% block body %}
+  <div class="code-guidelines">
+    <header class="header">
+      <div class="container is-paddingless">
+        <h1>{{ this.title }}</h1>
+        <div class="description column is-9 is-paddingless">
+          {{ this.description }}
+        </div>
+      </div>
+    </header>
+    <div class="container code-guidelines-body">
+      <div class="columns">
+        <div class="column content">
+          {{ this.body }}
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
