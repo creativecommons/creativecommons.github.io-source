@@ -1,7 +1,5 @@
 import VueSelect from 'vue-select';
 
-import {octokit} from './octokit';
-
 export const IssueLabel = {
   template: `
 <span class="gh-label" :class="className">
@@ -27,7 +25,7 @@ export const IssueLabel = {
      * @returns {string} the name of the class to apply to the label
      */
     className() {
-      return window.className[this.name] || 'miscellaneous'
+      return window.categories[this.name] || 'miscellaneous'
     }
   }
 }
@@ -35,16 +33,26 @@ export const IssueLabel = {
 export const IssueCard = {
   template: `
 <div class="card entry-post vertical margin-top-normal padding-normal">
-  <h4 class="card-title b-header margin-bottom-small">{{ issue.title }}</h4>
-  <a :href="issue.html_url" class="button is-text tiny site-link" target="_blank">
-    <span class="has-color-forest-green">
-      {{ issue.repository.name }}#{{ issue.number }}
-    </span>
-    <i class="icon external-link has-color-forest-green"></i>
-  </a>
+  <h4 class="card-title b-header margin-bottom-small">
+    {{ issue.title }}
+  </h4>
+  <p class="is-size-6">
+    <a
+      :href="issue.html_url"
+      target="_blank">
+      <span class="has-color-forest-green">
+        {{ issue.repo }}#{{ issue.number }}
+      </span>
+      <i
+        class="icon external-link has-color-forest-green is-size-7"
+        :style="{ verticalAlign: 'top' }">
+      </i>
+    </a>
+    &nbsp;&nbsp;opened on {{ dateCreated }}.
+  </p>
   <div class="labels margin-top-small">
     <IssueLabel
-      v-for="(name, index) in issue.labelNames"
+      v-for="(name, index) in issue.labels"
       :key="index"
       :name="name"/>
   </div>
@@ -57,6 +65,12 @@ export const IssueCard = {
       type: Object,
       required: true
     },
+  },
+  computed: {
+    dateCreated() {
+      const dateCreated = new Date(this.issue.createdAt*1000)
+      return dateCreated.toLocaleDateString()
+    }
   }
 }
 
@@ -68,7 +82,7 @@ export const App = {
     <div class="column is-one-quarter">
       <form id="filters">
         <label for="skills">
-          <strong>Skill set</strong><br>
+          <strong>Skill set</strong><br/>
           Choose up to three skills that you would like to see issues for.
         </label>
         <VueSelect
@@ -82,7 +96,7 @@ export const App = {
           multiple/>
         <br/>
         <label for="experience">
-          <strong>Experience</strong><br>
+          <strong>Experience</strong><br/>
           Is this your first time contributing to CC?
         </label>
         <VueSelect
@@ -96,10 +110,10 @@ export const App = {
       </form>
     </div>
     <div class="column">
-      <template v-if="issues.length">
-        <issue-card 
-          v-for="issue in filteredIssues"
-          :key="issue.id"
+      <template v-if="filteredIssues.length">
+        <IssueCard
+          v-for="(issue, index) in filteredIssues"
+          :key="index"
           :issue="issue"/>
       </template>
       <p
@@ -117,7 +131,7 @@ export const App = {
   data() {
     return {
       options: {
-        skills: window.skillSet,
+        skills: window.skills,
         experiences: [
           {name: 'Yes, it is', code: 'beginner'},
           {name: 'No, it isn\'t', code: 'experienced'}
@@ -137,51 +151,20 @@ export const App = {
      * @returns {array} the array of filtered issues
      */
     filteredIssues() {
-      return this.issues.filter(issue => {
-        const joinedLabels = issue.labelNames.join(',')
+      return window.issues.filter(issue => {
+        // Check experience match
+        if (this.filters.experience === 'beginner' && !issue.labels.includes('good first issue')) {
+          return false
+        }
+
+        // Check skill set match
+        const joinedLabels = issue.labels.join(',')
         if (this.filters.skills.length && !this.filters.skills.some(skill => joinedLabels.includes(skill))) {
           return false
         }
-        if (this.filters.experience === 'beginner' && !joinedLabels.includes('good first issue')) {
-          return false
-        }
+
         return true
-      })
+      }).sort((a, b) => b.createdAt - a.createdAt)
     }
-  },
-  methods: {
-    /**
-     * Run the search based on the data submitted via the form and load all
-     * results into the `issues` attribute. Can be reused for a future
-     * 'Load More' button.
-     *
-     * @param {number} page - the page of results to fetch
-     */
-    search(page = 1) {
-      octokit
-          .issues
-          .listForOrg({
-            org: 'creativecommons',
-            state: 'open',
-            filter: 'all',
-            labels: 'help wanted',
-            sort: 'created',
-            direction: 'desc',
-            per_page: 100,
-            page
-          })
-          .then(response => response.data)
-          .then(issueLists => {
-            const issues = issueLists.flat()
-            issues.forEach(issue => {
-              issue.labelNames = issue.labels.map(label => label.name)
-            })
-            this.issues = issues
-          })
-          .catch(err => console.error(err))
-    }
-  },
-  mounted() {
-    this.search()
   }
 }

@@ -1,5 +1,5 @@
 export const hydrateAppWithData = () => {
-  window.skillSet = Array.from( // Convert back into an array
+  window.skills = Array.from( // Convert back into an array
       new Set( // Remove duplicates
           Object.values(window.skills)
               .flat() // Combine all skills
@@ -7,7 +7,7 @@ export const hydrateAppWithData = () => {
       )
   )
 
-  window.className = {}
+  window.categories = {}
   window.labels.groups.forEach(group => {
     group.labels.forEach(label => {
       let name = label.name
@@ -23,15 +23,15 @@ export const hydrateAppWithData = () => {
       } else {
         styleName = group.name
       }
-      window.className[name] = styleName
+      window.categories[name] = styleName
     })
   })
   window.labels.standalone.forEach(label => {
     let name = `${label.emoji} ${label.name}`
-    window.className[name] = 'miscellaneous'
+    window.categories[name] = 'miscellaneous'
   })
-  window.skillSet.forEach(skill => {
+  window.skills.forEach(skill => {
     let name = `💪 skill: ${skill.toLocaleLowerCase()}`
-    window.className[name] = 'skill'
+    window.categories[name] = 'skill'
   })
 }
