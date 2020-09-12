@@ -5,7 +5,7 @@ import {octokit} from './octokit';
 export const IssueLabel = {
   template: `
 <span class="gh-label" :class="className">
-  {{ name }} 
+  {{ name }}
 </span>`,
   data() {
     return {
@@ -43,7 +43,7 @@ export const IssueCard = {
     <i class="icon external-link has-color-forest-green"></i>
   </a>
   <div class="labels margin-top-small">
-    <IssueLabel 
+    <IssueLabel
       v-for="(name, index) in issue.labelNames"
       :key="index"
       :name="name"/>
@@ -73,21 +73,21 @@ export const App = {
         </label>
         <VueSelect
           v-model="filters.skills"
-          id="skills" 
+          id="skills"
           name="skills"
           placeholder="No preference"
           :options="options.skills"
           :reduce="skill => skill.toLocaleLowerCase()"
           :selectable="() => filters.skills.length < 3"
           multiple/>
-        <br/>  
+        <br/>
         <label for="experience">
           <strong>Experience</strong><br>
           Is this your first time contributing to CC?
         </label>
         <VueSelect
           v-model="filters.experience"
-          id="experience" 
+          id="experience"
           name="experience"
           :options="options.experiences"
           label="name"
@@ -98,7 +98,7 @@ export const App = {
     <div class="column">
       <template v-if="issues.length">
         <issue-card 
-          v-for="issue in filteredIssues" 
+          v-for="issue in filteredIssues"
           :key="issue.id"
           :issue="issue"/>
       </template>
