@@ -26,7 +26,6 @@
     "webpack-cli": "^3.3.11"
   },
   "dependencies": {
-    "@octokit/rest": "^18.0.5",
     "vue": "^2.6.12",
     "vue-select": "^3.10.8"
   },
