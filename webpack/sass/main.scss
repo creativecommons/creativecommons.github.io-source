@@ -709,3 +709,12 @@ pre {
   position: sticky;
   top: 0;
 }
+
+
+// Right align the final menu dropdown. Once this is part of vocabulary it will be removed from this file.
+.navbar-item.has-dropdown:last-child {
+  .navbar-dropdown {
+    right: 0;
+    left: auto;
+  }
+}
