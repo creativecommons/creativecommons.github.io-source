@@ -709,3 +709,11 @@ pre {
   position: sticky;
   top: 0;
 }
+
+
+.navbar-item.has-dropdown:last-child {
+  .navbar-dropdown {
+    right: 0;
+    left: auto;
+  }
+}
