@@ -1,0 +1,27 @@
+// Author Post page
+.author-posts {
+  .header {
+    .container {
+      .image {
+        width: 9.5rem;
+        height: 9.5rem;
+      }
+
+      .about {
+        @extend .body-big;
+        @extend .padding-top-big;
+
+        line-height: 1.8125;
+      }
+
+      .button {
+        @extend .margin-top-bigger;
+      }
+    }
+  }
+
+  .posts {
+    @extend .padding-top-xl;
+    @extend .padding-bottom-xxl;
+  }
+}
