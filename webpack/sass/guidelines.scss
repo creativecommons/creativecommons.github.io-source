@@ -1,24 +1,22 @@
-
 // Guidelines page
 .code-guidelines {
-    .code-guidelines-body {
-      @extend .padding-horizontal-big;
-  
-      .link {
-        @extend .has-color-forest-green;
-      }
-      .is-active {
-        @extend .has-color-dark-slate-gray;
-      }
-  
-      .row {
-        @extend .padding-top-larger;
-      }
-  
-      .content {
-        @extend .padding-bottom-xxl;
-        @extend .padding-top-xl;
-      }
+  .code-guidelines-body {
+    @extend .padding-horizontal-big;
+
+    .link {
+      @extend .has-color-forest-green;
+    }
+    .is-active {
+      @extend .has-color-dark-slate-gray;
+    }
+
+    .row {
+      @extend .padding-top-larger;
+    }
+
+    .content {
+      @extend .padding-bottom-xxl;
+      @extend .padding-top-xl;
     }
   }
-  
+}

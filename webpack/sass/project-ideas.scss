@@ -1,94 +1,94 @@
-
 // Project Ideas page
 .project-ideas {
-    .header {
-      .container {
-        .filter-labels {
-          @extend .padding-top-xl;
-  
-          .button {
-            @extend .margin-right-normal;
-            @extend .margin-bottom-normal;
-          }
-  
-          .btn-dark, :hover {
-            @extend .has-background-gold;
-            @extend .has-color-dark-slate-gray;
-            border: none;
-          }
+  .header {
+    .container {
+      .filter-labels {
+        @extend .padding-top-xl;
+
+        .button {
+          @extend .margin-right-normal;
+          @extend .margin-bottom-normal;
         }
-  
-        .project-ideas {
-          @extend .padding-top-normal;
-  
-          .column {
-            @extend .padding-right-big;
-            @extend .padding-bottom-big;
-          }
-  
-          .card {
-            height: 100%;
-          }
-  
-          :hover {
-            .entry-post {
-              border: 0.1875rem solid $color-dark-gray;
-            }
-            text-decoration: none;
-          }
-        }
-      }
-    }
-  
-    .body {
-      @extend .padding-top-larger;
-      @extend .padding-bottom-xxl;
-      @extend .padding-horizontal-big;
-      @extend .body-big;
-  
-      .project-idea {
-        @extend .padding-bottom-xl;
-  
-        .column {
-          @extend .padding-top-large;
-  
-          li:before {
-            content: "\ea02";
-            font-family: "Vocabulary Icons";
-            display: inline-block;
-            font-size: 0.375rem;
-            color: $color-gray;
-  
-            @extend .padding-right-small;
-          }
-        }
-  
-        &::after {
-          @extend .padding-top-big;
-  
-          display: block;
-  
-          content: '';
-  
-          border-bottom:  0.1875rem solid $color-light-gray;
-        }
-      }
-  
-      .original-idea {
-        .label {
+
+        .btn-dark,
+        :hover {
+          @extend .has-background-gold;
           @extend .has-color-dark-slate-gray;
+          border: none;
         }
       }
-  
-      .back-to-list {
-        @extend .has-color-dark-turquoise;
-        @extend .caption;
-  
-        text-decoration: none;
-  
-        .icon {
-          @extend .padding-right-small;
+
+      .project-ideas {
+        @extend .padding-top-normal;
+
+        .column {
+          @extend .padding-right-big;
+          @extend .padding-bottom-big;
+        }
+
+        .card {
+          height: 100%;
+        }
+
+        :hover {
+          .entry-post {
+            border: 0.1875rem solid $color-dark-gray;
+          }
+          text-decoration: none;
         }
       }
     }
   }
+
+  .body {
+    @extend .padding-top-larger;
+    @extend .padding-bottom-xxl;
+    @extend .padding-horizontal-big;
+    @extend .body-big;
+
+    .project-idea {
+      @extend .padding-bottom-xl;
+
+      .column {
+        @extend .padding-top-large;
+
+        li:before {
+          content: '\ea02';
+          font-family: 'Vocabulary Icons';
+          display: inline-block;
+          font-size: 0.375rem;
+          color: $color-gray;
+
+          @extend .padding-right-small;
+        }
+      }
+
+      &::after {
+        @extend .padding-top-big;
+
+        display: block;
+
+        content: '';
+
+        border-bottom: 0.1875rem solid $color-light-gray;
+      }
+    }
+
+    .original-idea {
+      .label {
+        @extend .has-color-dark-slate-gray;
+      }
+    }
+
+    .back-to-list {
+      @extend .has-color-dark-turquoise;
+      @extend .caption;
+
+      text-decoration: none;
+
+      .icon {
+        @extend .padding-right-small;
+      }
+    }
+  }
+}

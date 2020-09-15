@@ -1,10 +1,8 @@
-
 // Categories page
 .all-categories {
-    .categories-list {
-      @extend .padding-horizontal-big;
-      @extend .padding-top-xl;
-      @extend .padding-bottom-xxl;
-    }
+  .categories-list {
+    @extend .padding-horizontal-big;
+    @extend .padding-top-xl;
+    @extend .padding-bottom-xxl;
   }
-  
+}

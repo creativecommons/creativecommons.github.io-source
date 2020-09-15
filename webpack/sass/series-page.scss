@@ -1,28 +1,26 @@
-
 // Series page
 .all-series {
-    .series-list {
-      @extend .padding-horizontal-big;
-      @extend .padding-top-xl;
-      @extend .padding-bottom-xxl;
-  
-      .series-link {
-        .link {
-          @extend .has-color-dark-slate-gray;
-        }
-  
-        @extend .padding-bottom-big;
-  
-        &:not(:last-of-type)::after {
-          @extend .padding-top-big;
-  
-          display: block;
-  
-          content: '';
-  
-          border-bottom:  0.1875rem solid $color-light-gray;
-        }
+  .series-list {
+    @extend .padding-horizontal-big;
+    @extend .padding-top-xl;
+    @extend .padding-bottom-xxl;
+
+    .series-link {
+      .link {
+        @extend .has-color-dark-slate-gray;
+      }
+
+      @extend .padding-bottom-big;
+
+      &:not(:last-of-type)::after {
+        @extend .padding-top-big;
+
+        display: block;
+
+        content: '';
+
+        border-bottom: 0.1875rem solid $color-light-gray;
       }
     }
   }
-  
+}

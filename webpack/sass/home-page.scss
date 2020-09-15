@@ -1,178 +1,175 @@
-
 // Hero section - Home page
 .hero {
-    @extend .margin-top-large;
-  
-    .hero-title {
-      @extend .padding-horizontal-big;
-    }
-  
-    .hero-description {
-      @extend .body-bigger;
-      @extend .padding-top-big;
-      @extend .padding-horizontal-big;
-    }
-  
-    .hero-links {
-      @extend .margin-vertical-normal;
-      @extend .padding-horizontal-big;
-  
-      .button {
-        @extend .margin-top-normal;
-        text-decoration: none;
-  
-        .icon {
-          @extend .margin-right-small;
-          @extend .padding-vertical-smaller;
-        }
-      }
-    }
-  
-    .hero-image {
-      @include from($fullhd) {
-        margin-top: -20rem;
-        .image {
-          width: 50%;
-        }
-      }
-      @include until($fullhd) {
-        .image {
-          width: 100%;
-        }
-      }
-    }
+  @extend .margin-top-large;
+
+  .hero-title {
+    @extend .padding-horizontal-big;
   }
-  
-  // Get-involved section - Home page
-  .get-involved {
-    background-color: $color-lighter-gray;
-    @extend .has-color-dark-slate-gray;
-    border-bottom: solid 0.1875rem $color-white;
-  
-    .container {
-      @extend .padding-horizontal-big;
-      @extend .padding-vertical-xxl;
-    }
-  
-    .get-involved-description {
-      @extend .body-bigger;
-      @extend .padding-top-normal;
-    }
-  
-    .get-involved-links {
-      @extend .padding-top-xl;
-  
-      .heading {
-        @extend .b-header;
-        @extend .padding-top-bigger;
-      }
-  
-      .list {
-        @extend .padding-top-normal;
-  
-        .link-heading {
-          @extend .b-header;
-          @extend .padding-top-big;
-  
-          :hover {
-            @extend .has-color-forest-green;
-          }
-        }
-  
-        .link-caption {
-          @extend .body-normal;
-          @extend .padding-top-smaller;
-        }
-  
-      }
-    }
+
+  .hero-description {
+    @extend .body-bigger;
+    @extend .padding-top-big;
+    @extend .padding-horizontal-big;
   }
-  
-  // Recent-posts section - Home page
-  .recent-posts {
-    background-color: rgba(4, 166, 53, 0.1);
-  
-    .container {
-      @extend .padding-vertical-xl;
-      @extend .padding-horizontal-big;
-  
-      .columns {
-        @extend .padding-top-bigger;
-        @extend .padding-bottom-xl;
-      }
-    }
-  
-    .blog-title {
-      @extend .has-color-dark-slate-gray;
-    }
-  
-    .posts-link {
-      @extend .has-color-forest-green;
-      @extend .body-normal;
-  
-      font-weight: bold;
-      line-height: 1.5;
+
+  .hero-links {
+    @extend .margin-vertical-normal;
+    @extend .padding-horizontal-big;
+
+    .button {
+      @extend .margin-top-normal;
       text-decoration: none;
-  
+
       .icon {
-        @extend .has-color-forest-green;
-        @extend .padding-left-small;
+        @extend .margin-right-small;
+        @extend .padding-vertical-smaller;
       }
     }
   }
-  
-  // Featured-projects section - Home page
-  .featured-projects {
+
+  .hero-image {
+    @include from($fullhd) {
+      margin-top: -20rem;
+      .image {
+        width: 50%;
+      }
+    }
+    @include until($fullhd) {
+      .image {
+        width: 100%;
+      }
+    }
+  }
+}
+
+// Get-involved section - Home page
+.get-involved {
+  background-color: $color-lighter-gray;
+  @extend .has-color-dark-slate-gray;
+  border-bottom: solid 0.1875rem $color-white;
+
+  .container {
+    @extend .padding-horizontal-big;
     @extend .padding-vertical-xxl;
-  
-    .container {
-      @extend .padding-horizontal-big;
+  }
+
+  .get-involved-description {
+    @extend .body-bigger;
+    @extend .padding-top-normal;
+  }
+
+  .get-involved-links {
+    @extend .padding-top-xl;
+
+    .heading {
+      @extend .b-header;
+      @extend .padding-top-bigger;
     }
-  
-    .project-page-link {
-      @extend .has-color-forest-green;
-      @extend .body-normal;
-  
-      line-height: 1.5rem;
-      font-weight: bold;
-      text-decoration: none;
-  
-      .icon {
-        @extend .padding-left-small;
+
+    .list {
+      @extend .padding-top-normal;
+
+      .link-heading {
+        @extend .b-header;
+        @extend .padding-top-big;
+
+        :hover {
+          @extend .has-color-forest-green;
+        }
+      }
+
+      .link-caption {
+        @extend .body-normal;
         @extend .padding-top-smaller;
       }
     }
-  
-    .project-list {
+  }
+}
+
+// Recent-posts section - Home page
+.recent-posts {
+  background-color: rgba(4, 166, 53, 0.1);
+
+  .container {
+    @extend .padding-vertical-xl;
+    @extend .padding-horizontal-big;
+
+    .columns {
       @extend .padding-top-bigger;
-      @extend .padding-bottom-larger;
-  
-      .column {
-        @extend .padding-right-larger;
-        @extend .padding-bottom-larger;
-  
-        height: 100%;
-      }
+      @extend .padding-bottom-xl;
     }
   }
-  
-  .blog-entries {
+
+  .blog-title {
+    @extend .has-color-dark-slate-gray;
+  }
+
+  .posts-link {
+    @extend .has-color-forest-green;
+    @extend .body-normal;
+
+    font-weight: bold;
+    line-height: 1.5;
+    text-decoration: none;
+
+    .icon {
+      @extend .has-color-forest-green;
+      @extend .padding-left-small;
+    }
+  }
+}
+
+// Featured-projects section - Home page
+.featured-projects {
+  @extend .padding-vertical-xxl;
+
+  .container {
+    @extend .padding-horizontal-big;
+  }
+
+  .project-page-link {
+    @extend .has-color-forest-green;
+    @extend .body-normal;
+
+    line-height: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+
+    .icon {
+      @extend .padding-left-small;
+      @extend .padding-top-smaller;
+    }
+  }
+
+  .project-list {
+    @extend .padding-top-bigger;
+    @extend .padding-bottom-larger;
+
     .column {
-      border-bottom: 0.1875rem solid $color-light-gray;
-    }
-    /* last row, irrespective of the number of elements */
-    .column:nth-last-child(-n + 3):nth-child(3n + 1), /* first element of the last row */
-    .column:nth-last-child(-n + 3):nth-child(3n + 1) ~ .column /* all its following elements */
-    {
-      border-bottom: none;
-    }
-  
-    .blog-entry {
-      @extend .padding-vertical-larger;
-      @extend .padding-horizontal-big;
-  
-      .blog-title {
-        @extend .has-color-dark-slate-gray;
-      }
+      @extend .padding-right-larger;
+      @extend .padding-bottom-larger;
+
+      height: 100%;
     }
   }
+}
+
+.blog-entries {
+  .column {
+    border-bottom: 0.1875rem solid $color-light-gray;
+  }
+  /* last row, irrespective of the number of elements */
+  .column:nth-last-child(-n + 3):nth-child(3n + 1), /* first element of the last row */
+    .column:nth-last-child(-n + 3):nth-child(3n + 1) ~ .column /* all its following elements */ {
+    border-bottom: none;
+  }
+
+  .blog-entry {
+    @extend .padding-vertical-larger;
+    @extend .padding-horizontal-big;
+
+    .blog-title {
+      @extend .has-color-dark-slate-gray;
+    }
+  }
+}
