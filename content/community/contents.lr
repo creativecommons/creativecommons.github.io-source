@@ -85,6 +85,18 @@ The channels most relevant to CC's developer community are:
       <td><code>#cc-dev-licenses</code></td>
       <td>Discussion related to the <a href="https://github.com/creativecommons/cc-licenses">CC license infrastructure overhaul project.</a></td>
     </tr>
+    <tr>
+      <td><code>#cc-dev-icmi</code></td>
+      <td>Discussion related to the Image Clustering and Metric Inference project.</a></td>
+    </tr>
+    <tr>
+      <td><code>#cc-dev-ipa</code></td>
+      <td>Discussion related to the Image Popularity and Authority project.</a></td>
+    </tr>
+    <tr>
+      <td><code>#cc-dev-lcga</code></td>
+      <td>Discussion related to the Linked Commons Graph Analysis project.</a></td>
+    </tr>
   </table>
 </div>
 
