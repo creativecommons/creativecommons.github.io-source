@@ -25,7 +25,10 @@
     "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11"
   },
-  "dependencies": {},
+  "dependencies": {
+    "vue": "^2.6.12",
+    "vue-select": "^3.10.8"
+  },
   "description": "www.creativecommons.github.io",
   "repository": {
     "type": "git",

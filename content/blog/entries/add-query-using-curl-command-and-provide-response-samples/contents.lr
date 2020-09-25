@@ -1,0 +1,30 @@
+title: Add Query Using curl Command and Provide Response Samples
+---
+categories:
+cc-catalog-api
+gsod
+gsod-2020
+open-source
+community
+---
+author: ariessa
+---
+series: gsod-2020-cccatalog-api-usage-guide
+---
+pub_date: 2020-09-25
+---
+body:
+
+First of all, I’m very thankful to get selected as a Google Season of Docs participant under Creative Commons. My project name is Improve CC Catalog API Usage Guide. The project aims to revamp the existing CC Catalog API documentation to include more narrative elements and increase user friendliness. As the focal point of this project will potentially be delivered before the end of the GSOD period, this project will also improve the CC Catalog API repo documentation for potential contributors. This project will also produce guidelines for contributing to documentation. For this project, my mentor is Alden Page.
+
+### Week 1
+
+So, the first two weeks of Google Season of Docs have passed. For the first week, I added examples to perform the query using curl command. I hit some problem with a Forbidden error. Turns out my access key got expired. My problem was solved after obtaining a new access key.
+
+### Week 2
+
+For the second week, I started to write response samples. It was tough as I have a hard time understanding [drf-yasg](https://github.com/axnsan12/drf-yasg), which is an automatic Swagger generator. It can produce Swagger / OpenAPI 2.0 specifications from a Django Rest Framework API. I tried to find as many examples as I could to increase my understanding. Funny, but it took me awhile to realise that drf-yasg is not made up of random letters. The DRF part stands for Django Rest Framework while YASG stands for Yet Another Swagger Generator. 
+
+----
+
+That’s all!

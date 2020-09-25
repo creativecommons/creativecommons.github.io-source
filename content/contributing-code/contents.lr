@@ -34,6 +34,8 @@ We make extensive use of issue labels to designate the priority, status and begi
 - **Issues without any of the above labels:**
   - These issues _may_ (or may not) be open for contribution.
   - Please add a comment asking one of the maintainers to triage the issue and label it as appropriate.
+  
+You can use our [Issue Finder tool](/contributing-code/issue-finder/) to find a good issue that matches your skills and familiarity with our software and community.
 
 Some helpful saved searches on GitHub than can assist with finding an issue:
 - [issues labeled "good first issue"](https://github.com/search?q=org%3Acreativecommons+is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22+-linked%3Apr)

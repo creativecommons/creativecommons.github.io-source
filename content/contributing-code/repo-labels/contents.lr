@@ -63,19 +63,19 @@ The priority of an issue is based on its impact, derived from a combination of
 urgency and importance. This determines the importance of the issue when sprint 
 planning or deciding which issues to tackle next.
 
-- <span class="gh-label has-text-white" style="background-color: #b60205;">
+- <span class="gh-label priority-unfavourable">
     🟥 priority: critical
   </span>
   - **Description:** Must be fixed ASAP
-- <span class="gh-label has-text-black" style="background-color: #ff9f1c;">
+- <span class="gh-label priority-negative">
     🟧 priority: high
   </span>
   - **Description:** Stalls work on the project or its dependents
-- <span class="gh-label has-text-black" style="background-color: #ffcc00;">
+- <span class="gh-label priority-neutral">
     🟨 priority: medium
   </span>
   - **Description:** Not blocking but should be fixed soon
-- <span class="gh-label has-text-black" style="background-color: #cfda2c;">
+- <span class="gh-label priority-positive">
     🟩 priority: low
   </span>
   - **Description:** Low priority and doesn't need to be rushed
@@ -113,32 +113,32 @@ may not be ready to be worked on for a number of reasons and the maintainers
 must keep updating the labels as the situation evolves.
 
 An issue, at the time of closing can have either the 
-<span class="gh-label has-text-black" style="background-color: #cccccc;">
+<span class="gh-label status-light">
   🏁 status: ready for dev
 </span>
 or the 
-<span class="gh-label has-text-black" style="background-color: #eeeeee;">
+<span class="gh-label status-lighter">
   ⛔️ status: discarded
 </span>
 label based on whether it was closed with or without resolution, respectively.
 
-- <span class="gh-label has-text-black" style="background-color: #cccccc;">
+- <span class="gh-label status-light">
     🏁 status: ready for dev
   </span>
   - **Description:** Ready for work
-- <span class="gh-label has-text-black" style="background-color: #999999;">
+- <span class="gh-label status-neutral">
     🚧 status: blocked
   </span>
   - **Description:** Blocked & therefore, not ready for work
-- <span class="gh-label has-text-white" style="background-color: #666666;">
+- <span class="gh-label status-dark">
     🧹 status: ticket work required
   </span>
   - **Description:** Needs more details before it can be worked on
-- <span class="gh-label has-text-black" style="background-color: #eeeeee;">
+- <span class="gh-label status-lighter">
     ⛔️ status: discarded
   </span>
   - **Description:** Will not be worked on
-- <span class="gh-label has-text-white" style="background-color: #333333;">
+- <span class="gh-label status-darker">
     🚦 status: awaiting triage
   </span>
   - **Description:** Has not been triaged & therefore, not ready for work
