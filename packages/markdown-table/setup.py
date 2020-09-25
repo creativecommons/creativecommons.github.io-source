@@ -21,7 +21,11 @@ setup(
     py_modules=["lektor_markdown_table"],
     url="https://github.com/sp35/lektor-markdown-table",
     version="0.1",
-    classifiers=["Framework :: Lektor", "Environment :: Plugins", ],
+    classifiers=[
+        "Framework :: Lektor",
+        "Environment :: Plugins",
+        "Programming Language :: Python :: 3",
+    ],
     entry_points={
         "lektor.plugins": [
             "markdown-table = lektor_markdown_table:MarkdownTablePlugin",
