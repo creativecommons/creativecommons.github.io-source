@@ -543,23 +543,6 @@
             "url": "https://github.com/creativecommons/cccatalog-frontend/issues/1221"
         },
         {
-            "createdAt": 1600799111,
-            "labels": [
-                "Hacktoberfest",
-                "help wanted",
-                "\ud83c\udfc1 status: ready for work",
-                "\ud83d\udcbb aspect: code",
-                "\ud83d\udee0 goal: fix",
-                "\ud83d\udfe7 priority: high",
-                "\ud83e\udd16 aspect: dx"
-            ],
-            "number": 81,
-            "repo": "ccos-scripts",
-            "title": "Repositories script doesn't recognize license correctly",
-            "updatedAt": 1600999198,
-            "url": "https://github.com/creativecommons/ccos-scripts/issues/81"
-        },
-        {
             "createdAt": 1600744108,
             "labels": [
                 "Hacktoberfest",
@@ -625,6 +608,23 @@
             "title": "Document scripts/cc/image_tools/imgsplat.py",
             "updatedAt": 1601038933,
             "url": "https://github.com/creativecommons/licensebuttons/issues/32"
+        },
+        {
+            "createdAt": 1599768720,
+            "labels": [
+                "Hacktoberfest",
+                "good first issue",
+                "help wanted",
+                "\u2728 goal: improvement",
+                "\ud83c\udfc1 status: ready for work",
+                "\ud83d\udcbb aspect: code",
+                "\ud83d\udfe9 priority: low"
+            ],
+            "number": 507,
+            "repo": "creativecommons.github.io-source",
+            "title": "Use new colored label component in `/contributing-code` page",
+            "updatedAt": 1601050413,
+            "url": "https://github.com/creativecommons/creativecommons.github.io-source/issues/507"
         },
         {
             "createdAt": 1599767168,
