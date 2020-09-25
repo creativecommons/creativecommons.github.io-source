@@ -73,10 +73,10 @@
             "created": "2020-06-03T18:51:38",
             "description": "New license infrastructure for Creative Commons",
             "id": 269169080,
-            "language": null,
+            "language": "Python",
             "license": {
                 "name": "MIT License",
-                "url": "https://github.com/creativecommons/cc-licenses/blob/master/LICENSE"
+                "url": "https://github.com/creativecommons/cc-licenses/blob/develop/LICENSE"
             },
             "name": "cc-licenses",
             "slack": "",
@@ -87,7 +87,7 @@
             "created": "2020-09-08T19:18:51",
             "description": "",
             "id": 293905720,
-            "language": null,
+            "language": "HTML",
             "license": null,
             "name": "cc-licenses-data",
             "slack": "",
@@ -675,14 +675,23 @@
         },
         {
             "created": "2020-08-31T20:05:46",
-            "description": "",
+            "description": "An open graph image generator for Creative Commons projects.",
+            "engineering_project": true,
+            "english_name": "CC Open Graph Image Generator",
+            "featured": false,
             "id": 291813425,
-            "language": null,
-            "license": null,
+            "language": "TypeScript",
+            "license": {
+                "name": "MIT License",
+                "url": "https://github.com/creativecommons/og-image-generator/blob/main/LICENSE"
+            },
             "name": "og-image-generator",
-            "slack": "",
+            "slack": "cc-developers",
+            "technologies": [
+                "JavaScript"
+            ],
             "url": "https://github.com/creativecommons/og-image-generator",
-            "website": null
+            "website": "https://cc-og-image.vercel.app"
         },
         {
             "created": "2013-12-05T07:09:43",
@@ -951,13 +960,34 @@
             "website": "https://wordpress.org/plugins/creative-commons/"
         },
         {
+            "created": "2020-09-17T19:19:54",
+            "description": "WordPress Plugin that provides Vocabulary component blocks",
+            "id": 296421346,
+            "language": null,
+            "license": null,
+            "name": "wp-plugin-vocabulary-blocks",
+            "slack": "",
+            "url": "https://github.com/creativecommons/wp-plugin-vocabulary-blocks",
+            "website": null
+        },
+        {
             "created": "2019-12-06T19:44:21",
             "description": "New base WordPress theme for Creative Commons websites",
+            "engineering_project": true,
+            "english_name": "WordPress base theme",
+            "featured": false,
             "id": 226397839,
             "language": "PHP",
-            "license": null,
+            "license": {
+                "name": "MIT License",
+                "url": "https://github.com/creativecommons/wp-theme-base/blob/master/LICENSE"
+            },
             "name": "wp-theme-base",
-            "slack": "",
+            "slack": "cc-dev-wordpress",
+            "technologies": [
+                "PHP",
+                "WordPress"
+            ],
             "url": "https://github.com/creativecommons/wp-theme-base",
             "website": null
         },
@@ -1018,11 +1048,23 @@
         {
             "created": "2020-06-11T17:20:52",
             "description": "WordPress theme for the CC Certificates website",
+            "engineering_project": true,
+            "english_name": "Creative Commons Certificates program child theme",
+            "featured": false,
             "id": 271605671,
             "language": "PHP",
-            "license": null,
+            "license": {
+                "name": "MIT License",
+                "url": "https://github.com/creativecommons/wp-theme-certificates/blob/master/LICENSE"
+            },
             "name": "wp-theme-certificates",
             "slack": "",
+            "technologies": [
+                "CSS",
+                "HTML",
+                "PHP",
+                "WordPress"
+            ],
             "url": "https://github.com/creativecommons/wp-theme-certificates",
             "website": null
         },
@@ -1052,11 +1094,21 @@
         {
             "created": "2020-09-08T17:50:40",
             "description": "[WIP] WordPress theme for openglam.org",
+            "engineering_project": true,
+            "english_name": "WordPress OpenGlam theme",
+            "featured": false,
             "id": 293885986,
-            "language": null,
-            "license": null,
+            "language": "PHP",
+            "license": {
+                "name": "MIT License",
+                "url": "https://github.com/creativecommons/wp-theme-openglam/blob/master/LICENSE"
+            },
             "name": "wp-theme-openglam",
-            "slack": "",
+            "slack": "cc-dev-wordpress",
+            "technologies": [
+                "PHP",
+                "WordPress"
+            ],
             "url": "https://github.com/creativecommons/wp-theme-openglam",
             "website": null
         },
@@ -1064,15 +1116,20 @@
             "created": "2019-10-16T17:42:01",
             "description": "",
             "engineering_project": true,
+            "english_name": "WordPress child theme for Global Summit website",
             "featured": false,
             "id": 215608377,
             "language": "PHP",
             "license": {
-                "name": "GNU General Public License v2.0",
+                "name": "MIT License",
                 "url": "https://github.com/creativecommons/wp-theme-summit/blob/master/LICENSE"
             },
             "name": "wp-theme-summit",
-            "slack": "",
+            "slack": "cc-dev-wordpress",
+            "technologies": [
+                "PHP",
+                "WordPress"
+            ],
             "url": "https://github.com/creativecommons/wp-theme-summit",
             "website": null
         }

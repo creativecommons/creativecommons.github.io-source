@@ -1,0 +1,116 @@
+// Single Post page
+.single-post {
+  @include from($desktop) {
+    .container {
+      padding-left: 6rem;
+      padding-right: 6rem;
+    }
+  }
+
+  @include until($desktop) {
+    .container {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+
+  .single-post-header {
+    background-color: $color-lighter-gray;
+
+    .title {
+      @extend .padding-top-big;
+
+      overflow-wrap: break-word;
+    }
+
+    .author {
+      @extend .padding-top-big;
+      @extend .padding-bottom-normal;
+      @extend .body-big;
+
+      line-height: 1.8125;
+
+      .image {
+        height: 3.75rem;
+        width: 3.75rem;
+      }
+    }
+
+    .series-header {
+      @extend .margin-top-normal;
+      @extend .padding-horizontal-big;
+      @extend .padding-vertical-normal;
+      @extend .body-normal;
+
+      background-color: $color-white;
+      line-height: 1.5625;
+      font-weight: bold;
+    }
+  }
+
+  .single-post-body {
+    @extend .padding-top-bigger;
+    @extend .has-text-dark-slate-gray;
+
+    &:last-of-type::after {
+      content: '';
+
+      display: block;
+
+      @extend .padding-top-bigger;
+      border-bottom: 0.1875rem solid $color-light-gray;
+    }
+  }
+
+  .single-post-footer {
+    .category {
+      .category-title {
+        @extend .b-header;
+        @extend .padding-top-big;
+      }
+
+      .categories {
+        @extend .padding-top-small;
+
+        .tag {
+          @extend .margin-top-small;
+          @extend .margin-right-small;
+        }
+      }
+    }
+
+    .series-posts {
+      @extend .margin-top-large;
+      @extend .padding-horizontal-larger;
+      @extend .padding-vertical-large;
+
+      background-color: $color-lighter-gray;
+      border-top: 0.375rem solid $color-forest-green;
+
+      .title {
+        @extend .b-header;
+        @extend .padding-bottom-normal;
+      }
+
+      .posts {
+        @extend .body-normal;
+
+        font-weight: bold;
+        line-height: 1.5;
+        overflow-wrap: break-word;
+
+        .icon {
+          @extend .padding-right-small;
+
+          font-size: 0.375rem;
+          color: $color-gray;
+        }
+      }
+    }
+  }
+
+  .comments {
+    @extend .padding-top-large;
+    @extend .padding-bottom-xxl;
+  }
+}

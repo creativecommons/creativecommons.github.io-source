@@ -1,0 +1,11 @@
+// Blog page
+.blog-page {
+  .blog-page-posts {
+    @extend .padding-top-normal;
+
+    .pagination-wrapper {
+      @extend .padding-top-normal;
+      @extend .padding-bottom-xxl;
+    }
+  }
+}

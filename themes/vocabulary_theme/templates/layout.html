@@ -133,18 +133,6 @@
               {% endfor %}
             </div>
           </div>
-          <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link is-arrowless {% if this.is_child_of('/archives') %} is-active{% endif%}">Archives<i
-                class="icon caret-down"></i></a>
-            <div class="navbar-dropdown is-right">
-              {% for href, title in [
-                ['/archives/old-tech-blog', 'CC Tech Blog (2007-2014)'],
-                ['https://lists.ibiblio.org/pipermail/cc-devel/', 'cc-devel mailing list (2005-2015)'],
-              ] %}
-              <a class="navbar-item" href="{{ href }}">{{ title }}</a>
-              {% endfor %}
-            </div>
-          </div>
         </div>
       </div>
     </nav>
@@ -167,7 +155,7 @@
           {% for crumb in crumbs %}
             <!-- Active link -->
             {% if this._slug == crumb %}
-              <li class="is-active"><a aria-current="page displayed">{{ crumb | title | replace('-', ' ') }}</a></li>
+              <li class="is-active"><a aria-current="page displayed">{{ this.title }}</a></li>
             {% else %}
               <!-- Forming the URL using extracted slugs -->
               {% set i = loop.index %}
@@ -240,13 +228,13 @@
                     <a href="{{ '/blog'|url }}" class="menu-item">Blog</a>
                   </li>
                   <li>
-                    <a href="{{ '/contributing-code'|url }}" class="menu-item">Contribution Guidelines</a>
-                  </li>
-                  <li>
                     <a href="{{ '/community/community-team'|url }}" class="menu-item">Community Team</a>
                   </li>
                   <li>
                     <a href="{{ '/contributing-code/projects'|url }}" class="menu-item">Project List</a>
+                  </li>
+                  <li>
+                    <a href="{{ '/archives'|url }}" class="menu-item">Archives</a>
                   </li>
                 </ul>
               </nav>
