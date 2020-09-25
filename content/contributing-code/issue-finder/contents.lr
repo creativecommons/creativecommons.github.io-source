@@ -1,0 +1,11 @@
+_model: page
+---
+_template: issue_finder.html
+---
+title: Issue Finder
+---
+description: Welcome to the CC developer community! We're absolutely delighted to have you here. If you want to contribute but are unsure where to start, you can use this issue finder to find an issue that matches your skills and experience level.
+---
+body:
+
+Welcome to the CC developer community!
