@@ -45,7 +45,7 @@ export const IssueCard = {
       </span>
       <i
         class="icon external-link has-color-forest-green is-size-7"
-        :style="{ verticalAlign: 'top' }">
+        :style="{ verticalAlign: 'baseline' }">
       </i>
     </a>
     &nbsp;&nbsp;opened on {{ dateCreated }}.
