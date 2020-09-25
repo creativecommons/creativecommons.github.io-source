@@ -38,7 +38,7 @@ export const IssueCard = {
   </h4>
   <p class="is-size-6">
     <a
-      :href=" issue.url "
+      :href="issue.url"
       target="_blank">
       <span class="has-color-forest-green">
         {{ issue.repo }}#{{ issue.number }}
