@@ -5,22 +5,43 @@
 {% block body %}
   <div class="issue-finder">
     <div class="header">
-      <div class="container">
-        <h1>Issue Finder</h1>
-        <p class="description">
-          Welcome to the CC developer community! We're absolutely delighted to
-          have you here. If you want to contribute but are unsure where to
-          start, you can use this issue finder to find an issue that matches
-          your skills and experience level.
-        </p>
+      <div class="container is-paddingless">
+        <h1>{{ this.title }}</h1>
+        <div class="description column is-9 is-paddingless">
+          {{ this.description }}
+        </div>
       </div>
     </div>
     <div class="body container">
-      <div id="vue-app">Loading...</div>
+      <div id="vue-app">
+        {{ this.body }}
+        <noscript>
+          The issue finder requires JavaScript. You can try searching on GitHub
+          using the links below.
+          <ul>
+            <li>
+              <a href="https://github.com/search?q=org%3Acreativecommons+is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22+-linked%3Apr">
+                issues labeled "good first issue"
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/search?q=org%3Acreativecommons+is%3Aissue+is%3Aopen+label%3A%22help+wanted%22+-linked%3Apr">issues
+                labeled "help wanted"
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/search?q=org%3Acreativecommons+is%3Apr+is%3Aopen+label%3A%22help+wanted%22">
+                PRs labeled "help wanted"
+              </a>
+            </li>
+          </ul>
+        </noscript>
+      </div>
     </div>
   </div>
   <script>
     // Transfer all issues to the JavaScript domain
-    window.issues = {{ bag('issues.issues')|tojson }}
+    window.issues =
+    {{ bag('issues.issues')|tojson }}
   </script>
 {% endblock %}
