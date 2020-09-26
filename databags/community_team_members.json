@@ -1,39 +1,47 @@
 {
     "community_builders": [
         {
-            "name": "Arushi Verma",
-            "role": "Community Contributor"
-        },
-        {
+            "github": "SaurabhAgarwala",
             "name": "Saurabh Argarwala",
             "role": "Community Collaborator"
+        },
+        {
+            "github": "av-00",
+            "name": "Arushi Verma",
+            "role": "Community Contributor"
         }
     ],
     "projects": [
         {
             "members": [
                 {
+                    "github": "ChariniNana",
                     "name": "Charini Nanayakkara",
                     "role": "Project Core Committer"
                 },
                 {
+                    "github": "kss682",
                     "name": "Srinidhi Krishna",
                     "role": "Project Core Committer"
                 },
                 {
-                    "name": "Allen Abraham",
-                    "role": "Project Collaborator"
-                },
-                {
+                    "github": "akshgpt7",
                     "name": "Aksh Gupta",
                     "role": "Project Collaborator"
                 },
                 {
-                    "name": "Shubham Pandey",
+                    "github": "allen505",
+                    "name": "Allen Abraham",
+                    "role": "Project Collaborator"
+                },
+                {
+                    "github": "avats-dev",
+                    "name": "Aditya Vats",
                     "role": "Project Contributor"
                 },
                 {
-                    "name": "Aditya Vats",
+                    "github": "sp35",
+                    "name": "Shubham Pandey",
                     "role": "Project Contributor"
                 }
             ],
@@ -43,20 +51,24 @@
         {
             "members": [
                 {
-                    "name": "Tanuj Agarwal",
-                    "role": "Project Contributor"
+                    "github": "ariessa",
+                    "name": "Ariessa Norramli",
+                    "role": "Project Core Committer"
                 },
                 {
-                    "name": "Onyenanu Princewill",
-                    "role": "Project Contributor"
-                },
-                {
+                    "github": "dhruvkb",
                     "name": "Dhruv Bhanushali",
                     "role": "Project Collaborator"
                 },
                 {
-                    "name": "Ariessa Norramli",
-                    "role": "Project Core Committer"
+                    "github": "madewithkode",
+                    "name": "Onyenanu Princewill",
+                    "role": "Project Contributor"
+                },
+                {
+                    "github": "Tanuj22",
+                    "name": "Tanuj Agarwal",
+                    "role": "Project Contributor"
                 }
             ],
             "name": "CC Catalog API",
@@ -65,30 +77,37 @@
         {
             "members": [
                 {
+                    "github": "akmadian",
                     "name": "Ari Madian",
                     "role": "Project Core Committer"
                 },
                 {
+                    "github": "AyanChoudhary",
                     "name": "Ayan Choudhary",
                     "role": "Project Core Committer"
                 },
                 {
-                    "name": "Tanuj Agarwal",
-                    "role": "Project Collaborator"
-                },
-                {
+                    "github": "abhisheknaiidu",
                     "name": "Abhishek Naidu",
                     "role": "Project Collaborator"
                 },
                 {
+                    "github": "dhruvkb",
                     "name": "Dhruv Bhanushali",
                     "role": "Project Collaborator"
                 },
                 {
+                    "github": "rochisha0",
                     "name": "Rochisha Agarwal",
                     "role": "Project Collaborator"
                 },
                 {
+                    "github": "Tanuj22",
+                    "name": "Tanuj Agarwal",
+                    "role": "Project Collaborator"
+                },
+                {
+                    "github": "avats-dev",
                     "name": "Aditya Vats",
                     "role": "Project Contributor"
                 }
@@ -99,6 +118,7 @@
         {
             "members": [
                 {
+                    "github": "makkoncept",
                     "name": "Mayank Nader",
                     "role": "Project Maintainer"
                 }
@@ -109,22 +129,27 @@
         {
             "members": [
                 {
+                    "github": "akmadian",
                     "name": "Ari Madian",
                     "role": "Project Core Committer"
                 },
                 {
-                    "name": "Dhruvi Butti",
-                    "role": "Project Core Committer"
-                },
-                {
+                    "github": "dhruvkb",
                     "name": "Dhruv Bhanushali",
                     "role": "Project Core Committer"
                 },
                 {
+                    "github": "Dhruvi16",
+                    "name": "Dhruvi Butti",
+                    "role": "Project Core Committer"
+                },
+                {
+                    "github": "makkoncept",
                     "name": "Mayank Nader",
                     "role": "Project Collaborator"
                 },
                 {
+                    "github": "sp35",
                     "name": "Shubham Pandey",
                     "role": "Project Contributor"
                 }
@@ -135,6 +160,7 @@
         {
             "members": [
                 {
+                    "github": "JackieBinya",
                     "name": "Jacqueline Binya",
                     "role": "Project Core Committer"
                 }
@@ -145,10 +171,12 @@
         {
             "members": [
                 {
+                    "github": "krysal",
                     "name": "Krystle Salazar",
                     "role": "Project Core Committer"
                 },
                 {
+                    "github": "SaurabhAgarwala",
                     "name": "Saurabh Argarwala",
                     "role": "Project Contributor"
                 }
@@ -159,6 +187,7 @@
         {
             "members": [
                 {
+                    "github": "sp35",
                     "name": "Shubham Pandey",
                     "role": "Project Contributor"
                 }
@@ -169,18 +198,22 @@
         {
             "members": [
                 {
+                    "github": "akmadian",
                     "name": "Ari Madian",
                     "role": "Project Maintainer"
                 },
                 {
+                    "github": "obulat",
                     "name": "Olga Bulat",
                     "role": "Project Maintainer"
                 },
                 {
+                    "github": "hemanth-hk",
                     "name": "Hemanth Kumar",
                     "role": "Project Contributor"
                 },
                 {
+                    "github": "JackieBinya",
                     "name": "Jacqueline Binya",
                     "role": "Project Contributor"
                 }
@@ -191,6 +224,7 @@
         {
             "members": [
                 {
+                    "github": "bhumijgupta",
                     "name": "Bhumij Gupta",
                     "role": "Project Maintainer"
                 }
@@ -201,14 +235,17 @@
         {
             "members": [
                 {
+                    "github": "soccerdroid",
                     "name": "Mar\u00eda Bel\u00e9n Guaranda Cabezas ",
                     "role": "Project Maintainer"
                 },
                 {
+                    "github": "subhamX",
                     "name": "Subham Sahu",
                     "role": "Project Core Committer"
                 },
                 {
+                    "github": "BharatNischal",
                     "name": "Bharat Nischal",
                     "role": "Project Contributor"
                 }
@@ -219,6 +256,7 @@
         {
             "members": [
                 {
+                    "github": "apdsrocha",
                     "name": "Ana Paula Rocha",
                     "role": "Project Collaborator"
                 }
@@ -229,34 +267,42 @@
         {
             "members": [
                 {
+                    "github": "dhruvkb",
                     "name": "Dhruv Bhanushali",
                     "role": "Project Maintainer"
                 },
                 {
+                    "github": "Dhruvi16",
                     "name": "Dhruvi Butti",
                     "role": "Project Core Committer"
                 },
                 {
+                    "github": "nimishbongale",
                     "name": "Nimish Bongale",
                     "role": "Project Core Committer"
                 },
                 {
-                    "name": "Chidiebere Onyegbuchulem",
-                    "role": "Project Collaborator"
-                },
-                {
+                    "github": "AyanChoudhary",
                     "name": "Ayan Choudhary",
                     "role": "Project Collaborator"
                 },
                 {
+                    "github": "chidexebere",
+                    "name": "Chidiebere Onyegbuchulem",
+                    "role": "Project Collaborator"
+                },
+                {
+                    "github": "Tanuj22",
                     "name": "Tanuj Agarwal",
                     "role": "Project Collaborator"
                 },
                 {
+                    "github": "jahnvigupta",
                     "name": "Jahnvi Gupta",
                     "role": "Project Contributor"
                 },
                 {
+                    "github": "megha070",
                     "name": "Megha Varshney",
                     "role": "Project Contributor"
                 }
@@ -267,6 +313,7 @@
         {
             "members": [
                 {
+                    "github": "ahmadbilaldev",
                     "name": "Ahmad Bilal",
                     "role": "Project Core Committer"
                 }
