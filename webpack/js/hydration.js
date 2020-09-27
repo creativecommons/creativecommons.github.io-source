@@ -1,14 +1,14 @@
-export const hydrateAppWithData = () => {
-  window.skills = Array.from( // Convert back into an array
+export const hydrateAppWithData = (skills, labels) => {
+  skills = Array.from( // Convert back into an array
       new Set( // Remove duplicates
-          Object.values(window.skills)
+          Object.values(skills)
               .flat() // Combine all skills
               .map(skill => skill.split('/')[0]) // Keep only the prefix
       )
   )
 
-  window.categories = {}
-  window.labels.groups.forEach(group => {
+  const categories = {}
+  labels.groups.forEach(group => {
     group.labels.forEach(label => {
       let name = label.name
       if (group.is_prefixed !== false) {
@@ -23,15 +23,17 @@ export const hydrateAppWithData = () => {
       } else {
         styleName = group.name
       }
-      window.categories[name] = styleName
+      categories[name] = styleName
     })
   })
-  window.labels.standalone.forEach(label => {
+  labels.standalone.forEach(label => {
     let name = `${label.emoji} ${label.name}`
-    window.categories[name] = 'miscellaneous'
+    categories[name] = 'miscellaneous'
   })
-  window.skills.forEach(skill => {
+  skills.forEach(skill => {
     let name = `💪 skill: ${skill.toLocaleLowerCase()}`
-    window.categories[name] = 'skill'
+    categories[name] = 'skill'
   })
+
+  return [skills, categories]
 }

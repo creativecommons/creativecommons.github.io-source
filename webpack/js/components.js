@@ -1,5 +1,7 @@
 import VueSelect from 'vue-select';
 
+import {hydrateAppWithData} from "./hydration";
+
 export const IssueLabel = {
   template: `
 <span class="gh-label" :class="className">
@@ -25,7 +27,7 @@ export const IssueLabel = {
      * @returns {string} the name of the class to apply to the label
      */
     className() {
-      return window.categories[this.name] || 'miscellaneous'
+      return this.$root.categories[this.name] || 'miscellaneous'
     }
   }
 }
@@ -68,7 +70,7 @@ export const IssueCard = {
   },
   computed: {
     dateCreated() {
-      const dateCreated = new Date(this.issue.createdAt*1000)
+      const dateCreated = new Date(this.issue.createdAt * 1000)
       return dateCreated.toLocaleDateString()
     }
   }
@@ -80,7 +82,7 @@ export const App = {
 <div class="find-issues">
   <div class="columns">
     <div class="column is-one-quarter">
-      <form id="filters">
+      <form id="filters" v-if="options.skills.length">
         <label for="skills">
           <strong>Skill set</strong><br/>
           Choose up to three skills that you would like to see issues for.
@@ -108,6 +110,9 @@ export const App = {
           :reduce="experience => experience.code"
           :clearable="false"/>
       </form>
+      <div v-else>
+        Loading filters, please wait...
+      </div>
     </div>
     <div class="column">
       <template v-if="filteredIssues.length">
@@ -131,7 +136,7 @@ export const App = {
   data() {
     return {
       options: {
-        skills: window.skills,
+        skills: [],
         experiences: [
           {name: 'Yes, it is', code: 'beginner'},
           {name: 'No, it isn\'t', code: 'experienced'}
@@ -141,6 +146,7 @@ export const App = {
         skills: [],
         experience: 'experienced'
       },
+      categories: {},
       issues: []
     }
   },
@@ -166,5 +172,23 @@ export const App = {
         return true
       }).sort((a, b) => b.createdAt - a.createdAt)
     }
+  },
+  mounted() {
+    const BASE_URL = 'https://raw.githubusercontent.com/creativecommons/ccos-scripts/master/normalize_repos'
+    const FILE_URL = name => `${BASE_URL}/${name}.json`
+
+    Promise
+        .all([
+          fetch(FILE_URL('skills'))
+              .then(response => response.json()),
+          fetch(FILE_URL('labels'))
+              .then(response => response.json())
+        ])
+        .then(([skillResponse, labelResponse]) => {
+          const [skills, categories] = hydrateAppWithData(skillResponse, labelResponse)
+          this.categories = categories
+          this.options.skills = skills
+        })
+        .catch(err => console.error(err))
   }
 }
