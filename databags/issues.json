@@ -426,23 +426,6 @@
             "url": "https://github.com/creativecommons/creativecommons.org/issues/940"
         },
         {
-            "createdAt": 1601045961,
-            "labels": [
-                "Hacktoberfest",
-                "good first issue",
-                "help wanted",
-                "\ud83c\udfc1 status: ready for work",
-                "\ud83d\udcbb aspect: code",
-                "\ud83d\udee0 goal: fix",
-                "\ud83d\udfe9 priority: low"
-            ],
-            "number": 2,
-            "repo": "rdfadict",
-            "title": "The repository does not contain a CC metadata file",
-            "updatedAt": 1601047457,
-            "url": "https://github.com/creativecommons/rdfadict/issues/2"
-        },
-        {
             "createdAt": 1601003812,
             "labels": [
                 "Hacktoberfest",
@@ -656,6 +639,23 @@
             "title": "Invalid sources should be ignored instead of a fatal 400 error",
             "updatedAt": 1600999843,
             "url": "https://github.com/creativecommons/cccatalog-api/issues/615"
+        },
+        {
+            "createdAt": 1599539123,
+            "labels": [
+                "help wanted",
+                "\ud83c\udf1f goal: addition",
+                "\ud83c\udfc1 status: ready for work",
+                "\ud83d\udcaa skill: javascript/vue",
+                "\ud83d\udcbb aspect: code",
+                "\ud83d\udd79 aspect: interface",
+                "\ud83e\udd16 aspect: dx"
+            ],
+            "number": 642,
+            "repo": "vocabulary",
+            "title": "[Vue] Header Component and general component style discussion",
+            "updatedAt": 1601182828,
+            "url": "https://github.com/creativecommons/vocabulary/issues/642"
         },
         {
             "createdAt": 1598845438,
@@ -901,7 +901,7 @@
             "number": 689,
             "repo": "vocabulary",
             "title": "[Vue] Footer Component",
-            "updatedAt": 1601178853,
+            "updatedAt": 1601182716,
             "url": "https://github.com/creativecommons/vocabulary/issues/689"
         },
         {
@@ -1007,6 +1007,23 @@
             "title": "The repository does not generate a CC metadata file",
             "updatedAt": 1601047462,
             "url": "https://github.com/creativecommons/creativecommons.github.io-source/issues/516"
+        },
+        {
+            "createdAt": 1601045961,
+            "labels": [
+                "Hacktoberfest",
+                "good first issue",
+                "help wanted",
+                "\ud83c\udfc1 status: ready for work",
+                "\ud83d\udcbb aspect: code",
+                "\ud83d\udee0 goal: fix",
+                "\ud83d\udfe9 priority: low"
+            ],
+            "number": 2,
+            "repo": "rdfadict",
+            "title": "The repository does not contain a CC metadata file",
+            "updatedAt": 1601047457,
+            "url": "https://github.com/creativecommons/rdfadict/issues/2"
         }
     ]
 }
