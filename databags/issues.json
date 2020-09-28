@@ -458,7 +458,7 @@
             "number": 84,
             "repo": "ccos-scripts",
             "title": "Account for case differences when syncing labels",
-            "updatedAt": 1601042934,
+            "updatedAt": 1601298851,
             "url": "https://github.com/creativecommons/ccos-scripts/issues/84"
         },
         {
@@ -522,7 +522,7 @@
             "number": 1221,
             "repo": "cccatalog-frontend",
             "title": "Make supporting links tomato color instead of cyan",
-            "updatedAt": 1601133360,
+            "updatedAt": 1601210356,
             "url": "https://github.com/creativecommons/cccatalog-frontend/issues/1221"
         },
         {
@@ -606,7 +606,7 @@
             "number": 507,
             "repo": "creativecommons.github.io-source",
             "title": "Use new colored label component in `/contributing-code` page",
-            "updatedAt": 1601050413,
+            "updatedAt": 1601235935,
             "url": "https://github.com/creativecommons/creativecommons.github.io-source/issues/507"
         },
         {
@@ -771,7 +771,7 @@
             "number": 60,
             "repo": "ccos-scripts",
             "title": "Code organisation can be improved",
-            "updatedAt": 1600999332,
+            "updatedAt": 1601277002,
             "url": "https://github.com/creativecommons/ccos-scripts/issues/60"
         },
         {
@@ -937,7 +937,7 @@
             "number": 517,
             "repo": "creativecommons.github.io-source",
             "title": "Use ISO-8601 date format on the issue finder",
-            "updatedAt": 1601193196,
+            "updatedAt": 1601201885,
             "url": "https://github.com/creativecommons/creativecommons.github.io-source/issues/517"
         },
         {
@@ -1005,7 +1005,7 @@
             "number": 516,
             "repo": "creativecommons.github.io-source",
             "title": "The repository does not generate a CC metadata file",
-            "updatedAt": 1601047462,
+            "updatedAt": 1601296308,
             "url": "https://github.com/creativecommons/creativecommons.github.io-source/issues/516"
         },
         {
