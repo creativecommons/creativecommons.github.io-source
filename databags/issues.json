@@ -458,7 +458,7 @@
             "number": 84,
             "repo": "ccos-scripts",
             "title": "Account for case differences when syncing labels",
-            "updatedAt": 1601276675,
+            "updatedAt": 1601298851,
             "url": "https://github.com/creativecommons/ccos-scripts/issues/84"
         },
         {
@@ -1005,7 +1005,7 @@
             "number": 516,
             "repo": "creativecommons.github.io-source",
             "title": "The repository does not generate a CC metadata file",
-            "updatedAt": 1601292547,
+            "updatedAt": 1601296308,
             "url": "https://github.com/creativecommons/creativecommons.github.io-source/issues/516"
         },
         {
