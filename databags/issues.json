@@ -955,7 +955,7 @@
             "number": 4,
             "repo": "cc-licenses-data",
             "title": "The repository does not contain a CC metadata file",
-            "updatedAt": 1601342019,
+            "updatedAt": 1601371319,
             "url": "https://github.com/creativecommons/cc-licenses-data/issues/4"
         },
         {
@@ -989,7 +989,7 @@
             "number": 516,
             "repo": "creativecommons.github.io-source",
             "title": "The repository does not generate a CC metadata file",
-            "updatedAt": 1601296308,
+            "updatedAt": 1601369903,
             "url": "https://github.com/creativecommons/creativecommons.github.io-source/issues/516"
         }
     ]
