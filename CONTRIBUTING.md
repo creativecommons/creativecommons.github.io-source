@@ -21,6 +21,10 @@ You do not have to follow the steps under "Check for contribution readiness", th
 - Make sure that there are newlines at the end of every file.
 - We use 2 spaces as the standard indentation in our HTML files.
 
+### Note
+
+Not all issues have skills marked on them, especially if they are simple issues that do not require proficiency in any specific framework or language. Those issues are gone when filtering by skill in the [Issue Finder](https://opensource.creativecommons.org/contributing-code/issue-finder/)
+
 ## Questions or Thoughts?
 
 Talk to us on [our developer mailing list or Slack community](https://creativecommons.github.io/community/).
