@@ -310,12 +310,13 @@
             "labels": [
                 "Hacktoberfest",
                 "help wanted",
-                "\u2728 goal: improvement"
+                "\u2728 goal: improvement",
+                "\ud83d\udcac talk: discussion"
             ],
             "number": 159,
             "repo": "creativecommons.github.io-source",
             "title": "Move information about old GSoC projects to CC Open Source ",
-            "updatedAt": 1601345355,
+            "updatedAt": 1601485174,
             "url": "https://github.com/creativecommons/creativecommons.github.io-source/issues/159"
         },
         {
