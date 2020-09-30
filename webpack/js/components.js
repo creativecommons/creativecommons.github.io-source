@@ -71,7 +71,7 @@ export const IssueCard = {
   computed: {
     dateCreated() {
       const dateCreated = new Date(this.issue.createdAt * 1000)
-      return dateCreated.toLocaleDateString()
+      return dateCreated.toISOString()
     }
   }
 }
