@@ -13,7 +13,7 @@
             "number": 423,
             "repo": "cccatalog",
             "title": "[API Integration] Natural History Museum (UK)",
-            "updatedAt": 1601000098,
+            "updatedAt": 1601410964,
             "url": "https://github.com/creativecommons/cccatalog/issues/423"
         },
         {
@@ -98,7 +98,7 @@
             "number": 108,
             "repo": "wp-plugin-creativecommons",
             "title": "Remove outdated language files",
-            "updatedAt": 1601174932,
+            "updatedAt": 1601305886,
             "url": "https://github.com/creativecommons/wp-plugin-creativecommons/issues/108"
         },
         {
@@ -302,7 +302,7 @@
             "number": 274,
             "repo": "cccatalog",
             "title": "[API Integration] Walters Art Museum",
-            "updatedAt": 1601000303,
+            "updatedAt": 1601478507,
             "url": "https://github.com/creativecommons/cccatalog/issues/274"
         },
         {
@@ -315,7 +315,7 @@
             "number": 159,
             "repo": "creativecommons.github.io-source",
             "title": "Move information about old GSoC projects to CC Open Source ",
-            "updatedAt": 1601000308,
+            "updatedAt": 1601345355,
             "url": "https://github.com/creativecommons/creativecommons.github.io-source/issues/159"
         },
         {
@@ -426,6 +426,23 @@
             "url": "https://github.com/creativecommons/creativecommons.org/issues/940"
         },
         {
+            "createdAt": 1601045961,
+            "labels": [
+                "Hacktoberfest",
+                "good first issue",
+                "help wanted",
+                "\ud83c\udfc1 status: ready for work",
+                "\ud83d\udcbb aspect: code",
+                "\ud83d\udee0 goal: fix",
+                "\ud83d\udfe9 priority: low"
+            ],
+            "number": 2,
+            "repo": "rdfadict",
+            "title": "The repository does not contain a CC metadata file",
+            "updatedAt": 1601047457,
+            "url": "https://github.com/creativecommons/rdfadict/issues/2"
+        },
+        {
             "createdAt": 1601003812,
             "labels": [
                 "Hacktoberfest",
@@ -508,22 +525,6 @@
             "title": "Migrate from `Vercel` to `Netlify`",
             "updatedAt": 1600960878,
             "url": "https://github.com/creativecommons/og-image-generator/issues/1"
-        },
-        {
-            "createdAt": 1600879630,
-            "labels": [
-                "Hacktoberfest",
-                "good first issue",
-                "help wanted",
-                "\ud83d\udcbb aspect: code",
-                "\ud83d\udee0 goal: fix",
-                "\ud83d\udfe7 priority: high"
-            ],
-            "number": 1221,
-            "repo": "cccatalog-frontend",
-            "title": "Make supporting links tomato color instead of cyan",
-            "updatedAt": 1601210356,
-            "url": "https://github.com/creativecommons/cccatalog-frontend/issues/1221"
         },
         {
             "createdAt": 1600744108,
@@ -756,7 +757,7 @@
             "number": 63,
             "repo": "ccos-scripts",
             "title": "Improvements to logging",
-            "updatedAt": 1600999338,
+            "updatedAt": 1601413927,
             "url": "https://github.com/creativecommons/ccos-scripts/issues/63"
         },
         {
@@ -771,7 +772,7 @@
             "number": 60,
             "repo": "ccos-scripts",
             "title": "Code organisation can be improved",
-            "updatedAt": 1601277002,
+            "updatedAt": 1601450075,
             "url": "https://github.com/creativecommons/ccos-scripts/issues/60"
         },
         {
@@ -941,23 +942,6 @@
             "url": "https://github.com/creativecommons/creativecommons.github.io-source/issues/517"
         },
         {
-            "createdAt": 1601046379,
-            "labels": [
-                "Hacktoberfest",
-                "good first issue",
-                "help wanted",
-                "\ud83c\udfc1 status: ready for work",
-                "\ud83d\udcbb aspect: code",
-                "\ud83d\udee0 goal: fix",
-                "\ud83d\udfe9 priority: low"
-            ],
-            "number": 1,
-            "repo": "wp-plugin-vocabulary-blocks",
-            "title": "The repository does not contain a CC metadata file",
-            "updatedAt": 1601047448,
-            "url": "https://github.com/creativecommons/wp-plugin-vocabulary-blocks/issues/1"
-        },
-        {
             "createdAt": 1601046285,
             "labels": [
                 "Hacktoberfest",
@@ -971,7 +955,7 @@
             "number": 4,
             "repo": "cc-licenses-data",
             "title": "The repository does not contain a CC metadata file",
-            "updatedAt": 1601047564,
+            "updatedAt": 1601371319,
             "url": "https://github.com/creativecommons/cc-licenses-data/issues/4"
         },
         {
@@ -988,7 +972,7 @@
             "number": 39,
             "repo": "cc-licenses",
             "title": "The repository does not contain a CC metadata file",
-            "updatedAt": 1601047583,
+            "updatedAt": 1601465171,
             "url": "https://github.com/creativecommons/cc-licenses/issues/39"
         },
         {
@@ -1005,25 +989,8 @@
             "number": 516,
             "repo": "creativecommons.github.io-source",
             "title": "The repository does not generate a CC metadata file",
-            "updatedAt": 1601296308,
+            "updatedAt": 1601369903,
             "url": "https://github.com/creativecommons/creativecommons.github.io-source/issues/516"
-        },
-        {
-            "createdAt": 1601045961,
-            "labels": [
-                "Hacktoberfest",
-                "good first issue",
-                "help wanted",
-                "\ud83c\udfc1 status: ready for work",
-                "\ud83d\udcbb aspect: code",
-                "\ud83d\udee0 goal: fix",
-                "\ud83d\udfe9 priority: low"
-            ],
-            "number": 2,
-            "repo": "rdfadict",
-            "title": "The repository does not contain a CC metadata file",
-            "updatedAt": 1601047457,
-            "url": "https://github.com/creativecommons/rdfadict/issues/2"
         }
     ]
 }
