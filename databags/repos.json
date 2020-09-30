@@ -962,11 +962,22 @@
         {
             "created": "2020-09-17T19:19:54",
             "description": "WordPress Plugin that provides Vocabulary component blocks",
+            "engineering_project": true,
+            "english_name": "WordPress Vocabulary blocks",
+            "featured": false,
             "id": 296421346,
-            "language": null,
-            "license": null,
+            "language": "JavaScript",
+            "license": {
+                "name": "MIT License",
+                "url": "https://github.com/creativecommons/wp-plugin-vocabulary-blocks/blob/master/LICENSE"
+            },
             "name": "wp-plugin-vocabulary-blocks",
-            "slack": "",
+            "slack": "cc-dev-wordpress",
+            "technologies": [
+                "Javascript",
+                "React",
+                "WordPress"
+            ],
             "url": "https://github.com/creativecommons/wp-plugin-vocabulary-blocks",
             "website": null
         },
