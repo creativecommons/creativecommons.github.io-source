@@ -773,7 +773,7 @@
             "number": 60,
             "repo": "ccos-scripts",
             "title": "Code organisation can be improved",
-            "updatedAt": 1601542673,
+            "updatedAt": 1601578230,
             "url": "https://github.com/creativecommons/ccos-scripts/issues/60"
         },
         {
@@ -885,6 +885,22 @@
             "title": "[Provider Review] Digitalt Museum (Norwegian documentation)",
             "updatedAt": 1601000102,
             "url": "https://github.com/creativecommons/cccatalog/issues/424"
+        },
+        {
+            "createdAt": 1601577112,
+            "labels": [
+                "Hacktoberfest",
+                "help wanted",
+                "\u2728 goal: improvement",
+                "\ud83d\udcaa skill: javascript/storybook",
+                "\ud83d\udd79 aspect: interface",
+                "\ud83d\udfe9 priority: low"
+            ],
+            "number": 699,
+            "repo": "vocabulary",
+            "title": "Implement dark mode for our storybooks",
+            "updatedAt": 1601578878,
+            "url": "https://github.com/creativecommons/vocabulary/issues/699"
         },
         {
             "createdAt": 1601573388,
