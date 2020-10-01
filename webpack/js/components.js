@@ -71,7 +71,8 @@ export const IssueCard = {
   computed: {
     dateCreated() {
       const dateCreated = new Date(this.issue.createdAt * 1000)
-      return dateCreated.toISOString().split("T")[0]
+      const [dateComponent,] = dateCreated.toISOString().split("T")
+      return dateComponent
     }
   }
 }
