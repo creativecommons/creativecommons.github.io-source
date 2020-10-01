@@ -925,24 +925,6 @@
             "url": "https://github.com/creativecommons/creativecommons.github.io-source/issues/518"
         },
         {
-            "createdAt": 1601052880,
-            "labels": [
-                "Hacktoberfest",
-                "good first issue",
-                "help wanted",
-                "\u2728 goal: improvement",
-                "\ud83c\udfc1 status: ready for work",
-                "\ud83d\udd79 aspect: interface",
-                "\ud83d\udee0 goal: fix",
-                "\ud83d\udfe9 priority: low"
-            ],
-            "number": 517,
-            "repo": "creativecommons.github.io-source",
-            "title": "Use ISO-8601 date format on the issue finder",
-            "updatedAt": 1601201885,
-            "url": "https://github.com/creativecommons/creativecommons.github.io-source/issues/517"
-        },
-        {
             "createdAt": 1601046285,
             "labels": [
                 "Hacktoberfest",
