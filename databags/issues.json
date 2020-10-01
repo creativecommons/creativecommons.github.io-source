@@ -13,7 +13,7 @@
             "number": 423,
             "repo": "cccatalog",
             "title": "[API Integration] Natural History Museum (UK)",
-            "updatedAt": 1601000098,
+            "updatedAt": 1601507650,
             "url": "https://github.com/creativecommons/cccatalog/issues/423"
         },
         {
@@ -302,7 +302,7 @@
             "number": 274,
             "repo": "cccatalog",
             "title": "[API Integration] Walters Art Museum",
-            "updatedAt": 1601000303,
+            "updatedAt": 1601489296,
             "url": "https://github.com/creativecommons/cccatalog/issues/274"
         },
         {
@@ -310,12 +310,13 @@
             "labels": [
                 "Hacktoberfest",
                 "help wanted",
-                "\u2728 goal: improvement"
+                "\u2728 goal: improvement",
+                "\ud83d\udcac talk: discussion"
             ],
             "number": 159,
             "repo": "creativecommons.github.io-source",
             "title": "Move information about old GSoC projects to CC Open Source ",
-            "updatedAt": 1601345355,
+            "updatedAt": 1601490653,
             "url": "https://github.com/creativecommons/creativecommons.github.io-source/issues/159"
         },
         {
@@ -574,7 +575,7 @@
             "number": 33,
             "repo": "licensebuttons",
             "title": "Deduplicate `/www/l`",
-            "updatedAt": 1601076506,
+            "updatedAt": 1601553699,
             "url": "https://github.com/creativecommons/licensebuttons/issues/33"
         },
         {
@@ -757,7 +758,7 @@
             "number": 63,
             "repo": "ccos-scripts",
             "title": "Improvements to logging",
-            "updatedAt": 1600999338,
+            "updatedAt": 1601413927,
             "url": "https://github.com/creativecommons/ccos-scripts/issues/63"
         },
         {
@@ -772,7 +773,7 @@
             "number": 60,
             "repo": "ccos-scripts",
             "title": "Code organisation can be improved",
-            "updatedAt": 1601277002,
+            "updatedAt": 1601542673,
             "url": "https://github.com/creativecommons/ccos-scripts/issues/60"
         },
         {
@@ -924,24 +925,6 @@
             "url": "https://github.com/creativecommons/creativecommons.github.io-source/issues/518"
         },
         {
-            "createdAt": 1601052880,
-            "labels": [
-                "Hacktoberfest",
-                "good first issue",
-                "help wanted",
-                "\u2728 goal: improvement",
-                "\ud83c\udfc1 status: ready for work",
-                "\ud83d\udd79 aspect: interface",
-                "\ud83d\udee0 goal: fix",
-                "\ud83d\udfe9 priority: low"
-            ],
-            "number": 517,
-            "repo": "creativecommons.github.io-source",
-            "title": "Use ISO-8601 date format on the issue finder",
-            "updatedAt": 1601201885,
-            "url": "https://github.com/creativecommons/creativecommons.github.io-source/issues/517"
-        },
-        {
             "createdAt": 1601046285,
             "labels": [
                 "Hacktoberfest",
@@ -972,7 +955,7 @@
             "number": 39,
             "repo": "cc-licenses",
             "title": "The repository does not contain a CC metadata file",
-            "updatedAt": 1601047583,
+            "updatedAt": 1601465171,
             "url": "https://github.com/creativecommons/cc-licenses/issues/39"
         },
         {
