@@ -17,19 +17,19 @@ We make extensive use of issue labels to designate the priority, status and begi
 
 - **Issues available for community contribution:**
   - The following tags mark issues that are open for community contribution:
-    - `help wanted`: Open to participation from the community but not necessarily beginner-friendly
-    - `good first issue`: Open to participation from the community and friendly towards new contributors
+    - <span class="gh-label friendliness">help wanted</span> : Open to participation from the community but not necessarily beginner-friendly
+    - <span class="gh-label friendliness">good first issue</span> : Open to participation from the community and friendly towards new contributors
   - You do not need our permission to work on one of these issues.
-  - You may work on an issue labeled `good first issue` even if it's not your first issue.
+  - You may work on an issue labeled <span class="gh-label friendliness">good first issue</span> even if it's not your first issue.
 * **Issues not available for community contribution:**
   - The following tags mark issues that are _not_ open for community contribution:
-    - `🔒 staff only`: Requires infrastructure access or institutional knowledge that would be impractical to provide to the community
+    - <span class="gh-label friendliness">🔒 staff only</span> : Requires infrastructure access or institutional knowledge that would be impractical to provide to the community
   - Do not work on these.
 - **Issues not ready for work:**
   - The following tags mark issues that are _not_ open for community contribution:
-    - `🚧 blocked`: Blocked by other work that needs to be done first
-    - `🧹 ticket work required`: Needs additional work before it is ready to be taken up
-    - `🚦 awaiting triage`: Has not been triaged by a maintainer
+    - <span class="gh-label status-neutral">🚧 status: blocked</span>: Blocked by other work that needs to be done first
+    - <span class="gh-label status-dark">🧹 status: ticket work required </span>: Needs additional work before it is ready to be taken up
+    - <span class="gh-label status-darker">🚦 status: awaiting triage</span>: Has not been triaged by a maintainer
   - Do not work on these.
 - **Issues without any of the above labels:**
   - These issues _may_ (or may not) be open for contribution.
@@ -38,9 +38,9 @@ We make extensive use of issue labels to designate the priority, status and begi
 You can use our [Issue Finder tool](/contributing-code/issue-finder/) to find a good issue that matches your skills and familiarity with our software and community.
 
 Some helpful saved searches on GitHub than can assist with finding an issue:
-- [issues labeled "good first issue"](https://github.com/search?q=org%3Acreativecommons+is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22+-linked%3Apr)
-- [issues labeled "help wanted"](https://github.com/search?q=org%3Acreativecommons+is%3Aissue+is%3Aopen+label%3A%22help+wanted%22+-linked%3Apr)
-- [PRs labeled "help wanted"](https://github.com/search?q=org%3Acreativecommons+is%3Apr+is%3Aopen+label%3A%22help+wanted%22)
+- [issues labeled <span class="gh-label friendliness">good first issue</span>](https://github.com/search?q=org%3Acreativecommons+is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22+-linked%3Apr)
+- [issues labeled <span class="gh-label friendliness">help wanted</span>](https://github.com/search?q=org%3Acreativecommons+is%3Aissue+is%3Aopen+label%3A%22help+wanted%22+-linked%3Apr)
+- [PRs labeled <span class="gh-label friendliness">help wanted</span>](https://github.com/search?q=org%3Acreativecommons+is%3Apr+is%3Aopen+label%3A%22help+wanted%22)
 
 Check the issue comments/labels to see whether someone else has indicated that they are working on it. If someone is already working on it and there has been activity within the last 7 days, you may want to find a different issue to work on.
 
