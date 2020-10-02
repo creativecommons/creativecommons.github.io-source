@@ -72,6 +72,9 @@
         {
             "created": "2020-06-03T18:51:38",
             "description": "New license infrastructure for Creative Commons",
+            "engineering_project": true,
+            "english_name": "CC Licenses",
+            "featured": false,
             "id": 269169080,
             "language": "Python",
             "license": {
@@ -80,6 +83,10 @@
             },
             "name": "cc-licenses",
             "slack": "",
+            "technologies": [
+                "Python",
+                "HTML"
+            ],
             "url": "https://github.com/creativecommons/cc-licenses",
             "website": null
         },
