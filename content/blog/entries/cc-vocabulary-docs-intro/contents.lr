@@ -1,7 +1,7 @@
 title: Vocabulary Site & Usage Guide Introduction (GSoD'20)
 ---
 categories:
-cc-wp-base-theme
+cc-vocabulary
 gsod
 gsod-2020
 ---
@@ -12,30 +12,47 @@ series: gsod-2020-vocabulary-usage-guide
 pub_date: 2020-10-02
 ---
 body:
-Hello there! I'm Nimish Bongale, a technical writer & software developer based out of Bangalore, India. My other hobbies include playing chess and the guitar. I look forward to build the CC Vocabulary site and usage guides as a part of GSoD'20.
+Hey there! I'm Nimish Bongale, a technical writer & software developer based out of Bangalore, India. My other hobbies include playing chess and the guitar. I look forward to build the CC Vocabulary site and usage guides as a part of GSoD'20.
 
 ## But what is GSoD?
 
-GSoD, or Google Season of Docs, is a program that stresses on the importance of the documentation aspect of Open Source projects. It invites technical writers from across the world to submit proposals based on projects floated by the participating Open Source Organisation. The selected technical writers then work with the their respective organisations and look to complete their work by the end of their internship period. More information about the same can be found [here](https://developers.google.com/season-of-docs).  
+GSoD, or Google Season of Docs, is a program that stresses on the importance of the documentation aspect of Open Source projects. It invites technical writers from across the world to submit proposals based on projects floated in by the participating Open Source Organisations. The selected technical writers then work with the their respective organisations and look to complete their work by the end of their internship period. More information about the same can be found [here](https://developers.google.com/season-of-docs).
 
 ## Vocabulary Site & Usage Guide
 
 ### Introduction
-CC Vocabulary is a cohesive design system & Vue component library to unify the web-facing Creative Commons. It's currently comprised of 3 packages, namely Vocabulary, Vue-Vocabulary & Fonts. My contribution to this project would majorly involve building the landing site for CC Vocabulary, and writing & improving the documentation wherever necessary.
+[CC Vocabulary](https://github.com/creativecommons/vocabulary) is a cohesive design system & Vue component library to unify the web-facing Creative Commons. It's currently comprised of 3 packages, namely Vocabulary, Vue-Vocabulary & Fonts. My contribution to this project would majorly involve building the landing site for CC Vocabulary, and writing & improving the documentation wherever necessary.
 
 ### What drives me
-Documentation is one of the primary reasons that determines how successful a certain open source library will be. The major question which developers think of while choosing a suitable tech stack to build their applications is “Is the library well documented? Is it well maintained? Does it have some considerable usage and error support?”. These are exactly the questions we should be asking ourselves while going about this project idea.
+Documentation is one of the primary reasons which determines how successful a certain open source library will be. The major question that developers think of while choosing a suitable tech stack to build their applications is:
 
-There is an immanent need to have a concise and consolidated documentation for our needs. The lack of documentation hurts the future perspectives of open source applications, and is by far, an essential and non-negligible component. Linking to these documentations should be an appealing home page, which captures the interest of the people in an instant. The documentation should be well organised thereby enabling a seamless flow through it.
+- Is the library _well documented_? 
+- Is it _well maintained_? 
+- Does it have some _considerable usage and error support_?”
+
+These are exactly the questions I should be asking myself while going about this project idea.
+
+As aforementioned, there is an immanent need to have a concise and consolidated documentation. The lack of documentation hurts the future perspectives of open source applications, and is by far, an essential and non-negligible component. Linking to these documentations should be an appealing home page, which captures the interest of the people in an instant. The documentation should be well organised, thereby enabling a seamless flow through it.
 
 ### Tech stack of the project
-We have decided to move forwad with [Vuejs](https://vuejs.org/) for building the site, and continue work on the existing [storybooks](https://storybook.js.org/) of Vocabulary, Vue-Vocabulary and Fonts. Storybookjs has had some great improvements recently, and the new addons that are offered will greatly support my work. Besides these, I will also be using [StackEdit](https://stackedit.io/) for writing and sharing Markdown files of my writings. 
+We have decided to move forward with [Vuejs](https://vuejs.org/) for building the site, and continue work on the existing [storybooks](https://storybook.js.org/) of Vocabulary, Vue-Vocabulary and Fonts. Storybookjs has had some great improvements in recent times, and the new addons that are offered will greatly support my work. Besides these, I will also be using [StackEdit](https://stackedit.io/) for writing and sharing Markdown files of my writings. 
 
 ### Progress - Baby Steps
-I have contributed to CC in the past before. Now it would be my first time contributing to a specific project, while being a member of CC Open Source.
+I have contributed to CC in the past. It would now be my first time contributing to a specific project within CC, while being a member of CC Open Source. Some tasks that I've been able to initiate/accomplish so far:
 
+- Look at Open Source documentation conventions, and see if we violate any.
+- Understand the level of existing documentation currently present in our storybooks.
+- Discuss about the Monorepo migration and help out with the implementation.
+- Migrate `storybookjs` to the latest version.
+- Implement `addon-controls` for vocabulary.
+- Design the vocabulary site.
+- Promote the involvement of CC Open Source in [Hacktoberfest](https://hacktoberfest.digitalocean.com/) 2020.
 
 ### What did I learn?
 
+- Design is more than just picking colors and placing components on a grey screen.
+- It's important to read your own writings from an unbiased perspective to actually understand how well it would be perceived.
+- Interacting with your mentor on a regular basis is of the absolute essence.
+- Publishing to [npmjs](npmjs.com) is not difficult!
 
-_Thank you for your time!_
+**Thank you for your time!**
