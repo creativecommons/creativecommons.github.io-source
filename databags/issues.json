@@ -342,7 +342,7 @@
             "number": 402,
             "repo": "cccatalog-api",
             "title": "Automatically clean up after failed indexing runs",
-            "updatedAt": 1601000315,
+            "updatedAt": 1601638286,
             "url": "https://github.com/creativecommons/cccatalog-api/issues/402"
         },
         {
@@ -440,7 +440,7 @@
             "number": 516,
             "repo": "creativecommons.github.io-source",
             "title": "The repository does not generate a CC metadata file",
-            "updatedAt": 1601369903,
+            "updatedAt": 1601648321,
             "url": "https://github.com/creativecommons/creativecommons.github.io-source/issues/516"
         },
         {
@@ -887,6 +887,23 @@
             "url": "https://github.com/creativecommons/cccatalog/issues/424"
         },
         {
+            "createdAt": 1601642945,
+            "labels": [
+                "Hacktoberfest",
+                "good first issue",
+                "help wanted",
+                "\ud83c\udfc1 status: ready for work",
+                "\ud83d\udcbb aspect: code",
+                "\ud83d\udee0 goal: fix",
+                "\ud83d\udfe8 priority: medium"
+            ],
+            "number": 509,
+            "repo": "cccatalog",
+            "title": "[Bug] JSONColumn class should not enforce ASCII charset",
+            "updatedAt": 1601644599,
+            "url": "https://github.com/creativecommons/cccatalog/issues/509"
+        },
+        {
             "createdAt": 1601577112,
             "labels": [
                 "Hacktoberfest",
@@ -968,7 +985,7 @@
             "number": 4,
             "repo": "cc-licenses-data",
             "title": "The repository does not contain a CC metadata file",
-            "updatedAt": 1601620621,
+            "updatedAt": 1601638639,
             "url": "https://github.com/creativecommons/cc-licenses-data/issues/4"
         }
     ]
