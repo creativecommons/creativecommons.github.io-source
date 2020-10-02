@@ -887,22 +887,6 @@
             "url": "https://github.com/creativecommons/cccatalog/issues/424"
         },
         {
-            "createdAt": 1601658557,
-            "labels": [
-                "Hacktoberfest",
-                "good first issue",
-                "help wanted",
-                "\ud83d\udd79 aspect: interface",
-                "\ud83d\udee0 goal: fix",
-                "\ud83d\udfe9 priority: low"
-            ],
-            "number": 701,
-            "repo": "vocabulary",
-            "title": "Global header donate button should have 'cc-heart-filled' instead of 'cc-heart'",
-            "updatedAt": 1601658850,
-            "url": "https://github.com/creativecommons/vocabulary/issues/701"
-        },
-        {
             "createdAt": 1601642945,
             "labels": [
                 "Hacktoberfest",
@@ -920,24 +904,6 @@
             "url": "https://github.com/creativecommons/cccatalog/issues/509"
         },
         {
-            "createdAt": 1601592144,
-            "labels": [
-                "Hacktoberfest",
-                "good first issue",
-                "help wanted",
-                "\ud83c\udfc1 status: ready for work",
-                "\ud83d\udcaa skill: sass",
-                "\ud83d\udd79 aspect: interface",
-                "\ud83d\udee0 goal: fix",
-                "\ud83d\udfe8 priority: medium"
-            ],
-            "number": 700,
-            "repo": "vocabulary",
-            "title": "Wrong hover state of links on footer",
-            "updatedAt": 1601655237,
-            "url": "https://github.com/creativecommons/vocabulary/issues/700"
-        },
-        {
             "createdAt": 1601577112,
             "labels": [
                 "Hacktoberfest",
@@ -950,7 +916,7 @@
             "number": 699,
             "repo": "vocabulary",
             "title": "Implement dark mode for our storybooks",
-            "updatedAt": 1601611301,
+            "updatedAt": 1601661187,
             "url": "https://github.com/creativecommons/vocabulary/issues/699"
         },
         {
