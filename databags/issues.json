@@ -592,7 +592,7 @@
             "number": 33,
             "repo": "licensebuttons",
             "title": "Deduplicate `/www/l`",
-            "updatedAt": 1601553699,
+            "updatedAt": 1601631569,
             "url": "https://github.com/creativecommons/licensebuttons/issues/33"
         },
         {
@@ -913,7 +913,7 @@
             "number": 292,
             "repo": "ccsearch-browser-extension",
             "title": "Add license explanation tool tip in the filter section",
-            "updatedAt": 1601611442,
+            "updatedAt": 1601623173,
             "url": "https://github.com/creativecommons/ccsearch-browser-extension/issues/292"
         },
         {
@@ -968,7 +968,7 @@
             "number": 4,
             "repo": "cc-licenses-data",
             "title": "The repository does not contain a CC metadata file",
-            "updatedAt": 1601371319,
+            "updatedAt": 1601620621,
             "url": "https://github.com/creativecommons/cc-licenses-data/issues/4"
         }
     ]
