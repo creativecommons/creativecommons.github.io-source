@@ -30,7 +30,7 @@ Documentation is one of the primary reasons which determines how successful a ce
 
 - Is the library _well documented_? 
 - Is it _well maintained_? 
-- Does it have some _considerable usage and error support_?”
+- Does it have some _considerable usage and error support_?
 
 These are exactly the questions I should be asking myself while going about this project idea.
 
@@ -57,4 +57,6 @@ I have contributed to CC in the past. It would now be my first time contributing
 - Interacting with your mentor on a regular basis is of the absolute essence.
 - Publishing to [npmjs](npmjs.com) is not difficult!
 
-**Thank you for your time!**
+<p align="center">
+    <strong>Thank you for your time!</strong>
+</p>
