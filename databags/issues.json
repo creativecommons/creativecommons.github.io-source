@@ -342,7 +342,7 @@
             "number": 402,
             "repo": "cccatalog-api",
             "title": "Automatically clean up after failed indexing runs",
-            "updatedAt": 1601000315,
+            "updatedAt": 1601638286,
             "url": "https://github.com/creativecommons/cccatalog-api/issues/402"
         },
         {
@@ -968,7 +968,7 @@
             "number": 4,
             "repo": "cc-licenses-data",
             "title": "The repository does not contain a CC metadata file",
-            "updatedAt": 1601634603,
+            "updatedAt": 1601638639,
             "url": "https://github.com/creativecommons/cc-licenses-data/issues/4"
         }
     ]
