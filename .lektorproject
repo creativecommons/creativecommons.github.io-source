@@ -2,6 +2,7 @@
 name = creativecommons.github.io
 url_style = absolute
 url = http://opensource.creativecommons.org/
+included_assets = .cc-metadata.yml
 
 [servers.ghpages]
 target = ghpages+https://creativecommons/creativecommons.github.io
