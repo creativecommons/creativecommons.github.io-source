@@ -481,20 +481,6 @@
             "website": "https://network.creativecommons.org/"
         },
         {
-            "created": "2015-04-15T16:10:58",
-            "description": "Static files for CC Open Source website. \u26a0 DO NOT MODIFY THIS REPOSITORY! To edit, use the creativecommons.github.io-source repository.",
-            "id": 34004720,
-            "language": "HTML",
-            "license": {
-                "name": "MIT License",
-                "url": "https://github.com/creativecommons/creativecommons.github.io/blob/master/LICENSE"
-            },
-            "name": "creativecommons.github.io",
-            "slack": "",
-            "url": "https://github.com/creativecommons/creativecommons.github.io",
-            "website": "https://opensource.creativecommons.org"
-        },
-        {
             "created": "2019-01-27T02:29:18",
             "description": "Source files for CC Open Source website",
             "engineering_project": true,
@@ -927,7 +913,7 @@
         },
         {
             "created": "2019-11-25T17:29:13",
-            "description": "A cohesive design system to unify the web facing Creative Commons",
+            "description": "A cohesive design system & Vue component library to unify the web-facing Creative Commons",
             "engineering_project": true,
             "english_name": "CC Vocabulary",
             "featured": true,
