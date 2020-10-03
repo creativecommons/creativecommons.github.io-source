@@ -615,14 +615,17 @@
             "createdAt": 1599767168,
             "labels": [
                 "Hacktoberfest",
+                "good first issue",
                 "help wanted",
+                "reserved",
+                "\u2728 goal: improvement",
                 "\ud83d\udfe9 priority: low",
                 "\ud83e\udd16 aspect: dx"
             ],
             "number": 653,
             "repo": "vocabulary",
             "title": "Switch dependabot PRs to monthly cycle",
-            "updatedAt": 1601025984,
+            "updatedAt": 1601733118,
             "url": "https://github.com/creativecommons/vocabulary/issues/653"
         },
         {
