@@ -457,7 +457,7 @@
             "number": 2,
             "repo": "rdfadict",
             "title": "The repository does not contain a CC metadata file",
-            "updatedAt": 1601047457,
+            "updatedAt": 1601835337,
             "url": "https://github.com/creativecommons/rdfadict/issues/2"
         },
         {
@@ -936,7 +936,7 @@
             "number": 699,
             "repo": "vocabulary",
             "title": "Implement dark mode for our storybooks",
-            "updatedAt": 1601831682,
+            "updatedAt": 1601835741,
             "url": "https://github.com/creativecommons/vocabulary/issues/699"
         },
         {
