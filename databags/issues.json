@@ -617,7 +617,6 @@
                 "Hacktoberfest",
                 "good first issue",
                 "help wanted",
-                "reserved",
                 "\u2728 goal: improvement",
                 "\ud83d\udfe9 priority: low",
                 "\ud83e\udd16 aspect: dx"
@@ -625,7 +624,7 @@
             "number": 653,
             "repo": "vocabulary",
             "title": "Switch dependabot PRs to monthly cycle",
-            "updatedAt": 1601733118,
+            "updatedAt": 1601782630,
             "url": "https://github.com/creativecommons/vocabulary/issues/653"
         },
         {
@@ -888,6 +887,24 @@
             "title": "[Provider Review] Digitalt Museum (Norwegian documentation)",
             "updatedAt": 1601743623,
             "url": "https://github.com/creativecommons/cccatalog/issues/424"
+        },
+        {
+            "createdAt": 1601782848,
+            "labels": [
+                "Hacktoberfest",
+                "good first issue",
+                "help wanted",
+                "reserved",
+                "\ud83c\udfc1 status: ready for work",
+                "\ud83d\udcc4 aspect: text",
+                "\ud83d\udee0 goal: fix",
+                "\ud83d\udfe8 priority: medium"
+            ],
+            "number": 533,
+            "repo": "creativecommons.github.io-source",
+            "title": "Update the labels in Contribution Guidelines",
+            "updatedAt": 1601782919,
+            "url": "https://github.com/creativecommons/creativecommons.github.io-source/issues/533"
         },
         {
             "createdAt": 1601642945,
