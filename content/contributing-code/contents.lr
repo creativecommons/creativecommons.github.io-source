@@ -60,7 +60,7 @@ If you want to work on something that there is no GitHub issue for, follow these
 
 1. Create a a new GitHub issue associated with the relevant repository and propose your change there. Be sure to include implementation details and the rationale for the proposed change.
     * We are very reluctant to accept random pull requests without a related issue created first.
-2. The issue will automatically have the `not ready for work` label applied. Wait for a project maintainer to evaluate your issue and decide whether it's something that we will accept a pull request for.
-3. Once the project maintainer has approved the issue and removed the `not ready for work` label, you may start work on code as described in the "Contribution process" section above.
+2. The issue will automatically have the `🚦 status: awaiting triage` label applied. Wait for a project maintainer to evaluate your issue and decide whether it's something that we will accept a pull request for.
+3. Once the project maintainer has approved the issue and removed the `🚦 status: awaiting triage` label, you may start work on code as described in the "Contribution process" section above.
 
 When in doubt, ask a question on [one of our community forums](/community/).
