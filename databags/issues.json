@@ -457,7 +457,7 @@
             "number": 2,
             "repo": "rdfadict",
             "title": "The repository does not contain a CC metadata file",
-            "updatedAt": 1601047457,
+            "updatedAt": 1601874497,
             "url": "https://github.com/creativecommons/rdfadict/issues/2"
         },
         {
@@ -689,7 +689,7 @@
             "number": 490,
             "repo": "creativecommons.github.io-source",
             "title": "Responsiveness Design Bug",
-            "updatedAt": 1601802516,
+            "updatedAt": 1601819742,
             "url": "https://github.com/creativecommons/creativecommons.github.io-source/issues/490"
         },
         {
@@ -885,7 +885,7 @@
             "number": 424,
             "repo": "cccatalog",
             "title": "[Provider Review] Digitalt Museum (Norwegian documentation)",
-            "updatedAt": 1601743623,
+            "updatedAt": 1601848630,
             "url": "https://github.com/creativecommons/cccatalog/issues/424"
         },
         {
@@ -894,7 +894,6 @@
                 "Hacktoberfest",
                 "good first issue",
                 "help wanted",
-                "reserved",
                 "\ud83c\udfc1 status: ready for work",
                 "\ud83d\udcc4 aspect: text",
                 "\ud83d\udee0 goal: fix",
@@ -903,7 +902,7 @@
             "number": 533,
             "repo": "creativecommons.github.io-source",
             "title": "Update the labels in Contribution Guidelines",
-            "updatedAt": 1601801326,
+            "updatedAt": 1601875290,
             "url": "https://github.com/creativecommons/creativecommons.github.io-source/issues/533"
         },
         {
@@ -936,7 +935,7 @@
             "number": 699,
             "repo": "vocabulary",
             "title": "Implement dark mode for our storybooks",
-            "updatedAt": 1601664714,
+            "updatedAt": 1601840512,
             "url": "https://github.com/creativecommons/vocabulary/issues/699"
         },
         {
