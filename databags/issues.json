@@ -1,6 +1,21 @@
 {
     "issues": [
         {
+            "createdAt": 1591276177,
+            "labels": [
+                "Hacktoberfest",
+                "help wanted",
+                "providers",
+                "\u2728 goal: improvement",
+                "\ud83e\uddf9 status: ticket work required"
+            ],
+            "number": 424,
+            "repo": "cccatalog",
+            "title": "[Provider Review] Digitalt Museum (Norwegian documentation)",
+            "updatedAt": 1601889571,
+            "url": "https://github.com/creativecommons/cccatalog/issues/424"
+        },
+        {
             "createdAt": 1591275662,
             "labels": [
                 "Hacktoberfest",
@@ -74,20 +89,6 @@
             "title": "[API Integration] Scan the World",
             "updatedAt": 1601000077,
             "url": "https://github.com/creativecommons/cccatalog/issues/382"
-        },
-        {
-            "createdAt": 1588003437,
-            "labels": [
-                "Hacktoberfest",
-                "help wanted",
-                "\u2728 goal: improvement",
-                "\ud83d\udfe5 priority: critical"
-            ],
-            "number": 373,
-            "repo": "cccatalog",
-            "title": "[Feature] Data gathered from CommonCrawl providers needs to be cleaned",
-            "updatedAt": 1601000073,
-            "url": "https://github.com/creativecommons/cccatalog/issues/373"
         },
         {
             "createdAt": 1587355464,
@@ -425,6 +426,24 @@
             "title": "Use HTTPS links for the license chooser",
             "updatedAt": 1601000348,
             "url": "https://github.com/creativecommons/creativecommons.org/issues/940"
+        },
+        {
+            "createdAt": 1601053224,
+            "labels": [
+                "Hacktoberfest",
+                "good first issue",
+                "help wanted",
+                "\u2728 goal: improvement",
+                "\ud83c\udfc1 status: ready for work",
+                "\ud83d\udcc4 aspect: text",
+                "\ud83d\udd79 aspect: interface",
+                "\ud83d\udfe8 priority: medium"
+            ],
+            "number": 518,
+            "repo": "creativecommons.github.io-source",
+            "title": "Add disclaimer on the skill filter in the issue finder",
+            "updatedAt": 1601054405,
+            "url": "https://github.com/creativecommons/creativecommons.github.io-source/issues/518"
         },
         {
             "createdAt": 1601046285,
@@ -874,21 +893,6 @@
             "url": "https://github.com/creativecommons/ccos-scripts/issues/48"
         },
         {
-            "createdAt": 1591276177,
-            "labels": [
-                "Hacktoberfest",
-                "help wanted",
-                "providers",
-                "\u2728 goal: improvement",
-                "\ud83e\uddf9 status: ticket work required"
-            ],
-            "number": 424,
-            "repo": "cccatalog",
-            "title": "[Provider Review] Digitalt Museum (Norwegian documentation)",
-            "updatedAt": 1601889571,
-            "url": "https://github.com/creativecommons/cccatalog/issues/424"
-        },
-        {
             "createdAt": 1601642945,
             "labels": [
                 "Hacktoberfest",
@@ -954,24 +958,6 @@
             "title": "[Vue] Footer Component",
             "updatedAt": 1601182716,
             "url": "https://github.com/creativecommons/vocabulary/issues/689"
-        },
-        {
-            "createdAt": 1601053224,
-            "labels": [
-                "Hacktoberfest",
-                "good first issue",
-                "help wanted",
-                "\u2728 goal: improvement",
-                "\ud83c\udfc1 status: ready for work",
-                "\ud83d\udcc4 aspect: text",
-                "\ud83d\udd79 aspect: interface",
-                "\ud83d\udfe8 priority: medium"
-            ],
-            "number": 518,
-            "repo": "creativecommons.github.io-source",
-            "title": "Add disclaimer on the skill filter in the issue finder",
-            "updatedAt": 1601054405,
-            "url": "https://github.com/creativecommons/creativecommons.github.io-source/issues/518"
         }
     ]
 }
