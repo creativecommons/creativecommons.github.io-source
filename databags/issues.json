@@ -689,7 +689,7 @@
             "number": 490,
             "repo": "creativecommons.github.io-source",
             "title": "Responsiveness Design Bug",
-            "updatedAt": 1601819742,
+            "updatedAt": 1601875743,
             "url": "https://github.com/creativecommons/creativecommons.github.io-source/issues/490"
         },
         {
@@ -887,23 +887,6 @@
             "title": "[Provider Review] Digitalt Museum (Norwegian documentation)",
             "updatedAt": 1601848630,
             "url": "https://github.com/creativecommons/cccatalog/issues/424"
-        },
-        {
-            "createdAt": 1601782848,
-            "labels": [
-                "Hacktoberfest",
-                "good first issue",
-                "help wanted",
-                "\ud83c\udfc1 status: ready for work",
-                "\ud83d\udcc4 aspect: text",
-                "\ud83d\udee0 goal: fix",
-                "\ud83d\udfe8 priority: medium"
-            ],
-            "number": 533,
-            "repo": "creativecommons.github.io-source",
-            "title": "Update the labels in Contribution Guidelines",
-            "updatedAt": 1601875290,
-            "url": "https://github.com/creativecommons/creativecommons.github.io-source/issues/533"
         },
         {
             "createdAt": 1601642945,
