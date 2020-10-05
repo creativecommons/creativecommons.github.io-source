@@ -538,12 +538,12 @@
                 "help wanted",
                 "\ud83d\udcbb aspect: code",
                 "\ud83d\udee0 goal: fix",
-                "\ud83d\udfe7 priority: high"
+                "\ud83d\udfe9 priority: low"
             ],
             "number": 1224,
             "repo": "cccatalog-frontend",
             "title": "Bug with runs of e2e test suite",
-            "updatedAt": 1601916649,
+            "updatedAt": 1601924758,
             "url": "https://github.com/creativecommons/cccatalog-frontend/issues/1224"
         },
         {
