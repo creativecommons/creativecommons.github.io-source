@@ -12,7 +12,7 @@
             "number": 424,
             "repo": "cccatalog",
             "title": "[Provider Review] Digitalt Museum (Norwegian documentation)",
-            "updatedAt": 1601889571,
+            "updatedAt": 1601907372,
             "url": "https://github.com/creativecommons/cccatalog/issues/424"
         },
         {
@@ -176,7 +176,7 @@
             "number": 362,
             "repo": "cccatalog",
             "title": "[Quality] Split dependencies into prod and dev, handle them better in general",
-            "updatedAt": 1601881796,
+            "updatedAt": 1601905839,
             "url": "https://github.com/creativecommons/cccatalog/issues/362"
         },
         {
@@ -380,13 +380,12 @@
             "labels": [
                 "Hacktoberfest",
                 "good first issue",
-                "help wanted",
-                "\ud83d\udea7 status: blocked"
+                "help wanted"
             ],
             "number": 211,
             "repo": "cccatalog",
             "title": "Use `pintrest_description` field for `meta_data.description` in `RawPixel.py`",
-            "updatedAt": 1601883707,
+            "updatedAt": 1601906281,
             "url": "https://github.com/creativecommons/cccatalog/issues/211"
         },
         {
