@@ -385,7 +385,7 @@
             "number": 211,
             "repo": "cccatalog",
             "title": "Use `pintrest_description` field for `meta_data.description` in `RawPixel.py`",
-            "updatedAt": 1601000329,
+            "updatedAt": 1601883707,
             "url": "https://github.com/creativecommons/cccatalog/issues/211"
         },
         {
@@ -689,7 +689,7 @@
             "number": 490,
             "repo": "creativecommons.github.io-source",
             "title": "Responsiveness Design Bug",
-            "updatedAt": 1601875743,
+            "updatedAt": 1601886085,
             "url": "https://github.com/creativecommons/creativecommons.github.io-source/issues/490"
         },
         {
