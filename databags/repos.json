@@ -72,6 +72,9 @@
         {
             "created": "2020-06-03T18:51:38",
             "description": "New license infrastructure for Creative Commons",
+            "engineering_project": true,
+            "english_name": "CC Licenses",
+            "featured": false,
             "id": 269169080,
             "language": "Python",
             "license": {
@@ -80,6 +83,10 @@
             },
             "name": "cc-licenses",
             "slack": "",
+            "technologies": [
+                "Python",
+                "HTML"
+            ],
             "url": "https://github.com/creativecommons/cc-licenses",
             "website": null
         },
@@ -472,20 +479,6 @@
             ],
             "url": "https://github.com/creativecommons/commoners",
             "website": "https://network.creativecommons.org/"
-        },
-        {
-            "created": "2015-04-15T16:10:58",
-            "description": "Static files for CC Open Source website. \u26a0 DO NOT MODIFY THIS REPOSITORY! To edit, use the creativecommons.github.io-source repository.",
-            "id": 34004720,
-            "language": "HTML",
-            "license": {
-                "name": "MIT License",
-                "url": "https://github.com/creativecommons/creativecommons.github.io/blob/master/LICENSE"
-            },
-            "name": "creativecommons.github.io",
-            "slack": "",
-            "url": "https://github.com/creativecommons/creativecommons.github.io",
-            "website": "https://opensource.creativecommons.org"
         },
         {
             "created": "2019-01-27T02:29:18",
@@ -920,7 +913,7 @@
         },
         {
             "created": "2019-11-25T17:29:13",
-            "description": "A cohesive design system to unify the web facing Creative Commons",
+            "description": "A cohesive design system & Vue component library to unify the web-facing Creative Commons",
             "engineering_project": true,
             "english_name": "CC Vocabulary",
             "featured": true,
@@ -962,11 +955,22 @@
         {
             "created": "2020-09-17T19:19:54",
             "description": "WordPress Plugin that provides Vocabulary component blocks",
+            "engineering_project": true,
+            "english_name": "WordPress Vocabulary blocks",
+            "featured": false,
             "id": 296421346,
-            "language": null,
-            "license": null,
+            "language": "JavaScript",
+            "license": {
+                "name": "MIT License",
+                "url": "https://github.com/creativecommons/wp-plugin-vocabulary-blocks/blob/master/LICENSE"
+            },
             "name": "wp-plugin-vocabulary-blocks",
-            "slack": "",
+            "slack": "cc-dev-wordpress",
+            "technologies": [
+                "Javascript",
+                "React",
+                "WordPress"
+            ],
             "url": "https://github.com/creativecommons/wp-plugin-vocabulary-blocks",
             "website": null
         },
