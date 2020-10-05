@@ -3,4 +3,4 @@ _model: blog
 title: CC Open Source Blog
 ---
 description:
-Welcome to CC's new technical blog! The CC technical team writes about what we're working on, updates about CC's software projects, engineering related programs and events that CC is participating in, and more. We also feature posts from community members working on CC-related projects. You can subscribe to our [news feed here](/blog/feed.xml).
+Welcome to CC's new technical blog! The CC technical team writes about what we're working on, updates about CC's software projects, engineering related programs and events that CC is participating in, and more. We also feature posts from community members working on CC-related projects. You can subscribe to our [RSS feed <i class="icon rss-square body-normal"></i>](/blog/feed.xml).
