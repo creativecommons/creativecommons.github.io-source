@@ -681,22 +681,6 @@
             "url": "https://github.com/creativecommons/licensebuttons/issues/32"
         },
         {
-            "createdAt": 1599767168,
-            "labels": [
-                "Hacktoberfest",
-                "good first issue",
-                "help wanted",
-                "\u2728 goal: improvement",
-                "\ud83d\udfe9 priority: low",
-                "\ud83e\udd16 aspect: dx"
-            ],
-            "number": 653,
-            "repo": "vocabulary",
-            "title": "Switch dependabot PRs to monthly cycle",
-            "updatedAt": 1601965984,
-            "url": "https://github.com/creativecommons/vocabulary/issues/653"
-        },
-        {
             "createdAt": 1599677786,
             "labels": [
                 "Hacktoberfest",
