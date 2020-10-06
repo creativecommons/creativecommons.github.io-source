@@ -430,6 +430,22 @@
             "url": "https://github.com/creativecommons/creativecommons.org/issues/940"
         },
         {
+            "createdAt": 1601916855,
+            "labels": [
+                "help wanted",
+                "\ud83d\udcac talk: discussion",
+                "\ud83d\udcbb aspect: code",
+                "\ud83d\udcc4 aspect: text",
+                "\ud83d\udfe7 priority: high",
+                "\ud83e\uddf9 status: ticket work required"
+            ],
+            "number": 635,
+            "repo": "cccatalog-api",
+            "title": "Research for Audio APIs",
+            "updatedAt": 1601916855,
+            "url": "https://github.com/creativecommons/cccatalog-api/issues/635"
+        },
+        {
             "createdAt": 1601642945,
             "labels": [
                 "Hacktoberfest",
@@ -832,19 +848,6 @@
             "url": "https://github.com/creativecommons/ccos-scripts/issues/60"
         },
         {
-            "createdAt": 1597001263,
-            "labels": [
-                "Hacktoberfest",
-                "good first issue",
-                "help wanted"
-            ],
-            "number": 126,
-            "repo": "wp-plugin-creativecommons",
-            "title": "Add loading=\"lazy\" to the image tags",
-            "updatedAt": 1600999326,
-            "url": "https://github.com/creativecommons/wp-plugin-creativecommons/issues/126"
-        },
-        {
             "createdAt": 1596741568,
             "labels": [
                 "Hacktoberfest",
@@ -895,22 +898,6 @@
             "title": "[Bug] Non-image content is being stored in the image table",
             "updatedAt": 1601000235,
             "url": "https://github.com/creativecommons/cccatalog/issues/438"
-        },
-        {
-            "createdAt": 1601916855,
-            "labels": [
-                "help wanted",
-                "\ud83d\udcac talk: discussion",
-                "\ud83d\udcbb aspect: code",
-                "\ud83d\udcc4 aspect: text",
-                "\ud83d\udfe7 priority: high",
-                "\ud83e\uddf9 status: ticket work required"
-            ],
-            "number": 635,
-            "repo": "cccatalog-api",
-            "title": "Research for Audio APIs",
-            "updatedAt": 1601916855,
-            "url": "https://github.com/creativecommons/cccatalog-api/issues/635"
         }
     ]
 }
