@@ -13,7 +13,7 @@
             "number": 48,
             "repo": "ccos-scripts",
             "title": "Also support \"main\" as default branch for repo normalization",
-            "updatedAt": 1601954323,
+            "updatedAt": 1601967980,
             "url": "https://github.com/creativecommons/ccos-scripts/issues/48"
         },
         {
@@ -192,7 +192,7 @@
             "number": 362,
             "repo": "cccatalog",
             "title": "[Quality] Split dependencies into prod and dev, handle them better in general",
-            "updatedAt": 1601905839,
+            "updatedAt": 1601968358,
             "url": "https://github.com/creativecommons/cccatalog/issues/362"
         },
         {
@@ -659,7 +659,7 @@
             "number": 653,
             "repo": "vocabulary",
             "title": "Switch dependabot PRs to monthly cycle",
-            "updatedAt": 1601782630,
+            "updatedAt": 1601965984,
             "url": "https://github.com/creativecommons/vocabulary/issues/653"
         },
         {
