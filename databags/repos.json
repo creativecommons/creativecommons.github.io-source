@@ -94,7 +94,7 @@
             "created": "2020-09-08T19:18:51",
             "description": "",
             "id": 293905720,
-            "language": "HTML",
+            "language": "JavaScript",
             "license": null,
             "name": "cc-licenses-data",
             "slack": "",
@@ -741,6 +741,9 @@
         {
             "created": "2013-12-02T20:59:52",
             "description": "",
+            "engineering_project": true,
+            "english_name": "CC RDFa Dict",
+            "featured": false,
             "id": 14874571,
             "language": "Python",
             "license": {
@@ -749,6 +752,9 @@
             },
             "name": "rdfadict",
             "slack": "",
+            "technologies": [
+                "Python"
+            ],
             "url": "https://github.com/creativecommons/rdfadict",
             "website": null
         },
