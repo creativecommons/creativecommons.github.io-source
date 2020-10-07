@@ -1,6 +1,19 @@
 {
     "issues": [
         {
+            "createdAt": 1592589713,
+            "labels": [
+                "Hacktoberfest",
+                "help wanted",
+                "\ud83d\udee0 goal: fix"
+            ],
+            "number": 438,
+            "repo": "cccatalog",
+            "title": "[Bug] Non-image content is being stored in the image table",
+            "updatedAt": 1601000235,
+            "url": "https://github.com/creativecommons/cccatalog/issues/438"
+        },
+        {
             "createdAt": 1592252009,
             "labels": [
                 "Hacktoberfest",
@@ -236,20 +249,6 @@
             "title": "Add unit and e2e tests for the App component",
             "updatedAt": 1601000023,
             "url": "https://github.com/creativecommons/chooser/issues/124"
-        },
-        {
-            "createdAt": 1583378974,
-            "labels": [
-                "Hacktoberfest",
-                "good first issue",
-                "help wanted",
-                "test-coverage"
-            ],
-            "number": 123,
-            "repo": "chooser",
-            "title": "Add unit and e2e tests for the Step component",
-            "updatedAt": 1601000019,
-            "url": "https://github.com/creativecommons/chooser/issues/123"
         },
         {
             "createdAt": 1583378854,
@@ -869,19 +868,6 @@
             "title": "Update `Write a Blog Post` by adding excerpt suggestion.",
             "updatedAt": 1601000240,
             "url": "https://github.com/creativecommons/creativecommons.github.io-source/issues/351"
-        },
-        {
-            "createdAt": 1592589713,
-            "labels": [
-                "Hacktoberfest",
-                "help wanted",
-                "\ud83d\udee0 goal: fix"
-            ],
-            "number": 438,
-            "repo": "cccatalog",
-            "title": "[Bug] Non-image content is being stored in the image table",
-            "updatedAt": 1601000235,
-            "url": "https://github.com/creativecommons/cccatalog/issues/438"
         }
     ]
 }
