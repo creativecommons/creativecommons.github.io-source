@@ -304,7 +304,7 @@
             "english_name": "CC Search",
             "featured": true,
             "id": 139915408,
-            "language": "JavaScript",
+            "language": "Vue",
             "license": {
                 "name": "MIT License",
                 "url": "https://github.com/creativecommons/cccatalog-frontend/blob/develop/LICENSE"
