@@ -1,6 +1,19 @@
 {
     "issues": [
         {
+            "createdAt": 1595332167,
+            "labels": [
+                "Hacktoberfest",
+                "help wanted",
+                "\u2728 goal: improvement"
+            ],
+            "number": 351,
+            "repo": "creativecommons.github.io-source",
+            "title": "Update `Write a Blog Post` by adding excerpt suggestion.",
+            "updatedAt": 1601000240,
+            "url": "https://github.com/creativecommons/creativecommons.github.io-source/issues/351"
+        },
+        {
             "createdAt": 1592589713,
             "labels": [
                 "Hacktoberfest",
@@ -208,19 +221,6 @@
             "title": "Check plaintext legalcode URLs",
             "updatedAt": 1601000052,
             "url": "https://github.com/creativecommons/cc-link-checker/issues/68"
-        },
-        {
-            "createdAt": 1586444073,
-            "labels": [
-                "Hacktoberfest",
-                "good first issue",
-                "help wanted"
-            ],
-            "number": 362,
-            "repo": "cccatalog",
-            "title": "[Quality] Split dependencies into prod and dev, handle them better in general",
-            "updatedAt": 1602062267,
-            "url": "https://github.com/creativecommons/cccatalog/issues/362"
         },
         {
             "createdAt": 1584107219,
@@ -840,19 +840,6 @@
             "title": "Prep for WordPress 5.5",
             "updatedAt": 1600999315,
             "url": "https://github.com/creativecommons/wp-plugin-creativecommons/issues/125"
-        },
-        {
-            "createdAt": 1595332167,
-            "labels": [
-                "Hacktoberfest",
-                "help wanted",
-                "\u2728 goal: improvement"
-            ],
-            "number": 351,
-            "repo": "creativecommons.github.io-source",
-            "title": "Update `Write a Blog Post` by adding excerpt suggestion.",
-            "updatedAt": 1601000240,
-            "url": "https://github.com/creativecommons/creativecommons.github.io-source/issues/351"
         }
     ]
 }
