@@ -99,7 +99,7 @@
             "name": "cc-licenses-data",
             "slack": "",
             "url": "https://github.com/creativecommons/cc-licenses-data",
-            "website": null
+            "website": ""
         },
         {
             "created": "2019-06-12T18:15:54",
@@ -119,7 +119,7 @@
                 "Python"
             ],
             "url": "https://github.com/creativecommons/cc-link-checker",
-            "website": null
+            "website": ""
         },
         {
             "created": "2014-01-08T18:49:45",
@@ -368,7 +368,7 @@
                 "Python"
             ],
             "url": "https://github.com/creativecommons/ccos-scripts",
-            "website": null
+            "website": ""
         },
         {
             "created": "2013-10-24T00:12:36",
