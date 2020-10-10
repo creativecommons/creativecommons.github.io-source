@@ -87,7 +87,7 @@ export const App = {
         <label for="skills">
           <strong>*Skill set</strong><br/>
           Choose up to three skills that you would like to see issues for.
-          </label>
+        </label>
         <VueSelect
           v-model="filters.skills"
           id="skills"
