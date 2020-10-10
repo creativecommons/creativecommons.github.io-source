@@ -85,9 +85,9 @@ export const App = {
     <div class="column is-one-quarter">
       <form id="filters" v-if="options.skills.length">
         <label for="skills">
-          <strong>Skill set</strong><br/>
+          <strong>*Skill set</strong><br/>
           Choose up to three skills that you would like to see issues for.
-        </label>
+          </label>
         <VueSelect
           v-model="filters.skills"
           id="skills"
@@ -129,6 +129,14 @@ export const App = {
       </p>
     </div>
   </div>
+  <p>
+  <small>
+Not all issues have skills marked on them, especially if they are simple issues that 
+do not require proficiency in any specific framework or language.Those issues will not 
+appear when filtering by skill in the <a href="https://opensource.creativecommons.org/contributing-code/issue-finder/">Issue Finder</a>
+  </small>
+  </p>
+   
 </div>`,
   components: {
     VueSelect,
