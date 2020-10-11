@@ -32,7 +32,8 @@ In this meeting, all the engineers at CC meet to discuss past and future work.
 Any major engineering related discussions and ideas that affect the codebase or
 process in the entire engineering domain take place in this meeting. It's also a
 channel to know what is happening in a parallel project that you don't get to
-interact with as much.
+interact with as much. We have a Show & Tell, so if you did or made something
+recently that you think is interesting, you can present that.
 
 **Frequency:** fortnightly
 
@@ -41,7 +42,8 @@ interact with as much.
 In this meeting, the Vocabulary sprint planning meeting is where all members
 involved in Vocabulary meet. This is mainly held to determine reasonable
 milestones on what can be accomplished in the next two weeks and assign
-different tasks and tickets to different people.
+different tasks and tickets to different people. If you'd like to get involved
+with Vocabulary code you can pick up some tasks here.
 
 **Frequency:** fortnightly
 
@@ -49,7 +51,9 @@ different tasks and tickets to different people.
 
 In this meeting, we discuss changes regarding the designs of various products.
 It's mostly oriented around design and how our products are influenced by, and
-themselves influence, design decisions.
+themselves influence, design decisions. Our designer is also on the call so it's
+a good place to bring up anything you'd like to discuss related to the UI or UX
+of our products.
 
 **Frequency:** fortnightly
 
@@ -72,6 +76,15 @@ connect with us.
 
 Slack is organised by channels and, depending on your role, you will be invited
 to these channels to participate in discussions about certain topics.
+
+### Newbie channels
+
+There are a number of channels which budding open source developers join in
+hopes of finding like-minded developers. You should help them get started, clear
+simple doubts, introduce them to FOSS and make them feel welcome in our
+community. After all, the more the merrier!
+
+**Channel:** `#general`, `#cc-dev-internships`, `#cc-developers`
 
 ### Community team channel
 
@@ -186,11 +199,14 @@ Commons handle](https://twitter.com/creativecommons).
 ### Vote access
 
 You can see all the upcoming tweets from CC and suggest any possible
-improvements to the text or the material. You can suggest new topics for the
-tweets as well and bring attention to any interesting thing you might know or
-have recently discovered.
+improvements to the text or the material.
 
-### Write access
+## Suggest access
+
+You can suggest new topics for the tweets as well and bring attention to any
+interesting thing you might know or have recently discovered.
+
+### Compose access
 
 You get to write the tweets and post/schedule them from the official [CC Open
 Source Twitter handle](https://twitter.com/cc_opensource). You can interact with
