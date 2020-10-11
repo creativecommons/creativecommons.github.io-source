@@ -16,61 +16,77 @@ If you'd like to apply for one of these roles, please see the main [Community Te
 **Who should apply:** If you’ve contributed to a CC project, you should apply for this role.
 
 **What does this role give you?**
-* You’ll receive invites to the private CC Community Team Slack channel and email list.
 * You’ll receive previews of upcoming changes to the Community Team program.
 * You’ll be listed as [a member of the Community Team on CC Open Source](/community/community-team/members/).
 
+**How can you engage with the community?**  
+You can use the following channels to engage with the community:
+* [Read access](/community/community-team/engagement-channels/#read-access) on
+  the relevant repos on GitHub
+* [Community Team Slack channel](/community/community-team/engagement-channels/#community-team-channel)
+* [Community Team mailing list](/community/community-team/engagement-channels/#community-team-group)
+
 **Guidelines for Project Contributors**  
 If you’ve been accepted as a Project Contributor, you are encouraged to:
-* keep contributing to the project as and when you can.
+* keep contributing to the project as and when you can!
 * participate in discussions in Slack or via email.
-* review pull requests opened by other contributors.
+* contribute in other ways if you'd like, like [helping out newbie developers or voting on our tweets](/community/community-team/community-building-roles/).
 
 ## Project Collaborator
 **Who should apply:** If you’ve made a few significant contributions to the project (added new features, for example) and know the project’s overall codebase pretty well, you should apply.
 
 **What does this role give you?**
 * Everything a Project Contributor gets.
-* You’ll be added to the `creativecommons` GitHub organization and given [Triage](https://help.github.com/en/github/setting-up-and-managing-organizations-and-teams/repository-permission-levels-for-an-organization#repository-access-for-each-permission-level) permissions to the project repository.
-  * You’ll be able to assign people and change labels on GitHub issues associated with the project.
-* You’ll be added to the `CODEOWNERS` file for the project.
-  * This will allow your PR reviews to block merge.
-  * This will auto assign you PRs to review.
-* You’ll receive invites to some of CC’s internal meetings, Asana projects, and/or Slack channels.
-  * The specifics depend on the project.
 * Creative Commons staff will write you a letter of recommendation on request.
+
+**How can you engage with the community?**  
+In addition to the channels afforded to a Project Contributor, you can use the following channels to engage with the community:
+* [Triage access](/community/community-team/engagement-channels/#triage-access)
+  on the relevant repos on GitHub
+* Slack
+  * [Engineering channel](/community/community-team/engagement-channels/#engineering-channel)
+  * [UX design channel](/community/community-team/engagement-channels/#ux-design-channel) (depends on the project)
+  * [CC Search channel](/community/community-team/engagement-channels/#cc-search-channel) (depends on the project)
+* Meetings
+  * [Engineering meeting](/community/community-team/engagement-channels/#engineering-meeting)
+  * [Vocabulary sprint planning](/community/community-team/engagement-channels/#vocabulary-sprint-planning) (depends on the project)
+  * [Design and product sync](/community/community-team/engagement-channels/#design-and-product-sync) (depends on the project)
+  * [Game time](/community/community-team/engagement-channels/#game-time)
+* [Community Team: Core mailing list](/community/community-team/engagement-channels/#community-team-core-group)
 
 **Guidelines for Project Collaborators**  
 If you’ve been accepted as a Project Collaborator, you are encouraged to:
-* do everything a Project Contributor does
-* review and triage new issues
-  * ask the issue author for more details if appropriate
-  * check with the project maintainers if the issue makes sense
-  * update the labels on the issue appropriately once you have all the information you need (e.g. remove “awaiting triage” label)
+* do everything a Project Contributor does.
+* review and triage new issues.
+  * ask the issue author for more details if appropriate.
+  * check with the project maintainers if the issue makes sense.
+  * update the labels on the issue appropriately once you have all the information you need (e.g. remove “awaiting triage” label).
 * review assigned pull requests to unblock merges.
 * participate in discussions in the new meetings and channels you’ve been added to.
 * identify promising contributors to the project and invite them to join the Community Team.
 
-**Note**  
-The role of Project Member was deprecated in July 2020 and all members were redesignated as collaborators.
+**Note:** The role of Project Member was deprecated in July 2020 and all members were redesignated as collaborators.
 
 ## Project Core Committer
-**Who should apply:** If you’ve made many significant contributions to the project, know the codebase really well, and are interested in active maintenance of the project, you should apply. 
+**Who should apply:** If you’ve made many significant contributions to the project, know the codebase really well, and are interested in active maintenance of the project, you should apply.
 
 **What does this role give you?**
 * Everything a Project Collaborator gets.
-* You’ll be  given [Write]((https://help.github.com/en/github/setting-up-and-managing-organizations-and-teams/repository-permission-levels-for-an-organization#repository-access-for-each-permission-level) permissions to the project repository.
-  * This will allow you to merge PRs.
 * You’ll be eligible to mentor GSoC and Outreachy interns (and similar) for Creative Commons.
 * You'll receive CC swag.
 
+**How can you engage with the community?**  
+In addition to the channels afforded to a Project Collaborator, you can use the following channels to engage with the community:
+* [write access](/community/community-team/engagement-channels/#write-access)
+  on the relevant repos on GitHub
+
 **Guidelines for Project Core Committers**  
 If you’ve been accepted as a Project Core Committer, you are encouraged to:
-* do everything a Project Collaborator does
+* do everything a Project Collaborator does.
 * merge PRs that you are confident work well and fit the project guidelines.
   * if you have any doubts, please check with project maintainers first!
 * proactively ask about mentorship opportunities if that interests you.
-* recognize other contributions with  “Great Contribution” labels 
+* recognize other contributions with  “Great Contribution” labels
   * more details are available in the "Great Contribution" section in the Project Maintainer guidelines below.
 
 ## Project Maintainer
@@ -78,8 +94,12 @@ If you’ve been accepted as a Project Core Committer, you are encouraged to:
 
 **What does this role give you?**
 * Everything a Project Core Committer gets.
-* You’ll be  given [Maintain]((https://help.github.com/en/github/setting-up-and-managing-organizations-and-teams/repository-permission-levels-for-an-organization#repository-access-for-each-permission-level) permissions to the project repository.
   * This will allow you to manage some repository settings.
+
+**How can you engage with the community?**  
+In addition to the channels afforded to a Project Core Committer, you can use the following channels to engage with the community:
+* [maintain access](/community/community-team/engagement-channels/#maintain-access)
+  on the relevant repos on GitHub
 
 **Guidelines for Project Maintainers**  
 Being a Project Maintainer comes with a larger set of responsibilities and guidelines, documented below:
