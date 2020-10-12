@@ -581,6 +581,20 @@
             "url": "https://github.com/creativecommons/og-image-generator/issues/1"
         },
         {
+            "createdAt": 1600890142,
+            "labels": [
+                "help wanted",
+                "\u2728 goal: improvement",
+                "\ud83d\udcbb aspect: code",
+                "\ud83d\udfe9 priority: low"
+            ],
+            "number": 132,
+            "repo": "wp-plugin-creativecommons",
+            "title": "How to do/add translations?",
+            "updatedAt": 1602536237,
+            "url": "https://github.com/creativecommons/wp-plugin-creativecommons/issues/132"
+        },
+        {
             "createdAt": 1600744108,
             "labels": [
                 "Hacktoberfest",
