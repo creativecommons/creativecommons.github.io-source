@@ -1,4 +1,5 @@
 import VueSelect from 'vue-select';
+import {Octokit} from '@octokit/rest';
 
 import {hydrateAppWithData} from "./hydration";
 
@@ -40,7 +41,7 @@ export const IssueCard = {
   </h4>
   <p class="is-size-6">
     <a
-      :href="issue.url"
+      :href="issue.html_url"
       target="_blank">
       <span class="has-color-forest-green">
         {{ issue.repo }}#{{ issue.number }}
@@ -70,8 +71,7 @@ export const IssueCard = {
   },
   computed: {
     dateCreated() {
-      const dateCreated = new Date(this.issue.createdAt * 1000)
-      const [dateComponent,] = dateCreated.toISOString().split("T")
+      const [dateComponent,] = this.issue.created_at.split("T")
       return dateComponent
     }
   }
@@ -158,7 +158,7 @@ export const App = {
      * @returns {array} the array of filtered issues
      */
     filteredIssues() {
-      return window.issues.filter(issue => {
+      return this.issues.filter(issue => {
         // Check experience match
         if (this.filters.experience === 'beginner' && !issue.labels.includes('good first issue')) {
           return false
@@ -177,6 +177,20 @@ export const App = {
   mounted() {
     const BASE_URL = 'https://raw.githubusercontent.com/creativecommons/ccos-scripts/master/normalize_repos'
     const FILE_URL = name => `${BASE_URL}/${name}.json`
+
+    const octokit = new Octokit();
+    octokit.search.issuesAndPullRequests({
+      q: 'org:creativecommons is:open is:issue label:"help wanted"',
+      per_page: 100
+    }).then(res => {
+      this.issues = res.data.items
+      this.issues.forEach(issue => {
+        issue.labels = issue.labels.map(label => label.name)
+
+        const repoUrl = issue.repository_url
+        issue.repo = repoUrl.slice(repoUrl.lastIndexOf('/')+1)
+      })
+    })
 
     Promise
         .all([
