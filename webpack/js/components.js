@@ -111,6 +111,12 @@ export const App = {
           :reduce="experience => experience.code"
           :clearable="false"/>
       </form>
+      <p class="disclaimer">
+        *Not all issues have skills marked on them, especially if they are 
+        simple issues that do not require proficiency in any specific 
+        framework or language. Those issues will not appear when filtering by 
+        skill.
+      </p>
       <div v-else>
         Loading filters, please wait...
       </div>
@@ -129,13 +135,6 @@ export const App = {
       </p>
     </div>
   </div>
-  <p>
-  <small>
-Not all issues have skills marked on them, especially if they are simple issues that 
-do not require proficiency in any specific framework or language.Those issues will not 
-appear when filtering by skill in the <a href="https://opensource.creativecommons.org/contributing-code/issue-finder/">Issue Finder</a>
-  </small>
-  </p>
    
 </div>`,
   components: {
