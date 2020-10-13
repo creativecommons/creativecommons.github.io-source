@@ -85,7 +85,7 @@ export const App = {
     <div class="column is-one-quarter">
       <form id="filters" v-if="options.skills.length">
         <label for="skills">
-          <strong>*Skill set</strong><br/>
+          <strong>Skill set*</strong><br/>
           Choose up to three skills that you would like to see issues for.
         </label>
         <VueSelect
