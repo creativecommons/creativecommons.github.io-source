@@ -457,7 +457,7 @@
             "number": 1241,
             "repo": "cccatalog-frontend",
             "title": "Switch from `eslint-plugin-vue-a11y` to `eslint-plugin-vuejs-accessibility`",
-            "updatedAt": 1602697643,
+            "updatedAt": 1602704608,
             "url": "https://github.com/creativecommons/cccatalog-frontend/issues/1241"
         },
         {
@@ -690,7 +690,7 @@
             "number": 33,
             "repo": "licensebuttons",
             "title": "Deduplicate `/www/l`",
-            "updatedAt": 1601631569,
+            "updatedAt": 1602706852,
             "url": "https://github.com/creativecommons/licensebuttons/issues/33"
         },
         {
