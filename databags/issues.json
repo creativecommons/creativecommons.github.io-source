@@ -143,7 +143,7 @@
             "number": 382,
             "repo": "cccatalog",
             "title": "[API Integration] Scan the World",
-            "updatedAt": 1602683050,
+            "updatedAt": 1602845901,
             "url": "https://github.com/creativecommons/cccatalog/issues/382"
         },
         {
@@ -441,7 +441,7 @@
             "number": 726,
             "repo": "vocabulary",
             "title": "[RFC] npm 7 considerations",
-            "updatedAt": 1602707981,
+            "updatedAt": 1602820802,
             "url": "https://github.com/creativecommons/vocabulary/issues/726"
         },
         {
@@ -676,22 +676,6 @@
             "title": "Create smaller \"icon\" files",
             "updatedAt": 1600999216,
             "url": "https://github.com/creativecommons/licensebuttons/issues/34"
-        },
-        {
-            "createdAt": 1600465843,
-            "labels": [
-                "Hacktoberfest",
-                "help wanted",
-                "\u2728 goal: improvement",
-                "\ud83c\udfc1 status: ready for work",
-                "\ud83d\udcbb aspect: code",
-                "\ud83d\udfe9 priority: low"
-            ],
-            "number": 33,
-            "repo": "licensebuttons",
-            "title": "Deduplicate `/www/l`",
-            "updatedAt": 1602706852,
-            "url": "https://github.com/creativecommons/licensebuttons/issues/33"
         },
         {
             "createdAt": 1600463623,
