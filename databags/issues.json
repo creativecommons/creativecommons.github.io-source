@@ -399,21 +399,6 @@
             "url": "https://github.com/creativecommons/creativecommons.org/issues/940"
         },
         {
-            "createdAt": 1602697643,
-            "labels": [
-                "Hacktoberfest",
-                "accessibility (a11y)",
-                "good first issue",
-                "help wanted",
-                "\ud83d\udee0 goal: fix",
-                "\ud83d\udfe9 priority: low"
-            ],
-            "number": 1241,
-            "repo": "cccatalog-frontend",
-            "title": "Switch from `eslint-plugin-vue-a11y` to `eslint-plugin-vuejs-accessibility`",
-            "url": "https://github.com/creativecommons/cccatalog-frontend/issues/1241"
-        },
-        {
             "createdAt": 1602613476,
             "labels": [
                 "Hacktoberfest",
