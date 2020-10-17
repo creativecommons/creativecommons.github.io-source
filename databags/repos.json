@@ -93,11 +93,17 @@
         {
             "created": "2020-09-08T19:18:51",
             "description": "",
+            "engineering_project": true,
+            "english_name": "CC Licenses Data",
+            "featured": false,
             "id": 293905720,
             "language": "HTML",
             "license": null,
             "name": "cc-licenses-data",
             "slack": "",
+            "technologies": [
+                "HTML"
+            ],
             "url": "https://github.com/creativecommons/cc-licenses-data",
             "website": ""
         },
