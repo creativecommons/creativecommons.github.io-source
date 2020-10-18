@@ -949,6 +949,17 @@
             "website": "https://cc-vocabulary.netlify.app/"
         },
         {
+            "created": "2020-10-17T03:08:56",
+            "description": "",
+            "id": 304786415,
+            "language": null,
+            "license": null,
+            "name": "wp-plugin-cc-global-network",
+            "slack": "",
+            "url": "https://github.com/creativecommons/wp-plugin-cc-global-network",
+            "website": null
+        },
+        {
             "created": "2014-07-28T15:18:18",
             "description": "Official Creative Commons plugin for licensing your content. With Creative Commons licenses, keep your copyright AND share your creativity.",
             "engineering_project": true,
@@ -1022,6 +1033,17 @@
             "slack": "",
             "url": "https://github.com/creativecommons/wp-theme-cc-chapter",
             "website": ""
+        },
+        {
+            "created": "2020-10-17T03:06:36",
+            "description": "",
+            "id": 304786148,
+            "language": null,
+            "license": null,
+            "name": "wp-theme-cc-commoners",
+            "slack": "",
+            "url": "https://github.com/creativecommons/wp-theme-cc-commoners",
+            "website": null
         },
         {
             "created": "2019-04-15T13:36:51",
