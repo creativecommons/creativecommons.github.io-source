@@ -1,6 +1,30 @@
 {
     "issues": [
         {
+            "createdAt": 1595332167,
+            "labels": [
+                "Hacktoberfest",
+                "help wanted",
+                "\u2728 goal: improvement"
+            ],
+            "number": 351,
+            "repo": "creativecommons.github.io-source",
+            "title": "Update `Write a Blog Post` by adding excerpt suggestion.",
+            "url": "https://github.com/creativecommons/creativecommons.github.io-source/issues/351"
+        },
+        {
+            "createdAt": 1592589713,
+            "labels": [
+                "Hacktoberfest",
+                "help wanted",
+                "\ud83d\udee0 goal: fix"
+            ],
+            "number": 438,
+            "repo": "cccatalog",
+            "title": "[Bug] Non-image content is being stored in the image table",
+            "url": "https://github.com/creativecommons/cccatalog/issues/438"
+        },
+        {
             "createdAt": 1592252009,
             "labels": [
                 "Hacktoberfest",
@@ -11,7 +35,6 @@
             "number": 1125,
             "repo": "creativecommons.org",
             "title": "[Meta] Support \"main\" as a default branch name",
-            "updatedAt": 1601000230,
             "url": "https://github.com/creativecommons/creativecommons.org/issues/1125"
         },
         {
@@ -27,7 +50,6 @@
             "number": 48,
             "repo": "ccos-scripts",
             "title": "Also support \"main\" as default branch for repo normalization",
-            "updatedAt": 1601973018,
             "url": "https://github.com/creativecommons/ccos-scripts/issues/48"
         },
         {
@@ -42,7 +64,6 @@
             "number": 424,
             "repo": "cccatalog",
             "title": "[Provider Review] Digitalt Museum (Norwegian documentation)",
-            "updatedAt": 1601907372,
             "url": "https://github.com/creativecommons/cccatalog/issues/424"
         },
         {
@@ -58,7 +79,6 @@
             "number": 423,
             "repo": "cccatalog",
             "title": "[API Integration] Natural History Museum (UK)",
-            "updatedAt": 1601973422,
             "url": "https://github.com/creativecommons/cccatalog/issues/423"
         },
         {
@@ -73,7 +93,6 @@
             "number": 422,
             "repo": "cccatalog",
             "title": "[API Integration] Paris Mus\u00e9es (French documentation)",
-            "updatedAt": 1601000095,
             "url": "https://github.com/creativecommons/cccatalog/issues/422"
         },
         {
@@ -88,7 +107,6 @@
             "number": 396,
             "repo": "cccatalog",
             "title": "[API Integration] Iconfinder",
-            "updatedAt": 1601000090,
             "url": "https://github.com/creativecommons/cccatalog/issues/396"
         },
         {
@@ -102,7 +120,6 @@
             "number": 249,
             "repo": "creativecommons.github.io-source",
             "title": "Allow support for historical project ideas",
-            "updatedAt": 1601000084,
             "url": "https://github.com/creativecommons/creativecommons.github.io-source/issues/249"
         },
         {
@@ -117,7 +134,6 @@
             "number": 382,
             "repo": "cccatalog",
             "title": "[API Integration] Scan the World",
-            "updatedAt": 1601000077,
             "url": "https://github.com/creativecommons/cccatalog/issues/382"
         },
         {
@@ -129,7 +145,6 @@
             "number": 108,
             "repo": "wp-plugin-creativecommons",
             "title": "Remove outdated language files",
-            "updatedAt": 1601305886,
             "url": "https://github.com/creativecommons/wp-plugin-creativecommons/issues/108"
         },
         {
@@ -145,7 +160,6 @@
             "number": 332,
             "repo": "vocabulary",
             "title": "Figure a way to get diffs for failing snapshots from GitHub CI",
-            "updatedAt": 1601000065,
             "url": "https://github.com/creativecommons/vocabulary/issues/332"
         },
         {
@@ -161,7 +175,6 @@
             "number": 330,
             "repo": "vocabulary",
             "title": "Fix broken tests and re-enable them",
-            "updatedAt": 1601000061,
             "url": "https://github.com/creativecommons/vocabulary/issues/330"
         },
         {
@@ -177,7 +190,6 @@
             "number": 367,
             "repo": "cccatalog",
             "title": "[API Integration] Images of Empowerment",
-            "updatedAt": 1601000057,
             "url": "https://github.com/creativecommons/cccatalog/issues/367"
         },
         {
@@ -193,21 +205,7 @@
             "number": 68,
             "repo": "cc-link-checker",
             "title": "Check plaintext legalcode URLs",
-            "updatedAt": 1601000052,
             "url": "https://github.com/creativecommons/cc-link-checker/issues/68"
-        },
-        {
-            "createdAt": 1586444073,
-            "labels": [
-                "Hacktoberfest",
-                "good first issue",
-                "help wanted"
-            ],
-            "number": 362,
-            "repo": "cccatalog",
-            "title": "[Quality] Split dependencies into prod and dev, handle them better in general",
-            "updatedAt": 1601973251,
-            "url": "https://github.com/creativecommons/cccatalog/issues/362"
         },
         {
             "createdAt": 1584107219,
@@ -220,7 +218,6 @@
             "number": 326,
             "repo": "cccatalog",
             "title": "[Bug] Flickr Provider API Script doesn't retrieve all unique items for a given day",
-            "updatedAt": 1601000039,
             "url": "https://github.com/creativecommons/cccatalog/issues/326"
         },
         {
@@ -234,22 +231,7 @@
             "number": 124,
             "repo": "chooser",
             "title": "Add unit and e2e tests for the App component",
-            "updatedAt": 1601000023,
             "url": "https://github.com/creativecommons/chooser/issues/124"
-        },
-        {
-            "createdAt": 1583378974,
-            "labels": [
-                "Hacktoberfest",
-                "good first issue",
-                "help wanted",
-                "test-coverage"
-            ],
-            "number": 123,
-            "repo": "chooser",
-            "title": "Add unit and e2e tests for the Step component",
-            "updatedAt": 1601000019,
-            "url": "https://github.com/creativecommons/chooser/issues/123"
         },
         {
             "createdAt": 1583378854,
@@ -262,7 +244,6 @@
             "number": 122,
             "repo": "chooser",
             "title": "Add unit and e2e tests for the LicenseCopy component",
-            "updatedAt": 1601000012,
             "url": "https://github.com/creativecommons/chooser/issues/122"
         },
         {
@@ -276,7 +257,6 @@
             "number": 121,
             "repo": "chooser",
             "title": "Add unit and e2e tests for the LicenseUseCard component",
-            "updatedAt": 1601000008,
             "url": "https://github.com/creativecommons/chooser/issues/121"
         },
         {
@@ -290,7 +270,6 @@
             "number": 120,
             "repo": "chooser",
             "title": "Add unit and e2e tests for the LicenseDropdown component",
-            "updatedAt": 1601000001,
             "url": "https://github.com/creativecommons/chooser/issues/120"
         },
         {
@@ -305,7 +284,6 @@
             "number": 299,
             "repo": "cccatalog",
             "title": "[API Integration] EOL",
-            "updatedAt": 1601000272,
             "url": "https://github.com/creativecommons/cccatalog/issues/299"
         },
         {
@@ -319,7 +297,6 @@
             "number": 280,
             "repo": "cccatalog",
             "title": "[API Integration] Auckland Museum ",
-            "updatedAt": 1601000278,
             "url": "https://github.com/creativecommons/cccatalog/issues/280"
         },
         {
@@ -333,7 +310,6 @@
             "number": 159,
             "repo": "creativecommons.github.io-source",
             "title": "Move information about old GSoC projects to CC Open Source ",
-            "updatedAt": 1601490653,
             "url": "https://github.com/creativecommons/creativecommons.github.io-source/issues/159"
         },
         {
@@ -346,7 +322,6 @@
             "number": 405,
             "repo": "cccatalog-api",
             "title": "Document error schemas",
-            "updatedAt": 1601000312,
             "url": "https://github.com/creativecommons/cccatalog-api/issues/405"
         },
         {
@@ -359,7 +334,6 @@
             "number": 402,
             "repo": "cccatalog-api",
             "title": "Automatically clean up after failed indexing runs",
-            "updatedAt": 1601972072,
             "url": "https://github.com/creativecommons/cccatalog-api/issues/402"
         },
         {
@@ -374,7 +348,6 @@
             "number": 231,
             "repo": "cccatalog",
             "title": "[API Integration] Internet Archive",
-            "updatedAt": 1601000320,
             "url": "https://github.com/creativecommons/cccatalog/issues/231"
         },
         {
@@ -388,7 +361,6 @@
             "number": 91,
             "repo": "wp-plugin-creativecommons",
             "title": "image being loaded in network",
-            "updatedAt": 1601000324,
             "url": "https://github.com/creativecommons/wp-plugin-creativecommons/issues/91"
         },
         {
@@ -401,7 +373,6 @@
             "number": 368,
             "repo": "cccatalog-api",
             "title": "Create a /license endpoint",
-            "updatedAt": 1601055890,
             "url": "https://github.com/creativecommons/cccatalog-api/issues/368"
         },
         {
@@ -414,7 +385,6 @@
             "number": 25,
             "repo": "wp-theme-cc-chapter",
             "title": "Create two README files",
-            "updatedAt": 1601000341,
             "url": "https://github.com/creativecommons/wp-theme-cc-chapter/issues/25"
         },
         {
@@ -426,25 +396,54 @@
             "number": 940,
             "repo": "creativecommons.org",
             "title": "Use HTTPS links for the license chooser",
-            "updatedAt": 1601000348,
             "url": "https://github.com/creativecommons/creativecommons.org/issues/940"
         },
         {
-            "createdAt": 1601642945,
+            "createdAt": 1602613476,
             "labels": [
                 "Hacktoberfest",
                 "good first issue",
                 "help wanted",
-                "\ud83c\udfc1 status: ready for work",
+                "\u2728 goal: improvement",
                 "\ud83d\udcbb aspect: code",
-                "\ud83d\udee0 goal: fix",
+                "\ud83d\udd79 aspect: interface",
                 "\ud83d\udfe8 priority: medium"
             ],
-            "number": 509,
-            "repo": "cccatalog",
-            "title": "[Bug] JSONColumn class should not enforce ASCII charset",
-            "updatedAt": 1601651177,
-            "url": "https://github.com/creativecommons/cccatalog/issues/509"
+            "number": 12,
+            "repo": "og-image-generator",
+            "title": "Image backgrounds",
+            "url": "https://github.com/creativecommons/og-image-generator/issues/12"
+        },
+        {
+            "createdAt": 1602612324,
+            "labels": [
+                "Hacktoberfest",
+                "good first issue",
+                "help wanted",
+                "\u2728 goal: improvement",
+                "\ud83d\udcbb aspect: code",
+                "\ud83d\udd79 aspect: interface",
+                "\ud83d\udfe7 priority: high"
+            ],
+            "number": 11,
+            "repo": "og-image-generator",
+            "title": "Use correct fonts",
+            "url": "https://github.com/creativecommons/og-image-generator/issues/11"
+        },
+        {
+            "createdAt": 1601916855,
+            "labels": [
+                "help wanted",
+                "\ud83d\udcac talk: discussion",
+                "\ud83d\udcbb aspect: code",
+                "\ud83d\udcc4 aspect: text",
+                "\ud83d\udfe7 priority: high",
+                "\ud83e\uddf9 status: ticket work required"
+            ],
+            "number": 635,
+            "repo": "cccatalog-api",
+            "title": "Research for Audio APIs",
+            "url": "https://github.com/creativecommons/cccatalog-api/issues/635"
         },
         {
             "createdAt": 1601577112,
@@ -459,7 +458,6 @@
             "number": 699,
             "repo": "vocabulary",
             "title": "Implement dark mode for our storybooks",
-            "updatedAt": 1601840512,
             "url": "https://github.com/creativecommons/vocabulary/issues/699"
         },
         {
@@ -473,7 +471,6 @@
             "number": 292,
             "repo": "ccsearch-browser-extension",
             "title": "Add license explanation tool tip in the filter section",
-            "updatedAt": 1601793274,
             "url": "https://github.com/creativecommons/ccsearch-browser-extension/issues/292"
         },
         {
@@ -493,43 +490,7 @@
             "number": 689,
             "repo": "vocabulary",
             "title": "[Vue] Footer Component",
-            "updatedAt": 1601963817,
             "url": "https://github.com/creativecommons/vocabulary/issues/689"
-        },
-        {
-            "createdAt": 1601053224,
-            "labels": [
-                "Hacktoberfest",
-                "good first issue",
-                "help wanted",
-                "\u2728 goal: improvement",
-                "\ud83c\udfc1 status: ready for work",
-                "\ud83d\udcc4 aspect: text",
-                "\ud83d\udd79 aspect: interface",
-                "\ud83d\udfe8 priority: medium"
-            ],
-            "number": 518,
-            "repo": "creativecommons.github.io-source",
-            "title": "Add disclaimer on the skill filter in the issue finder",
-            "updatedAt": 1601054405,
-            "url": "https://github.com/creativecommons/creativecommons.github.io-source/issues/518"
-        },
-        {
-            "createdAt": 1601046285,
-            "labels": [
-                "Hacktoberfest",
-                "good first issue",
-                "help wanted",
-                "\ud83c\udfc1 status: ready for work",
-                "\ud83d\udcbb aspect: code",
-                "\ud83d\udee0 goal: fix",
-                "\ud83d\udfe9 priority: low"
-            ],
-            "number": 4,
-            "repo": "cc-licenses-data",
-            "title": "The repository does not contain a CC metadata file",
-            "updatedAt": 1601638639,
-            "url": "https://github.com/creativecommons/cc-licenses-data/issues/4"
         },
         {
             "createdAt": 1601003812,
@@ -546,7 +507,6 @@
             "number": 85,
             "repo": "ccos-scripts",
             "title": "Increase readability of label data files",
-            "updatedAt": 1601043061,
             "url": "https://github.com/creativecommons/ccos-scripts/issues/85"
         },
         {
@@ -561,23 +521,7 @@
             "number": 1224,
             "repo": "cccatalog-frontend",
             "title": "Bug with runs of e2e test suite",
-            "updatedAt": 1601924758,
             "url": "https://github.com/creativecommons/cccatalog-frontend/issues/1224"
-        },
-        {
-            "createdAt": 1600926472,
-            "labels": [
-                "Hacktoberfest",
-                "help wanted",
-                "\ud83d\udcbb aspect: code",
-                "\ud83d\udee0 goal: fix",
-                "\ud83d\udfe7 priority: high"
-            ],
-            "number": 2,
-            "repo": "og-image-generator",
-            "title": "Fix dark mode",
-            "updatedAt": 1601942170,
-            "url": "https://github.com/creativecommons/og-image-generator/issues/2"
         },
         {
             "createdAt": 1600925457,
@@ -594,8 +538,20 @@
             "number": 1,
             "repo": "og-image-generator",
             "title": "Migrate from `Vercel` to `Netlify`",
-            "updatedAt": 1601918683,
             "url": "https://github.com/creativecommons/og-image-generator/issues/1"
+        },
+        {
+            "createdAt": 1600890142,
+            "labels": [
+                "help wanted",
+                "\u2728 goal: improvement",
+                "\ud83d\udcbb aspect: code",
+                "\ud83d\udfe9 priority: low"
+            ],
+            "number": 132,
+            "repo": "wp-plugin-creativecommons",
+            "title": "How to do/add translations?",
+            "url": "https://github.com/creativecommons/wp-plugin-creativecommons/issues/132"
         },
         {
             "createdAt": 1600744108,
@@ -612,7 +568,6 @@
             "number": 679,
             "repo": "vocabulary",
             "title": "SVG icons pack for Fonts",
-            "updatedAt": 1601084764,
             "url": "https://github.com/creativecommons/vocabulary/issues/679"
         },
         {
@@ -629,24 +584,7 @@
             "number": 34,
             "repo": "licensebuttons",
             "title": "Create smaller \"icon\" files",
-            "updatedAt": 1600999216,
             "url": "https://github.com/creativecommons/licensebuttons/issues/34"
-        },
-        {
-            "createdAt": 1600465843,
-            "labels": [
-                "Hacktoberfest",
-                "help wanted",
-                "\u2728 goal: improvement",
-                "\ud83c\udfc1 status: ready for work",
-                "\ud83d\udcbb aspect: code",
-                "\ud83d\udfe9 priority: low"
-            ],
-            "number": 33,
-            "repo": "licensebuttons",
-            "title": "Deduplicate `/www/l`",
-            "updatedAt": 1601631569,
-            "url": "https://github.com/creativecommons/licensebuttons/issues/33"
         },
         {
             "createdAt": 1600463623,
@@ -661,24 +599,7 @@
             "number": 32,
             "repo": "licensebuttons",
             "title": "Document scripts/cc/image_tools/imgsplat.py",
-            "updatedAt": 1601038933,
             "url": "https://github.com/creativecommons/licensebuttons/issues/32"
-        },
-        {
-            "createdAt": 1599767168,
-            "labels": [
-                "Hacktoberfest",
-                "good first issue",
-                "help wanted",
-                "\u2728 goal: improvement",
-                "\ud83d\udfe9 priority: low",
-                "\ud83e\udd16 aspect: dx"
-            ],
-            "number": 653,
-            "repo": "vocabulary",
-            "title": "Switch dependabot PRs to monthly cycle",
-            "updatedAt": 1601965984,
-            "url": "https://github.com/creativecommons/vocabulary/issues/653"
         },
         {
             "createdAt": 1599677786,
@@ -694,7 +615,6 @@
             "number": 615,
             "repo": "cccatalog-api",
             "title": "Invalid sources should be ignored instead of a fatal 400 error",
-            "updatedAt": 1600999843,
             "url": "https://github.com/creativecommons/cccatalog-api/issues/615"
         },
         {
@@ -711,7 +631,6 @@
             "number": 642,
             "repo": "vocabulary",
             "title": "[Vue] Header Component and general component style discussion",
-            "updatedAt": 1601916544,
             "url": "https://github.com/creativecommons/vocabulary/issues/642"
         },
         {
@@ -728,7 +647,6 @@
             "number": 492,
             "repo": "cccatalog",
             "title": "[API Integration] Free SVG",
-            "updatedAt": 1600999877,
             "url": "https://github.com/creativecommons/cccatalog/issues/492"
         },
         {
@@ -742,7 +660,6 @@
             "number": 490,
             "repo": "creativecommons.github.io-source",
             "title": "Responsiveness Design Bug",
-            "updatedAt": 1601903552,
             "url": "https://github.com/creativecommons/creativecommons.github.io-source/issues/490"
         },
         {
@@ -757,7 +674,6 @@
             "number": 620,
             "repo": "vocabulary",
             "title": "Update the header component",
-            "updatedAt": 1601916568,
             "url": "https://github.com/creativecommons/vocabulary/issues/620"
         },
         {
@@ -771,7 +687,6 @@
             "number": 619,
             "repo": "vocabulary",
             "title": "Grid/Page Layout Documentation",
-            "updatedAt": 1600999539,
             "url": "https://github.com/creativecommons/vocabulary/issues/619"
         },
         {
@@ -785,7 +700,6 @@
             "number": 72,
             "repo": "mp",
             "title": "Text on buttons overflows",
-            "updatedAt": 1600999533,
             "url": "https://github.com/creativecommons/mp/issues/72"
         },
         {
@@ -798,7 +712,6 @@
             "number": 73,
             "repo": "caselaw",
             "title": "Replace Vocabulary CDN",
-            "updatedAt": 1600999344,
             "url": "https://github.com/creativecommons/caselaw/issues/73"
         },
         {
@@ -813,7 +726,6 @@
             "number": 63,
             "repo": "ccos-scripts",
             "title": "Improvements to logging",
-            "updatedAt": 1601413927,
             "url": "https://github.com/creativecommons/ccos-scripts/issues/63"
         },
         {
@@ -828,21 +740,7 @@
             "number": 60,
             "repo": "ccos-scripts",
             "title": "Code organisation can be improved",
-            "updatedAt": 1601578230,
             "url": "https://github.com/creativecommons/ccos-scripts/issues/60"
-        },
-        {
-            "createdAt": 1597001263,
-            "labels": [
-                "Hacktoberfest",
-                "good first issue",
-                "help wanted"
-            ],
-            "number": 126,
-            "repo": "wp-plugin-creativecommons",
-            "title": "Add loading=\"lazy\" to the image tags",
-            "updatedAt": 1600999326,
-            "url": "https://github.com/creativecommons/wp-plugin-creativecommons/issues/126"
         },
         {
             "createdAt": 1596741568,
@@ -855,7 +753,6 @@
             "number": 583,
             "repo": "cccatalog-api",
             "title": "Invalidate filter cache after updates to content provider table",
-            "updatedAt": 1601086515,
             "url": "https://github.com/creativecommons/cccatalog-api/issues/583"
         },
         {
@@ -867,50 +764,7 @@
             "number": 125,
             "repo": "wp-plugin-creativecommons",
             "title": "Prep for WordPress 5.5",
-            "updatedAt": 1600999315,
             "url": "https://github.com/creativecommons/wp-plugin-creativecommons/issues/125"
-        },
-        {
-            "createdAt": 1595332167,
-            "labels": [
-                "Hacktoberfest",
-                "help wanted",
-                "\u2728 goal: improvement"
-            ],
-            "number": 351,
-            "repo": "creativecommons.github.io-source",
-            "title": "Update `Write a Blog Post` by adding excerpt suggestion.",
-            "updatedAt": 1601000240,
-            "url": "https://github.com/creativecommons/creativecommons.github.io-source/issues/351"
-        },
-        {
-            "createdAt": 1592589713,
-            "labels": [
-                "Hacktoberfest",
-                "help wanted",
-                "\ud83d\udee0 goal: fix"
-            ],
-            "number": 438,
-            "repo": "cccatalog",
-            "title": "[Bug] Non-image content is being stored in the image table",
-            "updatedAt": 1601000235,
-            "url": "https://github.com/creativecommons/cccatalog/issues/438"
-        },
-        {
-            "createdAt": 1601916855,
-            "labels": [
-                "help wanted",
-                "\ud83d\udcac talk: discussion",
-                "\ud83d\udcbb aspect: code",
-                "\ud83d\udcc4 aspect: text",
-                "\ud83d\udfe7 priority: high",
-                "\ud83e\uddf9 status: ticket work required"
-            ],
-            "number": 635,
-            "repo": "cccatalog-api",
-            "title": "Research for Audio APIs",
-            "updatedAt": 1601916855,
-            "url": "https://github.com/creativecommons/cccatalog-api/issues/635"
         }
     ]
 }

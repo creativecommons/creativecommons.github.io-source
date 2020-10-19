@@ -93,13 +93,19 @@
         {
             "created": "2020-09-08T19:18:51",
             "description": "",
+            "engineering_project": true,
+            "english_name": "CC Licenses Data",
+            "featured": false,
             "id": 293905720,
-            "language": "JavaScript",
+            "language": "HTML",
             "license": null,
             "name": "cc-licenses-data",
             "slack": "",
+            "technologies": [
+                "HTML"
+            ],
             "url": "https://github.com/creativecommons/cc-licenses-data",
-            "website": null
+            "website": ""
         },
         {
             "created": "2019-06-12T18:15:54",
@@ -119,7 +125,7 @@
                 "Python"
             ],
             "url": "https://github.com/creativecommons/cc-link-checker",
-            "website": null
+            "website": ""
         },
         {
             "created": "2014-01-08T18:49:45",
@@ -304,7 +310,7 @@
             "english_name": "CC Search",
             "featured": true,
             "id": 139915408,
-            "language": "JavaScript",
+            "language": "Vue",
             "license": {
                 "name": "MIT License",
                 "url": "https://github.com/creativecommons/cccatalog-frontend/blob/develop/LICENSE"
@@ -368,7 +374,7 @@
                 "Python"
             ],
             "url": "https://github.com/creativecommons/ccos-scripts",
-            "website": null
+            "website": ""
         },
         {
             "created": "2013-10-24T00:12:36",
@@ -943,6 +949,17 @@
             "website": "https://cc-vocabulary.netlify.app/"
         },
         {
+            "created": "2020-10-17T03:08:56",
+            "description": "",
+            "id": 304786415,
+            "language": null,
+            "license": null,
+            "name": "wp-plugin-cc-global-network",
+            "slack": "",
+            "url": "https://github.com/creativecommons/wp-plugin-cc-global-network",
+            "website": null
+        },
+        {
             "created": "2014-07-28T15:18:18",
             "description": "Official Creative Commons plugin for licensing your content. With Creative Commons licenses, keep your copyright AND share your creativity.",
             "engineering_project": true,
@@ -1016,6 +1033,17 @@
             "slack": "",
             "url": "https://github.com/creativecommons/wp-theme-cc-chapter",
             "website": ""
+        },
+        {
+            "created": "2020-10-17T03:06:36",
+            "description": "",
+            "id": 304786148,
+            "language": null,
+            "license": null,
+            "name": "wp-theme-cc-commoners",
+            "slack": "",
+            "url": "https://github.com/creativecommons/wp-theme-cc-commoners",
+            "website": null
         },
         {
             "created": "2019-04-15T13:36:51",
