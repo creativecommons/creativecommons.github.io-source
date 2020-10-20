@@ -1038,8 +1038,11 @@
             "created": "2020-10-17T03:06:36",
             "description": "",
             "id": 304786148,
-            "language": null,
-            "license": null,
+            "language": "PHP",
+            "license": {
+                "name": "MIT License",
+                "url": "https://github.com/creativecommons/wp-theme-cc-commoners/blob/main/LICENSE"
+            },
             "name": "wp-theme-cc-commoners",
             "slack": "",
             "url": "https://github.com/creativecommons/wp-theme-cc-commoners",
