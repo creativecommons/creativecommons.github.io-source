@@ -399,6 +399,24 @@
             "url": "https://github.com/creativecommons/creativecommons.org/issues/940"
         },
         {
+            "createdAt": 1603189266,
+            "labels": [
+                "Hacktoberfest",
+                "good first issue",
+                "help wanted",
+                "\u2728 goal: improvement",
+                "\ud83c\udfc1 status: ready for work",
+                "\ud83d\udcaa skill: javascript/storybook",
+                "\ud83d\udcbb aspect: code",
+                "\ud83d\udd79 aspect: interface",
+                "\ud83d\udfe8 priority: medium"
+            ],
+            "number": 738,
+            "repo": "vocabulary",
+            "title": "Need of a11y test for the components.",
+            "url": "https://github.com/creativecommons/vocabulary/issues/738"
+        },
+        {
             "createdAt": 1602613476,
             "labels": [
                 "Hacktoberfest",
