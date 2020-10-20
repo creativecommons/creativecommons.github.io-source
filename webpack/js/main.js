@@ -33,60 +33,43 @@ $(document).ready(function () {
     }
   });
 
-  $(window).scroll(function () {
-    // Get container scroll position
-    var fromTop = $(this).scrollTop() + topMenuHeight;
+  // Internal Navigation for table of contents and table of progress component
+  let hash = window.location.hash;
+  if (hash.length > 0) {
+    $('.menu-list').find('a[href=\"' + hash + '\"]').addClass('is-active');
+    $('.step').find('a[href=\"' + hash + '\"]').find('.number').addClass('is-active');
+  }
 
-    // Get id of current scroll item
-    var cur = scrollItems.map(function () {
-      if ($(this).offset().top < fromTop)
-        return this;
-    });
-    // Get the id of the current element
-    cur = cur[cur.length - 1];
-    var id = cur && cur.length ? cur[0].id : "";
+  $(window).on('hashchange', function () {
+    let hash = window.location.hash;
+    $('.menu-list a[href*="#"]').closest('a').removeClass('is-active');
+    $('.menu-list').find('a[href=\"' + hash + '\"]').addClass('is-active');
 
-    console.log(window.location.pathname);
-    if (lastId !== id) {
-      lastId = id;
-      // Set/remove active class
-      id = '#' + id;
-      $('.menu-list a[href*="#"]').closest('a').removeClass('is-active');
-      $('.menu-list').find('a[href=\"' + id + '\"]').addClass("is-active");
-      $('.step a[href*="#"]').closest('a').find('.number').removeClass('is-active');
-      $('.step').find('a[href=\"' + id + '\"]').find('.number').addClass('is-active');
-    }
+    $('.step a[href*="#"]').closest('a').find('.number').removeClass('is-active');
+    $('.step').find('a[href=\"' + hash + '\"]').find('.number').addClass('is-active');
   });
 
-  // Cache selectors
-  var lastId
+  (function () {
+    const options = {
+      threshold: [0.5]
+    };
 
-  if(window.location.pathname == '/cc-search/contribution-guide/')
-    var topMenu = $(".step")
-  else
-    topMenu = $(".menu-list")
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach((entry => {
+        if (entry.intersectionRatio >= 0.5) {
+          setCurrent(entry.target);
+        }
+      }));
+    }, options);
 
-  var topMenuHeight = topMenu.outerHeight() + 1,
-    // All list items
-    menuItems = topMenu.find('a[href*="#"]'),
-    // Anchors corresponding to menu items
-    scrollItems = menuItems.map(function () {
-      var item = $($(this).attr("href"));
-      if (item.length) {
-        return item;
-      }
-    });
+    const setCurrent = (section) => {
+      document.querySelectorAll('.is-active').forEach((el) => el.classList.remove('is-active'));
+      document.querySelector(`.menu-list a[href="#${section.id}"]`).classList.add('is-active');
+    };
 
-  // Bind click handler to menu items
-  // so we can get a fancy scroll animation
-  menuItems.click(function (e) {
-    var href = $(this).attr("href"),
-      offsetTop = href === "#" ? 0 : $(href).offset().top - topMenuHeight + 1;
-    $('html, body').stop().animate({
-      scrollTop: offsetTop
-    }, 850);
-    e.preventDefault();
-  });
+    const sections = document.querySelectorAll('h2,h3,h4');
+    sections.forEach((section) => observer.observe(section));
+  })();
 });
 
 const getFullyQualifiedUrl = (path, version) => {
