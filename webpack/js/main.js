@@ -64,7 +64,11 @@ $(document).ready(function () {
 
     const setCurrent = (section) => {
       document.querySelectorAll('.is-active').forEach((el) => el.classList.remove('is-active'));
-      document.querySelector(`.menu-list a[href="#${section.id}"]`).classList.add('is-active');
+      if(window.location.pathname == '/cc-search/contribution-guide/') {
+        document.querySelector(`.step a[href="#${section.id}"] .number`).classList.add('is-active');
+      } else {
+        document.querySelector(`.menu-list a[href="#${section.id}"]`).classList.add('is-active');
+      }
     };
 
     const sections = document.querySelectorAll('h2,h3,h4');
