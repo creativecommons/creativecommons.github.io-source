@@ -1,6 +1,17 @@
 {
     "issues": [
         {
+            "createdAt": 1596472063,
+            "labels": [
+                "Hacktoberfest",
+                "help wanted"
+            ],
+            "number": 125,
+            "repo": "wp-plugin-creativecommons",
+            "title": "Prep for WordPress 5.5",
+            "url": "https://github.com/creativecommons/wp-plugin-creativecommons/issues/125"
+        },
+        {
             "createdAt": 1595332167,
             "labels": [
                 "Hacktoberfest",
@@ -219,19 +230,6 @@
             "repo": "cccatalog",
             "title": "[Bug] Flickr Provider API Script doesn't retrieve all unique items for a given day",
             "url": "https://github.com/creativecommons/cccatalog/issues/326"
-        },
-        {
-            "createdAt": 1583379012,
-            "labels": [
-                "Hacktoberfest",
-                "good first issue",
-                "help wanted",
-                "test-coverage"
-            ],
-            "number": 124,
-            "repo": "chooser",
-            "title": "Add unit and e2e tests for the App component",
-            "url": "https://github.com/creativecommons/chooser/issues/124"
         },
         {
             "createdAt": 1583378854,
@@ -772,17 +770,6 @@
             "repo": "cccatalog-api",
             "title": "Invalidate filter cache after updates to content provider table",
             "url": "https://github.com/creativecommons/cccatalog-api/issues/583"
-        },
-        {
-            "createdAt": 1596472063,
-            "labels": [
-                "Hacktoberfest",
-                "help wanted"
-            ],
-            "number": 125,
-            "repo": "wp-plugin-creativecommons",
-            "title": "Prep for WordPress 5.5",
-            "url": "https://github.com/creativecommons/wp-plugin-creativecommons/issues/125"
         }
     ]
 }
