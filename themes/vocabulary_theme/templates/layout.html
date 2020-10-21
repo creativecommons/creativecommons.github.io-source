@@ -70,7 +70,7 @@
           <a class="navbar-item {% if this.is_child_of('/blog') %} is-active{% endif%}" href="{{ '/blog'|url }}">
             Blog
           </a>
-          <div class="navbar-item has-dropdown is-hoverable">
+          <div class="navbar-item has-dropdown is-hoverable" tabindex="0">
             <a class="navbar-link is-arrowless {% if this.is_child_of('/contributing-code') %} is-active{% endif%}">
               Contribute<i class="icon caret-down"></i></a>
             <div class="navbar-dropdown">
@@ -88,7 +88,7 @@
               {% endfor %}
             </div>
           </div>
-          <div class="navbar-item has-dropdown is-hoverable">
+          <div class="navbar-item has-dropdown is-hoverable" tabindex="0">
             <a class="navbar-link is-arrowless {% if this.is_child_of('/community') %} is-active{% endif%}">
               Community<i class="icon caret-down"></i></a>
             <div class="navbar-dropdown is-active">
@@ -106,7 +106,7 @@
               {% endfor %}
             </div>
           </div>
-          <div class="navbar-item has-dropdown is-hoverable">
+          <div class="navbar-item has-dropdown is-hoverable" tabindex="0">
             <a class="navbar-link is-arrowless {% if this.is_child_of('/internships') %} is-active{% endif%}">
               Internships<i class="icon caret-down"></i></a>
             <div class="navbar-dropdown">
@@ -122,7 +122,7 @@
               {% endfor %}
             </div>
           </div>
-          <div class="navbar-item has-dropdown is-hoverable">
+          <div class="navbar-item has-dropdown is-hoverable" tabindex="0">
             <a class="navbar-link is-arrowless {% if this.is_child_of('/cc-search') %} is-active{% endif%}">
               CC Search<i class="icon caret-down"></i></a>
             <div class="navbar-dropdown">
