@@ -11,7 +11,7 @@ author: rczajka
 pub_date: 2020-10-01
 ---
 body:
-As a part of [Centrum Cyfrowe](https://centrumcyfrowe.pl)'s [#NoWorries]() project funded by EUIPO, 
+As a part of [Centrum Cyfrowe](https://centrumcyfrowe.pl)'s [#NoWorries project](https://otwartakultura.org/noworries/) funded by EUIPO, 
 I have had the pleasure of enhancing the Creative Commons Wordpress plugin. 
 The new version of CC's Wordpress plugin has a feature called
 “attribution information for images”. It works like this:

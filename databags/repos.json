@@ -93,13 +93,19 @@
         {
             "created": "2020-09-08T19:18:51",
             "description": "",
+            "engineering_project": true,
+            "english_name": "CC Licenses Data",
+            "featured": false,
             "id": 293905720,
             "language": "HTML",
             "license": null,
             "name": "cc-licenses-data",
             "slack": "",
+            "technologies": [
+                "HTML"
+            ],
             "url": "https://github.com/creativecommons/cc-licenses-data",
-            "website": null
+            "website": ""
         },
         {
             "created": "2019-06-12T18:15:54",
@@ -119,7 +125,7 @@
                 "Python"
             ],
             "url": "https://github.com/creativecommons/cc-link-checker",
-            "website": null
+            "website": ""
         },
         {
             "created": "2014-01-08T18:49:45",
@@ -304,7 +310,7 @@
             "english_name": "CC Search",
             "featured": true,
             "id": 139915408,
-            "language": "JavaScript",
+            "language": "Vue",
             "license": {
                 "name": "MIT License",
                 "url": "https://github.com/creativecommons/cccatalog-frontend/blob/develop/LICENSE"
@@ -368,7 +374,7 @@
                 "Python"
             ],
             "url": "https://github.com/creativecommons/ccos-scripts",
-            "website": null
+            "website": ""
         },
         {
             "created": "2013-10-24T00:12:36",
@@ -479,20 +485,6 @@
             ],
             "url": "https://github.com/creativecommons/commoners",
             "website": "https://network.creativecommons.org/"
-        },
-        {
-            "created": "2015-04-15T16:10:58",
-            "description": "Static files for CC Open Source website. \u26a0 DO NOT MODIFY THIS REPOSITORY! To edit, use the creativecommons.github.io-source repository.",
-            "id": 34004720,
-            "language": "HTML",
-            "license": {
-                "name": "MIT License",
-                "url": "https://github.com/creativecommons/creativecommons.github.io/blob/master/LICENSE"
-            },
-            "name": "creativecommons.github.io",
-            "slack": "",
-            "url": "https://github.com/creativecommons/creativecommons.github.io",
-            "website": "https://opensource.creativecommons.org"
         },
         {
             "created": "2019-01-27T02:29:18",
@@ -755,6 +747,9 @@
         {
             "created": "2013-12-02T20:59:52",
             "description": "",
+            "engineering_project": true,
+            "english_name": "CC RDFa Dict",
+            "featured": false,
             "id": 14874571,
             "language": "Python",
             "license": {
@@ -763,6 +758,9 @@
             },
             "name": "rdfadict",
             "slack": "",
+            "technologies": [
+                "Python"
+            ],
             "url": "https://github.com/creativecommons/rdfadict",
             "website": null
         },
@@ -927,7 +925,7 @@
         },
         {
             "created": "2019-11-25T17:29:13",
-            "description": "A cohesive design system to unify the web facing Creative Commons",
+            "description": "A cohesive design system & Vue component library to unify the web-facing Creative Commons",
             "engineering_project": true,
             "english_name": "CC Vocabulary",
             "featured": true,
@@ -949,6 +947,17 @@
             ],
             "url": "https://github.com/creativecommons/vocabulary",
             "website": "https://cc-vocabulary.netlify.app/"
+        },
+        {
+            "created": "2020-10-17T03:08:56",
+            "description": "",
+            "id": 304786415,
+            "language": null,
+            "license": null,
+            "name": "wp-plugin-cc-global-network",
+            "slack": "",
+            "url": "https://github.com/creativecommons/wp-plugin-cc-global-network",
+            "website": null
         },
         {
             "created": "2014-07-28T15:18:18",
@@ -1024,6 +1033,20 @@
             "slack": "",
             "url": "https://github.com/creativecommons/wp-theme-cc-chapter",
             "website": ""
+        },
+        {
+            "created": "2020-10-17T03:06:36",
+            "description": "",
+            "id": 304786148,
+            "language": "PHP",
+            "license": {
+                "name": "MIT License",
+                "url": "https://github.com/creativecommons/wp-theme-cc-commoners/blob/main/LICENSE"
+            },
+            "name": "wp-theme-cc-commoners",
+            "slack": "",
+            "url": "https://github.com/creativecommons/wp-theme-cc-commoners",
+            "website": null
         },
         {
             "created": "2019-04-15T13:36:51",
