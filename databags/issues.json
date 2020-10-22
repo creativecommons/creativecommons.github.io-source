@@ -787,21 +787,6 @@
             "repo": "cccatalog-api",
             "title": "Invalidate filter cache after updates to content provider table",
             "url": "https://github.com/creativecommons/cccatalog-api/issues/583"
-        },
-        {
-            "createdAt": 1595864986,
-            "labels": [
-                "help wanted",
-                "\ud83c\udfc1 status: ready for work",
-                "\ud83d\udcc4 aspect: text",
-                "\ud83d\udd79 aspect: interface",
-                "\ud83d\udee0 goal: fix",
-                "\ud83d\udfe8 priority: medium"
-            ],
-            "number": 42,
-            "repo": "cc.engine",
-            "title": "Broken link on BY-NC license page",
-            "url": "https://github.com/creativecommons/cc.engine/issues/42"
         }
     ]
 }
