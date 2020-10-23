@@ -1,6 +1,21 @@
 {
     "issues": [
         {
+            "createdAt": 1597429171,
+            "labels": [
+                "Hacktoberfest",
+                "help wanted",
+                "\ud83d\udcaa skill: python",
+                "\ud83d\udee0 goal: fix",
+                "\ud83e\udd16 aspect: dx"
+            ],
+            "number": 60,
+            "repo": "ccos-scripts",
+            "title": "Code organisation can be improved",
+            "updatedAt": 1601578230,
+            "url": "https://github.com/creativecommons/ccos-scripts/issues/60"
+        },
+        {
             "createdAt": 1596741568,
             "labels": [
                 "Hacktoberfest",
@@ -51,20 +66,6 @@
             "title": "[Bug] Non-image content is being stored in the image table",
             "updatedAt": 1601000235,
             "url": "https://github.com/creativecommons/cccatalog/issues/438"
-        },
-        {
-            "createdAt": 1592252009,
-            "labels": [
-                "Hacktoberfest",
-                "good-web-citizen",
-                "help wanted",
-                "\ud83d\udee0 goal: fix"
-            ],
-            "number": 1125,
-            "repo": "creativecommons.org",
-            "title": "[Meta] Support \"main\" as a default branch name",
-            "updatedAt": 1603467292,
-            "url": "https://github.com/creativecommons/creativecommons.org/issues/1125"
         },
         {
             "createdAt": 1591276177,
@@ -793,21 +794,6 @@
             "title": "Improvements to logging",
             "updatedAt": 1601413927,
             "url": "https://github.com/creativecommons/ccos-scripts/issues/63"
-        },
-        {
-            "createdAt": 1597429171,
-            "labels": [
-                "Hacktoberfest",
-                "help wanted",
-                "\ud83d\udcaa skill: python",
-                "\ud83d\udee0 goal: fix",
-                "\ud83e\udd16 aspect: dx"
-            ],
-            "number": 60,
-            "repo": "ccos-scripts",
-            "title": "Code organisation can be improved",
-            "updatedAt": 1601578230,
-            "url": "https://github.com/creativecommons/ccos-scripts/issues/60"
         }
     ]
 }
