@@ -673,7 +673,7 @@
             "number": 615,
             "repo": "cccatalog-api",
             "title": "Invalid sources should be ignored instead of a fatal 400 error",
-            "updatedAt": 1600999843,
+            "updatedAt": 1603560828,
             "url": "https://github.com/creativecommons/cccatalog-api/issues/615"
         },
         {
@@ -721,7 +721,7 @@
             "number": 490,
             "repo": "creativecommons.github.io-source",
             "title": "Responsiveness Design Bug",
-            "updatedAt": 1601903552,
+            "updatedAt": 1603563775,
             "url": "https://github.com/creativecommons/creativecommons.github.io-source/issues/490"
         },
         {
