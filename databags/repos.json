@@ -951,11 +951,21 @@
         {
             "created": "2020-10-17T03:08:56",
             "description": "",
+            "engineering_project": true,
+            "english_name": "CC Global Network WordPress plugin",
+            "featured": false,
             "id": 304786415,
-            "language": null,
-            "license": null,
+            "language": "PHP",
+            "license": {
+                "name": "MIT License",
+                "url": "https://github.com/creativecommons/wp-plugin-cc-global-network/blob/main/LICENSE"
+            },
             "name": "wp-plugin-cc-global-network",
-            "slack": "",
+            "slack": "cc-dev-wordpress",
+            "technologies": [
+                "PHP",
+                "WordPress"
+            ],
             "url": "https://github.com/creativecommons/wp-plugin-cc-global-network",
             "website": null
         },
@@ -1037,6 +1047,9 @@
         {
             "created": "2020-10-17T03:06:36",
             "description": "",
+            "engineering_project": true,
+            "english_name": "CC Global Network WordPress theme",
+            "featured": false,
             "id": 304786148,
             "language": "PHP",
             "license": {
@@ -1044,7 +1057,11 @@
                 "url": "https://github.com/creativecommons/wp-theme-cc-commoners/blob/main/LICENSE"
             },
             "name": "wp-theme-cc-commoners",
-            "slack": "",
+            "slack": "cc-dev-wordpress",
+            "technologies": [
+                "PHP",
+                "WordPress"
+            ],
             "url": "https://github.com/creativecommons/wp-theme-cc-commoners",
             "website": null
         },
