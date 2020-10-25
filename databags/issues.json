@@ -253,12 +253,13 @@
                 "Hacktoberfest",
                 "good first issue",
                 "help wanted",
-                "test-coverage"
+                "\ud83d\udcbb aspect: code",
+                "\ud83e\udd16 aspect: dx"
             ],
             "number": 122,
             "repo": "chooser",
             "title": "Add unit and e2e tests for the LicenseCopy component",
-            "updatedAt": 1601000012,
+            "updatedAt": 1603640184,
             "url": "https://github.com/creativecommons/chooser/issues/122"
         },
         {
@@ -267,12 +268,13 @@
                 "Hacktoberfest",
                 "good first issue",
                 "help wanted",
-                "test-coverage"
+                "\ud83d\udcbb aspect: code",
+                "\ud83e\udd16 aspect: dx"
             ],
             "number": 121,
             "repo": "chooser",
             "title": "Add unit and e2e tests for the LicenseUseCard component",
-            "updatedAt": 1601000008,
+            "updatedAt": 1603640184,
             "url": "https://github.com/creativecommons/chooser/issues/121"
         },
         {
@@ -281,12 +283,13 @@
                 "Hacktoberfest",
                 "good first issue",
                 "help wanted",
-                "test-coverage"
+                "\ud83d\udcbb aspect: code",
+                "\ud83e\udd16 aspect: dx"
             ],
             "number": 120,
             "repo": "chooser",
             "title": "Add unit and e2e tests for the LicenseDropdown component",
-            "updatedAt": 1601000001,
+            "updatedAt": 1603640184,
             "url": "https://github.com/creativecommons/chooser/issues/120"
         },
         {
