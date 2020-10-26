@@ -1,0 +1,40 @@
+title: Vocabulary Site Updates (v1)
+---
+categories:
+cc-vocabulary
+gsod
+gsod-2020
+---
+author: nimishbongale
+---
+series: gsod-2020-vocabulary-usage-guide
+---
+pub_date: 2020-10-26
+---
+body:
+
+Hello there! Well well well. It has been an eventful first few weeks, to say the least! Let's gauge my progress, shall we?
+
+## Vocabulary Site Updates (Edition 1/many more to come)
+
+### What I've been upto
+
+I've mainly got myself invested in a survey of the existing documentation that vocabulary currently possesses, and find places where it could be made better. After clearing those issues out, I began building the main landing site for `Vocabulary`, `Vue-vocabulary` and `Fonts`. It wasn't particularly difficult to establish the necessary workflows as I had done something similar before. During the process of designing the basic structure of the site, I came across a few instances where I felt we needed new/improved components & I discussed the same with my team over on the sprint calls. The design of the site is nearly done. I'm also building the site parallelly & seeking approval from the CC Design Team. I've gotten myself involved in multiple other community contributions to CC as well across multiple of our repositories.
+
+### What I've learnt
+- Knowing the previously existing code in your project is of serious essence. It's important to understand the code styles, structure & activity of the code that you are dealing with.
+- Be patient! Its fine to delay something if it makes sense to have it logically accomplished only after certain other tasks are done & dusted with.
+- How essential it is to write _neat code_ is something that's not spoken too often. (I wonder why...)
+- I always thought VueJS sets up SPA's by default. I'm surprised you need to configure it additionally to do just that!
+- Storybook is just a really nifty OSS with great community support! 
+
+### Other community work tidbits
+- I've been working on the Dark Mode (a much awaited feature, at least for me!) for our storybooks with some support from our community. It should be up and running shortly!
+-  Fixed some formatting bugs in the `README.md` & suggested changes wrt to `npm v7` considerations.
+- Fixed storybook components docs for 2 features.
+- Raised a ticket for a component to render markdown text within vocabulary itself.
+- Raised a few other issues for potential hacktoberfest contributions.
+
+<p align="center">
+    <strong>Thank you for your time! To be continued...</strong>
+</p>
