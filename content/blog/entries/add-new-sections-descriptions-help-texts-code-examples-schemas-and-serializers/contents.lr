@@ -1,0 +1,38 @@
+title: Add New Sections, Descriptions, Help Texts, Code Examples, Schemas, and Serializers
+
+---
+categories:
+cc-catalog-api
+gsod
+gsod-2020
+open-source
+community
+---
+author: ariessa
+---
+series: gsod-2020-cccatalog-api-usage-guide
+---
+pub_date: 2020-10-21
+---
+body:
+
+Welcome to my third blog entry! For week 5 and 6, I added new sections, descriptions, help texts, code examples, schemas, and serializers. I was so productive these past two weeks.
+
+
+### Week 5
+For this week, I managed to add a lot of stuff into the documentation. 
+I figured out how to add help texts to classes and how to create serializers. 
+I also managed to move all code examples under response samples. 
+In order to do this, I created a new class called CustomAutoSchema to add [x-code-samples](https://github.com/Redocly/redoc/blob/master/docs/redoc-vendor-extensions.md#x-codesamples). 
+Other stuff that I did include creating new sections such as “Register and Authenticate” and “Glossary”. 
+The hardest part of this week is probably trying to figure out how to add request body examples and move code examples.
+
+
+### Week 6
+
+For week 6, I added another section called Contribute that provides a todolist to start contributing on Github. 
+I also wrote and published this blog post.
+
+----
+
+All caught up!
