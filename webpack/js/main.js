@@ -49,32 +49,35 @@ $(document).ready(function () {
     $('.step').find('a[href=\"' + hash + '\"]').find('.number').addClass('is-active');
   });
 
-  (function () {
-    const options = {
-      threshold: [0.5]
-    };
-
-    const observer = new IntersectionObserver((entries, observer) => {
-      entries.forEach((entry => {
-        if (entry.intersectionRatio >= 0.5) {
-          setCurrent(entry.target);
-        }
-      }));
-    }, options);
-
-    const setCurrent = (section) => {
-      document.querySelectorAll('.is-active').forEach((el) => el.classList.remove('is-active'));
-      if(window.location.pathname == '/cc-search/contribution-guide/') {
-        document.querySelector(`.step a[href="#${section.id}"] .number`).classList.add('is-active');
-      } else {
-        document.querySelector(`.menu-list a[href="#${section.id}"]`).classList.add('is-active');
-      }
-    };
-
-    const sections = document.querySelectorAll('h2,h3,h4');
-    sections.forEach((section) => observer.observe(section));
-  })();
+  handleInteraction()
 });
+
+function handleInteraction() {
+  const options = {
+    threshold: [0.5]
+  };
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry => {
+      if (entry.intersectionRatio >= 0.5) {
+        setCurrent(entry.target);
+      }
+    }));
+  }, options);
+
+  const setCurrent = (section) => {
+    if (window.location.pathname == '/cc-search/contribution-guide/') {
+      document.querySelectorAll('.step a[href*="#"] .number').forEach((el) => el.classList.remove('is-active'));
+      document.querySelector(`.step a[href="#${section.id}"] .number`).classList.add('is-active');
+    } else {
+      document.querySelectorAll('.menu-list a[href*="#"]').forEach((el) => el.classList.remove('is-active'));
+      document.querySelector(`.menu-list a[href="#${section.id}"]`).classList.add('is-active');
+    }
+  };
+
+  const sections = document.querySelectorAll(`h2,h3,h4`);
+  sections.forEach((section) => observer.observe(section));
+}
 
 const getFullyQualifiedUrl = (path, version) => {
   let baseUrl = "https://unpkg.com/@creativecommons/vocabulary"
