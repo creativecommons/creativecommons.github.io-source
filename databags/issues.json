@@ -429,6 +429,21 @@
             "url": "https://github.com/creativecommons/creativecommons.org/issues/940"
         },
         {
+            "createdAt": 1603813791,
+            "labels": [
+                "help wanted",
+                "\ud83c\udfc1 status: ready for work",
+                "\ud83d\udd79 aspect: interface",
+                "\ud83d\udee0 goal: fix",
+                "\ud83d\udfe9 priority: low"
+            ],
+            "number": 44,
+            "repo": "cc.engine",
+            "title": "Issue with webpage for license chooser tool (legacy tool)",
+            "updatedAt": 1603814126,
+            "url": "https://github.com/creativecommons/cc.engine/issues/44"
+        },
+        {
             "createdAt": 1603292604,
             "labels": [
                 "Hacktoberfest",
