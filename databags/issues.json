@@ -646,23 +646,6 @@
             "url": "https://github.com/creativecommons/licensebuttons/issues/32"
         },
         {
-            "createdAt": 1599677786,
-            "labels": [
-                "Hacktoberfest",
-                "good first issue",
-                "help wanted",
-                "\u2728 goal: improvement",
-                "\ud83c\udfc1 status: ready for work",
-                "\ud83d\udcbb aspect: code",
-                "\ud83d\udfe9 priority: low"
-            ],
-            "number": 615,
-            "repo": "cccatalog-api",
-            "title": "Invalid sources should be ignored instead of a fatal 400 error",
-            "updatedAt": 1603560828,
-            "url": "https://github.com/creativecommons/cccatalog-api/issues/615"
-        },
-        {
             "createdAt": 1599539123,
             "labels": [
                 "help wanted",
