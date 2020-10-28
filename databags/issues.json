@@ -429,6 +429,21 @@
             "url": "https://github.com/creativecommons/creativecommons.org/issues/940"
         },
         {
+            "createdAt": 1603813791,
+            "labels": [
+                "help wanted",
+                "\ud83c\udfc1 status: ready for work",
+                "\ud83d\udd79 aspect: interface",
+                "\ud83d\udee0 goal: fix",
+                "\ud83d\udfe9 priority: low"
+            ],
+            "number": 44,
+            "repo": "cc.engine",
+            "title": "Issue with webpage for license chooser tool (legacy tool)",
+            "updatedAt": 1603814126,
+            "url": "https://github.com/creativecommons/cc.engine/issues/44"
+        },
+        {
             "createdAt": 1603292604,
             "labels": [
                 "Hacktoberfest",
@@ -546,21 +561,6 @@
             "title": "Increase readability of label data files",
             "updatedAt": 1602076855,
             "url": "https://github.com/creativecommons/ccos-scripts/issues/85"
-        },
-        {
-            "createdAt": 1600999758,
-            "labels": [
-                "Hacktoberfest",
-                "help wanted",
-                "\ud83d\udcbb aspect: code",
-                "\ud83d\udee0 goal: fix",
-                "\ud83d\udfe9 priority: low"
-            ],
-            "number": 1224,
-            "repo": "cccatalog-frontend",
-            "title": "Bug with runs of e2e test suite",
-            "updatedAt": 1601924758,
-            "url": "https://github.com/creativecommons/cccatalog-frontend/issues/1224"
         },
         {
             "createdAt": 1600925457,
