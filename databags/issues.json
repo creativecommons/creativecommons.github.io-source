@@ -680,20 +680,6 @@
             "url": "https://github.com/creativecommons/cccatalog/issues/492"
         },
         {
-            "createdAt": 1598510127,
-            "labels": [
-                "Hacktoberfest",
-                "good first issue",
-                "help wanted",
-                "\ud83d\udee0 goal: fix"
-            ],
-            "number": 490,
-            "repo": "creativecommons.github.io-source",
-            "title": "Responsiveness Design Bug",
-            "updatedAt": 1603634362,
-            "url": "https://github.com/creativecommons/creativecommons.github.io-source/issues/490"
-        },
-        {
             "createdAt": 1598462581,
             "labels": [
                 "Hacktoberfest",
