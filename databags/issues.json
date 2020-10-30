@@ -462,6 +462,21 @@
             "url": "https://github.com/creativecommons/creativecommons.github.io-source/issues/545"
         },
         {
+            "createdAt": 1603139692,
+            "labels": [
+                "help wanted",
+                "\ud83c\udfc1 status: ready for work",
+                "\ud83d\udd79 aspect: interface",
+                "\ud83d\udee0 goal: fix",
+                "\ud83d\udfe8 priority: medium"
+            ],
+            "number": 192,
+            "repo": "chooser",
+            "title": "Firefox not scrolling up before info modal appears",
+            "updatedAt": 1604090377,
+            "url": "https://github.com/creativecommons/chooser/issues/192"
+        },
+        {
             "createdAt": 1602613476,
             "labels": [
                 "Hacktoberfest",
