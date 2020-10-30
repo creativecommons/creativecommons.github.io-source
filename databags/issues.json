@@ -429,6 +429,21 @@
             "url": "https://github.com/creativecommons/creativecommons.org/issues/940"
         },
         {
+            "createdAt": 1603813791,
+            "labels": [
+                "help wanted",
+                "\ud83c\udfc1 status: ready for work",
+                "\ud83d\udd79 aspect: interface",
+                "\ud83d\udee0 goal: fix",
+                "\ud83d\udfe9 priority: low"
+            ],
+            "number": 44,
+            "repo": "cc.engine",
+            "title": "Issue with webpage for license chooser tool (legacy tool)",
+            "updatedAt": 1603814126,
+            "url": "https://github.com/creativecommons/cc.engine/issues/44"
+        },
+        {
             "createdAt": 1603292604,
             "labels": [
                 "Hacktoberfest",
@@ -443,7 +458,7 @@
             "number": 545,
             "repo": "creativecommons.github.io-source",
             "title": "The header is not accessible by keyboard completely.",
-            "updatedAt": 1603332124,
+            "updatedAt": 1604042628,
             "url": "https://github.com/creativecommons/creativecommons.github.io-source/issues/545"
         },
         {
@@ -460,25 +475,8 @@
             "number": 12,
             "repo": "og-image-generator",
             "title": "Image backgrounds",
-            "updatedAt": 1602613476,
+            "updatedAt": 1604042782,
             "url": "https://github.com/creativecommons/og-image-generator/issues/12"
-        },
-        {
-            "createdAt": 1602612324,
-            "labels": [
-                "Hacktoberfest",
-                "good first issue",
-                "help wanted",
-                "\u2728 goal: improvement",
-                "\ud83d\udcbb aspect: code",
-                "\ud83d\udd79 aspect: interface",
-                "\ud83d\udfe7 priority: high"
-            ],
-            "number": 11,
-            "repo": "og-image-generator",
-            "title": "Use correct fonts",
-            "updatedAt": 1603127621,
-            "url": "https://github.com/creativecommons/og-image-generator/issues/11"
         },
         {
             "createdAt": 1601916855,
@@ -523,7 +521,7 @@
             "number": 292,
             "repo": "ccsearch-browser-extension",
             "title": "Add license explanation tool tip in the filter section",
-            "updatedAt": 1602681980,
+            "updatedAt": 1603995835,
             "url": "https://github.com/creativecommons/ccsearch-browser-extension/issues/292"
         },
         {
@@ -563,21 +561,6 @@
             "title": "Increase readability of label data files",
             "updatedAt": 1602076855,
             "url": "https://github.com/creativecommons/ccos-scripts/issues/85"
-        },
-        {
-            "createdAt": 1600999758,
-            "labels": [
-                "Hacktoberfest",
-                "help wanted",
-                "\ud83d\udcbb aspect: code",
-                "\ud83d\udee0 goal: fix",
-                "\ud83d\udfe9 priority: low"
-            ],
-            "number": 1224,
-            "repo": "cccatalog-frontend",
-            "title": "Bug with runs of e2e test suite",
-            "updatedAt": 1601924758,
-            "url": "https://github.com/creativecommons/cccatalog-frontend/issues/1224"
         },
         {
             "createdAt": 1600925457,
@@ -661,23 +644,6 @@
             "title": "Document scripts/cc/image_tools/imgsplat.py",
             "updatedAt": 1601038933,
             "url": "https://github.com/creativecommons/licensebuttons/issues/32"
-        },
-        {
-            "createdAt": 1599677786,
-            "labels": [
-                "Hacktoberfest",
-                "good first issue",
-                "help wanted",
-                "\u2728 goal: improvement",
-                "\ud83c\udfc1 status: ready for work",
-                "\ud83d\udcbb aspect: code",
-                "\ud83d\udfe9 priority: low"
-            ],
-            "number": 615,
-            "repo": "cccatalog-api",
-            "title": "Invalid sources should be ignored instead of a fatal 400 error",
-            "updatedAt": 1603560828,
-            "url": "https://github.com/creativecommons/cccatalog-api/issues/615"
         },
         {
             "createdAt": 1599539123,
