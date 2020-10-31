@@ -100,7 +100,7 @@
                 {% for item in this.body.toc %}
                   <li>
                     <a class="link" href="#{{ item.anchor }}">{{ item.title }}</a>
-                    {% if item.children %}
+                    {% if item.children and not this.is_long_page %}
                       <ul>
                         {% for subitem in item.children %}
                           <li><a class="link" href="#{{ subitem.anchor }}"><i class="icon circle-filled"></i>{{ subitem.title }}</a></li>
