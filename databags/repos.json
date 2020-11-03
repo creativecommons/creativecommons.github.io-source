@@ -530,6 +530,17 @@
             "website": "https://creativecommons.org/"
         },
         {
+            "created": "2020-11-02T16:08:46",
+            "description": "",
+            "id": 309423724,
+            "language": null,
+            "license": null,
+            "name": "data-science-playground",
+            "slack": "",
+            "url": "https://github.com/creativecommons/data-science-playground",
+            "website": null
+        },
+        {
             "created": "2015-12-14T23:19:08",
             "description": "Creative Commons FAQ page",
             "engineering_project": true,
