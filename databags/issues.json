@@ -464,24 +464,6 @@
             "url": "https://github.com/creativecommons/vocabulary/issues/753"
         },
         {
-            "createdAt": 1604171343,
-            "labels": [
-                "Hacktoberfest",
-                "good first issue",
-                "help wanted",
-                "\ud83c\udfc1 status: ready for work",
-                "\ud83d\udcc4 aspect: text",
-                "\ud83d\udd79 aspect: interface",
-                "\ud83d\udee0 goal: fix",
-                "\ud83d\udfe7 priority: high"
-            ],
-            "number": 1186,
-            "repo": "creativecommons.org",
-            "title": "'Apparel' misspelled on CC Store",
-            "updatedAt": 1604238425,
-            "url": "https://github.com/creativecommons/creativecommons.org/issues/1186"
-        },
-        {
             "createdAt": 1603813791,
             "labels": [
                 "help wanted",
