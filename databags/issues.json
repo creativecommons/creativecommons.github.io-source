@@ -432,6 +432,21 @@
             "url": "https://github.com/creativecommons/creativecommons.org/issues/940"
         },
         {
+            "createdAt": 1604609253,
+            "labels": [
+                "good first issue",
+                "help wanted",
+                "\ud83c\udf1f goal: addition",
+                "\ud83d\udcaa skill: lektor",
+                "\ud83d\udcbb aspect: code"
+            ],
+            "number": 553,
+            "repo": "creativecommons.github.io-source",
+            "title": "Implement generated Open Graph Images ",
+            "updatedAt": 1604609253,
+            "url": "https://github.com/creativecommons/creativecommons.github.io-source/issues/553"
+        },
+        {
             "createdAt": 1604537824,
             "labels": [
                 "good first issue",
