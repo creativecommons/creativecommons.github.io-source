@@ -532,11 +532,22 @@
         {
             "created": "2020-11-02T16:08:46",
             "description": "",
+            "engineering_project": true,
+            "english_name": "Data Science Playground",
+            "featured": false,
             "id": 309423724,
-            "language": null,
-            "license": null,
+            "language": "Jupyter Notebook",
+            "license": {
+                "name": "MIT License",
+                "url": "https://github.com/creativecommons/data-science-playground/blob/main/LICENSE"
+            },
             "name": "data-science-playground",
-            "slack": "",
+            "slack": "cc-developers",
+            "technologies": [
+                "Python",
+                "Apache Spark",
+                "Jupyter"
+            ],
             "url": "https://github.com/creativecommons/data-science-playground",
             "website": null
         },
