@@ -13,7 +13,7 @@
   {% if page.author %}
     {% set author = page.parent.parent.children.get('authors').children.get(page.author) %}
     {% if author and author.md5_hashed_email %}
-      {% set gravatarURL = 'https://secure.gravatar.com/avatar/' + author.md5_hashed_email + '?size=300' %}
+      {% set gravatarURL = 'https://secure.gravatar.com/avatar/' + author.md5_hashed_email + '?size=300&d=mp' %}
       {% set queryParams = queryParams + '&images=' + gravatarURL %}
       {% set pageTitle = page.title + '<br><sm style="font-size:70px;">By '+ render_author_name(author) + '</sm>'  %}
     {% endif  %}
