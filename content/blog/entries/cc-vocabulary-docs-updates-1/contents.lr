@@ -30,7 +30,7 @@ I've mainly got myself invested in a survey of the existing documentation that v
 
 ### Other community work tidbits
 - I've been working on the Dark Mode (a much awaited feature, at least for me!) for our storybooks with some support from our community. It should be up and running shortly!
--  Fixed some formatting bugs in the `README.md` & suggested changes wrt to `npm v7` considerations.
+- Fixed some formatting bugs in the `README.md` & suggested changes wrt to `npm v7` considerations.
 - Fixed storybook components docs for 2 features.
 - Raised a ticket for a component to render markdown text within vocabulary itself.
 - Raised a few other issues for potential hacktoberfest contributions.
