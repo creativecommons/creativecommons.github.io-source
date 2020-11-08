@@ -1,21 +1,6 @@
 {
     "issues": [
         {
-            "createdAt": 1597429171,
-            "labels": [
-                "Hacktoberfest",
-                "help wanted",
-                "\ud83d\udcaa skill: python",
-                "\ud83d\udee0 goal: fix",
-                "\ud83e\udd16 aspect: dx"
-            ],
-            "number": 60,
-            "repo": "ccos-scripts",
-            "title": "Code organisation can be improved",
-            "updatedAt": 1601578230,
-            "url": "https://github.com/creativecommons/ccos-scripts/issues/60"
-        },
-        {
             "createdAt": 1596741568,
             "labels": [
                 "Hacktoberfest",
@@ -278,21 +263,6 @@
             "url": "https://github.com/creativecommons/chooser/issues/121"
         },
         {
-            "createdAt": 1583378690,
-            "labels": [
-                "Hacktoberfest",
-                "good first issue",
-                "help wanted",
-                "\ud83d\udcbb aspect: code",
-                "\ud83e\udd16 aspect: dx"
-            ],
-            "number": 120,
-            "repo": "chooser",
-            "title": "Add unit and e2e tests for the LicenseDropdown component",
-            "updatedAt": 1603640184,
-            "url": "https://github.com/creativecommons/chooser/issues/120"
-        },
-        {
             "createdAt": 1582920205,
             "labels": [
                 "Hacktoberfest",
@@ -417,6 +387,39 @@
             "url": "https://github.com/creativecommons/wp-theme-cc-chapter/issues/25"
         },
         {
+            "createdAt": 1558502872,
+            "labels": [
+                "chooser",
+                "good first issue",
+                "help wanted",
+                "licenses",
+                "\u2728 goal: improvement",
+                "\ud83c\udfc1 status: ready for work",
+                "\ud83d\udcc4 aspect: text"
+            ],
+            "number": 967,
+            "repo": "creativecommons.org",
+            "title": "Missing Full name of the license on the \"choose\" page",
+            "updatedAt": 1604170862,
+            "url": "https://github.com/creativecommons/creativecommons.org/issues/967"
+        },
+        {
+            "createdAt": 1556562480,
+            "labels": [
+                "chooser",
+                "good first issue",
+                "help wanted",
+                "\ud83c\udfc1 status: ready for work",
+                "\ud83d\udcbb aspect: code",
+                "\ud83d\udee0 goal: fix"
+            ],
+            "number": 956,
+            "repo": "creativecommons.org",
+            "title": "Remove redirects from chooser",
+            "updatedAt": 1604170893,
+            "url": "https://github.com/creativecommons/creativecommons.org/issues/956"
+        },
+        {
             "createdAt": 1553575538,
             "labels": [
                 "Hacktoberfest",
@@ -427,6 +430,52 @@
             "title": "Use HTTPS links for the license chooser",
             "updatedAt": 1603376723,
             "url": "https://github.com/creativecommons/creativecommons.org/issues/940"
+        },
+        {
+            "createdAt": 1604644111,
+            "labels": [
+                "good first issue",
+                "help wanted",
+                "\u2728 goal: improvement",
+                "\ud83c\udfc1 status: ready for work",
+                "\ud83d\udcbb aspect: code",
+                "\ud83d\udfe8 priority: medium"
+            ],
+            "number": 770,
+            "repo": "vocabulary",
+            "title": "Remove fontawesome packages from Vue-Vocabulary",
+            "updatedAt": 1604829020,
+            "url": "https://github.com/creativecommons/vocabulary/issues/770"
+        },
+        {
+            "createdAt": 1604609253,
+            "labels": [
+                "good first issue",
+                "help wanted",
+                "\ud83c\udf1f goal: addition",
+                "\ud83d\udcaa skill: lektor",
+                "\ud83d\udcbb aspect: code"
+            ],
+            "number": 553,
+            "repo": "creativecommons.github.io-source",
+            "title": "Implement generated Open Graph Images ",
+            "updatedAt": 1604609253,
+            "url": "https://github.com/creativecommons/creativecommons.github.io-source/issues/553"
+        },
+        {
+            "createdAt": 1604537824,
+            "labels": [
+                "good first issue",
+                "help wanted",
+                "\ud83c\udf1f goal: addition",
+                "\ud83d\udd79 aspect: interface",
+                "\ud83d\udfe7 priority: high"
+            ],
+            "number": 763,
+            "repo": "vocabulary",
+            "title": "Component: Radio Button",
+            "updatedAt": 1604757522,
+            "url": "https://github.com/creativecommons/vocabulary/issues/763"
         },
         {
             "createdAt": 1603813791,
@@ -458,8 +507,23 @@
             "number": 545,
             "repo": "creativecommons.github.io-source",
             "title": "The header is not accessible by keyboard completely.",
-            "updatedAt": 1603332124,
+            "updatedAt": 1604042628,
             "url": "https://github.com/creativecommons/creativecommons.github.io-source/issues/545"
+        },
+        {
+            "createdAt": 1603139692,
+            "labels": [
+                "help wanted",
+                "\ud83c\udfc1 status: ready for work",
+                "\ud83d\udd79 aspect: interface",
+                "\ud83d\udee0 goal: fix",
+                "\ud83d\udfe8 priority: medium"
+            ],
+            "number": 192,
+            "repo": "chooser",
+            "title": "Firefox not scrolling up before info modal appears",
+            "updatedAt": 1604355669,
+            "url": "https://github.com/creativecommons/chooser/issues/192"
         },
         {
             "createdAt": 1602613476,
@@ -475,7 +539,7 @@
             "number": 12,
             "repo": "og-image-generator",
             "title": "Image backgrounds",
-            "updatedAt": 1602613476,
+            "updatedAt": 1604042782,
             "url": "https://github.com/creativecommons/og-image-generator/issues/12"
         },
         {
@@ -521,7 +585,7 @@
             "number": 292,
             "repo": "ccsearch-browser-extension",
             "title": "Add license explanation tool tip in the filter section",
-            "updatedAt": 1602681980,
+            "updatedAt": 1604630934,
             "url": "https://github.com/creativecommons/ccsearch-browser-extension/issues/292"
         },
         {
@@ -595,24 +659,6 @@
             "url": "https://github.com/creativecommons/wp-plugin-creativecommons/issues/132"
         },
         {
-            "createdAt": 1600744108,
-            "labels": [
-                "Hacktoberfest",
-                "good first issue",
-                "help wanted",
-                "\ud83c\udf1f goal: addition",
-                "\ud83c\udfc1 status: ready for work",
-                "\ud83d\udcbb aspect: code",
-                "\ud83d\udfe8 priority: medium",
-                "\ud83e\udd16 aspect: dx"
-            ],
-            "number": 679,
-            "repo": "vocabulary",
-            "title": "SVG icons pack for Fonts",
-            "updatedAt": 1602127814,
-            "url": "https://github.com/creativecommons/vocabulary/issues/679"
-        },
-        {
             "createdAt": 1600466876,
             "labels": [
                 "Hacktoberfest",
@@ -644,23 +690,6 @@
             "title": "Document scripts/cc/image_tools/imgsplat.py",
             "updatedAt": 1601038933,
             "url": "https://github.com/creativecommons/licensebuttons/issues/32"
-        },
-        {
-            "createdAt": 1599677786,
-            "labels": [
-                "Hacktoberfest",
-                "good first issue",
-                "help wanted",
-                "\u2728 goal: improvement",
-                "\ud83c\udfc1 status: ready for work",
-                "\ud83d\udcbb aspect: code",
-                "\ud83d\udfe9 priority: low"
-            ],
-            "number": 615,
-            "repo": "cccatalog-api",
-            "title": "Invalid sources should be ignored instead of a fatal 400 error",
-            "updatedAt": 1603560828,
-            "url": "https://github.com/creativecommons/cccatalog-api/issues/615"
         },
         {
             "createdAt": 1599539123,
@@ -695,20 +724,6 @@
             "title": "[API Integration] Free SVG",
             "updatedAt": 1602683499,
             "url": "https://github.com/creativecommons/cccatalog/issues/492"
-        },
-        {
-            "createdAt": 1598510127,
-            "labels": [
-                "Hacktoberfest",
-                "good first issue",
-                "help wanted",
-                "\ud83d\udee0 goal: fix"
-            ],
-            "number": 490,
-            "repo": "creativecommons.github.io-source",
-            "title": "Responsiveness Design Bug",
-            "updatedAt": 1603634362,
-            "url": "https://github.com/creativecommons/creativecommons.github.io-source/issues/490"
         },
         {
             "createdAt": 1598462581,
@@ -780,6 +795,21 @@
             "title": "Improvements to logging",
             "updatedAt": 1601413927,
             "url": "https://github.com/creativecommons/ccos-scripts/issues/63"
+        },
+        {
+            "createdAt": 1597429171,
+            "labels": [
+                "Hacktoberfest",
+                "help wanted",
+                "\ud83d\udcaa skill: python",
+                "\ud83d\udee0 goal: fix",
+                "\ud83e\udd16 aspect: dx"
+            ],
+            "number": 60,
+            "repo": "ccos-scripts",
+            "title": "Code organisation can be improved",
+            "updatedAt": 1601578230,
+            "url": "https://github.com/creativecommons/ccos-scripts/issues/60"
         }
     ]
 }
