@@ -478,22 +478,6 @@
             "url": "https://github.com/creativecommons/vocabulary/issues/763"
         },
         {
-            "createdAt": 1604498467,
-            "labels": [
-                "good first issue",
-                "help wanted",
-                "\u2728 goal: improvement",
-                "\ud83c\udfc1 status: ready for work",
-                "\ud83d\udcbb aspect: code",
-                "\ud83d\udfe7 priority: high"
-            ],
-            "number": 97,
-            "repo": "ccos-scripts",
-            "title": "Remove Hacktoberfest labels",
-            "updatedAt": 1604784435,
-            "url": "https://github.com/creativecommons/ccos-scripts/issues/97"
-        },
-        {
             "createdAt": 1603813791,
             "labels": [
                 "help wanted",
