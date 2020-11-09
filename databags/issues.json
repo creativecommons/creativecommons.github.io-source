@@ -432,6 +432,20 @@
             "url": "https://github.com/creativecommons/creativecommons.org/issues/940"
         },
         {
+            "createdAt": 1604946599,
+            "labels": [
+                "help wanted",
+                "\u2728 goal: improvement",
+                "\ud83d\udfe9 priority: low",
+                "\ud83e\udd16 aspect: dx"
+            ],
+            "number": 776,
+            "repo": "vocabulary",
+            "title": "Add a new \"install size\" badge for vocabulary, fonts & vue-vocabulary",
+            "updatedAt": 1604946990,
+            "url": "https://github.com/creativecommons/vocabulary/issues/776"
+        },
+        {
             "createdAt": 1604644111,
             "labels": [
                 "good first issue",
