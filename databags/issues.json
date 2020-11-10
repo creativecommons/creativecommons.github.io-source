@@ -400,7 +400,7 @@
             "number": 967,
             "repo": "creativecommons.org",
             "title": "Missing Full name of the license on the \"choose\" page",
-            "updatedAt": 1604170862,
+            "updatedAt": 1604994836,
             "url": "https://github.com/creativecommons/creativecommons.org/issues/967"
         },
         {
@@ -432,6 +432,20 @@
             "url": "https://github.com/creativecommons/creativecommons.org/issues/940"
         },
         {
+            "createdAt": 1604946599,
+            "labels": [
+                "help wanted",
+                "\u2728 goal: improvement",
+                "\ud83d\udfe9 priority: low",
+                "\ud83e\udd16 aspect: dx"
+            ],
+            "number": 776,
+            "repo": "vocabulary",
+            "title": "Add a new \"install size\" badge for vocabulary, fonts & vue-vocabulary",
+            "updatedAt": 1604950939,
+            "url": "https://github.com/creativecommons/vocabulary/issues/776"
+        },
+        {
             "createdAt": 1604644111,
             "labels": [
                 "good first issue",
@@ -444,7 +458,7 @@
             "number": 770,
             "repo": "vocabulary",
             "title": "Remove fontawesome packages from Vue-Vocabulary",
-            "updatedAt": 1604829020,
+            "updatedAt": 1604931102,
             "url": "https://github.com/creativecommons/vocabulary/issues/770"
         },
         {
@@ -507,7 +521,7 @@
             "number": 545,
             "repo": "creativecommons.github.io-source",
             "title": "The header is not accessible by keyboard completely.",
-            "updatedAt": 1604042628,
+            "updatedAt": 1604988542,
             "url": "https://github.com/creativecommons/creativecommons.github.io-source/issues/545"
         },
         {
