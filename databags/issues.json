@@ -711,21 +711,6 @@
             "url": "https://github.com/creativecommons/cccatalog/issues/492"
         },
         {
-            "createdAt": 1598462581,
-            "labels": [
-                "Hacktoberfest",
-                "help wanted",
-                "\u2728 goal: improvement",
-                "\ud83d\udd79 aspect: interface",
-                "\ud83d\udfe7 priority: high"
-            ],
-            "number": 620,
-            "repo": "vocabulary",
-            "title": "Update the header component",
-            "updatedAt": 1602328010,
-            "url": "https://github.com/creativecommons/vocabulary/issues/620"
-        },
-        {
             "createdAt": 1598461505,
             "labels": [
                 "Hacktoberfest",
