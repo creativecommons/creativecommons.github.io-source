@@ -400,7 +400,7 @@
             "number": 967,
             "repo": "creativecommons.org",
             "title": "Missing Full name of the license on the \"choose\" page",
-            "updatedAt": 1604994836,
+            "updatedAt": 1605123321,
             "url": "https://github.com/creativecommons/creativecommons.org/issues/967"
         },
         {
@@ -430,20 +430,6 @@
             "title": "Use HTTPS links for the license chooser",
             "updatedAt": 1603376723,
             "url": "https://github.com/creativecommons/creativecommons.org/issues/940"
-        },
-        {
-            "createdAt": 1604946599,
-            "labels": [
-                "help wanted",
-                "\u2728 goal: improvement",
-                "\ud83d\udfe9 priority: low",
-                "\ud83e\udd16 aspect: dx"
-            ],
-            "number": 776,
-            "repo": "vocabulary",
-            "title": "Add a new \"install size\" badge for vocabulary, fonts & vue-vocabulary",
-            "updatedAt": 1604950939,
-            "url": "https://github.com/creativecommons/vocabulary/issues/776"
         },
         {
             "createdAt": 1604644111,
@@ -477,21 +463,6 @@
             "url": "https://github.com/creativecommons/creativecommons.github.io-source/issues/553"
         },
         {
-            "createdAt": 1604537824,
-            "labels": [
-                "good first issue",
-                "help wanted",
-                "\ud83c\udf1f goal: addition",
-                "\ud83d\udd79 aspect: interface",
-                "\ud83d\udfe7 priority: high"
-            ],
-            "number": 763,
-            "repo": "vocabulary",
-            "title": "Component: Radio Button",
-            "updatedAt": 1604757522,
-            "url": "https://github.com/creativecommons/vocabulary/issues/763"
-        },
-        {
             "createdAt": 1603813791,
             "labels": [
                 "help wanted",
@@ -521,7 +492,7 @@
             "number": 545,
             "repo": "creativecommons.github.io-source",
             "title": "The header is not accessible by keyboard completely.",
-            "updatedAt": 1605036723,
+            "updatedAt": 1605043493,
             "url": "https://github.com/creativecommons/creativecommons.github.io-source/issues/545"
         },
         {
