@@ -432,22 +432,6 @@
             "url": "https://github.com/creativecommons/creativecommons.org/issues/940"
         },
         {
-            "createdAt": 1604644111,
-            "labels": [
-                "good first issue",
-                "help wanted",
-                "\u2728 goal: improvement",
-                "\ud83c\udfc1 status: ready for work",
-                "\ud83d\udcbb aspect: code",
-                "\ud83d\udfe8 priority: medium"
-            ],
-            "number": 770,
-            "repo": "vocabulary",
-            "title": "Remove fontawesome packages from Vue-Vocabulary",
-            "updatedAt": 1604931102,
-            "url": "https://github.com/creativecommons/vocabulary/issues/770"
-        },
-        {
             "createdAt": 1604609253,
             "labels": [
                 "good first issue",
