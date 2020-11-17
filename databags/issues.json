@@ -447,6 +447,23 @@
             "url": "https://github.com/creativecommons/creativecommons.github.io-source/issues/553"
         },
         {
+            "createdAt": 1604518405,
+            "labels": [
+                "good first issue",
+                "help wanted",
+                "\ud83c\udf1f goal: addition",
+                "\ud83c\udfc1 status: ready for work",
+                "\ud83d\udcaa skill: sass",
+                "\ud83d\udd79 aspect: interface",
+                "\ud83d\udfe7 priority: high"
+            ],
+            "number": 759,
+            "repo": "vocabulary",
+            "title": "Add two new text styles",
+            "updatedAt": 1605624402,
+            "url": "https://github.com/creativecommons/vocabulary/issues/759"
+        },
+        {
             "createdAt": 1603813791,
             "labels": [
                 "help wanted",
