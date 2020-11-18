@@ -11,7 +11,7 @@
             "number": 583,
             "repo": "cccatalog-api",
             "title": "Invalidate filter cache after updates to content provider table",
-            "updatedAt": 1605381784,
+            "updatedAt": 1605736595,
             "url": "https://github.com/creativecommons/cccatalog-api/issues/583"
         },
         {
@@ -541,7 +541,7 @@
             "number": 635,
             "repo": "cccatalog-api",
             "title": "Research for Audio APIs",
-            "updatedAt": 1601916855,
+            "updatedAt": 1605736568,
             "url": "https://github.com/creativecommons/cccatalog-api/issues/635"
         },
         {
