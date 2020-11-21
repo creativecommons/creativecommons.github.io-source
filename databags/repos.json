@@ -493,6 +493,27 @@
             "website": "https://network.creativecommons.org/"
         },
         {
+            "created": "2019-12-06T19:44:21",
+            "description": "Base WordPress theme for Creative Commons websites.",
+            "engineering_project": true,
+            "english_name": "WordPress base theme",
+            "featured": false,
+            "id": 226397839,
+            "language": "PHP",
+            "license": {
+                "name": "MIT License",
+                "url": "https://github.com/creativecommons/creativecommons-base/blob/master/LICENSE"
+            },
+            "name": "creativecommons-base",
+            "slack": "cc-dev-wordpress",
+            "technologies": [
+                "PHP",
+                "WordPress"
+            ],
+            "url": "https://github.com/creativecommons/creativecommons-base",
+            "website": ""
+        },
+        {
             "created": "2020-06-11T17:20:52",
             "description": "WordPress theme for the CC Certificate Website",
             "engineering_project": true,
@@ -1057,27 +1078,6 @@
             ],
             "url": "https://github.com/creativecommons/wp-plugin-vocabulary-blocks",
             "website": null
-        },
-        {
-            "created": "2019-12-06T19:44:21",
-            "description": "Base WordPress theme for Creative Commons websites.",
-            "engineering_project": true,
-            "english_name": "WordPress base theme",
-            "featured": false,
-            "id": 226397839,
-            "language": "PHP",
-            "license": {
-                "name": "MIT License",
-                "url": "https://github.com/creativecommons/wp-theme-base/blob/master/LICENSE"
-            },
-            "name": "wp-theme-base",
-            "slack": "cc-dev-wordpress",
-            "technologies": [
-                "PHP",
-                "WordPress"
-            ],
-            "url": "https://github.com/creativecommons/wp-theme-base",
-            "website": ""
         },
         {
             "created": "2019-02-11T15:51:29",
