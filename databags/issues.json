@@ -432,6 +432,22 @@
             "url": "https://github.com/creativecommons/creativecommons.org/issues/940"
         },
         {
+            "createdAt": 1605704389,
+            "labels": [
+                "good first issue",
+                "help wanted",
+                "\ud83c\udfc1 status: ready for work",
+                "\ud83d\udcc4 aspect: text",
+                "\ud83d\udee0 goal: fix",
+                "\ud83d\udfe7 priority: high"
+            ],
+            "number": 207,
+            "repo": "chooser",
+            "title": "Correct the attribution information for the CC0 license",
+            "updatedAt": 1606037635,
+            "url": "https://github.com/creativecommons/chooser/issues/207"
+        },
+        {
             "createdAt": 1604609253,
             "labels": [
                 "good first issue",
@@ -460,7 +476,7 @@
             "number": 759,
             "repo": "vocabulary",
             "title": "Add two new text styles",
-            "updatedAt": 1605624402,
+            "updatedAt": 1606027602,
             "url": "https://github.com/creativecommons/vocabulary/issues/759"
         },
         {
@@ -541,7 +557,7 @@
             "number": 635,
             "repo": "cccatalog-api",
             "title": "Research for Audio APIs",
-            "updatedAt": 1605893654,
+            "updatedAt": 1605900955,
             "url": "https://github.com/creativecommons/cccatalog-api/issues/635"
         },
         {
@@ -697,7 +713,6 @@
         {
             "createdAt": 1598461505,
             "labels": [
-                "Hacktoberfest",
                 "help wanted",
                 "internship",
                 "\u2728 goal: improvement"
@@ -705,7 +720,7 @@
             "number": 619,
             "repo": "vocabulary",
             "title": "Grid/Page Layout Documentation",
-            "updatedAt": 1600999539,
+            "updatedAt": 1605971331,
             "url": "https://github.com/creativecommons/vocabulary/issues/619"
         },
         {
