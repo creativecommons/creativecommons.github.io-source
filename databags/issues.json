@@ -448,6 +448,22 @@
             "url": "https://github.com/creativecommons/chooser/issues/207"
         },
         {
+            "createdAt": 1605704042,
+            "labels": [
+                "good first issue",
+                "help wanted",
+                "\ud83c\udfc1 status: ready for work",
+                "\ud83d\udcbb aspect: code",
+                "\ud83d\udee0 goal: fix",
+                "\ud83d\udfe7 priority: high"
+            ],
+            "number": 206,
+            "repo": "chooser",
+            "title": "Copy action is not working in plain text tab",
+            "updatedAt": 1606041470,
+            "url": "https://github.com/creativecommons/chooser/issues/206"
+        },
+        {
             "createdAt": 1604609253,
             "labels": [
                 "good first issue",
@@ -476,7 +492,7 @@
             "number": 759,
             "repo": "vocabulary",
             "title": "Add two new text styles",
-            "updatedAt": 1606027602,
+            "updatedAt": 1606041378,
             "url": "https://github.com/creativecommons/vocabulary/issues/759"
         },
         {
