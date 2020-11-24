@@ -11,7 +11,7 @@
             "number": 583,
             "repo": "cccatalog-api",
             "title": "Invalidate filter cache after updates to content provider table",
-            "updatedAt": 1605736595,
+            "updatedAt": 1606251343,
             "url": "https://github.com/creativecommons/cccatalog-api/issues/583"
         },
         {
@@ -446,22 +446,6 @@
             "title": "Add a maintained with lerna badge to README.md",
             "updatedAt": 1606203241,
             "url": "https://github.com/creativecommons/vocabulary/issues/807"
-        },
-        {
-            "createdAt": 1605704389,
-            "labels": [
-                "good first issue",
-                "help wanted",
-                "\ud83c\udfc1 status: ready for work",
-                "\ud83d\udcc4 aspect: text",
-                "\ud83d\udee0 goal: fix",
-                "\ud83d\udfe7 priority: high"
-            ],
-            "number": 207,
-            "repo": "chooser",
-            "title": "Correct the attribution information for the CC0 license",
-            "updatedAt": 1606037635,
-            "url": "https://github.com/creativecommons/chooser/issues/207"
         },
         {
             "createdAt": 1605704042,
