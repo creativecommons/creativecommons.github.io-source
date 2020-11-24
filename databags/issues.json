@@ -434,15 +434,17 @@
         {
             "createdAt": 1606201582,
             "labels": [
+                "good first issue",
                 "help wanted",
-                "\u2728 goal: improvement",
+                "\ud83c\udf1f goal: addition",
+                "\ud83c\udfc1 status: ready for work",
                 "\ud83d\udfe9 priority: low",
                 "\ud83e\udd16 aspect: dx"
             ],
             "number": 807,
             "repo": "vocabulary",
             "title": "Add a maintained with lerna badge to README.md",
-            "updatedAt": 1606201582,
+            "updatedAt": 1606203241,
             "url": "https://github.com/creativecommons/vocabulary/issues/807"
         },
         {
@@ -739,19 +741,6 @@
             "title": "[API Integration] Free SVG",
             "updatedAt": 1602683499,
             "url": "https://github.com/creativecommons/cccatalog/issues/492"
-        },
-        {
-            "createdAt": 1598461505,
-            "labels": [
-                "help wanted",
-                "internship",
-                "\u2728 goal: improvement"
-            ],
-            "number": 619,
-            "repo": "vocabulary",
-            "title": "Grid/Page Layout Documentation",
-            "updatedAt": 1605971331,
-            "url": "https://github.com/creativecommons/vocabulary/issues/619"
         },
         {
             "createdAt": 1598096793,
