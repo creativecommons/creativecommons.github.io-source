@@ -432,22 +432,6 @@
             "url": "https://github.com/creativecommons/creativecommons.org/issues/940"
         },
         {
-            "createdAt": 1606201582,
-            "labels": [
-                "good first issue",
-                "help wanted",
-                "\ud83c\udf1f goal: addition",
-                "\ud83c\udfc1 status: ready for work",
-                "\ud83d\udfe9 priority: low",
-                "\ud83e\udd16 aspect: dx"
-            ],
-            "number": 807,
-            "repo": "vocabulary",
-            "title": "Add a maintained with lerna badge to README.md",
-            "updatedAt": 1606203241,
-            "url": "https://github.com/creativecommons/vocabulary/issues/807"
-        },
-        {
             "createdAt": 1605704042,
             "labels": [
                 "good first issue",
