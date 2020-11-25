@@ -42,8 +42,8 @@ The channels most relevant to CC's developer community are:
       <td><a href="https://github.com/creativecommons/cccatalog-dataviz">CC Catalog visualizations.</a></td>
     </tr>
     <tr>
-      <td><code>#cc-dev-legal-database</code></td>
-      <td><a href="https://labs.creativecommons.org/caselaw/">CC Legal Database.</a></td>
+      <td><code>#cc-dev-legaldb</code></td>
+      <td><a href="https://github.com/creativecommons/legaldb">CC Legal Database.</a></td>
     </tr>
     <tr>
       <td><code>#cc-dev-license-chooser</code></td>
