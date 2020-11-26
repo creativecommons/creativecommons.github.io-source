@@ -11,7 +11,7 @@
             "number": 583,
             "repo": "cccatalog-api",
             "title": "Invalidate filter cache after updates to content provider table",
-            "updatedAt": 1601086515,
+            "updatedAt": 1605736595,
             "url": "https://github.com/creativecommons/cccatalog-api/issues/583"
         },
         {
@@ -357,7 +357,7 @@
             "number": 91,
             "repo": "wp-plugin-creativecommons",
             "title": "image being loaded in network",
-            "updatedAt": 1601000324,
+            "updatedAt": 1605813434,
             "url": "https://github.com/creativecommons/wp-plugin-creativecommons/issues/91"
         },
         {
@@ -400,7 +400,7 @@
             "number": 967,
             "repo": "creativecommons.org",
             "title": "Missing Full name of the license on the \"choose\" page",
-            "updatedAt": 1604170862,
+            "updatedAt": 1605123321,
             "url": "https://github.com/creativecommons/creativecommons.org/issues/967"
         },
         {
@@ -432,22 +432,6 @@
             "url": "https://github.com/creativecommons/creativecommons.org/issues/940"
         },
         {
-            "createdAt": 1604644111,
-            "labels": [
-                "good first issue",
-                "help wanted",
-                "\u2728 goal: improvement",
-                "\ud83c\udfc1 status: ready for work",
-                "\ud83d\udcbb aspect: code",
-                "\ud83d\udfe8 priority: medium"
-            ],
-            "number": 770,
-            "repo": "vocabulary",
-            "title": "Remove fontawesome packages from Vue-Vocabulary",
-            "updatedAt": 1604829020,
-            "url": "https://github.com/creativecommons/vocabulary/issues/770"
-        },
-        {
             "createdAt": 1604609253,
             "labels": [
                 "good first issue",
@@ -463,19 +447,21 @@
             "url": "https://github.com/creativecommons/creativecommons.github.io-source/issues/553"
         },
         {
-            "createdAt": 1604537824,
+            "createdAt": 1604518405,
             "labels": [
                 "good first issue",
                 "help wanted",
                 "\ud83c\udf1f goal: addition",
+                "\ud83c\udfc1 status: ready for work",
+                "\ud83d\udcaa skill: sass",
                 "\ud83d\udd79 aspect: interface",
                 "\ud83d\udfe7 priority: high"
             ],
-            "number": 763,
+            "number": 759,
             "repo": "vocabulary",
-            "title": "Component: Radio Button",
-            "updatedAt": 1604757522,
-            "url": "https://github.com/creativecommons/vocabulary/issues/763"
+            "title": "Add two new text styles",
+            "updatedAt": 1605624402,
+            "url": "https://github.com/creativecommons/vocabulary/issues/759"
         },
         {
             "createdAt": 1603813791,
@@ -507,7 +493,7 @@
             "number": 545,
             "repo": "creativecommons.github.io-source",
             "title": "The header is not accessible by keyboard completely.",
-            "updatedAt": 1604042628,
+            "updatedAt": 1605043493,
             "url": "https://github.com/creativecommons/creativecommons.github.io-source/issues/545"
         },
         {
@@ -555,7 +541,7 @@
             "number": 635,
             "repo": "cccatalog-api",
             "title": "Research for Audio APIs",
-            "updatedAt": 1601916855,
+            "updatedAt": 1605900955,
             "url": "https://github.com/creativecommons/cccatalog-api/issues/635"
         },
         {
@@ -585,7 +571,7 @@
             "number": 292,
             "repo": "ccsearch-browser-extension",
             "title": "Add license explanation tool tip in the filter section",
-            "updatedAt": 1604630934,
+            "updatedAt": 1605850819,
             "url": "https://github.com/creativecommons/ccsearch-browser-extension/issues/292"
         },
         {
@@ -672,7 +658,7 @@
             "number": 34,
             "repo": "licensebuttons",
             "title": "Create smaller \"icon\" files",
-            "updatedAt": 1600999216,
+            "updatedAt": 1605831479,
             "url": "https://github.com/creativecommons/licensebuttons/issues/34"
         },
         {
@@ -692,23 +678,6 @@
             "url": "https://github.com/creativecommons/licensebuttons/issues/32"
         },
         {
-            "createdAt": 1599539123,
-            "labels": [
-                "help wanted",
-                "\ud83c\udf1f goal: addition",
-                "\ud83c\udfc1 status: ready for work",
-                "\ud83d\udcaa skill: javascript/vue",
-                "\ud83d\udcbb aspect: code",
-                "\ud83d\udd79 aspect: interface",
-                "\ud83e\udd16 aspect: dx"
-            ],
-            "number": 642,
-            "repo": "vocabulary",
-            "title": "[Vue] Header Component and general component style discussion",
-            "updatedAt": 1601916544,
-            "url": "https://github.com/creativecommons/vocabulary/issues/642"
-        },
-        {
             "createdAt": 1598845438,
             "labels": [
                 "Hacktoberfest",
@@ -724,21 +693,6 @@
             "title": "[API Integration] Free SVG",
             "updatedAt": 1602683499,
             "url": "https://github.com/creativecommons/cccatalog/issues/492"
-        },
-        {
-            "createdAt": 1598462581,
-            "labels": [
-                "Hacktoberfest",
-                "help wanted",
-                "\u2728 goal: improvement",
-                "\ud83d\udd79 aspect: interface",
-                "\ud83d\udfe7 priority: high"
-            ],
-            "number": 620,
-            "repo": "vocabulary",
-            "title": "Update the header component",
-            "updatedAt": 1602328010,
-            "url": "https://github.com/creativecommons/vocabulary/issues/620"
         },
         {
             "createdAt": 1598461505,
@@ -793,7 +747,7 @@
             "number": 63,
             "repo": "ccos-scripts",
             "title": "Improvements to logging",
-            "updatedAt": 1601413927,
+            "updatedAt": 1605714773,
             "url": "https://github.com/creativecommons/ccos-scripts/issues/63"
         },
         {
