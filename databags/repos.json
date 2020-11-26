@@ -33,28 +33,6 @@
             "website": "http://certificates.creativecommons.org/"
         },
         {
-            "created": "2018-05-16T19:44:57",
-            "description": "Curated repository of Case Law and Scholarship data from around the world in a Django based website.",
-            "engineering_project": true,
-            "english_name": "CC Legal Database",
-            "featured": false,
-            "id": 133715391,
-            "language": "HTML",
-            "license": {
-                "name": "MIT License",
-                "url": "https://github.com/creativecommons/caselaw/blob/main/LICENSE"
-            },
-            "name": "caselaw",
-            "slack": "cc-dev-legal-database",
-            "technologies": [
-                "Python",
-                "Django",
-                "PostgreSQL"
-            ],
-            "url": "https://github.com/creativecommons/caselaw",
-            "website": ""
-        },
-        {
             "created": "2015-11-16T19:24:04",
             "description": "Creative Commons JavaScript license selector in the form of a JavaScript widget",
             "engineering_project": true,
@@ -646,6 +624,28 @@
             "name": "labs",
             "slack": "",
             "url": "https://github.com/creativecommons/labs",
+            "website": ""
+        },
+        {
+            "created": "2018-05-16T19:44:57",
+            "description": "CC Legal Database: curated repository of Case Law and Scholarship data from around the world in a Django based website.",
+            "engineering_project": true,
+            "english_name": "CC Legal Database",
+            "featured": false,
+            "id": 133715391,
+            "language": "HTML",
+            "license": {
+                "name": "MIT License",
+                "url": "https://github.com/creativecommons/legaldb/blob/main/LICENSE"
+            },
+            "name": "legaldb",
+            "slack": "cc-dev-legal-database",
+            "technologies": [
+                "Python",
+                "Django",
+                "PostgreSQL"
+            ],
+            "url": "https://github.com/creativecommons/legaldb",
             "website": ""
         },
         {
