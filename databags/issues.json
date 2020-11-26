@@ -11,7 +11,7 @@
             "number": 583,
             "repo": "cccatalog-api",
             "title": "Invalidate filter cache after updates to content provider table",
-            "updatedAt": 1605736595,
+            "updatedAt": 1606385309,
             "url": "https://github.com/creativecommons/cccatalog-api/issues/583"
         },
         {
@@ -315,7 +315,7 @@
             "number": 405,
             "repo": "cccatalog-api",
             "title": "Document error schemas",
-            "updatedAt": 1601000312,
+            "updatedAt": 1606390369,
             "url": "https://github.com/creativecommons/cccatalog-api/issues/405"
         },
         {
@@ -432,6 +432,38 @@
             "url": "https://github.com/creativecommons/creativecommons.org/issues/940"
         },
         {
+            "createdAt": 1605704389,
+            "labels": [
+                "good first issue",
+                "help wanted",
+                "\ud83c\udfc1 status: ready for work",
+                "\ud83d\udcc4 aspect: text",
+                "\ud83d\udee0 goal: fix",
+                "\ud83d\udfe7 priority: high"
+            ],
+            "number": 207,
+            "repo": "chooser",
+            "title": "Correct the attribution information for the CC0 license",
+            "updatedAt": 1606284360,
+            "url": "https://github.com/creativecommons/chooser/issues/207"
+        },
+        {
+            "createdAt": 1605704042,
+            "labels": [
+                "good first issue",
+                "help wanted",
+                "\ud83c\udfc1 status: ready for work",
+                "\ud83d\udcbb aspect: code",
+                "\ud83d\udee0 goal: fix",
+                "\ud83d\udfe7 priority: high"
+            ],
+            "number": 206,
+            "repo": "chooser",
+            "title": "Copy action is not working in plain text tab",
+            "updatedAt": 1606041470,
+            "url": "https://github.com/creativecommons/chooser/issues/206"
+        },
+        {
             "createdAt": 1604609253,
             "labels": [
                 "good first issue",
@@ -460,7 +492,7 @@
             "number": 759,
             "repo": "vocabulary",
             "title": "Add two new text styles",
-            "updatedAt": 1605624402,
+            "updatedAt": 1606142607,
             "url": "https://github.com/creativecommons/vocabulary/issues/759"
         },
         {
@@ -658,7 +690,7 @@
             "number": 34,
             "repo": "licensebuttons",
             "title": "Create smaller \"icon\" files",
-            "updatedAt": 1605831479,
+            "updatedAt": 1606154732,
             "url": "https://github.com/creativecommons/licensebuttons/issues/34"
         },
         {
@@ -695,20 +727,6 @@
             "url": "https://github.com/creativecommons/cccatalog/issues/492"
         },
         {
-            "createdAt": 1598461505,
-            "labels": [
-                "Hacktoberfest",
-                "help wanted",
-                "internship",
-                "\u2728 goal: improvement"
-            ],
-            "number": 619,
-            "repo": "vocabulary",
-            "title": "Grid/Page Layout Documentation",
-            "updatedAt": 1600999539,
-            "url": "https://github.com/creativecommons/vocabulary/issues/619"
-        },
-        {
             "createdAt": 1598096793,
             "labels": [
                 "Hacktoberfest",
@@ -730,10 +748,10 @@
                 "\u2728 goal: improvement"
             ],
             "number": 73,
-            "repo": "caselaw",
+            "repo": "legaldb",
             "title": "Replace Vocabulary CDN",
             "updatedAt": 1600999344,
-            "url": "https://github.com/creativecommons/caselaw/issues/73"
+            "url": "https://github.com/creativecommons/legaldb/issues/73"
         },
         {
             "createdAt": 1597431795,
@@ -747,7 +765,7 @@
             "number": 63,
             "repo": "ccos-scripts",
             "title": "Improvements to logging",
-            "updatedAt": 1605714773,
+            "updatedAt": 1606397027,
             "url": "https://github.com/creativecommons/ccos-scripts/issues/63"
         },
         {
