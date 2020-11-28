@@ -99,7 +99,7 @@ export const App = {
         <br/>
         <template v-if="filters.aim === 'contribute'">
         <label for="skills">
-          <strong>Skill set</strong><br/>
+          <strong>Skill set*</strong><br/>
           Choose up to three skills that you would like to see issues for.
         </label>
         <VueSelect
@@ -126,6 +126,12 @@ export const App = {
           :clearable="false"/>
         </template>
       </form>
+      <p class="disclaimer">
+        *Not all issues have skills marked on them, especially if they are 
+        simple issues that do not require proficiency in any specific 
+        framework or language. Those issues will not appear when filtering by 
+        skill.
+      </p>
       <div v-else>
         Loading filters, please wait...
       </div>
@@ -144,6 +150,7 @@ export const App = {
       </p>
     </div>
   </div>
+   
 </div>`,
   components: {
     VueSelect,
