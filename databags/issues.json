@@ -157,7 +157,6 @@
         {
             "createdAt": 1587266384,
             "labels": [
-                "Hacktoberfest",
                 "help wanted",
                 "\u2728 goal: improvement",
                 "\ud83c\udf1f goal: addition",
@@ -167,13 +166,12 @@
             "number": 332,
             "repo": "vocabulary",
             "title": "Figure a way to get diffs for failing snapshots from GitHub CI",
-            "updatedAt": 1601000065,
+            "updatedAt": 1606498764,
             "url": "https://github.com/creativecommons/vocabulary/issues/332"
         },
         {
             "createdAt": 1587219216,
             "labels": [
-                "Hacktoberfest",
                 "help wanted",
                 "\ud83d\udcbb aspect: code",
                 "\ud83d\udee0 goal: fix",
@@ -183,7 +181,7 @@
             "number": 330,
             "repo": "vocabulary",
             "title": "Fix broken tests and re-enable them",
-            "updatedAt": 1601000061,
+            "updatedAt": 1606498799,
             "url": "https://github.com/creativecommons/vocabulary/issues/330"
         },
         {
@@ -577,22 +575,6 @@
             "url": "https://github.com/creativecommons/cccatalog-api/issues/635"
         },
         {
-            "createdAt": 1601577112,
-            "labels": [
-                "Hacktoberfest",
-                "help wanted",
-                "\u2728 goal: improvement",
-                "\ud83d\udcaa skill: javascript/storybook",
-                "\ud83d\udd79 aspect: interface",
-                "\ud83d\udfe9 priority: low"
-            ],
-            "number": 699,
-            "repo": "vocabulary",
-            "title": "Implement dark mode for our storybooks",
-            "updatedAt": 1602551806,
-            "url": "https://github.com/creativecommons/vocabulary/issues/699"
-        },
-        {
             "createdAt": 1601573388,
             "labels": [
                 "Hacktoberfest",
@@ -609,7 +591,6 @@
         {
             "createdAt": 1601071581,
             "labels": [
-                "Hacktoberfest",
                 "help wanted",
                 "\ud83c\udf1f goal: addition",
                 "\ud83c\udfc1 status: ready for work",
@@ -623,7 +604,7 @@
             "number": 689,
             "repo": "vocabulary",
             "title": "[Vue] Footer Component",
-            "updatedAt": 1601963817,
+            "updatedAt": 1606498685,
             "url": "https://github.com/creativecommons/vocabulary/issues/689"
         },
         {
@@ -765,7 +746,7 @@
             "number": 63,
             "repo": "ccos-scripts",
             "title": "Improvements to logging",
-            "updatedAt": 1606397027,
+            "updatedAt": 1606517302,
             "url": "https://github.com/creativecommons/ccos-scripts/issues/63"
         },
         {
