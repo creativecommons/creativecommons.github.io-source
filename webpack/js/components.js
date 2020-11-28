@@ -84,6 +84,20 @@ export const App = {
   <div class="columns">
     <div class="column is-one-quarter">
       <form id="filters" v-if="options.skills.length">
+        <label for="aim">
+          <strong>Aim</strong><br/>
+          I am interested in...
+        </label>
+        <VueSelect
+          v-model="filters.aim"
+          id="aim"
+          name="aim"
+          :options="options.aims"
+          label="name"
+          :reduce="aim => aim.code"
+          :clearable="false"/>
+        <br/>
+        <template v-if="filters.aim === 'contribute'">
         <label for="skills">
           <strong>Skill set</strong><br/>
           Choose up to three skills that you would like to see issues for.
@@ -110,6 +124,7 @@ export const App = {
           label="name"
           :reduce="experience => experience.code"
           :clearable="false"/>
+        </template>
       </form>
       <div v-else>
         Loading filters, please wait...
@@ -137,6 +152,10 @@ export const App = {
   data() {
     return {
       options: {
+        aims: [
+          {name: 'Contributing code', code: 'contribute'},
+          {name: 'Triaging issues', code: 'triage'}
+        ],
         skills: [],
         experiences: [
           {name: 'Yes, it is', code: 'beginner'},
@@ -144,6 +163,7 @@ export const App = {
         ]
       },
       filters: {
+        aim: 'contribute',
         skills: [],
         experience: 'experienced'
       },
