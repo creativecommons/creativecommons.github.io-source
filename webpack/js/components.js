@@ -168,7 +168,8 @@ export const App = {
         experience: 'experienced'
       },
       categories: {},
-      issues: []
+      issues: [],
+      octokit: null
     }
   },
   computed: {
@@ -179,6 +180,12 @@ export const App = {
      */
     filteredIssues() {
       return this.issues.filter(issue => {
+        // If aim is to triage issues
+        if (this.filters.aim === 'triage') {
+          // Show all issues as they all have the label "🚦 status: awaiting triage"
+          return true
+        }
+
         // Check experience match
         if (this.filters.experience === 'beginner' && !issue.labels.includes('good first issue')) {
           return false
@@ -186,31 +193,46 @@ export const App = {
 
         // Check skill set match
         const joinedLabels = issue.labels.join(',')
-        if (this.filters.skills.length && !this.filters.skills.some(skill => joinedLabels.includes(skill))) {
-          return false
-        }
-
-        return true
+        return !(this.filters.skills.length && !this.filters.skills.some(skill => joinedLabels.includes(skill)));
       }).sort((a, b) => b.createdAt - a.createdAt)
+    }
+  },
+  watch: {
+    'filters.aim' (to, from) {
+      if (to !== from) {
+        this.loadIssues()
+      }
+    }
+  },
+  methods: {
+    loadIssues () {
+      const q = ['org:creativecommons', 'is:open', 'is:issue']
+      if (this.filters.aim === 'contribute') {
+        q.push('label:"help wanted"')
+      } else if (this.filters.aim === 'triage') {
+        q.push('label:"🚦 status: awaiting triage"')
+      }
+      this.octokit.search.issuesAndPullRequests({
+        q: q.join(' '),
+        per_page: 100,
+        sort: 'updated'
+      }).then(res => {
+        this.issues = res.data.items
+        this.issues.forEach(issue => {
+          issue.labels = issue.labels.map(label => label.name)
+
+          const repoUrl = issue.repository_url
+          issue.repo = repoUrl.slice(repoUrl.lastIndexOf('/') + 1)
+        })
+      })
     }
   },
   mounted() {
     const BASE_URL = 'https://raw.githubusercontent.com/creativecommons/ccos-scripts/master/normalize_repos'
     const FILE_URL = name => `${BASE_URL}/${name}.json`
 
-    const octokit = new Octokit();
-    octokit.search.issuesAndPullRequests({
-      q: 'org:creativecommons is:open is:issue label:"help wanted"',
-      per_page: 100
-    }).then(res => {
-      this.issues = res.data.items
-      this.issues.forEach(issue => {
-        issue.labels = issue.labels.map(label => label.name)
-
-        const repoUrl = issue.repository_url
-        issue.repo = repoUrl.slice(repoUrl.lastIndexOf('/')+1)
-      })
-    })
+    this.octokit = new Octokit()
+    this.loadIssues()
 
     Promise
         .all([
