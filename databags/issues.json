@@ -1,6 +1,21 @@
 {
     "issues": [
         {
+            "createdAt": 1597429171,
+            "labels": [
+                "Hacktoberfest",
+                "help wanted",
+                "\ud83d\udcaa skill: python",
+                "\ud83d\udee0 goal: fix",
+                "\ud83e\udd16 aspect: dx"
+            ],
+            "number": 60,
+            "repo": "ccos-scripts",
+            "title": "Code organisation can be improved",
+            "updatedAt": 1601578230,
+            "url": "https://github.com/creativecommons/ccos-scripts/issues/60"
+        },
+        {
             "createdAt": 1596741568,
             "labels": [
                 "Hacktoberfest",
@@ -302,19 +317,6 @@
             "title": "Move information about old GSoC projects to CC Open Source ",
             "updatedAt": 1601490653,
             "url": "https://github.com/creativecommons/creativecommons.github.io-source/issues/159"
-        },
-        {
-            "createdAt": 1579285909,
-            "labels": [
-                "Hacktoberfest",
-                "good first issue",
-                "help wanted"
-            ],
-            "number": 405,
-            "repo": "cccatalog-api",
-            "title": "Document error schemas",
-            "updatedAt": 1606390369,
-            "url": "https://github.com/creativecommons/cccatalog-api/issues/405"
         },
         {
             "createdAt": 1578954773,
@@ -731,21 +733,6 @@
             "title": "Improvements to logging",
             "updatedAt": 1606560369,
             "url": "https://github.com/creativecommons/ccos-scripts/issues/63"
-        },
-        {
-            "createdAt": 1597429171,
-            "labels": [
-                "Hacktoberfest",
-                "help wanted",
-                "\ud83d\udcaa skill: python",
-                "\ud83d\udee0 goal: fix",
-                "\ud83e\udd16 aspect: dx"
-            ],
-            "number": 60,
-            "repo": "ccos-scripts",
-            "title": "Code organisation can be improved",
-            "updatedAt": 1601578230,
-            "url": "https://github.com/creativecommons/ccos-scripts/issues/60"
         }
     ]
 }
