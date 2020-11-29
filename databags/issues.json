@@ -430,6 +430,23 @@
             "url": "https://github.com/creativecommons/creativecommons.org/issues/940"
         },
         {
+            "createdAt": 1606659007,
+            "labels": [
+                "good first issue",
+                "help wanted",
+                "\ud83c\udfc1 status: ready for work",
+                "\ud83d\udcbb aspect: code",
+                "\ud83d\udee0 goal: fix",
+                "\ud83d\udfe8 priority: medium",
+                "\ud83e\udd16 aspect: dx"
+            ],
+            "number": 105,
+            "repo": "ccos-scripts",
+            "title": "TypeError: Item in __all__ must be str, not function",
+            "updatedAt": 1606659105,
+            "url": "https://github.com/creativecommons/ccos-scripts/issues/105"
+        },
+        {
             "createdAt": 1605704389,
             "labels": [
                 "good first issue",
@@ -594,7 +611,6 @@
         {
             "createdAt": 1601003812,
             "labels": [
-                "Hacktoberfest",
                 "good first issue",
                 "help wanted",
                 "\u2728 goal: improvement",
@@ -606,7 +622,7 @@
             "number": 85,
             "repo": "ccos-scripts",
             "title": "Increase readability of label data files",
-            "updatedAt": 1602076855,
+            "updatedAt": 1606659076,
             "url": "https://github.com/creativecommons/ccos-scripts/issues/85"
         },
         {
