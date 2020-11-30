@@ -16,14 +16,14 @@ This is a mid-internship blog post. Wait. what!? Already? Let's glance over my p
 
 ## Vocabulary Site Updates (Edition 2/many more to come)
 
-Oh boy! 1.5 months have passed since I've been investing time in building a landing site & usage guide for `CC Vocabulary`. A lot has changed since the time of posting my last blog post. **A lot**.
+Oh boy! 1.5 months have passed since I've been investing time in building a landing site & usage guide for CC Vocabulary. A lot has changed since the time of posting my last blog post. **A lot**.
 
 <center>
 <img alt"Halfway There" src="speed.gif"/><br>
 <small class="muted">Hitting "the point of no return" has never been this exciting! Time to step on the throttle! Source: <a href="https://cliply.co">Cliply</a></small>
 </center>
 
-### What I've been upto
+### What I've been up to
 
 > **Designing** ⇨ **Drafting** ⇨ **Developing** ⇨ **Debugging** ⇨ **Deploying**
 
@@ -48,7 +48,7 @@ Here's a gist of what I've achieved so far:
 Some say it's hard to learn through virtual internships. Well, let me prove you wrong. Here are my leanings in the past few weeks:
 
 - It's surprising how subjective (& yet objective) designing really is.
-- VueJS is _fantastic_. Maybe I'm a VueJS fan now. Should I remain loyal to ReactJS? I don't know.
+- Vue.js is _fantastic_. Maybe I'm a Vue.js fan now. Should I remain loyal to React? I don't know.
 - Making a site responsive isn't the _easiest_ of tasks, but it's certainly doable after a lot of stretching & compressing; lets say that.
 - "Code formatting is essential" would be an _understatement_ to make.
 - Monorepo's have their own pro's and con's. But in our case the con's were negligible, thankfully! 
@@ -61,11 +61,11 @@ I believe apart from the internship work that I'm engaged in, I should also help
 
 - I got the opportunity to speak at a CCOS event alongwith fellow speakers [dhruvkb](https://opensource.creativecommons.org/blog/authors/dhruvkb/) & [dhruvi](https://opensource.creativecommons.org/blog/authors/dhruvi16/). I had a blast talking to budding students from DSC-IIT Surat & DSC-RIT.
 - The dark mode (as promised) should be out before my next blog post.
-- Deployed the vocabulary storybook on [chromatic](chromatic.com) and compared & contrasted the pros & cons. Snapshot testing in the near future maybe? 
+- Deployed the vocabulary storybook on [Chromatic](https://chromatic.com) and compared & contrasted the pros & cons. Snapshot testing in the near future maybe? 
 - Completed the hacktoberfest challenge. 
 
 ### Bonus content
-Not many of you may know this, but this site uses the [lektor](https://getlektor.com) CMS. I needed to have it installed on my system (windows 10 OS) to run the code in our site repository. 
+Not many of you may know this, but this site uses the [Lektor](https://getlektor.com) CMS. I needed to have it installed on my system (windows 10 OS) to run the code in our site repository. 
 Lektor suggests running the following code in powershell as an installation step:
 ```powershell
 (new-object net.webclient).DownloadString('https://www.getlektor.com/installer.py') | python
@@ -76,7 +76,7 @@ I just didn't think this is a very elegant way. Being an ardent [chocolatey.org]
 ```powershell
 choco install lektor
 ```
-on the Windows Powershell!
+on the Windows PowerShell!
 
 Have a look at the package here:
 

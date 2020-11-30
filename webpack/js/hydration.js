@@ -1,10 +1,13 @@
 export const hydrateAppWithData = (skills, labels) => {
-  skills = Array.from( // Convert back into an array
-      new Set( // Remove duplicates
-          Object.values(skills)
-              .flat() // Combine all skills
-              .map(skill => skill.split('/')[0]) // Keep only the prefix
-      )
+  skills = Array.from(
+    new Set( // Remove duplicates
+      Object.values(skills).flat() // Combine all skills
+    )
+  )
+  const top_level_skills = Array.from(
+    new Set( // Remove duplicates
+      skills.map(skill => skill.split('/')[0]) // Keep only the prefix
+    )
   )
 
   const categories = {}
@@ -35,5 +38,5 @@ export const hydrateAppWithData = (skills, labels) => {
     categories[name] = 'skill'
   })
 
-  return [skills, categories]
+  return [top_level_skills, categories]
 }

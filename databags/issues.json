@@ -1,6 +1,21 @@
 {
     "issues": [
         {
+            "createdAt": 1597429171,
+            "labels": [
+                "Hacktoberfest",
+                "help wanted",
+                "\ud83d\udcaa skill: python",
+                "\ud83d\udee0 goal: fix",
+                "\ud83e\udd16 aspect: dx"
+            ],
+            "number": 60,
+            "repo": "ccos-scripts",
+            "title": "Code organisation can be improved",
+            "updatedAt": 1601578230,
+            "url": "https://github.com/creativecommons/ccos-scripts/issues/60"
+        },
+        {
             "createdAt": 1596741568,
             "labels": [
                 "Hacktoberfest",
@@ -157,7 +172,6 @@
         {
             "createdAt": 1587266384,
             "labels": [
-                "Hacktoberfest",
                 "help wanted",
                 "\u2728 goal: improvement",
                 "\ud83c\udf1f goal: addition",
@@ -167,13 +181,12 @@
             "number": 332,
             "repo": "vocabulary",
             "title": "Figure a way to get diffs for failing snapshots from GitHub CI",
-            "updatedAt": 1601000065,
+            "updatedAt": 1606498764,
             "url": "https://github.com/creativecommons/vocabulary/issues/332"
         },
         {
             "createdAt": 1587219216,
             "labels": [
-                "Hacktoberfest",
                 "help wanted",
                 "\ud83d\udcbb aspect: code",
                 "\ud83d\udee0 goal: fix",
@@ -183,7 +196,7 @@
             "number": 330,
             "repo": "vocabulary",
             "title": "Fix broken tests and re-enable them",
-            "updatedAt": 1601000061,
+            "updatedAt": 1606498799,
             "url": "https://github.com/creativecommons/vocabulary/issues/330"
         },
         {
@@ -306,19 +319,6 @@
             "url": "https://github.com/creativecommons/creativecommons.github.io-source/issues/159"
         },
         {
-            "createdAt": 1579285909,
-            "labels": [
-                "Hacktoberfest",
-                "good first issue",
-                "help wanted"
-            ],
-            "number": 405,
-            "repo": "cccatalog-api",
-            "title": "Document error schemas",
-            "updatedAt": 1606390369,
-            "url": "https://github.com/creativecommons/cccatalog-api/issues/405"
-        },
-        {
             "createdAt": 1578954773,
             "labels": [
                 "Hacktoberfest",
@@ -432,6 +432,23 @@
             "url": "https://github.com/creativecommons/creativecommons.org/issues/940"
         },
         {
+            "createdAt": 1606659007,
+            "labels": [
+                "good first issue",
+                "help wanted",
+                "\ud83c\udfc1 status: ready for work",
+                "\ud83d\udcbb aspect: code",
+                "\ud83d\udee0 goal: fix",
+                "\ud83d\udfe8 priority: medium",
+                "\ud83e\udd16 aspect: dx"
+            ],
+            "number": 105,
+            "repo": "ccos-scripts",
+            "title": "TypeError: Item in __all__ must be str, not function",
+            "updatedAt": 1606659105,
+            "url": "https://github.com/creativecommons/ccos-scripts/issues/105"
+        },
+        {
             "createdAt": 1605704389,
             "labels": [
                 "good first issue",
@@ -446,22 +463,6 @@
             "title": "Correct the attribution information for the CC0 license",
             "updatedAt": 1606284360,
             "url": "https://github.com/creativecommons/chooser/issues/207"
-        },
-        {
-            "createdAt": 1605704042,
-            "labels": [
-                "good first issue",
-                "help wanted",
-                "\ud83c\udfc1 status: ready for work",
-                "\ud83d\udcbb aspect: code",
-                "\ud83d\udee0 goal: fix",
-                "\ud83d\udfe7 priority: high"
-            ],
-            "number": 206,
-            "repo": "chooser",
-            "title": "Copy action is not working in plain text tab",
-            "updatedAt": 1606041470,
-            "url": "https://github.com/creativecommons/chooser/issues/206"
         },
         {
             "createdAt": 1604609253,
@@ -492,7 +493,7 @@
             "number": 759,
             "repo": "vocabulary",
             "title": "Add two new text styles",
-            "updatedAt": 1606142607,
+            "updatedAt": 1606601290,
             "url": "https://github.com/creativecommons/vocabulary/issues/759"
         },
         {
@@ -577,22 +578,6 @@
             "url": "https://github.com/creativecommons/cccatalog-api/issues/635"
         },
         {
-            "createdAt": 1601577112,
-            "labels": [
-                "Hacktoberfest",
-                "help wanted",
-                "\u2728 goal: improvement",
-                "\ud83d\udcaa skill: javascript/storybook",
-                "\ud83d\udd79 aspect: interface",
-                "\ud83d\udfe9 priority: low"
-            ],
-            "number": 699,
-            "repo": "vocabulary",
-            "title": "Implement dark mode for our storybooks",
-            "updatedAt": 1602551806,
-            "url": "https://github.com/creativecommons/vocabulary/issues/699"
-        },
-        {
             "createdAt": 1601573388,
             "labels": [
                 "Hacktoberfest",
@@ -609,7 +594,6 @@
         {
             "createdAt": 1601071581,
             "labels": [
-                "Hacktoberfest",
                 "help wanted",
                 "\ud83c\udf1f goal: addition",
                 "\ud83c\udfc1 status: ready for work",
@@ -623,26 +607,8 @@
             "number": 689,
             "repo": "vocabulary",
             "title": "[Vue] Footer Component",
-            "updatedAt": 1601963817,
+            "updatedAt": 1606498685,
             "url": "https://github.com/creativecommons/vocabulary/issues/689"
-        },
-        {
-            "createdAt": 1601003812,
-            "labels": [
-                "Hacktoberfest",
-                "good first issue",
-                "help wanted",
-                "\u2728 goal: improvement",
-                "\ud83c\udfc1 status: ready for work",
-                "\ud83d\udcbb aspect: code",
-                "\ud83d\udfe9 priority: low",
-                "\ud83e\udd16 aspect: dx"
-            ],
-            "number": 85,
-            "repo": "ccos-scripts",
-            "title": "Increase readability of label data files",
-            "updatedAt": 1602076855,
-            "url": "https://github.com/creativecommons/ccos-scripts/issues/85"
         },
         {
             "createdAt": 1600925457,
@@ -765,23 +731,8 @@
             "number": 63,
             "repo": "ccos-scripts",
             "title": "Improvements to logging",
-            "updatedAt": 1606397027,
+            "updatedAt": 1606560369,
             "url": "https://github.com/creativecommons/ccos-scripts/issues/63"
-        },
-        {
-            "createdAt": 1597429171,
-            "labels": [
-                "Hacktoberfest",
-                "help wanted",
-                "\ud83d\udcaa skill: python",
-                "\ud83d\udee0 goal: fix",
-                "\ud83e\udd16 aspect: dx"
-            ],
-            "number": 60,
-            "repo": "ccos-scripts",
-            "title": "Code organisation can be improved",
-            "updatedAt": 1601578230,
-            "url": "https://github.com/creativecommons/ccos-scripts/issues/60"
         }
     ]
 }
