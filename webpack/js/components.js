@@ -1,4 +1,5 @@
 import VueSelect from 'vue-select';
+import {Octokit} from '@octokit/rest';
 
 import {hydrateAppWithData} from "./hydration";
 
@@ -40,7 +41,7 @@ export const IssueCard = {
   </h4>
   <p class="is-size-6">
     <a
-      :href="issue.url"
+      :href="issue.html_url"
       target="_blank">
       <span class="has-color-forest-green">
         {{ issue.repo }}#{{ issue.number }}
@@ -70,8 +71,7 @@ export const IssueCard = {
   },
   computed: {
     dateCreated() {
-      const dateCreated = new Date(this.issue.createdAt * 1000)
-      const [dateComponent,] = dateCreated.toISOString().split("T")
+      const [dateComponent,] = this.issue.created_at.split("T")
       return dateComponent
     }
   }
@@ -84,6 +84,20 @@ export const App = {
   <div class="columns">
     <div class="column is-one-quarter">
       <form id="filters" v-if="options.skills.length">
+        <label for="aim">
+          <strong>Aim</strong><br/>
+          I am interested in...
+        </label>
+        <VueSelect
+          v-model="filters.aim"
+          id="aim"
+          name="aim"
+          :options="options.aims"
+          label="name"
+          :reduce="aim => aim.code"
+          :clearable="false"/>
+        <br/>
+        <template v-if="filters.aim === 'contribute'">
         <label for="skills">
           <strong>Skill set*</strong><br/>
           Choose up to three skills that you would like to see issues for.
@@ -110,6 +124,7 @@ export const App = {
           label="name"
           :reduce="experience => experience.code"
           :clearable="false"/>
+        </template>
       </form>
       <p class="disclaimer">
         *Not all issues have skills marked on them, especially if they are 
@@ -144,6 +159,10 @@ export const App = {
   data() {
     return {
       options: {
+        aims: [
+          {name: 'Contributing code', code: 'contribute'},
+          {name: 'Triaging issues', code: 'triage'}
+        ],
         skills: [],
         experiences: [
           {name: 'Yes, it is', code: 'beginner'},
@@ -151,11 +170,13 @@ export const App = {
         ]
       },
       filters: {
+        aim: 'contribute',
         skills: [],
         experience: 'experienced'
       },
       categories: {},
-      issues: []
+      issues: [],
+      octokit: null
     }
   },
   computed: {
@@ -165,7 +186,13 @@ export const App = {
      * @returns {array} the array of filtered issues
      */
     filteredIssues() {
-      return window.issues.filter(issue => {
+      return this.issues.filter(issue => {
+        // If aim is to triage issues
+        if (this.filters.aim === 'triage') {
+          // Show all issues as they all have the label "🚦 status: awaiting triage"
+          return true
+        }
+
         // Check experience match
         if (this.filters.experience === 'beginner' && !issue.labels.includes('good first issue')) {
           return false
@@ -173,17 +200,46 @@ export const App = {
 
         // Check skill set match
         const joinedLabels = issue.labels.join(',')
-        if (this.filters.skills.length && !this.filters.skills.some(skill => joinedLabels.includes(skill))) {
-          return false
-        }
-
-        return true
+        return !(this.filters.skills.length && !this.filters.skills.some(skill => joinedLabels.includes(skill)));
       }).sort((a, b) => b.createdAt - a.createdAt)
+    }
+  },
+  watch: {
+    'filters.aim' (to, from) {
+      if (to !== from) {
+        this.loadIssues()
+      }
+    }
+  },
+  methods: {
+    loadIssues () {
+      const q = ['org:creativecommons', 'is:open', 'is:issue']
+      if (this.filters.aim === 'contribute') {
+        q.push('label:"help wanted"')
+      } else if (this.filters.aim === 'triage') {
+        q.push('label:"🚦 status: awaiting triage"')
+      }
+      this.octokit.search.issuesAndPullRequests({
+        q: q.join(' '),
+        per_page: 100,
+        sort: 'updated'
+      }).then(res => {
+        this.issues = res.data.items
+        this.issues.forEach(issue => {
+          issue.labels = issue.labels.map(label => label.name)
+
+          const repoUrl = issue.repository_url
+          issue.repo = repoUrl.slice(repoUrl.lastIndexOf('/') + 1)
+        })
+      })
     }
   },
   mounted() {
     const BASE_URL = 'https://raw.githubusercontent.com/creativecommons/ccos-scripts/master/normalize_repos'
     const FILE_URL = name => `${BASE_URL}/${name}.json`
+
+    this.octokit = new Octokit()
+    this.loadIssues()
 
     Promise
         .all([
