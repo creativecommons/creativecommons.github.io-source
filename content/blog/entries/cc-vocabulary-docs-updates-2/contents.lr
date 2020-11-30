@@ -76,7 +76,7 @@ I just didn't think this is a very elegant way. Being an ardent [chocolatey.org]
 ```powershell
 choco install lektor
 ```
-on the Windows Powershell!
+on the Windows PowerShell!
 
 Have a look at the package here:
 
