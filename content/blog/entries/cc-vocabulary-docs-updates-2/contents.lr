@@ -65,7 +65,7 @@ I believe apart from the internship work that I'm engaged in, I should also help
 - Completed the hacktoberfest challenge. 
 
 ### Bonus content
-Not many of you may know this, but this site uses the [lektor](https://getlektor.com) CMS. I needed to have it installed on my system (windows 10 OS) to run the code in our site repository. 
+Not many of you may know this, but this site uses the [Lektor](https://getlektor.com) CMS. I needed to have it installed on my system (windows 10 OS) to run the code in our site repository. 
 Lektor suggests running the following code in powershell as an installation step:
 ```powershell
 (new-object net.webclient).DownloadString('https://www.getlektor.com/installer.py') | python
