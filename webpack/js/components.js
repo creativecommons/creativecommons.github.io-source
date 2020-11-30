@@ -1,5 +1,6 @@
 import VueSelect from 'vue-select';
 import {Octokit} from '@octokit/rest';
+import yaml from 'js-yaml'
 
 import {hydrateAppWithData} from "./hydration";
 
@@ -98,40 +99,40 @@ export const App = {
           :clearable="false"/>
         <br/>
         <template v-if="filters.aim === 'contribute'">
-        <label for="skills">
-          <strong>Skill set*</strong><br/>
-          Choose up to three skills that you would like to see issues for.
-        </label>
-        <VueSelect
-          v-model="filters.skills"
-          id="skills"
-          name="skills"
-          placeholder="No preference"
-          :options="options.skills"
-          :reduce="skill => skill.toLocaleLowerCase()"
-          :selectable="() => filters.skills.length < 3"
-          multiple/>
-        <br/>
-        <label for="experience">
-          <strong>Experience</strong><br/>
-          Is this your first time contributing to CC?
-        </label>
-        <VueSelect
-          v-model="filters.experience"
-          id="experience"
-          name="experience"
-          :options="options.experiences"
-          label="name"
-          :reduce="experience => experience.code"
-          :clearable="false"/>
+          <label for="skills">
+            <strong>Skill set*</strong><br/>
+            Choose up to three skills that you would like to see issues for.
+          </label>
+          <VueSelect
+            v-model="filters.skills"
+            id="skills"
+            name="skills"
+            placeholder="No preference"
+            :options="options.skills"
+            :reduce="skill => skill.toLocaleLowerCase()"
+            :selectable="() => filters.skills.length < 3"
+            multiple/>
+          <br/>
+          <label for="experience">
+            <strong>Experience</strong><br/>
+            Is this your first time contributing to CC?
+          </label>
+          <VueSelect
+            v-model="filters.experience"
+            id="experience"
+            name="experience"
+            :options="options.experiences"
+            label="name"
+            :reduce="experience => experience.code"
+            :clearable="false"/>
+          <p class="disclaimer">
+            *Not all issues have skills marked on them, especially if they are 
+            simple issues that do not require proficiency in any specific 
+            framework or language. Those issues will not appear when filtering by 
+            skill.
+          </p>
         </template>
       </form>
-      <p class="disclaimer">
-        *Not all issues have skills marked on them, especially if they are 
-        simple issues that do not require proficiency in any specific 
-        framework or language. Those issues will not appear when filtering by 
-        skill.
-      </p>
       <div v-else>
         Loading filters, please wait...
       </div>
@@ -236,7 +237,7 @@ export const App = {
   },
   mounted() {
     const BASE_URL = 'https://raw.githubusercontent.com/creativecommons/ccos-scripts/master/normalize_repos'
-    const FILE_URL = name => `${BASE_URL}/${name}.json`
+    const FILE_URL = name => `${BASE_URL}/${name}.yml`
 
     this.octokit = new Octokit()
     this.loadIssues()
@@ -244,11 +245,13 @@ export const App = {
     Promise
         .all([
           fetch(FILE_URL('skills'))
-              .then(response => response.json()),
+              .then(response => response.text()),
           fetch(FILE_URL('labels'))
-              .then(response => response.json())
+              .then(response => response.text())
         ])
         .then(([skillResponse, labelResponse]) => {
+          skillResponse = yaml.safeLoad(skillResponse)
+          labelResponse = yaml.safeLoad(labelResponse)
           const [skills, categories] = hydrateAppWithData(skillResponse, labelResponse)
           this.categories = categories
           this.options.skills = skills
