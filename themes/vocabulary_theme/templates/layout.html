@@ -17,10 +17,8 @@
 {% endif %}
 <meta property="og:url" content="{{ this|url }}" />
 <meta property="og:type" content="article" />
-{% set image = this.attachments.images.first() %}
-{% if image %}
-<meta property="og:image" content="{{ image|url(external=true)}}" />
-{% endif %}
+{% from "macros/og_image.html" import og_image %}
+{{ og_image(this) }}
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="{{ this.title }}">
 <meta name="twitter:description" content="{{ desc }}">
@@ -41,7 +39,7 @@
 <script>
   const globalHeaderInstance = vocabulary.createGlobalHeader();
 </script>
-<title>{% block title %}Welcome{% endblock %} — Creative Commons on GitHub</title>
+<title>{% block title %}Welcome{% endblock %} — Creative Commons Open Source</title>
 
 <body>
   <div class="ga-script">{{ generate_google_analytics() }}</div>
