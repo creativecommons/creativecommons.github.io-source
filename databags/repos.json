@@ -33,28 +33,6 @@
             "website": "http://certificates.creativecommons.org/"
         },
         {
-            "created": "2018-05-16T19:44:57",
-            "description": "Curated repository of Case Law and Scholarship data from around the world in a Django based website.",
-            "engineering_project": true,
-            "english_name": "CC Legal Database",
-            "featured": false,
-            "id": 133715391,
-            "language": "HTML",
-            "license": {
-                "name": "MIT License",
-                "url": "https://github.com/creativecommons/caselaw/blob/main/LICENSE"
-            },
-            "name": "caselaw",
-            "slack": "cc-dev-legal-database",
-            "technologies": [
-                "Python",
-                "Django",
-                "PostgreSQL"
-            ],
-            "url": "https://github.com/creativecommons/caselaw",
-            "website": ""
-        },
-        {
             "created": "2015-11-16T19:24:04",
             "description": "Creative Commons JavaScript license selector in the form of a JavaScript widget",
             "engineering_project": true,
@@ -493,6 +471,50 @@
             "website": "https://network.creativecommons.org/"
         },
         {
+            "created": "2019-12-06T19:44:21",
+            "description": "Base WordPress theme for Creative Commons websites.",
+            "engineering_project": true,
+            "english_name": "WordPress base theme",
+            "featured": false,
+            "id": 226397839,
+            "language": "PHP",
+            "license": {
+                "name": "MIT License",
+                "url": "https://github.com/creativecommons/creativecommons-base/blob/master/LICENSE"
+            },
+            "name": "creativecommons-base",
+            "slack": "cc-dev-wordpress",
+            "technologies": [
+                "PHP",
+                "WordPress"
+            ],
+            "url": "https://github.com/creativecommons/creativecommons-base",
+            "website": ""
+        },
+        {
+            "created": "2020-06-11T17:20:52",
+            "description": "WordPress theme for the CC Certificate Website",
+            "engineering_project": true,
+            "english_name": "Creative Commons Certificates program child theme",
+            "featured": false,
+            "id": 271605671,
+            "language": "PHP",
+            "license": {
+                "name": "MIT License",
+                "url": "https://github.com/creativecommons/creativecommons-certificate/blob/master/LICENSE"
+            },
+            "name": "creativecommons-certificate",
+            "slack": "",
+            "technologies": [
+                "CSS",
+                "HTML",
+                "PHP",
+                "WordPress"
+            ],
+            "url": "https://github.com/creativecommons/creativecommons-certificate",
+            "website": ""
+        },
+        {
             "created": "2019-01-27T02:29:18",
             "description": "Source files for CC Open Source website",
             "engineering_project": true,
@@ -605,6 +627,28 @@
             "website": ""
         },
         {
+            "created": "2018-05-16T19:44:57",
+            "description": "CC Legal Database: curated repository of Case Law and Scholarship data from around the world in a Django based website.",
+            "engineering_project": true,
+            "english_name": "CC Legal Database",
+            "featured": false,
+            "id": 133715391,
+            "language": "HTML",
+            "license": {
+                "name": "MIT License",
+                "url": "https://github.com/creativecommons/legaldb/blob/main/LICENSE"
+            },
+            "name": "legaldb",
+            "slack": "cc-dev-legal-database",
+            "technologies": [
+                "Python",
+                "Django",
+                "PostgreSQL"
+            ],
+            "url": "https://github.com/creativecommons/legaldb",
+            "website": "https://legaldb.creativecommons.org/"
+        },
+        {
             "created": "2013-10-28T02:42:48",
             "description": "Creative Commons badges, license Buttons, etc.",
             "engineering_project": true,
@@ -690,7 +734,7 @@
             "engineering_project": true,
             "featured": false,
             "id": 59230280,
-            "language": "CSS",
+            "language": "SCSS",
             "license": {
                 "name": "GNU General Public License v2.0",
                 "url": "https://github.com/creativecommons/new-www-theme/blob/master/LICENSE"
@@ -1036,27 +1080,6 @@
             "website": null
         },
         {
-            "created": "2019-12-06T19:44:21",
-            "description": "New base WordPress theme for Creative Commons websites",
-            "engineering_project": true,
-            "english_name": "WordPress base theme",
-            "featured": false,
-            "id": 226397839,
-            "language": "PHP",
-            "license": {
-                "name": "MIT License",
-                "url": "https://github.com/creativecommons/wp-theme-base/blob/master/LICENSE"
-            },
-            "name": "wp-theme-base",
-            "slack": "cc-dev-wordpress",
-            "technologies": [
-                "PHP",
-                "WordPress"
-            ],
-            "url": "https://github.com/creativecommons/wp-theme-base",
-            "website": null
-        },
-        {
             "created": "2019-02-11T15:51:29",
             "description": "Creative Commons Chapter site theme (including chapter sites setup, taxonomies, and widget code)",
             "engineering_project": true,
@@ -1130,29 +1153,6 @@
             ],
             "url": "https://github.com/creativecommons/wp-theme-cctoolkit",
             "website": ""
-        },
-        {
-            "created": "2020-06-11T17:20:52",
-            "description": "WordPress theme for the CC Certificates website",
-            "engineering_project": true,
-            "english_name": "Creative Commons Certificates program child theme",
-            "featured": false,
-            "id": 271605671,
-            "language": "PHP",
-            "license": {
-                "name": "MIT License",
-                "url": "https://github.com/creativecommons/wp-theme-certificates/blob/master/LICENSE"
-            },
-            "name": "wp-theme-certificates",
-            "slack": "",
-            "technologies": [
-                "CSS",
-                "HTML",
-                "PHP",
-                "WordPress"
-            ],
-            "url": "https://github.com/creativecommons/wp-theme-certificates",
-            "website": null
         },
         {
             "created": "2020-04-21T17:01:56",
