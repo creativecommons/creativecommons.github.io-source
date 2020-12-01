@@ -1,0 +1,32 @@
+title: Presenting CC Base docs - A WordPress Base Theme Usage Guide for the CC Base Theme
+---
+categories:
+cc-wp-base-theme
+gsod
+gsod-2020
+---
+author: JackieBinya
+---
+series: gsod-2020-wordpress-base-theme-usage-guide
+---
+pub_date: 2020-11-27
+---
+body:
+
+We are live 🎉
+
+The CC Base documentation is live and its available on this [link](https://cc-wp-theme-base.netlify.app/).
+
+The docs were successfully migrated from Google Docs to the site! One of the most notable changes in the theme and consequently reflected in the documentation is the product name change. The CC WP Theme Base has been renamed to CC Base.
+
+But the old adage says good documentation is never complete, we hope to engage the Creative Commons Community and perform usability tests. Any feed back gathered from the usability tests will then be used to further improve the CC Base docs.
+
+
+In future iterations of the docs development we hope to include the following features:
+- Increase the quantity of illustrative media so as to make the docs more intuitive this will be marked by adding video tutorials on how to use certain features of the CC Base theme and also adding illustrative tree diagrams to explain hierarchy of key directories and files in the CC Base project structure.
+- Integration of [Algolia](https://www.algolia.com/) a software tool used to power search functionality in static generated sites. 
+- We also hope to improve SEO for the site.
+
+All the above mentioned improvements are geared at improving the overall user experience of the docs as well as ensure faster onboarding for our community members to get started on using the CC Base theme.
+
+In conclusion I would like to thank all members of the Creative Commons engineering team, with special mention to Hugo Solar and Kriti Godey. Thank you for your guidance and faith in my abilities as a technical writer and software developer.
