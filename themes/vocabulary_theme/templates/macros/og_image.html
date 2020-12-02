@@ -1,0 +1,25 @@
+{% from "macros/author_name.html" import render_author_name %}
+
+{% macro og_image(page) %}
+  {% set baseUrl = 'https://cc-og-image.vercel.app/'  %}
+  {% set queryParams = '?&md=1&fontFamily=roboto-condensed&fontSize=100px&images=https%3A%2F%2Fcc-vocabulary.netlify.app%2Flogos%2Fproducts%2Fopen_source.svg%23opensource' %}
+
+  {% if page.title  %}
+    {% set pageTitle = page.title %}
+  {% else %}
+    {% set pageTitle = 'Open Source at CC' %}
+  {% endif %}
+
+  {% if page.author %}
+    {% set author = page.parent.parent.children.get('authors').children.get(page.author) %}
+    {% if author and author.md5_hashed_email %}
+      {% set gravatarURL = 'https://secure.gravatar.com/avatar/' + author.md5_hashed_email + '?size=300&d=mp' %}
+      {% set queryParams = queryParams + '&images=' + gravatarURL %}
+      {% set pageTitle = page.title + '<br><sm style="font-size:70px;">By '+ render_author_name(author) + '</sm>'  %}
+    {% endif  %}
+  {% endif %}
+
+  {% set url = baseUrl + pageTitle + '.png' + queryParams  %}
+
+  <meta property="og:image" content="{{ url }}" />
+{% endmacro %}

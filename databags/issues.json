@@ -315,7 +315,7 @@
             "number": 159,
             "repo": "creativecommons.github.io-source",
             "title": "Move information about old GSoC projects to CC Open Source ",
-            "updatedAt": 1601490653,
+            "updatedAt": 1606887154,
             "url": "https://github.com/creativecommons/creativecommons.github.io-source/issues/159"
         },
         {
@@ -432,6 +432,21 @@
             "url": "https://github.com/creativecommons/creativecommons.org/issues/940"
         },
         {
+            "createdAt": 1606848017,
+            "labels": [
+                "good first issue",
+                "help wanted",
+                "\ud83d\udcbb aspect: code",
+                "\ud83d\udee0 goal: fix",
+                "\ud83d\udfe7 priority: high"
+            ],
+            "number": 18,
+            "repo": "og-image-generator",
+            "title": "Encode query parameters containing urls for facebook and other social media platforms.",
+            "updatedAt": 1606848029,
+            "url": "https://github.com/creativecommons/og-image-generator/issues/18"
+        },
+        {
             "createdAt": 1606659007,
             "labels": [
                 "good first issue",
@@ -463,21 +478,6 @@
             "title": "Correct the attribution information for the CC0 license",
             "updatedAt": 1606284360,
             "url": "https://github.com/creativecommons/chooser/issues/207"
-        },
-        {
-            "createdAt": 1604609253,
-            "labels": [
-                "good first issue",
-                "help wanted",
-                "\ud83c\udf1f goal: addition",
-                "\ud83d\udcaa skill: lektor",
-                "\ud83d\udcbb aspect: code"
-            ],
-            "number": 553,
-            "repo": "creativecommons.github.io-source",
-            "title": "Implement generated Open Graph Images ",
-            "updatedAt": 1604609253,
-            "url": "https://github.com/creativecommons/creativecommons.github.io-source/issues/553"
         },
         {
             "createdAt": 1604518405,
