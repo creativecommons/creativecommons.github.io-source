@@ -162,7 +162,8 @@ export const App = {
       options: {
         aims: [
           {name: 'Contributing code', code: 'contribute'},
-          {name: 'Triaging issues', code: 'triage'}
+          {name: 'Triaging issues', code: 'triage'},
+          {name: 'Labelling issues', code: 'label'}
         ],
         skills: [],
         experiences: [
@@ -189,7 +190,7 @@ export const App = {
     filteredIssues() {
       return this.issues.filter(issue => {
         // If aim is to triage issues
-        if (this.filters.aim === 'triage') {
+        if (this.filters.aim === 'triage' || this.filters.aim === 'label') {
           // Show all issues as they all have the label "🚦 status: awaiting triage"
           return true
         }
@@ -219,11 +220,14 @@ export const App = {
         q.push('label:"help wanted"')
       } else if (this.filters.aim === 'triage') {
         q.push('label:"🚦 status: awaiting triage"')
+      } else if (this.filters.aim === 'label') {
+        q.push('label:"🏷 status: label work required"')
       }
       this.octokit.search.issuesAndPullRequests({
         q: q.join(' '),
         per_page: 100,
-        sort: 'updated'
+        sort: 'created',
+        order: 'desc'
       }).then(res => {
         this.issues = res.data.items
         this.issues.forEach(issue => {
