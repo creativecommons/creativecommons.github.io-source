@@ -139,8 +139,8 @@ Link to [the landing site](https://cc-vocab-draft.web.app)
 - PR was reviewed and merged on the **25th of November**.
 
 <center>
-<img alt"Halfway There" src="merged747.png"/><br>
-<small class="muted">GSoD PR merged!</small>
+<img alt"The final website!" src="website.png"/><br>
+<small class="muted">Snapshot of the final website!</small>
 </center>
 
 - Used [surge](https://surge.sh) & [firebase](https://web.app) for draft deploys.
