@@ -1,0 +1,237 @@
+title: Vocabulary Landing Page & Usage Guide Final Report
+---
+categories:
+cc-vocabulary
+gsod
+gsod-2020
+---
+author: nimishbongale
+---
+series: gsod-2020-vocabulary-usage-guide
+---
+pub_date: 2020-12-03
+---
+body:
+We have reached the end of this wonderful journey. Let's comprehensively recap all my contributions during the GSoD internship period!
+
+## Vocabulary Site Updates (Edition 4/4)
+
+After securing acceptance, I received the necessary github invites. I was given write access to the [Vocabulary GitHub repository](https://github.com/creativecommons/vocabulary) as a **CC Vocabulary Core Committer**. 
+
+### Proposed Initial Plan
+
+#### Project Synopsis
+
+Vocabulary has immense potential to be used as a primary UI component library for website building. What it needs is a robust yet layman-friendly how-to guide. Important developer information such as component guides, usage specifications and configuration tweaks form an essential part of any documentation. This will not only encourage existing users to get a feel of how vocabulary continues to grow and reach new milestones, but also promote the usage of Vocabulary in comparatively newer projects. The desired outcomes of my stint as an intern would not only involve penning out a no-nonsense guide to using the pre-existing components but also the designing and developing of a home page (leading to an integrated documentation for each) for Vocabulary, Vue-Vocabulary and Fonts.
+
+### Proposed & Improvised Timelines & Deliverables
+
+Here's a list of all the weekly goals that I met:
+
+**Pre-Internship**
+- Understood Creative Commons as an organisation, its work and related ethics.
+- Had a look at CC’s github repositories and understand the code structure.
+- Opened Issues and PR’s to get acquainted with the repository workflows.
+- Interacted with my mentor and established the basic ideas regarding the project in question.
+- Further researched about the needs of the project, and ponder over its potential impact after implementation.
+    
+
+**Week 1**
+(09/14 - 09/21)
+- Understood Vocabulary, Vue-Vocabulary and Fonts in greater depth, and their existing components.
+- Designed a first look unified landing page for Vocabulary, Vue-Vocabulary and Fonts based on Vocabulary components.
+- Interacted with my mentor and other team members and established a rapport.
+
+**Week 2**
+(09/22 - 09/28)
+- Tackled queries regarding the choice of design, page structure etc. , and sought approval from CC’s UX Designer.
+- Began to write the content which will need to fill up the main landing page.
+
+**Week 3**
+(09/29 - 10/06)
+- Finalized the headings, sub-headings and other sections which will need to be present in the landing site & documentation.
+- Kept the code ready for accepting documentation contents. Have github pages/netlify/surge configured for continuous integration and deployment.
+    
+**Week 4**
+(10/07 - 10/14)
+- Began to write under “Introduction”, “Getting Started” and ”Grid Components” sub-headings of the documentation.
+- Started developing the main landing page using Vocabulary components.
+    
+**Week 5**
+(10/15 - 10/22)
+- Got complete approval for the main page contents.
+- Worked on coding the “Dark Theme”.
+- Facilitated hacktoberfest contributors and spoke at a CCOS event.
+   
+**Week 6**
+(10/23 - 10/30)
+- Wrote a mid-internship blog post describing work done and how the experience has been so far with CC.
+- Started compiling the document guides for all the components in Vocabulary. Made revamps where necessary.
+    
+**Week 7**
+(10/31 - 11/07)
+- Integrated the main page contents and the main landing page itself, had it up and running.  
+
+**Week 8**
+(11/08 - 11/15)
+-   Finished writing the Vocabulary usage guide and seek initial approval.
+
+**Week 9**
+(11/16 - 11/23)
+-   Finalized on the guides and the main page contents.
+-   Carried out the necessary landing page to doc integration.
+-   Published a sample build using surge for viewing and surveying purposes.
+
+**Week 10**
+(11/24 - 11/30)
+-   Surveyed development builds for Accessibility using WAVE and Accessibility Insights for Web.
+-   Surveyed the site for responsiveness using Chrome Dev Tools.
+-   Generated Lighthouse reports.
+-   Optimised for Search Engines using meta tags and external links.
+
+**Week 11**
+(11/30 - 12/05)
+- Worked towards improving the report statistics until they reach a respectable target.
+-   Wrote a blog post summarizing everything, and about my performance cum involvement in CC.
+
+**Week 12**
+(12/06 - 12/12)
+-   Sought daily approvals until everything is finalised.
+-   Go through my writings and code upteen times for any miniscule errors.
+
+**Week 13**
+(12/13 - 12/19)
+-   Cleaned code, make sure everything is properly linted and ready before the final closing commits.    
+-   Published the “Concluding Internship” blog post, rounding up my wholesome journey.    
+-   Sought final closing approval.
+
+**Post-Internship**
+-   Promote the use of CC attributed works.
+-   Interact with the community, answer queries or doubts regarding CC.
+-   Carry out community work of the repositories I’ve contributed to.
+-   Leverage experience gained during this internship for future endeavours.
+
+### The Vocabulary Site
+
+Link to [the landing site](https://cc-vocab-draft.web.app)
+
+- Went through **3** Design Iterations
+- Designed the mockups in [Figma](https://figma.com).
+- Wrote the content filling up the landing page.
+- After approval from the UX Designer, waited for an approval from the Frontend Engineer.
+- Sought continuous approval from my mentor
+- Used [Vuejs](https://vuejs.org) + [CC Vocabulary](https://www.npmjs.com/package/@creativecommons/vocabulary) to build a highly modularised site.
+- Went through a couple of iterations of the website itself.
+- Made about **112** commits (**15,000** lines of code) in my *gsod-nimish* branch.
+
+<center>
+<img alt"Contributions to CC" src="github.png"/><br>
+<small class="muted">All my contributions to Creative Commons</small>
+</center>
+
+- Used Github API to display repository statistics.
+
+<center>
+<img alt"Fetch stats from Github API" src="stats.png"/><br>
+<small class="muted">All my contributions to Creative Commons</small>
+</center>
+
+- PR was reviewed and merged on the **25th of November**.
+
+<center>
+<img alt"Halfway There" src="merged747.png"/><br>
+<small class="muted">GSoD PR merged!</small>
+</center>
+
+- Used [surge](https://surge.sh) & [firebase](https://web.app) for draft deploys.
+- Carried out [lighthouse](https://developers.google.com/web/tools/lighthouse) testing.
+
+<center>
+<img alt="Lighthouse reports" src="light.png"/><br>
+<small class="muted">Lighthouse reports for our live site</small>
+</center>
+
+- Prompted changes to improve accessibility, SEO and PWA characteristics.
+
+### Core Documentation
+
+Link to the [documentation site](https://cc-vocabulary.netlify.app)
+
+- Modified the existing overview page.
+- Removed highly verbose sections from the docs. 
+- Documented Vocabulary sprint planning workflow.
+- Documents how to use a markdown component with CC Vocabulary
+- Embedded hyperlink to other open source projects to improve SEO.
+- Increased uniformity across documentation present in the storybooks
+- Adds alt descriptions & aria labels for certain images to improve accessibility.
+
+### Issues & PR's raised during GSoD period
+
+On the [creativecommons/vocabulary](https://github.com/creativecommons/vocabulary)
+
+- https://github.com/creativecommons/vocabulary/pull/747 - GSoD Vocabulary Landing Page
+
+<center>
+<img alt"Halfway There" src="merged747.png"/><br>
+<small class="muted">GSoD PR merged!</small>
+</center>
+
+- https://github.com/creativecommons/vocabulary/pull/813 - Documentation revamp
+- https://github.com/creativecommons/vocabulary/pull/806 - Dark mode for our storybooks
+
+<center>
+<img alt"Dark Mode" src="darkmode.png"/><br>
+<small class="muted">Behold, the dark theme!</small>
+</center>
+
+- https://github.com/creativecommons/vocabulary/pull/802 - [Grid Documentation Story](https://cc-vocabulary.netlify.app/?path=/docs/layouts-grid--fullhd#grid-system)
+
+<center>
+<img alt"Grid Docs" src="grid.png"/><br>
+<small class="muted">Grid Documenation Story</small>
+</center>
+
+- https://github.com/creativecommons/vocabulary/pull/785 - [Monorepo Document Story](https://cc-vocabulary.netlify.app/?path=/docs/vocabulary-structure--page#why-is-vocabulary-a-monorepo)
+
+<center>
+<img alt"Monorepo Document Story" src="structure.png"/><br>
+<small class="muted">Monorepo Structure Story</small>
+</center>
+
+- https://github.com/creativecommons/vocabulary/pull/774 - [Getting Started Story](https://cc-vocabulary.netlify.app/?path=/story/vocabulary-getting-started--page#getting-started)
+
+- https://github.com/creativecommons/vocabulary/pull/734 - README.md customisation
+- https://github.com/creativecommons/vocabulary/pull/671 - Add a CHANGELOG.md to fit conventions
+- https://github.com/creativecommons/vocabulary/pull/649 - Unified README.md and updated build process
+- https://github.com/creativecommons/vocabulary/pull/452 - Configured native dependabot
+- https://github.com/creativecommons/vocabulary/pull/445 - Phone Screen backgrounds
+- https://github.com/creativecommons/vocabulary/issues/757 - Snapshot testing on Vocabulary
+- https://github.com/creativecommons/vocabulary/issues/735 - Document Component Capable of rendering markdown
+- https://github.com/creativecommons/vocabulary/issues/807 - Add a Maintained with lerna badge to README.md
+- https://github.com/creativecommons/vocabulary/issues/776 - Add a new Install size badge
+- https://github.com/creativecommons/vocabulary/issues/736 - Customize npm README.md for individual packages
+
+  
+On the [creativecommons/creativecommons.github.io-source](https://github.com/creativecommons/creativecommons.github.io-source) repository:
+- https://github.com/creativecommons/creativecommons.github.io-source/pull/530 - Introductory first blog post
+- https://github.com/creativecommons/creativecommons.github.io-source/pull/549 - Vocabulary Site Update v1
+- https://github.com/creativecommons/creativecommons.github.io-source/pull/555 - Vocabulary Site Mid-Internship Update v2
+- https://github.com/creativecommons/creativecommons.github.io-source/pull/561 - Vocabulary Site Update v3
+
+On the [creativecommons/ccos-scripts](https://github.com/creativecommons/ccos-scripts) repository:
+
+- https://github.com/creativecommons/ccos-scripts/pull/100 - Fix file extension in README.md
+
+On the [creativecommons/cccatalog-api](https://github.com/creativecommons/cccatalog-api) repository:
+
+- https://github.com/creativecommons/cccatalog-api/pull/533 - Configured Dependabot
+
+Follow along my full GSoD journey through [these series of posts](https://opensource.creativecommons.org/blog/series/gsod-2020-vocabulary-usage-guide/).
+
+### Conclusion
+
+My GSoD period has been by far, a very successful and a fruitful one. I thank the the GSoD team for all their efforts in oragnising it this year. I would also like to thank the entire Creative Commons team for all their motivation and support. The onboarding & see-off was very smooth indeed!
+
+<p align="center">
+    <strong>Thank you for all your time! This was the final blog post under the Vocabulary docs series. I'll be around for times to come, but until then, sayonara!</strong>
+</p>
