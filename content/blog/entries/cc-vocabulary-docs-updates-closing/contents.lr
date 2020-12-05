@@ -44,7 +44,7 @@ Here's a list of all the weekly goals that I met:
 
 **Week 2**
 (09/22 - 09/28)
-- Tackled queries regarding the choice of design, page structure etc. , and sought approval from CC’s UX Designer.
+- Tackled queries regarding the choice of design, page structure etc., and sought approval from CC’s UX Designer.
 - Began to write the content which will need to fill up the main landing page.
 
 **Week 3**
@@ -74,52 +74,52 @@ Here's a list of all the weekly goals that I met:
 
 **Week 8**
 (11/08 - 11/15)
--   Finished writing the Vocabulary usage guide and seek initial approval.
+- Finished writing the Vocabulary usage guide and seek initial approval.
 
 **Week 9**
 (11/16 - 11/23)
--   Finalized on the guides and the main page contents.
--   Carried out the necessary landing page to doc integration.
--   Published a sample build using surge for viewing and surveying purposes.
+- Finalized on the guides and the main page contents.
+- Carried out the necessary landing page to doc integration.
+- Published a sample build using surge for viewing and surveying purposes.
 
 **Week 10**
 (11/24 - 11/30)
--   Surveyed development builds for Accessibility using WAVE and Accessibility Insights for Web.
--   Surveyed the site for responsiveness using Chrome Dev Tools.
--   Generated Lighthouse reports.
--   Optimised for Search Engines using meta tags and external links.
+- Surveyed development builds for Accessibility using WAVE and Accessibility Insights for Web.
+- Surveyed the site for responsiveness using Chrome Dev Tools.
+- Generated Lighthouse reports.
+- Optimised for Search Engines using meta tags and external links.
 
 **Week 11**
 (11/30 - 12/05)
 - Worked towards improving the report statistics until they reach a respectable target.
--   Wrote a blog post summarizing everything, and about my performance cum involvement in CC.
+- Wrote a blog post summarizing everything, and about my performance cum involvement in CC.
 
 **Week 12**
 (12/06 - 12/12)
--   Sought daily approvals until everything is finalised.
--   Go through my writings and code upteen times for any miniscule errors.
+- Sought daily approvals until everything is finalised.
+- Go through my writings and code upteen times for any miniscule errors.
 
 **Week 13**
 (12/13 - 12/19)
--   Cleaned code, make sure everything is properly linted and ready before the final closing commits.    
--   Published the “Concluding Internship” blog post, rounding up my wholesome journey.    
--   Sought final closing approval.
+- Cleaned code, make sure everything is properly linted and ready before the final closing commits.    
+- Published the “Concluding Internship” blog post, rounding up my wholesome journey.    
+- Sought final closing approval.
 
 **Post-Internship**
--   Promote the use of CC attributed works.
--   Interact with the community, answer queries or doubts regarding CC.
--   Carry out community work of the repositories I’ve contributed to.
--   Leverage experience gained during this internship for future endeavours.
+- Promote the use of CC attributed works.
+- Interact with the community, answer queries or doubts regarding CC.
+- Carry out community work of the repositories I’ve contributed to.
+- Leverage experience gained during this internship for future endeavours.
 
 ### The Vocabulary Site
 
 Here's the link to [the landing site](https://cc-vocab-draft.web.app).
 
-- Went through **3** Design Iterations
+- Went through **3** Design Iterations.
 - Designed the mockups in [Figma](https://figma.com).
 - Wrote the content filling up the landing page.
 - After approval from the UX Designer, waited for an approval from the Frontend Engineer.
-- Sought continuous approval from my mentor
+- Sought continuous approval from my mentor [dhruvkb](https://opensource.creativecommons.org/blog/authors/dhruvkb/).
 - Used [Vue.js](https://vuejs.org) + [CC Vocabulary](https://www.npmjs.com/package/@creativecommons/vocabulary) to build a highly modularised site.
 - Went through a couple of iterations of the website itself.
 - Made about **112** commits (**15,000** lines of code) in my *gsod-nimish* branch.
@@ -141,6 +141,8 @@ Here's the link to [the landing site](https://cc-vocab-draft.web.app).
 </pre>
 
 - PR was reviewed and merged on the **25th of November**.
+
+Here's how the site looks right now:
 
 <pre>
 <center>
@@ -169,10 +171,30 @@ Here's the link to the [documentation site](https://cc-vocabulary.netlify.app).
 - Modified the existing overview page.
 - Removed highly verbose sections from the docs. 
 - Documented Vocabulary sprint planning workflow.
-- Documents how to use a markdown component with CC Vocabulary
+- Documents how to use a markdown component with CC Vocabulary.
 - Embedded hyperlink to other open source projects to improve SEO.
-- Increased uniformity across documentation present in the storybooks
+- Increased uniformity across documentation present in the storybooks.
 - Adds alt descriptions & aria labels for certain images to improve accessibility.
+
+### My Learnings And Challenges
+
+- Design is more than just picking colors and placing components on a grey screen.
+- It's important to read your own writings from an unbiased perspective to actually understand how well it would be perceived.
+- Publishing to npmjs is not difficult!
+- Knowing the previously existing code in your project is of serious essence. It's important to understand the code styles, structure & activity of the code that you are dealing with.
+- Be patient! Its fine to delay something if it makes sense to have it logically accomplished only after certain other tasks are done & dusted with.
+- How essential it is to write neat code is something that's not spoken too often. (I wonder why...)
+- I always thought VueJS sets up SPA's by default. I'm surprised you need to configure it additionally to do just that!
+- Storybook is just a really nifty OSS with great community support!
+- Vue.js is fantastic. Maybe I'm a Vue.js fan now. Should I remain loyal to React? I don't know.
+- Making a site responsive isn't the easiest of tasks, but it's certainly doable after a lot of stretching & compressing; lets say that.
+- "Code formatting is essential" would be an understatement to make.
+- Monorepo's have their own pro's and con's. But in our case the con's were negligible, thankfully!
+- GSoD isn't just about documentation; there's some serious amount of coding too!
+- You don't have to sit and write code for hours together. Take breaks, come back, and the fix will strike you sooner than ever.
+- Timelines change; improvisation being an essential aspect of any project!
+- MDX is a neat little format to code in! Documenting code is just so much easier.
+- Things become obsolete. Versions become outdated. Code maintaining is therefore, easier said than done!
 
 ### Issues & PR's raised during GSoD period
 
