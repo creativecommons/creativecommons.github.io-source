@@ -184,7 +184,7 @@ Here's the link to the [documentation site](https://cc-vocabulary.netlify.app).
 - Knowing the previously existing code in your project is of serious essence. It's important to understand the code styles, structure & activity of the code that you are dealing with.
 - Be patient! Its fine to delay something if it makes sense to have it logically accomplished only after certain other tasks are done & dusted with.
 - How essential it is to write neat code is something that's not spoken too often. (I wonder why...)
-- I always thought VueJS sets up SPA's by default. I'm surprised you need to configure it additionally to do just that!
+- I always thought Vue.js sets up SPA's by default. I'm surprised you need to configure it additionally to do just that!
 - Storybook is just a really nifty OSS with great community support!
 - Vue.js is fantastic. Maybe I'm a Vue.js fan now. Should I remain loyal to React? I don't know.
 - Making a site responsive isn't the easiest of tasks, but it's certainly doable after a lot of stretching & compressing; lets say that.
