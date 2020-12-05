@@ -171,10 +171,10 @@ Here's the link to the [documentation site](https://cc-vocabulary.netlify.app).
 - Modified the existing overview page.
 - Removed highly verbose sections from the docs. 
 - Documented Vocabulary sprint planning workflow.
-- Documents how to use a markdown component with CC Vocabulary.
+- Documented how to use a markdown component with CC Vocabulary.
 - Embedded hyperlink to other open source projects to improve SEO.
 - Increased uniformity across documentation present in the storybooks.
-- Adds alt descriptions & aria labels for certain images to improve accessibility.
+- Added alt descriptions & aria labels for certain images to improve accessibility.
 
 ### My Learnings And Challenges
 
