@@ -1,0 +1,102 @@
+_model: page
+---
+_template: page-with-toc.html
+---
+title: Python Guidelines
+---
+description: These Python Guidelines (style guide) empower the community to
+focus on the intent of the code and work together with a minimum of friction.
+---
+body:
+
+
+## Code Formatting
+
+### Overview
+
+All Python code must be formatted using [Black][black], *the uncompromising
+Python code formatter*. Each project should contain a `pyproject.toml`
+configuration file that limits line length to 79 characters.
+
+[black]: https://github.com/psf/black
+
+### Examples
+
+- Black configuration (`pyproject.toml`): [GitHub Search · org:creativecommons
+  filename:pyproject.toml][blackconfig]
+- GitHub Actions workflow: [GitHub Search · org:creativecommons "pipenv run
+  black"][blackactions]
+
+[blackconfig]: https://github.com/search?q=org%3Acreativecommons+filename:pyproject.toml
+[blackactions]: https://github.com/search?q=org%3Acreativecommons+%22pipenv+run+black%22&type=code
+
+
+## Style and Quality
+
+### Overview
+
+All Python code must be checked using [flake8][flake8], *a python tool that
+glues together pep8, pyflakes, mccabe, and third-party plugins to check
+the style and quality of some python code.*
+
+[flake8]: https://gitlab.com/pycqa/flake8
+
+###  Conflicts with Black
+
+Where flake8 conflicts with Black, the flake8 check should be skipped. For
+example, there are instances where black formats code that generates flake8
+warning for [Whitespace before ':' (E203)][e203].
+
+[e203]: https://www.flake8rules.com/rules/E203.html
+
+
+### Examples
+
+- flake8 configuration (`.flake8`): [GitHub Search · org:creativecommons
+  filename:.flake8][flake8conf]
+- flake8 skip E203 warning: [GitHub Search · org:creativecommons "noqa:
+  E203"][skipe203]
+- GitHub Actions workflow: [GitHub Search · org:creativecommons "pipenv run
+  flake8"][flake8actions]
+
+[flake8conf]: https://github.com/search?q=org%3Acreativecommons+filename:.flake8
+[skipe203]: https://github.com/search?q=org%3Acreativecommons+%22noqa%3A+E203%22&type=code
+[flake8actions]: https://github.com/search?q=org%3Acreativecommons+%22pipenv+run+flake8%22&type=code
+
+
+## Development Environment
+
+### Overview
+
+Please work to minimize the number of development related technologies. This
+helps minimize the overhead of contributing to multiple projects. Most of our
+projects use either [Pipenv][pipenv], the Python Development Workflow for
+Humans, or [docker-compose][dockercompose], a tool for defining and running
+multi-container Docker applications.
+
+[pipenv]: https://github.com/pypa/pipenv
+[dockercompose]: https://docs.docker.com/compose/
+
+
+### Examples
+
+- Pipenv configuration: [GitHub Search · org:creativecommons
+  filename:Pipfile][pipenvconf]
+- Docker-compose example: [docker-compose.yml for cccatalog][dockercomposeconf]
+  and the [related README.md][relatedreadme]
+
+[pipenvconf]: https://github.com/search?q=org%3Acreativecommons+filename:Pipfile
+[dockercomposeconf]: https://github.com/creativecommons/cccatalog/blob/master/src/cc_catalog_airflow/docker-compose.yml
+[relatedreadme]: https://github.com/creativecommons/cccatalog#development-setup-for-airflow-and-api-puller-scripts
+
+
+## Additional Guidance
+
+Thankfully, Black removes a lot of style work and worry. Where there is room
+for developer discretion, the following guides are excellent resources:
+
+- [Google Python Style Guide][googlestyle]
+- [Code Style — The Hitchhiker's Guide to Python][hitchhikers]
+
+[googlestyle]: https://google.github.io/styleguide/pyguide.html
+[hitchhikers]: https://docs.python-guide.org/writing/style/

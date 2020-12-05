@@ -1,0 +1,38 @@
+title: Add Response Samples and Descriptions for API Endpoints
+---
+categories:
+cc-catalog-api
+gsod
+gsod-2020
+open-source
+community
+---
+author: ariessa
+---
+series: gsod-2020-cccatalog-api-usage-guide
+---
+pub_date: 2020-10-09
+---
+body:
+
+Well, hello again 👋! For week 3 and week 4, I added response samples and descriptions for API endpoints. Writing documentation feels a bit like coding at this point because I need to read a lot about drf-yasg, dig through issues and questions at Github / Stackoverflow to ensure that I don’t ask redundant (or even stupid) questions.
+
+### Week 3
+
+Week 3 was quite hectic. I moved back to my hometown during week 3. 
+Took 3 days off to settle my stuff and set up a workspace. 
+I worked on my GSoD project for only 2 days, Monday and Tuesday. 
+I managed to create response samples for most API endpoints. 
+Had a monthly video call with Kriti this week.
+
+### Week 4
+
+For this week, I reviewed what I’ve done and what I haven’t to estimate new completion time. 
+Thank god, I have a buffer week in my GSoD timeline and deliverables. 
+So yeah, all is good in terms of completion time. 
+I started to write descriptions for API endpoints.
+Submitted first PR and published blog entry.
+
+----
+
+Over and out.
