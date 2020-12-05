@@ -1,0 +1,10 @@
+_model: page
+---
+_template: page-with-toc.html
+---
+title: Translation Guide
+---
+description: Our translation files are hosted and managed on [Transifex](https://www.transifex.com). It's very easy to sign up for an account and start translation CC services into another language.
+---
+body:
+
