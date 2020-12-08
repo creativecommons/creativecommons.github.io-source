@@ -142,6 +142,10 @@ label based on whether it was closed with or without resolution, respectively.
     ⛔️ status: discarded
   </span>
   - **Description:** Will not be worked on
+- <span class="gh-label status-lighter">
+    🙅 status: discontinued
+  </span>
+  - **Description:** Not suitable for work as repo is in maintenance
 - <span class="gh-label status-darker">
     🚦 status: awaiting triage
   </span>
