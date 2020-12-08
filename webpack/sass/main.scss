@@ -70,6 +70,8 @@ pre {
     ('priority-positive'     #cfda2c #000000),
     ('priority-favourable'   #008672 #ffffff),
     ('miscellaneous'         #000000 #ffffff),
+    ('hacktoberfest'         #883255 #ffffff),
+    ('invalid'               #eeeeee #000000),
   );
   @each $category, $background-color, $foreground-color in $label-colors {
     &.#{$category} {

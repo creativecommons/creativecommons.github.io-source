@@ -29,7 +29,7 @@ export const IssueLabel = {
      * @returns {string} the name of the class to apply to the label
      */
     className() {
-      return this.$root.categories[this.name] || 'miscellaneous'
+      return this.$root.categories[this.name] || `${this.name.toLocaleLowerCase()} miscellaneous`
     }
   }
 }
