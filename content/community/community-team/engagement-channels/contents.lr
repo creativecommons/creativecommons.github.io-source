@@ -25,8 +25,8 @@ help you identify the best ways to engage with the team. _Let's get started!_
 ## Meetings
 
 We regularly hold meetings to discuss work and, occasionally, to play games.
-Based on your role and the project, you will invited to some of these meetings.
-You can join the CC Engineering calendar to keep up with the schedule.
+Based on your role and the project, you will be invited to some of these
+meetings. You can join the CC Engineering calendar to keep up with the schedule.
 
 ### Engineering meeting
 
@@ -138,7 +138,7 @@ Maintainers or that of Project Collaborators and higher.
 
 All our code is hosted on GitHub, we use issues to track bugs and identify
 features and pull requests to improve the software and drive it forward. All
-Community Team members with role
+Community Team members with the role
 of [Project Collaborator](/community/community-team/project-roles/#project-collaborator)
 or higher are added to
 the [CC organisation](https://github.com/creativecommons/)
@@ -155,7 +155,7 @@ are the best place to learn about these access levels.
 ### Read access
 
 Read access offers no special privileges over issues or pull requests. You can
-neverthelesss contribute to the repository by forking it to your account and
+nevertheless contribute to the repository by forking it to your account and
 making PRs as usual. You can also partake in discussions and help new
 contributors get started when fixing simpler issues.
 
@@ -177,7 +177,7 @@ ready for merge and can draft new releases for the project.
 ### Maintain access
 
 Maintain access grants you the privileges to manage almost all aspects of the
-repository, except any destructive action or sensititve information. You can
+repository, except any destructive action or sensitive information. You can
 modify the repositories' topics, description and social cards among other
 settings.
 
@@ -194,8 +194,8 @@ by [the parent Creative Commons handle](https://twitter.com/creativecommons).
 
 ### Vote access
 
-You can see all the upcoming tweets from CC and suggest any possible
-improvements to the text or the material.
+You can see all the upcoming tweets from Creative Commons and suggest any
+possible improvements to the text or the material.
 
 ### Suggest access
 
@@ -206,5 +206,5 @@ interesting thing you might know or have recently discovered.
 
 You get to write the tweets and post/schedule them from the
 official [CC Open Source Twitter handle](https://twitter.com/cc_opensource). You
-can interact with the open source community on Twitter and access the offical
+can interact with the open source community on Twitter and access the official
 Twitter stats to further improve our outreach and engagement metrics.
