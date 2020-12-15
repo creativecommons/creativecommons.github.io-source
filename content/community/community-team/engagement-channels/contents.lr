@@ -64,12 +64,14 @@ This is a channel where the entire engineering team of CC can be reached.
 
 **Channel:** `#engineering`
 
-### UX design channel
+### UX design channels
 
 This is the channel where we discuss design and UI/UX of various CC software and
-websites. This is particularly relevant to the Vocabulary project.
+websites. This is particularly relevant to the Vocabulary project. The Figma
+specific channel mostly posts updates from the Figma documents of all the
+various projects.
 
-**Channel:** `#ux-design`
+**Channel:** `#ux-design`, `#ux-design-figma`
 
 ## Mailing lists
 
@@ -79,7 +81,7 @@ you are, or want to be, a part of the community.
 
 ### Developer group
 
-This group is for all developers who are associated or related to the 
+This group is for all developers who are associated or related to the
 open-source community around our projects.
 
 **Address:** cc-developers@creativecommons.org
