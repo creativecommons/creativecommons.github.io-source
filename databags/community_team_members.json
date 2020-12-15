@@ -255,6 +255,11 @@
                     "role": "Project Maintainer"
                 },
                 {
+                    "github": "kgodey",
+                    "name": "Kriti Godey",
+                    "role": "Project Maintainer"
+                },
+                {
                     "github": "JackieBinya",
                     "name": "Jacqueline Binya",
                     "role": "Project Core Committer"
@@ -380,6 +385,11 @@
         },
         {
             "members": [
+                {
+                    "github": "kgodey",
+                    "name": "Kriti Godey",
+                    "role": "Project Maintainer"
+                },
                 {
                     "github": "apdsrocha",
                     "name": "Ana Paula Rocha",
