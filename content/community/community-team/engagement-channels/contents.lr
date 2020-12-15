@@ -1,0 +1,191 @@
+_model: page
+---
+_template: page-with-toc.html
+---
+title: Community Team: Engagement Channels
+---
+description: This page serves as a guide for Community Team members on how to engage with CC Open Source across various channels.
+---
+is_long_page: true
+---
+body:
+
+You've joined the CC Community Team. Congratulations! This is a very clear
+indication of your desire to engage more deeply with the Creative Commons
+community. As a fully remote organisation, CC uses a lot of tools to stay
+organised and collaborate. As you join the Community Team, depending on your
+role, you will be granted different levels of access to these tools and
+software.
+
+Given the breadth and diversity of these tools coupled with varying levels of
+access, it can be easy to not know what is expected of you and how you can make
+the most of your involvement. This guide will condense this information down to
+help you identify the best ways to engage with the team. _Let's get started!_
+
+## Meetings
+
+We regularly hold meetings to discuss work and, occasionally, to play games.
+Based on your role and the project, you will be invited to some of these
+meetings. You can join the CC Engineering calendar to keep up with the schedule.
+
+### Community meeting
+
+In this meeting, all the staff and open-source community at CC meet to discuss
+work. Any major discussions and ideas that affect the projects or process take
+place in this meeting. It's also a channel to know what is happening in a
+parallel project that you don't get to interact with as much. We have a Show &
+Tell, so if you did or made something recently that you think is interesting,
+you can present that.
+
+**Frequency:** monthly
+
+### Vocabulary sprint planning
+
+In this meeting, the Vocabulary sprint planning meeting is where all members
+involved in Vocabulary meet. This is mainly held to determine reasonable
+milestones on what can be accomplished in the next two weeks and assign
+different tasks and tickets to different people. If you'd like to get involved
+with Vocabulary code you can pick up some tasks here.
+
+**Frequency:** fortnightly
+
+## Slack
+
+We communicate over text using Slack. Everyone from the community is on it,
+including CC employees. You can find fellow developers, technical writers and
+designers all in the same place. If you are, or want to be, a part of the
+community, [join us on Slack](/community/#slack). It is one of the best ways to
+connect with us.
+
+Slack is organised by channels and, depending on your role, you will be invited
+to these channels to participate in discussions about certain topics.
+
+### Newbie channels
+
+There are a number of channels which budding open source developers join in
+hopes of finding like-minded developers. You should help them get started, clear
+simple doubts, introduce them to FOSS and make them feel welcome in our
+community. After all, the more the merrier!
+
+**Channel:** `#general`, `#cc-dev-internships`, `#cc-developers`
+
+### Community team channel
+
+This is a channel where you can connect with other members of the Community
+Team. Announcements pertaining to the Community Team and planned changes to the
+community will be announced here first.
+
+**Channel:** `#cc-dev-community-team`
+
+### Engineering channel
+
+This is a channel where the entire engineering team of CC can be reached.
+
+**Channel:** `#engineering`
+
+### UX design channels
+
+This is the channel where we discuss design and UI/UX of various CC software and
+websites. This is particularly relevant to the Vocabulary project. The Figma
+specific channel mostly posts updates from the Figma documents of all the
+various projects.
+
+**Channel:** `#ux-design`, `#ux-design-figma`
+
+## Mailing lists
+
+We also have a few mailing lists where we communicate announcements and the
+like. Join us on our [Google Group mailing lists](/community/#mailing-lists) if
+you are, or want to be, a part of the community.
+
+### Developer group
+
+This group is for all developers who are associated or related to the
+open-source community around our projects.
+
+**Address:** cc-developers@creativecommons.org
+
+### Usability Announcements group
+
+This group is for all people participating in our Usability testing sessions.
+Announcements of upcoming tests are made in this group.
+
+**Address:** usability-announce@creativecommons.org
+
+### Community Team group
+
+This group is for all CC tech staff and everyone on the Community Team.
+
+**Address:** community-team@creativecommons.org
+
+## GitHub
+
+All our code is hosted on GitHub, we use issues to track bugs and identify
+features and pull requests to improve the software and drive it forward. All
+Community Team members with the role of
+[Project Collaborator](/community/community-team/project-roles/#project-collaborator)
+or higher are added to the
+[CC organisation](https://github.com/creativecommons/)
+on GitHub.
+
+We use GitHub teams to manage access levels for all members of the organisation.
+Each role in a particular project corresponds to a certain access level over the
+repositories that are a part of that project. As you change your role, you will
+automatically be added to the appropriate team.
+
+The [GitHub docs](https://help.github.com/en/github/setting-up-and-managing-organizations-and-teams/repository-permission-levels-for-an-organization#repository-access-for-each-permission-level)
+are the best place to learn about these access levels.
+
+### Read access
+
+Read access offers no special privileges over issues or pull requests. You can
+nevertheless contribute to the repository by forking it to your account and
+making PRs as usual. You can also partake in discussions and help new
+contributors get started when fixing simpler issues.
+
+### Triage access
+
+Triage access grants you the privileges required to review incoming issues and
+classify them by priority, goal, value added to the project and so on and apply
+the appropriate labels to them. You will be added to a project's `CODEOWNERS`
+and will automatically be assigned PRs to review. You can approve them or
+request changes as necessary and can prevent a PR from being merged.
+
+### Write access
+
+Write access grants you the privileges required to create branches on the
+repository, push to the repository directly and merge pull requests that have
+been approved. You can even commit changes to open pull requests to make them
+ready for merge and can draft new releases for the project.
+
+### Maintain access
+
+Maintain access grants you the privileges to manage almost all aspects of the
+repository, except any destructive action or sensitive information. You can
+modify the repositories' topics, description and social cards among other
+settings.
+
+## Twitter
+
+Twitter is our preferred social media platform. We don't have a LinkedIn or
+Facebook presence. We generally post updates from our projects, introduce newly
+published blog posts, announce new releases of our software and any other
+interested information related to both FOSS and Creative Commons.
+
+While [CC Open Source](https://twitter.com/cc_opensource) has a rather humble
+Twitter following, our tweets are often retweeted by
+[the parent Creative Commons handle](https://twitter.com/creativecommons).
+
+### Edit access
+
+You can see all the upcoming tweets from Creative Commons, suggest any
+improvements to the text or the material, suggest new topics for the tweets, and
+even write tweets that will be published, after review, from the official
+Twitter handle.
+
+### Publish access
+
+You can post or schedule the tweets to be published from the official Twitter
+handle. You can also interact with the open source community on Twitter and
+access the official Twitter stats to further improve our outreach and engagement
+metrics.
