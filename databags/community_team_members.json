@@ -332,6 +332,11 @@
                     "github": "bhumijgupta",
                     "name": "Bhumij Gupta",
                     "role": "Project Maintainer"
+                },
+                {
+                    "github": "kgodey",
+                    "name": "Kriti Godey",
+                    "role": "Project Maintainer"
                 }
             ],
             "name": "Link Checker",
