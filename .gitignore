@@ -9,6 +9,9 @@ venv
 lektor/admin/static/gen
 assets/static/gen
 
+.idea/
+.vscode/
+
 node_modules
 gui/build
 gui/node_modules
