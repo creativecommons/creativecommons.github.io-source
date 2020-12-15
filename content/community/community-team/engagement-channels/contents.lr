@@ -118,9 +118,8 @@ and the frontend) and CC Catalog.
 ## Mailing lists
 
 We also have a few mailing lists where we communicate announcements and the
-like. If you are, or want to be, a part
-of the community, [join us on
-our Google Group mailing lists](/community/#mailing-lists).
+like. Join us on our [Google Group mailing lists](/community/#mailing-lists) if
+you are, or want to be, a part of the community.
 
 ### Community Team group
 
@@ -139,9 +138,10 @@ Maintainers or that of Project Collaborators and higher.
 
 All our code is hosted on GitHub, we use issues to track bugs and identify
 features and pull requests to improve the software and drive it forward. All
-Community Team members with role of [Project
-Collaborator](/community/community-team/project-roles/#project-collaborator) or
-higher are added to the [CC organisation](https://github.com/creativecommons/)
+Community Team members with role
+of [Project Collaborator](/community/community-team/project-roles/#project-collaborator)
+or higher are added to
+the [CC organisation](https://github.com/creativecommons/)
 on GitHub.
 
 We use GitHub teams to manage access levels for all members of the organisation.
@@ -149,8 +149,8 @@ Each role in a particular project corresponds to a certain access level over the
 repositories that are a part of that project. As you change your role, you will
 automatically be added to the appropriate team.
 
-These access levels are explained by GitHub in [their
-docs](https://help.github.com/en/github/setting-up-and-managing-organizations-and-teams/repository-permission-levels-for-an-organization#repository-access-for-each-permission-level).
+The [GitHub docs](https://help.github.com/en/github/setting-up-and-managing-organizations-and-teams/repository-permission-levels-for-an-organization#repository-access-for-each-permission-level)
+are the best place to learn about these access levels.
 
 ### Read access
 
@@ -189,8 +189,8 @@ published blog posts, announce new releases of our software and any other
 interested information related to both FOSS and Creative Commons.
 
 While [CC Open Source](https://twitter.com/cc_opensource) has a rather humble
-Twitter following, our tweets are often retweeted by [the parent Creative
-Commons handle](https://twitter.com/creativecommons).
+Twitter following, our tweets are often retweeted
+by [the parent Creative Commons handle](https://twitter.com/creativecommons).
 
 ### Vote access
 
@@ -204,7 +204,7 @@ interesting thing you might know or have recently discovered.
 
 ### Compose access
 
-You get to write the tweets and post/schedule them from the official [CC Open
-Source Twitter handle](https://twitter.com/cc_opensource). You can interact with
-the open source community on Twitter and access the offical Twitter stats to
-further improve our outreach and engagement metrics.
+You get to write the tweets and post/schedule them from the
+official [CC Open Source Twitter handle](https://twitter.com/cc_opensource). You
+can interact with the open source community on Twitter and access the offical
+Twitter stats to further improve our outreach and engagement metrics.
