@@ -1,0 +1,46 @@
+title: Creative Commons LibreOffice (OpenOffice) plugin updates
+---
+categories:
+gsoc-2012
+---
+author: Ishan-Thilina
+---
+pub_date: 2012-07-15
+---
+body:
+
+This year Creative Commons has a much more limited focus on what we would like to see out of Google Summer of Code than in previous years.
+### Installation 
+The latest version of the plugin is 0.7.0, available for download from the [OpenOffice.org Extension site](https://extensions.openoffice.org/en/project/ccooo)
+To install:
+
+* Download the plugin
+* Open OpenOffice.org
+* Go to the `Tools` menu and select `Extension Manager`. Click `Add` and select the file you downloaded.
+* After the installation process completes, restart OpenOffice.org. The Creative Commons menu options will be located at the bottom of the `Insert` menu.
+
+Debian/Ubuntu (& other variants) users:
+* Debian/Ubuntu (& other variants) users may have problems if the plugin installed using the Extension Manager.
+* They may need to install the plugin using the terminal.
+* To install use /usr/lib/openoffice/program/unopkg gui -f ccooo.oxt
+
+### Problem Statement
+The current Creative Commons LibreOffice (OpenOffice) plugin is written in Java. This project is aimed to port the current plugin to Python while rectifying the problems in the current plugin.
+### Solution
+The Python port of the Creative Commons Add-in for LibreOffice and OpenOffice.org which allows license information to be embedded in OpenOffice.org and LibreOffice Writer, Impress, Draw and Calc documents.
+
+For more information visit [the official addin page](https://wiki.creativecommons.org/wiki/OpenOfficeOrg_Addin) of Creative Commons
+
+###Testing 
+Download the out.oxt file. Install it via the LibreOffice Extension Manager (Tools --> Extension Manager).
+
+Then go to `Insert` `--> ` `Creative Commons`. By using the first option you can insert the license information to the document. The second option is for changing those data.
+### Knowledge Prerequisite
+`Python` ,`Shell` 
+
+CC LibreOffice is only possible due to the support and guidance of  `CC tech staff member`, who have been very supportive on every step of the project. Also I would like to thank engineering director [Kriti Godey](https://creativecommons.org/author/kgodey) for her continuous support.
+
+The project is approaching its completion. Can't wait to see it in production.
+
+*Signing off  
+Ishan Thilina Somasiri*
