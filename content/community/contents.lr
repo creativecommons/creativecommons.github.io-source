@@ -45,19 +45,19 @@ Once you join, please introduce yourself in the `#cc-developers` channel.
 
 The channels most relevant to CC's developer community are:
 
-| Channel | Purpose |
-| ------- | ------- |
-| `#cc-dev-browser-extension` | Discussion related to the [creativecommons/ccsearch-browser-extension][ccsearch-browser-extension] project. |
-| `#cc-dev-internships` | **Discussion related to GSoC, GSoD, Outreachy, and other internships.** |
-| `#cc-dev-legaldb` | Discussion related to the [creativecommons/legaldb][legaldb] project. |
-| `#cc-dev-license-chooser` | Discussion related to the [creativecommons/cc-chooser][cc-chooser] project (new CC license chooser). |
-| `#cc-dev-licenses` | Discussion related to the [creativecommons/cc-licenses][cc-licenses] project (CC Licenses formatting and translation). |
-| `#cc-dev-linkchecker` | Discussion related to the [creativecommons/cc-link-checker][cc-link-checker] project. |
-| `#cc-dev-platform-toolkit` | Discussion related to the [creativecommons/mp][mp] project (CC Platform Toolkit). |
-| `#cc-dev-vocabulary` | Discussion related to the [creativecommons/cc-vocabulary][cc-vocabulary] project. |
-| `#cc-dev-wordpress` | Discussion related to the [creativecommons/wp-plugin-creativecommons][wp-plugin-creativecommons] project (creativecommons WordPress plugin). |
-| `#cc-developers` | **General technical discussion, new tech blog posts.** |
-| `#cc-usability` | General usability discussions, seeking feedback on new releases of CC products from the community. |
+| Channel | Discussion related to |
+| ------- | --------------------- |
+| `#cc-dev-browser-extension` | [ccsearch-browser-extension][ccsearch-browser-extension] project |
+| `#cc-dev-internships` | **GSoC, GSoD, Outreachy, and other internships** |
+| `#cc-dev-legaldb` | [legaldb][legaldb] project |
+| `#cc-dev-license-chooser` | [cc-chooser][cc-chooser] project (new CC license chooser) |
+| `#cc-dev-licenses` | [cc-licenses][cc-licenses] project (CC Licenses formatting and translation) |
+| `#cc-dev-linkchecker` | [cc-link-checker][cc-link-checker] project |
+| `#cc-dev-platform-toolkit` | [mp][mp] project (CC Platform Toolkit) |
+| `#cc-dev-vocabulary` | [cc-vocabulary][cc-vocabulary] project |
+| `#cc-dev-wordpress` | [wp-plugin-creativecommons][wp-plugin-creativecommons] project (creativecommons WordPress plugin) |
+| `#cc-developers` | **general technical issues, new tech blog posts, etc.** |
+| `#cc-usability` | General usability issues, seeking feedback on new releases of CC products from the community, etc. |
 
 [ccsearch-browser-extension]: https://github.com/creativecommons/ccsearch-browser-extension
 [legaldb]: https://github.com/creativecommons/legaldb
