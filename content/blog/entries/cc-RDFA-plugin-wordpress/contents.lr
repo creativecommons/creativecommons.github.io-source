@@ -1,0 +1,94 @@
+title: RDFa Plugin for WordPress
+---
+categories:
+open-source
+gsoc-2009
+---
+author: dinishi
+---
+pub_date: 2009-07-15
+---
+body:
+
+Creative Commons provides vast number of public copyright licenses for people who want to enable free distribution of their work. Creative Commons licenses currently covers over **1.6 billion resources**. These license files are then translated to multiple different languages and ported for [different jurisdictions](https://wiki.creativecommons.org/wiki/CC_Ports_by_Jurisdiction) for international usage. People link to the respective licenses along with their licensed works. These license files are in the form of `html` files, stored in [creativecommons/creativecommons.org](https://github.com/creativecommons/creativecommons.org/tree/master/docroot/legalcode) repo.
+
+### Problem Statement
+Conversion of information to a format compatible with RDF is a cumbersome endeavor. Though a complete automation of the conversion process would be a goal which is hard to achieve it can be made lot simpler with a wordpress plug-in. The plug-in will enable the users to convert a generic HTML in to a RDF compatible format with ease.
+
+### Overview
+External Data is an extension to MediaWiki that allows for retrieving data
+from various sources: external URLs and local wiki pages (in CSV, JSON and
+XML formats), database tables, and LDAP servers
+
+The extension defines five parser functions - #get_external_data,
+get_db_data, #get_ldap_data, #external_value and #for_external_table:
+
+`get_external_data retrieves the data from a URL that holds XML, CSV or
+JSON, and assigns it to local variables or arrays.`
+
+`get_db_data retrieves data from a database, using a SQL query, and assigns
+it to local variables or arrays.`
+
+`get_ldap_data retrieves data from an LDAP server and assigns it to
+local variables.`
+
+`external_value displays the value of any retrieved variable, or the
+first value if it's an array.`
+
+`for_external_table applies processing onto multiple rows retrieved by
+get_external_data.`
+
+In addition, the extension defines a new special page, 'GetData', that
+exports selected rows from a wiki page that holds CSV data, in a format that
+is readable by #get_external_data.
+
+For more information, see the extension homepage at:
+[RDFa](http://www.mediawiki.org/wiki/Extension:External_Data)
+
+
+### Requirements
+This version of the External Data extension requires MediaWiki 1.8 or higher.
+
+### Installation
+
+To install the extension, place the entire 'ExternalData' directory
+within your MediaWiki 'extensions' directory, then add the following
+line to your 'LocalSettings.php' file:
+
+`require_once( "$IP/extensions/ExternalData/ExternalData.php" );`
+
+To cache the data from the URLs being accessed, you can call the contents
+of ExternalData.sql in your database, then add the following to
+LocalSettings.php:
+
+     `$edgCacheTable = 'ed_url_cache';`
+
+You should also add a line like the following, to set the expiration time
+of the cache, in seconds; this line will cache data for a week:
+
+     `$edgCacheExpireTime = 7 * 24 * 60 * 60;` 
+
+You can also set for string replacements to be done on the URLs you call,
+for instance to hide API keys:
+
+     `$edgStringReplacements['MY_API_KEY'] = 'abcd1324';`
+
+You can create a "whitelist" to allow retrieval of data only from trusted
+sites, in the manner of MediaWiki's $wgAllowExternalImagesFrom - if you
+are hiding API keys, it is very much recommended to create such a
+whitelist, to prevent users from being able to discover theire values:
+
+
+Finally, to use the database or LDAP retrieval capabilities, you need to
+set connection settings as well - see the online documentation for more
+information.
+
+
+CC RDFa Plugin for WordPress is only possible due to the support and guidance of my mentors [Nathan Yergler](https://github.com/nyergler) and `CC Tech Staff Member`, who have been very supportive on every step of the project. Also I would like to thank engineering director [Kriti Godey](https://creativecommons.org/author/kgodey) for her continuous support.
+
+You can follow the project on Github: [cc-archive/ExternalData_RDFa](https://github.com/cc-archive/ExternalData_RDFa).
+
+The project is approaching its completion. Can't wait to see it in production.
+
+*Signing off  
+Dinishika Weerarathna*
