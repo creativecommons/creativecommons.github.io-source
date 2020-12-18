@@ -1,5 +1,5 @@
-_model: page
+_model: redirect
 ---
-_template: search_roadmap.html
+target: /archives/cc-search/
 ---
-title: CC Search
+_discoverable: no
