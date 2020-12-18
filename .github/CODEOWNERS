@@ -6,3 +6,4 @@
 # These users own any files in the specified directory and 
 # any of its subdirectories.
 /webpack/ @creativecommons/frontend-engineers
+* @creativecommons/ct-cc-open-source-maintainers

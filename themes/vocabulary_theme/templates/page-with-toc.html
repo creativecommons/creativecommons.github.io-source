@@ -33,6 +33,8 @@
                       <li><a class="{% if this.path == '/contributing-code/pr-guidelines' %} is-active {% endif%} link" href="{{ '/contributing-code/pr-guidelines'|url }}"><i class="icon circle-filled"></i>Pull Request Guidelines</a></li>
                       <li><a class="{% if this.path == '/contributing-code/github-repo-guidelines' %} is-active {% endif%} link" href="{{ '/contributing-code/github-repo-guidelines'|url }}"><i class="icon circle-filled"></i>Github Repo Guidelines</a></li>
                       <li><a class="{% if this.path == '/contributing-code/repo-labels' %} is-active {% endif%} link" href="{{ '/contributing-code/repo-labels'|url }}"><i class="icon circle-filled"></i>Repository Labels</a></li>
+                      <li><a class="{% if this.path == '/contributing-code/python-guidelines' %} is-active {% endif%} link" href="{{ '/contributing-code/python-guidelines'|url }}"><i class="icon circle-filled"></i>Python Guidelines</a></li>
+                      <li><a class="{% if this.path == '/contributing-code/translation-guide' %} is-active {% endif%} link" href="{{ '/contributing-code/translation-guide'|url }}"><i class="icon circle-filled"></i>Translation Guide</a></li>
                     </ul>
                   </li>
                   <hr class="divider">
@@ -54,6 +56,7 @@
                       <li><a class="{% if this._path == '/community/community-team/members' %} is-active {% endif%} link" href="{{ '/community/community-team/members'|url }}"><i class="icon circle-filled"></i>Community Team Members</a></li>
                       <li><a class="{% if this._path == '/community/community-team/project-roles' %} is-active {% endif%} link" href="{{ '/community/community-team/project-roles'|url }}"><i class="icon circle-filled"></i>Project Roles</a></li>
                       <li><a class="{% if this._path == '/community/community-team/community-building-roles' %} is-active {% endif%} link" href="{{ '/community/community-team/community-building-roles'|url }}"><i class="icon circle-filled"></i>Community Building Roles</a></li>
+                      <li><a class="{% if this._path == '/community/community-team/engagement-channels' %} is-active {% endif%} link" href="{{ '/community/community-team/engagement-channels'|url }}"><i class="icon circle-filled"></i>Engagement Channels</a></li>
                     </ul>
                   </li>
                   <hr class="divider">
@@ -99,7 +102,7 @@
                 {% for item in this.body.toc %}
                   <li>
                     <a class="link" href="#{{ item.anchor }}">{{ item.title }}</a>
-                    {% if item.children %}
+                    {% if item.children and not this.is_long_page %}
                       <ul>
                         {% for subitem in item.children %}
                           <li><a class="link" href="#{{ subitem.anchor }}"><i class="icon circle-filled"></i>{{ subitem.title }}</a></li>
@@ -112,7 +115,7 @@
             </aside>
           </div>
         </div>
-        <div class="column content">
+        <div class="column content is-three-quarters">
           {{ this.body }}
         </div>
       </div>

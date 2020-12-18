@@ -1,0 +1,60 @@
+title: Creative Commons WordPress plugin: attribution for images
+---
+categories:
+cc-wp-plugin
+open-source
+tech
+wordpress
+---
+author: rczajka
+---
+pub_date: 2020-10-01
+---
+body:
+As a part of [Centrum Cyfrowe](https://centrumcyfrowe.pl)'s [#NoWorries project](https://otwartakultura.org/noworries/) funded by EUIPO, 
+I have had the pleasure of enhancing the Creative Commons Wordpress plugin. 
+The new version of CC's Wordpress plugin has a feature called
+“attribution information for images”. It works like this:
+
+1. you upload an image to the Wordpress Media Library and fill out the
+correct attribution information there.
+2. You then insert the image into a page using the Image Gutenberg block.
+3. When the image is then displayed on site, the plugin will show the
+attribution information – the name of the author, the image's title
+and link to source, and the CC license used – right there, in a nice
+semi-transparent overlay over the image.
+
+## How does it work?
+
+To find the relevant information from the Media Library, the plugin
+reuses the information already provided by Gutenberg Image Blocks.
+Each time an image is inserted using such a block, Wordpress adds a
+special CSS class to it, in the form of `wp-image-{id}`, containing
+the image's identifier in the Media Library. It can be used to add
+individual styles to a specific image – we're using it to find the
+relevant entry in the Media Library and add individual attribution
+information. With this approach, we avoid the need for any custom
+markup – while also only hitting the database with a query when an
+actual image from the Media Library is found on the page.
+
+All you need to do is make sure the licensing information is there in
+the Media Library, and that the images are inserted using the Image
+block.
+
+This wasn't the first attempt at adding a similar function to the CC
+Wordpress plugin. The previous attempt used a `[license]` shortcode
+wrapping the image – which it's unwieldy with the current Wordpress
+Gutenberg editor. It also used multiple calls to
+`attachment_url_to_postid` to locate the image in the Media Library, which
+meant executing more database queries for each image. With the new
+approach, the user doesn't have to change their posts at all – all
+they need to do is install the plugin and add attribution information
+in the Media Library, and it will automatically start working for
+their normally inserted images.
+
+See here how to install the plugin:
+<video src="install.mp4" controls></video>
+
+See here how to use the image attribution function:
+
+<video src="use.mp4" controls></video>
