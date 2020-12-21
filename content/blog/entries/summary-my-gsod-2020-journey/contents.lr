@@ -1,0 +1,119 @@
+title: Summary: My GSoD 2020 Journey
+
+---
+categories:
+cc-catalog
+gsod
+gsod-2020
+open-source
+community
+---
+author: ariessa
+---
+series: gsod-2020-cccatalog-api-usage-guide
+---
+pub_date: 2020-12-02
+---
+body:
+
+Thank you for the wonderful experience, Creative Commons!
+
+This blog post serves as a project report for ‘Improve CC Catalog API Usage Guide’. 
+It describes the work that I’ve done during my Google Season Of Docs (GSOD) 2020. 
+My mentors for this project are Alden Page and Kriti Godey from Creative Commons.
+
+In total, there are 12 weeks in the Doc Development Phase. 
+Every 2 weeks, I would publish a blog post to update my progress to my mentors and organization.
+
+### Week 1
+
+So, the first two weeks of Google Season of Docs have passed. 
+For the first week, I added examples to perform the query using curl command. 
+I hit some problem with a Forbidden error. Turns out my access key got expired. 
+My problem was solved after obtaining a new access key.
+
+### Week 2
+
+For the second week, I started to write response samples. 
+It was tough as I have a hard time understanding drf-yasg, which is an automatic Swagger generator. 
+It can produce Swagger / OpenAPI 2.0 specifications from a Django Rest Framework API. 
+I tried to find as many examples as I could to increase my understanding. 
+Funny, but it took me awhile to realise that drf-yasg is not made up of random letters. 
+The DRF part stands for Django Rest Framework while YASG stands for Yet Another Swagger Generator.
+
+### Week 3
+
+Week 3 was quite hectic. 
+I moved back to my hometown during week 3. 
+Took 3 days off to settle my stuff and set up a workspace. 
+I worked on my GSoD project for only 2 days, Monday and Tuesday. 
+I managed to create response samples for most API endpoints. 
+Had a monthly video call with Kriti this week.
+
+### Week 4
+
+I reviewed what I’ve done and what I haven’t to estimate new completion time. 
+Thank god, I have a buffer week in my GSoD timeline and deliverables. 
+So yeah, all is good in terms of completion time. 
+I started to write descriptions for API endpoints. 
+Submitted first PR and published blog entry.
+
+### Week 5
+
+I managed to add a lot of stuff into the documentation. 
+I figured out how to add help texts to classes and how to create serializers. 
+I also managed to move all code examples under response samples. 
+In order to do this, I created a new class called CustomAutoSchema to add x-code-samples. 
+Other stuff that I did include creating new sections such as “Register and Authenticate” and “Glossary”. 
+The hardest part of this week is probably trying to figure out how to add request body examples and move code examples.
+
+### Week 6
+
+I added another section called Contribute that provides a todolist to start contributing on Github. 
+I also wrote and published this blog post.
+
+### Week 7
+
+I restructured the file README in CC Catalog API repository. 
+I added a step by step guide on how to run the server locally. 
+I hope new users will be less intimidated to contribute to this project with the updated guide on how to run the server locally.
+
+### Week 8
+
+I created Documentation Guidelines which provides steps on how to contribute to CC Catalog API documentation, documentation styles, and cheat sheet for drf-yasg. 
+I also wrote and published this blog post.
+
+### Week 9
+
+I had completed all GSoD tasks by week 9. 
+So, I took a couple of days off and fixed last week's PR. 
+Kriti assigned me with new tasks, which is to port CC Catalog documentation from the internal wiki into GitHub repository. 
+Brent, the CC Catalog maintainer explained to me about what needs to be done.
+
+### Week 10
+
+I started exploring CC Catalog and its documentation. 
+Reminds me a lot about the first and second weeks of GSoD. 
+Trying to understand new stuff and having an "aha" moment when the dots finally connect. 
+I started to move the documentation from the internal wiki to CC Catalog’s GitHub repository. 
+I also wrote and published this blog post.
+
+### Week 11
+
+I finished working on porting CC Catalog documentation from internal wiki to CC Catalog’s GitHub repository.
+Kriti told me that there would be a meeting in which I have to present what I've done for GSoD.
+Since the meeting will take place at 1AM in my local time, Kriti told me that I should send a video presentation instead.
+
+### Week 12 
+
+I submitted a video presentation to Kriti.
+Finished writing project report and evaluation for GSoD.
+I published 2 blog posts this week.
+One for updates on Week 11 and Week 12.
+Another one is this blog post.
+
+<br/>
+
+----
+
+You can view the latest CC Catalog API documentation [here](https://api.creativecommons.engineering/v1/). 
