@@ -1,12 +1,12 @@
-title: Creative Commons LibreOffice (OpenOffice) plugin updates
+title: Creative_Commons_LibreOffice_Plugin_Updates
 ---
 categories:
-gsoc-2012
-open-source
+Add-In
+GSoC
+OpenOffice
+opensource
 ---
 author: Ishan-Thilina
----
-pub_date: 2012-07-15
 ---
 body:
 
@@ -43,5 +43,5 @@ CC LibreOffice is only possible due to the support and guidance of  `CC tech sta
 
 The project is approaching its completion. Can't wait to see it in production.
 
-*Signing off  
-Ishan Thilina Somasiri*
+---
+pub_date: 2012-07-15

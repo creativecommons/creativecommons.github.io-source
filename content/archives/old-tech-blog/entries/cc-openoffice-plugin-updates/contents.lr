@@ -1,12 +1,11 @@
-title: OpenOffice Plugin Updates
+title: Creative Commons OpenOffice Plugin now Supports Internationalization.
 ---
 categories:
-gsoc-2010
-open-source
+Add-In
+OpenOffice
+opensource
 ---
-author: akila
----
-pub_date: 2010-11-15
+author: akila87
 ---
 body:
 
@@ -25,5 +24,5 @@ CC Open Office Plugin Updates is only possible due to the support and guidance o
 
 You can follow the project on: [OpenOfficeOrg Addin](https://wiki.creativecommons.org/wiki/OpenOfficeOrg_Addin).
 
-*Signing off  
-Akila Wajirasena*
+---
+pub_date: 2010-11-15

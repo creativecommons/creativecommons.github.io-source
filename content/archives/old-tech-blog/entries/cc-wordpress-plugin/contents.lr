@@ -1,12 +1,10 @@
-title: Creative Commons Wordpress Plugin
+title: Creative Commons Pasteboard
 ---
 categories:
-open-source
-gsoc-2010
+software
+WordPress
 ---
 author: erlehmann
----
-pub_date: 2010-11-15
 ---
 body:
 
@@ -67,5 +65,5 @@ Matthias Rampke](https://creativecommons.org/author/aldenpage) and `other CC Tec
 
 You can follow the project on Github: [cc-archive/wordpress-cc-plugin](https://github.com/cc-archive/wordpress-cc-plugin).
 
-*Signing off  
-Nils Dagsson Moskopp*
+---
+pub_date: 2010-11-15

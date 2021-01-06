@@ -1,12 +1,13 @@
-title: Update and Expand Drupal Creative Commons Module
+title: Creative Commons Drupal Module
 ---
 categories:
-open-source
-gsoc-2009
+API
+development
+GSoC
+software
+tools
 ---
 author: blaise
----
-pub_date: 2009-07-15
 ---
 body:
 
@@ -59,7 +60,7 @@ None
     Users will be able to attach license information to the content of a node.
 
   - use creative commons user defaults
-  
+
     Users will be able to set their own defaults, independent of site defaults
     (but still subject to site license availability settings).
 
@@ -71,11 +72,11 @@ None
   Creative Commons >> site defaults. Here, you can set the default license to be
   used as a site-wide license if you wish, and you can include any relevant
   metadata.
-  
+
 * Enable Creative Commons licensing for desired content types in Administer >>
   Settings >> Creative Commons >> content types. For example, you might wish to 
   allow Creative Commons licensing for blog posts, but not forum posts.
- 
+
 * In your Drupal user account settings, you can set a jurisdiction or default
   license to override the site defaults.
 
@@ -85,5 +86,5 @@ CC Drupal is only possible due to the support and guidance of my mentors [Kevin 
 
 The project is approaching its completion. Can't wait to see it in production.
 
-*Signing off  
-Blaise Alleyne*
+---
+pub_date: 2009-09-23

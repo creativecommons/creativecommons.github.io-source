@@ -1,12 +1,11 @@
-title: RDFa Plugin for WordPress
+title: RDFa_Plugin_for_WordPress
 ---
 categories:
-open-source
-gsoc-2009
+RDF
+RDFa
+WordPress
 ---
 author: dinishi
----
-pub_date: 2009-07-15
 ---
 body:
 
@@ -90,5 +89,5 @@ You can follow the project on Github: [cc-archive/ExternalData_RDFa](https://git
 
 The project is approaching its completion. Can't wait to see it in production.
 
-*Signing off  
-Dinishika Weerarathna*
+---
+pub_date: 2009-07-15

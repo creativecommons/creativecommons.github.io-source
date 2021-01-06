@@ -1,12 +1,11 @@
 title: Creative Commons Media Fingerprinting Library
 ---
 categories:
-gsoc-2013
-open-source
+Add-In
+GSoC
+opensource
 ---
 author: Ethan-Lim
----
-pub_date: 2013-07-15
 ---
 body:
 
@@ -45,5 +44,5 @@ CC MEDIA FINGERPRINTING LIBRARY is only possible due to the support and guidance
 
 The project is approaching its completion. Can't wait to see it in production.
 
-*Signing off  
-Ethan Lim*
+---
+pub_date: 2013-07-15
