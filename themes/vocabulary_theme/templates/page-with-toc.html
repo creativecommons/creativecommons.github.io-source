@@ -26,7 +26,7 @@
                     ['/contributing-code/usability', 'Usability'],
                   ] %}
                     <li>
-                    <a class="{% if this.path == {{ href }} %} is-active {% endif%} link" href="{{ href|url }}">{{ title }}</a>
+                    <a class="{% if this.path == href %} is-active {% endif%} link" href="{{ href|url }}">{{ title }}</a>
                     {% if (href == '/contributing-code/contributing-code') %}
                       <ul>
                       {% for href, title in [
@@ -36,7 +36,7 @@
                         ['/contributing-code/python-guidelines', 'Python Guidelines'],
                         ['/contributing-code/translation-guide', 'Translation Guide'],
                       ] %}
-                        <li><a class="{% if this.path == {{ href }} %} is-active {% endif%} link" href="{{ href|url }}"><i class="icon circle-filled"></i>{{ title }}</a></li>
+                        <li><a class="{% if this.path == href %} is-active {% endif%} link" href="{{ href|url }}"><i class="icon circle-filled"></i>{{ title }}</a></li>
                       {% endfor %}
                       </ul>
                     {% endif %}
@@ -57,7 +57,7 @@
                     ['/community/code-of-conduct', 'Code of Conduct'],
                   ] %}
                     <li>
-                    <a class="{% if this.path == {{ href }} %} is-active {% endif%} link" href="{{ href|url }}">{{ title }}</a>
+                    <a class="{% if this.path == href %} is-active {% endif%} link" href="{{ href|url }}">{{ title }}</a>
                     {% if (href == '/community/community-team') %}
                       <ul>
                       {% for href, title in [
@@ -66,7 +66,7 @@
                         ['/community/community-team/community-building-roles', 'Community Building Roles'],
                         ['/community/community-team/engagement-channels', 'Engagement Channels'],
                       ] %}
-                        <li><a class="{% if this.path == {{ href }} %} is-active {% endif%} link" href="{{ href|url }}"><i class="icon circle-filled"></i>{{ title }}</a></li>
+                        <li><a class="{% if this.path == href %} is-active {% endif%} link" href="{{ href|url }}"><i class="icon circle-filled"></i>{{ title }}</a></li>
                       {% endfor %}
                       </ul>
                     {% endif %}
@@ -92,7 +92,7 @@
                     ['/internships/history', 'History'],
                   ] %}
                     <li>
-                    <a class="{% if this.path == {{ href }} %} is-active {% endif%} link" href="{{ href|url }}">{{ title }}</a>
+                    <a class="{% if this.path == href %} is-active {% endif%} link" href="{{ href|url }}">{{ title }}</a>
                     {% if (href == '/internships') %}
                       <ul>
                       {% for href, title in [
@@ -100,7 +100,7 @@
                         ['/internships/intern-guide', 'Intern Guide'],
                         ['/internships/mentor-guide', 'Mentor Guide'],
                       ] %}
-                        <li><a class="{% if this.path == {{ href }} %} is-active {% endif%} link" href="{{ href|url }}"><i class="icon circle-filled"></i>{{ title }}</a></li>
+                        <li><a class="{% if this.path == href %} is-active {% endif%} link" href="{{ href|url }}"><i class="icon circle-filled"></i>{{ title }}</a></li>
                       {% endfor %}
                       </ul>
                     {% endif %}
