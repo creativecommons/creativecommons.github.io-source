@@ -23,7 +23,7 @@ You do not have to follow the steps under "Check for contribution readiness", th
 
 ### Note
 
-Not all issues have skills marked on them, especially if they are simple issues that do not require proficiency in any specific framework or language. Those issues are gone when filtering by skill in the [Issue Finder](https://opensource.creativecommons.org/contributing-code/issue-finder/)
+Not all issues have skills marked on them, especially if they are simple issues that do not require proficiency in any specific framework or language. Those issues will not appear when filtering by skill in the [Issue Finder](https://opensource.creativecommons.org/contributing-code/issue-finder/).
 
 ## Questions or Thoughts?
 
