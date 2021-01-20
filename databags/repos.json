@@ -253,7 +253,7 @@
             "description": "The Creative Commons Catalog API allows programmatic access to search for CC-licensed and public domain digital media.",
             "engineering_project": true,
             "english_name": "CC Catalog API",
-            "featured": true,
+            "featured": false,
             "id": 131343685,
             "language": "Python",
             "license": {
@@ -292,7 +292,7 @@
             "description": "CC Search is a search tool for CC-licensed and public domain content across the internet.",
             "engineering_project": true,
             "english_name": "CC Search",
-            "featured": true,
+            "featured": false,
             "id": 139915408,
             "language": "Vue",
             "license": {
@@ -429,7 +429,7 @@
             "description": "[WIP] The new and improved CC license selection tool.",
             "engineering_project": true,
             "english_name": "CC Chooser",
-            "featured": false,
+            "featured": true,
             "id": 188122843,
             "language": "JavaScript",
             "license": {
@@ -1018,7 +1018,7 @@
                 "Fonts"
             ],
             "url": "https://github.com/creativecommons/vocabulary",
-            "website": "https://cc-vocabulary.netlify.app/"
+            "website": "https://cc-vocabulary.netlify.app"
         },
         {
             "created": "2020-10-17T03:08:56",
@@ -1045,7 +1045,8 @@
             "created": "2014-07-28T15:18:18",
             "description": "Official Creative Commons plugin for licensing your content. With Creative Commons licenses, keep your copyright AND share your creativity.",
             "engineering_project": true,
-            "featured": false,
+            "english_name": "CC WordPress Plugin",
+            "featured": true,
             "id": 22347352,
             "language": "PHP",
             "license": {
@@ -1054,6 +1055,12 @@
             },
             "name": "wp-plugin-creativecommons",
             "slack": "",
+            "technologies": [
+                "PHP",
+                "CSS",
+                "JS",
+                "WordPress"
+            ],
             "url": "https://github.com/creativecommons/wp-plugin-creativecommons",
             "website": "https://wordpress.org/plugins/creative-commons/"
         },
@@ -1085,7 +1092,7 @@
             "engineering_project": true,
             "featured": false,
             "id": 170156150,
-            "language": "CSS",
+            "language": "PHP",
             "license": {
                 "name": "GNU General Public License v2.0",
                 "url": "https://github.com/creativecommons/wp-theme-cc-chapter/blob/master/LICENSE"

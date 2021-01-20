@@ -134,10 +134,18 @@ label based on whether it was closed with or without resolution, respectively.
     🧹 status: ticket work required
   </span>
   - **Description:** Needs more details before it can be worked on
+- <span class="gh-label status-dark">
+    🏷 status: label work required
+  </span>
+  - **Description:** Needs proper labelling before it can be worked on
 - <span class="gh-label status-lighter">
     ⛔️ status: discarded
   </span>
   - **Description:** Will not be worked on
+- <span class="gh-label status-lighter">
+    🙅 status: discontinued
+  </span>
+  - **Description:** Not suitable for work as repo is in maintenance
 - <span class="gh-label status-darker">
     🚦 status: awaiting triage
   </span>
@@ -211,11 +219,19 @@ recognized by GitHub. The special ones don't have emojis either._
 
 ### Miscellaneous
 
-- <span class="gh-label has-background-black has-text-white">
+- <span class="gh-label miscellaneous">
     🤯 ノಠ益ಠノ彡┻━┻
   </span>
   - **Description:** Aaargh!
-  
+- <span class="gh-label hacktoberfest">
+    Hacktoberfest
+  </span>
+  - **Description:** Good issues for Hacktoberfest participants
+- <span class="gh-label invalid">
+    invalid
+  </span>
+  - **Description:** Inappropriate or invalid (ex. Hacktoberfest spam)
+
 ## Usage rules
 
 In the above categories, some are marked with an `*` sign. Those are mandatory
