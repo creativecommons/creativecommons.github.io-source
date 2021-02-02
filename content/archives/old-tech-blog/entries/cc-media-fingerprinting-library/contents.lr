@@ -5,16 +5,16 @@ Add-In
 GSoC
 opensource
 ---
-author: Ethan-Lim
+author: ethanlim
 ---
 body:
 
 CC would prefer that all content on the Web include correct licensing metadata. Alas, that is not the case. So we're interested in code that will allow us to identify a given item across the Web, even if there's no metadata alongside (or within) it. The tricky part is: people often crop or resize images, clip videos, re-encode content, or quote only pieces of text. So a simple hash is not sufficient: we need more intelligent fuzzy matching. That's what this project is about.
 
 ### Expected Results
-A library that provides two methods: 
-*  Given a media file, output a fingerprint, and 
-*  Given a file and a fingerprint, return the likelihood of the file matching the original file. 
+A library that provides two methods:
+*  Given a media file, output a fingerprint, and
+*  Given a file and a fingerprint, return the likelihood of the file matching the original file.
 
 You can focus your efforts on only one or two media types, or you can do more if it's possible.
 The library can be in a low-level language (C/C++) or you can use a higher-level language (JavaScript) if it's feasible. Speed is not a major concern at this point.
