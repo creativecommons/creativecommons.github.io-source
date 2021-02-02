@@ -229,7 +229,7 @@
         },
         {
             "created": "2017-07-12T18:01:30",
-            "description": "Mapping the commons towards an open ledger and cc search.",
+            "description": "Note: Project is discontinued. Mapping the commons towards an open ledger and cc search.",
             "engineering_project": true,
             "english_name": "CC Catalog",
             "featured": false,
@@ -250,7 +250,7 @@
         },
         {
             "created": "2018-04-27T20:50:37",
-            "description": "The Creative Commons Catalog API allows programmatic access to search for CC-licensed and public domain digital media.",
+            "description": "Note: Project is discontinued. The Creative Commons Catalog API allows programmatic access to search for CC-licensed and public domain digital media.",
             "engineering_project": true,
             "english_name": "CC Catalog API",
             "featured": false,
@@ -289,7 +289,7 @@
         },
         {
             "created": "2018-07-06T00:51:38",
-            "description": "CC Search is a search tool for CC-licensed and public domain content across the internet.",
+            "description": "Note: Project is discontinued. CC Search is a search tool for CC-licensed and public domain content across the internet.",
             "engineering_project": true,
             "english_name": "CC Search",
             "featured": false,
@@ -447,7 +447,7 @@
                 "Jest"
             ],
             "url": "https://github.com/creativecommons/chooser",
-            "website": "https://chooser-beta.creativecommons.org/"
+            "website": "https://chooser-beta.creativecommons.org"
         },
         {
             "created": "2017-07-05T23:39:19",
