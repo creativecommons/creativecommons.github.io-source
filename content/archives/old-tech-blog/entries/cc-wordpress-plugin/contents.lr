@@ -28,7 +28,7 @@ To install the plugin, move the directory you found this file in into the plugin
 
 It is recommended that you choose defaults for license, rights holder and jurisdiction on the "CC License Manager" page in the administration area.
 
-### Licensing 
+### Licensing
 Unless otherwise noted, the code is licensed under the [GNU General Public License, Version 2] [6] or (at your option) any later version. Stylesheets are licensed under a [Creative Commons Zero license] [7].
 
 The included [HTML5lib] [8] is licensed under the The [MIT License] [9].
@@ -45,7 +45,7 @@ For rights holders of the included HTML5lib see the [list of HTML5lib committers
 
 The included Ogg (vorbis/theora) php manipulation library was written by Nicolas Ricquemaque.
 
-* [Tutorial](http://mirrors.creativecommons.org/movingimages/wordpress-cc-plugin-with-subtitles.ogv) 
+* [Tutorial](http://mirrors.creativecommons.org/movingimages/wordpress-cc-plugin-with-subtitles.ogv)
 * [1]( http://creativecommons.org/about/licenses/)
 * [2](http://www.whatwg.org/specs/web-apps/current-work/multipage/grouping-content.html#the-figure-element)
 * [3]( http://wiki.creativecommons.org/RDFa)
@@ -61,7 +61,7 @@ The included Ogg (vorbis/theora) php manipulation library was written by Nicolas
 
 
 CC Wordpress Plugin  is only possible due to the support and guidance of my mentors [
-Matthias Rampke](https://creativecommons.org/author/aldenpage) and `other CC Tech Staff Member`, who have been very supportive on every step of the project. Also I would like to thank engineering director [Kriti Godey](https://creativecommons.org/author/kgodey) for her continuous support.
+Matthias Rampke](https://creativecommons.org/author/aldenpage) and `other CC Tech Staff Member`, who have been very supportive on every step of the project.
 
 You can follow the project on Github: [cc-archive/wordpress-cc-plugin](https://github.com/cc-archive/wordpress-cc-plugin).
 

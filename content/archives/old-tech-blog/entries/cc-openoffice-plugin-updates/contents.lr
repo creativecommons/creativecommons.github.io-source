@@ -17,10 +17,10 @@ The OpenOffice plug-in for Creative Commons was completed in 2007 as a GSoC proj
 ### Solutions
 Planning to :-
 * update the Creative Commons plug-in for OO.o 3 SDK.
-* Add support for CC0. 
+* Add support for CC0.
 * Improve the UI and add support for OO.o Draw.
 
-CC Open Office Plugin Updates is only possible due to the support and guidance of my mentors [nyergler](https://github.com/nyergler?tab=overview&from=2010-12-01&to=2010-12-31) and `other CC Tech Staff Member`, who have been very supportive on every step of the project. Also I would like to thank engineering director [Kriti Godey](https://creativecommons.org/author/kgodey) for her continuous support.
+CC Open Office Plugin Updates is only possible due to the support and guidance of my mentors [nyergler](https://github.com/nyergler?tab=overview&from=2010-12-01&to=2010-12-31) and `other CC Tech Staff Member`, who have been very supportive on every step of the project.
 
 You can follow the project on: [OpenOfficeOrg Addin](https://wiki.creativecommons.org/wiki/OpenOfficeOrg_Addin).
 

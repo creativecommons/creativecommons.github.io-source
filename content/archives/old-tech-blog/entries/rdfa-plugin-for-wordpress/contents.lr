@@ -65,7 +65,7 @@ LocalSettings.php:
 You should also add a line like the following, to set the expiration time
 of the cache, in seconds; this line will cache data for a week:
 
-     `$edgCacheExpireTime = 7 * 24 * 60 * 60;` 
+     `$edgCacheExpireTime = 7 * 24 * 60 * 60;`
 
 You can also set for string replacements to be done on the URLs you call,
 for instance to hide API keys:
@@ -83,7 +83,7 @@ set connection settings as well - see the online documentation for more
 information.
 
 
-CC RDFa Plugin for WordPress is only possible due to the support and guidance of my mentors [Nathan Yergler](https://github.com/nyergler) and `CC Tech Staff Member`, who have been very supportive on every step of the project. Also I would like to thank engineering director [Kriti Godey](https://creativecommons.org/author/kgodey) for her continuous support.
+CC RDFa Plugin for WordPress is only possible due to the support and guidance of my mentors [Nathan Yergler](https://github.com/nyergler) and `CC Tech Staff Member`, who have been very supportive on every step of the project.
 
 You can follow the project on Github: [cc-archive/ExternalData_RDFa](https://github.com/cc-archive/ExternalData_RDFa).
 

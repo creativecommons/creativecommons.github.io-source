@@ -14,24 +14,24 @@ body:
 Creative Commons provides vast number of public copyright licenses for people who want to enable free distribution of their work. Creative Commons licenses currently covers over **1.6 billion resources**. These license files are then translated to multiple different languages and ported for [different jurisdictions](https://wiki.creativecommons.org/wiki/CC_Ports_by_Jurisdiction) for international usage. People link to the respective licenses along with their licensed works. These license files are in the form of `html` files, stored in [creativecommons/creativecommons.org](https://github.com/creativecommons/creativecommons.org/tree/master/docroot/legalcode) repo.
 
 ### Problem Statement
-There are currently two Creative Commons (CC) modules for Drupal. CC Lite only offers limited functionality, but the CC module has not been updated for a long time and doesn't support current versions of Drupal. 
+There are currently two Creative Commons (CC) modules for Drupal. CC Lite only offers limited functionality, but the CC module has not been updated for a long time and doesn't support current versions of Drupal.
 
-### Planning 
+### Planning
 *  update the Creative Commons module, referencing and possibly building on Creative Commons lite, to support Drupal 6\
 *  expand its functionality to embed and detect license information for some file uploads.
 
-### Summary 
+### Summary
 The Creative Commons module allows users to assign a Creative Commons license to
-the content of a node, or to specify a site-wide license. It uses to Creatve 
-Commons API to retrieve up-to-date license information. Licenses are diplayed 
-using a Creative Commons Node License block and the Creative Commons Site 
+the content of a node, or to specify a site-wide license. It uses to Creatve
+Commons API to retrieve up-to-date license information. Licenses are diplayed
+using a Creative Commons Node License block and the Creative Commons Site
 License block. The module also supports some license metadata fields. License
 information is output using ccREL RDFa inside the blocks, and can optionally be
 output as RDF/XML in the body of a node.
 
 Creative Commons search is available at /search/creativecommons/, and (if the
 Views module is installed and enabled) a Creative Commons view is available at
-/creativecommons. Creative Commons license information and metadata are 
+/creativecommons. Creative Commons license information and metadata are
 available to the Views module.
 
 For a full description of the module, visit the project page:
@@ -46,13 +46,13 @@ None
 ### Installation
 * Install as usual, see http://drupal.org/node/70151 for further information.
 
-### Configuration 
+### Configuration
 * Configure user permissions in Administer >> User management >> Permissions >>
   creativecommons module:
 
   - administer creative commons
 
-    Users can customize the module settings in Administer >> Settings >> 
+    Users can customize the module settings in Administer >> Settings >>
     Creative Commons
 
   - attach creative commons
@@ -68,21 +68,20 @@ None
   Administer >> Settings >> Creative Commons. To make it mandatory to specify a
   license, simply make the 'None' type unavailable.
 
-* Set default license type and jurisdiction in Administer >> Settings >> 
+* Set default license type and jurisdiction in Administer >> Settings >>
   Creative Commons >> site defaults. Here, you can set the default license to be
   used as a site-wide license if you wish, and you can include any relevant
   metadata.
 
 * Enable Creative Commons licensing for desired content types in Administer >>
-  Settings >> Creative Commons >> content types. For example, you might wish to 
+  Settings >> Creative Commons >> content types. For example, you might wish to
   allow Creative Commons licensing for blog posts, but not forum posts.
 
 * In your Drupal user account settings, you can set a jurisdiction or default
   license to override the site defaults.
 
 
-CC Drupal is only possible due to the support and guidance of my mentors [Kevin Reynen](http://drupal.org/user/48877) and `CC Tech Staff Member`, who have been very supportive on every step of the project. Also I would like to thank engineering director [Kriti Godey](https://creativecommons.org/author/kgodey) for her continuous support.
-
+CC Drupal is only possible due to the support and guidance of my mentors [Kevin Reynen](http://drupal.org/user/48877) and `CC Tech Staff Member`, who have been very supportive on every step of the project.
 
 The project is approaching its completion. Can't wait to see it in production.
 
