@@ -806,7 +806,7 @@
             "language": "Python",
             "license": {
                 "name": "MIT License",
-                "url": "https://github.com/creativecommons/primary-site-includes/blob/master/LICENSE"
+                "url": "https://github.com/creativecommons/primary-site-includes/blob/main/LICENSE"
             },
             "name": "primary-site-includes",
             "slack": "",
@@ -915,7 +915,7 @@
             "language": "SaltStack",
             "license": {
                 "name": "MIT License",
-                "url": "https://github.com/creativecommons/sre-salt-prime/blob/master/LICENSE"
+                "url": "https://github.com/creativecommons/sre-salt-prime/blob/main/LICENSE"
             },
             "name": "sre-salt-prime",
             "slack": "",
