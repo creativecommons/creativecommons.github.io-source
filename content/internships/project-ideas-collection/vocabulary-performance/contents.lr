@@ -1,0 +1,92 @@
+_model: project-idea
+---
+_hidden: yes
+---
+title: Vocabulary - Performance Improvements
+---
+problem:
+[Vocabulary][vocabulary] currently has some performance issues, related to:
+- File size of CSS files
+- Runtime loading cascade (importing Vocabulary from the CDN then loads
+  additional stylesheets and font files in sequence, instead of in parallel).
+  We need to eliminate this waterfall.
+
+Performance can also be further improved via documentation, and sharing best
+practices for implementing vocabulary with consumers:
+- Guidelines and suggestions for using [purgecss][purgecss] with Vocabulary
+- Instructions on how/and what to prefetch or preload (with copy-pastable meta
+  tags) (see: [Preload, prefetch and other link tags | CSS-Tricks][csstricks])
+- Create tooling so that these performance improvements can be maintained over
+  time. Some ideas:
+  - Filesize monitoring via GitHub actions: [ampproject/filesize][filesize]
+  - Add linting rules for Sass files [sds/scss-lint][scsslint]
+
+[vocabulary]: https://github.com/creativecommons/vocabulary/
+[purgecss]: https://github.com/FullHuman/purgecss
+[csstricks]: https://css-tricks.com/preload-prefetch-and-other-link-tags/
+[filesize]: https://github.com/ampproject/filesize
+[scsslint]: https://github.com/sds/scss-lint
+---
+expected_outcome:
+This work will have a strong and measurable impact on all sites using CC
+Vocabulary. The current live sites using vocabulary are: 
+- https://chooser-beta.creativecommons.org/
+- https://opensource.creativecommons.org/
+- https://search.creativecommons.org/
+- https://summit.creativecommons.org/
+
+We will be updating more CC websites to use Vocabulary in Q1 of this year.
+These changes will be quantifiable by measuring changes in page size (measured
+in kilobytes), and reduced load times on the Google-defined metrics "[core web
+vitals][[corewebvitals]]": Largest Contentful Paint (LCP), First Input Delay
+(FID), and Cumulative Layout Shift (CLS).
+
+[corewebvitals]: https://web.dev/vitals/
+---
+internship_tasks:
+- Audit the current performance issues
+- Rewrite and modify CSS files and the build pipeline
+---
+application_tips:
+Applying interns should do some basic performance analysis of some existing CC
+web properties using Vocabulary. They should also outline how they intend to
+measure the results of their work, taking special care to capture as much
+relevant initial data and reporting *before* their changes are implemented as
+possible.
+
+This project requires proficiency in CSS/Sass and optionally an understanding
+of front-end build tooling with NPM. Some JavaScript may likely be useful as
+well. This is a great opportunity for a developer to learn about front-end
+performance profiling, "modern" web performance metrics, and many native HTML
+APIs and specifications for dealing with asset loading.
+---
+resources:
+- **[Applicant Guide][appguide]**
+- [creativecommons/vocabulary][vocabulary]: A cohesive design system & Vue
+  component library to unify the web-facing Creative Commons
+- [Web Vitals][webvitals]
+- [Best practices for measuring Web Vitals in the field][bestpractices]
+- [PurgeCSS - Remove unused CSS][purgecssdocs]
+- [how and why to avoid css @import statements in stylesheets on your
+  websites - lost saloon][avoidimports]
+
+[appguide]: /internships/applicant-guide/
+[vocabulary]: https://github.com/creativecommons/vocabulary/
+[webvitals]: https://web.dev/vitals/
+[bestpractices]: https://web.dev/vitals-field-measurement-best-practices/
+[purgecssdocs]: https://purgecss.com/
+[avoidimports]: https://www.lostsaloon.com/technology/how-to-avoid-css-import-statements-in-stylesheets-to-improve-seo/
+---
+skills_recommended:
+- CSS
+- CSS Preprocessors (Sass)
+- JavaScript (optional)
+---
+mentors:
+- Abhishek Naidu
+- Nimish Bongale
+- Zack Krida
+---
+difficulty: Medium
+---
+filter_value: difficulty-medium skill-css skill-javascript
