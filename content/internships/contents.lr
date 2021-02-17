@@ -55,12 +55,17 @@ Creative Commons is not participating in the 2021 May round of Outreachy.
 
 ## Mentors
 
-Here are our mentors for 2021 GSoC (***list in progress***):
+Here are our mentors for 2021 GSoC:
 
-| Name | Slack Username | About |
-| ---- | -------------- | ----- |
-| Hugo Solar | `@hugo` | [See CC Open Source Blog author pag][authorhugo] |
-| Timid Robot Zehta | `@Timid Robot` | [See CC Open Source Blog author pag][authortimidrobot] |
+| Name | Slack Username |
+| ---- | -------------- |
+| Abhishek Naidu | `@Abhishek` |
+| [Hugo Solar][authorhugo] | `@hugo` |
+| [Nimish Bongale][authornimish] | `@nimishnb` |
+| [Timid Robot Zehta][authortimidrobot] | `@Timid Robot` |
+| [Zack Krida][authorzack] | `@zack krida` |
 
 [authorhugo]: /blog/authors/hugosolar/
+[authornimish]: /blog/authors/nimishbongale/
 [authortimidrobot]: /blog/authors/TimidRobot/
+[authorzack]: /blog/authors/zackkrida/
