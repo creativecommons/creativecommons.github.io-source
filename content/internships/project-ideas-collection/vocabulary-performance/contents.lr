@@ -38,7 +38,7 @@ Vocabulary. The current live sites using vocabulary are:
 We will be updating more CC websites to use Vocabulary in Q1 of this year.
 These changes will be quantifiable by measuring changes in page size (measured
 in kilobytes), and reduced load times on the Google-defined metrics "[core web
-vitals][[corewebvitals]]": Largest Contentful Paint (LCP), First Input Delay
+vitals][corewebvitals]": Largest Contentful Paint (LCP), First Input Delay
 (FID), and Cumulative Layout Shift (CLS).
 
 [corewebvitals]: https://web.dev/vitals/
