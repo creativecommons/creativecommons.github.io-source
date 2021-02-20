@@ -611,22 +611,6 @@
             "website": null
         },
         {
-            "created": "2014-12-08T20:16:04",
-            "description": "(Deprecated) Tech Team blog",
-            "engineering_project": true,
-            "featured": false,
-            "id": 27733017,
-            "language": null,
-            "license": {
-                "name": "MIT License",
-                "url": "https://github.com/creativecommons/labs/blob/master/LICENSE"
-            },
-            "name": "labs",
-            "slack": "",
-            "url": "https://github.com/creativecommons/labs",
-            "website": ""
-        },
-        {
             "created": "2018-05-16T19:44:57",
             "description": "CC Legal Database: curated repository of Case Law and Scholarship data from around the world in a Django based website.",
             "engineering_project": true,
