@@ -11,6 +11,7 @@ author: Ishan-Thilina
 body:
 
 This year Creative Commons has a much more limited focus on what we would like to see out of Google Summer of Code than in previous years.
+
 ### Installation
 The latest version of the plugin is 0.7.0, available for download from the [OpenOffice.org Extension site](https://extensions.openoffice.org/en/project/ccooo)
 To install:
@@ -27,15 +28,17 @@ Debian/Ubuntu (& other variants) users:
 
 ### Problem Statement
 The current Creative Commons LibreOffice (OpenOffice) plugin is written in Java. This project is aimed to port the current plugin to Python while rectifying the problems in the current plugin.
+
 ### Solution
 The Python port of the Creative Commons Add-in for LibreOffice and OpenOffice.org which allows license information to be embedded in OpenOffice.org and LibreOffice Writer, Impress, Draw and Calc documents.
 
 For more information visit [the official addin page](https://wiki.creativecommons.org/wiki/OpenOfficeOrg_Addin) of Creative Commons
 
-###Testing
+### Testing
 Download the out.oxt file. Install it via the LibreOffice Extension Manager (Tools --> Extension Manager).
 
 Then go to `Insert` `--> ` `Creative Commons`. By using the first option you can insert the license information to the document. The second option is for changing those data.
+
 ### Knowledge Prerequisite
 `Python` ,`Shell`
 
