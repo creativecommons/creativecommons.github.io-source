@@ -44,7 +44,8 @@ To submit bug reports and feature suggestions, or to track changes:
 None
 
 ### Installation
-* Install as usual, see http://drupal.org/node/70151 for further information.
+* Install as usual, see [Installing contributed modules (Drupal 5 and 6) |
+  Drupal.org](http://drupal.org/node/70151) for further information.
 
 ### Configuration
 * Configure user permissions in Administer >> User management >> Permissions >>
