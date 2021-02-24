@@ -1,0 +1,28 @@
+title: Creative Commons OpenOffice Plugin now Supports Internationalization.
+---
+categories:
+Add-In
+OpenOffice
+opensource
+---
+author: akila87
+---
+body:
+
+The Creative Commons Licensing extension provides the ability to select and embed a Creative Commons license in Writer, Calc and Impress documents. In addition to embedding the license in the document metadata it provides a visible notice in your document.
+
+### Problem Statement
+The OpenOffice plug-in for Creative Commons was completed in 2007 as a GSoC project. But now it is out dated and the current extension cannot be used properly in OpenOffice 3 versions.
+
+### Solutions
+Planning to :-
+* update the Creative Commons plug-in for OO.o 3 SDK.
+* Add support for CC0.
+* Improve the UI and add support for OO.o Draw.
+
+CC Open Office Plugin Updates is only possible due to the support and guidance of my mentors [nyergler](https://github.com/nyergler?tab=overview&from=2010-12-01&to=2010-12-31) and `other CC Tech Staff Member`, who have been very supportive on every step of the project.
+
+You can follow the project on: [OpenOfficeOrg Addin](https://wiki.creativecommons.org/wiki/OpenOfficeOrg_Addin).
+
+---
+pub_date: 2010-11-15

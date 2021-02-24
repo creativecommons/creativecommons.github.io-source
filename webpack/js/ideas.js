@@ -17,7 +17,9 @@ $(document).ready(function(){
       'difficulty-easy',
       'difficulty-medium',
       'difficulty-hard',
+      'skill-css',
       'skill-javascript',
+      'skill-php',
       'skill-python',
       'skill-wordpress',
       'skill-writing'

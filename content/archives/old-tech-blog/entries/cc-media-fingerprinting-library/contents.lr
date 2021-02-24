@@ -1,0 +1,48 @@
+title: Creative Commons Media Fingerprinting Library
+---
+categories:
+Add-In
+GSoC
+opensource
+---
+author: ethanlim
+---
+body:
+
+CC would prefer that all content on the Web include correct licensing metadata. Alas, that is not the case. So we're interested in code that will allow us to identify a given item across the Web, even if there's no metadata alongside (or within) it. The tricky part is: people often crop or resize images, clip videos, re-encode content, or quote only pieces of text. So a simple hash is not sufficient: we need more intelligent fuzzy matching. That's what this project is about.
+
+### Expected Results
+A library that provides two methods:
+*  Given a media file, output a fingerprint, and
+*  Given a file and a fingerprint, return the likelihood of the file matching the original file.
+
+You can focus your efforts on only one or two media types, or you can do more if it's possible.
+The library can be in a low-level language (C/C++) or you can use a higher-level language (JavaScript) if it's feasible. Speed is not a major concern at this point.
+Bonus: An additional API/method to detect content inside other files (e.g., a PowerPoint file that includes a CC licensed image, or a still image inside a video).
+
+### Notes/Resources
+The first task is to decide on a strategy to compare two items and decide how similar they are. Some choices are:
+* Hamming distance (bitwise AKA Manhattan distance)
+* Euclidean distance (plane distance, also good in higher dimensions)
+* Set similarity (Jaccard index; MinHash)
+
+For this project, set similarity seems like the best choice. It would potentially allow us to detect works remixed into other works, if some portion of them has remained intact in some way. The technique involves distilling a document into a set of things, and comparing two documents is simply the ratio of things they have in common to things they do not.
+
+A good way to start is with text, and involves a technique called shingling. For something like images, we'll need more work to determine which "interesting" features of the image to consider (to generate the set of things). This is called "keypoint extraction" and involves using standard algorithms to find vectors of floats that describe each keypoint. Since for images two keypoint vectors might be very similar but not identical, some additional work in clustering and mapping to example keypoints is required for images.
+Some reading:
+* Chapters 1 and 3 of [Mining Massive Datasets](http://infolab.stanford.edu/~ullman/mmds.html)
+* [building shingles in text](https://lingpipe-blog.com/2011/01/12/scaling-jaccard-distance-deduplication-shingling-minhash-locality-sensitive-hashi/)
+* [Introduction to Information Retrieval](https://nlp.stanford.edu/IR-book/)
+* [OpenCV](https://opencv.org/) for extracting things (features) of images
+* BRISK / FREAK: algorithms for "keypoint extraction", for images
+* [pHash.org](http://www.phash.org/) might be something we can use.
+
+### Knowledge Prerequisite
+`Media formats/encodings` ,`JavaScript` ,`C/C++.`
+
+CC MEDIA FINGERPRINTING LIBRARY is only possible due to the support and guidance of my mentors [Dan Mills](#) or ` other CC tech staff member`, who have been very supportive on every step of the project.
+
+The project is approaching its completion. Can't wait to see it in production.
+
+---
+pub_date: 2013-07-15
