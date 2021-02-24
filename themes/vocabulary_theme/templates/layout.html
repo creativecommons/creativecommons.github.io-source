@@ -69,7 +69,7 @@
             Blog
           </a>
           <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link is-arrowless {% if this.is_child_of('/contributing-code') %} is-active{% endif%}">
+            <a class="navbar-link is-arrowless {% if this.is_child_of('/contributing-code') %} is-active{% endif%}" tabindex="0">
               Contribute<i class="icon caret-down"></i></a>
             <div class="navbar-dropdown">
               {% for href, title in [
@@ -88,7 +88,7 @@
             </div>
           </div>
           <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link is-arrowless {% if this.is_child_of('/community') %} is-active{% endif%}">
+            <a class="navbar-link is-arrowless {% if this.is_child_of('/community') %} is-active{% endif%}" tabindex="0">
               Community<i class="icon caret-down"></i></a>
             <div class="navbar-dropdown is-active">
               {% for href, title in [
@@ -106,7 +106,7 @@
             </div>
           </div>
           <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link is-arrowless {% if this.is_child_of('/internships') %} is-active{% endif%}">
+            <a class="navbar-link is-arrowless {% if this.is_child_of('/internships') %} is-active{% endif%}" tabindex="0">
               Internships<i class="icon caret-down"></i></a>
             <div class="navbar-dropdown">
               {% for href, title in [
