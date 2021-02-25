@@ -70,9 +70,9 @@ warning for [Whitespace before ':' (E203)][e203].
 
 Please work to minimize the number of development related technologies. This
 helps minimize the overhead of contributing to multiple projects. Most of our
-projects use either [Pipenv][pipenv], the Python Development Workflow for
-Humans, or [docker-compose][dockercompose], a tool for defining and running
-multi-container Docker applications.
+projects use either [Pipenv][pipenv], *the Python Development Workflow for
+Humans,* or [docker-compose][dockercompose], *a tool for defining and running
+multi-container Docker applications.*
 
 [pipenv]: https://github.com/pypa/pipenv
 [dockercompose]: https://docs.docker.com/compose/
