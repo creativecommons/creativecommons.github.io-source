@@ -63,7 +63,7 @@
             "language": "Python",
             "license": {
                 "name": "MIT License",
-                "url": "https://github.com/creativecommons/cc-licenses/blob/develop/LICENSE"
+                "url": "https://github.com/creativecommons/cc-licenses/blob/main/LICENSE"
             },
             "name": "cc-licenses",
             "slack": "",
