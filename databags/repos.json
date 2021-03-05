@@ -76,13 +76,16 @@
         },
         {
             "created": "2020-09-08T19:18:51",
-            "description": "",
+            "description": "CC Licenses data (static HTML, language files, etc.)",
             "engineering_project": true,
             "english_name": "CC Licenses Data",
             "featured": false,
             "id": 293905720,
             "language": "HTML",
-            "license": null,
+            "license": {
+                "name": "Creative Commons Zero v1.0 Universal",
+                "url": "https://github.com/creativecommons/cc-licenses-data/blob/main/LICENSE"
+            },
             "name": "cc-licenses-data",
             "slack": "",
             "technologies": [
@@ -431,7 +434,7 @@
             "english_name": "CC Chooser",
             "featured": true,
             "id": 188122843,
-            "language": "JavaScript",
+            "language": "Vue",
             "license": {
                 "name": "MIT License",
                 "url": "https://github.com/creativecommons/chooser/blob/master/LICENSE"
