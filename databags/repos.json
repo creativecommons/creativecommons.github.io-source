@@ -63,7 +63,7 @@
             "language": "Python",
             "license": {
                 "name": "MIT License",
-                "url": "https://github.com/creativecommons/cc-licenses/blob/develop/LICENSE"
+                "url": "https://github.com/creativecommons/cc-licenses/blob/main/LICENSE"
             },
             "name": "cc-licenses",
             "slack": "",
@@ -76,13 +76,16 @@
         },
         {
             "created": "2020-09-08T19:18:51",
-            "description": "",
+            "description": "CC Licenses data (static HTML, language files, etc.)",
             "engineering_project": true,
             "english_name": "CC Licenses Data",
             "featured": false,
             "id": 293905720,
             "language": "HTML",
-            "license": null,
+            "license": {
+                "name": "Creative Commons Zero v1.0 Universal",
+                "url": "https://github.com/creativecommons/cc-licenses-data/blob/main/LICENSE"
+            },
             "name": "cc-licenses-data",
             "slack": "",
             "technologies": [
@@ -229,7 +232,7 @@
         },
         {
             "created": "2017-07-12T18:01:30",
-            "description": "Mapping the commons towards an open ledger and cc search.",
+            "description": "Note: Project is discontinued. Mapping the commons towards an open ledger and cc search.",
             "engineering_project": true,
             "english_name": "CC Catalog",
             "featured": false,
@@ -250,7 +253,7 @@
         },
         {
             "created": "2018-04-27T20:50:37",
-            "description": "The Creative Commons Catalog API allows programmatic access to search for CC-licensed and public domain digital media.",
+            "description": "Note: Project is discontinued. The Creative Commons Catalog API allows programmatic access to search for CC-licensed and public domain digital media.",
             "engineering_project": true,
             "english_name": "CC Catalog API",
             "featured": false,
@@ -289,7 +292,7 @@
         },
         {
             "created": "2018-07-06T00:51:38",
-            "description": "CC Search is a search tool for CC-licensed and public domain content across the internet.",
+            "description": "Note: Project is discontinued. CC Search is a search tool for CC-licensed and public domain content across the internet.",
             "engineering_project": true,
             "english_name": "CC Search",
             "featured": false,
@@ -431,7 +434,7 @@
             "english_name": "CC Chooser",
             "featured": true,
             "id": 188122843,
-            "language": "JavaScript",
+            "language": "Vue",
             "license": {
                 "name": "MIT License",
                 "url": "https://github.com/creativecommons/chooser/blob/master/LICENSE"
@@ -447,7 +450,7 @@
                 "Jest"
             ],
             "url": "https://github.com/creativecommons/chooser",
-            "website": "https://chooser-beta.creativecommons.org/"
+            "website": "https://chooser-beta.creativecommons.org"
         },
         {
             "created": "2017-07-05T23:39:19",
@@ -611,22 +614,6 @@
             "website": null
         },
         {
-            "created": "2014-12-08T20:16:04",
-            "description": "(Deprecated) Tech Team blog",
-            "engineering_project": true,
-            "featured": false,
-            "id": 27733017,
-            "language": null,
-            "license": {
-                "name": "MIT License",
-                "url": "https://github.com/creativecommons/labs/blob/master/LICENSE"
-            },
-            "name": "labs",
-            "slack": "",
-            "url": "https://github.com/creativecommons/labs",
-            "website": ""
-        },
-        {
             "created": "2018-05-16T19:44:57",
             "description": "CC Legal Database: curated repository of Case Law and Scholarship data from around the world in a Django based website.",
             "engineering_project": true,
@@ -765,6 +752,17 @@
             "website": "https://cc-og-image.vercel.app"
         },
         {
+            "created": "2021-02-27T18:32:18",
+            "description": "",
+            "id": 342929356,
+            "language": null,
+            "license": null,
+            "name": "open-glam-survey-vis",
+            "slack": "",
+            "url": "https://github.com/creativecommons/open-glam-survey-vis",
+            "website": null
+        },
+        {
             "created": "2013-12-05T07:09:43",
             "description": "open4us.org website",
             "engineering_project": true,
@@ -806,7 +804,7 @@
             "language": "Python",
             "license": {
                 "name": "MIT License",
-                "url": "https://github.com/creativecommons/primary-site-includes/blob/master/LICENSE"
+                "url": "https://github.com/creativecommons/primary-site-includes/blob/main/LICENSE"
             },
             "name": "primary-site-includes",
             "slack": "",
@@ -915,7 +913,7 @@
             "language": "SaltStack",
             "license": {
                 "name": "MIT License",
-                "url": "https://github.com/creativecommons/sre-salt-prime/blob/master/LICENSE"
+                "url": "https://github.com/creativecommons/sre-salt-prime/blob/main/LICENSE"
             },
             "name": "sre-salt-prime",
             "slack": "",

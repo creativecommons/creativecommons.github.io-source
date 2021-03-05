@@ -1,0 +1,33 @@
+title: Creative Commons Pasteboard
+---
+categories:
+GSoC
+---
+author: THanish
+---
+body:
+
+The Creative Commons Pasteboard is a browser extension used to help users easily clip content from different sources aroud the web. It also helps users by automatically adding attribution information when users paste their clips into documents.
+### Status
+Currently an early experiment.
+
+Pasteboard is not ready for most people to try out. However, there are still may ways to participate:
+
+* If you're a teacher, we would welcome your input and would like to learn about how Pasteboard might (or might not) fit your workflow.
+* If you're a developer, check out our code, implement a new feature, or let us know how you might do things differently (by submitting a patch!).
+* If you're a designer, check out our designs, let us know how you might improve them.
+No matter who you are, though, feel free to learn more about the work we're doing and don't hesitate to reach out or join our discussions if you're interested. We're looking forward to hearing from you!
+
+
+### Solution - CC Pasteboard
+[CC Pasteboard](https://github.com/mnmtanish/pasteboard) aims to solve the problem by using tool like pasteboard that allows teachers to clip portions of webpages and reassemble them into documents (currently using Google Docs), while keeping track of the sources both to be used as references, as well as for later editing (e.g. next year, or by another teacher). This storyboard has a good overview of how we envision the tool being used
+
+
+CC Pasteboard is only possible due to the support and guidance of CC tech staff, who have been very supportive on every step of the project.
+
+You can follow the project on Github: [mnmtanish/pasteboard](https://github.com/mnmtanish/pasteboard). You can also join the discussion on `#cc` on [IRC](https://freenode.net/)
+
+The project is approaching its completion. Can't wait to see it in production.
+
+---
+pub_date: 2013-07-15
