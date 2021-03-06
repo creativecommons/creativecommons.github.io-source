@@ -437,7 +437,7 @@
             "language": "Vue",
             "license": {
                 "name": "MIT License",
-                "url": "https://github.com/creativecommons/chooser/blob/master/LICENSE"
+                "url": "https://github.com/creativecommons/chooser/blob/main/LICENSE"
             },
             "name": "chooser",
             "slack": "",
