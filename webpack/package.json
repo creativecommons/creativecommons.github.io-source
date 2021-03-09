@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "@octokit/rest": "^18.3.5",
-    "js-yaml": "^3.14.0",
+    "js-yaml": "^3.14.1",
     "vue": "^2.6.12",
     "vue-select": "^3.10.8"
   },
