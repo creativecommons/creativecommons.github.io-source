@@ -1,15 +1,13 @@
 {
-  "name": "creative-commons-open-source",
-  "version": "1.0.0",
-  "main": "main.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "dependencies": {
+    "@octokit/rest": "^18.0.6",
+    "js-yaml": "^3.14.0",
+    "vue": "^2.6.12",
+    "vue-select": "^3.10.8"
   },
-  "author": "",
-  "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.9.0",
-    "@creativecommons/vocabulary": "^2020.9.3",
+    "@creativecommons/vocabulary": "2020.11.1",
     "autoprefixer": "^9.7.5",
     "babel-loader": "^8.1.0",
     "bulma": "^0.9.0",
@@ -25,15 +23,10 @@
     "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11"
   },
-  "dependencies": {
-    "@octokit/rest": "^18.0.6",
-    "js-yaml": "^3.14.0",
-    "vue": "^2.6.12",
-    "vue-select": "^3.10.8"
-  },
-  "description": "www.creativecommons.github.io",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/creativecommons/creativecommons.github.io-source"
+  "license": "MIT",
+  "main": "main.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
