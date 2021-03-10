@@ -504,7 +504,7 @@
             "language": "PHP",
             "license": {
                 "name": "MIT License",
-                "url": "https://github.com/creativecommons/creativecommons-certificate/blob/master/LICENSE"
+                "url": "https://github.com/creativecommons/creativecommons-certificate/blob/main/LICENSE"
             },
             "name": "creativecommons-certificate",
             "slack": "",
