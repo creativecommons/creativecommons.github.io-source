@@ -66,7 +66,7 @@
                 "url": "https://github.com/creativecommons/cc-licenses/blob/main/LICENSE"
             },
             "name": "cc-licenses",
-            "slack": "",
+            "slack": "cc-dev-licenses",
             "technologies": [
                 "Python",
                 "HTML"
@@ -1052,7 +1052,7 @@
                 "url": "https://github.com/creativecommons/wp-plugin-creativecommons/blob/master/license.txt"
             },
             "name": "wp-plugin-creativecommons",
-            "slack": "",
+            "slack": "cc-dev-wordpress",
             "technologies": [
                 "PHP",
                 "CSS",
