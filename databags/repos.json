@@ -9,7 +9,7 @@
             "language": null,
             "license": {
                 "name": "MIT License",
-                "url": "https://github.com/creativecommons/.github/blob/master/LICENSE"
+                "url": "https://github.com/creativecommons/.github/blob/main/LICENSE"
             },
             "name": ".github",
             "slack": "",
@@ -104,7 +104,7 @@
             "language": "Python",
             "license": {
                 "name": "MIT License",
-                "url": "https://github.com/creativecommons/cc-link-checker/blob/master/LICENSE"
+                "url": "https://github.com/creativecommons/cc-link-checker/blob/main/LICENSE"
             },
             "name": "cc-link-checker",
             "slack": "cc-dev-linkchecker",
