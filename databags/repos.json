@@ -9,7 +9,7 @@
             "language": null,
             "license": {
                 "name": "MIT License",
-                "url": "https://github.com/creativecommons/.github/blob/master/LICENSE"
+                "url": "https://github.com/creativecommons/.github/blob/main/LICENSE"
             },
             "name": ".github",
             "slack": "",
@@ -66,7 +66,7 @@
                 "url": "https://github.com/creativecommons/cc-licenses/blob/main/LICENSE"
             },
             "name": "cc-licenses",
-            "slack": "",
+            "slack": "cc-dev-licenses",
             "technologies": [
                 "Python",
                 "HTML"
@@ -104,7 +104,7 @@
             "language": "Python",
             "license": {
                 "name": "MIT License",
-                "url": "https://github.com/creativecommons/cc-link-checker/blob/master/LICENSE"
+                "url": "https://github.com/creativecommons/cc-link-checker/blob/main/LICENSE"
             },
             "name": "cc-link-checker",
             "slack": "cc-dev-linkchecker",
@@ -504,7 +504,7 @@
             "language": "PHP",
             "license": {
                 "name": "MIT License",
-                "url": "https://github.com/creativecommons/creativecommons-certificate/blob/master/LICENSE"
+                "url": "https://github.com/creativecommons/creativecommons-certificate/blob/main/LICENSE"
             },
             "name": "creativecommons-certificate",
             "slack": "",
@@ -1052,7 +1052,7 @@
                 "url": "https://github.com/creativecommons/wp-plugin-creativecommons/blob/master/license.txt"
             },
             "name": "wp-plugin-creativecommons",
-            "slack": "",
+            "slack": "cc-dev-wordpress",
             "technologies": [
                 "PHP",
                 "CSS",

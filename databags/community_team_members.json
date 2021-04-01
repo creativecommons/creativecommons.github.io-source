@@ -25,6 +25,103 @@
         {
             "members": [
                 {
+                    "github": "akmadian",
+                    "name": "Ari Madian",
+                    "role": "Project Maintainer"
+                },
+                {
+                    "github": "kgodey",
+                    "name": "Kriti Godey",
+                    "role": "Project Maintainer"
+                },
+                {
+                    "github": "obulat",
+                    "name": "Olga Bulat",
+                    "role": "Project Maintainer"
+                },
+                {
+                    "github": "zackkrida",
+                    "name": "Zack Krida",
+                    "role": "Project Maintainer"
+                },
+                {
+                    "github": "hemanth-hk",
+                    "name": "Hemanth Kumar",
+                    "role": "Project Contributor"
+                },
+                {
+                    "github": "JackieBinya",
+                    "name": "Jacqueline Binya",
+                    "role": "Project Contributor"
+                }
+            ],
+            "name": "License Chooser",
+            "repos": "chooser"
+        },
+        {
+            "members": [
+                {
+                    "github": "dhruvkb",
+                    "name": "Dhruv Bhanushali",
+                    "role": "Project Maintainer"
+                },
+                {
+                    "github": "hugosolar",
+                    "name": "Hugo Solar",
+                    "role": "Project Maintainer"
+                },
+                {
+                    "github": "kgodey",
+                    "name": "Kriti Godey",
+                    "role": "Project Maintainer"
+                },
+                {
+                    "github": "zackkrida",
+                    "name": "Zack Krida",
+                    "role": "Project Maintainer"
+                },
+                {
+                    "github": "Dhruvi16",
+                    "name": "Dhruvi Butti",
+                    "role": "Project Core Committer"
+                },
+                {
+                    "github": "nimishbongale",
+                    "name": "Nimish Bongale",
+                    "role": "Project Core Committer"
+                },
+                {
+                    "github": "luninor",
+                    "name": "Ayan Choudhary",
+                    "role": "Project Collaborator"
+                },
+                {
+                    "github": "chidexebere",
+                    "name": "Chidiebere Onyegbuchulem",
+                    "role": "Project Collaborator"
+                },
+                {
+                    "github": "Tanuj22",
+                    "name": "Tanuj Agarwal",
+                    "role": "Project Collaborator"
+                },
+                {
+                    "github": "jahnvigupta",
+                    "name": "Jahnvi Gupta",
+                    "role": "Project Contributor"
+                },
+                {
+                    "github": "megha070",
+                    "name": "Megha Varshney",
+                    "role": "Project Contributor"
+                }
+            ],
+            "name": "Vocabulary",
+            "repos": "vocabulary"
+        },
+        {
+            "members": [
+                {
                     "github": "aldenstpage",
                     "name": "Alden Page",
                     "role": "Project Maintainer"
@@ -37,6 +134,11 @@
                 {
                     "github": "kgodey",
                     "name": "Kriti Godey",
+                    "role": "Project Maintainer"
+                },
+                {
+                    "github": "zackkrida",
+                    "name": "Zack Krida",
                     "role": "Project Maintainer"
                 },
                 {
@@ -93,6 +195,11 @@
                 {
                     "github": "kgodey",
                     "name": "Kriti Godey",
+                    "role": "Project Maintainer"
+                },
+                {
+                    "github": "zackkrida",
+                    "name": "Zack Krida",
                     "role": "Project Maintainer"
                 },
                 {
@@ -204,12 +311,17 @@
                     "role": "Project Maintainer"
                 },
                 {
+                    "github": "zackkrida",
+                    "name": "Zack Krida",
+                    "role": "Project Maintainer"
+                },
+                {
                     "github": "akmadian",
                     "name": "Ari Madian",
                     "role": "Project Core Committer"
                 },
                 {
-                    "github": "AyanChoudhary",
+                    "github": "luninor",
                     "name": "Ayan Choudhary",
                     "role": "Project Core Committer"
                 },
@@ -330,37 +442,6 @@
         {
             "members": [
                 {
-                    "github": "akmadian",
-                    "name": "Ari Madian",
-                    "role": "Project Maintainer"
-                },
-                {
-                    "github": "kgodey",
-                    "name": "Kriti Godey",
-                    "role": "Project Maintainer"
-                },
-                {
-                    "github": "obulat",
-                    "name": "Olga Bulat",
-                    "role": "Project Maintainer"
-                },
-                {
-                    "github": "hemanth-hk",
-                    "name": "Hemanth Kumar",
-                    "role": "Project Contributor"
-                },
-                {
-                    "github": "JackieBinya",
-                    "name": "Jacqueline Binya",
-                    "role": "Project Contributor"
-                }
-            ],
-            "name": "License Chooser",
-            "repos": "chooser"
-        },
-        {
-            "members": [
-                {
                     "github": "bhumijgupta",
                     "name": "Bhumij Gupta",
                     "role": "Project Maintainer"
@@ -425,62 +506,6 @@
             ],
             "name": "Platform Toolkit",
             "repos": "mp"
-        },
-        {
-            "members": [
-                {
-                    "github": "dhruvkb",
-                    "name": "Dhruv Bhanushali",
-                    "role": "Project Maintainer"
-                },
-                {
-                    "github": "hugosolar",
-                    "name": "Hugo Solar",
-                    "role": "Project Maintainer"
-                },
-                {
-                    "github": "kgodey",
-                    "name": "Kriti Godey",
-                    "role": "Project Maintainer"
-                },
-                {
-                    "github": "Dhruvi16",
-                    "name": "Dhruvi Butti",
-                    "role": "Project Core Committer"
-                },
-                {
-                    "github": "nimishbongale",
-                    "name": "Nimish Bongale",
-                    "role": "Project Core Committer"
-                },
-                {
-                    "github": "AyanChoudhary",
-                    "name": "Ayan Choudhary",
-                    "role": "Project Collaborator"
-                },
-                {
-                    "github": "chidexebere",
-                    "name": "Chidiebere Onyegbuchulem",
-                    "role": "Project Collaborator"
-                },
-                {
-                    "github": "Tanuj22",
-                    "name": "Tanuj Agarwal",
-                    "role": "Project Collaborator"
-                },
-                {
-                    "github": "jahnvigupta",
-                    "name": "Jahnvi Gupta",
-                    "role": "Project Contributor"
-                },
-                {
-                    "github": "megha070",
-                    "name": "Megha Varshney",
-                    "role": "Project Contributor"
-                }
-            ],
-            "name": "Vocabulary",
-            "repos": "vocabulary"
         },
         {
             "members": [
