@@ -585,7 +585,7 @@
             "language": "HTML",
             "license": {
                 "name": "Other",
-                "url": "https://github.com/creativecommons/faq/blob/master/LICENSE"
+                "url": "https://github.com/creativecommons/faq/blob/main/LICENSE"
             },
             "name": "faq",
             "slack": "",
@@ -676,7 +676,7 @@
             "language": "HTML",
             "license": {
                 "name": "MIT License",
-                "url": "https://github.com/creativecommons/mp/blob/master/LICENSE"
+                "url": "https://github.com/creativecommons/mp/blob/main/LICENSE"
             },
             "name": "mp",
             "slack": "",
@@ -934,7 +934,7 @@
             "language": "Shell",
             "license": {
                 "name": "MIT License",
-                "url": "https://github.com/creativecommons/sre-wp-pull/blob/master/LICENSE"
+                "url": "https://github.com/creativecommons/sre-wp-pull/blob/main/LICENSE"
             },
             "name": "sre-wp-pull",
             "slack": "",
