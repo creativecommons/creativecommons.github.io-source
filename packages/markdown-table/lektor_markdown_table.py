@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+# Third-party
 from lektor.pluginsystem import Plugin
 
 
