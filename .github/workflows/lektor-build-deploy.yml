@@ -8,11 +8,11 @@ jobs:
    - name: setup python version
      uses: actions/setup-python@v1
      with:
-      python-version: 3.7
+      python-version: 3.9
    - name: Install dependencies
      run: |
       pip install pipenv
-      pipenv install
+      pipenv sync
       pipenv run lektor build -f webpack
    - name: Deploy to production
      if: github.ref == 'refs/heads/master'
