@@ -1,11 +1,14 @@
 # -*- coding: utf-8 -*-
+# Standard library
 import os
+
+# Third-party
 from lektor.pluginsystem import Plugin
 
 
 class CheckfilePlugin(Plugin):
     name = "CheckFile"
-    description = u"Plugin to check if a file is present."
+    description = "Plugin to check if a file is present."
 
     def on_setup_env(self, **extra):
         def check_file(filename):

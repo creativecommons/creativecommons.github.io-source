@@ -57,27 +57,27 @@ To install these, execute the following commands:
 
 > For  macOS:
 
-1. `brew install pipenv`
-2. `brew install node`
+1. `brew install pipenv node`
 
 > For GNU/Linux:
 
-1. `curl https://raw.githubusercontent.com/kennethreitz/pipenv/master/get-pipenv.py | python`
-2. `sudo apt update`
-3. [Install Node.js](https://github.com/nodesource/distributions/blob/master/README.md#table-of-contents) 
+1. [Installing Pipenv][pipenvinstall]
+2. [Install Node.js][nodeinstall]
+3. `sudo apt update`
 4. `sudo apt install npm `
 
-[pipenvdocs]:https://pipenv.readthedocs.io/en/latest/
-[nodejswebsite]:https://nodejs.org/en/
-[npmdocs]:https://docs.npmjs.com/ 
-
+[pipenvdocs]: https://pipenv.pypa.io/en/latest/
+[nodejswebsite]: https://nodejs.org/en/
+[npmdocs]: https://docs.npmjs.com/ 
+[pipenvinstall]: https://pipenv.pypa.io/en/latest/install/#installing-pipenv
+[nodeinstall]: https://github.com/nodesource/distributions/blob/master/README.md#table-of-contents
 
 
 ### Installing Project Requirements
 
 1. Clone this repository.
 2. Open your command line interface and `cd` to the repository root directory.
-3. Run `pipenv install` to create a Python virtual environment and install the requirements for this project.
+3. Run `pipenv install --dev` to create a Python virtual environment and install the requirements for this project.
 
 
 ### pipenv Troubleshooting
@@ -86,7 +86,7 @@ To install these, execute the following commands:
 message if the project’s virtual environment is broken][pipenverror]). If all
 else fails, try removing the virtual environment and reinstalling:
 1. `pipenv --rm`
-2. `pipenv install`
+2. `pipenv install --dev`
 
 [pipenverror]:https://github.com/pypa/pipenv/issues/1918
 
