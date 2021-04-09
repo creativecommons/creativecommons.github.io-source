@@ -9,7 +9,7 @@
             "language": null,
             "license": {
                 "name": "MIT License",
-                "url": "https://github.com/creativecommons/.github/blob/master/LICENSE"
+                "url": "https://github.com/creativecommons/.github/blob/main/LICENSE"
             },
             "name": ".github",
             "slack": "",
@@ -31,22 +31,6 @@
             "slack": "",
             "url": "https://github.com/creativecommons/candela-utility",
             "website": "http://certificates.creativecommons.org/"
-        },
-        {
-            "created": "2018-05-16T19:44:57",
-            "description": "Creates a static website of Case Law and Scholarship data from around the world based on Google Form responses and manually curated.",
-            "engineering_project": true,
-            "featured": false,
-            "id": 133715391,
-            "language": "HTML",
-            "license": {
-                "name": "MIT License",
-                "url": "https://github.com/creativecommons/caselaw/blob/master/LICENSE"
-            },
-            "name": "caselaw",
-            "slack": "cc-dev-legal-database",
-            "url": "https://github.com/creativecommons/caselaw",
-            "website": "https://labs.creativecommons.org/caselaw/"
         },
         {
             "created": "2015-11-16T19:24:04",
@@ -79,10 +63,10 @@
             "language": "Python",
             "license": {
                 "name": "MIT License",
-                "url": "https://github.com/creativecommons/cc-licenses/blob/develop/LICENSE"
+                "url": "https://github.com/creativecommons/cc-licenses/blob/main/LICENSE"
             },
             "name": "cc-licenses",
-            "slack": "",
+            "slack": "cc-dev-licenses",
             "technologies": [
                 "Python",
                 "HTML"
@@ -92,13 +76,16 @@
         },
         {
             "created": "2020-09-08T19:18:51",
-            "description": "",
+            "description": "CC Licenses data (static HTML, language files, etc.)",
             "engineering_project": true,
             "english_name": "CC Licenses Data",
             "featured": false,
             "id": 293905720,
             "language": "HTML",
-            "license": null,
+            "license": {
+                "name": "Creative Commons Zero v1.0 Universal",
+                "url": "https://github.com/creativecommons/cc-licenses-data/blob/main/LICENSE"
+            },
             "name": "cc-licenses-data",
             "slack": "",
             "technologies": [
@@ -117,7 +104,7 @@
             "language": "Python",
             "license": {
                 "name": "MIT License",
-                "url": "https://github.com/creativecommons/cc-link-checker/blob/master/LICENSE"
+                "url": "https://github.com/creativecommons/cc-link-checker/blob/main/LICENSE"
             },
             "name": "cc-link-checker",
             "slack": "cc-dev-linkchecker",
@@ -136,7 +123,7 @@
             "language": null,
             "license": {
                 "name": "MIT License",
-                "url": "https://github.com/creativecommons/cc-resource-archive/blob/master/LICENSE"
+                "url": "https://github.com/creativecommons/cc-resource-archive/blob/main/LICENSE"
             },
             "name": "cc-resource-archive",
             "slack": "",
@@ -245,7 +232,7 @@
         },
         {
             "created": "2017-07-12T18:01:30",
-            "description": "Mapping the commons towards an open ledger and cc search.",
+            "description": "Note: Project is discontinued. Mapping the commons towards an open ledger and cc search.",
             "engineering_project": true,
             "english_name": "CC Catalog",
             "featured": false,
@@ -266,10 +253,10 @@
         },
         {
             "created": "2018-04-27T20:50:37",
-            "description": "The Creative Commons Catalog API allows programmatic access to search for CC-licensed and public domain digital media.",
+            "description": "Note: Project is discontinued. The Creative Commons Catalog API allows programmatic access to search for CC-licensed and public domain digital media.",
             "engineering_project": true,
             "english_name": "CC Catalog API",
-            "featured": true,
+            "featured": false,
             "id": 131343685,
             "language": "Python",
             "license": {
@@ -305,10 +292,10 @@
         },
         {
             "created": "2018-07-06T00:51:38",
-            "description": "CC Search is a search tool for CC-licensed and public domain content across the internet.",
+            "description": "Note: Project is discontinued. CC Search is a search tool for CC-licensed and public domain content across the internet.",
             "engineering_project": true,
             "english_name": "CC Search",
-            "featured": true,
+            "featured": false,
             "id": 139915408,
             "language": "Vue",
             "license": {
@@ -445,12 +432,12 @@
             "description": "[WIP] The new and improved CC license selection tool.",
             "engineering_project": true,
             "english_name": "CC Chooser",
-            "featured": false,
+            "featured": true,
             "id": 188122843,
-            "language": "JavaScript",
+            "language": "Vue",
             "license": {
                 "name": "MIT License",
-                "url": "https://github.com/creativecommons/chooser/blob/master/LICENSE"
+                "url": "https://github.com/creativecommons/chooser/blob/main/LICENSE"
             },
             "name": "chooser",
             "slack": "",
@@ -463,7 +450,7 @@
                 "Jest"
             ],
             "url": "https://github.com/creativecommons/chooser",
-            "website": "https://chooser-beta.creativecommons.org/"
+            "website": "https://chooser-beta.creativecommons.org"
         },
         {
             "created": "2017-07-05T23:39:19",
@@ -485,6 +472,50 @@
             ],
             "url": "https://github.com/creativecommons/commoners",
             "website": "https://network.creativecommons.org/"
+        },
+        {
+            "created": "2019-12-06T19:44:21",
+            "description": "Base WordPress theme for Creative Commons websites.",
+            "engineering_project": true,
+            "english_name": "WordPress base theme",
+            "featured": false,
+            "id": 226397839,
+            "language": "PHP",
+            "license": {
+                "name": "MIT License",
+                "url": "https://github.com/creativecommons/creativecommons-base/blob/master/LICENSE"
+            },
+            "name": "creativecommons-base",
+            "slack": "cc-dev-wordpress",
+            "technologies": [
+                "PHP",
+                "WordPress"
+            ],
+            "url": "https://github.com/creativecommons/creativecommons-base",
+            "website": ""
+        },
+        {
+            "created": "2020-06-11T17:20:52",
+            "description": "WordPress theme for the CC Certificate Website",
+            "engineering_project": true,
+            "english_name": "Creative Commons Certificates program child theme",
+            "featured": false,
+            "id": 271605671,
+            "language": "PHP",
+            "license": {
+                "name": "MIT License",
+                "url": "https://github.com/creativecommons/creativecommons-certificate/blob/main/LICENSE"
+            },
+            "name": "creativecommons-certificate",
+            "slack": "",
+            "technologies": [
+                "CSS",
+                "HTML",
+                "PHP",
+                "WordPress"
+            ],
+            "url": "https://github.com/creativecommons/creativecommons-certificate",
+            "website": ""
         },
         {
             "created": "2019-01-27T02:29:18",
@@ -524,6 +555,28 @@
             "website": "https://creativecommons.org/"
         },
         {
+            "created": "2020-11-02T16:08:46",
+            "description": "",
+            "engineering_project": true,
+            "english_name": "Data Science Playground",
+            "featured": false,
+            "id": 309423724,
+            "language": "Jupyter Notebook",
+            "license": {
+                "name": "MIT License",
+                "url": "https://github.com/creativecommons/data-science-playground/blob/main/LICENSE"
+            },
+            "name": "data-science-playground",
+            "slack": "cc-developers",
+            "technologies": [
+                "Python",
+                "Apache Spark",
+                "Jupyter"
+            ],
+            "url": "https://github.com/creativecommons/data-science-playground",
+            "website": null
+        },
+        {
             "created": "2015-12-14T23:19:08",
             "description": "Creative Commons FAQ page",
             "engineering_project": true,
@@ -532,7 +585,7 @@
             "language": "HTML",
             "license": {
                 "name": "Other",
-                "url": "https://github.com/creativecommons/faq/blob/master/LICENSE"
+                "url": "https://github.com/creativecommons/faq/blob/main/LICENSE"
             },
             "name": "faq",
             "slack": "",
@@ -561,20 +614,26 @@
             "website": null
         },
         {
-            "created": "2014-12-08T20:16:04",
-            "description": "(Deprecated) Tech Team blog",
+            "created": "2018-05-16T19:44:57",
+            "description": "CC Legal Database: curated repository of Case Law and Scholarship data from around the world in a Django based website.",
             "engineering_project": true,
+            "english_name": "CC Legal Database",
             "featured": false,
-            "id": 27733017,
-            "language": null,
+            "id": 133715391,
+            "language": "HTML",
             "license": {
                 "name": "MIT License",
-                "url": "https://github.com/creativecommons/labs/blob/master/LICENSE"
+                "url": "https://github.com/creativecommons/legaldb/blob/main/LICENSE"
             },
-            "name": "labs",
-            "slack": "",
-            "url": "https://github.com/creativecommons/labs",
-            "website": ""
+            "name": "legaldb",
+            "slack": "cc-dev-legal-database",
+            "technologies": [
+                "Python",
+                "Django",
+                "PostgreSQL"
+            ],
+            "url": "https://github.com/creativecommons/legaldb",
+            "website": "https://legaldb.creativecommons.org/"
         },
         {
             "created": "2013-10-28T02:42:48",
@@ -617,7 +676,7 @@
             "language": "HTML",
             "license": {
                 "name": "MIT License",
-                "url": "https://github.com/creativecommons/mp/blob/master/LICENSE"
+                "url": "https://github.com/creativecommons/mp/blob/main/LICENSE"
             },
             "name": "mp",
             "slack": "",
@@ -662,7 +721,7 @@
             "engineering_project": true,
             "featured": false,
             "id": 59230280,
-            "language": "CSS",
+            "language": "SCSS",
             "license": {
                 "name": "GNU General Public License v2.0",
                 "url": "https://github.com/creativecommons/new-www-theme/blob/master/LICENSE"
@@ -691,6 +750,17 @@
             ],
             "url": "https://github.com/creativecommons/og-image-generator",
             "website": "https://cc-og-image.vercel.app"
+        },
+        {
+            "created": "2021-02-27T18:32:18",
+            "description": "",
+            "id": 342929356,
+            "language": null,
+            "license": null,
+            "name": "open-glam-survey-vis",
+            "slack": "",
+            "url": "https://github.com/creativecommons/open-glam-survey-vis",
+            "website": null
         },
         {
             "created": "2013-12-05T07:09:43",
@@ -734,7 +804,7 @@
             "language": "Python",
             "license": {
                 "name": "MIT License",
-                "url": "https://github.com/creativecommons/primary-site-includes/blob/master/LICENSE"
+                "url": "https://github.com/creativecommons/primary-site-includes/blob/main/LICENSE"
             },
             "name": "primary-site-includes",
             "slack": "",
@@ -843,7 +913,7 @@
             "language": "SaltStack",
             "license": {
                 "name": "MIT License",
-                "url": "https://github.com/creativecommons/sre-salt-prime/blob/master/LICENSE"
+                "url": "https://github.com/creativecommons/sre-salt-prime/blob/main/LICENSE"
             },
             "name": "sre-salt-prime",
             "slack": "",
@@ -864,7 +934,7 @@
             "language": "Shell",
             "license": {
                 "name": "MIT License",
-                "url": "https://github.com/creativecommons/sre-wp-pull/blob/master/LICENSE"
+                "url": "https://github.com/creativecommons/sre-wp-pull/blob/main/LICENSE"
             },
             "name": "sre-wp-pull",
             "slack": "",
@@ -946,7 +1016,7 @@
                 "Fonts"
             ],
             "url": "https://github.com/creativecommons/vocabulary",
-            "website": "https://cc-vocabulary.netlify.app/"
+            "website": "https://cc-vocabulary.netlify.app"
         },
         {
             "created": "2020-10-17T03:08:56",
@@ -973,7 +1043,8 @@
             "created": "2014-07-28T15:18:18",
             "description": "Official Creative Commons plugin for licensing your content. With Creative Commons licenses, keep your copyright AND share your creativity.",
             "engineering_project": true,
-            "featured": false,
+            "english_name": "CC WordPress Plugin",
+            "featured": true,
             "id": 22347352,
             "language": "PHP",
             "license": {
@@ -981,7 +1052,13 @@
                 "url": "https://github.com/creativecommons/wp-plugin-creativecommons/blob/master/license.txt"
             },
             "name": "wp-plugin-creativecommons",
-            "slack": "",
+            "slack": "cc-dev-wordpress",
+            "technologies": [
+                "PHP",
+                "CSS",
+                "JS",
+                "WordPress"
+            ],
             "url": "https://github.com/creativecommons/wp-plugin-creativecommons",
             "website": "https://wordpress.org/plugins/creative-commons/"
         },
@@ -1008,33 +1085,12 @@
             "website": null
         },
         {
-            "created": "2019-12-06T19:44:21",
-            "description": "New base WordPress theme for Creative Commons websites",
-            "engineering_project": true,
-            "english_name": "WordPress base theme",
-            "featured": false,
-            "id": 226397839,
-            "language": "PHP",
-            "license": {
-                "name": "MIT License",
-                "url": "https://github.com/creativecommons/wp-theme-base/blob/master/LICENSE"
-            },
-            "name": "wp-theme-base",
-            "slack": "cc-dev-wordpress",
-            "technologies": [
-                "PHP",
-                "WordPress"
-            ],
-            "url": "https://github.com/creativecommons/wp-theme-base",
-            "website": null
-        },
-        {
             "created": "2019-02-11T15:51:29",
             "description": "Creative Commons Chapter site theme (including chapter sites setup, taxonomies, and widget code)",
             "engineering_project": true,
             "featured": false,
             "id": 170156150,
-            "language": "CSS",
+            "language": "PHP",
             "license": {
                 "name": "GNU General Public License v2.0",
                 "url": "https://github.com/creativecommons/wp-theme-cc-chapter/blob/master/LICENSE"
@@ -1102,29 +1158,6 @@
             ],
             "url": "https://github.com/creativecommons/wp-theme-cctoolkit",
             "website": ""
-        },
-        {
-            "created": "2020-06-11T17:20:52",
-            "description": "WordPress theme for the CC Certificates website",
-            "engineering_project": true,
-            "english_name": "Creative Commons Certificates program child theme",
-            "featured": false,
-            "id": 271605671,
-            "language": "PHP",
-            "license": {
-                "name": "MIT License",
-                "url": "https://github.com/creativecommons/wp-theme-certificates/blob/master/LICENSE"
-            },
-            "name": "wp-theme-certificates",
-            "slack": "",
-            "technologies": [
-                "CSS",
-                "HTML",
-                "PHP",
-                "WordPress"
-            ],
-            "url": "https://github.com/creativecommons/wp-theme-certificates",
-            "website": null
         },
         {
             "created": "2020-04-21T17:01:56",

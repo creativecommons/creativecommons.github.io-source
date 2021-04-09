@@ -1,4 +1,6 @@
 import VueSelect from 'vue-select';
+import {Octokit} from '@octokit/rest';
+import yaml from 'js-yaml'
 
 import {hydrateAppWithData} from "./hydration";
 
@@ -27,7 +29,7 @@ export const IssueLabel = {
      * @returns {string} the name of the class to apply to the label
      */
     className() {
-      return this.$root.categories[this.name] || 'miscellaneous'
+      return this.$root.categories[this.name] || `${this.name.toLocaleLowerCase()} miscellaneous`
     }
   }
 }
@@ -40,7 +42,7 @@ export const IssueCard = {
   </h4>
   <p class="is-size-6">
     <a
-      :href="issue.url"
+      :href="issue.html_url"
       target="_blank">
       <span class="has-color-forest-green">
         {{ issue.repo }}#{{ issue.number }}
@@ -70,8 +72,7 @@ export const IssueCard = {
   },
   computed: {
     dateCreated() {
-      const dateCreated = new Date(this.issue.createdAt * 1000)
-      const [dateComponent,] = dateCreated.toISOString().split("T")
+      const [dateComponent,] = this.issue.created_at.split("T")
       return dateComponent
     }
   }
@@ -84,39 +85,54 @@ export const App = {
   <div class="columns">
     <div class="column is-one-quarter">
       <form id="filters" v-if="options.skills.length">
-        <label for="skills">
-          <strong>Skill set*</strong><br/>
-          Choose up to three skills that you would like to see issues for.
+        <label for="aim">
+          <strong>Aim</strong><br/>
+          I am interested in...
         </label>
         <VueSelect
-          v-model="filters.skills"
-          id="skills"
-          name="skills"
-          placeholder="No preference"
-          :options="options.skills"
-          :reduce="skill => skill.toLocaleLowerCase()"
-          :selectable="() => filters.skills.length < 3"
-          multiple/>
-        <br/>
-        <label for="experience">
-          <strong>Experience</strong><br/>
-          Is this your first time contributing to CC?
-        </label>
-        <VueSelect
-          v-model="filters.experience"
-          id="experience"
-          name="experience"
-          :options="options.experiences"
+          v-model="filters.aim"
+          id="aim"
+          name="aim"
+          :options="options.aims"
           label="name"
-          :reduce="experience => experience.code"
+          :reduce="aim => aim.code"
           :clearable="false"/>
+        <br/>
+        <template v-if="filters.aim === 'contribute'">
+          <label for="skills">
+            <strong>Skill set*</strong><br/>
+            Choose up to three skills that you would like to see issues for.
+          </label>
+          <VueSelect
+            v-model="filters.skills"
+            id="skills"
+            name="skills"
+            placeholder="No preference"
+            :options="options.skills"
+            :reduce="skill => skill.toLocaleLowerCase()"
+            :selectable="() => filters.skills.length < 3"
+            multiple/>
+          <br/>
+          <label for="experience">
+            <strong>Experience</strong><br/>
+            Is this your first time contributing to CC?
+          </label>
+          <VueSelect
+            v-model="filters.experience"
+            id="experience"
+            name="experience"
+            :options="options.experiences"
+            label="name"
+            :reduce="experience => experience.code"
+            :clearable="false"/>
+          <p class="disclaimer">
+            *Not all issues have skills marked on them, especially if they are 
+            simple issues that do not require proficiency in any specific 
+            framework or language. Those issues will not appear when filtering by 
+            skill.
+          </p>
+        </template>
       </form>
-      <p class="disclaimer">
-        *Not all issues have skills marked on them, especially if they are 
-        simple issues that do not require proficiency in any specific 
-        framework or language. Those issues will not appear when filtering by 
-        skill.
-      </p>
       <div v-else>
         Loading filters, please wait...
       </div>
@@ -144,6 +160,11 @@ export const App = {
   data() {
     return {
       options: {
+        aims: [
+          {name: 'Contributing code', code: 'contribute'},
+          {name: 'Triaging issues', code: 'triage'},
+          {name: 'Labelling issues', code: 'label'}
+        ],
         skills: [],
         experiences: [
           {name: 'Yes, it is', code: 'beginner'},
@@ -151,11 +172,13 @@ export const App = {
         ]
       },
       filters: {
+        aim: 'contribute',
         skills: [],
         experience: 'experienced'
       },
       categories: {},
-      issues: []
+      issues: [],
+      octokit: null
     }
   },
   computed: {
@@ -165,7 +188,13 @@ export const App = {
      * @returns {array} the array of filtered issues
      */
     filteredIssues() {
-      return window.issues.filter(issue => {
+      return this.issues.filter(issue => {
+        // If aim is to triage issues
+        if (this.filters.aim === 'triage' || this.filters.aim === 'label') {
+          // Show all issues as they all have the label "🚦 status: awaiting triage"
+          return true
+        }
+
         // Check experience match
         if (this.filters.experience === 'beginner' && !issue.labels.includes('good first issue')) {
           return false
@@ -173,26 +202,60 @@ export const App = {
 
         // Check skill set match
         const joinedLabels = issue.labels.join(',')
-        if (this.filters.skills.length && !this.filters.skills.some(skill => joinedLabels.includes(skill))) {
-          return false
-        }
-
-        return true
+        return !(this.filters.skills.length && !this.filters.skills.some(skill => joinedLabels.includes(skill)));
       }).sort((a, b) => b.createdAt - a.createdAt)
+    }
+  },
+  watch: {
+    'filters.aim' (to, from) {
+      if (to !== from) {
+        this.loadIssues()
+      }
+    }
+  },
+  methods: {
+    loadIssues () {
+      const q = ['org:creativecommons', 'is:open', 'is:issue']
+      if (this.filters.aim === 'contribute') {
+        q.push('label:"help wanted"')
+      } else if (this.filters.aim === 'triage') {
+        q.push('label:"🚦 status: awaiting triage"')
+      } else if (this.filters.aim === 'label') {
+        q.push('label:"🏷 status: label work required"')
+      }
+      this.octokit.search.issuesAndPullRequests({
+        q: q.join(' '),
+        per_page: 100,
+        sort: 'created',
+        order: 'desc'
+      }).then(res => {
+        this.issues = res.data.items
+        this.issues.forEach(issue => {
+          issue.labels = issue.labels.map(label => label.name)
+
+          const repoUrl = issue.repository_url
+          issue.repo = repoUrl.slice(repoUrl.lastIndexOf('/') + 1)
+        })
+      })
     }
   },
   mounted() {
     const BASE_URL = 'https://raw.githubusercontent.com/creativecommons/ccos-scripts/master/normalize_repos'
-    const FILE_URL = name => `${BASE_URL}/${name}.json`
+    const FILE_URL = name => `${BASE_URL}/${name}.yml`
+
+    this.octokit = new Octokit()
+    this.loadIssues()
 
     Promise
         .all([
           fetch(FILE_URL('skills'))
-              .then(response => response.json()),
+              .then(response => response.text()),
           fetch(FILE_URL('labels'))
-              .then(response => response.json())
+              .then(response => response.text())
         ])
         .then(([skillResponse, labelResponse]) => {
+          skillResponse = yaml.safeLoad(skillResponse)
+          labelResponse = yaml.safeLoad(labelResponse)
           const [skills, categories] = hydrateAppWithData(skillResponse, labelResponse)
           this.categories = categories
           this.options.skills = skills

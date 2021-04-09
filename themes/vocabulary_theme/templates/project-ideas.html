@@ -22,8 +22,14 @@
           <button type="button" class="button tag filter-btn" data-filter="difficulty-hard">
             Difficulty: Hard
           </button>
+          <button type="button" class="button tag filter-btn" data-filter="skill-css">
+            Skill: CSS
+          </button>
           <button type="button" class="button tag filter-btn" data-filter="skill-javascript">
             Skill: JavaScript
+          </button>
+          <button type="button" class="button tag filter-btn" data-filter="skill-php">
+            Skill: PHP
           </button>
           <button type="button" class="button tag filter-btn" data-filter="skill-python">
             Skill: Python
@@ -31,9 +37,11 @@
           <button type="button" class="button tag filter-btn" data-filter="skill-wordpress">
             Skill: WordPress
           </button>
+<!--
           <button type="button" class="button tag filter-btn" data-filter="skill-writing">
             Skill: Writing
-          </button>
+            </button>
+-->
         </div>
         <div class="project-ideas columns is-multiline">
           {% for idea in ideas %}
@@ -68,9 +76,9 @@
               <h5 class="b-header padding-bottom-small">Difficulty</h5>
               <p class="padding-bottom-big">{{ idea.difficulty }}</p>
               <h5 class="b-header padding-bottom-small">Skills recommended</h5>
-              <p class="padding-bottom-big">{{ idea.skills_recommended }}</p>
-              <h5 class="b-header padding-bottom-small">Mentors</h5>
-              <p class="padding-bottom-big">{{ idea.mentors }}</p>
+              {{ idea.skills_recommended }}
+              <h5 class="b-header padding-bottom-small padding-top-big">Mentor pool</h5>
+              {{ idea.mentors }}
             </div>
             <div class="column is-three-quarters">
               <h3 class="padding-bottom-big">The Problem</h3>

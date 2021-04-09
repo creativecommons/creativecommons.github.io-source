@@ -4,12 +4,16 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [packages]
-black = "==19.10b0"
+black = "==20.8b1"
+# Cryptography 3.4+ requires Rust to build
+# https://github.com/pyca/cryptography/blob/main/CHANGELOG.rst
+cryptography = "==3.3.2"
 flake8 = "*"
+isort = "*"
 lektor = "*"
 # Werkzeug added and pinned to mitigate this issue:
 # https://github.com/nixjdm/lektor-atom/issues/23
 Werkzeug = "==0.16.1"
 
 [requires]
-python_version = "3"
+python_version = "3.9"

@@ -4,110 +4,94 @@ _template: page-with-toc.html
 ---
 title: Join the CC Developer Community
 ---
-description: Join our Slack or mailing list communities to meet other developers interested in Creative Commons, get feedback on your projects, and talk with CC's full-time engineering staff. You can also keep up with us on the <a href="/blog">CC Open Source Blog</a> or via <a href="https://twitter.com/cc_opensource">Twitter</a>.
+description: Join our Slack or mailing list communities to meet other
+developers interested in Creative Commons, get feedback on your projects, and
+talk with CC's full-time engineering staff. You can also keep up with us on the
+<a href="/blog">CC Open Source Blog</a> or via <a
+href="https://twitter.com/cc_opensource">Twitter</a>.
 ---
 body:
 
+
 ## Mailing Lists
 
-**CC Developers**: For general technical discussion open to all members. Join [on Google Groups](https://groups.google.com/a/creativecommons.org/forum/#!forum/cc-developers) or by sending an email to `cc-developers+subscribe@creativecommons.org`.
+**CC Developers**: For general technical discussion open to all members. Join
+[on Google Groups][group-cc-developers] or by sending an email to
+`cc-developers+subscribe@creativecommons.org`.
 
-**CC Usability Announcements**: Announcement-only list for users to sign up for usability testing. Join [on Google Groups](https://groups.google.com/a/creativecommons.org/forum/#!forum/usability-announce) or by sending an email to `usability-announce+subscribe@creativecommons.org`.
+**CC Usability Announcements**: Announcement-only list for users to sign up for
+usability testing. Join [on Google Groups][group-usability-announce] or by
+sending an email to `usability-announce+subscribe@creativecommons.org`.
+
+[group-cc-developers]: https://groups.google.com/a/creativecommons.org/forum/#!forum/cc-developers
+[group-usability-announce]: https://groups.google.com/a/creativecommons.org/forum/#!forum/usability-announce
+
 
 ## Slack
-Creative Commons has a large Slack community with sub-communities for tech/developers (of course), the [CC Global Network](https://network.creativecommons.org/), specific countries, open education, GLAM, and more. It is open to the public and you can [sign up here](http://slack-signup.creativecommons.org/). If you're not familiar with Slack, please read ["Getting Started" on Slack's usage guide](https://get.slack.help/hc/en-us/categories/360000049043). Information on joining a specific channel is on ["Join a channel"](https://get.slack.help/hc/en-us/articles/205239967-Join-a-channel).
+
+Creative Commons has a large Slack community with sub-communities for
+tech/developers (of course), the [CC Global Network][network], specific
+countries, open education, GLAM, and more. It is open to the public and you can
+[sign up here][slack-signup]. If you're not familiar with Slack, please read
+["Getting Started" on Slack's usage guide][slack-usage]. Information on joining
+a specific channel is on ["Join a channel"][slack-join-help].
 
 Once you join, please introduce yourself in the `#cc-developers` channel.
 
+[network]: https://network.creativecommons.org/
+[slack-signup]: http://slack-signup.creativecommons.org/
+[slack-usage]: https://get.slack.help/hc/en-us/categories/360000049043
+[slack-join-help]: https://get.slack.help/hc/en-us/articles/205239967-Join-a-channel
+
 The channels most relevant to CC's developer community are:
 
-<div class="table-container">
-   <table class="table is-bordered is-striped">
-    <thead>
-      <tr>
-        <th>Channel</th>
-        <th>Purpose</th>
-      </tr>
-    </thead>
-    <tr>
-      <td><code>#cc-dev-browser-extension</code></td>
-      <td>Discussion related to the <a href="https://github.com/creativecommons/ccsearch-browser-extension">Search browser extension.</a></td>
-    </tr>
-    <tr>
-      <td><code>#cc-dev-catalog</code></td>
-      <td>Discussion related to the <a href="https://api.creativecommons.engineering/">CC Catalog API</a> and <a href="https://github.com/creativecommons/cccatalog">Catalog.</a></td>
-    </tr>
-    <tr>
-      <td><code>#cc-dev-cc-catalog-viz</code></td>
-      <td><a href="https://github.com/creativecommons/cccatalog-dataviz">CC Catalog visualizations.</a></td>
-    </tr>
-    <tr>
-      <td><code>#cc-dev-legal-database</code></td>
-      <td><a href="https://labs.creativecommons.org/caselaw/">CC Legal Database.</a></td>
-    </tr>
-    <tr>
-      <td><code>#cc-dev-license-chooser</code></td>
-      <td>Discussion related to the <a href="https://github.com/creativecommons/cc-chooser">new CC license chooser.</a></td>
-    </tr>
-    <tr>
-      <td><code>#cc-dev-linkchecker</code></td>
-      <td>Discussion related to the <a href="https://github.com/creativecommons/cc-link-checker">CC automated link checker.</a></td>
-    </tr>
-    <tr>
-      <td><code>#cc-dev-vocabulary</code></td>
-      <td>Discussion related to the <a href="https://github.com/creativecommons/cc-vocabulary">CC Vocabulary.</a></td>
-    </tr>
-    <tr>
-      <td><code>#cc-dev-wordpress</code></td>
-      <td>Discussion related to the <a href="https://github.com/creativecommons/wp-plugin-creativecommons">CC WordPress plugin.</a></td>
-    </tr>
-    <tr>
-      <td><code>#cc-developers</code></td>
-      <td>General technical discussion, new tech blog posts.</td>
-    </tr>
-    <tr>
-      <td><code>#cc-dev-internships</code></td>
-      <td>Discussion related to GSoC, GSoD, Outreachy and other internships.</td>
-    </tr>
-    <tr>
-      <td><code>#cc-outreachy-platform-toolkit</code></td>
-      <td>Discussion related to the <a href="https://github.com/creativecommons/mp">CC Platform Toolkit</a> Outreachy project.</td>
-    </tr>
-    <tr>
-      <td><code>#cc-search</code></td>
-      <td>Discussion related to the <a href="https://search.creativecommons.org/">CC Search.</a></td>
-    </tr>
-    <tr>
-      <td><code>#cc-usability</code></td>
-      <td>General usability discussions, seeking feedback on new releases of CC products from the community.</td>
-    </tr>
-    <tr>
-      <td><code>#cc-dev-licenses</code></td>
-      <td>Discussion related to the <a href="https://github.com/creativecommons/cc-licenses">CC license infrastructure overhaul project.</a></td>
-    </tr>
-    <tr>
-      <td><code>#cc-dev-icmi</code></td>
-      <td>Discussion related to the Image Clustering and Metric Inference project.</a></td>
-    </tr>
-    <tr>
-      <td><code>#cc-dev-ipa</code></td>
-      <td>Discussion related to the Image Popularity and Authority project.</a></td>
-    </tr>
-    <tr>
-      <td><code>#cc-dev-lcga</code></td>
-      <td>Discussion related to the Linked Commons Graph Analysis project.</a></td>
-    </tr>
-  </table>
-</div>
+| Channel | Discussion related to |
+| ------- | --------------------- |
+| `#cc-dev-browser-extension` | [ccsearch-browser-extension][ccsearch-browser-extension] project |
+| `#cc-dev-internships` | **GSoC, GSoD, Outreachy, and other internships** |
+| `#cc-dev-legaldb` | [legaldb][legaldb] project |
+| `#cc-dev-license-chooser` | [cc-chooser][cc-chooser] project (new CC license chooser) |
+| `#cc-dev-licenses` | [cc-licenses][cc-licenses] project (CC Licenses formatting and translation) |
+| `#cc-dev-linkchecker` | [cc-link-checker][cc-link-checker] project |
+| `#cc-dev-platform-toolkit` | [mp][mp] project (CC Platform Toolkit) |
+| `#cc-dev-vocabulary` | [cc-vocabulary][cc-vocabulary] project |
+| `#cc-dev-wordpress` | [wp-plugin-creativecommons][wp-plugin-creativecommons] project (creativecommons WordPress plugin) |
+| `#cc-developers` | **general technical issues, new tech blog posts, etc.** |
+| `#cc-usability` | general usability issues, seeking feedback on new releases of CC products from the community, etc. |
+
+[ccsearch-browser-extension]: https://github.com/creativecommons/ccsearch-browser-extension
+[legaldb]: https://github.com/creativecommons/legaldb
+[cc-chooser]: https://github.com/creativecommons/cc-chooser
+[cc-licenses]: https://github.com/creativecommons/cc-licenses
+[cc-link-checker]: https://github.com/creativecommons/cc-link-checker
+[mp]: https://github.com/creativecommons/mp
+[cc-vocabulary]: https://github.com/creativecommons/cc-vocabulary
+[wp-plugin-creativecommons]: https://github.com/creativecommons/wp-plugin-creativecommons
+
 
 ### Slack Tips
-- You will automatically join the `#general` and `#cc-announcements` channels when you sign in to Slack for the first time.
+
+- You will automatically join the `#general` and `#cc-announcements` channels
+  when you sign in to Slack for the first time.
     - `#general` is for general purpose discussions relevant to CC.
-    - `#cc-announcements` is reserved for important announcements from CC staff.
-- For more information about how Creative Commons uses Slack, see [the Slack page on the CC public wiki](https://wiki.creativecommons.org/wiki/Slack).
-- If you're looking to talk to someone on CC's full-time engineering staff, you're most likely to find us on Slack between 11:00 and 23:00 UTC on weekdays.
+    - `#cc-announcements` is reserved for important announcements from CC
+      staff.
+- For more information about how Creative Commons uses Slack, see [the Slack
+  page on the CC public wiki][wiki-slack].
+- If you're looking to talk to someone on CC's full-time engineering staff,
+  you're most likely to find us on Slack between 11:00 and 23:00 UTC on
+  weekdays.
+
+[wiki-slack]: https://wiki.creativecommons.org/wiki/Slack
+
 
 ## IRC
-We don't use IRC much, but if you'd like, you can join the `#creativecommons-dev` channel on [Freenode](https://freenode.net/). This channel is mirrored to the `#cc-developers` channel on Slack so that messages posted on Slack show up on IRC and vice-versa.
 
-If you're not familiar with IRC, [here's a good guide to getting started](https://www.wikihow.com/Get-Started-with-IRC-%28Internet-Relay-Chat%29). You can also join using the [Freenode webchat](https://webchat.freenode.net/).
+We don't use IRC much, but if you'd like, you can join the
+`#creativecommons-dev` channel on [Freenode](https://freenode.net/). This
+channel is mirrored to the `#cc-developers` channel on Slack so that messages
+posted on Slack show up on IRC and vice-versa.
+
+If you're not familiar with IRC, [here's a good guide to getting
+started](https://www.wikihow.com/Get-Started-with-IRC-%28Internet-Relay-Chat%29).
+You can also join using the [Freenode webchat](https://webchat.freenode.net/).

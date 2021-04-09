@@ -19,76 +19,96 @@
             {% if this.is_child_of('/contributing-code') %}
               <aside class="menu sidebar-menu">
                 <ul class="menu-list">
-                  <li>
-                    <a class="{% if this.path == '/contributing-code/projects' %} is-active {% endif%} link" href="{{ '/contributing-code/projects'|url }}">Project List</a>
-                  </li>
-                  <hr class="divider">
-                  <li>
-                    <a class="{% if this.path == '/contributing-code/issue-finder' %} is-active {% endif%} link" href="{{ '/contributing-code/issue-finder'|url }}">Issue Finder</a>
-                  </li>
-                  <hr class="divider">
-                  <li>
-                    <a class="{% if this.path == '/contributing-code' %} is-active {% endif%} link" href="{{ '/contributing-code'|url }}">Contribution Guidelines</a>
-                    <ul>
-                      <li><a class="{% if this.path == '/contributing-code/pr-guidelines' %} is-active {% endif%} link" href="{{ '/contributing-code/pr-guidelines'|url }}"><i class="icon circle-filled"></i>Pull Request Guidelines</a></li>
-                      <li><a class="{% if this.path == '/contributing-code/github-repo-guidelines' %} is-active {% endif%} link" href="{{ '/contributing-code/github-repo-guidelines'|url }}"><i class="icon circle-filled"></i>Github Repo Guidelines</a></li>
-                      <li><a class="{% if this.path == '/contributing-code/repo-labels' %} is-active {% endif%} link" href="{{ '/contributing-code/repo-labels'|url }}"><i class="icon circle-filled"></i>Repository Labels</a></li>
-                      <li><a class="{% if this.path == '/contributing-code/python-guidelines' %} is-active {% endif%} link" href="{{ '/contributing-code/python-guidelines'|url }}"><i class="icon circle-filled"></i>Python Guidelines</a></li>
-                    </ul>
-                  </li>
-                  <hr class="divider">
-                  <li>
-                    <a class="{% if this.path == '/contributing-code/usability' %} is-active {% endif%} link" href="{{ '/contributing-code/usability'|url }}">Usability</a>
-                  </li>
+                  {% for href, title in [
+                    ['/contributing-code/projects', 'Project List'],
+                    ['/contributing-code/issue-finder', 'Issue Finder'],
+                    ['/contributing-code/contributing-code', 'Contribution Guidelines'],
+                    ['/contributing-code/usability', 'Usability'],
+                  ] %}
+                    <li>
+                    <a class="{% if this.path == href %} is-active {% endif%} link" href="{{ href|url }}">{{ title }}</a>
+                    {% if (href == '/contributing-code/contributing-code') %}
+                      <ul>
+                      {% for href, title in [
+                        ['/contributing-code/pr-guidelines', 'Pull Request Guidelines'],
+                        ['/contributing-code/github-repo-guidelines', 'GitHub Repo Guidelines'],
+                        ['/contributing-code/repo-labels', 'Repository Labels'],
+                        ['/contributing-code/python-guidelines', 'Python Guidelines'],
+                        ['/contributing-code/translation-guide', 'Translation Guide'],
+                      ] %}
+                        <li><a class="{% if this.path == href %} is-active {% endif%} link" href="{{ href|url }}"><i class="icon circle-filled"></i>{{ title }}</a></li>
+                      {% endfor %}
+                      </ul>
+                    {% endif %}
+                    </li>
+                    {% if (href != '/contributing-code/usability') %}
+                      <hr class="divider">
+                    {% endif %}
+                  {% endfor %}
                 </ul>
               </aside>
             {% elif this.is_child_of('/community') %}
               <aside class="menu sidebar-menu">
                 <ul class="menu-list">
-                  <li>
-                    <a class="{% if this._path == '/community' %} is-active {% endif%} link" href="{{ '/community'|url }}">Join the Community</a>
-                  </li>
-                  <hr class="divider">
-                  <li>
-                    <a class="{% if this._path == '/community/community-team' %} is-active {% endif%} link" href="{{ '/community/community-team'|url }}">Community Team</a>
-                    <ul>
-                      <li><a class="{% if this._path == '/community/community-team/members' %} is-active {% endif%} link" href="{{ '/community/community-team/members'|url }}"><i class="icon circle-filled"></i>Community Team Members</a></li>
-                      <li><a class="{% if this._path == '/community/community-team/project-roles' %} is-active {% endif%} link" href="{{ '/community/community-team/project-roles'|url }}"><i class="icon circle-filled"></i>Project Roles</a></li>
-                      <li><a class="{% if this._path == '/community/community-team/community-building-roles' %} is-active {% endif%} link" href="{{ '/community/community-team/community-building-roles'|url }}"><i class="icon circle-filled"></i>Community Building Roles</a></li>
-                    </ul>
-                  </li>
-                  <hr class="divider">
-                  <li>
-                    <a class="{% if this._path == '/community/write-a-blog-post' %} is-active {% endif%} link" href="{{ '/community/write-a-blog-post'|url }}">Write a Blog Post</a>
-                  </li>
-                  <hr class="divider">
-                  <li>
-                    <a class="{% if this._path == '/community/code-of-conduct' %} is-active {% endif%} link" href="{{ '/community/code-of-conduct'|url }}">Code of Conduct</a>
-                    <ul>
-                      <li><a class="{% if this._path == '/community/code-of-conduct/enforcement' %} is-active {% endif%} link" href="{{ '/community/code-of-conduct/enforcement'|url }}"><i class="icon circle-filled"></i>Code of Conduct Enforcement</a></li>
-                    </ul>
+                  {% for href, title in [
+                    ['/community', 'Join the Community'],
+                    ['/community/community-team', 'Community Team'],
+                    ['/community/write-a-blog-post', 'Write a Blog Post'],
+                    ['/community/code-of-conduct', 'Code of Conduct'],
+                  ] %}
+                    <li>
+                    <a class="{% if this.path == href %} is-active {% endif%} link" href="{{ href|url }}">{{ title }}</a>
+                    {% if (href == '/community/community-team') %}
+                      <ul>
+                      {% for href, title in [
+                        ['/community/community-team/members', 'Community Team Members'],
+                        ['/community/community-team/project-roles', 'Project Roles'],
+                        ['/community/community-team/community-building-roles', 'Community Building Roles'],
+                        ['/community/community-team/engagement-channels', 'Engagement Channels'],
+                      ] %}
+                        <li><a class="{% if this.path == href %} is-active {% endif%} link" href="{{ href|url }}"><i class="icon circle-filled"></i>{{ title }}</a></li>
+                      {% endfor %}
+                      </ul>
+                    {% endif %}
+                    {% if (href == '/community/code-of-conduct') %}
+                      <ul>
+                        <li><a class="{% if this._path == '/community/code-of-conduct/enforcement' %} is-active {% endif%} link" href="{{ '/community/code-of-conduct/enforcement'|url }}"><i class="icon circle-filled"></i>Code of Conduct Enforcement</a></li>
+                      </ul>
+                    {% endif %}
+                    </li>
+                    {% if (href != '/community/code-of-conduct') %}
+                      <hr class="divider">
+                    {% endif %}
+                  {% endfor %}
                   </li>
                 </ul>
               </aside>
             {% elif this.is_child_of('/internships') %}
               <aside class="menu sidebar-menu">
                 <ul class="menu-list">
-                  <li>
-                    <a class="{% if this._path == '/internships' %} is-active {% endif%} link" href="{{ '/internships'|url }}">Overview</a>
-                    <ul>
-                      <li><a class="{% if this._path == '/internships/applicant-guide' %} is-active {% endif%} link" href="{{ '/internships/applicant-guide'|url }}"><i class="icon circle-filled"></i>Applicant Guide</a></li>
-                      <li><a class="{% if this._path == '/internships/intern-guide' %} is-active {% endif%} link" href="{{ '/internships/intern-guide'|url }}"><i class="icon circle-filled"></i>Intern Guide</a></li>
-                      <li><a class="{% if this._path == '/internships/mentor-guide' %} is-active {% endif%} link" href="{{ '/internships/mentor-guide'|url }}"><i class="icon circle-filled"></i>Mentor Guide</a></li>
-                    </ul>
-                  </li>
-                  <hr class="divider">
-                  <li>
-                    <a class="{% if this._path == '/internships/project-ideas' %} is-active {% endif%} link" href="{{ '/internships/project-ideas'|url }}">Project Ideas</a>
-                  </li>
-                  <hr class="divider">
-                  <li>
-                    <a class="{% if this._path == '/internships/history' %} is-active {% endif%} link" href="{{ '/internships/history'|url }}">History</a>
-                  </li>
+                  {% for href, title in [
+                    ['/internships', 'Overview'],
+                    ['/internships/project-ideas', 'Project Ideas'],
+                    ['/internships/history', 'History'],
+                  ] %}
+                    <li>
+                    <a class="{% if this.path == href %} is-active {% endif%} link" href="{{ href|url }}">{{ title }}</a>
+                    {% if (href == '/internships') %}
+                      <ul>
+                      {% for href, title in [
+                        ['/internships/applicant-guide', 'Applicant Guide'],
+                        ['/internships/intern-guide', 'Intern Guide'],
+                        ['/internships/mentor-guide', 'Mentor Guide'],
+                      ] %}
+                        <li><a class="{% if this.path == href %} is-active {% endif%} link" href="{{ href|url }}"><i class="icon circle-filled"></i>{{ title }}</a></li>
+                      {% endfor %}
+                      </ul>
+                    {% endif %}
+                    </li>
+                    {% if (href != '/internships/history') %}
+                      <hr class="divider">
+                    {% endif %}
+                  {% endfor %}
                 </ul>
               </aside>
             {% endif %}
@@ -100,7 +120,7 @@
                 {% for item in this.body.toc %}
                   <li>
                     <a class="link" href="#{{ item.anchor }}">{{ item.title }}</a>
-                    {% if item.children %}
+                    {% if item.children and not this.is_long_page %}
                       <ul>
                         {% for subitem in item.children %}
                           <li><a class="link" href="#{{ subitem.anchor }}"><i class="icon circle-filled"></i>{{ subitem.title }}</a></li>
@@ -113,7 +133,7 @@
             </aside>
           </div>
         </div>
-        <div class="column content">
+        <div class="column content is-three-quarters">
           {{ this.body }}
         </div>
       </div>

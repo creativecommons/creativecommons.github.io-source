@@ -1,0 +1,87 @@
+title: Vocabulary Site Mid-Internship Update (v2)
+---
+categories:
+cc-vocabulary
+gsod
+gsod-2020
+---
+author: nimishbongale
+---
+series: gsod-2020-vocabulary-usage-guide
+---
+pub_date: 2020-11-09
+---
+body:
+This is a mid-internship blog post. Wait. what!? Already? Let's glance over my progress, shall we?
+
+## Vocabulary Site Updates (Edition 2/many more to come)
+
+Oh boy! 1.5 months have passed since I've been investing time in building a landing site & usage guide for CC Vocabulary. A lot has changed since the time of posting my last blog post. **A lot**.
+
+<center>
+<img alt"Halfway There" src="speed.gif"/><br>
+<small class="muted">Hitting "the point of no return" has never been this exciting! Time to step on the throttle! Source: <a href="https://cliply.co">Cliply</a></small>
+</center>
+
+### What I've been up to
+
+> **Designing** ⇨ **Drafting** ⇨ **Developing** ⇨ **Debugging** ⇨ **Deploying**
+
+And the cycle contrinues. I guess it sums it all up very nicely. _Can somebody appreciate the alliteration though?_ 
+
+Here's a gist of what I've achieved so far:
+
+- I've gone through **2** iterations of the design. I'm happy with how the new site looks (and I genuinely hope the design team does too!).
+- I've drafted around **5+** writeups dealing with Monorepo Migration, Getting Started guide, Vocabulary Overview and of course these blog posts.
+- My branch on the vocabulary repository now has over **50+** commits & over **13,000** lines of code (not that I've written all of them, but you know, just for the stats)
+- The first draft of the vocabulary site is now live! I'm expecting a whole bunch of changes still, but here it is if you want to have a sneak peek: [https://cc-vocab-draft.surge.sh](https://cc-vocab-draft.surge.sh)
+-  I've consumed the [Github API](https://docs.github.com/en/free-pro-team@latest/rest) to get live release history, forks and starrers count. I think it adds a really nice touch to the site in general.
+- I've used [surge.sh](https://surge.sh) to deploy the draft site. I believe it's a really simple tool to have your site deployed within seconds!
+
+<center>
+<img alt"Github commit gif" src="github.png"/><br>
+<small class="muted">My github contribution chart is filling up!</small>
+</center>
+
+### What I've learnt
+
+Some say it's hard to learn through virtual internships. Well, let me prove you wrong. Here are my leanings in the past few weeks:
+
+- It's surprising how subjective (& yet objective) designing really is.
+- Vue.js is _fantastic_. Maybe I'm a Vue.js fan now. Should I remain loyal to React? I don't know.
+- Making a site responsive isn't the _easiest_ of tasks, but it's certainly doable after a lot of stretching & compressing; lets say that.
+- "Code formatting is essential" would be an _understatement_ to make.
+- Monorepo's have their own pro's and con's. But in our case the con's were negligible, thankfully! 
+-  I'll be following up with some performance & accessibility testing this coming week, so let's see how that plays out!
+- A mentor plays a vital role in any project. My mentor `@dhruvkb` has been very supportive and has made sure I stick to my timeline!
+
+### Other community work tidbits
+
+I believe apart from the internship work that I'm engaged in, I should also help around with some community PR work. I've been told I'm always welcome to, which is great!
+
+- I got the opportunity to speak at a CCOS event alongwith fellow speakers [dhruvkb](https://opensource.creativecommons.org/blog/authors/dhruvkb/) & [dhruvi16](https://opensource.creativecommons.org/blog/authors/dhruvi16/). I had a blast talking to budding students from DSC-IIT Surat & DSC-RIT.
+- The dark mode (as promised) should be out before my next blog post.
+- Deployed the vocabulary storybook on [Chromatic](https://chromatic.com) and compared & contrasted the pros & cons. Snapshot testing in the near future maybe? 
+- Completed the hacktoberfest challenge. 
+
+### Bonus content
+Not many of you may know this, but this site uses the [Lektor](https://getlektor.com) CMS. I needed to have it installed on my system (windows 10 OS) to run the code in our site repository. 
+Lektor suggests running the following code in powershell as an installation step:
+```powershell
+(new-object net.webclient).DownloadString('https://www.getlektor.com/installer.py') | python
+```
+
+I just didn't think this is a very elegant way. Being an ardent [chocolatey.org](chocolatey.org) fan, I just had to have it up on there! Now the installation step for lektor is simply:
+
+```powershell
+choco install lektor
+```
+on the Windows PowerShell!
+
+Have a look at the package here:
+
+[https://chocolatey.org/packages/lektor](https://chocolatey.org/packages/lektor)
+
+<p align="center">
+    <strong>Thank you for your time! Stay put for the next Vocabulary site update!</strong>
+</p>

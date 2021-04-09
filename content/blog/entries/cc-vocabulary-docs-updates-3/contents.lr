@@ -1,0 +1,64 @@
+
+title: Vocabulary Site Updates (Part 3/n)
+---
+categories:
+cc-vocabulary
+gsod
+gsod-2020
+---
+author: nimishbongale
+---
+series: gsod-2020-vocabulary-usage-guide
+---
+pub_date: 2020-11-25
+---
+body:
+Excited to know more about this week's vocabulary site updates? Read on to find out!
+
+## Vocabulary Site Updates (Edition 3/many more to come)
+
+### What I've been up to
+
+<center>
+<img alt"Halfway There" src="merged.png"/><br>
+<small class="muted">The surreal feeling...</small>
+</center>
+
+Merged? Yes. **Merged**. Here's my story!
+
+- After getting a thumbs up from the UX Designer, I put up my [GSoD Website PR](https://github.com/creativecommons/vocabulary/pull/747) for review.   
+- I was confident there would be changes, and I let them roll in. It's important to note here that what seems perfect to you may not be so to others, and only experience teaches you the right from the wrong.
+- There were a few of them, mainly dealing with spacing, textual content and colors. I resolved them as soon as I could.
+-  [zackkrida](https://opensource.creativecommons.org/blog/authors/zackkrida/) has been kind enough to point and enumerate all of them for me!
+- After receiving a final approval from the engineering team, my PR was finally merged!
+- The final draft of the vocabulary site is live! It will soon be deployed (on [Netlify](https://netlify,com)) and be made available for public viewing.
+- For my readers, here's [exclusive preview](https://cc-vocab-draft.web.app) of the final draft. 
+- I've tried making it as optimised as possible, but if you have any inputs whatsoever feel free to raise issues over on our [GitHub repository](https://github.com/creativecommons/vocabulary). 
+- The famed [Lighthouse report](https://developers.google.com/web/tools/lighthouse) suggests that it's a pretty good start! I've also taken care of the [accessibility aspect](https://www.w3.org/standards/webdesign/accessibility) wherever applicable.
+
+<center>
+<img alt"Halfway There" src="light.png"/><br>
+<small class="muted">Aiming high!</small>
+</center>
+
+### What I've learnt
+
+- GSoD isn't just about documentation; there's some serious amount of coding too!
+- You don't have to sit and write code for hours together. Take breaks, come back, and the fix will strike you sooner than ever.
+- Timelines change; improvisation being an essential aspect of any project!
+- [MDX](https://mdxjs.com/) is a neat little format to code in! Documenting code is just so much easier.
+- Things become obsolete. Versions become outdated. Code maintaining is therefore, easier said than done!
+
+### Other community work tidbits
+
+Being a part of an open source organisation also means that I must try to bring in contributions from existing & first time contributors. Here's a peek into my efforts for the same: 
+
+- The [dark mode PR](https://github.com/creativecommons/vocabulary/pull/806) started off as a hacktoberfest contribution, and it is now complete!
+- Created a `/shared` package to house common files between packages (such as the dark & light theme after referring to the [React](https://reactjs.org/) documentation.
+- The automated npm [README.md customisation](https://github.com/creativecommons/vocabulary/pull/746) is now up and running. (really had a blast solving that issue!) 
+- If the snapshot testing stands approved, we'll have it running on chromatic!
+- Raised issues to add multiple badges to the root README.md  file; namely `maintained with Lerna` & custom badges for package sizes from [packagephobia](https://packagephobia.com/).
+
+<p align="center">
+    <strong>Thank you for your time! Stay put for the season finale!</strong>
+</p>
