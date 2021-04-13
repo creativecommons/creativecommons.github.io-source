@@ -353,7 +353,7 @@
             "language": "Python",
             "license": {
                 "name": "MIT License",
-                "url": "https://github.com/creativecommons/ccos-scripts/blob/master/LICENSE"
+                "url": "https://github.com/creativecommons/ccos-scripts/blob/main/LICENSE"
             },
             "name": "ccos-scripts",
             "slack": "",
