@@ -81,7 +81,7 @@
             "english_name": "CC Licenses Data",
             "featured": false,
             "id": 293905720,
-            "language": "HTML",
+            "language": null,
             "license": {
                 "name": "Creative Commons Zero v1.0 Universal",
                 "url": "https://github.com/creativecommons/cc-licenses-data/blob/main/LICENSE"
