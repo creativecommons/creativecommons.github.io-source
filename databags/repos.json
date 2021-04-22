@@ -371,13 +371,13 @@
             "id": 13818410,
             "language": "HTML",
             "license": {
-                "name": "MIT License",
-                "url": "https://github.com/creativecommons/ccrel-guide/blob/master/LICENSE"
+                "name": "Other",
+                "url": "https://github.com/creativecommons/ccrel-guide/blob/main/LICENSE"
             },
             "name": "ccrel-guide",
             "slack": "",
             "url": "https://github.com/creativecommons/ccrel-guide",
-            "website": "http://labs.creativecommons.org/2011/ccrel-guide/"
+            "website": "https://opensource.creativecommons.org/ccrel-guide/"
         },
         {
             "created": "2019-05-24T17:14:10",
@@ -875,7 +875,7 @@
             "language": "Python",
             "license": {
                 "name": "MIT License",
-                "url": "https://github.com/creativecommons/scholars-addenda/blob/master/LICENSE"
+                "url": "https://github.com/creativecommons/scholars-addenda/blob/main/LICENSE"
             },
             "name": "scholars-addenda",
             "slack": "",
@@ -970,7 +970,7 @@
             "language": null,
             "license": {
                 "name": "Creative Commons Attribution 4.0 International",
-                "url": "https://github.com/creativecommons/team-open/blob/master/LICENSE"
+                "url": "https://github.com/creativecommons/team-open/blob/main/LICENSE"
             },
             "name": "team-open",
             "slack": "",
@@ -986,7 +986,7 @@
             "language": "JavaScript",
             "license": {
                 "name": "GNU Affero General Public License v3.0",
-                "url": "https://github.com/creativecommons/termination-of-transfer/blob/master/LICENSE"
+                "url": "https://github.com/creativecommons/termination-of-transfer/blob/main/LICENSE"
             },
             "name": "termination-of-transfer",
             "slack": "",
