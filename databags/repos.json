@@ -1049,7 +1049,7 @@
             "language": "PHP",
             "license": {
                 "name": "GNU General Public License v2.0",
-                "url": "https://github.com/creativecommons/wp-plugin-creativecommons/blob/master/license.txt"
+                "url": "https://github.com/creativecommons/wp-plugin-creativecommons/blob/main/license.txt"
             },
             "name": "wp-plugin-creativecommons",
             "slack": "cc-dev-wordpress",
