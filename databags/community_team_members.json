@@ -66,6 +66,11 @@
                     "role": "Project Maintainer"
                 },
                 {
+                    "github": "panchovm",
+                    "name": "Francisco Vera",
+                    "role": "Project Maintainer"
+                },
+                {
                     "github": "hugosolar",
                     "name": "Hugo Solar",
                     "role": "Project Maintainer"
@@ -76,6 +81,11 @@
                     "role": "Project Maintainer"
                 },
                 {
+                    "github": "nimishbongale",
+                    "name": "Nimish Bongale",
+                    "role": "Project Maintainer"
+                },
+                {
                     "github": "zackkrida",
                     "name": "Zack Krida",
                     "role": "Project Maintainer"
@@ -83,11 +93,6 @@
                 {
                     "github": "Dhruvi16",
                     "name": "Dhruvi Butti",
-                    "role": "Project Core Committer"
-                },
-                {
-                    "github": "nimishbongale",
-                    "name": "Nimish Bongale",
                     "role": "Project Core Committer"
                 },
                 {
