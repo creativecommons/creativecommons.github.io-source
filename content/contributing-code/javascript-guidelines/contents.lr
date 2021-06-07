@@ -1,0 +1,24 @@
+_model: page
+---
+_template: page-with-toc.html
+---
+title: JavaScript Guidelines
+---
+description: These JavaScript Guidelines (style guide) help the community to
+focus on the intent of the code and work together with a minimum of friction.
+---
+body:
+
+## Need of Guidelines
+
+These JavaScript Guidelines help developers who are new to the
+codebase and want to make any real-world contribution with
+`org:creativecommons`.
+
+## Code Formatting
+
+### Overview
+
+All JavaScript code must be formatted using [Prettier][Prettier], *an opinionated code formatter*.
+
+[Prettier]: https://prettier.io/
