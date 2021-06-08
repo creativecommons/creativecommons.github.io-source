@@ -4,21 +4,51 @@ _template: page-with-toc.html
 ---
 title: JavaScript Guidelines
 ---
-description: These JavaScript Guidelines (style guide) help the community to
+description:
+
+These JavaScript Guidelines (style guide) help the community to
 focus on the intent of the code and work together with a minimum of friction.
 ---
 body:
 
-## Need of Guidelines
+## Purpose
 
 These JavaScript Guidelines help developers who are new to the
-codebase and want to make any real-world contribution with
-`org:creativecommons`.
+community and want to make a contribution to
+the Creative Commons open-source ecosystem.
 
-## Code Formatting
+## Philosophy
+A few philosophical guidelines can stand in place of a thousand narrow rules.
 
-### Overview
+### Stewardship - build for longevity and maturity
+Choose an existing framework and set of tools and use them to make what matters to you. Avoiding creating a bespoke framework when a current framework would get you further down the road.
 
-All JavaScript code must be formatted using [Prettier][Prettier], *an opinionated code formatter*.
+When choosing tools and technologies, keep an eye towards mature projects and standards built to last many years. Find projects that extend existing standards and ways of working.
 
+### Focus - choose the right level of abstraction
+
+When developing, it is easy to find ourselves in layers of technology that are not directly contributing to our goals. For example, spending inordinate time with build tool configurations or type definitions instead of building features and getting user feedback. Choose tools that get out of the way and transparently support your work, creating what matters.
+
+### Maintainability - write clean and conventional code
+
+Code is read more often than it is written. Code is written for humans, not machines. As such, we can do ourselves a favor by making our code as reader-friendly as possible. Follow [clean code guidelines](https://github.com/ryanmcdermott/clean-code-javascript) as well as established development patterns.
+
+## Pragmatics
+
+### Code formatting
+
+We adopt existing code formatting standards. To this end, all JavaScript code must be formatted using [Prettier][Prettier], *an opinionated code formatter*. We also use [eslint][eslint] to handle cases that Prettier may overlook.
+
+[eslint]: https://eslint.org/
 [Prettier]: https://prettier.io/
+
+### Development environment
+
+We use `npm` to manage development dependencies. Each project should have a `package.json` with dependencies and scripts for running, linting, testing, and deploying the project (where possible).
+
+### Development framework
+
+We use [Vue.js][Vue] as our primary JavaScript development framework. Vue provides a ready-made toolkit that covers many development needs and extends on long-standing web development conventions.
+
+[Vue]: https://vuejs.org/
+
