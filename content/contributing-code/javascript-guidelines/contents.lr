@@ -55,4 +55,3 @@ We use `npm` to manage development dependencies. Each project should have a `pac
 We use [Vue.js][Vue] as our primary JavaScript development framework. Vue provides a ready-made toolkit that covers many development needs and extends on long-standing web development conventions.
 
 [Vue]: https://vuejs.org/
-
