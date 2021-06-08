@@ -39,6 +39,8 @@ Code is read more often than it is written. Code is written for humans, not mach
 
 ## Pragmatics
 
+The following sections outline how we've put the philosophy into action. See the [creativecommons/chooser](https://github.com/creativecommons/chooser) project for an example of how we have applied the recommendations below.
+
 ### Code formatting
 
 We adopt existing code formatting standards. To this end, all JavaScript code must be formatted using [Prettier][Prettier], *an opinionated code formatter*. We also use [eslint][eslint] to handle cases that Prettier may overlook.
