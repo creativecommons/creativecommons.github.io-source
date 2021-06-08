@@ -20,16 +20,23 @@ the Creative Commons open-source ecosystem.
 ## Philosophy
 A few philosophical guidelines can stand in place of a thousand narrow rules.
 
-### Stewardship - build for longevity and maturity
+### Stewardship
+
+> Build for longevity and maturity.
+
 Choose an existing framework and set of tools and use them to make what matters to you. Avoiding creating a bespoke framework when a current framework would get you further down the road.
 
 When choosing tools and technologies, keep an eye towards mature projects and standards built to last many years. Find projects that extend existing standards and ways of working.
 
-### Focus - choose the right level of abstraction
+### Focus
+
+> Choose the right level of abstraction and best use of time.
 
 When developing, it is easy to find ourselves in layers of technology that are not directly contributing to our goals. For example, spending inordinate time with build tool configurations or type definitions instead of building features and getting user feedback. Choose tools that get out of the way and transparently support your work, creating what matters.
 
-### Maintainability - write clean and conventional code
+### Maintainability
+
+> Write clean and conventional code.
 
 Code is read more often than it is written. Code is written for humans, not machines. As such, we can do ourselves a favor by making our code as reader-friendly as possible. Follow [clean code guidelines](https://github.com/ryanmcdermott/clean-code-javascript) as well as established development patterns.
 
