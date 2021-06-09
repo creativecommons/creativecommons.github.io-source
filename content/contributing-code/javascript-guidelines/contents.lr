@@ -17,9 +17,12 @@ These JavaScript Guidelines help developers who are new to the community and wan
 ## Philosophy
 A few philosophical guidelines can stand in place of a thousand narrow rules.
 
-### Stewardship
+
+### Stability
 
 > Build for longevity and maturity.
+
+It is easy to get swept away in the rushing waters of new projects, tools, and libraries. However, the sedimentary landscape left behind by the swift and meandering river of change can be unstable. It is certainly unwise to build one's home on a river delta.
 
 Choose an existing framework and set of tools and use them to make what matters to you. Avoiding creating a bespoke framework when a current framework would get you further down the road.
 
