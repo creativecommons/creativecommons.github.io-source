@@ -17,6 +17,11 @@ These JavaScript Guidelines help developers who are new to the community and wan
 ## Philosophy
 A few philosophical guidelines can stand in place of a thousand narrow rules.
 
+### Simplicity
+
+> Use and build only what is _essential_ to a project _when_ it is needed.
+
+Projects can easily grow beyond their essence by taking on dependencies and features that are not central to their purpose. Keep the essential purpose in mind as a project evolves. Take on only what is needed and only when the need arises.
 
 ### Stability
 
