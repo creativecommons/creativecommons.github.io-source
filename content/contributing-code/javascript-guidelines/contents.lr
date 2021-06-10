@@ -6,20 +6,28 @@ title: JavaScript Guidelines
 ---
 description:
 
-These JavaScript Guidelines (style guide) help the community to focus on the intent of the code and work together with a minimum of friction.
+These JavaScript Guidelines (style guide) help the community focus on the code's intent and work together with a minimum of friction.
 ---
 body:
 
 ## Purpose
 
-These JavaScript Guidelines help developers who are new to the community and want to make a contribution to the Creative Commons open-source ecosystem.
+These JavaScript Guidelines help developers who are new to the community and want to contribute to the Creative Commons open-source ecosystem.
 
 ## Philosophy
-A few philosophical guidelines can stand in place of a thousand narrow rules.
+A few philosophical guidelines can stand in place of a thousand narrow rules. These guidelines are not intended as absolute (black or white) truths but rather lenses to focus our vision when faced with subtle shades of ambiguity.
 
-### Stewardship
+### Simplicity
+
+> Use and build only what is _essential_ to a project.
+
+Projects can quickly grow beyond their essence by taking on dependencies and features that are not central to their purpose. Keep the essential goal in mind as a project evolves. Take on only what is needed and only when the need arises.
+
+### Stability
 
 > Build for longevity and maturity.
+
+It is easy to get swept away in the rushing waters of new projects, tools, and libraries. However, the sedimentary landscape left behind by the swift and meandering river of change can be unstable. It is certainly unwise to build one's home on a river delta.
 
 Choose an existing framework and set of tools and use them to make what matters to you. Avoiding creating a bespoke framework when a current framework would get you further down the road.
 
@@ -39,7 +47,7 @@ Code is read more often than it is written. Code is written for humans, not mach
 
 ## Pragmatics
 
-The following sections outline how we've put the philosophy into action. See the [creativecommons/chooser](https://github.com/creativecommons/chooser) project for an example of how we have applied the recommendations below.
+The following sections outline how we've put the philosophy into action. See the [creativecommons/chooser](https://github.com/creativecommons/chooser) project to exemplify how we have applied the recommendations below.
 
 ### Code formatting
 
