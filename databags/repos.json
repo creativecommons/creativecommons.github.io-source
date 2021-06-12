@@ -240,7 +240,7 @@
             "language": "Python",
             "license": {
                 "name": "MIT License",
-                "url": "https://github.com/creativecommons/cccatalog/blob/master/LICENSE"
+                "url": "https://github.com/creativecommons/cccatalog/blob/main/LICENSE"
             },
             "name": "cccatalog",
             "slack": "cc-dev-catalog",
@@ -249,7 +249,7 @@
                 "Apache Spark"
             ],
             "url": "https://github.com/creativecommons/cccatalog",
-            "website": ""
+            "website": "https://github.com/WordPress/openverse-catalog"
         },
         {
             "created": "2018-04-27T20:50:37",
@@ -261,7 +261,7 @@
             "language": "Python",
             "license": {
                 "name": "MIT License",
-                "url": "https://github.com/creativecommons/cccatalog-api/blob/master/LICENSE"
+                "url": "https://github.com/creativecommons/cccatalog-api/blob/main/LICENSE"
             },
             "name": "cccatalog-api",
             "slack": "",
@@ -272,7 +272,7 @@
                 "Elasticsearch"
             ],
             "url": "https://github.com/creativecommons/cccatalog-api",
-            "website": "https://api.creativecommons.engineering/"
+            "website": "https://github.com/WordPress/openverse-api"
         },
         {
             "created": "2018-04-27T21:32:44",
@@ -283,7 +283,7 @@
             "language": "HTML",
             "license": {
                 "name": "MIT License",
-                "url": "https://github.com/creativecommons/cccatalog-dataviz/blob/master/LICENSE"
+                "url": "https://github.com/creativecommons/cccatalog-dataviz/blob/main/LICENSE"
             },
             "name": "cccatalog-dataviz",
             "slack": "cc-dev-cc-catalog-viz",
@@ -300,7 +300,7 @@
             "language": "Vue",
             "license": {
                 "name": "MIT License",
-                "url": "https://github.com/creativecommons/cccatalog-frontend/blob/develop/LICENSE"
+                "url": "https://github.com/creativecommons/cccatalog-frontend/blob/main/LICENSE"
             },
             "name": "cccatalog-frontend",
             "slack": "cc-search",
@@ -309,7 +309,7 @@
                 "Vue.js"
             ],
             "url": "https://github.com/creativecommons/cccatalog-frontend",
-            "website": "https://search.creativecommons.org"
+            "website": "https://github.com/WordPress/openverse-frontend"
         },
         {
             "created": "2014-10-06T22:07:52",
@@ -388,7 +388,7 @@
             "language": "JavaScript",
             "license": {
                 "name": "MIT License",
-                "url": "https://github.com/creativecommons/ccsearch-browser-extension/blob/master/LICENSE"
+                "url": "https://github.com/creativecommons/ccsearch-browser-extension/blob/main/LICENSE"
             },
             "name": "ccsearch-browser-extension",
             "slack": "cc-dev-browser-extension",
