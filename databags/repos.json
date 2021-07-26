@@ -636,20 +636,6 @@
             "website": "https://legaldb.creativecommons.org/"
         },
         {
-            "created": "2021-05-18T15:40:38",
-            "description": "This is the repository for the master files that comprise the  SPDX License List",
-            "id": 368584104,
-            "language": null,
-            "license": {
-                "name": "Other",
-                "url": "https://github.com/creativecommons/license-list-XML/blob/master/rename-license"
-            },
-            "name": "license-list-XML",
-            "slack": "",
-            "url": "https://github.com/creativecommons/license-list-XML",
-            "website": ""
-        },
-        {
             "created": "2013-10-28T02:42:48",
             "description": "Creative Commons badges, license Buttons, etc.",
             "engineering_project": true,
