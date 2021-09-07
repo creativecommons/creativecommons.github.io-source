@@ -818,7 +818,7 @@
             "created": "2021-07-06T17:25:01",
             "description": "Project for creativecommons.org",
             "id": 383548251,
-            "language": "PHP",
+            "language": null,
             "license": {
                 "name": "MIT License",
                 "url": "https://github.com/creativecommons/project_creativecommons.org/blob/main/LICENSE"
@@ -1183,7 +1183,7 @@
             "language": "PHP",
             "license": {
                 "name": "MIT License",
-                "url": "https://github.com/creativecommons/wp-theme-creativecommons.org/blob/master/LICENSE"
+                "url": "https://github.com/creativecommons/wp-theme-creativecommons.org/blob/main/LICENSE"
             },
             "name": "wp-theme-creativecommons.org",
             "slack": "",
