@@ -45,6 +45,11 @@
                     "role": "Project Maintainer"
                 },
                 {
+                    "github": "Cronus1007",
+                    "name": "Ritish Thareja",
+                    "role": "Project Core Committer"
+                },
+                {
                     "github": "hemanth-hk",
                     "name": "Hemanth Kumar",
                     "role": "Project Contributor"
@@ -96,7 +101,7 @@
                     "role": "Project Core Committer"
                 },
                 {
-                    "github": "luninor",
+                    "github": "ayanchoudhary",
                     "name": "Ayan Choudhary",
                     "role": "Project Collaborator"
                 },
@@ -123,6 +128,32 @@
             ],
             "name": "Vocabulary",
             "repos": "vocabulary"
+        },
+        {
+            "members": [
+                {
+                    "github": "hugosolar",
+                    "name": "Hugo Solar",
+                    "role": "Project Maintainer"
+                },
+                {
+                    "github": "kgodey",
+                    "name": "Kriti Godey",
+                    "role": "Project Maintainer"
+                },
+                {
+                    "github": "ahmadbilaldev",
+                    "name": "Ahmad Bilal",
+                    "role": "Project Core Committer"
+                },
+                {
+                    "github": "Cronus1007",
+                    "name": "Ritish Thareja",
+                    "role": "Project Core Committer"
+                }
+            ],
+            "name": "WordPress Plugin",
+            "repos": "wp-plugin-creativecommons"
         },
         {
             "members": [
@@ -285,6 +316,11 @@
                     "role": "Project Core Committer"
                 },
                 {
+                    "github": "Cronus1007",
+                    "name": "Ritish Thareja",
+                    "role": "Project Core Committer"
+                },
+                {
                     "github": "makkoncept",
                     "name": "Mayank Nader",
                     "role": "Project Collaborator"
@@ -326,7 +362,7 @@
                     "role": "Project Core Committer"
                 },
                 {
-                    "github": "luninor",
+                    "github": "ayanchoudhary",
                     "name": "Ayan Choudhary",
                     "role": "Project Core Committer"
                 },
@@ -511,27 +547,6 @@
             ],
             "name": "Platform Toolkit",
             "repos": "mp"
-        },
-        {
-            "members": [
-                {
-                    "github": "hugosolar",
-                    "name": "Hugo Solar",
-                    "role": "Project Maintainer"
-                },
-                {
-                    "github": "kgodey",
-                    "name": "Kriti Godey",
-                    "role": "Project Maintainer"
-                },
-                {
-                    "github": "ahmadbilaldev",
-                    "name": "Ahmad Bilal",
-                    "role": "Project Core Committer"
-                }
-            ],
-            "name": "WordPress Plugin",
-            "repos": "wp-plugin-creativecommons"
         }
     ]
 }
