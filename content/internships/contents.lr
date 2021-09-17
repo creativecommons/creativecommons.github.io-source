@@ -14,7 +14,7 @@ Creative Commons (CC) regularly participates in the following programs:
 
 ### Google Season of Docs (GSoD)
 
-Creative Commons is not participating in the 2021 round of Google Season of
+Creative Commons is **not** participating in the 2021 round of Google Season of
 Docs.
 
 - [Program website](https://developers.google.com/season-of-docs/)
@@ -22,7 +22,7 @@ Docs.
 
 ### Google Summer of Code (GSoC)
 
-Creative Commons is not participating in the 2021 round of Google Summer of
+Creative Commons is **not** participating in the 2021 round of Google Summer of
 Code.
 
 - [Program website](https://summerofcode.withgoogle.com/)
@@ -30,7 +30,8 @@ Code.
 
 ### Outreachy
 
-Creative Commons is not participating in the 2021 May round of Outreachy.
+**Creative Commons is participating in the 2021 End-of-year / December Cohort of
+Outreachy.**
 
 - [Program website](https://www.outreachy.org/)
 
@@ -50,3 +51,14 @@ Creative Commons is not participating in the 2021 May round of Outreachy.
   who are mentoring Creative Commons projects.
 - **[History](/internships/history/)**: This page has historical information on
   CC's open source internships, including links to prior interns' blog posts.
+
+## Mentors
+
+Mentors for 2021 End-of-year / December Cohort of Outreachy (list not yet finalized):
+
+| Name | Pronouns | Slack Username |
+| ---- | -------- | -------------- |
+| Brylie | they/hän | `@Brylie Christopher Oxley` |
+| [Timid Robot][authortimidrobot] | they/them | `@Timid Robot` |
+
+[authortimidrobot]: /blog/authors/TimidRobot/
