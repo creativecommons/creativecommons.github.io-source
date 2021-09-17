@@ -4,16 +4,16 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [packages]
-black = "==20.8b1"
+black = "==21.9b0"
 # Cryptography 3.4+ requires Rust to build
 # https://github.com/pyca/cryptography/blob/main/CHANGELOG.rst
 cryptography = "==3.3.2"
 flake8 = "*"
+# Unable to install d/t Werkzeug / Flask / Lektor Dependency issue
+# https://github.com/lektor/lektor/issues/909
+flask = "==1.1.4"
 isort = "*"
 lektor = "*"
-# Werkzeug added and pinned to mitigate this issue:
-# https://github.com/nixjdm/lektor-atom/issues/23
-Werkzeug = "==0.16.1"
 
 [requires]
 python_version = "3.9"
