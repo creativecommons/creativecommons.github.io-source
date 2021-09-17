@@ -23,7 +23,7 @@ colocated and easier to navigate.
 ---
 internship_tasks:
 The intern will need to assess existing web properties and figma designs to
-determine which css classes from Bulma need to be replicated and integrated
+determine which CSS classes from Bulma need to be replicated and integrated
 into Vocabulary. They can either be re-implemented manually or their code can
 be copied directly into vocabulary.
 
@@ -61,6 +61,7 @@ skills_recommended:
 - NPM
 ---
 mentors:
+- (list not yet finalized)
 - Brylie
 ---
 difficulty: High
