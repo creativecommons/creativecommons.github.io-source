@@ -15,9 +15,5 @@ flask = "==1.1.4"
 isort = "*"
 lektor = "*"
 
-[packages.linkcheckmd]
-editable = true
-path = "/Users/tim/CreativeCommons/git/linkchecker-markdown"
-
 [requires]
 python_version = "3.9"
