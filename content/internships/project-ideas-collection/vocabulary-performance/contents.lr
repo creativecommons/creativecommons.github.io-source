@@ -16,8 +16,8 @@ practices for implementing vocabulary with consumers:
 - Guidelines and suggestions for using [purgecss][purgecss] with Vocabulary
 - Instructions on how/and what to prefetch or preload (with copy-pastable meta
   tags) (see: [Preload, prefetch and other link tags | CSS-Tricks][csstricks])
-- Create tooling so that these performance improvements can be maintained over
-  time. Some ideas:
+- Create tooling so that these performance improvements can be *maintained*
+  over time. Some ideas:
   - Filesize monitoring via GitHub actions: [ampproject/filesize][filesize]
   - Add linting rules for Sass files [sds/scss-lint][scsslint]
 
@@ -29,15 +29,14 @@ practices for implementing vocabulary with consumers:
 ---
 expected_outcome:
 This work will have a strong and measurable impact on all sites using CC
-Vocabulary. The current live sites using vocabulary are: 
+Vocabulary. The current live sites using vocabulary are:
 - https://chooser-beta.creativecommons.org/
 - https://opensource.creativecommons.org/
-- https://search.creativecommons.org/
 - https://summit.creativecommons.org/
 
-We will be updating more CC websites to use Vocabulary in Q1 of this year.
-These changes will be quantifiable by measuring changes in page size (measured
-in kilobytes), and reduced load times on the Google-defined metrics "[core web
+We will be updating more CC websites to use Vocabulary.  These changes will be
+quantifiable by measuring changes in page size (measured in kilobytes), and
+reduced load times on the Google-defined metrics "[core web
 vitals][corewebvitals]": Largest Contentful Paint (LCP), First Input Delay
 (FID), and Cumulative Layout Shift (CLS).
 
@@ -83,9 +82,7 @@ skills_recommended:
 - JavaScript (optional)
 ---
 mentors:
-- Abhishek Naidu
-- Nimish Bongale
-- Zack Krida
+- Brylie
 ---
 difficulty: Medium
 ---

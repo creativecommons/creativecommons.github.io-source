@@ -23,13 +23,9 @@ colocated and easier to navigate.
 ---
 internship_tasks:
 The intern will need to assess existing web properties and figma designs to
-determine which CSS classes from Bulma need to be replicated and integrated
-into Vocabulary. This also means keeping track of what Bulma features can be
-ignored. Initially, any Bulma features we’re not using should be kept; they can
-either be re-implemented manually or their code can be copied directly into
-vocabulary. Later, once our vocabulary sites have migrated to the new version
-of Vocabulary without Bulma, we can look at deprecating and removing some of
-these features.
+determine which css classes from Bulma need to be replicated and integrated
+into Vocabulary. They can either be re-implemented manually or their code can
+be copied directly into vocabulary.
 
 This intern will need to follow consistent naming conventions and CSS
 architectural style ([Block Element Modifier {BEM}][bem], utility classes,
@@ -65,9 +61,7 @@ skills_recommended:
 - NPM
 ---
 mentors:
-- Abhishek Naidu
-- Nimish Bongale
-- Zack Krida
+- Brylie
 ---
 difficulty: High
 ---
