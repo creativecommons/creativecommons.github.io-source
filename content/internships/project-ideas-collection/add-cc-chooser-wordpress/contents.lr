@@ -2,24 +2,20 @@ _model: project-idea
 ---
 _hidden: yes
 ---
-title: Add CC Chooser to CC WordPress Plugin
+title: Integrate new CC Chooser to creativecommons.org
 ---
 problem:
-Currently, we have a license selector on the admin panel that works fine but it
-can be improved by using the workflow of the new CC Chooser. We also have a set
-of Gutenberg blocks to insert a license in the content, we can also add a new
-block that can contain the CC Chooser workflow as well, this will improve the
-user experience and would be more educational regarding the CC Licenses.
+The Creative Commons license chooser has undergone a user-experience redesign. We 
+would like to use the new Chooser user experience as part of the ongoing
+Creative Commons website redesign project.
 ---
 expected_outcome:
-Revamping the admin panel of the plugin, adding the CC Chooser on it as well as
-a Gutenberg block.
+Integrate the new Creative Commons license chooser into the Creative Commons website project.
 ---
 internship_tasks:
 The intern will be expected to:
-- Research about how the new CC Chooser manage the user workflow
-- Recreate that process in the WordPress admin panel
-- Generate a new Gutenberg block
+- Research about how the new CC Chooser manages the license choice workflow
+- Integrate the new CC Chooser into the new Creative Commons website
 ---
 application_tips:
 The intern should be able to plan this process and find the best way to adapt
@@ -42,12 +38,11 @@ resources:
 skills_recommended:
 - JavaScript
 - PHP
-- React
+- Vue
 - WordPress
 ---
 mentors:
-- (list not yet finalized)
-- Brylie
+- Brylie Christopher Oxley
 ---
 difficulty: Medium
 ---
