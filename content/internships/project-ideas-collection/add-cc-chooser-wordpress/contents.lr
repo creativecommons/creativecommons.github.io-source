@@ -18,22 +18,20 @@ The intern will be expected to:
 - Integrate the new CC Chooser into the new Creative Commons website
 ---
 application_tips:
-The intern should be able to plan this process and find the best way to adapt
-the workflow from the CC Chooser (JavaScript/Vue) to WordPress (PHP).
+The intern should be able to plan this process and find the best way to integrate
+the CC Chooser (JavaScript/Vue) into the Creative Commons website redesign project (PHP/WordPress).
 ---
 resources:
 - **[Applicant Guide][appguide]**
 - [New CC Chooser][betachooser]
 - [creativecommons/chooser][chooser]: [WIP] The new and improved CC license
   selection tool.
-- [creativecommons/wp-plugin-creativecommons][wpplugin]: Official Creative
-  Commons plugin for licensing your content. With Creative Commons licenses,
-  keep your copyright AND share your creativity.
+- [creativecommons/project_creativecommons.org][websiteredesign]: Creative Commons website redesign project.
 
 [appguide]: /internships/applicant-guide/
 [betachooser]: https://chooser-beta.creativecommons.org/
 [chooser]: https://github.com/creativecommons/chooser
-[wpplugin]: https://github.com/creativecommons/wp-plugin-creativecommons/
+[websiteredesign]: https://github.com/creativecommons/project_creativecommons.org/milestones
 ---
 skills_recommended:
 - Docker
