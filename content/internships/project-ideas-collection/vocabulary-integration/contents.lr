@@ -41,11 +41,13 @@ resources:
 skills_recommended:
 - CSS
 - CSS Preprocessors (Sass)
+- Docker (required for development environment)
 - JavaScript (optional)
+- PHP (may be required for WordPress integration)
+
 ---
 mentors:
-- (list not yet finalized)
-- Brylie
+- Brylie Christopher Oxley
 ---
 difficulty: Medium
 ---
