@@ -36,6 +36,7 @@ resources:
 [wpplugin]: https://github.com/creativecommons/wp-plugin-creativecommons/
 ---
 skills_recommended:
+- Docker
 - JavaScript
 - PHP
 - Vue
