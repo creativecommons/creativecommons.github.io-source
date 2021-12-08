@@ -35,6 +35,9 @@
         {
             "created": "2021-11-26T11:23:54",
             "description": "Vue.js components for consistent navigation and branding across Creative Commons web properties",
+            "engineering_project": true,
+            "english_name": "CC Global Components",
+            "featured": false,
             "id": 432153424,
             "language": "Vue",
             "license": {
@@ -43,6 +46,13 @@
             },
             "name": "cc-global-components",
             "slack": "",
+            "technologies": [
+                "HTML",
+                "CSS",
+                "JS",
+                "Bulma",
+                "Vue"
+            ],
             "url": "https://github.com/creativecommons/cc-global-components",
             "website": null
         },
