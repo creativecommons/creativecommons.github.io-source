@@ -1,0 +1,57 @@
+title: CC Messaging Update 2022Q1 (Dropping IRC)
+---
+categories:
+announcements
+community
+---
+author: TimidRobot
+---
+pub_date: 2022-01-06
+---
+body:
+
+
+## Past: Moved to Slack
+
+In 2016, Creative Commons (CC) moved to Slack as our primary messaging platform
+([We're on Slack! Join us! - Creative Commons][onslack]). We are very thankful
+for the generous support that Slack has provided. The Slack messaging platform
+is far more accessible than IRC. We saw an immediate and sustained increase in
+our messaging community ([A month of Slack: Growing global communities every
+day - Creative Commons,  Lessons learned from a year of Slack, 1000 members,
+and immeasurable community growth - Creative Commons][monthofslack]). We
+currently have 10,293 members in our Slack workspace. Of those, we see daily
+activity from an average of 250 of them spread across almost 70 public
+channels. The Slack platform is not without valid criticisms, but those will be
+addressed in the Future: Open Source section, below.
+
+[onslack]: https://creativecommons.org/2016/10/18/slack-announcement/
+[monthofslack]: https://creativecommons.org/2016/12/09/a-month-of-slack/
+
+
+## Present: Dropping IRC
+
+When CC moved to Slack, we also set up a bridge with our three IRC channels on
+Freenode. However those channels only see ones of active users and tens of
+messages per year. With the hostile takeover of Freenode in 2021, the
+Free/Libre and Open Source (FOSS) community has largely moved to
+[libera.chat][liberachat]. However, we will not be moving our Slack/IRC bridge
+there. **Effective 2022-01-24 we are dropping IRC as an officially supported
+messaging platform.** In addition to there having been very few active users on
+IRC, many of the active IRC users also have active Slack accounts. Dropping IRC
+will allow us to better allocate our technical resources to better serve the
+community as a whole.
+
+[liberachat]: https://libera.chat/
+
+
+## Future: Open Source
+
+Over the years, Slack has had performance and UX issues. It is also designed
+around assumptions that do not fit a large open community. Those issues have
+not prevented it from being a strong and capable messaging platform that has
+served our community well. However, an Open Source messaging platform would
+better align with the Creative Commons community and the values we champion.
+The Open Source and Open Content communities have long enjoyed a significant
+overlap and collaboration. With regards to messaging, we hope to increase that
+overlap in the next year or two.
