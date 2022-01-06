@@ -1071,6 +1071,20 @@
             "website": "https://cc-vocabulary.netlify.app"
         },
         {
+            "created": "2022-01-05T10:52:54",
+            "description": "SASS styles related to the Vocabulary design system.",
+            "id": 444768061,
+            "language": null,
+            "license": {
+                "name": "MIT License",
+                "url": "https://github.com/creativecommons/vocabulary-styles/blob/main/LICENSE"
+            },
+            "name": "vocabulary-styles",
+            "slack": "",
+            "url": "https://github.com/creativecommons/vocabulary-styles",
+            "website": null
+        },
+        {
             "created": "2020-10-17T03:08:56",
             "description": "",
             "engineering_project": true,
