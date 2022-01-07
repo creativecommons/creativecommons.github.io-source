@@ -1071,10 +1071,10 @@
             "website": "https://cc-vocabulary.netlify.app"
         },
         {
-            "created": "2022-01-05T10:52:54",
-            "description": "SASS styles related to the Vocabulary design system.",
-            "id": 444768061,
-            "language": null,
+            "created": "2022-01-06T12:46:54",
+            "description": "",
+            "id": 445167019,
+            "language": "SCSS",
             "license": {
                 "name": "MIT License",
                 "url": "https://github.com/creativecommons/vocabulary-styles/blob/main/LICENSE"
