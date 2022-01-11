@@ -1071,9 +1071,37 @@
             "website": "https://cc-vocabulary.netlify.app"
         },
         {
-            "created": "2022-01-06T12:46:54",
+            "created": "2022-01-10T10:29:18",
             "description": "",
-            "id": 445167019,
+            "id": 446377158,
+            "language": "JavaScript",
+            "license": {
+                "name": "MIT License",
+                "url": "https://github.com/creativecommons/vocabulary-components/blob/main/LICENSE"
+            },
+            "name": "vocabulary-components",
+            "slack": "",
+            "url": "https://github.com/creativecommons/vocabulary-components",
+            "website": null
+        },
+        {
+            "created": "2022-01-10T11:07:04",
+            "description": "Typefaces that lend personality to the web facing Creative Commons",
+            "id": 446389251,
+            "language": "JavaScript",
+            "license": {
+                "name": "MIT License",
+                "url": "https://github.com/creativecommons/vocabulary-fonts/blob/main/LICENSE"
+            },
+            "name": "vocabulary-fonts",
+            "slack": "",
+            "url": "https://github.com/creativecommons/vocabulary-fonts",
+            "website": ""
+        },
+        {
+            "created": "2022-01-10T11:06:45",
+            "description": "A cohesive design system to unite the web facing Creative Commons",
+            "id": 446389149,
             "language": "SCSS",
             "license": {
                 "name": "MIT License",
@@ -1082,7 +1110,7 @@
             "name": "vocabulary-styles",
             "slack": "",
             "url": "https://github.com/creativecommons/vocabulary-styles",
-            "website": null
+            "website": ""
         },
         {
             "created": "2020-10-17T03:08:56",
