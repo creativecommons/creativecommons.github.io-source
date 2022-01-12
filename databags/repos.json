@@ -1073,6 +1073,9 @@
         {
             "created": "2022-01-10T10:29:18",
             "description": "",
+            "engineering_project": true,
+            "english_name": "CC Vocabulary components",
+            "featured": true,
             "id": 446377158,
             "language": "JavaScript",
             "license": {
@@ -1080,13 +1083,23 @@
                 "url": "https://github.com/creativecommons/vocabulary-components/blob/main/LICENSE"
             },
             "name": "vocabulary-components",
-            "slack": "",
+            "slack": "cc-dev-vocabulary",
+            "technologies": [
+                "Sass",
+                "JavaScript",
+                "Webpack",
+                "Storybook",
+                "Vue.js"
+            ],
             "url": "https://github.com/creativecommons/vocabulary-components",
             "website": null
         },
         {
             "created": "2022-01-10T11:07:04",
             "description": "Typefaces that lend personality to the web facing Creative Commons",
+            "engineering_project": true,
+            "english_name": "CC Vocabulary fonts",
+            "featured": true,
             "id": 446389251,
             "language": "JavaScript",
             "license": {
@@ -1094,13 +1107,22 @@
                 "url": "https://github.com/creativecommons/vocabulary-fonts/blob/main/LICENSE"
             },
             "name": "vocabulary-fonts",
-            "slack": "",
+            "slack": "cc-dev-vocabulary",
+            "technologies": [
+                "Sass",
+                "JavaScript",
+                "Webpack",
+                "Storybook"
+            ],
             "url": "https://github.com/creativecommons/vocabulary-fonts",
             "website": ""
         },
         {
             "created": "2022-01-10T11:06:45",
             "description": "A cohesive design system to unite the web facing Creative Commons",
+            "engineering_project": true,
+            "english_name": "CC Vocabulary styles",
+            "featured": true,
             "id": 446389149,
             "language": "SCSS",
             "license": {
@@ -1108,7 +1130,14 @@
                 "url": "https://github.com/creativecommons/vocabulary-styles/blob/main/LICENSE"
             },
             "name": "vocabulary-styles",
-            "slack": "",
+            "slack": "cc-dev-vocabulary",
+            "technologies": [
+                "Sass",
+                "JavaScript",
+                "Webpack",
+                "Storybook",
+                "Bulma"
+            ],
             "url": "https://github.com/creativecommons/vocabulary-styles",
             "website": ""
         },
