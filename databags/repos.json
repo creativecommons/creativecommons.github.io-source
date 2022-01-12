@@ -257,87 +257,6 @@
             "website": "https://creativecommons.org/ns"
         },
         {
-            "created": "2017-07-12T18:01:30",
-            "description": "Note: Project is discontinued. Mapping the commons towards an open ledger and cc search.",
-            "engineering_project": true,
-            "english_name": "CC Catalog",
-            "featured": false,
-            "id": 97037973,
-            "language": "Python",
-            "license": {
-                "name": "MIT License",
-                "url": "https://github.com/creativecommons/cccatalog/blob/main/LICENSE"
-            },
-            "name": "cccatalog",
-            "slack": "cc-dev-catalog",
-            "technologies": [
-                "Python",
-                "Apache Spark"
-            ],
-            "url": "https://github.com/creativecommons/cccatalog",
-            "website": "https://github.com/WordPress/openverse-catalog"
-        },
-        {
-            "created": "2018-04-27T20:50:37",
-            "description": "Note: Project is discontinued. The Creative Commons Catalog API allows programmatic access to search for CC-licensed and public domain digital media.",
-            "engineering_project": true,
-            "english_name": "CC Catalog API",
-            "featured": false,
-            "id": 131343685,
-            "language": "Python",
-            "license": {
-                "name": "MIT License",
-                "url": "https://github.com/creativecommons/cccatalog-api/blob/main/LICENSE"
-            },
-            "name": "cccatalog-api",
-            "slack": "",
-            "technologies": [
-                "Python",
-                "Django",
-                "Django REST Framework",
-                "Elasticsearch"
-            ],
-            "url": "https://github.com/creativecommons/cccatalog-api",
-            "website": "https://github.com/WordPress/openverse-api"
-        },
-        {
-            "created": "2018-04-27T21:32:44",
-            "description": "Data visualizations of CC-licensed works across the internet.",
-            "engineering_project": true,
-            "featured": false,
-            "id": 131346835,
-            "language": "HTML",
-            "license": {
-                "name": "MIT License",
-                "url": "https://github.com/creativecommons/cccatalog-dataviz/blob/main/LICENSE"
-            },
-            "name": "cccatalog-dataviz",
-            "slack": "cc-dev-cc-catalog-viz",
-            "url": "https://github.com/creativecommons/cccatalog-dataviz",
-            "website": "http://dataviz.creativecommons.engineering/"
-        },
-        {
-            "created": "2018-07-06T00:51:38",
-            "description": "Note: Project is discontinued. CC Search is a search tool for CC-licensed and public domain content across the internet.",
-            "engineering_project": true,
-            "english_name": "CC Search",
-            "featured": false,
-            "id": 139915408,
-            "language": "Vue",
-            "license": {
-                "name": "MIT License",
-                "url": "https://github.com/creativecommons/cccatalog-frontend/blob/main/LICENSE"
-            },
-            "name": "cccatalog-frontend",
-            "slack": "cc-search",
-            "technologies": [
-                "JavaScript",
-                "Vue.js"
-            ],
-            "url": "https://github.com/creativecommons/cccatalog-frontend",
-            "website": "https://github.com/WordPress/openverse-frontend"
-        },
-        {
             "created": "2014-10-06T22:07:52",
             "description": "RubyCAS customizations for CCID (Creative Commons ID)",
             "engineering_project": true,
@@ -404,22 +323,6 @@
             "slack": "",
             "url": "https://github.com/creativecommons/ccrel-guide",
             "website": "https://opensource.creativecommons.org/ccrel-guide/"
-        },
-        {
-            "created": "2019-05-24T17:14:10",
-            "description": "Cross-Browser extension to search, filter and use images in the public domain and under Creative Commons licenses.",
-            "engineering_project": true,
-            "featured": false,
-            "id": 188460712,
-            "language": "JavaScript",
-            "license": {
-                "name": "MIT License",
-                "url": "https://github.com/creativecommons/ccsearch-browser-extension/blob/main/LICENSE"
-            },
-            "name": "ccsearch-browser-extension",
-            "slack": "cc-dev-browser-extension",
-            "url": "https://github.com/creativecommons/ccsearch-browser-extension",
-            "website": "https://opensource.creativecommons.org/ccsearch-browser-extension/"
         },
         {
             "created": "2018-04-10T22:44:46",
