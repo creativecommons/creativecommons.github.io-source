@@ -168,8 +168,8 @@
                     "role": "Project Maintainer"
                 }
             ],
-            "name": "CC Licenses",
-            "repos": "cc-licenses,cc-licenses-data"
+            "name": "CC Legal Tools",
+            "repos": "cc-legal-tools-app,cc-legal-tools-data"
         },
         {
             "members": [
