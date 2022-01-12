@@ -22,12 +22,12 @@
                   {% for href, title in [
                     ['/contributing-code/projects', 'Project List'],
                     ['/contributing-code/issue-finder', 'Issue Finder'],
-                    ['/contributing-code/contributing-code', 'Contribution Guidelines'],
+                    ['/contributing-code', 'Contribution Guidelines'],
                     ['/contributing-code/usability', 'Usability'],
                   ] %}
                     <li>
                     <a class="{% if this.path == href %} is-active {% endif%} link" href="{{ href|url }}">{{ title }}</a>
-                    {% if (href == '/contributing-code/contributing-code') %}
+                    {% if (href == '/contributing-code') %}
                       <ul>
                       {% for href, title in [
                         ['/contributing-code/pr-guidelines', 'Pull Request Guidelines'],
