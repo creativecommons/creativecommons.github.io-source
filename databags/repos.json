@@ -522,27 +522,6 @@
             "website": "https://creativecommons.org/faq/"
         },
         {
-            "created": "2020-04-24T14:53:52",
-            "description": "A polite image crawler that can thumbnail and extract metadata from images at scale",
-            "engineering_project": true,
-            "english_name": "Image Crawler",
-            "featured": false,
-            "id": 258541870,
-            "language": "Python",
-            "license": {
-                "name": "MIT License",
-                "url": "https://github.com/creativecommons/image-crawler/blob/main/LICENSE"
-            },
-            "name": "image-crawler",
-            "slack": "",
-            "technologies": [
-                "Python",
-                "asyncio"
-            ],
-            "url": "https://github.com/creativecommons/image-crawler",
-            "website": ""
-        },
-        {
             "created": "2018-05-16T19:44:57",
             "description": "CC Legal Database: curated repository of Case Law and Scholarship data from around the world in a Django based website.",
             "engineering_project": true,
