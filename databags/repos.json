@@ -954,7 +954,7 @@
         },
         {
             "created": "2022-01-10T10:29:18",
-            "description": "",
+            "description": "A collection of Vue components used in the web facing Creative Commons.",
             "engineering_project": true,
             "english_name": "CC Vocabulary components",
             "featured": true,
@@ -974,7 +974,7 @@
                 "Vue.js"
             ],
             "url": "https://github.com/creativecommons/vocabulary-components",
-            "website": null
+            "website": ""
         },
         {
             "created": "2022-01-10T11:07:04",
