@@ -33,6 +33,17 @@
             "website": "http://certificates.creativecommons.org/"
         },
         {
+            "created": "2022-01-18T08:07:32",
+            "description": "",
+            "id": 449194869,
+            "language": null,
+            "license": null,
+            "name": "cc-assets",
+            "slack": "",
+            "url": "https://github.com/creativecommons/cc-assets",
+            "website": null
+        },
+        {
             "created": "2021-11-26T11:23:54",
             "description": "Vue.js components for consistent navigation and branding across Creative Commons web properties",
             "engineering_project": true,
