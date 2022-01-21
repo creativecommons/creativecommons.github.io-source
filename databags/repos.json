@@ -34,14 +34,24 @@
         },
         {
             "created": "2022-01-18T08:07:32",
-            "description": "",
+            "description": "Image assets used across Creative Commons projects.",
+            "engineering_project": true,
+            "english_name": "CC Assets",
+            "featured": false,
             "id": 449194869,
             "language": null,
-            "license": null,
+            "license": {
+                "name": "Other",
+                "url": "https://github.com/creativecommons/cc-assets/blob/main/LICENSE.md"
+            },
             "name": "cc-assets",
-            "slack": "",
+            "slack": "cc-developers",
+            "technologies": [
+                "PNG",
+                "SVG"
+            ],
             "url": "https://github.com/creativecommons/cc-assets",
-            "website": null
+            "website": ""
         },
         {
             "created": "2021-11-26T11:23:54",
