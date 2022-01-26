@@ -980,7 +980,7 @@
             "english_name": "CC Vocabulary components",
             "featured": true,
             "id": 446377158,
-            "language": "JavaScript",
+            "language": "Vue",
             "license": {
                 "name": "MIT License",
                 "url": "https://github.com/creativecommons/vocabulary-components/blob/main/LICENSE"
@@ -991,7 +991,6 @@
                 "Sass",
                 "JavaScript",
                 "Webpack",
-                "Storybook",
                 "Vue.js"
             ],
             "url": "https://github.com/creativecommons/vocabulary-components",
