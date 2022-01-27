@@ -1,0 +1,51 @@
+_model: project-idea
+---
+_hidden: yes
+---
+title: Chooser project stewardship
+---
+problem:
+Many online platforms use Creative Commons licenses for user-generated content. 
+
+It is helpful to allow creators to choose their own Creative Commons license. The Creative Commons Chooser guides content creators when choosing their Creative Commons license terms.
+
+Since third-party projects use Chooser, we want to make it convenient and straightforward to integrate the component into diverse software systems. We also want to ensure a stable and consistent Chooser user experience.
+
+---
+expected_outcome:
+Since the Chooser project is under continual development and maintenance, some ideal outcomes would be to
+- simplify our codebase and development process
+- ensure Chooser aligns with web standards
+- promote project health and maintainability
+- support community development
+
+---
+internship_tasks:
+Maintaining a healthy open-source project involves contributions from people with many skill sets. Depending on the interests and strengths of the intern, the internship could involve
+- user experience design and testing
+- software development (using web-standard technologies)
+- project stewardship
+- community building
+
+---
+application_tips:
+The applicant should describe how the Chooser project supports the Creative Commons mission to maximize digital creativity, sharing, and innovation. They should also articulate how their particular strengths and interests would further the Chooser project.
+---
+resources:
+- [Applicant Guide][appguide]
+- [creative commons/chooser][vocabulary]:  The new and improved CC license selection tool.
+
+[appguide]: /internships/applicant-guide/
+[chooser]: https://github.com/creativecommons/chooser/
+---
+skills_recommended:
+- CSS/Sass
+- JavaScript
+- NPM
+---
+mentors:
+- Brylie
+---
+difficulty: Medium
+---
+filter_value: difficulty-medium skill-css skill-javascript
