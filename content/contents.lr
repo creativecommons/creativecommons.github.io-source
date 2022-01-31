@@ -50,8 +50,8 @@ links_integrate:
 <h4 class="heading">Integrate CC licenses into your project</h4>
 
 <div class="list">
-  <h5 class="link-heading"><a href="https://api.creativecommons.engineering/v1/" class="has-text-forest-green">CC Catalog API</a></h5>
-  <p class="link-caption">Build CC-licensed content into your application.</p>
+  <h5 class="link-heading"><a href="https://github.com/creativecommons/chooser/" class="has-text-forest-green">Chooser</a></h5>
+  <p class="link-caption">CC license selection tool</p>
 
   <h5 class="link-heading"><a href="https://creativecommons.org/platform/toolkit/" class="has-text-forest-green">Platform Toolkit</a></h5>
   <p class="link-caption">Give users the option to openly license their content.</p>
@@ -66,9 +66,6 @@ links_plugins:
 <div class="list">
   <h5 class="link-heading"><a href="https://wordpress.org/plugins/creative-commons/" class="has-text-forest-green">Wordpress Plugin</a></h5>
   <p class="link-caption">Mark your work with a CC license from within WordPress.</p>
-
-  <h5 class="link-heading"><a href="https://opensource.creativecommons.org/ccsearch-browser-extension/" class="has-text-forest-green">CC Search Browser Extension</a></h5>
-  <p class="link-caption">Search the Catalog using our Extension.</p>
 </div>
 #### recent-posts ####
 title: Recent Blog Posts
