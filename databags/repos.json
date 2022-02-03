@@ -379,7 +379,7 @@
         },
         {
             "created": "2019-05-22T22:36:52",
-            "description": "[WIP] The new and improved CC license selection tool.",
+            "description": "The new and improved CC license selection tool.",
             "engineering_project": true,
             "english_name": "CC Chooser",
             "featured": true,
