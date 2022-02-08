@@ -16,7 +16,7 @@
         <h2 class="is-paddingless level-left">
           Featured Projects
         </h2>
-        <div class="project-list columns">
+        <div class="project-list columns is-multiline">
           {% for repo in bag('repos.repos') %}
           {% if repo.featured %}
             <div class=" column is-one-third">
