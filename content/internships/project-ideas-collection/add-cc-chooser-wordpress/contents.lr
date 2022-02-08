@@ -45,8 +45,7 @@ skills_recommended:
 - React
 - WordPress
 ---
-mentors:
-- (list not yet finalized)
+primary_mentor:
 - Brylie
 ---
 difficulty: Medium
