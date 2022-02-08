@@ -163,120 +163,13 @@
                     "role": "Project Maintainer"
                 },
                 {
-                    "github": "mathemancer",
-                    "name": "Brent Moran",
-                    "role": "Project Maintainer"
-                },
-                {
-                    "github": "kgodey",
-                    "name": "Kriti Godey",
-                    "role": "Project Maintainer"
-                },
-                {
-                    "github": "zackkrida",
-                    "name": "Zack Krida",
-                    "role": "Project Maintainer"
-                },
-                {
-                    "github": "ChariniNana",
-                    "name": "Charini Nanayakkara",
-                    "role": "Project Core Committer"
-                },
-                {
-                    "github": "jcornel2",
-                    "name": "Julia Cornell",
-                    "role": "Project Core Committer"
-                },
-                {
-                    "github": "kss682",
-                    "name": "Srinidhi Krishna",
-                    "role": "Project Core Committer"
-                },
-                {
-                    "github": "akshgpt7",
-                    "name": "Aksh Gupta",
-                    "role": "Project Collaborator"
-                },
-                {
-                    "github": "allen505",
-                    "name": "Allen Abraham",
-                    "role": "Project Collaborator"
-                },
-                {
-                    "github": "avats-dev",
-                    "name": "Aditya Vats",
-                    "role": "Project Contributor"
-                },
-                {
-                    "github": "sp35",
-                    "name": "Shubham Pandey",
-                    "role": "Project Contributor"
-                }
-            ],
-            "name": "CC Catalog",
-            "repos": "cccatalog"
-        },
-        {
-            "members": [
-                {
-                    "github": "aldenstpage",
-                    "name": "Alden Page",
-                    "role": "Project Maintainer"
-                },
-                {
-                    "github": "mathemancer",
-                    "name": "Brent Moran",
-                    "role": "Project Maintainer"
-                },
-                {
-                    "github": "kgodey",
-                    "name": "Kriti Godey",
-                    "role": "Project Maintainer"
-                },
-                {
-                    "github": "zackkrida",
-                    "name": "Zack Krida",
-                    "role": "Project Maintainer"
-                },
-                {
-                    "github": "ariessa",
-                    "name": "Ariessa Norramli",
-                    "role": "Project Core Committer"
-                },
-                {
-                    "github": "dhruvkb",
-                    "name": "Dhruv Bhanushali",
-                    "role": "Project Collaborator"
-                },
-                {
-                    "github": "madewithkode",
-                    "name": "Onyenanu Princewill",
-                    "role": "Project Contributor"
-                },
-                {
-                    "github": "Tanuj22",
-                    "name": "Tanuj Agarwal",
-                    "role": "Project Contributor"
-                }
-            ],
-            "name": "CC Catalog API",
-            "repos": "cccatalog-api,image-crawler"
-        },
-        {
-            "members": [
-                {
-                    "github": "aldenstpage",
-                    "name": "Alden Page",
-                    "role": "Project Maintainer"
-                },
-                {
                     "github": "kgodey",
                     "name": "Kriti Godey",
                     "role": "Project Maintainer"
                 }
             ],
-            "name": "CC Licenses",
-            "repos": "cc-licenses,cc-licenses-data"
+            "name": "CC Legal Tools",
+            "repos": "cc-legal-tools-app,cc-legal-tools-data"
         },
         {
             "members": [
@@ -333,88 +226,6 @@
             ],
             "name": "CC Open Source",
             "repos": "creativecommons.github.io-source"
-        },
-        {
-            "members": [
-                {
-                    "github": "aldenstpage",
-                    "name": "Alden Page",
-                    "role": "Project Maintainer"
-                },
-                {
-                    "github": "mathemancer",
-                    "name": "Brent Moran",
-                    "role": "Project Maintainer"
-                },
-                {
-                    "github": "kgodey",
-                    "name": "Kriti Godey",
-                    "role": "Project Maintainer"
-                },
-                {
-                    "github": "zackkrida",
-                    "name": "Zack Krida",
-                    "role": "Project Maintainer"
-                },
-                {
-                    "github": "akmadian",
-                    "name": "Ari Madian",
-                    "role": "Project Core Committer"
-                },
-                {
-                    "github": "ayanchoudhary",
-                    "name": "Ayan Choudhary",
-                    "role": "Project Core Committer"
-                },
-                {
-                    "github": "abhisheknaiidu",
-                    "name": "Abhishek Naidu",
-                    "role": "Project Collaborator"
-                },
-                {
-                    "github": "dhruvkb",
-                    "name": "Dhruv Bhanushali",
-                    "role": "Project Collaborator"
-                },
-                {
-                    "github": "rochisha0",
-                    "name": "Rochisha Agarwal",
-                    "role": "Project Collaborator"
-                },
-                {
-                    "github": "Tanuj22",
-                    "name": "Tanuj Agarwal",
-                    "role": "Project Collaborator"
-                },
-                {
-                    "github": "avats-dev",
-                    "name": "Aditya Vats",
-                    "role": "Project Contributor"
-                }
-            ],
-            "name": "CC Search",
-            "repos": "cccatalog-frontend"
-        },
-        {
-            "members": [
-                {
-                    "github": "aldenstpage",
-                    "name": "Alden Page",
-                    "role": "Project Maintainer"
-                },
-                {
-                    "github": "kgodey",
-                    "name": "Kriti Godey",
-                    "role": "Project Maintainer"
-                },
-                {
-                    "github": "makkoncept",
-                    "name": "Mayank Nader",
-                    "role": "Project Maintainer"
-                }
-            ],
-            "name": "CC Search Browser Extension",
-            "repos": "ccsearch-browser-extension"
         },
         {
             "members": [
@@ -495,42 +306,6 @@
             ],
             "name": "Link Checker",
             "repos": "cc-link-checker"
-        },
-        {
-            "members": [
-                {
-                    "github": "aldenstpage",
-                    "name": "Alden Page",
-                    "role": "Project Maintainer"
-                },
-                {
-                    "github": "mathemancer",
-                    "name": "Brent Moran",
-                    "role": "Project Maintainer"
-                },
-                {
-                    "github": "kgodey",
-                    "name": "Kriti Godey",
-                    "role": "Project Maintainer"
-                },
-                {
-                    "github": "soccerdroid",
-                    "name": "Mar\u00eda Bel\u00e9n Guaranda Cabezas ",
-                    "role": "Project Maintainer"
-                },
-                {
-                    "github": "subhamX",
-                    "name": "Subham Sahu",
-                    "role": "Project Core Committer"
-                },
-                {
-                    "github": "BharatNischal",
-                    "name": "Bharat Nischal",
-                    "role": "Project Contributor"
-                }
-            ],
-            "name": "Linked Commons",
-            "repos": "cccatalog-dataviz"
         },
         {
             "members": [

@@ -33,6 +33,94 @@
             "website": "http://certificates.creativecommons.org/"
         },
         {
+            "created": "2022-01-18T08:07:32",
+            "description": "Image assets used across Creative Commons projects.",
+            "engineering_project": true,
+            "english_name": "CC Assets",
+            "featured": false,
+            "id": 449194869,
+            "language": null,
+            "license": {
+                "name": "Other",
+                "url": "https://github.com/creativecommons/cc-assets/blob/main/LICENSE.md"
+            },
+            "name": "cc-assets",
+            "slack": "cc-developers",
+            "technologies": [
+                "PNG",
+                "SVG"
+            ],
+            "url": "https://github.com/creativecommons/cc-assets",
+            "website": ""
+        },
+        {
+            "created": "2021-11-26T11:23:54",
+            "description": "Vue.js components for consistent navigation and branding across Creative Commons web properties",
+            "engineering_project": true,
+            "english_name": "CC Global Components",
+            "featured": false,
+            "id": 432153424,
+            "language": "Vue",
+            "license": {
+                "name": "MIT License",
+                "url": "https://github.com/creativecommons/cc-global-components/blob/main/LICENSE"
+            },
+            "name": "cc-global-components",
+            "slack": "",
+            "technologies": [
+                "HTML",
+                "CSS",
+                "JS",
+                "Bulma",
+                "Vue"
+            ],
+            "url": "https://github.com/creativecommons/cc-global-components",
+            "website": null
+        },
+        {
+            "created": "2020-06-03T18:51:38",
+            "description": "License and public domain declaration management application for Creative Commons",
+            "engineering_project": true,
+            "english_name": "CC Legal Tools Application",
+            "featured": true,
+            "id": 269169080,
+            "language": "Python",
+            "license": {
+                "name": "MIT License",
+                "url": "https://github.com/creativecommons/cc-legal-tools-app/blob/main/LICENSE"
+            },
+            "name": "cc-legal-tools-app",
+            "slack": "cc-dev-legal-tools",
+            "technologies": [
+                "Django",
+                "Python"
+            ],
+            "url": "https://github.com/creativecommons/cc-legal-tools-app",
+            "website": ""
+        },
+        {
+            "created": "2020-09-08T19:18:51",
+            "description": "License and public domain declaration data for Creative Commons ",
+            "engineering_project": true,
+            "english_name": "CC Legal Tools Data",
+            "featured": false,
+            "id": 293905720,
+            "language": "HTML",
+            "license": {
+                "name": "Creative Commons Zero v1.0 Universal",
+                "url": "https://github.com/creativecommons/cc-legal-tools-data/blob/main/COPYING"
+            },
+            "name": "cc-legal-tools-data",
+            "slack": "cc-dev-legal-tools",
+            "technologies": [
+                "Gettext",
+                "HTML",
+                "RDF"
+            ],
+            "url": "https://github.com/creativecommons/cc-legal-tools-data",
+            "website": ""
+        },
+        {
             "created": "2015-11-16T19:24:04",
             "description": "Creative Commons JavaScript license selector in the form of a JavaScript widget",
             "engineering_project": true,
@@ -51,47 +139,6 @@
                 "Python"
             ],
             "url": "https://github.com/creativecommons/cc-license-chooser",
-            "website": ""
-        },
-        {
-            "created": "2020-06-03T18:51:38",
-            "description": "New license infrastructure for Creative Commons",
-            "engineering_project": true,
-            "english_name": "CC Licenses",
-            "featured": false,
-            "id": 269169080,
-            "language": "Python",
-            "license": {
-                "name": "MIT License",
-                "url": "https://github.com/creativecommons/cc-licenses/blob/main/LICENSE"
-            },
-            "name": "cc-licenses",
-            "slack": "cc-dev-licenses",
-            "technologies": [
-                "Python",
-                "HTML"
-            ],
-            "url": "https://github.com/creativecommons/cc-licenses",
-            "website": ""
-        },
-        {
-            "created": "2020-09-08T19:18:51",
-            "description": "CC Licenses data (static HTML, language files, etc.)",
-            "engineering_project": true,
-            "english_name": "CC Licenses Data",
-            "featured": false,
-            "id": 293905720,
-            "language": "HTML",
-            "license": {
-                "name": "Creative Commons Zero v1.0 Universal",
-                "url": "https://github.com/creativecommons/cc-licenses-data/blob/main/LICENSE"
-            },
-            "name": "cc-licenses-data",
-            "slack": "",
-            "technologies": [
-                "HTML"
-            ],
-            "url": "https://github.com/creativecommons/cc-licenses-data",
             "website": ""
         },
         {
@@ -231,87 +278,6 @@
             "website": "https://creativecommons.org/ns"
         },
         {
-            "created": "2017-07-12T18:01:30",
-            "description": "Note: Project is discontinued. Mapping the commons towards an open ledger and cc search.",
-            "engineering_project": true,
-            "english_name": "CC Catalog",
-            "featured": false,
-            "id": 97037973,
-            "language": "Python",
-            "license": {
-                "name": "MIT License",
-                "url": "https://github.com/creativecommons/cccatalog/blob/main/LICENSE"
-            },
-            "name": "cccatalog",
-            "slack": "cc-dev-catalog",
-            "technologies": [
-                "Python",
-                "Apache Spark"
-            ],
-            "url": "https://github.com/creativecommons/cccatalog",
-            "website": "https://github.com/WordPress/openverse-catalog"
-        },
-        {
-            "created": "2018-04-27T20:50:37",
-            "description": "Note: Project is discontinued. The Creative Commons Catalog API allows programmatic access to search for CC-licensed and public domain digital media.",
-            "engineering_project": true,
-            "english_name": "CC Catalog API",
-            "featured": false,
-            "id": 131343685,
-            "language": "Python",
-            "license": {
-                "name": "MIT License",
-                "url": "https://github.com/creativecommons/cccatalog-api/blob/main/LICENSE"
-            },
-            "name": "cccatalog-api",
-            "slack": "",
-            "technologies": [
-                "Python",
-                "Django",
-                "Django REST Framework",
-                "Elasticsearch"
-            ],
-            "url": "https://github.com/creativecommons/cccatalog-api",
-            "website": "https://github.com/WordPress/openverse-api"
-        },
-        {
-            "created": "2018-04-27T21:32:44",
-            "description": "Data visualizations of CC-licensed works across the internet.",
-            "engineering_project": true,
-            "featured": false,
-            "id": 131346835,
-            "language": "HTML",
-            "license": {
-                "name": "MIT License",
-                "url": "https://github.com/creativecommons/cccatalog-dataviz/blob/main/LICENSE"
-            },
-            "name": "cccatalog-dataviz",
-            "slack": "cc-dev-cc-catalog-viz",
-            "url": "https://github.com/creativecommons/cccatalog-dataviz",
-            "website": "http://dataviz.creativecommons.engineering/"
-        },
-        {
-            "created": "2018-07-06T00:51:38",
-            "description": "Note: Project is discontinued. CC Search is a search tool for CC-licensed and public domain content across the internet.",
-            "engineering_project": true,
-            "english_name": "CC Search",
-            "featured": false,
-            "id": 139915408,
-            "language": "Vue",
-            "license": {
-                "name": "MIT License",
-                "url": "https://github.com/creativecommons/cccatalog-frontend/blob/main/LICENSE"
-            },
-            "name": "cccatalog-frontend",
-            "slack": "cc-search",
-            "technologies": [
-                "JavaScript",
-                "Vue.js"
-            ],
-            "url": "https://github.com/creativecommons/cccatalog-frontend",
-            "website": "https://github.com/WordPress/openverse-frontend"
-        },
-        {
             "created": "2014-10-06T22:07:52",
             "description": "RubyCAS customizations for CCID (Creative Commons ID)",
             "engineering_project": true,
@@ -380,22 +346,6 @@
             "website": "https://opensource.creativecommons.org/ccrel-guide/"
         },
         {
-            "created": "2019-05-24T17:14:10",
-            "description": "Cross-Browser extension to search, filter and use images in the public domain and under Creative Commons licenses.",
-            "engineering_project": true,
-            "featured": false,
-            "id": 188460712,
-            "language": "JavaScript",
-            "license": {
-                "name": "MIT License",
-                "url": "https://github.com/creativecommons/ccsearch-browser-extension/blob/main/LICENSE"
-            },
-            "name": "ccsearch-browser-extension",
-            "slack": "cc-dev-browser-extension",
-            "url": "https://github.com/creativecommons/ccsearch-browser-extension",
-            "website": "https://opensource.creativecommons.org/ccsearch-browser-extension/"
-        },
-        {
             "created": "2018-04-10T22:44:46",
             "description": "Theme for CC Certificates website landing page",
             "engineering_project": true,
@@ -429,7 +379,7 @@
         },
         {
             "created": "2019-05-22T22:36:52",
-            "description": "[WIP] The new and improved CC license selection tool.",
+            "description": "The new and improved CC license selection tool.",
             "engineering_project": true,
             "english_name": "CC Chooser",
             "featured": true,
@@ -591,27 +541,6 @@
             "slack": "",
             "url": "https://github.com/creativecommons/faq",
             "website": "https://creativecommons.org/faq/"
-        },
-        {
-            "created": "2020-04-24T14:53:52",
-            "description": "A polite image crawler that can thumbnail and extract metadata from images at scale",
-            "engineering_project": true,
-            "english_name": "Image Crawler",
-            "featured": false,
-            "id": 258541870,
-            "language": "Python",
-            "license": {
-                "name": "MIT License",
-                "url": "https://github.com/creativecommons/image-crawler/blob/main/LICENSE"
-            },
-            "name": "image-crawler",
-            "slack": "",
-            "technologies": [
-                "Python",
-                "asyncio"
-            ],
-            "url": "https://github.com/creativecommons/image-crawler",
-            "website": ""
         },
         {
             "created": "2018-05-16T19:44:57",
@@ -816,17 +745,29 @@
         },
         {
             "created": "2021-07-06T17:25:01",
-            "description": "Project for creativecommons.org",
+            "description": "Project to manage technical implementation of creativecommons.org (primary website)",
+            "engineering_project": true,
+            "english_name": "CreativeCommons.org website development project",
+            "featured": false,
             "id": 383548251,
-            "language": null,
+            "language": "Shell",
             "license": {
                 "name": "MIT License",
                 "url": "https://github.com/creativecommons/project_creativecommons.org/blob/main/LICENSE"
             },
             "name": "project_creativecommons.org",
-            "slack": "",
+            "slack": "cc-dev-wordpress",
+            "technologies": [
+                "PHP",
+                "WordPress",
+                "JavaScript",
+                "React",
+                "Django",
+                "Docker",
+                "Docker Compose"
+            ],
             "url": "https://github.com/creativecommons/project_creativecommons.org",
-            "website": ""
+            "website": "https://creativecommons.org/"
         },
         {
             "created": "2013-12-02T20:59:52",
@@ -1014,7 +955,7 @@
             "english_name": "CC Vocabulary",
             "featured": true,
             "id": 224004769,
-            "language": "JavaScript",
+            "language": "SCSS",
             "license": {
                 "name": "MIT License",
                 "url": "https://github.com/creativecommons/vocabulary/blob/main/LICENSE"
@@ -1031,6 +972,76 @@
             ],
             "url": "https://github.com/creativecommons/vocabulary",
             "website": "https://cc-vocabulary.netlify.app"
+        },
+        {
+            "created": "2022-01-10T10:29:18",
+            "description": "A collection of Vue components used in the web facing Creative Commons.",
+            "engineering_project": true,
+            "english_name": "CC Vocabulary components",
+            "featured": true,
+            "id": 446377158,
+            "language": "Vue",
+            "license": {
+                "name": "MIT License",
+                "url": "https://github.com/creativecommons/vocabulary-components/blob/main/LICENSE"
+            },
+            "name": "vocabulary-components",
+            "slack": "cc-dev-vocabulary",
+            "technologies": [
+                "Sass",
+                "JavaScript",
+                "Webpack",
+                "Vue.js"
+            ],
+            "url": "https://github.com/creativecommons/vocabulary-components",
+            "website": ""
+        },
+        {
+            "created": "2022-01-10T11:07:04",
+            "description": "Typefaces that lend personality to the web facing Creative Commons",
+            "engineering_project": true,
+            "english_name": "CC Vocabulary fonts",
+            "featured": true,
+            "id": 446389251,
+            "language": "JavaScript",
+            "license": {
+                "name": "MIT License",
+                "url": "https://github.com/creativecommons/vocabulary-fonts/blob/main/LICENSE"
+            },
+            "name": "vocabulary-fonts",
+            "slack": "cc-dev-vocabulary",
+            "technologies": [
+                "Sass",
+                "JavaScript",
+                "Webpack",
+                "Storybook"
+            ],
+            "url": "https://github.com/creativecommons/vocabulary-fonts",
+            "website": ""
+        },
+        {
+            "created": "2022-01-10T11:06:45",
+            "description": "A cohesive design system to unite the web facing Creative Commons",
+            "engineering_project": true,
+            "english_name": "CC Vocabulary styles",
+            "featured": true,
+            "id": 446389149,
+            "language": "SCSS",
+            "license": {
+                "name": "MIT License",
+                "url": "https://github.com/creativecommons/vocabulary-styles/blob/main/LICENSE"
+            },
+            "name": "vocabulary-styles",
+            "slack": "cc-dev-vocabulary",
+            "technologies": [
+                "Sass",
+                "JavaScript",
+                "Webpack",
+                "Storybook",
+                "Bulma"
+            ],
+            "url": "https://github.com/creativecommons/vocabulary-styles",
+            "website": ""
         },
         {
             "created": "2020-10-17T03:08:56",
@@ -1078,25 +1089,25 @@
         },
         {
             "created": "2020-09-17T19:19:54",
-            "description": "WordPress Plugin that provides Vocabulary component blocks",
+            "description": "This WordPress plugin provides custom functionality for the creativecommons.org website.",
             "engineering_project": true,
             "english_name": "WordPress Vocabulary blocks",
             "featured": false,
             "id": 296421346,
-            "language": "JavaScript",
+            "language": "PHP",
             "license": {
-                "name": "MIT License",
-                "url": "https://github.com/creativecommons/wp-plugin-vocabulary-blocks/blob/master/LICENSE"
+                "name": "Other",
+                "url": "https://github.com/creativecommons/wp-plugin-creativecommons-website/blob/main/LICENSE"
             },
-            "name": "wp-plugin-vocabulary-blocks",
+            "name": "wp-plugin-creativecommons-website",
             "slack": "cc-dev-wordpress",
             "technologies": [
                 "Javascript",
                 "React",
                 "WordPress"
             ],
-            "url": "https://github.com/creativecommons/wp-plugin-vocabulary-blocks",
-            "website": null
+            "url": "https://github.com/creativecommons/wp-plugin-creativecommons-website",
+            "website": ""
         },
         {
             "created": "2019-02-11T15:51:29",
