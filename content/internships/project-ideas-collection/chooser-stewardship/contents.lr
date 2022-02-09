@@ -44,7 +44,7 @@ skills_recommended:
 - JavaScript
 - NPM
 ---
-mentors:
+primary_mentor:
 - Brylie
 ---
 difficulty: Medium
