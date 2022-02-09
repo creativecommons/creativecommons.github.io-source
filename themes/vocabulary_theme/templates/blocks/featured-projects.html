@@ -8,10 +8,10 @@
         <a class="project-page-link" href="/contributing-code/projects/">See all available projects <i class="icon angle-right"></i></a>
       </span>
     </div>
-    <div class="project-list columns">
+    <div class="project-list columns is-multiline">
       {% for repo in bag('repos.repos') %}
       {% if repo.featured %}
-        <div class=" column is-one-third">
+        <div class="column is-one-third">
           <article class="card entry-post vertical project-index">
             <div class="card-content">
               <h4 class="card-title b-header"><a href="{{ repo.url }}">{{ repo.english_name }}</a></h4>

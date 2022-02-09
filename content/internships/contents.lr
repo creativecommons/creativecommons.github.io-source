@@ -14,26 +14,30 @@ Creative Commons (CC) regularly participates in the following programs:
 
 ### Google Season of Docs (GSoD)
 
-Creative Commons is **not** participating in the 2021 round of Google Season of
-Docs.
+Creative Commons is **not** currently participating in Google Season of Docs.
 
 - [Program website](https://developers.google.com/season-of-docs/)
 
 
 ### Google Summer of Code (GSoC)
 
-Creative Commons is **not** participating in the 2021 round of Google Summer of
-Code.
+*2022 Organization application in progress.*
 
 - [Program website](https://summerofcode.withgoogle.com/)
 
 
 ### Outreachy
 
-**Creative Commons is participating in the 2021 End-of-year / December Cohort of
-Outreachy.**
+Creative Commons is participating in the 2021 End-of-year / December Cohort
+of Outreachy.
+
+Creative Commons is **not** participating in the May 2022 to August 2022
+Outreachy internship round.
 
 - [Program website](https://www.outreachy.org/)
+- [CC's Outreachy page][outreachycc]
+
+[outreachycc]: https://www.outreachy.org/communities/cfp/creative-commons/
 
 
 ## Resources
@@ -52,13 +56,13 @@ Outreachy.**
 - **[History](/internships/history/)**: This page has historical information on
   CC's open source internships, including links to prior interns' blog posts.
 
-## Mentors
 
-Mentors for 2021 End-of-year / December Cohort of Outreachy (list not yet finalized):
+## Mentors
 
 | Name | Pronouns | Slack Username |
 | ---- | -------- | -------------- |
-| Brylie | they/hän | `@Brylie Christopher Oxley` |
+| [Brylie][authorbrylie] | they/hän | `@Brylie Christopher Oxley` |
 | [Timid Robot][authortimidrobot] | they/them | `@Timid Robot` |
 
+[authorbrylie]: /blog/authors/brylie/
 [authortimidrobot]: /blog/authors/TimidRobot/
