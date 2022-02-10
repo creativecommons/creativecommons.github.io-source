@@ -953,7 +953,7 @@
             "description": "A cohesive design system & Vue component library to unify the web-facing Creative Commons",
             "engineering_project": true,
             "english_name": "CC Vocabulary",
-            "featured": true,
+            "featured": false,
             "id": 224004769,
             "language": "SCSS",
             "license": {
