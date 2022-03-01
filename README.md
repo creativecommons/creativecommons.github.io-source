@@ -45,7 +45,7 @@ via lektor (see [Deployment](#deployment), below).
 
 ## Installation
 
-### Pre-Requisites
+### Prerequisites
 
 Make sure you have:
 - [pipenv][pipenvdocs]
@@ -128,7 +128,7 @@ else fails, try removing the virtual environment and reinstalling:
   lektor server -f webpack`, this is most likely due to running an older
   version of Node.js.
 
-  As stated above in [Pre-requisites](#pre-requisites), you should be running
+  As stated above in [Prerequisites](#prerequisites), you should be running
   Node.js version 12+.
 
 - Should you get an `OSError: [Errno 28] inotify watch limit reached` after
