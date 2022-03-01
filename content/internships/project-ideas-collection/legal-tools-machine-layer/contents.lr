@@ -62,6 +62,8 @@ skills_recommended:
 primary_mentor:
 - Timid Robot
 ---
-difficulty: High
+difficulty: Hard
+---
+size: Large (~350 hours)
 ---
 filter_value: difficulty-high skill-python

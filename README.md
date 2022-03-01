@@ -45,39 +45,51 @@ via lektor (see [Deployment](#deployment), below).
 
 ## Installation
 
-### Pre-Requisites
+### Prerequisites
 
 Make sure you have:
-
-* [pipenv][pipenvdocs]
-
-* [Node.js][nodejswebsite] **v12+** and [npm][npmdocs] installed. 
+- [pipenv][pipenvdocs]
+- [Node.js][nodejswebsite] **v12+** and [npm][npmdocs] installed.
 
 To install these, execute the following commands:
-
-> For  macOS:
-
-1. `brew install pipenv node`
-
-> For GNU/Linux:
-
-1. [Installing Pipenv][pipenvinstall]
-2. [Install Node.js][nodeinstall]
-3. `sudo apt update`
-4. `sudo apt install npm `
+- macOS:
+  1. Install [Homebrew][homebrew]
+  1. Install pipenv and node:
+        ```
+        brew install pipenv node
+        ```
+- GNU/Linux:
+  1. [Installing Pipenv][pipenvinstall]
+  2. [Install Node.js][nodeinstall] (or see the
+     [detailed instructions][nodedetailed])
+  3. Upate packges:
+        ```
+        sudo apt update
+        ```
+  4. Install npm:
+        ```
+        sudo apt install npm
+        ```
 
 [pipenvdocs]: https://pipenv.pypa.io/en/latest/
 [nodejswebsite]: https://nodejs.org/en/
-[npmdocs]: https://docs.npmjs.com/ 
+[npmdocs]: https://docs.npmjs.com/
+[homebrew]: https://brew.sh/
 [pipenvinstall]: https://pipenv.pypa.io/en/latest/install/#installing-pipenv
 [nodeinstall]: https://github.com/nodesource/distributions/blob/master/README.md#table-of-contents
+[nodedetailed]: https://github.com/nodesource/distributions/blob/master/README.md#installation-instructions
 
 
 ### Installing Project Requirements
 
 1. Clone this repository.
-2. Open your command line interface and `cd` to the repository root directory.
-3. Run `pipenv install --dev` to create a Python virtual environment and install the requirements for this project.
+2. Open your command line interface change directories to the repository root
+   directory.
+3. Create a Python virtual environment and install the requirements for this
+   project:
+    ```
+    pipenv install --dev
+    ```
 
 
 ### pipenv Troubleshooting
@@ -85,35 +97,58 @@ To install these, execute the following commands:
 `pipenv` doesn't always provide the best error messages ([Provide better error
 message if the project’s virtual environment is broken][pipenverror]). If all
 else fails, try removing the virtual environment and reinstalling:
-1. `pipenv --rm`
-2. `pipenv install --dev`
+1. Remove virtual environment:
+    ```
+    pipenv --rm
+    ```
+2. Install virtual environment (including dev packages):
+    ```
+    pipenv install --dev
+    ```
 
 [pipenverror]:https://github.com/pypa/pipenv/issues/1918
 
 
 ## Development
 
-- Run `pipenv run lektor server -f webpack` to start the Lektor development
-  server.
+- Start the Lektor development server:
+    ```
+    pipenv run lektor server -f webpack
+    ```
 - You will be able to see the website at [`http://localhost:5000/`][local5000].
   - The Lektor server will rebuild the site every time you change any content.
 
 [local5000]:http://localhost:5000/
 
+
 ### Troubleshooting Possible Errors
 
-* Should you get series of type errors that looks something like `npm ERR! typeerror Error: Missing required argument #1`, after running `pipenv run lektor server -f webpack`, this is most likely due to running an older version of Node.js.
+- Should you get series of type errors that looks something like `npm ERR!
+  typeerror Error: Missing required argument #1`, after running `pipenv run
+  lektor server -f webpack`, this is most likely due to running an older
+  version of Node.js.
 
-  As stated earlier in the prerequisites, you should be running Node.js version 12+.
-  Follow [this](https://github.com/nodesource/distributions/blob/master/README.md#table-of-contents) tutorial to upgrade your node version (for GNU/Unix systems).
+  As stated above in [Prerequisites](#prerequisites), you should be running
+  Node.js version 12+.
 
-* Should you get an `OSError: [Errno 28] inotify watch limit reached` after running any command, this means that your system file watcher is running out of alloted handles, usually because the workspace is large and contains many files. 
+- Should you get an `OSError: [Errno 28] inotify watch limit reached` after
+  running any command, this means that your system file watcher is running out
+  of allotted handles, usually because the workspace is large and contains many
+  files.
 
   The solution is to run:
-`sudo sysctl fs.inotify.max_user_watches=524288`
+    ```
+    sudo sysctl fs.inotify.max_user_watches=524288
+    ```
 
-  This increases your `inotify` watch limit (for the session) to 524288, which is the maximum value and is also enough to allow the  setup go through.
-  You can learn more about file watchers [from this blog post](https://unixia.wordpress.com/2018/04/28/inotify-watch-limit-reached-wait-what/) or [from the VS Code documentation](https://code.visualstudio.com/docs/setup/linux#_visual-studio-code-is-unable-to-watch-for-file-changes-in-this-large-workspace-error-enospc).
+  This increases your `inotify` watch limit (for the session) to 524288, which
+  is the maximum value and is also enough to allow the  setup go through. You
+  can learn more about file watchers [from this blog post][inotifyblog]
+  or [from the VS Code documentation][watchchanges].
+
+[inotifyblog]: https://unixia.wordpress.com/2018/04/28/inotify-watch-limit-reached-wait-what/
+[watchchanges]: https://code.visualstudio.com/docs/setup/linux#_visual-studio-code-is-unable-to-watch-for-file-changes-in-this-large-workspace-error-enospc
+
 
 ## Deployment
 
@@ -175,7 +210,7 @@ Here's how the code is structured in the top level of the repository:
     excerpt
   - [lektor/lektor-markdown-header-anchors][md-header]: Adds support for
     anchors and table of contents to Markdown
-  - [lektor/lektor-markdown-highlighter][md-highlighter]: Adds support for 
+  - [lektor/lektor-markdown-highlighter][md-highlighter]: Adds support for
     syntax highlighting in Markdown and templates
   - [terminal-labs/lektor-strip-html-tags][striphtml]: Strip HTML tags,
     effectively turning HTML into plain text
@@ -220,7 +255,7 @@ Here's how the code is structured in the top level of the repository:
 
 ![CC BY 4.0 license button][cc-by-png]
 
-All the content within this repository is licensed under a [Creative Commons 
+All the content within this repository is licensed under a [Creative Commons
 Attribution 4.0 International License][cc-by] unless otherwise
 specified.
 

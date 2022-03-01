@@ -49,4 +49,6 @@ primary_mentor:
 ---
 difficulty: Medium
 ---
+size: Large (~350 hours)
+---
 filter_value: difficulty-medium skill-css skill-javascript
