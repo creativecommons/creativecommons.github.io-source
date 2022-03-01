@@ -77,7 +77,7 @@ To install these, execute the following commands:
 [homebrew]: https://brew.sh/
 [pipenvinstall]: https://pipenv.pypa.io/en/latest/install/#installing-pipenv
 [nodeinstall]: https://github.com/nodesource/distributions/blob/master/README.md#table-of-contents
-[nodedetail]: https://github.com/nodesource/distributions/blob/master/README.md#installation-instructions
+[nodedetailed]: https://github.com/nodesource/distributions/blob/master/README.md#installation-instructions
 
 
 ### Installing Project Requirements
