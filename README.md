@@ -115,10 +115,10 @@ else fails, try removing the virtual environment and reinstalling:
     ```
     pipenv run lektor server -f webpack
     ```
-- You will be able to see the website at [`http://localhost:5000/`][local5000].
+- You will be able to see the website at [`127.0.0.1:5000/`][local5000].
   - The Lektor server will rebuild the site every time you change any content.
 
-[local5000]:http://localhost:5000/
+[local5000]:http://127.0.0.1:5000/
 
 
 ### Troubleshooting Possible Errors
