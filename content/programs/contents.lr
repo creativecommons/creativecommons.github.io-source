@@ -1,5 +1,70 @@
-_model: redirect
+_model: page
 ---
-target: /internships/
+_template: page-with-toc.html
 ---
-_discoverable: no
+title: Open Source Work Programs: Overview
+---
+body:
+
+
+## Programs
+
+Creative Commons (CC) regularly participates in the following programs that
+offer grants or stipends:
+
+
+### Google Season of Docs (GSoD)
+
+Creative Commons is **not** currently participating in Google Season of Docs.
+
+- [Program website](https://developers.google.com/season-of-docs/)
+
+
+### Google Summer of Code (GSoC)
+
+*2022 Organization application in progress.*
+
+- [Program website](https://summerofcode.withgoogle.com/)
+
+
+### Outreachy
+
+Creative Commons is participating in the 2021 End-of-year / December Cohort
+of Outreachy.
+
+Creative Commons is **not** participating in the May 2022 to August 2022
+Outreachy internship round.
+
+- [Program website](https://www.outreachy.org/)
+- [CC's Outreachy page][outreachycc]
+
+[outreachycc]: https://www.outreachy.org/communities/cfp/creative-commons/
+
+
+## Resources
+
+- **[Project Ideas](/programs/project-ideas/)**: This is a list of project
+  ideas for our work programs. Please note that these project ideas are shared
+  between all current work programs and all ideas may not be available
+  for all programs. Please check the project description carefully.
+- **[Applicant Guide](/programs/applicant-guide/)**: This is a guide for all
+  contributor applicants. You **must** read and follow instructions in this
+  guide if you are applying for a work program at CC.
+- **[Contributor Guide](/programs/contrib-guide/)**: This guide describes the
+  expectations and responsibilities for accepted contributors.
+- **[Project Lead Guide](/programs/lead-guide/)**: This is a guide for project
+  leads on CC projects.
+- **[History](/programs/history/)**: This page has historical information on
+  CC's open source work programs, including links to prior contributors' blog
+  posts.
+
+
+## Project Leads
+
+| Name | Pronouns | Slack Username |
+| ---- | -------- | -------------- |
+| [Brylie][authorbrylie] | they/hän | `@Brylie Christopher Oxley` |
+| [Timid Robot][authortimidrobot] | they/them | `@Timid Robot` |
+
+[authorbrylie]: /blog/authors/brylie/
+[authortimidrobot]: /blog/authors/TimidRobot/
