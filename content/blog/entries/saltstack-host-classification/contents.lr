@@ -84,9 +84,9 @@ still room for improvement. For example, I will probably refactor `HST` to
 The [creativecommons/sre-salt-prime][sre-salt-prime-repo] repository is open
 source.
 
-This host classification is also documented within it: [sre-salt-prime/Host_Classification.md at master][host-class].
+This host classification is also documented within it: [sre-salt-prime/Host_Classification.md at main][host-class].
 
 
 [FAQ21]: https://docs.saltstack.com/en/latest/faq.html#is-targeting-using-grain-data-secure
 [sre-salt-prime-repo]:https://github.com/creativecommons/sre-salt-prime
-[host-class]: https://github.com/creativecommons/sre-salt-prime/blob/master/docs/Host_Classification.md
+[host-class]: https://github.com/creativecommons/sre-salt-prime/blob/main/docs/Host_Classification.md

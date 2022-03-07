@@ -16,11 +16,11 @@ All GitHub repositories should have the following items to be considered fully r
   - [About code owners - GitHub Help](https://help.github.com/en/articles/about-code-owners)
 - `/.cc-metadata.yml`: The standard [CC metadata YAML file](#cc-metadata-file).
 - `/CODE_OF_CONDUCT.md`: Code of Conduct
-	- Feel free to use our standard [`CODE_OF_CONDUCT.md`](https://github.com/creativecommons/.github/blob/master/CODE_OF_CONDUCT.md) file from [creativecommons/.github](https://github.com/creativecommons/.github)
+	- Feel free to use our standard [`CODE_OF_CONDUCT.md`](https://github.com/creativecommons/vocabulary/blob/main/CODE_OF_CONDUCT.md) file from [creativecommons/.github](https://github.com/creativecommons/.github)
 	- [Adding a code of conduct to your project - GitHub Help](https://help.github.com/en/articles/adding-a-code-of-conduct-to-your-project)
 - `/LICENSE`: license file.
 - `/CONTRIBUTING.md`: contributor guidelines
-	- Can be project-specific or our standard [`CONTRIBUTING.md`](https://github.com/creativecommons/.github/blob/master/CONTRIBUTING.md) file from [creativecommons/.github](https://github.com/creativecommons/.github)
+	- Can be project-specific or our standard [`CONTRIBUTING.md`](https://github.com/creativecommons/vocabulary/blob/main/CONTRIBUTING.md) file from [creativecommons/.github](https://github.com/creativecommons/.github)
 	- [Setting guidelines for repository contributors - GitHub Help](https://help.github.com/en/articles/setting-guidelines-for-repository-contributors)
 - `/README.md`: read me information file
 	- Must documents how to install and build the project locally and documents a high level overview of the project and code structure. It should also link to any other available documentation.

@@ -152,9 +152,9 @@ else fails, try removing the virtual environment and reinstalling:
 
 ## Deployment
 
-We have continuous deployment set up. To deploy, push your code to the `master`
-branch (or make a pull request against the `master` branch. GitHub Actions
-builds and deploys the site whenever it detects new commits on the `master`
+We have continuous deployment set up. To deploy, push your code to the `main`
+branch (or make a pull request against the `main` branch. GitHub Actions
+builds and deploys the site whenever it detects new commits on the `main`
 branch.
 
 The GitHub Actions configuration is located at

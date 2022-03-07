@@ -4,9 +4,9 @@ jobs:
  build-and-deploy:
   runs-on: ubuntu-latest
   steps:
-   - uses: actions/checkout@v1
+   - uses: actions/checkout@v2
    - name: setup python version
-     uses: actions/setup-python@v1
+     uses: actions/setup-python@v3
      with:
       python-version: 3.9
    - name: Install dependencies
@@ -15,6 +15,6 @@ jobs:
       pipenv sync
       pipenv run lektor build -f webpack
    - name: Deploy to production
-     if: github.ref == 'refs/heads/master'
+     if: github.ref == 'refs/heads/main'
      run: |
       pipenv run lektor deploy ghpages --username ${{ secrets.LEKTOR_DEPLOY_USERNAME }} --password ${{ secrets.LEKTOR_DEPLOY_PASSWORD }}

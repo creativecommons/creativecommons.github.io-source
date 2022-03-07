@@ -234,7 +234,7 @@ Here's the link to the [documentation site](https://cc-vocabulary.netlify.app).
 </tr>
 <tr>
 <td>Added a CHANGELOG.md to adhere to OSS conventions</td>
-<td><a href=https://github.com/creativecommons/vocabulary/pull/671">https://github.com/creativecommons/vocabulary/pull/671</a><br><a href="https://github.com/creativecommons/vocabulary/blob/master/CHANGELOG.md">https://github.com/creativecommons/vocabulary/blob/master/CHANGELOG.md</a></td>
+<td><a href=https://github.com/creativecommons/vocabulary/pull/671">https://github.com/creativecommons/vocabulary/pull/671</a><br><a href="https://github.com/creativecommons/vocabulary/blob/main/CHANGELOG.md">https://github.com/creativecommons/vocabulary/blob/main/CHANGELOG.md</a></td>
 </tr>
 <tr>
 <td>Unified README.md and updated monorepo build process</td>
@@ -254,11 +254,11 @@ Here's the link to the [documentation site](https://cc-vocabulary.netlify.app).
 </tr>
 <tr>
 <td>Add a maintained with Lerna badge</td>
-<td><a href="https://github.com/creativecommons/vocabulary/issues/807">https://github.com/creativecommons/vocabulary/issues/807</a><br><a href="https://github.com/creativecommons/vocabulary/blob/master/README.md">https://github.com/creativecommons/vocabulary/blob/master/README.md</a></td>
+<td><a href="https://github.com/creativecommons/vocabulary/issues/807">https://github.com/creativecommons/vocabulary/issues/807</a><br><a href="https://github.com/creativecommons/vocabulary/blob/main/README.md">https://github.com/creativecommons/vocabulary/blob/main/README.md</a></td>
 </tr>
 <tr>
 <td>Add new install size badges for our packages</td>
-<td><a href="https://github.com/creativecommons/vocabulary/issues/776">https://github.com/creativecommons/vocabulary/issues/776</a><br><a href="https://github.com/creativecommons/vocabulary/blob/master/README.md">https://github.com/creativecommons/vocabulary/blob/master/README.md</a</td>
+<td><a href="https://github.com/creativecommons/vocabulary/issues/776">https://github.com/creativecommons/vocabulary/issues/776</a><br><a href="https://github.com/creativecommons/vocabulary/blob/main/README.md">https://github.com/creativecommons/vocabulary/blob/main/README.md</a</td>
 </tr>
 <tr>
 <td>Customise individual README's for our packages</td>
