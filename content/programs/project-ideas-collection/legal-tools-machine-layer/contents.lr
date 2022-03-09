@@ -17,7 +17,7 @@ communities, and projects that wish to make the Creative Commons legal tools
 available to their users.
 ---
 contributor_tasks:
-The intern will be expected to:
+The contributor will be expected to:
 - Comprehend legacy machine readable licenses information
 - Extend new license infrastructure to achieve parity with legacy
   infrastructure
@@ -49,7 +49,7 @@ resources:
 [aboutlicenses]: https://creativecommons.org/licenses/
 [rdfns]: https://creativecommons.org/ns/
 [api]: https://api.creativecommons.org/docs/
-[ccllapp]: https://github.com/creativecommons/cc-letal-tools-app
+[ccllapp]: https://github.com/creativecommons/cc-legal-tools-app
 [cclldata]: https://github.com/creativecommons/cc-legal-tools-data
 ---
 skills_recommended:

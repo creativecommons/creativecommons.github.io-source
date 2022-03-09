@@ -1,5 +1,5 @@
 _model: redirect
 ---
-target: /programs/
+target: /programs/contrib-guide/
 ---
 _discoverable: no

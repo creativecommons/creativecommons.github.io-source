@@ -48,7 +48,7 @@ anything like that, please don't hesitate to ask!
 
 ### Join the Community
 
-[Join the `#cc-dev-internships` channel on the CC Slack or the CC Developers
+[Join the `#cc-dev-workprograms` channel on the CC Slack or the CC Developers
 mailing list](/community/) as early as possible to introduce yourself and get
 feedback on your ideas. All our mentors will be on Slack and respond to emails
 on the mailing list and it is better to post there rather than contacting them
@@ -155,11 +155,9 @@ you submit the final application on the program's official site.
 
 We suggest reading some articles on writing good Google Summer of Code
 proposals (even if you're applying for Outreachy). Here are some examples:
-- [How to write a kick-ass proposal for Google Summer of Code][kickass]
 - [5 Tips to get your Google Summer of Code proposal accepted][fivetips]
 - [Writing a solid Google Summer of Code Proposal][writingsolid]
 
-[kickass]: http://teom.org/blog/kde/how-to-write-a-kick-ass-proposal-for-google-summer-of-code/
 [fivetips]: https://people.csail.mit.edu/baghdadi/TXT_blog/5_advices_to_get_your_proposal_accepted.lyx.html
 [writingsolid]: https://medium.com/@evenstensberg/writing-a-solid-google-summer-of-code-proposal-a200fc6e785b
 
@@ -200,7 +198,7 @@ couple of days first.
 to be addressed by our first names or usernames.**
 
 
-## Intern Selection Criteria
+## Contributor Selection Criteria
 
 Here are a few things we consider when selecting work program contributors:
 - **Quality of the proposal**: This is the most important thing. A good
