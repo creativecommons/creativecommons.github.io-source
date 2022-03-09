@@ -130,7 +130,7 @@
             "language": "XSLT",
             "license": {
                 "name": "GNU General Public License v2.0",
-                "url": "https://github.com/creativecommons/cc-license-chooser/blob/master/LICENSE"
+                "url": "https://github.com/creativecommons/cc-license-chooser/blob/main/LICENSE"
             },
             "name": "cc-license-chooser",
             "slack": "cc-dev-license-chooser",
@@ -847,7 +847,7 @@
             "language": "CSS",
             "license": {
                 "name": "MIT License",
-                "url": "https://github.com/creativecommons/search/blob/master/LICENSE"
+                "url": "https://github.com/creativecommons/search/blob/main/LICENSE"
             },
             "name": "search",
             "slack": "",
