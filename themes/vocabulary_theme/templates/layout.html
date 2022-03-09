@@ -107,16 +107,16 @@
             </div>
           </div>
           <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link is-arrowless {% if this.is_child_of('/internships') %} is-active{% endif%}" tabindex="0">
-              Internships<i class="icon caret-down"></i></a>
+            <a class="navbar-link is-arrowless {% if this.is_child_of('/programs') %} is-active{% endif%}" tabindex="0">
+              Work Programs<i class="icon caret-down"></i></a>
             <div class="navbar-dropdown">
               {% for href, title in [
-                ['/internships', 'Overview'],
-                ['/internships/project-ideas', 'Project Ideas'],
-                ['/internships/applicant-guide', 'Applicant Guide'],
-                ['/internships/intern-guide', 'Intern Guide'],
-                ['/internships/mentor-guide', 'Mentor Guide'],
-                ['/internships/history', 'History'],
+                ['/programs', 'Overview'],
+                ['/programs/project-ideas', 'Project Ideas'],
+                ['/programs/applicant-guide', 'Applicant Guide'],
+                ['/programs/contrib-guide', 'Contributor Guide'],
+                ['/programs/lead-guide', 'Project Lead Guide'],
+                ['/programs/history', 'History'],
               ] %}
                 <a class="navbar-item" href="{{ href|url }}">{{ title }}</a>
               {% endfor %}

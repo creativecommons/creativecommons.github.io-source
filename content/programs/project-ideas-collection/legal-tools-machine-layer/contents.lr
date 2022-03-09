@@ -16,7 +16,7 @@ information. This project is an opportunity to empower applications,
 communities, and projects that wish to make the Creative Commons legal tools
 available to their users.
 ---
-internship_tasks:
+contributor_tasks:
 The intern will be expected to:
 - Comprehend legacy machine readable licenses information
 - Extend new license infrastructure to achieve parity with legacy
@@ -45,7 +45,7 @@ resources:
 - [creativecommons/cc-legal-tools-app][ccllapp]
 - [creativecommons/cc-legal-tools-data][cclldata]
 
-[appguide]: /internships/applicant-guide/
+[appguide]: /programs/applicant-guide/
 [aboutlicenses]: https://creativecommons.org/licenses/
 [rdfns]: https://creativecommons.org/ns/
 [api]: https://api.creativecommons.org/docs/
@@ -59,7 +59,7 @@ skills_recommended:
 - XML
 - YAML
 ---
-primary_mentor:
+lead:
 - Timid Robot
 ---
 difficulty: Hard

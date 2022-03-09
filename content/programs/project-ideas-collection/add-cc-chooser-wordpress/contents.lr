@@ -15,7 +15,7 @@ expected_outcome:
 Revamping the admin panel of the plugin, adding the CC Chooser on it as well as
 a Gutenberg block.
 ---
-internship_tasks:
+contributor_tasks:
 The intern will be expected to:
 - Research about how the new CC Chooser manage the user workflow
 - Recreate that process in the WordPress admin panel
@@ -34,7 +34,7 @@ resources:
   Commons plugin for licensing your content. With Creative Commons licenses,
   keep your copyright AND share your creativity.
 
-[appguide]: /internships/applicant-guide/
+[appguide]: /programs/applicant-guide/
 [betachooser]: https://chooser-beta.creativecommons.org/
 [chooser]: https://github.com/creativecommons/chooser
 [wpplugin]: https://github.com/creativecommons/wp-plugin-creativecommons/
@@ -45,7 +45,7 @@ skills_recommended:
 - React
 - WordPress
 ---
-primary_mentor:
+lead:
 - Brylie
 ---
 difficulty: Medium

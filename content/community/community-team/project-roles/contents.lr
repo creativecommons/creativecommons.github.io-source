@@ -8,131 +8,203 @@ description: This page serves as a guide for project-based roles on CC's <a href
 ---
 body:
 
-Project roles are intended for folks interested in contributing to a specific project or codebase. You may have roles on multiple projects, but they will have to be granted separately.
+Project roles are intended for folks interested in contributing to a specific
+project or codebase. You may have roles on multiple projects, but they will
+have to be granted separately.
 
-If you'd like to apply for one of these roles, please see the main [Community Team][communityteam] page.
+If you'd like to apply for one of these roles, please see the main [Community
+Team][communityteam] page.
 
 ## Project Contributor
-**Who should apply:**  
+### Who should apply:
 If you’ve contributed to a CC project, you should apply for this role.
 
-**What does this role give you?**  
-* You’ll receive previews of upcoming changes to the Community Team program.
-* You’ll be listed as [a member of the Community Team on CC Open Source](/community/community-team/members/).
+### What does this role give you?
+- You’ll receive previews of upcoming changes to the Community Team program.
+- You’ll be listed as [a member of the Community Team on CC Open Source](/community/community-team/members/).
 
-**How can you engage with the community?**  
+### How can you engage with the community?
 You can use the following channels to engage with the community:
-* [Read access](/community/community-team/engagement-channels/#read-access)
-  on the relevant repos on GitHub
-* Invitation to our Slack channels
-  * [Newbie channels](/community/community-team/engagement-channels/#newbie-channels)
-  * [UX design channels](/community/community-team/engagement-channels/#ux-design-channel)
-  * [Community Team channel](/community/community-team/engagement-channels/#community-team-channel)
-* Invitation to our [meetings](/community/community-team/engagement-channels/#meetings)
-* Membership in the [Community Team mailing list](/community/community-team/engagement-channels/#community-team-group)
+- [Read access](/community/community-team/engagement-channels/#read-access) on
+  the relevant repos on GitHub
+- Invitation to our Slack channels
+  * [Newbie
+    channels](/community/community-team/engagement-channels/#newbie-channels)
+  * [UX design
+    channels](/community/community-team/engagement-channels/#ux-design-channel)
+  * [Community Team
+    channel](/community/community-team/engagement-channels/#community-team-channel)
+- Invitation to our
+  [meetings](/community/community-team/engagement-channels/#meetings)
+- Membership in the [Community Team mailing
+  list](/community/community-team/engagement-channels/#community-team-group)
 
-**Guidelines for Project Contributors**  
+### Guidelines for Project Contributors
 If you’ve been accepted as a Project Contributor, you are encouraged to:
-* keep contributing to the project as and when you can!
-* participate in discussions in Slack or via email.
-* contribute in other ways if you'd like, like [helping out newbie developers or voting on our tweets](/community/community-team/community-building-roles/).
+- keep contributing to the project as and when you can!
+- participate in discussions in Slack or via email.
+- contribute in other ways if you'd like, like [helping out newbie developers or voting on our tweets](/community/community-team/community-building-roles/).
 
 ## Project Collaborator
-**Who should apply:**  
+### Who should apply:
 If you’ve made a few significant contributions to the project (added new features, for example) and know the project’s overall codebase pretty well, you should apply.
 
-**What does this role give you?**  
-* Everything a Project Contributor gets.
-* Creative Commons staff will write you a letter of recommendation on request.
+### What does this role give you?
+- Everything a Project Contributor gets.
+- Creative Commons staff will write you a letter of recommendation on request.
 
-**How can you engage with the community?**  
+### How can you engage with the community?
 In addition to the channels afforded to a Project Contributor, you can use the following channels to engage with the community:
-* [Triage access](/community/community-team/engagement-channels/#triage-access)
+- [Triage access](/community/community-team/engagement-channels/#triage-access)
   on the relevant repos on GitHub
 
-**Guidelines for Project Collaborators**  
+### Guidelines for Project Collaborators
 If you’ve been accepted as a Project Collaborator, you are encouraged to:
-* do everything a Project Contributor does.
-* review and triage new issues.
-  * Ask the issue author for more details if appropriate.
-  * Check with the project maintainers if the issue makes sense.
-  * Update the labels on the issue appropriately once you have all the information you need (e.g. remove “awaiting triage” label).
-* review assigned pull requests to unblock merges.
-* participate in discussions in the new meetings and channels you’ve been added to.
-* identify promising contributors to the project and invite them to join the Community Team.
+- do everything a Project Contributor does.
+- review and triage new issues.
+  - Ask the issue author for more details if appropriate.
+  - Check with the project maintainers if the issue makes sense.
+  - Update the labels on the issue appropriately once you have all the
+    information you need (e.g. remove “awaiting triage” label).
+- review assigned pull requests to unblock merges.
+- participate in discussions in the new meetings and channels you’ve been added
+  to.
+- identify promising contributors to the project and invite them to join the
+  Community Team.
 
-**Note:** The role of Project Member was deprecated in July 2020 and all members were redesignated as collaborators.
+**Note:** The role of Project Member was deprecated in July 2020 and all
+members were redesignated as collaborators.
 
 ## Project Core Committer
-**Who should apply:**  
-If you’ve made many significant contributions to the project, know the codebase really well, and are interested in active maintenance of the project, you should apply.
 
-**What does this role give you?**  
-* Everything a Project Collaborator gets.
-* You’ll be eligible to mentor GSoC, GSoD and Outreachy interns (and similar) for Creative Commons.
-* You'll receive CC swag.
+### Who should apply:
+If you’ve made many significant contributions to the project, know the codebase
+really well, and are interested in active maintenance of the project, you
+should apply.
 
-**How can you engage with the community?**  
-In addition to the channels afforded to a Project Collaborator, you can use the following channels to engage with the community:
-* [Write access](/community/community-team/engagement-channels/#write-access)
+### What does this role give you?
+
+- Everything a Project Collaborator gets.
+- You’ll be eligible to mentor GSoC, GSoD and Outreachy interns (and similar) for Creative Commons.
+- You'll receive CC swag.
+
+### How can you engage with the community?
+In addition to the channels afforded to a Project Collaborator, you can use the
+following channels to engage with the community:
+- [Write access](/community/community-team/engagement-channels/#write-access)
   on the relevant repos on GitHub
 
-**Guidelines for Project Core Committers**  
+### Guidelines for Project Core Committers
 If you’ve been accepted as a Project Core Committer, you are encouraged to:
-* do everything a Project Collaborator does.
-* merge PRs that you are confident work well and fit the project guidelines.
-  * If you have any doubts, please check with project maintainers first!
-* proactively ask about mentorship opportunities if that interests you.
+- do everything a Project Collaborator does.
+- merge PRs that you are confident work well and fit the project guidelines.
+  - If you have any doubts, please check with project maintainers first!
+- proactively ask about mentorship opportunities if that interests you.
 
 ## Project Maintainer
-**Who should apply:**  
-If you’re a Core Committer already and you’re interested in taking on maintainer responsibilities, you should apply. Please note that this role comes with a lot of responsibilities!
 
-**What does this role give you?**  
-* Everything a Project Core Committer gets.
+### Who should apply:
+If you’re a Core Committer already and you’re interested in taking on
+maintainer responsibilities, you should apply. Please note that this role comes
+with a lot of responsibilities!
 
-**How can you engage with the community?**  
-In addition to the channels afforded to a Project Core Committer, you can use the following channels to engage with the community:
-* [Maintain access](/community/community-team/engagement-channels/#maintain-access)
-  on the relevant repos on GitHub
+### What does this role give you?
+Everything a Project Core Committer gets.
 
-**Guidelines for Project Maintainers**  
-Being a Project Maintainer comes with a larger set of responsibilities and guidelines, documented below:
+### How can you engage with the community?
+In addition to the channels afforded to a Project Core Committer, you can use
+the following channels to engage with the community:
+- [Maintain
+  access](/community/community-team/engagement-channels/#maintain-access) on
+  the relevant repos on GitHub
+
+### Guidelines for Project Maintainers
+Being a Project Maintainer comes with a larger set of responsibilities and
+guidelines, documented below:
 
 ### Responsibilities
 As a Project Maintainer, your responsibilities are as follows:
 
-* **Review pull requests (PRs):** You are expected to review incoming pull requests regularly (we aim to review all pull requests within [within three business days](/contributing-code/pr-guidelines)).
-* **Decide on Community Team applications:** You are expected to make the final decision on Community Team applications for your project.
-* **Communicate with the applicant and the Open Source Community Coordinator (OSCC) promptly:** You are expected to reach out to applicants for Community Team directly and let them know the status of their application.
-   * We want to get back to applicants within seven business days of application, if possible. If this is not possible, you should reach out to the applicant just letting them know that it’s taking a little longer than usual (could be due to internal discussion taking a while, other things taking precedent, etc.), and that we’re working on it.
-   * You are expected to communicate with the OSCC promptly (within three business days) when they reach out to you about a new Community Team application or other related matter.
-   * You should also notify the OSCC of your decision about the Community Team application.
-* **Let contributors know about Community Team:** If you notice a strong contributor, you should notify them of the existence of Community Team, provide them with the link to the Community Team page on the CC Open Source site, and encourage them to apply.
+- **Review pull requests (PRs):** You are expected to review incoming pull
+  requests regularly (we aim to review all pull requests within [within three
+business days](/contributing-code/pr-guidelines)).
+- **Decide on Community Team applications:** You are expected to make the final
+  decision on Community Team applications for your project.
+- **Communicate with the applicant and the Open Source Community Coordinator
+  (OSCC) promptly:** You are expected to reach out to applicants for Community
+Team directly and let them know the status of their application.
+   - We want to get back to applicants within seven business days of
+     application, if possible. If this is not possible, you should reach out to
+     the applicant just letting them know that it’s taking a little longer than
+     usual (could be due to internal discussion taking a while, other things
+     taking precedent, etc.), and that we’re working on it.
+   - You are expected to communicate with the OSCC promptly (within three
+     business days) when they reach out to you about a new Community Team
+     application or other related matter.
+   - You should also notify the OSCC of your decision about the Community Team
+     application.
+- **Let contributors know about Community Team:** If you notice a strong
+  contributor, you should notify them of the existence of Community Team,
+  provide them with the link to the Community Team page on the CC Open Source
+  site, and encourage them to apply.
 
 ### Reviewing Community Team Applications
-Applications for Community Team roles will be sent to you individually by the  Open Source Community Coordinator (OSCC). The OSCC has ensured that the bare requirements for the position are met. If bare requirements are not met, you will be notified how so when you receive the application from the OSCC.
+Applications for Community Team roles will be sent to you individually by the
+Open Source Community Coordinator (OSCC). The OSCC has ensured that the bare
+requirements for the position are met. If bare requirements are not met, you
+will be notified how so when you receive the application from the OSCC.
 
-From here, you should review the application and the applicant’s contributions based on the evaluation criteria. As a maintainer, you have a significant amount of discretion here. If an applicant meets the requirements, but you do not think they are ready for the role they’ve applied for, you can choose to grant a role with fewer privileges, or not grant a role at all.
+From here, you should review the application and the applicant’s contributions
+based on the evaluation criteria. As a maintainer, you have a significant
+amount of discretion here. If an applicant meets the requirements, but you do
+not think they are ready for the role they’ve applied for, you can choose to
+grant a role with fewer privileges, or not grant a role at all.
 
 No matter the decision, you should do the following things:
-* Notify the OSCC of your decision. Please include the applicant’s name, the role they applied for, and if they applied for a project based role, the project they applied to. From here, the OSCC will help coordinate permissions and role management.
-* Notify the applicant of your decision. If you choose to grant them the role they applied for, then send a congratulatory message. If you choose to not grant them the role at all, or to grant one with fewer privileges, you should construct some brief feedback as to why their application was denied, either in part or in full. There’s a template for this type of feedback available in the Community Team Google Shared Drive that you have access to.
-* Respond promptly to nominated “Great Contributions” and applications for roles once they make their way to you. We would like to target seven business days or less from time of application to time of decision, but this is somewhat flexible.
+- Notify the OSCC of your decision. Please include the applicant’s name, the
+  role they applied for, and if they applied for a project based role, the
+  project they applied to. From here, the OSCC will help coordinate permissions
+  and role management.
+- Notify the applicant of your decision. If you choose to grant them the role
+  they applied for, then send a congratulatory message. If you choose to not
+  grant them the role at all, or to grant one with fewer privileges, you should
+  construct some brief feedback as to why their application was denied, either
+  in part or in full. There’s a template for this type of feedback available in
+  the Community Team Google Shared Drive that you have access to.
+- Respond promptly to nominated “Great Contributions” and applications for
+  roles once they make their way to you. We would like to target seven business
+  days or less from time of application to time of decision, but this is
+  somewhat flexible.
 
 ### Additional Notes
-All Community Team work is done on a volunteer basis. Team members may pick up tasks and help out here and there if they would like, but they should not be expected to use all of their privileges all the time.
+All Community Team work is done on a volunteer basis. Team members may pick up
+tasks and help out here and there if they would like, but they should not be
+expected to use all of their privileges all the time.
 
-You have a big license for discretion within the Community Team. All applicants for all roles will need to be approved by you personally, and you may choose to deny an application based on subjective criteria even if the applicant meets the hard requirements.
+You have a big license for discretion within the Community Team. All applicants
+for all roles will need to be approved by you personally, and you may choose to
+deny an application based on subjective criteria even if the applicant meets
+the hard requirements.
 
 Here are some other miscellaneous things:
-* Issue submission requirements are org-wide, but PR requirements are not. Applicants should be submitting PRs for the repo they are aiming to get privileges for.
-* If two repos are closely related to each other (ex. catalog and catalog api), or if work in repo X also regularly includes work in repo Y, project maintainers can collaborate to grant roles to a contributor in both repos at once.
-* Project Maintainers may opt out of granting roles depending on the nature of the repository.
+- Issue submission requirements are org-wide, but PR requirements are not.
+  Applicants should be submitting PRs for the repo they are aiming to get
+  privileges for.
+- If two repos are closely related to each other (ex. catalog and catalog api),
+  or if work in repo X also regularly includes work in repo Y, project
+  maintainers can collaborate to grant roles to a contributor in both repos at
+  once.
+- Project Maintainers may opt out of granting roles depending on the nature of
+  the repository.
 
-As a maintainer, you have the ability to make some repository-specific allowances. These include the following:
-* Issue and PR requirements can vary by repository depending on traffic. If a maintainer wants to mandate different numbers for their repository, they should state these requirements in the repo’s README.
-* Maintainers may expand on what is counted as a “Contribution” if there is some type of work specific to that repository.
-* Specific privileges may be granted per-repo by maintainers depending on the type of work taking place in that repo (ex. Issue research in cccatalog).
+As a maintainer, you have the ability to make some repository-specific
+allowances. These include the following:
+- Issue and PR requirements can vary by repository depending on traffic. If a
+  maintainer wants to mandate different numbers for their repository, they
+  should state these requirements in the repo’s README.
+- Maintainers may expand on what is counted as a “Contribution” if there is
+  some type of work specific to that repository.
+- Specific privileges may be granted per-repo by maintainers depending on the
+  type of work taking place in that repo (ex. Issue research in cccatalog).
 
 [communityteam]:/community/community-team/
