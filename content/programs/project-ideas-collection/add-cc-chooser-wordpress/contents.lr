@@ -22,8 +22,8 @@ The contributor will be expected to:
 - Generate a new Gutenberg block
 ---
 application_tips:
-The intern should be able to plan this process and find the best way to adapt
-the workflow from the CC Chooser (JavaScript/Vue) to WordPress (PHP).
+The contributor should be able to plan this process and find the best way to
+adapt the workflow from the CC Chooser (JavaScript/Vue) to WordPress (PHP).
 ---
 resources:
 - **[Applicant Guide][appguide]**
