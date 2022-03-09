@@ -47,26 +47,25 @@ The channels most relevant to CC's developer community are:
 
 | Channel | Discussion related to |
 | ------- | --------------------- |
-| `#cc-dev-browser-extension` | [ccsearch-browser-extension][ccsearch-browser-extension] project |
-| `#cc-dev-internships` | **GSoC, GSoD, Outreachy, and other internships** |
+| `#cc-dev-legal-tools` | [cc-legal-tools-app][cc-legal-tools-app] project (CC Legal Tools formatting and translation) |
 | `#cc-dev-legaldb` | [legaldb][legaldb] project |
 | `#cc-dev-license-chooser` | [cc-chooser][cc-chooser] project (new CC license chooser) |
-| `#cc-dev-licenses` | [cc-licenses][cc-licenses] project (CC Licenses formatting and translation) |
 | `#cc-dev-linkchecker` | [cc-link-checker][cc-link-checker] project |
 | `#cc-dev-platform-toolkit` | [mp][mp] project (CC Platform Toolkit) |
 | `#cc-dev-vocabulary` | [cc-vocabulary][cc-vocabulary] project |
 | `#cc-dev-wordpress` | [wp-plugin-creativecommons][wp-plugin-creativecommons] project (creativecommons WordPress plugin) |
+| `#cc-dev-workprograms` | **GSoC, GSoD, Outreachy, and other [work programs][workprograms] or internships** |
 | `#cc-developers` | **general technical issues, new tech blog posts, etc.** |
 | `#cc-usability` | general usability issues, seeking feedback on new releases of CC products from the community, etc. |
 
-[ccsearch-browser-extension]: https://github.com/creativecommons/ccsearch-browser-extension
 [legaldb]: https://github.com/creativecommons/legaldb
 [cc-chooser]: https://github.com/creativecommons/cc-chooser
-[cc-licenses]: https://github.com/creativecommons/cc-licenses
+[cc-legal-tools-app]: https://github.com/creativecommons/cc-legal-tools-app
 [cc-link-checker]: https://github.com/creativecommons/cc-link-checker
 [mp]: https://github.com/creativecommons/mp
 [cc-vocabulary]: https://github.com/creativecommons/cc-vocabulary
 [wp-plugin-creativecommons]: https://github.com/creativecommons/wp-plugin-creativecommons
+[workprograms]: /programs/
 
 
 ### Slack Tips
