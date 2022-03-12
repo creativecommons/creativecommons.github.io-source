@@ -5,6 +5,10 @@ name: Ari Madian
 md5_hashed_email: af23a7b0ab15b5c5ae21649bf69f8b66
 ---
 about:
-Ari is CC's Open Source Community Coordinator, a mostly self taught Computer Science student, and tea enthusiast. He is based in Seattle and his favorite teas are blacks, whites, and Shou Pu Erhs.
+Ari fomerly served as CC's Open Source Community Coordinator, a mostly self
+taught Computer Science student, and tea enthusiast. He is based in Seattle and
+his favorite teas are blacks, whites, and Shou Pu Erhs.
 
-He started working with CC through Google Summer of Code 2019 through his work on the CC license chooser tool. [[source code](https://github.com/creativecommons/chooser)]
+He started working with CC through [Google Summer of Code (GSoC)
+2019](/programs/history/) through his work on the CC license chooser tool
+[[source code](https://github.com/creativecommons/chooser)].

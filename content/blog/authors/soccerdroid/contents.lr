@@ -5,6 +5,14 @@ name: María Belén Guaranda Cabezas
 md5_hashed_email: a177edcce952c2c82ac8716a4586a28f
 ---
 about:
-Maria is a Bachelor of Computer Science from Ecuador. As a research assistant, she worked in projects including computer vision, the estimation of socio-economic indexes through CDRs analysis, and a machine learning model with sensors data. During her spare time, she likes to watch animes and read. She loves sports, especially soccer. She is also committed to environmental causes, and she is a huge fan of cats and dogs (she has 4 and 1 respectively).
+Maria is a Bachelor of Computer Science from Ecuador. As a research assistant,
+she worked in projects including computer vision, the estimation of
+socio-economic indexes through CDRs analysis, and a machine learning model with
+sensors data. During her spare time, she likes to watch animes and read. She
+loves sports, especially soccer. She is also committed to environmental causes,
+and she is a huge fan of cats and dogs (she has 4 and 1 respectively).
 
-Maria worked in the [data visualizations of the CC Catalog](https://github.com/creativecommons/cccatalog-dataviz) as part of [Google Summer of Code 2019](/gsoc-2019/), and is currently a mentor in this year's edition of the program.
+Maria worked on the [data visualizations of the CC
+Catalog](https://github.com/cc-archive/cccatalog-dataviz) as part of [Google
+Summer of Code (GSoC) 2019](/programs/history/), and also mentored for GSoC
+2020.

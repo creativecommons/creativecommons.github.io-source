@@ -5,6 +5,13 @@ name: Ahmad Bilal
 md5_hashed_email: 870502bc55d77d77522ad3f27876b511
 ---
 about:
-Ahmad Bilal is a Computer Science undergrad from UET Lahore, who likes computers, problems and using the former to solve the later. He is always excited about Open Source, and is currently focused on Node.js, Serverless, GraphQL, Cloud, Gatsby.js with React.js and WordPress. He likes organizing meetups, conferences and meeting new people. Cats are his weakness, and he is a sucker for well-engineered cars.
+Ahmad Bilal is a Computer Science undergrad from UET Lahore, who likes
+computers, problems and using the former to solve the later. He is always
+excited about Open Source, and is currently focused on Node.js, Serverless,
+GraphQL, Cloud, Gatsby.js with React.js and WordPress. He likes organizing
+meetups, conferences and meeting new people. Cats are his weakness, and he is a
+sucker for well-engineered cars.
 
-Ahmad is working on [the CC WordPress plugin](https://github.com/creativecommons/creativecommons-wordpress-plugin) as part of [Google Summer of Code 2019](/gsoc-2019/).
+Ahmad is worked on [the CC WordPress
+plugin](https://github.com/creativecommons/creativecommons-wordpress-plugin) as
+part of [Google Summer of Code (GSoC) 2019](/programs/history/).
