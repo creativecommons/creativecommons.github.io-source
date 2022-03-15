@@ -5,6 +5,15 @@ name: Ayan Choudhary
 md5_hashed_email: ba5f8ac4afb162644051544e25b5cfe8
 ---
 about:
-Ayan Choudhary is an Electrical Engineering undergraduate student from India and will be interning with Creative Commons during the summer. He has been involved with coding quite heavily for the past couple of years which is one of his numerous hobbies. Some of the sectors which really fascinate him include network security, blockchain, and data science. Apart from this he loves reading and painting and is quite interested in PC gaming and binge-watching online shows.
-He is working on [ccsearch](https://github.com/creativecommons/cccatalog-frontend) as a part of GSoC20.
+Ayan Choudhary is an Electrical Engineering undergraduate student from India
+and interned Creative Commons during the summer of 2020. He has been involved
+with coding quite heavily for the past couple of years which is one of his
+numerous hobbies. Some of the sectors which really fascinate him include
+network security, blockchain, and data science. Apart from this he loves
+reading and painting and is quite interested in PC gaming and binge-watching
+online shows.
+
+He worked on [ccsearch](https://github.com/cc-archive/cccatalog-frontend) as a
+part of [GSoC 2020](/programs/history/).
+
 He is `@ayan` on slack.
