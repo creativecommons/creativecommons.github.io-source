@@ -1,8 +1,8 @@
 title: Building the CC Global Components Library
 ---
 categories:
-
 outreachy
+outreachy-2021
 community
 design
 ---
@@ -14,7 +14,7 @@ body:
 
 ### Introduction
 During the course of my Outreachy internship with the Creative Commons, I got to work on some cool projects, one of which is the CC Global Components
-library supervised by my mentor [Brylie Christopher Oxley](https://github.com/brylie).
+library supervised by my mentor [Brylie Christopher Oxley](/blog/authors/brylie/).
 
 Having a unified design theme/look or experience accross the different CC websites has always been an important factor while developing these 
 websites.
