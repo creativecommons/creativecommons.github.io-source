@@ -1144,7 +1144,7 @@
                 "WordPress"
             ],
             "url": "https://github.com/creativecommons/wp-theme-cc-commoners",
-            "website": null
+            "website": ""
         },
         {
             "created": "2019-04-15T13:36:51",
@@ -1160,7 +1160,7 @@
             "name": "wp-theme-cc-sotc",
             "slack": "",
             "url": "https://github.com/creativecommons/wp-theme-cc-sotc",
-            "website": null
+            "website": ""
         },
         {
             "created": "2019-03-22T15:46:16",
@@ -1205,7 +1205,7 @@
                 "WordPress"
             ],
             "url": "https://github.com/creativecommons/wp-theme-creativecommons.org",
-            "website": null
+            "website": ""
         },
         {
             "created": "2020-09-08T17:50:40",
@@ -1226,7 +1226,7 @@
                 "WordPress"
             ],
             "url": "https://github.com/creativecommons/wp-theme-openglam",
-            "website": null
+            "website": ""
         },
         {
             "created": "2019-10-16T17:42:01",
@@ -1247,7 +1247,7 @@
                 "WordPress"
             ],
             "url": "https://github.com/creativecommons/wp-theme-summit",
-            "website": null
+            "website": ""
         }
     ]
 }
