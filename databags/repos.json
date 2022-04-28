@@ -8,8 +8,8 @@
             "id": 175334998,
             "language": null,
             "license": {
-                "name": "MIT License",
-                "url": "https://github.com/creativecommons/.github/blob/main/LICENSE"
+                "name": "Creative Commons Zero v1.0 Universal",
+                "url": "https://github.com/creativecommons/.github/blob/main/COPYING"
             },
             "name": ".github",
             "slack": "",
@@ -798,12 +798,12 @@
             "language": "HTML",
             "license": {
                 "name": "MIT License",
-                "url": "https://github.com/creativecommons/reversionary-rights/blob/master/LICENSE"
+                "url": "https://github.com/creativecommons/reversionary-rights/blob/main/LICENSE"
             },
             "name": "reversionary-rights",
             "slack": "",
             "url": "https://github.com/creativecommons/reversionary-rights",
-            "website": null
+            "website": "https://rights-back-beta.creativecommons.org/"
         },
         {
             "created": "2015-07-23T21:30:47",
