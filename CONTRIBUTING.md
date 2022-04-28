@@ -1,26 +1,34 @@
 # Contributing to CC Open Source
 
-Thank you for your interest in contributing to CC Open Source! This document is a set of guidelines to help you contribute to this project.
+Thank you for your interest in contributing to CC Open Source! This document is
+a set of guidelines to help you contribute to this project.
+
 
 ## Code of Conduct
 
-By participating in this project, you are expected to uphold our [Code of Conduct](https://creativecommons.github.io/community/code-of-conduct/).
+By participating in this project, you are expected to uphold our [Code of
+Conduct][code_of_conduct].
+
+[code_of_conduct]: https://opensource.creativecommons.org/community/code-of-conduct/
+
 
 ## Project Documentation
 
-The `README` contains details about how to install and build this project and a high-level overview of the code.
+The `README` in the root of the repository should contain or link to project
+documentation. If you cannot find the documentation you're looking for, please
+file a GitHub issue with details of what you'd like to see documented.
+
 
 ## How to Contribute
 
-Please follow the processes in our general [Contributing Code](https://creativecommons.github.io/contributing-code/) guidelines on the Creative Common Open Source website.
+Please follow the processes in our general [Contributing Code][contributing]
+guidelines on the Creative Common Open Source website.
 
-You do not have to follow the steps under "Check for contribution readiness", this project is accepting contributions.
+[contributing]: https://opensource.creativecommons.org/contributing-code/
 
-## Style Guide
-
-- Make sure that there are newlines at the end of every file.
-- We use 2 spaces as the standard indentation in our HTML files.
 
 ## Questions or Thoughts?
 
-Talk to us on [our developer mailing list or Slack community](https://creativecommons.github.io/community/).
+Talk to us on [one of our community forums][community].
+
+[community]: https://opensource.creativecommons.org/community/
