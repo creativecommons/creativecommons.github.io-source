@@ -186,7 +186,7 @@
             "language": "Hack",
             "license": {
                 "name": "GNU General Public License v2.0",
-                "url": "https://github.com/creativecommons/cc-wp-theme/blob/master/LICENSE"
+                "url": "https://github.com/creativecommons/cc-wp-theme/blob/main/LICENSE"
             },
             "name": "cc-wp-theme",
             "slack": "",
@@ -202,7 +202,7 @@
             "language": "Python",
             "license": {
                 "name": "MIT License",
-                "url": "https://github.com/creativecommons/cc.api/blob/master/LICENSE"
+                "url": "https://github.com/creativecommons/cc.api/blob/main/LICENSE"
             },
             "name": "cc.api",
             "slack": "",
@@ -219,7 +219,7 @@
             "language": "HTML",
             "license": {
                 "name": "MIT License",
-                "url": "https://github.com/creativecommons/cc.engine/blob/master/LICENSE"
+                "url": "https://github.com/creativecommons/cc.engine/blob/main/LICENSE"
             },
             "name": "cc.engine",
             "slack": "",
@@ -238,7 +238,7 @@
             "language": "Python",
             "license": {
                 "name": "MIT License",
-                "url": "https://github.com/creativecommons/cc.i18n/blob/master/LICENSE"
+                "url": "https://github.com/creativecommons/cc.i18n/blob/main/LICENSE"
             },
             "name": "cc.i18n",
             "slack": "",
@@ -254,7 +254,7 @@
             "language": "Python",
             "license": {
                 "name": "MIT License",
-                "url": "https://github.com/creativecommons/cc.license/blob/master/LICENSE"
+                "url": "https://github.com/creativecommons/cc.license/blob/main/LICENSE"
             },
             "name": "cc.license",
             "slack": "",
@@ -270,7 +270,7 @@
             "language": "Python",
             "license": {
                 "name": "MIT License",
-                "url": "https://github.com/creativecommons/cc.licenserdf/blob/master/LICENSE"
+                "url": "https://github.com/creativecommons/cc.licenserdf/blob/main/LICENSE"
             },
             "name": "cc.licenserdf",
             "slack": "",
@@ -286,7 +286,7 @@
             "language": "HTML",
             "license": {
                 "name": "Other",
-                "url": "https://github.com/creativecommons/CCID-cas/blob/master/LICENSE.md"
+                "url": "https://github.com/creativecommons/CCID-cas/blob/main/LICENSE.md"
             },
             "name": "CCID-cas",
             "slack": "",
@@ -302,7 +302,7 @@
             "language": "PHP",
             "license": {
                 "name": "GNU General Public License v2.0",
-                "url": "https://github.com/creativecommons/CCID-MediaWiki/blob/master/LICENSE"
+                "url": "https://github.com/creativecommons/CCID-MediaWiki/blob/main/LICENSE"
             },
             "name": "CCID-MediaWiki",
             "slack": "",
@@ -351,30 +351,14 @@
             "engineering_project": true,
             "featured": false,
             "id": 129003332,
-            "language": "CSS",
+            "language": "SCSS",
             "license": {
                 "name": "GNU General Public License v2.0",
-                "url": "https://github.com/creativecommons/certificates-landing-page-theme/blob/master/LICENSE"
+                "url": "https://github.com/creativecommons/certificates-landing-page-theme/blob/main/LICENSE"
             },
             "name": "certificates-landing-page-theme",
             "slack": "",
             "url": "https://github.com/creativecommons/certificates-landing-page-theme",
-            "website": "http://certificates.creativecommons.org/"
-        },
-        {
-            "created": "2016-06-14T16:37:49",
-            "description": "Themes and plugins for the Certificates WP site.",
-            "engineering_project": true,
-            "featured": false,
-            "id": 61139108,
-            "language": "CSS",
-            "license": {
-                "name": "Other",
-                "url": "https://github.com/creativecommons/certificates-themes-plugins/blob/master/LICENSE.txt"
-            },
-            "name": "certificates-themes-plugins",
-            "slack": "",
-            "url": "https://github.com/creativecommons/certificates-themes-plugins",
             "website": "http://certificates.creativecommons.org/"
         },
         {
@@ -412,7 +396,7 @@
             "language": "PHP",
             "license": {
                 "name": "GNU General Public License v2.0",
-                "url": "https://github.com/creativecommons/commoners/blob/master/LICENSE"
+                "url": "https://github.com/creativecommons/commoners/blob/main/LICENSE"
             },
             "name": "commoners",
             "slack": "",
@@ -493,7 +477,7 @@
             "language": "HTML",
             "license": {
                 "name": "Other",
-                "url": "https://github.com/creativecommons/creativecommons.org/blob/master/LICENSE"
+                "url": "https://github.com/creativecommons/creativecommons.org/blob/main/LICENSE"
             },
             "name": "creativecommons.org",
             "slack": "",
@@ -573,7 +557,7 @@
             "language": "Python",
             "license": {
                 "name": "MIT License",
-                "url": "https://github.com/creativecommons/licensebuttons/blob/master/LICENSE"
+                "url": "https://github.com/creativecommons/licensebuttons/blob/main/LICENSE"
             },
             "name": "licensebuttons",
             "slack": "",
@@ -588,8 +572,8 @@
             "id": 26779255,
             "language": "HTML",
             "license": {
-                "name": "Other",
-                "url": "https://github.com/creativecommons/magical-pony/blob/master/COPYING"
+                "name": "Creative Commons Zero v1.0 Universal",
+                "url": "https://github.com/creativecommons/magical-pony/blob/main/COPYING"
             },
             "name": "magical-pony",
             "slack": "",
@@ -621,7 +605,7 @@
             "language": "PHP",
             "license": {
                 "name": "GNU General Public License v2.0",
-                "url": "https://github.com/creativecommons/new-creativecommons.org/blob/master/LICENSE"
+                "url": "https://github.com/creativecommons/new-creativecommons.org/blob/main/LICENSE"
             },
             "name": "new-creativecommons.org",
             "slack": "",
@@ -637,7 +621,7 @@
             "language": "PHP",
             "license": {
                 "name": "GNU General Public License v2.0",
-                "url": "https://github.com/creativecommons/new-www-plugin/blob/master/LICENSE"
+                "url": "https://github.com/creativecommons/new-www-plugin/blob/main/LICENSE"
             },
             "name": "new-www-plugin",
             "slack": "",
@@ -653,7 +637,7 @@
             "language": "SCSS",
             "license": {
                 "name": "GNU General Public License v2.0",
-                "url": "https://github.com/creativecommons/new-www-theme/blob/master/LICENSE"
+                "url": "https://github.com/creativecommons/new-www-theme/blob/main/LICENSE"
             },
             "name": "new-www-theme",
             "slack": "",
@@ -700,7 +684,7 @@
             "language": "PHP",
             "license": {
                 "name": "MIT License",
-                "url": "https://github.com/creativecommons/open4us.org/blob/master/LICENSE"
+                "url": "https://github.com/creativecommons/open4us.org/blob/main/LICENSE"
             },
             "name": "open4us.org",
             "slack": "",
@@ -716,7 +700,7 @@
             "language": "PHP",
             "license": {
                 "name": "MIT License",
-                "url": "https://github.com/creativecommons/openpolicynetwork.org/blob/master/LICENSE"
+                "url": "https://github.com/creativecommons/openpolicynetwork.org/blob/main/LICENSE"
             },
             "name": "openpolicynetwork.org",
             "slack": "",
@@ -779,7 +763,7 @@
             "language": "Python",
             "license": {
                 "name": "MIT License",
-                "url": "https://github.com/creativecommons/rdfadict/blob/master/LICENSE"
+                "url": "https://github.com/creativecommons/rdfadict/blob/main/LICENSE"
             },
             "name": "rdfadict",
             "slack": "",
@@ -1118,7 +1102,7 @@
             "language": "PHP",
             "license": {
                 "name": "GNU General Public License v2.0",
-                "url": "https://github.com/creativecommons/wp-theme-cc-chapter/blob/master/LICENSE"
+                "url": "https://github.com/creativecommons/wp-theme-cc-chapter/blob/main/LICENSE"
             },
             "name": "wp-theme-cc-chapter",
             "slack": "",
@@ -1155,7 +1139,7 @@
             "language": "CSS",
             "license": {
                 "name": "GNU General Public License v2.0",
-                "url": "https://github.com/creativecommons/wp-theme-cc-sotc/blob/master/LICENSE"
+                "url": "https://github.com/creativecommons/wp-theme-cc-sotc/blob/main/LICENSE"
             },
             "name": "wp-theme-cc-sotc",
             "slack": "",
@@ -1172,7 +1156,7 @@
             "language": "PHP",
             "license": {
                 "name": "GNU General Public License v2.0",
-                "url": "https://github.com/creativecommons/wp-theme-cctoolkit/blob/master/LICENSE"
+                "url": "https://github.com/creativecommons/wp-theme-cctoolkit/blob/main/LICENSE"
             },
             "name": "wp-theme-cctoolkit",
             "slack": "",
@@ -1217,7 +1201,7 @@
             "language": "PHP",
             "license": {
                 "name": "MIT License",
-                "url": "https://github.com/creativecommons/wp-theme-openglam/blob/master/LICENSE"
+                "url": "https://github.com/creativecommons/wp-theme-openglam/blob/main/LICENSE"
             },
             "name": "wp-theme-openglam",
             "slack": "cc-dev-wordpress",
@@ -1238,7 +1222,7 @@
             "language": "PHP",
             "license": {
                 "name": "MIT License",
-                "url": "https://github.com/creativecommons/wp-theme-summit/blob/master/LICENSE"
+                "url": "https://github.com/creativecommons/wp-theme-summit/blob/main/LICENSE"
             },
             "name": "wp-theme-summit",
             "slack": "cc-dev-wordpress",
