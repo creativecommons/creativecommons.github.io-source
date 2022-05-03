@@ -8,7 +8,7 @@ Source for `creativecommons.github.io`
 > **:warning: DO *NOT* MAKE CHANGES TO THE
 > [creativecommons/creativecommons.github.io][ccghiorepo] REPO DIRECTLY**.
 
-[ccghiorepo]:https://github.com/creativecommons/creativecommons.github.io
+[ccghiorepo]: https://github.com/creativecommons/creativecommons.github.io
 
 This site is built using [Lektor][lektor]. All changes to
 [opensource.creativecommons.org][ccopensource]
@@ -29,8 +29,8 @@ via lektor (see [Deployment](#deployment), below).
 > behavior to [conduct@creativecommons.org](mailto:conduct@creativecommons.org)
 > per our [reporting guidelines][reporting_guide].
 
-[code_of_conduct]: https://creativecommons.github.io/community/code-of-conduct/ "CC Open Source Code of Conduct — Creative Commons on GitHub"
-[reporting_guide]: https://creativecommons.github.io/community/code-of-conduct/enforcement/ "Codes of Conduct Enforcement — Creative Commons on GitHub"
+[code_of_conduct]: https://opensource.creativecommons.org/community/code-of-conduct/ "CC Open Source Code of Conduct — Creative Commons on GitHub"
+[reporting_guide]: https://opensource.creativecommons.org/community/code-of-conduct/enforcement/ "Codes of Conduct Enforcement — Creative Commons on GitHub"
 
 
 ## Contributing
@@ -106,7 +106,7 @@ else fails, try removing the virtual environment and reinstalling:
     pipenv install --dev
     ```
 
-[pipenverror]:https://github.com/pypa/pipenv/issues/1918
+[pipenverror]: https://github.com/pypa/pipenv/issues/1918
 
 
 ## Development
@@ -118,7 +118,7 @@ else fails, try removing the virtual environment and reinstalling:
 - You will be able to see the website at [`127.0.0.1:5000/`][local5000].
   - The Lektor server will rebuild the site every time you change any content.
 
-[local5000]:http://127.0.0.1:5000/
+[local5000]: http://127.0.0.1:5000/
 
 
 ### Troubleshooting Possible Errors
@@ -192,10 +192,10 @@ Here's how the code is structured in the top level of the repository:
   JavaScript files for the project resides. The JavaScript and Sass files are
   compiled and saved in the assets folder during lektor build process.
 
-[lektorcontent]:https://www.getlektor.com/docs/content/
-[lektormodels]:(https://www.getlektor.com/docs/models/
-[jinja2]:http://jinja.pocoo.org/
-[lektortemplate]:https://www.getlektor.com/docs/templates/
+[lektorcontent]: https://www.getlektor.com/docs/content/
+[lektormodels]: https://www.getlektor.com/docs/models/
+[jinja2]: http://jinja.pocoo.org/
+[lektortemplate]: https://www.getlektor.com/docs/templates/
 
 
 ### Lektor Plugins
