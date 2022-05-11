@@ -11,12 +11,13 @@ body:
 This document provides incident reporting guidelines and an enforcement manual
 for the following codes of conduct used by Creative Commons:
 
+- [Terms of Use - Creative Commons][terms-of-use]
 - [CC Open Source Code of Conduct][foss-conduct]
 - [Slack/Code of Conduct][slack-conduct]
 
+[terms-of-use]: https://creativecommons.org/terms/
 [foss-conduct]: /community/code-of-conduct/
 [slack-conduct]: https://wiki.creativecommons.org/wiki/Slack/Code_of_Conduct
-
 
 ## Reporting Guidelines
 
@@ -31,7 +32,7 @@ instruct us otherwise.
 [conduct-email]: mailto:conduct@creativecommons.org
 
 **If you believe anyone is in physical danger, please notify appropriate
-emergency personnel first.** If you are unsure what proper authorities  are
+emergency personnel first.** If you are unsure what proper authorities are
 appropriate, please include this in your report and we will attempt to notify
 them.
 
@@ -53,7 +54,7 @@ In your report please include:
   a mailing list archive or a Slack message) please include a link.
 - Any extra context for the incident.
 - If you believe this incident is ongoing.
-- Any other information the committee  should have.
+- Any other information the committee should have.
 
 ### Conflicts of Interest
 
@@ -81,11 +82,9 @@ of "project maintainers" as described in the Contributor Covenant.
 
 ### Current Code of Conduct Committee
 
-- [Eric Steuer][cc-eric]
 - [Mari Moreshead][cc-mari]
 - [Timid Robot Zehta][cc-timidrobot]
 
-[cc-eric]: https://creativecommons.org/author/ericcreativecommons-org/
 [cc-mari]: https://creativecommons.org/author/maricreativecommons-org/
 [cc-timidrobot]: https://creativecommons.org/author/timidcreativecommons-org/
 
@@ -131,35 +130,64 @@ Commons.
 In situations where an individual committee member acts unilaterally, they must
 report their actions to the committee for review within 1 business day.
 
-### Resolutions
+### Enforcement Guidelines
+
+The committee will follow the Community Impact Guidelines, below, in
+determining the consequences for any action they deem in violation of this Code
+of Conduct.
 
 The committee should strive to agree on a resolution by consensus (i.e. no one
 on the committee chooses to veto the course of action). As soon as the
-committee determines it is unable to reach consensus or  it has been deadlocked
+committee determines it is unable to reach consensus or it has been deadlocked
 for over 2 business days after acknowledging receipt of the issue, the
 committee will turn the matter over to the CC legal team for resolution.
-
-Possible responses may include:
-
-- Taking no further action (if the committee determines no violation
-  occurred).
-- A private reprimand from the committee to the individual(s) involved. In this
-  case, a committee member will deliver that reprimand to the individual(s)
-  directly through appropriate means, cc'ing the committee.
-- A public reprimand. In this case, a committee member will attempt to deliver
-  that reprimand in the same venue that the violation occurred (i.e. in Slack
-  for an Slack violation; email for an email violation, etc.). The committee may
-  choose to publish this message elsewhere for posterity.
-- A temporary or permanent ban from some or all Creative Commons spaces
-  (mailing lists, Slack, etc.). The committee will maintain records of all such
-  bans so that they may be reviewed in the future, extended to new Creative
-  Commons fora, or otherwise maintained.
 
 Once a resolution is agreed upon, but before it is enacted, the committee will
 contact the original reporter and any other affected parties and explain the
 proposed resolution. The committee will ask if this resolution is acceptable,
 and must note feedback for the record. However, the committee is not required
 to act on this feedback.
+
+#### 1. Correction
+
+**Community Impact**: Use of inappropriate language or other behavior deemed
+unprofessional or unwelcome in the community.
+
+**Consequence**: A private, written warning from community leaders, providing
+clarity around the nature of the violation and an explanation of why the
+behavior was inappropriate. A public apology may be requested.
+
+#### 2. Warning
+
+**Community Impact**: A violation through a single incident or series of
+actions.
+
+**Consequence**: A warning with consequences for continued behavior. No
+interaction with the people involved, including unsolicited interaction with
+those enforcing the Code of Conduct, for a specified period of time. This
+includes avoiding interactions in community spaces as well as external channels
+like social media. Violating these terms may lead to a temporary or permanent
+ban.
+
+#### 3. Temporary Ban
+
+**Community Impact**: A serious violation of community standards, including
+sustained inappropriate behavior.
+
+**Consequence**: A temporary ban from any sort of interaction or public
+communication with the community for a specified period of time. No public or
+private interaction with the people involved, including unsolicited interaction
+with those enforcing the Code of Conduct, is allowed during this period.
+Violating these terms may lead to a permanent ban.
+
+#### 4. Permanent Ban
+
+**Community Impact**: Demonstrating a pattern of violation of community
+standards, including sustained inappropriate behavior, harassment of an
+individual, or aggression toward or disparagement of classes of individuals.
+
+**Consequence**: A permanent ban from any sort of public interaction within the
+community.
 
 ### Reconsideration
 
@@ -176,19 +204,25 @@ comply with the current policy.
 
 ### Last Revised
 
-- 2019-03-06
-- For a detailed list of changes, see [History for
-  content/community/code-of-conduct/enforcement/contents.lr -
-  creativecommons/creativecommons.github.io-source][commits].
+- 2021-05-11
+- For a detailed list of changes, see [History for content/community/code-of-conduct/enforcement/contents.lr - creativecommons/creativecommons.github.io-source][commits].
 
-[commits]: https://github.com/creativecommons/vocabulary/commits/main/content/community/code-of-conduct/enforcement/contents.lr
+[commits]: https://github.com/creativecommons/creativecommons.github.io-source/commits/main/content/community/code-of-conduct/enforcement/contents.lr
 
 ## Attribution
 
 This document is adapted from the Django project's Code of Conduct [enforcement
 manual][django-enforce] and [reporting guidelines][django-report], licensed
-under [CC BY 3.0][cc-by-30].
+under [CC BY 3.0][cc-by-30] and  the [Contributor Covenant][homepage], version
+2.1, available at
+[https://www.contributor-covenant.org/version/2/1/code_of_conduct.html][v2.1].
+
+Community Impact Guidelines were inspired by
+[Mozilla's code of conduct enforcement ladder][Mozilla CoC].
 
 [django-enforce]: https://www.djangoproject.com/conduct/enforcement-manual/
 [django-report]: https://www.djangoproject.com/conduct/reporting/
 [cc-by-30]: https://creativecommons.org/licenses/by/3.0/
+[homepage]: https://www.contributor-covenant.org
+[v2.1]: https://www.contributor-covenant.org/version/2/1/code_of_conduct.html
+[Mozilla CoC]: https://github.com/mozilla/diversity
