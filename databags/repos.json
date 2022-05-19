@@ -885,6 +885,22 @@
             "website": ""
         },
         {
+            "created": "2022-05-13T20:31:39",
+            "description": "Static copies of previous State of the Commons sites",
+            "engineering_project": true,
+            "featured": false,
+            "id": 492032952,
+            "language": "Shell",
+            "license": {
+                "name": "Creative Commons Attribution 4.0 International",
+                "url": "https://github.com/creativecommons/stateof/blob/main/LICENSE"
+            },
+            "name": "stateof",
+            "slack": "",
+            "url": "https://github.com/creativecommons/stateof",
+            "website": ""
+        },
+        {
             "created": "2015-03-03T19:48:55",
             "description": "Profiles of exemplary workforce training programs supported by the U.S. Department of Labor TAACCCT program.",
             "engineering_project": true,
