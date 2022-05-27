@@ -476,7 +476,7 @@
             "id": 14003491,
             "language": "HTML",
             "license": {
-                "name": "Other",
+                "name": "MIT License",
                 "url": "https://github.com/creativecommons/creativecommons.org/blob/main/LICENSE"
             },
             "name": "creativecommons.org",
@@ -947,6 +947,22 @@
             "slack": "",
             "url": "https://github.com/creativecommons/termination-of-transfer",
             "website": "https://rightsback.org/questionnaire/"
+        },
+        {
+            "created": "2014-04-09T23:22:22",
+            "description": "Creative Commons created the legal and technical infrastructure that allows effective sharing of knowledge, art and data by individuals, organizations and governments. More importantly, millions of creators took advantage of that infrastructure to share work that enriches the global commons for all humanity. The Power of Open collects the stories of those creators.",
+            "engineering_project": true,
+            "featured": false,
+            "id": 18616877,
+            "language": null,
+            "license": {
+                "name": "Other",
+                "url": "https://github.com/creativecommons/the-power-of-open/blob/main/LICENSE"
+            },
+            "name": "the-power-of-open",
+            "slack": "",
+            "url": "https://github.com/creativecommons/the-power-of-open",
+            "website": "https://thepowerofopen.org/"
         },
         {
             "created": "2019-11-25T17:29:13",
