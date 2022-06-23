@@ -681,22 +681,6 @@
             "website": "https://open4us.org/"
         },
         {
-            "created": "2014-02-24T19:46:28",
-            "description": "OPN Website",
-            "engineering_project": true,
-            "featured": false,
-            "id": 17148371,
-            "language": "PHP",
-            "license": {
-                "name": "MIT License",
-                "url": "https://github.com/creativecommons/openpolicynetwork.org/blob/main/LICENSE"
-            },
-            "name": "openpolicynetwork.org",
-            "slack": "",
-            "url": "https://github.com/creativecommons/openpolicynetwork.org",
-            "website": "https://openpolicynetwork.org/"
-        },
-        {
             "created": "2020-08-21T15:34:37",
             "description": "Build creativecommons.org primary site includes (scripts, styles, navigation header, and navigation footer) based on WordPress REST API",
             "engineering_project": true,
@@ -891,7 +875,7 @@
         },
         {
             "created": "2015-03-03T19:48:55",
-            "description": "Profiles of exemplary workforce training programs supported by the U.S. Department of Labor TAACCCT program.",
+            "description": "Profiles of exemplary workforce training programs supported by the U.S. Department of Labor Trade Adjustment Assistance Community College & Career Training program.",
             "engineering_project": true,
             "featured": false,
             "id": 31617803,
@@ -903,7 +887,7 @@
             "name": "taaccct",
             "slack": "",
             "url": "https://github.com/creativecommons/taaccct",
-            "website": "http://profiles.open4us.org/taaccct/"
+            "website": "https://taaccct.open4us.org/"
         },
         {
             "created": "2013-09-06T23:57:48",
