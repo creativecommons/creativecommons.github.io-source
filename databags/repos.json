@@ -665,19 +665,19 @@
             "website": "https://cc-og-image.vercel.app"
         },
         {
-            "created": "2013-12-05T07:09:43",
-            "description": "open4us.org website",
+            "created": "2022-06-27T15:06:21",
+            "description": "Open Professionals Education Network (OPEN)",
             "engineering_project": true,
             "featured": false,
-            "id": 14946646,
+            "id": 507956064,
             "language": "PHP",
             "license": {
-                "name": "MIT License",
-                "url": "https://github.com/creativecommons/open4us.org/blob/main/LICENSE"
+                "name": "Other",
+                "url": "https://github.com/creativecommons/open4us/blob/master/license.txt"
             },
-            "name": "open4us.org",
+            "name": "open4us",
             "slack": "",
-            "url": "https://github.com/creativecommons/open4us.org",
+            "url": "https://github.com/creativecommons/open4us",
             "website": "https://open4us.org/"
         },
         {
