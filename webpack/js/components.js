@@ -240,7 +240,7 @@ export const App = {
     }
   },
   mounted() {
-    const BASE_URL = 'https://raw.githubusercontent.com/creativecommons/ccos-scripts/main/normalize_repos'
+    const BASE_URL = 'https://raw.githubusercontent.com/creativecommons/ccos-scripts/main/ccos/norm'
     const FILE_URL = name => `${BASE_URL}/${name}.yml`
 
     this.octokit = new Octokit()

@@ -241,6 +241,17 @@ Here's how the code is structured in the top level of the repository:
     continue to work with that project moving to utilize Netlify.
 
 
+## External Data
+
+The following load external data:
+- [`webpack/js/components.js`](webpack/js/components.js)
+  - [`creativecommons/ccos-scripts/main/ccos/norm/labels.yml`][labels-yml]
+  - [`creativecommons/ccos-scripts/main/ccos/norm/skills.yml`][skills-yml]
+
+[labels-yml]: https://raw.githubusercontent.com/creativecommons/ccos-scripts/main/ccos/norm/labels.yml
+[skills-yml]: https://raw.githubusercontent.com/creativecommons/ccos-scripts/main/ccos/norm/skills.yml
+
+
 ## License
 
 
