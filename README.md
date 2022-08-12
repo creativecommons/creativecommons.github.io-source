@@ -247,9 +247,13 @@ The following load external data:
 - [`webpack/js/components.js`](webpack/js/components.js)
   - [`creativecommons/ccos-scripts/main/ccos/norm/labels.yml`][labels-yml]
   - [`creativecommons/ccos-scripts/main/ccos/norm/skills.yml`][skills-yml]
+  - GitHub Issues for the [creativecommons][gh-creativecommons] organization
+    using [octokit - npm][octokit]
 
 [labels-yml]: https://raw.githubusercontent.com/creativecommons/ccos-scripts/main/ccos/norm/labels.yml
 [skills-yml]: https://raw.githubusercontent.com/creativecommons/ccos-scripts/main/ccos/norm/skills.yml
+[gh-creativecommons]: https://github.com/creativecommons/
+[octokit]: https://www.npmjs.com/package/octokit
 
 
 ## License
