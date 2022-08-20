@@ -79,7 +79,7 @@
         },
         {
             "created": "2020-06-03T18:51:38",
-            "description": "License and public domain dedication management application for Creative Commons",
+            "description": "Legal tool (licenses, public domain dedication, etc.) management application for Creative Commons",
             "engineering_project": true,
             "english_name": "CC Legal Tools Application",
             "featured": true,
@@ -100,7 +100,7 @@
         },
         {
             "created": "2020-09-08T19:18:51",
-            "description": "License and public domain dedication data for Creative Commons ",
+            "description": "Legal tool (licenses, public domain dedication, etc.) data for Creative Commons",
             "engineering_project": true,
             "english_name": "CC Legal Tools Data",
             "featured": false,
