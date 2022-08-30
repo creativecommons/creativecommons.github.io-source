@@ -12,23 +12,26 @@ page serves as a general project lead guide.
 ---
 body:
 
+
 ## Considerinng Being a Project Lead?
 
-Leading a project or mentorship is a serious commitment but a very rewarding
-experience. If you're trying to decide whether to be a project lead, please
-read the following documents:
-- [Google Summer of Code mentor
-  guide](https://google.github.io/gsocguides/mentor/)
-- Outreachy [mentor role description](https://www.outreachy.org/mentor/#mentor)
-  and [mentor expectations][outmentorexpect]
-- [Outreachy Mentor FAQ](https://www.outreachy.org/mentor/mentor-faq/)
+Leading a project is a serious commitment but a very rewarding experience. If
+you're trying to decide whether to be a project lead, please read the following
+documents:
+- Google Summer of Code (GSoC) [mentor guide][gsocmentor]
+- Outreachy [mentor role description][outmentorrole], [mentor
+  expectations][outmentorexpect], and [mentor FAQ][outmentorfaq]
 
 If you'd like to be a project lead but don't have a specific project in mind,
 email the [CC Developers mailing list](/community/) and let us know what your
 skillset and availability is. We'll see if we have a project you can help out
 with. If you'd like to propose a project, read on.
 
+[gsocmentor]: https://google.github.io/gsocguides/mentor/
+[outmentorrole]: https://www.outreachy.org/mentor/#mentor
 [outmentorexpect]: https://www.outreachy.org/docs/internship/#mentor-expectations
+[outmentorfaq]: https://www.outreachy.org/mentor/mentor-faq/
+
 
 ## Proposing a Project
 
@@ -52,11 +55,12 @@ _**[Project Title]**_
 - **Technical Skills**: _What technical skills will this project need?_
 - **Difficulty**: _How technically difficult is this project? Options: High,
   Medium, Low_
-- **Size**: _Large (~350 hours) or Medium (~175 hours)._
+- **Size**: _Options: Large (~350 hours) or Medium (~175 hours)._
 
 Please note that project ideas should be related to an existing CC open source
 project or website and should be clearly scoped out. They should be doable in
 three months by a contributor with very little prior experience.
+
 
 ## Application Period
 
@@ -78,6 +82,7 @@ Some tips:
   because there are far too many people, so help them help themselves.
 - Prepare general documentation/frequently asked questions ahead of time.
 
+
 ### Draft Application
 
 You should encourage applicants to share drafts of the application with you
@@ -87,18 +92,21 @@ understanding of the project, the project plan, timeline, and deliverables
 match what you had in mind and is feasible (keeping in mind that they may be
 new to all this and may not get things done as quickly).
 
+
 ## Work Program Period
+
 
 ### Preparing
 
 Before the work program period begins:
-- Talk to your backup lead/secondary mentor ahead of your time to create a plan
-  for how to collaborate:
+- Talk to your backup lead ahead of your time to create a plan for how to
+  collaborate:
   - Who will be repsonsible for what?
   - How will checkins and notes work?
-- If your project affects or involves anyone else at CC that's not
-  leading/mentoring the project, talk to them about how they would like to be
-  involved and come up with a plan to collaborate.
+- If your project affects or involves anyone else at CC that's not leading the
+  project, talk to them about how they would like to be involved and come up
+  with a plan to collaborate.
+
 
 ### Post-Announcement
 
@@ -112,9 +120,9 @@ Once the selected contributors have been announced:
   fix these items before any work is actually started.
 - have an introductory call with the contributor and get to know each other. ask
   them questions about themselves and talk about yourself too.
-- set up regular meetings: a weekly video call for the mentors to check-in with
-  the contributor, and a monthly call with the cc program coordinator to check
-  in with the contributor.
+- set up regular meetings: a weekly video call for the project lead to check-in
+  with the contributor, and a monthly call with the cc program coordinator to
+check in with the contributor.
 - create a document to keep any project information and notes. this document
   should be shared with the program coordinators.
    - the “final” implementation plan and weekly milestones (“final” because it
@@ -140,11 +148,12 @@ Once the selected contributors have been announced:
 - ensure that the contributor has permissions to push to the appropriate GitHub
   repository.
 
+
 ### During the Work Program
 
 During the work program:
 - Attend your weekly check-in.
-   - Take good notes so that your backup mentor can pick up where you left off
+   - Take good notes so that your backup lead can pick up where you left off
      easily if you’re unavailable.
    - Make sure the contributor is on-track with their weekly milestones and if
      not, work with them to figure out why and come up with a plan.
@@ -159,7 +168,7 @@ During the work program:
   they are often not experienced with the work they are doing and may not know
   to ask for help or may be stuck on something that they cannot articulate very
   well.
-- Ask for feedback on your mentorship every few weeks.
+- Ask for feedback as the project lead every few weeks.
 - Find an opportunity to invite your contributor to present their work at CC’s
   all staff meeting. It is up to you when you’d like to do this.
 - Make sure you're familiar with the program timeline and submit your required
@@ -178,4 +187,4 @@ During the work program:
    - your contributor is not communicating enough or misses a check-in.
    - you have concerns or even just a bad feeling about something.
    - you have feedback or questions about any part of the program process.
-   - you'd like feedback about how your mentoring is going
+   - you'd like feedback about how your role as project lead is going
