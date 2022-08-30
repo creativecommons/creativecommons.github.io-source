@@ -13,9 +13,11 @@
           <button type="button" class="button tag btn-dark filter-btn" data-filter="all">
             All Projects
           </button>
+          <!--
           <button type="button" class="button tag filter-btn" data-filter="difficulty-easy">
             Difficulty: Easy
           </button>
+          -->
           <button type="button" class="button tag filter-btn" data-filter="difficulty-medium">
             Difficulty: Medium
           </button>
@@ -24,6 +26,9 @@
           </button>
           <button type="button" class="button tag filter-btn" data-filter="skill-css">
             Skill: CSS
+          </button>
+          <button type="button" class="button tag filter-btn" data-filter="skill-django">
+            Skill: Django
           </button>
           <button type="button" class="button tag filter-btn" data-filter="skill-javascript">
             Skill: JavaScript
@@ -37,11 +42,11 @@
           <button type="button" class="button tag filter-btn" data-filter="skill-wordpress">
             Skill: WordPress
           </button>
-<!--
+          <!--
           <button type="button" class="button tag filter-btn" data-filter="skill-writing">
             Skill: Writing
-            </button>
--->
+          </button>
+          -->
         </div>
         <div class="project-ideas columns is-multiline">
           {% for idea in ideas %}

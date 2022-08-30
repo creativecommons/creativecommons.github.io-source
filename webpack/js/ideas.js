@@ -18,6 +18,7 @@ $(document).ready(function(){
       'difficulty-medium',
       'difficulty-hard',
       'skill-css',
+      'skill-django',
       'skill-javascript',
       'skill-php',
       'skill-python',
