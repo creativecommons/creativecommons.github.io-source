@@ -1,0 +1,56 @@
+_model: project-idea
+---
+_hidden: yes
+---
+title: Add plain text format to CC Legal Tools
+---
+problem:
+Plain text formats for the 4.0 licenses and the CC0 public domain dedication
+were created using a manual process ([Plaintext versions of Creative Commons
+licenses and CC0 - Creative Commons][blogplaintext]).  Only the English
+versions of the legal tools were formatted as plain text.  Additionally, that
+manual creation process was not without errors and is not sustainable.
+
+[blogplaintext]: https://creativecommons.org/2011/04/15/plaintext-versions-of-creative-commons-licenses-and-cc0/
+---
+expected_outcome:
+Extend the CC Legal Tools App to generate deterministic plain text versions of
+the 4.0 licenses and the CC0 public domain dedication.
+---
+contributor_tasks:
+The contributor will need to extend the CC Legal Tools App to generate plain
+text versions. The generated plain text versions must be deterministic and
+match the formatting of the manual versions (except where improvements are
+desired). Application updates must include test coverage. Stretch goals include
+Markdown format generation and interfacing/collaborating with SPDX.
+---
+application_tips:
+- Engage with the CC Legal Tools repositories (issues, pull requests)
+- Be helpful and welcoming (e.g. answer other contributors’ questions on Slack)
+- [Applicant Guide](/programs/applicant-guide/)
+---
+resources:
+- [creativecommons/cc-legal-tools-app][cc-legal-tools-app]: License and public
+  domain dedication management application for Creative Commons
+- [creativecommons/cc-legal-tools-data][cc-legal-tools-data]: License and
+  public domain dedication data for Creative Commons
+- [Plaintext versions of Creative Commons licenses and CC0 - Creative
+  Commons][blogplaintext]
+
+[cc-legal-tools-app]: https://github.com/creativecommons/cc-legal-tools-app
+[cc-legal-tools-data]: https://github.com/creativecommons/cc-legal-tools-data
+[blogplaintext]: https://creativecommons.org/2011/04/15/plaintext-versions-of-creative-commons-licenses-and-cc0/
+---
+skills_recommended:
+- Djano
+- Git
+- Python
+---
+lead:
+- Timid Robot
+---
+difficulty: Medium
+---
+size: Large (~350 hours)
+---
+filter_value: difficulty-medium skill-django skill-git skill-python

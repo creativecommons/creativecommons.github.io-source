@@ -50,9 +50,9 @@ anything like that, please don't hesitate to ask!
 
 [Join the `#cc-dev-workprograms` channel on the CC Slack or the CC Developers
 mailing list](/community/) as early as possible to introduce yourself and get
-feedback on your ideas. All our mentors will be on Slack and respond to emails
-on the mailing list and it is better to post there rather than contacting them
-individually. Feel free to ask questions!
+feedback on your ideas. All our project leads will be on Slack and respond to
+emails on the mailing list and it is better to post there rather than
+contacting them individually. Feel free to ask questions!
 
 
 ### Pick a Project
@@ -116,8 +116,8 @@ contribution guidelines (not all of them will have them).
 
 If you're applying via Outreachy, remember to record your contribution via the
 Outreachy website! You can record contributions even if you have not yet
-received feedback on them or if they have not been merged – our mentors are
-busy so we can be slow to provide feedback.
+received feedback on them or if they have not been merged--our project leads
+are busy so we can be slow to provide feedback.
 
 
 ### Contributing Documentation
@@ -148,10 +148,10 @@ of work here to turn those into a feasible plan and timeline for a complete
 project that you can ship during the work program.
 
 **This is not something you should be working on in isolation.** We expect you
-to have a lot of questions for the mentors along the way as you try and
+to have a lot of questions for the project leads along the way as you try and
 understand the project, come up with ideas, evaluate feasibility, etc. We also
-expect you to come up with a first draft and get feedback from mentors before
-you submit the final application on the program's official site.
+expect you to come up with a first draft and get feedback from project leads
+before you submit the final application on the program's official site.
 
 We suggest reading some articles on writing good Google Summer of Code
 proposals (even if you're applying for Outreachy). Here are some examples:
@@ -165,8 +165,8 @@ proposals (even if you're applying for Outreachy). Here are some examples:
 ### Template
 
 You must use **[our work program project template][projecttemplate]** to create
-your application. Please make sure that your mentors have comment permissions
-before you share your document with them.
+your application. Please make sure that your project leads have comment
+permissions before you share your document with them.
 
 If you are applying for Outreachy, please link to the project proposal document
 created using this template from your final Outreachy application.
@@ -174,14 +174,14 @@ created using this template from your final Outreachy application.
 [projecttemplate]: https://docs.google.com/document/d/18LWuA_iTSGSeRFtpVQdfOoz1G30ZgJg-_K0lNSQBYd0/edit
 
 
-## Contacting Mentors
+## Contacting Project Leads
 
 All the CC project leads are on [Slack](/community/). **Please use public
 channels on Slack as the primary method of communication.** Public channels are
 better than direct messages because it allows any available project lead (or
 even another applicant) to answer your questions and interact with you. It also
 allows other applicants who have the same questions to benefit from the answers
-the mentor is giving you.
+the project lead is giving you.
 
 **Please ask project leads specific questions.** We don't know how to help you
 get started unless we know what you have questions about. People come from a

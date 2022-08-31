@@ -1,0 +1,63 @@
+_model: project-idea
+---
+_hidden: yes
+---
+title: Refactor CC meta search
+---
+problem:
+The legacy CC meta search site doesn’t match the current visuals of the rest of
+CC web entities, and it’s built on PHP which requires a more complex hosting
+setup that can’t reside somewhere that supports simple static output (like
+GitHub pages). Additionally the code is set up in a legacy fashion, is not
+semantic, may contain accessibility issues, and contains broken meta searches.
+---
+expected_outcome:
+Simplify and modernize the codebase and requirements of the legacy CC meta
+search, improve functionality, and update the visuals to match current CC
+standards and norms.
+---
+contributor_tasks:
+Rewrite the application, maintaining its original function,  as a static site
+on GitHub pages, using semantic, standards-compliant, and accessible HTML, CSS,
+and JavaScript. Update the visual aesthetic and overall appearance to better
+correspond with other current CC web entities.
+---
+application_tips:
+- Engage with the CC Legal Tools repositories (issues, pull requests)
+- Be helpful and welcoming (e.g. answer other contributors’ questions on Slack)
+- [Applicant Guide](/programs/applicant-guide/)
+---
+resources:
+- [creativecommons/search][repo-search]: Legacy Creative Commons Search, no
+  longer under development
+- [oldsearch.creativecommons.org][oldsearch]
+- [MDN Web Docs: Semantics][mdm-semantics]
+- [MDN Web Docs: HTML][mdm-html]
+- [MDN Web Docs: JavaScript][mdm-javascript]
+- [WAVE Report for “oldsearch.creativecommons.org”][wave-report]
+- [About GitHub Pages][about-ghpages]
+
+[repo-search]: https://github.com/creativecommons/search
+[oldsearch]: https://oldsearch.creativecommons.org/
+[mdm-semantics]: https://developer.mozilla.org/en-US/docs/Glossary/Semantics
+[mdm-html]: https://developer.mozilla.org/en-US/docs/Web/HTML
+[mdm-javascript]: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+[wave-report]: https://wave.webaim.org/report#/https://oldsearch.creativecommons.org/
+[about-ghpages]: https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages
+---
+skills_recommended:
+- CSS
+- Git
+- GitHub Pages
+- HTML
+- JavaScript
+- JSON
+---
+lead:
+- Sara
+---
+difficulty: Medium
+---
+size: Large (~350 hours)
+---
+filter_value: difficulty-medium skill-css skill-git skill-githubpages skill-html skill-javascript skill-json
