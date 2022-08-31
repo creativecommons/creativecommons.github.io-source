@@ -22,7 +22,7 @@ The contributor will need to extend the CC Legal Tools App to generate plain
 text versions. The generated plain text versions must be deterministic and
 match the formatting of the manual versions (except where improvements are
 desired). Application updates must include test coverage. Stretch goals include
-markdown format generation and interfacing/collaborating with SPDX.
+Markdown format generation and interfacing/collaborating with SPDX.
 ---
 application_tips:
 - Engage with the CC Legal Tools repositories (issues, pull requests)
