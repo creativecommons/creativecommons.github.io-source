@@ -34,12 +34,15 @@ resources:
   domain dedication management application for Creative Commons
 - [creativecommons/cc-legal-tools-data][cc-legal-tools-data]: License and
   public domain dedication data for Creative Commons
+- [Plaintext versions of Creative Commons 4.0 licenses - Creative
+  Commons][blogplaintext4]
 - [Plaintext versions of Creative Commons licenses and CC0 - Creative
-  Commons][blogplaintext]
+  Commons][blogplaintext3]
 
 [cc-legal-tools-app]: https://github.com/creativecommons/cc-legal-tools-app
 [cc-legal-tools-data]: https://github.com/creativecommons/cc-legal-tools-data
-[blogplaintext]: https://creativecommons.org/2011/04/15/plaintext-versions-of-creative-commons-licenses-and-cc0/
+[blogplaintext4]: https://creativecommons.org/2014/01/07/plaintext-versions-of-creative-commons-4-0-licenses/
+[blogplaintext3]: https://creativecommons.org/2011/04/15/plaintext-versions-of-creative-commons-licenses-and-cc0/
 ---
 skills_recommended:
 - Djano
