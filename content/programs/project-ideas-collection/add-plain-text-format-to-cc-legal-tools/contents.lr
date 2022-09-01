@@ -45,7 +45,7 @@ resources:
 [blogplaintext3]: https://creativecommons.org/2011/04/15/plaintext-versions-of-creative-commons-licenses-and-cc0/
 ---
 skills_recommended:
-- Djano
+- Django
 - Git
 - Python
 ---

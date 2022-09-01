@@ -38,7 +38,7 @@ resources:
 [describerdf]: https://creativecommons.org/ns/
 ---
 skills_recommended:
-- Djano
+- Django
 - Git
 - Python
 - RDF
