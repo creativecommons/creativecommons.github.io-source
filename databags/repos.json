@@ -727,6 +727,26 @@
             "website": "https://creativecommons.org/"
         },
         {
+            "created": "2022-09-07T17:02:39",
+            "description": "Quantifying the Commons",
+            "engineering_project": true,
+            "english_name": "Quantifying the Commons",
+            "featured": false,
+            "id": 533860990,
+            "language": null,
+            "license": {
+                "name": "MIT License",
+                "url": "https://github.com/creativecommons/quantifying/blob/main/LICENSE"
+            },
+            "name": "quantifying",
+            "slack": "cc-dev-quantifying",
+            "technologies": [
+                "Python"
+            ],
+            "url": "https://github.com/creativecommons/quantifying",
+            "website": ""
+        },
+        {
             "created": "2013-12-02T20:59:52",
             "description": "",
             "engineering_project": true,
