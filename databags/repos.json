@@ -816,7 +816,7 @@
         },
         {
             "created": "2013-10-24T00:19:27",
-            "description": "Legacy Creative Commons Search, no longer under development",
+            "description": "Creative Commons Meta Search",
             "engineering_project": true,
             "english_name": "CC Search (Legacy)",
             "featured": false,
