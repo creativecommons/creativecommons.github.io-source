@@ -733,7 +733,7 @@
             "english_name": "Quantifying the Commons",
             "featured": false,
             "id": 533860990,
-            "language": null,
+            "language": "Shell",
             "license": {
                 "name": "MIT License",
                 "url": "https://github.com/creativecommons/quantifying/blob/main/LICENSE"
