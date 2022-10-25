@@ -25,8 +25,8 @@ with the organization.
 
 Please work to minimize the number of development related technologies. This
 helps minimize the overhead of contributing to multiple projects. Most of our
-projects use either [Pipenv][pipenv], _the Python Development Workflow for
-Humans_, or [docker-compose][dockercompose], _a tool for defining and running
+projects use [Pipenv][pipenv], _the Python Development Workflow for Humans_,
+and/or [docker-compose][dockercompose], _a tool for defining and running
 multi-container Docker applications_.
 
 [pipenv]: https://github.com/pypa/pipenv
