@@ -1,0 +1,103 @@
+title: CalVer to SemVer
+---
+categories:
+announcements
+collaboration
+---
+author: TimidRobot
+---
+pub_date: 2022-11-11
+---
+body:
+
+Creative Commons (CC) tried to use CalVer (calendar versioning), but
+encountered too many issues and decided on SemVer (semantic versioning)
+instead.
+
+[calver]: https://calver.org/
+[semver]: https://semver.org/
+
+
+## Why we chose CalVer
+
+Years ago, the CC technology team standardized on using [CalVer][calver] as our
+versioning scheme. Specifically, we selected `YYYY.0M.MICRO`. [CalVer][calver]:
+
+> 1. **`YYYY`** - Full year - 2006, 2016, 2106
+> 2. **`0M`** - Zero-padded month - 01, 02 ... 11, 12
+
+> 3. **`Micro`** - The third and usually final number in the version. Sometimes
+>    referred to as the "patch" segment.
+
+The use of CalVer was inspired by Ubuntu, pip, SaltStack, and others. It was
+thought that CalVer not only matched [SemVer][semver] in communicating
+potential risks to users, but also gave additional temporal context. Also, many
+argue that the promises of SemVer’s `MAJOR.MINOR.PATCH` go unfulfilled often
+enough that they lose meaning and that the differences between MINOR/PATCH are
+too poorly defined (more on these later).
+
+
+## Issues Encountered with CalVer
+
+
+### Time/Duration Is Not Primarily Relevant
+
+CalVer is often favored by projects for which time/duration is of primary
+relevance (ex. Ubuntu releases which have a limited support window). However,
+none of CC’s projects have time/duration as a primary relevance.
+
+
+### `MAJOR` Expectations and Slow Iteration
+
+SemVer is a formalization of longstanding convention. Many many users,
+especially developers, expect the first number of a versioning scheme to
+indicate change severity. With `YYYY` indicating current release year, the
+`YYYY.0M.MICRO` versioning scheme might set an expectation of significant
+changes or improvements (ex. `2021.09.1` to `2022.02.1`) even when the content
+of the changes are trivial. With `YYYY` indicating original release year, a
+slow moving but stable and functional release might appear abandoned or
+insecure (ex.  `2019.03.2` in 2022).
+
+
+### Poor Support for CalVer
+
+We also encountered poor support for CalVer in software and systems. For
+example, NPM currently strips leading zeros which breaks CDN integration
+([CalVer and CDN compatibility · Issue #588 ·
+creativecommons/vocabulary][issue588]).
+
+[issue588]: https://github.com/creativecommons/vocabulary/issues/588.
+
+
+## Using SemVer
+
+Our experiment with CalVer is a win for the scientific method. We can be more
+confident, today, that SemVer will treat both the developers and users of CC
+software better than CalVer.
+
+
+### SemVer’s ~~Promises~~ Commitments
+
+The CC Technology team sees SemVer as a set of commitments we are making to the
+users and developers of CC open source software. We may not achieve perfection
+in fulfilling those commitments, but they outline expectations and we hope
+you’ll open an issue if we make a mistake.
+
+
+### CC SemVer Specifics
+
+We will be using [SemVer][semver] (semantic versioning) going forward. To add
+additional clarity, we will avoid mixing functionality changes and bug fixes in
+releases:
+
+1. `MAJOR` version when you make incompatible API changes
+2. `MINOR` version when you add functionality in a backwards compatible manner
+   - Releases that increment the `MINOR` version **must not** include bug
+     fixes
+4. `PATCH` version when you make backwards compatible bug fixes
+   - Releases that increment the `PATCH` version **must not** include
+     functionality additions
+
+When a bug fix _technically_ changes functionality, we will release a bug fix
+(incrementing only the `PATCH` version) as the change preserves the _intended
+functionality_.
