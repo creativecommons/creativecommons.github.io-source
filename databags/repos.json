@@ -489,6 +489,28 @@
             "website": "https://creativecommons.org/"
         },
         {
+            "created": "2022-11-22T21:16:18",
+            "description": "This is the UX frontend prototyping repository for the new creativecommons.org website build, inspired by the Vocabulary design system.",
+            "engineering_project": true,
+            "english_name": "creativecommons.org Prototype",
+            "featured": false,
+            "id": 569449155,
+            "language": "HTML",
+            "license": {
+                "name": "MIT License",
+                "url": "https://github.com/creativecommons/creativecommons.org-prototype/blob/main/LICENSE"
+            },
+            "name": "creativecommons.org-prototype",
+            "slack": "",
+            "technologies": [
+                "HTML",
+                "CSS",
+                "Javascript"
+            ],
+            "url": "https://github.com/creativecommons/creativecommons.org-prototype",
+            "website": null
+        },
+        {
             "created": "2020-11-02T16:08:46",
             "description": "",
             "engineering_project": true,
