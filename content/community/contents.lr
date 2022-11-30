@@ -52,7 +52,7 @@ The channels most relevant to CC's developer community are:
 | `#cc-dev-license-chooser` | [cc-chooser][cc-chooser] project (new CC license chooser) |
 | `#cc-dev-linkchecker` | [cc-link-checker][cc-link-checker] project |
 | `#cc-dev-platform-toolkit` | [mp][mp] project (CC Platform Toolkit) |
-| `#cc-dev-search` | [search][search] project |
+| `#cc-dev-searchportal` | [search][search] project |
 | `#cc-dev-vocabulary` | [cc-vocabulary][cc-vocabulary] project |
 | `#cc-dev-wordpress` | [wp-plugin-creativecommons][wp-plugin-creativecommons] project (creativecommons WordPress plugin) |
 | `#cc-dev-workprograms` | **GSoC, GSoD, Outreachy, and other [work programs][workprograms] or internships** |
