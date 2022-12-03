@@ -1,28 +1,26 @@
-{% from "macros/author_name.html" import render_author_name %}
+{% from "macros/authors_byline.html" import render_authors_byline %}
+{% from "macros/authors_gravatar.html" import render_author_gravatar %}
+
+{% macro render_post_summary(post, skip_gravatar=false) %}
+  <div class="column is-one-third is-paddingless padding-horizontal-big padding-top-bigger">
+    <article class="card entry-post horizontal no-border blog-entry">
+      {{ render_author_gravatar(post, skip_gravatar) }}
+      <div class="blog-content">
+        <h4 class="b-header"><a class="blog-title" href="{{ post|url }}">{{ post.title }}</a></h4>
+        {{ render_authors_byline(post) }}
+        <div class="excerpt">
+          {{ post.body | excerpt | string | striptags() | truncate(100) }}
+        </div>
+      </div>
+    </article>
+  </div>
+{% endmacro %}
 
 {% macro render_posts(posts) %}
   <div class="columns is-multiline blog-entries">
     {% for post in posts %}
-      {% set author = post.parent.parent.children.get('authors').children.get(post.author) %}
-      <div class="column is-one-third">
-        <article class="card entry-post horizontal no-border blog-entry">
-          {% if author.about %}
-            <header>
-              <figure class="image blog-image">
-                <img class="profile" src="https://secure.gravatar.com/avatar/{{ author.md5_hashed_email }}?size=200&d=mp" alt="gravatar" />
-              </figure>
-            </header>
-          {% endif %}
-          <div class="blog-content">
-            <h4 class="b-header"><a class="blog-title" href="{{ post|url }}">{{ post.title }}</a></h4>
-            <span class="blog-author">by <a href="{{ author|url }}">{{ render_author_name(author) }}</a>
-            on {{ post.pub_date|dateformat("YYYY-MM-dd") }}</span>
-            <div class="excerpt">
-              {{ post.body | excerpt | string | striptags() | truncate(100) }}
-            </div>
-          </div>
-        </article>
-      </div>
+      {% set post_loop = loop %}
+        {{ render_post_summary(post) }}
     {% endfor %}
   </div>
 {% endmacro %}
