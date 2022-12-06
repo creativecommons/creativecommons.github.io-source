@@ -1,20 +1,18 @@
 {% from "macros/author_name.html" import render_author_name %}
 
 {% macro render_authors_byline(post) %}
-  {% if post.author|length %}
-    {% for author in post.author %}
-      {% set author_loop = loop %}
-      {% set current_author = post.parent.parent.children.get('authors').children.get(author) %}
-      {% if author_loop.first %}by{% else %},{% endif %}
-      {% if current_author %}
-        {{ check_file('content' + post.parent.parent.path + '/authors/' + author + '/contents.lr') }}
-        <a class="author-name" href="{{ current_author|url }}">
-        {{ render_author_name(current_author) }}
-        </a>
-      {% else %}
-        {{ author }}
-      {% endif %}
-    {% endfor %}
-  {% endif %}
-  on {{ post.pub_date|dateformat("YYYY-MM-dd") }}</span>
+  {%- if post.author|length %}
+    {%- for author in post.author %}
+      {%- set author_loop = loop %}
+      {%- set current_author = post.parent.parent.children.get('authors').children.get(author) %}
+      {%- if author_loop.first %}by{% else %},{% endif %}
+      {%- if current_author %}
+        {{- check_file('content' + post.parent.parent.path + '/authors/' + author + '/contents.lr') }}
+        {{- ' ' }}<a class="author-name" href="{{ current_author|url }}">{{ render_author_name(current_author)|trim }}</a>
+      {%- else %}
+        {{- author }}
+      {%- endif %}
+    {%- endfor %}
+  {%- endif %}
+  {{- ' ' }}on {{ post.pub_date|dateformat("YYYY-MM-dd") }}
 {% endmacro %}
