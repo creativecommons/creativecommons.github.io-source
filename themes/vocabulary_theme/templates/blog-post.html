@@ -12,9 +12,9 @@
         <h4>CC Open Source Blog</h4>
         <h2 class="title">{{ this.title }}</h2>
         <div class="author columns is-marginless">
-          {{ render_author_gravatar(this) }}
+          {{ render_author_gravatar(this)|trim }}
           <p class="padding-small">
-            {{ render_authors_byline(this) }}
+            {{ render_authors_byline(this)|trim }}
           </p>
         </div>
         {% if this.series|length %}
