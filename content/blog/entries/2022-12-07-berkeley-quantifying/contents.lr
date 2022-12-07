@@ -56,10 +56,10 @@ creativecommons.org webpage that explains the license's rules (the deed).
 
 Therefore, we may use the following approach to identify and count CC-licensed
 documents:
-1. Select a list of CC tools to inspect (provided by CC)
+1. Select a list of CC tools to inspect (provided by CC).
 2. Use APIs of different online platforms to detect and count documents that
    are labeled as license by platform and/or contains a hyperlink towards CC
-   license webpages
+   license webpages.
 3. Store these data in tabular form to contain the count of documents protected
    under each type of CC tools.
 
@@ -179,8 +179,9 @@ Africa should be encouraged.
 Barplot for number of webpages protected by six primary CC licenses
 ![Barplot for number of webpages protected by six primary CC licenses](diagram_3c.png)
 
-We that **Attribution** (BY) and **Attribution-Nonderivative (BY-ND) are
-popular licenses** among the 3 billion documents sampled across the dataset
+We can see that **Attribution** (BY) and **Attribution-Nonderivative (BY-ND)
+are popular licenses** among the 3 billion documents sampled across the
+dataset.
 
 
 #### Diagram 6
@@ -277,10 +278,10 @@ resources, metrics, under different modeling contexts:
 
 #### Model of Google Webpages (Dun-Ming Huang)
 
-- Modeling Context: Multiclass Classifier (7 classes)
+- Modeling Context: Multiclass Classifier (7 classes).
 - Modeling Training set: Text webpage contents acquired from Google API
-  collected webpages. (Common Crawl, the original choice, was marked
-  unavailable due to source code corruption)
+  collected webpages (Common Crawl, the original choice, was marked
+  unavailable due to source code corruption).
 - Main Model Metric: Top-k accuracy, as this model is considered as the backend
   of a license recommendation system that receives webpage content and
   recommend 2 to 3 licenses to the user.
