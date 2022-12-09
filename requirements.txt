@@ -8,7 +8,7 @@
 -i https://pypi.org/simple
 babel==2.10.3; python_version >= '3.6'
 black==22.6.0
-certifi==2022.6.15; python_version >= '3.6'
+certifi==2022.12.7; python_version >= '3.6'
 charset-normalizer==2.1.0; python_version >= '3.6'
 click==8.1.3; python_version >= '3.7'
 exifread==3.0.0
