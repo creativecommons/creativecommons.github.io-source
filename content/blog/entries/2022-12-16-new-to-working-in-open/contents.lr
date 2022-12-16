@@ -10,21 +10,71 @@ author: possumbilities
 pub_date: 2022-12-16
 ---
 body:
-I began working at Creative Commons (CC) as the Full Stack Engineer this year and it’s been amazing to get to work in the open at CC. But as someone who has been working in closed, internal source environments for a very long time it’s definitely been a learning experience and a perspective shift. 
+I began working at Creative Commons (CC) as the Full Stack Engineer this year
+and it’s been amazing to get to work in the open at CC. But as someone who
+has been working in closed, internal source environments for a very long
+time it’s definitely been a learning experience and a perspective shift. 
 
-For years I benefited from, observed, and offered up personal work into the world of open source, but I was never deeply involved in other projects in a big way, nor was I able to contribute anything I did at my professional day job back into the open source world (despite the benefit open source afforded the work I did every day). It had been a hope of mine, something I had advocated for, but had ultimately not worked out. Now at CC I finally get to participate in projects that operate in the open, and a larger community of contributors around the world.
+For years I benefited from, observed, and offered up personal work into the
+world of open source, but I was never deeply involved in other projects in
+a big way, nor was I able to contribute anything I did at my professional
+day job back into the open source world (despite the benefit open source
+afforded the work I did every day). It had been a hope of mine, something
+I had advocated for, but had ultimately not worked out. Now at CC I
+finally get to participate in projects that operate in the open, and a
+larger community of contributors around the world.
 
-It's been refreshing and rewarding, but it's also been enlightening. There's so much that's different now. Working in the open doesn't just shift the terms under which your code is licensed or how many people can contribute, it requires a significant shift in both approach and process. 
+It's been refreshing and rewarding, but it's also been enlightening. There's
+so much that's different now. Working in the open doesn't just shift the
+terms under which your code is licensed or how many people can contribute, it
+requires a significant shift in both approach and process. 
 
-For example, working in the open means that while there may be community members eager to contribute they may lack contextual understanding that someone more intimately familiar with a project might develop over time and rely upon. To support contributions well you need to have a heavily documentation-first strategy that affords new contributors key information in understandable and clear instructions.
+For example, working in the open means that while there may be community members
+eager to contribute they may lack contextual understanding that someone more
+intimately familiar with a project might develop over time and rely upon. To
+support contributions well you need to have a heavily documentation-first
+strategy that affords new contributors key information in understandable and
+clear instructions.
 
-That also means that documenting *issues* isn't just an item on a todo list you'll get to later. There's extreme value in writing out detailed information both for your future self, but also for any would-be community contributors to understand the problem and address it. Setup instructions, contextual documentation about the codebase, as well as detailed known issues, roadmaps, etc. All of it needs to be documented and written out, which not only benefits the community contributors, but also benefits the project as a whole. It means key information has to live in the open alongside the code it informs. It's truly a win-win all around. 
+That also means that documenting *issues* isn't just an item on a todo list
+you'll get to later. There's extreme value in writing out detailed information
+both for your future self, but also for any would-be community contributors to
+understand the problem and address it. Setup instructions, contextual
+documentation about the codebase, as well as detailed known issues, roadmaps,
+etc. All of it needs to be documented and written out, which not only
+benefits the community contributors, but also benefits the project as a
+whole. It means key information has to live in the open alongside the code
+it informs. It's truly a win-win all around. 
 
-The process also has to shift, you can't just make a list of things you want to tackle and get to work, you have to consider how each item can be smoothly adopted as granular and iterative Pull Requests that might all be worked on by entirely different individuals. The level of care in how the work is divided and scoped matters even more in this situation than it would have with an internal team. Working in the open doesn't just mean coding in the open, it also means planning in the open, and that means having a clearer view on the overall roadmap and goals the project hopes to meet.
+The process also has to shift, you can't just make a list of things you want to
+tackle and get to work, you have to consider how each item can be smoothly
+adopted as granular and iterative Pull Requests that might all be worked on
+by entirely different individuals. The level of care in how the work is
+divided and scoped matters even more in this situation than it would have
+with an internal team. Working in the open doesn't just mean coding in the
+open, it also means planning in the open, and that means having a clearer
+view on the overall roadmap and goals the project hopes to meet.
 
-If you are the steward of a codebase any task list you create or *issues* you identify are ultimately not just for you alone. Putting an item on your list when you're working alone isn't enough, you've also got to find time to work on that item, and work your way through completing it. 
+If you are the steward of a codebase any task list you create or *issues* you
+identify are ultimately not just for you alone. Putting an item on your list
+when you're working alone isn't enough, you've also got to find time to work
+on that item, and work your way through completing it. 
 
-In the open source context, working with a community of contributors, creating an *issue* is just as important and meaningful as writing code, in many cases it might actually be MORE important. Because *issues* are often the way in which contributors first offer up help and insight, they're the first contact they have with your project. Furthermore, any *issue* you create may end up getting completed by one or more people that are not you, which means it doesn't just sit on a list till you do it. It's a small, but significant shift in how you think about planning and breaking down work on a codebase in the open.
+In the open source context, working with a community of contributors, creating
+an *issue* is just as important and meaningful as writing code, in many cases
+it might actually be MORE important. Because *issues* are often the way in 
+which contributors first offer up help and insight, they're the first contact
+they have with your project. Furthermore, any *issue* you create may end up
+getting completed by one or more people that are not you, which means it
+doesn't just sit on a list till you do it. It's a small, but significant
+shift in how you think about planning and breaking down work on a codebase
+in the open.
 
-It’s certainly new, but incredibly rewarding. Even on days where I might not get to submit a Pull Request myself, or squash a bug in a meaningful way, I can still feel I offered up meaningful contributions to the community and the codebase through better documentation, answering someone’s question, reworking a process, or reviewing someone else’s generous contribution. Open Source means opening up your definition of what contribution means, and it’s a lot broader and more meaningful than I thought.
+It’s certainly new, but incredibly rewarding. Even on days where I might not get
+to submit a Pull Request myself, or squash a bug in a meaningful way, I can still
+feel I offered up meaningful contributions to the community and the codebase
+through better documentation, answering someone’s question, reworking a
+process, or reviewing someone else’s generous contribution. Open Source means
+opening up your definition of what contribution means, and it’s a lot broader
+and more meaningful than I thought.
 
