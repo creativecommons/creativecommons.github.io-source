@@ -84,7 +84,7 @@ Here are some significant defects found in datasets across sampled platforms
 during EDA:
 
 
-### Fickr
+### Flickr
 
 - Sampled Document Count from this dataset is at 35,000% ~ 100,000% of
   deviation from official statistics per CC product (license) investigated.
