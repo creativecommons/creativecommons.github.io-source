@@ -495,7 +495,7 @@
             "english_name": "creativecommons.org Prototype",
             "featured": false,
             "id": 569449155,
-            "language": "HTML",
+            "language": "CSS",
             "license": {
                 "name": "MIT License",
                 "url": "https://github.com/creativecommons/creativecommons.org-prototype/blob/main/LICENSE"
