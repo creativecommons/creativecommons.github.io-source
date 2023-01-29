@@ -31,46 +31,49 @@ Here are some resources:
 [outreachyguide]: https://www.outreachy.org/docs/applicant/
 
 
-### Understand CC
+### Understand Creative Commons
 
-Your first step should be to understand Creative Commons and what we do. We're
+Your first step should be to understand Creative Commons and what we do. We are
 not simply an open source software project like many other work program
-organization. We're a nonprofit organization and we have a lot of different
+organization. We are a nonprofit organization and we have a lot of different
 programs – technical, legal, educational, public policy, organizational, and
-more. You can start reading about us at our [official
-website](https://creativecommons.org/) and you can find plenty of information
-through searching about us. You'll need to know a decent amount about us in
-order to help us effectively.
+more. You can start reading about us at our primary website
+([CreativeCommons.org][ccorg]) and you can find plenty of information through
+searching about us. You'll need to know a decent amount about us in order to
+help us effectively.
 
 If you have a question about how we work, our programs, our licenses, or
-anything like that, please don't hesitate to ask!
+anything like that, please don't hesitate to ask (join the community)!
+
+[ccorg]: https://creativecommons.org/
 
 
 ### Join the Community
 
-[Join the `#cc-dev-workprograms` channel on the CC Slack or the CC Developers
-mailing list](/community/) as early as possible to introduce yourself and get
-feedback on your ideas. All our project leads will be on Slack and respond to
-emails on the mailing list and it is better to post there rather than
-contacting them individually. Feel free to ask questions!
+[Join the `#cc-dev-workprograms` channel on the CC Slack][slack] as early as
+possible to introduce yourself and get feedback on your ideas. All our project
+leads are on Slack. Please ask your questions on the channel instead of via
+direct message. This lets other commuinity members learn and participate.
+
+[slack]: /community/#slack
 
 
 ### Pick a Project
 
-Your next step should be to pick a particular project that you're interested in
-working on. The [Overview page](/programs/) will cover the current
-work program rounds and link to related project ideas.
+Your next step should be to pick a particular project that you are interested
+in working on. The [Overview page](/programs/) will cover the current work
+program rounds and link to related project ideas.
 
-Once you pick the project you're interested in, make sure to learn about the
-project thoroughly. You're going to be spending three months working on the
-project and you'll need to understand what the work entails so that you can
+Once you pick the project you are interested in, make sure to learn about the
+project thoroughly. You are going to be spending three months working on the
+project and you will need to understand what the work entails so that you can
 plan the work out ahead of time and submit a strong application. The project
-descriptions are quite short so we expect you to do a lot of work here duron
-your own taking those descriptions and fleshing them out into a more detailed
-project plan and implementation timeline.
+descriptions are quite short so we expect you to do a lot of work here on your
+own. You will need to take the project description and expand it out into a
+more detailed project plan and implementation timeline.
 
 The project leads are here to help you. We expect you to have a lot of
-questions along the way and we're happy to answer them.
+questions along the way and we are happy to answer them.
 
 
 ### Contribute!
@@ -99,7 +102,7 @@ before you submit your final application. For more details, see the
 
 ### Why contribute?
 
-Contributions are for you to get a sense of what it's like to contribute to an
+Contributions are for you to get a sense of what it is like to contribute to an
 open source project (getting used to the GitHub workflow, interacting with
 other contributors, etc.) and for us to see a sample of your work/skills. If we
 are impressed by your contributions, we are more likely to select you as an
@@ -117,7 +120,7 @@ contribution guidelines (not all of them will have them).
 If you're applying via Outreachy, remember to record your contribution via the
 Outreachy website! You can record contributions even if you have not yet
 received feedback on them or if they have not been merged--our project leads
-are busy so we can be slow to provide feedback.
+are busy so they can not always provide immediate feedback.
 
 
 ### Contributing Documentation
@@ -164,14 +167,23 @@ proposals (even if you're applying for Outreachy). Here are some examples:
 
 ### Template
 
+[projecttemplate]: https://docs.google.com/document/d/18LWuA_iTSGSeRFtpVQdfOoz1G30ZgJg-_K0lNSQBYd0/edit
+
+
+#### GSoC
+
 You must use **[our work program project template][projecttemplate]** to create
-your application. Please make sure that your project leads have comment
+your GSoC application. Please make sure that your project leads have comment
 permissions before you share your document with them.
 
-If you are applying for Outreachy, please link to the project proposal document
-created using this template from your final Outreachy application.
 
-[projecttemplate]: https://docs.google.com/document/d/18LWuA_iTSGSeRFtpVQdfOoz1G30ZgJg-_K0lNSQBYd0/edit
+#### Outreachy
+
+**[Our work program project template][projecttemplate]** is not strictly
+required, but it is an effective tool that allows you to receive draft feedback
+from the project lead. Please make sure that your project leads have comment
+permissions before you share your document with them. Applications that include
+a link to [our work program project template][projecttemplate] are preferred.
 
 
 ## Contacting Project Leads
@@ -179,9 +191,9 @@ created using this template from your final Outreachy application.
 All the CC project leads are on [Slack](/community/). **Please use public
 channels on Slack as the primary method of communication.** Public channels are
 better than direct messages because it allows any available project lead (or
-even another applicant) to answer your questions and interact with you. It also
-allows other applicants who have the same questions to benefit from the answers
-the project lead is giving you.
+even another applicant and contributors) to answer your questions and interact
+with you. It also allows other applicants and contributors who have the same
+questions to benefit from the answer.
 
 **Please ask project leads specific questions.** We don't know how to help you
 get started unless we know what you have questions about. People come from a
@@ -190,9 +202,8 @@ may be totally different than the things that someone else has questions about.
 Please give us as much information as possible, the more you tell us, the
 better we can help you.
 
-Remember that the project leads are busy – we've got full-time jobs or other
-commitments. It's good to follow up if you don't get a response, but wait a
-couple of days first.
+Remember that the project leads are busy. It is good to follow up if you don't
+get a response, but wait a couple of business days first.
 
 **Please refrain from addressing project leads as "sir" or "ma'am". We prefer
 to be addressed by our first names or usernames.**
@@ -207,11 +218,11 @@ Here are a few things we consider when selecting work program contributors:
   demonstration of your skills.
 - **Community involvement**: One of our major goals is to build an active
   development community and attract long-term contributors. We see engaging in
-  the community, whether it's asking questions, helping other students,
+  the community, whether it is asking questions, helping other students,
   contributing code, filing bugs, or whatever else, as a sign that you're
   genuinely interested in our work.
-- **Contributions**: We appreciate seeing your contributions, they help us
-  gauge your ability to orient yourself to a new codebase, or the quality of
+- **Contributions**: We appreciate seeing your contributions! They help us
+  gauge your ability to orient yourself to a new codebase or the quality of
   your writing. Contribution quality is instrumental in giving us the
   confidence that you have the skills necessary to implement your proposal.
 - **Communication skills and initiative**: These are essential to completing a
