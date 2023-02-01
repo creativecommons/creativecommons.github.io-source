@@ -1,0 +1,28 @@
+title: Outreachy Internship Mid-point Progress Update
+---
+categories:
+open-source
+collaboration
+community
+
+---
+author: precious 
+---
+pub_date: 2023-2-1
+---
+body:
+![quote image](https://res.cloudinary.com/dexcmkxjl/image/upload/v1675262087/1157214599-I-may-not-be-there-yet_s3cjxm.webp)
+
+
+
+**Outreachy Internship- Refactor CC Meta Search- Mid-point Progress Update**
+
+As an intern at Creative Commons, my original project timeline was to refactor the old CC search website to use semantic and modern HTML and CSS. This project was intended to improve the user experience and make the website more accessible to a broader audience. The old CC Meta Searcg website is built on PHP and JavaScript. My major goal for this internship is to convert the PHP to semantic html and modern CSS while ensuring that all neccessary functionalities are intact.
+
+I have met several of my goals in the first half of my internship. So far, I have successfully refactored the website's HTML to use semantic elements, which improves the website's accessibility and makes it easier for users to understand the content. I achieved this by creating a new index.html file and rebuilding the site with semantic HTML. Additionally, I have also implemented modern CSS techniques to improve the website's visual design and make it more responsive on various devices.  All of this is currently being reviewed by my mentors for feedback on additional changes that might be needed.
+
+However, there were some project goals that took longer than expected to complete. One of the main reasons for this was that the website's codebase was not well-organized, which made it difficult for me to navigate and understand. Additionally, the site had a pre-determined CSS file that I was supposed to follow or incorporate while building the new site, but this file was so cumbersome and most of the styles did not give the desired result. I spent a lot of time trying to understand and navigate through this and eventually I had to speak to my mentor about it, and also brought up the suggestion of me writing out my own CSS stylings, which she agreed to. Thus this made the original goal, of incorporating the CC Vocabulary CSS file, to be modified.
+
+Additionally, I had to prioritize certain tasks over others and make adjustments to my plan as necessary.
+
+The new CSS I have written so far already makes the website's layout responsive. I have also created a new script.js file and started working on the neccessary functionalities of the website. I plan to implement all feedback gotten from my mentors and debug any remaining issues. Additionally, I will be working on improving the website's overall performance by implementing several optimization techniques as necessary. Overall, I aim to ensure that the website is fully functional and user-friendly for all users.
