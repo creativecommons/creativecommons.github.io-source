@@ -1,0 +1,46 @@
+_model: project-idea
+---
+_hidden: yes
+---
+title: Automating Quantifying the Commons
+---
+problem:
+The Quantifying the Commons project has seen excellent additions led by student
+developers. However, the scope of previous projects did not include automation
+or combined reporting.
+---
+expected_outcome:
+Add automation of data gathering and report generation so that our reports
+quantifying the commons are never more than 3 months out of date.
+---
+contributor_tasks:
+The contributor will need to architect a data flow, formalize data formats,
+automate data gathering, and automate reporting. Challenges include quota
+limits that may require multi-day/multi-step data gathering, deciding on plain
+text vs binary data formats, and secret management. Knowledge of numpy and
+matplotlib python libraries will be very helpful.
+---
+application_tips:
+- Engage with the CC Legal Tools repositories (issues, pull requests)
+- Be helpful and welcoming (e.g. answer other contributors’ questions on Slack)
+- [Applicant Guide](/programs/applicant-guide/)
+---
+resources:
+- [creativecommons/quantifying](https://github.com/creativecommons/quantifying):
+  Quantifying the Commons
+- [[Feature\] Automate Data Gathering and Analysis/Rendering · Issue
+  #22](https://github.com/creativecommons/quantifying/issues/22)
+---
+skills_recommended:
+- Git
+- GitHub Actions
+- Python
+---
+lead:
+- Timid Robot
+---
+difficulty: Medium
+---
+size: Large (~350 hours)
+---
+filter_value: difficulty-medium skill-git skill-github-actions skill-python
