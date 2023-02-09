@@ -495,7 +495,7 @@
             "english_name": "creativecommons.org Prototype",
             "featured": false,
             "id": 569449155,
-            "language": "HTML",
+            "language": "CSS",
             "license": {
                 "name": "MIT License",
                 "url": "https://github.com/creativecommons/creativecommons.org-prototype/blob/main/LICENSE"
@@ -753,9 +753,9 @@
             "description": "Quantifying the Commons",
             "engineering_project": true,
             "english_name": "Quantifying the Commons",
-            "featured": false,
+            "featured": true,
             "id": 533860990,
-            "language": "HTML",
+            "language": "Jupyter Notebook",
             "license": {
                 "name": "MIT License",
                 "url": "https://github.com/creativecommons/quantifying/blob/main/LICENSE"
@@ -1009,7 +1009,7 @@
             "description": "A collection of Vue components used in the web facing Creative Commons.",
             "engineering_project": true,
             "english_name": "CC Vocabulary components",
-            "featured": true,
+            "featured": false,
             "id": 446377158,
             "language": "Vue",
             "license": {
@@ -1032,7 +1032,7 @@
             "description": "Typefaces that lend personality to the web facing Creative Commons",
             "engineering_project": true,
             "english_name": "CC Vocabulary fonts",
-            "featured": true,
+            "featured": false,
             "id": 446389251,
             "language": "JavaScript",
             "license": {
@@ -1055,7 +1055,7 @@
             "description": "A cohesive design system to unite the web facing Creative Commons",
             "engineering_project": true,
             "english_name": "CC Vocabulary styles",
-            "featured": true,
+            "featured": false,
             "id": 446389149,
             "language": "SCSS",
             "license": {
