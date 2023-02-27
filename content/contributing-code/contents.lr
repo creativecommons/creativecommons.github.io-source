@@ -58,7 +58,7 @@ You can use our [Issue Finder tool](/contributing-code/issue-finder/) to find a
 good issue that matches your skills and familiarity with our software and
 community.
 
-Some helpful saved searches on GitHub than can assist with finding an issue:
+Some helpful saved searches on GitHub that can assist with finding an issue:
 - [issues labeled <span class="gh-label friendliness">good first
   issue</span>][good-first]
 - [issues labeled <span class="gh-label friendliness">help
@@ -90,7 +90,7 @@ make your contribution:
 3. Wait for code review and address any issues raised as soon as you can.
 
 **A note on collaboration:** We encourage people to collaborate as much as
-possible. We especially appreciate contributors reviewing each others pull
+possible. We especially appreciate contributors reviewing each other's pull
 requests, as long as you are [kind and constructive][review-comments] when you
 do so.
 
