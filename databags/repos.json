@@ -167,7 +167,7 @@
             "engineering_project": true,
             "featured": false,
             "id": 15744672,
-            "language": null,
+            "language": "Dockerfile",
             "license": {
                 "name": "MIT License",
                 "url": "https://github.com/creativecommons/cc-resource-archive/blob/main/LICENSE"
