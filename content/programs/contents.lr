@@ -1,5 +1,75 @@
-_model: redirect
+_model: page
 ---
-target: /internships/
+_template: page-with-toc.html
 ---
-_discoverable: no
+title: Open Source Work Programs: Overview
+---
+body:
+
+
+## Programs
+
+Creative Commons (CC) regularly participates in the following work programs
+that offer grants or stipends:
+
+
+### Google Season of Docs
+
+CC isn't currently participating in Google Season of Docs (GSoD).
+
+- [Program website](https://developers.google.com/season-of-docs/)
+
+
+### Google Summer of Code
+
+CC is participating in Google Summer of Code (GSoC) 2023.
+
+- [Program website](https://summerofcode.withgoogle.com/)
+- [CC's GSoC 2023 page][gsoc2023cc]
+
+[gsoc2023cc]: https://summerofcode.withgoogle.com/programs/2023/organizations/creative-commons
+
+
+### Outreachy
+
+CC is participating in the [Outreachy December 2022 to March 2023
+Internships][dec2022].
+
+CC isn't participating in the May 2023 internships.
+
+CC will participate in the December 2023 internships.
+
+- [Program website](https://www.outreachy.org/)
+- [CC's Outreachy page][outreachycc]
+
+[dec2022]: https://www.outreachy.org/apply/project-selection/#creative-commons
+[outreachycc]: https://www.outreachy.org/communities/cfp/creative-commons/
+
+
+## Resources
+
+- **[Project Ideas](/programs/project-ideas/)**: This is a list of project
+  ideas for our work programs. Please note that these project ideas are shared
+  between all current work programs and all ideas may not be available
+  for all programs. Please check the project description carefully.
+- **[Applicant Guide](/programs/applicant-guide/)**: This is a guide for all
+  contributor applicants. You **must** read and follow instructions in this
+  guide if you are applying for a work program at CC.
+- **[Contributor Guide](/programs/contrib-guide/)**: This guide describes the
+  expectations and responsibilities for accepted contributors.
+- **[Project Lead Guide](/programs/lead-guide/)**: This is a guide for project
+  leads on CC projects.
+- **[History](/programs/history/)**: This page has historical information on
+  CC's open source work programs, including links to prior contributors' blog
+  posts.
+
+
+## Project Leads
+
+| Name | Pronouns | Slack Username | Time Zone |
+| ---- | -------- | -------------- | --------- |
+| [Sara][authorsara] | she/her | `@sara` | Central (CDT UTC-06:00 / CST UTC-05:00) |
+| [Timid Robot][authortimidrobot] | they/them | `@Timid Robot` | Pacific (PDT UTC-08:00 / PST UTC-07:00) |
+
+[authorsara]: /blog/authors/sara/
+[authortimidrobot]: /blog/authors/TimidRobot/

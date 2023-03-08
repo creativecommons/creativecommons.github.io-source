@@ -84,29 +84,29 @@
                   </li>
                 </ul>
               </aside>
-            {% elif this.is_child_of('/internships') %}
+            {% elif this.is_child_of('/programs') %}
               <aside class="menu sidebar-menu">
                 <ul class="menu-list">
                   {% for href, title in [
-                    ['/internships', 'Overview'],
-                    ['/internships/project-ideas', 'Project Ideas'],
-                    ['/internships/history', 'History'],
+                    ['/programs', 'Overview'],
+                    ['/programs/project-ideas', 'Project Ideas'],
+                    ['/programs/history', 'History'],
                   ] %}
                     <li>
                     <a class="{% if this.path == href %} is-active {% endif%} link" href="{{ href|url }}">{{ title }}</a>
-                    {% if (href == '/internships') %}
+                    {% if (href == '/programs') %}
                       <ul>
                       {% for href, title in [
-                        ['/internships/applicant-guide', 'Applicant Guide'],
-                        ['/internships/intern-guide', 'Intern Guide'],
-                        ['/internships/mentor-guide', 'Mentor Guide'],
+                        ['/programs/applicant-guide', 'Applicant Guide'],
+                        ['/programs/contrib-guide', 'Contributor Guide'],
+                        ['/programs/lead-guide', 'Project Lead Guide'],
                       ] %}
                         <li><a class="{% if this.path == href %} is-active {% endif%} link" href="{{ href|url }}"><i class="icon circle-filled"></i>{{ title }}</a></li>
                       {% endfor %}
                       </ul>
                     {% endif %}
                     </li>
-                    {% if (href != '/internships/history') %}
+                    {% if (href != '/programs/history') %}
                       <hr class="divider">
                     {% endif %}
                   {% endfor %}

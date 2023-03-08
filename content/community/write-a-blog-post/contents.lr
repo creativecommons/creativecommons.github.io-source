@@ -29,7 +29,7 @@ If you're writing about a project you're working on, here are a few ways you cou
 - Announce your project and ask for contributions (example: [CC Vocabulary announcement](https://creativecommons.github.io/blog/entries/cc-vocabulary-new-design-system/))
 - Write an overview of how your project works without as much narrative (example: [this post about the CC Catalog](https://creativecommons.github.io/blog/entries/cc-catalog-leverage-open-data-1/))
 
-<p class="text-muted"><em>If you have more tips, <a href="https://github.com/creativecommons/creativecommons.github.io-source/blob/master/content/community/write-a-blog-post/contents.lr">submit an edit to this page</a>.</em></p>
+<p class="text-muted"><em>If you have more tips, <a href="https://github.com/creativecommons/vocabulary/blob/main/content/community/write-a-blog-post/contents.lr">submit an edit to this page</a>.</em></p>
 
 ## How to post
 
@@ -37,10 +37,10 @@ Once you have written your post, you can either send it to us (Markdown is easie
 
 [Pull requests](/contributing-code/pr-guidelines/) should be submitted to the **[creativecommons.github.io-source](https://github.com/creativecommons/creativecommons.github.io-source) repository**. The CC Open Source site is built using the static site generator [Lektor](https://www.getlektor.com/) and your blog post must follow the specific format documented below to appear correctly on the site. For example, please see [this commit adding a post](https://github.com/creativecommons/creativecommons.github.io-source/commit/eac3fbc23b7cadb58fe49d3af3286e4c8bf20d2f).
 
-1. Each blog entry lives in its own subdirectory of the [content/blog/entries](https://github.com/creativecommons/creativecommons.github.io-source/tree/master/content/blog/entries) folder. Create a new subdirectory with a [slugified](https://blog.tersmitten.nl/slugify/) version of your blog post title.
+1. Each blog entry lives in its own subdirectory of the [content/blog/entries](https://github.com/creativecommons/creativecommons.github.io-source/tree/main/content/blog/entries) folder. Create a new subdirectory with a [slugified](https://blog.tersmitten.nl/slugify/) version of your blog post title.
 1. Create a file named `contents.lr` in the subdirectory you just created. This is the file that will contain your blog post content.
 1. If your post uses images or other files, put them in the same subdirectory as the `contents.lr` file.
-1. Fill in `contents.lr` in the following format ([see example post](https://raw.githubusercontent.com/creativecommons/creativecommons.github.io-source/master/content/blog/entries/open-development-with-saltstack/contents.lr)):
+1. Fill in `contents.lr` in the following format ([see example post](https://raw.githubusercontent.com/creativecommons/creativecommons.github.io-source/main/content/blog/entries/open-development-with-saltstack/contents.lr)):
   <pre>
   <code>
   title: Replace this text with the title of your blog post
@@ -62,18 +62,18 @@ Once you have written your post, you can either send it to us (Markdown is easie
   </pre>
 
   *Read more about [Markdown formatting here](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).*
-1. Create category pages for any new categories that you've assigned to your post. Each category has its own subdirectory in the [content/blog/categories](https://github.com/creativecommons/creativecommons.github.io-source/tree/master/content/blog/categories) directory.
+1. Create category pages for any new categories that you've assigned to your post. Each category has its own subdirectory in the [content/blog/categories](https://github.com/creativecommons/creativecommons.github.io-source/tree/main/content/blog/categories) directory.
   * Create a folder that uses the **the exact category name** as the blog post with its own `contents.lr` file within.
-  * The new `contents.lr` file within should follow the same format as the other categories. Here's an [example category content file](https://raw.githubusercontent.com/creativecommons/creativecommons.github.io-source/master/content/blog/categories/gsoc-2019/contents.lr).
-1. Similarly, if this is your first post, you'll need to create a file with author information. Each author has a subdirectory in the [content/blog/authors](https://github.com/creativecommons/creativecommons.github.io-source/tree/master/content/blog/authors) directory.
+  * The new `contents.lr` file within should follow the same format as the other categories. Here's an [example category content file](https://raw.githubusercontent.com/creativecommons/creativecommons.github.io-source/main/content/blog/categories/gsoc-2019/contents.lr).
+1. Similarly, if this is your first post, you'll need to create a file with author information. Each author has a subdirectory in the [content/blog/authors](https://github.com/creativecommons/creativecommons.github.io-source/tree/main/content/blog/authors) directory.
   * Your author folder must have **the exact username** as the author field of the blog post and have a `contents.lr` file within.
   * The `username` field in the `contents.lr` file should also use the same exact username.
-  * The author's `contents.lr` file within should follow the same format as the other authors. Here's an [example author content file](https://raw.githubusercontent.com/creativecommons/creativecommons.github.io-source/master/content/blog/authors/TimidRobot/contents.lr).
-1. If your blog is part of a connected series, you'll need to make a file with series information. Each series has a subdirectory in the [content/blog/series](https://github.com/creativecommons/creativecommons.github.io-source/tree/master/content/blog/series) directory.
+  * The author's `contents.lr` file within should follow the same format as the other authors. Here's an [example author content file](https://raw.githubusercontent.com/creativecommons/creativecommons.github.io-source/main/content/blog/authors/TimidRobot/contents.lr).
+1. If your blog is part of a connected series, you'll need to make a file with series information. Each series has a subdirectory in the [content/blog/series](https://github.com/creativecommons/creativecommons.github.io-source/tree/main/content/blog/series) directory.
   * Create a folder that uses the **the exact series name** as the blog post with its own `contents.lr` file within.
-  * The new `contents.lr` file within should follow the same format as the other series. Here's an [example series content file](https://raw.githubusercontent.com/creativecommons/creativecommons.github.io-source/master/content/blog/series/gsoc-2019-vocabulary/contents.lr).
+  * The new `contents.lr` file within should follow the same format as the other series. Here's an [example series content file](https://raw.githubusercontent.com/creativecommons/creativecommons.github.io-source/main/content/blog/series/gsoc-2019-vocabulary/contents.lr).
 1. Build the `creativecommons.github.io-source` project locally (instructions are in the `README` in the repository) and ensure your blog post shows up correctly locally. If you have not created the appropriate category or author files, you will see a build error in this step.
 1. Push your code and make a pull request.
-1. Wait for a member of CC's fulltime staff to merge the post into the `master` branch.
+1. Wait for a member of CC's fulltime staff to merge the post into the `main` branch.
 
 Once merged, your new post will automatically be pushed to the production site and a notification containing your post URL will be sent to the `#cc-developers` channel on Slack.

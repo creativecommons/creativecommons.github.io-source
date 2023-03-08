@@ -1,1 +1,5 @@
-_model: project-ideas
+_model: redirect
+---
+target: /programs/project-ideas/
+---
+_discoverable: no

@@ -1,0 +1,126 @@
+title: Building the CC Global Components Library
+---
+categories:
+outreachy
+outreachy-2021
+community
+design
+---
+author: MuluhGodson
+---
+pub_date: 2022-03-17
+---
+body:
+
+### Introduction
+During the course of my Outreachy internship with the Creative Commons, I got to work on some cool projects, one of which is the CC Global Components
+library supervised by my mentor [Brylie Christopher Oxley](/blog/authors/brylie/).
+
+Having a unified design theme/look or experience accross the different CC websites has always been an important factor while developing these 
+websites.
+With this in mind, there are several components which are part of most CC web properties. The three components in particular are:-
+
+- ** The Global navigation menu ** : displayed on sub-paths of the main creativecommons.org website, such as /licenses
+- ** The Global footer ** : displayed on most Creative Commons properties
+- ** The Explore CC component ** : displayed on all CC web properties, such as Global Summit etc.
+
+Instead of having each project implement these components leading to code duplication accross projects and maintenance issues, we decided it was 
+preferable 
+to have a seperate library of these components which finally led to the CC Global Components project.
+
+
+### Choosing a technology
+
+The goal of the Global components library was to build a custom web component that can be served via CDN. While planning, we needed to decide on 
+the technology to use. Agreeably, most web frameworks like React and Vue can be used to develop this but we wanted
+a simple implementation with fewer dependencies. Some ideal characteristics of what we were looking for was a technology that meets the following 
+criteria:
+
+- Web Standards oriented
+- Clean separation of HTML, CSS, and JavaScript (structure, aesthetics, and functionality)
+- Lightweight / small bundle size
+- Loosely coupled (no tight or unrelated dependencies)
+
+The two primary technologies we were considering were [Vue JS](https://v3.vuejs.org) and [Lightning Web Components](https://lwc.dev) but finally 
+decided to use Vue JS
+since we already had other projects developed in Vue (such as the Chooser project).
+
+
+### Building the components
+
+To scaffold the project, we used [Vue SFC rollup](https://www.npmjs.com/package/vue-sfc-rollup), which is a CLI templating utility that scaffolds 
+a minimal setup for compiling a library of multiple Vue SFCs (Single File Components) - into a form ready to share via npm. With this, 
+we could just focus on building the templates. We used [Vocabulary CSS](https://cc-vocabulary.netlify.app/), our own CC design package to style 
+the components.
+
+#### 1) CC Global Footer
+The CC Global Footer component was the easiest given that it's mostly static HTML. This component takes two attributes:
+- `logo-url`: which should point to the logo of the website it is used on. 
+- `donation-url`: which is used for the donation button.
+
+After importing the CDN script for the CC Global components, we can then use the CC Global footer in any page as such: 
+
+```HTML
+<cc-global-footer
+  donation-url="http://example.com"
+  logo-url="/example/logo-white.png"
+/>
+```
+
+and this renders as shown below:
+
+![CC Global Footer](cc_global_footer.png)
+
+
+#### 2) CC Explore
+
+The CC Explore component is an expandable banner which coontains links to all the CC Web properties. This component use a click listener which just
+toggles the expandable banner to show or hide when it is clicked. As with the CC Global Footer component, the CC Explore component takes two attributes. 
+
+```HTML
+<cc-explore
+  donation-url="http://example.com"
+  logo-url="/example/logo-white.png"
+/>
+```
+and this renders as shown below: 
+
+![CC Explore](cc_explore.gif)
+
+
+#### 3) CC Global Header
+
+The CC Global Header was an important component given that we had to make API calls to be able to render the Menu items for downstream projects
+such as the [Licenses and Tools](https://github.com/creativecommons/cc-legal-tools-app). We used the Axios library for the API calls to the Wordpress
+backend of the parent project [Projec_creativecommons.org](https://github.com/creativecommons/project_creativecommons.org).
+
+The CC Global Header has three required attributes, `base-url`, `donation-url` and `logo-url`, which are the URLs used for the API call, 
+Donation button and Logo respectively. There is one additional attribute `use-menu-placeholders` you can set which renders placeholder Menu Items 
+if you are in a development environment. However, for a stagin/production setup we do not use this attribute.
+
+```HTML
+<cc-global-header
+  base-url="http://127.0.0.1:8000"
+  donation-url="http:/example.com"
+  use-menu-placeholders
+  logo-url="/example/logo-black.png"
+/>
+```
+
+and this renders as shown: 
+
+![CC Global Header](cc_global_header.png)
+
+### Conclusion
+
+The first version of this library (0.1.1) was released and published to NPM on Dec 10, 2021. Till date [the time of this writing] we have had several
+changes and optimizations to the code and are currently on version `0.5.0`. This was a really enriching experience for me as it was my first time 
+working with Vue JS. We've also had additional code review and optimizations from [Timid Robot](/blog/authors/TimidRobot/).
+
+The CC Global Components with all 3 components used renders as: 
+
+![CC global components](cc_global_components.gif)
+
+You can find the CC Global Components project at: 
+- GitHub: [CC Global Components](https://github.com/creativecommons/cc-global-components)
+- NPM: [cc-global-components](https://www.npmjs.com/package/@creativecommons/cc-global-components)

@@ -9,6 +9,7 @@ focus on the intent of the code and work together with a minimum of friction.
 ---
 body:
 
+
 ## Need of Guidelines
 
 These Python Guidelines provides context to the developers who are new to the
@@ -16,17 +17,90 @@ codebase and wishes to make any real-world contribution with
 `org:creativecommons` and be a part of the organization and learn new things
 with the organization.
 
-## Code Formatting
+
+## Development Environment
+
 
 ### Overview
 
-All Python code must be formatted using [Black][black], *the uncompromising
-Python code formatter*. Each project should contain a `pyproject.toml`
+Please work to minimize the number of development related technologies. This
+helps minimize the overhead of contributing to multiple projects. Most of our
+projects use [Pipenv][pipenv], _the Python Development Workflow for Humans_,
+and/or [docker-compose][dockercompose], _a tool for defining and running
+multi-container Docker applications_.
+
+[pipenv]: https://github.com/pypa/pipenv
+[dockercompose]: https://docs.docker.com/compose/
+
+
+### Examples
+
+- Pipenv configuration: [GitHub Search · org:creativecommons
+  filename:Pipfile][pipenvconf]
+- Docker Compose configuration: [GitHub Search · org:creativecommons
+  filename:docker-compose.yml][dockercomposeconf]
+
+[pipenvconf]: https://github.com/search?q=org%3Acreativecommons+filename:Pipfile
+[dockercomposeconf]: https://github.com/search?q=org%3Acreativecommons+filename%3Adocker-compose.yml
+[relatedreadme]: https://github.com/creativecommons/cccatalog#development-setup-for-airflow-and-api-puller-scripts
+
+
+## Development Tools
+
+### Tool Order
+
+The recommended order to execute the tools described below is:
+1. `isort` (will make changes)
+2. `black` (will make changes)
+3. `flake8` (issues warnings)
+
+Many of the Python repositories have a `tools.sh` helper script to execute them
+in order: [GitHub Search · org:creativecommons filename:tools.sh][tools-sh].
+
+[tools-sh]: https://github.com/search?q=org%3Acreativecommons+filename%3Atools.sh
+
+
+### Handling Imports (isort)
+
+
+#### Overview
+
+All the imports in the Python code must be done via [isort][isort], a _Python
+utility/library to sort imports_ alphabetically, and automatically separated
+into sections and by type. It provides a command line utility, Python library
+and [plugins for various editors][isort-plugins] to quickly sort all your
+imports. It requires Python 3.6+ to run but supports formatting Python 2 code
+too.
+
+[isort]: https://github.com/pycqa/isort
+[isort-plugins]: https://github.com/pycqa/isort/wiki/isort-Plugins
+
+
+#### Configuration
+
+There's a good `isort` config which one should follow while contributing
+in the Python projects of the creativecommons. These configurations should
+be a part of `pyproject.toml` labelled as `[tools.isort]`
+
+- isort configuration (`pyproject.toml`): [GitHub Search · org:creativecommons
+  filename:pyproject.toml][isortconfig]
+
+[isortconfig]: https://github.com/search?q=org%3Acreativecommons+filename:pyproject.toml
+
+
+### Code Formatting (black)
+
+
+#### Overview
+
+All Python code must be formatted using [Black][black], _the uncompromising
+Python code formatter_. Each project should contain a `pyproject.toml`
 configuration file that limits line length to 79 characters.
 
 [black]: https://github.com/psf/black
 
-### Examples
+
+#### Examples
 
 - Black configuration (`pyproject.toml`): [GitHub Search · org:creativecommons
   filename:pyproject.toml][blackconfig]
@@ -37,17 +111,19 @@ configuration file that limits line length to 79 characters.
 [blackactions]: https://github.com/search?q=org%3Acreativecommons+%22pipenv+run+black%22&type=code
 
 
-## Style and Quality
+### Style and Quality (flake8)
 
-### Overview
 
-All Python code must be checked using [flake8][flake8], *a python tool that
-glues together pep8, pyflakes, mccabe, and third-party plugins to check
-the style and quality of some python code.*
+#### Overview
 
-[flake8]: https://gitlab.com/pycqa/flake8
+All Python code must be checked using [flake8][flake8], _a python tool that
+glues together pycodestyle, pyflakes, mccabe, and third-party plugins to check
+the style and quality of some python code._
 
-###  Conflicts with Black
+[flake8]: https://github.com/pycqa/flake8
+
+
+#### Conflicts with Black
 
 Where flake8 conflicts with Black, the flake8 check should be skipped. For
 example, there are instances where black formats code that generates flake8
@@ -56,7 +132,7 @@ warning for [Whitespace before ':' (E203)][e203].
 [e203]: https://www.flake8rules.com/rules/E203.html
 
 
-### Examples
+#### Examples
 
 - flake8 configuration (`.flake8`): [GitHub Search · org:creativecommons
   filename:.flake8][flake8conf]
@@ -68,58 +144,6 @@ warning for [Whitespace before ':' (E203)][e203].
 [flake8conf]: https://github.com/search?q=org%3Acreativecommons+filename:.flake8
 [skipe203]: https://github.com/search?q=org%3Acreativecommons+%22noqa%3A+E203%22&type=code
 [flake8actions]: https://github.com/search?q=org%3Acreativecommons+%22pipenv+run+flake8%22&type=code
-
-## Handling Imports
-
-### Overview
-
-All the imports in the Python code must be done via [isort][isort], a Python
-utility/library to sort imports alphabetically, and automatically separated
-into sections and by type.
-It provides a command line utility, Python library and
-[plugins for various editors](https://github.com/pycqa/isort/wiki/isort-Plugins)
-to quickly sort all your imports. It requires Python 3.6+ to run but
-supports formatting Python 2 code too.
-
-[isort]: https://github.com/pycqa/isort
-
-
-### Configuration
-
-There's a good `isort` config which one should follow while contributing
-in the Python projects of the creativecommons. These configurations should
- be a part of `pyproject.toml` labelled as `[tools.isort]`
-
-- Isort Configuration (`pyproject.toml`): [GitHub Search · org:creativecommons
-filename:pyproject.toml][isortconfig]
-
-[isortconfig]: https://github.com/search?q=org%3Acreativecommons+filename:pyproject.toml
-
-
-## Development Environment
-
-### Overview
-
-Please work to minimize the number of development related technologies. This
-helps minimize the overhead of contributing to multiple projects. Most of our
-projects use either [Pipenv][pipenv], *the Python Development Workflow for
-Humans,* or [docker-compose][dockercompose], *a tool for defining and running
-multi-container Docker applications.*
-
-[pipenv]: https://github.com/pypa/pipenv
-[dockercompose]: https://docs.docker.com/compose/
-
-
-### Examples
-
-- Pipenv configuration: [GitHub Search · org:creativecommons
-  filename:Pipfile][pipenvconf]
-- Docker-compose example: [docker-compose.yml for cccatalog][dockercomposeconf]
-  and the [related README.md][relatedreadme]
-
-[pipenvconf]: https://github.com/search?q=org%3Acreativecommons+filename:Pipfile
-[dockercomposeconf]: https://github.com/creativecommons/cccatalog/blob/master/src/cc_catalog_airflow/docker-compose.yml
-[relatedreadme]: https://github.com/creativecommons/cccatalog#development-setup-for-airflow-and-api-puller-scripts
 
 
 ## Additional Guidance

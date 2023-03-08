@@ -8,8 +8,8 @@
             "id": 175334998,
             "language": null,
             "license": {
-                "name": "MIT License",
-                "url": "https://github.com/creativecommons/.github/blob/main/LICENSE"
+                "name": "Creative Commons Zero v1.0 Universal",
+                "url": "https://github.com/creativecommons/.github/blob/main/COPYING"
             },
             "name": ".github",
             "slack": "",
@@ -42,7 +42,7 @@
             "language": null,
             "license": {
                 "name": "Other",
-                "url": "https://github.com/creativecommons/cc-assets/blob/main/LICENSE.md"
+                "url": "https://github.com/creativecommons/cc-assets/blob/main/COPYING.md"
             },
             "name": "cc-assets",
             "slack": "cc-developers",
@@ -79,7 +79,7 @@
         },
         {
             "created": "2020-06-03T18:51:38",
-            "description": "License and public domain declaration management application for Creative Commons",
+            "description": "Legal tool (licenses, public domain dedication, etc.) management application for Creative Commons",
             "engineering_project": true,
             "english_name": "CC Legal Tools Application",
             "featured": true,
@@ -100,7 +100,7 @@
         },
         {
             "created": "2020-09-08T19:18:51",
-            "description": "License and public domain declaration data for Creative Commons ",
+            "description": "Legal tool (licenses, public domain dedication, etc.) data for Creative Commons",
             "engineering_project": true,
             "english_name": "CC Legal Tools Data",
             "featured": false,
@@ -130,7 +130,7 @@
             "language": "XSLT",
             "license": {
                 "name": "GNU General Public License v2.0",
-                "url": "https://github.com/creativecommons/cc-license-chooser/blob/master/LICENSE"
+                "url": "https://github.com/creativecommons/cc-license-chooser/blob/main/LICENSE"
             },
             "name": "cc-license-chooser",
             "slack": "cc-dev-license-chooser",
@@ -163,11 +163,11 @@
         },
         {
             "created": "2014-01-08T18:49:45",
-            "description": "Collection of resources on CC tools and other open topics",
+            "description": "Collection of resources on Creative Commons (CC) tools and other open topics",
             "engineering_project": true,
             "featured": false,
             "id": 15744672,
-            "language": null,
+            "language": "Dockerfile",
             "license": {
                 "name": "MIT License",
                 "url": "https://github.com/creativecommons/cc-resource-archive/blob/main/LICENSE"
@@ -175,7 +175,7 @@
             "name": "cc-resource-archive",
             "slack": "",
             "url": "https://github.com/creativecommons/cc-resource-archive",
-            "website": "http://resources.creativecommons.org/"
+            "website": "https://resources.creativecommons.org/"
         },
         {
             "created": "2015-07-15T18:24:37",
@@ -186,7 +186,7 @@
             "language": "Hack",
             "license": {
                 "name": "GNU General Public License v2.0",
-                "url": "https://github.com/creativecommons/cc-wp-theme/blob/master/LICENSE"
+                "url": "https://github.com/creativecommons/cc-wp-theme/blob/main/LICENSE"
             },
             "name": "cc-wp-theme",
             "slack": "",
@@ -202,7 +202,7 @@
             "language": "Python",
             "license": {
                 "name": "MIT License",
-                "url": "https://github.com/creativecommons/cc.api/blob/master/LICENSE"
+                "url": "https://github.com/creativecommons/cc.api/blob/main/LICENSE"
             },
             "name": "cc.api",
             "slack": "",
@@ -219,7 +219,7 @@
             "language": "HTML",
             "license": {
                 "name": "MIT License",
-                "url": "https://github.com/creativecommons/cc.engine/blob/master/LICENSE"
+                "url": "https://github.com/creativecommons/cc.engine/blob/main/LICENSE"
             },
             "name": "cc.engine",
             "slack": "",
@@ -238,7 +238,7 @@
             "language": "Python",
             "license": {
                 "name": "MIT License",
-                "url": "https://github.com/creativecommons/cc.i18n/blob/master/LICENSE"
+                "url": "https://github.com/creativecommons/cc.i18n/blob/main/LICENSE"
             },
             "name": "cc.i18n",
             "slack": "",
@@ -254,7 +254,7 @@
             "language": "Python",
             "license": {
                 "name": "MIT License",
-                "url": "https://github.com/creativecommons/cc.license/blob/master/LICENSE"
+                "url": "https://github.com/creativecommons/cc.license/blob/main/LICENSE"
             },
             "name": "cc.license",
             "slack": "",
@@ -270,7 +270,7 @@
             "language": "Python",
             "license": {
                 "name": "MIT License",
-                "url": "https://github.com/creativecommons/cc.licenserdf/blob/master/LICENSE"
+                "url": "https://github.com/creativecommons/cc.licenserdf/blob/main/LICENSE"
             },
             "name": "cc.licenserdf",
             "slack": "",
@@ -286,7 +286,7 @@
             "language": "HTML",
             "license": {
                 "name": "Other",
-                "url": "https://github.com/creativecommons/CCID-cas/blob/master/LICENSE.md"
+                "url": "https://github.com/creativecommons/CCID-cas/blob/main/LICENSE.md"
             },
             "name": "CCID-cas",
             "slack": "",
@@ -302,7 +302,7 @@
             "language": "PHP",
             "license": {
                 "name": "GNU General Public License v2.0",
-                "url": "https://github.com/creativecommons/CCID-MediaWiki/blob/master/LICENSE"
+                "url": "https://github.com/creativecommons/CCID-MediaWiki/blob/main/LICENSE"
             },
             "name": "CCID-MediaWiki",
             "slack": "",
@@ -351,30 +351,14 @@
             "engineering_project": true,
             "featured": false,
             "id": 129003332,
-            "language": "CSS",
+            "language": "SCSS",
             "license": {
                 "name": "GNU General Public License v2.0",
-                "url": "https://github.com/creativecommons/certificates-landing-page-theme/blob/master/LICENSE"
+                "url": "https://github.com/creativecommons/certificates-landing-page-theme/blob/main/LICENSE"
             },
             "name": "certificates-landing-page-theme",
             "slack": "",
             "url": "https://github.com/creativecommons/certificates-landing-page-theme",
-            "website": "http://certificates.creativecommons.org/"
-        },
-        {
-            "created": "2016-06-14T16:37:49",
-            "description": "Themes and plugins for the Certificates WP site.",
-            "engineering_project": true,
-            "featured": false,
-            "id": 61139108,
-            "language": "CSS",
-            "license": {
-                "name": "Other",
-                "url": "https://github.com/creativecommons/certificates-themes-plugins/blob/master/LICENSE.txt"
-            },
-            "name": "certificates-themes-plugins",
-            "slack": "",
-            "url": "https://github.com/creativecommons/certificates-themes-plugins",
             "website": "http://certificates.creativecommons.org/"
         },
         {
@@ -412,7 +396,7 @@
             "language": "PHP",
             "license": {
                 "name": "GNU General Public License v2.0",
-                "url": "https://github.com/creativecommons/commoners/blob/master/LICENSE"
+                "url": "https://github.com/creativecommons/commoners/blob/main/LICENSE"
             },
             "name": "commoners",
             "slack": "",
@@ -476,7 +460,7 @@
             "language": "HTML",
             "license": {
                 "name": "MIT License",
-                "url": "https://github.com/creativecommons/creativecommons.github.io-source/blob/master/LICENSE"
+                "url": "https://github.com/creativecommons/creativecommons.github.io-source/blob/main/LICENSE"
             },
             "name": "creativecommons.github.io-source",
             "slack": "",
@@ -492,8 +476,8 @@
             "id": 14003491,
             "language": "HTML",
             "license": {
-                "name": "Other",
-                "url": "https://github.com/creativecommons/creativecommons.org/blob/master/LICENSE"
+                "name": "MIT License",
+                "url": "https://github.com/creativecommons/creativecommons.org/blob/main/LICENSE"
             },
             "name": "creativecommons.org",
             "slack": "",
@@ -503,6 +487,28 @@
             ],
             "url": "https://github.com/creativecommons/creativecommons.org",
             "website": "https://creativecommons.org/"
+        },
+        {
+            "created": "2022-11-22T21:16:18",
+            "description": "This is the UX frontend prototyping repository for the new creativecommons.org website build, inspired by the Vocabulary design system.",
+            "engineering_project": true,
+            "english_name": "creativecommons.org Prototype",
+            "featured": false,
+            "id": 569449155,
+            "language": "CSS",
+            "license": {
+                "name": "MIT License",
+                "url": "https://github.com/creativecommons/creativecommons.org-prototype/blob/main/LICENSE"
+            },
+            "name": "creativecommons.org-prototype",
+            "slack": "",
+            "technologies": [
+                "HTML",
+                "CSS",
+                "Javascript"
+            ],
+            "url": "https://github.com/creativecommons/creativecommons.org-prototype",
+            "website": "https://creativecommons-prototype.netlify.app/"
         },
         {
             "created": "2020-11-02T16:08:46",
@@ -573,7 +579,7 @@
             "language": "Python",
             "license": {
                 "name": "MIT License",
-                "url": "https://github.com/creativecommons/licensebuttons/blob/master/LICENSE"
+                "url": "https://github.com/creativecommons/licensebuttons/blob/main/LICENSE"
             },
             "name": "licensebuttons",
             "slack": "",
@@ -588,8 +594,8 @@
             "id": 26779255,
             "language": "HTML",
             "license": {
-                "name": "Other",
-                "url": "https://github.com/creativecommons/magical-pony/blob/master/COPYING"
+                "name": "Creative Commons Zero v1.0 Universal",
+                "url": "https://github.com/creativecommons/magical-pony/blob/main/COPYING"
             },
             "name": "magical-pony",
             "slack": "",
@@ -621,7 +627,7 @@
             "language": "PHP",
             "license": {
                 "name": "GNU General Public License v2.0",
-                "url": "https://github.com/creativecommons/new-creativecommons.org/blob/master/LICENSE"
+                "url": "https://github.com/creativecommons/new-creativecommons.org/blob/main/LICENSE"
             },
             "name": "new-creativecommons.org",
             "slack": "",
@@ -637,7 +643,7 @@
             "language": "PHP",
             "license": {
                 "name": "GNU General Public License v2.0",
-                "url": "https://github.com/creativecommons/new-www-plugin/blob/master/LICENSE"
+                "url": "https://github.com/creativecommons/new-www-plugin/blob/main/LICENSE"
             },
             "name": "new-www-plugin",
             "slack": "",
@@ -653,7 +659,7 @@
             "language": "SCSS",
             "license": {
                 "name": "GNU General Public License v2.0",
-                "url": "https://github.com/creativecommons/new-www-theme/blob/master/LICENSE"
+                "url": "https://github.com/creativecommons/new-www-theme/blob/main/LICENSE"
             },
             "name": "new-www-theme",
             "slack": "",
@@ -681,47 +687,20 @@
             "website": "https://cc-og-image.vercel.app"
         },
         {
-            "created": "2021-02-27T18:32:18",
-            "description": "",
-            "id": 342929356,
-            "language": null,
-            "license": null,
-            "name": "open-glam-survey-vis",
-            "slack": "",
-            "url": "https://github.com/creativecommons/open-glam-survey-vis",
-            "website": null
-        },
-        {
-            "created": "2013-12-05T07:09:43",
-            "description": "open4us.org website",
+            "created": "2022-06-27T15:06:21",
+            "description": "Open Professionals Education Network (OPEN)",
             "engineering_project": true,
             "featured": false,
-            "id": 14946646,
+            "id": 507956064,
             "language": "PHP",
             "license": {
-                "name": "MIT License",
-                "url": "https://github.com/creativecommons/open4us.org/blob/master/LICENSE"
+                "name": "Other",
+                "url": "https://github.com/creativecommons/open4us/blob/master/license.txt"
             },
-            "name": "open4us.org",
+            "name": "open4us",
             "slack": "",
-            "url": "https://github.com/creativecommons/open4us.org",
+            "url": "https://github.com/creativecommons/open4us",
             "website": "https://open4us.org/"
-        },
-        {
-            "created": "2014-02-24T19:46:28",
-            "description": "OPN Website",
-            "engineering_project": true,
-            "featured": false,
-            "id": 17148371,
-            "language": "PHP",
-            "license": {
-                "name": "MIT License",
-                "url": "https://github.com/creativecommons/openpolicynetwork.org/blob/master/LICENSE"
-            },
-            "name": "openpolicynetwork.org",
-            "slack": "",
-            "url": "https://github.com/creativecommons/openpolicynetwork.org",
-            "website": "https://openpolicynetwork.org/"
         },
         {
             "created": "2020-08-21T15:34:37",
@@ -770,6 +749,26 @@
             "website": "https://creativecommons.org/"
         },
         {
+            "created": "2022-09-07T17:02:39",
+            "description": "Quantifying the Commons",
+            "engineering_project": true,
+            "english_name": "Quantifying the Commons",
+            "featured": true,
+            "id": 533860990,
+            "language": "Jupyter Notebook",
+            "license": {
+                "name": "MIT License",
+                "url": "https://github.com/creativecommons/quantifying/blob/main/LICENSE"
+            },
+            "name": "quantifying",
+            "slack": "cc-dev-quantifying",
+            "technologies": [
+                "Python"
+            ],
+            "url": "https://github.com/creativecommons/quantifying",
+            "website": ""
+        },
+        {
             "created": "2013-12-02T20:59:52",
             "description": "",
             "engineering_project": true,
@@ -779,7 +778,7 @@
             "language": "Python",
             "license": {
                 "name": "MIT License",
-                "url": "https://github.com/creativecommons/rdfadict/blob/master/LICENSE"
+                "url": "https://github.com/creativecommons/rdfadict/blob/main/LICENSE"
             },
             "name": "rdfadict",
             "slack": "",
@@ -798,12 +797,12 @@
             "language": "HTML",
             "license": {
                 "name": "MIT License",
-                "url": "https://github.com/creativecommons/reversionary-rights/blob/master/LICENSE"
+                "url": "https://github.com/creativecommons/reversionary-rights/blob/main/LICENSE"
             },
             "name": "reversionary-rights",
             "slack": "",
             "url": "https://github.com/creativecommons/reversionary-rights",
-            "website": null
+            "website": "https://rights-back-beta.creativecommons.org/"
         },
         {
             "created": "2015-07-23T21:30:47",
@@ -839,15 +838,15 @@
         },
         {
             "created": "2013-10-24T00:19:27",
-            "description": "Legacy Creative Commons Search, no longer under development",
+            "description": "Creative Commons Search Portal",
             "engineering_project": true,
-            "english_name": "CC Search (Legacy)",
+            "english_name": "CC Search Portal",
             "featured": false,
             "id": 13818557,
             "language": "CSS",
             "license": {
                 "name": "MIT License",
-                "url": "https://github.com/creativecommons/search/blob/master/LICENSE"
+                "url": "https://github.com/creativecommons/search/blob/main/LICENSE"
             },
             "name": "search",
             "slack": "",
@@ -901,8 +900,24 @@
             "website": ""
         },
         {
+            "created": "2022-05-13T20:31:39",
+            "description": "Static copies of previous State of the Commons sites",
+            "engineering_project": true,
+            "featured": false,
+            "id": 492032952,
+            "language": "Shell",
+            "license": {
+                "name": "Creative Commons Attribution 4.0 International",
+                "url": "https://github.com/creativecommons/stateof/blob/main/LICENSE"
+            },
+            "name": "stateof",
+            "slack": "",
+            "url": "https://github.com/creativecommons/stateof",
+            "website": "https://stateof.creativecommons.org/"
+        },
+        {
             "created": "2015-03-03T19:48:55",
-            "description": "Profiles of exemplary workforce training programs supported by the U.S. Department of Labor TAACCCT program.",
+            "description": "Profiles of exemplary workforce training programs supported by the U.S. Department of Labor Trade Adjustment Assistance Community College & Career Training program.",
             "engineering_project": true,
             "featured": false,
             "id": 31617803,
@@ -914,7 +929,7 @@
             "name": "taaccct",
             "slack": "",
             "url": "https://github.com/creativecommons/taaccct",
-            "website": "http://profiles.open4us.org/taaccct/"
+            "website": "https://taaccct.open4us.org/"
         },
         {
             "created": "2013-09-06T23:57:48",
@@ -949,11 +964,27 @@
             "website": "https://rightsback.org/questionnaire/"
         },
         {
+            "created": "2014-04-09T23:22:22",
+            "description": "Creative Commons created the legal and technical infrastructure that allows effective sharing of knowledge, art and data by individuals, organizations and governments. More importantly, millions of creators took advantage of that infrastructure to share work that enriches the global commons for all humanity. The Power of Open collects the stories of those creators.",
+            "engineering_project": true,
+            "featured": false,
+            "id": 18616877,
+            "language": null,
+            "license": {
+                "name": "Other",
+                "url": "https://github.com/creativecommons/the-power-of-open/blob/main/LICENSE"
+            },
+            "name": "the-power-of-open",
+            "slack": "",
+            "url": "https://github.com/creativecommons/the-power-of-open",
+            "website": "https://thepowerofopen.org/"
+        },
+        {
             "created": "2019-11-25T17:29:13",
             "description": "A cohesive design system & Vue component library to unify the web-facing Creative Commons",
             "engineering_project": true,
             "english_name": "CC Vocabulary",
-            "featured": true,
+            "featured": false,
             "id": 224004769,
             "language": "SCSS",
             "license": {
@@ -978,7 +1009,7 @@
             "description": "A collection of Vue components used in the web facing Creative Commons.",
             "engineering_project": true,
             "english_name": "CC Vocabulary components",
-            "featured": true,
+            "featured": false,
             "id": 446377158,
             "language": "Vue",
             "license": {
@@ -1001,7 +1032,7 @@
             "description": "Typefaces that lend personality to the web facing Creative Commons",
             "engineering_project": true,
             "english_name": "CC Vocabulary fonts",
-            "featured": true,
+            "featured": false,
             "id": 446389251,
             "language": "JavaScript",
             "license": {
@@ -1024,7 +1055,7 @@
             "description": "A cohesive design system to unite the web facing Creative Commons",
             "engineering_project": true,
             "english_name": "CC Vocabulary styles",
-            "featured": true,
+            "featured": false,
             "id": 446389149,
             "language": "SCSS",
             "license": {
@@ -1118,7 +1149,7 @@
             "language": "PHP",
             "license": {
                 "name": "GNU General Public License v2.0",
-                "url": "https://github.com/creativecommons/wp-theme-cc-chapter/blob/master/LICENSE"
+                "url": "https://github.com/creativecommons/wp-theme-cc-chapter/blob/main/LICENSE"
             },
             "name": "wp-theme-cc-chapter",
             "slack": "",
@@ -1144,7 +1175,7 @@
                 "WordPress"
             ],
             "url": "https://github.com/creativecommons/wp-theme-cc-commoners",
-            "website": null
+            "website": ""
         },
         {
             "created": "2019-04-15T13:36:51",
@@ -1155,12 +1186,12 @@
             "language": "CSS",
             "license": {
                 "name": "GNU General Public License v2.0",
-                "url": "https://github.com/creativecommons/wp-theme-cc-sotc/blob/master/LICENSE"
+                "url": "https://github.com/creativecommons/wp-theme-cc-sotc/blob/main/LICENSE"
             },
             "name": "wp-theme-cc-sotc",
             "slack": "",
             "url": "https://github.com/creativecommons/wp-theme-cc-sotc",
-            "website": null
+            "website": ""
         },
         {
             "created": "2019-03-22T15:46:16",
@@ -1172,7 +1203,7 @@
             "language": "PHP",
             "license": {
                 "name": "GNU General Public License v2.0",
-                "url": "https://github.com/creativecommons/wp-theme-cctoolkit/blob/master/LICENSE"
+                "url": "https://github.com/creativecommons/wp-theme-cctoolkit/blob/main/LICENSE"
             },
             "name": "wp-theme-cctoolkit",
             "slack": "",
@@ -1205,7 +1236,7 @@
                 "WordPress"
             ],
             "url": "https://github.com/creativecommons/wp-theme-creativecommons.org",
-            "website": null
+            "website": ""
         },
         {
             "created": "2020-09-08T17:50:40",
@@ -1217,7 +1248,7 @@
             "language": "PHP",
             "license": {
                 "name": "MIT License",
-                "url": "https://github.com/creativecommons/wp-theme-openglam/blob/master/LICENSE"
+                "url": "https://github.com/creativecommons/wp-theme-openglam/blob/main/LICENSE"
             },
             "name": "wp-theme-openglam",
             "slack": "cc-dev-wordpress",
@@ -1226,7 +1257,7 @@
                 "WordPress"
             ],
             "url": "https://github.com/creativecommons/wp-theme-openglam",
-            "website": null
+            "website": ""
         },
         {
             "created": "2019-10-16T17:42:01",
@@ -1238,7 +1269,7 @@
             "language": "PHP",
             "license": {
                 "name": "MIT License",
-                "url": "https://github.com/creativecommons/wp-theme-summit/blob/master/LICENSE"
+                "url": "https://github.com/creativecommons/wp-theme-summit/blob/main/LICENSE"
             },
             "name": "wp-theme-summit",
             "slack": "cc-dev-wordpress",
@@ -1247,7 +1278,7 @@
                 "WordPress"
             ],
             "url": "https://github.com/creativecommons/wp-theme-summit",
-            "website": null
+            "website": ""
         }
     ]
 }

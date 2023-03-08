@@ -1,4 +1,4 @@
-{% from "macros/author_name.html" import render_author_name %}
+{% from "macros/posts.html" import render_post_summary %}
 
 <section class="recent-posts">
   <div class="container">
@@ -7,33 +7,14 @@
         {{ this.title }}
       </h2>
       <span class="level-right">
-        <a class="posts-link" href="/blog">See all posts <i class="icon angle-right"></i></a>
+        <a class="posts-link" href="/blog/entries">See all posts <i class="icon angle-right"></i></a>
       </span>
     </div>
     <div class="columns">
       {% for post in site.query('/blog/entries') %}
-        {% if loop.index <= 3 %}
-          {% set author = post.parent.parent.children.get('authors').children.get(post.author) %}
-          <div class="column is-one-third is-paddingless padding-horizontal-big padding-top-bigger">
-            <article class="card entry-post horizontal no-border blog-entry">
-              {% if author.about %}
-                <header>
-                  <figure class="image blog-image">
-                    <img class="profile" src="https://secure.gravatar.com/avatar/{{ author.md5_hashed_email }}?size=200&d=mp" alt="gravatar" />
-                  </figure>
-                </header>
-              {% endif %}
-              </header>
-              <div class="blog-content">
-                <h4 class="b-header"><a class="blog-title" href="{{ post|url }}">{{ post.title }}</a></h4>
-                <span class="blog-author">by <a class="author-name" href="{{ author|url }}">{{ render_author_name(author) }}</a>
-                on {{ post.pub_date|dateformat("YYYY-MM-dd") }}</span>
-                <div class="excerpt">
-                  {{ post.body | excerpt | string | striptags() | truncate(100) }}
-                </div>
-              </div>
-            </article>
-          </div>
+        {% set post_loop = loop %}
+        {% if post_loop.index <= 3 %}
+          {{ render_post_summary(post) }}
         {% endif %}
       {% endfor %}
     </div>

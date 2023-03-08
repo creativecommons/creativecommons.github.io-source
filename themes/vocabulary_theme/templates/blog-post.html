@@ -1,12 +1,9 @@
 {% extends "layout.html" %}
-
-{% from "macros/author_name.html" import render_author_name %}
-
+{% from "macros/authors_byline.html" import render_authors_byline %}
+{% from "macros/authors_gravatar.html" import render_author_gravatar %}
 {% from "macros/posts.html" import render_posts %}
 
 {% block title %}{{ this.title }}{% endblock %}
-
-{% set author = this.parent.parent.children.get('authors').children.get(this.author) %}
 
 {% block body %}
   <div class="single-post">
@@ -14,13 +11,11 @@
       <div class="container">
         <h4>CC Open Source Blog</h4>
         <h2 class="title">{{ this.title }}</h2>
-        {{ check_file('content' + this.parent.parent.path + '/authors/' + this.author + '/contents.lr') }}
         <div class="author columns is-marginless">
-          <figure class="image profile">
-            <img src="https://secure.gravatar.com/avatar/{{ author.md5_hashed_email }}?size=200&d=mp" alt="gravatar" class="profile" />
-          </figure>
-          <p class="column">by <a href="{{ author|url }}">{{ render_author_name(author) }}</a>
-          on {{ this.pub_date|dateformat("YYYY-MM-dd") }}</p>
+          {{ render_author_gravatar(this)|trim }}
+          <p class="padding-small">
+            {{ render_authors_byline(this)|trim }}
+          </p>
         </div>
         {% if this.series|length %}
           {% set series = this.parent.parent.children.get('series').children.get(this.series) %}
