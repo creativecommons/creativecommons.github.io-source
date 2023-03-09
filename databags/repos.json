@@ -1178,22 +1178,6 @@
             "website": ""
         },
         {
-            "created": "2019-04-15T13:36:51",
-            "description": "WordPress theme for the State of the Commons",
-            "engineering_project": true,
-            "featured": false,
-            "id": 181494221,
-            "language": "CSS",
-            "license": {
-                "name": "GNU General Public License v2.0",
-                "url": "https://github.com/creativecommons/wp-theme-cc-sotc/blob/main/LICENSE"
-            },
-            "name": "wp-theme-cc-sotc",
-            "slack": "",
-            "url": "https://github.com/creativecommons/wp-theme-cc-sotc",
-            "website": ""
-        },
-        {
             "created": "2019-03-22T15:46:16",
             "description": "Creative Commons - Business Toolkit WordPress theme",
             "engineering_project": true,
