@@ -1,9 +1,5 @@
-# These owners will be the default owners for everything in
-# the repo. Unless a later match takes precedence, they will 
-# be requested for review when someone opens a pull request.
-* @creativecommons/engineering @creativecommons/ct-cc-open-source-core-committers @creativecommons/ct-cc-open-source-collaborators
-
-# These users own any files in the specified directory and 
-# any of its subdirectories.
-/webpack/ @creativecommons/frontend-engineers
-* @creativecommons/ct-cc-open-source-maintainers
+# https://help.github.com/en/articles/about-code-owners
+# If you want to match two or more code owners with the same pattern, all the
+# code owners must be on the same line. If the code owners are not on the same
+# line, the pattern matches only the last mentioned code owner.
+* @creativecommons/technology @creativecommons/ct-cc-open-source-core-committers @creativecommons/ct-cc-open-source-maintainers
