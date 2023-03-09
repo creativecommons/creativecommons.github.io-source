@@ -246,7 +246,7 @@
                 }
             ],
             "name": "CC WordPress Themes",
-            "repos": "creativecommons-base,wp-theme-cc-chapter,wp-theme-creativecommons.org,wp-theme-cc-commoners,wp-theme-cc-sotc,wp-theme-openglam,wp-theme-cctoolkit,wp-theme-summit,creativecommons-certificate,wp-plugin-vocabulary-blocks"
+            "repos": "creativecommons-base,creativecommons-certificate,wp-plugin-creativecommons-website,wp-theme-cc-chapter,wp-theme-cc-commoners,wp-theme-cctoolkit,wp-theme-creativecommons.org,wp-theme-openglam,wp-theme-summit"
         },
         {
             "members": [
