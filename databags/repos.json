@@ -843,7 +843,7 @@
             "english_name": "CC Search Portal",
             "featured": false,
             "id": 13818557,
-            "language": "CSS",
+            "language": "Dockerfile",
             "license": {
                 "name": "MIT License",
                 "url": "https://github.com/creativecommons/search/blob/main/LICENSE"
@@ -855,7 +855,7 @@
                 "WordPress"
             ],
             "url": "https://github.com/creativecommons/search",
-            "website": "https://oldsearch.creativecommons.org/"
+            "website": "https://search.creativecommons.org/"
         },
         {
             "created": "2018-11-20T21:50:33",
