@@ -10,82 +10,141 @@ author: sara
 pub_date: 2023-03-24
 ---
 body:
-Different open source communities work differently and so everyone may arrive at Creative Commons' projects with their own set of individual expectations. Someone might expect to directly submit a Pull Request to a project without an Issue. Or they may submit an Issue and then immediately an associated Pull Request. At Creative Commons we have a process we hope to follow so there's a chance for consideration, community participation, and discussion along the way. Where we make collaborative, well documented, and informed work more possible!
 
-Things usually begin with an idea for new functionality, new/revised documentation, or an encountered error of sorts. That idea or error is then captured as a GitHub Issue used to describe its details. Think of this as the Abstract that comes before the Implementation. 
+Different open source communities work differently and so everyone may arrive
+at Creative Commons' projects with their own set of individual expectations.
+Someone might expect to directly submit a Pull Request to a project without an
+Issue. Or they may submit an Issue and then immediately an associated Pull
+Request. At Creative Commons we have a process we hope to follow so there's a
+chance for consideration, community participation, and discussion along the
+way. Where we make collaborative, well documented, and informed work more
+possible!
 
-It's important to first look through all the existing Issues, including ones that have been Closed to determine if someone else has already made an overlapping Issue. If they have, it's best to add any new information you've discovered or thought of as a comment (or series of comments) to that Issue, rather than create a new one. 
+Things usually begin with an idea for new functionality, new/revised
+documentation, or an encountered error of sorts. That idea or error is then
+captured as a GitHub Issue used to describe its details. Think of this as the
+Abstract that comes before the Implementation.
 
-Errors (often referred to as Bugs) should be verified, and reproducible if possible. Things like screenshots, steps to reproduce, a video, and environment details are all incredibly helpful for others when they want to review the error. All that information is gathered and placed in a succinct, but detailed Issue on the associated repository. It's worth noting that the documented Issue alone is a valued contribution. It will provide guidance and documentation for whomever works on resolving or implementing it, so it's just as important as the eventual code that will be written. That means it should be done well, because the better an Issue describes an error and provides a clear way to reproduce it the easier it will be for anyone to address it.
+It's important to first look through all the existing Issues, including ones
+that have been Closed to determine if someone else has already made an
+overlapping Issue. If they have, it's best to add any new information you've
+discovered or thought of as a comment (or series of comments) to that Issue,
+rather than create a new one.
 
-Functionality and Feature proposals are often a little more involved. Errors are some aberration in the existing expectations or functionality of the codebase's state, but new/changed functionality or features introduce larger planning considerations. They have to take into account the current state of things and the proposed future state they're introducing as an Issue. This is an exercise in communication and description first and foremost, and that means that having a detailed writeup, wireframes, mockups, and evidence to support the proposal is vital to its success. Where Errors might be able to consider a more isolated set of consequences to fixing something, introducing new features/functionality may have unintended side effects, it may require multiple parts of the codebase to be changed or altered. All of these larger picture considerations should be taken into account and addressed within the Issue. One should expect that a Feature Issue may on average take longer to introduce, and longer to adequately document in a clear and concise way to get the point across to the rest of the community.
+Errors (often referred to as Bugs) should be verified, and reproducible if
+possible. Things like screenshots, steps to reproduce, a video, and environment
+details are all incredibly helpful for others when they want to review the
+error. All that information is gathered and placed in a succinct, but detailed
+Issue on the associated repository. It's worth noting that the documented Issue
+alone is a valued contribution. It will provide guidance and documentation for
+whomever works on resolving or implementing it, so it's just as important as
+the eventual code that will be written. That means it should be done well,
+because the better an Issue describes an error and provides a clear way to
+reproduce it the easier it will be for anyone to address it.
 
-Documentation can always use improvements whether within code comments, a project's README.md, or associated documentation. These would largely be considered a "Feature Issue" technically but it's worth pointing them out separately because they're as important, if not more so, than fixing errors or adding codebase level functionality. Good documentation makes the project strong and the community more informed. Improvements here should document where there's a gap or where revisions are needed, and how they should be corrected. 
+Functionality and Feature proposals are often a little more involved. Errors
+are some aberration in the existing expectations or functionality of the
+codebase's state, but new/changed functionality or features introduce larger
+planning considerations. They have to take into account the current state of
+things and the proposed future state they're introducing as an Issue. This is
+an exercise in communication and description first and foremost, and that means
+that having a detailed writeup, wireframes, mockups, and evidence to support
+the proposal is vital to its success. Where Errors might be able to consider a
+more isolated set of consequences to fixing something, introducing new
+features/functionality may have unintended side effects, it may require
+multiple parts of the codebase to be changed or altered. All of these larger
+picture considerations should be taken into account and addressed within the
+Issue. One should expect that a Feature Issue may on average take longer to
+introduce, and longer to adequately document in a clear and concise way to get
+the point across to the rest of the community.
 
-Whether an Error or Feature/functionality Issue, once it's been submitted, in accordance with the [Contribution Guidelines](https://opensource.creativecommons.org/contributing-code/), it will move to a status of "awaiting triage". This means that it is waiting to be reviewed by one of the core codebase contributors. While it's in this state no implementation work should be done (no PRs, no code work to add or correct the behavior). An Issue submitted is largely the start of a process, and a conversation. Core contributors will review the Issue and see if it adequately describes its appropriate details, and if its objectives fit within the larger pattern and goals of the codebase itself. It's entirely possible that a well thought through Feature Issue that adds some new menu functionality is in isolation a good idea, but that it doesn't fit within the goals of the project in question and won't move forward. And that's OK, even if an Issue doesn't move forward it can now stand as documentation for the community on what won't be worked on at this time, which is just as important as what will. It's a contribution whether it moves forward or not, so long as it describes itself well enough. 
+Documentation can always use improvements whether within code comments, a
+project's README.md, or associated documentation. These would largely be
+considered a "Feature Issue" technically but it's worth pointing them out
+separately because they're as important, if not more so, than fixing errors or
+adding codebase level functionality. Good documentation makes the project
+strong and the community more informed. Improvements here should document where
+there's a gap or where revisions are needed, and how they should be corrected.
+
+Whether an Error or Feature/functionality Issue, once it's been submitted, in
+accordance with the [Contribution
+Guidelines](https://opensource.creativecommons.org/contributing-code/), it will
+move to a status of "awaiting triage". This means that it is waiting to be
+reviewed by one of the core codebase contributors. While it's in this state no
+implementation work should be done (no PRs, no code work to add or correct the
+behavior). An Issue submitted is largely the start of a process, and a
+conversation. Core contributors will review the Issue and see if it adequately
+describes its appropriate details, and if its objectives fit within the larger
+pattern and goals of the codebase itself. It's entirely possible that a well
+thought through Feature Issue that adds some new menu functionality is in
+isolation a good idea, but that it doesn't fit within the goals of the project
+in question and won't move forward. And that's OK, even if an Issue doesn't
+move forward it can now stand as documentation for the community on what won't
+be worked on at this time, which is just as important as what will. It's a
+contribution whether it moves forward or not, so long as it describes itself
+well enough.
 
 If this happens, the Issue will be moved to a status of "discarded", and will
- be closed with a comment explaining why. The other reason an Issue might be 
- moved to "discarded" is that it duplicates the work in another Issue, which 
- is why it's important to first check all the existing Issues prior to 
- submitting a new one.
+be closed with a comment explaining why. The other reason an Issue might be
+moved to "discarded" is that it duplicates the work in another Issue, which is
+why it's important to first check all the existing Issues prior to submitting a
+new one.
 
-Sometimes an Issue might describe something much broader than can be easily 
+Sometimes an Issue might describe something much broader than can be easily
 contained within itself and may be converted to a status of "discussion". This
- means that the Issue should spark a larger conversation within the community 
- to consider all the angles of abstract, and possibly split the idea up into 
- more manageable pieces across multiple Issues. Other outcomes might be a 
- discussion that realizes that while the idea is sound, it's not implementable
-  at this time and won't move forward.
+means that the Issue should spark a larger conversation within the community to
+consider all the angles of abstract, and possibly split the idea up into more
+manageable pieces across multiple Issues. Other outcomes might be a discussion
+that realizes that while the idea is sound, it's not implementable at this time
+and won't move forward.
 
-Some Issues are solid ideas, but they are not something that can move forward 
-until work on other Issues is completed first. As such they tend to move to a 
+Some Issues are solid ideas, but they are not something that can move forward
+until work on other Issues is completed first. As such they tend to move to a
 status of "blocked". They'll sit in that state until they're unblocked and the
- work can happen. 
+work can happen.
 
 If an Issue seems like it doesn't have enough information to determine what to
- do with it, then it will likely move to a status of "ticket work required" and a comment will usually be left describing what needs to be worked on. 
+do with it, then it will likely move to a status of "ticket work required" and
+a comment will usually be left describing what needs to be worked on.
 
 Remember, an Issue is a form of documentation, and in a way it's a
- conversation, and that means that until it moves forward it's very much a 
- work in progress.
+conversation, and that means that until it moves forward it's very much a work
+in progress.
 
 If an Issue passes through this period as implementable, then it'll move to a
- status of "ready for work". This is the point at which it can be implemented,
-  and a contributor can submit a Pull Request addressing it. (See the 
-  [Repository Labels Status section](https://opensource.creativecommons.org/co
-  ntributing-code/repo-labels/#status) for more information)
+status of "ready for work". This is the point at which it can be implemented,
+and a contributor can submit a Pull Request addressing it. (See the [Repository
+Labels Status section](https://opensource.creativecommons.org/co
+ntributing-code/repo-labels/#status) for more information)
 
-During this process it is worth noting that there will be multiple types of 
-contribution. For example: 
+During this process it is worth noting that there will be multiple types of
+contribution. For example:
 
 * The Issue itself is a contribution
 * Comments on the Issue from the community refining it are each contributions
 * Someone's comment on the Issue helping another person sort out why the Error
- is occurring is a contribution.
+  is occurring is a contribution.
 * Someone finding another related Issue and linking it as relevant to that
- Issue is a contribution. 
+  Issue is a contribution.
 
 All of these contributions occurred before a Pull Request was ever initiated.
- Once an Issue enters a status of "ready for work" someone who has indicated
-  interest on that Issue will be assigned to it and can then fork the 
-  repository, make a branch to work within, and once settled submit a Pull 
-  Request. That process alone may involve several contributions as well, such
-   as: 
+Once an Issue enters a status of "ready for work" someone who has indicated
+interest on that Issue will be assigned to it and can then fork the repository,
+make a branch to work within, and once settled submit a Pull Request. That
+process alone may involve several contributions as well, such as:
 
 * The code work encounters a problem, someone asks for assistance within their
- draft PR, and several members offer help as comments.
+  draft PR, and several members offer help as comments.
 * Someone reviews the final PR and leaves a detailed review on what might need
- addressing
+  addressing
 * A discussion breaks out on the best way to resolve an encountered problem
- with the PR, each of these comments is a contribution
+  with the PR, each of these comments is a contribution
 * And, of course, the PR itself is a contribution.
 
 If the PR passes Review then it'll be marked as Approved and merged into the
- codebase, that will trigger the associated Issue to close as complete and now
-  the Error Fix or Functionality in question will be fully implemented into 
-  the project. 
+codebase, that will trigger the associated Issue to close as complete and now
+the Error Fix or Functionality in question will be fully implemented into the
+project.
 
 To get here it took multiple contributions, from different community members,
- that's the power of open source!
-
+that's the power of open source!
