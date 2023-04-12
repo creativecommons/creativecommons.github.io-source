@@ -843,7 +843,7 @@
             "english_name": "CC Search Portal",
             "featured": false,
             "id": 13818557,
-            "language": "Dockerfile",
+            "language": "HTML",
             "license": {
                 "name": "MIT License",
                 "url": "https://github.com/creativecommons/search/blob/main/LICENSE"
