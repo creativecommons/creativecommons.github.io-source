@@ -62,7 +62,7 @@ data.
 
 ### Diagram #1:
 
-![img](diagram_01.png)
+![Diagram #1: Percentage of Items per License Type](diagram_01.png)
 
 Diagram #1 shows the distribution of items taken from OER Commons by license
 type. It is clear that the CC-BY license type is the most popular, with 43% of
@@ -72,7 +72,7 @@ popular, accounting for 27% of the items collected.
 
 ### Diagram #2:
 
-![img](diagram_02.png)
+![Diagram #2: Number of Items by Month since Dec 2015](diagram_02.png)
 
 Diagram #2 shows when items have been added to the OER Commons API. There is
 little activity from December 2015, up to the beginning of 2023. However, close
@@ -81,7 +81,7 @@ to 30,000 items were added to the API in early 2023.
 
 ### Diagram #3:
 
-![img](diagram_03.png)
+![Diagram #3: Percentage of Items by Language](diagram_03.png)
 
 Diagram #3 shows the percentage of items by language. English is the most used
 language, with about 86% of the items being in English. The other languages
@@ -90,7 +90,7 @@ each have a small amount of the items.
 
 ### Diagram #4:
 
-![img](diagram_04.png)
+![Diagram #4: Percentage of Items in English per License Type](diagram_04.png)
 
 Since English is clearly the most popular language, we decided to see the
 license distribution for items that are in English. Diagram #4 shows a similar
@@ -101,7 +101,7 @@ distribution of licenses is similar to the overall distribution.
 
 ### Diagram #5:
 
-![img](diagram_05.png)
+![Diagram #5: Percentage of Items in French per License Type](diagram_05.png)
 
 We continued to look at the distribution of licenses by each language.
 Diagram #5 shows that for the items in French, CC-BY license is the most
@@ -113,7 +113,7 @@ popular at 49%, with CC-BY-SA being right behind it at 32%.
 
 ### Diagram #6:
 
-![img](diagram_06.png)
+![Diagram #6: License Type Breakdown by Primary User](diagram_06.png)
 
 Diagram #6 shows the distribution of items on OER commons by primary user and
 broken down by license type. The platform predominantly contains items designed
@@ -125,17 +125,17 @@ the charts below (Diagram #7 and Diagram #8).
 
 ### Diagram #7:
 
-![img](diagram_07.png)
+![Diagram #7: Percentage of Items Used by Teachers per License Type](diagram_07.png)
 
 
 ### Diagram #8:
 
-![img](diagram_08.png)
+![Diagram #8: Percentage of Items Used by Students per License Type](diagram_08.png)
 
 
 ### Diagram #9:
 
-![img](diagram_09.png)
+![Diagram #9: Subject Area by License](diagram_09.png)
 
 Another aspect analyzed was inspecting the subject areas and the licenses that
 they hold as shown in Diagram #9. Some preliminary data cleaning had to be
@@ -153,7 +153,7 @@ proportion of items with the CC-BY-NC-SA license.
 
 ### Diagram #10:
 
-![img](diagram_10.png)
+![Diagram #10: Material Type Breakdown by Education Level](diagram_10.png)
 
 Finally, the team analyzed the material types of the items and sorted it by
 education level that the items were created for. Again, some data cleaning was
