@@ -33,6 +33,28 @@
             "website": "http://certificates.creativecommons.org/"
         },
         {
+            "created": "2023-04-26T20:21:50",
+            "description": "CC Accidenz Commons font",
+            "engineering_project": true,
+            "english_name": "CC Accidenz Commons",
+            "featured": false,
+            "id": 633117329,
+            "language": null,
+            "license": {
+                "name": "Creative Commons Attribution Share Alike 4.0 International",
+                "url": "https://github.com/creativecommons/cc-accidenz-commons/blob/main/LICENSE"
+            },
+            "name": "cc-accidenz-commons",
+            "slack": "",
+            "technologies": [
+                "font",
+                "OTF",
+                "UFO"
+            ],
+            "url": "https://github.com/creativecommons/cc-accidenz-commons",
+            "website": ""
+        },
+        {
             "created": "2022-01-18T08:07:32",
             "description": "Image assets used across Creative Commons projects.",
             "engineering_project": true,
