@@ -709,20 +709,25 @@
             "website": "https://cc-og-image.vercel.app"
         },
         {
-            "created": "2022-06-27T15:06:21",
-            "description": "Open Professionals Education Network (OPEN)",
+            "created": "2023-05-29T14:20:22",
+            "description": "Open Professionals Education Network (OPEN) website",
             "engineering_project": true,
+            "english_name": "Open Professionals Education Network (OPEN) website",
             "featured": false,
-            "id": 507956064,
-            "language": "PHP",
+            "id": 646869415,
+            "language": "Shell",
             "license": {
-                "name": "Other",
-                "url": "https://github.com/creativecommons/open4us/blob/master/license.txt"
+                "name": "Creative Commons Attribution 4.0 International",
+                "url": "https://github.com/creativecommons/open4us.org/blob/main/LICENSE"
             },
-            "name": "open4us",
+            "name": "open4us.org",
             "slack": "",
-            "url": "https://github.com/creativecommons/open4us",
-            "website": "https://open4us.org/"
+            "technologies": [
+                "CSS",
+                "HTML"
+            ],
+            "url": "https://github.com/creativecommons/open4us.org",
+            "website": "http://open4us.org/"
         },
         {
             "created": "2020-08-21T15:34:37",
