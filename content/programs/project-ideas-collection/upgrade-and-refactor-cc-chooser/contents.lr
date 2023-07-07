@@ -1,0 +1,58 @@
+_model: project-idea
+---
+_hidden: yes
+---
+title: Upgrade and Refactor CC Chooser
+---
+problem:
+The Chooser has a stable initial UX, but due to bitrot its codebase is
+approaching non-support.
+---
+expected_outcome:
+Upgrade the codebase to current Vue.js versions and ancillary technologies
+(Vite, Pinia), created more clarity and longevity in the codebase. Generate
+clear documentation of codebase and functionality.
+---
+contributor_tasks:
+The contributor will need to upgrade the codebase from Vue.js v2.x to Vue.js
+v3.x, from Vue CLI to Vite, and from Vuex to Pinia. Incorporate new UX changes
+using semantic,  standards compliant, and accessible JavaScript, HTML, and CSS.
+Reduce the number of dependencies, and establish a stable automated process to
+build out an embeddable Web Component compatible implementation. Knowledge of
+the upgrade path from Vue 2.x implementations to Vue 3.x will be helpful, as
+will knowledge of Web Components. Final implementation will have clear
+documentation drafted within the codebase for future maintainability.
+---
+application_tips:
+- Engage with the repository (issues, pull requests)
+- Be helpful and welcoming (e.g. answer other contributors’ questions on Slack)
+- [Applicant Guide](/programs/applicant-guide/)
+---
+resources:
+- [creativecommons/chooser](https://github.com/creativecommons/chooser): Chooser
+- [Vue.js](https://vuejs.org/)
+- [Vue v3 Migration Guide](https://v3-migration.vuejs.org/)
+- [Vue CLI](https://cli.vuejs.org/)
+- [Vuex](https://vuex.vuejs.org/)
+- [Vite.js](https://vitejs.dev/)
+- [Pinia](https://pinia.vuejs.org/)
+- [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components)
+---
+skills_recommended:
+- Git
+- JavaScript
+- Vite
+- Vue.js (v2 & v3)
+- Pinia
+- HTML (Semantic & Accessible)
+- CSS (Structured & Accessible)
+- Web Components
+---
+lead:
+- Sara
+---
+difficulty: High
+---
+size: Large (~350 hours)
+---
+filter_value: difficulty-high skill-git skill-javascript skill-vue skill-html skill-css
