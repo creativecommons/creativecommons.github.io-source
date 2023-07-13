@@ -646,7 +646,7 @@
             "engineering_project": true,
             "featured": false,
             "id": 59230362,
-            "language": "PHP",
+            "language": "JavaScript",
             "license": {
                 "name": "GNU General Public License v2.0",
                 "url": "https://github.com/creativecommons/new-creativecommons.org/blob/main/LICENSE"
