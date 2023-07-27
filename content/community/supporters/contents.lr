@@ -4,8 +4,8 @@ _template: page-with-toc.html
 ---
 title: Supporters
 ---
-description: We are grateful 🙏 to those have directly and indirectly supported
-our open source efforts ❤️
+description: Creative Commons (CC) is grateful 🙏 to those have directly and
+indirectly supported our open source efforts ❤️
 ---
 body:
 
@@ -13,8 +13,8 @@ body:
 ## Volunteers
 
 Countless people have contributed code, documentation, translations, and
-insight. Thank you to all volunteers and community members that have supported
-our technology efforts!
+insight to CC's technology efforts. Thank you to all volunteers and community
+members that have supported our free/libre and open source (FOSS) activities.
 
 *TODO: Write a script and GitHub action in
 [creativecommons/ccos-scripts][ccos-scripts] to populate this section (or a sub
@@ -30,6 +30,7 @@ technology efforts:
 - [Apache2](https://httpd.apache.org/)
 - [Bash](https://www.gnu.org/software/bash/)
 - [Debian](https://www.debian.org/)
+- [Django](https://www.djangoproject.com/)
 - [HTML](https://html.spec.whatwg.org/) /
   [CSS](https://www.w3.org/TR/CSS/#css)
 - [Lektor](https://www.getlektor.com/)
@@ -63,7 +64,7 @@ will no longer hold their standards ransom for a purchase fee.
 [ghsponsors]: https://github.com/sponsors/creativecommons#sponsors-section-list
 
 
-## Services
+## Programs and services
 
 - Cloudflare via [Project Galileo][cloudflare]
 - GitHub via their [Social Impact][github] program
