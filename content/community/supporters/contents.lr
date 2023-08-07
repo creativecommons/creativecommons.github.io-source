@@ -1,0 +1,81 @@
+_model: page
+---
+_template: page-with-toc.html
+---
+title: Supporters
+---
+description: Creative Commons (CC) is grateful 🙏 to those have directly and
+indirectly supported our open source efforts ❤️
+---
+body:
+
+
+## Volunteers
+
+Countless people have contributed code, documentation, translations, and
+insight to CC's technology efforts. Thank you to all volunteers and community
+members that have supported our free/libre and open source (FOSS) activities.
+
+*TODO: Write a script and GitHub action in
+[creativecommons/ccos-scripts][ccos-scripts] to populate this section (or a sub
+page) with all GitHub contributors.*
+
+[ccos-scripts]: https://github.com/creativecommons/ccos-scripts
+
+
+## Software
+
+The following free/libre and open source software projects are essential to our
+technology efforts:
+- [Apache2](https://httpd.apache.org/)
+- [Bash](https://www.gnu.org/software/bash/)
+- [Debian](https://www.debian.org/)
+- [Django](https://www.djangoproject.com/)
+- [HTML](https://html.spec.whatwg.org/) /
+  [CSS](https://www.w3.org/TR/CSS/#css)
+- [Lektor](https://www.getlektor.com/)
+- [Markdown](https://en.wikipedia.org/wiki/Markdown)
+- [NGINX](https://nginx.org/)
+- [OpenSSH](https://www.openssh.com/)
+- [PHP](https://www.php.net/)
+- [Python](https://www.python.org/)
+- [Salt](https://saltproject.io/)
+- [Wiki.js](https://js.wiki/)
+- [WordPress](https://wordpress.org/) / [WP-CLI](https://wp-cli.org/)
+- ...and many more!
+
+
+## Standards
+
+The work we do would be impossible without [open standards][openstandard].
+
+We hope that some day the International Organization for Standardization (ISO)
+will no longer hold their standards ransom for a purchase fee.
+
+[openstandard]: https://en.wikipedia.org/wiki/Open_standard
+
+
+## Financial sponsors
+
+- [Supporters - Creative Commons][ccsupporters]
+- Our past and current [GitHub Sponsors][ghsponsors]
+
+[ccsupporters]: https://creativecommons.org/about/support-cc/supporters/
+[ghsponsors]: https://github.com/sponsors/creativecommons#sponsors-section-list
+
+
+## Programs and services
+
+- Cloudflare via [Project Galileo][cloudflare]
+- GitHub via their [Social Impact][github] program
+- [Google Summer of Code][gsoc]
+- [Outreachy][outreachy]
+- [PagerDuty for Nonprofits][pagerduty]
+- [UptimeRobot][uptimerobot]
+
+[cloudflare]: https://www.cloudflare.com/galileo/
+[github]: https://socialimpact.github.com/
+[gsoc]: https://summerofcode.withgoogle.com/
+[outreachy]: https://www.outreachy.org/
+[pagerduty]: https://www.pagerduty.com/industries/non-profit/
+[uptimerobot]: https://uptimerobot.com/
