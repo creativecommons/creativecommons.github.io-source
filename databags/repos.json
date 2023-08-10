@@ -1102,6 +1102,31 @@
             "website": ""
         },
         {
+            "created": "2023-04-21T19:58:28",
+            "description": "WordPress Theme implementation of the Vocabulary design system",
+            "engineering_project": true,
+            "english_name": "Vocabulary WordPress Theme",
+            "featured": false,
+            "id": 631052121,
+            "language": "CSS",
+            "license": {
+                "name": "MIT License",
+                "url": "https://github.com/creativecommons/vocabulary-theme/blob/main/LICENSE"
+            },
+            "name": "vocabulary-theme",
+            "slack": "",
+            "technologies": [
+                "HTML",
+                "CSS",
+                "Javascript",
+                "PHP",
+                "Docker",
+                "Bash"
+            ],
+            "url": "https://github.com/creativecommons/vocabulary-theme",
+            "website": null
+        },
+        {
             "created": "2020-10-17T03:08:56",
             "description": "",
             "engineering_project": true,
