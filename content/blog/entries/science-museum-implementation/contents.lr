@@ -1,8 +1,8 @@
 title: Science Museum provider implementation
 ---
-categories: 
+categories:
 
-cc-catalog 
+cc-catalog
 gsoc
 gsoc-2020
 ---
@@ -13,25 +13,25 @@ series: gsoc-2020-cccatalog
 pub_date: 2020-06-10
 ---
 body:
-## Introduction 
+## Introduction
 CC catalog project is responsible for collecting CC licensed images available in the web,  CC licensed images are hosted by different
 sources, these sources that provide the images and its metadata are called providers. Currently, images are collected from providers using two methods
-Common Crawl and API based crawl. Common Crawl data is an open repository of web crawled data and we use that data to get the necessary image metadata 
-for that provider [more information](https://commoncrawl.org/the-data/get-started/). API crawl is implemented using the API endpoint maintained 
-by the providers. The main problem with Common Crawl is that we don't have control over the data they crawl, and this sometimes results poor 
+Common Crawl and API based crawl. Common Crawl data is an open repository of web crawled data and we use that data to get the necessary image metadata
+for that provider [more information](https://commoncrawl.org/the-data/get-started/). API crawl is implemented using the API endpoint maintained
+by the providers. The main problem with Common Crawl is that we don't have control over the data they crawl, and this sometimes results poor
 data quality whereas with API based crawl we have access to the information available. API based crawl is better when we need to update image
-metadata and reqular intervals. 
+metadata and reqular intervals.
 
 As a part of the internship, I will be working on moving providers from Common Crawl to API based crawl as well as integrate new providers
 to the API crawl. I will be starting with the Science Museum provider.
 
 ## Science Museum
-Science museum is a provider with around 80,000 CC licensed images, currently Science museum data is ingested from Common Crawl. 
-Science museum is one such provider where our data is of poor quality and there is need to improve it. This is done by moving 
-Science museum to an API based crawl. 
+Science museum is a provider with around 80,000 CC licensed images, currently Science museum data is ingested from Common Crawl.
+Science museum is one such provider where our data is of poor quality and there is need to improve it. This is done by moving
+Science museum to an API based crawl.
 
 ## API research
-We want to index metadata using their open API [endpoint](https://collection.sciencemuseumgroup.org.uk/search/has_image/image_license). 
+We want to index metadata using their open API [endpoint](https://collection.sciencemuseumgroup.org.uk/search/has_image/image_license).
 However, before the implementation we have to ensure that the API provides necessary content and there is a systematic way to get it.
 The first step is to take an object from their collection and check certain criterias.
 
@@ -39,22 +39,22 @@ The first step is to take an object from their collection and check certain crit
 
 The criteria are:
 - parameters available for the API
-- Object landing url (frontend link of the object the image is associated with) 
+- Object landing url (frontend link of the object the image is associated with)
 - Image url (the url link of the image)
 - CC license associated with the image
-- creator, title and other metadata info 
+- creator, title and other metadata info
 
-Once the above checks have been made, we need to find a way to get all the objects, this could be by paging through the records 
-or partition using the parameters, etc. Since their API parameter has ```page[number]``` paging would be an appropriate choice with  max size 
-as 100 it would require around 800 pages to get all the objects but then since they don't allow paging a large number of results, and 
-the max number of pages for Science Museum is 50 pages.This would mean we would get only 5000 objects and around 17000 images. 
+Once the above checks have been made, we need to find a way to get all the objects, this could be by paging through the records
+or partition using the parameters, etc. Since their API parameter has ```page[number]``` paging would be an appropriate choice with  max size
+as 100 it would require around 800 pages to get all the objects but then since they don't allow paging a large number of results, and
+the max number of pages for Science Museum is 50 pages.This would mean we would get only 5000 objects and around 17000 images.
 
 [API page-50](https://collection.sciencemuseumgroup.org.uk/search/image_license?page[size]=100&page[number]=50)
 
 [API page-51](https://collection.sciencemuseumgroup.org.uk/search/image_license?page[size]=100&page[number]=51)
 
 So we need to find a way to divide the collection into subsets such that each subset has less than or equal to 5000 objects.
-Luckily, the API had another set of parameters ```date[from]``` and ```date[to]``` which represents the time period of the object. 
+Luckily, the API had another set of parameters ```date[from]``` and ```date[to]``` which represents the time period of the object.
 Querying the API through different time period at the same time ensuring that records in that time period don't exceed 5000 solves the problem, starting
 from year 0 to year 2020 by trial and error method suitable year range was chosen.
 
@@ -75,9 +75,9 @@ from year 0 to year 2020 by trial and error method suitable year range was chose
 ```
 
 
-With this we have a method to ingest the desired records, but before writing the script we need to know the different licenses 
-provided by the API.  We need to figure out a consistent way to identify which license and version are attached to each object.  
-To do this, we ran a test script to get counts of objects under different licenses. 
+With this we have a method to ingest the desired records, but before writing the script we need to know the different licenses
+provided by the API.  We need to figure out a consistent way to identify which license and version are attached to each object.
+To do this, we ran a test script to get counts of objects under different licenses.
 
 The results are:
 
@@ -95,13 +95,13 @@ The results are:
 Since the licenses and their versions are confirmed, we can start the implementation.
 
 ## Implementation
-The implementation is quite simple in nature: we loop the through the ```YEAR_RANGE``` and get all the records for that period and 
+The implementation is quite simple in nature: we loop the through the ```YEAR_RANGE``` and get all the records for that period and
 pass it on to an object data handler method that extracts the necessary details from the record and store it in the ```ImageStore```
 instance. ImageStore is a class that stores image information from the provider, it stores the information in a buffer and inserts to tsv
 when the buffer reached threshold limit. Due to overlapping date ranges, the metadata for some objects is collected multiple times.
 So, we keep track of the record/object's id in a global variable ```RECORD_IDS = []```.
 
-Within the object data handler method before collecting details we check if the ```id``` already exists in ```RECORD_IDS```. 
+Within the object data handler method before collecting details we check if the ```id``` already exists in ```RECORD_IDS```.
 If it exists we move on to the next record.
 
 ```
@@ -114,7 +114,7 @@ If it exists we move on to the next record.
 
 ```id_``` is the object id and we cannnot use this value as foreign identifier, the reason behind it is that an object could
 have multiple images with it and using object id we cannot determine the image uniquely, so we must use image id that is unique
-for each image. Currently image id is taken from ```multimedia```, multimedia is a field in the json response that lists multiple 
+for each image. Currently image id is taken from ```multimedia```, multimedia is a field in the json response that lists multiple
 images and their metadata, for each image data in multimedia, foreign id is in ```admin.uid```.
 
 The implementation can be found [here](https://github.com/creativecommons/cccatalog/blob/master/src/cc_catalog_airflow/dags/provider_api_scripts/science_museum.py).
@@ -128,7 +128,7 @@ The problem with current implementation is that records with no date would be mi
 
 Science Museum provider is the first provider I worked on as a part of the internship and thank my mentor Brent Moran for the help.
 
-### Additional Details : 
+### Additional Details :
 - [research work](https://github.com/creativecommons/cccatalog/issues/302)
 - [implementation](https://github.com/creativecommons/cccatalog/pull/400)
 

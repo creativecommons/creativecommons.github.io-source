@@ -22,11 +22,11 @@ body:
 
 
 ## Motivation and why does visualization matter?
-The number of websites using creative commons licensed content is very huge and growing very rapidly. The CC catalog hosts these millions of data points and each node contains information about the URL of the websites and the licenses used. One can surely do rigorous data analysis, but this would only be interpretable by a few people with a technical background.  On the other hand,  by visualizing data, it becomes incredibly easier to identify patterns and trends. As an old saying, a picture is worth a thousand words. That’s the core ideology of the Linked Commons, i.e. to show the millions of licensed content metadata and how these nodes are connected in a visually appealing form on the HTML canvas like a picture. 
+The number of websites using creative commons licensed content is very huge and growing very rapidly. The CC catalog hosts these millions of data points and each node contains information about the URL of the websites and the licenses used. One can surely do rigorous data analysis, but this would only be interpretable by a few people with a technical background.  On the other hand,  by visualizing data, it becomes incredibly easier to identify patterns and trends. As an old saying, a picture is worth a thousand words. That’s the core ideology of the Linked Commons, i.e. to show the millions of licensed content metadata and how these nodes are connected in a visually appealing form on the HTML canvas like a picture.
 
 
 ## Task 1: Code Refactoring
-My first task was to refactor the code and migrate it to react. The existing codebase had all core functionalities, but we wanted to make it more modular, improve the design, code readability, and reduce complexity. This will help us maintain this project in the long run. Also, it will be easier for the community to contribute and understand the logic. 
+My first task was to refactor the code and migrate it to react. The existing codebase had all core functionalities, but we wanted to make it more modular, improve the design, code readability, and reduce complexity. This will help us maintain this project in the long run. Also, it will be easier for the community to contribute and understand the logic.
 
 
 ## Task 2: Graph Filtering

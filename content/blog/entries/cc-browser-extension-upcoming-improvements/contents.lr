@@ -15,7 +15,7 @@ pub_date: 2020-06-01
 ---
 body:
 
-[CC Search Extension](https://opensource.creativecommons.org/ccsearch-browser-extension/) is a cross-browser extension, which lets you search for and filter content that is under Creative Commons licenses. It was developed as one of the CC projects during Google Summer of Code program of 2019. 
+[CC Search Extension](https://opensource.creativecommons.org/ccsearch-browser-extension/) is a cross-browser extension, which lets you search for and filter content that is under Creative Commons licenses. It was developed as one of the CC projects during Google Summer of Code program of 2019.
 
 ### The story so far
 It's release on the extension stores of [Chrome](https://chrome.google.com/webstore/detail/cc-search-browser-extensi/agohkbfananbebiaphblgcfhcclklfnh), [Firefox](https://addons.mozilla.org/en-US/firefox/addon/cc-search-extension/), and [Opera](https://addons.opera.com/en/extensions/details/cc-search/) was accompanied by several announcements on twitter, which were well received by the community and thus the number of weekly users (i.e the number of users that have used the extension at least once during last week) drastically increased. After several weeks, the extension reached 22,000+ weekly users. But, now this number fluctuates between 9,000 - 10,000. So, what happened? Well, the majority of initial influx were the "curious" folks who just wanted to check out this new tool and later thought that this was not something that they might find useful. But, there are also users that are looking for a similar tool and the lack of sufficient features and capabilities of the extension made them stop using it and look for better alternatives.
@@ -32,7 +32,7 @@ The extension, currently supports only 3 filters: `license`, `sources`, and `use
 Showing related Images will help users find a variety of images that fit their requirements and also explore the images that would not usally show up on the initial pages of the search result. Whereas, Image tags will let the users incrementally make their queries better and more specific.
 
 #### Adding "Browse by Sources" section
-Even though the users can see the number of sources supported by the extension from the drop-down filter, they might not be familiar with many of them and what kind of content they provide. Adding a "Browse by Source" section would make users appreciate the sources available for them to choose from. 
+Even though the users can see the number of sources supported by the extension from the drop-down filter, they might not be familiar with many of them and what kind of content they provide. Adding a "Browse by Source" section would make users appreciate the sources available for them to choose from.
 
 #### Improving the bookmarks section
 Significant improvements will be made to the bookmarks section. First of all, the bookmarks data will be cached so that unnecessary requests to the Catalog API can be avoided. The bookmarks will be organized by the dates and this will also facilitate adding some type of filter mechanism. In addition to this, pagination in the bookmarks section and support for named bookmark file exports will be added

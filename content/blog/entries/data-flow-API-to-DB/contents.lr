@@ -1,6 +1,6 @@
 title: Data flow: from API to DB
 ---
-categories: 
+categories:
 
 cc-catalog
 airflow
@@ -12,16 +12,16 @@ author: srinidhi
 series: gsoc-2020-cccatalog
 ---
 pub_date: 2020-07-22
---- 
+---
 body:
 
-## Introduction 
+## Introduction
 The CC Catalog project  handles the flow of image metadata from the source or
 provider and loads it to the database, which is then surfaced to the [CC
 search][CC_search] tool. The workflows are set up for each provider to gather
 metadata about CC licensed images. These workflows are handled with the help of
 Apache Airflow. Airflow is an open source tool that helps us to schedule and
-monitor workflows. 
+monitor workflows.
 [CC_search]: https://ccsearch.creativecommons.org/about
 
 ## Airflow intro
@@ -47,7 +47,7 @@ to PostgreSQL DB by the loader workflow.
 
 ## Provider API workflow
 The provider workflows are usually scheduled in one of two time frequencies,
-daily or monthly. 
+daily or monthly.
 
 Providers such as Flickr or Wikimedia Commons that are filtered using the date
 parameter are usually scheduled for daily jobs. These providers have a large
@@ -58,16 +58,16 @@ Providers that are scheduled for monthly ingestion are ones with a relativley
 low volume of data, or for which filtering by date is not possible. This means
 we need to ingest the entire collection at once. Examples are museum providers
 like the [Science museum UK][science_museum] or [Statens Museum for
-Kunst][smk]. We don’t expect museum providers to change data on a daily basis. 
+Kunst][smk]. We don’t expect museum providers to change data on a daily basis.
 
 [science_museum]: https://collection.sciencemuseumgroup.org.uk/
 [smk]: https://www.smk.dk/
 
 The scheduling of the DAGs by the scheduler daemons depends on a few
-parameters. 
+parameters.
 
 - ```start_date``` - it denotes the starting date from which the
-task should begin running. 
+task should begin running.
 - ```schedule_interval``` - it denotes the interval between subsequent runs, it
 can be specified with airflow keyword strings like “@daily”, “@weekly”,
 “@monthly”, “@yearly” other than these we can also schedule the interval using

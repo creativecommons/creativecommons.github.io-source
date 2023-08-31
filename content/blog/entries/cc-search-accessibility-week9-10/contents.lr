@@ -1,4 +1,4 @@
-title: Accessibility Improvements: Final Changes and Modal Accessilibity 
+title: Accessibility Improvements: Final Changes and Modal Accessilibity
 ---
 categories:
 cc-search
@@ -106,7 +106,7 @@ An example a proper input elements with correct label nesting is:
 Notice how the input is a child of the `<label>` tag which has the `for` attribute to point which element it labels.
 
 Apart from these changes, the eslint configuration of the project were also changed to include a11y-linting for the elments.
-We used the [eslint-plugin-vue-a11y](https://github.com/maranran/eslint-plugin-vue-a11y) to enforce accessibility guidelines for our components via lint checks. 
+We used the [eslint-plugin-vue-a11y](https://github.com/maranran/eslint-plugin-vue-a11y) to enforce accessibility guidelines for our components via lint checks.
 Furthermore all the aria-labels were internationalized to enforce the i18n standard in our repo that we had setup earlier this summer.
 
 After all these changes we had the following inprovements in the accessibility scores(computed from lighthouse):

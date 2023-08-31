@@ -25,7 +25,7 @@ After a while, our plugin was ready. Its temporary name is “WP CC Search plugi
 
 ![Plugin screenshot 1](01.png)
 
-The plugin’s features are:  
+The plugin’s features are:
 - Works in WordPress editor and add a button above the content text area and into the “Add Media” pop-up window.
 - Via a pop-up window, allows searching through millions of images using Creative Commons Catalog API power.
 - Allows filtering by a provider
@@ -47,11 +47,11 @@ After the plugin’s activation, when the user writes a post, an **“Image with
 
 ![Plugin screenshot 2](02.png)
 
-By pressing the button, a pop-up window allows the user to search using Latin characters for an image. 
+By pressing the button, a pop-up window allows the user to search using Latin characters for an image.
 
 ![Plugin screenshot 3](03.png)
 
-The user can browse the returned images, preview an image and its license and adjust the image settings:  
+The user can browse the returned images, preview an image and its license and adjust the image settings:
 - use of thumbnail or original image
 - set the image link (if any)
 - insert the image into the post or as the featured image
@@ -66,7 +66,7 @@ After the user selects an image and insert it, into the post, the image code alo
 
 The plugin uses AJAX requests to communicate with https://api.creativecommons.engineering and get responses in JSON format.
 
-Only 2 AJAX requests are sent to <https://api.creativecommons.engineering>.  
+Only 2 AJAX requests are sent to <https://api.creativecommons.engineering>.
 1. <https://api.creativecommons.engineering/statistics/image?format=json>, for getting the providers list. Then the JSON response is used as select options, for the provider’s dropdown menu.
 2. A call to <https://api.creativecommons.engineering/image/search> with the necessary parameters for searching for images based on the given words and the selected provided.
 
@@ -74,9 +74,9 @@ The JSON results, are then transformed via jQuery to images and show up into the
 
 #### Still to do
 
-There are still some things that we want to add/change into the plugin and any help on building them is welcome.  
+There are still some things that we want to add/change into the plugin and any help on building them is welcome.
 - Find a different plugin name :-). We believe that the plugin’s name should change since it is not an “official” CC commons plugin.
-- Currently, the plugin needs the Classic Editor plugin in order to work for WP 5+. A main goal is to make it Gutenberg compatible. 
+- Currently, the plugin needs the Classic Editor plugin in order to work for WP 5+. A main goal is to make it Gutenberg compatible.
 - Add Multiple images select support
 - Add Multi-select options for filtering: providers
 - Add select options for filtering: licenses, creator
@@ -97,11 +97,11 @@ There are still some things that we want to add/change into the plugin and any h
 
 #### More about us
 
-<span id="footnote-1"></span>**[1] CTI - Greek School Network and Networking Technologies Directorate**  
+<span id="footnote-1"></span>**[1] CTI - Greek School Network and Networking Technologies Directorate**
 Our main activities in Greek School Network and Networking Technologies Directorate (GSN-NTS) (<http://nts.cti.gr>) of Computer Technology Institute and Press “Diophantus” (CTI) are the design, implementation, and support of network infrastructures and Internet services. Through its involvement in pioneer National and European research and development projects, GSN-NTS has a major role in the development of network infrastructures and services, and Internet services as well in Greece, especially those concerning school networks and ICT infrastructures at schools.
 
-<span id="footnote-2"></span>**[2] Greek School Network (<https://www.sch.gr/>)**  
+<span id="footnote-2"></span>**[2] Greek School Network (<https://www.sch.gr/>)**
 <https://www.sch.gr/> is the national network of the Ministry of Education and Religious Affairs which safely interconnects all schools of Primary and Secondary education, including educational units abroad, services and entities supervised by the Ministry of Education and Religious Affairs at central and regional level, service providers of lifelong learning, students, teaching staff, other educators and other entities of Ministry of Education and Religious Affairs ([www.minedu.gov.gr](https://www.minedu.gov.gr/)).
 
-<span id="footnote-3"></span>**[3] <https://blogs.sch.gr>**  
+<span id="footnote-3"></span>**[3] <https://blogs.sch.gr>**
 The plugin was originally developed for <https://blogs.sch.gr>, which is the free blogging platform for all Greek teachers, students, and school units. The blogs.sch.gr is a service of Greek School Network**<sup><a href="#footnote-2">[2]</a></sup>** (https://www.sch.gr/en). It hosts more than 50.000 blogs and users. It is built and maintained by the Greek School Network and Networking Technologies Directorate of CTI.

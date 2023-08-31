@@ -16,22 +16,22 @@ pub_date: 2020-11-20
 ---
 body:
 
-Today marks my fifth blog entry on Creative Commons. 
+Today marks my fifth blog entry on Creative Commons.
 For week 9 and 10, I explored CC Catalog documentation and began improving the documentation by removing keys and generalizing instructions.
 
 ### Week 9
 
-I had completed all GSoD tasks by week 9. 
-So, I took a couple of days off and fixed last week's PR. 
-Kriti assigned me with new tasks, which is to port CC Catalog documentation from the internal wiki into GitHub repository. 
+I had completed all GSoD tasks by week 9.
+So, I took a couple of days off and fixed last week's PR.
+Kriti assigned me with new tasks, which is to port CC Catalog documentation from the internal wiki into GitHub repository.
 Brent, the CC Catalog maintainer explained to me about what needs to be done.
 
 ### Week 10
 
-For week 10, I started exploring CC Catalog and its documentation. 
-Reminds me a lot about the first and second weeks of GSoD. 
-Trying to understand new stuff and having an "aha" moment when the dots finally connect. 
-I started to move the documentation from the internal wiki to CC Catalog’s GitHub repository. 
+For week 10, I started exploring CC Catalog and its documentation.
+Reminds me a lot about the first and second weeks of GSoD.
+Trying to understand new stuff and having an "aha" moment when the dots finally connect.
+I started to move the documentation from the internal wiki to CC Catalog’s GitHub repository.
 I also wrote and published this blog post.
 
 ----

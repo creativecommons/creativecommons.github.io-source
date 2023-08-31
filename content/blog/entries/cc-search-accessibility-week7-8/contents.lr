@@ -77,8 +77,8 @@ The corrected code is:
 ```
 <ul role="tablist">
     <li role="tab" :class="tabClass(0, 'tab')" :aria-selected="activeTab == 0">
-        <a 
-            aria-label="help us improve form" 
+        <a
+            aria-label="help us improve form"
             href="#panel0"
             @click.prevent="setActiveTab(0)"
         >
@@ -86,7 +86,7 @@ The corrected code is:
         </a>
     </li>
     <li role="tab" :class="tabClass(1, 'tab')" :aria-selected="activeTab == 1">
-        <a 
+        <a
             aria-label="report a bug form"
             href="#panel1"
             @click.prevent="setActiveTab(1)"

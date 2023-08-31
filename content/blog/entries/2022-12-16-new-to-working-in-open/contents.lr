@@ -13,7 +13,7 @@ body:
 I began working at Creative Commons (CC) as the Full Stack Engineer this year
 and it’s been amazing to get to work in the open at CC. But as someone who
 has been working in closed, internal source environments for a very long
-time it’s definitely been a learning experience and a perspective shift. 
+time it’s definitely been a learning experience and a perspective shift.
 
 For years I benefited from, observed, and offered up personal work into the
 world of open source, but I was never deeply involved in other projects in
@@ -27,7 +27,7 @@ larger community of contributors around the world.
 It's been refreshing and rewarding, but it's also been enlightening. There's
 so much that's different now. Working in the open doesn't just shift the
 terms under which your code is licensed or how many people can contribute, it
-requires a significant shift in both approach and process. 
+requires a significant shift in both approach and process.
 
 For example, working in the open means that while there may be community members
 eager to contribute they may lack contextual understanding that someone more
@@ -44,7 +44,7 @@ documentation about the codebase, as well as detailed known issues, roadmaps,
 etc. All of it needs to be documented and written out, which not only
 benefits the community contributors, but also benefits the project as a
 whole. It means key information has to live in the open alongside the code
-it informs. It's truly a win-win all around. 
+it informs. It's truly a win-win all around.
 
 The process also has to shift, you can't just make a list of things you want to
 tackle and get to work, you have to consider how each item can be smoothly
@@ -58,11 +58,11 @@ view on the overall roadmap and goals the project hopes to meet.
 If you are the steward of a codebase any task list you create or *issues* you
 identify are ultimately not just for you alone. Putting an item on your list
 when you're working alone isn't enough, you've also got to find time to work
-on that item, and work your way through completing it. 
+on that item, and work your way through completing it.
 
 In the open source context, working with a community of contributors, creating
 an *issue* is just as important and meaningful as writing code, in many cases
-it might actually be MORE important. Because *issues* are often the way in 
+it might actually be MORE important. Because *issues* are often the way in
 which contributors first offer up help and insight, they're the first contact
 they have with your project. Furthermore, any *issue* you create may end up
 getting completed by one or more people that are not you, which means it

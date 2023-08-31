@@ -27,7 +27,7 @@ Oh boy! 1.5 months have passed since I've been investing time in building a land
 
 > **Designing** ⇨ **Drafting** ⇨ **Developing** ⇨ **Debugging** ⇨ **Deploying**
 
-And the cycle contrinues. I guess it sums it all up very nicely. _Can somebody appreciate the alliteration though?_ 
+And the cycle contrinues. I guess it sums it all up very nicely. _Can somebody appreciate the alliteration though?_
 
 Here's a gist of what I've achieved so far:
 
@@ -51,7 +51,7 @@ Some say it's hard to learn through virtual internships. Well, let me prove you 
 - Vue.js is _fantastic_. Maybe I'm a Vue.js fan now. Should I remain loyal to React? I don't know.
 - Making a site responsive isn't the _easiest_ of tasks, but it's certainly doable after a lot of stretching & compressing; lets say that.
 - "Code formatting is essential" would be an _understatement_ to make.
-- Monorepo's have their own pro's and con's. But in our case the con's were negligible, thankfully! 
+- Monorepo's have their own pro's and con's. But in our case the con's were negligible, thankfully!
 -  I'll be following up with some performance & accessibility testing this coming week, so let's see how that plays out!
 - A mentor plays a vital role in any project. My mentor `@dhruvkb` has been very supportive and has made sure I stick to my timeline!
 
@@ -61,11 +61,11 @@ I believe apart from the internship work that I'm engaged in, I should also help
 
 - I got the opportunity to speak at a CCOS event alongwith fellow speakers [dhruvkb](https://opensource.creativecommons.org/blog/authors/dhruvkb/) & [dhruvi16](https://opensource.creativecommons.org/blog/authors/dhruvi16/). I had a blast talking to budding students from DSC-IIT Surat & DSC-RIT.
 - The dark mode (as promised) should be out before my next blog post.
-- Deployed the vocabulary storybook on [Chromatic](https://chromatic.com) and compared & contrasted the pros & cons. Snapshot testing in the near future maybe? 
-- Completed the hacktoberfest challenge. 
+- Deployed the vocabulary storybook on [Chromatic](https://chromatic.com) and compared & contrasted the pros & cons. Snapshot testing in the near future maybe?
+- Completed the hacktoberfest challenge.
 
 ### Bonus content
-Not many of you may know this, but this site uses the [Lektor](https://getlektor.com) CMS. I needed to have it installed on my system (windows 10 OS) to run the code in our site repository. 
+Not many of you may know this, but this site uses the [Lektor](https://getlektor.com) CMS. I needed to have it installed on my system (windows 10 OS) to run the code in our site repository.
 Lektor suggests running the following code in powershell as an installation step:
 ```powershell
 (new-object net.webclient).DownloadString('https://www.getlektor.com/installer.py') | python

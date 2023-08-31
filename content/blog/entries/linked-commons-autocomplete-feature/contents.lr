@@ -36,11 +36,11 @@ Some of the reasons why to have "autocomplete feature" in the filtering by node 
 - Some of the node names are very uncommon and lengthy. There is a high probability of misspelling it.
 - Submitting the form and getting a response of “Node doesn’t exist” isn’t a very good user flow, and we want to minimise such incidents.
 
-Also, on a side note giving a search bar to the user and giving no hints is ruthless. We all need recommendations and guess what linked commons got you covered! Now for every keystroke, we load a bunch of node names which you might be looking for. ;) 
+Also, on a side note giving a search bar to the user and giving no hints is ruthless. We all need recommendations and guess what linked commons got you covered! Now for every keystroke, we load a bunch of node names which you might be looking for. ;)
 
 
 ## Problem
-The autocomplete feature on a very basic level aims to predict the rest of a word the user is typing. A possible implementation is though the linear traversal of all the nodes in the list. It will be having a **linear time complexity**. It’s not very good and it’s very obvious to look for a faster and more efficient way. Also, even if for once we neglect the **time complexity**, looking for the best 10 nodes out of these millions on the client's machine is not at all a good idea; it will cause throttling and will result in performance drops. 
+The autocomplete feature on a very basic level aims to predict the rest of a word the user is typing. A possible implementation is though the linear traversal of all the nodes in the list. It will be having a **linear time complexity**. It’s not very good and it’s very obvious to look for a faster and more efficient way. Also, even if for once we neglect the **time complexity**, looking for the best 10 nodes out of these millions on the client's machine is not at all a good idea; it will cause throttling and will result in performance drops.
 On the other hand, a **trie based solution** is more efficient for sure but still, we cannot do this indexing on the client machine for the same reasons stated above.
 So far, it is now apparent that we implement this feature on the server and also aim for at least something better than linear time complexity.
 
@@ -53,8 +53,8 @@ Taking the above points into consideration we went ahead with the following solu
 
 
 ## Results
-To make sure our solution works well, we performed load tests, checking that any response time does not exceed 1000 ms. We used locust which is a user load testing tool. We simulated with **1000 users** and **10 as Hatch rate**. 
-The following test is performed on the local machine to ensure that the server location isn’t affecting the results. 
+To make sure our solution works well, we performed load tests, checking that any response time does not exceed 1000 ms. We used locust which is a user load testing tool. We simulated with **1000 users** and **10 as Hatch rate**.
+The following test is performed on the local machine to ensure that the server location isn’t affecting the results.
 
 Here are some aggregated result statistics.
 

@@ -17,7 +17,7 @@ A few years ago I published a [Google Docs Add-on that allowed users to insert a
 
 ### Why
 
-I created the add-on after inspiration from students in one of the classes I teach at [Fresno Pacific University’s Graduate School of Education](http://www.fresno.edu/). I was teaching a course on digital literacy, and open licenses and fair use was a large portion of the course. 
+I created the add-on after inspiration from students in one of the classes I teach at [Fresno Pacific University’s Graduate School of Education](http://www.fresno.edu/). I was teaching a course on digital literacy, and open licenses and fair use was a large portion of the course.
 
 To get started, I used the [templates Google provided about building an addon](https://developers.google.com/apps-script/overview), took a look at the html etc on the Creative Commons License Chooser page itself, and eventually got something working! It took a couple of days off and on and mostly was me remembering javascriptI admit I had to pay a guy on Upwork to help clean up the code before I published it because sometimes the chooser would keep selecting hundreds of license images… of course, this was also before I was a bona fide contributor to the open source project I Product Manage, [OpenSALT](http://www.github.com/opensalt/opensalt).
 
@@ -27,13 +27,13 @@ My nine year teaching career in Fresno Unified School District plus my career in
 
 ### What
 
-This month I’ve finally updated it from the old Google Docs add-on store to the Gsuite Marketplace and updated some links. I’ve also updated the [Github sit](https://github.com/brandonopened/creativecommons_gdocs)e as the main website for the app and hope to implement some changes based on the work in[ this Github repo](https://github.com/creativecommons/cc-license-chooser) with an updated license chooser process etc. The add-on has been installed thousands of times and usually has couple of hundred uses a month based on statistics. 
+This month I’ve finally updated it from the old Google Docs add-on store to the Gsuite Marketplace and updated some links. I’ve also updated the [Github sit](https://github.com/brandonopened/creativecommons_gdocs)e as the main website for the app and hope to implement some changes based on the work in[ this Github repo](https://github.com/creativecommons/cc-license-chooser) with an updated license chooser process etc. The add-on has been installed thousands of times and usually has couple of hundred uses a month based on statistics.
 
-I hope in the future to use an API call to support different languages, and perhaps embed RDF into the Google doc if that is possible to make the license machine-searchable. This is a fun project that is useful and helping teach me more about coding and best practices for open source software. 
+I hope in the future to use an API call to support different languages, and perhaps embed RDF into the Google doc if that is possible to make the license machine-searchable. This is a fun project that is useful and helping teach me more about coding and best practices for open source software.
 
 ### How
 
-1. In Google Docs, select “Get Add-ons” 
+1. In Google Docs, select “Get Add-ons”
 
 ![How-to screenshot 1](image2.png)
 
@@ -51,9 +51,9 @@ I hope in the future to use an API call to support different languages, and perh
 [A video tutorial is available here](https://youtu.be/sQZFlNXEVZ4) or by clicking on the image below.
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=sQZFlNXEVZ4
-" target="_blank"><img src="https://img.youtube.com/vi/sQZFlNXEVZ4/0.jpg" 
+" target="_blank"><img src="https://img.youtube.com/vi/sQZFlNXEVZ4/0.jpg"
 alt="Video tutorial" border="10" /></a>
 
----  
+---
 
 [No rights reserved](http://creativecommons.org/publicdomain/zero/1.0/) for the content of this blog post by the author.

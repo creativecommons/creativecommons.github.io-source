@@ -26,7 +26,7 @@ I've mainly got myself invested in a survey of the existing documentation that v
 - Be patient! Its fine to delay something if it makes sense to have it logically accomplished only after certain other tasks are done & dusted with.
 - How essential it is to write _neat code_ is something that's not spoken too often. (I wonder why...)
 - I always thought VueJS sets up SPA's by default. I'm surprised you need to configure it additionally to do just that!
-- Storybook is just a really nifty OSS with great community support! 
+- Storybook is just a really nifty OSS with great community support!
 
 ### Other community work tidbits
 - I've been working on the Dark Mode (a much awaited feature, at least for me!) for our storybooks with some support from our community. It should be up and running shortly!

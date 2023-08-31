@@ -90,17 +90,17 @@ month.
  month | total views | % increase
 ------:|------------:|-----------:
    1   |     100     | infinite
-   2   |     200     |   100% 
-   3   |     300     |    50% 
-   4   |     400     |    33% 
-   5   |     500     |    25% 
-   6   |     600     |    20% 
-   7   |     700     |    17% 
-   8   |     800     |    14% 
-   9   |     900     |    13% 
-  10   |    1000     |    11% 
-  11   |    1100     |    10% 
-  12   |    1200     |     9% 
+   2   |     200     |   100%
+   3   |     300     |    50%
+   4   |     400     |    33%
+   5   |     500     |    25%
+   6   |     600     |    20%
+   7   |     700     |    17%
+   8   |     800     |    14%
+   9   |     900     |    13%
+  10   |    1000     |    11%
+  11   |    1100     |    10%
+  12   |    1200     |     9%
 
 As we see, given consistent monthly views, the 'percent increase' of the total
 views metric drops off as the picture ages (In reality, it appears that in most

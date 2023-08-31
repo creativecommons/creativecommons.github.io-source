@@ -23,7 +23,7 @@ So, the first two weeks of Google Season of Docs have passed. For the first week
 
 ### Week 2
 
-For the second week, I started to write response samples. It was tough as I have a hard time understanding [drf-yasg](https://github.com/axnsan12/drf-yasg), which is an automatic Swagger generator. It can produce Swagger / OpenAPI 2.0 specifications from a Django Rest Framework API. I tried to find as many examples as I could to increase my understanding. Funny, but it took me awhile to realise that drf-yasg is not made up of random letters. The DRF part stands for Django Rest Framework while YASG stands for Yet Another Swagger Generator. 
+For the second week, I started to write response samples. It was tough as I have a hard time understanding [drf-yasg](https://github.com/axnsan12/drf-yasg), which is an automatic Swagger generator. It can produce Swagger / OpenAPI 2.0 specifications from a Django Rest Framework API. I tried to find as many examples as I could to increase my understanding. Funny, but it took me awhile to realise that drf-yasg is not made up of random letters. The DRF part stands for Django Rest Framework while YASG stands for Yet Another Swagger Generator.
 
 ----
 

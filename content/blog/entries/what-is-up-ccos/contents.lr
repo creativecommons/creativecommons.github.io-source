@@ -31,6 +31,6 @@ The [mock-ups](https://www.figma.com/file/mttcugI1UxvCJRKE5sdpbO/Mockups) for th
 
 I started by updating the home page template. I try to make the code cleaner and more readable. Going through the [Lektor](https://www.getlektor.com/) documentation, I came across different ways to do so. One of them was [flow blocks]((https://www.getlektor.com/)), I like how it makes a template more modular and readable so I implemented the home page using flow blocks. This one after one, I started updating every template. For now, I have updated 10 templates and I plan to update the remaining in upcoming weeks.
 
-### My Experience so far - 
+### My Experience so far -
 
 This has been one heck of a journey for me. I have never collaborated with such a huge open-source organization and so that was something new for me. I have learned a lot of things both technical and non-technical so far. I have become more alert about the code I write, this journey has helped me improve the questions I ask to myself while writing code or thinking about the solution, I got to learn about new technologies such as [Lektor](https://www.getlektor.com/), [Webpack](https://webpack.js.org/), [SCSS](https://sass-lang.com/documentation/syntax) and many more. I am just very glad to be a part of this.

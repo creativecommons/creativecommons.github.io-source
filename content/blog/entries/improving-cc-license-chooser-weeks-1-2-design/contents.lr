@@ -68,7 +68,7 @@ As a result of continuous communication with my mentors, I this draft to be disc
 
 - Current selection dropdown is for experienced users who can quickly select a license that they know they want to use. It also updates when a feature in the license selection process is changed.
 - Selected license information displays information about the license and its clauses, as well as its icons. The wording of this part will probably change the most after discussion with the community and legal team.
-- Attribution information for the license, with a choice between rich text or html code. These are displayed in tabs to save on space. 
+- Attribution information for the license, with a choice between rich text or html code. These are displayed in tabs to save on space.
 
 I created the wireframes in Figma, and I tried to integrate CC Vocabulary elements as much as possible.
 
