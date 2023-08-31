@@ -12,7 +12,7 @@ author: soccerdroid
 ---
 series: gsoc-2019-dataviz
 ---
-pub_date: 2019-07-26 
+pub_date: 2019-07-26
 ---
 body:
 
@@ -70,7 +70,7 @@ The thresholds for the quantity of images and links are my intuitions from havin
 ### Coming soon
 
 - Extraction of unique nodes, and links.
-- Visualization with the data. 
+- Visualization with the data.
 - Development or modification of pruning/filtering rules.
 
 You can follow the project development in the [Github repo](https://github.com/cc-archive/cccatalog-dataviz).

@@ -26,7 +26,7 @@ We reshuffled some of the mentors for the projects around (from our original [Pr
 Read more [about the accepted proposals here][cc-gsoc-projects].
 
 Please don’t lose heart if you were not accepted! We were amazed at the quality of proposals we got and we had to make some really tough decisions. We appreciate the hard work you put into your proposals and contributing to our code and we wish we could accept more proposals. We hope that you’ll stick around and [be part of the CC developer community][contributing-code].
-  
+
 If you’re interested in working on one of our remaining [project ideas][project-ideas] as a volunteer outside of Google Summer of Code, please reach out to me. These are all things that CC is invested in building and we can provide guidance. We are especially looking for help with [supercharging our search indexer][supercharging-elasticsearch], improving our tooling around license translations (including [automated license link checking][automated-license-link-checking]), and [plugins for integrating CC Search with external creation platforms][cc-search-plugins]. If we have multiple volunteers for the same idea, we will ask them to work together.
 
 *A note about availability*: all CC staff have very limited availability over the next week because of[ CC Global Summit][cc-summit] and CC is closed for most of the following week so we won’t be around at all then. Please be patient, we’ll respond to you as soon as we can.

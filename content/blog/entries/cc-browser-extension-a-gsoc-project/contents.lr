@@ -37,7 +37,7 @@ Most people who will download the extension would want it to act as their own. T
 
 One good example of solving this problem would be to make an options page, that would open in a new tab, where they can set the filters they use more often as default.
 
-Similarly, if we add a feature, say dark-mode, then the users who prefer it over the default can set their preferences. 
+Similarly, if we add a feature, say dark-mode, then the users who prefer it over the default can set their preferences.
 
 ### Work Done till Now:
 
@@ -63,4 +63,4 @@ The development is still in the initial phase but you can check out **a working 
 
 Tell us what you expect the extension to do, or a feature that you wish would be implemented. At this early stage of development, it might help us improve our goals. You can join the discussion on `#gsoc-browser-ext` channel on [slack](http://creativecommons.github.io/community/#slack).
 
-I would like to thank [Alden](https://creativecommons.org/author/aldencreativecommons-org/), [Timid](https://creativecommons.org/author/timidcreativecommons-org/) and [Kriti](https://creativecommons.org/author/kriticreativecommons-org/) to for their mentorship and providing an experienced perspective and solutions to the problems faced by this naive developer. 
+I would like to thank [Alden](https://creativecommons.org/author/aldencreativecommons-org/), [Timid](https://creativecommons.org/author/timidcreativecommons-org/) and [Kriti](https://creativecommons.org/author/kriticreativecommons-org/) to for their mentorship and providing an experienced perspective and solutions to the problems faced by this naive developer.

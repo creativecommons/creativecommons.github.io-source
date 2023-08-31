@@ -17,7 +17,7 @@ body:
 For the context, I am working on my GSoC project that is to make a browser-extension to search CC Licensed content in the public domain by interacting with CC Catalog API.
 
 **Previous Blogs**:
--  [CC Browser Extension - A GSoC Project](http://creativecommons.github.io/blog/entries/cc-browser-extension-a-gsoc-project/) 
+-  [CC Browser Extension - A GSoC Project](http://creativecommons.github.io/blog/entries/cc-browser-extension-a-gsoc-project/)
 
 ### Work Done
 These couple weeks were spent on finishing the filter section, setting up infinite-scroll and fixing issues and bugs after some days of testing.

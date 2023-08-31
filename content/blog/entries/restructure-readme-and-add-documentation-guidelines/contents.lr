@@ -16,17 +16,17 @@ pub_date: 2020-11-5
 ---
 body:
 
-This is my fourth blog entry on Creative Commons. 
+This is my fourth blog entry on Creative Commons.
 For week 7 and 8, I restructured the file README to be more digestible to new users and created Documentation Guidelines for CC Catalog API documentation.
 
 ### Week 7
-For this week, I restructured the file README in CC Catalog API repository. 
-I added a step by step guide on how to run the server locally. 
-I hope new users will be less intimidated to contribute to this project with the updated guide on how to run the server locally. 
+For this week, I restructured the file README in CC Catalog API repository.
+I added a step by step guide on how to run the server locally.
+I hope new users will be less intimidated to contribute to this project with the updated guide on how to run the server locally.
 
 ### Week 8
 
-For week 8, I created Documentation Guidelines which provides steps on how to contribute to CC Catalog API documentation, documentation styles, and cheat sheet for drf-yasg. 
+For week 8, I created Documentation Guidelines which provides steps on how to contribute to CC Catalog API documentation, documentation styles, and cheat sheet for drf-yasg.
 I also wrote and published this blog post.
 
 ----

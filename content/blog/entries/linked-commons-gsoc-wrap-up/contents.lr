@@ -17,11 +17,11 @@ pub_date: 2020-08-28
 ---
 
 body:
-Time flies faster when you are having fun! I didn't believe it back then. But now I do after experiencing it. It couldn't have been more accurate that here I am writing my concluding blog of the **GSoC 2020: The Linked Commons series** when I just started enjoying things. 
+Time flies faster when you are having fun! I didn't believe it back then. But now I do after experiencing it. It couldn't have been more accurate that here I am writing my concluding blog of the **GSoC 2020: The Linked Commons series** when I just started enjoying things.
 
-In this post, I will give a brief overview of the linked commons and my GSoC contributions. It was an exciting journey, and I loved working on this project. 
+In this post, I will give a brief overview of the linked commons and my GSoC contributions. It was an exciting journey, and I loved working on this project.
 
-Before I begin any further just for ritual, let me share a one liner on **what The Linked Commons is**, although I highly recommend reading the other posts in this series, who knows you might join our team.😉 
+Before I begin any further just for ritual, let me share a one liner on **what The Linked Commons is**, although I highly recommend reading the other posts in this series, who knows you might join our team.😉
 > The CC catalog data visualization or linked commons is a web application which finds and explores relationships between Creative Commons licensed content on the web.
 
 
@@ -37,26 +37,26 @@ My primary contributions to the project during the GSoC timeline were threefold.
 
 ## GSoC Work Product
 
-The live version of the linked commons can be found [here](http://dataviz.creativecommons.engineering/). You can interact with it and **"explore the creative commons in graphs"**. 
+The live version of the linked commons can be found [here](http://dataviz.creativecommons.engineering/). You can interact with it and **"explore the creative commons in graphs"**.
 
 If you wish to access the raw or filtered data, then here is a brief documentation of our new API.
 
 
 ```yaml
 URL: /api/graph-data
-Method: GET 
+Method: GET
 Description: Returns a randomized graph having around 500 nodes and links.
 ```
 &nbsp;
 ```yaml
 URL: /api/graph-data/?name={node_name}
-Method: GET 
+Method: GET
 Description: Returns the filtered graph with a set of nodes which are either immediate neighbours to {node_name} in the original graph or the transpose graph.
 ```
 &nbsp;
 ```yaml
 URL: /api/suggestions/?q={query}
-Method: GET 
+Method: GET
 Description: Returns a set of nodes which contains the {query} pattern in their nodeid
 ```
 
@@ -89,7 +89,7 @@ Description: Returns a set of nodes which contains the {query} pattern in their 
 
 [**Add server-side filtering #29**](https://github.com/cc-archive/cccatalog-dataviz/pull/29)
 - We realized that the client-side graph filtering method is not very scalable. This PR adds the basic structure for the backend server and adds server-side graph filtering logic.
-- Added a parser to convert the input JSON file from `{nodes:[], links:[]}` schema to the distance list format. 
+- Added a parser to convert the input JSON file from `{nodes:[], links:[]}` schema to the distance list format.
 
 <div style="text-align: center; width: 90%; margin-left: 5%;">
     <figure>
@@ -113,7 +113,7 @@ Description: Returns a set of nodes which contains the {query} pattern in their 
 
 [**Add node suggestions feature #35**](https://github.com/cc-archive/cccatalog-dataviz/pull/35)
 - Added query autocomplete feature, to enable users to explore all the nodes in the database.
-- This functionality aims to minimize the number of misspelt filtering tries from the client. 
+- This functionality aims to minimize the number of misspelt filtering tries from the client.
 - Refer to [this blog](/blog/entries/linked-commons-autocomplete-feature/) for the motivation and detailed report on why we added autocomplete aka node suggestions feature.
 
 
@@ -149,9 +149,9 @@ Description: Returns a set of nodes which contains the {query} pattern in their 
 
 
 ### What’s Next?
-Throughout this internship period, we, the Linked Commons team, aimed to make this version the best among all. But there is still scope for improvement. 
+Throughout this internship period, we, the Linked Commons team, aimed to make this version the best among all. But there is still scope for improvement.
 
-Just to give you some insights; currently, the complete graph contains 235k nodes and 4.14million links. During the preprocessing, we dropped a lot of the nodes. Additionally, we removed more than 3 million nodes which didn't have cc_licenses information. So, in general, the current version shows only those nodes which are soundly linked with other domains and their licenses information is available. To give a complete picture of the massive "cc-catalog", the linked commons need to "gird up his loins". 
+Just to give you some insights; currently, the complete graph contains 235k nodes and 4.14million links. During the preprocessing, we dropped a lot of the nodes. Additionally, we removed more than 3 million nodes which didn't have cc_licenses information. So, in general, the current version shows only those nodes which are soundly linked with other domains and their licenses information is available. To give a complete picture of the massive "cc-catalog", the linked commons need to "gird up his loins".
 
 After seeing the tremendous potential it has, I will undoubtedly continue working on it and help the linked commons in this quest. ⚡
 

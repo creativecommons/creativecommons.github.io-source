@@ -13,7 +13,7 @@ series: outreachy-dec-2019-platform-toolkit
 pub_date: 2019-12-16
 ---
 body:
-I've just finished my second week as an intern for CC (part of the Outreachy program 2019-2020 round), helping revamp the [Platform Toolkit](https://creativecommons.org/platform/toolkit/) and it's been a great learning experience so far. 
+I've just finished my second week as an intern for CC (part of the Outreachy program 2019-2020 round), helping revamp the [Platform Toolkit](https://creativecommons.org/platform/toolkit/) and it's been a great learning experience so far.
 
 Before we get into what I've been doing, I wanted to quickly explain why I think this is such a cool project - maybe you'll think it's cool too and want to collaborate as well at some point :) See, the better this toolkit is, the more we increase our chances of having really great, user-friendly implementations in partner platforms. Providing a helpful toolkit is one of the ways we can guide users towards finding better information, understanding licenses, and making better use of content -- not to mention that getting this right ensures we reach a ton of people.
 

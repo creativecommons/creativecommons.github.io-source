@@ -42,7 +42,7 @@ As a reminder, we want to eventually crawl every single Creative Commons work on
 
 #### Designing the crawler
 We know we're not going to be able to crawl 500 million images with one virtual machine and a single IP address, so it is obvious from the start that we are going to need a way to distribute the crawling and analysis tasks over multiple machines. A basic queue-worker architecture will do the job here; when we want to crawl an image, we can dispatch the URL to an inbound images queue, and a worker eventually pops that task out and processes it. Kafka will handle all of the hard work of partitioning and distributing the tasks between workers.
-  
+
 The worker processes do the actual analysis of the images, which essentially entails downloading the image, extracting interesting properties, and sticking the resulting metadata back into a Kafka topic for later downstream processing. The worker will also have to include some instrumentation for conforming to rate limits and error reporting.
 
 We also know that we will need to share some information about crawl progress between worker processes, such as whether we've exceeded our prescribed rate limit for a website, the number of times we've seen a status code in the last minute, how many images we've processed so far, and so on. Since we're only interested in sharing application state and aggregate statistics, a lightweight key/value store like Redis seems like a good fit.
@@ -422,7 +422,7 @@ The result here is that we have a lightweight, modular, highly concurrent, and p
 ```bash
 alden:~/code/image_crawler$ cloc .
       48 text files.
-      43 unique files.                              
+      43 unique files.
       25 files ignored.
 
 github.com/AlDanial/cloc v 1.81  T=0.02 s (1667.4 files/s, 130887.8 lines/s)

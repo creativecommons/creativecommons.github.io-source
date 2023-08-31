@@ -23,7 +23,7 @@ During this period I removed all the hardcoded strings from the static pages whi
 1. About Page
 2. Collections Page
 3. Search Guide Page
-4. Feedback Page 
+4. Feedback Page
 
 All of the above pages were then internationalized following the same procedure as detailed in the previous post.
 While internationalizing the homepage we ran into an interesting problem:

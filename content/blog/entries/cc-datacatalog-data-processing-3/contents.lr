@@ -12,7 +12,7 @@ author: soccerdroid
 ---
 series: gsoc-2019-dataviz
 ---
-pub_date: 2019-08-12 
+pub_date: 2019-08-12
 ---
 body:
 
@@ -23,7 +23,7 @@ project.
 
 This is a continuation of my last blog post about the data processing part 2 of the CC-data catalog visualization project. I recommend you to read that [last post](https://opensource.creativecommons.org/blog/entries/cc-datacatalog-data-processing-2/) for a better understanding of what I'll explain here.
 
-Hello! In this post I am going to talk you about the extraction of unique nodes, and links, and the visualization of the force-directed graph with the processed data. 
+Hello! In this post I am going to talk you about the extraction of unique nodes, and links, and the visualization of the force-directed graph with the processed data.
 
 ### Nodes and links generation
 
@@ -35,9 +35,9 @@ The nodes and links will be visualized using [force-graph](https://github.com/va
 - A domain can be repeated not only within a chunk, but in different chunks too.
 - Source and target must have licensed content
 
-So as you can see, dealing with duplications is not that trivial when you have a lot of data. Next what I tried was to analyze smaller files, in order to be able to keep the data in memory in a single DataFrame. So for each TSV file I had before, now I have several small TSV files. This may extend the data analysis, but it can smooth the coding complexity. 
+So as you can see, dealing with duplications is not that trivial when you have a lot of data. Next what I tried was to analyze smaller files, in order to be able to keep the data in memory in a single DataFrame. So for each TSV file I had before, now I have several small TSV files. This may extend the data analysis, but it can smooth the coding complexity.
 
-I first started by formatting the data into source and target columns to generate the unique nodes for the graph. I iterate through each row of the current DataFrame I have (the one with provider_domain, cc_licences,links column, etc), and by reading the _links_ column, I load the json of each row. For each key in the json, I create a new row with provider_domain as source, they key as target, and the value of the key as a _value_  feature. I append that new row to a new DataFrame. I build a new row each time I read a line, so I have a DataFrame with all the links of a single provider_domain. When I finish iterating over the rows, I convert the DataFrames to list and save the output. That is how I get a new DataFrame containing all the existing links of the graph, with source, target and value columns. Yeah! 
+I first started by formatting the data into source and target columns to generate the unique nodes for the graph. I iterate through each row of the current DataFrame I have (the one with provider_domain, cc_licences,links column, etc), and by reading the _links_ column, I load the json of each row. For each key in the json, I create a new row with provider_domain as source, they key as target, and the value of the key as a _value_  feature. I append that new row to a new DataFrame. I build a new row each time I read a line, so I have a DataFrame with all the links of a single provider_domain. When I finish iterating over the rows, I convert the DataFrames to list and save the output. That is how I get a new DataFrame containing all the existing links of the graph, with source, target and value columns. Yeah!
 
 
 

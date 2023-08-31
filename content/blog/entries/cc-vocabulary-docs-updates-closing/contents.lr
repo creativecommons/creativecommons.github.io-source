@@ -16,7 +16,7 @@ We have reached the end of this wonderful journey. Let's comprehensively recap a
 
 ## Vocabulary Site Updates (Edition 4/4)
 
-After securing acceptance, I received the necessary github invites. I was given write access to the [Vocabulary GitHub repository](https://github.com/creativecommons/vocabulary) as a **CC Vocabulary Core Committer**. 
+After securing acceptance, I received the necessary github invites. I was given write access to the [Vocabulary GitHub repository](https://github.com/creativecommons/vocabulary) as a **CC Vocabulary Core Committer**.
 
 ### Proposed Initial Plan
 
@@ -34,7 +34,7 @@ Here's a list of all the weekly goals that I met:
 - Opened Issues and PR’s to get acquainted with the repository workflows.
 - Interacted with my mentor and established the basic ideas regarding the project in question.
 - Further researched about the needs of the project, and ponder over its potential impact after implementation.
-    
+
 
 **Week 1**
 (09/14 - 09/21)
@@ -51,26 +51,26 @@ Here's a list of all the weekly goals that I met:
 (09/29 - 10/06)
 - Finalized the headings, sub-headings and other sections which will need to be present in the landing site & documentation.
 - Kept the code ready for accepting documentation contents. Have github pages/netlify/surge configured for continuous integration and deployment.
-    
+
 **Week 4**
 (10/07 - 10/14)
 - Began to write under “Introduction”, “Getting Started” and ”Grid Components” sub-headings of the documentation.
 - Started developing the main landing page using Vocabulary components.
-    
+
 **Week 5**
 (10/15 - 10/22)
 - Got complete approval for the main page contents.
 - Worked on coding the “Dark Theme”.
 - Facilitated hacktoberfest contributors and spoke at a CCOS event.
-   
+
 **Week 6**
 (10/23 - 10/30)
 - Wrote a mid-internship blog post describing work done and how the experience has been so far with CC.
 - Started compiling the document guides for all the components in Vocabulary. Made revamps where necessary.
-    
+
 **Week 7**
 (10/31 - 11/07)
-- Integrated the main page contents and the main landing page itself, had it up and running.  
+- Integrated the main page contents and the main landing page itself, had it up and running.
 
 **Week 8**
 (11/08 - 11/15)
@@ -101,8 +101,8 @@ Here's a list of all the weekly goals that I met:
 
 **Week 13**
 (12/13 - 12/19)
-- Cleaned code, make sure everything is properly linted and ready before the final closing commits.    
-- Published the “Concluding Internship” blog post, rounding up my wholesome journey.    
+- Cleaned code, make sure everything is properly linted and ready before the final closing commits.
+- Published the “Concluding Internship” blog post, rounding up my wholesome journey.
 - Sought final closing approval.
 
 **Post-Internship**
@@ -169,7 +169,7 @@ Here's the link to the [documentation site](https://cc-vocabulary.netlify.app).
 
 - Used [StorybookJS](https://storybook.js.org/).
 - Modified the existing overview page.
-- Removed highly verbose sections from the docs. 
+- Removed highly verbose sections from the docs.
 - Documented Vocabulary sprint planning workflow.
 - Documented how to use a markdown component with CC Vocabulary.
 - Embedded hyperlink to other open source projects to improve SEO.
@@ -201,7 +201,7 @@ Here's the link to the [documentation site](https://cc-vocabulary.netlify.app).
 <table>
 <thead>
 <tr>
-<th>Repository</th> 
+<th>Repository</th>
 <th>Contribution</th>
 <th>Relevant links</th>
 </tr>

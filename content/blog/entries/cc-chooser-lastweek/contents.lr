@@ -15,7 +15,7 @@ series: gsoc-2019-chooser
  Summer of Code is drawing to a close, and so is my work on the chooser project (well, sort of, I'll continue to help build and support the project for some time). These have easily been some of the best months of my life for a number of reasons. I remember vividly getting my first Slack message from my mentor, Breno, and being in utter disbelief that I was chosen. I have been fortunate enough to have this project be my own, complete with a whole Git repo just for this project!
 
  My work started with an empty GitHub repository, and bunch of planning: layout, wireframes, usability testing, etc. It wasn't until week 3 when I could start on actually building the site. To reflect on this time, I thought it would be cool to take a look back at the most significant PRs of the last three months.
- 
+
   - My first PR with anything of substance was [#9 - Refactor Modal System](https://github.com/creativecommons/cc-chooser/pull/9). This changed the site's modal system from using a cooler approach to one not quite as flashy, but the old method was lacking some critical features.
   - Then came [#10 - Add Chooser Functionality](https://github.com/creativecommons/cc-chooser/pull/10). This was a pretty big deal, as this brought the functionality behind the main point of the page: the License Chooser.
   - Next up, [#11](https://github.com/creativecommons/cc-chooser/pull/11): a big change to page layout. This changed the layout of the help section itself, and the layout of the page as a whole.

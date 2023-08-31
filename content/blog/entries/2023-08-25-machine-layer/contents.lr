@@ -83,7 +83,7 @@ systems.
 - **Updated License Information**:
   -  License information has been updated to reflect the latest permissions and
      restrictions. This ensures users and systems are informed accurately.
-- **Alignment with RDF Best Practices**: 
+- **Alignment with RDF Best Practices**:
   - Changes align the representation with RDF best practices. This boosts
     interoperability and compatibility, thanks to standardized namespaces,
      consistent naming, and proper relationship definitions.

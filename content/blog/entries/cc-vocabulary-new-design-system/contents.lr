@@ -18,7 +18,7 @@ body:
 With the development period of GSoC 2019 well under way, a number of new and
 improved Creative Commons apps are navigating their way to production and
 worldwide reception. With all this development comes one obvious challenge:
-*consistency* (not to mention a number of other challenges such as 
+*consistency* (not to mention a number of other challenges such as
 internationalisation and modularity).
 
 The idea of a design system, to have a collection of elements and components
@@ -30,7 +30,7 @@ bikeshedding and repetitive design iterations.
 
 Contributing to CC Search in the period before GSoC made me realize the numerous
 areas of the project that would benefit from a pre-built library and prompted
-the proposal that eventually became my project. I'll cite the same example that 
+the proposal that eventually became my project. I'll cite the same example that
 I used in my proposal because it so clearly shows a problem and its solution.
 
 Consider for example the header and footer. All CC apps have a header and a
@@ -63,7 +63,7 @@ reinvented per-app.
 
 Now CC Vocabulary provides a footer (ready to use today!) that can be used on
 all three of the above sites, conveying the same information in the same
-consistent layout. 
+consistent layout.
 
 _"What about the different contents in the footers?"_, you ask.
 
@@ -135,7 +135,7 @@ learning that I did. By the end of three weeks, I was the proud developer of a
 world-class web component framework that was beginning to have some real
 footing, something I had not even dreamed possible!
 
-**Pro-tip:** If you haven't seen or experienced Vue UI, you should. It will 
+**Pro-tip:** If you haven't seen or experienced Vue UI, you should. It will
 change your opinion of Vue for the better, as it did mine.
 
 ```bash
@@ -228,7 +228,7 @@ It's gonna be ugly.
 languages are spoken more widely outside countries of origin (think English) and
 many countries are home to several languages (think India). Many large websites
 make the mistake of using flag alongside language names and that seems so stupid
-in retrospect. 
+in retrospect.
 
 Also one should use the native name of the language in the selector (like हिन्दी)
 and the universal translation icon (or some stylistic variant thereof).
@@ -247,7 +247,7 @@ ahead are plentiful, but the solutions they inspire are diamonds in their own
 right. It is safe to say that I can attribute my complete understanding of Vue, i18n,
 component libraries, styleguides and design systems to CC Vocabulary.
 
-_Before we move on, let me tell you the bad and the ugly are not the norm. The 
+_Before we move on, let me tell you the bad and the ugly are not the norm. The
 good was the major portion of the project._
 
 ----
