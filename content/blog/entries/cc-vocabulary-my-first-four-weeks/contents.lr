@@ -17,8 +17,8 @@ body:
 
 [Vocabulary](https://cc-vocabulary.netlify.com/) is Creative Commons's web design system; an extension of
 [CC Style Guide](https://creativecommons.org/wp-content/uploads/2019/10/Creative-Commons-Style-Guide-2019.pdf)
-for the web. This project was originally started by my mentors [Dhruv Bhanushali](https://opensource.creativecommons.org/blog/authors/dhruvkb)
-and [Hugo Solar](https://opensource.creativecommons.org/blog/authors/hugosolar) to unify all of CC websites and applications.
+for the web. This project was originally started by my mentors [Dhruv Bhanushali](/blog/authors/dhruvkb)
+and [Hugo Solar](/blog/authors/hugosolar) to unify all of CC websites and applications.
 Vocabulary has been undergoing a lot of changes lately. As part of my Outreachy internship,
 I will be contributing to extending its scope and usage.
 

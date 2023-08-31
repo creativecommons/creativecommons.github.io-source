@@ -68,7 +68,7 @@ there's a gap or where revisions are needed, and how they should be corrected.
 
 Whether an Error or Feature/functionality Issue, once it's been submitted, in
 accordance with the [Contribution
-Guidelines](https://opensource.creativecommons.org/contributing-code/), it will
+Guidelines](/contributing-code/), it will
 move to a status of "awaiting triage". This means that it is waiting to be
 reviewed by one of the core codebase contributors. While it's in this state no
 implementation work should be done (no PRs, no code work to add or correct the
@@ -114,8 +114,8 @@ in progress.
 If an Issue passes through this period as implementable, then it'll move to a
 status of "ready for work". This is the point at which it can be implemented,
 and a contributor can submit a Pull Request addressing it. (See the [Repository
-Labels Status section](https://opensource.creativecommons.org/co
-ntributing-code/repo-labels/#status) for more information)
+Labels Status section](/contributing-code/repo-labels/#status) for more
+information)
 
 During this process it is worth noting that there will be multiple types of
 contribution. For example:

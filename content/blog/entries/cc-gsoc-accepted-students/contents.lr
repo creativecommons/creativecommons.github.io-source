@@ -31,10 +31,10 @@ If you’re interested in working on one of our remaining [project ideas][projec
 
 *A note about availability*: all CC staff have very limited availability over the next week because of[ CC Global Summit][cc-summit] and CC is closed for most of the following week so we won’t be around at all then. Please be patient, we’ll respond to you as soon as we can.
 
-[project-ideas]:https://creativecommons.github.io/gsoc-2019/project-ideas/
+[project-ideas]:/gsoc-2019/project-ideas/
 [cc-gsoc-projects]:https://summerofcode.withgoogle.com/organizations/6514859793973248/#projects
-[contributing-code]:https://creativecommons.github.io/contributing-code/
-[supercharging-elasticsearch]:https://creativecommons.github.io/gsoc-2019/project-ideas/all/#supercharge-our-indexing-engine
-[automated-license-link-checking]:https://creativecommons.github.io/gsoc-2019/project-ideas/all/#automated-link-checking
-[cc-search-plugins]:https://creativecommons.github.io/gsoc-2019/project-ideas/all/#cc-plugin-generic
+[contributing-code]:/contributing-code/
+[supercharging-elasticsearch]:/gsoc-2019/project-ideas/all/#supercharge-our-indexing-engine
+[automated-license-link-checking]:/gsoc-2019/project-ideas/all/#automated-link-checking
+[cc-search-plugins]:/gsoc-2019/project-ideas/all/#cc-plugin-generic
 [cc-summit]:https://summit.creativecommons.org/

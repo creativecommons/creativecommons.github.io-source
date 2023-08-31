@@ -51,7 +51,7 @@ The criteria are:
 2. The modal should have trap-focus(the user should not exit the modal when using tab to navigate).
 3. The modal should close on pressing **esc** or on clicking the overlay.
 
-To meet the criteria we developed a new [modal component](https://github.com/creativecommons/cccatalog-frontend/blob/develop/src/components/AppModal.vue).
+To meet the criteria we developed a new [modal component](https://github.com/cc-archive/cccatalog-frontend/blob/develop/src/components/AppModal.vue).
 This modal has an overlay and closes when we press the **esc** key or click on the overlay. The modal also disables other elements when it is opened.
 
 The final task achieved in the modal was the implementation of trap focus. For this we used the [vue-trap-focus library](https://github.com/posva/focus-trap-vue)
@@ -119,13 +119,13 @@ And we are officially done with our work for the summer internship. The next blo
 
 You can track the work done for these weeks through these PRs:
 
-1. [Accessibility Improvements](https://github.com/creativecommons/cccatalog-frontend/pull/1072)
-2. [setup vue-a11y for eslint](https://github.com/creativecommons/cccatalog-frontend/pull/1121)
-3. [Aria labels and internationalization](https://github.com/creativecommons/cccatalog-frontend/pull/1123)
-4. [internationalize aria-labels for about page and feedback page](https://github.com/creativecommons/cccatalog-frontend/pull/1120)
-5. [add trap focus to modals](https://github.com/creativecommons/cccatalog-frontend/pull/1153)
+1. [Accessibility Improvements](https://github.com/cc-archive/cccatalog-frontend/pull/1072)
+2. [setup vue-a11y for eslint](https://github.com/cc-archive/cccatalog-frontend/pull/1121)
+3. [Aria labels and internationalization](https://github.com/cc-archive/cccatalog-frontend/pull/1123)
+4. [internationalize aria-labels for about page and feedback page](https://github.com/cc-archive/cccatalog-frontend/pull/1120)
+5. [add trap focus to modals](https://github.com/cc-archive/cccatalog-frontend/pull/1153)
 
-The progress of the project can be tracked on [cc-search](https://github.com/creativecommons/cccatalog-frontend)
+The progress of the project can be tracked on [cc-search](https://github.com/cc-archive/cccatalog-frontend)
 
-CC Search Accessiblity is my GSoC 2020 project under the guidance of [Zack Krida](https://creativecommons.org/author/zackcreativecommons-org/) and [Ari Madian](https://opensource.creativecommons.org/blog/authors/akmadian/), who is the primary mentor for this project, [Anna Tumadóttir](https://creativecommons.org/author/annacreativecommons-org/) for helping all along and engineering director [Kriti
+CC Search Accessiblity is my GSoC 2020 project under the guidance of [Zack Krida](https://creativecommons.org/author/zackcreativecommons-org/) and [Ari Madian](/blog/authors/akmadian/), who is the primary mentor for this project, [Anna Tumadóttir](https://creativecommons.org/author/annacreativecommons-org/) for helping all along and engineering director [Kriti
 Godey](https://creativecommons.org/author/kriticreativecommons-org/), have been very supportive.

@@ -47,18 +47,18 @@ Provider API implemented :
 Iconfinder is a provider of icons that could not be integrated as the current strategy of ingestion is very slow and we need a better strategy.
 - Issue : [Iconfinder ticket][iconfinder_issue]
 
-[science_museum_issue]: https://github.com/creativecommons/cccatalog/issues/302
-[science_museum_script]: https://github.com/creativecommons/cccatalog/pull/400
-[science_museum_workflow]: https://github.com/creativecommons/cccatalog/pull/411
-[statens_museum_issue]: https://github.com/creativecommons/cccatalog/issues/393
-[statens_museum_implementation]: https://github.com/creativecommons/cccatalog/pull/428
-[museums_victoria_issue]: https://github.com/creativecommons/cccatalog/issues/291
-[museums_victoria_implementation]: https://github.com/creativecommons/cccatalog/pull/447
-[nypl_issue]: https://github.com/creativecommons/cccatalog/issues/147
-[nypl_implementation]: https://github.com/creativecommons/cccatalog/pull/462
-[brooklyn_museum_issue]: https://github.com/creativecommons/cccatalog/issues/348
-[brooklyn_museum_implementation]: https://github.com/creativecommons/cccatalog/pull/355
-[iconfinder_issue]:https://github.com/creativecommons/cccatalog/issues/396
+[science_museum_issue]: https://github.com/cc-archive/cccatalog/issues/302
+[science_museum_script]: https://github.com/cc-archive/cccatalog/pull/400
+[science_museum_workflow]: https://github.com/cc-archive/cccatalog/pull/411
+[statens_museum_issue]: https://github.com/cc-archive/cccatalog/issues/393
+[statens_museum_implementation]: https://github.com/cc-archive/cccatalog/pull/428
+[museums_victoria_issue]: https://github.com/cc-archive/cccatalog/issues/291
+[museums_victoria_implementation]: https://github.com/cc-archive/cccatalog/pull/447
+[nypl_issue]: https://github.com/cc-archive/cccatalog/issues/147
+[nypl_implementation]: https://github.com/cc-archive/cccatalog/pull/462
+[brooklyn_museum_issue]: https://github.com/cc-archive/cccatalog/issues/348
+[brooklyn_museum_implementation]: https://github.com/cc-archive/cccatalog/pull/355
+[iconfinder_issue]:https://github.com/cc-archive/cccatalog/issues/396
 
 
 ## Europeana reingestion strategy
@@ -76,9 +76,9 @@ More details regarding the math of reingestion: [Data reingestion][data_reingest
     <p>Europeana reingestion workflow</p>
 </div>
 
-[europeana_reingestion_issue]: https://github.com/creativecommons/cccatalog/issues/412
-[europeana_reingestion_strategy]: https://github.com/creativecommons/cccatalog/pull/473
-[data_reingestion_blog]: https://opensource.creativecommons.org/blog/entries/date-partitioned-data-reingestion/
+[europeana_reingestion_issue]: https://github.com/cc-archive/cccatalog/issues/412
+[europeana_reingestion_strategy]: https://github.com/cc-archive/cccatalog/pull/473
+[data_reingestion_blog]: /blog/entries/date-partitioned-data-reingestion/
 
 
 ## Merging Common Crawl tags
@@ -88,8 +88,8 @@ Currently the merging logic is applied to Science Museum, Museums Victoria and M
 
 In Science Museum, API url in image table is like https://coimages.sciencemuseumgroup.org.uk/images/240/862/large_BAB_S_1_02_0017.jpg and CC url is like https://s3-eu-west-1.amazonaws.com/smgco-images/images/369/541/medium_SMG00096855.jpg . So the idea is to reduce the url to the last identifier like number , so after the modification of the url by modify_urls function it looks like ```gpj.1700_20_1_S_BAB_``` (API url) and ```gpj.55869000GMS_``` (CC url) .
 Similar logic has been applied to met museum and museum victoria.
-- Issue: https://github.com/creativecommons/cccatalog/issues/468
-- Related PR: https://github.com/creativecommons/cccatalog/pull/478
+- Issue: https://github.com/cc-archive/cccatalog/issues/468
+- Related PR: https://github.com/cc-archive/cccatalog/pull/478
 
 
 ## Acknowledgement

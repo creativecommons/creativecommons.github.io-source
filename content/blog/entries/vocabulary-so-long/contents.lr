@@ -77,7 +77,7 @@ got the standards like `InputField` and `Button`, some unconventional ones like
 `Definition` and `Quote`, and some components that only our own tailored design
 library could afford like `Header` and `Footer`.
 
-Here's a list and [there's](https://creativecommons.github.io/cc-vocabulary)
+Here's a list and [there's](/cc-vocabulary)
 a living styleguide.
 
 <details>
@@ -175,7 +175,7 @@ the designs and revisions, was accomplished in two months and a half_.
 The code follows the [Standard code style](https://standardjs.com/) and the [Vue
 official style guide](https://vuejs.org/v2/style-guide/). In addition,
 Vocabulary has [its own style
-guide](https://opensource.creativecommons.org/cc-vocabulary/#/Vocabulary/Code%20style)
+guide](/cc-vocabulary/#/Vocabulary/Code%20style)
 that has rules right down to the order of rules in the CSS. This ensures that
 code is sensibly written, easily understandable and as little in debt as
 possible.
@@ -318,7 +318,7 @@ Plus Font Awesome provides Vue components! What's not to like.
 I'm not sure if there is enough time in the GSoC period for the integration PR
 to be reviewed and merged but I'm not going anywhere and neither are you. You
 can follow the integration as it happens
-[here](https://github.com/creativecommons/cccatalog-frontend/pull/413).
+[here](https://github.com/cc-archive/cccatalog-frontend/pull/413).
 
 If you're enthusiastic you can clone the branch and run the setup on your
 machine. Experience it for yourself, how about that?
@@ -327,9 +327,9 @@ machine. Experience it for yourself, how about that?
 
 **Repository:** https://github.com/dhruvkb/cccatalog-frontend/
 
-**PR**: https://github.com/creativecommons/cccatalog-frontend/pull/413/
+**PR**: https://github.com/cc-archive/cccatalog-frontend/pull/413/
 
-**Commits:** https://github.com/creativecommons/cccatalog-frontend/pull/413/commits
+**Commits:** https://github.com/cc-archive/cccatalog-frontend/pull/413/commits
 
 The proposal aimed to replace a lot of indigenous components with Vocabulary
 counterparts. Internationalisation and a consistent icon system are just me
@@ -339,7 +339,7 @@ going above and beyond.
 
 Summarising, [CC Vocabulary](https://github.com/creativecommons/cc-vocabulary)
 is now mature and [is getting
-married](https://github.com/creativecommons/cccatalog-frontend/pull/413) to [CC
+married](https://github.com/cc-archive/cccatalog-frontend/pull/413) to [CC
 Search](https://github.com/creativecommons/cc-vocabulary). GSoC was a successful
 matchmaker.
 

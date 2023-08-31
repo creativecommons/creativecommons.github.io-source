@@ -56,10 +56,10 @@ In the dataset, we have domain names in the form of URLs. But we want to make th
 >>> (ext.subdomain, ext.domain, ext.suffix)
 ('forums', 'bbc', 'co.uk') #extract the domain name "bbc"
 ```
-The main part is the extraction of the domain name. This will be applied to the _provider\_domain_ and _links_ fields in order to build the graph. The domain names will be the ones displayed over the nodes, as depicted in [my first blog post](https://creativecommons.github.io/blog/entries/cc-datacatalog-visualization/).
+The main part is the extraction of the domain name. This will be applied to the _provider\_domain_ and _links_ fields in order to build the graph. The domain names will be the ones displayed over the nodes, as depicted in [my first blog post](/blog/entries/cc-datacatalog-visualization/).
 
 ### License Validation
-Another important aspect is the licenses types. In the dataset, we do not have the exact license name; rather, we have a URL that directs to the license definition on [creativecommons.org](https://creativecommons.org). We have developed a [function](https://github.com/creativecommons/cccatalog/blob/master/src/providers/api/modules/etlMods.py#L75) with some regular expressions to validate the correct format of these URls, and extracts from them the license name and version. This information will be shown in the pie chart that appears after the user clicks on a node.
+Another important aspect is the licenses types. In the dataset, we do not have the exact license name; rather, we have a URL that directs to the license definition on [creativecommons.org](https://creativecommons.org). We have developed a [function](https://github.com/cc-archive/cccatalog/blob/master/src/providers/api/modules/etlMods.py#L75) with some regular expressions to validate the correct format of these URls, and extracts from them the license name and version. This information will be shown in the pie chart that appears after the user clicks on a node.
 
 ```
 'https://creativecommons.org/licenses/by/4.0/' #valid license

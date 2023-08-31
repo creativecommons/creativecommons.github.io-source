@@ -43,7 +43,7 @@ about CC licensed images from the respective providers , the data pulled is
 structured into a standardised format and written into a TSV (Tab Separated
 Values) file locally. These TSV files are then loaded into S3 and then finally
 to PostgreSQL DB by the loader workflow.
-[dags]: https://github.com/creativecommons/cccatalog/tree/dacb48d24c6ae9b532ff108589b9326bde0d37a3/src/cc_catalog_airflow/dags
+[dags]: https://github.com/cc-archive/cccatalog/tree/dacb48d24c6ae9b532ff108589b9326bde0d37a3/src/cc_catalog_airflow/dags
 
 ## Provider API workflow
 The provider workflows are usually scheduled in one of two time frequencies,
@@ -77,7 +77,7 @@ cron expression.
 Example: Cleveland museum is currently scheduled for a monthly crawl with a
 starting date as ```2020-01-15```. [cleveland_museum_workflow][clm_workflow]
 
-[clm_workflow]: https://github.com/creativecommons/cccatalog/blob/dacb48d24c6ae9b532ff108589b9326bde0d37a3/src/cc_catalog_airflow/dags/cleveland_museum_workflow.py
+[clm_workflow]: https://github.com/cc-archive/cccatalog/blob/dacb48d24c6ae9b532ff108589b9326bde0d37a3/src/cc_catalog_airflow/dags/cleveland_museum_workflow.py
 
 ## Loader workflow
 The data from the provider scripts are not directly loaded into S3. Instead,

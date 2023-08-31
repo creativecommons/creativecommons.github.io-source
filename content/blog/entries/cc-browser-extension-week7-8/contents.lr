@@ -17,8 +17,8 @@ body:
 For the context, I am working on my GSoC project that is to make a browser-extension to search CC Licensed content in the public domain by interacting with CC Catalog API.
 
 **Previous Blogs**:
--  [CC Browser Extension - A GSoC Project](https://opensource.creativecommons.org/blog/entries/cc-browser-extension-a-gsoc-project/)
--  [CC Browser Extension Week 5, 6](https://opensource.creativecommons.org/blog/entries/cc-browser-extension-week5-6/)
+-  [CC Browser Extension - A GSoC Project](/blog/entries/cc-browser-extension-a-gsoc-project/)
+-  [CC Browser Extension Week 5, 6](/blog/entries/cc-browser-extension-week5-6/)
 
 ### Work Done
 A couple of major features were added to the browser extension these weeks like image Info and attribution preview and options UI. Also, the extension now has dark mode :)
@@ -59,6 +59,6 @@ I also added an options page to the extension which will open in a new tab and t
 - Test and fix bugs.
 - Improve documentation.
 
-You can check out the project on [Github](https://github.com/creativecommons/ccsearch-browser-extension) and join the discussion on `#gsoc-browser-ext` channel on [slack](https://opensource.creativecommons.org/community/#slack).
+You can check out the project on [Github](https://github.com/creativecommons/ccsearch-browser-extension) and join the discussion on `#gsoc-browser-ext` channel on [slack](/community/#slack).
 
 *Special Thanks*:  [Alden](https://creativecommons.org/author/aldencreativecommons-org/), [Timid](https://creativecommons.org/author/timidcreativecommons-org/) and [Kriti](https://creativecommons.org/author/kriticreativecommons-org/)

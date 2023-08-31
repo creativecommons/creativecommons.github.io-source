@@ -15,7 +15,7 @@ pub_date: 2020-07-08
 body:
 
 
-This blog demonstrates the project I am working on during the course of my Outreachy internship. My project involves redesigning and reimplementing one of the web products of the CC network using our new cohesive design library — [Vocabulary](https://cc-vocabulary.netlify.app/?path=/docs/vocabulary-introduction--page). After my internship is completed, the [Creative Commons Open Source](https://opensource.creativecommons.org/) website will have a complete revamped interface that will extensively use Vocabulary components.
+This blog demonstrates the project I am working on during the course of my Outreachy internship. My project involves redesigning and reimplementing one of the web products of the CC network using our new cohesive design library — [Vocabulary](https://cc-vocabulary.netlify.app/?path=/docs/vocabulary-introduction--page). After my internship is completed, the [Creative Commons Open Source](/) website will have a complete revamped interface that will extensively use Vocabulary components.
 
 ## The Problem -
 

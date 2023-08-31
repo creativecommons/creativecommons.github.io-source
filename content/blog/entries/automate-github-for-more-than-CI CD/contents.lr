@@ -63,7 +63,7 @@ categories:
       - 'critical'
 ```
 
-The resulting release notes require no manual editing at release time, and has saved us hours over time and allows our developers to focus on DevOps work instead of copywriting on release days. We also never miss a contribution or expression of gratitude to one of our contributors. You can read the [latest CC Search release notes](https://github.com/creativecommons/cccatalog-frontend/releases/latest) or [see our full release-drafter.yml file here](https://github.com/creativecommons/cccatalog-frontend/blob/develop/.github/release-drafter.yml).
+The resulting release notes require no manual editing at release time, and has saved us hours over time and allows our developers to focus on DevOps work instead of copywriting on release days. We also never miss a contribution or expression of gratitude to one of our contributors. You can read the [latest CC Search release notes](https://github.com/cc-archive/cccatalog-frontend/releases/latest) or [see our full release-drafter.yml file here](https://github.com/cc-archive/cccatalog-frontend/blob/develop/.github/release-drafter.yml).
 
 ### Repository Normalization
 
@@ -107,7 +107,7 @@ Internally and publicly, we use [GitHub Projects](https://github.com/orgs/creati
     ACCESS_TOKEN: ${{ secrets.ADMIN_GITHUB_TOKEN }}
     COLUMN_NAME: "In Progress (Community)"
     PROJECT_URL: https://github.com/orgs/creativecommons/projects/7
-    REPO_URL: https://github.com/creativecommons/cccatalog-frontend
+    REPO_URL: https://github.com/cc-archive/cccatalog-frontend
 ```
 
 We have additional scripts that sync our community team members across our open source website and GitHub, and several others that do even more of this cross-platform synchronization work. All of these scripts relive significant burden off of our engineering manager and open source community coordinator.

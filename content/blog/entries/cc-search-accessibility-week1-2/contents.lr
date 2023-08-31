@@ -19,11 +19,11 @@ These are the first two weeks of my internship with CC. I am working on improvin
 We started with first compiling the accessibility reports from accessibility insights, lighthouse and pa11y into a single document and then opening up appropriate issues ont he repo to address them.
 
 The accessibility issues are listed here:
-1. [Accessibility - Improve labels](https://github.com/creativecommons/cccatalog-frontend/issues/996)
-2. [Evaluate keyboard navigation effectiveness](https://github.com/creativecommons/cccatalog-frontend/issues/997)
-3. [Fix color contrast problems](https://github.com/creativecommons/cccatalog-frontend/issues/998)
-4. [Improve elements markup](https://github.com/creativecommons/cccatalog-frontend/issues/999)
-5. [Evaluate any accessibility linter tools](https://github.com/creativecommons/cccatalog-frontend/issues/1000)
+1. [Accessibility - Improve labels](https://github.com/cc-archive/cccatalog-frontend/issues/996)
+2. [Evaluate keyboard navigation effectiveness](https://github.com/cc-archive/cccatalog-frontend/issues/997)
+3. [Fix color contrast problems](https://github.com/cc-archive/cccatalog-frontend/issues/998)
+4. [Improve elements markup](https://github.com/cc-archive/cccatalog-frontend/issues/999)
+5. [Evaluate any accessibility linter tools](https://github.com/cc-archive/cccatalog-frontend/issues/1000)
 
 The decision was made to audit the tab indices along with internationalizing the page.
 The accessibility changes will be done after the completion of internationalization as the aria-labels will have to be internationalized as well.
@@ -62,10 +62,10 @@ The final outcome looks pretty good:
 And voila we are done with the first two weeks. I also internationalized the header and the footer along with the homepage.
 You can track the work done for these weeks through these PRs:
 
-1. [setup internationalization plugin](https://github.com/creativecommons/cccatalog-frontend/pull/1007)
-2. [Internationalize homepage, header and footer](https://github.com/creativecommons/cccatalog-frontend/pull/1013)
+1. [setup internationalization plugin](https://github.com/cc-archive/cccatalog-frontend/pull/1007)
+2. [Internationalize homepage, header and footer](https://github.com/cc-archive/cccatalog-frontend/pull/1013)
 
-The progress of the project can be tracked on [cc-search](https://github.com/creativecommons/cccatalog-frontend)
+The progress of the project can be tracked on [cc-search](https://github.com/cc-archive/cccatalog-frontend)
 
-CC Search Accessiblity is my GSoC 2020 project under the guidance of [Ari Madian](https://opensource.creativecommons.org/blog/authors/akmadian/), who is the primary mentor for this project, [Anna Tumadóttir](https://creativecommons.org/author/annacreativecommons-org/) for helping all along and engineering director [Kriti
+CC Search Accessiblity is my GSoC 2020 project under the guidance of [Ari Madian](/blog/authors/akmadian/), who is the primary mentor for this project, [Anna Tumadóttir](https://creativecommons.org/author/annacreativecommons-org/) for helping all along and engineering director [Kriti
 Godey](https://creativecommons.org/author/kriticreativecommons-org/), have been very supportive.
