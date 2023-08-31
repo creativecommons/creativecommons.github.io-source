@@ -39,7 +39,7 @@ summer. Here they are!
       adding new features like integrating with CC Search. Ahmad’s mentor is
       our Core Systems Manager <a href="https://creativecommons.org/author/timidcreativecommons-org/">Timid Robot Zehta</a>, backed up by Hugo Solar.</p>
 
-      <p>You can follow the progress of this project through the <a href="https://github.com/creativecommons/creativecommons-wordpress-plugin">GitHub repo</a> or on the <code>#cc-dev-wordpress</code> channel on our <a href="https://creativecommons.github.io/community">Slack community</a>.</p>
+      <p>You can follow the progress of this project through the <a href="https://github.com/creativecommons/creativecommons-wordpress-plugin">GitHub repo</a> or on the <code>#cc-dev-wordpress</code> channel on our <a href="/community">Slack community</a>.</p>
     </div>
     <div class="col pt-3">
       <img src="ahmad.jpg" alt="ahmad bilal" /><br />
@@ -66,7 +66,7 @@ summer. Here they are!
       in sites built using modern JavaScript frameworks (specifically Vue.js)
       as well as simpler websites built using WordPress. CC’s Web Developer <a href="https://creativecommons.org/author/hugocreativecommons-org/">Hugo Solar</a> serves as primary mentor, with backup from Sophine Clachar.</p>
 
-      <p>You can follow the progress of this project through the <a href="https://github.com/creativecommons/cc-vocabulary">GitHub repo</a> or on the <code>#gsoc-cc-vocabulary</code> channel on our <a href="https://creativecommons.github.io/community/">Slack community</a>.</p>
+      <p>You can follow the progress of this project through the <a href="https://github.com/creativecommons/cc-vocabulary">GitHub repo</a> or on the <code>#gsoc-cc-vocabulary</code> channel on our <a href="/community/">Slack community</a>.</p>
     </div>
     <div class="col pt-3">
       <img src="dhruv.jpg" alt="dhruv bhanushali" /><br />
@@ -94,7 +94,7 @@ summer. Here they are!
       the most content, which CC licenses are used the most, and much more.
       She will be mentored by our Data Engineer <a href="https://creativecommons.org/author/sclachar/">Sophine Clachar</a> with backup from Breno Ferreira.</p>
 
-      <p>You can follow the progress of this project through the <a href="https://github.com/cc-archive/cccatalog-dataviz">GitHub repo</a> or on the <code>#gsoc-cc-catalog-viz</code> channel on our <a href="https://creativecommons.github.io/community/">Slack community</a>.</p>
+      <p>You can follow the progress of this project through the <a href="https://github.com/cc-archive/cccatalog-dataviz">GitHub repo</a> or on the <code>#gsoc-cc-catalog-viz</code> channel on our <a href="/community/">Slack community</a>.</p>
     </div>
     <div class="col pt-3">
       <img src="maria.jpg" alt="María Belén Guaranda Cabezas" /><br />
@@ -114,7 +114,7 @@ summer. Here they are!
 
       <p>Ari will be working on creating a modern human-centered version of <a href="https://creativecommons.org/choose/">our CC license chooser tool</a>, which is long overdue for an update. His work will focus on design and usability as well as code. CC’s Front End Engineer <a href="https://creativecommons.org/author/brenoferreira/">Breno Ferreira</a> is the primary mentor for this project with support from Alden Page.</p>
 
-      <p>You can follow the progress of this project through the <a href="https://github.com/creativecommons/cc-chooser">GitHub repo</a> or on the <code>#gsoc-license-chooser</code> channel on our <a href="https://creativecommons.github.io/community/">Slack community</a>.</p>
+      <p>You can follow the progress of this project through the <a href="https://github.com/creativecommons/cc-chooser">GitHub repo</a> or on the <code>#gsoc-license-chooser</code> channel on our <a href="/community/">Slack community</a>.</p>
     </div>
     <div class="col pt-3">
       <p><img src="ari.jpg" alt="Ari Madian" /><br />
@@ -140,13 +140,13 @@ summer. Here they are!
       switch to a new website. Mayank will be mentored by CC’s Software
       Engineer <a href="https://creativecommons.org/author/aldencreativecommons-org/">Alden Page</a> with support from Timid Robot Zehta.</p>
 
-      <p>You can follow the progress of this project through the GitHub repo or on the #gsoc-browser-ext channel on our <a href="https://creativecommons.github.io/community/">Slack community</a>.</p>
+      <p>You can follow the progress of this project through the GitHub repo or on the #gsoc-browser-ext channel on our <a href="/community/">Slack community</a>.</p>
 
       <p>You can visit <a href="https://summerofcode.withgoogle.com/organizations/6514859793973248/">the Creative Commons organization page</a>
        on Google Summer of Code site to see longer descriptions of the
       projects. We welcome community input and feedback – you are the users of
        all these products and we’d love for you to be involved. So don’t
-      hesitate to join the project Slack channel or talk to us on GitHub or <a href="https://creativecommons.github.io/community/">our other community forums</a>.</p>
+      hesitate to join the project Slack channel or talk to us on GitHub or <a href="/community/">our other community forums</a>.</p>
     </div>
     <div class="col pt-3">
       <p><img src="mayank.png" alt="Mayank Nader" /><br />

@@ -26,9 +26,9 @@ author: kgodey
 pub_date: 2020-12-07
 ---
 body:
-Creative Commons (CC) is adopting a brand new organizational strategy in 2021, just in time for our 20th anniversary. As part of the organization's evolution in alignment with the new strategy, [Alden Page](https://opensource.creativecommons.org/blog/authors/aldenpage/), [Brent Moran](https://opensource.creativecommons.org/blog/authors/mathemancer/), [Hugo Solar](https://opensource.creativecommons.org/blog/authors/hugosolar/), and I ([Kriti Godey](https://opensource.creativecommons.org/blog/authors/kgodey/)) will have departed Creative Commons by the end of December. Moving forward, the CC staff engineering team of [Timid Robot Zehta](https://opensource.creativecommons.org/blog/authors/TimidRobot/) and [Zack Krida](https://opensource.creativecommons.org/blog/authors/zackkrida/) will focus on supporting a smaller set of core projects.
+Creative Commons (CC) is adopting a brand new organizational strategy in 2021, just in time for our 20th anniversary. As part of the organization's evolution in alignment with the new strategy, [Alden Page](/blog/authors/aldenpage/), [Brent Moran](/blog/authors/mathemancer/), [Hugo Solar](/blog/authors/hugosolar/), and I ([Kriti Godey](/blog/authors/kgodey/)) will have departed Creative Commons by the end of December. Moving forward, the CC staff engineering team of [Timid Robot Zehta](/blog/authors/TimidRobot/) and [Zack Krida](/blog/authors/zackkrida/) will focus on supporting a smaller set of core projects.
 
-We are extremely proud of the work we have done together to build CC's vibrant open source community over the past two years. And of course, we're thankful for all the amazing contributions that all our community members have made. We've made significant improvements to existing tools, and launched entirely new projects with your help. [We created Vocabulary,](https://opensource.creativecommons.org/blog/categories/cc-vocabulary/) a design system for Creative Commons and launched half a dozen sites using it.  We added [dozens of new sources to CC Search](https://opensource.creativecommons.org/blog/categories/cc-catalog/) and improved [its accessibility](https://opensource.creativecommons.org/blog/authors/AyanChoudhary/). We released tools such as the [CC WordPress plugin](https://opensource.creativecommons.org/blog/authors/ahmadbilaldev/) and [CC Search browser extension](https://opensource.creativecommons.org/blog/authors/makkoncept/) that integrated CC licensing with widely used software. And, there's so much more.
+We are extremely proud of the work we have done together to build CC's vibrant open source community over the past two years. And of course, we're thankful for all the amazing contributions that all our community members have made. We've made significant improvements to existing tools, and launched entirely new projects with your help. [We created Vocabulary,](/blog/categories/cc-vocabulary/) a design system for Creative Commons and launched half a dozen sites using it.  We added [dozens of new sources to CC Search](/blog/categories/cc-catalog/) and improved [its accessibility](/blog/authors/AyanChoudhary/). We released tools such as the [CC WordPress plugin](/blog/authors/ahmadbilaldev/) and [CC Search browser extension](/blog/authors/makkoncept/) that integrated CC licensing with widely used software. And, there's so much more.
 
 ### Community Changes
 
@@ -38,7 +38,7 @@ The CC Open Source community remains central to our engineering work, and we wil
 -   We will invite all Community Team members to meetings and documents open to the community, regardless of role.
 -   We will deprecate the  "community-team-core" mailing list in favor of a single "community-team" mailing list.
 -   We will have a new monthly Open Source Community meeting and cancel the existing biweekly Engineering Meeting.
--   We will no longer have a paid Open Source Community Coordinator, [relying instead on volunteers](https://opensource.creativecommons.org/community/community-team/community-building-roles/) to help assist new community members, maintain our Twitter account, etc.
+-   We will no longer have a paid Open Source Community Coordinator, [relying instead on volunteers](/community/community-team/community-building-roles/) to help assist new community members, maintain our Twitter account, etc.
 
 We welcome new Community Team members and we will continue to participate in internship programs such as Google Summer of Code.
 
@@ -65,9 +65,9 @@ We will continue to actively develop the following projects:
 
 The following projects are entering maintenance mode. The services will remain online, but we will not accept any new pull requests or deploy new code after Dec 15, 2020.
 
--   [CC Catalog](https://github.com/creativecommons/cccatalog)
--   [CC Catalog API](https://github.com/creativecommons/cccatalog-api)
--   [CC Search](https://github.com/creativecommons/cccatalog-frontend/)
+-   [CC Catalog](https://github.com/cc-archive/cccatalog)
+-   [CC Catalog API](https://github.com/cc-archive/cccatalog-api)
+-   [CC Search](https://github.com/cc-archive/cccatalog-frontend/)
 -   [Linked Commons](https://github.com/cc-archive/cccatalog-dataviz/)
 
 Catalog, API, and Linked Commons contributors are encouraged to contribute  to our other Python projects such as the [CC Legal Database](https://github.com/creativecommons/legaldb) or the upcoming [CC Licenses](https://github.com/creativecommons/cc-licenses) project. If you are a CC Search contributor, we recommend checking out frontend projects such as the [CC Chooser](https://github.com/creativecommons/chooser) or [Vocabulary](https://github.com/creativecommons/vocabulary).

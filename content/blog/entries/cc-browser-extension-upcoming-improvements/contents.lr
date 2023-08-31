@@ -15,7 +15,7 @@ pub_date: 2020-06-01
 ---
 body:
 
-[CC Search Extension](https://opensource.creativecommons.org/ccsearch-browser-extension/) is a cross-browser extension, which lets you search for and filter content that is under Creative Commons licenses. It was developed as one of the CC projects during Google Summer of Code program of 2019.
+[CC Search Extension](/ccsearch-browser-extension/) is a cross-browser extension, which lets you search for and filter content that is under Creative Commons licenses. It was developed as one of the CC projects during Google Summer of Code program of 2019.
 
 ### The story so far
 It's release on the extension stores of [Chrome](https://chrome.google.com/webstore/detail/cc-search-browser-extensi/agohkbfananbebiaphblgcfhcclklfnh), [Firefox](https://addons.mozilla.org/en-US/firefox/addon/cc-search-extension/), and [Opera](https://addons.opera.com/en/extensions/details/cc-search/) was accompanied by several announcements on twitter, which were well received by the community and thus the number of weekly users (i.e the number of users that have used the extension at least once during last week) drastically increased. After several weeks, the extension reached 22,000+ weekly users. But, now this number fluctuates between 9,000 - 10,000. So, what happened? Well, the majority of initial influx were the "curious" folks who just wanted to check out this new tool and later thought that this was not something that they might find useful. But, there are also users that are looking for a similar tool and the lack of sufficient features and capabilities of the extension made them stop using it and look for better alternatives.
@@ -47,7 +47,7 @@ The extension uses a very outdated version of CC Vocabulary. It will be replaced
 The new Microsoft Edge browser is based on chromium. This paves the way to add support for it thanks to the power and flexibility of the WebExtension API. This will then allow us to also officially release on the [Microsoft Edge Addon Store](https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home).
 
 ### Join the discussion
-If you have any feedback/suggestions or just want to say hi,  please join the `#cc-dev-browser-extension` channel on [slack](https://opensource.creativecommons.org/community/#slack). You can also track the progress on the project's [Github](https://github.com/creativecommons/ccsearch-browser-extension) Repository.
+If you have any feedback/suggestions or just want to say hi,  please join the `#cc-dev-browser-extension` channel on [slack](/community/#slack). You can also track the progress on the project's [Github](https://github.com/creativecommons/ccsearch-browser-extension) Repository.
 
 
 

@@ -19,8 +19,8 @@ These are the fifth and sixth weeks of my internship with CC. I am working on im
 This post contains yet another important aspect to be taken care of while internationalizing the Vue components, i.e. modifying tests to include the changes.
 
 The components which were left are the two pages displaying the most content:
-1. [Browse page](https://github.com/creativecommons/cccatalog-frontend/blob/develop/src/pages/BrowsePage.vue)
-2. [ImageDetail page](https://github.com/creativecommons/cccatalog-frontend/blob/develop/src/pages/PhotoDetailPage.vue)
+1. [Browse page](https://github.com/cc-archive/cccatalog-frontend/blob/develop/src/pages/BrowsePage.vue)
+2. [ImageDetail page](https://github.com/cc-archive/cccatalog-frontend/blob/develop/src/pages/PhotoDetailPage.vue)
 
 The above two pages too were handled similar to the remaining pages, special care had to be taken in case of ImageDetail page since there are too many components in different files.
 By this point we also have our json structure figured out, mostly and are ready to push the json for fetching further translations.
@@ -65,16 +65,16 @@ And *drum rolls* we have successfully completed Internationalization of the comp
 
 The issues closed with the completion of Internationalization are:
 
-1. [[META] Internationalisation (i18n) Setup](https://github.com/creativecommons/cccatalog-frontend/issues/487)
-2. [Set up vue-i18n infrastructure](https://github.com/creativecommons/cccatalog-frontend/issues/941)
-3. [Create locale messages format JSON structure](https://github.com/creativecommons/cccatalog-frontend/issues/942)
-4. [Allow users to change locale on the client](https://github.com/creativecommons/cccatalog-frontend/issues/943)
+1. [[META] Internationalisation (i18n) Setup](https://github.com/cc-archive/cccatalog-frontend/issues/487)
+2. [Set up vue-i18n infrastructure](https://github.com/cc-archive/cccatalog-frontend/issues/941)
+3. [Create locale messages format JSON structure](https://github.com/cc-archive/cccatalog-frontend/issues/942)
+4. [Allow users to change locale on the client](https://github.com/cc-archive/cccatalog-frontend/issues/943)
 
 You can track the work done for these weeks through this PR:
 
-1. [Localize browsepage and single-result page](https://github.com/creativecommons/cccatalog-frontend/pull/1040)
+1. [Localize browsepage and single-result page](https://github.com/cc-archive/cccatalog-frontend/pull/1040)
 
-The progress of the project can be tracked on [cc-search](https://github.com/creativecommons/cccatalog-frontend)
+The progress of the project can be tracked on [cc-search](https://github.com/cc-archive/cccatalog-frontend)
 
-CC Search Accessiblity is my GSoC 2020 project under the guidance of [Zack Krida](https://creativecommons.org/author/zackcreativecommons-org/) and [Ari Madian](https://opensource.creativecommons.org/blog/authors/akmadian/), who is the primary mentor for this project, [Anna Tumadóttir](https://creativecommons.org/author/annacreativecommons-org/) for helping all along and engineering director [Kriti
+CC Search Accessiblity is my GSoC 2020 project under the guidance of [Zack Krida](https://creativecommons.org/author/zackcreativecommons-org/) and [Ari Madian](/blog/authors/akmadian/), who is the primary mentor for this project, [Anna Tumadóttir](https://creativecommons.org/author/annacreativecommons-org/) for helping all along and engineering director [Kriti
 Godey](https://creativecommons.org/author/kriticreativecommons-org/), have been very supportive.

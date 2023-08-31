@@ -54,11 +54,11 @@ CC Search is also made possible by a number of institutional and individual supp
 [cc-search-feedback]:https://search.creativecommons.org/feedback
 [cc-usability]:https://creativecommons.slack.com/messages/CCS9CF2JE/details/
 [cc-slack]:https://wiki.creativecommons.org/wiki/Slack#How_to_join_Slack
-[cccatalog]:https://github.com/creativecommons/cccatalog
-[cccatalog-api]:https://github.com/creativecommons/cccatalog-api
-[cccatalog-frontend]:https://github.com/creativecommons/cccatalog-frontend/
-[contributing-code]:https://creativecommons.github.io/contributing-code/
-[cc-github-io]:https://creativecommons.github.io/
+[cccatalog]:https://github.com/cc-archive/cccatalog
+[cccatalog-api]:https://github.com/cc-archive/cccatalog-api
+[cccatalog-frontend]:https://github.com/cc-archive/cccatalog-frontend/
+[contributing-code]:/contributing-code/
+[cc-github-io]:/
 [arcadia]:https://www.arcadiafund.org.uk/about-peter-baldwin-lisbet-rausing/
 [mozilla]:https://www.mozilla.org/en-US/foundation/
 [original-blog-post]: https://creativecommons.org/2019/04/30/cc-search-images/

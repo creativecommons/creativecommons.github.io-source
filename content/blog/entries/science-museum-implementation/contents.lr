@@ -117,7 +117,7 @@ have multiple images with it and using object id we cannot determine the image u
 for each image. Currently image id is taken from ```multimedia```, multimedia is a field in the json response that lists multiple
 images and their metadata, for each image data in multimedia, foreign id is in ```admin.uid```.
 
-The implementation can be found [here](https://github.com/creativecommons/cccatalog/blob/master/src/cc_catalog_airflow/dags/provider_api_scripts/science_museum.py).
+The implementation can be found [here](https://github.com/cc-archive/cccatalog/blob/master/src/cc_catalog_airflow/dags/provider_api_scripts/science_museum.py).
 
 ### Results:
 Running the scripts we get:
@@ -129,6 +129,6 @@ The problem with current implementation is that records with no date would be mi
 Science Museum provider is the first provider I worked on as a part of the internship and thank my mentor Brent Moran for the help.
 
 ### Additional Details :
-- [research work](https://github.com/creativecommons/cccatalog/issues/302)
-- [implementation](https://github.com/creativecommons/cccatalog/pull/400)
+- [research work](https://github.com/cc-archive/cccatalog/issues/302)
+- [implementation](https://github.com/cc-archive/cccatalog/pull/400)
 

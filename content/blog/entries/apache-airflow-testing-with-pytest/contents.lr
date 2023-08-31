@@ -198,4 +198,4 @@ We hope that these hints are helpful to the reader.  For more, and for the
 context around the snippets shown here, please take a look at
 [the repo][frozen_cccatalog].
 
-[frozen_cccatalog]: https://github.com/creativecommons/cccatalog/tree/c4b80600eb5695cc294e1791ba90bdc3a408b7b9/src/cc_catalog_airflow
+[frozen_cccatalog]: https://github.com/cc-archive/cccatalog/tree/c4b80600eb5695cc294e1791ba90bdc3a408b7b9/src/cc_catalog_airflow

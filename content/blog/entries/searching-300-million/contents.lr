@@ -33,7 +33,7 @@ Instead of using Django signals to incrementally add individual items to the dat
 
 ![Ingestion Server](ingestion_diagram.jpg)
 
-The piece of software responsible for updating our search data is called [Ingestion Server](https://github.com/creativecommons/cccatalog-api/tree/master/ingestion_server/ingestion_server). It copies data from the CC Catalog into the production PostgreSQL database, and then indexes that data inside of Elasticsearch in bulk. The tricky part about this is that we had to reload the data without impacting performance or availability of the production system. So, if the ingestion were to fail for some reason (Elasticsearch or our database runs out of space, malformed data breaks the indexer, etc), the users shouldn’t even notice. To accomplish that, all data is loaded into temporary tables and indices, tested for defects, and then promoted to the “live” search index.
+The piece of software responsible for updating our search data is called [Ingestion Server](https://github.com/cc-archive/cccatalog-api/tree/master/ingestion_server/ingestion_server). It copies data from the CC Catalog into the production PostgreSQL database, and then indexes that data inside of Elasticsearch in bulk. The tricky part about this is that we had to reload the data without impacting performance or availability of the production system. So, if the ingestion were to fail for some reason (Elasticsearch or our database runs out of space, malformed data breaks the indexer, etc), the users shouldn’t even notice. To accomplish that, all data is loaded into temporary tables and indices, tested for defects, and then promoted to the “live” search index.
 
 ## Searching 300 million works in high traffic conditions
 

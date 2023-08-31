@@ -47,7 +47,7 @@ In this section, I will go through all the major features(exclusive of any techn
 
 
 - **Search and filter CC Licensed content**
-This feature is at the core and the extension does a good job. The searching and filtering is powered by [CC Catalog API](https://github.com/creativecommons/cccatalog-api) which exposes various endpoints to get search results and apply filters for providers, licenses, and use-case. This makes sure that you will find exactly what are you looking for.
+This feature is at the core and the extension does a good job. The searching and filtering is powered by [CC Catalog API](https://github.com/cc-archive/cccatalog-api) which exposes various endpoints to get search results and apply filters for providers, licenses, and use-case. This makes sure that you will find exactly what are you looking for.
 
 
 <div style="text-align: center;">
@@ -161,7 +161,7 @@ We hope that you will give this a shot and maybe use it as your daily driver to 
 
 You can check out the [project on Github](https://github.com/creativecommons/ccsearch-browser-extension).
 
-Come and say hi to us on [slack](https://opensource.creativecommons.org/community/#slack) and tell about your experience with CC Search extension. The slack channel is `#gsoc-browser-ext`.
+Come and say hi to us on [slack](/community/#slack) and tell about your experience with CC Search extension. The slack channel is `#gsoc-browser-ext`.
 
 
 *Special Thanks*:  [Alden](https://creativecommons.org/author/aldencreativecommons-org/), [Timid](https://creativecommons.org/author/timidcreativecommons-org/) and [Kriti](https://creativecommons.org/author/kriticreativecommons-org/)
