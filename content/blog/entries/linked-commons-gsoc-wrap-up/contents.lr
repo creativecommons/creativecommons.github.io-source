@@ -75,19 +75,19 @@ Description: Returns a set of nodes which contains the {query} pattern in their 
 
 ### My Code Contributions
 
-**Repository:** https://github.com/creativecommons/cccatalog-dataviz/
+**Repository:** https://github.com/cc-archive/cccatalog-dataviz/
 
-**Commits:** https://github.com/creativecommons/cccatalog-dataviz/commits/master
+**Commits:** https://github.com/cc-archive/cccatalog-dataviz/commits/master
 
-**Contributors:** https://github.com/creativecommons/cccatalog-dataviz/graphs/contributors
+**Contributors:** https://github.com/cc-archive/cccatalog-dataviz/graphs/contributors
 
 
-[**Migrate frontend to React #28**](https://github.com/creativecommons/cccatalog-dataviz/pull/28)
+[**Migrate frontend to React #28**](https://github.com/cc-archive/cccatalog-dataviz/pull/28)
 - Migrated the frontend to a web application using React.js for smooth rendering performance.
 - Add client-side graph filtering method to enable users to interact with the loaded graph.
 
 
-[**Add server-side filtering #29**](https://github.com/creativecommons/cccatalog-dataviz/pull/29)
+[**Add server-side filtering #29**](https://github.com/cc-archive/cccatalog-dataviz/pull/29)
 - We realized that the client-side graph filtering method is not very scalable. This PR adds the basic structure for the backend server and adds server-side graph filtering logic.
 - Added a parser to convert the input JSON file from `{nodes:[], links:[]}` schema to the distance list format. 
 
@@ -100,7 +100,7 @@ Description: Returns a set of nodes which contains the {query} pattern in their 
 
 
 
-[**Design upgrade #33**](https://github.com/creativecommons/cccatalog-dataviz/pull/33)
+[**Design upgrade #33**](https://github.com/cc-archive/cccatalog-dataviz/pull/33)
 - It revamped the design of the frontend.
 - Added both primary light theme and secondary dark theme
 
@@ -111,24 +111,24 @@ Description: Returns a set of nodes which contains the {query} pattern in their 
     </figure>
 </div>
 
-[**Add node suggestions feature #35**](https://github.com/creativecommons/cccatalog-dataviz/pull/35)
+[**Add node suggestions feature #35**](https://github.com/cc-archive/cccatalog-dataviz/pull/35)
 - Added query autocomplete feature, to enable users to explore all the nodes in the database.
 - This functionality aims to minimize the number of misspelt filtering tries from the client. 
 - Refer to [this blog](/blog/entries/linked-commons-autocomplete-feature/) for the motivation and detailed report on why we added autocomplete aka node suggestions feature.
 
 
-[**Fix filtering module #38**](https://github.com/creativecommons/cccatalog-dataviz/pull/38)
+[**Fix filtering module #38**](https://github.com/cc-archive/cccatalog-dataviz/pull/38)
 - Optimizes the build-dB-script to run efficiently on the larger and newer dataset of the cc-catalog.
 - Added the basic form of the randomized graph filtering method.
 - Refer to [this blog](/blog/entries/linked-commons-data-update/) for a piece of detailed information on data update.
 
 
-[**Database upgrade and core enhancements #39**](https://github.com/creativecommons/cccatalog-dataviz/pull/39)
+[**Database upgrade and core enhancements #39**](https://github.com/cc-archive/cccatalog-dataviz/pull/39)
 - It upgrades the primary database from shelve to MongoDB for higher performance.
 - Dockerizes the frontend and backend for both dev and prod environments for higher application portability.
 
 
-[**Frontend enhancements #40**](https://github.com/creativecommons/cccatalog-dataviz/pull/40)
+[**Frontend enhancements #40**](https://github.com/cc-archive/cccatalog-dataviz/pull/40)
 - Fixes common UI bugs, updates the frontend design and enhances the mobile and smaller devices experience with the linked commons
 - Modularizes and updates the code documentation
 

@@ -16,6 +16,11 @@ pub_date: 2019-07-26
 ---
 body:
 
+> ℹ️ **2023-08-31:** This project was archived along with the shuttering of CC
+Search (now [Openverse](https://openverse.org/)). Please also see the
+[Quantifying the Commons](https://github.com/creativecommons/quantifying)
+project.
+
 This is a continuation of my last blog post about the data processing part of the CC-data catalog visualization project. I recommend you to read that [last post](https://opensource.creativecommons.org/blog/entries/cc-datacatalog-data-processing/) for a better understanding of what I'll explain here.
 
 
@@ -68,7 +73,7 @@ The thresholds for the quantity of images and links are my intuitions from havin
 - Visualization with the data. 
 - Development or modification of pruning/filtering rules.
 
-You can follow the project development in the [Github repo](https://github.com/creativecommons/cccatalog-dataviz).
+You can follow the project development in the [Github repo](https://github.com/cc-archive/cccatalog-dataviz).
 
 CC Data Catalog Visualization is my GSoC 2019 project under the guidance of [Sophine
 Clachar](https://creativecommons.org/author/sclachar/), who has been greatly helpful and considerate since the GSoC application period. Also, my backup mentor, [Breno Ferreira](https://creativecommons.org/author/brenoferreira/), and engineering director [Kriti

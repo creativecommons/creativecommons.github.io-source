@@ -16,6 +16,11 @@ pub_date: 2019-09-03
 ---
 body:
 
+> ℹ️ **2023-08-31:** This project was archived along with the shuttering of CC
+Search (now [Openverse](https://openverse.org/)). Please also see the
+[Quantifying the Commons](https://github.com/creativecommons/quantifying)
+project.
+
 This is a continuation of my last blog post about the data processing part 3 of the CC-data catalog visualization project. I recommend you to read that [last post](https://opensource.creativecommons.org/blog/entries/cc-datacatalog-data-processing-3/) for a better understanding of what I'll explain here.
 
 Hello! In this last post, I am going to talk you about the final visualization. First, I would like to talk about the data and share my recommendations.
@@ -87,7 +92,7 @@ Here is the final visualization, using a sample data from one month of the Commo
 <br>
 
 
-You can check the whole project source code in the [Github repo](https://github.com/creativecommons/cccatalog-dataviz/tree/master/GSoC2019). 
+You can check the whole project source code in the [Github repo](https://github.com/cc-archive/cccatalog-dataviz/tree/master/GSoC2019). 
 
 ### Final comments and future work
 This was my first experience with big data visualization, and I really enjoyed it!
