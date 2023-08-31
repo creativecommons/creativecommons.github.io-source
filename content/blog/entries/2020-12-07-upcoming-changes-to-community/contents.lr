@@ -68,7 +68,7 @@ The following projects are entering maintenance mode. The services will remain o
 -   [CC Catalog](https://github.com/creativecommons/cccatalog)
 -   [CC Catalog API](https://github.com/creativecommons/cccatalog-api)
 -   [CC Search](https://github.com/creativecommons/cccatalog-frontend/)
--   [Linked Commons](https://github.com/creativecommons/cccatalog-dataviz/)
+-   [Linked Commons](https://github.com/cc-archive/cccatalog-dataviz/)
 
 Catalog, API, and Linked Commons contributors are encouraged to contribute  to our other Python projects such as the [CC Legal Database](https://github.com/creativecommons/legaldb) or the upcoming [CC Licenses](https://github.com/creativecommons/cc-licenses) project. If you are a CC Search contributor, we recommend checking out frontend projects such as the [CC Chooser](https://github.com/creativecommons/chooser) or [Vocabulary](https://github.com/creativecommons/vocabulary).
 

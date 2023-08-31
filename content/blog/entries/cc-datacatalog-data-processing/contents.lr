@@ -67,7 +67,7 @@ Another important aspect is the licenses types. In the dataset, we do not have t
 - Data aggregation
 - Visualization with the data + perfectioning pruning/filtering rules
 
-You can follow the project development in the [Github repo](https://github.com/creativecommons/cccatalog-dataviz).
+You can follow the project development in the [Github repo](https://github.com/cc-archive/cccatalog-dataviz).
 
 CC Data Catalog Visualization is my GSoC 2019 project under the guidance of [Sophine
 Clachar](https://creativecommons.org/author/sclachar/), who has been greatly helpful and considerate since the GSoC application period. Also, my backup mentor, [Breno Ferreira](https://creativecommons.org/author/brenoferreira/), and engineering director [Kriti

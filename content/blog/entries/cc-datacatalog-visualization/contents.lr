@@ -73,7 +73,7 @@ As the front-end is complete, I am going to get my hands dirty with the data. Fu
 - Reviewing of part of the dataset
 - Implementation of a module for cleaning and parsing the data
 
-You can follow the project development in the [Github repo](https://github.com/creativecommons/cccatalog-dataviz).
+You can follow the project development in the [Github repo](https://github.com/cc-archive/cccatalog-dataviz).
 
 CC Data Catalog Visualization is my GSoC 2019 project under the guidance of [Sophine
 Clachar](https://creativecommons.org/author/sclachar/), who has been greatly helpful and considerate since the GSoC application period. Also, my backup mentor, [Breno Ferreira](https://creativecommons.org/author/brenoferreira/), and engineering director [Kriti
