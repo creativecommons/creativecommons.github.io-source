@@ -16,6 +16,11 @@ pub_date: 2019-06-17
 ---
 body:
 
+> ℹ️ **2023-08-31:** This project was archived along with the shuttering of CC
+Search (now [Openverse](https://openverse.org/)). Please also see the
+[Quantifying the Commons](https://github.com/creativecommons/quantifying)
+project.
+
 _“By visualizing information, we turn it into a landscape that you can explore with your eyes.”_ – David McCandless.
 
 The landscape of licensed content is wide and varied. We have domains linking to other domains, different license types, and some metadata. This information is extracted from the Internet monthly by [Common Crawl](http://commoncrawl.org/). It is fair to mention that we have 250 million works and growing! If you didn't know we had so much licensed content, well then, this is one of the goals of this project: show the users how licensers are connected, their licensed content, and show how the licensing wave is expanding.
