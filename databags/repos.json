@@ -571,6 +571,31 @@
             "website": "https://creativecommons.org/faq/"
         },
         {
+            "created": "2023-07-10T19:50:43",
+            "description": "Local development environment for creativecommons.org",
+            "engineering_project": true,
+            "english_name": "creativecommons.org - environment",
+            "featured": false,
+            "id": 664809001,
+            "language": "Shell",
+            "license": {
+                "name": "Creative Commons Zero v1.0 Universal",
+                "url": "https://github.com/creativecommons/index-dev-env/blob/main/COPYING"
+            },
+            "name": "index-dev-env",
+            "slack": "",
+            "technologies": [
+                "HTML",
+                "CSS",
+                "Javascript",
+                "PHP",
+                "Docker",
+                "Bash"
+            ],
+            "url": "https://github.com/creativecommons/index-dev-env",
+            "website": ""
+        },
+        {
             "created": "2018-05-16T19:44:57",
             "description": "CC Legal Database: curated repository of Case Law and Scholarship data from around the world in a Django based website.",
             "engineering_project": true,
