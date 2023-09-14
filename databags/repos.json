@@ -655,7 +655,7 @@
             "engineering_project": true,
             "featured": false,
             "id": 47291677,
-            "language": "HTML",
+            "language": null,
             "license": {
                 "name": "MIT License",
                 "url": "https://github.com/creativecommons/mp/blob/main/LICENSE"
