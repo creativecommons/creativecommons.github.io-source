@@ -550,7 +550,7 @@
         },
         {
             "created": "2023-07-10T19:50:43",
-            "description": "Local development environment for creativecommons.org",
+            "description": "Local development environment for CreativeCommons.org (product name: index)",
             "engineering_project": true,
             "english_name": "creativecommons.org - environment",
             "featured": false,
