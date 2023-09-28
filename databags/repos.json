@@ -491,7 +491,7 @@
         },
         {
             "created": "2013-10-31T00:19:22",
-            "description": "Website parent project, legalcode and translations, and GitHub Issues for public help and support",
+            "description": "Legacy legal code translations and general support issues",
             "engineering_project": true,
             "english_name": "License chooser and license display code",
             "featured": false,
@@ -508,7 +508,7 @@
                 "bash"
             ],
             "url": "https://github.com/creativecommons/creativecommons.org",
-            "website": "https://creativecommons.org/"
+            "website": ""
         },
         {
             "created": "2020-11-02T16:08:46",
@@ -582,8 +582,8 @@
             "id": 569449155,
             "language": "HTML",
             "license": {
-                "name": "MIT License",
-                "url": "https://github.com/creativecommons/index-prototype/blob/main/LICENSE"
+                "name": "Creative Commons Zero v1.0 Universal",
+                "url": "https://github.com/creativecommons/index-prototype/blob/main/COPYING"
             },
             "name": "index-prototype",
             "slack": "",
@@ -1135,7 +1135,7 @@
             "id": 631052121,
             "language": "PHP",
             "license": {
-                "name": "MIT License",
+                "name": "GNU General Public License v2.0",
                 "url": "https://github.com/creativecommons/vocabulary-theme/blob/main/LICENSE"
             },
             "name": "vocabulary-theme",
