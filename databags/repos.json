@@ -493,7 +493,7 @@
             "created": "2013-10-31T00:19:22",
             "description": "Legacy legal code translations and general support issues",
             "engineering_project": true,
-            "english_name": "License chooser and license display code",
+            "english_name": "Legacy legal code translations and general support issues",
             "featured": false,
             "id": 14003491,
             "language": "HTML",
@@ -504,8 +504,9 @@
             "name": "creativecommons.org",
             "slack": "",
             "technologies": [
-                "Python",
-                "bash"
+                "Bash",
+                "HTML",
+                "Python"
             ],
             "url": "https://github.com/creativecommons/creativecommons.org",
             "website": ""
