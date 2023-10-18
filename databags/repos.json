@@ -232,74 +232,6 @@
             "website": "https://api.creativecommons.org/docs/"
         },
         {
-            "created": "2013-09-13T22:18:08",
-            "description": "Python app that runs part of the license engine on CC's website",
-            "engineering_project": true,
-            "english_name": "cc.engine",
-            "featured": false,
-            "id": 12820583,
-            "language": "HTML",
-            "license": {
-                "name": "MIT License",
-                "url": "https://github.com/creativecommons/cc.engine/blob/main/LICENSE"
-            },
-            "name": "cc.engine",
-            "slack": "",
-            "technologies": [
-                "Python"
-            ],
-            "url": "https://github.com/creativecommons/cc.engine",
-            "website": "https://creativecommons.org/licenses/"
-        },
-        {
-            "created": "2013-10-24T00:14:55",
-            "description": "Localization data for CC's deeds and license chooser",
-            "engineering_project": true,
-            "featured": false,
-            "id": 13818463,
-            "language": "Python",
-            "license": {
-                "name": "MIT License",
-                "url": "https://github.com/creativecommons/cc.i18n/blob/main/LICENSE"
-            },
-            "name": "cc.i18n",
-            "slack": "",
-            "url": "https://github.com/creativecommons/cc.i18n",
-            "website": ""
-        },
-        {
-            "created": "2013-10-24T00:12:07",
-            "description": "Python app that runs part of the license engine on CC's website",
-            "engineering_project": true,
-            "featured": false,
-            "id": 13818396,
-            "language": "Python",
-            "license": {
-                "name": "MIT License",
-                "url": "https://github.com/creativecommons/cc.license/blob/main/LICENSE"
-            },
-            "name": "cc.license",
-            "slack": "",
-            "url": "https://github.com/creativecommons/cc.license",
-            "website": "https://creativecommons.org/licenses/"
-        },
-        {
-            "created": "2013-09-15T21:56:33",
-            "description": "RDF describing Creative Commons licenses",
-            "engineering_project": true,
-            "featured": false,
-            "id": 12853322,
-            "language": "Python",
-            "license": {
-                "name": "MIT License",
-                "url": "https://github.com/creativecommons/cc.licenserdf/blob/main/LICENSE"
-            },
-            "name": "cc.licenserdf",
-            "slack": "",
-            "url": "https://github.com/creativecommons/cc.licenserdf",
-            "website": "https://creativecommons.org/ns"
-        },
-        {
             "created": "2014-10-06T22:07:52",
             "description": "RubyCAS customizations for CCID (Creative Commons ID)",
             "engineering_project": true,
@@ -667,54 +599,6 @@
             "website": "https://creativecommons.org/platform/toolkit/"
         },
         {
-            "created": "2016-05-19T18:07:31",
-            "description": "Primary Creative Commons website",
-            "engineering_project": true,
-            "featured": false,
-            "id": 59230362,
-            "language": "JavaScript",
-            "license": {
-                "name": "GNU General Public License v2.0",
-                "url": "https://github.com/creativecommons/new-creativecommons.org/blob/main/LICENSE"
-            },
-            "name": "new-creativecommons.org",
-            "slack": "",
-            "url": "https://github.com/creativecommons/new-creativecommons.org",
-            "website": "https://creativecommons.org/"
-        },
-        {
-            "created": "2016-05-19T18:06:55",
-            "description": "creativecommons.org various custom plugins for content types, mostly",
-            "engineering_project": true,
-            "featured": false,
-            "id": 59230319,
-            "language": "PHP",
-            "license": {
-                "name": "GNU General Public License v2.0",
-                "url": "https://github.com/creativecommons/new-www-plugin/blob/main/LICENSE"
-            },
-            "name": "new-www-plugin",
-            "slack": "",
-            "url": "https://github.com/creativecommons/new-www-plugin",
-            "website": "https://github.com/creativecommons/new-creativecommons.org"
-        },
-        {
-            "created": "2016-05-19T18:06:05",
-            "description": "creativecommons.org theme, to make it look lovely",
-            "engineering_project": true,
-            "featured": false,
-            "id": 59230280,
-            "language": "SCSS",
-            "license": {
-                "name": "GNU General Public License v2.0",
-                "url": "https://github.com/creativecommons/new-www-theme/blob/main/LICENSE"
-            },
-            "name": "new-www-theme",
-            "slack": "",
-            "url": "https://github.com/creativecommons/new-www-theme",
-            "website": "https://github.com/creativecommons/new-creativecommons.org"
-        },
-        {
             "created": "2020-08-31T20:05:46",
             "description": "An open graph image generator for Creative Commons projects.",
             "engineering_project": true,
@@ -820,26 +704,6 @@
             ],
             "url": "https://github.com/creativecommons/quantifying",
             "website": ""
-        },
-        {
-            "created": "2013-12-02T20:59:52",
-            "description": "",
-            "engineering_project": true,
-            "english_name": "CC RDFa Dict",
-            "featured": false,
-            "id": 14874571,
-            "language": "Python",
-            "license": {
-                "name": "MIT License",
-                "url": "https://github.com/creativecommons/rdfadict/blob/main/LICENSE"
-            },
-            "name": "rdfadict",
-            "slack": "",
-            "technologies": [
-                "Python"
-            ],
-            "url": "https://github.com/creativecommons/rdfadict",
-            "website": null
         },
         {
             "created": "2018-03-22T19:04:09",
