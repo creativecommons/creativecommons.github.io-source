@@ -640,26 +640,6 @@
             "website": "http://open4us.org/"
         },
         {
-            "created": "2020-08-21T15:34:37+00:00",
-            "description": "Build creativecommons.org primary site includes (scripts, styles, navigation header, and navigation footer) based on WordPress REST API",
-            "engineering_project": true,
-            "english_name": "Primary Site Includes",
-            "featured": false,
-            "id": 289304439,
-            "language": "Python",
-            "license": {
-                "name": "MIT License",
-                "url": "https://github.com/creativecommons/primary-site-includes/blob/main/LICENSE"
-            },
-            "name": "primary-site-includes",
-            "slack": "",
-            "technologies": [
-                "Python"
-            ],
-            "url": "https://github.com/creativecommons/primary-site-includes",
-            "website": ""
-        },
-        {
             "created": "2021-07-06T17:25:01+00:00",
             "description": "Project to manage technical implementation of creativecommons.org (primary website)",
             "engineering_project": true,
@@ -1014,7 +994,7 @@
                 "Bash"
             ],
             "url": "https://github.com/creativecommons/vocabulary-theme",
-            "website": null
+            "website": ""
         },
         {
             "created": "2020-10-17T03:08:56+00:00",
