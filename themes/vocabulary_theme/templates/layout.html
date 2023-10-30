@@ -234,9 +234,28 @@
               <div class="subscription">
                 <h5 class="b-header">Subscribe to our newsletter</h5>
                 <form class="newsletter">
-                  <input type="text" class="input" placeholder="Your email">
+                  <input type="text" id="emailInput" class="input" placeholder="Your email">
                   <input type="submit" value="subscribe" class="button small">
-                </form>
+                  <span id="emailError" style="color: white;"></span>
+              </form>
+              <style>
+                #emailError {
+                    margin-left: 10px; 
+                }
+            </style>
+              <script>
+              document.querySelector('.newsletter').addEventListener('submit', function(event) {
+                  const emailInput = document.getElementById('emailInput');
+                  const emailError = document.getElementById('emailError');
+                 
+                  if (emailInput.value.trim() === '') {
+                      event.preventDefault(); 
+                      emailError.textContent = 'Please enter your email!';
+                  } else {
+                      emailError.textContent = ''; 
+                  }
+              });
+              </script>
               </div>
               <div class="attribution margin-top-bigger">
                 <p class="caption">
