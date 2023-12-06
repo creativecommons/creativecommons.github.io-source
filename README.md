@@ -75,7 +75,7 @@ To install these, execute the following commands:
 [nodejswebsite]: https://nodejs.org/en/
 [npmdocs]: https://docs.npmjs.com/
 [homebrew]: https://brew.sh/
-[pipenvinstall]: https://pipenv.pypa.io/en/latest/install/#installing-pipenv
+[pipenvinstall]: https://pipenv.pypa.io/en/latest/installation.html
 [nodeinstall]: https://github.com/nodesource/distributions/blob/master/README.md#table-of-contents
 [nodedetailed]: https://github.com/nodesource/distributions/blob/master/README.md#installation-instructions
 
