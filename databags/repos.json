@@ -200,22 +200,6 @@
             "website": "https://resources.creativecommons.org/"
         },
         {
-            "created": "2015-07-15T18:24:37+00:00",
-            "description": "WordPress theme used on creativecommons.org",
-            "engineering_project": true,
-            "featured": false,
-            "id": 39153629,
-            "language": "Hack",
-            "license": {
-                "name": "GNU General Public License v2.0",
-                "url": "https://github.com/creativecommons/cc-wp-theme/blob/main/LICENSE"
-            },
-            "name": "cc-wp-theme",
-            "slack": "",
-            "url": "https://github.com/creativecommons/cc-wp-theme",
-            "website": ""
-        },
-        {
             "created": "2013-12-02T21:01:41+00:00",
             "description": "Legacy API to integrate the Creative Commons licensing engine into third party applications",
             "engineering_project": true,
@@ -638,32 +622,6 @@
             ],
             "url": "https://github.com/creativecommons/open4us.org",
             "website": "http://open4us.org/"
-        },
-        {
-            "created": "2021-07-06T17:25:01+00:00",
-            "description": "Project to manage technical implementation of creativecommons.org (primary website)",
-            "engineering_project": true,
-            "english_name": "CreativeCommons.org website development project",
-            "featured": false,
-            "id": 383548251,
-            "language": "Shell",
-            "license": {
-                "name": "MIT License",
-                "url": "https://github.com/creativecommons/project_creativecommons.org/blob/main/LICENSE"
-            },
-            "name": "project_creativecommons.org",
-            "slack": "cc-dev-wordpress",
-            "technologies": [
-                "PHP",
-                "WordPress",
-                "JavaScript",
-                "React",
-                "Django",
-                "Docker",
-                "Docker Compose"
-            ],
-            "url": "https://github.com/creativecommons/project_creativecommons.org",
-            "website": "https://creativecommons.org/"
         },
         {
             "created": "2022-09-07T17:02:39+00:00",
