@@ -8,6 +8,7 @@ black = "*"
 flake8 = "*"
 isort = "*"
 lektor = "*"
+colorama = "*"
 
 [requires]
 python_version = "3.9"
