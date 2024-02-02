@@ -9,9 +9,9 @@ The Resources Archive has an outdated visual setup, and needs functionality
 fixes and improvements.
 ---
 expected_outcome:
-Upgrade the look & feel to match current CC aesthetics, using the internal
+Upgrade the look and feel to match current CC aesthetics, using the internal
 Design System (Vocabulary). Codebase is running current and standards compliant
-technology implementations. Entire site builds as static files on GH pages.
+technology implementations. Entire site builds as static files on GitHub Pages.
 Generate clear documentation of codebase and functionality.
 ---
 contributor_tasks:
@@ -19,7 +19,7 @@ Contributor will refactor codebase to fix resource submission, use current
 semantic, accessible, and standards compliant HTML, CSS, and JavaScript to
 match the current visual aesthetic of Creative Commons sites. Improve the
 overall UX for finding, submitting, and  accessing resources. Ensure the site
-functions as a static and stable Jekyll site hosted on GH Pages as static
+functions as a static and stable Jekyll site hosted on GitHub Pages as static
 files. Final implementation will have clear documentation drafted within the
 codebase for future maintainability.
 ---
@@ -29,8 +29,10 @@ application_tips:
 - [Applicant Guide](/programs/applicant-guide/)
 ---
 resources:
-- [creativecommons/cc-resource-archive](https://github.com/creativecommons/cc-resource-archive): CC Resource Archive
-- [Jekyll](https://jekyllrb.com/)
+- [creativecommons/cc-resource-archive](https://github.com/creativecommons/cc-resource-archive):
+  CC Resource Archive
+- [Jekyll](https://jekyllrb.com/), [Lektor](https://www.getlektor.com/), or
+  [Nikola](https://getnikola.com/)
 - [GH Pages](https://pages.github.com/)
 ---
 skills_recommended:
