@@ -68,8 +68,8 @@ skills_recommended:
 lead:
 - Sara
 ---
-difficulty: High
+difficulty: Hard
 ---
 size: Large (~350 hours)
 ---
-filter_value: difficulty-high skill-css skill-git skill-javascript skill-php skill-wordpress
+filter_value: difficulty-hard skill-css skill-docker skill-git skill-javascript skill-php skill-wordpress

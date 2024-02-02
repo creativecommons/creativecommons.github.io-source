@@ -60,4 +60,4 @@ difficulty: Medium
 ---
 size: Large (~350 hours)
 ---
-filter_value: difficulty-high skill-ansible skill-debian skill-docker skill-git
+filter_value: difficulty-medium skill-ansible skill-debian skill-docker skill-git
