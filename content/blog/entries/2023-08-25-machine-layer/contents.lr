@@ -5,6 +5,7 @@ open-source
 collaboration
 cc-legal-tools
 gsoc-2023
+gsoc
 ---
 author: saurabh
 ---
@@ -12,14 +13,13 @@ pub_date: 2023-08-28
 ---
 body:
 
-![GSoC 2023 and CC](gsoc2023cc.png)
-
 Greetings, readers!🌟 I'm excited to share that as part of Google Summer of
 Code (GSoC) 2023, I had the incredible opportunity to contribute to the
 exciting project "CC Legal Tools: Machine-Readable Layer." This journey has
 been a remarkable blend of learning, coding, and collaboration, and I'm
 thrilled to share the highlights of this journey with you all.
 
+![GSoC 2023 and CC](gsoc2023cc.png)
 
 ## Project Overview
 
