@@ -19,9 +19,9 @@ Contributor will refactor codebase to fix resource submission, use current
 semantic, accessible, and standards compliant HTML, CSS, and JavaScript to
 match the current visual aesthetic of Creative Commons sites. Improve the
 overall UX for finding, submitting, and  accessing resources. Ensure the site
-functions as a static and stable Jekyll site hosted on GitHub Pages as static
-files. Final implementation will have clear documentation drafted within the
-codebase for future maintainability.
+functions as a static and stable site hosted on GitHub Pages. Final
+implementation will have clear documentation drafted within the codebase for
+future maintainability.
 ---
 application_tips:
 - Engage with the repository (issues, pull requests)
