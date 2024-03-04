@@ -134,8 +134,8 @@ following structure:
 engineering_project: true
 # Name of the repository/project in English
 english_name: CC Catalog API
-# All technologies used
-technologies: Python, Django, Django REST Framework, Elasticsearch
+# All technologies used, sorted
+technologies: Django, Django REST Framework, Elasticsearch, Python
 # Whether this repository should be featured on the CC Open Source site's "Projects" page
 featured: false
 # Slack channel name (optional key)
