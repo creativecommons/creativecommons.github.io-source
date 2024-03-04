@@ -61,7 +61,7 @@ ready for external contributors.
 - `/README.md`: repository information file
   - begin with an H1 heading identical to repository name followed by a
     repository description
-  - Must documents how to install and build the project locally and documents a
+  - Must document how to install and build the project locally and documents a
     high level overview of the project and code structure. It should also link
     to any other available documentation.
   - Must document the Code of Conduct. For example, see the [Code of
