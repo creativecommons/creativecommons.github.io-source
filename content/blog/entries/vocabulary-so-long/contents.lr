@@ -18,7 +18,7 @@ body:
 _"Three months?!"_<br/>
 _"Can't be that soon, right?"_<br/>
 _"Right?!"_
- 
+
 **Damn.**
 
 Hi, it's me again. It's been long since I last sat down to write. I haven't been
@@ -30,7 +30,7 @@ with code makes up for it somehow.
     <img src="graph.png"/>
     <figcaption>
       <em>
-        All that green makes 
+        All that green makes
         <a href="https://github.com/dhruvkb">me</a> very happy.
       </em>
     </figcaption>
@@ -40,7 +40,7 @@ with code makes up for it somehow.
 With GSoC deadlines drawing to a close, it makes sense to have a post describing
 the fruits of this quarter-year of labour. Let's start with two big news pieces.
 
-If this feels like a self-congratulatory piece patting myself on the back, I 
+If this feels like a self-congratulatory piece patting myself on the back, I
 apologise. It's also my GSoC final submission work product report.
 
 ### 🎉 Vocabulary is ready for consumption!
@@ -77,7 +77,7 @@ got the standards like `InputField` and `Button`, some unconventional ones like
 `Definition` and `Quote`, and some components that only our own tailored design
 library could afford like `Header` and `Footer`.
 
-Here's a list and [there's](https://creativecommons.github.io/cc-vocabulary) 
+Here's a list and [there's](/cc-vocabulary)
 a living styleguide.
 
 <details>
@@ -164,7 +164,7 @@ a living styleguide.
   </div>Button
 </details>
 
-Vocabulary also offers some Stylus mixins, token collection in Stylus, SASS and 
+Vocabulary also offers some Stylus mixins, token collection in Stylus, SASS and
 JSON and some handy utils too. That's about it.
 
 I know what you are thinking and _yes, all of that, including
@@ -175,10 +175,10 @@ the designs and revisions, was accomplished in two months and a half_.
 The code follows the [Standard code style](https://standardjs.com/) and the [Vue
 official style guide](https://vuejs.org/v2/style-guide/). In addition,
 Vocabulary has [its own style
-guide](https://opensource.creativecommons.org/cc-vocabulary/#/Vocabulary/Code%20style)
+guide](/cc-vocabulary/#/Vocabulary/Code%20style)
 that has rules right down to the order of rules in the CSS. This ensures that
 code is sensibly written, easily understandable and as little in debt as
-possible. 
+possible.
 
 #### Usage
 
@@ -242,7 +242,7 @@ before Outreachy and the next Summer of Code.
 
 **Contributors:** https://github.com/creativecommons/cc-vocabulary/graphs/contributors
 
-The proposal listed a number of components to be developed as a part of the 
+The proposal listed a number of components to be developed as a part of the
 program. Over twice that number of components have been implemented.
 
 _In other news..._
@@ -265,7 +265,7 @@ The bundle size is lower and code manageability is higher thanks to decoupling
 of low level components from the high level experience. Can you ask for more?
 How about more consistent icons?
 
-The least I can do is attach screenshots of the new CC Search to give you a 
+The least I can do is attach screenshots of the new CC Search to give you a
 sneak peek into what Creative Commons apps, starting with Search of course, will
 look like in the future. These are screenshots, _not mockups_.
 
@@ -318,18 +318,18 @@ Plus Font Awesome provides Vue components! What's not to like.
 I'm not sure if there is enough time in the GSoC period for the integration PR
 to be reviewed and merged but I'm not going anywhere and neither are you. You
 can follow the integration as it happens
-[here](https://github.com/creativecommons/cccatalog-frontend/pull/413).
+[here](https://github.com/cc-archive/cccatalog-frontend/pull/413).
 
-If you're enthusiastic you can clone the branch and run the setup on your 
+If you're enthusiastic you can clone the branch and run the setup on your
 machine. Experience it for yourself, how about that?
 
 #### GSoC work product
 
 **Repository:** https://github.com/dhruvkb/cccatalog-frontend/
 
-**PR**: https://github.com/creativecommons/cccatalog-frontend/pull/413/
+**PR**: https://github.com/cc-archive/cccatalog-frontend/pull/413/
 
-**Commits:** https://github.com/creativecommons/cccatalog-frontend/pull/413/commits
+**Commits:** https://github.com/cc-archive/cccatalog-frontend/pull/413/commits
 
 The proposal aimed to replace a lot of indigenous components with Vocabulary
 counterparts. Internationalisation and a consistent icon system are just me
@@ -339,7 +339,7 @@ going above and beyond.
 
 Summarising, [CC Vocabulary](https://github.com/creativecommons/cc-vocabulary)
 is now mature and [is getting
-married](https://github.com/creativecommons/cccatalog-frontend/pull/413) to [CC
+married](https://github.com/cc-archive/cccatalog-frontend/pull/413) to [CC
 Search](https://github.com/creativecommons/cc-vocabulary). GSoC was a successful
 matchmaker.
 

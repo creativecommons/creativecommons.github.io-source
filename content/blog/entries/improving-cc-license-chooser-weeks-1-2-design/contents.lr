@@ -13,7 +13,7 @@ series: outreachy-dec-2019-chooser
 pub_date: 2020-01-06
 ---
 body:
-Creative Commons License Chooser has been helping creators to choose the most appropriate license for their work for a long time. As anything on the web, it needs updating. One of my mentors, [Ari Madian](https://opensource.creativecommons.org/blog/authors/akmadian/), has created the new version of this chooser as part of his 2019 GSoC Project. As a 2019-2020 Outreachy intern, I will be working on making it production-ready. The goals of my internship include:
+Creative Commons License Chooser has been helping creators to choose the most appropriate license for their work for a long time. As anything on the web, it needs updating. One of my mentors, [Ari Madian](/blog/authors/akmadian/), has created the new version of this chooser as part of his 2019 GSoC Project. As a 2019-2020 Outreachy intern, I will be working on making it production-ready. The goals of my internship include:
 
 - Improving usability of the Chooser and making it easier for licensors to understand the process of selecting the most appropriate license.
 - Setting up and automating internalization.
@@ -68,7 +68,7 @@ As a result of continuous communication with my mentors, I this draft to be disc
 
 - Current selection dropdown is for experienced users who can quickly select a license that they know they want to use. It also updates when a feature in the license selection process is changed.
 - Selected license information displays information about the license and its clauses, as well as its icons. The wording of this part will probably change the most after discussion with the community and legal team.
-- Attribution information for the license, with a choice between rich text or html code. These are displayed in tabs to save on space. 
+- Attribution information for the license, with a choice between rich text or html code. These are displayed in tabs to save on space.
 
 I created the wireframes in Figma, and I tried to integrate CC Vocabulary elements as much as possible.
 

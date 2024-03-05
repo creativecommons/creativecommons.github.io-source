@@ -34,7 +34,7 @@ The goal for 2019 is to increase the catalog to:
 
 The next post will discuss the details of the Common Crawl data pipeline and how instrumental this corpus is for identifying potential providers and understanding how people are using the various CC license.
 
-[cccatalog]:https://github.com/creativecommons/cccatalog
+[cccatalog]:https://github.com/cc-archive/cccatalog
 [cc-search-developer-notes]:https://hackernoon.com/cc-search-developer-notes-and-reflection-418271194682
 [cc-search-beta]:https://creativecommons.org/2017/02/07/new-cc-search/
 [cc-search-beta-updates]:https://creativecommons.org/2018/09/24/big-changes-for-cc-search-beta-updates-released-today/
@@ -42,9 +42,9 @@ The next post will discuss the details of the Common Crawl data pipeline and how
 [data-pipeline]:https://en.wikipedia.org/wiki/Pipeline_(computing)
 [apache-spark]:https://spark.apache.org/
 [apache-airflow]:https://airflow.apache.org/
-[cc-search-stable]:https://creativecommons.github.io/blog/entries/cc-search-out-of-beta/
+[cc-search-stable]:/blog/entries/cc-search-out-of-beta/
 [cc-search]:https://search.creativecommons.org/
-[cc-catalog-api]:https://github.com/creativecommons/cccatalog-api
+[cc-catalog-api]:https://github.com/cc-archive/cccatalog-api
 [etl-pipeline]:https://en.wikipedia.org/wiki/Extract,_transform,_load
 [cc-flickr]:https://blog.flickr.net/en/2019/03/08/update-on-creative-commons-licenses-and-in-memoriam-accounts/
 [open-api]:https://en.wikipedia.org/wiki/Open_API

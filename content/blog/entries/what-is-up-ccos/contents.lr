@@ -19,7 +19,7 @@ In my previous blog, I demonstrated what my Outreachy project was about. Here I 
 
 ### The Set-Up -
 
-The [Creative Commons Open Source](https://opensource.creativecommons.org/) website is built using [Lektor](https://www.getlektor.com/). I was not very familiar with it, so I started by going through the documentation and the official website code. I learned how awesome it is and can also be used by non-coders. I got familiar with the [jinja templates](https://palletsprojects.com/p/jinja/) and working of themes in a Lektor app. For integrating new styles from Vocabulary, I replaced `templates/` folder with a `theme/` folder. Here is the link to how [templates](https://www.getlektor.com/docs/templates/) work in Lektor.
+The [Creative Commons Open Source](/) website is built using [Lektor](https://www.getlektor.com/). I was not very familiar with it, so I started by going through the documentation and the official website code. I learned how awesome it is and can also be used by non-coders. I got familiar with the [jinja templates](https://palletsprojects.com/p/jinja/) and working of themes in a Lektor app. For integrating new styles from Vocabulary, I replaced `templates/` folder with a `theme/` folder. Here is the link to how [templates](https://www.getlektor.com/docs/templates/) work in Lektor.
 
 As the revamping process is gradual, there was a need of setting up a staging environment where we could test the website. Deploying the branch that consists of the ongoing changes was pretty easy, I just followed the official [documentation](https://www.netlify.com/blog/2016/05/25/lektor-on-netlify-a-step-by-step-guide/) provided by Netlify and deployed it.
 
@@ -31,6 +31,6 @@ The [mock-ups](https://www.figma.com/file/mttcugI1UxvCJRKE5sdpbO/Mockups) for th
 
 I started by updating the home page template. I try to make the code cleaner and more readable. Going through the [Lektor](https://www.getlektor.com/) documentation, I came across different ways to do so. One of them was [flow blocks]((https://www.getlektor.com/)), I like how it makes a template more modular and readable so I implemented the home page using flow blocks. This one after one, I started updating every template. For now, I have updated 10 templates and I plan to update the remaining in upcoming weeks.
 
-### My Experience so far - 
+### My Experience so far -
 
 This has been one heck of a journey for me. I have never collaborated with such a huge open-source organization and so that was something new for me. I have learned a lot of things both technical and non-technical so far. I have become more alert about the code I write, this journey has helped me improve the questions I ask to myself while writing code or thinking about the solution, I got to learn about new technologies such as [Lektor](https://www.getlektor.com/), [Webpack](https://webpack.js.org/), [SCSS](https://sass-lang.com/documentation/syntax) and many more. I am just very glad to be a part of this.

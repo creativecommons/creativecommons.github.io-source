@@ -25,7 +25,7 @@ So far the Linked Commons was using a tiny subset of the data available in the C
 
 ## Pilot
 
-The raw CC Catalog data cannot be used directly in the Linked Commons. Our first task involves processing it, which includes removing isolated nodes, etc. You can read more about it in the data processing series [blog](https://opensource.creativecommons.org/blog/entries/cc-datacatalog-data-processing/) written by my mentor Maria. After this, we need to build a database which stores the **"distance list"** of all the nodes.
+The raw CC Catalog data cannot be used directly in the Linked Commons. Our first task involves processing it, which includes removing isolated nodes, etc. You can read more about it in the data processing series [blog](/blog/entries/cc-datacatalog-data-processing/) written by my mentor Maria. After this, we need to build a database which stores the **"distance list"** of all the nodes.
 
 ### What is "distance list"?
 
@@ -83,9 +83,9 @@ This small change in the design simplified a lot of things, and now the new grap
 
 ## Conclusion
 
-This task was really challenging and I learnt a lot. It was really mesmerizing to see the **Linked Commons grow and evolve**. I hope you enjoyed reading this blog. You can follow the project development [here](https://github.com/creativecommons/cccatalog-dataviz/), and access the stable version of linked commons [here](http://dataviz.creativecommons.engineering/). 
+This task was really challenging and I learnt a lot. It was really mesmerizing to see the **Linked Commons grow and evolve**. I hope you enjoyed reading this blog. You can follow the project development [here](https://github.com/cc-archive/cccatalog-dataviz/), and access the stable version of linked commons [here](http://dataviz.creativecommons.engineering/).
 
-Feel free to report bugs and suggest features. It will help us improve this project. If you wish to join the our team, consider joining our [slack](https://creativecommons.slack.com/channels/cc-dev-cc-catalog-viz) channel. Read more about our community teams [here](https://opensource.creativecommons.org/community/). See you in my next blog! 🚀
+Feel free to report bugs and suggest features. It will help us improve this project. If you wish to join the our team, consider joining our [slack](https://creativecommons.slack.com/channels/cc-dev-cc-catalog-viz) channel. Read more about our community teams [here](/community/). See you in my next blog! 🚀
 ___
 
 **Linked Commons uses a more complex schema. The picture is just for illustration.*

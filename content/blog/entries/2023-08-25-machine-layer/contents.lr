@@ -1,0 +1,130 @@
+title: CC Legal Tools: Machine-Readable Layer
+---
+categories:
+open-source
+collaboration
+cc-legal-tools
+gsoc-2023
+gsoc
+---
+author: saurabh
+---
+pub_date: 2023-08-28
+---
+body:
+
+Greetings, readers!🌟 I'm excited to share that as part of Google Summer of
+Code (GSoC) 2023, I had the incredible opportunity to contribute to the
+exciting project "CC Legal Tools: Machine-Readable Layer." This journey has
+been a remarkable blend of learning, coding, and collaboration, and I'm
+thrilled to share the highlights of this journey with you all.
+
+![GSoC 2023 and CC](gsoc2023cc.png)
+
+## Project Overview
+
+The project's core focus was to enhance the Creative Commons (CC) [Legal Tools
+app][app] by introducing a robust machine-readable layer. The machine-readable
+layer enables computers to understand the intricacies of CC licenses, making it
+easier for legal professionals, developers, and enthusiasts to work with CC
+licenses programmatically.
+
+[app]: https://github.com/creativecommons/cc-legal-tools-app
+
+
+## Getting Started
+
+My journey began with delving into the existing codebase and understanding the
+project's requirements i.e. understanding the app's architecture, its
+components, and how it currently handled CC licenses was crucial for what lay
+ahead.
+
+RDF, or Resource Description Framework, emerged as a crucial player in the
+project. Grasping the intricacies of RDF and its role in representing licenses
+was a necessary step in the journey.
+
+
+## Challenges and Learning Opportunities
+
+One of my early challenges was unraveling the complexities of the legacy
+RDF/XML files. How did they differ from the new RDF/XML files we aimed to
+generate? This exploration led me to discover improvements in structure,
+updated license information, and additional metadata.
+
+Generating RDF files for various licenses and versions became a puzzle to
+solve. Crafting RDF triples, understanding licensing nuances, and weaving this
+logic into the app's views became both a learning opportunity and a rewarding
+challenge.
+
+
+## Contributions and The Work
+
+As the project evolved, I worked to dynamically generate RDF/XML files,
+allowing the app to generate machine-readable licenses on-the-fly.
+
+To maintain an organized approach, it is ensured that the generated RDF files
+are sorted, all the credit goes to [Timid Robot][TimidRobot].
+
+The newly generated RDF/XML aims to enhance the clarity, accuracy,
+compatibility, and standardization of Creative Commons license representation
+in RDF format. These improvements boost machine-readability and semantic
+understanding, fostering seamless integration and interpretation in digital
+systems.
+
+[TimidRobot]: /blog/authors/TimidRobot/
+
+
+## Overview of changes:
+
+- **Improved Structure and Consistency:**
+  - The new RDF/XML boasts a more organized, standardized structure, aligning
+    with RDF standards. This enhances machine comprehension and accurate data
+    processing.
+- **Updated License Information**:
+  -  License information has been updated to reflect the latest permissions and
+     restrictions. This ensures users and systems are informed accurately.
+- **Alignment with RDF Best Practices**:
+  - Changes align the representation with RDF best practices. This boosts
+    interoperability and compatibility, thanks to standardized namespaces,
+     consistent naming, and proper relationship definitions.
+
+Throughout the journey, I had the privilege of working closely with my mentor,
+engaging in collaborative discussions and receiving insightful code reviews..
+
+As my GSoC journey draws to a close, I'm excited about the foundation we've
+laid for the CC Legal Tools app. The machine-readable layer opens doors to a
+future of smarter, automated legal processes.
+
+The improvements made during GSoC will continue to ripple through the CC Legal
+Tools app, benefiting users and the broader open-source community.
+
+
+## Mentor and Support
+
+A heartfelt thanks to my mentor, [Timid Robot][TimidRobot], for guiding me
+through this incredible journey. Your unwavering support, wisdom, feedback, and
+willingness to share knowledge have truly been invaluable. I'm deeply grateful
+for the opportunity to learn and grow under your mentorship. Thank you for
+making this journey unforgettable.
+
+
+## Takeaways and Conclusion
+
+GSoC became a platform for me to acquire new skills, dive into complex
+concepts, and broaden my horizons. The learning experience was immersive and
+transformative.
+
+Being part of the open-source community was a revelation. Interacting with
+like-minded individuals, contributing to a shared goal, and experiencing the
+true essence of collaboration was a highlight.
+
+My GSoC journey has been a remarkable adventure of exploration, discovery, and
+growth. The project's mission to create a machine-readable layer for CC Legal
+Tools has left an indelible mark on my journey as a developer.
+
+Thank you for joining me on this expedition. Here's to the future of
+open-source contributions and the endless possibilities they hold.
+
+Cheers,
+
+Saurabh Kumar

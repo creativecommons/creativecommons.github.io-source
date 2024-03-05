@@ -16,17 +16,17 @@ series: gsoc-2019-chooser
  I am working with my mentor, [Breno Ferreira](https://creativecommons.org/author/brenoferreira/), to visually overhaul the tool, as well as making it more educational, and more usable.
 
  This week, I worked on some of the Chooser's JS functionality, and the educational section's layout.
- 
+
  Getting the chooser working was lots of fun. It's the first real JS I've written for the site (other than the modal system, which is about 6 lines total).
  The thing I like most is seeing the site take shape. Previously, the chooser was all dummy controls and placeholder text.
  Now, it has a fully working chooser, complete with the license icons being updated, the link to the license page being set, etc.
  The thing that took the longest was getting the code to return the correct license based on the user's inputs. There was some
- temperamental code, and the starting state variables were also a little off. 
- 
- Next up was the educational section. I decided to go from a three column layout, to a to row layout. I moved the question buttons 
- to the top row (now alone), and the license icon descriptions (and example) to the bottom row. This allows the icon descriptions 
+ temperamental code, and the starting state variables were also a little off.
+
+ Next up was the educational section. I decided to go from a three column layout, to a to row layout. I moved the question buttons
+ to the top row (now alone), and the license icon descriptions (and example) to the bottom row. This allows the icon descriptions
  to be longer without looking really weird, and gives a space for an example of how the license name, icons, and permissions are related.
- I also decided to swap the positions of the educational section and the chooser section on the page. This means that the chooser is 
+ I also decided to swap the positions of the educational section and the chooser section on the page. This means that the chooser is
  now at the top of the page, with the educational section (re-labelled as "Confused? Need Help?") below it.
- 
+
  Next week, I'll be working on getting a new version of the license chooser controls working.

@@ -23,7 +23,7 @@ During this period I removed all the hardcoded strings from the static pages whi
 1. About Page
 2. Collections Page
 3. Search Guide Page
-4. Feedback Page 
+4. Feedback Page
 
 All of the above pages were then internationalized following the same procedure as detailed in the previous post.
 While internationalizing the homepage we ran into an interesting problem:
@@ -89,10 +89,10 @@ And we are done with these two weeks, we be back with another post after two wee
 
 You can track the work done for these weeks through these PRs:
 
-1. [Internationalize About Page and Search Guide Page](https://github.com/creativecommons/cccatalog-frontend/pull/1024)
-2. [Internationalize feedback page, collections page and not found page](https://github.com/creativecommons/cccatalog-frontend/pull/1031)
+1. [Internationalize About Page and Search Guide Page](https://github.com/cc-archive/cccatalog-frontend/pull/1024)
+2. [Internationalize feedback page, collections page and not found page](https://github.com/cc-archive/cccatalog-frontend/pull/1031)
 
-The progress of the project can be tracked on [cc-search](https://github.com/creativecommons/cccatalog-frontend)
+The progress of the project can be tracked on [cc-search](https://github.com/cc-archive/cccatalog-frontend)
 
-CC Search Accessiblity is my GSoC 2020 project under the guidance of [Zack Krida](https://creativecommons.org/author/zackcreativecommons-org/) and [Ari Madian](https://opensource.creativecommons.org/blog/authors/akmadian/), who is the primary mentor for this project, [Anna Tumadóttir](https://creativecommons.org/author/annacreativecommons-org/) for helping all along and engineering director [Kriti
+CC Search Accessiblity is my GSoC 2020 project under the guidance of [Zack Krida](https://creativecommons.org/author/zackcreativecommons-org/) and [Ari Madian](/blog/authors/akmadian/), who is the primary mentor for this project, [Anna Tumadóttir](https://creativecommons.org/author/annacreativecommons-org/) for helping all along and engineering director [Kriti
 Godey](https://creativecommons.org/author/kriticreativecommons-org/), have been very supportive.

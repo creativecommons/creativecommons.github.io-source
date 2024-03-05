@@ -18,16 +18,16 @@ body:
 For the context, I am working on my GSoC project that is to make a browser-extension to search CC Licensed content in the public domain by interacting with CC Catalog API.
 
 **Previous Blogs**:
--  [CC Browser Extension - A GSoC Project](https://opensource.creativecommons.org/blog/entries/cc-browser-extension-a-gsoc-project/)
--  [CC Browser Extension Week 5, 6](https://opensource.creativecommons.org/blog/entries/cc-browser-extension-week5-6/)
--  [CC Browser Extension Week 7, 8](https://opensource.creativecommons.org/blog/entries/cc-browser-extension-week7-8/)
+-  [CC Browser Extension - A GSoC Project](/blog/entries/cc-browser-extension-a-gsoc-project/)
+-  [CC Browser Extension Week 5, 6](/blog/entries/cc-browser-extension-week5-6/)
+-  [CC Browser Extension Week 7, 8](/blog/entries/cc-browser-extension-week7-8/)
 
 ### Work Done
 These weeks were spent on adding bookmarking feature to the extension and writing some unit tests.
 
-On clicking the bookmark icon, that appears when the image thumbnail is hovered on, the image will be bookmarked. Under the hood, the unique image identifier is saved in the local storage of the extension. The images ids are enough to get all the required image and attribution data needed using the `/image/{identifier}` endpoint of [CC Catalog API]([https://github.com/creativecommons/cccatalog-api](https://github.com/creativecommons/cccatalog-api).
+On clicking the bookmark icon, that appears when the image thumbnail is hovered on, the image will be bookmarked. Under the hood, the unique image identifier is saved in the local storage of the extension. The images ids are enough to get all the required image and attribution data needed using the `/image/{identifier}` endpoint of [CC Catalog API]([https://github.com/cc-archive/cccatalog-api](https://github.com/cc-archive/cccatalog-api).
 
-Bookmarked images persist even when the extension session terminates. User can view, inspect, delete the bookmarked images in the _'Bookmarks'_ section. There is also a button to delete all the bookmarks at once. 
+Bookmarked images persist even when the extension session terminates. User can view, inspect, delete the bookmarked images in the _'Bookmarks'_ section. There is also a button to delete all the bookmarks at once.
 
 To let the users organize and share bookmarks, importing and exporting feature is also added. The buttons to export and import the bookmarks are in the options page. Simple `json` files are used for this feature.
 
@@ -37,6 +37,6 @@ The rest of the time was spent on writing tests for the extension. One positive 
 - Test and fix bugs.
 - Modifying webpack config to spit out code for production.
 
-You can check out the project on [Github](https://github.com/creativecommons/ccsearch-browser-extension) and join the discussion on `#gsoc-browser-ext` channel on [slack](https://opensource.creativecommons.org/community/#slack).
+You can check out the project on [Github](https://github.com/creativecommons/ccsearch-browser-extension) and join the discussion on `#gsoc-browser-ext` channel on [slack](/community/#slack).
 
 *Special Thanks*:  [Alden](https://creativecommons.org/author/aldencreativecommons-org/), [Timid](https://creativecommons.org/author/timidcreativecommons-org/) and [Kriti](https://creativecommons.org/author/kriticreativecommons-org/).

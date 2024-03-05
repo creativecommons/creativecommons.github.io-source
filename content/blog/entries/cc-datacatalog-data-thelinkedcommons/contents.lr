@@ -12,11 +12,16 @@ author: soccerdroid
 ---
 series: gsoc-2019-dataviz
 ---
-pub_date: 2019-09-03 
+pub_date: 2019-09-03
 ---
 body:
 
-This is a continuation of my last blog post about the data processing part 3 of the CC-data catalog visualization project. I recommend you to read that [last post](https://opensource.creativecommons.org/blog/entries/cc-datacatalog-data-processing-3/) for a better understanding of what I'll explain here.
+> ℹ️ **2023-08-31:** This project was archived along with the shuttering of CC
+Search (now [Openverse](https://openverse.org/)). Please also see the
+[Quantifying the Commons](https://github.com/creativecommons/quantifying)
+project.
+
+This is a continuation of my last blog post about the data processing part 3 of the CC-data catalog visualization project. I recommend you to read that [last post](/blog/entries/cc-datacatalog-data-processing-3/) for a better understanding of what I'll explain here.
 
 Hello! In this last post, I am going to talk you about the final visualization. First, I would like to talk about the data and share my recommendations.
 
@@ -48,11 +53,11 @@ Moreover, any visualization library starts to render the elements slower, and at
 
 Insights like this are valuable for Creative Commons, because they can help with outreach efforts, targeted communications and for the CC Search team to choose which domains to include in the CC Search tool.
 
-The final graph is interactive. Users can pan, zoom in and out, hover over a node to see its neighbors and neighbors of neighbors, and click on a node to display a pie chart. 
+The final graph is interactive. Users can pan, zoom in and out, hover over a node to see its neighbors and neighbors of neighbors, and click on a node to display a pie chart.
 
 ### Pie chart visualization
 
-The pie charts are built using the [Highcarts library](https://www.highcharts.com/). The purpose of this chart is to show  to the public how each domain uses CC licenses. I spoke about this in my blog post: [Visualize CC Catalog data](https://opensource.creativecommons.org/blog/entries/cc-datacatalog-visualization/). Here is an image to illustrate the above:
+The pie charts are built using the [Highcarts library](https://www.highcharts.com/). The purpose of this chart is to show  to the public how each domain uses CC licenses. I spoke about this in my blog post: [Visualize CC Catalog data](/blog/entries/cc-datacatalog-visualization/). Here is an image to illustrate the above:
 
 <div>
 <img src="pie_chart.png" alt="cc_licenses dictionary"/><br/>
@@ -68,10 +73,10 @@ There are some nodes that we do not have information about their CC licenses (an
 
 I implemented the following:
 
-- The node size is proportional to the number of CC licensed content in each domain. 
-- When the user hovers over a node, a label with the domain name is displayed. This might sound redundant when you can see the node perfectly. But the graph is very big, and you will like to see it in a low zoom level in order to have a picture of the shape of the entire graph. This is when this functionality is useful, because you don't have to zoom in in order to see the name of a node. 
+- The node size is proportional to the number of CC licensed content in each domain.
+- When the user hovers over a node, a label with the domain name is displayed. This might sound redundant when you can see the node perfectly. But the graph is very big, and you will like to see it in a low zoom level in order to have a picture of the shape of the entire graph. This is when this functionality is useful, because you don't have to zoom in in order to see the name of a node.
 - The force of a link between two nodes (_node A_ and _node B_) is given by the number of links _node A_ has that references _node B_.
-- When you hover over a node, you can also see the links to its neighbors highlighted, as well as the links to the neighbors of the neighbors. This feature make it pretty easy for you to find communities, and see how strongly connected a node is in the graph. 
+- When you hover over a node, you can also see the links to its neighbors highlighted, as well as the links to the neighbors of the neighbors. This feature make it pretty easy for you to find communities, and see how strongly connected a node is in the graph.
 
 
 Here is the final visualization, using a sample data from one month of the Common Crawl data:
@@ -87,7 +92,7 @@ Here is the final visualization, using a sample data from one month of the Commo
 <br>
 
 
-You can check the whole project source code in the [Github repo](https://github.com/creativecommons/cccatalog-dataviz/tree/master/GSoC2019). 
+You can check the whole project source code in the [Github repo](https://github.com/cc-archive/cccatalog-dataviz/tree/master/GSoC2019).
 
 ### Final comments and future work
 This was my first experience with big data visualization, and I really enjoyed it!
@@ -101,7 +106,7 @@ There are features that could be implemented in the future in order to reduce th
 
 [2D version] (http://ec2-3-80-82-250.compute-1.amazonaws.com/)
 
-[3D version] (http://ec2-3-80-82-250.compute-1.amazonaws.com/visualization_3d.html)  
+[3D version] (http://ec2-3-80-82-250.compute-1.amazonaws.com/visualization_3d.html)
 *Yes, with my mentor Sophine, we thought it could be a great idea to try with a 3D version of the graph :) . You can interact with the graph in the same way as with the 2d version.
 
 CC Data Catalog Visualization is my GSoC 2019 project under the guidance of [Sophine

@@ -16,7 +16,7 @@ pub_date: 2019-06-20
 ---
 body:
 
-With the Creative Commons engineering team working very hard to catalog and index a plethora of CC-licensed works floating all over the internet, the next step is to make a suite of user-centric applications and interfaces to interact, consume and even reuse the content. The CC-Search is one such app with over [300 million CC-Licensed images indexed](https://creativecommons.github.io/blog/entries/cc-search-out-of-beta/) and since there is a full separation of concern between the backend ([CC-Catalog-API](https://github.com/creativecommons/cccatalog-api)) and frontend ([CC-Catalog-frontend](https://github.com/creativecommons/cccatalog-frontend)), we can leverage the backend architecture to design plugins for other platforms.
+With the Creative Commons engineering team working very hard to catalog and index a plethora of CC-licensed works floating all over the internet, the next step is to make a suite of user-centric applications and interfaces to interact, consume and even reuse the content. The CC-Search is one such app with over [300 million CC-Licensed images indexed](/blog/entries/cc-search-out-of-beta/) and since there is a full separation of concern between the backend ([CC-Catalog-API](https://github.com/cc-archive/cccatalog-api)) and frontend ([CC-Catalog-frontend](https://github.com/cc-archive/cccatalog-frontend)), we can leverage the backend architecture to design plugins for other platforms.
 
 This GSoC project aims to do this by making a Cross-Browser extension to interact with CC-Catalog-API.
 
@@ -37,7 +37,7 @@ Most people who will download the extension would want it to act as their own. T
 
 One good example of solving this problem would be to make an options page, that would open in a new tab, where they can set the filters they use more often as default.
 
-Similarly, if we add a feature, say dark-mode, then the users who prefer it over the default can set their preferences. 
+Similarly, if we add a feature, say dark-mode, then the users who prefer it over the default can set their preferences.
 
 ### Work Done till Now:
 
@@ -61,6 +61,6 @@ Similarly, if we add a feature, say dark-mode, then the users who prefer it over
 ### How you can help
 The development is still in the initial phase but you can check out **a working extension** at the [Github Repository](https://github.com/creativecommons/ccsearch-browser-extension). There are instructions to help you get started and load it to Firefox.
 
-Tell us what you expect the extension to do, or a feature that you wish would be implemented. At this early stage of development, it might help us improve our goals. You can join the discussion on `#gsoc-browser-ext` channel on [slack](http://creativecommons.github.io/community/#slack).
+Tell us what you expect the extension to do, or a feature that you wish would be implemented. At this early stage of development, it might help us improve our goals. You can join the discussion on `#gsoc-browser-ext` channel on [slack](/community/#slack).
 
-I would like to thank [Alden](https://creativecommons.org/author/aldencreativecommons-org/), [Timid](https://creativecommons.org/author/timidcreativecommons-org/) and [Kriti](https://creativecommons.org/author/kriticreativecommons-org/) to for their mentorship and providing an experienced perspective and solutions to the problems faced by this naive developer. 
+I would like to thank [Alden](https://creativecommons.org/author/aldencreativecommons-org/), [Timid](https://creativecommons.org/author/timidcreativecommons-org/) and [Kriti](https://creativecommons.org/author/kriticreativecommons-org/) to for their mentorship and providing an experienced perspective and solutions to the problems faced by this naive developer.
