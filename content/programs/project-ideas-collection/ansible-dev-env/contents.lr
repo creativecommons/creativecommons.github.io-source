@@ -42,6 +42,7 @@ application_tips:
 - [Applicant Guide](/programs/applicant-guide/)
 ---
 resources:
+- [creativecommons/ansible-dev](https://github.com/creativecommons/ansible-dev) Ansible development environment. 
 - [Ansible Documentation](https://docs.ansible.com/)
 - [FrontPage - Debian Wiki](https://wiki.debian.org/FrontPage)
 - [Docker Docs](https://docs.docker.com/)
