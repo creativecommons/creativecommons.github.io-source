@@ -200,22 +200,6 @@
             "website": "https://resources.creativecommons.org/"
         },
         {
-            "created": "2013-12-02T21:01:41+00:00",
-            "description": "Legacy API to integrate the Creative Commons licensing engine into third party applications",
-            "engineering_project": true,
-            "featured": false,
-            "id": 14874742,
-            "language": "Python",
-            "license": {
-                "name": "MIT License",
-                "url": "https://github.com/creativecommons/cc.api/blob/main/LICENSE"
-            },
-            "name": "cc.api",
-            "slack": "",
-            "url": "https://github.com/creativecommons/cc.api",
-            "website": "https://api.creativecommons.org/docs/"
-        },
-        {
             "created": "2014-10-06T22:07:52+00:00",
             "description": "RubyCAS customizations for CCID (Creative Commons ID)",
             "engineering_project": true,
