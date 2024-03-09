@@ -825,7 +825,7 @@
             "english_name": "CC Vocabulary",
             "featured": false,
             "id": 224004769,
-            "language": "SCSS",
+            "language": "MDX",
             "license": {
                 "name": "MIT License",
                 "url": "https://github.com/creativecommons/vocabulary/blob/main/LICENSE"
@@ -873,7 +873,7 @@
             "english_name": "CC Vocabulary fonts",
             "featured": false,
             "id": 446389251,
-            "language": "JavaScript",
+            "language": "MDX",
             "license": {
                 "name": "MIT License",
                 "url": "https://github.com/creativecommons/vocabulary-fonts/blob/main/LICENSE"
