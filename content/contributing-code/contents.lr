@@ -32,6 +32,13 @@ are some of the ones that are most relevant to finding a good issue to work on:
   - You do not need our permission to work on one of these issues.
   - You may work on an issue labeled <span class="gh-label friendliness">good
     first issue</span> even if it's not your first issue.
+  - Please don't ask for issue assignment or claim issues. Do the work and
+    submit a pull request (PR).
+    - Even if multiple people submit PRs for the same issue, multiple ideas and
+      implementations strengthen the final product.
+    - For work program applicants, each can all list their own PRs on their
+      application. It is the quality of work that is important, not whether it
+      is merged.
 - **Issues not available for community contribution:**
   - The following tags mark issues that are _not_ open for community
     contribution:
@@ -81,12 +88,10 @@ on.
 Once you've found an issue you'd like to work on, please follow these steps to
 make your contribution:
 
-1. Comment on it and say you're working on that issue. This is to avoid
-   conflicts with others also working on the issue. If you've followed the
-   guidelines above, you don't need to ask permission to start work on an
-   issue.
-2. Write your code and submit your pull request. Be sure to read and follow our
-   **[pull request guidelines](/contributing-code/pr-guidelines/)!**
+1. If you have followed the guidelines above, you don't need to ask permission
+   to start work on an issue.
+2. Write your code and submit your pull request (PR). Be sure to read and
+   follow our **[pull request guidelines](/contributing-code/pr-guidelines/)!**
 3. Wait for code review and address any issues raised as soon as you can.
 
 **A note on collaboration:** We encourage people to collaborate as much as
@@ -123,3 +128,5 @@ When in doubt, ask a question on [one of our community forums](/community/).
 Recurring donations to Creative Commons Open Source can be made via [Sponsor
 @creativecommons on GitHub
 Sponsors](https://github.com/sponsors/creativecommons).
+
+Thank you to our [Supporters](/supporters/)!

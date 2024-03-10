@@ -13,7 +13,40 @@ associated with the repository.
 body:
 
 
-## Required Items
+## Organizational defaults
+
+The following organizational defaults are automatically applied to all
+repositories (per [Creating a default community health file - GitHub
+Docs][health-files]). Most repositories _shouldn't_ have their own copies of
+these files:
+- [`.github/PULL_REQUEST_TEMPLATE.md`][pr-template]: Pull request template
+  - All pull request templates _must_ include the full text of the [DCO][dco].
+- [`.github/ISSUE_TEMPLATE/bug_report.md`][issue-template-bug]: Bug report
+  issue template
+- [`.github/ISSUE_TEMPLATE/feature_request.md`][issue-template-feature]:
+  Feature request issue template
+- [`CODE_OF_CONDUCT.md`][conduct]: Code of Conduct
+  - [Adding a code of conduct to your project - GitHub Help][help-conduct]
+- [`CONTRIBUTING.md`][contributing]: contributor guidelines
+  - [Setting guidelines for repository contributors - GitHub
+    Help][setting-guidelines]
+- [`FUNDING.yml`][funding]: Displays a sponsor button
+- [`SUPPORT.md`][support]: Documentation on how to get help
+
+[health-files]: https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/creating-a-default-community-health-file
+[pr-template]: https://github.com/creativecommons/.github/blob/main/.github/PULL_REQUEST_TEMPLATE.md
+[dco]: https://developercertificate.org/
+[issue-template-bug]: https://github.com/creativecommons/.github/blob/main/.github/ISSUE_TEMPLATE/bug_report.md
+[issue-template-feature]: https://github.com/creativecommons/.github/blob/main/.github/ISSUE_TEMPLATE/feature_request.md
+[conduct]: https://github.com/creativecommons/vocabulary/blob/main/CODE_OF_CONDUCT.md
+[help-conduct]: https://help.github.com/en/articles/adding-a-code-of-conduct-to-your-project
+[contributing]: https://github.com/creativecommons/vocabulary/blob/main/CONTRIBUTING.md
+[setting-guidelines]: https://help.github.com/en/articles/setting-guidelines-for-repository-contributors
+[funding]: https://github.com/creativecommons/.github/blob/main/FUNDING.yml
+[support]: https://github.com/creativecommons/.github/blob/main/SUPPORT.md
+
+
+## Required items
 
 All GitHub repositories should have the following items to be considered fully
 ready for external contributors.
@@ -24,57 +57,52 @@ ready for external contributors.
 - `/.github/CODEOWNERS`: Defined code owners
   - [About code owners - GitHub Help][about-owners]
 - `/.cc-metadata.yml`: The standard [CC metadata YAML file](#cc-metadata-file).
-- `/CODE_OF_CONDUCT.md`: Code of Conduct
-  - Feel free to use our standard [`CODE_OF_CONDUCT.md`][conduct] file from
-    [creativecommons/.github][dot-github]
-    - [Adding a code of conduct to your project - GitHub Help][help-condcut]
 - `/LICENSE`: license file.
-- `/CONTRIBUTING.md`: contributor guidelines
-  - Can be project-specific or our standard [`CONTRIBUTING.md`][contributing]
-    file from [creativecommons/.github][dot-github]
-  - [Setting guidelines for repository contributors - GitHub
-    Help][setting-guidelines]
-- `/README.md`: read me information file
-  - Must documents how to install and build the project locally and documents a
+- `/README.md`: repository information file
+  - begin with an H1 heading identical to repository name followed by a
+    repository description
+  - Must document how to install and build the project locally and documents a
     high level overview of the project and code structure. It should also link
     to any other available documentation.
-- **All pull request templates must include the full text of the [DCO][dco].**
+  - Must document the Code of Conduct. For example, see the [Code of
+    Conduct][section-coc] `README.md` section in
+    `creativecommons/index-dev-env`.
+  - Must document Contributing. For example, see the
+    [Contributing][section-contrib] `README.md` section in
+    `creativecommons/index-dev-env`.
 
 [about-owners]: https://help.github.com/en/articles/about-code-owners
-[conduct]: https://github.com/creativecommons/vocabulary/blob/main/CODE_OF_CONDUCT.md
-[dot-github]: https://github.com/creativecommons/.github
-[help-condcut]: https://help.github.com/en/articles/adding-a-code-of-conduct-to-your-project
-[contributing]: https://github.com/creativecommons/vocabulary/blob/main/CONTRIBUTING.md
-[setting-guidelines]: https://help.github.com/en/articles/setting-guidelines-for-repository-contributors
-[dco]: https://developercertificate.org/
+[section-coc]: https://github.com/creativecommons/index-dev-env/blob/main/README.md#code-of-conduct
+[section-contrib]: https://github.com/creativecommons/index-dev-env/blob/main/README.md#contributing
 
 
-### Additional Items
+## Additional items
 
-- CI and code style linters that run automatically whenever new code is pushed
-  (if applicable to the project).
-- At least a couple of automated tests (if applicable to the project).
-
-
-## Optional items
-
-- [Issue templates][issue-templates]. GitHub pulls the default templates from
-  our [`.github` repository][dot-github] automatically, but if you want/need to
-  customize them, create them in your repository.
-- A [pull request template][pr-template]. GitHub pulls the default template
-  from  our [`.github` repository][dot-github] automatically, but if you
-  want/need to customize it, create it in your repository.
-- [Support resources][support-resources]. GitHub pulls the default `SUPPORT.md`
-  file from our [`.github` repository][dot-github] automatically, but if you
-  want/need to customize it, create it in your repository.
-
-[issue-templates]: https://help.github.com/en/articles/creating-issue-templates-for-your-repository
-[dot-github]: https://github.com/creativecommons/.github
-[pr-template]: https://help.github.com/en/articles/creating-a-pull-request-template-for-your-repository
-[support-resources]: https://help.github.com/en/articles/adding-support-resources-to-your-project
+As applicable or appropriate, each repository should include:
+- GitHub Actions for formatting, linting, styling, etc.
+- GitHub Actions for unit tests
 
 
-## Standard Labels
+## Repository configuration
+
+- Main page: About ⚙️ (Edit repository details)
+  - Description should match `README.md`
+  - Add appropriate Topics
+  - Disable/Uncheck any of the "Include in home page" that are not relevant to
+    the repository (ex. if no packages are provided, uncheck Packages).
+- Settings: General
+  - Features
+    - Disable/Uncheck Wikis unless you are going to use that feature
+    - Disable/Uncheck Discussions unless you are going to use that feature
+    - Disable/Uncheck Projects unless you are going to use that feature
+  - Pull Requests
+    - Enable/check Automatically delete head branches
+- Settings: Collaborators and teams
+  - Ensure, at a minimum that the team in `/.github/CODEOWNERS` has write
+    permissions
+
+
+## Standard labels
 
 All repositories must contain a set of standard labels, [documented
 here](/contributing-code/repo-labels/), which comprise of common labels in
@@ -88,7 +116,7 @@ unaffected by the sync. It is recommended that custom labels be explained in
 the contribution guidelines for that project.
 
 
-## Branch Protections
+## Branch protections
 
 Branch protections are automatically set up by CC staff via
 [creativecommons/ccos-scripts](https://github.com/creativecommons/ccos-scripts).
@@ -96,7 +124,7 @@ By default, pushing directly to the *default branch* (ex. `main`) is disabled
 and all pull requests require review by at least one person before merge.
 
 
-## CC Metadata file
+## CC metadata file
 
 Each repo should have a `.cc-metadata.yml` file in the root directory with the
 following structure:
@@ -106,8 +134,8 @@ following structure:
 engineering_project: true
 # Name of the repository/project in English
 english_name: CC Catalog API
-# All technologies used
-technologies: Python, Django, Django REST Framework, Elasticsearch
+# All technologies used, sorted
+technologies: Django, Django REST Framework, Elasticsearch, Python
 # Whether this repository should be featured on the CC Open Source site's "Projects" page
 featured: false
 # Slack channel name (optional key)
