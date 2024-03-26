@@ -141,9 +141,10 @@ pre {
   }
 }
 
-// Common footer section
-.newsletter {
-  width: 100% !important;
+@media screen and (max-width: 1024px) {
+  .main-footer .subscription .newsletter {
+    width: 100%;
+  }
 }
 
 // Sticky utility function
