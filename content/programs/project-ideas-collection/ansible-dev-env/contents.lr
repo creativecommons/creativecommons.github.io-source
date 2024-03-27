@@ -59,6 +59,6 @@ lead:
 ---
 difficulty: Medium
 ---
-size: Large (~350 hours or ~12 weeks)
+size: Large (~350 hours, ~12 weeks)
 ---
 filter_value: difficulty-medium skill-ansible skill-debian skill-docker skill-git
