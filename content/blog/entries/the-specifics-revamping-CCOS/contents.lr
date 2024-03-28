@@ -194,6 +194,7 @@ I tried to write the perfect code that is cleaner and readable. I would try to d
       {% for post in site.query('/blog/entries') %}
         {% if loop.index <= 3 %}
           {% set author = post.parent.parent.children.get('authors').children.get(post.author) %}
+          
           <div class="column is-one-third is-paddingless padding-horizontal-big padding-top-bigger">
             <article class="card entry-post horizontal no-border blog-entry">
               <header>

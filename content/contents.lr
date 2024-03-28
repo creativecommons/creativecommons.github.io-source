@@ -5,13 +5,9 @@ _template: home.html
 block_content:
 
 #### hero ####
-title:
-
-We have been building <span class="has-text-forest-green">free software</span> at <span class="has-text-gold">Creative Commons</span> for over a decade.
+title: We have been building <span class="has-text-forest-green">free software</span> at <span class="has-text-gold">Creative Commons</span> for over a decade.
 ----
-description:
-
-We work on code and products that support digital creativity and sharing, from usability of our legal tools to enabling discovery of CC-licensed content.
+description: We work on code and products that support digital creativity and sharing, from usability of our legal tools to enabling discovery of CC-licensed content.
 ----
 links:
 
@@ -19,7 +15,6 @@ links:
   <a class="button small is-success row" href="/community">Join the Developer Community</a>
   <a class="button small row" href="https://twitter.com/cc_opensource"><i class="icon twitter"></i>Follow us on twitter</a>
 </div>
-
 #### get-involved ####
 title:
 

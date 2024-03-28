@@ -46,7 +46,7 @@
 .get-involved {
   background-color: $color-lighter-gray;
   @extend .has-color-dark-slate-gray;
-  border-bottom: solid 0.1875rem $color-white;
+  border-bottom: solid 0.1875rem $color-red;
 
   .container {
     @extend .padding-horizontal-big;
@@ -88,7 +88,7 @@
 
 // Recent-posts section - Home page
 .recent-posts {
-  background-color: rgba(4, 166, 53, 0.1);
+  background-color: rgba(0, 0, 53, 1);
 
   .container {
     @extend .padding-vertical-xl;
@@ -101,7 +101,7 @@
   }
 
   .blog-title {
-    @extend .has-color-dark-slate-gray;
+    @extend .has-color-dark-turquoise,
   }
 
   .posts-link {

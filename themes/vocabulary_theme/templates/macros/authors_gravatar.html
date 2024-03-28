@@ -1,6 +1,6 @@
 {% macro render_author_gravatar(post, skip_gravatar=false) %}
   {% if not skip_gravatar %}
-    {# only display gravatar for first author so layout is broken #}
+    {% if post.author|length < 2 %}
     {% set author = post.author[0] %}
     {% set current_author = post.parent.parent.children.get('authors').children.get(author) %}
     <header>
@@ -8,5 +8,6 @@
         <img class="profile" src="https://secure.gravatar.com/avatar/{{ current_author.md5_hashed_email }}?size=200&d=mp" alt="gravatar" />
       </figure>
     </header>
+    {% endif %}
   {% endif %}
 {% endmacro %}
