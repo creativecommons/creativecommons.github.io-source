@@ -141,6 +141,12 @@ pre {
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .main-footer .subscription .newsletter {
+    width: 100%;
+  }
+}
+
 // Sticky utility function
 .sticky-top {
   position: sticky;

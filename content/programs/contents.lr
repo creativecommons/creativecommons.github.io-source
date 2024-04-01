@@ -22,22 +22,22 @@ CC isn't currently participating in Google Season of Docs (GSoD).
 
 ### Google Summer of Code
 
-CC is participating in Google Summer of Code (GSoC) 2023.
+CC is applying for participation in Google Summer of Code (GSoC) 2024.
 
 - [Program website](https://summerofcode.withgoogle.com/)
-- [CC's GSoC 2023 page][gsoc2023cc]
 
-[gsoc2023cc]: https://summerofcode.withgoogle.com/programs/2023/organizations/creative-commons
+<!--
+- [CC's GSoC 2024 page][gsoc2024cc]
+
+[gsoc2024cc]: https://summerofcode.withgoogle.com/programs/2024/organizations/creative-commons
+-->
 
 
 ### Outreachy
 
-CC is participating in the [Outreachy December 2022 to March 2023
-Internships][dec2022].
+CC isn't participating in the May 2024 internships.
 
-CC isn't participating in the May 2023 internships.
-
-CC will participate in the December 2023 internships.
+CC will participate in the December 2024 internships.
 
 - [Program website](https://www.outreachy.org/)
 - [CC's Outreachy page][outreachycc]
@@ -68,15 +68,20 @@ CC will participate in the December 2023 internships.
 
 | Name | Pronouns | Slack Username | Time Zone |
 | ---- | -------- | -------------- | --------- |
-| [Sara][authorsara] | she/her | `@sara` | Central (CDT UTC-06:00 / CST UTC-05:00) |
-| [Timid Robot][authortimidrobot] | they/them | `@Timid Robot` | Pacific (PDT UTC-08:00 / PST UTC-07:00) |
+| [Sara][authorsara] | she/her | `@sara` | Central (CDT UTC-05:00 / CST UTC-06:00) |
+| [Shafiya][authorshafiya] | she/her | `@Shafiya Heena` | Eastern (EDT UTC-04:00 / EST UTC-05:00) |
+| [Timid Robot][authortimidrobot] | they/them | `@Timid Robot` | Pacific (PDT UTC-07:00 / PST UTC-08:00) |
 
 [authorsara]: /blog/authors/sara/
+[authorshafiya]: /blog/authors/shafiya/
 [authortimidrobot]: /blog/authors/TimidRobot/
+
 
 ## Other Opportunities
 
-Apart from the mentioned Creative Commons collaborations, there are numerous additional ways to enhance your knowledge and make meaningful contributions to open source communities:
+Apart from the mentioned Creative Commons collaborations, there are numerous
+additional ways to enhance your knowledge and make meaningful contributions to
+open source communities:
 - [tapaswenipathak/Open-Source-Programs][otherprogs]: A list of open source
   programs.
 
