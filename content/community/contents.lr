@@ -57,6 +57,7 @@ The channels most relevant to CC's developer community are:
 | `#cc-dev-wordpress` | [wp-plugin-creativecommons][wp-plugin-creativecommons] project (creativecommons WordPress plugin) |
 | `#cc-dev-workprograms` | **GSoC, GSoD, Outreachy, and other [work programs][workprograms] or internships** |
 | `#cc-developers` | **general technical issues, new tech blog posts, etc.** |
+| `#cc-translation` | Coordinating translation efforts |
 | `#cc-usability` | general usability issues, seeking feedback on new releases of CC products from the community, etc. |
 
 [legaldb]: https://github.com/creativecommons/legaldb
