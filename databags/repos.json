@@ -164,26 +164,6 @@
             "website": ""
         },
         {
-            "created": "2019-06-12T18:15:54+00:00",
-            "description": "Automated link checker for legalcode and license URLs",
-            "engineering_project": true,
-            "english_name": "Creative Commons Link Checker",
-            "featured": false,
-            "id": 191622826,
-            "language": "Python",
-            "license": {
-                "name": "MIT License",
-                "url": "https://github.com/creativecommons/cc-link-checker/blob/main/LICENSE"
-            },
-            "name": "cc-link-checker",
-            "slack": "cc-dev-linkchecker",
-            "technologies": [
-                "Python"
-            ],
-            "url": "https://github.com/creativecommons/cc-link-checker",
-            "website": ""
-        },
-        {
             "created": "2014-01-08T18:49:45+00:00",
             "description": "Collection of resources on Creative Commons (CC) tools and other open topics",
             "engineering_project": true,
