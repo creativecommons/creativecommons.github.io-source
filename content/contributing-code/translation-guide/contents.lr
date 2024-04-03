@@ -126,13 +126,13 @@ of this tutorial if you prefer that as the medium of instruction.
 - **Method 1: Translating using the Transifex editor UI**
   - To do this, click on the 'Translate' button from the resource modal. You
     will be taken to a list of all the strings from the website.
-  - Switch the language to your target language using the menu bar on the
-    upper side of the screen.
-  - Click on any string, enter the translation in the lower box and click
-    the 'Save Translation' button to commit the change.
+  - Switch the language to your target language using the menu bar on the upper
+    side of the screen.
+  - Click on any string, enter the translation in the lower box and click the
+    'Save Translation' button to commit the change.
   - Some text has HTML tags in it. In those cases you can click on the tags in
-    the source text to copy them over in the translated text. You can also
-    drag to move them around as needed.
+    the source text to copy them over in the translated text. You can also drag
+    to move them around as needed.
   - Keep these instructions in mind: [General Notes About Translating -
     Translating CC Deeds - CC Public Wiki][wiki-translate-notes]
 
@@ -146,9 +146,9 @@ of this tutorial if you prefer that as the medium of instruction.
 </p>
 
 - **Method 2: Translating using the Transifex live UI**
-  - To do this, click on the 'Live' button from the resource modal. You will
-    be taken to the website rendered in the Transifex page and you can edit
-    the text directly.
+  - To do this, click on the 'Live' button from the resource modal. You will be
+    taken to the website rendered in the Transifex page and you can edit the
+    text directly.
   - Switch the language to your target language using the sidebar on the right
     side of the screen.
   - All the text is green boxes can be translated. Click on the pencil icon
