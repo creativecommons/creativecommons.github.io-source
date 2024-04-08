@@ -4,10 +4,10 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [packages]
-black = "*"
+black = ">=24.3.0"
 flake8 = "*"
 isort = "*"
-lektor = "*"
+lektor = ">=3.3.11"
 
 [requires]
-python_version = "3.9"
+python_version = "3.11"
