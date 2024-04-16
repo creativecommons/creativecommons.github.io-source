@@ -7,13 +7,11 @@
       {% if post.author|length >= 2 %}
         <header>
           <figure class="image blog-image">
-            <img class="profile" src="https://github.com/creativecommons/creativecommons.github.io-source/blob/main/content/multiple-authors.jpg?raw=true" alt="multiple authors image"/>
+            <img class="profile" src="/multiple-authors.jpg" alt="multiple authors image"/>
           </figure>
         </header>
       {% else %}
-        <header>
           {{ render_author_gravatar(post, skip_gravatar) }}
-        </header>
       {% endif %}
       <div class="blog-content">
         <h4 class="b-header"><a class="blog-title" href="{{ post|url }}">{{ post.title }}</a></h4>
