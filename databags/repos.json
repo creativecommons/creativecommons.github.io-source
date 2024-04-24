@@ -855,7 +855,7 @@
             "language": "SCSS",
             "license": {
                 "name": "MIT License",
-                "url": "https://github.com/creativecommons/vocabulary-styles/blob/main/LICENSE"
+                "url": "https://github.com/cc-archive/vocabulary-styles/blob/main/LICENSE"
             },
             "name": "vocabulary-styles",
             "slack": "cc-dev-vocabulary",
@@ -866,7 +866,7 @@
                 "Storybook",
                 "Bulma"
             ],
-            "url": "https://github.com/creativecommons/vocabulary-styles",
+            "url": "https://github.com/cc-archive/vocabulary-styles",
             "website": ""
         },
         {
