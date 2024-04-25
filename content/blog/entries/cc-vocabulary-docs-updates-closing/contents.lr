@@ -210,59 +210,59 @@ Here's the link to the [documentation site](https://cc-vocabulary.netlify.app).
 <tr>
 <td rowspan=14><a href="https://github.com/creativecommons/vocabulary">@creativecommons/vocabulary</a></td>
 <td>Developed the CC Vocabulary Landing Page</td>
-<td><a href="https://github.com/creativecommons/vocabulary/pull/747">https://github.com/creativecommons/vocabulary/pull/747<br><a href="https://cc-vocab-draft.web.app">https://cc-vocab-draft.web.app</a></td>
+<td><a href="https://github.com/cc-archive/vocabulary-legacy/pull/747">https://github.com/cc-archive/vocabulary-legacy/pull/747<br><a href="https://cc-vocab-draft.web.app">https://cc-vocab-draft.web.app</a></td>
 </tr>
 <tr>
 <td>Implemented dark mode for our storybooks</td>
-<td><a href="https://github.com/creativecommons/vocabulary/pull/806">https://github.com/creativecommons/vocabulary/pull/806</a><br><a href="https://cc-vocabulary.netlify.app">https://cc-vocabulary.netlify.app</a></td>
+<td><a href="https://github.com/cc-archive/vocabulary-legacy/pull/806">https://github.com/cc-archive/vocabulary-legacy/pull/806</a><br><a href="https://cc-vocabulary.netlify.app">https://cc-vocabulary.netlify.app</a></td>
 </tr>
 <tr>
 <td>Carried out a monorepo wide documentation revamp</td>
-<td><a href="https://github.com/creativecommons/vocabulary/pull/813">https://github.com/creativecommons/vocabulary/pull/813</a></td>
+<td><a href="https://github.com/cc-archive/vocabulary-legacy/pull/813">https://github.com/cc-archive/vocabulary-legacy/pull/813</a></td>
 </tr>
 <tr>
 <td>Wrote the Monorepo Documentation Story</td>
-<td><a href="https://github.com/creativecommons/vocabulary/pull/785">https://github.com/creativecommons/vocabulary/pull/785</a><br><a href="https://cc-vocabulary.netlify.app/?path=/docs/vocabulary-structure--page#why-is-vocabulary-a-monorepo">https://cc-vocabulary.netlify.app/?path=/docs/vocabulary-structure--page#why-is-vocabulary-a-monorepo</a></td>
+<td><a href="https://github.com/cc-archive/vocabulary-legacy/pull/785">https://github.com/cc-archive/vocabulary-legacy/pull/785</a><br><a href="https://cc-vocabulary.netlify.app/?path=/docs/vocabulary-structure--page#why-is-vocabulary-a-monorepo">https://cc-vocabulary.netlify.app/?path=/docs/vocabulary-structure--page#why-is-vocabulary-a-monorepo</a></td>
 </tr>
 <tr>
 <td>Wrote the Grid Documentation Story</td>
-<td><a href="https://github.com/creativecommons/vocabulary/pull/802">https://github.com/creativecommons/vocabulary/pull/802</a><br><a href="https://cc-vocabulary.netlify.app/?path=/docs/layouts-grid--fullhd#grid-system">https://cc-vocabulary.netlify.app/?path=/docs/layouts-grid--fullhd#grid-system</a></td>
+<td><a href="https://github.com/cc-archive/vocabulary-legacy/pull/802">https://github.com/cc-archive/vocabulary-legacy/pull/802</a><br><a href="https://cc-vocabulary.netlify.app/?path=/docs/layouts-grid--fullhd#grid-system">https://cc-vocabulary.netlify.app/?path=/docs/layouts-grid--fullhd#grid-system</a></td>
 </tr>
 <tr>
 <td>Wrote the "Getting Started" Usage Guide</td>
-<td><a href="https://github.com/creativecommons/vocabulary/pull/774">https://github.com/creativecommons/vocabulary/pull/774</a><br><a href="https://cc-vocabulary.netlify.app/?path=/story/vocabulary-getting-started--page#getting-started">https://cc-vocabulary.netlify.app/?path=/story/vocabulary-getting-started--page#getting-started</a></td>
+<td><a href="https://github.com/cc-archive/vocabulary-legacy/pull/774">https://github.com/cc-archive/vocabulary-legacy/pull/774</a><br><a href="https://cc-vocabulary.netlify.app/?path=/story/vocabulary-getting-started--page#getting-started">https://cc-vocabulary.netlify.app/?path=/story/vocabulary-getting-started--page#getting-started</a></td>
 </tr>
 <tr>
 <td>Added a CHANGELOG.md to adhere to OSS conventions</td>
-<td><a href=https://github.com/creativecommons/vocabulary/pull/671">https://github.com/creativecommons/vocabulary/pull/671</a><br><a href="https://github.com/creativecommons/vocabulary/blob/main/CHANGELOG.md">https://github.com/creativecommons/vocabulary/blob/main/CHANGELOG.md</a></td>
+<td><a href=https://github.com/cc-archive/vocabulary-legacy/pull/671">https://github.com/cc-archive/vocabulary-legacy/pull/671</a><br><a href="https://github.com/cc-archive/vocabulary-legacy/blob/main/CHANGELOG.md">https://github.com/cc-archive/vocabulary-legacy/blob/main/CHANGELOG.md</a></td>
 </tr>
 <tr>
 <td>Unified README.md and updated monorepo build process</td>
-<td><a href="https://github.com/creativecommons/vocabulary/pull/649">https://github.com/creativecommons/vocabulary/pull/649</a><br><a href="https://www.npmjs.com/package/@creativecommons/vocabulary">https://www.npmjs.com/package/@creativecommons/vocabulary</a><br><a href="https://www.npmjs.com/package/@creativecommons/fonts">https://www.npmjs.com/package/@creativecommons/fonts</a><br><a href="https://www.npmjs.com/package/@creativecommons/vue-vocabulary">https://www.npmjs.com/package/@creativecommons/vue-vocabulary</a></td>
+<td><a href="https://github.com/cc-archive/vocabulary-legacy/pull/649">https://github.com/cc-archive/vocabulary-legacy/pull/649</a><br><a href="https://www.npmjs.com/package/@creativecommons/vocabulary">https://www.npmjs.com/package/@creativecommons/vocabulary</a><br><a href="https://www.npmjs.com/package/@creativecommons/fonts">https://www.npmjs.com/package/@creativecommons/fonts</a><br><a href="https://www.npmjs.com/package/@creativecommons/vue-vocabulary">https://www.npmjs.com/package/@creativecommons/vue-vocabulary</a></td>
 </tr>
 <tr>
 <td>Configured GitHub native dependabot</td>
-<td><a href="https://github.com/creativecommons/vocabulary/pull/452">https://github.com/creativecommons/vocabulary/pull/452</a></td>
+<td><a href="https://github.com/cc-archive/vocabulary-legacy/pull/452">https://github.com/cc-archive/vocabulary-legacy/pull/452</a></td>
 </tr>
 <tr>
 <td>Added phone screen backgrounds</td>
-<td><a href="https://github.com/creativecommons/vocabulary/pull/445">https://github.com/creativecommons/vocabulary/pull/445</a></td>
+<td><a href="https://github.com/cc-archive/vocabulary-legacy/pull/445">https://github.com/cc-archive/vocabulary-legacy/pull/445</a></td>
 </tr>
 <tr>
 <td>Introduce Snapshot Testing to Vocabulary using Chromatic</td>
-<td><a href="https://github.com/creativecommons/vocabulary/issues/735">https://github.com/creativecommons/vocabulary/issues/735</a></td>
+<td><a href="https://github.com/cc-archive/vocabulary-legacy/issues/735">https://github.com/cc-archive/vocabulary-legacy/issues/735</a></td>
 </tr>
 <tr>
 <td>Add a maintained with Lerna badge</td>
-<td><a href="https://github.com/creativecommons/vocabulary/issues/807">https://github.com/creativecommons/vocabulary/issues/807</a><br><a href="https://github.com/creativecommons/vocabulary/blob/main/README.md">https://github.com/creativecommons/vocabulary/blob/main/README.md</a></td>
+<td><a href="https://github.com/cc-archive/vocabulary-legacy/issues/807">https://github.com/cc-archive/vocabulary-legacy/issues/807</a><br><a href="https://github.com/cc-archive/vocabulary-legacy/blob/main/README.md">https://github.com/cc-archive/vocabulary-legacy/blob/main/README.md</a></td>
 </tr>
 <tr>
 <td>Add new install size badges for our packages</td>
-<td><a href="https://github.com/creativecommons/vocabulary/issues/776">https://github.com/creativecommons/vocabulary/issues/776</a><br><a href="https://github.com/creativecommons/vocabulary/blob/main/README.md">https://github.com/creativecommons/vocabulary/blob/main/README.md</a</td>
+<td><a href="https://github.com/cc-archive/vocabulary-legacy/issues/776">https://github.com/cc-archive/vocabulary-legacy/issues/776</a><br><a href="https://github.com/cc-archive/vocabulary-legacy/blob/main/README.md">https://github.com/cc-archive/vocabulary-legacy/blob/main/README.md</a</td>
 </tr>
 <tr>
 <td>Customise individual README's for our packages</td>
-<td><a href="https://github.com/creativecommons/vocabulary/issues/736">https://github.com/creativecommons/vocabulary/issues/736</a></td>
+<td><a href="https://github.com/cc-archive/vocabulary-legacy/issues/736">https://github.com/cc-archive/vocabulary-legacy/issues/736</a></td>
 </tr>
 <tr>
 <td rowspan=5><a href="https://github.com/creativecommons/creativecommons.github.io-source">@creativecommons/creativecommons.github.io-source</a></td>

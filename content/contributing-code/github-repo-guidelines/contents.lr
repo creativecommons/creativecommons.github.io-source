@@ -38,9 +38,9 @@ these files:
 [dco]: https://developercertificate.org/
 [issue-template-bug]: https://github.com/creativecommons/.github/blob/main/.github/ISSUE_TEMPLATE/bug_report.md
 [issue-template-feature]: https://github.com/creativecommons/.github/blob/main/.github/ISSUE_TEMPLATE/feature_request.md
-[conduct]: https://github.com/creativecommons/vocabulary/blob/main/CODE_OF_CONDUCT.md
+[conduct]: https://github.com/creativecommons/.github/blob/main/CODE_OF_CONDUCT.md
 [help-conduct]: https://help.github.com/en/articles/adding-a-code-of-conduct-to-your-project
-[contributing]: https://github.com/creativecommons/vocabulary/blob/main/CONTRIBUTING.md
+[contributing]: https://github.com/creativecommons/.github/blob/main/CONTRIBUTING.md
 [setting-guidelines]: https://help.github.com/en/articles/setting-guidelines-for-repository-contributors
 [funding]: https://github.com/creativecommons/.github/blob/main/FUNDING.yml
 [support]: https://github.com/creativecommons/.github/blob/main/SUPPORT.md

@@ -66,7 +66,7 @@ example, NPM currently strips leading zeros which breaks CDN integration
 ([CalVer and CDN compatibility · Issue #588 ·
 creativecommons/vocabulary][issue588]).
 
-[issue588]: https://github.com/creativecommons/vocabulary/issues/588.
+[issue588]: https://github.com/cc-archive/vocabulary-legacy/issues/588.
 
 
 ## Using SemVer

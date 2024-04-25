@@ -26,7 +26,7 @@ Excited to know more about this week's vocabulary site updates? Read on to find 
 
 Merged? Yes. **Merged**. Here's my story!
 
-- After getting a thumbs up from the UX Designer, I put up my [GSoD Website PR](https://github.com/creativecommons/vocabulary/pull/747) for review.
+- After getting a thumbs up from the UX Designer, I put up my [GSoD Website PR](https://github.com/cc-archive/vocabulary-legacy/pull/747) for review.
 - I was confident there would be changes, and I let them roll in. It's important to note here that what seems perfect to you may not be so to others, and only experience teaches you the right from the wrong.
 - There were a few of them, mainly dealing with spacing, textual content and colors. I resolved them as soon as I could.
 -  [zackkrida](/blog/authors/zackkrida/) has been kind enough to point and enumerate all of them for me!
@@ -53,9 +53,9 @@ Merged? Yes. **Merged**. Here's my story!
 
 Being a part of an open source organisation also means that I must try to bring in contributions from existing & first time contributors. Here's a peek into my efforts for the same:
 
-- The [dark mode PR](https://github.com/creativecommons/vocabulary/pull/806) started off as a hacktoberfest contribution, and it is now complete!
+- The [dark mode PR](https://github.com/cc-archive/vocabulary-legacy/pull/806) started off as a hacktoberfest contribution, and it is now complete!
 - Created a `/shared` package to house common files between packages (such as the dark & light theme after referring to the [React](https://reactjs.org/) documentation.
-- The automated npm [README.md customisation](https://github.com/creativecommons/vocabulary/pull/746) is now up and running. (really had a blast solving that issue!)
+- The automated npm [README.md customisation](https://github.com/cc-archive/vocabulary-legacy/pull/746) is now up and running. (really had a blast solving that issue!)
 - If the snapshot testing stands approved, we'll have it running on chromatic!
 - Raised issues to add multiple badges to the root README.md  file; namely `maintained with Lerna` & custom badges for package sizes from [packagephobia](https://packagephobia.com/).
 
