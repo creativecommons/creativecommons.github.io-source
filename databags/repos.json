@@ -775,98 +775,25 @@
             "website": "https://thepowerofopen.org/"
         },
         {
-            "created": "2019-11-25T17:29:13+00:00",
-            "description": "A cohesive design system & Vue component library to unify the web-facing Creative Commons",
+            "created": "2024-04-24T19:10:38+00:00",
+            "description": "A cohesive system of design for Creative Commons",
             "engineering_project": true,
-            "english_name": "CC Vocabulary",
+            "english_name": "Vocabulary Design System",
             "featured": false,
-            "id": 224004769,
-            "language": "MDX",
+            "id": 791465373,
+            "language": "HTML",
             "license": {
-                "name": "MIT License",
-                "url": "https://github.com/creativecommons/vocabulary/blob/main/LICENSE"
+                "name": "Creative Commons Zero v1.0 Universal",
+                "url": "https://github.com/creativecommons/vocabulary/blob/main/COPYING"
             },
             "name": "vocabulary",
-            "slack": "cc-dev-vocabulary",
+            "slack": "",
             "technologies": [
-                "Sass",
-                "JavaScript",
-                "Webpack",
-                "Storybook",
-                "Bulma",
-                "Fonts"
+                "HTML",
+                "CSS",
+                "Javascript"
             ],
             "url": "https://github.com/creativecommons/vocabulary",
-            "website": "https://cc-vocabulary.netlify.app"
-        },
-        {
-            "created": "2022-01-10T10:29:18+00:00",
-            "description": "A collection of Vue components used in the web facing Creative Commons.",
-            "engineering_project": true,
-            "english_name": "CC Vocabulary components",
-            "featured": false,
-            "id": 446377158,
-            "language": "Vue",
-            "license": {
-                "name": "MIT License",
-                "url": "https://github.com/creativecommons/vocabulary-components/blob/main/LICENSE"
-            },
-            "name": "vocabulary-components",
-            "slack": "cc-dev-vocabulary",
-            "technologies": [
-                "Sass",
-                "JavaScript",
-                "Webpack",
-                "Vue.js"
-            ],
-            "url": "https://github.com/creativecommons/vocabulary-components",
-            "website": ""
-        },
-        {
-            "created": "2022-01-10T11:07:04+00:00",
-            "description": "Typefaces that lend personality to the web facing Creative Commons",
-            "engineering_project": true,
-            "english_name": "CC Vocabulary fonts",
-            "featured": false,
-            "id": 446389251,
-            "language": "MDX",
-            "license": {
-                "name": "MIT License",
-                "url": "https://github.com/creativecommons/vocabulary-fonts/blob/main/LICENSE"
-            },
-            "name": "vocabulary-fonts",
-            "slack": "cc-dev-vocabulary",
-            "technologies": [
-                "Sass",
-                "JavaScript",
-                "Webpack",
-                "Storybook"
-            ],
-            "url": "https://github.com/creativecommons/vocabulary-fonts",
-            "website": ""
-        },
-        {
-            "created": "2022-01-10T11:06:45+00:00",
-            "description": "A cohesive design system to unite the web facing Creative Commons",
-            "engineering_project": true,
-            "english_name": "CC Vocabulary styles",
-            "featured": false,
-            "id": 446389149,
-            "language": "SCSS",
-            "license": {
-                "name": "MIT License",
-                "url": "https://github.com/cc-archive/vocabulary-styles/blob/main/LICENSE"
-            },
-            "name": "vocabulary-styles",
-            "slack": "cc-dev-vocabulary",
-            "technologies": [
-                "Sass",
-                "JavaScript",
-                "Webpack",
-                "Storybook",
-                "Bulma"
-            ],
-            "url": "https://github.com/cc-archive/vocabulary-styles",
             "website": ""
         },
         {
