@@ -1,0 +1,196 @@
+title: New CreativeCommons.org launched 2023 September
+---
+categories:
+cc-legal-tools
+cc-vocabulary
+open-source
+website
+wordpress
+---
+author:
+sara
+shafiya
+TimidRobot
+---
+pub_date: 2024-05-29
+---
+body:
+
+Creative Commons (CC) launched a new
+[CreativeCommons.org](https://creativecommons.org/) website on 2023 September
+27. This relaunch included not just the website, but the entire technology
+stack (platform, server, and website components).
+
+
+## Improved platform
+
+The new website is hosted on AWS. This allowed us to design a more secure
+network architecture between services and deploy/manage the services using
+infrastructure as code.
+
+
+## Improved services
+
+The services running the website were simplified and updated. The number of
+distinct servers was reduced from six down to two. Previously, loading the
+homepage required five services (HAProxy, Varnish, Apache2, PHP+FPM, and
+MariaDB). The complexity of the old services made troubleshooting more
+difficult. They were designed before Cloudflare began supporting us through
+[Project Galileo](https://www.cloudflare.com/galileo/). The new website
+requires only two services (Apache2 and MariaDB).
+
+
+## Improved website components
+
+
+### Vocabulary
+
+The website consists of a variety of components that use the Vocabulary design
+system ([creativecommons/vocabulary][vocabulary]) to present a unified user
+experience. This relaunch was the first implementation of the new Vocabulary.
+It has returned to web core principals favoring semantic HTML and appropriately
+scoped CSS styling. It keeps the style layer responsibilities firmly within the
+CSS, rather than utilizing a framework like Bootstrap to add a myriad of
+style-based classes to the HTML layer.  Furthermore, JavaScript use has been
+kept incredibly minimal, offering routes of behavior that can’t already be
+accomplished via HTML and/or CSS, letting HTML and CSS do what they do best.
+This simplicity improves performance and also lowers barriers for community
+contributions.
+
+Accessibility was a priority, making the code more semantic already helps, but
+we went further in ensuring that all the affordances you get from HTML aren’t
+blocked or altered via opinionated (and often non-standard) frameworks. The
+site performs better generally, and is much kinder to slower connection speeds.
+
+The new implementation of Vocabulary includes a new Information Architecture
+and more stable UX approach for better visitor experiences. CC licensed media
+is one of our strengths and as such it was important to allow proper
+attribution to be baked into every instance of media rendering within the
+design. This means that while the image or video may be important to the flow
+of content, its attribution also gets a level of appropriate importance as
+well, highlighting ways in which others might handle attribution and following
+through on our own mission in the pursuit of better sharing at large.
+
+[vocabulary]: https://github.com/creativecommons/vocabulary
+
+
+### WordPress
+
+The project utilizes a custom WordPress theme
+([creativecommons/vocabulary-theme][vocabulary-theme]) that implements the new
+Vocabulary design system.
+
+The theme utilizes the WordPress Classic Editor because of its long-term
+stability and more stable UX. Gutenberg still does not adhere to adequate
+Accessibility approaches, nor does it have a sense of stable
+feature-completeness. This creates an unreliable landscape to build upon.
+Gutenberg also requires one to build Block composition through React.js to
+accomplish tasks that are far easier and more approachable with the standard
+PHP templates that the Classic Editor is compatible with. This dramatically
+improves the ability for a new contributor to help, and speeds up the
+development process.
+
+To allow a degree of more varied page composition, Advanced Custom Fields was
+utilized to more easily add, update, and version control custom fields across
+pages and page templates. This strikes a balance between more complex page
+composition, but within a more controllable set of circumstances.
+
+Plugins in general were cut dramatically. The legacy site contained 20 active
+plugins, while this project relies on less than half, at 9, with hopeful
+pathways to eventually cut that number even further.
+
+The site utilizes several custom content types and better taxonomies to split
+up the UX flow of varied kinds of content creation, allowing for smoother
+multi-author attribution, site-wide notices for fundraising and event
+announcements, and better blog post organization and way-finding overall.
+
+[vocabulary-theme]: https://github.com/creativecommons/vocabulary-theme
+
+
+### CC Legal Tools
+
+With the deployment of our new website, we also replaced the legacy ccEngine
+with the new CC Legal Tools. The current legal tool landscape is refreshingly
+simple with only seven tools (CC BY 4.0, CC BY-NC 4.0, CC BY-NC-ND 4.0, CC
+BY-NC-SA 4.0, CC BY-ND 4.0, CC BY-SA 4.0, CC0 1.0). However since previous
+versions of the licenses were adapted to specific jurisdictions (ported) and we
+collaborate with the community to support many translations, the new CC Legal
+Tools app manages over 30,000 documents!
+
+The project to rewrite the CC Legal Tools and replace the legacy ccEngine began
+in 2020 with a request for proposals ([RFP: License Infrastructure - Google
+Docs][rfp]). The [Caktus Group](https://www.caktusgroup.com/) began the new CC
+Legal Tools using the Django Python web framework. The work was continued by
+Timid Robot. Saurabh helped with RDF/XML generation ([CC Legal Tools:
+Machine-Readable Layer — Creative Commons Open
+Source](/blog/entries/2023-08-25-machine-layer/)).
+
+The new CC Legal Tools consist of two repositories:
+
+1. [creativecommons/cc-legal-tools-app][cc-legal-tools-app]: *Static site
+   generator using Django*
+2. [creativecommons/cc-legal-tools-data][cc-legal-tools-data]: *Inputs and
+   outputs of the application*
+
+The legacy ccEngine consists of around 15,960 lines of Python 2. It was
+developed and extended organically over time, resulting in a less coherent
+codebase. The new CC Legal Tools has the benefit of hindsight and was
+architected as a single application to meet all of current requirements of CC.
+It consists of around 17,400 lines of Python 3 (including around 4,000 lines of
+tests). Benefits of the new CC Legal Tools include:
+
+- Currently supported software (Python 3, Django 4.2, etc.)
+- Simplified data model
+- Improved translation handling
+- Improved RDF/XML generation/management
+
+In particular, the fact that the new CC Legal Tools generate static assets is
+noteworthy. Static assets can be hosted performantly with a very simple service
+setup.
+
+[rfp]: https://docs.google.com/document/d/1mlgmjDorTEwgIRRrvILK3v0pTJbGx8fB5SE1yplrz3Y/edit
+[cc-legal-tools-app]: https://github.com/creativecommons/cc-legal-tools-app
+[cc-legal-tools-data]: https://github.com/creativecommons/cc-legal-tools-data
+
+
+### Chooser
+
+The new chooser beta ([creativecommons/chooser][chooser]) was promoted to
+production with the new header and footer from the Vocabulary design system for
+a more uniform user experience.
+
+[chooser]: https://github.com/creativecommons/chooser
+
+
+### FAQ & Platform Toolkit
+
+The FAQ ([creativecommons/faq](https://github.com/creativecommons/faq)) and
+Platform Toolkit ([creativecommons/mp](https://github.com/creativecommons/mp))
+were updated to use the new header and footer from the Vocabulary design system
+for a more uniform user experience.
+
+
+## Improved development
+
+Utilizing infrastructure as code, we now have a much more robust staging
+environment. This allows us to preview larger changes so that they can be
+deployed to production with minimum risk. We also improved our local
+development environment and content synchronization tooling
+([creativecommons/index-dev-env][index-dev-env]). This means that not only did
+we fix many old bugs, but when new bugs are identified, we can fix them more
+rapidly!
+
+[index-dev-env]: https://github.com/creativecommons/index-dev-env
+
+
+## Thank you
+
+Thank you to the people who directly contributed to the success of the new
+website!
+
+- Nate, former Director of Communications & Community
+- Sara, Full Stack Engineer
+- Shafiya, Systems Engineer
+- Timid Robot, Director of Technology
+- *as well as many other previous staff, community contributors, and other
+  [supporters](/community/supporters/)!*
