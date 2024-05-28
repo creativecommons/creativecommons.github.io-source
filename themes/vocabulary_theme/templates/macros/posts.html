@@ -4,15 +4,7 @@
 {% macro render_post_summary(post, skip_gravatar=false) %}
   <div class="column is-one-third is-paddingless padding-horizontal-big padding-top-bigger">
     <article class="card entry-post horizontal no-border blog-entry">
-      {% if post.author|length >= 2 %}
-        <header>
-          <figure class="image blog-image">
-            <img class="profile" src="/multiple-authors.jpg" alt="multiple authors image"/>
-          </figure>
-        </header>
-      {% else %}
-          {{ render_author_gravatar(post, skip_gravatar) }}
-      {% endif %}
+      {{ render_author_gravatar(post, skip_gravatar) }}
       <div class="blog-content">
         <h4 class="b-header"><a class="blog-title" href="{{ post|url }}">{{ post.title }}</a></h4>
         {{ render_authors_byline(post) }}
