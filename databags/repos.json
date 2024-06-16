@@ -289,8 +289,11 @@
             "created": "2024-06-14T18:39:49+00:00",
             "description": "This plugin allows you to add a button to your WordPress site's posts which will display terms and licensing for Creative Commons reposting, as well as the title and content of the post for easy sharing. This is useful for sites that want to easily and clearly share their content with others.",
             "id": 815277416,
-            "language": null,
-            "license": null,
+            "language": "PHP",
+            "license": {
+                "name": "GNU General Public License v3.0",
+                "url": "https://github.com/creativecommons/Creative-Commons-Post-Republisher/blob/main/LICENSE"
+            },
             "name": "Creative-Commons-Post-Republisher",
             "slack": "",
             "url": "https://github.com/creativecommons/Creative-Commons-Post-Republisher",
