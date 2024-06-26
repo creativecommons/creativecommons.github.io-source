@@ -76,7 +76,7 @@ As I mentioned in the previous sections, starting to code the initial file was a
 new technologies and libraries on-the-go. As a matter of fact, my struggles began when I couldn't even import the 
 shared module correctly. However, slowly but surely, I found that consistent research of available documentation as well
 as constant insights from Timid Robot made it so that I finally understood everything that I was working with. There were
-two specific things that helped me especially, and I would like to share them here incase it helps any software
+a few specific things that helped me especially, and I would like to share them here incase it helps any software
 developer reading this post:
 
 1. **Reading Technical Whitepapers:** As I mentioned earlier, I studied a technical whitepaper by AWS to help me design my DFD.
@@ -90,6 +90,12 @@ for _Quantifying the Commons_
 was the closest thing to my own project that I could reference. Although not all of the code was relevant to the Automating project,
 there were many aspects of the codebase I found very helpful to take inspiration from, especially when online research led to a
 dead end. 
+
+3. **Writing Documentation for the Code:** As a part of this project, I assigned myself the task of developing a documentation for
+the Automating Quantifying the Commons project (**[can be accessed here!][documentation]**). Heavily inspired by the "rubber duck debugging"
+method, where explaining the code or problem step-by-step to someone or something will make the solution present itself, I decided to create documentation
+for future developers to reference, in which I break down the code step-by-step to explain each module or function. I found that in
+doing this, I was able to better understand my own code better.
 
 As for the license data retrieval process using the Google Custom Search API Key, 
 I did have a little hesitation running everything for the first time. 
@@ -129,6 +135,8 @@ Coming soon!
 [AWS-whitepaper]: https://docs.aws.amazon.com/whitepapers/latest/microservices-on-aws/distributed-data-management.html
 [meta-whitepaper]: https://engineering.fb.com/2024/05/22/data-infrastructure/composable-data-management-at-meta/
 [timid-robot]: https://opensource.creativecommons.org/blog/authors/TimidRobot/
+[documentation]: https://unmarred-gym-686.notion.site/Automating-Quantifying-the-Commons-Documentation-441056ae02364d8a9a51d5e820401db5?pvs=4
+
 
 
 
