@@ -1,13 +1,12 @@
 title: Automating Quantifying the Commons: Part 1
 ---
 categories:
-cc-dataviz
-collaboration
-community
-quantifying-the-commons
-open-source
 gsoc-2024
 gsoc
+quantifying-the-commons
+open-source
+collaboration
+community
 ---
 author: naishasinha
 ---
@@ -17,4 +16,120 @@ body:
 
 ![GSoC 2024](Automating - GSoC Logo.png)
 
-## Project
+## Introduction
+***
+
+Quantifying the Commons, an initiative emerging from the UC Berkeley Data Science Discovery Program, 
+aims to quantify the frequency of open domain and CC license usage for future accessibility and analysis purposes 
+(Refer to the initial CC article for Quantifying **[here!][quantifying]**). 
+To date, the scope of the previous project advancements had not included automation or combined reporting, 
+which is necessary to minimize the potential for human error and allow for more timely updates, 
+especially for a system that engages with substantial streams of data. <br>
+
+As a selected developer for Google Summer of Code 2024, 
+my goal for this summer is to develop an automation software for data gathering, flow, and report generation, 
+ensuring that reports are never more than 3 months out-of-date. This blog post serves as a technical journal
+for my endeavor till the midterm evaluation period. Part 2 will be posted after successful completion of the
+entire summer program.  
+
+## Pre-Program Knowledge and Associated Challenges
+***
+
+As an undergraduate CS student, I had not yet had any experience working with codebases
+as intricate as this one; the most complex software I had worked on prior to this undertaking
+was most probably a medium-complexity full-stack application. In my pre-GSoC contributions to Quantifying, I did successfully 
+implement logging across all the Python files (**[PR #97][logging]**), but admittedly, I was not familiar with a lot of the other modules that 
+were being used in these files. As a result, this caused minor inconveniences to my development process from the very beginning. 
+For example, not being experienced with operating system (OS) modules had me confused as to how I was supposed to 
+join new directories. In addition, I had never worked with such large streams of data before, so it was initially a
+challenge to map out pseudocode for handling big data effectively. The next section elaborates on my development process and how I resolved these setbacks.
+
+## Development Process (Midterm)
+***
+
+### I. Data Flow Diagram Construction
+Before starting the code implementation, I decided to develop a **Data Flow Diagram (DFD)**, which provides a visual
+representation of how data flows through a software system. While researching effective DFDs for inspiration, I came across
+a **[technical whitepaper by Amazon Web Services (AWS)][AWS-whitepaper]** on Distributed Data Management, and I found it very helpful in drafting
+my own DFD. As I was still relatively new to the codebase, it helped me simplify
+the current system into manageable components and better understand how to implement the rest of the project.
+
+[insert DFD here with explanation of directory setup]
+
+### II. Identifying the First Data Source to Target
+The main approach for implementing this project was to target one specific data source and complete its data extraction, analysis,
+and report generation process before adding more data sources to the codebase. There were two possible strategies to consider:
+(1) work on the easier data sources first, or (2) begin with the highest complexity data source and then add the easier
+ones later. Both approaches have notable pros and cons; however, I decided to adopt the second strategy of 
+starting with the most complex data source first. Although this would take slightly longer to implement, it would simplify the process
+later on. As a result, I began implementing the software for the **Google Custom Search**
+data source, which has the largest number of data retrieval potential among all the other sources.
+
+### III. Directory Setup + Code Implementation
+Based on the DFD, **[Timid Robot][timid-robot]** (my mentor) and I identifed the directory process to be as such: within our `scripts` directory, we would have
+separate sub-directories to reflect the phases of data flow, `1-fetched`, `2-processed`, `3-reports`. The code would then be
+set up to interact in chronological order. Additionally, a shared directory was implemented to optimize similar functions and paths. <br>
+
+**`1-fetched`**
+
+As I mentioned in the previous sections, starting to code the initial file was a challenge, as I had to learn how to use
+new technologies and libraries on-the-go. As a matter of fact, my struggles began when I couldn't even import the 
+shared module correctly. However, slowly but surely, I found that consistent research of available documentation as well
+as constant insights from Timid Robot made it so that I finally understood everything that I was working with. There were
+two specific things that helped me especially, and I would like to share them here incase it helps any software
+developer reading this post:
+
+1. **Reading Technical Whitepapers:** As I mentioned earlier, I studied a technical whitepaper by AWS to help me design my DFD.
+From this, I realized that consulting relevant whitepapers by industry giants to see how they approach similar tasks
+helped me a lot in understanding best practices to implementing the system. Here is another resource by Meta that I referenced, 
+called **[Composable Data Management at Meta][meta-whitepaper]** (I mainly used the  _Building on Similarities_ section
+to study the logical components of data systems).
+
+2. **Referencing the Most Recent Quantifying Codebase:** The pre-automation code that was already implemented by previous developers
+for _Quantifying the Commons_
+was the closest thing to my own project that I could reference. Although not all of the code was relevant to the Automating project,
+there were many aspects of the codebase I found very helpful to take inspiration from, especially when online research led to a
+dead end. 
+
+As for the license data retrieval process using the Google Custom Search API Key, 
+I did have a little hesitation running everything for the first time. 
+Since I had never worked with confidential information or such large data inputs before, 
+I was scared of messing something up. Sure enough, the first time I ran everything with the language and country parameters, 
+it did cause a crash, since the API query-per-day limit was crossed with one script run. As I continued to update 
+the script, I learned a very useful trick when it comes to handling big data: 
+to avoid hitting the query limit while testing, you can replace the actual API calls 
+with logging statements to show the parameters being used. This helps you 
+understand the outputs without actually consuming API quota, and it can help you identify bugs easier. <br>
+
+Upon successful completion of basic data retrieval and state management in Phase 1, 
+I felt much more confident about the trajectory of this project, and implementing 
+future steps and fixing new bugs became progressively easier.
+
+**`2-processed`**
+
+coming soon!
+
+**`3-reports`**
+
+coming soon!
+
+## Mid-Program Conclusions and Upcoming Tasks
+***
+
+Coming soon!
+
+## Additional Readings
+***
+
+- (Stay posted for the second part of this series, coming soon!) Automating Quantifying the Commons: Part 2
+- [Data Science Discovery: Quantifying the Commons][quantifying] | Author: Dun-Ming Huang (Brandon Huang) | Dec. 2022
+
+[quantifying]: https://opensource.creativecommons.org/blog/entries/2022-12-07-berkeley-quantifying/
+[logging]: https://github.com/creativecommons/quantifying/pull/97
+[AWS-whitepaper]: https://docs.aws.amazon.com/whitepapers/latest/microservices-on-aws/distributed-data-management.html
+[meta-whitepaper]: https://engineering.fb.com/2024/05/22/data-infrastructure/composable-data-management-at-meta/
+[timid-robot]: https://opensource.creativecommons.org/blog/authors/TimidRobot/
+
+
+
+
