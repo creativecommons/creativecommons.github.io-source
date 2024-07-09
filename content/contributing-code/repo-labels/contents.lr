@@ -4,13 +4,16 @@ _template: page-with-toc.html
 ---
 title: Repository Labels
 ---
-description: To facilitate the community in finding ways to contribute that match their experiences and skillsets, we have developed a comprehensive system for labelling issues and PRs. This is an introduction to this standard labelling scheme. 
+description: To facilitate the community in finding ways to contribute that
+match their experiences and skillsets, we have developed a comprehensive system
+for labelling issues and PRs. This is an introduction to this standard
+labelling scheme.
 ---
 body:
 
-Labels consist of three fields, viz. name, description and color. Label names 
-should have a consistent format to aid both filtering within the github UI as 
-well as scanning visually through the list. The following format is the most 
+Labels consist of three fields, viz. name, description and color. Label names
+should have a consistent format to aid both filtering within the github UI as
+well as scanning visually through the list. The following format is the most
 suited to this task (where `⎵` denotes a single space):
 
 ```
@@ -30,6 +33,7 @@ An issue has many different attributes:
 - Skill
 - Talk
 - Friendliness
+
 
 ### *Priority
 
@@ -59,8 +63,8 @@ An issue has many different attributes:
   </table>
 </div>
 
-The priority of an issue is based on its impact, derived from a combination of 
-urgency and importance. This determines the importance of the issue when sprint 
+The priority of an issue is based on its impact, derived from a combination of
+urgency and importance. This determines the importance of the issue when sprint
 planning or deciding which issues to tackle next.
 
 - <span class="gh-label priority-unfavourable">
@@ -79,6 +83,7 @@ planning or deciding which issues to tackle next.
     🟩 priority: low
   </span>
   - **Description:** Low priority and doesn't need to be rushed
+
 
 ### *Status
 
@@ -112,32 +117,24 @@ The status of the issue determines whether it is ready for work or not. Issues
 may not be ready to be worked on for a number of reasons and the maintainers
 must keep updating the labels as the situation evolves.
 
-An issue, at the time of closing can have either the 
+An issue, at the time of closing can have either the
 <span class="gh-label status-light">
   🏁 status: ready for dev
 </span>
-or the 
+or the
 <span class="gh-label status-lighter">
   ⛔️ status: discarded
 </span>
 label based on whether it was closed with or without resolution, respectively.
 
-- <span class="gh-label status-light">
-    🏁 status: ready for dev
+- <span class="gh-label status-darker">
+    🚦 status: awaiting triage
   </span>
-  - **Description:** Ready for work
+  - **Description:** Has not been triaged & therefore, not ready for work
 - <span class="gh-label status-neutral">
     🚧 status: blocked
   </span>
   - **Description:** Blocked & therefore, not ready for work
-- <span class="gh-label status-dark">
-    🧹 status: ticket work required
-  </span>
-  - **Description:** Needs more details before it can be worked on
-- <span class="gh-label status-dark">
-    🏷 status: label work required
-  </span>
-  - **Description:** Needs proper labelling before it can be worked on
 - <span class="gh-label status-lighter">
     ⛔️ status: discarded
   </span>
@@ -146,10 +143,19 @@ label based on whether it was closed with or without resolution, respectively.
     🙅 status: discontinued
   </span>
   - **Description:** Not suitable for work as repo is in maintenance
-- <span class="gh-label status-darker">
-    🚦 status: awaiting triage
+- <span class="gh-label status-dark">
+    🏷 status: label work required
   </span>
-  - **Description:** Has not been triaged & therefore, not ready for work
+  - **Description:** Needs proper labelling before it can be worked on
+- <span class="gh-label status-light">
+    🏁 status: ready for dev
+  </span>
+  - **Description:** Ready for work
+- <span class="gh-label status-dark">
+    🧹 status: ticket work required
+  </span>
+  - **Description:** Needs more details before it can be worked on
+
 
 ### *Goal
 
@@ -158,10 +164,11 @@ represents the impact of the issue on the scope of the software.
 
 - <span class="gh-label goal">⭐ goal: addition</span>
   - **Description:** Addition of new feature
-- <span class="gh-label goal">✨ goal: improvement</span>
-  - **Description:** Improvement to an existing feature
 - <span class="gh-label goal">🛠 goal: fix</span>
   - **Description:** Bug fix
+- <span class="gh-label goal">✨ goal: improvement</span>
+  - **Description:** Improvement to an existing feature
+
 
 ### *Aspect
 
@@ -169,43 +176,48 @@ The aspect of an issue is the side of the project that the issue deals with. A
 single codebase can have multiple aspects to it and knowing which ones will be
 touched helps contributors find relevant issues.
 
-- <span class="gh-label aspect">📄 aspect: text</span>
-  - **Description:** Concerns the textual material in the repository
 - <span class="gh-label aspect">💻 aspect: code</span>
   - **Description:** Concerns the software code in the repository
-- <span class="gh-label aspect">🕹 aspect: interface</span>
-  - **Description:** Concerns end-users' experience with the software
+- <span class="gh-label aspect">📖 aspect: docs</span>
+  - **Description:** Concerns the documentation in the repository
 - <span class="gh-label aspect">🤖 aspect: dx</span>
   - **Description:** Concerns developers' experience with the codebase
+- <span class="gh-label aspect">🕹 aspect: interface</span>
+  - **Description:** Concerns end-users' experience with the software
+- <span class="gh-label aspect">📄 aspect: text</span>
+  - **Description:** Concerns the textual material in the repository
+
 
 ### Skill
 
-The technical skills a person is required to possess to work on the issue. 
+The technical skills a person is required to possess to work on the issue.
 Skills are a special type of label that vary by repository. Issues may not have
 a skill tag if no special skills are required.
 
 - <span class="gh-label skill">💪 skill: &lt;skill name&gt;</span>
   - **Description:** Requires proficiency in '&lt;skill name&gt;'
 
+
 ### Talk
 
 Issues with interaction labels do not entail any work to be done on the
-repository. They are for Q&A, RFCs and any other form of discussions. While both
-of these may appear to be too similar, triage permissions are granted to
+repository. They are for Q&A, RFCs and any other form of discussions. While
+both of these may appear to be too similar, triage permissions are granted to
 collaborators who might not have the answers to questions but by labelling them
 as such, they might draw a faster response from an experienced contributor who
-does. _In the future this category might be rendered redundant by GitHub 
+does. _In the future this category might be rendered redundant by GitHub
 Discussions and will be removed._
 
-- <span class="gh-label talk">❓ talk: question</span>
-  - **Description:** Can be resolved with an answer
 - <span class="gh-label talk">💬 talk: discussion</span>
   - **Description:** Open for discussions and feedback
+- <span class="gh-label talk">❓ talk: question</span>
+  - **Description:** Can be resolved with an answer
+
 
 ### Friendliness
 
-The level of friendliness a particular issue is the valency of the issue 
-towards contributions from the community. Some issues provide a great 
+The level of friendliness a particular issue is the valency of the issue
+towards contributions from the community. Some issues provide a great
 introduction while others require a little more familiarity with the codebase.
 _These issues do not have the category prefix as two of them are special labels
 recognized by GitHub. The special ones don't have emojis either._
@@ -217,20 +229,18 @@ recognized by GitHub. The special ones don't have emojis either._
 - <span class="gh-label friendliness">🔒 staff only</span>
   - **Description:** Restricted to CC staff members
 
+
 ### Miscellaneous
 
 - <span class="gh-label miscellaneous">
     🤯 ノಠ益ಠノ彡┻━┻
   </span>
   - **Description:** Aaargh!
-- <span class="gh-label hacktoberfest">
-    Hacktoberfest
-  </span>
-  - **Description:** Good issues for Hacktoberfest participants
 - <span class="gh-label invalid">
     invalid
   </span>
   - **Description:** Inappropriate or invalid (ex. Hacktoberfest spam)
+
 
 ## Usage rules
 
@@ -238,7 +248,7 @@ In the above categories, some are marked with an `*` sign. Those are mandatory
 categories and every issue is required to have at least one label from those
 categories.
 
-Only issues labelled with 
+Only issues labelled with
 <span class="gh-label has-text-white" style="background-color: #333333;">
   🚦 status: awaiting triage
 </span>
@@ -246,4 +256,4 @@ are allowed to not have all mandatory labels (seeing as they have not been
 triaged yet).
 
 Categories not marked with an `*` are optional and it is upto the discretion of
-the maintainers to have apply labels from those categories to issues. 
+the maintainers to have apply labels from those categories to issues.
