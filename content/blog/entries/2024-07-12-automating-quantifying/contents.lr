@@ -23,12 +23,12 @@ body:
 Quantifying the Commons, an initiative emerging from the UC Berkeley Data Science Discovery Program, 
 aims to quantify the frequency of open domain and CC license usage for future accessibility and analysis purposes 
 (Refer to the initial CC article for Quantifying **[here!][quantifying]**). 
-To date, the scope of the previous project advancements had not included automation or combined reporting, 
+To date, the scope of the previous project advancements has not included automation or combined reporting, 
 which is necessary to minimize the potential for human error and allow for more timely updates, 
 especially for a system that engages with substantial streams of data. <br>
 
 As a selected developer for Google Summer of Code 2024, 
-my goal for this summer is to develop an automation software for data gathering, flow, and report generation, 
+my goal this summer is to develop automation software for data gathering, flow, and report generation, 
 ensuring that reports are never more than 3 months out-of-date. This blog post serves as a technical journal
 for my endeavor till the midterm evaluation period. Part 2 will be posted after successful completion of the
 entire summer program.  
@@ -67,17 +67,17 @@ later on. As a result, I began implementing the software for the **Google Custom
 data source, which has the largest number of data retrieval potential among all the other sources.
 
 ### III. Directory Setup + Code Implementation
-Based on the DFD, **[Timid Robot][timid-robot]** (my mentor) and I identifed the directory process to be as such: within our `scripts` directory, we would have
-separate sub-directories to reflect the phases of data flow, `1-fetched`, `2-processed`, `3-reports`. The code would then be
-set up to interact in chronological order. Additionally, a shared directory was implemented to optimize similar functions and paths. <br>
+Based on the DFD, **[Timid Robot][timid-robot]** (my mentor) and I identified the directory process to be as such: within our `scripts` directory, we would have
+separate sub-directories to reflect the phases of data flow, `1-fetch`, `2-process`, `3-report`. The code would then be
+set up to interact between systems in chronological order. Additionally, a shared directory was implemented to optimize similar functions and paths. <br>
 
-**`1-fetched`**
+**`1-fetch`**
 
 As I mentioned in the previous sections, starting to code the initial file was a challenge, as I had to learn how to use
 new technologies and libraries on-the-go. As a matter of fact, my struggles began when I couldn't even import the 
 shared module correctly. However, slowly but surely, I found that consistent research of available documentation as well
 as constant insights from Timid Robot made it so that I finally understood everything that I was working with. There were
-a few specific things that helped me especially, and I would like to share them here incase it helps any software
+a few specific things that helped me especially, and I would like to share them here in case it helps any software
 developer reading this post:
 
 1. **Reading Technical Whitepapers:** As I mentioned earlier, I studied a technical whitepaper by AWS to help me design my DFD.
@@ -92,7 +92,7 @@ was the closest thing to my own project that I could reference. Although not all
 there were many aspects of the codebase I found very helpful to take inspiration from, especially when online research led to a
 dead end. 
 
-3. **Writing Documentation for the Code:** As a part of this project, I assigned myself the task of developing a documentation for
+3. **Writing Documentation for the Code:** As a part of this project, I assigned myself the task of developing documentation for
 the Automating Quantifying the Commons project (**[can be accessed here!][documentation]**). Heavily inspired by the "rubber duck debugging"
 method, where explaining the code or problem step-by-step to someone or something will make the solution present itself, I decided to create documentation
 for future developers to reference, in which I break down the code step-by-step to explain each module or function. I found that in
@@ -106,25 +106,66 @@ it did cause a crash, since the API query-per-day limit was crossed with one scr
 the script, I learned a very useful trick when it comes to handling big data: 
 to avoid hitting the query limit while testing, you can replace the actual API calls 
 with logging statements to show the parameters being used. This helps you 
-understand the outputs without actually consuming API quota, and it can help you identify bugs easier. <br>
+understand the outputs without actually consuming API quota, and it can help you identify bugs more easily. <br>
+
+A notable aspect of this software is the directory organization. Throughout the process, I designed it so that the datasets are automatically stored within their
+respective quarter's directories rather than being stored altogether. This ensures efficient organization in order for users to easily access in the future, 
+especially when the number of datasets multiplies.
 
 Upon successful completion of basic data retrieval and state management in Phase 1, 
 I felt much more confident about the trajectory of this project, and implementing 
 future steps and fixing new bugs became progressively easier.
 
-**`2-processed`**
+**`2-process`**
 
-coming soon!
+The long-term goal of the Quantifying project is to have comprehensive datasets for each quarter, encompassing
+license data that scales up to millions and even billions. For the `2-process` phase specifically, the aim is 
+to analyze and compare data between quarters to be able to display in the reports. However, given our Google Custom Search
+API constraints as well as the time period we're working with for the GSoC period (most of this period is mainly
+2024Q3), it is not possible to have a fully completed Phase 2. However, in order to deploy as complete of an automation software as possible,
+I have set up a basic psuedocode that can be implemented
+and built upon by future development efforts as more data is collected in the upcoming quarters/years.
 
-**`3-reports`**
+**`3-report`**
 
-coming soon!
-- accessibility in design (basic)
+As mentioned earlier, the Google Custom Search API constraints made it difficult to create a comprehensive and detailed dataset, so I plan to 
+initiate the development of a more fletched-out Google Custom Search post-GSoC, when more data can be accumulated (discussed further in the next section).
+As of now, there are three main completed report visualization schemes: **(1)** Reports by Country, **(2)** Reports by License Type,
+and **(3)** Reports by Language. Although the visualizations are basic in design, I made sure to incorporate accessibility into the 
+visualizations for a better user experience. This included adding elements like labels on top of the bars with specific number counts for better
+readability and understanding of the reports. In addition, I included three key features in the reports codebase to cater to various possible 
+needs of the report users.
+
+1. **Key Feature #1:** I implemented command line arguments in which users can choose any quarter to visualize, as I believe this would be useful
+for anyone in need of individual reports from previous quarters, not just reports from this quarter.
+2. **Key Feature #2:** Successfully stores reports into the data reports directory specific to each quarter for optimal organization (similar to the
+dataset organization in Phase 1). In this way, 
+reports from one quarter will not be mixed up with reports from another quarter, making it easier for users to navigate and use.
+3. **Key Feature #3:** The program automatically generates and/or updates an individual `README` file for each quarter's reports. This `README` organizes
+all generated report images within that quarter into one page, alongside basic report descriptions.
 
 ## Mid-Program Conclusions and Upcoming Tasks
 ***
 
-Coming soon!
+Overall, my understanding and skillset for this project increased ten-fold after completing all the phases for Google Custom Search. 
+Going into the second half of the Google Summer of Code program, I expect that I will complete the future data sources at a more efficient and faster rate,
+given the license data sizes and my heightened expertise. In fact, as of now (the midterm evaluation point), I have completed
+a relatively detailed Phase 1 for Flickr, which only involves 10 licenses. My biggest takeaway from the first half of the coding period is that rather than developing
+a basic querying process and adding on later, it's easier to start off with a complex and detailed version before moving on to Phases 2 and 3. Additionally, using
+the `shared` module within the scripts can be very beneficial to simplify the coding process. 
+
+In the second half of the GSoC program, I plan to keep both of these takeaways in mind when developing scripts for the rest of the data sources. On a formal level,
+the final goal for the end of GSoC 2024 is to have a working codebase for Phases 1, 2, and 3 of all data sources, 
+including a completed automation setup for these scripts. Due to the effectiveness of the current directory organization and report generation features, 
+I will be standardizing them across all data sources.
+
+Finally, after the software is complete to the extent that is possible during the GSoC period, 
+I plan to raise issues in the repository respective to all the next steps that
+could be taken post-GSoC by open-source developers for a more comprehensive software system.
+
+So far, my journey at Creative Commons has significantly enhanced my skillset as a software developer, and I have never felt more motivated to take on more challenging tasks. 
+I'm looking forward to more levels of growth and accomplishments in the second half of the program. 
+I'll be back with Part 2 at the end of the summer with an updated, completed project!
 
 ## Additional Readings
 ***
