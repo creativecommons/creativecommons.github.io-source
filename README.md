@@ -66,7 +66,7 @@ To install these, execute the following commands:
   1. [Installing Pipenv][pipenvinstall]
   2. [Install Node.js][nodeinstall] (or see the
      [detailed instructions][nodedetailed])
-  3. Upate packges:
+  3. Update packges:
         ```
         sudo apt update
         ```
