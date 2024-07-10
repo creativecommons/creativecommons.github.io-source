@@ -11,7 +11,7 @@ community
 ---
 author: naishasinha
 ---
-pub_date: 2024-07-12
+pub_date: 2024-07-10
 ---
 body:
 
@@ -55,7 +55,9 @@ a **[technical whitepaper by Amazon Web Services (AWS)][AWS-whitepaper]** on Dis
 my own DFD. As I was still relatively new to the codebase, it helped me simplify
 the current system into manageable components and better understand how to implement the rest of the project.
 
-[insert DFD here with explanation of directory setup]
+![DFD](DFD.png)
+This was the initial layout for the data directory flow; however, the more I delved into the development process,
+the more the steps changed. I will present the final directory flow in Part 2 at the end of the program.
 
 ### II. Identifying the First Data Source to Target
 The main approach for implementing this project was to target one specific data source and complete its data extraction, analysis,
