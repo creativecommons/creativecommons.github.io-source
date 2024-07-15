@@ -1,11 +1,8 @@
-title: GSoC 2024 Midterm Review: Local Environment Creation using Ansible and Docker
+title: Local Environment Creation using Ansible and Docker
 ---
 categories:
 gsoc-2024
 gsoc
-devops
-ansible
-docker
 open-source
 community
 ---
@@ -17,9 +14,11 @@ pub_date: 2024-07-18
 ---
 body:
 
-This project explores how Creative Commons(CC)ment. It is part of Google Summer of Code (GSoC) 2024.
+This project explores how Creative Commons
+(CC) uses Ansible, an automated system administration tool, to build a local development environment. It is part of Google Summer of Code (GSoC) 2024.
+
 <div style="text-align: center;">
-    <img src="gsoc-banner.png" alt="GSoC 2024" style="max-height: 150px;">
+    <img src="gsoc-banner.png" alt="GSoC 2024" style="max-height: 200px;">
 </div>
 
 # Project Objective
@@ -32,6 +31,7 @@ This project explores how Creative Commons(CC)ment. It is part of Google Summer 
 Before this project, I didn't have exposure to professional DevOps practices, so this project has been a significant learning experience for me. It focuses on the deployment phase of the DevOps lifecycle, particularly provisioning (setting up servers) and configuration management (managing software and settings). During our early stage exploration, we performed manual provisioning and concentrated on utilizing Ansible for configuration management. Our primary goal is to containerize existing applications, packaging them with their dependencies into Docker containers. Ansible itself operates within a container and manages other containers via SSH.
 
 ![Server Structure](server-structure.png)
+*This architecture diagram is designed by my mentor and project lead [Shafiya][Shafiya].*
 
 ### Week-by-Week Progress
 
@@ -39,7 +39,7 @@ I began by following the [Docker][Docker] and [Ansible][Ansible] setup guides fr
 
 In the second week, I separated the existing [`index-dev`][index-dev] repository, which is the local development environment for current CreativeCommons.org, into individual containers for the `web` server and `database` server in [Setting Up Ansible Environment and Hosts][PR#11]. At the same time, I started investigating the setup of a [Bastion server][Bastion] and its integration into our system, aiming to enforce a security-focused approach for controlling access to a private network.
 
-In the third week, I established SSH access between the local machine and `web`, `database`, and `ansible` servers with my mentor [Shafiya][Shafiya]'s guidance in [Setting Up SSH For `web` and `database` and Integrate with `ansible`][PR#12]. This step was crucial for enabling secure, automated management of the containers from the Ansible container. One important lesson I learned from Shafiya is to build things from scratch, making frequent commits that document your thought process, rather than trying to put everything together at once and complicating matters.
+In the third week, I established SSH access between the local machine and `web`, `database`, and `ansible` servers with my mentor Shafiya's guidance in [Setting Up SSH For `web` and `database` and Integrate with `ansible`][PR#12]. This step was crucial for enabling secure, automated management of the containers from the Ansible container. One important lesson I learned from Shafiya is to build things from scratch, making frequent commits that document your thought process, rather than trying to put everything together at once and complicating matters.
 
 
 In the fourth week, I started writing Ansible playbooks and moved several configurations originally located in the `web` Dockerfile to the playbook. Combining Dockerfiles and Ansible playbooks is a common best practice: **Dockerfiles are responsible for building the base image, including the OS and basic tools, while Ansible playbooks handle the application and service configurations.** However, this part took longer than expected, so we had to extend the work for one more week. Looking back, it was likely because I had no previous experience in developing using LAMP (Linux, Apache, MySQL, PHP) stack, and didn't know how to properly configure each component, which prevented me from successfully launching the services. As a result, I had to review the `index-dev` repo and what Shafiya and I did in the previous week, and finally got the service to start up correctly in [Creating A Playbook to Configure Wordpress Over Apache2][PR#13].
