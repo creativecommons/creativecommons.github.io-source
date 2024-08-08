@@ -1,0 +1,41 @@
+title: Automating Quantifying the Commons: Part 2
+---
+categories:
+gsoc-2024
+gsoc
+big-data
+quantifying-the-commons
+cc-software
+open-source
+community
+---
+author: NaishaSinha
+---
+pub_date: 2024-07-10
+---
+body:
+
+![GSoC 2024](Automating - GSoC Logo.png)
+
+## Introduction
+***
+
+incoming
+
+## Additional Readings
+***
+
+- Automating Quantifying the Commons: Part 1 | Author: Naisha Sinha | Aug. 2024
+- [Data Science Discovery: Quantifying the Commons][quantifying] | Author: Dun-Ming Huang (Brandon Huang) | Dec. 2022
+
+[quantifying]: https://opensource.creativecommons.org/blog/entries/2022-12-07-berkeley-quantifying/
+[logging]: https://github.com/creativecommons/quantifying/pull/97
+[AWS-whitepaper]: https://docs.aws.amazon.com/whitepapers/latest/microservices-on-aws/distributed-data-management.html
+[meta-whitepaper]: https://engineering.fb.com/2024/05/22/data-infrastructure/composable-data-management-at-meta/
+[timid-robot]: https://opensource.creativecommons.org/blog/authors/TimidRobot/
+[documentation]: https://unmarred-gym-686.notion.site/Automating-Quantifying-the-Commons-Documentation-441056ae02364d8a9a51d5e820401db5?pvs=4
+
+
+
+
+
