@@ -1,0 +1,64 @@
+title: Local Environment Creation using Ansible and Docker
+---
+categories:
+gsoc-2024
+gsoc
+open-source
+community
+---
+author: amandayclee
+---
+series: gsoc-2024-ansible-local-dev
+---
+pub_date: 2024-07-18
+---
+body:
+
+This project explores how Creative Commons
+(CC) uses Ansible, an automated system administration tool, to build a local development environment. It is part of Google Summer of Code (GSoC) 2024.
+
+<div style="text-align: center;">
+    <img src="gsoc-banner.png" alt="GSoC 2024" style="max-height: 200px;">
+</div>
+
+# Project Objective
+## Project Background
+
+[This project][project] aims to establish a local development environment that closely mirrors our production setup at CC. Currently, CC uses Salt Stack for configuration management. However, the team is evaluating other tools for various reasons. In this project, we explored Ansible, renowned for its simplicity and robust automation capabilities. We combined Ansible with Docker containers to streamline and secure development processes, creating lightweight, isolated environments for running applications.
+
+## Challenges and Learning Opportunities
+
+Before this project, I didn't have exposure to professional DevOps practices, so this project has been a significant learning experience for me. It focuses on the deployment phase of the DevOps lifecycle, particularly provisioning (setting up servers) and configuration management (managing software and settings). During our early stage exploration, we performed manual provisioning and concentrated on utilizing Ansible for configuration management. Our primary goal is to containerize existing applications, packaging them with their dependencies into Docker containers. Ansible itself operates within a container and manages other containers via SSH.
+
+![Server Structure](server-structure.png)
+*This architecture diagram is designed by my mentor and project lead [Shafiya][Shafiya].*
+
+### Week-by-Week Progress
+
+I began by following the [Docker][Docker] and [Ansible][Ansible] setup guides from the official documentation to successfully deploy an initial `ansible` container in [Creating Initial Structure for Ansible][PR#9]. This step was crucial for gaining a foundational understanding of Ansible's basic functionality and setup within a containerized environment.
+
+In the second week, I separated the existing [`index-dev`][index-dev] repository, which is the local development environment for current CreativeCommons.org, into individual containers for the `web` server and `database` server in [Setting Up Ansible Environment and Hosts][PR#11]. At the same time, I started investigating the setup of a [Bastion server][Bastion] and its integration into our system, aiming to enforce a security-focused approach for controlling access to a private network.
+
+In the third week, I established SSH access between the local machine and `web`, `database`, and `ansible` servers with my mentor Shafiya's guidance in [Setting Up SSH For `web` and `database` and Integrate with `ansible`][PR#12]. This step was crucial for enabling secure, automated management of the containers from the Ansible container. One important lesson I learned from Shafiya is to build things from scratch, making frequent commits that document your thought process, rather than trying to put everything together at once and complicating matters.
+
+
+In the fourth week, I started writing Ansible playbooks and moved several configurations originally located in the `web` Dockerfile to the playbook. Combining Dockerfiles and Ansible playbooks is a common best practice: **Dockerfiles are responsible for building the base image, including the OS and basic tools, while Ansible playbooks handle the application and service configurations.** However, this part took longer than expected, so we had to extend the work for one more week. Looking back, it was likely because I had no previous experience in developing using LAMP (Linux, Apache, MySQL, PHP) stack, and didn't know how to properly configure each component, which prevented me from successfully launching the services. As a result, I had to review the `index-dev` repo and what Shafiya and I did in the previous week, and finally got the service to start up correctly in [Creating A Playbook to Configure Wordpress Over Apache2][PR#13].
+
+### Communication and Collaboration in Open Source
+The CC team, including mentor Shafiya and team members [Timid Robot][Timid Robot] and [Sara][Sara], provided valuable insights into system design and broader architectural considerations. Weekly sync meetings and the flexibility to schedule 1:1 sessions facilitated smooth progress. The team provided clear documentation and actively engaged in public Slack channels, making it easy for any contributor to get involved and stay informed.
+
+## Conclusion and Next Steps
+Moving forward, the focus will be on refining the Ansible playbooks, addressing any bugs or issues, and working on security and scalability concerns. The goal is to deliver a robust and efficient local development environment that closely mirrors the production setup. I'll continue contributing to the community and providing detailed documentation to support future developers in this project.
+
+[Ansible]: https://docs.ansible.com/ansible/latest/getting_started/index.html
+[Docker]: https://docs.docker.com/guides/getting-started/
+[index-dev]: https://github.com/creativecommons/index-dev-env
+[Bastion]: https://ovh.github.io/the-bastion/index.html
+[Shafiya]: https://opensource.creativecommons.org/blog/authors/shafiya/
+[Timid Robot]: https://opensource.creativecommons.org/blog/authors/TimidRobot/
+[Sara]: https://opensource.creativecommons.org/blog/authors/sara/
+[project]: https://github.com/creativecommons/ansible-dev
+[PR#9]: https://github.com/creativecommons/ansible-dev/pull/9
+[PR#11]: https://github.com/creativecommons/ansible-dev/pull/11
+[PR#12]: https://github.com/creativecommons/ansible-dev/pull/12
+[PR#13]: https://github.com/creativecommons/ansible-dev/pull/13
