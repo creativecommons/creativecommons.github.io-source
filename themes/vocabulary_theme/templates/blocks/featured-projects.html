@@ -15,7 +15,7 @@
           <article class="card entry-post vertical project-index">
             <div class="card-content">
               <h4 class="card-title b-header"><a href="{{ repo.url }}">{{ repo.english_name }}</a></h4>
-              <a class="button is-text tiny site-link" href="{{ repo.website }}">
+              <a class="button is-text tiny site-link" href="{{ repo.website or repo.url }}">
                 <span>Visit site</span>
                 <i class="icon external-link"></i>
               </a>
