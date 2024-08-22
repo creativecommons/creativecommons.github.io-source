@@ -28,57 +28,57 @@ After completing the Midterm milestone, the focus was to utilize the learnings a
 
 ## Completing The Timeline Tasks - Weeks 7, 8 and 9
 
-These three weeks were planned with the aim of completing the timeline tasks to focus on further goals of the projects. The UI-related tasks included Submission page, A guide for the newcomers to submit resources, and working on the filters.
+These three weeks were planned with the aim of completing the timeline tasks to focus on further goals of the projects. The `UI-related` tasks included Submission page, A guide for the newcomers to submit resources, and working on the filters.
 
 ### Submission Page UI Changes
 
-The submission.html page is responsible for the area where contributors come to contribute to the resource archive with their resources about Creative Commons or Open sharing of knowledge in general. 
+The `submission.html` page is responsible for the area where contributors come to contribute to the resource archive with their resources about Creative Commons or Open sharing of knowledge in general. 
 With the help of the [PR#315](https://github.com/creativecommons/cc-resource-archive/pull/315), The following tasks were performed : 
-- adds a new context to the element, named submit-page.
-- refactors the whole html code for submission.html with semantic code.
-- makes the page responsive, by adding media queries wherever needed.
+- adds a new context to the element, named `submit-page`.
+- refactors the whole html code for `submission.html` with semantic code.
+- makes the page responsive, by adding `media queries` wherever needed.
 - adds a step by step written guide including images, for submission of resource for new github users.
 - ensures the page meets current CC aesthetics.
 - adds documentation for better understanding and maintainability.
-- formats the files with prettier code formatter.
+- formats the files with `prettier code formatter`.
 
 ### Submission guide For Newcomers
 
-For people not familiar with GitHub or Opening Pull Requests on GitHub, a comprehensive guide was added with step by step process to submit a resource to the resource archive. The guide included instructions to fork, clone the repository and also Open the PR by committing to the repository. This was accompanied with well-labeled images for better understandability. This work was achieved with the help of [PR#315](https://github.com/creativecommons/cc-resource-archive/pull/315). This was the final addition to the submission.html page and the whole tasks related to this page were completed by this.
+For people not familiar with GitHub or Opening `Pull Requests` on GitHub, a comprehensive guide was added with step by step process to submit a resource to the resource archive. The guide included instructions to fork, clone the repository and also Open the PR by committing to the repository. This was accompanied with well-labeled images for better understandability. This work was achieved with the help of [PR#315](https://github.com/creativecommons/cc-resource-archive/pull/315). This was the final addition to the `submission.html` page and the whole tasks related to this page were completed by this.
 
 ### Filters Placement and Functioning
 
-The resource archive utilizes filters to select similar resources. These filters are grouped in the form of three categories, TOPIC, MEDIUM and LANGUAGE. Each category has some filter options to choose from. In the previous iteration of the resource archive site, the category filters were placed in the middle of the page, and they also did not have any icon for the indication of a selected filter. 
+The resource archive utilizes filters to select similar resources. These filters are grouped in the form of three categories, `TOPIC`, `MEDIUM` and `LANGUAGE`. Each category has some filter options to choose from. In the previous iteration of the resource archive site, the category filters were placed in the middle of the page, and they also did not have any icon for the indication of a selected filter. 
 The [PR#316](https://github.com/creativecommons/cc-resource-archive/pull/316) makes the filters responsiveness, and more easy to access by performing the following tasks:
-- adds semantic html to index.html and all.html
-- removes the filters from index.html
+- adds semantic html to `index.html` and `all.html`
+- removes the filters from `index.html`.
 - removes inline styles from html pages.
-- adds a new context to listing.html
-- works on the see-all-resources link
-- adds checkbox in place of [x] in category filters.
-- makes the filters as a sidebar
-- makes the whole category filters responsive
-- Re-works on the media-query breakpoints
-- formats the code with prettier code formatter
-- adds documentation for the index.html, all.html and style.css files.
+- adds a new context to `listing.html`.
+- works on the `see-all-resources` link.
+- adds checkbox in place of `[x]` in category filters.
+- makes the filters as a sidebar.
+- makes the whole category filters responsive.
+- Re-works on the `media-query` breakpoints.
+- formats the code with `prettier code formatter`.
+- adds documentation for the `index.html`, `all.html` and `style.css` files.
 
 ## Stretch Goals And Ideation - Weeks 10, 11 and 12
 
-After the completion of the tasks assigned in the timeline, we shifted the focus to the Stretch goals suggested in my proposal, and also by my mentor ([Sara](https://github.com/possumbilities)). There were 3 major goals that were considered for a discussion. These were, Implementation of Search Functionality through [Lunr.js](https://lunrjs.com/docs/index.html), Improving accessibility through the inclusion of [ARIA](https://www.w3.org/WAI/standards-guidelines/aria/) attributes to the elements in the website, and The use of [GitHub API](https://docs.github.com/en/rest?apiVersion=2022-11-28) to automate the process of submission of resources to the site. Out of these three, the goals that were to be implemented were ARIA accessibility and LUNR.js search functionality. This was decided keeping in mind the scope of the project and the desired limit of complexity we wanted the site to have at this point.
+After the completion of the tasks assigned in the timeline, we shifted the focus to the Stretch goals suggested in my proposal, and also by my mentor ([Sara](https://github.com/possumbilities)). There were 3 major goals that were considered for a discussion. These were, Implementation of Search Functionality through [Lunr.js](https://lunrjs.com/docs/index.html), Improving accessibility through the inclusion of [ARIA](https://www.w3.org/WAI/standards-guidelines/aria/) attributes to the elements in the website, and The use of [GitHub API](https://docs.github.com/en/rest?apiVersion=2022-11-28) to automate the process of submission of resources to the site. Out of these three, the goals that were to be implemented were `ARIA` accessibility and `LUNR.js` search functionality. This was decided keeping in mind the scope of the project and the desired limit of complexity we wanted the site to have at this point.
 
 ### Aria Accessibility and Search Functionsality - LUNR.js
 
-My mentor suggested that I read about WAI-ARIA accessibility to gain insights about the process and better select the number of attributes and features we need to implement. I studied about this thoroughly and also watched some videos on the topic. I realized about the importance of having these features in our site and how greatly they impact the accessibility for different users. 
-Apart from this, we wanted to implement a search feature for the resources with the help of a lightweight searching library like LUNR.js. I started to read about the library and its execution process from various sources, majorly from the [LUNR Documentation](https://lunrjs.com/docs/index.html) present in their site. After reading it and a bit of panning, I started to code for this feature. The goal was to keep the UI similar to the CC Search feature present in the header of many Creative Commons sites.
+My mentor suggested that I read about `WAI-ARIA` accessibility to gain insights about the process and better select the number of attributes and features we need to implement. I studied about this thoroughly and also watched some videos on the topic. I realized about the importance of having these features in our site and how greatly they impact the accessibility for different users. 
+Apart from this, we wanted to implement a search feature for the resources with the help of a lightweight searching library like `LUNR.js`. I started to read about the library and its execution process from various sources, majorly from the [LUNR Documentation](https://lunrjs.com/docs/index.html) present in their site. After reading it and a bit of panning, I started to code for this feature. The goal was to keep the UI similar to the CC Search feature present in the header of many Creative Commons sites.
 
 ## Issues Solved From Midterm To End
 
 The issues relevant to the project which have been solved in the period between midterm and final week are listed below:
-- [#52](https://github.com/creativecommons/cc-resource-archive/issues/52) - use checkbox for resourcenavtopicknown
+- [#52](https://github.com/creativecommons/cc-resource-archive/issues/52) - use checkbox for `resourcenavtopicknown`
 - [#61](https://github.com/creativecommons/cc-resource-archive/issues/61) - change UI of the homepage
 - [#72](https://github.com/creativecommons/cc-resource-archive/issues/72) - UI refinement of the website
 - [#119](https://github.com/creativecommons/cc-resource-archive/issues/119) - adding icon on filter text
-- [#274](https://github.com/creativecommons/cc-resource-archive/issues/274) - Improve the UI of submission page with vocabulary
+- [#274](https://github.com/creativecommons/cc-resource-archive/issues/274) - Improve the UI of submission page with `vocabulary`
 - [#306](https://github.com/creativecommons/cc-resource-archive/issues/306) - Language List Columns Collapsing on Website 
 - [#310](https://github.com/creativecommons/cc-resource-archive/issues/310) - Add a step by step guide for submitting resources
 - [#311](https://github.com/creativecommons/cc-resource-archive/issues/311) - html markup contains inline styles
@@ -88,7 +88,7 @@ The issues relevant to the project which have been solved in the period between 
 
 ## Future Plans And Execution
 
-The future plans include the execution of the Stretch Goals we discussed in the later weeks of the project. Firstly, I will be working on the LUNR.js search functionality and will be trying to complete this in the 13th week, and also the contributions on the ARIA accessibility are welcome on GitHub. Also, apart from these fixed goals, I aim to remain engaged with the community for the years ahead. I have planned to keep contributing to the organization - [Creative Commons](https://github.com/creativecommons), and especially the repository - [CC-Resource-Archive](https://github.com/creativecommons/cc-resource-archive) for as long as I can. I will be contributing in the form of issues, pull requests and also code reviews. This is the first organization I got to connect professionally with, and I aim to continue to be a part of this mission of Sharing of Open Knowledge.
+The future plans include the execution of the Stretch Goals we discussed in the later weeks of the project. Firstly, I will be working on the `LUNR.js` search functionality and will be trying to complete this in the 13th week, and also the contributions on the `ARIA` accessibility are welcome on GitHub. Also, apart from these fixed goals, I aim to remain engaged with the community for the years ahead. I have planned to keep contributing to the organization - [Creative Commons](https://github.com/creativecommons), and especially the repository - [CC-Resource-Archive](https://github.com/creativecommons/cc-resource-archive) for as long as I can. I will be contributing in the form of issues, pull requests and also code reviews. This is the first organization I got to connect professionally with, and I aim to continue to be a part of this mission of Sharing of Open Knowledge.
 
 ## Personal Growth And Thoughts On Completion
 
