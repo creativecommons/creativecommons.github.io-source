@@ -1,0 +1,52 @@
+title: Local Environment Creation using Ansible and Docker: Part 2
+---
+categories:
+gsoc-2024
+gsoc
+open-source
+community
+---
+author: amandayclee
+---
+series: gsoc-2024-ansible-local-dev
+---
+pub_date: 2024-08-23
+---
+body:
+
+<div style="text-align: center;">
+    <img src="gsoc-banner.png" alt="GSoC 2024" style="max-height: 200px;">
+</div>
+
+# Midterm Recap
+I successfully created customized Dockerfiles and a docker-compose.yml for `web`, `database`, and `ansible` for the past 6 weeks. However, to better replicate our production environment, which uses an AWS RDS instance, we decided to remove the customized Dockerfile for database, as SSH access is not required for the database host in this setup.
+
+### Week-by-Week Progress
+Following our initial architecture design, I began working on building a bastion server. One of the key lessons I learned during this process was the value of simplicity. For instance, I had to  assess the trade-offs between creating a custom Dockerfile and using a prebuilt image maintained by the community. In the world of DevOps, some terms are often loosely defined. For example, during my research on bastion servers, I encountered various use cases such as integrating MFA, logging, and other security features. However, these were beyond the scope of our current project.
+
+For this project, we are building a bastion server primarily to serve as a secure gateway for managing access to internal servers. This specific requirement dictated a more straightforward implementation. In this context, I also came across the concept of "YAGNI" (You Aren’t Gonna Need It), which reminds us to avoid adding unnecessary features until they are actually required. Along the way, while working with Creative Commons (CC), I learned an important lesson: **with so many tools, software, and technologies available, it’s crucial to focus on implementing configurations and solutions that are tailored specifically to our environment and requirements.**
+
+Before setting up the bastion server, it's also very important to understand the different SSH configuration options and choose the one that best meets our security and convenience needs. For instance, passwordless SSH enhances security and convenience by enabling SSH key-based authentication, but it requires public key configuration on each server, which can be cumbersome in larger environments. SSH Agent, on the other hand, improves the security and management of private keys by keeping them in memory across multiple connections. However, it requires running the SSH Agent locally and loading keys, adding some complexity to the setup. We ultimately decided to use ProxyJump because it offers centralized control and simplifies multi-hop connections through a bastion server, which provides strong security and convenience. While ProxyJump requires moderate configuration of both the bastion and target servers, it excels in supporting multi-hop connections and ensuring secure access to internal servers.
+
+We finalized these details in the [Bastion Container Creation][PR#14].
+
+The next step was to explore the best approach for integrating Ansible with Docker to closely mirror a production environment. We maintained our manual provisioning approach and focused on three key integration strategies.
+
+1. Option 1 involves having Ansible manage containers directly through the Docker network, where all services (`bastion`, `ansible`, `web`, `db`) operate within the same network. Ansible handles the management of the web and db containers using their container names or IPs, with the bastion server acting as a jump host only when necessary. This approach treats each container as an independent host, with Ansible responsible for installing and configuring the necessary software.
+2. Option 2 leverages the `community.docker.docker_container_exec` module to execute commands within Docker containers via Ansible playbooks. This method allows for application installation and configuration tasks to be performed directly inside the containers.
+3. Option 3 involves running only the bastion and Ansible services in Docker, while using Ansible to provision the web and db services. Ansible connects to these containers through the bastion server, allowing it to manage and configure the web and db as external resources.
+
+When comparing these options, Option 1 manages applications within containers at the application layer, offering fine-grained control and simplifying setup in a unified environment. Option 2 operates at the Docker layer, providing greater flexibility and portability, ideal for quick deployments. Option 3 provides the best isolation between services, closely simulating a production environment with enhanced security, but it requires a more complex setup.
+
+After careful consideration, we decided to proceed with Option 1, which shifts most configuration tasks from the Dockerfile to Ansible playbooks. As I write this post, I am in the process of implementing these playbooks to configure the containers. You can follow the ongoing development in this [repository][Repo].
+
+# Acknowledgments
+This experience has provided me with practical skills in implementing real-world DevOps projects. I truly enjoy learning all this knowledge outside of my daily job and dedicating my personal time to something meaningful, which is often not covered in school. If this project succeeds as a proof of concept, I can gather more feedback from users, specifically open-source developers, to enhance this setup. I mentioned this in my previous blog post, but I can’t emphasize enough how grateful I am to [Shafiya][Shafiya], [Timid Robot][Timid Robot], and [Sara][Sara] for their guidance, and to Google Summer of Code for giving me the opportunity to contribute to open source. As a content creator who both produces and enjoys various open content online, I am incredibly excited and honored to contribute my technical expertise to CC.
+Thanks to CC’ impact on society, I am committed to continually advancing my technical skills and supporting this organization in the long term. I look forward to continuing my involvement in the open-source community!
+
+
+[PR#14]: https://github.com/creativecommons/ansible-dev/pull/14
+[Repo]: https://github.com/creativecommons/ansible-dev/
+[Shafiya]: https://opensource.creativecommons.org/blog/authors/shafiya/
+[Timid Robot]: https://opensource.creativecommons.org/blog/authors/TimidRobot/
+[Sara]: https://opensource.creativecommons.org/blog/authors/sara/
