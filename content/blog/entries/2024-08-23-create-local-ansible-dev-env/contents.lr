@@ -40,7 +40,7 @@ When comparing these options, Option 1 manages applications within containers at
 
 After careful consideration, we decided to proceed with Option 1, which shifts most configuration tasks from the Dockerfile to Ansible playbooks. As I write this post, I am in the process of implementing these playbooks to configure the containers. You can follow the ongoing development in this [repository][Repo].
 
-Acknowledgments
+# Acknowledgments
 This experience has provided me with practical skills in implementing real-world DevOps projects. I truly enjoy learning all this knowledge outside of my daily job and dedicating my personal time to something meaningful, which is often not covered in school. If this project succeeds as a proof of concept, I can gather more feedback from users, specifically open-source developers, to enhance this setup. I mentioned this in my previous blog post, but I can’t emphasize enough how grateful I am to [Shafiya][Shafiya], [Timid Robot][Timid Robot], and [Sara][Sara] for their guidance, and to Google Summer of Code for giving me the opportunity to contribute to open source. As a content creator who both produces and enjoys various open content online, I am incredibly excited and honored to contribute my technical expertise to CC.
 Thanks to CC’ impact on society, I am committed to continually advancing my technical skills and supporting this organization in the long term. I look forward to continuing my involvement in the open-source community!
 
