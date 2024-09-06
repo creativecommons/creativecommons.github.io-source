@@ -33,11 +33,22 @@ application_tips:
 - [Applicant Guide](/programs/applicant-guide/)
 ---
 resources:
-- [creativecommons/cc-resource-archive](https://github.com/creativecommons/cc-resource-archive):
-  CC Resource Archive
-- [Jekyll](https://jekyllrb.com/), [Lektor](https://www.getlektor.com/), or
-  [Nikola](https://getnikola.com/)
-- [GH Pages](https://pages.github.com/)
+- [Vocabulary Docs](https://vocabulary-docs.netlify.app/)
+- [Vocabulary Repository](https://github.com/creativecommons/vocabulary)
+- [search.creativecommons.org](http://search.creativecommons.org)
+- [Search Portal Repository](https://github.com/creativecommons/search)
+- [resources.creativecommons.org](http://resources.creativecommons.org)
+- [Resources Archive Repository](https://github.com/creativecommons/cc-resource-archive)
+- [opensource.creativecommons.org](http://opensource.creativecommons.org)
+- [Open Source Repository](https://github.com/creativecommons/creativecommons.github.io-source)
+- [legaldb.creativecommons.org](http://legaldb.creativecommons.org)
+- [LegalDB Repository](https://github.com/creativecommons/legaldb)
+- [MDN Web Docs: Semantics](https://developer.mozilla.org/en-US/docs/Glossary/Semantics)
+- [MDN Web Docs: HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [MDN Web Docs: JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [Django Docs](https://docs.djangoproject.com/en/5.1/)
+- [Lektor Docs](https://www.getlektor.com/docs/)
+
 ---
 skills_recommended:
 - CSS
