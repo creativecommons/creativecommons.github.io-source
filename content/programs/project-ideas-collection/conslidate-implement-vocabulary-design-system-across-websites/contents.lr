@@ -13,7 +13,7 @@ course correction, expansion, and cleanup.
 expected_outcome:
 Ancillary CC websites implement the current versions and features of the latest 
 Vocabulary codebase in a consistent and stable manner. Necessary new features 
-are identified, build, and implemented upstream into Vocabulary itself where 
+are identified, built, and implemented upstream into Vocabulary itself where 
 relevant, localized features are implemented into the codebase of each project 
 where necessary.
 ---
