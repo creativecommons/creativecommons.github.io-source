@@ -53,6 +53,6 @@ lead:
 ---
 difficulty: Medium
 ---
-size: Large (~350 hours, ~12 weeks)
+size: Large (~350 hours)
 ---
 filter_value: difficulty-medium skill-django skill-git skill-javascript skill-html skill-css skill-lektor
