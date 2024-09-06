@@ -1,0 +1,70 @@
+_model: project-idea
+---
+_hidden: yes
+---
+title: Consolidate and implement Vocabulary design system across ancillary 
+websites
+---
+problem:
+The new design system, Vocabulary, has been implemented to varying degrees 
+across several Creative Commons web entities, versioning and features do not 
+have full parity and each implementation merits a further investigation, 
+course correction, expansion, and cleanup.
+---
+expected_outcome:
+Ancillary CC websites implement the current versions and features of the latest 
+Vocabulary codebase in a consistent and stable manner. Necessary new features 
+are identified, built, and implemented upstream into Vocabulary itself where 
+relevant, localized features are implemented into the codebase of each project 
+where necessary.
+---
+contributor_tasks:
+Identify and catalog features present on current sites, but missing within 
+Vocabulary. Document migration paths between conflicting or missing UX patterns. 
+Rewrite and/or refactor the codebase of each ancillary site, maintaining its 
+original function, while implementing the Vocabulary design system; migrating 
+implementations from NPM dependency chains to more simplistic static code, where 
+needed; building out new features as necessary locally or within the Vocabulary 
+codebase itself. Using simple, standards-compliant, and accessible HTML, CSS, 
+and minimal JavaScript. 
+---
+application_tips:
+- Engage with the ancillary sites and Vocabulary repositories (issues, pull requests)
+- Be helpful and welcoming (e.g. answer other contributors’ questions on Slack)
+- [Applicant Guide](/programs/applicant-guide/)
+---
+resources:
+- [Vocabulary Docs](https://vocabulary-docs.netlify.app/)
+- [Vocabulary Repository](https://github.com/creativecommons/vocabulary)
+- [search.creativecommons.org](http://search.creativecommons.org)
+- [Search Portal Repository](https://github.com/creativecommons/search)
+- [resources.creativecommons.org](http://resources.creativecommons.org)
+- [Resources Archive Repository](https://github.com/creativecommons/cc-resource-archive)
+- [opensource.creativecommons.org](http://opensource.creativecommons.org)
+- [Open Source Repository](https://github.com/creativecommons/creativecommons.github.io-source)
+- [legaldb.creativecommons.org](http://legaldb.creativecommons.org)
+- [LegalDB Repository](https://github.com/creativecommons/legaldb)
+- [MDN Web Docs: Semantics](https://developer.mozilla.org/en-US/docs/Glossary/Semantics)
+- [MDN Web Docs: HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [MDN Web Docs: JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [Django Docs](https://docs.djangoproject.com/en/5.1/)
+- [Lektor Docs](https://www.getlektor.com/docs/)
+
+---
+skills_recommended:
+- CSS
+- Django
+- Git
+- HTML
+- JavaScript
+- Lektor
+
+---
+lead:
+- Sara
+---
+difficulty: Medium
+---
+size: Large (~350 hours)
+---
+filter_value: difficulty-medium skill-django skill-git skill-javascript skill-html skill-css skill-lektor
