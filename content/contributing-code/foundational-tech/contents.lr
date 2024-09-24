@@ -7,7 +7,7 @@ title: Foundational technologies
 description: Most or many of Creative Commons' projects require a working
 knowledge of these foundational technologies.
 ---
-body:
+body: <!-- disregard: vim syntax highlighting fix_ -->
 
 
 ## Step zero
@@ -19,8 +19,9 @@ Before engaging with our projects, please ensure you have a working knowledge
 of the following technologies:
 1. Slack
 2. Command line interface (CLI)
-3. GitHub and git
-4. Docker
+3. Code editor
+4. GitHub and git
+5. Docker
 
 
 ## Slack
@@ -42,6 +43,39 @@ development work happens.
 - [Terminal Tutor – learn the Command Line interactively][terminal-tutor]
 
 [terminal-tutor]: https://www.terminaltutor.com/
+
+
+## Code editor
+
+A code editor or integrated development environment (IDE) provides strong
+support for software development. Which one you use is up to personal
+preference. The two editors used by the Technology team are currently Visual
+Studio Code (recommended) and Vim.
+
+
+### Visual Studio Code
+
+- [Visual Studio Code - Code Editing. Redefined][vscode]
+- Recommended plugins:
+  - [Rewrap - Visual Studio Marketplace][rewrap]
+    - Some of our repositories hard wrap code and text at 80 characters
+
+[vscode]: https://code.visualstudio.com/
+[rewrap]: https://marketplace.visualstudio.com/items?itemName=stkb.rewrap
+
+
+### Vim
+
+- [welcome home : vim online](https://www.vim.org/)
+- Recommended plugins (install Vundle first):
+  - [godlygeek/tabular][tabular]: *Vim script for text filtering and alignment*
+    - (required by vim-markdown)
+  - [preservim/vim-markdown][vim-md]: *Markdown Vim Mode*
+  - [VundleVim/Vundle.vim][vundle]: *Vundle, the plug-in manager for Vim*
+
+[tabular]: https://github.com/godlygeek/tabular
+[vim-md]: https://github.com/preservim/vim-markdown
+[vundle]: https://github.com/VundleVim/Vundle.vim
 
 
 ## GitHub and git
