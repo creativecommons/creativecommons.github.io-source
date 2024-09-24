@@ -56,11 +56,24 @@ Studio Code (recommended) and Vim.
 ### Visual Studio Code
 
 - [Visual Studio Code - Code Editing. Redefined][vscode]
+- Highlighted features:
+  - [Emmet in Visual Studio Code][emmet]
 - Recommended plugins:
+  - [Docker - Visual Studio Marketplace][vscode-docker] *makes it easy to
+    build, manage, and deploy containerized applications from Visual Studio
+    Code. It also provides one-click debugging of Node.js, Python, and .NET
+    inside a container.*
+  - [Prettier - Code formatter - Visual Studio Marketplace][prettier]: *is an
+    opinionated code formatter.*
+    - Prettier is especially helpful for Web develoment (HTML, JavaScript,
+      etc.)
   - [Rewrap - Visual Studio Marketplace][rewrap]
     - Some of our repositories hard wrap code and text at 80 characters
 
 [vscode]: https://code.visualstudio.com/
+[emmet]: https://code.visualstudio.com/docs/editor/emmet
+[vscode-docker]: https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker
+[prettier]: https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
 [rewrap]: https://marketplace.visualstudio.com/items?itemName=stkb.rewrap
 
 
