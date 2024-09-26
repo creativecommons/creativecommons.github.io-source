@@ -51,6 +51,10 @@ See [`CONTRIBUTING.md`][org-contrib].
 
 ### Prerequisites
 
+For information on learning and installing the prerequisite technologies for this project, please see [Foundational technologies — Creative Commons Open Source][found-tech].
+
+[found-tech]: https://opensource.creativecommons.org/contributing-code/foundational-tech/
+
 Make sure you have:
 - [pipenv][pipenvdocs]
 - [Node.js][nodejswebsite] **v12+** and [npm][npmdocs] installed.
