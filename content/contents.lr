@@ -15,9 +15,28 @@ We work on code and products that support digital creativity and sharing, from u
 ----
 links:
 
+<!-- Container for the hero section links -->
 <div class="hero-links">
-  <a class="button small is-success row" href="/community">Join the Developer Community</a>
-  <a class="button small row" href="https://twitter.com/cc_opensource"><i class="icon twitter"></i>Follow us on twitter</a>
+  <!-- Button linking to the Creative Commons "Share your work" page -->
+  <a class="button small row" href="https://creativecommons.org/share-your-work/" style="background-color: red; color: white;">
+    Share your work using our licenses/tools
+  </a>
+
+  <!-- Button linking to the developer community page -->
+  <a class="button small is-success row" href="/community">
+    Join the Developer Community
+  </a>
+
+  <!-- Button linking to Creative Commons' Twitter page -->
+  <a class="button small row" href="https://twitter.com/cc_opensource">
+    <!-- Icon displayed before the text inside the button -->
+    <i class="icon twitter"></i> Follow us on Twitter
+  </a>
+
+  <!-- Informational text about the purpose of the site -->
+  <p>
+    This site is for developers looking to contribute, but anyone can use CC tools to share their works.
+  </p>
 </div>
 
 #### get-involved ####
