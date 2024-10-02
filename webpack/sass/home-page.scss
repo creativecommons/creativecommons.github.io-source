@@ -19,31 +19,24 @@
     @extend .margin-vertical-normal;
     @extend .padding-horizontal-big;
 
-    // Use flexbox for layout
-    display: flex;
-    flex-direction: column; // Stack buttons vertically
-    align-items: center;    // Center-align the buttons
+    .hero-notice {
+      @extend .body-bigger;
+      @extend .padding-top-normal;
+      @extend .has-text-dark-slate-gray;
+    }
 
     // Button styling within the hero links
     .button {
-      // Apply normal top margin from the defined style
       @extend .margin-top-normal;
-      text-decoration: none; // Remove default underline from links
-      margin-bottom: 0.5rem; // Add spacing between buttons
+      text-decoration: none;
+      display: inline-block;          /* Allow the button to wrap around the text */
       width: 100%;           // Full width of the container
+      height: fit-content;  // Fit the content within the button
       max-width: 300px;     // Maximum width for buttons
-      padding: 1rem;        // Padding inside buttons
       box-sizing: border-box; // Include padding in width calculation
       text-align: center;    // Center text inside buttons
-      font-size: 1em;       // Set font size
       line-height: 1.2;     // Set line height for readability
       white-space: normal;   // Allow text wrapping within buttons
-
-      // Icon styling within buttons
-      .icon {
-        @extend .margin-right-small;
-        @extend .padding-vertical-smaller;
-      }
     }
   }
 
