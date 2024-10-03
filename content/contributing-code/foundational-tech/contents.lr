@@ -138,10 +138,14 @@ Thankfully GitHub's documentation is relatively robust. Please see:
 - [Get started with GitHub documentation - GitHub Docs][github-start]
   - [GitHub flow - GitHub Docs][github-flow]
 - [GitHub Training Manual][github-training]
+- [Fork a repository - GitHub Docs][github-fork]
+  - [Creating a pull request from a fork - GitHub Docs][github-forkpr]
 
 [github-start]: https://docs.github.com/en/get-started
 [github-flow]: https://docs.github.com/en/get-started/using-github/github-flow
 [github-training]: https://githubtraining.github.io/training-manual/#/
+[github-fork]: https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo
+[github-forkpr]: https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork
 
 
 ### CC specifics for GitHub
