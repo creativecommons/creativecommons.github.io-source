@@ -4,7 +4,12 @@ _template: page-with-toc.html
 ---
 title: Pull Request Guidelines
 ---
-description: We ask that contributors to CC projects submit a pull request with your changes. If you're not familiar with pull requests, please read [this GitHub documentation](https://help.github.com/en/articles/about-pull-requests). Here are our expectations for pull requests; following them will expedite the process of merging your code in.
+description: We ask that contributors to Creative Commons (CC) projects submit
+a pull request with your changes. If you're not familiar with pull requests,
+please read [this GitHub documentation][github-pr]. Here are our expectations
+for pull requests; following them will expedite the process of merging your
+code in.
+[github-pr]: https://help.github.com/en/articles/about-pull-requests
 ---
 body:
 
