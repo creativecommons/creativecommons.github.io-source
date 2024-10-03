@@ -1,0 +1,30 @@
+.notice-section {
+    padding: 1rem 0;
+    background-color: #f5f5f5;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .custom-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .notice-box {
+    background-color: rgba(4, 166, 53, 0.1);
+    border: 1px solid #008000;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    color: #333;
+  }
+
+  .notice-box p {
+    margin: 0;
+    font-size: 1.125rem;
+    line-height: 1.6;
+  }
