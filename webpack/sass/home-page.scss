@@ -19,24 +19,18 @@
     @extend .margin-vertical-normal;
     @extend .padding-horizontal-big;
 
-    .hero-notice {
-      @extend .body-bigger;
-      @extend .padding-top-normal;
-      @extend .has-text-dark-slate-gray;
-    }
-
     // Button styling within the hero links
     .button {
       @extend .margin-top-normal;
       text-decoration: none;
-      display: inline-block;          /* Allow the button to wrap around the text */
-      width: 100%;           // Full width of the container
-      height: fit-content;  // Fit the content within the button
-      max-width: 300px;     // Maximum width for buttons
+      display: inline-block;  // Allow the button to wrap around the text
+      width: 100%;            // Full width of the container
+      height: fit-content;    // Fit the content within the button
+      max-width: 300px;       // Maximum width for buttons
       box-sizing: border-box; // Include padding in width calculation
-      text-align: center;    // Center text inside buttons
-      line-height: 1.2;     // Set line height for readability
-      white-space: normal;   // Allow text wrapping within buttons
+      text-align: center;     // Center text inside buttons
+      line-height: 1.2;       // Set line height for readability
+      white-space: normal;    // Allow text wrapping within buttons
     }
   }
 

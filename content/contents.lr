@@ -9,24 +9,18 @@ title:
 
 We have been building <span class="has-text-forest-green">free software</span> at <span class="has-text-gold">Creative Commons</span> for over a decade.
 ----
-description:
-
-We work on code and products that support digital creativity and sharing, from usability of our legal tools to enabling discovery of CC-licensed content.
-----
 links:
 
-<!-- Container for the hero section links -->
+<p class="hero-description">We work on code and products that support digital creativity and sharing, from usability of our legal tools to enabling discovery of CC-licensed content.</p>
 <div class="hero-links">
   <!-- Button linking to the developer community page -->
   <a class="button small is-success row" href="/community">
     Join the Developer Community
   </a>
+</div>
 
-  <!-- Informational text about the purpose of the site -->
-  <div class = "hero-notice">
-    This site is for developers looking to contribute, but anyone can use CC tools to share their works.
-  </div>
-
+<p class="hero-description">This site is for developers looking to contribute, but anyone can use CC tools to share their works.</p>
+<div class="hero-links">
   <!-- Button linking to the Creative Commons "Share your work" page -->
   <a class="button small row" href="https://creativecommons.org/share-your-work/">
     Share your work using our licenses/tools
