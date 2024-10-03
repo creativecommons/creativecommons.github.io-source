@@ -4,6 +4,7 @@
 <link rel="shortcut icon" type="image/x-icon" href="{{ '/static/favicon.ico'|url }}">
 <link rel="stylesheet" href="{{ '/static/gen/style.css'|url }}">
 <link rel="stylesheet" href="{{ get_pygments_stylesheet()|url }}">
+<link rel="stylesheet" href="{{ '/static/gen/notice-section.css'|url }}">
 <meta property="og:site_name" content="Creative Commons" />
 <meta property="og:title" content="{{ this.title }}" />
 {% if this.description %}
@@ -41,7 +42,18 @@
 <title>{% block title %}Welcome{% endblock %} — Creative Commons Open Source</title>
 
 <body>
-
+ <!-- Notice Section for Developers -->
+ <section class="notice-section">
+  <div class="custom-container">
+    <div class="notice-box">
+      <p>
+        This site is primarily for developers looking to contribute to Creative Commons projects.
+        However, anyone can use Creative Commons tools to share their works. 
+        Learn more about our <a href="https://creativecommons.org/share-your-work/" target="_blank">licenses and tools</a>.
+      </p>
+    </div>
+  </div>
+</section>
   <!-- Header -->
   <header class="container">
     <nav class="navbar">
@@ -126,7 +138,6 @@
       </div>
     </nav>
   </header>
-
   <!-- Breadcrumb -->
   {% if this._path !=  '/'%}
     <div class="breadcrumb-container">
