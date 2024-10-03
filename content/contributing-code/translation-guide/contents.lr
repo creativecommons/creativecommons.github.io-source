@@ -4,14 +4,17 @@ _template: page-with-toc.html
 ---
 title: Translation Guide
 ---
-description: Our translation files are hosted and managed on [Transifex](https://www.transifex.com). It's very easy to sign up for an account and start translation CC services into another language.
+description: Our translation files are hosted and managed on
+[Transifex](https://www.transifex.com). It is very easy to sign up for an
+account and start translation Creative Commons (CC) services into another
+language.
 ---
 body:
 
-CC applications such as CC Search and the CC License Chooser are used by
-millions of users worldwide. Translating these services into the languages our
-users speak and read is integral to making these services accessible to our
-diverse user base.
+CC applications such as CC Search and the CC Chooser are used by millions of
+users worldwide. Translating these services into the languages our users speak
+and read is integral to making these services accessible to our diverse user
+base.
 
 We use Transifex to manage our translation files. It provides an intuitive UI
 and many useful tools. Let's see how you can join us there and get started.
