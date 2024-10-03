@@ -18,6 +18,7 @@ links:
 <div class="hero-links">
   <a class="button small is-success row" href="/community">Join the Developer Community</a>
   <a class="button small row" href="https://twitter.com/cc_opensource"><i class="icon twitter"></i>Follow us on twitter</a>
+  <a class="button small" href="https://creativecommons.org/share-your-work/"> Share your work using our licenses/tools</a>
 </div>
 
 #### get-involved ####
