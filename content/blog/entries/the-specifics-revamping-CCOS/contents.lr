@@ -120,7 +120,7 @@ This is code for the Hero section of the home page.
 
 ```
 // Hero section - Home page
-.hero {
+ .hero {
   @extend .margin-top-large;
 
   .hero-title {
@@ -241,7 +241,7 @@ type = string
 .recent-posts {
   background-color: rgba(4, 166, 53, 0.1);
 
-  .container {
+    .container {
     @extend .padding-vertical-xl;
     @extend .padding-horizontal-big;
 
@@ -250,6 +250,7 @@ type = string
       @extend .padding-bottom-xl;
     }
   }
+
 
   .blog-title {
     @extend .has-color-dark-slate-gray;

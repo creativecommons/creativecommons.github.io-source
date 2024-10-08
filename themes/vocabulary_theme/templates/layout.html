@@ -36,15 +36,14 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
   integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 <script type="text/javascript" src="{{ '/static/gen/script.js'|url }}"></script>
-<script src="https://unpkg.com/@creativecommons/vocabulary@2020.7.2/js/vocabulary.js"></script>
+<!-- <script src="https://unpkg.com/@creativecommons/vocabulary@2020.7.2/js/vocabulary.js"></script> -->
 <script>
   const globalHeaderInstance = vocabulary.createGlobalHeader();
 </script>
 <title>{% block title %}Welcome{% endblock %} — Creative Commons Open Source</title>
 
 <body>
-
-<a class="skip-to-content" href="#main-content-marker">Skip to content</a>
+  <a class="skip-to-content" href="#main-content-marker">Skip to content</a>
 
 <header>
     <div class="masthead">
@@ -61,7 +60,7 @@
             </ul>
         </nav> -->
 
-        <nav class="ancillary-menu">
+        <nav class="ancilliary-menu">
             <ul>
                 <!-- uncomment below line, if translation functionality is present on site -->
                 <li><button class="locale icon-attach fa-globe">English</button></li>
@@ -347,5 +346,4 @@
     </div>
   </footer>
   <script src="{{ '/static/vocabulary/js/vocabulary.js'|url }}"></script>
-</body>
-</html>
+ </body>
