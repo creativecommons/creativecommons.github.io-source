@@ -8,7 +8,7 @@
     {% if post.author|length >= 2 %}
         <img class="profile" src="/multiple-authors.jpg" alt="multiple authors image"/>
     {% else %}
-        <img class="profile" src="https://secure.gravatar.com/avatar/{{ current_author.md5_hashed_email }}?size=200&d=mp" alt="gravatar" />
+        <img class="profile" src="https://secure.gravatar.com/avatar/{{ current_author.md5_hashed_email }}?size=200&d=mp" alt="author's gravatar" />
     {% endif %}
       </figure>
     </header>
