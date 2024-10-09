@@ -1,0 +1,10 @@
+title: Documentation Guidelines
+
+
+  - ### Markdown Usage
+    This section provides guidelines for using Markdown in documentation:
+    - For comprehensive documentation on GitHub-flavored Markdown, refer to the [GitHub Markdown Guide](https://docs.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax).
+    - For additional information on the specific Markdown implementation used in Lektor, visit the [Lektor Markdown Documentation](https://www.getlektor.com/docs/content/#markdown).
+    - Note: Use code block markup for instructions on installation, deployment, and development, especially to write code commands.
+
+  
