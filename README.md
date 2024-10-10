@@ -93,8 +93,17 @@ To install these, execute the following commands:
 1. Clone this repository.
 2. Open your command line interface change directories to the repository root
    directory.
-3. Create a Python virtual environment and install the requirements for this
-   project:
+3. Create a Python virtual environment
+  - check your python version
+  ```
+    python --version
+    ```
+    - if it is python 3.11, go to step 4
+    - if not run this command to create a python virtual environment . Change 3.12 with your python version
+     ```
+    pipenv --python 3.12 
+    ```
+4. install the requirements for this project:
     ```
     pipenv install --dev
     ```
