@@ -1,4 +1,34 @@
 title: Documentation Guidelines
+description: This Documentation Guidelines (style guide) ensures all the files in all repositories and any other documentation are properly documented.
+
+---
+# Documentation Guidelines
+
+The purpose of this guideline is to provide a step-by-step framework for writing and maintaining high-quality documentation for Creative Commons (CC) projects. This guide covers essential sections such as project style guide Preference, Style modification, terminologies, markdown usage. Following these guidelines ensures consistency, clarity, and ease of use for all contributors and users.
+
+  ## Style Guide Reference
+
+  For general writing style and guidelines, refer to the following upstream style guides:
+
+  - [Google Developer Style Guide (Preferred)](https://developers.google.com/style/)
+  - [Microsoft Writing Style Guide](https://learn.microsoft.com/en-us/style-guide/welcome/)
+
+  ## Style Preferences Modifications
+
+  While adhering to the upstream style guides, observe the following modifications:
+  - All acronyms must be defined on first use
+  - Use active voice wherever possible to improve clarity and engagement.
+  - Keep sentences concise and to the point, avoiding jargon unless necessary.
+
+
+  ## Terminology
+
+  Establishing a clear "Terminology" section for Creative Commons (CC)-specific usage is crucial. Below are some proprietary terms and their usage:
+
+  - **Creative Commons (CC)**: A non-profit organization enabling sharing and reuse of creative works.
+  - **Licenses**: Legal tools that allow creators to specify how their works can be used.
+  - **Attribution**: Giving credit to the creator of a work, required in many CC licenses.
+
 
 
   - ### Markdown Usage
