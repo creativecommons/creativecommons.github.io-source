@@ -1,40 +1,43 @@
-title: Documentation Guidelines
-description: This Documentation Guidelines (style guide) ensures all the files in all repositories and any other documentation are properly documented.
-
+_model: page
 ---
-# Documentation Guidelines
+_template: page-with-toc.html
+---
+title: Documentation Guidelines
+---
+description: This Documentation Guidelines (style guide) ensures all the files in all repositories and any other documentation are properly documented.
+---
+body:
+
+# Documentation guidelines
 
 The purpose of this guideline is to provide a step-by-step framework for writing and maintaining high-quality documentation for Creative Commons (CC) projects. This guide covers essential sections such as project style guide Preference, Style modification, terminologies, markdown usage. Following these guidelines ensures consistency, clarity, and ease of use for all contributors and users.
 
-  ## Style Guide Reference
+## Style guide reference
 
-  For general writing style and guidelines, refer to the following upstream style guides:
+For general writing style and guidelines, refer to the following upstream style guides:
 
-  - [Google Developer Style Guide (Preferred)](https://developers.google.com/style/)
-  - [Microsoft Writing Style Guide](https://learn.microsoft.com/en-us/style-guide/welcome/)
+- [Google Developer Style Guide (Preferred)](https://developers.google.com/style/)
+- [Microsoft Writing Style Guide](https://learn.microsoft.com/en-us/style-guide/welcome/)
 
-  ## Style Preferences Modifications
+## Style preferences modifications
 
-  While adhering to the upstream style guides, observe the following modifications:
-  - All acronyms must be defined on first use
-  - Use active voice wherever possible to improve clarity and engagement.
-  - Keep sentences concise and to the point, avoiding jargon unless necessary.
-
-
-  ## Terminology
-
-  Establishing a clear "Terminology" section for Creative Commons (CC)-specific usage is crucial. Below are some proprietary terms and their usage:
-
-  - **Creative Commons (CC)**: A non-profit organization enabling sharing and reuse of creative works.
-  - **Licenses**: Legal tools that allow creators to specify how their works can be used.
-  - **Attribution**: Giving credit to the creator of a work, required in many CC licenses.
+While adhering to the upstream style guides, observe the following modifications:
+- All acronyms must be defined on first use
+- Use active voice wherever possible to improve clarity and engagement.
+- Keep sentences concise and to the point, avoiding jargon unless necessary.
 
 
+## Terminology
 
-  - ### Markdown Usage
-    This section provides guidelines for using Markdown in documentation:
-    - For comprehensive documentation on GitHub-flavored Markdown, refer to the [GitHub Markdown Guide](https://docs.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax).
-    - For additional information on the specific Markdown implementation used in Lektor, visit the [Lektor Markdown Documentation](https://www.getlektor.com/docs/content/#markdown).
-    - Note: Use code block markup for instructions on installation, deployment, and development, especially to write code commands.
+Establishing a clear "Terminology" section for Creative Commons (CC)-specific usage is crucial. Below are some proprietary terms and their usage:
 
-  
+- **Creative Commons (CC)**: A non-profit organization enabling sharing and reuse of creative works.
+- **Licenses**: Legal tools that allow creators to specify how their works can be used.
+- **Attribution**: Giving credit to the creator of a work, required by most CC licenses.
+
+
+## Markdown usage
+This section provides guidelines for using Markdown in documentation:
+- For comprehensive documentation on GitHub-flavored Markdown, refer to the [GitHub Markdown Guide](https://docs.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax).
+- For additional information on the specific Markdown implementation used in Lektor, visit the [Lektor Markdown Documentation](https://www.getlektor.com/docs/content/#markdown).
+- Note: Use code block markup for instructions on installation, deployment, and development, especially to write code commands.
