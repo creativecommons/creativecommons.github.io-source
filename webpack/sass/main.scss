@@ -106,76 +106,6 @@ pre {
   }
 }
 
-//Adjusting and properly aligning the Navbar
-.navbar {
-  display: flex !important;
-  justify-content: space-between !important;
-  align-items: center;
-  width: 100% !important;
-  padding: 1rem; 
-  position: relative;
-  z-index: 1;
-}
-
-.navbar-brand{
-  width: 100% !important;
-}
-
-
-.navbar-burger {
-  margin-left: auto !important; 
-  cursor: pointer;
-  display: inline-block;
-  height: 2.25rem;
-  width: 2.25rem;
-  position: relative;
-}
-
-.navbar-burger span {
-  background-color: currentColor;
-  display: block;
-  height: 2px;
-  width: 24px;
-  margin: 5px auto;
-  transition: background-color 0.3s ease-in-out;
-}
-
-
-.navbar-burger.is-active span {
-  background-color: red; 
-}
-
-
-.navbar-menu {
-  display: none;
-  flex-direction: column; 
-  position: absolute; 
-  top: 100%; 
-  right: 0; 
-  background-color: white; 
- 
-}
-
-
-.navbar-menu.is-active {
-  display: flex;
-  margin-bottom: 5rem;
-}
-
-
-.navbar-end {
-  display: flex;
-  flex-direction: column; 
-
-}
-
-.navbar-item {
-  padding: 1rem;
-  width: 100%;
-  text-align: center;
-}
-
-
 // Breadcrumb
 .breadcrumb-container {
   border-top: 4px solid $color-forest-green;
@@ -230,3 +160,35 @@ pre {
     left: auto;
   }
 }
+
+@media screen and (max-width: 780px){
+  .navbar-item, .navbar-item a{
+    border-top: 1px solid rgba(212, 210, 210, 0.945);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  
+  .navbar-burger{
+    cursor: pointer;
+    display: block; 
+    background-color: #ebeeee;
+    padding: 0.5rem 0.2rem 0rem ;
+    font-weight: 900;
+    font-size: 20px;
+    color: rgb(64, 60, 60);
+    margin: 5px auto;
+    // align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease-in-out;
+    min-width: 100px; 
+    text-align: center; 
+    line-height: 1;
+    border-radius: 2%;;
+  }
+
+  .navbar-brand {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
