@@ -160,3 +160,35 @@ pre {
     left: auto;
   }
 }
+
+@media screen and (max-width: 780px){
+  .navbar-item, .navbar-item a{
+    border-top: 1px solid rgba(212, 210, 210, 0.945);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  
+  .navbar-burger{
+    cursor: pointer;
+    display: block; 
+    background-color: #ebeeee;
+    padding: 0.5rem 0.2rem 0rem ;
+    font-weight: 900;
+    font-size: 20px;
+    color: rgb(64, 60, 60);
+    margin: 5px auto;
+    // align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease-in-out;
+    min-width: 100px; 
+    text-align: center; 
+    line-height: 1;
+    border-radius: 2%;;
+  }
+
+  .navbar-brand {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
