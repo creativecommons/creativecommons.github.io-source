@@ -43,15 +43,9 @@ EX:
 /* typography */
 
 body {
-<<<<<<< HEAD
-    display: grid;
-    grid-template-columns: 5% 3% 6% 6% 15% 30% 15% 6% 6% 3% 5%;
-    overflow-x: hidden;
-=======
     /* display: grid;
     grid-template-columns: 5% 3% 6% 6% 15% 30% 15% 6% 6% 3% 5%;
     overflow-x: hidden; */
->>>>>>> 6a24dd1f (feaure/  Align header with the Vocabulary design system)
 
     font-weight: 400;
     -moz-osx-font-smoothing: grayscale;
@@ -953,10 +947,7 @@ body > header .ancilliary-menu {
     top: 0;
     /* right: var(--vocabulary-page-edges-space); */
     right: 0;
-<<<<<<< HEAD
-=======
     margin-right: 4rem;
->>>>>>> 6a24dd1f (feaure/  Align header with the Vocabulary design system)
 
     font-family: "Source Sans Pro";
     font-style: normal;
@@ -979,11 +970,8 @@ body > header .ancilliary-menu ul li {
 body > header .ancilliary-menu ul li a {
     /* generalize this */
     display: inline-block;
-<<<<<<< HEAD
-=======
     
  
->>>>>>> 6a24dd1f (feaure/  Align header with the Vocabulary design system)
 }
 
 body > header .ancilliary-menu ul li a,
