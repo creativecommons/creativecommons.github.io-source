@@ -5,11 +5,16 @@
   // Title styling within the hero section
   .hero-title {
     @extend .padding-horizontal-big;
+<<<<<<< HEAD
     @media(max-width:530px) {
       h1{
       font-size: 2.8rem;
       line-height: 1.2;
       }
+=======
+    .has-text-orange{
+      color:rgb(251 119 41);
+>>>>>>> origin/main
     }
   }
 
