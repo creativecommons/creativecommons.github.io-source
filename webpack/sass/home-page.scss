@@ -5,6 +5,9 @@
   // Title styling within the hero section
   .hero-title {
     @extend .padding-horizontal-big;
+    .has-text-orange{
+      color:rgb(251 119 41);
+    }
   }
 
   // Description styling within the hero section
