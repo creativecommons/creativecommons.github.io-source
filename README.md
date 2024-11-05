@@ -113,6 +113,11 @@ else fails, try removing the virtual environment and reinstalling:
     ```
     pipenv install --dev
     ```
+    - If there's no Python 3.11 on your system (or if pipenv can't find it),
+      you may need to specify the Python location. For example:
+        ```
+        pipenv install --dev --python /opt/homebrew/bin/python3.11
+        ```
 
 [pipenverror]: https://github.com/pypa/pipenv/issues/1918
 
