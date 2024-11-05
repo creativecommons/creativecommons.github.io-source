@@ -43,10 +43,6 @@ EX:
 /* typography */
 
 body {
-    display: grid;
-    grid-template-columns: 5% 3% 6% 6% 15% 30% 15% 6% 6% 3% 5%;
-    overflow-x: hidden;
-
     font-weight: 400;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
@@ -800,7 +796,7 @@ body > header .masthead {
 }
 
 body > header .masthead h1 {
-    margin: 0;
+    margin: 0 0 0 3rem;
 }
 
 /* allows the child identity-logo element to have a focus state */
@@ -947,6 +943,7 @@ body > header .ancilliary-menu {
     top: 0;
     /* right: var(--vocabulary-page-edges-space); */
     right: 0;
+    margin-right: 4rem;
 
     font-family: "Source Sans Pro";
     font-style: normal;
