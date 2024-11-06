@@ -9,7 +9,7 @@
         <h4 class="b-header"><a class="blog-title" href="{{ post|url }}">{{ post.title }}</a></h4>
         {{ render_authors_byline(post) }}
         <div class="excerpt">
-          {{ post.body | excerpt | string | striptags() | truncate(100) }}
+          {{ post.excerpt | default(post.body) | striptags | truncate(100) }}
         </div>
       </div>
     </article>
