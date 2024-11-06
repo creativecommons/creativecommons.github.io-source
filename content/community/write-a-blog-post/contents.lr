@@ -54,6 +54,8 @@ Once you have written your post, you can either send it to us (Markdown is easie
   ---
   pub_date: Replace this text with the publication date in YYYY-MM-DD format.
   ---
+  excerpt: Replace this text with a short summary of your post. This is an optional, and you can leave it blank. 
+  ---
   body:
   Replace this text with your post's content (minus the title). This field accepts Markdown for formatting.
   If you're including images, you can use the Markdown image syntax i.e. ![image-title](image-file-name.jpg).
