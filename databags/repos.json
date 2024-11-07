@@ -76,30 +76,6 @@
             "website": ""
         },
         {
-            "created": "2021-11-26T11:23:54+00:00",
-            "description": "Vue.js components for consistent navigation and branding across Creative Commons web properties",
-            "engineering_project": true,
-            "english_name": "CC Global Components",
-            "featured": false,
-            "id": 432153424,
-            "language": "Vue",
-            "license": {
-                "name": "MIT License",
-                "url": "https://github.com/creativecommons/cc-global-components/blob/main/LICENSE"
-            },
-            "name": "cc-global-components",
-            "slack": "",
-            "technologies": [
-                "HTML",
-                "CSS",
-                "JS",
-                "Bulma",
-                "Vue"
-            ],
-            "url": "https://github.com/creativecommons/cc-global-components",
-            "website": null
-        },
-        {
             "created": "2020-06-03T18:51:38+00:00",
             "description": "Legal tool (licenses, public domain dedication, etc.) management application for Creative Commons",
             "engineering_project": true,
@@ -118,7 +94,7 @@
                 "Python"
             ],
             "url": "https://github.com/creativecommons/cc-legal-tools-app",
-            "website": ""
+            "website": "https://creativecommons.org/licenses/"
         },
         {
             "created": "2020-09-08T19:18:51+00:00",
@@ -164,26 +140,6 @@
             "website": ""
         },
         {
-            "created": "2019-06-12T18:15:54+00:00",
-            "description": "Automated link checker for legalcode and license URLs",
-            "engineering_project": true,
-            "english_name": "Creative Commons Link Checker",
-            "featured": false,
-            "id": 191622826,
-            "language": "Python",
-            "license": {
-                "name": "MIT License",
-                "url": "https://github.com/creativecommons/cc-link-checker/blob/main/LICENSE"
-            },
-            "name": "cc-link-checker",
-            "slack": "cc-dev-linkchecker",
-            "technologies": [
-                "Python"
-            ],
-            "url": "https://github.com/creativecommons/cc-link-checker",
-            "website": ""
-        },
-        {
             "created": "2014-01-08T18:49:45+00:00",
             "description": "Collection of resources on Creative Commons (CC) tools and other open topics",
             "engineering_project": true,
@@ -198,22 +154,6 @@
             "slack": "",
             "url": "https://github.com/creativecommons/cc-resource-archive",
             "website": "https://resources.creativecommons.org/"
-        },
-        {
-            "created": "2013-12-02T21:01:41+00:00",
-            "description": "Legacy API to integrate the Creative Commons licensing engine into third party applications",
-            "engineering_project": true,
-            "featured": false,
-            "id": 14874742,
-            "language": "Python",
-            "license": {
-                "name": "MIT License",
-                "url": "https://github.com/creativecommons/cc.api/blob/main/LICENSE"
-            },
-            "name": "cc.api",
-            "slack": "",
-            "url": "https://github.com/creativecommons/cc.api",
-            "website": "https://api.creativecommons.org/docs/"
         },
         {
             "created": "2014-10-06T22:07:52+00:00",
@@ -344,6 +284,20 @@
             ],
             "url": "https://github.com/creativecommons/commoners",
             "website": "https://network.creativecommons.org/"
+        },
+        {
+            "created": "2024-06-14T18:39:49+00:00",
+            "description": "This plugin allows you to add a button to your WordPress site's posts which will display terms and licensing for Creative Commons reposting, as well as the title and content of the post for easy sharing. This is useful for sites that want to easily and clearly share their content with others.",
+            "id": 815277416,
+            "language": "PHP",
+            "license": {
+                "name": "GNU General Public License v3.0",
+                "url": "https://github.com/creativecommons/Creative-Commons-Post-Republisher/blob/main/LICENSE"
+            },
+            "name": "Creative-Commons-Post-Republisher",
+            "slack": "",
+            "url": "https://github.com/creativecommons/Creative-Commons-Post-Republisher",
+            "website": ""
         },
         {
             "created": "2019-12-06T19:44:21+00:00",
@@ -519,7 +473,7 @@
             "english_name": "CC Legal Database",
             "featured": false,
             "id": 133715391,
-            "language": "HTML",
+            "language": "CSS",
             "license": {
                 "name": "MIT License",
                 "url": "https://github.com/creativecommons/legaldb/blob/main/LICENSE"
@@ -532,7 +486,7 @@
                 "PostgreSQL"
             ],
             "url": "https://github.com/creativecommons/legaldb",
-            "website": "https://legaldb.creativecommons.org/"
+            "website": "https://LegalDB.CreativeCommons.org/"
         },
         {
             "created": "2013-10-28T02:42:48+00:00",
@@ -625,7 +579,7 @@
         },
         {
             "created": "2022-09-07T17:02:39+00:00",
-            "description": "Quantifying the Commons",
+            "description": "quantify the size and diversity of the commons--the collection of works that are openly licensed or in the public domain",
             "engineering_project": true,
             "english_name": "Quantifying the Commons",
             "featured": true,
@@ -698,7 +652,7 @@
             "english_name": "CC Search Portal",
             "featured": false,
             "id": 13818557,
-            "language": "HTML",
+            "language": "CSS",
             "license": {
                 "name": "MIT License",
                 "url": "https://github.com/creativecommons/search/blob/main/LICENSE"
@@ -835,99 +789,26 @@
             "website": "https://thepowerofopen.org/"
         },
         {
-            "created": "2019-11-25T17:29:13+00:00",
-            "description": "A cohesive design system & Vue component library to unify the web-facing Creative Commons",
+            "created": "2024-04-24T19:10:38+00:00",
+            "description": "A cohesive system of design for Creative Commons",
             "engineering_project": true,
-            "english_name": "CC Vocabulary",
+            "english_name": "Vocabulary Design System",
             "featured": false,
-            "id": 224004769,
-            "language": "SCSS",
+            "id": 791465373,
+            "language": "HTML",
             "license": {
-                "name": "MIT License",
-                "url": "https://github.com/creativecommons/vocabulary/blob/main/LICENSE"
+                "name": "Creative Commons Zero v1.0 Universal",
+                "url": "https://github.com/creativecommons/vocabulary/blob/main/COPYING"
             },
             "name": "vocabulary",
-            "slack": "cc-dev-vocabulary",
+            "slack": "",
             "technologies": [
-                "Sass",
-                "JavaScript",
-                "Webpack",
-                "Storybook",
-                "Bulma",
-                "Fonts"
+                "HTML",
+                "CSS",
+                "Javascript"
             ],
             "url": "https://github.com/creativecommons/vocabulary",
-            "website": "https://cc-vocabulary.netlify.app"
-        },
-        {
-            "created": "2022-01-10T10:29:18+00:00",
-            "description": "A collection of Vue components used in the web facing Creative Commons.",
-            "engineering_project": true,
-            "english_name": "CC Vocabulary components",
-            "featured": false,
-            "id": 446377158,
-            "language": "Vue",
-            "license": {
-                "name": "MIT License",
-                "url": "https://github.com/creativecommons/vocabulary-components/blob/main/LICENSE"
-            },
-            "name": "vocabulary-components",
-            "slack": "cc-dev-vocabulary",
-            "technologies": [
-                "Sass",
-                "JavaScript",
-                "Webpack",
-                "Vue.js"
-            ],
-            "url": "https://github.com/creativecommons/vocabulary-components",
-            "website": ""
-        },
-        {
-            "created": "2022-01-10T11:07:04+00:00",
-            "description": "Typefaces that lend personality to the web facing Creative Commons",
-            "engineering_project": true,
-            "english_name": "CC Vocabulary fonts",
-            "featured": false,
-            "id": 446389251,
-            "language": "JavaScript",
-            "license": {
-                "name": "MIT License",
-                "url": "https://github.com/creativecommons/vocabulary-fonts/blob/main/LICENSE"
-            },
-            "name": "vocabulary-fonts",
-            "slack": "cc-dev-vocabulary",
-            "technologies": [
-                "Sass",
-                "JavaScript",
-                "Webpack",
-                "Storybook"
-            ],
-            "url": "https://github.com/creativecommons/vocabulary-fonts",
-            "website": ""
-        },
-        {
-            "created": "2022-01-10T11:06:45+00:00",
-            "description": "A cohesive design system to unite the web facing Creative Commons",
-            "engineering_project": true,
-            "english_name": "CC Vocabulary styles",
-            "featured": false,
-            "id": 446389149,
-            "language": "SCSS",
-            "license": {
-                "name": "MIT License",
-                "url": "https://github.com/creativecommons/vocabulary-styles/blob/main/LICENSE"
-            },
-            "name": "vocabulary-styles",
-            "slack": "cc-dev-vocabulary",
-            "technologies": [
-                "Sass",
-                "JavaScript",
-                "Webpack",
-                "Storybook",
-                "Bulma"
-            ],
-            "url": "https://github.com/creativecommons/vocabulary-styles",
-            "website": ""
+            "website": "https://vocabulary-docs.netlify.app"
         },
         {
             "created": "2023-04-21T19:58:28+00:00",

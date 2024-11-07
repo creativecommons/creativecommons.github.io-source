@@ -1,0 +1,221 @@
+_model: page
+---
+_template: page-with-toc.html
+---
+title: Foundational technologies
+---
+description: Most or many of Creative Commons' projects require a working
+knowledge of these foundational technologies.
+---
+body: <!-- disregard: vim syntax highlighting fix_ -->
+
+
+## Step zero
+
+Welcome to Creative Commons (CC) software development! We are glad you are
+here! ❤️
+
+Before engaging with our projects, please ensure you have a working knowledge
+of the following technologies:
+1. Slack
+2. Command line interface (CLI)
+3. Code editor
+4. GitHub and git
+5. Docker
+
+
+## Slack
+
+Slack is currently our primary channel for chat and lower latency communication.
+
+For more information, see [Join the CC Developer Community](/community/).
+
+
+## Command line interface (CLI)
+
+Often shortened to just "command line" or referred to as the "console" or
+"terminal", the command line interface (CLI) is where quite a bit of software
+development work happens.
+
+
+### Getting started with the CLI
+
+- [Terminal Tutor – learn the Command Line interactively][terminal-tutor]
+
+[terminal-tutor]: https://www.terminaltutor.com/
+
+
+## Code editor
+
+A code editor or integrated development environment (IDE) provides strong
+support for software development. Which one you use is up to personal
+preference. The two editors used by the Technology team are currently Visual
+Studio Code (recommended) and Vim.
+
+
+### Visual Studio Code
+
+- [Visual Studio Code - Code Editing. Redefined][vscode]
+- Highlighted features:
+  - [Emmet in Visual Studio Code][emmet]
+- Recommended plugins:
+  - [Docker - Visual Studio Marketplace][vscode-docker] *makes it easy to
+    build, manage, and deploy containerized applications from Visual Studio
+    Code. It also provides one-click debugging of Node.js, Python, and .NET
+    inside a container.*
+  - [Prettier - Code formatter - Visual Studio Marketplace][prettier]: *is an
+    opinionated code formatter.*
+    - Prettier is especially helpful for Web develoment (HTML, JavaScript,
+      etc.)
+  - [Rewrap - Visual Studio Marketplace][rewrap]
+    - Some of our repositories hard wrap code and text at 80 characters
+
+[vscode]: https://code.visualstudio.com/
+[emmet]: https://code.visualstudio.com/docs/editor/emmet
+[vscode-docker]: https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker
+[prettier]: https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
+[rewrap]: https://marketplace.visualstudio.com/items?itemName=stkb.rewrap
+
+
+### Vim
+
+- [welcome home : vim online](https://www.vim.org/)
+- Recommended plugins (install Vundle first):
+  - [godlygeek/tabular][tabular]: *Vim script for text filtering and alignment*
+    - (required by vim-markdown)
+  - [preservim/vim-markdown][vim-md]: *Markdown Vim Mode*
+  - [VundleVim/Vundle.vim][vundle]: *Vundle, the plug-in manager for Vim*
+
+[tabular]: https://github.com/godlygeek/tabular
+[vim-md]: https://github.com/preservim/vim-markdown
+[vundle]: https://github.com/VundleVim/Vundle.vim
+
+
+## GitHub and git
+
+All of our projects require a working knowledge of GitHub. It is our primary
+repository for code and we utilize many of the sites features for managing
+code and higher latency communication.
+
+[Git - Wikipedia](https://en.wikipedia.org/wiki/Git):
+> Git (/ɡɪt/) is a distributed version control system that tracks
+> versions of files. It is often used to control source code by programmers who
+> are developing software collaboratively. 
+
+
+### Installing GitHub
+
+As a web service, GitHub doesn't require any installation. However, once you
+become more familiar with it, you may benefit from installing the GitHub
+command line utility:
+- [GitHub CLI | Take GitHub to the command line](https://cli.github.com/)
+
+
+### Installing git
+
+- **Linux:** Git is optimally installed using your distribution's package
+  manager. See [Git- Download for Linux and Unix][linux-git] for a wide range
+  of popular distros.
+- **macOS:** Mac users can install Git using these instructions: [Git -
+  Installing Git - Installing on macOS][macos-git]
+- **Windows:**
+  - You must use Windows 10 or 11 with Windows Subsystem for Linux (WSL2). For
+    installation instructions: see [Install WSL | Microsoft Learn][wsl2].
+  - Git should be installed within WSL2, using the appropriate Linux
+    installation method. For WSL2 Ubuntu, the command is:
+    ```shell
+    sudo apt-get install git
+    ```
+
+[linux-git]: https://git-scm.com/download/linux
+[macos-git]: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git#_installing_on_macos
+[wsl2]: https://docs.microsoft.com/en-us/windows/wsl/install
+
+
+### Getting started with GitHub and Git
+
+Thankfully GitHub's documentation is relatively robust. Please see:
+- [Get started with GitHub documentation - GitHub Docs][github-start]
+  - [GitHub flow - GitHub Docs][github-flow]
+- [GitHub Training Manual][github-training]
+- [Fork a repository - GitHub Docs][github-fork]
+  - [Creating a pull request from a fork - GitHub Docs][github-forkpr]
+
+[github-start]: https://docs.github.com/en/get-started
+[github-flow]: https://docs.github.com/en/get-started/using-github/github-flow
+[github-training]: https://githubtraining.github.io/training-manual/#/
+[github-fork]: https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo
+[github-forkpr]: https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork
+
+
+### CC specifics for GitHub
+
+For some specifics on how we use GitHub, please see the following information
+on this site:
+- [Pull Request Guidelines — Creative Commons Open Source][ccos-prs]
+- [GitHub Repo Guidelines — Creative Commons Open Source][ccos-repos]
+- [Repository Labels — Creative Commons Open Source][ccos-labels]
+
+[ccos-prs]: /contributing-code/pr-guidelines/
+[ccos-repos]: /contributing-code/github-repo-guidelines/
+[ccos-labels]: /contributing-code/repo-labels/
+
+
+## Docker
+
+[Docker (software) - Wikipedia][wikipedia-docker]:
+> Docker is a set of platform as a service (PaaS) products that use OS-level
+> virtualization to deliver software in packages called containers. [...]
+>
+> Docker is a tool that is used to automate the deployment of applications in
+> lightweight containers so that applications can work efficiently in different
+> environments in isolation.
+
+[wikipedia-docker]: https://en.wikipedia.org/wiki/Docker_(software)
+
+
+### Installing Docker
+
+- **Linux:** Both Docker Desktop and Docker Engine are separately supported on
+  Linux. Both include the required Compose command plugin, but Docker Engine is
+  typically much easier to install:
+  - _Recommended:_ See [Install Docker Engine | Docker
+    Docs][linux-docker-engine] for links to installation instructions for
+    Docker Engine and Compose for various Linux distributions.
+  - See [Install Docker Desktop on Linux | Docker Docs][linux-docker-desktop]
+    for links to instructions for the graphical desktop app that includes the
+    commandline interface and Compose
+- **macOS:** Docker Desktop can be installed using these instructions: [Install
+  Docker Desktop on Mac | Docker Docs][macos-docker].
+- **Windows:** Docker Desktop should be installed on Windows itself and
+  integrated with Windows Subsystem for Linux (WSL2) as explained in [Docker
+  Desktop WSL 2 backend on Windows | Docker Docs][windows-docker]. Unlike Git,
+  you should not install Docker within your WSL2 environment. For installation
+  instructions: see [Install WSL | Microsoft Learn][wsl2].
+
+[linux-docker-engine]: https://docs.docker.com/engine/install
+[linux-docker-desktop]: https://docs.docker.com/desktop/install/linux-install
+[macos-docker]: https://docs.docker.com/desktop/install/mac-install
+[windows-docker]: https://docs.docker.com/desktop/windows/wsl
+[wsl2]: https://docs.microsoft.com/en-us/windows/wsl/install
+
+
+### Getting started with Docker
+
+- [A Docker Tutorial for Beginners][docker-tutorial]
+
+[docker-tutorial]: https://docker-curriculum.com/
+
+
+### Docker compose
+
+Our projects use [Docker Compose | Docker Docs][docker-compose].
+
+[docker-compose]: https://docs.docker.com/compose/
+
+
+## Next steps
+
+We have added a lot of documentation (ex. language guides) and tooling (issue
+finder) to this site that cover frequently asked questions and confusions.
+Please explore this site and reach out on Slack for additional assistance.

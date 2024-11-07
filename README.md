@@ -20,22 +20,26 @@ via lektor (see [Deployment](#deployment), below).
 [ccopensource]: https://opensource.creativecommons.org/
 
 
-## Code of Conduct
+## Code of conduct
 
-[`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md):
+[`CODE_OF_CONDUCT.md`][org-coc]:
 > The Creative Commons team is committed to fostering a welcoming community.
 > This project and all other Creative Commons open source projects are governed
 > by our [Code of Conduct][code_of_conduct]. Please report unacceptable
 > behavior to [conduct@creativecommons.org](mailto:conduct@creativecommons.org)
 > per our [reporting guidelines][reporting_guide].
 
-[code_of_conduct]: https://opensource.creativecommons.org/community/code-of-conduct/ "CC Open Source Code of Conduct — Creative Commons on GitHub"
-[reporting_guide]: https://opensource.creativecommons.org/community/code-of-conduct/enforcement/ "Codes of Conduct Enforcement — Creative Commons on GitHub"
+[org-coc]: https://github.com/creativecommons/.github/blob/main/CODE_OF_CONDUCT.md
+[code_of_conduct]: https://opensource.creativecommons.org/community/code-of-conduct/
+[reporting_guide]: https://opensource.creativecommons.org/community/code-of-conduct/enforcement/
 
 
 ## Contributing
 
-- See [`CONTRIBUTING.md`](CONTRIBUTING.md) for information on how to contribute
+See [`CONTRIBUTING.md`][org-contrib].
+
+[org-contrib]: https://github.com/creativecommons/.github/blob/main/CONTRIBUTING.md
+
 - See [Contributors to
   creativecommons/creativecommons.github.io-source][contributors] for a
   list of authors and their contributions to this project :blush:
@@ -46,6 +50,10 @@ via lektor (see [Deployment](#deployment), below).
 ## Installation
 
 ### Prerequisites
+
+For information on learning and installing the prerequisite technologies for this project, please see [Foundational technologies — Creative Commons Open Source][found-tech].
+
+[found-tech]: https://opensource.creativecommons.org/contributing-code/foundational-tech/
 
 Make sure you have:
 - [pipenv][pipenvdocs]
@@ -62,7 +70,7 @@ To install these, execute the following commands:
   1. [Installing Pipenv][pipenvinstall]
   2. [Install Node.js][nodeinstall] (or see the
      [detailed instructions][nodedetailed])
-  3. Upate packges:
+  3. Update packges:
         ```
         sudo apt update
         ```
@@ -105,6 +113,11 @@ else fails, try removing the virtual environment and reinstalling:
     ```
     pipenv install --dev
     ```
+    - If there's no Python 3.11 on your system (or if pipenv can't find it),
+      you may need to specify the Python location. For example:
+        ```
+        pipenv install --dev --python /opt/homebrew/bin/python3.11
+        ```
 
 [pipenverror]: https://github.com/pypa/pipenv/issues/1918
 
@@ -204,8 +217,6 @@ Here's how the code is structured in the top level of the repository:
   - [nixjdm/lektor-atom][atom]: Lektor Atom plugin
   - [lektor/lektor-disqus-comments][disqus]: Adds disqus comments to a Lektor
     website
-  - [kmonsoor/lektor-google-analytics][lektorga]: Integration of Google
-    analytics with Lektor CMS
   - [bancek/lektor-markdown-excerpt][mdexcerpt]: Adds filter for Markdown body
     excerpt
   - [lektor/lektor-markdown-header-anchors][md-header]: Adds support for
@@ -220,7 +231,6 @@ Here's how the code is structured in the top level of the repository:
 [plugins]: https://www.getlektor.com/docs/plugins/
 [atom]: https://github.com/nixjdm/lektor-atom
 [disqus]: https://github.com/lektor/lektor-disqus-comments
-[lektorga]: https://github.com/kmonsoor/lektor-google-analytics
 [mdexcerpt]: https://github.com/bancek/lektor-markdown-excerpt
 [md-header]: https://github.com/lektor/lektor-markdown-header-anchors
 [md-highlighter]: https://github.com/lektor/lektor-markdown-highlighter

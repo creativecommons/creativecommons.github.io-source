@@ -122,5 +122,5 @@ The CC Global Components with all 3 components used renders as:
 ![CC global components](cc_global_components.gif)
 
 You can find the CC Global Components project at:
-- GitHub: [CC Global Components](https://github.com/creativecommons/cc-global-components)
+- GitHub: [CC Global Components](https://github.com/cc-archive/cc-global-components)
 - NPM: [cc-global-components](https://www.npmjs.com/package/@creativecommons/cc-global-components)

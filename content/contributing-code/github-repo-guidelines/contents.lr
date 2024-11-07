@@ -38,9 +38,9 @@ these files:
 [dco]: https://developercertificate.org/
 [issue-template-bug]: https://github.com/creativecommons/.github/blob/main/.github/ISSUE_TEMPLATE/bug_report.md
 [issue-template-feature]: https://github.com/creativecommons/.github/blob/main/.github/ISSUE_TEMPLATE/feature_request.md
-[conduct]: https://github.com/creativecommons/vocabulary/blob/main/CODE_OF_CONDUCT.md
+[conduct]: https://github.com/creativecommons/.github/blob/main/CODE_OF_CONDUCT.md
 [help-conduct]: https://help.github.com/en/articles/adding-a-code-of-conduct-to-your-project
-[contributing]: https://github.com/creativecommons/vocabulary/blob/main/CONTRIBUTING.md
+[contributing]: https://github.com/creativecommons/.github/blob/main/CONTRIBUTING.md
 [setting-guidelines]: https://help.github.com/en/articles/setting-guidelines-for-repository-contributors
 [funding]: https://github.com/creativecommons/.github/blob/main/FUNDING.yml
 [support]: https://github.com/creativecommons/.github/blob/main/SUPPORT.md
@@ -108,8 +108,8 @@ All repositories must contain a set of standard labels, [documented
 here](/contributing-code/repo-labels/), which comprise of common labels in
 addition to repository-specific skill labels. You don't have to set these up
 manually. The labels are [automatically
-managed](https://github.com/creativecommons/ccos-scripts) on all CC
-repositories, and so, must not be renamed.
+managed](https://github.com/creativecommons/ccos-scripts) on all Creative
+Commons (CC) repositories, and so, must not be renamed.
 
 Repositories may contain additional custom labels as well which will remain
 unaffected by the sync. It is recommended that custom labels be explained in
@@ -118,7 +118,7 @@ the contribution guidelines for that project.
 
 ## Branch protections
 
-Branch protections are automatically set up by CC staff via
+Branch protections are automatically set up by CC team members via
 [creativecommons/ccos-scripts](https://github.com/creativecommons/ccos-scripts).
 By default, pushing directly to the *default branch* (ex. `main`) is disabled
 and all pull requests require review by at least one person before merge.

@@ -240,6 +240,11 @@
                     "role": "Project Maintainer"
                 },
                 {
+                    "github": "zackkrida",
+                    "name": "Zack Krida",
+                    "role": "Project Maintainer"
+                },
+                {
                     "github": "JackieBinya",
                     "name": "Jacqueline Binya",
                     "role": "Project Core Committer"
@@ -290,22 +295,6 @@
             ],
             "name": "License Buttons",
             "repos": "licensebuttons"
-        },
-        {
-            "members": [
-                {
-                    "github": "bhumijgupta",
-                    "name": "Bhumij Gupta",
-                    "role": "Project Maintainer"
-                },
-                {
-                    "github": "kgodey",
-                    "name": "Kriti Godey",
-                    "role": "Project Maintainer"
-                }
-            ],
-            "name": "Link Checker",
-            "repos": "cc-link-checker"
         },
         {
             "members": [

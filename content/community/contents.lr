@@ -4,11 +4,10 @@ _template: page-with-toc.html
 ---
 title: Join the CC Developer Community
 ---
-description: Join our Slack or mailing list communities to meet other
-developers interested in Creative Commons, get feedback on your projects, and
-talk with CC's full-time engineering staff. You can also keep up with us on the
-<a href="/blog">CC Open Source Blog</a> or via <a
-href="https://twitter.com/cc_opensource">Twitter</a>.
+description: Join our Slack to meet other developers interested in Creative
+Commons (CC), get feedback on your projects, and talk with CC's full-time
+Technology team members. You can also keep up with us on the <a href="/blog">CC
+Open Source Blog</a>.
 ---
 body:
 
@@ -57,6 +56,7 @@ The channels most relevant to CC's developer community are:
 | `#cc-dev-wordpress` | [wp-plugin-creativecommons][wp-plugin-creativecommons] project (creativecommons WordPress plugin) |
 | `#cc-dev-workprograms` | **GSoC, GSoD, Outreachy, and other [work programs][workprograms] or internships** |
 | `#cc-developers` | **general technical issues, new tech blog posts, etc.** |
+| `#cc-translation` | Coordinating translation efforts |
 | `#cc-usability` | general usability issues, seeking feedback on new releases of CC products from the community, etc. |
 
 [legaldb]: https://github.com/creativecommons/legaldb

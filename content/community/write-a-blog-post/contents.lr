@@ -4,7 +4,7 @@ _template: page-with-toc.html
 ---
 title: Write a Blog Post
 ---
-description: We invite members of the Creative Commons community to write guest posts on <a href="/blog">our technical blog</a>.
+description: We invite members of the Creative Commons (CC) community to write guest posts on <a href="/blog">our technical blog</a>.
 ---
 body:
 
@@ -29,7 +29,7 @@ If you're writing about a project you're working on, here are a few ways you cou
 - Announce your project and ask for contributions (example: [CC Vocabulary announcement](https://creativecommons.github.io/blog/entries/cc-vocabulary-new-design-system/))
 - Write an overview of how your project works without as much narrative (example: [this post about the CC Catalog](https://creativecommons.github.io/blog/entries/cc-catalog-leverage-open-data-1/))
 
-<p class="text-muted"><em>If you have more tips, <a href="https://github.com/creativecommons/vocabulary/blob/main/content/community/write-a-blog-post/contents.lr">submit an edit to this page</a>.</em></p>
+<p class="text-muted"><em>If you have more tips, <a href="https://github.com/creativecommons/creativecommons.github.io-source/blob/main/content/community/write-a-blog-post/contents.lr">submit an edit to this page</a>.</em></p>
 
 ## How to post
 

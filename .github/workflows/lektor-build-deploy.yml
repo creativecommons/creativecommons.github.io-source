@@ -4,17 +4,28 @@ jobs:
  build-and-deploy:
   runs-on: ubuntu-latest
   steps:
-   - uses: actions/checkout@v2
-   - name: setup python version
-     uses: actions/setup-python@v3
-     with:
-      python-version: 3.9
-   - name: Install dependencies
-     run: |
-      pip install pipenv
-      pipenv sync
-      pipenv run lektor build -f webpack
-   - name: Deploy to production
-     if: github.ref == 'refs/heads/main'
-     run: |
-      pipenv run lektor deploy ghpages --username ${{ secrets.LEKTOR_DEPLOY_USERNAME }} --password ${{ secrets.LEKTOR_DEPLOY_PASSWORD }}
+
+    # https://github.com/actions/setup-python
+    - name: setup python version
+      uses: actions/setup-python@v5
+      with:
+        python-version: 3.11
+
+    - name: Install pipenv
+      run: |
+        pip install --upgrade pip
+        pip install pipenv
+
+    # https://github.com/actions/checkout
+    - uses: actions/checkout@v4
+
+    - name: Install dependencies
+      run: pipenv sync
+
+    - name: Build static site and use webpack
+      run: pipenv run lektor build -f webpack
+
+    - name: Deploy to production
+      if: github.ref == 'refs/heads/main'
+      run: |
+        pipenv run lektor deploy ghpages --username ${{ secrets.LEKTOR_DEPLOY_USERNAME }} --password ${{ secrets.LEKTOR_DEPLOY_PASSWORD }}
