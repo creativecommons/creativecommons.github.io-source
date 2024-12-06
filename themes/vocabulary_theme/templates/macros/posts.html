@@ -10,7 +10,7 @@
         {{ render_authors_byline(post) }}
         <div class="excerpt">
           {% if post.excerpt %}
-            {{ post.excerpt | string | striptags() }}
+            {{ post.excerpt }}
           {% else %}
             {{ post.body | excerpt | string | striptags() | truncate(100) }}
           {% endif %}
