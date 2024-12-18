@@ -1,0 +1,56 @@
+title: My Outreachy Internship With Creative Commons
+---
+categories:
+outreachy
+outreachy-2024
+open-source
+community
+---
+author: Queen
+---
+series: outreachy-dec-2024-consolidating-and-implementing-vocabulary
+---
+pub_date: 2024-12-10
+---
+body:
+
+## Introduction  
+Hi, everyone! My name is Queen, and I’m a fresh pharmacy graduate with a passion for tech. My journey into coding started four years ago when I wrote my first HTML code and thought, "Yes, I’m FAANG-ready!" Spoiler: I wasn’t — but that didn’t stop me from dreaming big. Balancing pharmacy school and learning to code often felt like I was biting off more than I could chew, but I’m proud that I never gave up on my dream of becoming a front-end developer.
+
+## My Core Values  
+When I think about my core values, three words come to mind: **Growth**, **Curiosity**, and **Knowledge**.  
+
+- **Growth**: I strive to improve in every aspect of life—mentally, physically, intellectually, and even spiritually. Every setback is just a stepping stone for me.  
+- **Curiosity**: This one’s a work in progress, but I’m learning to ask questions and embrace not knowing. I love understanding *why* things work the way they do.  
+- **Knowledge**: I read a lot because I genuinely enjoy learning new things. For me, knowledge is the key to confidence and growth.
+
+## My Journey to Outreachy  
+Outreachy is a three-month paid open-source internship program for underrepresented people in tech. I first heard about it last year—just two days before the application deadline. I didn’t make it past the initial application stage that time.  
+
+When the December 2024 cohort initial application opened, it was the perfect timing for me. By then, I had finished my pharmacy degree and was ready to gain professional experience in front-end development and most especially, in open source. This time, I was determined to get it right.  
+
+I applied on the same day the application opened, I had already kept answers for the essay questions in my notes app. While waiting for the results, I brushed up on my skills and read articles from past interns to prepare for the contribution period.
+
+When I received the email saying my initial application had been approved, I felt a rush of excitement. To move forward and be able to make a final application, I needed to make at least one contribution to a project. I narrowed my choices to two based on the skills required, but Creative Commons stood out to me. Their mission and the project description piqued my interest more.  
+
+## The Contribution Period  
+The contribution period was competitive—and intimidating. Seeing the amazing work other applicants were doing made me doubt myself. But I loved the project and found the community so welcoming that I couldn’t give up.  
+
+The mentors were incredibly supportive, giving feedback that helped me improve with each contribution. When it was time to draft my final application and proposal, I worked with my mentor, sharing my plans and got her input which helped me in creating my project timeline.  
+
+Even before I knew if I’d be selected, I felt fulfilled. Contributing to Creative Commons was a rewarding experience, and I knew I wanted to continue contributing to the community, intern or not.  
+
+## My Internship Project  
+### **Consolidating and Implementing the Vocabulary Design System**  
+During my internship, I’ll be working on consolidating and implementing the Vocabulary design system across Creative Commons' ancillary websites.  
+
+Vocabulary is a design system that ensures a consistent user interface (UI) and user experience (UX) across all Creative Commons websites. However, its implementation has been inconsistent, with variations in features and versions across different sites. My role is to identify these inconsistencies and work on a unified implementation that also focuses on accessibilty. I'd also be implementing features that might be a good addition to the design system.
+
+I’m excited about this project because it aligns with my passion for front-end development and allows me to contribute meaningfully to a global community. I also get to improve my skills and gain new ones.
+
+## Conclusion  
+This internship is more than just a milestone for me—it’s a testament to perseverance and growth. I’m thrilled to embark on this journey with Creative Commons, and I can’t wait to see where it leads.  
+
+If you’re considering applying for Outreachy, my advice is simple: believe in yourself, stay curious, and never stop learning. Your journey might just surprise you.  
+
+Thank you for reading!  

@@ -43,7 +43,7 @@
 <script type="text/javascript" src="{{ '/static/gen/script.js'|url }}"></script>
 <title>{% block title %}Welcome{% endblock %} — Creative Commons Open Source</title>
 
-<body>
+<body class="blog-index">
 
 <a class="skip-to-content" href="#main-content-marker">Skip to content</a>
 <header>
@@ -166,11 +166,26 @@
 
     <nav class="footer-menu" aria-label="Footer menu">
         <ul>
+
             <li><a href="https://creativecommons.org/about/contact">Contact</a></li>
             <li><a href="https://mail.creativecommons.org/subscribe" target="_blank">Newsletter</a></li>
             <li><a href="https://creativecommons.org/privacy">Privacy</a></li>
             <li><a href="https://creativecommons.org/policies">Policies</a></li>
             <li><a href="https://creativecommons.org/terms">Terms</a></li>
+
+            <li>
+              <a href="{{ '/blog/entries'|url }}" class="menu-item">Blog</a>
+            </li>
+            <li>
+              <a href="{{ '/community/community-team'|url }}" class="menu-item">Community Team</a>
+            </li>
+            <li>
+              <a href="{{ '/contributing-code/projects'|url }}" class="menu-item">Project List</a>
+            </li>
+            <li>
+              <a href="{{ '/archives'|url }}" class="menu-item">Archives</a>
+            </li>
+
         </ul>
     </nav>
 
@@ -184,6 +199,9 @@
         <ul>
             <!-- <li><a class="icon-replace fa-instagram" href="#">Instagram</a></li> -->
             <li><a class="icon-replace fa-bluesky"  href="https://bsky.app/profile/creativecommons.bsky.social" target="_blank">Bluesky</a></li>
+    <nav class="social-menu">
+        <ul>
+            <li><a class="icon-replace fa-bluesky" href="https://bsky.app/profile/creativecommons.bsky.social" target="_blank">Bluesky</a></li>
             <li><a class="icon-replace fa-mastodon" href="https://mastodon.social/@creativecommons" target="_blank">Mastodon</a></li>
             <li><a class="icon-replace fa-facebook" href="https://www.facebook.com/creativecommons" target="_blank">Facebook</a></li>
             <li><a class="icon-replace fa-linkedin" href="https://www.linkedin.com/company/creative-commons/" target="_blank">LinkedIn</a></li>

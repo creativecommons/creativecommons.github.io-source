@@ -17,6 +17,16 @@
               <span>No categories</span>
               {% endif %}
             </span>
+        <!-- TODO: add excerpt back in -->
+        <!--
+        <div class="excerpt">
+          {% if post.excerpt %}
+            {{ post.excerpt }}
+          {% else %}
+            {{ post.body | excerpt | string | striptags() | truncate(100) }}
+          {% endif %}
+        </div>
+        -->
       </header>
 
       <figure>
