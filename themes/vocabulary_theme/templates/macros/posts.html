@@ -2,18 +2,29 @@
 {% from "macros/authors_gravatar.html" import render_author_gravatar %}
 
 {% macro render_post_summary(post, skip_gravatar=false) %}
-  <div class="column is-one-third is-paddingless padding-horizontal-big padding-top-bigger">
-    <article class="card entry-post horizontal no-border blog-entry">
-      {{ render_author_gravatar(post, skip_gravatar) }}
-      <div class="blog-content">
-        <h4 class="b-header"><a class="blog-title" href="{{ post|url }}">{{ post.title }}</a></h4>
-        {{ render_authors_byline(post) }}
-        <div class="excerpt">
-          {{ post.body | excerpt | string | striptags() | truncate(100) }}
-        </div>
-      </div>
-    </article>
-  </div>
+  <li>
+    <article class="post">
+      <header>
+        <h3 class="title"><a href="{{ post|url }}">{{ post.title }}</a></h3>
+          <span class="byline"> {{ render_authors_byline(post) }} </span>
+            <span class="categories">
+              {% if post.categories %}
+              {% for category in post.categories %}
+                <a href="/blog/categories/{{ category|replace(' ', '-') }}">{{ category|capitalize }}</a>
+              {% if not loop.last %}, {% endif %}
+              {% endfor %}
+              {% else %}
+              <span>No categories</span>
+              {% endif %}
+            </span>
+      </header>
+
+      <figure>
+        {{ render_author_gravatar(post, skip_gravatar) }}
+          <!-- <span class="attribution">"<a href="https://thegreats.co/artworks/the-more-we-share-the-more-we-have-series-22">The More We Share, The More We Have (series 1/2)</a>" by <a href="https://thegreats.co/artists/pietro-soldi">Pietro Soldi</a> for Creative Commons &amp; Fine Acts is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></span> -->
+      </figure>
+   </article>
+ </li>
 {% endmacro %}
 
 {% macro render_posts(posts) %}

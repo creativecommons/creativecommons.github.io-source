@@ -149,7 +149,7 @@
      --fa-search: url('./../svg/font-awesome/icons/fa-icons.svg#fa-search');
 
      --fa-instagram: url('./../svg/font-awesome/icons/fa-icons.svg#fa-instagram');
-     --fa-twitter: url('./../svg/font-awesome/icons/fa-icons.svg#fa-twitter');
+     --fa-bluesky: url('./../svg/font-awesome/icons/fa-icons.svg#fa-bluesky');
      --fa-facebook: url('./../svg/font-awesome/icons/fa-icons.svg#fa-facebook');
      --fa-linkedin: url('./../svg/font-awesome/icons/fa-icons.svg#fa-linkedin');
      --fa-mastodon: url('./../svg/font-awesome/icons/fa-icons.svg#fa-mastodon');
@@ -233,8 +233,8 @@ leaving room for semantic and accessible implementation choices  */
     --icon-sprite: var(--fa-instagram);
 }
 
-.icon-replace.fa-twitter {
-    --icon-sprite: var(--fa-twitter);
+.icon-replace.fa-bluesky {
+    --icon-sprite: var(--fa-bluesky);
 }
 
 .icon-replace.fa-facebook {

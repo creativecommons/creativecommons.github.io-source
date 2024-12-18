@@ -2,9 +2,14 @@
 <html lang="en">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="shortcut icon" type="image/x-icon" href="{{ '/static/favicon.ico'|url }}">
-<link rel="stylesheet" href="{{ '/static/gen/style.css'|url }}">
+<!--<link rel="shortcut icon" type="image/x-icon" href="{{ '/static/favicon.ico'|url }}"> -->
+<link rel="icon"  href="{{ '/static/vocabulary/favicon/favicon.ico'|url }}" sizes="any">
+<link rel="icon" href="{{ '/static/vocabulary/favicon/favicon.svg' |url }}" type="image/svg+xml">
+<link rel="manifest" href="{{ '/static/vocabulary/favicon/manifest.webmanifest' |url }}">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ '/static/vocabulary/favicon/apple-touch-icon.png' |url}}" />
+<!--<link rel="stylesheet" href="{{ '/static/gen/style.css'|url }}"> -->
 <link rel="stylesheet" href="{{ '/static/vocabulary/css/vocabulary.css'|url }}">
+<link rel="stylesheet" href="{{ '/static/css/style.css'|url }}">
 <link rel="stylesheet" href="{{ get_pygments_stylesheet()|url }}">
 <meta property="og:site_name" content="Creative Commons" />
 <meta property="og:title" content="{{ this.title }}" />
@@ -41,83 +46,26 @@
 <body>
 
 <a class="skip-to-content" href="#main-content-marker">Skip to content</a>
-
 <header>
     <div class="masthead">
-      <h1><a class="identity-logo product" href="{{ '/'|url }}">Open Source</a></h1>
+        <h1><a class="identity-logo product" href="{{ '/'|url }}">Open source</a></h1>
         <button class="expand-menu">Menu</button>
         <nav class="primary-menu">
             <ul>
-                <li><a class="navbar-item {% if this.is_child_of('/blog') %} is-active{% endif%}" href="{{ '/blog/entries'|url }}">
-                  Blog
-                </a></li>
-                <li><div class="navbar-item has-dropdown is-hoverable">
-                  <a class="navbar-link is-arrowless {% if this.is_child_of('/contributing-code') %} is-active{% endif%}" tabindex="0">
-                    Contribute</a>
-                  <div class="navbar-dropdown">
-                    {% for href, title in [
-                      ['/contributing-code', 'Contribution Guidelines'],
-                      ['/contributing-code/projects', 'Project List'],
-                      ['/contributing-code/issue-finder', 'Issue Finder'],
-                      ['/contributing-code/pr-guidelines', 'Pull Request Guidelines'],
-                      ['/contributing-code/github-repo-guidelines', 'GitHub Repo Guidelines'],
-                      ['/contributing-code/repo-labels', 'Repository Labels'],
-                      ['/contributing-code/foundational-tech', 'Foundational technologies'],
-                      ['/contributing-code/documentation-guidelines', 'Documentation Guidelines'],
-                      ['/contributing-code/javascript-guidelines', 'JavaScript Guidelines'],
-                      ['/contributing-code/python-guidelines', 'Python Guidelines'],
-                      ['/contributing-code/translation-guide', 'Translation Guide'],
-                      ['/contributing-code/usability', 'Usability'],
-                    ] %}
-                      <a class="navbar-item" href="{{ href|url }}">{{ title }}</a>
-                    {% endfor %}
-                  </div>
-                </div></li>
-                <li><div class="navbar-item has-dropdown is-hoverable">
-                  <a class="navbar-link is-arrowless {% if this.is_child_of('/community') %} is-active{% endif%}" tabindex="0">
-                    Community</a>
-                  <div class="navbar-dropdown is-active">
-                    {% for href, title in [
-                      ['/community', 'Join the Community'],
-                      ['/community/community-team', 'Community Team'],
-                      ['/community/community-team/members', 'Community Team Members'],
-                      ['/community/community-team/project-roles', 'Project Roles'],
-                      ['/community/community-team/community-building-roles', 'Community Building Roles'],
-                      ['/community/write-a-blog-post', 'Write a Blog Post'],
-                      ['/community/code-of-conduct', 'Code of Conduct'],
-                      ['/community/code-of-conduct/enforcement', 'Code of Conduct Enforcement'],
-                      ['/community/supporters', 'Supporters'],
-                    ] %}
-                      <a class="navbar-item" href="{{ href|url }}">{{ title }}</a>
-                    {% endfor %}
-                  </div>
-                </div></li>
-                <li><div class="navbar-item has-dropdown is-hoverable">
-                  <a class="navbar-link is-arrowless {% if this.is_child_of('/programs') %} is-active{% endif%}" tabindex="0">
-                    Work Programs</i></a>
-                  <div class="navbar-dropdown">
-                    {% for href, title in [
-                      ['/programs', 'Overview'],
-                      ['/programs/project-ideas', 'Project Ideas'],
-                      ['/programs/applicant-guide', 'Applicant Guide'],
-                      ['/programs/contrib-guide', 'Contributor Guide'],
-                      ['/programs/lead-guide', 'Project Lead Guide'],
-                      ['/programs/history', 'History'],
-                    ] %}
-                      <a class="navbar-item" href="{{ href|url }}">{{ title }}</a>
-                    {% endfor %}
-                  </div>
-                </div></li>
+                <li><a href="{{ '/blog/entries'| url }}">Blog</a></li>
+                <li><a href="{{ '/contributing-code' | url }}">Contribute</a></li>
+                <li><a href="{{ '/community'| url }}">Community</a></li>
+                <li><a href="{{ '/programs' | url  }}">Work Programs</a></li>
             </ul>
-          </nav>
+        </nav>
 
         <nav class="ancilliary-menu">
             <ul>
                 <!-- uncomment below line, if translation functionality is present on site -->
-                <li><button class="locale icon-attach fa-globe">English</button></li>
+                <!-- <li><button class="locale icon-attach fa-globe">English</button></li> -->
                 <!-- uncomment below line, if search functionality is present on site -->
-                <!-- <li><a class="search icon-attach fa-search" href="#">Search</a></li> -->
-                <li><a class="donate icon-attach fa-heart" href="https://www.classy.org/give/313412/#!/donation/checkout?c_src=website&amp;c_src2=top-of-page-banner" target="_blank">Donate</a></li>
+               <!--- <li><a class="search icon-attach fa-search" href="#">Search</a></li> -->
+                <li><a class="donate icon-attach fa-heart" href="https://www.classy.org/give/313412/#!/donation/checkout?c_src=website&c_src2=top-of-page-banner" target="_blank">Donate</a></li>
                 <li><button class="explore">Explore CC</button></li>
             </ul>
         </nav>
@@ -128,11 +76,11 @@
     <div class="explore-panel">
 
     <!-- (optional main CC logo, p, link on non-home site back to main site) -->
-    <aside>
-        <a class="identity-logo" href="https://creativecommons.org">Creative Commons</a>
+    <!-- <aside>
+        <a class="identity-logo" href="#">Creative Commons</a>
         <h2>Our Work Relies On You!</h2>
         <p>Help us keep the internet free and open.</p>
-    </aside>
+    </aside> -->
 
     <nav class="explore-menu">
         <ul>
@@ -145,16 +93,26 @@
                 <p>Become an expert in creating and engaging with openly licensed materials</p>
             </li>
             <li>
+                <a href="https://summit.creativecommons.org/" target="_blank">Global Summit</a>
+                <p>Attend our annual event, promoting the power of open licensing</p>
+            </li>
+            <li>
                 <a href="/choose" target="_blank">Chooser</a>
                 <p>Get help choosing the appropriate license for your work</p>
             </li>
             <li>
-                <a href="https://search.creativecommons.org/" target="_blank">Search Portal</a>
+                <a href="https://search.creativecommons.org/"  target="_blank">Search Portal</a>
                 <p>Find engines to search openly licensed material for creative and educational reuse</p>
             </li>
-          </ul>
+            <li>
+                <a href="https://opensource.creativecommons.org/" target="_blank">Open Source</a>
+                <p>Help us build products that maximize creativity and innovation</p>
+            </li>
+
+        </ul>
     </nav>
     </div>
+
 </header>
 
   <!-- Breadcrumb -->
@@ -199,48 +157,33 @@
   <!-- Body -->
   <span id="main-content-marker"></span>
   <main>
-  <div class="content">
   {% block body %}{% endblock %}
-  </div>
   </main>
 
   <!-- Footer -->
   <footer>
-    <a class="identity-logo" href="#">Creative Commons</a>
+    <a class="identity-logo" href="https://www.creativecommons.org">Creative Commons</a>
 
-    <nav class="footer-menu">
+    <nav class="footer-menu" aria-label="Footer menu">
         <ul>
-            <!-- <li><a href="/about/contact">Contact</a></li>
+            <li><a href="https://creativecommons.org/about/contact">Contact</a></li>
             <li><a href="https://mail.creativecommons.org/subscribe" target="_blank">Newsletter</a></li>
-            <li><a href="/privacy">Privacy</a></li>
-            <li><a href="/policies">Policies</a></li>
-            <li><a href="/terms">Terms</a></li> -->
-            <li>
-              <a href="{{ '/blog/entries'|url }}" class="menu-item">Blog</a>
-            </li>
-            <li>
-              <a href="{{ '/community/community-team'|url }}" class="menu-item">Community Team</a>
-            </li>
-            <li>
-              <a href="{{ '/contributing-code/projects'|url }}" class="menu-item">Project List</a>
-            </li>
-            <li>
-              <a href="{{ '/archives'|url }}" class="menu-item">Archives</a>
-            </li>
+            <li><a href="https://creativecommons.org/privacy">Privacy</a></li>
+            <li><a href="https://creativecommons.org/policies">Policies</a></li>
+            <li><a href="https://creativecommons.org/terms">Terms</a></li>
         </ul>
     </nav>
 
     <div class="contact">
     <!-- this area lacks a heading? -->
     <h2>Contact Us</h2>
-    <p>Creative Commons <br> PO Box 1866, Mountain View, CA 94042</p>
+    <p>Creative Commons <br /> PO Box 1866, Mountain View, CA 94042</p>
     <p><a href="mailto:info@creativecommons.org">info@creativecommons.org</a></p>
-    <p><a href="tel:+14154296753">+1-415-429-6753</a></p>
 
-    <nav class="social-menu">
+    <nav class="social-menu" aria-label="Social menu">
         <ul>
             <!-- <li><a class="icon-replace fa-instagram" href="#">Instagram</a></li> -->
-            <li><a class="icon-replace fa-twitter" href="https://twitter.com/creativecommons" target="_blank">Twitter</a></li>
+            <li><a class="icon-replace fa-bluesky"  href="https://bsky.app/profile/creativecommons.bsky.social" target="_blank">Bluesky</a></li>
             <li><a class="icon-replace fa-mastodon" href="https://mastodon.social/@creativecommons" target="_blank">Mastodon</a></li>
             <li><a class="icon-replace fa-facebook" href="https://www.facebook.com/creativecommons" target="_blank">Facebook</a></li>
             <li><a class="icon-replace fa-linkedin" href="https://www.linkedin.com/company/creative-commons/" target="_blank">LinkedIn</a></li>
@@ -250,8 +193,8 @@
 
     <div class="subscribe">
     <h2>Subscribe to our Newsletter</h2>
-    <form action="https://creativecommons.us4.list-manage.com/subscribe/post?u=fd30364b6577b471373d6076c&amp;id=4603fe102a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate newsletter" target="_blank" novalidate="">
-        <input type="email" value="" name="EMAIL" class="email input" id="mce-EMAIL" placeholder="Your email" required="">
+    <form action="https://creativecommons.us4.list-manage.com/subscribe/post?u=fd30364b6577b471373d6076c&amp;id=4603fe102a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate newsletter" target="_blank">
+        <input type="email" value="" name="EMAIL" class="email input" id="mce-EMAIL" placeholder="Your email" required>
         <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
         <div style="position: absolute; left: -5000px" aria-hidden="true">
           <input type="text" name="b_fd30364b6577b471373d6076c_4603fe102a" tabindex="-1" value="">
@@ -261,14 +204,14 @@
     </div>
 
     <div class="donate">
-        <h2>Our work relies on you!</h2>
-        <p>Help us keep the internet free and open</p>
-        <a class="donate icon-attach cc-heart-filled" href="https://www.classy.org/give/313412/#!/donation/checkout?c_src=website&amp;c_src2=top-of-page-banner" target="_blank">Donate Now</a>
+        <h2>Support Our Work</h2>
+        <p>Our work relies on you! Help us keep the Internet free and open.</p>
+        <a class="donate icon-attach cc-heart-filled" href="https://www.classy.org/give/313412/#!/donation/checkout?c_src=website&c_src2=top-of-page-banner" target="_blank">Donate Now</a>
     </div>
 
 
     <div class="license">
-        <p>Except where otherwise <a href="/policies/#license">noted</a>, content on this site is licensed under a <a href="/licenses/by/4.0/">Creative Commons Attribution 4.0 International license</a>. Icons by <a href="https://fontawesome.com/" target="_blank">Font Awesome</a>.</p>
+        <p>Except where otherwise <a href="https://creativecommons.org/policies/#license">noted</a>, content on this site is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International license</a>. Icons by <a href="https://fontawesome.com/" target="_blank">Font Awesome</a>.</p>
 
         <svg>
             <use href="/vocabulary/svg/cc/icons/cc-icons.svg#cc-logo"></use>
@@ -279,6 +222,11 @@
     </div>
 
   </footer>
+  </footer>
+  <script src="{{ '/static/vocabulary/js/vocabulary.js'|url }}"></script>
+ </body>
+</html>
+    </footer>
   <script src="{{ '/static/vocabulary/js/vocabulary.js'|url }}"></script>
  </body>
 </html>
