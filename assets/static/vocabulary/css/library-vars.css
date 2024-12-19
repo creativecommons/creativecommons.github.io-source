@@ -139,23 +139,6 @@
      --cc-quote: url('../svg/cc/icons/cc-icons.svg#cc-quote');
 
      /* font awesome sprite names */
-
-     --fa-angle-down: url('./../svg/font-awesome/icons/fa-icons.svg#fa-angle-down');
-     --fa-angle-left: url('./../svg/font-awesome/icons/fa-icons.svg#fa-angle-left');
-     --fa-angle-right: url('./../svg/font-awesome/icons/fa-icons.svg#fa-angle-right');
-     --fa-angle-up: url('./../svg/font-awesome/icons/fa-icons.svg#fa-angle-up');
-     --fa-globe: url('./../svg/font-awesome/icons/fa-icons.svg#fa-globe');
-     --fa-heart: url('./../svg/font-awesome/icons/fa-icons.svg#fa-heart');
-     --fa-info: url('./../svg/font-awesome/icons/fa-icons.svg#fa-info');
-     --fa-right-angle: url('./../svg/font-awesome/icons/fa-icons.svg#fa-right-angle');
-     --fa-search: url('./../svg/font-awesome/icons/fa-icons.svg#fa-search');
-
-     --fa-instagram: url('./../svg/font-awesome/icons/fa-icons.svg#fa-instagram');
-     --fa-bluesky: url('./../svg/font-awesome/icons/fa-icons.svg#fa-bluesky');
-     --fa-facebook: url('./../svg/font-awesome/icons/fa-icons.svg#fa-facebook');
-     --fa-linkedin: url('./../svg/font-awesome/icons/fa-icons.svg#fa-linkedin');
-     --fa-mastodon: url('./../svg/font-awesome/icons/fa-icons.svg#fa-mastodon');
-
      --fa-angle-down: url('../svg/font-awesome/icons/fa-icons.svg#fa-angle-down');
      --fa-angle-left: url('../svg/font-awesome/icons/fa-icons.svg#fa-angle-left');
      --fa-angle-right: url('../svg/font-awesome/icons/fa-icons.svg#fa-angle-right');
