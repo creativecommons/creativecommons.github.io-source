@@ -1,50 +1,16 @@
-<section class="featured-projects">
-  <div class="container">
-    <div class="level">
-      <h2 class="is-paddingless level-left">
-        {{ this.title }}
-      </h2>
-      <span class="level-right">
-        <a class="project-page-link" href="/contributing-code/projects/">See all available projects <i class="icon angle-right"></i></a>
-      </span>
-    </div>
-    <div class="project-list columns is-multiline">
+<article class="projects">
+    <h2> {{ this.title }}</h2>
+  <!--- <p>placeholder content here...</p> -->
+    <ul>
       {% for repo in bag('repos.repos') %}
       {% if repo.featured %}
-        <div class="column is-one-third">
-          <article class="card entry-post vertical project-index">
-            <div class="card-content">
-              <h4 class="card-title b-header"><a href="{{ repo.url }}">{{ repo.english_name }}</a></h4>
-              <a class="button is-text tiny site-link" href="{{ repo.website or repo.url }}">
-                <span>Visit site</span>
-                <i class="icon external-link"></i>
-              </a>
-              <div class="content">
-                {{ repo.description }}
-              </div>
-              <div class="labels">
-                {% for technology in repo.technologies %}
-                  <button class="button tag">{{ technology }}</button>
-                {% endfor %}
-              </div>
-              <div class="external-links">
-                <a class="button is-text tiny" href="{{ repo.url }}">
-                  <i class="icon github"></i>
-                  <span class="link-content">Github Repository</span>
-                </a>
-                {% if repo.slack %}
-                  <br>
-                  <a class="button is-text tiny" href="https://creativecommons.slack.com/channels/{{ repo.slack }}">
-                    <i class="icon slack"></i>
-                    <span class="link-content">Slack channel (#{{ repo.slack }})</span>
-                  </a>
-                {% endif %}
-              </div>
-            </div>
-          </article>
-        </div>
+        <li>
+            <article class="project">
+                <h3><a href="{{ repo.url }}">{{ repo.english_name }}</a></h3>
+                <p>  {{ repo.description }}</p>
+            </article>
+        </li>
       {% endif %}
     {% endfor %}
-    </div>
-  </div>
-</section>
+    </ul>
+</article>
