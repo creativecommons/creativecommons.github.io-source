@@ -15,14 +15,17 @@ links:
   <!-- Button linking to the developer community page -->
   <a href="/community">
     Join the Developer Community
+    <!-- TODO: Evaluate legacy design button -->
   </a>
 
 <p>This site is for developers looking to contribute, but anyone can use CC tools to share their works.</p>
   <!-- Button linking to the Creative Commons "Share your work" page -->
   <a href="https://creativecommons.org/share-your-work/">
     Share your work using our licenses/tools
+    <!-- TODO: Evaluate legacy design button -->
   </a>
 
+<!--TODO: Refactor code for the get involved section? -->
 #### get-involved ####
 title:
 

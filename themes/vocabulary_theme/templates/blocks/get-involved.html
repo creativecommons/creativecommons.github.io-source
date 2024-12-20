@@ -1,14 +1,21 @@
-<article class="case-studies">
-    <h2>  {{ this.title }} </h2>
-    <ul>
-        <li>
-          {{ this.links_product }}
-        </li>
-        <li>
-          {{ this.links_integrate }}
-        </li>
-        <li>
-          {{ this.links_plugins }}
-        </li>
-    </ul>
+<article class="projects">
+  <h2>{{ this.title }}</h2>
+  <ul>
+    <li>
+      <article class="project">
+        <h3>{{ this.links_product }}</h3>
+      </article>
+    </li>
+    <li>
+      <article class="project">
+        <h3>{{ this.links_integrate }}</h3>
+      </article>
+    </li>
+    <li>
+      <article class="project">
+        <h3>{{ this.links_plugins }} </h3>
+        <!--Evaluate: Vocabulary markup uses <a> tags here also. To retain?-->
+      </article>
+    </li>
+  </ul>
 </article>

@@ -1,23 +1,20 @@
 <article class="projects">
-    <h2> {{ this.title }}</h2>
+    <h2>{{ this.title }}</h2>
     <ul>
       {% for repo in bag('repos.repos') %}
       {% if repo.featured %}
         <li>
             <article class="project">
                 <h3><a href="{{ repo.url }}">{{ repo.english_name }}</a></h3>
-                <p>  {{ repo.description }}</p>
+                <p>{{ repo.description }}</p>
             </article>
         </li>
-      {% endif %}
-    {% endfor %}
-    </ul>
-</article>
 
-<!-- TODO: Reintroduce external links, tags, slack?  -->
+<!--TODO: Reintroduce external links, tags, and Slack in future updates -->
                 
- <!-- old HTML for reference commented out for now -->
-  <!-- <div class="external-links">
+<!-- old HTML for reference commented out for now -->
+<!-- 
+ <div class="external-links">
     <a class="button is-text tiny" href="{{ repo.url }}">
         <i class="icon github"></i>
     <span class="link-content">Github Repository</span>
@@ -29,10 +26,18 @@
     <span class="link-content">Slack channel (#{{ repo.slack }})</span>
      </a>
   {% endif %}
-  </div> -->             
+  </div> 
+  -->  
+           
  <!-- old tags structure for reference commented out for now -->
-    <!-- <div class="labels">
+<!-- 
+ <div class="labels">
     {% for technology in repo.technologies %}
     <button class="button tag">{{ technology }}</button>
     {% endfor %}
-    </div> -->
+    </div>
+-->
+      {% endif %}
+    {% endfor %}
+    </ul>
+</article>
