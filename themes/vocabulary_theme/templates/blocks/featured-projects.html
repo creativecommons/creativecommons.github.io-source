@@ -13,3 +13,26 @@
     {% endfor %}
     </ul>
 </article>
+
+<!-- TODO: Reintroduce external links, tags, slack?  -->
+                
+ <!-- old HTML for reference commented out for now -->
+  <!-- <div class="external-links">
+    <a class="button is-text tiny" href="{{ repo.url }}">
+        <i class="icon github"></i>
+    <span class="link-content">Github Repository</span>
+    </a>
+    {% if repo.slack %}
+      <br>
+    <a class="button is-text tiny" href="https://creativecommons.slack.com/channels/{{ repo.slack }}">
+    <i class="icon slack"></i>
+    <span class="link-content">Slack channel (#{{ repo.slack }})</span>
+     </a>
+  {% endif %}
+  </div> -->             
+ <!-- old tags structure for reference commented out for now -->
+    <!-- <div class="labels">
+    {% for technology in repo.technologies %}
+    <button class="button tag">{{ technology }}</button>
+    {% endfor %}
+    </div> -->
