@@ -20,13 +20,13 @@
                     {% for member in project.members %}
                     <li>
                         <article class="person">
-                            <h3><a href="#{{ project.name|lower|replace(' ','-') }}--{{ member.name|lower|replace(' ','-') }}">{{ member.name }}</a></h3>
+                            <h3 id="{{ project.name|lower|replace(' ','-') }}--{{ member.name|lower|replace(' ','-') }}"> <a href="#"> {{ member.name }}</a></h3>
+                            <!-- TODO: Evaluate whether member names require links. In the old code, dynamic IDs are used, but lackedd navigation. TO retain plain text unless Vocabulary markup explicitly require links. -->
                             <span class="title">{{ member.role }}</span>
                             <figure>
                                 <img src="imgs/profile.jpg" alt="Profile picture of {{ member.name }}" />
                                 <!-- TODO: Replace placeholder image with actual images or confirm if images are out of scope. -->
                             </figure>
-                             
                         </article>
                     </li>
                     {% endfor %}
@@ -43,7 +43,8 @@
         {% for member in bag('community_team_members.community_builders') %}
         <li>
             <article class="person">
-                <h3><a href="#community-builder--{{ member.name|replace(' ','-') }}">{{ member.name }}</a></h3>
+                <h3 id="community-builder--{{ member.name|replace(' ','-') }}"> <a href="#">{{ member.name }}</a></h3>
+                  <!-- TODO: Evaluate whether member names require links. In the old code, dynamic IDs are used, but lackedd navigation. TO retain plain text? -->
                 <span class="title">{{ member.role }}</span>
                 <figure>
                     <img src="imgs/profile.jpg" alt="Profile picture of {{ member.name }}" />
