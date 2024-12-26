@@ -6,63 +6,79 @@
 {% block title %}{{ this.title }}{% endblock %}
 
 {% block body %}
-  <div class="single-post">
-    <header class="single-post-header">
-      <div class="container">
-        <h4>CC Open Source Blog</h4>
-        <h2 class="title">{{ this.title }}</h2>
-        <div class="author columns is-marginless">
-          {{ render_author_gravatar(this)|trim }}
-          <p class="padding-small">
-            {{ render_authors_byline(this)|trim }}
-          </p>
-        </div>
-        {% if this.series|length %}
-          {% set series = this.parent.parent.children.get('series').children.get(this.series) %}
-          <div class="series-header">
-            <span>This blog is part of the series:</span>
-            <a href="#series">{{ series.name }}</a>
-          </div>
-        {% endif %}
-      </div>
-    </header>
-    <div class="single-post-body content container">
-      {{ this.body }}
-    </div>
-    <footer class="single-post-footer container">
-      <div class="category">
-        <h4 class="category-title">Categories</h4>
-        <div class="categories">
-          {% if this.categories|length %}
-            {% for category in this.categories %}
-              {% set current_category = this.parent.parent.children.get('categories').children.get(category) %}
-              {{ check_file('content' + this.parent.parent.path + '/categories/' + category + '/contents.lr') }}
-              <a class="button tag" href=" {{ current_category|url }} ">{{ category }}</a>
-            {% endfor %}
-          {% else %}
-            none
-          {% endif %}
-        </div>
-      </div>
-      {% if this.series|length %}
-        <div class="series-posts" id="series">
-          <h5 class="title">Posts in the {{ series.name }} series</h5>
-          <ul class="posts">
-            {% for post in series.children.order_by('pub_date') %}
-              {% if post.path==this.path %}
-                <li class="has-color-dark-slate-gray">
-                  <i class="icon circle-filled"></i>{{ post.title }}
-                </li>
-              {% else %}
-                <li>
-                  <i class="icon circle-filled"></i><a href="{{ post|url }}">{{ post.title }}</a>
-                </li>
-              {% endif %}
-            {% endfor %}
-          </ul>
-        </div>
-      {% endif %}
-      <div class="comments">{{ render_disqus_comments() }}</div>
-    </footer>
-  </div>
+<header>
+  <h1>{{ this.title }}</h1>
+  <span class="byline"><a>{{ render_authors_byline(this)|trim }}</a></span>
+  <span class="categories">
+    {% if this.categories|length %}
+      {% for category in this.categories %}
+        {% set current_category = this.parent.parent.children.get('categories').children.get(category) %}
+        {{ check_file('content' + this.parent.parent.path + '/categories/' + category + '/contents.lr') }}
+        <a href="{{ current_category|url }}">{{ category }}</a>
+      {% endfor %}
+    {% else %}
+      none
+    {% endif %}
+  </span>
+</header>
+
+<!-- TODO: IF EXCERPT IS TO BE INCLUDED, ADD EXCERPT HERE -->
+<!--
+  <aside class="opening">
+    <p> </p>
+  </aside>
+-->
+
+<p>{{ this.body }}</p>
+
+{% if this.series|length %}
+  {% set series = this.parent.parent.children.get('series').children.get(this.series) %}
+  <aside>
+    <p>This blog is part of the series:</p>
+    <a href="#series">{{ series.name }}</a>
+  </aside>
+
+<article class="posts related">
+    <h2>Related posts</h2>
+
+    <ul>
+        {% for post in series.children.order_by('pub_date') %}
+        <li>
+            <article class="post">
+                <header>
+                    <h3><a href="{{ post|url }}">{{ post.title }}</a></h3>
+                    <span class="byline">{{ render_authors_byline(post)|trim }}</span>
+                    <span class="categories">
+                        {% if post.categories|length %}
+                            {% for category in post.categories %}
+                                {% set current_category = this.parent.parent.children.get('categories').children.get(category) %}
+                                <a href="{{ current_category|url }}">{{ category }}</a>
+                            {% endfor %}
+                        {% else %}
+                            none
+                        {% endif %}
+                    </span>
+                </header>
+            </article>
+        </li>
+        {% endfor %}
+    </ul>
+</article>
+{% endif %}
+
+<article class="tags">
+  <h2>Tags</h2>
+  <ul>
+    {% if this.categories|length %}
+      {% for category in this.categories %}
+        {% set current_category = this.parent.parent.children.get('categories').children.get(category) %}
+        <li><a href="{{ current_category|url }}">{{ category }}</a></li>
+      {% endfor %}
+    {% else %}
+      <li>none</li>
+    {% endif %}
+  </ul>
+</article>
+
+<div class="comments">{{ render_disqus_comments() }}</div>
 {% endblock %}
