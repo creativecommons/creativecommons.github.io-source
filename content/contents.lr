@@ -11,27 +11,26 @@ We have been building <span class="has-text-forest-green">free software</span> a
 ----
 links:
 
-<p class="hero-description">We work on code and products that support digital creativity and sharing, from usability of our legal tools to enabling discovery of CC-licensed content.</p>
-<div class="hero-links">
+<p>We work on code and products that support digital creativity and sharing, from usability of our legal tools to enabling discovery of CC-licensed content.</p>
   <!-- Button linking to the developer community page -->
-  <a class="button small is-success row" href="/community">
+  <a href="/community">
     Join the Developer Community
+    <!-- TODO: Evaluate legacy design button -->
   </a>
-</div>
 
-<p class="hero-description">This site is for developers looking to contribute, but anyone can use CC tools to share their works.</p>
-<div class="hero-links">
+<p>This site is for developers looking to contribute, but anyone can use CC tools to share their works.</p>
   <!-- Button linking to the Creative Commons "Share your work" page -->
-  <a class="button small row" href="https://creativecommons.org/share-your-work/">
+  <a href="https://creativecommons.org/share-your-work/">
     Share your work using our licenses/tools
+    <!-- TODO: Evaluate legacy design button -->
   </a>
-</div>
 
+<!--TODO: Refactor code for the get involved section? -->
 #### get-involved ####
 title:
 
 <h2>Get Involved</h2>
-<p class="get-involved-description">Help CC’s mission by contributing to our products, integrating our tools into your project, or using our plugins. We have a small team and really appreciate your involvement!</p>
+<p>Help CC’s mission by contributing to our products, integrating our tools into your project, or using our plugins. We have a small team and really appreciate your involvement!</p>
 ----
 links_product:
 
