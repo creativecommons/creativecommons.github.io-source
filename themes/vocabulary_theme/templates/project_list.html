@@ -3,18 +3,19 @@
 {% block title %}{{ this.title }}{% endblock %}
 
 {% block body %}
-  <header>
-      <h1>Project List</h1>
-      <p>This is a list of all active open source software projects that Creative Commons (CC) maintains.</p>
-  </header>
+<header>
+  <h1>Project List</h1>
+  <p>This is a list of all active open source software projects that Creative Commons (CC) maintains.</p>
+</header>
 
-  <p>Please read the <a href="/contributing-code">Contributing Code</a> page for general information on how to get involved. Contribution guidelines specific to an individual project can be found in the <code>README</code> and the <code>CONTRIBUTING</code> files in the root folder of every repository. If you have any questions, don't hesistate to reach out to us through <a href="/community">one of our community forums</a> or open a GitHub issue.</p>
-   <article class="projects">
-    <h2>Featured Projects</h2>
-    <p>Explore our highlighted open source initiatives.</p>
-    
-    <ul>
-      {% for repo in bag('repos.repos') %}
+<p>Please read the <a href="/contributing-code">Contributing Code</a> page for general information on how to get involved. Contribution guidelines specific to an individual project can be found in the <code>README</code> and the <code>CONTRIBUTING</code> files in the root folder of every repository. If you have any questions, don't hesitate to reach out to us through <a href="/community">one of our community forums</a> or open a GitHub issue.</p>
+
+<article class="projects">
+  <h2>Featured Projects</h2>
+  <p>Explore our highlighted open source initiatives.</p>
+  
+  <ul>
+    {% for repo in bag('repos.repos') %}
       {% if repo.featured %}
         <li>
           <article class="project">
@@ -23,9 +24,9 @@
           </article>
         </li>
       {% endif %}
-      {% endfor %}
-    </ul>
-  </article>
+    {% endfor %}
+  </ul>
+</article>
 
 <!--
 TODO: Consider whether to add additional data that current markup does not support:
@@ -34,19 +35,54 @@ TODO: Consider whether to add additional data that current markup does not suppo
 - Website links
 - GitHub specific links
 --> 
-  <article class="projects">
+<div>
   <h2>All Active Projects</h2>
   <p>This is a complete list of active Creative Commons software projects. Archived projects are not documented here and can be found on the <strong><a href="https://github.com/cc-archive">CC Archive GitHub organization</a></strong>.</p>
-  
-  <ul>
+  <div>
+  <table>
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Description</th>
+        <th scope="col">Language</th>
+        <th scope="col">License</th>
+        <th scope="col">Links</th>
+      </tr>
+    </thead>
     {% for repo in bag('repos.repos') %}
-      <li>
-        <article class="project">
-          <h3><a href="{{ repo.url }}">{{ repo.name }}</a></h3>
-          <p>{{ repo.description }}</p>
-        </article>
-      </li>
+      <tr>
+        <td>{{ loop.index }}</td>
+        <td>
+          <div>{{ repo.name }}</div>
+        </td>
+        {% if repo.description %}
+          <td>{{ repo.description }}</td>
+        {% else %}
+          <td></td>
+        {% endif %}
+        <td>
+          {% if repo.language %}{{ repo.language }}{% endif %}
+        </td>
+        {% if repo.license %}
+          <td>
+            <a href="{{ repo.license.url }}">{{ repo.license.name }}</a>
+          </td>
+        {% else %}
+          <td>Not specified</td>
+        {% endif %}
+        <td>
+          {% if repo.website %}
+            <a href="{{ repo.website }}"><i></i>Website</a>
+          {% endif %}
+          <a href="{{ repo.url }}"><i></i>Github</a>
+          {% if repo.slack %}
+            <a href="https://creativecommons.slack.com/channels/{{ repo.slack }}"><i></i>Slack</a>
+          {% endif %}
+        </td>
+      </tr>
     {% endfor %}
-  </ul>
-</article>
+  </table>
+  </div>
+</div>
 {% endblock %}
