@@ -29,7 +29,7 @@
   </aside>
 -->
 
-<p>{{ this.body }}</p>
+<div>{{ this.body }}</div>
 
 {% if this.series|length %}
   {% set series = this.parent.parent.children.get('series').children.get(this.series) %}
@@ -38,32 +38,31 @@
     <a href="#series">{{ series.name }}</a>
   </aside>
 
-<article class="posts related">
+  <article class="posts related">
     <h2>Related posts</h2>
-
     <ul>
-        {% for post in series.children.order_by('pub_date') %}
+      {% for post in series.children.order_by('pub_date') %}
         <li>
-            <article class="post">
-                <header>
-                    <h3><a href="{{ post|url }}">{{ post.title }}</a></h3>
-                    <span class="byline">{{ render_authors_byline(post)|trim }}</span>
-                    <span class="categories">
-                        {% if post.categories|length %}
-                            {% for category in post.categories %}
-                                {% set current_category = this.parent.parent.children.get('categories').children.get(category) %}
-                                <a href="{{ current_category|url }}">{{ category }}</a>
-                            {% endfor %}
-                        {% else %}
-                            none
-                        {% endif %}
-                    </span>
-                </header>
-            </article>
+          <article class="post">
+            <header>
+              <h3><a href="{{ post|url }}">{{ post.title }}</a></h3>
+              <span class="byline">{{ render_authors_byline(post)|trim }}</span>
+              <span class="categories">
+                {% if post.categories|length %}
+                  {% for category in post.categories %}
+                    {% set current_category = this.parent.parent.children.get('categories').children.get(category) %}
+                    <a href="{{ current_category|url }}">{{ category }}</a>
+                  {% endfor %}
+                {% else %}
+                  none
+                {% endif %}
+              </span>
+            </header>
+          </article>
         </li>
-        {% endfor %}
+      {% endfor %}
     </ul>
-</article>
+  </article>
 {% endif %}
 
 <article class="tags">
