@@ -1,20 +1,32 @@
 {% extends "layout.html" %}
 
-{% from "macros/authors.html" import render_authors %}
+{% from "macros/author_name.html" import render_author_name %}
 
 {% block title %} Authors {% endblock %}
 
 {% block body %}
-  <div class="all-authors">
-    <div class="header">
-      <h1 class="container">Authors</h1>
-    </div>
-    <div class="authors-list">
-      <div class="container">
-        <div class="columns is-multiline is-mobile">
-          {{ render_authors(this) }}
-        </div>
-      </div>
-    </div>
-  </div>
+<article class="persons">
+    <h2>Authors</h2>
+    <ul>
+        {% for author in site.query(this.path) %}
+        <li>
+            <article class="person">
+                <h3><a href="{{ author|url }}">{{ render_author_name(author) }}</a></h3>
+                {% if author.title %}
+                <span class="title">{{ author.title }}</span>
+                {% endif %}
+                <figure>
+                    <img src="https://secure.gravatar.com/avatar/{{ author.md5_hashed_email }}?size=200&d=mp" alt="Profile picture of {{ render_author_name(author) }}" />
+                    {% if author.image_attribution %}
+                    <span class="attribution">{{ author.image_attribution }}</span>
+                    {% endif %}
+                </figure>
+                {% if author.bio %}
+                <p>{{ author.bio|truncatewords(30) }}</p>
+                {% endif %}
+            </article>
+        </li>
+        {% endfor %}
+    </ul>
+</article>
 {% endblock %}

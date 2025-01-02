@@ -1,5 +1,6 @@
 {% from "macros/author_name.html" import render_author_name %}
 
+<!--TODO: Review if macros is still needed as logic as been refactored into authors.html and seems not to be reusable-->
 {% macro render_authors(authors) %}
   {% for author in site.query(authors.path) %}
     <div class="author column is-6-mobile is-2-desktop">
