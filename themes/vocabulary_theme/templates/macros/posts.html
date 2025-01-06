@@ -37,10 +37,10 @@
 {% endmacro %}
 
 {% macro render_posts(posts) %}
-  <div class="columns is-multiline blog-entries">
+  <ul>
     {% for post in posts %}
       {% set post_loop = loop %}
         {{ render_post_summary(post) }}
     {% endfor %}
-  </div>
+  </ul>
 {% endmacro %}
