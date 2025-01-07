@@ -1,7 +1,11 @@
 {% from "macros/posts.html" import render_posts %}
 
 {% macro render_categories(categories) %}
-    {% for category in site.query(categories.path) %}
-      <a class="button tag margin-vertical-small margin-horizontal-smaller" href="{{ category|url }}">{{ category.name }}</a>
-    {% endfor %}
+<ul>
+  {% for category in site.query(categories.path) %}
+    <li>
+      <a href="{{ category|url }}">{{ category.name }}</a>
+    </li>
+  {% endfor %}
+</ul>
 {% endmacro %}

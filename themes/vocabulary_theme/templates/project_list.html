@@ -3,108 +3,86 @@
 {% block title %}{{ this.title }}{% endblock %}
 
 {% block body %}
-  <div class="project-list">
-    <div class="header">
-      <div class="container">
-        <h1>Project List</h1>
-        <p class="description">This is a list of all active open source software projects that Creative Commons (CC) maintains.</p>
-      </div>
-    </div>
-    <div class="body container">
-      <p>Please read the <a href="/contributing-code">Contributing Code</a> page for general information on how to get involved. Contribution guidelines specific to an individual project can be found in the <code>README</code> and the <code>CONTRIBUTING</code> files in the root folder of every repository. If you have any questions, don't hesistate to reach out to us through <a href="/community">one of our community forums</a> or open a GitHub issue.</p>
-      <div class="featured-projects">
-        <h2 class="is-paddingless level-left">
-          Featured Projects
-        </h2>
-        <div class="project-list columns is-multiline">
-          {% for repo in bag('repos.repos') %}
-          {% if repo.featured %}
-            <div class=" column is-one-third">
-              <article class="card entry-post vertical project-index">
-                <div class="card-content">
-                  <h4 class="card-title b-header"><a href="{{ repo.url }}">{{ repo.english_name }}</a></h4>
-                  <a class="button is-text tiny site-link" href="{{ repo.website or repo.url }}">
-                    <span>Visit site</span>
-                    <i class="icon external-link"></i>
-                  </a>
-                  <div class="content">
-                    {{ repo.description }}
-                  </div>
-                  <div class="labels">
-                    {% for technology in repo.technologies %}
-                      <button class="button tag">{{ technology }}</button>
-                    {% endfor %}
-                  </div>
-                  <div class="external-links">
-                    <a class="button is-text tiny" href="{{ repo.url }}">
-                      <i class="icon github"></i>
-                      <span class="link-content">Github Repository</span>
-                    </a>
-                    {% if repo.slack %}
-                      <br>
-                      <a class="button is-text tiny" href="https://creativecommons.slack.com/channels/{{ repo.slack }}">
-                        <i class="icon slack"></i>
-                        <span class="link-content">Slack channel (#{{ repo.slack }})</span>
-                      </a>
-                    {% endif %}
-                  </div>
-                </div>
-              </article>
-            </div>
+<header>
+  <h1>Project List</h1>
+  <p>This is a list of all active open source software projects that Creative Commons (CC) maintains.</p>
+</header>
+
+<p>Please read the <a href="/contributing-code">Contributing Code</a> page for general information on how to get involved. Contribution guidelines specific to an individual project can be found in the <code>README</code> and the <code>CONTRIBUTING</code> files in the root folder of every repository. If you have any questions, don't hesitate to reach out to us through <a href="/community">one of our community forums</a> or open a GitHub issue.</p>
+
+<article class="projects">
+  <h2>Featured Projects</h2>
+  <p>Explore our highlighted open source initiatives.</p>
+  
+  <ul>
+    {% for repo in bag('repos.repos') %}
+      {% if repo.featured %}
+        <li>
+          <article class="project">
+            <h3><a href="{{ repo.url }}">{{ repo.english_name }}</a></h3>
+            <p>{{ repo.description }}</p>
+          </article>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</article>
+
+<!--
+TODO: Consider whether to add additional data that current markup does not support:
+- Technology tags
+- Slack channel links 
+- Website links
+- GitHub specific links
+--> 
+<div>
+  <h2>All Active Projects</h2>
+  <p>This is a complete list of active Creative Commons software projects. Archived projects are not documented here and can be found on the <strong><a href="https://github.com/cc-archive">CC Archive GitHub organization</a></strong>.</p>
+  <div>
+  <table>
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Description</th>
+        <th scope="col">Language</th>
+        <th scope="col">License</th>
+        <th scope="col">Links</th>
+      </tr>
+    </thead>
+    {% for repo in bag('repos.repos') %}
+      <tr>
+        <td>{{ loop.index }}</td>
+        <td>
+          <div>{{ repo.name }}</div>
+        </td>
+        {% if repo.description %}
+          <td>{{ repo.description }}</td>
+        {% else %}
+          <td></td>
+        {% endif %}
+        <td>
+          {% if repo.language %}{{ repo.language }}{% endif %}
+        </td>
+        {% if repo.license %}
+          <td>
+            <a href="{{ repo.license.url }}">{{ repo.license.name }}</a>
+          </td>
+        {% else %}
+          <td>Not specified</td>
+        {% endif %}
+        <td>
+          {% if repo.website %}
+            <a href="{{ repo.website }}"><i></i>Website</a>
           {% endif %}
-        {% endfor %}
-      </div>
-      </div>
-      <div class="active-project">
-        <h2>All Active Projects</h2>
-        <p class="padding-vertical-big">This is a complete list of active Creative Commons software projects. Archived projects are not documented here and can be found on the <strong><a href="https://github.com/cc-archive">CC Archive GitHub organization</a>.</strong></p>
-        <div class="table-container">
-          <table class="table is-bordered  is-striped">
-            <thead>
-              <tr>
-                <th scope="col">#</th>
-                <th scope="col">Name</th>
-                <th scope="col">Description</th>
-                <th scope="col">Language</th>
-                <th scope="col">License</th>
-                <th scope="col">Links</th>
-              </tr>
-            </thead>
-            {% for repo in bag('repos.repos') %}
-              <tr>
-                <td class="padding-vertical-normal padding-right-xl padding-left-normal">{{ loop.index }}</td>
-                <td class="padding-vertical-normal padding-right-xl padding-left-normal">
-                  <div class="text-bigger has-text-weight-bold padding-bottom-smaller">{{ repo.name }}</div>
-                </td>
-                {% if repo.description %}
-                  <td class="padding-vertical-normal padding-right-xl padding-left-normal">{{ repo.description }}</td>
-                {% else %}
-                  <td class="padding-vertical-normal padding-right-xl padding-left-normal"></td>
-                {% endif %}
-                <td class="padding-vertical-normal padding-right-xl padding-left-normal">
-                  {% if repo.language %}{{ repo.language }}{% endif %}
-                </td>
-                {% if repo.license %}
-                  <td class="padding-vertical-normal padding-right-xl padding-left-normal">
-                    <a href="{{ repo.license.url }}" class="is-block">{{ repo.license.name }}</a>
-                  </td>
-                {% else %}
-                  <td>Not specified</td>
-                {% endif %}
-                <td class="padding-vertical-normal padding-right-xl padding-left-normal">
-                  {% if repo.website %}
-                    <a href="{{ repo.website }}" class="is-block"><i class="icon external-link padding-right-small"></i>Website</a>
-                  {% endif %}
-                  <a href="{{ repo.url }}" class="is-block"><i class="icon github padding-right-small"></i>Github</a>
-                  {% if repo.slack %}
-                    <a href="https://creativecommons.slack.com/channels/{{ repo.slack }}" class="is-block"><i class="icon slack padding-right-small"></i>Slack</a>
-                  {% endif %}
-                </td>
-              </tr>
-            {% endfor %}
-          </table>
-        </div>
-      </div>
-    </div>
+          <a href="{{ repo.url }}"><i></i>Github</a>
+          {% if repo.slack %}
+            <a href="https://creativecommons.slack.com/channels/{{ repo.slack }}"><i></i>Slack</a>
+          {% endif %}
+        </td>
+      </tr>
+    {% endfor %}
+  </table>
   </div>
+</div>
 {% endblock %}
