@@ -4,16 +4,21 @@
 
 {% block title %}{{ this.name }}{% endblock %}
 
+{% from "macros/categories.html" import render_categories %}
+
 {% block body %}
-<div class="all-categories">
-  <div class="header">
-    <div class="container">
-      <h1>All posts categorized "{{ this.name }}"</h1>
-      <a class="button small margin-top-bigger" href="{{ this.parent|url }}">See all categories</a>
-    </div>
-  </div>
-  <div class="categories-list container">
-    {{ render_posts(this.children) }}
-  </div>
+<header>
+  <h1>Category: {{ this.name|capitalize }} </h1>
+</header>
+
+<aside class="sidebar">
+  <nav class="filter-menu" aria-labelledby="categories">
+    <h2>Categories</h2>
+    {{ render_categories(this.parent) }}
+  </nav>
+</aside>
+
+<div>
+  {{ render_posts(this.children) }}
 </div>
 {% endblock %}
