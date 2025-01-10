@@ -1,7 +1,6 @@
 {
   "dependencies": {
     "@octokit/rest": "^18.12.0",
-    "buffer": "^6.0.3",
     "js-yaml": "^3.14.1"
   },
   "devDependencies": {

@@ -8,7 +8,7 @@ module.exports = {
     filename: 'issue-finder.js',
   },
   resolve: {
-    fallback: { "buffer": require.resolve("buffer/") }
+    fallback: { "buffer": false }
   },
   module: {
     rules: [
