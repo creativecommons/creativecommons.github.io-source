@@ -1,26 +1,15 @@
 {
   "dependencies": {
-    "@octokit/rest": "^18.3.5",
+    "@octokit/rest": "^18.12.0",
     "buffer": "^6.0.3",
-    "js-yaml": "^3.14.1",
-    "vue": "^2.6.12",
-    "vue-select": "^3.11.2"
+    "js-yaml": "^3.14.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.21.4",
-    "@creativecommons/vocabulary": "2020.11.1",
-    "autoprefixer": "^10.2.5",
-    "babel-loader": "^8.2.2",
-    "bulma": "^0.9.2",
-    "file-loader": "^6.2.0",
-    "sass": "^1.54.4",
-    "sass-loader": "^12.1.0",
-    "style-loader": "^2.0.0",
-    "url-loader": "^4.1.1",
-    "webpack": "^5.24.4",
-    "webpack-cli": "^4.5.0"
+    "source-map-loader": "^5.0.0",
+    "webpack": "^5.97.0",
+    "webpack-cli": "^6.0.0"
   },
   "license": "MIT",
-  "main": "main.js",
+  "main": "issue-finder.js",
   "private": true
 }
