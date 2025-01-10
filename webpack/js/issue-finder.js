@@ -38,22 +38,28 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  // Populate the skills dropdown with options
-  function populateSkillsDropdown(skillsArray) {
-    skillsDropdown.innerHTML = ""; // Clear existing options
-    const noPreferenceOption = document.createElement("option");
-    noPreferenceOption.value = ""; // Empty value for "No preferences"
-    noPreferenceOption.textContent = "No preferences";
-    skillsDropdown.appendChild(noPreferenceOption);
+function populateSkillsDropdown(skills) {
+  // Process skills to remove duplicates
+  const uniqueSkills = Array.from(new Set(Object.values(skills).flat())); // Flatten and remove duplicates
+  const topLevelSkills = Array.from(
+    new Set(uniqueSkills.map((skill) => skill.split("/")[0]))
+  ); // Extract prefixes
 
-    // Add a dropdown option for each skill
-    skillsArray.forEach((skill) => {
-      const optionElement = document.createElement("option");
-      optionElement.value = skill.toLowerCase();
-      optionElement.textContent = skill;
-      skillsDropdown.appendChild(optionElement);
-    });
-  }
+  // Populate skills dropdown
+  const skillsDropdown = document.getElementById("skills");
+  skillsDropdown.innerHTML = ""; // Clear existing options
+  const noPreferenceOption = document.createElement("option");
+  noPreferenceOption.value = ""; // Empty value for no preference
+  noPreferenceOption.textContent = "No preferences";
+  skillsDropdown.appendChild(noPreferenceOption);
+  // Add each top-level skill to the dropdown
+  topLevelSkills.forEach((skill) => {
+    const optionElement = document.createElement("option");
+    optionElement.value = skill.toLowerCase();
+    optionElement.textContent = skill;
+    skillsDropdown.appendChild(optionElement);
+  });
+}
 
   // Build GitHub search query based on user-selected filters
   function loadIssues() {
