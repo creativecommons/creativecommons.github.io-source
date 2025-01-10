@@ -5,7 +5,7 @@
     <li><a href="{{ pagination.prev|url }}">&lt;</a></li>
     {% endif %}
     {% for page in range(pagination.pages) %}
-    <li class="{% if page + 1 == pagination.current %}current{% endif %}"><a href="{{ pagination.for_page(page + 1)|url }}">{{ page + 1 }}</a></li>
+    <li class="{% if page + 1 == pagination.current.page_num %}current{% endif %}"><a href="{{ pagination.for_page(page + 1)|url }}">{{ page + 1 }}</a></li>
     {% endfor %}
     {% if pagination.has_next %}
     <li><a href="{{ pagination.next|url }}">&gt;</a></li>
