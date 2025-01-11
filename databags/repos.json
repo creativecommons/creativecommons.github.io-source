@@ -614,22 +614,6 @@
             "website": "https://rights-back-beta.creativecommons.org/"
         },
         {
-            "created": "2015-07-23T21:30:47+00:00",
-            "description": "Rails plugin for the RubyCAS-Client",
-            "engineering_project": true,
-            "featured": false,
-            "id": 39594110,
-            "language": "Ruby",
-            "license": {
-                "name": "MIT License",
-                "url": "https://github.com/creativecommons/rubycas-client-rails/blob/master/MIT-LICENSE"
-            },
-            "name": "rubycas-client-rails",
-            "slack": "",
-            "url": "https://github.com/creativecommons/rubycas-client-rails",
-            "website": ""
-        },
-        {
             "created": "2016-07-29T23:14:42+00:00",
             "description": "The scholars addenda system.",
             "engineering_project": true,
