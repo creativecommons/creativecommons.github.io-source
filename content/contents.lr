@@ -7,7 +7,7 @@ block_content:
 #### hero ####
 title:
 
-We have been building <span>free software</span> at <span>Creative Commons (CC)</span> for over a decade.
+We have been building free software at Creative Commons (CC) for over a decade.
 ----
 links:
 
@@ -63,16 +63,6 @@ links_integrate:
   <p>Give users the option to openly license their content.</p>
 </div>
 ----
-links_plugins:
-
-<img src="./plugins.svg">
-
-<h4>Use Our Plugins</h4>
-
-<div>
-  <h5><a href="https://wordpress.org/plugins/creative-commons/">Wordpress Plugin</a></h5>
-  <p>Mark your work with a CC license from within WordPress.</p>
-</div>
 #### recent-posts ####
 title: Recent Blog Posts
 #### featured-projects ####
