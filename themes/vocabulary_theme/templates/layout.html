@@ -1,51 +1,51 @@
 <!doctype html>
 <html lang="en">
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="shortcut icon" type="image/x-icon" href="{{ '/static/favicon.ico'|url }}">
-<link rel="stylesheet" href="{{ '/static/gen/style.css'|url }}">
-<link rel="stylesheet" href="{{ get_pygments_stylesheet()|url }}">
-<meta property="og:site_name" content="Creative Commons" />
-<meta property="og:title" content="{{ this.title }}" />
-{% if this.description %}
-{% set desc = this.description|excerpt|striphtmltags %}
-<meta property="og:description" content="{{ desc }}" />
-{% else %}
-{% if this.body %}
-{% set desc = this.body|excerpt|striphtmltags %}
-<meta property="og:description" content="{{ desc }}" />
-{% endif %}
-{% endif %}
-<meta property="og:url" content="{{ this|url }}" />
-<meta property="og:type" content="article" />
-{% from "macros/og_image.html" import og_image %}
-{{ og_image(this) }}
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="{{ this.title }}">
-<meta name="twitter:description" content="{{ desc }}">
-{% if image %}
-<meta name="twitter:image" content="{{ image|url(external=true) }}">
-{% endif %}
-<meta name="twitter:site" content="@creativecommons">
-<meta name="twitter:creator" content="@creativecommons">
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
-  integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
-  integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-<script type="text/javascript" src="{{ '/static/gen/script.js'|url }}"></script>
-<script src="https://unpkg.com/@creativecommons/vocabulary@2020.7.2/js/vocabulary.js"></script>
-<script>
-  const globalHeaderInstance = vocabulary.createGlobalHeader();
-</script>
-<title>{% block title %}Welcome{% endblock %} — Creative Commons Open Source</title>
-
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon" type="image/x-icon" href="{{ '/static/favicon.ico'|url }}">
+  <link rel="stylesheet" href="{{ '/static/gen/style.css'|url }}">
+  <link rel="stylesheet" href="{{ get_pygments_stylesheet()|url }}">
+  <meta property="og:site_name" content="Creative Commons" />
+  <meta property="og:title" content="{{ this.title }}" />
+  {% if this.description %}
+    {% set desc = this.description|excerpt|striphtmltags %}
+    <meta property="og:description" content="{{ desc }}" />
+  {% else %}
+    {% if this.body %}
+      {% set desc = this.body|excerpt|striphtmltags %}
+      <meta property="og:description" content="{{ desc }}" />
+    {% endif %}
+  {% endif %}
+  <meta property="og:url" content="{{ this|url }}" />
+  <meta property="og:type" content="article" />
+  {% from "macros/og_image.html" import og_image %}
+  {{ og_image(this) }}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="{{ this.title }}">
+  <meta name="twitter:description" content="{{ desc }}">
+  {% if image %}
+    <meta name="twitter:image" content="{{ image|url(external=true) }}">
+  {% endif %}
+  <meta name="twitter:site" content="@creativecommons">
+  <meta name="twitter:creator" content="@creativecommons">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="{{ '/static/gen/script.js'|url }}"></script>
+  <script src="https://unpkg.com/@creativecommons/vocabulary@2020.7.2/js/vocabulary.js"></script>
+  <script>
+    const globalHeaderInstance = vocabulary.createGlobalHeader();
+  </script>
+  <title>{% block title %}Welcome{% endblock %} — Creative Commons Open Source</title>
+</head>
 <body>
-
   <!-- Header -->
-  <header class="container">
-    <nav class="navbar">
+  <header class="container" role="banner">
+    <nav class="navbar" aria-label="Main navigation">
       <div class="navbar-brand">
         <a class="has-text-black" href="{{ '/'|url }}" aria-label="Home">
           <svg
@@ -56,21 +56,21 @@
             <use href="#opensource"></use>
           </svg>
         </a>
-        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" aria-controls="navbar-menu">
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
         </a>
       </div>
-      <div class="navbar-menu">
+      <div class="navbar-menu" id="navbar-menu">
         <div class="navbar-end">
           <a class="navbar-item {% if this.is_child_of('/blog') %} is-active{% endif%}" href="{{ '/blog/entries'|url }}">
             Blog
           </a>
-          <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link is-arrowless {% if this.is_child_of('/contributing-code') %} is-active{% endif%}" tabindex="0">
+          <div class="navbar-item has-dropdown is-hoverable" aria-labelledby="contribute-dropdown">
+            <a class="navbar-link is-arrowless {% if this.is_child_of('/contributing-code') %} is-active{% endif%}" tabindex="0" id="contribute-dropdown">
               Contribute<i class="icon caret-down"></i></a>
-            <div class="navbar-dropdown">
+            <div class="navbar-dropdown" aria-labelledby="contribute-dropdown">
               {% for href, title in [
                 ['/contributing-code', 'Contribution Guidelines'],
                 ['/contributing-code/projects', 'Project List'],
@@ -89,10 +89,10 @@
               {% endfor %}
             </div>
           </div>
-          <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link is-arrowless {% if this.is_child_of('/community') %} is-active{% endif%}" tabindex="0">
+          <div class="navbar-item has-dropdown is-hoverable" aria-labelledby="community-dropdown">
+            <a class="navbar-link is-arrowless {% if this.is_child_of('/community') %} is-active{% endif%}" tabindex="0" id="community-dropdown">
               Community<i class="icon caret-down"></i></a>
-            <div class="navbar-dropdown is-active">
+            <div class="navbar-dropdown is-active" aria-labelledby="community-dropdown">
               {% for href, title in [
                 ['/community', 'Join the Community'],
                 ['/community/community-team', 'Community Team'],
@@ -108,10 +108,10 @@
               {% endfor %}
             </div>
           </div>
-          <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link is-arrowless {% if this.is_child_of('/programs') %} is-active{% endif%}" tabindex="0">
+          <div class="navbar-item has-dropdown is-hoverable" aria-labelledby="work-programs-dropdown">
+            <a class="navbar-link is-arrowless {% if this.is_child_of('/programs') %} is-active{% endif%}" tabindex="0" id="work-programs-dropdown">
               Work Programs<i class="icon caret-down"></i></a>
-            <div class="navbar-dropdown">
+            <div class="navbar-dropdown" aria-labelledby="work-programs-dropdown">
               {% for href, title in [
                 ['/programs', 'Overview'],
                 ['/programs/project-ideas', 'Project Ideas'],
@@ -146,7 +146,7 @@
           {% for crumb in crumbs %}
             <!-- Active link -->
             {% if this._slug == crumb %}
-              <li class="is-active"><a aria-current="page displayed">{{ this.title }}</a></li>
+              <li class="is-active"><a aria-current="page">{{ this.title }}</a></li>
             {% else %}
               <!-- Forming the URL using extracted slugs -->
               {% set i = loop.index %}
@@ -172,19 +172,12 @@
   {% block body %}{% endblock %}
 
   <!-- Footer -->
-  <footer class="main-footer">
+  <footer class="main-footer" role="contentinfo">
     <div class="container">
       <div class="columns">
         <div class="column is-one-third-tablet-only is-one-quarter-desktop">
-          <a href="https://creativecommons.org" class="main-logo margin-bottom-bigger">
-            <span class="has-text-white">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                preserveAspectRatio="xMidYMid meet"
-                viewBox="0 0 304 73">
-                <use href="#logomark"></use>
-              </svg>
-            </span>
+          <a href="https://creativecommons.org" class="main-logo margin-bottom-bigger" aria-label="Creative Commons homepage">
+            <span class="logo-text">Creative Commons</span>
           </a>
           <div>
             <address class="margin-bottom-normal">Creative Commons<br />PO Box 1866, Mountain View CA 94042</address>

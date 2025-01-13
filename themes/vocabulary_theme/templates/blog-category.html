@@ -5,15 +5,16 @@
 {% block title %}{{ this.name }}{% endblock %}
 
 {% block body %}
-<div class="all-categories">
+<div class="all-categories" aria-labelledby="all-categories-title">
   <div class="header">
     <div class="container">
-      <h1>All posts categorized "{{ this.name }}"</h1>
-      <a class="button small margin-top-bigger" href="{{ this.parent|url }}">See all categories</a>
+      <h1 id="all-categories-title">All posts categorized "{{ this.name }}"</h1>
+      <a class="button small margin-top-bigger" href="{{ this.parent|url }}" aria-label="See all categories">See all categories</a>
     </div>
   </div>
-  <div class="categories-list container">
+  <div class="categories-list container" role="list">
     {{ render_posts(this.children) }}
   </div>
 </div>
 {% endblock %}
+

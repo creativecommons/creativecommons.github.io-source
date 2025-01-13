@@ -9,10 +9,10 @@
     <div class="header">
       <div class="container">
         <h1>All posts in series "{{ this.name }}"</h1>
-        <a class="button small margin-top-bigger" href="{{ this.parent|url }}">See all series</a>
+        <a class="button small margin-top-bigger" href="{{ this.parent|url }}" aria-label="See all series">{{ this.parent.name }}</a>
       </div>
     </div>
-    <div class="series-list container">
+    <div class="series-list container" role="list" aria-label="List of posts in the series">
       {{ render_posts(this.children) }}
     </div>
   </div>

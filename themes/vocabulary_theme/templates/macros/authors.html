@@ -2,13 +2,13 @@
 
 {% macro render_authors(authors) %}
   {% for author in site.query(authors.path) %}
-    <div class="author column is-6-mobile is-2-desktop">
+    <div class="author column is-6-mobile is-2-desktop" role="article" aria-labelledby="author-{{ author.id }}">
       <figure class="image profile">
-        <img class="profile" src="https://secure.gravatar.com/avatar/{{ author.md5_hashed_email }}?size=200&d=mp" alt="gravatar" />
+        <img class="profile" src="https://secure.gravatar.com/avatar/{{ author.md5_hashed_email }}?size=200&d=mp" alt="Gravatar of {{ render_author_name(author) }}" />
       </figure>
       <div class="author-name">
-        <h5 class="desktop b-header"><a class="link" href="{{ author|url }}">{{ render_author_name(author) }}</a></h5>
-        <h6 class="mobile b-header"><a class="link" href="{{ author|url }}">{{ render_author_name(author) }}</a></h6>
+        <h5 id="author-{{ author.id }}" class="desktop b-header"><a class="link" href="{{ author|url }}" aria-label="View profile of {{ render_author_name(author) }}">{{ render_author_name(author) }}</a></h5>
+        <h6 id="author-{{ author.id }}" class="mobile b-header"><a class="link" href="{{ author|url }}" aria-label="View profile of {{ render_author_name(author) }}">{{ render_author_name(author) }}</a></h6>
       </div>
     </div>
   {% endfor %}

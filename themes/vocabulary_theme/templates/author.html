@@ -6,26 +6,26 @@
 {% block title %}{{ render_author_name(this) }}{% endblock %}
 
 {% block body %}
-<div class="author-posts">
+<div class="author-posts" role="main">
   <div class="header">
     <div class="container">
       <div class="columns">
         <div class="column is-one-quarter-tablet-only is-2-desktop">
           <figure class="image profile">
-            <img class="profile" src="https://secure.gravatar.com/avatar/{{ this.md5_hashed_email }}?size=200&d=mp" alt="gravatar">
+            <img class="profile" src="https://secure.gravatar.com/avatar/{{ this.md5_hashed_email }}?size=200&d=mp" alt="Gravatar image of {{ render_author_name(this) }}" aria-labelledby="author-name">
           </figure>
         </div>
         <div class="column content is-8">
-          <h2>{{ render_author_name(this) }}</h2>
+          <h2 id="author-name">{{ render_author_name(this) }}</h2>
           {% if this.about %}
-            <div class="about">{{ this.about }}</div>
+            <div class="about" aria-describedby="author-about">{{ this.about }}</div>
           {% endif %}
-          <a class="button small" href="{{ this.parent|url }}">See all authors</a>
+          <a class="button small" href="{{ this.parent|url }}" aria-label="See all authors">{{ this.parent.title }}</a>
         </div>
       </div>
     </div>
   </div>
-  <div class="posts container">
+  <div class="posts container" role="region" aria-labelledby="author-name">
     {{ render_author_posts(this.children) }}
   </div>
 </div>

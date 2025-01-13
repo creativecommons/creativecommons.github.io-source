@@ -1,17 +1,20 @@
-<section class="get-involved">
+<section class="get-involved" aria-labelledby="get-involved-title">
   <div class="container">
     <div class="column is-9 is-paddingless">
-      {{ this.title }}
+      <h2 id="get-involved-title">{{ this.title }}</h2>
     </div>
 
     <div class="columns get-involved-links">
-      <div class="column is-one-third">
+      <div class="column is-one-third" aria-labelledby="product-links">
+        <h3 id="product-links" class="visually-hidden">Product Links</h3>
         {{ this.links_product }}
       </div>
-      <div class="column is-one-third">
+      <div class="column is-one-third" aria-labelledby="integrate-links">
+        <h3 id="integrate-links" class="visually-hidden">Integrate Links</h3>
         {{ this.links_integrate }}
       </div>
-      <div class="column is-one-third">
+      <div class="column is-one-third" aria-labelledby="plugins-links">
+        <h3 id="plugins-links" class="visually-hidden">Plugins Links</h3>
         {{ this.links_plugins }}
       </div>
     </div>

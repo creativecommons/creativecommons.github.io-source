@@ -9,7 +9,7 @@
         <h1>Open Source Work Programs: Project Ideas</h1>
         <p class="description">This is the project idea list for the <span class="has-color-forest-green">current round of open source collaborations at Creative Commons (CC).</span></p>
         {% set ideas = site.query('/programs/project-ideas-collection').include_undiscoverable(true) %}
-        <div class="filter-labels" id="project-list">
+        <div class="filter-labels" id="project-list" role="navigation" aria-label="Project filters">
           <button type="button" class="button tag btn-dark filter-btn" data-filter="all">
             All Projects
           </button>
@@ -51,9 +51,9 @@
           </button>
           -->
         </div>
-        <div class="project-ideas columns is-multiline">
+        <div class="project-ideas columns is-multiline" role="list" aria-labelledby="project-list">
           {% for idea in ideas %}
-          <div class="column is-one-quarter filter filter-label {{ idea.filter_value }}">
+          <div class="column is-one-quarter filter filter-label {{ idea.filter_value }}" role="listitem">
             <a href="#{{ idea._slug }}">
               <article class="card entry-post horizontal">
                 <div class="card-content">
@@ -63,7 +63,7 @@
             </a>
           </div>
           {% endfor %}
-          <div class="column is-one-quarter">
+          <div class="column is-one-quarter" role="listitem">
             <a href="#original-ideas">
               <article class="card entry-post horizontal">
                 <div class="card-content">
@@ -77,8 +77,8 @@
     </div>
     <div class="body container">
       {% for idea in ideas %}
-        <div class="project-idea">
-          <h2><a class="has-color-dark-slate-gray" name="{{ idea._slug }}">{{ idea.title }}</a></h2>
+        <div class="project-idea" role="region" aria-labelledby="{{ idea._slug }}">
+          <h2><a class="has-color-dark-slate-gray" name="{{ idea._slug }}" id="{{ idea._slug }}">{{ idea.title }}</a></h2>
           <div class="columns">
             <div class="column is-one-quarter">
               <h5 class="b-header padding-bottom-small">Difficulty</h5>

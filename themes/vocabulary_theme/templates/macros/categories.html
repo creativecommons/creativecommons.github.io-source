@@ -2,6 +2,8 @@
 
 {% macro render_categories(categories) %}
     {% for category in site.query(categories.path) %}
-      <a class="button tag margin-vertical-small margin-horizontal-smaller" href="{{ category|url }}">{{ category.name }}</a>
+      <a class="button tag margin-vertical-small margin-horizontal-smaller" href="{{ category|url }}" aria-label="Category: {{ category.name }}">
+        {{ category.name }}
+      </a>
     {% endfor %}
 {% endmacro %}

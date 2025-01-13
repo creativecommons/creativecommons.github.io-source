@@ -4,7 +4,7 @@
 
 {% block body %}
 <div class="cc-search-guide">
-  <header class="header">
+  <header class="header" role="banner">
     <div class="container is-paddingless">
       <h1>{{ this.title }}</h1>
     </div>
@@ -12,7 +12,7 @@
   <div class="container body">
     <div class="columns">
       <div class="column is-one-quarter">
-        <div class="table-of-progress sticky-top">
+        <nav class="table-of-progress sticky-top" aria-label="Table of contents">
           <h4 class="step-header">Steps</h4>
           <ul>
             {% set step = namespace (number = 0) %}
@@ -21,17 +21,15 @@
                 <li class="step">
                   <a class="link" href="#{{ this.body.toc[loop.index - 2].anchor }}">
                     <span class="number">{{ step.number }}</span>
-                    <span class="name">{{ item.title }}</span>
                   </a>
                 </li>
-                {% set step.number = step.number + 1 %}
-              {% endif%}
+              {% endif %}
             {% endfor %}
           </ul>
-        </div>
+        </nav>
       </div>
-      <div class="column content">
-        {{ this.body }}
+      <div class="column is-three-quarters">
+        <!-- Main content goes here -->
       </div>
     </div>
   </div>

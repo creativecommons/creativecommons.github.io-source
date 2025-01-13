@@ -15,11 +15,12 @@
     {% if author and author.md5_hashed_email %}
       {% set gravatarURL = 'https://secure.gravatar.com/avatar/' + author.md5_hashed_email + '?size=300&d=mp' %}
       {% set queryParams = queryParams + '&images=' + gravatarURL %}
-      {% set pageTitle = page.title + "<br><sm style='font-size:70px;'>By " + render_author_name(author) + "</sm>"  %}
+      {% set pageTitle = page.title + "<br><sm style='font-size:70px;'>By " + render_author_name(author) + "</sm>" %}
     {% endif  %}
   {% endif %}
 
   {% set url = baseUrl + pageTitle + '.png' + queryParams  %}
 
   <meta property="og:image" content="{{ url }}" />
+  <meta name="description" content="{{ pageTitle }} - Open Source content" />
 {% endmacro %}

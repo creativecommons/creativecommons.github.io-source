@@ -5,9 +5,9 @@
 {% block title %}All Series{% endblock %}
 
 {% block body %}
-<div class="all-series">
+<div class="all-series" role="region" aria-labelledby="series-title">
   <div class="header">
-    <h1 class="container">All Series</h1>
+    <h1 id="series-title" class="container">All Series</h1>
   </div>
   <div class="series-list container">
     {{ render_series(this) }}
