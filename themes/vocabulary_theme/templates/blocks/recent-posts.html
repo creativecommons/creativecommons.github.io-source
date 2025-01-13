@@ -1,14 +1,16 @@
 {% from "macros/posts.html" import render_post_summary %}
 
-<article class="posts">
+<article class="posts featured">
   <h2>  {{ this.title }} </h2>
     <ul>
       {% for post in site.query('/blog/entries') %}
         {% set post_loop = loop %}
-        {% if post_loop.index <= 3 %}
+        {% if post_loop.index <= 5 %}
           {{ render_post_summary(post) }}
         {% endif %}
       {% endfor %}
     </ul>
 
    <a class="more" href="/blog/entries">See all posts</a>
+  </article>
+  
