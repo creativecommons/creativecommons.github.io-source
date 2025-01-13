@@ -1,3 +1,172 @@
 @import "/static/vocabulary/css/vocabulary.css" layer(vocabulary);
 
-/*put local styles here*/
+/*Homepage Styles */
+.home-page main {
+  margin-top: 3rem;
+
+  font-family: 'Source Sans Pro';
+}
+
+/*Hero-section */
+.hero-section h2 {
+  margin-top: 0;
+
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 2.5rem  
+}
+
+.home-page main p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+.home-page li {
+  list-style-type: none;
+}
+
+.hero-section img {
+  width: 100%;
+  margin-top: 1.5rem
+}
+
+.hero-description a {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/* PROJECTS */
+.posts > h2 {
+  text-align: center;
+}
+
+.home-page .projects ul {
+  display: grid;
+  gap: 2rem;
+  margin-right: 2rem;
+}
+
+.home-page .projects article {
+  padding: 3rem;
+
+  background: var(--vocabulary-brand-color-soft-turquoise);
+  border-top: 3px solid black;
+}
+
+.home-page .projects article a {
+    --underline-background-color: var(--vocabulary-brand-color-soft-turquoise);
+}
+
+@media (min-width: 1024px) {
+/* Styles for screens 768px and larger go here */
+.hero-section img {
+  width: auto;
+} 
+
+.hero-section {
+  display: grid;
+  grid-column: 2 / span 9;
+  grid-template:
+      "title title title"
+      "description description description "
+      "graphic graphic graphic";
+ 
+  margin-bottom: 6.4em;
+  gap: 0 4em;
+}
+
+.hero-section h2 {
+  grid-area: title;
+}
+
+.hero-description {
+  grid-area: description;
+  width: 41.67%
+}
+
+.home-page .projects ul { 
+  grid-template-columns: 1fr 1fr 1fr;
+
+  font-size: 1rem;
+}
+
+.home-page .projects {
+  grid-column: 2 / 10;
+  margin-bottom: 6rem;
+}
+
+.home-page main .posts h2 {
+  text-align: center;
+  margin-bottom: .7em;
+}
+
+.home-page main .posts ul {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  margin-top: 8em;
+  gap: 2em;
+  box-sizing: border-box;
+  width:100%;
+  margin: 0 auto;
+  margin-top: 0;
+
+  font-size: 1rem;
+  list-style: none;
+}
+
+.home-page main .posts.featured {
+  grid-column: 1 / span 11;
+  padding-top: 4em;
+
+  background: var(--vocabulary-neutral-color-lighter-gray);
+}
+
+.home-page main .posts.featured .post h3 {
+  font-size: 1.4em;
+}
+
+.home-page main .posts.featured ul li:nth-child(1) h3 {
+  font-size: 2.1em;
+}
+
+.home-page main .posts.featured .post a {
+  --underline-background-color: var(--vocabulary-neutral-color-lighter-gray);
+}
+
+.home-page main .posts.featured li:nth-of-type(1) .post a {
+  --underline-background-color: white;
+}
+
+.home-page main .posts.featured li:nth-of-type(1) .post figure {
+  order: initial;
+}
+
+.home-page main .posts.featured ul {    
+  padding: 0 5%;
+}
+
+.home-page main .posts.featured ul li {
+  grid-column: span 3;
+}
+
+.home-page main .posts.featured ul li:nth-of-type(1) {
+  grid-column: span 12;
+  margin-bottom: 1em;
+
+  background: white;
+}
+
+.home-page main .posts.featured ul li:nth-of-type(1) article.post {
+  margin-bottom: 1em;
+  padding: 4em;
+}
+}
+
+@media (min-width: 1314px) {
+.hero-image {
+  grid-column: 3;
+  margin-top: -6rem;
+}
+}
