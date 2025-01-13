@@ -1,6 +1,7 @@
 @import "/static/vocabulary/css/vocabulary.css" layer(vocabulary);
 
 /*Homepage Styles */
+
 .home-page main {
   margin-top: 3rem;
 
@@ -8,18 +9,20 @@
 }
 
 /*Hero-section */
+
 .hero-section h2 {
   margin-top: 0;
 
   font-style: normal;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 2.5rem  
+  font-size: 2.5rem;  
 }
 
 .home-page main p {
   font-size: 1.5rem;
   line-height: 1.5;
+  margin-bottom: 1rem;
 }
 
 .home-page li {
@@ -38,6 +41,7 @@
 }
 
 /* PROJECTS */
+
 .posts > h2 {
   text-align: center;
 }
@@ -61,6 +65,7 @@
 
 @media (min-width: 1024px) {
 /* Styles for screens 768px and larger go here */
+
 .hero-section img {
   width: auto;
 } 
@@ -87,7 +92,7 @@
 }
 
 .home-page .projects ul { 
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 
   font-size: 1rem;
 }
@@ -95,6 +100,10 @@
 .home-page .projects {
   grid-column: 2 / 10;
   margin-bottom: 6rem;
+}
+
+.home-page .project h5 {
+  font-size: 1.25rem;
 }
 
 .home-page main .posts h2 {
