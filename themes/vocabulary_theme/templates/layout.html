@@ -33,7 +33,7 @@
 <meta name="twitter:creator" content="@creativecommons">
 <title>{% block title %}Welcome{% endblock %} — Creative Commons Open Source</title>
 
-<body {% if this.body_class %}class="{{ this.body_class }}"{% endif %}>
+<body {% if this.is_homepage %} class="home-page" {% elif this.body_class %} class="{{ this.body_class }}" {% endif %}>
 
 <a class="skip-to-content" href="#main-content-marker">Skip to content</a>
 <header>
@@ -89,6 +89,8 @@
 </header>
 
   <!-- Breadcrumb -->
+   <!--TODO: EVALUATE USE OF BREADCRUMB;REMOVE OR KEEP-->
+  {#
   {% if this._path !=  '/'%}
     <div class="breadcrumb-container">
       <nav class="container breadcrumb caption bold" aria-label="breadcrumbs">
@@ -126,7 +128,7 @@
       </nav>
     </div>
   {% endif %}
-
+#}
   <!-- Body -->
   <span id="main-content-marker"></span>
   <main>
