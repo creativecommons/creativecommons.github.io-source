@@ -1,0 +1,190 @@
+@import "/static/vocabulary/css/vocabulary.css" layer(vocabulary);
+
+/* Issue-card styles */
+.issue-card {
+  padding: 1.3rem;
+  margin-bottom: 1.5rem;
+
+  border: 3px solid #ddd;
+  border-radius: 0.3rem;
+}
+
+.issue-card h4 {
+    font-size: 1.45rem;
+}
+
+.issue-card p {
+    font-size: 1rem;
+    color: rgb(118, 118, 118);
+}
+
+/* General container styling */
+
+.filter-container {
+  padding: 1rem;
+}
+
+/* Label styling */
+
+.filter-container label {
+  display: block;
+  margin-bottom: 0.5rem;
+
+  font-size: 1.12rem;
+  color: #333;
+}
+
+/* Strong text */
+
+.filter-container label strong {
+  display: block;
+  margin-bottom: 0.25rem;
+
+  font-size: 1.2rem;
+  color: #000;
+  font-weight: 700;
+}
+
+.filter-container select {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 2rem;
+
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+}
+
+/* Paragraph styling */
+
+.filter-container p {
+  margin-top: 1rem;
+
+  font-size: 0.75rem;
+  color: #666;
+  line-height: 1.4;
+}
+
+/* Review: Adjust focus outline color */
+
+.filter-container select:focus {
+  outline: 2px solid #0078D4;
+  border-color: #0078D4;
+}
+
+/* Basic style for all labels */
+
+.label {
+    display: inline-block;
+    margin-right: 0.25rem;
+    padding: 0.25rem 0.5rem;
+    
+    font-size: smaller;
+    border: 1px solid #eeeeee;
+    border-radius: 1.5rem;
+}
+
+/* label style for individual labels */
+
+.label.goal {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.label.aspect {
+  background-color: #04338c;
+  color: #ffffff;
+}
+
+.label.skill {
+  background-color: #5ff1f5;
+  color: #000000;
+}
+
+.label.talk {
+  background-color: #f9bbe5;
+  color: #000000;
+}
+
+.label.friendliness {
+  background-color: #7f0799;
+  color: #ffffff;
+}
+
+.label.status-lighter {
+  background-color: #eeeeee;
+  color: #000000;
+}
+
+.label.status-light {
+  background-color: #cccccc;
+  color: #000000;
+}
+
+.label.status-neutral {
+  background-color: #999999;
+  color: #000000;
+}
+
+.label.status-dark {
+  background-color: #666666;
+  color: #ffffff;
+}
+
+.label.status-darker {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.label.priority-unfavourable {
+  background-color: #b60205;
+  color: #ffffff;
+}
+
+.label.priority-negative {
+  background-color: #ff9f1c;
+  color: #000000;
+}
+
+.label.priority-neutral {
+  background-color: #ffcc00;
+  color: #000000;
+}
+
+.label.priority-positive {
+  background-color: #cfda2c;
+  color: #000000;
+}
+
+.label.priority-favourable {
+  background-color: #008672;
+  color: #ffffff;
+}
+
+.label.miscellaneous {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.label.hacktoberfest {
+  background-color: #883255;
+  color: #ffffff;
+}
+
+.label.invalid {
+  background-color: #eeeeee;
+  color: #000000;
+}
+
+@media (min-width: 1024px) {
+.issue-container {
+  display: flex;
+  margin-left: -20%;
+  margin-right: -23%
+}
+
+.filter-container {
+  width: 25%;
+  flex: none;
+}
+
+}
