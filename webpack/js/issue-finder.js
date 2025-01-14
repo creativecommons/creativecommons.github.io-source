@@ -23,6 +23,8 @@ document.addEventListener("DOMContentLoaded", function () {
     experience: "experienced", // Default to "Experienced"
   };
 
+  let categories = {}; // Dynamic categories for labels
+
   // Fetch and load filter data (skills and labels)
   async function fetchFilterData() {
     try {
@@ -32,34 +34,71 @@ document.addEventListener("DOMContentLoaded", function () {
       ]);
 
       const skills = yaml.safeLoad(skillsYaml);
+      const labels = yaml.safeLoad(labelsYaml);
+
+      // Hydrate and process categories
+      const [skillsList, categoriesData] = hydrateAppWithData(skills, labels);
+      categories = categoriesData;
+
       populateSkillsDropdown(Object.values(skills).flat()); // Populate skills dropdown
     } catch (error) {
       console.error("Error loading filters:", error);
     }
   }
 
-function populateSkillsDropdown(skills) {
-  // Process skills to remove duplicates
-  const uniqueSkills = Array.from(new Set(Object.values(skills).flat())); // Flatten and remove duplicates
-  const topLevelSkills = Array.from(
-    new Set(uniqueSkills.map((skill) => skill.split("/")[0]))
-  ); // Extract prefixes
+  function hydrateAppWithData(skills, labels) {
+    const categories = {};
+    labels.groups.forEach((group) => {
+      group.labels.forEach((label) => {
+        let name = label.name;
+        if (group.is_prefixed !== false) {
+          name = `${group.name}: ${name}`;
+        }
+        if (label.has_emoji_name !== false) {
+          name = `${label.emoji} ${name}`;
+        }
+        let styleName = label.color;
+        if (/^[A-Z]+$/.test(styleName)) {
+          styleName = `${group.name}-${styleName.toLocaleLowerCase()}`;
+        } else {
+          styleName = group.name;
+        }
+        categories[name] = styleName;
+      });
+    });
 
-  // Populate skills dropdown
-  const skillsDropdown = document.getElementById("skills");
-  skillsDropdown.innerHTML = ""; // Clear existing options
-  const noPreferenceOption = document.createElement("option");
-  noPreferenceOption.value = ""; // Empty value for no preference
-  noPreferenceOption.textContent = "No preferences";
-  skillsDropdown.appendChild(noPreferenceOption);
-  // Add each top-level skill to the dropdown
-  topLevelSkills.forEach((skill) => {
-    const optionElement = document.createElement("option");
-    optionElement.value = skill.toLowerCase();
-    optionElement.textContent = skill;
-    skillsDropdown.appendChild(optionElement);
-  });
-}
+    labels.standalone.forEach((label) => {
+      let name = `${label.emoji} ${label.name}`;
+      categories[name] = "miscellaneous";
+    });
+
+    skills = Array.from(new Set(Object.values(skills).flat()));
+
+    return [skills, categories];
+  }
+
+  function populateSkillsDropdown(skills) {
+    // Process skills to remove duplicates
+    const uniqueSkills = Array.from(new Set(Object.values(skills).flat())); // Flatten and remove duplicates
+    const topLevelSkills = Array.from(
+      new Set(uniqueSkills.map((skill) => skill.split("/")[0]))
+    ); // Extract prefixes
+
+    // Populate skills dropdown
+    const skillsDropdown = document.getElementById("skills");
+    skillsDropdown.innerHTML = ""; // Clear existing options
+    const noPreferenceOption = document.createElement("option");
+    noPreferenceOption.value = ""; // Empty value for no preference
+    noPreferenceOption.textContent = "No preferences";
+    skillsDropdown.appendChild(noPreferenceOption);
+    // Add each top-level skill to the dropdown
+    topLevelSkills.forEach((skill) => {
+      const optionElement = document.createElement("option");
+      optionElement.value = skill.toLowerCase();
+      optionElement.textContent = skill;
+      skillsDropdown.appendChild(optionElement);
+    });
+  }
 
   // Build GitHub search query based on user-selected filters
   function loadIssues() {
@@ -99,7 +138,7 @@ function populateSkillsDropdown(skills) {
     }
   }
 
-  // function to display filtered issues
+  // Function to display filtered issues with dynamic label classes
   function displayFilteredIssues() {
     issuesContainer.innerHTML = ""; // Clear any existing issues
 
@@ -145,7 +184,11 @@ function populateSkillsDropdown(skills) {
         </p>
         <div class="labels">
           ${issue.labels
-            .map((label) => `<span class="label">${label}</span>`)
+            .map((label) => {
+              // Use the dynamic class mapping for labels
+              const labelClass = categories[label] || "miscellaneous";
+              return `<span class="label ${labelClass}">${label}</span>`;
+            })
             .join("")}
         </div>
       `;

@@ -3,17 +3,16 @@
 {% block title %}{{ this.title }}{% endblock %}
 
 {% block body %}
+<link rel="stylesheet" href="{{ '/static/css/issue-finder.css'|url }}">
 <script type="text/javascript" src="{{ '/static/gen/issue-finder.js'|url }}"></script>
  <header>
     <h1>{{ this.title }}</h1>
     <p> {{ this.description }}</p>
   </header>
-  <div>
-    <div id="app">
       <div>
-        <div class="columns">
+        <div class="issue-container">
           <!-- Filters Section -->
-          <div class="column is-one-quarter">
+          <div class="filter-container">
             <form id="filters">
               <label for="aim">
                 <strong>Aim</strong><br />
@@ -28,7 +27,7 @@
               <div id="skill-filters">
                 <label for="skills">
                   <strong>Skill set*</strong><br />
-                  Choose up to three skills.
+                  Choose up to three skills that you would like to see issues for.
                 </label>
                 <select id="skills">
                   <!-- Skills dynamically injected -->
@@ -50,11 +49,9 @@
           </div>
 
           <!-- Issues Section -->
-          <div class="column" id="issues-container">
+          <div class="issues-container" id="issues-container">
             <p class="no-results">Loading issues...</p>
           </div>
         </div>
       </div>
-    </div>
-  </div>
 {% endblock %}
