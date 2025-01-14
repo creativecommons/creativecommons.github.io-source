@@ -1,11 +1,11 @@
 {% from "macros/posts.html" import render_post_summary %}
 
-<article class="posts featured">
+<article class="posts">
   <h2>  {{ this.title }} </h2>
     <ul>
       {% for post in site.query('/blog/entries') %}
         {% set post_loop = loop %}
-        {% if post_loop.index <= 5 %}
+        {% if post_loop.index <= 4 %}
           {{ render_post_summary(post) }}
         {% endif %}
       {% endfor %}
