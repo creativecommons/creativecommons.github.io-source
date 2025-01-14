@@ -7,7 +7,7 @@ block_content:
 #### hero ####
 title:
 
-We have been building <span class="has-text-forest-green">free software</span> at <span class="has-text-orange">Creative Commons (CC)</span> for over a decade.
+We have been building free software at Creative Commons (CC) for over a decade.
 ----
 links:
 
@@ -36,43 +36,33 @@ links_product:
 
 <img src="./product.svg">
 
-<h4 class="heading">Help us build our products</h4>
+<h4>Help us build our products</h4>
 
-<div class="list">
-  <h5 class="link-heading"><a href="/contributing-code/" class="has-text-forest-green">Contribution Guidelines</a></h5>
-  <p class="link-caption">Learn how to contribute and then get started.</p>
+<div>
+  <h5><a href="/contributing-code/">Contribution Guidelines</a></h5>
+  <p>Learn how to contribute and then get started.</p>
 
-  <h5 class="link-heading"><a href="/community/community-team/" class="has-text-forest-green">Community Team</a></h5>
-  <p class="link-caption">Become a member of our community volunteer team.</p>
+  <h5><a href="/community/community-team/">Community Team</a></h5>
+  <p>Become a member of our community volunteer team.</p>
 
-  <h5 class="link-heading"><a href="/contributing-code/projects/" class="has-text-forest-green">All Available Projects</a></h5>
-  <p class="link-caption">See all of our open source projects in one place.</p>
+  <h5><a href="/contributing-code/projects/">All Available Projects</a></h5>
+  <p>See all of our open source projects in one place.</p>
 </div>
 ----
 links_integrate:
 
 <img src="./integrate.svg">
 
-<h4 class="heading">Integrate CC licenses</h4>
+<h4>Integrate CC licenses</h4>
 
-<div class="list">
-  <h5 class="link-heading"><a href="https://github.com/creativecommons/chooser/" class="has-text-forest-green">Chooser</a></h5>
-  <p class="link-caption">CC license selection tool for your project.</p>
+<div>
+  <h5><a href="https://github.com/creativecommons/chooser/">Chooser</a></h5>
+  <p>CC license selection tool for your project.</p>
 
-  <h5 class="link-heading"><a href="https://creativecommons.org/platform/toolkit/" class="has-text-forest-green">Platform Toolkit</a></h5>
-  <p class="link-caption">Give users the option to openly license their content.</p>
+  <h5><a href="https://creativecommons.org/platform/toolkit/">Platform Toolkit</a></h5>
+  <p>Give users the option to openly license their content.</p>
 </div>
 ----
-links_plugins:
-
-<img src="./plugins.svg">
-
-<h4 class="heading">Use Our Plugins</h4>
-
-<div class="list">
-  <h5 class="link-heading"><a href="https://wordpress.org/plugins/creative-commons/" class="has-text-forest-green">Wordpress Plugin</a></h5>
-  <p class="link-caption">Mark your work with a CC license from within WordPress.</p>
-</div>
 #### recent-posts ####
 title: Recent Blog Posts
 #### featured-projects ####

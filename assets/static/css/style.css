@@ -1,3 +1,147 @@
 @import "/static/vocabulary/css/vocabulary.css" layer(vocabulary);
 
-/*put local styles here*/
+/* Homepage Styles */
+
+.home-page main {
+  margin-top: 3rem;
+
+  font-family: 'Source Sans Pro';
+}
+
+/* Hero-section */
+
+.hero-section h2 {
+  margin-top: 0;
+
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 2.5rem;  
+}
+
+.home-page main p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.home-page li {
+  list-style-type: none;
+}
+
+.hero-section img {
+  width: 100%;
+  margin-top: 1.5rem
+}
+
+.hero-description a {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.home-page main article figure {
+  order: -1;
+}
+
+.home-page main .posts ul li h3 {
+  font-size: 1.5rem;
+}
+
+/* PROJECTS */
+
+.posts > h2 {
+  text-align: center;
+}
+
+.home-page .projects ul {
+  display: grid;
+  gap: 2rem;
+  margin-right: 2rem;
+}
+
+.home-page .projects article {
+  padding: 3rem;
+
+  background: var(--vocabulary-brand-color-soft-turquoise);
+  border-top: 3px solid black;
+}
+
+.home-page .projects article a {
+    --underline-background-color: var(--vocabulary-brand-color-soft-turquoise);
+}
+
+@media (min-width: 1024px) {
+/* Styles for screens 768px and larger go here */
+
+.hero-section img {
+  width: auto;
+} 
+
+.hero-section {
+  display: grid;
+  grid-column: 2 / span 9;
+  grid-template:
+      "title title title"
+      "description description description "
+      "graphic graphic graphic";
+ 
+  margin-bottom: 6.4em;
+  gap: 0 4em;
+}
+
+.hero-section h2 {
+  grid-area: title;
+}
+
+.hero-description {
+  grid-area: description;
+  width: 41.67%
+}
+
+.home-page .projects ul { 
+  grid-template-columns: 1fr 1fr;
+
+  font-size: 1rem;
+}
+
+.home-page .projects {
+  grid-column: 2 / 10;
+  margin-bottom: 6rem;
+}
+
+.home-page .project h5 {
+  font-size: 1.25rem;
+}
+
+.home-page main .posts h2 {
+  text-align: center;
+  margin-bottom: .7em;
+}
+
+.home-page main .posts {
+  grid-column: 2 / span 9;
+}
+
+.home-page main .posts ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 8em;
+  gap: 2em;
+  box-sizing: border-box;
+  width:100%;
+  margin: 0 auto;
+  margin-top: 0;
+
+  font-size: 1rem;
+  list-style: none;
+}
+
+}
+
+@media (min-width: 1314px) {
+.hero-image {
+  grid-column: 3;
+  margin-top: -6rem;
+}
+}

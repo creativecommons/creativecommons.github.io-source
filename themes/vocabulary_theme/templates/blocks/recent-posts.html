@@ -5,10 +5,10 @@
     <ul>
       {% for post in site.query('/blog/entries') %}
         {% set post_loop = loop %}
-        {% if post_loop.index <= 3 %}
+        {% if post_loop.index <= 4 %}
           {{ render_post_summary(post) }}
         {% endif %}
       {% endfor %}
     </ul>
-
    <a class="more" href="/blog/entries">See all posts</a>
+  </article>
