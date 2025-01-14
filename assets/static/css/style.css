@@ -1,6 +1,6 @@
 @import "/static/vocabulary/css/vocabulary.css" layer(vocabulary);
 
-/*Homepage Styles */
+/* Homepage Styles */
 
 .home-page main {
   margin-top: 3rem;
@@ -8,7 +8,7 @@
   font-family: 'Source Sans Pro';
 }
 
-/*Hero-section */
+/* Hero-section */
 
 .hero-section h2 {
   margin-top: 0;
