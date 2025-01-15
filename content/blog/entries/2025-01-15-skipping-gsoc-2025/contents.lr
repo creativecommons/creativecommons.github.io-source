@@ -1,0 +1,58 @@
+title: Skipping Google Summer of Code (GSoC) 2025
+---
+categories:
+gsoc
+open-source
+community
+---
+author: TimidRobot
+---
+pub_date: 2025-01-15
+---
+body:
+
+The Creative Commons (CC) technology team regrets to announce **we will not be
+participating in Google Summer of Code (GSoC) 2025**. While the program remains
+excellent, we do not have the resources to participate this year and meet our
+core responsibilities.
+
+We are grateful to Google for the program and have found incredible value in
+participating in past years. We look forward to participating in future years.
+We are thankful for the work and time of contributors. This is not an exciting
+announcement, but we will be better equipped to engage with work programs in
+the future.
+
+
+## Preparing to re-engage
+
+In addition to revamping our CC Open Source website during the first quarter of
+this year, we will also be refreshing our structured community involvement, and
+improving our project lead resources.
+
+Our CC Open Source website is in the process of being updated to be less
+technologically complex and to leverage the current Vocabulary design system
+([creativecommons/vocabulary][vocabulary]).
+
+Our structured community involvement has languished since the technology team
+was downsized due to the COVID pandemic (202-12-07 [Upcoming Changes to the CC
+Open Source Community — Creative Commons Open Source][changes]). We will be
+simplifying community involvement so that we can be more responsive with
+increased visibility.
+
+The most resource intensive period of a work program is the application phase.
+During this time there is a deluge of activity that has often exceeded our
+capacity. Developing our project lead resources will allow us to better set
+expectations, ease communications, and better point applicants on productive
+trajectories.
+
+[vocabulary]: http://github.com/creativecommons/vocabulary
+[changes]: https://opensource.creativecommons.org/blog/entries/2020-12-07-upcoming-changes-to-community/
+
+
+## Past participation
+
+For information on the excellent work completed during past participations,
+please see: [Open Source Work Programs: History — Creative Commons Open
+Source][history].
+
+[history]: https://opensource.creativecommons.org/programs/history/
