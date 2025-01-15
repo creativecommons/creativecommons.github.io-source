@@ -76,6 +76,10 @@
   padding: 0 1rem;
 }
 
+.body-content p {
+  margin-bottom: 1rem; /*To override default margin-bottom of 2em by vocabulary.css */
+}
+
 /* Table Styles */
 table.display {
   border-collapse: collapse;
