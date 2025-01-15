@@ -1,24 +1,20 @@
 {% from "macros/posts.html" import render_post_summary %}
 
-<section class="recent-posts" aria-labelledby="recent-posts-title">
+<section class="recent-posts">
   <div class="container">
     <div class="level">
-      <h2 id="recent-posts-title" class="is-paddingless level-left">
+      <h2 class="is-paddingless level-left">
         {{ this.title }}
       </h2>
       <span class="level-right">
-        <a class="posts-link" href="/blog/entries" aria-label="See all blog posts">
-          See all posts <i class="icon angle-right"></i>
-        </a>
+        <a class="posts-link" href="/blog/entries">See all posts <i class="icon angle-right"></i></a>
       </span>
     </div>
-    <div class="columns" role="list">
+    <div class="columns">
       {% for post in site.query('/blog/entries') %}
         {% set post_loop = loop %}
         {% if post_loop.index <= 3 %}
-          <div role="listitem">
-            {{ render_post_summary(post) }}
-          </div>
+          {{ render_post_summary(post) }}
         {% endif %}
       {% endfor %}
     </div>

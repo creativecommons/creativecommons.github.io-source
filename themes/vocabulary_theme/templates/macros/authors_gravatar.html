@@ -3,7 +3,7 @@
     {# only display gravatar for first author so layout is not broken #}
     {% set author = post.author[0] %}
     {% set current_author = post.parent.parent.children.get('authors').children.get(author) %}
-    <header role="banner">
+    <header>
       <figure class="image blog-image">
         {% if post.author|length >= 2 %}
           <img class="profile" src="/multiple-authors.jpg" alt="multiple authors image" />

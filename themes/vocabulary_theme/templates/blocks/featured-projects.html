@@ -1,46 +1,40 @@
-<section class="featured-projects" aria-labelledby="featured-projects-title">
+<section class="featured-projects">
   <div class="container">
     <div class="level">
-      <h2 class="is-paddingless level-left" id="featured-projects-title">
+      <h2 class="is-paddingless level-left">
         {{ this.title }}
       </h2>
       <span class="level-right">
-        <a class="project-page-link" href="/contributing-code/projects/" aria-label="See all available projects">
-          See all available projects <i class="icon angle-right"></i>
-        </a>
+        <a class="project-page-link" href="/contributing-code/projects/">See all available projects <i class="icon angle-right"></i></a>
       </span>
     </div>
     <div class="project-list columns is-multiline">
       {% for repo in bag('repos.repos') %}
       {% if repo.featured %}
         <div class="column is-one-third">
-          <article class="card entry-post vertical project-index" role="article">
+          <article class="card entry-post vertical project-index">
             <div class="card-content">
-              <h4 class="card-title b-header">
-                <a href="{{ repo.url }}" aria-labelledby="repo-title-{{ loop.index }}">
-                  {{ repo.english_name }}
-                </a>
-              </h4>
-              <a class="button is-text tiny site-link" href="{{ repo.website or repo.url }}" aria-label="Visit the project website">
+              <h4 class="card-title b-header"><a href="{{ repo.url }}">{{ repo.english_name }}</a></h4>
+              <a class="button is-text tiny site-link" href="{{ repo.website or repo.url }}">
                 <span>Visit site</span>
                 <i class="icon external-link"></i>
               </a>
-              <div class="content" aria-describedby="repo-description-{{ loop.index }}">
+              <div class="content">
                 {{ repo.description }}
               </div>
               <div class="labels">
                 {% for technology in repo.technologies %}
-                  <button class="button tag" aria-label="Technology: {{ technology }}">{{ technology }}</button>
+                  <button class="button tag">{{ technology }}</button>
                 {% endfor %}
               </div>
               <div class="external-links">
-                <a class="button is-text tiny" href="{{ repo.url }}" aria-label="Github repository for {{ repo.english_name }}">
+                <a class="button is-text tiny" href="{{ repo.url }}">
                   <i class="icon github"></i>
                   <span class="link-content">Github Repository</span>
                 </a>
                 {% if repo.slack %}
                   <br>
-                  <a class="button is-text tiny" href="https://creativecommons.slack.com/channels/{{ repo.slack }}" aria-label="Slack channel for {{ repo.english_name }} (#{{ repo.slack }})">
+                  <a class="button is-text tiny" href="https://creativecommons.slack.com/channels/{{ repo.slack }}">
                     <i class="icon slack"></i>
                     <span class="link-content">Slack channel (#{{ repo.slack }})</span>
                   </a>
@@ -50,7 +44,7 @@
           </article>
         </div>
       {% endif %}
-      {% endfor %}
+    {% endfor %}
     </div>
   </div>
 </section>

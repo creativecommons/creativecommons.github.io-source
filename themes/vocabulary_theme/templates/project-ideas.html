@@ -9,7 +9,7 @@
         <h1>Open Source Work Programs: Project Ideas</h1>
         <p class="description">This is the project idea list for the <span class="has-color-forest-green">current round of open source collaborations at Creative Commons (CC).</span></p>
         {% set ideas = site.query('/programs/project-ideas-collection').include_undiscoverable(true) %}
-        <div class="filter-labels" id="project-list" role="navigation" aria-label="Project filters">
+        <div class="filter-labels" id="project-list" aria-label="Project filters">
           <button type="button" class="button tag btn-dark filter-btn" data-filter="all">
             All Projects
           </button>
@@ -51,9 +51,9 @@
           </button>
           -->
         </div>
-        <div class="project-ideas columns is-multiline" role="list" aria-labelledby="project-list">
+        <div class="project-ideas columns is-multiline">
           {% for idea in ideas %}
-          <div class="column is-one-quarter filter filter-label {{ idea.filter_value }}" role="listitem">
+          <div class="column is-one-quarter filter filter-label {{ idea.filter_value }}">
             <a href="#{{ idea._slug }}">
               <article class="card entry-post horizontal">
                 <div class="card-content">

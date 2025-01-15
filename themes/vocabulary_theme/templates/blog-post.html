@@ -23,7 +23,7 @@
           {% set series = this.parent.parent.children.get('series').children.get(this.series) %}
           <div class="series-header">
             <span>This blog is part of the series:</span>
-            <a href="#series" aria-label="Go to {{ series.name }} series">{{ series.name }}</a>
+            <a href="#series">{{ series.name }}</a>
           </div>
         {% endif %}
       </div>
@@ -39,7 +39,7 @@
             {% for category in this.categories %}
               {% set current_category = this.parent.parent.children.get('categories').children.get(category) %}
               {{ check_file('content' + this.parent.parent.path + '/categories/' + category + '/contents.lr') }}
-              <a class="button tag" href="{{ current_category|url }}" aria-label="Category: {{ category }}">{{ category }}</a>
+              <a class="button tag" href=" {{ current_category|url }} ">{{ category }}</a>
             {% endfor %}
           {% else %}
             none
@@ -53,18 +53,18 @@
             {% for post in series.children.order_by('pub_date') %}
               {% if post.path==this.path %}
                 <li class="has-color-dark-slate-gray">
-                  <i class="icon circle-filled" aria-hidden="true"></i>{{ post.title }}
+                  <i class="icon circle-filled"></i>{{ post.title }}
                 </li>
               {% else %}
                 <li>
-                  <i class="icon circle-filled" aria-hidden="true"></i><a href="{{ post|url }}" aria-label="Read {{ post.title }}">{{ post.title }}</a>
+                  <i class="icon circle-filled"></i><a href="{{ post|url }}">{{ post.title }}</a>
                 </li>
               {% endif %}
             {% endfor %}
           </ul>
         </div>
       {% endif %}
-      <div class="comments" aria-live="polite">{{ render_disqus_comments() }}</div>
+      <div class="comments">{{ render_disqus_comments() }}</div>
     </footer>
   </div>
 {% endblock %}

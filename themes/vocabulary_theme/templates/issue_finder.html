@@ -3,36 +3,34 @@
 {% block title %}{{ this.title }}{% endblock %}
 
 {% block body %}
-  <div class="issue-finder" role="region" aria-labelledby="issue-finder-title">
+  <div class="issue-finder" aria-labelledby="issue-finder-title">
     <div class="header">
       <div class="container is-paddingless">
-        <h1 id="issue-finder-title">{{ this.title }}</h1>
+        <h1>{{ this.title }}</h1>
         <div class="description column is-9 is-paddingless">
-          <p>{{ this.description }}</p>
+          {{ this.description }}
         </div>
       </div>
     </div>
     <div class="body container">
-      <div id="vue-app" aria-live="polite">
+      <div id="vue-app">
         {{ this.body }}
         <noscript>
-          <p>The issue finder requires JavaScript. You can try searching on GitHub using the links below.</p>
+          The issue finder requires JavaScript. You can try searching on GitHub
+          using the links below.
           <ul class="gh-links">
             <li>
-              <a href="https://github.com/search?q=org%3Acreativecommons+is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22+-linked%3Apr" 
-                 aria-label="Issues labeled 'good first issue' on GitHub">
+              <a href="https://github.com/search?q=org%3Acreativecommons+is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22+-linked%3Apr">
                 issues labeled "good first issue"
               </a>
             </li>
             <li>
-              <a href="https://github.com/search?q=org%3Acreativecommons+is%3Aissue+is%3Aopen+label%3A%22help+wanted%22+-linked%3Apr" 
-                 aria-label="Issues labeled 'help wanted' on GitHub">
-                issues labeled "help wanted"
+              <a href="https://github.com/search?q=org%3Acreativecommons+is%3Aissue+is%3Aopen+label%3A%22help+wanted%22+-linked%3Apr">issues
+                labeled "help wanted"
               </a>
             </li>
             <li>
-              <a href="https://github.com/search?q=org%3Acreativecommons+is%3Apr+is%3Aopen+label%3A%22help+wanted%22" 
-                 aria-label="PRs labeled 'help wanted' on GitHub">
+              <a href="https://github.com/search?q=org%3Acreativecommons+is%3Apr+is%3Aopen+label%3A%22help+wanted%22">
                 PRs labeled "help wanted"
               </a>
             </li>

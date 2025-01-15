@@ -24,7 +24,7 @@
       {% for quarter in bag('search_roadmap.quarters') %}
         <h4>{{ quarter.name }}</h4>
         <div class="table-container">
-          <table class="table is-bordered is-striped" role="table">
+          <table class="table is-bordered is-striped">
             <thead>
               <tr>
                   <th scope="col">Task Name</th>
@@ -35,7 +35,7 @@
               {% for task in quarter.tasks %}
                 <tr>
                   <th scope="row">{{ task.name }}</th>
-                  <td>{{ task.description }}</td>
+                  <td scope="row">{{ task.description }}</td>
                 </tr>
               {% endfor %}
             </tbody>
@@ -58,6 +58,7 @@
           <li>Read through <a href="/contributing-code/#finding-an-issue">how to find open issues</a>.</li>
           <li>Start contributing!</li>
       </ul>
+
 
       <b>We keep track of our work in three projects in GitHub:</b>
       <dl>
@@ -88,4 +89,3 @@
     </div>
   </div>
 {% endblock %}
-

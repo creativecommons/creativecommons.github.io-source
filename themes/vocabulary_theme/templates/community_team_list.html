@@ -7,14 +7,14 @@
     <div class="header">
       <div class="container">
         <h1>{{ this.title }}</h1>
-        <p class="description column is-9 is-paddingless" aria-live="polite">This is a list of all Creative Commons (CC) Community Team members, and their roles and privileges. For more information about CC Community Team, please see <a href="/community/community-team/">the Community Team Page</a>.</p>
+        <p class="description column is-9 is-paddingless">This is a list of all Creative Commons (CC) Community Team members, and their roles and privileges. For more information about CC Community Team, please see <a href="/community/community-team/">the Community Team Page</a>.</p>
       </div>
     </div>
     <div class="container padding-horizontal-big padding-vertical-xl">
       <div class="content">
         <h2>Project Teams</h2>
         {% for project in bag('community_team_members.projects') %}
-          <h3 class="b-header" id="{{ project.name|lower|replace(' ', '-') }}-project" aria-labelledby="{{ project.name|lower|replace(' ', '-') }}-project">{{ project.name }}</h3>
+        <h3 class="b-header">{{ project.name }}</h3>
           <p aria-describedby="{{ project.name|lower|replace(' ', '-') }}-repo-info">These team members have permissions in the <code>{{ project.repos }}</code> repo(s).</p>
           <div class="table-container">
             <table class="table is-bordered is-striped" aria-labelledby="{{ project.name|lower|replace(' ', '-') }}-project">
