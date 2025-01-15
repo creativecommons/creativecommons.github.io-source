@@ -3,20 +3,21 @@
 {% block title %}{{ this.title }}{% endblock %}
 
 {% block body %}
+<script type="text/javascript" src="{{ '/static/js/table.js'|url }}"></script>
   <header>
    <h1>{{ this.title }}</h1>
    <p> This is a list of all Creative Commons (CC) Community Team members, and their roles and privileges. For more information about CC Community Team, please see <a href="/community/community-team/">the Community Team Page</a>.</p>
  </header>
 
  <!-- TODO: decide on presentation implementation -->
-<div>
-  <div>
+
+  <div class="body-content">
     <h2>Project Teams</h2>
     {% for project in bag('community_team_members.projects') %}
       <h3>{{ project.name }}</h3>
       <p>These team members have permissions in the <code>{{ project.repos }}</code> repo(s).</p>
       <div>
-        <table>
+        <table class="display-table display">
           <thead>
             <tr>
               <th>Role</th>
@@ -34,7 +35,7 @@
     {% endfor %}
     <h2>Community Building Teams</h2>
     <div>
-      <table>
+      <table class="display-table display">
         <thead>
           <tr>
             <th>Role</th>
@@ -50,5 +51,5 @@
       </table>
     </div>
   </div>
-</div>
+
 {% endblock %}
