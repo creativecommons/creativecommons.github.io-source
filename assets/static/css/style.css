@@ -1,4 +1,5 @@
 @import "/static/vocabulary/css/vocabulary.css" layer(vocabulary);
+@import "/static/vocabulary/css/vendor/datatable/datatables.css" layer(datatable);
 
 /* Homepage Styles */
 
