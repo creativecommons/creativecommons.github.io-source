@@ -1,4 +1,5 @@
 @import "/static/vocabulary/css/vocabulary.css" layer(vocabulary);
+@import "/static/vendor/datatable/datatables.css" layer(datatables);
 
 /* Homepage Styles */
 
@@ -69,6 +70,50 @@
 
 .home-page .projects article a {
     --underline-background-color: var(--vocabulary-brand-color-soft-turquoise);
+}
+
+/* Padding for content on mobile screen */ 
+.body-content {
+  padding: 0 1rem;
+}
+
+.body-content p {
+  margin-bottom: 1rem; /*To override default margin-bottom of 2em by vocabulary.css */
+}
+
+/* Table Styles */
+table.display {
+  border-collapse: collapse;
+  width: 100%;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+
+table.display th { 
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+  border-width: 1px;
+}
+
+table.display thead {
+  background-color: rgb(216, 216, 216);
+}
+
+table.display th, table.display td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+/* Code block styles */
+code {
+  color: rgb(51, 51, 51);
+  background-color: rgb(245, 245, 245);
+  border: 0.0625rem solid rgb(216, 216, 216);
+  border-radius: 0.25rem;
+  padding: 0.125rem 0.25rem;
+  font-size: 0.75em;
+  font-weight: normal;
+  /*padding: 0.25em 0.5em 0.25em; */
 }
 
 @media (min-width: 1024px) {
