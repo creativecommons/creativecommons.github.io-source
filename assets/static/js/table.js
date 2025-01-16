@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   document
-    .querySelectorAll("table.display-table")
+    .querySelectorAll(".datatable")
     .forEach(function (tableElement) {
       new DataTable(tableElement, {
         paging: false, // Disable pagination
