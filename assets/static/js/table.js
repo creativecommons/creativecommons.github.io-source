@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
       new DataTable(tableElement, {
         paging: false, // Disable pagination
         searching: false, // Disable search bar
-        ordering: false, // Disable column sorting
+        ordering: true, // Enable column sorting
         info: false, // Disable info text
       });
     });
