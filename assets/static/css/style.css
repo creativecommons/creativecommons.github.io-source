@@ -1,6 +1,11 @@
 @import "/static/vocabulary/css/vocabulary.css" layer(vocabulary);
 @import "/static/vendor/datatable/datatables.css" layer(datatables);
 
+/* Global Styles */
+li {
+  list-style-type: none;
+}
+
 /* Homepage Styles */
 
 .home-page main {
@@ -55,30 +60,21 @@
   text-align: center;
 }
 
-.home-page .projects ul {
+.projects ul {
   display: grid;
   gap: 2rem;
   margin-right: 2rem;
 }
 
-.home-page .projects article {
+.projects article {
   padding: 3rem;
 
   background: var(--vocabulary-brand-color-soft-turquoise);
   border-top: 3px solid black;
 }
 
-.home-page .projects article a {
+.projects article a {
     --underline-background-color: var(--vocabulary-brand-color-soft-turquoise);
-}
-
-/* Padding for content on mobile screen */ 
-.body-content {
-  padding: 0 1rem;
-}
-
-.body-content p {
-  margin-bottom: 1rem; /*To override default margin-bottom of 2em by vocabulary.css */
 }
 
 /* Table Styles */
@@ -104,9 +100,17 @@ table.display th, table.display td {
   padding: 8px;
 }
 
-.table-container table.display th {
-  width: 30%; /* To make the th have a larger width than default on the search archive page */
+.table-container {
+  overflow-x: auto; 
 }
+
+/* To make the th have a larger width than default on the search archive page */
+/* Review when restyling page */
+
+/*
+.table-container table.display th {
+  width: 30%;
+}*/
 
 /* Code block styles */
 code {
@@ -148,18 +152,22 @@ code {
   width: 41.67%
 }
 
-.home-page .projects ul { 
+.projects ul { 
   grid-template-columns: 1fr 1fr;
 
   font-size: 1rem;
 }
 
-.home-page .projects {
+.projects {
   grid-column: 2 / 10;
   margin-bottom: 6rem;
 }
 
-.home-page .project h5 {
+.body-container{
+  grid-column: 2 / 10;
+}
+
+.project h5 {
   font-size: 1.25rem;
 }
 
