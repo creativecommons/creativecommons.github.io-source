@@ -104,13 +104,9 @@ table.display th, table.display td {
   overflow-x: auto; 
 }
 
-/* To make the th have a larger width than default on the search archive page */
-/* Review when restyling page */
-
-/*
-.table-container table.display th {
-  width: 30%;
-}*/
+.search-table table.display th {
+  width: 30%; /* To make the th have a larger width than default on the search archive page */
+}
 
 /* Code block styles */
 code {
