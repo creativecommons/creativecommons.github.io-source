@@ -104,6 +104,10 @@ table.display th, table.display td {
   padding: 8px;
 }
 
+.table-container table.display th {
+  width: 30%; /* To make the th have a larger width than default on the search archive page */
+}
+
 /* Code block styles */
 code {
   color: rgb(51, 51, 51);
