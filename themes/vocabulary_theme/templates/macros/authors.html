@@ -1,20 +1,15 @@
-{% extends "layout.html" %}
+{% from "macros/author_name.html" import render_author_name %}
 
-{% from "macros/authors.html" import render_authors %}
-
-{% block title %} Authors {% endblock %}
-
-{% block body %}
-  <div class="all-authors">
-    <div class="header">
-      <h1 class="container">Authors</h1>
-    </div>
-    <div class="authors-list">
-      <div class="container">
-        <div class="columns is-multiline is-mobile">
-          {{ render_authors(this) }}
-        </div>
+{% macro render_authors(authors) %}
+  {% for author in site.query(authors.path) %}
+    <div class="author column is-6-mobile is-2-desktop">
+      <figure class="image profile">
+        <img class="profile" src="https://secure.gravatar.com/avatar/{{ author.md5_hashed_email }}?size=200&d=mp" alt="gravatar" />
+      </figure>
+      <div class="author-name">
+        <h5 class="desktop b-header"><a class="link" href="{{ author|url }}">{{ render_author_name(author) }}</a></h5>
+        <h6 class="mobile b-header"><a class="link" href="{{ author|url }}">{{ render_author_name(author) }}</a></h6>
       </div>
     </div>
-  </div>
-{% endblock %}
+  {% endfor %}
+{% endmacro %}
