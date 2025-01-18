@@ -5,7 +5,8 @@
 {% block title %} Authors {% endblock %}
 
 {% block body %}
-  <div class="all-authors">
+  <div class="all-authors" role="region" aria-labelledby="authors-list">
+    <h2 id="authors-list" class="visually-hidden">List of Authors</h2>
     <div class="header">
       <h1 class="container">Authors</h1>
     </div>
@@ -18,3 +19,4 @@
     </div>
   </div>
 {% endblock %}
+
