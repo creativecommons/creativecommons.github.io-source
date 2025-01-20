@@ -100,10 +100,6 @@ table.display th, table.display td {
   padding: 8px;
 }
 
-.table-container {
-  overflow-x: auto; 
-}
-
 .search-table table.display th {
   width: 30%; /* To make the th have a larger width than default on the search archive page */
 }
