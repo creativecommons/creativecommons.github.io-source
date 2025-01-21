@@ -51,53 +51,60 @@ See [`CONTRIBUTING.md`][org-contrib].
 
 ### Prerequisites
 
-For information on learning and installing the prerequisite technologies for this project, please see [Foundational technologies — Creative Commons Open Source][found-tech].
+- Python 3.7 or higher
+- Node.js 16 or higher
+- pip (Python package manager)
+- npm (Node package manager)
 
-[found-tech]: https://opensource.creativecommons.org/contributing-code/foundational-tech/
+### Setup Instructions
 
-Make sure you have:
-- [pipenv][pipenvdocs]
-- [Node.js][nodejswebsite] **v12+** and [npm][npmdocs] installed.
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/creativecommons/creativecommons.github.io-source.git
+   cd creativecommons.github.io-source
+   ```
 
-To install these, execute the following commands:
-- macOS:
-  1. Install [Homebrew][homebrew]
-  1. Install pipenv and node:
-        ```
-        brew install pipenv node
-        ```
-- GNU/Linux:
-  1. [Installing Pipenv][pipenvinstall]
-  2. [Install Node.js][nodeinstall] (or see the
-     [detailed instructions][nodedetailed])
-  3. Update packges:
-        ```
-        sudo apt update
-        ```
-  4. Install npm:
-        ```
-        sudo apt install npm
-        ```
+2. **Set up Python environment**
+   ```bash
+   # Install pipenv if you haven't already
+   pip install pipenv
 
-[pipenvdocs]: https://pipenv.pypa.io/en/latest/
-[nodejswebsite]: https://nodejs.org/en/
-[npmdocs]: https://docs.npmjs.com/
-[homebrew]: https://brew.sh/
-[pipenvinstall]: https://pipenv.pypa.io/en/latest/installation.html
-[nodeinstall]: https://github.com/nodesource/distributions/blob/master/README.md#table-of-contents
-[nodedetailed]: https://github.com/nodesource/distributions/blob/master/README.md#installation-instructions
+   # Install Python dependencies
+   pipenv install
+   ```
 
+3. **Install Node.js dependencies**
+   ```bash
+   cd webpack
+   npm install
+   ```
 
-### Installing Project Requirements
+4. **Build frontend assets**
+   ```bash
+   # Still in the webpack directory
+   npm run build
+   ```
 
-1. Clone this repository.
-2. Open your command line interface change directories to the repository root
-   directory.
-3. Create a Python virtual environment and install the requirements for this
-   project:
-    ```
-    pipenv install --dev
-    ```
+5. **Start the development server**
+   ```bash
+   # Go back to the project root
+   cd ..
+   pipenv run lektor server
+   ```
+
+The site should now be running at `http://localhost:5000/`
+
+### Development
+
+- To watch for frontend changes: `cd webpack && npm run watch`
+- To rebuild the site: `pipenv run lektor build`
+- To serve the site: `pipenv run lektor server`
+
+### Common Issues
+
+- If you get a Python-related error, make sure you're using the correct Python version as specified in `runtime.txt`
+- If webpack builds fail, try removing `node_modules` and running `npm install` again
+- Make sure all required environment variables are set according to `.cc-metadata.yml`
 
 
 ### pipenv Troubleshooting
@@ -106,16 +113,16 @@ To install these, execute the following commands:
 message if the project’s virtual environment is broken][pipenverror]). If all
 else fails, try removing the virtual environment and reinstalling:
 1. Remove virtual environment:
-    ```
+    ```bash
     pipenv --rm
     ```
 2. Install virtual environment (including dev packages):
-    ```
+    ```bash
     pipenv install --dev
     ```
     - If there's no Python 3.11 on your system (or if pipenv can't find it),
       you may need to specify the Python location. For example:
-        ```
+        ```bash
         pipenv install --dev --python /opt/homebrew/bin/python3.11
         ```
 
@@ -125,7 +132,7 @@ else fails, try removing the virtual environment and reinstalling:
 ## Development
 
 - Start the Lektor development server:
-    ```
+    ```bash
     pipenv run lektor server -f webpack
     ```
 - You will be able to see the website at [`127.0.0.1:5000/`][local5000].
@@ -150,7 +157,7 @@ else fails, try removing the virtual environment and reinstalling:
   files.
 
   The solution is to run:
-    ```
+    ```bash
     sudo sysctl fs.inotify.max_user_watches=524288
     ```
 
