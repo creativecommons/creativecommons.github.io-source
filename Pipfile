@@ -8,6 +8,9 @@ black = ">=24.3.0"
 flake8 = "*"
 isort = "*"
 lektor = ">=3.3.11"
+colorama = "*"
 
 [requires]
 python_version = "3.11"
+
+[dev-packages]
