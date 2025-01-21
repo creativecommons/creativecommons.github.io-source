@@ -53,7 +53,6 @@ The channels most relevant to CC's developer community are:
 | `#cc-dev-platform-toolkit` | [mp][mp] project (CC Platform Toolkit) |
 | `#cc-dev-searchportal` | [search][search] project |
 | `#cc-dev-vocabulary` | [cc-vocabulary][cc-vocabulary] project |
-| `#cc-dev-wordpress` | [wp-plugin-creativecommons][wp-plugin-creativecommons] project (creativecommons WordPress plugin) |
 | `#cc-dev-workprograms` | **GSoC, GSoD, Outreachy, and other [work programs][workprograms] or internships** |
 | `#cc-developers` | **general technical issues, new tech blog posts, etc.** |
 | `#cc-translation` | Coordinating translation efforts |
@@ -66,7 +65,6 @@ The channels most relevant to CC's developer community are:
 [mp]: https://github.com/creativecommons/mp
 [cc-vocabulary]: https://github.com/creativecommons/cc-vocabulary
 [search]: https://github.com/creativecommons/search
-[wp-plugin-creativecommons]: https://github.com/creativecommons/wp-plugin-creativecommons
 [workprograms]: /programs/
 
 
