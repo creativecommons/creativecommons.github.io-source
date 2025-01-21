@@ -1,4 +1,8 @@
 {
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "watch": "webpack --watch"
+  },
   "dependencies": {
     "@octokit/rest": "^18.3.5",
     "buffer": "^6.0.3",
