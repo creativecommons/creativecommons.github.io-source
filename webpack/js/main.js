@@ -1,3 +1,5 @@
+import { initScrollToTop } from './scroll-to-top';
+
 $(document).ready(function () {
     $(window).scroll(function () {
         if ($(this).scrollTop() > 500) {
@@ -48,6 +50,8 @@ $(document).ready(function () {
         $('.step a[href*="#"]').closest('a').find('.number').removeClass('is-active');
         $('.step').find('a[href=\"' + hash + '\"]').find('.number').addClass('is-active');
     });
+
+    initScrollToTop();
 });
 
 const getFullyQualifiedUrl = (path, version) => {
