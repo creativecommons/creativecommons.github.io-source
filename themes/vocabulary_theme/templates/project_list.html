@@ -8,6 +8,7 @@
   <p>This is a list of all active open source software projects that Creative Commons (CC) maintains.</p>
 </header>
 
+<div class="content body-container">
 <p>Please read the <a href="/contributing-code">Contributing Code</a> page for general information on how to get involved. Contribution guidelines specific to an individual project can be found in the <code>README</code> and the <code>CONTRIBUTING</code> files in the root folder of every repository. If you have any questions, don't hesitate to reach out to us through <a href="/community">one of our community forums</a> or open a GitHub issue.</p>
 
 <article class="projects">
@@ -38,8 +39,7 @@ TODO: Consider whether to add additional data that current markup does not suppo
 <div>
   <h2>All Active Projects</h2>
   <p>This is a complete list of active Creative Commons software projects. Archived projects are not documented here and can be found on the <strong><a href="https://github.com/cc-archive">CC Archive GitHub organization</a></strong>.</p>
-  <div>
-  <table>
+  <table class="datatable display">
     <thead>
       <tr>
         <th scope="col">#</th>
@@ -75,7 +75,7 @@ TODO: Consider whether to add additional data that current markup does not suppo
           {% if repo.website %}
             <a href="{{ repo.website }}"><i></i>Website</a>
           {% endif %}
-          <a href="{{ repo.url }}"><i></i>Github</a>
+          <a href="{{ repo.url }}"><i></i>GitHub</a>
           {% if repo.slack %}
             <a href="https://creativecommons.slack.com/channels/{{ repo.slack }}"><i></i>Slack</a>
           {% endif %}
@@ -83,6 +83,6 @@ TODO: Consider whether to add additional data that current markup does not suppo
       </tr>
     {% endfor %}
   </table>
-  </div>
+</div>
 </div>
 {% endblock %}
