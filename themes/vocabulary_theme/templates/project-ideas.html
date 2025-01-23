@@ -22,6 +22,7 @@
   </div>
 </header>
 
+<div class="content main-content">
 <article class="projects">
   <h2>Current Programs</h2>
   <p>Here are some highlighted projects currently underway:</p>
@@ -42,7 +43,7 @@
   </ul>
 </article>
 
-<div class="content">
+<div>
   {% for idea in ideas %}
       <h2><a name="{{ idea._slug }}">{{ idea.title }}</a></h2>
       <div class="project-container">
@@ -78,4 +79,5 @@
       <a href="#project-list"><i></i> Back to the Project list</a>
   </div>
 </div> 
+</div>
 {% endblock %}
