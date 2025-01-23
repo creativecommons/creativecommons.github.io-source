@@ -204,7 +204,7 @@ main blockquote {
   margin-bottom: 6rem;
 }
 
-.body-container, .content{
+.body-container, .main-content{
   grid-column: 2 / 10;
 }
 
