@@ -134,6 +134,37 @@ main blockquote {
   padding: 1.25em 1.5em;
 }
 
+/* BUTTON STYLES FOR PROJECT IDEAS PAGE */
+.filter-btn {
+  border: 2px solid var(--vocabulary-brand-color-tomato);
+  background-color: transparent; 
+  padding: 0 1rem;
+  font-size: .81rem;
+  min-height: 1.81rem;
+  border-radius: 18.5rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+/* Hover State */
+.filter-btn:hover {
+  background-color: var(--vocabulary-brand-color-tomato);
+  color: #fff; 
+}
+
+/* Active/Selected State */
+.filter-btn.btn-dark {
+  background-color: var(--vocabulary-brand-color-tomato);
+  color: white; 
+}
+
+/* Inactive State */
+.filter-btn.btn-primary {
+  background-color: transparent;
+  color: #000;
+  border-color: var(--vocabulary-brand-color-tomato); 
+}
+
 @media (min-width: 1024px) {
 /* Styles for screens 768px and larger go here */
 
@@ -173,7 +204,7 @@ main blockquote {
   margin-bottom: 6rem;
 }
 
-.body-container{
+.body-container, .content{
   grid-column: 2 / 10;
 }
 
@@ -203,7 +234,13 @@ main blockquote {
   font-size: 1rem;
   list-style: none;
 }
+.project-container {
+  display: flex;
+}
 
+.project-description {
+  margin-left: 10%;
+}
 }
 
 @media (min-width: 1314px) {
