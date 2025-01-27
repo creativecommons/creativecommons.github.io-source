@@ -1,5 +1,6 @@
 @import "/static/vocabulary/css/vocabulary.css" layer(vocabulary);
 @import "/static/vendor/datatable/datatables.css" layer(datatables);
+@import "/static/css/issue-finder.css" layer(issue-finder);
 
 /* Global Styles */
 li {
@@ -133,6 +134,115 @@ main blockquote {
   border-left: 5px solid rgb(245, 245, 245);
   padding: 1.25em 1.5em;
 }
+
+/* label styles */
+.gh-label {
+  display: inline-block;
+  margin-right: 0.25rem;
+  padding: 0.25rem 0.5rem;
+
+  font-size: smaller;
+  border: 1px solid #eeeeee;
+  border-radius: 1.5rem;
+}
+
+/* for anchor tags with a span.gh-label inside them */
+main a:has(span.gh-label) {
+  --underline-background-color: unset;
+}
+
+/* label style for individual labels */
+
+.gh-label.goal {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.gh-label.aspect {
+  background-color: #04338c;
+  color: #ffffff;
+}
+
+.gh-label.skill {
+  background-color: #5ff1f5;
+  color: #000000;
+}
+
+.gh-label.talk {
+  background-color: #f9bbe5;
+  color: #000000;
+}
+
+.gh-label.friendliness {
+  background-color: #7f0799;
+  color: #ffffff;
+}
+
+.gh-label.status-lighter {
+  background-color: #eeeeee;
+  color: #000000;
+}
+
+.gh-label.status-light {
+  background-color: #cccccc;
+  color: #000000;
+}
+
+.gh-label.status-neutral {
+  background-color: #999999;
+  color: #000000;
+}
+
+.gh-label.status-dark {
+  background-color: #666666;
+  color: #ffffff;
+}
+
+.gh-label.status-darker {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.gh-label.priority-unfavourable {
+  background-color: #b60205;
+  color: #ffffff;
+}
+
+.gh-label.priority-negative {
+  background-color: #ff9f1c;
+  color: #000000;
+}
+
+.gh-label.priority-neutral {
+  background-color: #ffcc00;
+  color: #000000;
+}
+
+.gh-label.priority-positive {
+  background-color: #cfda2c;
+  color: #000000;
+}
+
+.gh-label.priority-favourable {
+  background-color: #008672;
+  color: #ffffff;
+}
+
+.gh-label.miscellaneous {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.gh-label.hacktoberfest {
+  background-color: #883255;
+  color: #ffffff;
+}
+
+.gh-label.invalid {
+  background-color: #eeeeee;
+  color: #000000;
+}
+
 
 @media (min-width: 1024px) {
 /* Styles for screens 768px and larger go here */
