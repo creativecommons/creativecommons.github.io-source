@@ -189,7 +189,7 @@ document.addEventListener("DOMContentLoaded", function () {
         ${issue.labels
           .map((label) => {
             const labelClass = categories[label] || "miscellaneous";
-            return `<span class="label ${labelClass}">${label}</span>`;
+            return `<span class="gh-label ${labelClass}">${label}</span>`;
           })
           .join("")}
       </div>
