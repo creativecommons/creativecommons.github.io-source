@@ -78,6 +78,6 @@ option, which is much better than previous footer implementation.
 - Integrate WPGulp workflow and improve i18n.
 - Improve documentation with a visual walk-around of every feature.
 
-Thank you for reading. For more, see the [GitHub repository](https://github.com/creativecommons/wp-plugin-creativecommons).
+Thank you for reading. For more, see the [GitHub repository](https://github.com/cc-archive/wp-plugin-creativecommons).
 
 If you have any feedback or suggestions, let us know in the discussion on `#cc-dev-wordpress` Slack channel. Looking forward!

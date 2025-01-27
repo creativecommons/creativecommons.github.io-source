@@ -841,29 +841,6 @@
             "website": ""
         },
         {
-            "created": "2014-07-28T15:18:18+00:00",
-            "description": "Official Creative Commons plugin for licensing your content. With Creative Commons licenses, keep your copyright AND share your creativity.",
-            "engineering_project": true,
-            "english_name": "CC WordPress Plugin",
-            "featured": true,
-            "id": 22347352,
-            "language": "PHP",
-            "license": {
-                "name": "GNU General Public License v2.0",
-                "url": "https://github.com/creativecommons/wp-plugin-creativecommons/blob/main/license.txt"
-            },
-            "name": "wp-plugin-creativecommons",
-            "slack": "cc-dev-wordpress",
-            "technologies": [
-                "PHP",
-                "CSS",
-                "JS",
-                "WordPress"
-            ],
-            "url": "https://github.com/creativecommons/wp-plugin-creativecommons",
-            "website": "https://wordpress.org/plugins/creative-commons/"
-        },
-        {
             "created": "2020-09-17T19:19:54+00:00",
             "description": "This WordPress plugin provides custom functionality for the creativecommons.org website.",
             "engineering_project": true,
