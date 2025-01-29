@@ -45,20 +45,20 @@ An issue has many different attributes:
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td style="background-color: #b60205;">Unfavourable</td>
-      <td style="background-color: #ff9f1c;">Negative</td>
-      <td style="background-color: #ffcc00;">Neutral</td>
-      <td style="background-color: #cfda2c;">Positive</td>
-      <td style="background-color: #008672;">Favourable</td>
-    </tr>
-    <tr>
-      <td style="background-color: #b60205;">#b60205</td>
-      <td style="background-color: #ff9f1c;">#ff9f1c</td>
-      <td style="background-color: #ffcc00;">#ffcc00</td>
-      <td style="background-color: #cfda2c;">#cfda2c</td>
-      <td style="background-color: #008672;">#008672</td>
-    </tr>
+   <tr>
+   <td class="bg-unfavourable">Unfavourable</td>
+   <td class="bg-negative">Negative</td>
+   <td class="bg-neutral">Neutral</td>
+   <td class="bg-positive">Positive</td>
+   <td class="bg-favourable">Favourable</td>
+  </tr>
+  <tr>
+   <td class="bg-unfavourable">#b60205</td>
+   <td class="bg-negative">#ff9f1c</td>
+   <td class="bg-neutral">#ffcc00</td>
+   <td class="bg-positive">#cfda2c</td>
+   <td class="bg-favourable">#008672</td>
+  </tr>
   </tbody>
   </table>
 </div>
@@ -95,21 +95,21 @@ planning or deciding which issues to tackle next.
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td style="background-color: #eeeeee;">Lighter</td>
-      <td style="background-color: #cccccc;">Light</td>
-      <td style="background-color: #999999;">Medium</td>
-      <td style="background-color: #666666;">Dark</td>
-      <td style="background-color: #333333;">Darker</td>
-    </tr>
-    <tr>
-      <td style="background-color: #eeeeee;">#eeeeee</td>
-      <td style="background-color: #cccccc;">#cccccc</td>
-      <td style="background-color: #999999;">#999999</td>
-      <td style="background-color: #666666;">#666666</td>
-      <td style="background-color: #333333;">#333333</td>
-    </tr>
-  </tbody>
+  <tr>
+   <td class="bg-lighter">Lighter</td>
+   <td class="bg-light">Light</td>
+   <td class="bg-medium">Medium</td>
+   <td class="bg-dark">Dark</td>
+   <td class="bg-darker">Darker</td>
+  </tr>
+  <tr>
+   <td class="bg-lighter">#eeeeee</td>
+   <td class="bg-light">#cccccc</td>
+   <td class="bg-medium">#999999</td>
+   <td class="bg-dark">#666666</td>
+   <td class="bg-darker">#333333</td>
+  </tr>
+ </tbody>
   </table>
 </div>
 

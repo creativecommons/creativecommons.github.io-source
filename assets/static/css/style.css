@@ -256,6 +256,45 @@ main a:has(span.gh-label) {
   color: #000000;
 }
 
+.bg-unfavourable { 
+  background-color: #b60205; 
+}
+
+.bg-negative { 
+  background-color: #ff9f1c; 
+}
+
+.bg-neutral { 
+  background-color: #ffcc00; 
+}
+
+.bg-positive { 
+  background-color: #cfda2c; 
+}
+
+.bg-favourable { 
+  background-color: #008672; 
+}
+
+.bg-lighter { 
+  background-color: #eeeeee; 
+}
+
+.bg-light { 
+  background-color: #cccccc; 
+}
+
+.bg-medium { 
+  background-color: #999999; 
+}
+
+.bg-dark { 
+  background-color: #666666; 
+}
+
+.bg-darker { 
+  background-color: #333333; 
+}
 
 @media (min-width: 1024px) {
 /* Styles for screens 768px and larger go here */
