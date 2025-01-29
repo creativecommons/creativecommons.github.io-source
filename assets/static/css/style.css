@@ -135,6 +135,19 @@ main blockquote {
   padding: 1.25em 1.5em;
 }
 
+/* PRE STYLES */
+pre {
+  color: rgb(51, 51, 51);
+  background-color: rgb(245, 245, 245);
+  border: 0.0625rem solid rgb(216, 216, 216);
+  border-radius: 0.25rem;
+  padding: 1rem 2rem;
+}
+
+pre code {
+  border: none;
+}
+
 /* label styles */
 .gh-label {
   display: inline-block;
