@@ -38,7 +38,7 @@ An issue has many different attributes:
 ### *Priority
 
 <div class="table-container">
-  <table class="table is-bordered" style="table-layout: fixed;">
+  <table class="datatable display">
   <thead>
     <tr>
       <td colspan="5"><strong>Priority color chart</strong></td>
@@ -46,18 +46,18 @@ An issue has many different attributes:
   </thead>
   <tbody>
     <tr>
-      <td class="has-text-white" style="background-color: #b60205;">Unfavourable</td>
-      <td class="has-text-black" style="background-color: #ff9f1c;">Negative</td>
-      <td class="has-text-black" style="background-color: #ffcc00;">Neutral</td>
-      <td class="has-text-black" style="background-color: #cfda2c;">Positive</td>
-      <td class="has-text-white" style="background-color: #008672;">Favourable</td>
+      <td style="background-color: #b60205;">Unfavourable</td>
+      <td style="background-color: #ff9f1c;">Negative</td>
+      <td style="background-color: #ffcc00;">Neutral</td>
+      <td style="background-color: #cfda2c;">Positive</td>
+      <td style="background-color: #008672;">Favourable</td>
     </tr>
     <tr>
-      <td class="has-text-white" style="background-color: #b60205;">#b60205</td>
-      <td class="has-text-black" style="background-color: #ff9f1c;">#ff9f1c</td>
-      <td class="has-text-black" style="background-color: #ffcc00;">#ffcc00</td>
-      <td class="has-text-black" style="background-color: #cfda2c;">#cfda2c</td>
-      <td class="has-text-white" style="background-color: #008672;">#008672</td>
+      <td style="background-color: #b60205;">#b60205</td>
+      <td style="background-color: #ff9f1c;">#ff9f1c</td>
+      <td style="background-color: #ffcc00;">#ffcc00</td>
+      <td style="background-color: #cfda2c;">#cfda2c</td>
+      <td style="background-color: #008672;">#008672</td>
     </tr>
   </tbody>
   </table>
@@ -88,7 +88,7 @@ planning or deciding which issues to tackle next.
 ### *Status
 
 <div class="table-container">
-  <table class="table is-bordered" style="table-layout: fixed;">
+  <table class="datatable display">
   <thead>
     <tr>
       <td colspan="5"><strong>Status color chart</strong></td>
@@ -96,18 +96,18 @@ planning or deciding which issues to tackle next.
   </thead>
   <tbody>
     <tr>
-      <td class="has-text-black" style="background-color: #eeeeee;">Lighter</td>
-      <td class="has-text-black" style="background-color: #cccccc;">Light</td>
-      <td class="has-text-black" style="background-color: #999999;">Medium</td>
-      <td class="has-text-white" style="background-color: #666666;">Dark</td>
-      <td class="has-text-white" style="background-color: #333333;">Darker</td>
+      <td style="background-color: #eeeeee;">Lighter</td>
+      <td style="background-color: #cccccc;">Light</td>
+      <td style="background-color: #999999;">Medium</td>
+      <td style="background-color: #666666;">Dark</td>
+      <td style="background-color: #333333;">Darker</td>
     </tr>
     <tr>
-      <td class="has-text-black" style="background-color: #eeeeee;">#eeeeee</td>
-      <td class="has-text-black" style="background-color: #cccccc;">#cccccc</td>
-      <td class="has-text-black" style="background-color: #999999;">#999999</td>
-      <td class="has-text-white" style="background-color: #666666;">#666666</td>
-      <td class="has-text-white" style="background-color: #333333;">#333333</td>
+      <td style="background-color: #eeeeee;">#eeeeee</td>
+      <td style="background-color: #cccccc;">#cccccc</td>
+      <td style="background-color: #999999;">#999999</td>
+      <td style="background-color: #666666;">#666666</td>
+      <td style="background-color: #333333;">#333333</td>
     </tr>
   </tbody>
   </table>
@@ -249,7 +249,7 @@ categories and every issue is required to have at least one label from those
 categories.
 
 Only issues labelled with
-<span class="gh-label has-text-white" style="background-color: #333333;">
+<span class="gh-label status-darker">
   🚦 status: awaiting triage
 </span>
 are allowed to not have all mandatory labels (seeing as they have not been
