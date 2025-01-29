@@ -2,11 +2,6 @@
 @import "/static/vendor/datatable/datatables.css" layer(datatables);
 @import "/static/css/issue-finder.css" layer(issue-finder);
 
-/* Global Styles */
-li {
-  list-style-type: none;
-}
-
 /* Homepage Styles */
 
 .home-page main {
@@ -32,7 +27,7 @@ li {
   margin-bottom: 1rem;
 }
 
-.home-page li {
+.home-page li, .posts li, .projects li{
   list-style-type: none;
 }
 
