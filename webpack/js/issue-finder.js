@@ -48,6 +48,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function hydrateAppWithData(skills, labels) {
     const categories = {};
+
+    // Process skills and categorize them
+    skills = Array.from(new Set(Object.values(skills).flat()));
+    skills.forEach((skill) => {
+      let name = `💪 skill: ${skill.toLowerCase()}`;
+      categories[name] = "skill";
+    });
+
     labels.groups.forEach((group) => {
       group.labels.forEach((label) => {
         let name = label.name;
@@ -63,13 +71,19 @@ document.addEventListener("DOMContentLoaded", function () {
         } else {
           styleName = group.name;
         }
-        categories[name] = styleName;
+        // Only assign if not already categorized
+        if (!categories[name]) {
+          categories[name] = styleName;
+        }
       });
     });
 
     labels.standalone.forEach((label) => {
       let name = `${label.emoji} ${label.name}`;
-      categories[name] = "miscellaneous";
+      // Only assign "miscellaneous" if it hasn't already been categorized
+      if (!categories[name]) {
+        categories[name] = "miscellaneous";
+      }
     });
 
     skills = Array.from(new Set(Object.values(skills).flat()));
