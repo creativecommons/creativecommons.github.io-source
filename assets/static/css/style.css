@@ -18,7 +18,7 @@
   font-style: normal;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 2.5rem;  
+  font-size: 2.5rem;
 }
 
 .home-page main p {
@@ -81,7 +81,7 @@ table.display {
   border-right: 1px solid #ddd;
 }
 
-table.display th { 
+table.display th {
   border-bottom: 1px solid #ddd;
   border-top: 1px solid #ddd;
   border-width: 1px;
@@ -128,6 +128,37 @@ main blockquote {
   background-color: hsl(0, 0%, 96%);
   border-left: 5px solid rgb(245, 245, 245);
   padding: 1.25em 1.5em;
+}
+
+/* BUTTON STYLES FOR PROJECT IDEAS PAGE */
+.filter-btn {
+  border: 2px solid var(--vocabulary-brand-color-tomato);
+  background-color: transparent;
+  padding: 0 1rem;
+  font-size: .81rem;
+  min-height: 1.81rem;
+  border-radius: 18.5rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+/* Hover State */
+.filter-btn:hover {
+  background-color: var(--vocabulary-brand-color-tomato);
+  color: #fff;
+}
+
+/* Active/Selected State */
+.filter-btn.btn-dark {
+  background-color: var(--vocabulary-brand-color-tomato);
+  color: white;
+}
+
+/* Inactive State */
+.filter-btn.btn-primary {
+  background-color: transparent;
+  color: #000;
+  border-color: var(--vocabulary-brand-color-tomato);
 }
 
 /* PRE STYLES */
@@ -261,7 +292,7 @@ main a:has(span.gh-label) {
 
 .hero-section img {
   width: auto;
-} 
+}
 
 .hero-section {
   display: grid;
@@ -270,7 +301,7 @@ main a:has(span.gh-label) {
       "title title title"
       "description description description "
       "graphic graphic graphic";
- 
+
   margin-bottom: 6.4em;
   gap: 0 4em;
 }
@@ -284,7 +315,7 @@ main a:has(span.gh-label) {
   width: 41.67%
 }
 
-.projects ul { 
+.projects ul {
   grid-template-columns: 1fr 1fr;
 
   font-size: 1rem;
@@ -295,7 +326,7 @@ main a:has(span.gh-label) {
   margin-bottom: 6rem;
 }
 
-.body-container{
+.body-container, .main-content{
   grid-column: 2 / 10;
 }
 
@@ -325,12 +356,17 @@ main a:has(span.gh-label) {
   font-size: 1rem;
   list-style: none;
 }
+.project-container {
+  display: flex;
+}
 
+.project-description {
+  margin-left: 10%;
 }
 
 @media (min-width: 1314px) {
-.hero-image {
-  grid-column: 3;
-  margin-top: -6rem;
-}
+  .hero-image {
+    grid-column: 3;
+    margin-top: -6rem;
+  }
 }
