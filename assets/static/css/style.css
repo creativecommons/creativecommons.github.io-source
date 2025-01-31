@@ -161,134 +161,99 @@ main a:has(span.gh-label) {
 
 /* label style for individual labels */
 
-.gh-label.goal {
+.goal {
   background-color: #ffffff;
   color: #000000;
 }
 
-.gh-label.aspect {
+.aspect {
   background-color: #04338c;
   color: #ffffff;
 }
 
-.gh-label.skill {
+.skill {
   background-color: #5ff1f5;
   color: #000000;
 }
 
-.gh-label.talk {
+.talk {
   background-color: #f9bbe5;
   color: #000000;
 }
 
-.gh-label.friendliness {
+.friendliness {
   background-color: #7f0799;
   color: #ffffff;
 }
 
-.gh-label.status-lighter {
+.status-lighter {
   background-color: #eeeeee;
   color: #000000;
 }
 
-.gh-label.status-light {
+.status-light {
   background-color: #cccccc;
   color: #000000;
 }
 
-.gh-label.status-neutral {
+.status-neutral {
   background-color: #999999;
   color: #000000;
 }
 
-.gh-label.status-dark {
+.status-dark {
   background-color: #666666;
   color: #ffffff;
 }
 
-.gh-label.status-darker {
+.status-darker {
   background-color: #333333;
   color: #ffffff;
 }
 
-.gh-label.priority-unfavourable {
+.status-medium{
+  background-color: #999999;
+  color: #ffffff;
+}
+
+.priority-unfavourable {
   background-color: #b60205;
   color: #ffffff;
 }
 
-.gh-label.priority-negative {
+.priority-negative {
   background-color: #ff9f1c;
   color: #000000;
 }
 
-.gh-label.priority-neutral {
+.priority-neutral {
   background-color: #ffcc00;
   color: #000000;
 }
 
-.gh-label.priority-positive {
+.priority-positive {
   background-color: #cfda2c;
   color: #000000;
 }
 
-.gh-label.priority-favourable {
+.priority-favourable {
   background-color: #008672;
   color: #ffffff;
 }
 
-.gh-label.miscellaneous {
+.miscellaneous {
   background-color: #000000;
   color: #ffffff;
 }
 
-.gh-label.hacktoberfest {
+.hacktoberfest {
   background-color: #883255;
   color: #ffffff;
 }
 
-.gh-label.invalid {
+.invalid {
   background-color: #eeeeee;
   color: #000000;
-}
-
-.bg-unfavourable { 
-  background-color: #b60205; 
-}
-
-.bg-negative { 
-  background-color: #ff9f1c; 
-}
-
-.bg-neutral { 
-  background-color: #ffcc00; 
-}
-
-.bg-positive { 
-  background-color: #cfda2c; 
-}
-
-.bg-favourable { 
-  background-color: #008672; 
-}
-
-.bg-lighter { 
-  background-color: #eeeeee; 
-}
-
-.bg-light { 
-  background-color: #cccccc; 
-}
-
-.bg-medium { 
-  background-color: #999999; 
-}
-
-.bg-dark { 
-  background-color: #666666; 
-}
-
-.bg-darker { 
-  background-color: #333333; 
 }
 
 @media (min-width: 1024px) {
