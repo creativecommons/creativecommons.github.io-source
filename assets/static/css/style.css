@@ -287,6 +287,59 @@ main a:has(span.gh-label) {
   color: #000000;
 }
 
+/* CC Search Feature */
+.steps-list {
+  list-style: none;
+  padding: 0;
+  position: relative;
+  margin-left: 1rem;
+}
+
+.steps-list::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  width: 2px;
+  height: calc(100% - 20px);
+  background-color: #eee;
+}
+
+.step-item {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 1.6rem; 
+}
+
+.step-link {
+  --underline-color: unset
+  --underline-background-color: unset;
+  color: #333;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+.step-number {
+  width: 1.82rem;
+  height: 1.82rem;
+  background-color: rgb(245, 245, 245);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 32px;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-right: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.step-title {
+  font-size: 1rem;
+}
+
 @media (min-width: 1024px) {
 /* Styles for screens 768px and larger go here */
 
@@ -356,11 +409,12 @@ main a:has(span.gh-label) {
   font-size: 1rem;
   list-style: none;
 }
-.project-container {
+
+.project-container, .search-guide-container {
   display: flex;
 }
 
-.project-description {
+.project-description, .guide-content {
   margin-left: 10%;
 }
 
@@ -369,4 +423,5 @@ main a:has(span.gh-label) {
     grid-column: 3;
     margin-top: -6rem;
   }
+}
 }

@@ -6,19 +6,18 @@
   <header>
     <h1>{{ this.title }}</h1>
   </header>
-  <div>
-    <div>
-      <div>
-        <div>
+    <div class="content main-content">
+      <div class="search-guide-container">
+        <div class="steps-container">
           <h4>Steps</h4>
-          <ul>
+          <ul class="steps-list">
             {% set step = namespace (number = 0) %}
             {% for item in this.body.toc %}
               {% if (loop.index + 1)%3 == 0 %}
-                <li>
-                  <a href="#{{ this.body.toc[loop.index - 2].anchor }}">
-                    <span>{{ step.number }}</span>
-                    <span>{{ item.title }}</span>
+                <li class="step-item">
+                  <a href="#{{ this.body.toc[loop.index - 2].anchor }}" class="step-link"> 
+                    <span class="step-number">{{ step.number }}</span>
+                    <span class="step-title">{{ item.title }}</span>
                   </a>
                 </li>
                 {% set step.number = step.number + 1 %}
@@ -26,10 +25,9 @@
             {% endfor %}
           </ul>
         </div>
-      </div>
-      <div class="content">
+      <div class="guide-content">
         {{ this.body }}
       </div>
     </div>
-  </div>
+    </div>
 {% endblock %}
