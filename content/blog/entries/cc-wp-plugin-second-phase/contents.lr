@@ -23,7 +23,7 @@ For the context, I am working with my mentor [Timid Robot](https://creativecommo
 
 ### Release of v2019.7.1
 
-We have released the latest stable version of the plugin. `v2019.7.1` is out and tagged in the [wp-plugin-creativecommons repository](https://github.com/creativecommons/wp-plugin-creativecommons/releases). Given that a stable release is available, we have submitted it to [WordPress.org plugin directory](https://en-nz.wordpress.org/plugins/). As soon as their team approves it, the plugin will be available to install for all WordPress users, which is substantial.
+We have released the latest stable version of the plugin. `v2019.7.1` is out and tagged in the [wp-plugin-creativecommons repository](https://github.com/cc-archive/wp-plugin-creativecommons/releases). Given that a stable release is available, we have submitted it to [WordPress.org plugin directory](https://en-nz.wordpress.org/plugins/). As soon as their team approves it, the plugin will be available to install for all WordPress users, which is substantial.
 
 ### What's next
 
@@ -34,6 +34,6 @@ Although the current implentation does the job, but we want it to use new [CC Li
 - Changes in design and features.
 - Improve the documentation.
 
-For more, see the [GitHub repository](https://github.com/creativecommons/wp-plugin-creativecommons).
+For more, see the [GitHub repository](https://github.com/cc-archive/wp-plugin-creativecommons).
 
 If you have any feedback or suggestions, let us know in the discussion on `#cc-dev-wordpress` Slack channel. Looking forward!

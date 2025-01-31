@@ -1,10 +1,6 @@
 @import "/static/vocabulary/css/vocabulary.css" layer(vocabulary);
 @import "/static/vendor/datatable/datatables.css" layer(datatables);
-
-/* Global Styles */
-li {
-  list-style-type: none;
-}
+@import "/static/css/issue-finder.css" layer(issue-finder);
 
 /* Homepage Styles */
 
@@ -22,7 +18,7 @@ li {
   font-style: normal;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 2.5rem;  
+  font-size: 2.5rem;
 }
 
 .home-page main p {
@@ -31,7 +27,7 @@ li {
   margin-bottom: 1rem;
 }
 
-.home-page li {
+.home-page li, .posts li, .projects li{
   list-style-type: none;
 }
 
@@ -85,7 +81,7 @@ table.display {
   border-right: 1px solid #ddd;
 }
 
-table.display th { 
+table.display th {
   border-bottom: 1px solid #ddd;
   border-top: 1px solid #ddd;
   border-width: 1px;
@@ -137,7 +133,7 @@ main blockquote {
 /* BUTTON STYLES FOR PROJECT IDEAS PAGE */
 .filter-btn {
   border: 2px solid var(--vocabulary-brand-color-tomato);
-  background-color: transparent; 
+  background-color: transparent;
   padding: 0 1rem;
   font-size: .81rem;
   min-height: 1.81rem;
@@ -149,20 +145,146 @@ main blockquote {
 /* Hover State */
 .filter-btn:hover {
   background-color: var(--vocabulary-brand-color-tomato);
-  color: #fff; 
+  color: #fff;
 }
 
 /* Active/Selected State */
 .filter-btn.btn-dark {
   background-color: var(--vocabulary-brand-color-tomato);
-  color: white; 
+  color: white;
 }
 
 /* Inactive State */
 .filter-btn.btn-primary {
   background-color: transparent;
   color: #000;
-  border-color: var(--vocabulary-brand-color-tomato); 
+  border-color: var(--vocabulary-brand-color-tomato);
+}
+
+/* PRE STYLES */
+pre {
+  color: rgb(51, 51, 51);
+  background-color: rgb(245, 245, 245);
+  border: 0.0625rem solid rgb(216, 216, 216);
+  border-radius: 0.25rem;
+  padding: 1rem 2rem;
+}
+
+pre code {
+  border: none;
+}
+
+/* label styles */
+.gh-label {
+  display: inline-block;
+  margin-right: 0.25rem;
+  padding: 0.25rem 0.5rem;
+
+  font-size: smaller;
+  border: 1px solid #eeeeee;
+  border-radius: 1.5rem;
+}
+
+/* for anchor tags with a span.gh-label inside them */
+main a:has(span.gh-label) {
+  --underline-background-color: unset;
+}
+
+/* label style for individual labels */
+
+.goal {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.aspect {
+  background-color: #04338c;
+  color: #ffffff;
+}
+
+.skill {
+  background-color: #5ff1f5;
+  color: #000000;
+}
+
+.talk {
+  background-color: #f9bbe5;
+  color: #000000;
+}
+
+.friendliness {
+  background-color: #7f0799;
+  color: #ffffff;
+}
+
+.status-lighter {
+  background-color: #eeeeee;
+  color: #000000;
+}
+
+.status-light {
+  background-color: #cccccc;
+  color: #000000;
+}
+
+.status-neutral {
+  background-color: #999999;
+  color: #000000;
+}
+
+.status-dark {
+  background-color: #666666;
+  color: #ffffff;
+}
+
+.status-darker {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.status-medium{
+  background-color: #999999;
+  color: #ffffff;
+}
+
+.priority-unfavourable {
+  background-color: #b60205;
+  color: #ffffff;
+}
+
+.priority-negative {
+  background-color: #ff9f1c;
+  color: #000000;
+}
+
+.priority-neutral {
+  background-color: #ffcc00;
+  color: #000000;
+}
+
+.priority-positive {
+  background-color: #cfda2c;
+  color: #000000;
+}
+
+.priority-favourable {
+  background-color: #008672;
+  color: #ffffff;
+}
+
+.miscellaneous {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.hacktoberfest {
+  background-color: #883255;
+  color: #ffffff;
+}
+
+.invalid {
+  background-color: #eeeeee;
+  color: #000000;
 }
 
 @media (min-width: 1024px) {
@@ -170,7 +292,7 @@ main blockquote {
 
 .hero-section img {
   width: auto;
-} 
+}
 
 .hero-section {
   display: grid;
@@ -179,7 +301,7 @@ main blockquote {
       "title title title"
       "description description description "
       "graphic graphic graphic";
- 
+
   margin-bottom: 6.4em;
   gap: 0 4em;
 }
@@ -193,7 +315,7 @@ main blockquote {
   width: 41.67%
 }
 
-.projects ul { 
+.projects ul {
   grid-template-columns: 1fr 1fr;
 
   font-size: 1rem;
@@ -241,11 +363,10 @@ main blockquote {
 .project-description {
   margin-left: 10%;
 }
-}
 
 @media (min-width: 1314px) {
-.hero-image {
-  grid-column: 3;
-  margin-top: -6rem;
-}
+  .hero-image {
+    grid-column: 3;
+    margin-top: -6rem;
+  }
 }

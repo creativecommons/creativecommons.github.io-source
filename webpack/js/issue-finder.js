@@ -48,6 +48,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function hydrateAppWithData(skills, labels) {
     const categories = {};
+
+    // Process skills and categorize them
+    skills = Array.from(new Set(Object.values(skills).flat()));
+    skills.forEach((skill) => {
+      let name = `💪 skill: ${skill.toLowerCase()}`;
+      categories[name] = "skill";
+    });
+
     labels.groups.forEach((group) => {
       group.labels.forEach((label) => {
         let name = label.name;
@@ -63,13 +71,19 @@ document.addEventListener("DOMContentLoaded", function () {
         } else {
           styleName = group.name;
         }
-        categories[name] = styleName;
+        // Only assign if not already categorized
+        if (!categories[name]) {
+          categories[name] = styleName;
+        }
       });
     });
 
     labels.standalone.forEach((label) => {
       let name = `${label.emoji} ${label.name}`;
-      categories[name] = "miscellaneous";
+      // Only assign "miscellaneous" if it hasn't already been categorized
+      if (!categories[name]) {
+        categories[name] = "miscellaneous";
+      }
     });
 
     skills = Array.from(new Set(Object.values(skills).flat()));
@@ -174,24 +188,28 @@ document.addEventListener("DOMContentLoaded", function () {
     filteredIssues.forEach((issue) => {
       const issueCard = document.createElement("div");
       issueCard.className = "issue-card";
+      //safely render the title
+      const titleElement = document.createElement("h4");
+      titleElement.textContent = issue.title; // Safely set text content
+
       issueCard.innerHTML = `
-        <h4>${issue.title}</h4>
-        <p>
-          <a href="${issue.html_url}" target="_blank">
-            <span>${issue.repo}#${issue.number}</span>
-          </a>
-          opened on ${issue.created_at.split("T")[0]}.
-        </p>
-        <div class="labels">
-          ${issue.labels
-            .map((label) => {
-              // Use the dynamic class mapping for labels
-              const labelClass = categories[label] || "miscellaneous";
-              return `<span class="label ${labelClass}">${label}</span>`;
-            })
-            .join("")}
-        </div>
-      `;
+      <p>
+        <a href="${issue.html_url}" target="_blank">
+          <span>${issue.repo}#${issue.number}</span>
+        </a>
+        opened on ${issue.created_at.split("T")[0]}.
+      </p>
+      <div class="labels">
+        ${issue.labels
+          .map((label) => {
+            const labelClass = categories[label] || "miscellaneous";
+            return `<span class="gh-label ${labelClass}">${label}</span>`;
+          })
+          .join("")}
+      </div>
+    `;
+      // Add the title element before everything else in the issue card
+      issueCard.prepend(titleElement);
       issuesContainer.appendChild(issueCard);
     });
   }
