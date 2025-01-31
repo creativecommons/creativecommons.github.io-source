@@ -41,23 +41,21 @@ An issue has many different attributes:
   <table class="datatable display">
   <thead>
     <tr>
-      <td colspan="5"><strong>Priority color chart</strong></td>
+      <td colspan="4"><strong>Priority color chart</strong></td>
     </tr>
   </thead>
   <tbody>
    <tr>
-   <td class="bg-unfavourable">Unfavourable</td>
-   <td class="bg-negative">Negative</td>
-   <td class="bg-neutral">Neutral</td>
-   <td class="bg-positive">Positive</td>
-   <td class="bg-favourable">Favourable</td>
+   <td class="priority-unfavourable">Unfavourable</td>
+   <td class="priority-negative">Negative</td>
+   <td class="priority-neutral">Neutral</td>
+   <td class="priority-positive">Positive</td>
   </tr>
   <tr>
-   <td class="bg-unfavourable">#b60205</td>
-   <td class="bg-negative">#ff9f1c</td>
-   <td class="bg-neutral">#ffcc00</td>
-   <td class="bg-positive">#cfda2c</td>
-   <td class="bg-favourable">#008672</td>
+   <td class="priority-unfavourable">#b60205</td>
+   <td class="priority-negative">#ff9f1c</td>
+   <td class="priority-neutral">#ffcc00</td>
+   <td class="priority-positive">#cfda2c</td>
   </tr>
   </tbody>
   </table>
@@ -96,18 +94,18 @@ planning or deciding which issues to tackle next.
   </thead>
   <tbody>
   <tr>
-   <td class="bg-lighter">Lighter</td>
-   <td class="bg-light">Light</td>
-   <td class="bg-medium">Medium</td>
-   <td class="bg-dark">Dark</td>
-   <td class="bg-darker">Darker</td>
+   <td class="status-lighter">Lighter</td>
+   <td class="status-light">Light</td>
+   <td class="status-medium">Medium</td>
+   <td class="status-dark">Dark</td>
+   <td class="status-darker">Darker</td>
   </tr>
   <tr>
-   <td class="bg-lighter">#eeeeee</td>
-   <td class="bg-light">#cccccc</td>
-   <td class="bg-medium">#999999</td>
-   <td class="bg-dark">#666666</td>
-   <td class="bg-darker">#333333</td>
+   <td class="status-lighter">#eeeeee</td>
+   <td class="status-light">#cccccc</td>
+   <td class="status-medium">#999999</td>
+   <td class="status-dark">#666666</td>
+   <td class="status-darker">#333333</td>
   </tr>
  </tbody>
   </table>
