@@ -37,31 +37,27 @@ An issue has many different attributes:
 
 ### *Priority
 
-<div class="table-container">
-  <table class="table is-bordered" style="table-layout: fixed;">
-  <thead>
-    <tr>
-      <td colspan="5"><strong>Priority color chart</strong></td>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td class="has-text-white" style="background-color: #b60205;">Unfavourable</td>
-      <td class="has-text-black" style="background-color: #ff9f1c;">Negative</td>
-      <td class="has-text-black" style="background-color: #ffcc00;">Neutral</td>
-      <td class="has-text-black" style="background-color: #cfda2c;">Positive</td>
-      <td class="has-text-white" style="background-color: #008672;">Favourable</td>
-    </tr>
-    <tr>
-      <td class="has-text-white" style="background-color: #b60205;">#b60205</td>
-      <td class="has-text-black" style="background-color: #ff9f1c;">#ff9f1c</td>
-      <td class="has-text-black" style="background-color: #ffcc00;">#ffcc00</td>
-      <td class="has-text-black" style="background-color: #cfda2c;">#cfda2c</td>
-      <td class="has-text-white" style="background-color: #008672;">#008672</td>
-    </tr>
-  </tbody>
-  </table>
-</div>
+<table class="datatable display">
+<thead>
+  <tr>
+    <td colspan="4"><strong>Priority color chart</strong></td>
+  </tr>
+</thead>
+<tbody>
+ <tr>
+ <td class="priority-unfavourable">Unfavourable</td>
+ <td class="priority-negative">Negative</td>
+ <td class="priority-neutral">Neutral</td>
+ <td class="priority-positive">Positive</td>
+</tr>
+<tr>
+ <td class="priority-unfavourable">#b60205</td>
+ <td class="priority-negative">#ff9f1c</td>
+ <td class="priority-neutral">#ffcc00</td>
+ <td class="priority-positive">#cfda2c</td>
+</tr>
+</tbody>
+</table>
 
 The priority of an issue is based on its impact, derived from a combination of
 urgency and importance. This determines the importance of the issue when sprint
@@ -87,31 +83,29 @@ planning or deciding which issues to tackle next.
 
 ### *Status
 
-<div class="table-container">
-  <table class="table is-bordered" style="table-layout: fixed;">
-  <thead>
-    <tr>
-      <td colspan="5"><strong>Status color chart</strong></td>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td class="has-text-black" style="background-color: #eeeeee;">Lighter</td>
-      <td class="has-text-black" style="background-color: #cccccc;">Light</td>
-      <td class="has-text-black" style="background-color: #999999;">Medium</td>
-      <td class="has-text-white" style="background-color: #666666;">Dark</td>
-      <td class="has-text-white" style="background-color: #333333;">Darker</td>
-    </tr>
-    <tr>
-      <td class="has-text-black" style="background-color: #eeeeee;">#eeeeee</td>
-      <td class="has-text-black" style="background-color: #cccccc;">#cccccc</td>
-      <td class="has-text-black" style="background-color: #999999;">#999999</td>
-      <td class="has-text-white" style="background-color: #666666;">#666666</td>
-      <td class="has-text-white" style="background-color: #333333;">#333333</td>
-    </tr>
-  </tbody>
-  </table>
-</div>
+<table class="datatable display">
+<thead>
+  <tr>
+    <td colspan="5"><strong>Status color chart</strong></td>
+  </tr>
+</thead>
+<tbody>
+<tr>
+ <td class="status-lighter">Lighter</td>
+ <td class="status-light">Light</td>
+ <td class="status-medium">Medium</td>
+ <td class="status-dark">Dark</td>
+ <td class="status-darker">Darker</td>
+</tr>
+<tr>
+ <td class="status-lighter">#eeeeee</td>
+ <td class="status-light">#cccccc</td>
+ <td class="status-medium">#999999</td>
+ <td class="status-dark">#666666</td>
+ <td class="status-darker">#333333</td>
+</tr>
+</tbody>
+</table>
 
 The status of the issue determines whether it is ready for work or not. Issues
 may not be ready to be worked on for a number of reasons and the maintainers
@@ -249,7 +243,7 @@ categories and every issue is required to have at least one label from those
 categories.
 
 Only issues labelled with
-<span class="gh-label has-text-white" style="background-color: #333333;">
+<span class="gh-label status-darker">
   🚦 status: awaiting triage
 </span>
 are allowed to not have all mandatory labels (seeing as they have not been

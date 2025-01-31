@@ -2,11 +2,6 @@
 @import "/static/vendor/datatable/datatables.css" layer(datatables);
 @import "/static/css/issue-finder.css" layer(issue-finder);
 
-/* Global Styles */
-li {
-  list-style-type: none;
-}
-
 /* Homepage Styles */
 
 .home-page main {
@@ -32,7 +27,7 @@ li {
   margin-bottom: 1rem;
 }
 
-.home-page li {
+.home-page li, .posts li, .projects li{
   list-style-type: none;
 }
 
@@ -135,6 +130,19 @@ main blockquote {
   padding: 1.25em 1.5em;
 }
 
+/* PRE STYLES */
+pre {
+  color: rgb(51, 51, 51);
+  background-color: rgb(245, 245, 245);
+  border: 0.0625rem solid rgb(216, 216, 216);
+  border-radius: 0.25rem;
+  padding: 1rem 2rem;
+}
+
+pre code {
+  border: none;
+}
+
 /* label styles */
 .gh-label {
   display: inline-block;
@@ -153,96 +161,100 @@ main a:has(span.gh-label) {
 
 /* label style for individual labels */
 
-.gh-label.goal {
+.goal {
   background-color: #ffffff;
   color: #000000;
 }
 
-.gh-label.aspect {
+.aspect {
   background-color: #04338c;
   color: #ffffff;
 }
 
-.gh-label.skill {
+.skill {
   background-color: #5ff1f5;
   color: #000000;
 }
 
-.gh-label.talk {
+.talk {
   background-color: #f9bbe5;
   color: #000000;
 }
 
-.gh-label.friendliness {
+.friendliness {
   background-color: #7f0799;
   color: #ffffff;
 }
 
-.gh-label.status-lighter {
+.status-lighter {
   background-color: #eeeeee;
   color: #000000;
 }
 
-.gh-label.status-light {
+.status-light {
   background-color: #cccccc;
   color: #000000;
 }
 
-.gh-label.status-neutral {
+.status-neutral {
   background-color: #999999;
   color: #000000;
 }
 
-.gh-label.status-dark {
+.status-dark {
   background-color: #666666;
   color: #ffffff;
 }
 
-.gh-label.status-darker {
+.status-darker {
   background-color: #333333;
   color: #ffffff;
 }
 
-.gh-label.priority-unfavourable {
+.status-medium{
+  background-color: #999999;
+  color: #ffffff;
+}
+
+.priority-unfavourable {
   background-color: #b60205;
   color: #ffffff;
 }
 
-.gh-label.priority-negative {
+.priority-negative {
   background-color: #ff9f1c;
   color: #000000;
 }
 
-.gh-label.priority-neutral {
+.priority-neutral {
   background-color: #ffcc00;
   color: #000000;
 }
 
-.gh-label.priority-positive {
+.priority-positive {
   background-color: #cfda2c;
   color: #000000;
 }
 
-.gh-label.priority-favourable {
+.priority-favourable {
   background-color: #008672;
   color: #ffffff;
 }
 
-.gh-label.miscellaneous {
+.miscellaneous {
   background-color: #000000;
   color: #ffffff;
 }
 
-.gh-label.hacktoberfest {
+.hacktoberfest {
   background-color: #883255;
   color: #ffffff;
 }
 
-.gh-label.invalid {
+.invalid {
   background-color: #eeeeee;
   color: #000000;
 }
-
 
 @media (min-width: 1024px) {
 /* Styles for screens 768px and larger go here */
