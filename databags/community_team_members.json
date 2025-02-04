@@ -127,32 +127,6 @@
         {
             "members": [
                 {
-                    "github": "hugosolar",
-                    "name": "Hugo Solar",
-                    "role": "Project Maintainer"
-                },
-                {
-                    "github": "kgodey",
-                    "name": "Kriti Godey",
-                    "role": "Project Maintainer"
-                },
-                {
-                    "github": "ahmadbilaldev",
-                    "name": "Ahmad Bilal",
-                    "role": "Project Core Committer"
-                },
-                {
-                    "github": "Cronus1007",
-                    "name": "Ritish Thareja",
-                    "role": "Project Core Committer"
-                }
-            ],
-            "name": "WordPress Plugin",
-            "repos": "wp-plugin-creativecommons"
-        },
-        {
-            "members": [
-                {
                     "github": "aldenstpage",
                     "name": "Alden Page",
                     "role": "Project Maintainer"
