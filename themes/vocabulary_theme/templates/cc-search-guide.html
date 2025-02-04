@@ -23,6 +23,7 @@
                     <span class="number">{{ step.number }}</span>
                   </a>
                 </li>
+                {% set step.number = step.number + 1 %}
               {% endif %}
             {% endfor %}
           </ul>
