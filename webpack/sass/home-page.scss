@@ -2,28 +2,45 @@
 .hero {
   @extend .margin-top-large;
 
+  // Title styling within the hero section
   .hero-title {
     @extend .padding-horizontal-big;
+    .has-text-orange{
+      color:rgb(251 119 41);
+      }
+      
+    @media(max-width:530px) {
+      h1{
+      font-size: 2.8rem;
+      line-height: 1.2;
+      }
+    }
   }
 
+  // Description styling within the hero section
   .hero-description {
     @extend .body-bigger;
     @extend .padding-top-big;
     @extend .padding-horizontal-big;
   }
 
+  // Links container within the hero section
   .hero-links {
     @extend .margin-vertical-normal;
     @extend .padding-horizontal-big;
 
+    // Button styling within the hero links
     .button {
       @extend .margin-top-normal;
       text-decoration: none;
-
-      .icon {
-        @extend .margin-right-small;
-        @extend .padding-vertical-smaller;
-      }
+      display: inline-block;  // Allow the button to wrap around the text
+      width: 100%;            // Full width of the container
+      height: fit-content;    // Fit the content within the button
+      max-width: 300px;       // Maximum width for buttons
+      box-sizing: border-box; // Include padding in width calculation
+      text-align: center;     // Center text inside buttons
+      line-height: 1.2;       // Set line height for readability
+      white-space: normal;    // Allow text wrapping within buttons
     }
   }
 

@@ -4,7 +4,7 @@ _template: page-with-toc.html
 ---
 title: Write a Blog Post
 ---
-description: We invite members of the Creative Commons community to write guest posts on <a href="/blog">our technical blog</a>.
+description: We invite members of the Creative Commons (CC) community to write guest posts on <a href="/blog">our technical blog</a>.
 ---
 body:
 
@@ -53,6 +53,8 @@ Once you have written your post, you can either send it to us (Markdown is easie
   author: Replace this text with author's GitHub username. There should be no spaces in the name.
   ---
   pub_date: Replace this text with the publication date in YYYY-MM-DD format.
+  ---
+  excerpt: Replace this text with a summary of your blog post. This is an optional field. If left blank, the first 100 characters of your blog post will be used.
   ---
   body:
   Replace this text with your post's content (minus the title). This field accepts Markdown for formatting.

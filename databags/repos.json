@@ -473,7 +473,7 @@
             "english_name": "CC Legal Database",
             "featured": false,
             "id": 133715391,
-            "language": "HTML",
+            "language": "Python",
             "license": {
                 "name": "MIT License",
                 "url": "https://github.com/creativecommons/legaldb/blob/main/LICENSE"
@@ -612,22 +612,6 @@
             "slack": "",
             "url": "https://github.com/creativecommons/reversionary-rights",
             "website": "https://rights-back-beta.creativecommons.org/"
-        },
-        {
-            "created": "2015-07-23T21:30:47+00:00",
-            "description": "Rails plugin for the RubyCAS-Client",
-            "engineering_project": true,
-            "featured": false,
-            "id": 39594110,
-            "language": "Ruby",
-            "license": {
-                "name": "MIT License",
-                "url": "https://github.com/creativecommons/rubycas-client-rails/blob/master/MIT-LICENSE"
-            },
-            "name": "rubycas-client-rails",
-            "slack": "",
-            "url": "https://github.com/creativecommons/rubycas-client-rails",
-            "website": ""
         },
         {
             "created": "2016-07-29T23:14:42+00:00",
@@ -855,29 +839,6 @@
             ],
             "url": "https://github.com/creativecommons/wp-plugin-cc-global-network",
             "website": ""
-        },
-        {
-            "created": "2014-07-28T15:18:18+00:00",
-            "description": "Official Creative Commons plugin for licensing your content. With Creative Commons licenses, keep your copyright AND share your creativity.",
-            "engineering_project": true,
-            "english_name": "CC WordPress Plugin",
-            "featured": true,
-            "id": 22347352,
-            "language": "PHP",
-            "license": {
-                "name": "GNU General Public License v2.0",
-                "url": "https://github.com/creativecommons/wp-plugin-creativecommons/blob/main/license.txt"
-            },
-            "name": "wp-plugin-creativecommons",
-            "slack": "cc-dev-wordpress",
-            "technologies": [
-                "PHP",
-                "CSS",
-                "JS",
-                "WordPress"
-            ],
-            "url": "https://github.com/creativecommons/wp-plugin-creativecommons",
-            "website": "https://wordpress.org/plugins/creative-commons/"
         },
         {
             "created": "2020-09-17T19:19:54+00:00",
