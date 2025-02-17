@@ -6,14 +6,16 @@
 {% block title %}{{ this.title }}{% endblock %}
 
 {% block body %}
-  <div class="single-post">
+  <div class="single-post" role="article">
     <header class="single-post-header">
       <div class="container">
         <h4>CC Open Source Blog</h4>
-        <h2 class="title">{{ this.title }}</h2>
+        <h2 class="title" id="post-title">{{ this.title }}</h2>
         <div class="author columns is-marginless">
-          {{ render_author_gravatar(this)|trim }}
-          <p class="padding-small">
+          <div role="img" aria-label="Author Gravatar">
+            {{ render_author_gravatar(this)|trim }}
+          </div>
+          <p class="padding-small" aria-live="polite">
             {{ render_authors_byline(this)|trim }}
           </p>
         </div>
@@ -26,7 +28,7 @@
         {% endif %}
       </div>
     </header>
-    <div class="single-post-body content container">
+    <div class="single-post-body content container" aria-labelledby="post-title">
       {{ this.body }}
     </div>
     <footer class="single-post-footer container">
@@ -45,8 +47,8 @@
         </div>
       </div>
       {% if this.series|length %}
-        <div class="series-posts" id="series">
-          <h5 class="title">Posts in the {{ series.name }} series</h5>
+        <div class="series-posts" id="series" aria-labelledby="series-posts-title">
+          <h5 class="title" id="series-posts-title">Posts in the {{ series.name }} series</h5>
           <ul class="posts">
             {% for post in series.children.order_by('pub_date') %}
               {% if post.path==this.path %}
