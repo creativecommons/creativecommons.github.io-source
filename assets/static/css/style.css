@@ -100,6 +100,10 @@ table.display th, table.display td {
   width: 30%; /* To make the th have a larger width than default on the search archive page */
 }
 
+.search-table {
+  overflow-x: scroll;
+}
+
 /* Code block styles */
 code {
   color: rgb(51, 51, 51);
