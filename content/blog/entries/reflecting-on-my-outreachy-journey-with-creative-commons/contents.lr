@@ -1,0 +1,91 @@
+title: Reflecting On My Outreachy Journey With Creative Commons
+---
+categories:
+outreachy
+outreachy-2024
+open-source
+community
+---
+author: Queen
+---
+series: outreachy-dec-2024-consolidating-and-implementing-vocabulary
+---
+pub_date: 2025-02-27
+---
+body:
+
+It feels like just yesterday I was writing my first blog post, trying to wrap my head around all the things I’d be doing during this internship. And now, here I am, writing my final post—time really does fly when you’re deep in code, refactoring, and figuring things out.
+
+When I started, I was both excited and nervous. I knew I’d be working on consolidating the Vocabulary design system across different Creative Commons ancillary websites, but I didn’t fully grasp just how much I’d learn along the way. The idea of making a meaningful contribution to such an impactful organization was thrilling, yet there was that little voice in my head wondering: *Can I really do this?*  
+
+Spoiler alert: Yes, I could—and I did!
+
+## From Day One to Now: The Journey  
+
+My first few weeks were all about getting familiar with the codebase, understanding how Vocabulary worked, and figuring out how the different websites used it. I remember spending quite a bit of time just reading through the Vocabulary documentation, going through all of the websites to identify discrepancies, and trying to piece things together.  
+
+Looking back, it’s funny how something that once felt so complex now feels like second nature.  
+
+## Refactoring the Issue Finder: Removing Vue for a Simpler Setup  
+
+One of my major tasks was refactoring the issue finder tool on the Creative Commons Open Source website. This tool was built using Vue.js, but the goal was to remove Vue and refactor the JavaScript to align with the vocabulary approach - using HTML and CSS as much as possible with minimal and plain JavaScript.  
+
+At first, this felt like a huge task, especially since I hadn’t used Vue before. The Vue-based setup handled filtering, UI interactions, and data fetching. Without a framework, I had to ensure that the core functionality remained intact while simplifying the code.  
+
+I started by carefully analyzing how Vue was being used in the project. Then, I broke down the refactor into smaller steps:  
+
+- Removing Vue dependencies and setting up a plan to replace its functionality with vanilla JavaScript.  
+- Refactoring the JavaScript—rewriting event listeners, handling state manually, and simplifying functions where possible.  
+- Ensuring everything still worked-since Vue had handled reactivity, I had to make sure UI changes (like filtering issues) were updated correctly without unnecessary complexity.  
+- Testing and fine-tuning—checking for edge cases and making sure the refactored version behaved just like the Vue version (but with cleaner, more maintainable code).  
+
+## Working with DataTables: A Whole New Learning Curve  
+
+One of the most interesting things I learned during my internship was working with datatables Before this project, I had never even heard of DataTables. I spent time reading through the documentation, testing out different configurations, and experimenting with how it handled datasets.  
+
+Initially, I added DataTables to the project using a **content delivery network (CDN)**, which was the quickest way to integrate it. However, after a suggestion from my mentor, we decided it would be better to download the source code and add it as a vendor folder in the project.  
+
+After setting it up, I worked on overriding some default styles to make sure datatables aligned with Vocabulary’s design system. I had to carefully adjust CSS properties, inspect the DOM structure, and test different solutions to make sure everything looked cohesive.  
+
+This entire process taught me an important lesson:  
+
+> **Documentation is your best friend.** When dealing with a new tool, reading the official documentation can save so much time.  
+
+## From Midterm to Now: Wrapping Up and Final Contributions  
+
+After the midterm blog, my focus shifted towards finishing up the restyling process and addressing minor bugs across the Creative Commons Open Source website. These were smaller but important refinements—ensuring consistency, fixing UI inconsistencies, and making sure everything aligned with the Vocabulary design system.  
+
+### Improving the Search Portal  
+
+One of the websites I worked on was the **Search Portal**. This involved:  
+
+- Defining abbreviations to improve clarity and accessibility.  
+- Restyling the search input to align visually with the provided context in Vocabulary, making it feel more integrated with the overall design.  
+- Making downstream changes to ensure everything was up to date with Vocabulary’s latest standards.  
+
+The goal was to improve both functionality and design, making sure the search experience was more intuitive and visually cohesive.  
+
+### CC Legal Database(LegalDB): Planning for Future Work  
+
+Although LegalDB was initially part of the project scope, time constraints didn’t allow for implementation. Instead, I'm focusing on laying the groundwork for future contributions by:  
+
+- Identifying necessary changes and documenting them thoroughly.  
+- Creating all the relevant issues and linking them to the larger tracking issue on Vocabulary, ensuring that future contributors have a clear roadmap to follow.  
+
+This is so that even though I couldn’t complete the work myself, the transition for the next person picking it up would be smooth and well-documented.  
+
+## What’s Next?  
+
+This internship has solidified my love for front-end development, especially when it comes to building interfaces that are both beautiful and functional. My next goal? To dive deeper into **animations, interactivity, and making the web more immersive** (looking at you, **GSAP and Three.js**!).  
+
+I also want to keep contributing to **open source** and continue growing as a developer. This isn’t the end—it’s just the beginning of the next chapter.  
+
+## A Heartfelt Goodbye (For Now!)  
+
+To the my mentors, and everyone who supported me during this internship— thank you! Your guidance, patience, and encouragement made this experience truly special.  
+
+To future Outreachy interns: If you ever feel overwhelmed, know that it’s part of the journey. Keep asking questions, keep pushing through challenges, and most importantly—**enjoy the process**. You’ll come out on the other side with skills, confidence, and a whole new appreciation for open source.  
+
+And with that, it’s time to say goodbye to this chapter.
+
+Until then, **happy coding!** 🚀  
