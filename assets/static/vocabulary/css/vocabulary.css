@@ -385,6 +385,7 @@ main > aside.sidebar .attention a {
 
 main h2 {
     width: 100%;
+    box-sizing: border-box;
 
     font-family: 'Roboto Condensed';
     font-style: normal;
@@ -394,6 +395,8 @@ main h2 {
 }
 
 main h3 {
+    box-sizing: border-box;
+    
     font-family: 'Roboto Condensed';
     font-style: normal;
     font-weight: 700;
@@ -510,7 +513,7 @@ main figure {
     padding: 0;
 }
 
-main > article figure img, main > figure img {
+main > article figure img, main > figure img, main > .content figure img {
     width: 100%;
 }
 
@@ -1133,7 +1136,7 @@ body > header .explore-panel nav ul li p {
 
 body > article.attention {
     grid-column: 1 / span 11;
-    padding: 1em 5%;
+    padding: 1em var(--vocabulary-page-edges-space);
 
     background: var(--vocabulary-brand-color-soft-green);
     font-family: 'Source Sans Pro';
@@ -1523,7 +1526,7 @@ body > footer .license svg {
 }
 
 .blog-index main .posts.featured ul {    
-    padding: 0 5%;
+    padding: 0 var(--vocabulary-page-edges-space);
 }
 
 .blog-index main .posts.featured ul li {
@@ -1901,7 +1904,7 @@ body > footer .license svg {
     }
 
     .blog-index main .posts {
-        padding: 0 5%;
+        padding: 0 var(--vocabulary-page-edges-space);
     }
 
     .blog-index main footer .attribution-list ul.expand {
@@ -1951,7 +1954,19 @@ body > footer .license svg {
     }
 
     main .content {
-        padding: var(--vocabulary-page-edges-space);
+        padding: 0 var(--vocabulary-page-edges-space);
+    }
+
+    main:has( > aside.sidebar) > aside.sidebar { 
+        padding: 0 var(--vocabulary-page-edges-space);
+    }
+
+    main > *:not(header) {
+        padding: 0 var(--vocabulary-page-edges-space);
+    }
+
+    main > .posts {
+        padding: 0 var(--vocabulary-page-edges-space); 
     }
 
     .posts article figure {
@@ -1959,12 +1974,30 @@ body > footer .license svg {
         flex: initial;
     }
 
+    .person-page main > header {
+        padding-left: var(--vocabulary-page-edges-space);
+        padding-right: var(--vocabulary-page-edges-space);
+    }
+
+    .person-page main > header:before { 
+        left: 0;
+    }
+
+    .search-index main > header {
+        padding-left: var(--vocabulary-page-edges-space);
+        padding-right: var(--vocabulary-page-edges-space);
+    }
+
+    .search-index main > header:before { 
+        left: 0;
+    }
+    
     .team-index main > header {
-        padding: 0 5%;
+        padding: 0 var(--vocabulary-page-edges-space);
     }
 
     .team-index main article.persons {
-        padding: 0 5%;
+        padding: 0 var(--vocabulary-page-edges-space);
     }
 
     .team-index main article.persons ul {
@@ -1981,10 +2014,6 @@ body > footer .license svg {
         position: relative;
 
         order: -1;
-    }
-
-    main nav.pagination {
-        width: 100%;
     }
 
     main nav.pagination ol {
@@ -2008,6 +2037,11 @@ body > footer .license svg {
 
     main article.posts.related ul {
         grid-template-columns: 1fr;
+    }
+
+    .posts .post figure {
+        width: 100%;
+        flex: initial;
     }
 }
 
