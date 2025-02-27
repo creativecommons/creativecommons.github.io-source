@@ -16,7 +16,7 @@ body:
 
 It feels like just yesterday I was writing my first blog post, trying to wrap my head around all the things I’d be doing during this internship. And now, here I am, writing my final post—time really does fly when you’re deep in code, refactoring, and figuring things out.
 
-When I started, I was both excited and nervous. I knew I’d be working on consolidating the Vocabulary design system across different Creative Commons ancillary websites, but I didn’t fully grasp just how much I’d learn along the way. The idea of making a meaningful contribution to such an impactful organization was thrilling, yet there was that little voice in my head wondering: *Can I really do this?*  
+When I started, I was both excited and nervous. I knew I’d be working on implementing and consolidating the Vocabulary design system across different Creative Commons ancillary websites, but I didn’t fully grasp just how much I’d learn along the way. The idea of making a meaningful contribution to such an impactful organization was thrilling, yet there was that little voice in my head wondering: *Can I really do this?*  
 
 Spoiler alert: Yes, I could—and I did!
 
@@ -59,11 +59,11 @@ After the midterm blog, my focus shifted towards finishing up the restyling proc
 
 One of the websites I worked on was the **Search Portal**. This involved:  
 
-- Defining abbreviations to improve clarity and accessibility.  
+- Defining the CC abbreviation in the header section to improve clarity and accessibility.  
 - Restyling the search input to align visually with the provided context in Vocabulary, making it feel more integrated with the overall design.  
 - Making downstream changes to ensure everything was up to date with Vocabulary’s latest standards.  
 
-The goal was to improve both functionality and design, making sure the search experience was more intuitive and visually cohesive.  
+The goal was to keep the existing functionality and improve on the design, making sure the search input visually aligned with the design system.  
 
 ### CC Legal Database(LegalDB): Planning for Future Work  
 
@@ -82,7 +82,7 @@ I also want to keep contributing to **open source** and continue growing as a de
 
 ## A Heartfelt Goodbye (For Now!)  
 
-To the my mentors, and everyone who supported me during this internship— thank you! Your guidance, patience, and encouragement made this experience truly special.  
+To my mentors, and everyone who supported me during this internship— thank you! Your guidance, patience, and encouragement made this experience truly special.  
 
 To future Outreachy interns: If you ever feel overwhelmed, know that it’s part of the journey. Keep asking questions, keep pushing through challenges, and most importantly—**enjoy the process**. You’ll come out on the other side with skills, confidence, and a whole new appreciation for open source.  
 
