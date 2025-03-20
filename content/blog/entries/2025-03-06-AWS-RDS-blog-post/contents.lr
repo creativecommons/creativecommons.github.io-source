@@ -1,94 +1,116 @@
-title:.Migrating from MariaDB 10.4 to 10.11 on AWS RDS
+title: Migrating from MariaDB 10.4 to 10.11 on AWS RDS
 
 ---
 categories:
 open-source
 collaboration
 ---
-author:.shafiya
+author: shafiya
 ---
-pub_date:.2025-03-06
+pub_date: 2025-03-24
 ---
 body:
 As part of AWS’s request to migrate the RDS DB engine from MariaDB 10.4 to 10.11, this blog post provides a detailed, step-by-step guide to ensure a smooth transition. We’ll cover the pre-migration steps, the actual upgrade process, and post-migration verification to minimize downtime and potential issues.
-Let’s dive in!
-Pre-Migration Steps
-Before performing the upgrade, it’s essential to ensure a structured migration plan, especially if your environment has customized database parameters. Follow these preliminary steps:
-Create a DB Parameter Group – Customizes database-specific settings for the new engine version.
-Create an Option Group – Manages additional features like replication and logging.
-Backup and Test – Take a snapshot of the existing database to prevent data loss.
-Create a DB Parameter Group
-RDS DB Parameter Groups allow you to configure database-specific parameters, such as memory, cache, and other DB settings. You need to create a custom DB Parameter Group for MariaDB 10.11 because different versions require different settings.
-How to Create a DB Parameter Group
-Login to AWS Management Console
-Go to the RDS service in the AWS Management Console.
-Navigate to Parameter Groups
-In the left navigation pane, under Databases, select Parameter Groups.
-Create a New Parameter Group
-Click on Create parameter group.
-Parameter group family: Choose mariadb10.11 from the dropdown.
-Group name: Provide a meaningful name like webserver-stage-rds parameters-mariadb-10-11.
-Description: Optionally add a description such as "Custom Parameter Group for MariaDB 10.11."
-Click Create.
-Modify the Parameters
-Once the parameter group is created, click on it to edit.
-Modify the parameters as per your application’s requirements, e.g., change innodb_buffer_pool_size,time_zone, etc., to optimize for the new version.
-Click Save changes once done.
-Create an Option Group
-Option Groups are a collection of database options (such as replication, backups, and logging) that you can apply to RDS instances. To migrate from 10.4 to 10.11, you need to create and associate an Option Group with the new engine version.
-How to Create an Option Group
-Go to Option Groups in RDS
-In the AWS Management Console, go to RDS and then Option Groups under the Databases section.
-Create an Option Group
-Click Create group.
-Option group name: Provide a name like default:mariadb-10-11.
-Engine version: Select MariaDB 10.11.
-Click Create.
-Add Options to the Group
-Select the new Option Group you just created.
-Click Add option to save the selected options.
-Perform the MariaDB Version Upgrade
-Once you’ve created the required DB Parameter Group and Option Group, you’re ready to perform the migration from MariaDB 10.4 to 10.11.
-How to Perform the Migration
-Backup Your Database
-It’s important to create a snapshot of your current DB instance before starting the upgrade process. This ensures that you can roll back in case of any issues.
-Go to your RDS instance and click on Actions → Take Snapshot.
-Modify the DB Instance to Use the New Version
-Navigate to Databases in the AWS RDS dashboard.
-Select the DB instance you want to upgrade.
-Click Modify at the top right.
-Under DB Engine Version, choose 10.11 from the drop-down.
-Under DB Parameter Group, select the custom parameter group created for 10.11.
-Under Option Group, select the newly created Option Group for MariaDB 10.11.
-Click Continue.
-Apply Changes
-Choose whether you want the changes to apply immediately or during the next maintenance window. For minimal downtime, apply during the maintenance window.
-Review the changes and click Modify DB Instance.
-Reboot the Instance (if necessary)
-Once the modification is complete, your DB instance might need to be rebooted for the changes to take effect. Confirm and reboot if prompted.
-Verify the Migration
-After the upgrade is complete, it’s time to verify the migration.
-Check DB Engine Version
-Check Application Performance
-Test your application to ensure that it works properly with the new MariaDB version.
-Review Logs
-Check the RDS logs to verify that no errors have occurred during the upgrade process.
-Post-Migration Clean-Up
-Delete Old Parameter and Option Groups (if not required)
-Once the migration is successful and tested, you can clean up unused Parameter and Option Groups to avoid unnecessary overhead.
-Monitor and Scale
-Monitor the instance for any potential issues and scale the resources (e.g., CPU, memory) if required based on the performance of MariaDB 10.11.
-Conclusion
-Migrating from MariaDB 10.4 to 10.11 on AWS RDS is a straightforward process, but it requires careful planning, especially around DB Parameter Groups and Option Groups. By following the steps outlined in this blog post, you can ensure a smooth transition to the latest MariaDB version, improving the performance, security, and scalability of your application.
-Remember to always perform proper backups, test the migration in a staging environment, and monitor post-migration performance to ensure everything is functioning as expected.
-Best Practices
-✔ Always test the migration in a staging environment before applying changes in production.
-✔ Monitor RDS logs and application performance after the upgrade.
-✔ Ensure proper backups before initiating any engine version changes.
-By implementing these best practices, you can enhance performance, security, and scalability while ensuring a successful migration.
-🚀 Happy migrating!
-References
-AWS RDS Documentation - MariaDB Engine Versions
-AWS RDS Parameter Groups
-AWS RDS Option Groups
 
+Let’s dive in!
+
+## Pre-Migration Steps
+Before performing the upgrade, it’s essential to ensure a structured migration plan, especially if your environment has customized database parameters. Follow these preliminary steps:
+- Create a DB Parameter Group – Customizes database-specific settings for the new engine version.
+- Create an Option Group – Manages additional features like replication and logging.
+- Backup and Test – Take a snapshot of the existing database to prevent data loss.
+
+### Create a DB Parameter Group
+RDS DB Parameter Groups allow you to configure database-specific parameters, such as memory, cache, and other DB settings. You need to create a custom DB Parameter Group for MariaDB 10.11 because different versions require different settings.
+
+**How to Create a DB Parameter Group**
+- Login to AWS Management Console
+  - Go to the RDS service in the AWS Management Console.
+- Navigate to Parameter Groups
+  - In the left navigation pane, under Databases, select Parameter Groups.
+- Create a New Parameter Group
+  - Click on Create parameter group.
+  - Parameter group family: Choose mariadb10.11 from the dropdown.
+  - Group name: Provide a meaningful name like webserver-stage-rds parameters-mariadb-10-11.
+  - Description: Optionally add a description such as "Custom Parameter Group for MariaDB 10.11."
+  - Click Create.
+- Modify the Parameters
+  - Once the parameter group is created, click on it to edit.
+  - Modify the parameters as per your application’s requirements, e.g., change innodb_buffer_pool_size,time_zone, etc., to optimize for the new version.
+  - Click Save changes once done.
+
+### Create an Option Group
+
+Option Groups are a collection of database options (such as replication, backups, and logging) that you can apply to RDS instances. To migrate from 10.4 to 10.11, you need to create and associate an Option Group with the new engine version.
+
+**How to Create an Option Group**
+- Go to Option Groups in RDS
+  - In the AWS Management Console, go to RDS and then Option Groups under the Databases section.
+- Create an Option Group
+  - Click Create group.
+  - Option group name: Provide a name like default:mariadb-10-11.
+  - Engine version: Select MariaDB 10.11.
+  - Click Create.
+- Add Options to the Group
+  - Select the new Option Group you just created.
+  - Click Add option to save the selected options.
+
+
+## Perform the MariaDB Version Upgrade
+
+ Once you’ve created the required DB Parameter Group and Option Group, you’re ready to perform the migration from MariaDB 10.4 to 10.11.
+
+###  How to Perform the Migration
+- Backup Your Database
+  - It’s important to create a snapshot of your current DB instance before starting the upgrade process. This ensures that you can roll back in case of any issues.
+  - Go to your RDS instance and click on Actions → Take Snapshot.
+- Modify the DB Instance to Use the New Version
+  - Navigate to Databases in the AWS RDS dashboard.
+  - Select the DB instance you want to upgrade.
+  - Click Modify at the top right.
+  - Under DB Engine Version, choose 10.11 from the drop-down.
+  - Under DB Parameter Group, select the custom parameter group created for 10.11.
+  - Under Option Group, select the newly created Option Group for MariaDB 10.11.
+  - Click Continue.
+- Apply Changes
+  - Choose whether you want the changes to apply immediately or during the next maintenance window. For minimal downtime, apply during the maintenance window.
+  - Review the changes and click Modify DB Instance.
+- Reboot the Instance (if necessary)
+  - Once the modification is complete, your DB instance might need to be rebooted for the changes to take effect. Confirm and reboot if prompted.
+
+### Verify the Migration
+After the upgrade is complete, it’s time to verify the migration.
+- Check DB Engine Version
+- Check Application Performance
+  - Test your application to ensure that it works properly with the new MariaDB version.
+- Review Logs
+  - Check the RDS logs to verify that no errors have occurred during the upgrade process.
+
+
+## Post-Migration Clean-Up
+- Delete Old Parameter and Option Groups (if not required)
+  - Once the migration is successful and tested, you can clean up unused Parameter and Option Groups to avoid unnecessary overhead.
+- Monitor and Scale
+  - Monitor the instance for any potential issues and scale the resources (e.g., CPU, memory) if required based on the performance of MariaDB 10.11.
+
+
+## Conclusion
+Migrating from MariaDB 10.4 to 10.11 on AWS RDS is a straightforward process, but it requires careful planning, especially around DB Parameter Groups and Option Groups.
+By following the steps outlined in this blog post, you can ensure a smooth transition to the latest MariaDB version, improving the performance, security, and scalability of your application.
+Remember to always perform proper backups, test the migration in a staging environment, and monitor post-migration performance to ensure everything is functioning as expected.
+
+
+## Best Practices
+- ✔ Always test the migration in a staging environment before applying changes in production.
+- ✔ Monitor RDS logs and application performance after the upgrade.
+- ✔ Ensure proper backups before initiating any engine version changes.
+
+By implementing these best practices, you can enhance performance, security, and scalability while ensuring a successful migration.
+
+🚀 Happy migrating!
+
+
+## References
+- [AWS RDS Documentation - MariaDB Engine Versions](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.DBEngineVersion.html)
+- [AWS RDS Parameter Groups](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Overview.DBParameterGroups.html)
+- [AWS RDS Option Groups](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Overview.OptionGroups.html)
