@@ -352,11 +352,11 @@
             "language": "HTML",
             "license": {
                 "name": "MIT License",
-                "url": "https://github.com/creativecommons/creativecommons.github.io-source/blob/main/LICENSE"
+                "url": "https://github.com/creativecommons/ccos-website-source/blob/main/LICENSE"
             },
-            "name": "creativecommons.github.io-source",
+            "name": "ccos-website-source",
             "slack": "",
-            "url": "https://github.com/creativecommons/creativecommons.github.io-source",
+            "url": "https://github.com/creativecommons/ccos-website-source",
             "website": "https://opensource.creativecommons.org/"
         },
         {
