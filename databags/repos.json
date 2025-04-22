@@ -208,6 +208,22 @@
             "website": ""
         },
         {
+            "created": "2019-01-27T02:29:18+00:00",
+            "description": "Source files for CC Open Source website",
+            "engineering_project": true,
+            "featured": false,
+            "id": 167761414,
+            "language": "HTML",
+            "license": {
+                "name": "MIT License",
+                "url": "https://github.com/creativecommons/ccos-website-source/blob/main/LICENSE"
+            },
+            "name": "ccos-website-source",
+            "slack": "",
+            "url": "https://github.com/creativecommons/ccos-website-source",
+            "website": "https://opensource.creativecommons.org/"
+        },
+        {
             "created": "2013-10-24T00:12:36+00:00",
             "description": "A guide to using the Creative Commons Rights Expression Language (CC REL)",
             "engineering_project": true,
@@ -342,22 +358,6 @@
             ],
             "url": "https://github.com/creativecommons/creativecommons-certificate",
             "website": ""
-        },
-        {
-            "created": "2019-01-27T02:29:18+00:00",
-            "description": "Source files for CC Open Source website",
-            "engineering_project": true,
-            "featured": false,
-            "id": 167761414,
-            "language": "HTML",
-            "license": {
-                "name": "MIT License",
-                "url": "https://github.com/creativecommons/ccos-website-source/blob/main/LICENSE"
-            },
-            "name": "ccos-website-source",
-            "slack": "",
-            "url": "https://github.com/creativecommons/ccos-website-source",
-            "website": "https://opensource.creativecommons.org/"
         },
         {
             "created": "2013-10-31T00:19:22+00:00",
