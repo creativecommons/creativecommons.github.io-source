@@ -51,7 +51,7 @@ With a smaller engineering team, we will need to support fewer projects. Please 
 We will continue to actively develop the following projects:
 
 -   [CC Search Browser Extension](https://github.com/creativecommons/ccsearch-browser-extension) (maintainer: Mayank Nader)
--   [CC Open Source website](https://github.com/creativecommons/creativecommons.github.io-source) (maintainers: Zack Krida & Timid Robot Zehta)
+-   [CC Open Source website](https://github.com/creativecommons/ccos-website-source) (maintainers: Zack Krida & Timid Robot Zehta)
 -   [CC WordPress base](https://github.com/creativecommons/creativecommons-base) & child themes (new maintainer: Zack Krida)
 -   [CC Legal Database](https://github.com/creativecommons/legaldb) (maintainer: Timid Robot Zehta)
 -   [CC Chooser](https://github.com/creativecommons/chooser) (maintainer: Zack Krida)

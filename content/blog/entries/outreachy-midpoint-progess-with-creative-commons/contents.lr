@@ -26,28 +26,28 @@ The goal of my project is to implement the Vocabulary design system across sever
 
 In the first phase, I focused on refactoring the markup to align with Vocabulary’s components and context. Here are the pull requests (PRs) merged during this phase:
 
-- [PR 118](https://github.com/creativecommons/creativecommons.github.io-source/pull/118): Refactored the recent blog post section on the homepage.
-- [PR 856](https://github.com/creativecommons/creativecommons.github.io-source/pull/856): Refactored the homepage markup to align with Vocabulary components.
-- [PR 862](https://github.com/creativecommons/creativecommons.github.io-source/pull/862): Updated `page-with-toc.html`, which serves as a template for many pages.
-- [PR 863](https://github.com/creativecommons/creativecommons.github.io-source/pull/863): Initially, I planned to refactor the markup to Vocabulary’s context, but after feedback from my mentor, I instead removed legacy class names while retaining the table structure.
-- [PR 865](https://github.com/creativecommons/creativecommons.github.io-source/pull/865): Refactored the blog’s author page to match Vocabulary’s “person” context.
-- [PR 866](https://github.com/creativecommons/creativecommons.github.io-source/pull/866): Updated the blog structure to follow Vocabulary markup.
-- [PR 867](https://github.com/creativecommons/creativecommons.github.io-source/pull/867): Refactored the Project List page, leaving the table markup intact but removing old styles.
-- [PR 868](https://github.com/creativecommons/creativecommons.github.io-source/pull/868): Refactored the Issue Finder tool, replacing Vue.js with plain JavaScript. Although removing Webpack will happen later, this PR set the stage for future improvements.
-- [PR 870](https://github.com/creativecommons/creativecommons.github.io-source/pull/870): Aligned the Authors page with Vocabulary’s team styling.
-- [PR 871](https://github.com/creativecommons/creativecommons.github.io-source/pull/871): Refactored the Project Ideas page, incorporating Vocabulary’s project markup and removing legacy styles.
-- [PR 873](https://github.com/creativecommons/creativecommons.github.io-source/pull/873): Dynamically updated the body tag’s class in `layout.html` and added a body-class field to the `blog.ini` model file for consistent styling.
-- [PR 880](https://github.com/creativecommons/creativecommons.github.io-source/pull/880): Refactored `page-with-title.html` (used by CC Tech Archives) to align with Vocabulary.
-- [PR 886](https://github.com/creativecommons/creativecommons.github.io-source/pull/886): Updated the header component markup and removed old class names.
+- [PR 118](https://github.com/creativecommons/ccos-website-source/pull/118): Refactored the recent blog post section on the homepage.
+- [PR 856](https://github.com/creativecommons/ccos-website-source/pull/856): Refactored the homepage markup to align with Vocabulary components.
+- [PR 862](https://github.com/creativecommons/ccos-website-source/pull/862): Updated `page-with-toc.html`, which serves as a template for many pages.
+- [PR 863](https://github.com/creativecommons/ccos-website-source/pull/863): Initially, I planned to refactor the markup to Vocabulary’s context, but after feedback from my mentor, I instead removed legacy class names while retaining the table structure.
+- [PR 865](https://github.com/creativecommons/ccos-website-source/pull/865): Refactored the blog’s author page to match Vocabulary’s “person” context.
+- [PR 866](https://github.com/creativecommons/ccos-website-source/pull/866): Updated the blog structure to follow Vocabulary markup.
+- [PR 867](https://github.com/creativecommons/ccos-website-source/pull/867): Refactored the Project List page, leaving the table markup intact but removing old styles.
+- [PR 868](https://github.com/creativecommons/ccos-website-source/pull/868): Refactored the Issue Finder tool, replacing Vue.js with plain JavaScript. Although removing Webpack will happen later, this PR set the stage for future improvements.
+- [PR 870](https://github.com/creativecommons/ccos-website-source/pull/870): Aligned the Authors page with Vocabulary’s team styling.
+- [PR 871](https://github.com/creativecommons/ccos-website-source/pull/871): Refactored the Project Ideas page, incorporating Vocabulary’s project markup and removing legacy styles.
+- [PR 873](https://github.com/creativecommons/ccos-website-source/pull/873): Dynamically updated the body tag’s class in `layout.html` and added a body-class field to the `blog.ini` model file for consistent styling.
+- [PR 880](https://github.com/creativecommons/ccos-website-source/pull/880): Refactored `page-with-title.html` (used by CC Tech Archives) to align with Vocabulary.
+- [PR 886](https://github.com/creativecommons/ccos-website-source/pull/886): Updated the header component markup and removed old class names.
 
 ### Phase 2: Adding Local Styles
 
 After refactoring the markup, I moved on to styling sections that Vocabulary doesn’t cover. Here are some of the merged PRs so far;
 
-- [PR 888](https://github.com/creativecommons/creativecommons.github.io-source/pull/888): Added local styles based on Creative Commons’ main website for the homepage and other sections, such as “Get Involved” and “Featured Projects.”
-- [PR 891](https://github.com/creativecommons/creativecommons.github.io-source/pull/891): Created a new `issue-finder.css` file to restyle the Issue Finder page while removing legacy styles but maintaining legacy design.
-- [PR 898](https://github.com/creativecommons/creativecommons.github.io-source/pull/898): Integrated Datatables and jQuery by adding them to a vendor folder. Styled the table and code blocks using existing website styles.
-- [PR 990](https://github.com/creativecommons/creativecommons.github.io-source/pull/990): Styled the CC Search archive table using Datatables.
+- [PR 888](https://github.com/creativecommons/ccos-website-source/pull/888): Added local styles based on Creative Commons’ main website for the homepage and other sections, such as “Get Involved” and “Featured Projects.”
+- [PR 891](https://github.com/creativecommons/ccos-website-source/pull/891): Created a new `issue-finder.css` file to restyle the Issue Finder page while removing legacy styles but maintaining legacy design.
+- [PR 898](https://github.com/creativecommons/ccos-website-source/pull/898): Integrated Datatables and jQuery by adding them to a vendor folder. Styled the table and code blocks using existing website styles.
+- [PR 990](https://github.com/creativecommons/ccos-website-source/pull/990): Styled the CC Search archive table using Datatables.
 
 ## Current Status
 

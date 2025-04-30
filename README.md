@@ -1,12 +1,13 @@
-# creativecommons.github.io-source
+# ccos-website-source
 
 Source for `creativecommons.github.io`
 
 
 ## Overview
 
-> **:warning: DO *NOT* MAKE CHANGES TO THE
-> [creativecommons/creativecommons.github.io][ccghiorepo] REPO DIRECTLY**.
+> **:warning: DON'T MAKE CHANGES TO THE
+> [creativecommons/creativecommons.github.io][ccghiorepo] REPOSIOTRY,
+> DIRECTLY**.
 
 [ccghiorepo]: https://github.com/creativecommons/creativecommons.github.io
 
@@ -41,10 +42,10 @@ See [`CONTRIBUTING.md`][org-contrib].
 [org-contrib]: https://github.com/creativecommons/.github/blob/main/CONTRIBUTING.md
 
 - See [Contributors to
-  creativecommons/creativecommons.github.io-source][contributors] for a
+  creativecommons/ccos-website-source][contributors] for a
   list of authors and their contributions to this project :blush:
 
-[contributors]: https://github.com/creativecommons/creativecommons.github.io-source/graphs/contributors "Contributors to creativecommons/creativecommons.github.io-source"
+[contributors]: https://github.com/creativecommons/ccos-website-source/graphs/contributors "Contributors to creativecommons/ccos-website-source"
 
 
 ## Installation
