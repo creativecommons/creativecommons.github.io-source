@@ -171,7 +171,7 @@ This is code for the Hero section of the home page.
 
 ### Improvements in the Lektor project -
 
-I tried to write the perfect code that is cleaner and readable. I would try to demonstrate my effort using the home page code where I used [Lektor Flowblocks](https://www.getlektor.com/docs/models/flow/). The new homepage design have four sections where each section communicated something and I realized they were all independent and building the whole page through one single template would become a bit messy and hard to handle. So I did some research and found a way where I could build sub-templates and use them all to develop a single page and Lektor’s flowblocks allowed me to do so. Here is one of the flowblock and if you want to check out the whole working you can go to — [CCOS Repository](https://github.com/creativecommons/creativecommons.github.io-source).
+I tried to write the perfect code that is cleaner and readable. I would try to demonstrate my effort using the home page code where I used [Lektor Flowblocks](https://www.getlektor.com/docs/models/flow/). The new homepage design have four sections where each section communicated something and I realized they were all independent and building the whole page through one single template would become a bit messy and hard to handle. So I did some research and found a way where I could build sub-templates and use them all to develop a single page and Lektor’s flowblocks allowed me to do so. Here is one of the flowblock and if you want to check out the whole working you can go to — [CCOS Repository](https://github.com/creativecommons/ccos-website-source).
 
 #### Recent Blog Post block -
 
