@@ -12,7 +12,9 @@ body:
 In engineering, in programming, in coding–in building anything that intersects 
 with a human and a computer, context matters. It controls how a variable is 
 scoped, how a function is called, and how styles in a CSS file might cascade 
-and apply. 
+and apply.
+
+## Context matters
 
 As the saying goes, "Context is everything". But despite that, it can be easy 
 to miss or ignore context, to skim past it when encountering issues, when 
@@ -26,6 +28,9 @@ problems, whether by intention or accident.
 It's why we have "Issues" in code repositories, the name alone signifies that 
 something is amiss. An expectation was not met, a small part of this does not 
 easily align with that. 
+
+## Pause for compassion
+
 
 Finding problems is as much the momentum of engineering as anything else, and 
 once encountered, the problem begs for the next part; finding a solution. 
@@ -61,6 +66,8 @@ Moreover, despite rigorous reviews and tests, things get missed, circumstances
 change, and given enough time the complex system we all work within has fault 
 lines. Problems arise that no-one expected or anticipated.
 
+## Without context assume the best
+
 Context is key, but it is also often a mystery. In the case of an inherited 
 system, you may be left with the problems, but little if any evidence of the 
 context in which they were generated. You are left with the duty to seek 
@@ -79,6 +86,8 @@ doing here?" It's fair to be frustrated, and reasonable to question the
 "why", but a bit of compassion goes a long way towards building a community 
 of trust and well being within the larger system of building things on and 
 around the internet. 
+
+## Safe to learn and safe to improve
 
 Without compassion in these cases, we can foster an environment where people 
 are afraid to make any mistakes. One major issue with this is that beginners, 
