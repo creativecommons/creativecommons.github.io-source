@@ -6,16 +6,16 @@
 {% block title %}{{ this.title }}{% endblock %}
 
 {% block body %}
-  <div class="single-post" role="article">
+  <div class="single-post">
     <header class="single-post-header">
       <div class="container">
         <h4>CC Open Source Blog</h4>
-        <h2 class="title" id="post-title">{{ this.title }}</h2>
+        <h2 class="title">{{ this.title }}</h2>
         <div class="author columns is-marginless">
-          <div role="img" aria-label="Author Gravatar">
+          <div>
             {{ render_author_gravatar(this)|trim }}
           </div>
-          <p class="padding-small" aria-live="polite">
+          <p class="padding-small">
             {{ render_authors_byline(this)|trim }}
           </p>
         </div>
@@ -28,7 +28,7 @@
         {% endif %}
       </div>
     </header>
-    <div class="single-post-body content container" aria-labelledby="post-title">
+    <div class="single-post-body content container">
       {{ this.body }}
     </div>
     <footer class="single-post-footer container">
