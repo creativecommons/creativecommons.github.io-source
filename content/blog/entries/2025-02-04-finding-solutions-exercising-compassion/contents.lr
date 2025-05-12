@@ -1,0 +1,109 @@
+title: Finding Problems, and Exercising Compassion
+---
+categories:
+open-source
+collaboration
+---
+author: sara
+---
+pub_date: 2025-02-04
+---
+body:
+In engineering, in programming, in coding–in building anything that intersects 
+with a human and a computer, context matters. It controls how a variable is 
+scoped, how a function is called, and how styles in a CSS file might cascade 
+and apply.
+
+## Context matters
+
+As the saying goes, "Context is everything". But despite that, it can be easy 
+to miss or ignore context, to skim past it when encountering issues, when 
+hunting for problems. 
+
+So much of the engineering world is building things, moving things, refactoring 
+things. It's a lot of activities that look and behave a lot like creating, but 
+in equal measure a vast majority of roles and jobs in the field are about finding 
+problems, whether by intention or accident. 
+
+It's why we have "Issues" in code repositories, the name alone signifies that 
+something is amiss. An expectation was not met, a small part of this does not 
+easily align with that. 
+
+## Pause for compassion
+
+
+Finding problems is as much the momentum of engineering as anything else, and 
+once encountered, the problem begs for the next part; finding a solution. 
+
+It is here at this transition, at the border, that I would invite you to pause. 
+To step back and reconsider the problem you've just witnessed, the thing that 
+is amiss and possibly blocking the work you are doing in some way. 
+
+For it is here in this space, between problem-encountered, and solution-sought 
+that we all could do better at exercising a degree of compassion. 
+
+This problem was, in many ways, born out of the context within which it was 
+first introduced. It may have been the after effect of an unrealistic 
+timeline, or an unintended consequence of decisions made well outside the 
+control and influence of the engineer that introduced it. It may have been 
+put there, with full knowledge of its existence, but without any ability 
+to circumvent its inclusion. 
+
+The problem in question is not necessarily the product of one person, one team, 
+or one process. It is, as is usually the case, the outcome of an 
+interconnected and complex system of people and technology interacting and 
+influencing one another. 
+
+It can be easy to lean into the gravity of assuming this problem was easy to 
+avoid, that it is a sign of poor decision making, or outright malice. That it 
+is specifically indicative of someone or someones' shortcomings in the field. 
+But engineering as a space of people is a place that can at times be a list 
+of limited options, and the correct choice is not the one with zero 
+problems, but the one that is accomplishable with the least problems, or 
+even the least negatively impactful problems. 
+
+Moreover, despite rigorous reviews and tests, things get missed, circumstances 
+change, and given enough time the complex system we all work within has fault 
+lines. Problems arise that no-one expected or anticipated.
+
+## Without context assume the best
+
+Context is key, but it is also often a mystery. In the case of an inherited 
+system, you may be left with the problems, but little if any evidence of the 
+context in which they were generated. You are left with the duty to seek 
+solutions, and little reason as to why the problems were introduced in the 
+first place. 
+
+In all of these moments, we would all do better to remember compassion, to try 
+to embrace that we do not know the full picture, the entire context. And that 
+perhaps those before us, and around us did the best they were capable of within 
+the system they were a part of.
+
+It is certainly easy to jump to conclusions, lay blame, and cast judgements at 
+the engineers, coders, tinkerers, and builders that came before us. "Why would 
+they do it like this?" "This is a mess!" "I don't understand what this is 
+doing here?" It's fair to be frustrated, and reasonable to question the 
+"why", but a bit of compassion goes a long way towards building a community 
+of trust and well being within the larger system of building things on and 
+around the internet. 
+
+## Safe to learn and safe to improve
+
+Without compassion in these cases, we can foster an environment where people 
+are afraid to make any mistakes. One major issue with this is that beginners, 
+being beginners, make a lot of reasonable mistakes, and if they do not feel 
+safe to make those mistakes then the arena of open source loses beginners, 
+and without that it does not flourish, it does not thrive.
+
+
+People, and the technological systems we create are imperfect. And the way we 
+keep improving those systems isn't by solving coding problems alone, 
+especially if those solutions don't come with a degree of compassion.
+
+So, consider for a moment the next time you encounter a problem, pause for a 
+moment and try to have some compassion, to put yourself in the place of the 
+coder who came before, and then move on to seeking solutions with a degree of 
+understanding across time that while we may not meet each other or share the 
+same context; perhaps both of us were trying to make things a little bit 
+better in what we did, and in the end we did our best to keep the system 
+improving, code moving, and trust growing.
