@@ -313,7 +313,7 @@ main a:has(span.gh-label) {
   display: flex;
   align-items: center;
   position: relative;
-  margin-bottom: 1.6rem; 
+  margin-bottom: 1.6rem;
 }
 
 .step-link {
@@ -344,82 +344,82 @@ main a:has(span.gh-label) {
   font-size: 1rem;
 }
 
+
 @media (min-width: 1024px) {
-/* Styles for screens 768px and larger go here */
+  .hero-section img {
+    width: auto;
+  }
 
-.hero-section img {
-  width: auto;
-}
+  .hero-section {
+    display: grid;
+    grid-column: 2 / span 9;
+    grid-template:
+        "title title title"
+        "description description description "
+        "graphic graphic graphic";
 
-.hero-section {
-  display: grid;
-  grid-column: 2 / span 9;
-  grid-template:
-      "title title title"
-      "description description description "
-      "graphic graphic graphic";
+    margin-bottom: 6.4em;
+    gap: 0 4em;
+  }
 
-  margin-bottom: 6.4em;
-  gap: 0 4em;
-}
+  .hero-section h2 {
+    grid-area: title;
+  }
 
-.hero-section h2 {
-  grid-area: title;
-}
+  .hero-description {
+    grid-area: description;
+    width: 41.67%
+  }
 
-.hero-description {
-  grid-area: description;
-  width: 41.67%
-}
+  .projects ul {
+    grid-template-columns: 1fr 1fr;
 
-.projects ul {
-  grid-template-columns: 1fr 1fr;
+    font-size: 1rem;
+  }
 
-  font-size: 1rem;
-}
+  .projects {
+    grid-column: 2 / 10;
+    margin-bottom: 6rem;
+  }
 
-.projects {
-  grid-column: 2 / 10;
-  margin-bottom: 6rem;
-}
+  .body-container, .main-content{
+    grid-column: 2 / 10;
+  }
 
-.body-container, .main-content{
-  grid-column: 2 / 10;
-}
+  .project h5 {
+    font-size: 1.25rem;
+  }
 
-.project h5 {
-  font-size: 1.25rem;
-}
+  .home-page main .posts h2 {
+    text-align: center;
+    margin-bottom: .7em;
+  }
 
-.home-page main .posts h2 {
-  text-align: center;
-  margin-bottom: .7em;
-}
+  .home-page main .posts {
+    grid-column: 2 / span 9;
+  }
 
-.home-page main .posts {
-  grid-column: 2 / span 9;
-}
+  .home-page main .posts ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 8em;
+    gap: 2em;
+    box-sizing: border-box;
+    width:100%;
+    margin: 0 auto;
+    margin-top: 0;
 
-.home-page main .posts ul {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  margin-top: 8em;
-  gap: 2em;
-  box-sizing: border-box;
-  width:100%;
-  margin: 0 auto;
-  margin-top: 0;
+    font-size: 1rem;
+    list-style: none;
+  }
 
-  font-size: 1rem;
-  list-style: none;
-}
+  .project-container, .search-guide-container {
+    display: flex;
+  }
 
-.project-container, .search-guide-container {
-  display: flex;
-}
-
-.project-description, .guide-content {
-  margin-left: 10%;
+  .project-description, .guide-content {
+    margin-left: 10%;
+  }
 }
 
 @media (min-width: 1314px) {
