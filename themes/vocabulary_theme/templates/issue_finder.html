@@ -4,53 +4,53 @@
 
 {% block body %}
 <script type="text/javascript" src="{{ '/static/gen/issue-finder.js'|url }}"></script>
- <header>
+<header>
     <h1>{{ this.title }}</h1>
-    <p> {{ this.description }}</p>
-  </header>
-      <div>
-        <div class="issue-container">
-          <!-- Filters Section -->
-          <div class="filter-container">
-            <form id="filters">
-              <label for="aim">
-                <strong>Aim</strong><br />
-                I am interested in...
-              </label>
-              <select id="aim">
-                <option value="contribute">Contributing code</option>
-                <option value="triage">Triaging issues</option>
-                <option value="label">Labelling issues</option>
-              </select>
-              <br />
-              <div id="skill-filters">
-                <label for="skills">
-                  <strong>Skill set*</strong><br />
-                  Choose up to three skills that you would like to see issues for.
-                </label>
-                <select id="skills">
-                  <!-- Skills dynamically injected -->
-                </select>
-                <br />
-                <label for="experience">
-                  <strong>Experience</strong><br />
-                  Is this your first time contributing to CC?
-                </label>
-                <select id="experience">
-                  <option value="beginner">Yes, it is</option>
-                  <option value="experienced" selected>No, it isn’t</option>
-                </select>
-              </div>
-              <p>
-                *Not all issues have skills marked on them, especially if they are simple issues that do not require proficiency in any specific framework or language. Those issues will not appear when filtering by skill.
-               </p>
-            </form>
-          </div>
-
-          <!-- Issues Section -->
-          <div class="issues-container" id="issues-container">
-            <p class="no-results">Loading issues...</p>
-          </div>
+    {{ this.description }}
+</header>
+<div>
+  <div class="issue-container">
+    <!-- Filters Section -->
+    <div class="filter-container">
+      <form id="filters">
+        <label for="aim">
+          <strong>Aim</strong><br />
+          I am interested in...
+        </label>
+        <select id="aim">
+          <option value="contribute">Contributing code</option>
+          <option value="triage">Triaging issues</option>
+          <option value="label">Labelling issues</option>
+        </select>
+        <br />
+        <div id="skill-filters">
+          <label for="skills">
+            <strong>Skill set*</strong><br />
+            Choose up to three skills that you would like to see issues for.
+          </label>
+          <select id="skills">
+            <!-- Skills dynamically injected -->
+          </select>
+          <br />
+          <label for="experience">
+            <strong>Experience</strong><br />
+            Is this your first time contributing to CC?
+          </label>
+          <select id="experience">
+            <option value="beginner">Yes, it is</option>
+            <option value="experienced" selected>No, it isn’t</option>
+          </select>
         </div>
-      </div>
+        <p>
+          *Not all issues have skills marked on them, especially if they are simple issues that do not require proficiency in any specific framework or language. Those issues will not appear when filtering by skill.
+         </p>
+      </form>
+    </div>
+
+    <!-- Issues Section -->
+    <div class="issues-container" id="issues-container">
+      <p class="no-results">Loading issues...</p>
+    </div>
+  </div>
+</div>
 {% endblock %}
