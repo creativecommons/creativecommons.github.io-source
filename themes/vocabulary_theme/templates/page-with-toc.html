@@ -10,7 +10,7 @@
 
 <aside class="sidebar">
     {% if this.is_child_of('/contributing-code') %}
-        <nav class="filter-menu" aria-labelledby="contributing-code">
+        <nav aria-labelledby="contributing-code">
             <h2>Contributing Code</h2>
             <ul>
                 {% for href, title in [
@@ -46,7 +46,7 @@
             </ul>
         </nav>
     {% elif this.is_child_of('/community') %}
-        <nav class="filter-menu" aria-labelledby="community">
+        <nav aria-labelledby="community">
             <h2>Community</h2>
             <ul>
                 {% for href, title in [
@@ -87,7 +87,7 @@
             </ul>
         </nav>
     {% elif this.is_child_of('/programs') %}
-        <nav class="filter-menu" aria-labelledby="programs">
+        <nav aria-labelledby="programs">
             <h2>Programs</h2>
             <ul>
                 {% for href, title in [
@@ -117,7 +117,7 @@
             </ul>
         </nav>
     {% endif %}
-    <nav class="filter-menu" aria-labelledby="on-this-page">
+    <nav aria-labelledby="on-this-page">
         <h2>On this page</h2>
         <ul>
             {% for item in this.body.toc %}
