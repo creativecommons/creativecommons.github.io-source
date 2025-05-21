@@ -262,7 +262,7 @@
             "english_name": "CC Chooser",
             "featured": true,
             "id": 188122843,
-            "language": "JavaScript",
+            "language": "CSS",
             "license": {
                 "name": "MIT License",
                 "url": "https://github.com/creativecommons/chooser/blob/main/LICENSE"
@@ -272,13 +272,10 @@
             "technologies": [
                 "HTML",
                 "CSS",
-                "JS",
-                "Bulma",
-                "Vue",
-                "Jest"
+                "JS"
             ],
             "url": "https://github.com/creativecommons/chooser",
-            "website": "https://chooser-beta.creativecommons.org"
+            "website": "https://creativecommons.org/chooser"
         },
         {
             "created": "2017-07-05T23:39:19+00:00",
