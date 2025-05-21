@@ -1,9 +1,9 @@
 {% from "macros/posts.html" import render_post_summary %}
 
 {% macro render_author_posts(posts) %}
-  <div class="columns is-multiline blog-entries">
+  <article class="post">
     {% for post in posts %}
       {{ render_post_summary(post, true) }}
     {% endfor %}
-  </div>
+  </article>
 {% endmacro %}

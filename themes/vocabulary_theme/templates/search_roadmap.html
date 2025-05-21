@@ -3,14 +3,12 @@
 {% block title %}{{ this.title }}{% endblock %}
 
 {% block body %}
-  <div class="cc-search-roadmap">
-    <div class="header">
-      <div class="container">
-        <h1>{{ this.title }}</h1>
-        <p class="description column is-9 is-paddingless">The largest open source product in CC’s portfolio is CC Search: a search engine for CC licensed and public domain creative works.</p>
-      </div>
-    </div>
-    <div class="body container content">
+    <header>
+      <h1>{{ this.title }}</h1>
+      <p> The largest open source product in CC’s portfolio is CC Search: a search engine for CC licensed and public domain creative works. </p>
+    </header>
+
+    <div class="content main-content">
       <p>The product involves the following components:</p>
       <ul>
         <li><b>CC Catalog</b>, where CC licensed and public domain works are ingested. [<a href="https://github.com/creativecommons/cccatalog">GitHub Repo</a>]</li>
@@ -23,8 +21,8 @@
       <p>The highlights on our roadmap for the current and upcoming quarters are as follows:</p>
       {% for quarter in bag('search_roadmap.quarters') %}
         <h4>{{ quarter.name }}</h4>
-        <div class="table-container">
-          <table class="table is-bordered is-striped">
+        <div class="table-container search-table">
+          <table class="datatable display">
             <thead>
               <tr>
                   <th scope="col">Task Name</th>
@@ -87,5 +85,4 @@
       <p>If you’re interested, we invite you to sign up for a time <a href="https://calendly.com/cc-product-design/usability-test-30">via this Calendly link</a>.</p>
       <p>Visit our <a href="/contributing-code/usability/">Usability page</a> for more details on how to participate.</p>
     </div>
-  </div>
 {% endblock %}

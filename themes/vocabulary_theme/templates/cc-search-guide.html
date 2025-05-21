@@ -3,25 +3,21 @@
 {% block title %}{{ this.title }}{% endblock %}
 
 {% block body %}
-<div class="cc-search-guide">
-  <header class="header">
-    <div class="container is-paddingless">
-      <h1>{{ this.title }}</h1>
-    </div>
+  <header>
+    <h1>{{ this.title }}</h1>
   </header>
-  <div class="container body">
-    <div class="columns">
-      <div class="column is-one-quarter">
-        <div class="table-of-progress sticky-top">
-          <h4 class="step-header">Steps</h4>
-          <ul>
+    <div class="content main-content">
+      <div class="search-guide-container">
+        <div class="steps-container">
+          <h4>Steps</h4>
+          <ul class="steps-list">
             {% set step = namespace (number = 0) %}
             {% for item in this.body.toc %}
               {% if (loop.index + 1)%3 == 0 %}
-                <li class="step">
-                  <a class="link" href="#{{ this.body.toc[loop.index - 2].anchor }}">
-                    <span class="number">{{ step.number }}</span>
-                    <span class="name">{{ item.title }}</span>
+                <li class="step-item">
+                  <a href="#{{ this.body.toc[loop.index - 2].anchor }}" class="step-link"> 
+                    <span class="step-number">{{ step.number }}</span>
+                    <span class="step-title">{{ item.title }}</span>
                   </a>
                 </li>
                 {% set step.number = step.number + 1 %}
@@ -29,11 +25,9 @@
             {% endfor %}
           </ul>
         </div>
-      </div>
-      <div class="column content">
+      <div class="guide-content">
         {{ this.body }}
       </div>
     </div>
-  </div>
-</div>
+    </div>
 {% endblock %}

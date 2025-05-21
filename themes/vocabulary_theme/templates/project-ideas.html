@@ -3,115 +3,81 @@
 {% block title %}Open Source Work Programs: Project Ideas{% endblock %}
 
 {% block body %}
-  <div class="project-ideas">
-    <div class="header">
-      <div class="container">
-        <h1>Open Source Work Programs: Project Ideas</h1>
-        <p class="description">This is the project idea list for the <span class="has-color-forest-green">current round of open source collaborations at Creative Commons (CC).</span></p>
-        {% set ideas = site.query('/programs/project-ideas-collection').include_undiscoverable(true) %}
-        <div class="filter-labels" id="project-list">
-          <button type="button" class="button tag btn-dark filter-btn" data-filter="all">
-            All Projects
-          </button>
-          <!--
-          <button type="button" class="button tag filter-btn" data-filter="difficulty-easy">
-            Difficulty: Easy
-          </button>
-          -->
-          <button type="button" class="button tag filter-btn" data-filter="difficulty-medium">
-            Difficulty: Medium
-          </button>
-          <button type="button" class="button tag filter-btn" data-filter="difficulty-hard">
-            Difficulty: Hard
-          </button>
-          <button type="button" class="button tag filter-btn" data-filter="skill-ansible">
-            Skill: Ansible
-          </button>
-          <button type="button" class="button tag filter-btn" data-filter="skill-css">
-            Skill: CSS
-          </button>
-          <button type="button" class="button tag filter-btn" data-filter="skill-docker">
-            Skill: Docker
-          </button>
-          <button type="button" class="button tag filter-btn" data-filter="skill-javascript">
-            Skill: JavaScript
-          </button>
-          <button type="button" class="button tag filter-btn" data-filter="skill-php">
-            Skill: PHP
-          </button>
-          <button type="button" class="button tag filter-btn" data-filter="skill-python">
-            Skill: Python
-          </button>
-          <button type="button" class="button tag filter-btn" data-filter="skill-wordpress">
-            Skill: WordPress
-          </button>
-          <!--
-          <button type="button" class="button tag filter-btn" data-filter="skill-writing">
-            Skill: Writing
-          </button>
-          -->
-        </div>
-        <div class="project-ideas columns is-multiline">
-          {% for idea in ideas %}
-          <div class="column is-one-quarter filter filter-label {{ idea.filter_value }}">
-            <a href="#{{ idea._slug }}">
-              <article class="card entry-post horizontal">
-                <div class="card-content">
-                  <h5 class="card-title">{{ idea.title }}</h5>
-                </div>
-              </article>
-            </a>
-          </div>
-          {% endfor %}
-          <div class="column is-one-quarter">
-            <a href="#original-ideas">
-              <article class="card entry-post horizontal">
-                <div class="card-content">
-                  <h5 class="card-title">Original Ideas</h5>
-                </div>
-              </article>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="body container">
-      {% for idea in ideas %}
-        <div class="project-idea">
-          <h2><a class="has-color-dark-slate-gray" name="{{ idea._slug }}">{{ idea.title }}</a></h2>
-          <div class="columns">
-            <div class="column is-one-quarter">
-              <h5 class="b-header padding-bottom-small">Difficulty</h5>
-              <p class="padding-bottom-big">{{ idea.difficulty }}</p>
-              <h5 class="b-header padding-bottom-small">Size</h5>
-              <p class="padding-bottom-big">{{ idea.size }}</p>
-              <h5 class="b-header padding-bottom-small">Skills recommended</h5>
-              {{ idea.skills_recommended }}
-              <h5 class="b-header padding-bottom-small padding-top-big">Project Lead</h5>
-              {{ idea.lead }}
-            </div>
-            <div class="column is-three-quarters">
-              <h3 class="padding-bottom-big">The Problem</h3>
-              <p>{{ idea.problem }}</p>
-              <h3 class="padding-bottom-big padding-top-large">Expected Outcome</h3>
-              <p>{{ idea.expected_outcome }}</p>
-              <h3 class="padding-bottom-big padding-top-large">Contributor Tasks</h3>
-              <p>{{ idea.contributor_tasks }}</p>
-              <h3 class="padding-bottom-big padding-top-large">Application Tips</h3>
-              <p>{{ idea.application_tips }}</p>
-              <h3 class="padding-bottom-big padding-top-large">Resources</h3>
-              <p>{{ idea.resources }}</p>
-            </div>
-          </div>
-          <a href="#project-list" class="back-to-list"><i class="icon angle-up"></i> Back to the Project list</a>
-        </div>
-      {% endfor %}
-      <div>
-        <h2 class="b-header"><a name="original-ideas" class="has-color-dark-slate-gray">Original Ideas</a></h2>
-        <p>We are open to original ideas for documentation improvements.</p>
-        <p>Please talk to us on the <code>#cc-dev-workprograms</code> channel on Slack or via the mailing list to find a mentor for the project before submitting your proposal.</p>
-        <a href="#project-list" class="back-to-list"><i class="icon angle-up"></i> Back to the Project list</a>
-      </div>
-    </div>
+<script type="text/javascript" src="{{ '/static/js/ideas.js'|url }}"></script>
+<header>
+  <h1>Open Source Work Programs: Project Ideas</h1>
+  <p>This is the project idea list for the <span>current round of open source collaborations at Creative Commons (CC).</span></p>
+  {% set ideas = site.query('/programs/project-ideas-collection').include_undiscoverable(true) %}
+  <div class="filter-labels" id="project-list">
+    <button type="button" class="button btn-dark filter-btn" data-filter="all">All Projects</button>
+    <button type="button" class="button filter-btn" data-filter="difficulty-medium">Difficulty: Medium</button>
+    <button type="button" class="button filter-btn" data-filter="difficulty-hard">Difficulty: Hard</button>
+    <button type="button" class="button filter-btn" data-filter="skill-ansible">Skill: Ansible</button>
+    <button type="button" class="button filter-btn" data-filter="skill-css">Skill: CSS</button>
+    <button type="button" class="button filter-btn" data-filter="skill-docker">Skill: Docker</button>
+    <button type="button" class="button filter-btn" data-filter="skill-javascript">Skill: JavaScript</button>
+    <button type="button" class="button filter-btn" data-filter="skill-php">Skill: PHP</button>
+    <button type="button" class="button filter-btn" data-filter="skill-python">Skill: Python</button>
+    <button type="button" class="button filter-btn" data-filter="skill-wordpress">Skill: WordPress</button>
   </div>
+</header>
+
+<div class="content main-content">
+<article class="projects">
+  <h2>Current Programs</h2>
+  <p>Here are some highlighted projects currently underway:</p>
+  <ul>
+
+    {% for idea in ideas %}
+      <li class="filter filter-label {{ idea.filter_value }}">
+        <article class="project">
+          <h3><a href="#{{ idea._slug }}">{{ idea.title }}</a></h3>
+        </article>
+      </li>
+    {% endfor %}
+    <li>
+      <article class="project">
+        <h3><a href="#original-ideas">Original Ideas</a></h3>
+      </article>
+    </li>
+  </ul>
+</article>
+
+<div>
+  {% for idea in ideas %}
+      <h2><a name="{{ idea._slug }}">{{ idea.title }}</a></h2>
+      <div class="project-container">
+        <div class="project-summary">
+          <h5>Difficulty</h5>
+          <p>{{ idea.difficulty }}</p>
+          <h5>Size</h5>
+          <p>{{ idea.size }}</p>
+          <h5>Skills recommended</h5>
+          {{ idea.skills_recommended }}
+          <h5>Project Lead</h5>
+          {{ idea.lead }}
+        </div>
+        <div class="project-description">
+          <h3>The Problem</h3>
+          <p>{{ idea.problem }}</p>
+          <h3>Expected Outcome</h3>
+          <p>{{ idea.expected_outcome }}</p>
+          <h3>Contributor Tasks</h3>
+          <p>{{ idea.contributor_tasks }}</p>
+          <h3>Application Tips</h3>
+          <p>{{ idea.application_tips }}</p>
+          <h3>Resources</h3>
+          <p>{{ idea.resources }}</p>
+        </div>
+      </div>
+      <a href="#project-list"><i></i> Back to the Project list</a>
+  {% endfor %}
+   <div>
+      <h2 class="b-header"><a name="original-ideas">Original Ideas</a></h2>
+      <p>We are open to original ideas for documentation improvements.</p>
+      <p>Please talk to us on the <code>#cc-dev-workprograms</code> channel on Slack or via the mailing list to find a mentor for the project before submitting your proposal.</p>
+      <a href="#project-list"><i></i> Back to the Project list</a>
+  </div>
+</div> 
+</div>
 {% endblock %}
