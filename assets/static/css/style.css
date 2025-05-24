@@ -36,10 +36,20 @@
   margin-top: 1.5rem
 }
 
+/* Fix: Added color and underline for hero-description links */
 .hero-description a {
+  color: var(--vocabulary-brand-color-tomato);
   text-transform: uppercase;
   font-size: 1.5rem;
   font-weight: 700;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.hero-description a:hover,
+.hero-description a:focus {
+  color: #802414; /* darker tomato for hover/focus */
+  outline: none;
 }
 
 .home-page main article figure {
@@ -70,7 +80,16 @@
 }
 
 .projects article a {
-    --underline-background-color: var(--vocabulary-brand-color-soft-turquoise);
+  --underline-background-color: var(--vocabulary-brand-color-soft-turquoise);
+  color: var(--vocabulary-brand-color-tomato);
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.projects article a:hover,
+.projects article a:focus {
+  color: #802414;
+  outline: none;
 }
 
 /* Table Styles */
@@ -192,6 +211,14 @@ pre code {
 /* for anchor tags with a span.gh-label inside them */
 main a:has(span.gh-label) {
   --underline-background-color: unset;
+  color: var(--vocabulary-brand-color-tomato); /* fix color here for contrast */
+  text-decoration: underline;
+}
+
+main a:has(span.gh-label):hover,
+main a:has(span.gh-label):focus {
+  color: #802414;
+  outline: none;
 }
 
 /* label style for individual labels */
@@ -317,7 +344,7 @@ main a:has(span.gh-label) {
 }
 
 .step-link {
-  --underline-color: unset
+  --underline-color: unset;
   --underline-background-color: unset;
   color: #333;
   display: flex;
