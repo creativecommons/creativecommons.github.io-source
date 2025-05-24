@@ -71,6 +71,18 @@
   border-color: #0078D4;
 }
 
+/* Fix: Add accessible link style inside issue-finder */
+a {
+  color: var(--vocabulary-brand-color-tomato);
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+a:hover,
+a:focus {
+  color: #802414;
+  outline: none;
+}
 
 @media (min-width: 1024px) {
 .issue-container {
