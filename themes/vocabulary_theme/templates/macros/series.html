@@ -1,7 +1,7 @@
 {% from "macros/posts.html" import render_posts %}
 
 {% macro render_series(series) %}
-  <section role="region">
+  <section>
     <h2 class="visually-hidden">List of Series</h2>
     {% for serie in site.query(series.path) %}
       <h4 class="series-link">
