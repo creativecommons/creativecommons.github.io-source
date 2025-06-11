@@ -1,28 +1,26 @@
 {% extends "layout.html" %}
 
+{% set body_class = "blog-index" %}
+
 {% from "macros/pagination.html" import render_pagination %}
 {% from "macros/posts.html" import render_posts %}
 
 {% block title %}{{ this.title }}{% endblock %}
 
 {% block body %}
-  <div class="blog-page">
-    <div class="header">
-      <div class="container">
-        <h1>{{ this.title }}</h1>
-        <div class="description column is-9 is-paddingless">{{ this.description }}</div>
-      </div>
-    </div>
-    <div class="container blog-page-posts">
-      <section>
-        <h2 id="blog-posts" class="sr-only">Blog Posts</h2>
-        {{ render_posts(this.pagination.items) }}
-      </section>
-      <div class="pagination-wrapper">
-        {% if this.pagination.pages > 1 %}
-          {{ render_pagination(this.pagination) }}
-        {% endif %}
-      </div>
-    </div>
-  </div>
+
+<header>
+  <h1>{{ this.title }}</h1>
+  {{this.description }}
+</header>
+
+<article class="posts">
+  <h2>Featured posts</h2>
+   {{ render_posts(this.pagination.items) }}
+</article>
+
+{% if this.pagination.pages > 1 %}
+  {{ render_pagination(this.pagination) }}
+{% endif %}
+
 {% endblock %}

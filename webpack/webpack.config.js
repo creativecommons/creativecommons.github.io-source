@@ -2,35 +2,22 @@ const path = require('path');
 
 module.exports = {
   mode: process.env.NODE_ENV === 'production' ? 'production' : 'development',
-  entry: ['./js/main.js','./js/ideas.js','./js/issue-finder.js', './sass/main.scss'],
+  entry: ['./js/issue-finder.js'],
   output: {
     path: path.resolve(__dirname, '../assets/static/gen'),
-    filename: 'script.js',
+    filename: 'issue-finder.js',
   },
   resolve: {
-    alias: {
-      'vue$': path.resolve(__dirname, './node_modules/vue/dist/vue.esm.js')
-    },
-    fallback: {
-        "buffer": require.resolve("buffer/")
-    }
+    fallback: { "buffer": false }
   },
   module: {
     rules: [
       {
-        test: /\.scss$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: 'style.css',
-            }
-          },
-          {
-            loader: 'sass-loader'
-          }
-        ]
-      }
-    ]
-  }
+        test: /\.js$/,
+        enforce: "pre",
+        use: ["source-map-loader"],
+      },
+    ],
+  },
+  ignoreWarnings: [/Failed to parse source map/],
 };

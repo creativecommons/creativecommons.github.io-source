@@ -1,0 +1,430 @@
+@import "/static/vocabulary/css/vocabulary.css" layer(vocabulary);
+@import "/static/vendor/datatable/datatables.css" layer(datatables);
+@import "/static/css/issue-finder.css" layer(issue-finder);
+
+/* Homepage Styles */
+
+.home-page main {
+  margin-top: 3rem;
+
+  font-family: 'Source Sans Pro';
+}
+
+/* Hero-section */
+
+.hero-section h2 {
+  margin-top: 0;
+
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+}
+
+.home-page main p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.home-page li, .posts li, .projects li{
+  list-style-type: none;
+}
+
+.hero-section img {
+  width: 100%;
+  margin-top: 1.5rem
+}
+
+.hero-description a {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.home-page main article figure {
+  order: -1;
+}
+
+.home-page main .posts ul li h3 {
+  font-size: 1.5rem;
+}
+
+/* PROJECTS */
+
+.posts > h2 {
+  text-align: center;
+}
+
+.projects ul {
+  display: grid;
+  gap: 2rem;
+  margin-right: 2rem;
+}
+
+.projects article {
+  padding: 3rem;
+
+  background: var(--vocabulary-brand-color-soft-turquoise);
+  border-top: 3px solid black;
+}
+
+.projects article a {
+    --underline-background-color: var(--vocabulary-brand-color-soft-turquoise);
+}
+
+/* Table Styles */
+table.display {
+  border-collapse: collapse;
+  width: 100%;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+
+table.display th {
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+  border-width: 1px;
+}
+
+table.display thead {
+  background-color: rgb(216, 216, 216);
+}
+
+table.display th, table.display td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.search-table table.display th {
+  width: 30%; /* To make the th have a larger width than default on the search archive page */
+}
+
+.search-table {
+  overflow-x: scroll;
+}
+
+/* Code block styles */
+code {
+  color: rgb(51, 51, 51);
+  background-color: rgb(245, 245, 245);
+  border: 0.0625rem solid rgb(216, 216, 216);
+  border-radius: 0.25rem;
+  padding: 0.125rem 0.25rem;
+  font-size: 0.75em;
+  font-weight: normal;
+  /*padding: 0.25em 0.5em 0.25em; */
+}
+
+/* BLOG POST STYLING */
+.blog-post img {
+  max-width: 100%;
+}
+
+/* BLOCKQUOTE STYLING */
+
+main blockquote, main blockquote p , main blockquote p:before{
+  all: unset; /* This removes all inherited and applied styles from vocabulary */
+  display: block;
+}
+
+main blockquote {
+  background-color: hsl(0, 0%, 96%);
+  border-left: 5px solid rgb(245, 245, 245);
+  padding: 1.25em 1.5em;
+}
+
+/* BUTTON STYLES FOR PROJECT IDEAS PAGE */
+.filter-btn {
+  border: 2px solid var(--vocabulary-brand-color-tomato);
+  background-color: transparent;
+  padding: 0 1rem;
+  font-size: .81rem;
+  min-height: 1.81rem;
+  border-radius: 18.5rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+/* Hover State */
+.filter-btn:hover {
+  background-color: var(--vocabulary-brand-color-tomato);
+  color: #fff;
+}
+
+/* Active/Selected State */
+.filter-btn.btn-dark {
+  background-color: var(--vocabulary-brand-color-tomato);
+  color: white;
+}
+
+/* Inactive State */
+.filter-btn.btn-primary {
+  background-color: transparent;
+  color: #000;
+  border-color: var(--vocabulary-brand-color-tomato);
+}
+
+/* PRE STYLES */
+pre {
+  color: rgb(51, 51, 51);
+  background-color: rgb(245, 245, 245);
+  border: 0.0625rem solid rgb(216, 216, 216);
+  border-radius: 0.25rem;
+  padding: 1rem 2rem;
+}
+
+pre code {
+  border: none;
+}
+
+/* label styles */
+.gh-label {
+  display: inline-block;
+  margin-right: 0.25rem;
+  padding: 0.25rem 0.5rem;
+
+  font-size: smaller;
+  border: 1px solid #eeeeee;
+  border-radius: 1.5rem;
+}
+
+/* for anchor tags with a span.gh-label inside them */
+main a:has(span.gh-label) {
+  --underline-background-color: unset;
+}
+
+/* label style for individual labels */
+
+.goal {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.aspect {
+  background-color: #04338c;
+  color: #ffffff;
+}
+
+.skill {
+  background-color: #5ff1f5;
+  color: #000000;
+}
+
+.talk {
+  background-color: #f9bbe5;
+  color: #000000;
+}
+
+.friendliness {
+  background-color: #7f0799;
+  color: #ffffff;
+}
+
+.status-lighter {
+  background-color: #eeeeee;
+  color: #000000;
+}
+
+.status-light {
+  background-color: #cccccc;
+  color: #000000;
+}
+
+.status-neutral {
+  background-color: #999999;
+  color: #000000;
+}
+
+.status-dark {
+  background-color: #666666;
+  color: #ffffff;
+}
+
+.status-darker {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.status-medium{
+  background-color: #999999;
+  color: #ffffff;
+}
+
+.priority-unfavourable {
+  background-color: #b60205;
+  color: #ffffff;
+}
+
+.priority-negative {
+  background-color: #ff9f1c;
+  color: #000000;
+}
+
+.priority-neutral {
+  background-color: #ffcc00;
+  color: #000000;
+}
+
+.priority-positive {
+  background-color: #cfda2c;
+  color: #000000;
+}
+
+.priority-favourable {
+  background-color: #008672;
+  color: #ffffff;
+}
+
+.miscellaneous {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.hacktoberfest {
+  background-color: #883255;
+  color: #ffffff;
+}
+
+.invalid {
+  background-color: #eeeeee;
+  color: #000000;
+}
+
+/* CC Search Feature */
+.steps-list {
+  list-style: none;
+  padding: 0;
+  position: relative;
+  margin-left: 1rem;
+}
+
+.steps-list::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  width: 2px;
+  height: calc(100% - 20px);
+  background-color: #eee;
+}
+
+.step-item {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 1.6rem;
+}
+
+.step-link {
+  --underline-color: unset
+  --underline-background-color: unset;
+  color: #333;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+.step-number {
+  width: 1.82rem;
+  height: 1.82rem;
+  background-color: rgb(245, 245, 245);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 32px;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-right: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.step-title {
+  font-size: 1rem;
+}
+
+
+@media (min-width: 1024px) {
+  .hero-section img {
+    width: auto;
+  }
+
+  .hero-section {
+    display: grid;
+    grid-column: 2 / span 9;
+    grid-template:
+        "title title title"
+        "description description description "
+        "graphic graphic graphic";
+
+    margin-bottom: 6.4em;
+    gap: 0 4em;
+  }
+
+  .hero-section h2 {
+    grid-area: title;
+  }
+
+  .hero-description {
+    grid-area: description;
+    width: 41.67%
+  }
+
+  .projects ul {
+    grid-template-columns: 1fr 1fr;
+
+    font-size: 1rem;
+  }
+
+  .projects {
+    grid-column: 2 / 10;
+    margin-bottom: 6rem;
+  }
+
+  .body-container, .main-content{
+    grid-column: 2 / 10;
+  }
+
+  .project h5 {
+    font-size: 1.25rem;
+  }
+
+  .home-page main .posts h2 {
+    text-align: center;
+    margin-bottom: .7em;
+  }
+
+  .home-page main .posts {
+    grid-column: 2 / span 9;
+  }
+
+  .home-page main .posts ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 8em;
+    gap: 2em;
+    box-sizing: border-box;
+    width:100%;
+    margin: 0 auto;
+    margin-top: 0;
+
+    font-size: 1rem;
+    list-style: none;
+  }
+
+  .project-container, .search-guide-container {
+    display: flex;
+  }
+
+  .project-description, .guide-content {
+    margin-left: 10%;
+  }
+}
+
+@media (min-width: 1314px) {
+  .hero-image {
+    grid-column: 3;
+    margin-top: -6rem;
+  }
+}

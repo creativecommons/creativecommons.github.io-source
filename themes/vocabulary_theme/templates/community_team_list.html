@@ -3,54 +3,51 @@
 {% block title %}{{ this.title }}{% endblock %}
 
 {% block body %}
-  <div>
-    <div class="header">
-      <div class="container">
-        <h1>{{ this.title }}</h1>
-        <p class="description column is-9 is-paddingless">This is a list of all Creative Commons (CC) Community Team members, and their roles and privileges. For more information about CC Community Team, please see <a href="/community/community-team/">the Community Team Page</a>.</p>
+  <header>
+   <h1>{{ this.title }}</h1>
+   <p> This is a list of all Creative Commons (CC) Community Team members, and their roles and privileges. For more information about CC Community Team, please see <a href="/community/community-team/">the Community Team Page</a>.</p>
+ </header>
+
+ <!-- TODO: decide on presentation implementation -->
+
+  <div class="content">
+    <h2>Project Teams</h2>
+    {% for project in bag('community_team_members.projects') %}
+      <h3>{{ project.name }}</h3>
+      <p>These team members have permissions in the <code>{{ project.repos }}</code> repo(s).</p>
+      <div>
+        <table class="datatable display">
+          <thead>
+            <tr>
+              <th>Role</th>
+              <th>Member Name</th>
+            </tr>
+          </thead>
+          {% for member in project.members %}
+            <tr>
+              <td>{{ member.role }}</td>
+              <td id="{{project.name|lower|replace(' ','-')}}--{{member.name|lower|replace(' ','-')}}">{{ member.name }}</td>
+            </tr>
+          {% endfor %}
+        </table>
       </div>
-    </div>
-    <div class="container padding-horizontal-big padding-vertical-xl">
-      <div class="content">
-        <h2>Project Teams</h2>
-        {% for project in bag('community_team_members.projects') %}
-        <h3 class="b-header">{{ project.name }}</h3>
-          <p>These team members have permissions in the <code>{{ project.repos }}</code> repo(s).</p>
-          <div class="table-container">
-            <table class="table is-bordered is-striped"">
-              <thead>
-                <tr>
-                  <th>Role</th>
-                  <th>Member Name</th>
-                </tr>
-              </thead>
-              {% for member in project.members %}
-                <tr>
-                  <td>{{ member.role }}</td>
-                  <td id="{{ project.name|lower|replace(' ','-') }}--{{ member.name|lower|replace(' ','-') }}" aria-labelledby="{{ project.name|lower|replace(' ','-') }}--{{ member.name|lower|replace(' ','-') }}">{{ member.name }}</td>
-                </tr>
-              {% endfor %}
-            </table>
-          </div>
+    {% endfor %}
+    <h2>Community Building Teams</h2>
+    <div>
+      <table class="datatable display">
+        <thead>
+          <tr>
+            <th>Role</th>
+            <th>Member Name</th>
+          </tr>
+        </thead>
+        {% for member in bag('community_team_members.community_builders') %}
+          <tr>
+            <td>{{ member.role }}</td>
+            <td id="community-builder--{{member.name|replace(' ','-')}}">{{ member.name }}</td>
+          </tr>
         {% endfor %}
-        <h2>Community Building Teams</h2>
-        <div class="table-container">
-          <table class="table is-bordered is-striped">
-            <thead>
-              <tr>
-                <th>Role</th>
-                <th>Member Name</th>
-              </tr>
-            </thead>
-            {% for member in bag('community_team_members.community_builders') %}
-              <tr>
-                <td>{{ member.role }}</td>
-                <td id="community-builder--{{ member.name|replace(' ','-') }}">{{ member.name }}</td>
-              </tr>
-            {% endfor %}
-          </table>
-        </div>
-      </div>
+      </table>
     </div>
   </div>
 {% endblock %}

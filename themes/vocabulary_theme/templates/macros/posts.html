@@ -2,12 +2,23 @@
 {% from "macros/authors_gravatar.html" import render_author_gravatar %}
 
 {% macro render_post_summary(post, skip_gravatar=false) %}
-  <div class="column is-one-third is-paddingless padding-horizontal-big padding-top-bigger">
-    <article class="card entry-post horizontal no-border blog-entry">
-      {{ render_author_gravatar(post, skip_gravatar) }}
-      <div class="blog-content">
-        <h4 class="b-header"><a class="blog-title" href="{{ post|url }}">{{ post.title }}</a></h4>
-        {{ render_authors_byline(post) }}
+  <li>
+    <article class="post">
+      <header>
+        <h3 class="title"><a href="{{ post|url }}">{{ post.title }}</a></h3>
+          <span class="byline"> {{ render_authors_byline(post) }} </span>
+            <span class="categories">
+              {% if post.categories %}
+              {% for category in post.categories %}
+                <a href="/blog/categories/{{ category|replace(' ', '-') }}">{{ category|capitalize }}</a>
+              {% if not loop.last %}, {% endif %}
+              {% endfor %}
+              {% else %}
+              <span>No categories</span>
+              {% endif %}
+            </span>
+        <!-- TODO: add excerpt back in -->
+        <!--
         <div class="excerpt">
           {% if post.excerpt %}
             {{ post.excerpt }}
@@ -15,16 +26,21 @@
             {{ post.body | excerpt | string | striptags() | truncate(100) }}
           {% endif %}
         </div>
-      </div>
-    </article>
-  </div>
+        -->
+      </header>
+
+      <figure>
+        {{ render_author_gravatar(post, skip_gravatar) }}
+      </figure>
+   </article>
+ </li>
 {% endmacro %}
 
 {% macro render_posts(posts) %}
-  <div class="columns is-multiline blog-entries">
+  <ul>
     {% for post in posts %}
       {% set post_loop = loop %}
         {{ render_post_summary(post) }}
     {% endfor %}
-  </div>
+  </ul>
 {% endmacro %}

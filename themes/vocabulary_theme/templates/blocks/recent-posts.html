@@ -1,22 +1,14 @@
 {% from "macros/posts.html" import render_post_summary %}
 
-<section class="recent-posts">
-  <div class="container">
-    <div class="level">
-      <h2 class="is-paddingless level-left">
-        {{ this.title }}
-      </h2>
-      <span class="level-right">
-        <a class="posts-link" href="/blog/entries">See all posts <i class="icon angle-right"></i></a>
-      </span>
-    </div>
-    <div class="columns">
+<article class="posts">
+  <h2>  {{ this.title }} </h2>
+    <ul>
       {% for post in site.query('/blog/entries') %}
         {% set post_loop = loop %}
-        {% if post_loop.index <= 3 %}
+        {% if post_loop.index <= 4 %}
           {{ render_post_summary(post) }}
         {% endif %}
       {% endfor %}
-    </div>
-  </div>
-</section>
+    </ul>
+   <a class="more" href="/blog/entries">See all posts</a>
+  </article>
