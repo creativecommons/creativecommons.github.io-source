@@ -8,7 +8,6 @@
 {% block title %}{{ render_author_name(this) }}{% endblock %}
 
 {% block body %}
-
 <header>
   <h1>{{ render_author_name(this) }}</h1>
   <figure>
@@ -20,7 +19,6 @@
   {% endif %}
   <!--To-do: review legacy button design-->
   <a href="{{ this.parent|url }}">See all authors</a>
-
   </div>
 </header>
 <article class="posts">
