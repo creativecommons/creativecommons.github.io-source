@@ -47,8 +47,8 @@
         </div>
       </div>
       {% if this.series|length %}
-        <div class="series-posts" id="series" aria-labelledby="series-posts-title">
-          <h5 class="title" id="series-posts-title">Posts in the {{ series.name }} series</h5>
+        <div class="series-posts" id="series" >
+          <h5 class="title">Posts in the {{ series.name }} series</h5>
           <ul class="posts">
             {% for post in series.children.order_by('pub_date') %}
               {% if post.path==this.path %}

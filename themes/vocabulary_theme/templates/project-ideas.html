@@ -63,7 +63,7 @@
             </a>
           </div>
           {% endfor %}
-          <div class="column is-one-quarter" role="listitem">
+          <div class="column is-one-quarter">
             <a href="#original-ideas">
               <article class="card entry-post horizontal">
                 <div class="card-content">
@@ -77,8 +77,8 @@
     </div>
     <div class="body container">
       {% for idea in ideas %}
-        <div class="project-idea" role="region" aria-labelledby="{{ idea._slug }}">
-          <h2><a class="has-color-dark-slate-gray" name="{{ idea._slug }}" id="{{ idea._slug }}">{{ idea.title }}</a></h2>
+        <section class="project-idea">
+          <h2><a class="has-color-dark-slate-gray" name="{{ idea._slug }}">{{ idea.title }}</a></h2>
           <div class="columns">
             <div class="column is-one-quarter">
               <h5 class="b-header padding-bottom-small">Difficulty</h5>
@@ -104,7 +104,7 @@
             </div>
           </div>
           <a href="#project-list" class="back-to-list"><i class="icon angle-up"></i> Back to the Project list</a>
-        </div>
+        </section>
       {% endfor %}
       <div>
         <h2 class="b-header"><a name="original-ideas" class="has-color-dark-slate-gray">Original Ideas</a></h2>

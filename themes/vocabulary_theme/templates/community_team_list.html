@@ -15,9 +15,9 @@
         <h2>Project Teams</h2>
         {% for project in bag('community_team_members.projects') %}
         <h3 class="b-header">{{ project.name }}</h3>
-          <p aria-describedby="{{ project.name|lower|replace(' ', '-') }}-repo-info">These team members have permissions in the <code>{{ project.repos }}</code> repo(s).</p>
+          <p>These team members have permissions in the <code>{{ project.repos }}</code> repo(s).</p>
           <div class="table-container">
-            <table class="table is-bordered is-striped" aria-labelledby="{{ project.name|lower|replace(' ', '-') }}-project">
+            <table class="table is-bordered is-striped"">
               <thead>
                 <tr>
                   <th>Role</th>
@@ -45,7 +45,7 @@
             {% for member in bag('community_team_members.community_builders') %}
               <tr>
                 <td>{{ member.role }}</td>
-                <td id="community-builder--{{ member.name|replace(' ','-') }}" aria-labelledby="community-builder--{{ member.name|replace(' ','-') }}">{{ member.name }}</td>
+                <td id="community-builder--{{ member.name|replace(' ','-') }}">{{ member.name }}</td>
               </tr>
             {% endfor %}
           </table>

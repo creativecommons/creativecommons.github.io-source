@@ -10,7 +10,7 @@
     <div class="header">
       <div class="container">
         <h1>{{ this.title }}</h1>
-        <div class="description column is-9 is-paddingless" aria-describedby="blog-description">{{ this.description }}</div>
+        <div class="description column is-9 is-paddingless">{{ this.description }}</div>
       </div>
     </div>
     <div class="container blog-page-posts">
@@ -18,7 +18,7 @@
         <h2 id="blog-posts" class="sr-only">Blog Posts</h2>
         {{ render_posts(this.pagination.items) }}
       </section>
-      <div class="pagination-wrapper" aria-live="polite">
+      <div class="pagination-wrapper">
         {% if this.pagination.pages > 1 %}
           {{ render_pagination(this.pagination) }}
         {% endif %}
