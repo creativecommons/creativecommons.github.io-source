@@ -115,7 +115,7 @@
           {% for crumb in crumbs %}
             <!-- Active link -->
             {% if this._slug == crumb %}
-              <li class="is-active"><a aria-current="page displayed">{{ this.title }}</a></li>
+              <li class="is-active"><a aria-current="page">{{ this.title }}</a></li>
             {% else %}
               <!-- Forming the URL using extracted slugs -->
               {% set i = loop.index %}

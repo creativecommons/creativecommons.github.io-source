@@ -1,7 +1,13 @@
 {% from "macros/posts.html" import render_posts %}
 
 {% macro render_series(series) %}
-  {% for serie in site.query(series.path) %}
-    <h4 class="series-link"><a class="link" href="{{ serie|url }}">{{ serie.name }}</a></h4>
-  {% endfor %}
+  <section>
+    <h2 class="visually-hidden">List of Series</h2>
+    {% for serie in site.query(series.path) %}
+      <h4 class="series-link">
+        <a class="link" href="{{ serie|url }}" aria-label="View series: {{ serie.name }}">{{ serie.name }}</a>
+      </h4>
+    {% endfor %}
+  </section>
 {% endmacro %}
+
