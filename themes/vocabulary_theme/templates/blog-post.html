@@ -36,7 +36,7 @@
   {% set series = this.parent.parent.children.get('series').children.get(this.series) %}
   <aside>
     <p>This blog is part of the series:</p>
-    <a href="#series">{{ series.name }}</a>
+    <a href="{{ series.path|url }}">{{ series.name }}</a>
   </aside>
 
   <article class="posts related">
